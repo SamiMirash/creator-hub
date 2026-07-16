@@ -1,0 +1,1837 @@
+{
+  "id": "resident-evil-2",
+  "game": "Resident Evil 2 (1998)",
+  "target": "100% completion of the chosen original Windows route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "route-and-save-setup",
+      "name": "Route and Save Setup",
+      "location_cue": "The Windows launcher, mode selector, character screen, and local save folder.",
+      "note": "Primary route: the original 1998 Windows game in its current rerelease.",
+      "items": [
+        {
+          "id": "setup-windows-original",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the 1998 Windows Version",
+          "missable": false,
+          "levels": {
+            "1": "Check the title and release before creating completion saves.",
+            "2": "Install the current GOG or Steam release of Resident Evil 2 (1998).",
+            "3": "Install the classic Windows release from GOG or Steam and launch it without replacement campaign data. Confirm that Original Mode, Arrange Mode, Gallery, and the PC bonus modes appear; the 2019 remake belongs to a separate guide."
+          }
+        },
+        {
+          "id": "setup-no-secondary-route",
+          "type": "interaction",
+          "safe_type": "Platform Route",
+          "label": "No Secondary Platform Pass",
+          "missable": false,
+          "levels": {
+            "1": "The selected route already contains the required content for this entry.",
+            "2": "Complete this pack entirely in the chosen Windows release.",
+            "3": "Use only the Windows rerelease for this entry. Console-exclusive additions from other ports are outside the route selected in games.json, so they are neither required nor silently mixed into this checklist."
+          }
+        },
+        {
+          "id": "setup-backup",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Protect Linked Clear Data",
+          "missable": false,
+          "levels": {
+            "1": "Keep copies before choices that alter the partner scenario.",
+            "2": "Back up each A-scenario save before its first route-dependent choice.",
+            "3": "Close the game, copy the save folder to a dated location, and label the character, mode, difficulty, and A-route choices. Restore only while the game and cloud synchronization are closed; B scenarios inherit decisions from their linked A file."
+          }
+        },
+        {
+          "id": "setup-leon-claire-pair",
+          "type": "optional",
+          "safe_type": "Route Pair",
+          "label": "Leon A to Claire B",
+          "missable": false,
+          "levels": {
+            "1": "One first route creates the other character's linked continuation.",
+            "2": "Finish Leon A, save the clear data, then finish Claire B from it.",
+            "3": "Choose Leon for Scenario A on Original Normal, complete the route, and save when the clear-data prompt appears. Load that clear file rather than New Game to begin Claire B, then finish it to record the complete linked pair."
+          }
+        },
+        {
+          "id": "setup-claire-leon-pair",
+          "type": "optional",
+          "safe_type": "Route Pair",
+          "label": "Claire A to Leon B",
+          "missable": false,
+          "levels": {
+            "1": "Reverse the starting character for the second route pair.",
+            "2": "Finish Claire A, save the clear data, then finish Leon B from it.",
+            "3": "Choose Claire for Scenario A on Original Normal and preserve the resulting clear file. Load that file to start Leon B and finish the linked route; this pair contains different room access, equipment timing, and route mechanics from Leon A to Claire B."
+          }
+        },
+        {
+          "id": "setup-ledger",
+          "type": "optional",
+          "safe_type": "Completion Ledger",
+          "label": "Maintain Separate Route Columns",
+          "missable": false,
+          "levels": {
+            "1": "Several objects exist in only one route or character campaign.",
+            "2": "Track Leon A, Claire B, Claire A, and Leon B separately.",
+            "3": "Create four scenario columns plus columns for Original, Arrange, Hard, rankings, bonus modes, files, weapons, and secrets. Mark an entry only after performing it in the specified route; seeing the corresponding item in another scenario is not equivalent."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before building each linked pair",
+        "why": "A-scenario choices persist into the B clear data."
+      }
+    },
+    {
+      "id": "scenario-matrix",
+      "name": "Scenario Matrix",
+      "location_cue": "The city streets, police-station approaches, and four character-route selectors.",
+      "note": "SAVE-BACKUP: each A clear file is the only clean gateway into its linked B scenario.",
+      "items": [
+        {
+          "id": "scenario-leon-a",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Complete Leon A",
+          "missable": false,
+          "levels": {
+            "1": "Follow this route without assuming the opposite character visits identical rooms.",
+            "2": "Start Leon and finish the full scenario through its clear-data result.",
+            "3": "Select Leon using Original Normal. Collect that route's files and character weapons, finish every mandatory physical puzzle, and save the result when prompted. Confirm the completion ledger records Claire B before overwriting any branch save."
+          }
+        },
+        {
+          "id": "scenario-claire-b",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Complete Claire B",
+          "missable": false,
+          "levels": {
+            "1": "Follow this route without assuming the opposite character visits identical rooms.",
+            "2": "Start Claire from Leon clear data and finish the full scenario through its clear-data result.",
+            "3": "Select Claire from Leon clear data using Original Normal. Collect that route's files and character weapons, finish every mandatory physical puzzle, and save the result when prompted. Confirm the completion ledger records linked pair result before overwriting any branch save."
+          }
+        },
+        {
+          "id": "scenario-claire-a",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Complete Claire A",
+          "missable": false,
+          "levels": {
+            "1": "Follow this route without assuming the opposite character visits identical rooms.",
+            "2": "Start Claire and finish the full scenario through its clear-data result.",
+            "3": "Select Claire using Original Normal. Collect that route's files and character weapons, finish every mandatory physical puzzle, and save the result when prompted. Confirm the completion ledger records Leon B before overwriting any branch save."
+          }
+        },
+        {
+          "id": "scenario-leon-b",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Complete Leon B",
+          "missable": false,
+          "levels": {
+            "1": "Follow this route without assuming the opposite character visits identical rooms.",
+            "2": "Start Leon from Claire clear data and finish the full scenario through its clear-data result.",
+            "3": "Select Leon from Claire clear data using Original Normal. Collect that route's files and character weapons, finish every mandatory physical puzzle, and save the result when prompted. Confirm the completion ledger records linked pair result before overwriting any branch save."
+          }
+        },
+        {
+          "id": "scenario-pair-leon-claire",
+          "type": "optional",
+          "safe_type": "Route Pair",
+          "label": "Finish the Leon A / Claire B Pair",
+          "missable": false,
+          "levels": {
+            "1": "Treat linked scenarios as one mechanical route with inherited choices.",
+            "2": "Complete Leon A and its resulting Claire B clear data consecutively.",
+            "3": "Finish Leon A, retain its clear file, and load that exact file for Claire B. Verify the basement locker, corridor shutter, laboratory gas, and fingerprint states reflect the A decisions before finishing the second scenario."
+          }
+        },
+        {
+          "id": "scenario-pair-claire-leon",
+          "type": "optional",
+          "safe_type": "Route Pair",
+          "label": "Finish the Claire A / Leon B Pair",
+          "missable": false,
+          "levels": {
+            "1": "The reversed pair has its own equipment and route timing.",
+            "2": "Complete Claire A and its resulting Leon B clear data consecutively.",
+            "3": "Finish Claire A and load its clear data for Leon B. Collect the complementary character weapons, inspect the inherited zapping states, and keep this pair's clear files separate from the opposite starting order."
+          }
+        },
+        {
+          "id": "scenario-a-street-variants",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Record Both Scenario A Street Routes",
+          "missable": true,
+          "levels": {
+            "1": "The two protagonists begin on opposite sides of the same obstruction.",
+            "2": "Play the opening streets once as Leon A and once as Claire A.",
+            "3": "Use separate New Game files for Leon A and Claire A. Visit each accessible storefront and cabin, collect the character-specific firearm, and reach the police-station entrance on both; keep a second item-free attempt for the Special Key."
+          }
+        },
+        {
+          "id": "scenario-b-entry-variants",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Record Both Scenario B Entrances",
+          "missable": false,
+          "levels": {
+            "1": "The linked routes enter the station through a different exterior approach.",
+            "2": "Reach the police station once in Claire B and once in Leon B.",
+            "3": "Load each opposite A clear file, traverse the rear exterior path, and collect the route-specific Cabin Key before entering. Do not overwrite the clear data until both B-entry item layouts have been checked."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve both A clear files",
+        "why": "Starting a B scenario from the wrong file loses inherited states."
+      },
+      "point_of_no_return": {
+        "title": "Saving clear data commits the linked route",
+        "why": "Keep the pre-clear save and resulting clear file under different names."
+      }
+    },
+    {
+      "id": "station-and-sewer-puzzles",
+      "name": "Station and Sewer Puzzles",
+      "location_cue": "The police station's public rooms, upper library, basement, and the water channels below it.",
+      "note": "These answers expose only physical interactions and item results.",
+      "items": [
+        {
+          "id": "puzzle-unicorn-medal",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Unicorn Medal Statue",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the S.T.A.R.S. Office and Main Hall, take the medal beneath the desk diary and place it in the central statue.",
+            "3": "Bring the route items required to reach the S.T.A.R.S. Office and Main Hall. Take the medal beneath the desk diary and place it in the central statue; then collect or confirm the Spade Key. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "puzzle-safe-2236",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "West Office Safe",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the West Office, enter 2236 at the safe.",
+            "3": "Bring the route items required to reach the West Office. Enter 2236 at the safe; then collect or confirm the police-station map and route ammunition. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "puzzle-fireplace-jewel",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Fireplace Red Jewel",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the rear Operations Room, use the Lighter on the fireplace.",
+            "3": "Bring the route items required to reach the rear Operations Room. Use the Lighter on the fireplace; then collect or confirm the first Red Jewel. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "puzzle-statue-jewel",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Three-Statue Red Jewel",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the second-floor statue gallery, push both side statues onto the brown pressure plates.",
+            "3": "Bring the route items required to reach the second-floor statue gallery. Push both side statues onto the brown pressure plates; then collect or confirm the second Red Jewel. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "puzzle-library-shelves",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Library Bookshelf Plate",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the Library, drop through the weak upper floor and shift the left and middle shelves one space right.",
+            "3": "Bring the route items required to reach the Library. Drop through the weak upper floor and shift the left and middle shelves one space right; then collect or confirm the route-specific plate item. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "puzzle-red-jewels",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Twin-Jewel Wall Display",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the glass-ceiling display room, insert both Red Jewels into the matching wall figures.",
+            "3": "Bring the route items required to reach the glass-ceiling display room. Insert both Red Jewels into the matching wall figures; then collect or confirm the King Plug or Claire's corresponding stone piece. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "puzzle-press-fire",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Press Room Furnace Order",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the Press Room, ignite the furnace and activate the right, middle, then left statues.",
+            "3": "Bring the route items required to reach the Press Room. Ignite the furnace and activate the right, middle, then left statues; then collect or confirm the Golden Cogwheel. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "puzzle-clock-tower",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Clock Tower Mechanism",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the Clock Tower attic, use the Crank to lower the steps and fit the Golden Cogwheel into the mechanism.",
+            "3": "Bring the route items required to reach the Clock Tower attic. Use the Crank to lower the steps and fit the Golden Cogwheel into the mechanism; then collect or confirm the Knight Plug or second stone half. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "puzzle-basement-power",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Basement Power Panel",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the basement power room, set the switches Up, Down, Up, Down, Up, Up.",
+            "3": "Bring the route items required to reach the basement power room. Set the switches Up, Down, Up, Down, Up, Up; then collect or confirm restored electronic locks. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "puzzle-crate-room",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Sewer Crate Bridge",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the lower crate room, push the right crate to the wall, align the middle beside it, then align the left.",
+            "3": "Bring the route items required to reach the lower crate room. Push the right crate to the wall, align the middle beside it, then align the left; then collect or confirm a raised bridge after operating the water controls. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "puzzle-medal-waterfall",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Sewer Waterfall Panel",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the flooded sewer passage, insert the Wolf Medal and Eagle Medal into the panel.",
+            "3": "Bring the route items required to reach the flooded sewer passage. Insert the Wolf Medal and Eagle Medal into the panel; then collect or confirm the route beyond the waterfall. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "puzzle-flare-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Cable-Car Platform Key",
+          "missable": true,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the cable-car arrival platform, inspect the corner beside the flare.",
+            "3": "Bring the route items required to reach the cable-car arrival platform. Inspect the corner beside the flare; then collect or confirm the Weapon Box Key. Recheck the room before discarding any exhausted key."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before emptying the basement locker",
+        "why": "Its contents are inherited by the linked B scenario."
+      }
+    },
+    {
+      "id": "weapons-and-upgrades",
+      "name": "Weapons and Upgrades",
+      "location_cue": "Character-specific street pickups, police weapon lockers, factory tunnels, and laboratory cabinets.",
+      "note": "Collect every physical weapon with the character and scenario listed.",
+      "items": [
+        {
+          "id": "weapon-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Combat Knife",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Combat Knife from both starting inventories.",
+            "3": "Open each character's inventory at the start and highlight the knife; the bonus knife-only mode has its own completion entry."
+          }
+        },
+        {
+          "id": "weapon-leon-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Leon's Handgun",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Leon's Handgun from Leon's starting inventory.",
+            "3": "Begin any Leon route and confirm the handgun and ammunition appear before leaving the opening area."
+          }
+        },
+        {
+          "id": "weapon-claire-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Claire's Handgun",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Claire's Handgun from Claire's starting inventory.",
+            "3": "Begin any Claire route and confirm her distinct handgun appears before collecting a street weapon."
+          }
+        },
+        {
+          "id": "weapon-shotgun-a",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun — Leon A",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Shotgun — Leon A from the gun shop or S.T.A.R.S. Office.",
+            "3": "On Leon A, take the Shotgun from the gun-shop counter after the room is safe; the S.T.A.R.S. Office provides another opportunity if it was missed."
+          }
+        },
+        {
+          "id": "weapon-shotgun-b",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun — Leon B",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Shotgun — Leon B from the Main Hall front desk.",
+            "3": "On Leon B, inspect the front desk immediately after reaching the Main Hall and take the Shotgun before advancing upstairs."
+          }
+        },
+        {
+          "id": "weapon-bowgun-a",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Bow Gun — Claire A",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Bow Gun — Claire A from the gun shop or street cabin.",
+            "3": "On Claire A, take the Bow Gun from the gun-shop counter; if it is missed, check the later street cabin before entering the station route fully."
+          }
+        },
+        {
+          "id": "weapon-bowgun-b",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Bow Gun — Claire B",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Bow Gun — Claire B from the S.T.A.R.S. Office.",
+            "3": "On Claire B, open the weapon locker in the S.T.A.R.S. Office and take the Bow Gun before leaving that wing."
+          }
+        },
+        {
+          "id": "weapon-grenade-a",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade Launcher — Claire A",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Grenade Launcher — Claire A from the S.T.A.R.S. Office.",
+            "3": "On Claire A, inspect the S.T.A.R.S. Office weapon storage and take the Grenade Launcher; test each ammunition family as it is found."
+          }
+        },
+        {
+          "id": "weapon-grenade-b",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade Launcher — Claire B",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Grenade Launcher — Claire B from the Main Hall front desk.",
+            "3": "On Claire B, inspect the Main Hall desk during the first station visit and collect the Grenade Launcher before the route moves upstairs."
+          }
+        },
+        {
+          "id": "weapon-magnum-a",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Magnum — Leon A",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Magnum — Leon A from the Watchman's Room bedside table.",
+            "3": "Use the Club Key on the basement bedroom, read the diary, and collect the Magnum from the small table beside the lower bunk."
+          }
+        },
+        {
+          "id": "weapon-magnum-b",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Magnum — Leon B",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Magnum — Leon B from the S.T.A.R.S. Office locker.",
+            "3": "On Leon B, open the S.T.A.R.S. Office weapon locker and take the Magnum during the first full station circuit."
+          }
+        },
+        {
+          "id": "weapon-spark-shot",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Spark Shot",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Spark Shot from the factory exit tunnels.",
+            "3": "As Claire, inspect the dead-end factory corridor before boarding the moving platform and take the two-slot Spark Shot."
+          }
+        },
+        {
+          "id": "weapon-flamethrower",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Flamethrower",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Flamethrower from the laboratory gas-room locker.",
+            "3": "As Leon, raise the plant-wing shutter, open the locker in the gas room, and take the two-slot Flamethrower before descending."
+          }
+        },
+        {
+          "id": "weapon-custom-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Custom Handgun",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Custom Handgun from the locked desk near the Library.",
+            "3": "Find the Small Key in the waiting room, open the gray desk near the Library-side reception, and combine the Handgun Parts with Leon's handgun."
+          }
+        },
+        {
+          "id": "weapon-custom-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Custom Shotgun",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Custom Shotgun from the factory tunnel body.",
+            "3": "After the cable-car ride, search the branch ending at a body, take the Shotgun Parts, and combine them with Leon's Shotgun."
+          }
+        },
+        {
+          "id": "weapon-custom-magnum",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Custom Magnum",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Custom Magnum from the blue-lit laboratory locker.",
+            "3": "Collect the Weapon Box Key beside the cable-car flare, use it on the blue-lit laboratory locker as Leon, and combine the Magnum Parts with the Magnum."
+          }
+        },
+        {
+          "id": "weapon-submachine-gun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Submachine Gun",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Submachine Gun from the powered basement armory.",
+            "3": "Solve the electrical panel first, then open the armory with the Red Card Key. Take the Submachine Gun in either A or linked B, using a branch backup to record every inherited locker state."
+          }
+        },
+        {
+          "id": "equipment-side-pack",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Side Pack",
+          "missable": false,
+          "levels": {
+            "1": "Check character-specific weapon surfaces before crossing the next major route door.",
+            "2": "Collect Side Pack from the powered basement armory.",
+            "3": "Solve the electrical panel first and open the armory with the Red Card Key. Equip the Side Pack in either A or linked B to expand that character's inventory."
+          }
+        }
+      ]
+    },
+    {
+      "id": "factory-and-laboratory",
+      "name": "Factory and Laboratory",
+      "location_cue": "The cable-car terminus, industrial platform, colored laboratory wings, cold room, and lower work corridors.",
+      "note": "SAVE-BACKUP: gas and fingerprint choices are inherited by the linked route.",
+      "items": [
+        {
+          "id": "lab-main-fuse",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Main Fuse",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the cold processing room and central laboratory hub, place the Fuse Case in the processing console, take the finished fuse, and install it at the hub.",
+            "3": "Bring the route items required to reach the cold processing room and central laboratory hub. Place the Fuse Case in the processing console, take the finished fuse, and install it at the hub; then collect or confirm power across the laboratory. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "lab-guest-terminal",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Guest Registration Terminal",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the moth room, clear the growth from the keyboard, enter GUEST, and register the active fingerprint.",
+            "3": "Bring the route items required to reach the moth room. Clear the growth from the keyboard, enter GUEST, and register the active fingerprint; then collect or confirm the first half of the linked verification. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "lab-fingerprint-room",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Linked Fingerprint Door",
+          "missable": true,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the blue-wing verification console, register one fingerprint in A and the partner fingerprint in its linked B save.",
+            "3": "Bring the route items required to reach the blue-wing verification console. Register one fingerprint in A and the partner fingerprint in its linked B save; then collect or confirm access to the sealed weapon room. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "lab-mo-disk",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "MO Disk Shutter",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby desks, artwork, machinery, and movable furniture before leaving.",
+            "2": "At the lower laboratory and final shutter console, take the MO Disk from the lit work area and insert it at the corridor reader.",
+            "3": "Bring the route items required to reach the lower laboratory and final shutter console. Take the MO Disk from the lit work area and insert it at the corridor reader; then collect or confirm the route through the shutter. Recheck the room before discarding any exhausted key."
+          }
+        },
+        {
+          "id": "lab-weapon-box-leon",
+          "type": "weapon",
+          "safe_type": "Upgrade",
+          "label": "Weapon Box Key — Leon Reward",
+          "missable": false,
+          "levels": {
+            "1": "A small key from the factory serves a character-specific laboratory locker.",
+            "2": "As Leon, use the Weapon Box Key on the blue-lit laboratory locker.",
+            "3": "Take the Weapon Box Key from beside the cable-car flare, retain it through the factory, and use it on the blue-lit locker in the lower laboratory. Collect the Magnum Parts and combine them with the Magnum."
+          }
+        },
+        {
+          "id": "lab-weapon-box-claire",
+          "type": "weapon",
+          "safe_type": "Ammunition",
+          "label": "Weapon Box Key — Claire Reward",
+          "missable": false,
+          "levels": {
+            "1": "The same factory key yields a different item for Claire.",
+            "2": "As Claire, use the Weapon Box Key on the blue-lit laboratory locker.",
+            "3": "Carry the Weapon Box Key from the cable-car platform into Claire's laboratory route. Unlock the blue-lit cabinet and collect both sets of grenade ammunition; Claire does not receive a matching weapon upgrade there."
+          }
+        },
+        {
+          "id": "lab-vaccine-process",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Vaccine Processing — Claire A",
+          "missable": true,
+          "levels": {
+            "1": "A route-specific cartridge is completed using two machines in the lit work room.",
+            "2": "In Claire A, insert the Vaccine Cartridge and operate the adjacent processing equipment.",
+            "3": "Bring the empty cartridge to the lit lower work room, insert it at the computer, start the nearby machine, and collect the Base Vaccine. Return it to the upper processing unit and retrieve the finished item before leaving."
+          }
+        },
+        {
+          "id": "lab-gas-unused",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Leave the Emergency Gas Unused",
+          "missable": true,
+          "levels": {
+            "1": "An optional laboratory switch changes the linked route's enemies.",
+            "2": "Finish one A-to-B pair without releasing the gas.",
+            "3": "At the plant-wing gas controls in Scenario A, do not operate the release. Continue normally, then load the linked B file and inspect the corresponding corridor to record the untreated enemy state."
+          }
+        },
+        {
+          "id": "lab-gas-used",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Release the Emergency Gas",
+          "missable": true,
+          "levels": {
+            "1": "Use a backup to observe the alternative linked-route state.",
+            "2": "Release the gas in Scenario A and revisit the plant wing in linked B.",
+            "3": "Restore the A-scenario branch backup, activate the emergency gas control, and finish to a new clear file. Load its linked B scenario; the surviving plants now inflict poison, so carry a cure before entering."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before the gas controls and terminal",
+        "why": "Both choices require a linked B file to verify their results."
+      },
+      "point_of_no_return": {
+        "title": "The lower transport route closes laboratory cleanup",
+        "why": "Collect route files, the Weapon Box reward, and fingerprint-room contents first."
+      }
+    },
+    {
+      "id": "complete-file-archive",
+      "name": "Complete File Archive",
+      "location_cue": "Document surfaces throughout the police station, sewers, factory, and laboratory.",
+      "note": "There are 22 files. Films count only after development and inspection.",
+      "items": [
+        {
+          "id": "file-police-memorandum",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Police Memorandum",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Police Memorandum at the waiting room seats.",
+            "3": "Reach the waiting room seats, inspect the document until its title appears, and open Police Memorandum once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-chriss-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Chris's Diary",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Chris's Diary at the STARS Chris desk.",
+            "3": "Inspect Chris's desk in the S.T.A.R.S. Office during Leon A, Leon B, or Claire A. In Claire B the file is supplied by the linked route; verify it in the menu."
+          }
+        },
+        {
+          "id": "file-mail-to-chris",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Mail to Chris",
+          "missable": true,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Mail to Chris at the STARS fax.",
+            "3": "Reach the STARS fax, inspect the document until its title appears, and open Mail to Chris once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-operation-report-1",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Operation Report 1",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Operation Report 1 at the operations room desk.",
+            "3": "Reach the operations room desk, inspect the document until its title appears, and open Operation Report 1 once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-memo-to-leon",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Memo to Leon",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Memo to Leon at the west office east desk.",
+            "3": "Reach the west office east desk, inspect the document until its title appears, and open Memo to Leon once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-operation-report-2",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Operation Report 2",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Operation Report 2 at the dark room table.",
+            "3": "Reach the dark room table, inspect the document until its title appears, and open Operation Report 2 once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-chiefs-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Chief's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Chief's Diary at the chief office desk.",
+            "3": "Reach the chief office desk, inspect the document until its title appears, and open Chief's Diary once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-film-a",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Film A",
+          "missable": true,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Film A at the evidence room rear locker.",
+            "3": "Take Film A from the rear Evidence Room locker in an A route, carry it to the Dark Room, use the development tray, and inspect the resulting photograph."
+          }
+        },
+        {
+          "id": "file-film-b",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Film B",
+          "missable": true,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Film B at the press table or locker.",
+            "3": "In A, take Film B from the rear Press Room table; in B, use the Evidence Room locker. Develop it in the Dark Room and inspect the photograph."
+          }
+        },
+        {
+          "id": "file-film-c",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Film C",
+          "missable": true,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Film C at the B route cellblock table.",
+            "3": "Use either B scenario, inspect the table beside the cell gate, take Film C, and return to the Dark Room development tray before leaving the station."
+          }
+        },
+        {
+          "id": "file-film-d",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Film D",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Film D at the search Wesker desk fifty times.",
+            "3": "Stand at Wesker's desk in the S.T.A.R.S. Office and examine the same interaction point fifty times. Take Film D, develop it in the Dark Room, and inspect the hidden photograph."
+          }
+        },
+        {
+          "id": "file-patrol-report",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Patrol Report",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Patrol Report at the file storage shelves.",
+            "3": "Reach the file storage shelves, inspect the document until its title appears, and open Patrol Report once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-secretarys-diary-a",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Secretary's Diary A",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Secretary's Diary A at the second floor waiting desk.",
+            "3": "Reach the second floor waiting desk, inspect the document until its title appears, and open Secretary's Diary A once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-secretarys-diary-b",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Secretary's Diary B",
+          "missable": true,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Secretary's Diary B at the taxidermy room rear table.",
+            "3": "Reach the taxidermy room rear table, inspect the document until its title appears, and open Secretary's Diary B once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-watchmans-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Watchman's Diary",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Watchman's Diary at the lower bunk.",
+            "3": "Reach the lower bunk, inspect the document until its title appears, and open Watchman's Diary once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-mail-to-chief",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Mail to Chief",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Mail to Chief at the route specific lower office.",
+            "3": "As Leon, register this file when the lower route provides it. As Claire, inspect the floor in the concealed elevator area behind the chief's desk; open the file menu once after pickup."
+          }
+        },
+        {
+          "id": "file-sewer-manager-fax",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Sewer Manager Fax",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Sewer Manager Fax at the route control room table.",
+            "3": "Reach the route control room table, inspect the document until its title appears, and open Sewer Manager Fax once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-sewer-manager-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Sewer Manager Diary",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Sewer Manager Diary at the upper walkway panel.",
+            "3": "Reach the upper walkway panel, inspect the document until its title appears, and open Sewer Manager Diary once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-laboratory-security-manual",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Laboratory Security Manual",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Laboratory Security Manual at the sleeping quarter desk.",
+            "3": "Reach the sleeping quarter desk, inspect the document until its title appears, and open Laboratory Security Manual once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-p-epsilon-report",
+          "type": "file",
+          "safe_type": "File",
+          "label": "P-Epsilon Report",
+          "missable": true,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect P-Epsilon Report at the B route steam room floor.",
+            "3": "Reach the B route steam room floor, inspect the document until its title appears, and open P-Epsilon Report once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-user-registration",
+          "type": "file",
+          "safe_type": "File",
+          "label": "User Registration",
+          "missable": false,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect User Registration at the sleeping quarter seats.",
+            "3": "Reach the sleeping quarter seats, inspect the document until its title appears, and open User Registration once in the file menu. Verify it remains listed before crossing the next major route boundary."
+          }
+        },
+        {
+          "id": "file-vaccine-synthesis",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Vaccine Synthesis",
+          "missable": true,
+          "levels": {
+            "1": "Read desks, seats, shelves, fax trays, and route-provided documents carefully.",
+            "2": "Collect Vaccine Synthesis at the Claire A laboratory route.",
+            "3": "Use Claire A and progress through the lower laboratory route until the document is provided mechanically. Open the file menu immediately and confirm Vaccine Synthesis is listed before continuing."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before leaving each major location",
+        "why": "Several files exist only in A, B, Claire, or a specific linked route."
+      }
+    },
+    {
+      "id": "linked-route-zapping",
+      "name": "Linked-Route Zapping Matrix",
+      "location_cue": "Shared police-station lockers, a damaged west corridor, and the laboratory's paired security terminals.",
+      "note": "SAVE-BACKUP: these mutually exclusive states require restored A files and fresh linked B clears.",
+      "items": [
+        {
+          "id": "zapping-locker-none",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Basement Locker — Leave Both",
+          "missable": true,
+          "levels": {
+            "1": "The A character can reserve both rewards for the linked partner.",
+            "2": "Open the powered armory in A but leave both locker items untouched.",
+            "3": "Restore basement power and use the Red Card Key in A. Inspect the Submachine Gun and Side Pack without taking either, finish the route, then load linked B and collect both from the same locker."
+          }
+        },
+        {
+          "id": "zapping-locker-smg",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Basement Locker — Take the Submachine Gun",
+          "missable": true,
+          "levels": {
+            "1": "Taking one object reserves the other for linked B.",
+            "2": "In A, take only the Submachine Gun from the armory locker.",
+            "3": "Use an A-route backup, unlock the armory, take the two-slot Submachine Gun, and leave the Side Pack. Finish and load linked B; verify only the Side Pack remains."
+          }
+        },
+        {
+          "id": "zapping-locker-pack",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Basement Locker — Take the Side Pack",
+          "missable": true,
+          "levels": {
+            "1": "Reverse the shared reward choice on another branch.",
+            "2": "In A, equip only the Side Pack from the armory locker.",
+            "3": "Restore the pre-locker backup, unlock the armory, equip the Side Pack, and leave the Submachine Gun. Finish to a separate clear file and verify linked B receives only the firearm."
+          }
+        },
+        {
+          "id": "zapping-locker-both",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Basement Locker — Take Both",
+          "missable": true,
+          "levels": {
+            "1": "One branch should record the empty linked locker state.",
+            "2": "In A, remove both the Submachine Gun and Side Pack.",
+            "3": "Reload the A backup, take both armory rewards, finish, and start linked B from that clear data. Reopen the powered armory and confirm the shared locker is empty."
+          }
+        },
+        {
+          "id": "zapping-shutter-unused",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Leave the Shutter Cord Unused",
+          "missable": true,
+          "levels": {
+            "1": "A station defense switch changes a later corridor state.",
+            "2": "Finish one A branch without fitting the Cord into the shutter panel.",
+            "3": "When the route reaches the damaged west corridor, keep the Cord in storage or leave it behind. Finish to linked B and revisit the affected passage before restoring the alternate branch."
+          }
+        },
+        {
+          "id": "zapping-shutter-used",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Install the Shutter Cord",
+          "missable": true,
+          "levels": {
+            "1": "Use the same backup to record the powered defense state.",
+            "2": "Fit the Cord in the west-corridor wall box and close the shutters.",
+            "3": "Restore the pre-choice save, bring the Cord to the wall panel, install it, and activate the shutters. Finish A, load linked B, and inspect the changed corridor state."
+          }
+        },
+        {
+          "id": "zapping-fingerprint",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Open the Linked Fingerprint Room",
+          "missable": true,
+          "levels": {
+            "1": "This sealed room requires actions in both halves of one route pair.",
+            "2": "Register at the laboratory console in A and again in linked B.",
+            "3": "In A, enter GUEST at the cleared terminal and register the active fingerprint at the blue-wing console. Finish and load linked B, repeat both registrations, then open the verification door and collect its weapon or ammunition reward."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep one pre-choice A save",
+        "why": "Create a separately named clear file for every inherited state."
+      }
+    },
+    {
+      "id": "pc-modes-and-difficulties",
+      "name": "PC Modes and Difficulties",
+      "location_cue": "The PC main menu, Original and Arrange selectors, difficulty options, and Gallery tabs.",
+      "note": "The current Windows release exposes its bonus modes immediately, but their clears still count.",
+      "items": [
+        {
+          "id": "mode-original-normal",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Original Mode — Normal",
+          "missable": false,
+          "levels": {
+            "1": "Use the stricter PC ruleset for the main completion and weapon unlocks.",
+            "2": "Clear both A/B route pairs on Original Normal.",
+            "3": "Complete Leon A to Claire B and Claire A to Leon B on Original Normal. Use these four runs for the file, weapon, ranking, Special Key, and zapping ledgers because Easy cannot award the secret unlocks."
+          }
+        },
+        {
+          "id": "mode-original-easy",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Original Mode — Easy",
+          "missable": false,
+          "levels": {
+            "1": "A separate starting loadout demonstrates the assistance ruleset.",
+            "2": "Finish one representative Scenario A on Original Easy.",
+            "3": "Start a new Original Easy file, inspect the infinite Submachine Gun in the starting inventory, and finish one Scenario A. Record the clear separately; do not use it for costumes or infinite-weapon unlock conditions."
+          }
+        },
+        {
+          "id": "mode-arrange-normal",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Arrange Mode — Normal",
+          "missable": false,
+          "levels": {
+            "1": "This ruleset changes placements, assistance, supply size, and rank lettering.",
+            "2": "Clear both A/B route pairs on Arrange Normal.",
+            "3": "Complete all four scenarios in Arrange Normal, checking shifted item and enemy placements rather than following the Original layout blindly. Confirm three ribbons per pickup, auto-aim behavior, and the S-labelled top rank."
+          }
+        },
+        {
+          "id": "mode-hard-unlock",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Unlock Hard Mode",
+          "missable": false,
+          "levels": {
+            "1": "One completed scenario adds a harder option to both mode families.",
+            "2": "Finish any scenario once and return to the mode selector.",
+            "3": "Complete any full scenario, save the clear data, and return to the main menu. Open both Original and Arrange selectors and confirm Hard is available in each; the PC release gives no separate reward for a Hard clear."
+          }
+        },
+        {
+          "id": "mode-original-hard",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Original Mode — Hard Pair",
+          "missable": false,
+          "levels": {
+            "1": "Use a linked pair to verify the PC-exclusive higher difficulty.",
+            "2": "Finish one complete A-to-B pair on Original Hard.",
+            "3": "After unlocking Hard, begin either A character in Original Hard, finish and save clear data, then complete its linked B scenario on the same difficulty. Do not expect an additional item unlock."
+          }
+        },
+        {
+          "id": "mode-arrange-hard",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Arrange Mode — Hard Pair",
+          "missable": false,
+          "levels": {
+            "1": "The second mode family also exposes its own Hard selection.",
+            "2": "Finish one complete A-to-B pair on Arrange Hard.",
+            "3": "Select Arrange Hard, complete either A scenario, save the clear result, and finish the linked B scenario. Verify the Arrange placement rules remain active alongside Hard combat values."
+          }
+        },
+        {
+          "id": "mode-gallery",
+          "type": "optional",
+          "safe_type": "Gallery",
+          "label": "Inspect the Complete PC Gallery",
+          "missable": false,
+          "levels": {
+            "1": "Completed routes populate several art and model categories.",
+            "2": "Open Gallery Mode and inspect every populated thumbnail in every tab.",
+            "3": "After the four scenarios and bonus modes are complete, enter Gallery Mode. Open each available movie, rough sketch, illustration, and 3D model entry at least once; revisit after the final clear and confirm no newly filled thumbnail remains unopened."
+          }
+        }
+      ]
+    },
+    {
+      "id": "rankings-and-clear-unlocks",
+      "name": "Rankings and Clear Unlocks",
+      "location_cue": "Result screens, clear-data prompts, the station entrance tunnel, Dark Room wardrobe, and subsequent Item Boxes.",
+      "note": "SAVE-BACKUP: protect finished clear data before testing unlocks or the ammunition input.",
+      "items": [
+        {
+          "id": "rank-original-a",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Earn Original Rank A",
+          "missable": false,
+          "levels": {
+            "1": "Time, sprays, saves, and used infinite weapons determine the result.",
+            "2": "Finish an Original scenario with at least 270 ranking points.",
+            "3": "Finish within 2:30 for the full time score, avoid First Aid Sprays, minimize saves, and do not fire an unlocked infinite weapon. The four categories must total at least 270 for Original A."
+          }
+        },
+        {
+          "id": "rank-arrange-s",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Earn Arrange Rank S",
+          "missable": false,
+          "levels": {
+            "1": "The equivalent top performance uses a different letter in Arrange.",
+            "2": "Finish an Arrange scenario at the top threshold and receive S.",
+            "3": "Use the same high-rank discipline as Original: target 2:30 or faster, heal with herbs, avoid saves, and leave infinite weapons unused. Arrange labels the top result S rather than A."
+          }
+        },
+        {
+          "id": "rank-time-score",
+          "type": "interaction",
+          "safe_type": "Rank Rule",
+          "label": "Understand the Time Score",
+          "missable": false,
+          "levels": {
+            "1": "The clock loses points in fixed half-hour blocks.",
+            "2": "Keep the result at or below 2:30 for 100 time points.",
+            "3": "The time category starts at 100 through 2:30. Each additional thirty-minute block removes ten points, so build route splits and pause only when the game actually stops its timer."
+          }
+        },
+        {
+          "id": "rank-healing-score",
+          "type": "interaction",
+          "safe_type": "Rank Rule",
+          "label": "Understand the Healing Score",
+          "missable": false,
+          "levels": {
+            "1": "One healing family is penalized; herbs are safe.",
+            "2": "Use no First Aid Sprays for 100 healing points.",
+            "3": "Heal with green, red, and blue herb mixtures. Each used First Aid Spray removes ten points, and three or more sprays reduce this category to zero."
+          }
+        },
+        {
+          "id": "rank-save-score",
+          "type": "interaction",
+          "safe_type": "Rank Rule",
+          "label": "Understand the Save Score",
+          "missable": false,
+          "levels": {
+            "1": "Every typewriter use reduces the result slightly.",
+            "2": "Use zero saves for the full 100 save points.",
+            "3": "The save category begins at 100 and loses five points per save. A clear-data write after the result is not part of the completed run's typewriter count."
+          }
+        },
+        {
+          "id": "rank-infinite-penalty",
+          "type": "interaction",
+          "safe_type": "Rank Rule",
+          "label": "Avoid the Infinite-Weapon Penalty",
+          "missable": false,
+          "levels": {
+            "1": "Owning an unlocked weapon is safe; firing it is not.",
+            "2": "Leave infinite weapons unused during ranking attempts.",
+            "3": "An infinite weapon may remain in the Item Box without penalty. Equipping and using one removes fifty ranking points, so use ordinary ammunition until the result screen appears."
+          }
+        },
+        {
+          "id": "unlock-special-key",
+          "type": "key",
+          "safe_type": "Secret Key",
+          "label": "Special Key",
+          "missable": true,
+          "levels": {
+            "1": "A clean Scenario A street run makes an optional enemy appear below the entrance.",
+            "2": "On Original Normal Scenario A, reach the station without taking any street item.",
+            "3": "Start Scenario A on Original Normal and take nothing between the crash site and police-station front entrance. Enter the small tunnel below the steps, defeat the uniformed optional enemy, and collect the Special Key from it."
+          }
+        },
+        {
+          "id": "unlock-leon-outfits",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Leon's Two Alternate Outfits",
+          "missable": false,
+          "levels": {
+            "1": "A key from the station entrance opens the Dark Room wardrobe.",
+            "2": "As Leon, use the Special Key on the Dark Room locker.",
+            "3": "Carry the Special Key to the first-floor Dark Room and unlock the wardrobe as Leon. Try both the biker outfit and alternate police outfit; either changes his handgun stance and slightly improves handgun firing speed."
+          }
+        },
+        {
+          "id": "unlock-claire-outfit",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Claire's Alternate Outfit",
+          "missable": false,
+          "levels": {
+            "1": "The same wardrobe contains a different character reward.",
+            "2": "As Claire, use the Special Key on the Dark Room locker.",
+            "3": "Repeat the item-free Scenario A entrance as Claire or collect the key in her linked route, then unlock the Dark Room wardrobe. Equip the biker outfit once and take the Colt S.A.A. from the locker."
+          }
+        },
+        {
+          "id": "unlock-colt-saa",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Colt S.A.A.",
+          "missable": false,
+          "levels": {
+            "1": "Claire's wardrobe reward is also a distinct handgun.",
+            "2": "Take the Colt S.A.A. from Claire's unlocked Dark Room locker.",
+            "3": "Open the Special Key wardrobe as Claire and collect the six-round Colt S.A.A. It uses ordinary handgun bullets but fires faster and hits harder than her starting handgun; fire and reload it once."
+          }
+        },
+        {
+          "id": "unlock-infinite-rocket",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Infinite Rocket Launcher",
+          "missable": false,
+          "levels": {
+            "1": "A fast, high-ranked A scenario awards a clear-data weapon.",
+            "2": "Finish any Original Normal Scenario A under 2:30 with rank A or B.",
+            "3": "Use an A scenario, finish before 2:30, and keep the result at A or B. Save the clear data, load the next main-game run from it, and verify the Infinite Rocket Launcher appears in the Item Box."
+          }
+        },
+        {
+          "id": "unlock-infinite-smg",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Infinite Submachine Gun",
+          "missable": false,
+          "levels": {
+            "1": "The B-route firearm allows a slightly longer time limit.",
+            "2": "Finish any Original Normal Scenario B under 3:00 with rank A or B.",
+            "3": "Complete a B scenario before three hours with an A or B result, save its clear data, and load the following main-game cycle. Confirm the infinite Submachine Gun is stored in the Item Box."
+          }
+        },
+        {
+          "id": "unlock-infinite-gatling",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Infinite Gatling Gun",
+          "missable": false,
+          "levels": {
+            "1": "The strictest B-route reward also forbids saving.",
+            "2": "Finish any Original Normal Scenario B under 2:30, rank A or B, with zero saves.",
+            "3": "Run a B scenario from start to finish without using a typewriter, end before 2:30, and earn A or B. Save only at the post-result prompt, load the next cycle, and inspect the Item Box for the Infinite Gatling Gun."
+          }
+        },
+        {
+          "id": "secret-infinite-input",
+          "type": "interaction",
+          "safe_type": "Secret Input",
+          "label": "Infinite-Ammunition Input",
+          "missable": false,
+          "levels": {
+            "1": "A classic directional sequence can alter the currently held weapon.",
+            "2": "At the inventory screen, tap Up twice and Down twice; alternate Left and Right twice, then press Aim.",
+            "3": "Open the item screen during a disposable save and highlight a weapon. Tap the upward direction twice, the downward direction twice, alternate left and right for two cycles, and finish with Aim. Return to play and verify ammunition no longer decreases; keep this branch separate from ranked clears."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep an unmodified ranked clear file",
+        "why": "Testing cheats or overwriting clear data can obscure which reward was earned."
+      }
+    },
+    {
+      "id": "survivor-bonus-modes",
+      "name": "Survivor Bonus Modes",
+      "location_cue": "A reverse route from the sewers through the police station to an exterior endpoint.",
+      "note": "Both modes are available immediately in the PC rerelease; completion still requires a clear.",
+      "items": [
+        {
+          "id": "bonus-fourth-survivor-clear",
+          "type": "optional",
+          "safe_type": "Bonus Mode",
+          "label": "Clear 4th Survivor",
+          "missable": false,
+          "levels": {
+            "1": "The PC version starts this compact escape mode unlocked.",
+            "2": "Select 4th Survivor and reach the surface endpoint from the sewer start.",
+            "3": "Open the bonus-mode menu, choose 4th Survivor, and plan inventory slots before moving. Evade dense groups where possible, spend heavy ammunition only to open blocked lanes, conserve healing for the final station corridors, and reach the outdoor endpoint."
+          }
+        },
+        {
+          "id": "bonus-fourth-survivor-clean",
+          "type": "optional",
+          "safe_type": "Bonus Mode",
+          "label": "Record a Clean 4th Survivor Run",
+          "missable": false,
+          "levels": {
+            "1": "Repeat the route after learning where enemies block narrow doors.",
+            "2": "Complete 4th Survivor without continuing or restarting from a failed attempt.",
+            "3": "Memorize safe-side door entries, bait lunges before narrow turns, and reserve at least one full heal for the final exterior stretch. Finish in one uninterrupted attempt and retain the result screen in the completion ledger."
+          }
+        },
+        {
+          "id": "bonus-tofu-clear",
+          "type": "optional",
+          "safe_type": "Bonus Mode",
+          "label": "Clear Tofu Survivor",
+          "missable": false,
+          "levels": {
+            "1": "This variant removes firearms and emphasizes movement.",
+            "2": "Select Tofu Survivor and reach the surface using only its supplied knife and herbs.",
+            "3": "Open Tofu Survivor from the PC bonus menu. Use the knife only when a body fully seals a doorway, combine herbs for maximum recovery, take deliberate damage to pass unavoidable grabs, and preserve healing for the upper station and exterior finish."
+          }
+        },
+        {
+          "id": "bonus-tofu-clean",
+          "type": "optional",
+          "safe_type": "Bonus Mode",
+          "label": "Record a Clean Tofu Survivor Run",
+          "missable": false,
+          "levels": {
+            "1": "A second attempt verifies the knife-only route rather than a lucky finish.",
+            "2": "Complete Tofu Survivor in one uninterrupted attempt.",
+            "3": "Practice the same route until doorway baits and damage boosts are repeatable. Finish without restarting, using no equipment beyond the mode's supplied knife and herbs, and record the final result screen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "extreme-battle",
+      "name": "Extreme Battle",
+      "location_cue": "The laboratory monitor room, reverse factory and sewer route, and eight candidate rooms inside the police station.",
+      "note": "Complete all twelve character-and-level combinations; bomb placement can vary.",
+      "items": [
+        {
+          "id": "extreme-objective",
+          "type": "optional",
+          "safe_type": "Bonus Mode",
+          "label": "Complete the Extreme Battle Objective",
+          "missable": false,
+          "levels": {
+            "1": "Move from the laboratory to the station and search a rotating room set.",
+            "2": "Collect four Antivirus Bombs in the police station, then leave the room holding the fourth.",
+            "3": "Begin at the laboratory monitor room, travel backward through the factory and sewers, and reach the police station. Search the eight candidate rooms until the fourth bomb is collected, then exit that room to trigger the completed run."
+          }
+        },
+        {
+          "id": "extreme-leon-level-1",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Extreme Battle — Leon Level 1",
+          "missable": false,
+          "levels": {
+            "1": "Each character's inventory changes which encounters are worth fighting.",
+            "2": "Clear Extreme Battle Level 1 with Leon.",
+            "3": "Select Leon and Level 1. Preserve the character's strongest ammunition for narrow factory and sewer rooms, search the complete candidate-room loop, collect the fourth bomb, and leave that room to complete the run."
+          }
+        },
+        {
+          "id": "extreme-claire-level-1",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Extreme Battle — Claire Level 1",
+          "missable": false,
+          "levels": {
+            "1": "Each character's inventory changes which encounters are worth fighting.",
+            "2": "Clear Extreme Battle Level 1 with Claire.",
+            "3": "Select Claire and Level 1. Preserve the character's strongest ammunition for narrow factory and sewer rooms, search the complete candidate-room loop, collect the fourth bomb, and leave that room to complete the run."
+          }
+        },
+        {
+          "id": "extreme-ada-level-1",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Extreme Battle — Ada Level 1",
+          "missable": false,
+          "levels": {
+            "1": "Each character's inventory changes which encounters are worth fighting.",
+            "2": "Clear Extreme Battle Level 1 with Ada.",
+            "3": "Select Ada and Level 1. Preserve the character's strongest ammunition for narrow factory and sewer rooms, search the complete candidate-room loop, collect the fourth bomb, and leave that room to complete the run."
+          }
+        },
+        {
+          "id": "extreme-chris-level-1",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Extreme Battle — Chris Level 1",
+          "missable": false,
+          "levels": {
+            "1": "Each character's inventory changes which encounters are worth fighting.",
+            "2": "Clear Extreme Battle Level 1 with Chris.",
+            "3": "Select Chris and Level 1. Preserve the character's strongest ammunition for narrow factory and sewer rooms, search the complete candidate-room loop, collect the fourth bomb, and leave that room to complete the run."
+          }
+        },
+        {
+          "id": "extreme-leon-level-2",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Extreme Battle — Leon Level 2",
+          "missable": false,
+          "levels": {
+            "1": "Each character's inventory changes which encounters are worth fighting.",
+            "2": "Clear Extreme Battle Level 2 with Leon.",
+            "3": "Select Leon and Level 2. Preserve the character's strongest ammunition for narrow factory and sewer rooms, search the complete candidate-room loop, collect the fourth bomb, and leave that room to complete the run."
+          }
+        },
+        {
+          "id": "extreme-claire-level-2",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Extreme Battle — Claire Level 2",
+          "missable": false,
+          "levels": {
+            "1": "Each character's inventory changes which encounters are worth fighting.",
+            "2": "Clear Extreme Battle Level 2 with Claire.",
+            "3": "Select Claire and Level 2. Preserve the character's strongest ammunition for narrow factory and sewer rooms, search the complete candidate-room loop, collect the fourth bomb, and leave that room to complete the run."
+          }
+        },
+        {
+          "id": "extreme-ada-level-2",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Extreme Battle — Ada Level 2",
+          "missable": false,
+          "levels": {
+            "1": "Each character's inventory changes which encounters are worth fighting.",
+            "2": "Clear Extreme Battle Level 2 with Ada.",
+            "3": "Select Ada and Level 2. Preserve the character's strongest ammunition for narrow factory and sewer rooms, search the complete candidate-room loop, collect the fourth bomb, and leave that room to complete the run."
+          }
+        },
+        {
+          "id": "extreme-chris-level-2",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Extreme Battle — Chris Level 2",
+          "missable": false,
+          "levels": {
+            "1": "Each character's inventory changes which encounters are worth fighting.",
+            "2": "Clear Extreme Battle Level 2 with Chris.",
+            "3": "Select Chris and Level 2. Preserve the character's strongest ammunition for narrow factory and sewer rooms, search the complete candidate-room loop, collect the fourth bomb, and leave that room to complete the run."
+          }
+        },
+        {
+          "id": "extreme-leon-level-3",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Extreme Battle — Leon Level 3",
+          "missable": false,
+          "levels": {
+            "1": "Each character's inventory changes which encounters are worth fighting.",
+            "2": "Clear Extreme Battle Level 3 with Leon.",
+            "3": "Select Leon and Level 3. Preserve the character's strongest ammunition for narrow factory and sewer rooms, search the complete candidate-room loop, collect the fourth bomb, and leave that room to complete the run."
+          }
+        },
+        {
+          "id": "extreme-claire-level-3",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Extreme Battle — Claire Level 3",
+          "missable": false,
+          "levels": {
+            "1": "Each character's inventory changes which encounters are worth fighting.",
+            "2": "Clear Extreme Battle Level 3 with Claire.",
+            "3": "Select Claire and Level 3. Preserve the character's strongest ammunition for narrow factory and sewer rooms, search the complete candidate-room loop, collect the fourth bomb, and leave that room to complete the run."
+          }
+        },
+        {
+          "id": "extreme-ada-level-3",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Extreme Battle — Ada Level 3",
+          "missable": false,
+          "levels": {
+            "1": "Each character's inventory changes which encounters are worth fighting.",
+            "2": "Clear Extreme Battle Level 3 with Ada.",
+            "3": "Select Ada and Level 3. Preserve the character's strongest ammunition for narrow factory and sewer rooms, search the complete candidate-room loop, collect the fourth bomb, and leave that room to complete the run."
+          }
+        },
+        {
+          "id": "extreme-chris-level-3",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Extreme Battle — Chris Level 3",
+          "missable": false,
+          "levels": {
+            "1": "Each character's inventory changes which encounters are worth fighting.",
+            "2": "Clear Extreme Battle Level 3 with Chris.",
+            "3": "Select Chris and Level 3. Preserve the character's strongest ammunition for narrow factory and sewer rooms, search the complete candidate-room loop, collect the fourth bomb, and leave that room to complete the run."
+          }
+        },
+        {
+          "id": "extreme-candidate-clock-tower",
+          "type": "collectible",
+          "safe_type": "Search Point",
+          "label": "Extreme Bomb Candidate — Clock Tower machinery floor",
+          "missable": false,
+          "levels": {
+            "1": "If four bombs have not appeared, continue through another candidate room.",
+            "2": "Search the Clock Tower machinery floor during Extreme Battle.",
+            "3": "Visit the Clock Tower machinery floor after reaching the police station and inspect the normal item surface. Placement varies, especially on Levels 2 and 3; if no bomb is present, mark the room checked and continue until four are collected."
+          }
+        },
+        {
+          "id": "extreme-candidate-stars-office",
+          "type": "collectible",
+          "safe_type": "Search Point",
+          "label": "Extreme Bomb Candidate — S.T.A.R.S. Office, on Chris's desk",
+          "missable": false,
+          "levels": {
+            "1": "If four bombs have not appeared, continue through another candidate room.",
+            "2": "Search the S.T.A.R.S. Office, on Chris's desk during Extreme Battle.",
+            "3": "Visit the S.T.A.R.S. Office, on Chris's desk after reaching the police station and inspect the normal item surface. Placement varies, especially on Levels 2 and 3; if no bomb is present, mark the room checked and continue until four are collected."
+          }
+        },
+        {
+          "id": "extreme-candidate-operations-room",
+          "type": "collectible",
+          "safe_type": "Search Point",
+          "label": "Extreme Bomb Candidate — Operations Room fireplace mantel",
+          "missable": false,
+          "levels": {
+            "1": "If four bombs have not appeared, continue through another candidate room.",
+            "2": "Search the Operations Room fireplace mantel during Extreme Battle.",
+            "3": "Visit the Operations Room fireplace mantel after reaching the police station and inspect the normal item surface. Placement varies, especially on Levels 2 and 3; if no bomb is present, mark the room checked and continue until four are collected."
+          }
+        },
+        {
+          "id": "extreme-candidate-taxidermy-room",
+          "type": "collectible",
+          "safe_type": "Search Point",
+          "label": "Extreme Bomb Candidate — Taxidermy Display Room northern desk",
+          "missable": false,
+          "levels": {
+            "1": "If four bombs have not appeared, continue through another candidate room.",
+            "2": "Search the Taxidermy Display Room northern desk during Extreme Battle.",
+            "3": "Visit the Taxidermy Display Room northern desk after reaching the police station and inspect the normal item surface. Placement varies, especially on Levels 2 and 3; if no bomb is present, mark the room checked and continue until four are collected."
+          }
+        },
+        {
+          "id": "extreme-candidate-holding-cell",
+          "type": "collectible",
+          "safe_type": "Search Point",
+          "label": "Extreme Bomb Candidate — southern Holding Cell seats",
+          "missable": false,
+          "levels": {
+            "1": "If four bombs have not appeared, continue through another candidate room.",
+            "2": "Search the southern Holding Cell seats during Extreme Battle.",
+            "3": "Visit the southern Holding Cell seats after reaching the police station and inspect the normal item surface. Placement varies, especially on Levels 2 and 3; if no bomb is present, mark the room checked and continue until four are collected."
+          }
+        },
+        {
+          "id": "extreme-candidate-watchman-room",
+          "type": "collectible",
+          "safe_type": "Search Point",
+          "label": "Extreme Bomb Candidate — Watchman's Room bedside table",
+          "missable": false,
+          "levels": {
+            "1": "If four bombs have not appeared, continue through another candidate room.",
+            "2": "Search the Watchman's Room bedside table during Extreme Battle.",
+            "3": "Visit the Watchman's Room bedside table after reaching the police station and inspect the normal item surface. Placement varies, especially on Levels 2 and 3; if no bomb is present, mark the room checked and continue until four are collected."
+          }
+        },
+        {
+          "id": "extreme-candidate-parking-cabin",
+          "type": "collectible",
+          "safe_type": "Search Point",
+          "label": "Extreme Bomb Candidate — parking-lot security cabin",
+          "missable": false,
+          "levels": {
+            "1": "If four bombs have not appeared, continue through another candidate room.",
+            "2": "Search the parking-lot security cabin during Extreme Battle.",
+            "3": "Visit the parking-lot security cabin after reaching the police station and inspect the normal item surface. Placement varies, especially on Levels 2 and 3; if no bomb is present, mark the room checked and continue until four are collected."
+          }
+        },
+        {
+          "id": "extreme-candidate-press-room",
+          "type": "collectible",
+          "safe_type": "Search Point",
+          "label": "Extreme Bomb Candidate — Press Room southeast table",
+          "missable": false,
+          "levels": {
+            "1": "If four bombs have not appeared, continue through another candidate room.",
+            "2": "Search the Press Room southeast table during Extreme Battle.",
+            "3": "Visit the Press Room southeast table after reaching the police station and inspect the normal item surface. Placement varies, especially on Levels 2 and 3; if no bomb is present, mark the room checked and continue until four are collected."
+          }
+        }
+      ]
+    },
+    {
+      "id": "secrets-and-gallery-audit",
+      "name": "Secrets and Gallery Audit",
+      "location_cue": "Readable city signs, station walls and furniture, the Dark Room, and the PC Gallery viewer.",
+      "note": "SAVE-BACKUP: the hidden gate view closes when the opening street condition is missed.",
+      "items": [
+        {
+          "id": "secret-film-d-photo",
+          "type": "collectible",
+          "safe_type": "Secret",
+          "label": "Hidden Film D Photograph",
+          "missable": false,
+          "levels": {
+            "1": "One ordinary office desk rewards extreme persistence.",
+            "2": "Examine Wesker's S.T.A.R.S. Office desk fifty times, then develop Film D.",
+            "3": "Stand at Wesker's desk, repeat the same examine action until Film D appears, carry it to the Dark Room, use the development tray, and inspect the resulting hidden photograph. This also completes the Film D file entry."
+          }
+        },
+        {
+          "id": "secret-gate-view",
+          "type": "interaction",
+          "safe_type": "Secret",
+          "label": "Hidden Front-Gate View",
+          "missable": true,
+          "levels": {
+            "1": "The optional camera angle requires breaking the item-free street condition.",
+            "2": "In Scenario A, take a street item, clear the front passage, then inspect the station gate.",
+            "3": "Begin an A route and deliberately pick up a street object, which cancels the item-free key condition. Clear the two enemies from the narrow passage below the entrance, face outward at the gate, and use the action control to trigger the concealed view."
+          }
+        },
+        {
+          "id": "secret-camera-holes",
+          "type": "interaction",
+          "safe_type": "Secret",
+          "label": "Camera Bullet Holes",
+          "missable": false,
+          "levels": {
+            "1": "A basement camera reacts to a powerful shot aimed out of the scene.",
+            "2": "In the dog-fence basement passage, change camera angle and fire the Shotgun toward the screen.",
+            "3": "Reach the basement passage where two dogs cross the fence, return toward the manhole until the camera changes, equip the Shotgun, face outward toward the camera, and fire. Inspect the screen for the temporary impact marks."
+          }
+        },
+        {
+          "id": "secret-arukas",
+          "type": "interaction",
+          "safe_type": "Easter Egg",
+          "label": "Arukas Store Sign",
+          "missable": false,
+          "levels": {
+            "1": "Pause around readable signs, posters, lockers, and wall art.",
+            "2": "Inspect the street storefront for Arukas Store Sign.",
+            "3": "Reach the street storefront, clear enough space to stand safely, and read the sign as Sakura reversed. Move close enough for the texture or lettering to be legible before marking the reference complete."
+          }
+        },
+        {
+          "id": "secret-above-rim",
+          "type": "interaction",
+          "safe_type": "Easter Egg",
+          "label": "Above the Rim Graffiti",
+          "missable": false,
+          "levels": {
+            "1": "Pause around readable signs, posters, lockers, and wall art.",
+            "2": "Inspect the wall behind the gun shop for Above the Rim Graffiti.",
+            "3": "Reach the wall behind the gun shop, clear enough space to stand safely, and inspect the basketball-film reference. Move close enough for the texture or lettering to be legible before marking the reference complete."
+          }
+        },
+        {
+          "id": "secret-matsunami",
+          "type": "interaction",
+          "safe_type": "Easter Egg",
+          "label": "Matsunami Billboard",
+          "missable": false,
+          "levels": {
+            "1": "Pause around readable signs, posters, lockers, and wall art.",
+            "2": "Inspect the city advertising board for Matsunami Billboard.",
+            "3": "Reach the city advertising board, clear enough space to stand safely, and inspect the developer-name reference. Move close enough for the texture or lettering to be legible before marking the reference complete."
+          }
+        },
+        {
+          "id": "secret-jojo",
+          "type": "interaction",
+          "safe_type": "Easter Egg",
+          "label": "JoJo Locker Marking",
+          "missable": false,
+          "levels": {
+            "1": "Pause around readable signs, posters, lockers, and wall art.",
+            "2": "Inspect the police-station locker for JoJo Locker Marking.",
+            "3": "Reach the police-station locker, clear enough space to stand safely, and inspect the manga reference. Move close enough for the texture or lettering to be legible before marking the reference complete."
+          }
+        },
+        {
+          "id": "secret-chocha-cola",
+          "type": "interaction",
+          "safe_type": "Easter Egg",
+          "label": "Chocha-Cola Machine",
+          "missable": false,
+          "levels": {
+            "1": "Pause around readable signs, posters, lockers, and wall art.",
+            "2": "Inspect the station vending machine for Chocha-Cola Machine.",
+            "3": "Reach the station vending machine, clear enough space to stand safely, and inspect the parody branding. Move close enough for the texture or lettering to be legible before marking the reference complete."
+          }
+        },
+        {
+          "id": "secret-redrum",
+          "type": "interaction",
+          "safe_type": "Easter Egg",
+          "label": "REDRUM Graffiti",
+          "missable": false,
+          "levels": {
+            "1": "Pause around readable signs, posters, lockers, and wall art.",
+            "2": "Inspect the police-station wall for REDRUM Graffiti.",
+            "3": "Reach the police-station wall, clear enough space to stand safely, and inspect the horror-film reference. Move close enough for the texture or lettering to be legible before marking the reference complete."
+          }
+        },
+        {
+          "id": "secret-future-photo",
+          "type": "interaction",
+          "safe_type": "Easter Egg",
+          "label": "Western Film Photograph",
+          "missable": false,
+          "levels": {
+            "1": "Pause around readable signs, posters, lockers, and wall art.",
+            "2": "Inspect the S.T.A.R.S. Office frame for Western Film Photograph.",
+            "3": "Reach the S.T.A.R.S. Office frame, clear enough space to stand safely, and inspect the time-travel-film homage. Move close enough for the texture or lettering to be legible before marking the reference complete."
+          }
+        },
+        {
+          "id": "secret-basketball-posters",
+          "type": "interaction",
+          "safe_type": "Easter Egg",
+          "label": "Basketball Player Posters",
+          "missable": false,
+          "levels": {
+            "1": "Pause around readable signs, posters, lockers, and wall art.",
+            "2": "Inspect the city walls for Basketball Player Posters.",
+            "3": "Reach the city walls, clear enough space to stand safely, and inspect both player cameos. Move close enough for the texture or lettering to be legible before marking the reference complete."
+          }
+        },
+        {
+          "id": "secret-conrad-poster",
+          "type": "interaction",
+          "safe_type": "Easter Egg",
+          "label": "Watchman's Room Poster",
+          "missable": false,
+          "levels": {
+            "1": "Pause around readable signs, posters, lockers, and wall art.",
+            "2": "Inspect the Watchman's Room wall for Watchman's Room Poster.",
+            "3": "Reach the Watchman's Room wall, clear enough space to stand safely, and inspect the magazine-model cameo. Move close enough for the texture or lettering to be legible before marking the reference complete."
+          }
+        },
+        {
+          "id": "gallery-final-audit",
+          "type": "optional",
+          "safe_type": "Gallery",
+          "label": "Final Gallery Audit",
+          "missable": false,
+          "levels": {
+            "1": "Some viewer entries may appear only after later clears.",
+            "2": "After all scenarios and bonus modes, reopen every Gallery tab.",
+            "3": "Return to Gallery after the last Extreme Battle and survivor clear. Traverse every category from first slot to last, open all populated movies, sketches, illustrations, and models, and confirm no newly available thumbnail remains unviewed."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up at the Scenario A opening",
+        "why": "One gate secret conflicts with the item-free Special Key route."
+      }
+    }
+  ]
+}

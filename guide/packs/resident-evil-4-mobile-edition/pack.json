@@ -1,0 +1,2589 @@
+{
+  "id": "resident-evil-4-mobile-edition",
+  "game": "Resident Evil 4: Mobile Edition (2009)",
+  "target": "Spoiler-free 100% completion of the finalized iOS Platinum route: all Story and Mercenary stages on every difficulty, every treasure and combination, the complete weapon and upgrade catalog, and all Coin Shooting targets",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "route-and-version",
+      "name": "Platinum Mobile Route",
+      "location_cue": "The iPhone or iPod touch title menu showing Story, Mercenary, and unlockable extra modes.",
+      "note": "Use the finalized mobile campaign rather than an older truncated build.",
+      "items": [
+        {
+          "id": "route-platinum-ios",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Platinum iOS Content Set",
+          "missable": false,
+          "levels": {
+            "1": "The finalized update contains the broadest mobile checklist.",
+            "2": "Run the iPhone/iPod touch Platinum version updated through January 2011.",
+            "3": "Verify Story lists twenty-two stage slots and Mercenary lists forty-four before creating progress. If either list ends early, the installed build is incomplete and must not be used as the primary route."
+          }
+        },
+        {
+          "id": "route-touch-calibration",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Calibrate Touch Controls",
+          "missable": false,
+          "levels": {
+            "1": "Precise drag aiming matters in timed missions.",
+            "2": "Test movement, aim dragging, action prompts, inventory tabs, and reload motion.",
+            "3": "Confirm the virtual stick reaches every direction, the reticle tracks one-to-one, contextual buttons register once, and device tilt reloads without changing aim; disable rotation interruptions."
+          }
+        },
+        {
+          "id": "route-excluded-ports",
+          "type": "optional",
+          "safe_type": "Route Note",
+          "label": "Keep Earlier Ports Separate",
+          "missable": false,
+          "levels": {
+            "1": "Older mobile and microconsole builds do not add required content.",
+            "2": "Do not merge N-Gage or Zeebo progression into this Platinum save.",
+            "3": "The chosen-route catalog treats those releases as lower-fidelity alternatives with no verified exclusive checklist. Preserve them separately, but count only the finalized iOS/Platinum route here."
+          }
+        },
+        {
+          "id": "route-clean-backup",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Back Up the Empty Progress File",
+          "missable": false,
+          "levels": {
+            "1": "The retired application has no modern cloud guarantee.",
+            "2": "Copy the application save before clearing Story Stage 01.",
+            "3": "Close the app, preserve its complete documents and library data, reopen it, and confirm the empty Story, Mercenary, armory, and extra-mode records load before beginning."
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-stage-01",
+      "name": "Village Square",
+      "location_cue": "The open village square with houses, ladders, and a tall gate.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-01-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 01",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 01 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-01-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 01",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 01 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-01-treasure-spinel",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Spinel",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Spinel during Story Stage 01.",
+            "3": "Sweep Village Square before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Spinel appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-01-treasure-dirty-pocket-watch",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Dirty Pocket Watch",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Dirty Pocket Watch during Story Stage 01.",
+            "3": "Sweep Village Square before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Dirty Pocket Watch appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-01-treasure-ruby",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Ruby",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Ruby during Story Stage 01.",
+            "3": "Sweep Village Square before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Ruby appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-02",
+      "name": "Valley Platforms",
+      "location_cue": "The split valley with rooftops, boxes, and a locked exit.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-02-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 02",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 02 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-02-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 02",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 02 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-02-treasure-antique-pipe",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Antique Pipe",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Antique Pipe during Story Stage 02.",
+            "3": "Sweep Valley Platforms before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Antique Pipe appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-02-treasure-spinel",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Spinel",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Spinel during Story Stage 02.",
+            "3": "Sweep Valley Platforms before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Spinel appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-02-treasure-ruby",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Ruby",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Ruby during Story Stage 02.",
+            "3": "Sweep Valley Platforms before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Ruby appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-03",
+      "name": "Cliff Path",
+      "location_cue": "The narrow outdoor route ending at a climbable rope.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-03-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 03",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 03 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-03-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 03",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 03 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-03-treasure-mask-with-divots",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Mask with Divots",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Mask with Divots during Story Stage 03.",
+            "3": "Sweep Cliff Path before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Mask with Divots appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-03-treasure-spinel",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Spinel",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Spinel during Story Stage 03.",
+            "3": "Sweep Cliff Path before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Spinel appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-04",
+      "name": "Quarry",
+      "location_cue": "The broad rock quarry enclosed by steep walls.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-04-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 04",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 04 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-04-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 04",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 04 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-04-treasure-green-gem",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Green Gem",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Green Gem during Story Stage 04.",
+            "3": "Sweep Quarry before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Green Gem appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-04-treasure-spinel",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Spinel",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Spinel during Story Stage 04.",
+            "3": "Sweep Quarry before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Spinel appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-05",
+      "name": "Church Interior",
+      "location_cue": "The church floor and upper room reached by a ladder.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-05-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 05",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 05 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-05-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 05",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 05 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-05-treasure-pearl-bangle",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Pearl Bangle",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Pearl Bangle during Story Stage 05.",
+            "3": "Sweep Church Interior before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Pearl Bangle appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-05-treasure-spinel",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Spinel",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Spinel during Story Stage 05.",
+            "3": "Sweep Church Interior before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Spinel appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-06",
+      "name": "Two-Storey Cabin",
+      "location_cue": "The compact timber house with a stairway and movable ladders.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-06-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 06",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 06 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-06-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 06",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 06 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-06-treasure-spinel",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Spinel",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Spinel during Story Stage 06.",
+            "3": "Sweep Two-Storey Cabin before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Spinel appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-06-treasure-purple-gem",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Purple Gem",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Purple Gem during Story Stage 06.",
+            "3": "Sweep Two-Storey Cabin before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Purple Gem appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-07",
+      "name": "Castle Gate",
+      "location_cue": "The stone approach with stairs, wall platforms, and a cannon.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-07-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 07",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 07 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-07-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 07",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 07 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-07-treasure-velvet-blue",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Velvet Blue",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Velvet Blue during Story Stage 07.",
+            "3": "Sweep Castle Gate before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Velvet Blue appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-07-treasure-red-gem",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Red Gem",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Red Gem during Story Stage 07.",
+            "3": "Sweep Castle Gate before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Red Gem appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-08",
+      "name": "Prison Passage",
+      "location_cue": "The barred lower cell beneath an upper corridor.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-08-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 08",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 08 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-08-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 08",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 08 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-08-treasure-velvet-blue",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Velvet Blue",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Velvet Blue during Story Stage 08.",
+            "3": "Sweep Prison Passage before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Velvet Blue appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-08-treasure-amber-ring",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Amber Ring",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Amber Ring during Story Stage 08.",
+            "3": "Sweep Prison Passage before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Amber Ring appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-09",
+      "name": "Twin-Guard Hall",
+      "location_cue": "The enclosed stone hall with stairs at one end.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-09-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 09",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 09 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-09-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 09",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 09 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-09-treasure-velvet-blue-1",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Velvet Blue 1",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Velvet Blue 1 during Story Stage 09.",
+            "3": "Sweep Twin-Guard Hall before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Velvet Blue 1 appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-09-treasure-velvet-blue-2",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Velvet Blue 2",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Velvet Blue 2 during Story Stage 09.",
+            "3": "Sweep Twin-Guard Hall before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Velvet Blue 2 appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-09-treasure-gold-bangle",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Gold Bangle",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Gold Bangle during Story Stage 09.",
+            "3": "Sweep Twin-Guard Hall before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Gold Bangle appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-10",
+      "name": "Upper Gallery",
+      "location_cue": "The tall interior where the lower floor is visible from above.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-10-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 10",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 10 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-10-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 10",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 10 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-10-treasure-crown-with-divots",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Crown with Divots",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Crown with Divots during Story Stage 10.",
+            "3": "Sweep Upper Gallery before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Crown with Divots appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-10-treasure-velvet-blue",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Velvet Blue",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Velvet Blue during Story Stage 10.",
+            "3": "Sweep Upper Gallery before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Velvet Blue appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-11",
+      "name": "Furnace Chamber",
+      "location_cue": "The industrial room built around a central furnace hatch.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-11-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 11",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 11 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-11-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 11",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 11 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-11-treasure-royal-insignia",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Royal Insignia",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Royal Insignia during Story Stage 11.",
+            "3": "Sweep Furnace Chamber before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Royal Insignia appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-11-treasure-velvet-blue",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Velvet Blue",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Velvet Blue during Story Stage 11.",
+            "3": "Sweep Furnace Chamber before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Velvet Blue appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-12",
+      "name": "Water Canal",
+      "location_cue": "The damp service rooms beside coolant cylinders and an elevator.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-12-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 12",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 12 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-12-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 12",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 12 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-12-treasure-velvet-blue-1",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Velvet Blue 1",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Velvet Blue 1 during Story Stage 12.",
+            "3": "Sweep Water Canal before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Velvet Blue 1 appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-12-treasure-velvet-blue-2",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Velvet Blue 2",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Velvet Blue 2 during Story Stage 12.",
+            "3": "Sweep Water Canal before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Velvet Blue 2 appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-12-treasure-crown-jewel",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Crown Jewel",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Crown Jewel during Story Stage 12.",
+            "3": "Sweep Water Canal before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Crown Jewel appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-13",
+      "name": "Tower Ascent",
+      "location_cue": "The circular stone climb with repeated upper landings.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-13-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 13",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 13 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-13-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 13",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 13 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-13-treasure-elegant-headdress",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Elegant Headdress",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Elegant Headdress during Story Stage 13.",
+            "3": "Sweep Tower Ascent before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Elegant Headdress appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-13-treasure-emerald",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Emerald",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Emerald during Story Stage 13.",
+            "3": "Sweep Tower Ascent before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Emerald appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-14",
+      "name": "Tower Platform",
+      "location_cue": "The high platform with side alcoves and a central approach.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-14-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 14",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 14 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-14-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 14",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 14 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-14-treasure-illuminados-pendant",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Illuminados Pendant",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Illuminados Pendant during Story Stage 14.",
+            "3": "Sweep Tower Platform before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Illuminados Pendant appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-14-treasure-emerald",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Emerald",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Emerald during Story Stage 14.",
+            "3": "Sweep Tower Platform before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Emerald appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-15",
+      "name": "Island Stronghold",
+      "location_cue": "The outdoor fortified yard with upper walkways.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-15-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 15",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 15 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-15-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 15",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 15 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-15-treasure-emerald",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Emerald",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Emerald during Story Stage 15.",
+            "3": "Sweep Island Stronghold before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Emerald appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-15-treasure-butterfly-lamp",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Butterfly Lamp",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Butterfly Lamp during Story Stage 15.",
+            "3": "Sweep Island Stronghold before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Butterfly Lamp appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-16",
+      "name": "Storage Facility",
+      "location_cue": "The industrial rooms around a locked storage chamber.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-16-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 16",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 16 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-16-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 16",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 16 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-16-treasure-emerald",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Emerald",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Emerald during Story Stage 16.",
+            "3": "Sweep Storage Facility before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Emerald appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-16-treasure-green-eye",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Green Eye",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Green Eye during Story Stage 16.",
+            "3": "Sweep Storage Facility before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Green Eye appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-17",
+      "name": "Waste Chute",
+      "location_cue": "The refuse corridor with shutters, switches, and explosive barrels.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-17-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 17",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 17 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-17-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 17",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 17 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-17-treasure-emerald",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Emerald",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Emerald during Story Stage 17.",
+            "3": "Sweep Waste Chute before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Emerald appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-17-treasure-red-eye",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Red Eye",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Red Eye during Story Stage 17.",
+            "3": "Sweep Waste Chute before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Red Eye appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-18",
+      "name": "Basement Maze",
+      "location_cue": "The underground shutter maze with red lock lights.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-18-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 18",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 18 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-18-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 18",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 18 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-18-treasure-blue-eye",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Blue Eye",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Blue Eye during Story Stage 18.",
+            "3": "Sweep Basement Maze before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Blue Eye appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-19",
+      "name": "Container Yard",
+      "location_cue": "The suspended container route with paired switches.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-19-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 19",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 19 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-19-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 19",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 19 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-19-treasure-golden-lynx",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Golden Lynx",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Golden Lynx during Story Stage 19.",
+            "3": "Sweep Container Yard before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Golden Lynx appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-19-treasure-emerald",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Emerald",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Emerald during Story Stage 19.",
+            "3": "Sweep Container Yard before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Emerald appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-20",
+      "name": "Ruined Passage",
+      "location_cue": "The broken multi-level route with open ledges.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-20-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 20",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 20 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-20-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 20",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 20 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-20-treasure-emerald",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Emerald",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Emerald during Story Stage 20.",
+            "3": "Sweep Ruined Passage before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Emerald appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-20-treasure-red-stone-of-faith",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Red Stone of Faith",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Red Stone of Faith during Story Stage 20.",
+            "3": "Sweep Ruined Passage before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Red Stone of Faith appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-21",
+      "name": "Fortress Platforms",
+      "location_cue": "The military platforms facing a large shutter.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-21-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 21",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 21 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-21-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 21",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 21 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-21-treasure-emerald",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Emerald",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Emerald during Story Stage 21.",
+            "3": "Sweep Fortress Platforms before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Emerald appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-21-treasure-green-stone-of-judgment",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Green Stone of Judgment",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Green Stone of Judgment during Story Stage 21.",
+            "3": "Sweep Fortress Platforms before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Green Stone of Judgment appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "story-stage-22",
+      "name": "Elevated Ruins",
+      "location_cue": "The raised metal-and-stone arena linked by a narrow bridge.",
+      "note": "Complete the treasure sweep before repeating the stage for difficulty markers.",
+      "items": [
+        {
+          "id": "story-22-clear",
+          "type": "optional",
+          "safe_type": "Story Stage",
+          "label": "Clear Story Stage 22",
+          "missable": true,
+          "levels": {
+            "1": "Learn the compact route before optimizing it.",
+            "2": "Finish Story Stage 22 and save its result.",
+            "3": "Search every side pocket first, complete the displayed physical objective, and cross the exit only after the treasure list is checked. Save the result and verify the next available stage appears."
+          }
+        },
+        {
+          "id": "story-22-all-difficulties",
+          "type": "optional",
+          "safe_type": "Difficulty Goal",
+          "label": "Clear Every Difficulty in Story Stage 22",
+          "missable": true,
+          "levels": {
+            "1": "Each displayed difficulty marker needs its own clear.",
+            "2": "Replay Story Stage 22 on every selectable difficulty tier.",
+            "3": "Begin with the lowest unfilled marker, retain upgraded gear when the mode permits it, finish without abandoning, and repeat until every difficulty indicator beside this stage is filled."
+          }
+        },
+        {
+          "id": "story-22-treasure-emerald",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Emerald",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Emerald during Story Stage 22.",
+            "3": "Sweep Elevated Ruins before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Emerald appears in the treasure inventory before finishing the stage."
+          }
+        },
+        {
+          "id": "story-22-treasure-blue-stone-of-treason",
+          "type": "treasure",
+          "safe_type": "Treasure",
+          "label": "Blue Stone of Treason",
+          "missable": true,
+          "levels": {
+            "1": "Break containers and scan above eye level before leaving.",
+            "2": "Obtain Blue Stone of Treason during Story Stage 22.",
+            "3": "Sweep Elevated Ruins before triggering its exit: open every breakable container, shoot each suspended sparkle, and defeat any optional elite guarding a drop. Confirm Blue Stone of Treason appears in the treasure inventory before finishing the stage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "mercenary-campaign",
+      "name": "Mercenary Challenge Campaign",
+      "location_cue": "The separate challenge list with preset equipment shown before each compact arena.",
+      "note": "Clear all forty-four objective variants without exposing their narrative labels.",
+      "items": [
+        {
+          "id": "mercenary-01",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 01",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 01 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: maximize defeats before extraction. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-02",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 02",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 02 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: shotgun only; conserve forty-five shells. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-03",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 03",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 03 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: clear every target before timer. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-04",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 04",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 04 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: fog; watch both approaches. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-05",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 05",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 05 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: rifle perch; prevent close approach. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-06",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 06",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 06 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: no refills; make every shot. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-07",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 07",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 07 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: shotgun knockdowns; grenade final blocker. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-08",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 08",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 08 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: shack roof key; clear route. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-09",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 09",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 09 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: clear every transformed target. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-10",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 10",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 10 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: upper corner covers staircase. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-11",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 11",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 11 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: grenade stun; punish exposed weakpoint. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-12",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 12",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 12 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: distance; prioritize chainsaw attackers. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-13",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 13",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 13 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: handgun only; aim carefully. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-14",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 14",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 14 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: narrow hall; full timed clear. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-15",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 15",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 15 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: red-robed target key; close dungeon door. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-16",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 16",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 16 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: mine thrower; protect escort. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-17",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 17",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 17 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: eliminate every crossbow target. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-18",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 18",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 18 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: remove elevated throwers; key downstairs exit. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-19",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 19",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 19 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: grenades; check rear shield attackers. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-20",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 20",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 20 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: survive; evade after tougher wave. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-21",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 21",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 21 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: furnace one giant; grenades second. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-22",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 22",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 22 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: second-room key; activate elevator; escort. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-23",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 23",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 23 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: barrel knockdown; close magnum follow-up. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-24",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 24",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 24 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: maximize defeats with preset arsenal. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-25",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 25",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 25 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: small lift; kicks conserve ammunition. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-26",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 26",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 26 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: keep circling until tower top. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-27",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 27",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 27 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: defeat target before timer. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-28",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 28",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 28 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: retrieve escort; return starting point. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-29",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 29",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 29 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: defeats drop gear; clear all. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-30",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 30",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 30 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: escort left; flash heavy gunner. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-31",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 31",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 31 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: clear inner room; heavy gunner key. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-32",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 32",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 32 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: free escort; reach exit quickly. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-33",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 33",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 33 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: three regenerators; ten weakpoint shots. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-34",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 34",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 34 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: watch left window; protect both sides. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-35",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 35",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 35 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: switch then map; follow green shutters. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-36",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 36",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 36 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: use explosive drums; clear passages. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-37",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 37",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 37 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: container switches; reserve magnum. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-38",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 38",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 38 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: mine thrower and barrel; clear container. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-39",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 39",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 39 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: bait straight attack; dodge; knife. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-40",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 40",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 40 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: rear ladder; save magnum for gunner. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-41",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 41",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 41 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: survive; ignore durable gunners. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-42",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 42",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 42 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: reunite; keep escort from shutter. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-43",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 43",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 43 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: bridge spacing; punish landing cycle. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        },
+        {
+          "id": "mercenary-44",
+          "type": "optional",
+          "safe_type": "Mercenary Mission",
+          "label": "Mercenary Mission 44",
+          "missable": true,
+          "levels": {
+            "1": "The preset loadout hints at the intended solution.",
+            "2": "Clear Mercenary Mission 44 on every displayed difficulty.",
+            "3": "Use the supplied inventory only and apply this route rule: start-area cover; lure distant targets. Satisfy the on-screen timer, defeat, survival, or escort condition, then replay until every difficulty marker for this mission is filled."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "armory-and-combinations",
+      "name": "Armory and Treasure Combinations",
+      "location_cue": "The merchant screen and treasure-combination tab between mobile stages.",
+      "note": "Buy every weapon, maximize every stat row, and assemble each multipart treasure.",
+      "items": [
+        {
+          "id": "weapon-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Handgun",
+          "missable": true,
+          "levels": {
+            "1": "A merchant purchase or stage pickup expands the mobile arsenal.",
+            "2": "Acquire Handgun; its documented route is 6,400 PTAS.",
+            "3": "If a price is shown, unlock the merchant listing through Story progress and buy Handgun for 6,400 PTAS. If it is stage-found, collect it before leaving the stated stage. Open inventory once to register it."
+          }
+        },
+        {
+          "id": "weapon-handgun-max",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Max Out Handgun",
+          "missable": false,
+          "levels": {
+            "1": "Every visible stat line has its own endpoint.",
+            "2": "Purchase every available upgrade row for Handgun.",
+            "3": "At successive merchant visits, raise each displayed category one step at a time—power, capacity, size, speed, range, scope, piercing, critical chance, or blast radius as applicable—until every row reads MAX."
+          }
+        },
+        {
+          "id": "weapon-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "A merchant purchase or stage pickup expands the mobile arsenal.",
+            "2": "Acquire Shotgun; its documented route is 16,000 PTAS.",
+            "3": "If a price is shown, unlock the merchant listing through Story progress and buy Shotgun for 16,000 PTAS. If it is stage-found, collect it before leaving the stated stage. Open inventory once to register it."
+          }
+        },
+        {
+          "id": "weapon-shotgun-max",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Max Out Shotgun",
+          "missable": false,
+          "levels": {
+            "1": "Every visible stat line has its own endpoint.",
+            "2": "Purchase every available upgrade row for Shotgun.",
+            "3": "At successive merchant visits, raise each displayed category one step at a time—power, capacity, size, speed, range, scope, piercing, critical chance, or blast radius as applicable—until every row reads MAX."
+          }
+        },
+        {
+          "id": "weapon-tmp",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "TMP",
+          "missable": true,
+          "levels": {
+            "1": "A merchant purchase or stage pickup expands the mobile arsenal.",
+            "2": "Acquire TMP; its documented route is 11,200 PTAS.",
+            "3": "If a price is shown, unlock the merchant listing through Story progress and buy TMP for 11,200 PTAS. If it is stage-found, collect it before leaving the stated stage. Open inventory once to register it."
+          }
+        },
+        {
+          "id": "weapon-tmp-max",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Max Out TMP",
+          "missable": false,
+          "levels": {
+            "1": "Every visible stat line has its own endpoint.",
+            "2": "Purchase every available upgrade row for TMP.",
+            "3": "At successive merchant visits, raise each displayed category one step at a time—power, capacity, size, speed, range, scope, piercing, critical chance, or blast radius as applicable—until every row reads MAX."
+          }
+        },
+        {
+          "id": "weapon-rifle",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Rifle",
+          "missable": true,
+          "levels": {
+            "1": "A merchant purchase or stage pickup expands the mobile arsenal.",
+            "2": "Acquire Rifle; its documented route is 16,000 PTAS.",
+            "3": "If a price is shown, unlock the merchant listing through Story progress and buy Rifle for 16,000 PTAS. If it is stage-found, collect it before leaving the stated stage. Open inventory once to register it."
+          }
+        },
+        {
+          "id": "weapon-rifle-max",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Max Out Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Every visible stat line has its own endpoint.",
+            "2": "Purchase every available upgrade row for Rifle.",
+            "3": "At successive merchant visits, raise each displayed category one step at a time—power, capacity, size, speed, range, scope, piercing, critical chance, or blast radius as applicable—until every row reads MAX."
+          }
+        },
+        {
+          "id": "weapon-magnum",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Magnum",
+          "missable": true,
+          "levels": {
+            "1": "A merchant purchase or stage pickup expands the mobile arsenal.",
+            "2": "Acquire Magnum; its documented route is 34,200 PTAS.",
+            "3": "If a price is shown, unlock the merchant listing through Story progress and buy Magnum for 34,200 PTAS. If it is stage-found, collect it before leaving the stated stage. Open inventory once to register it."
+          }
+        },
+        {
+          "id": "weapon-magnum-max",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Max Out Magnum",
+          "missable": false,
+          "levels": {
+            "1": "Every visible stat line has its own endpoint.",
+            "2": "Purchase every available upgrade row for Magnum.",
+            "3": "At successive merchant visits, raise each displayed category one step at a time—power, capacity, size, speed, range, scope, piercing, critical chance, or blast radius as applicable—until every row reads MAX."
+          }
+        },
+        {
+          "id": "weapon-p-m-rifle",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "P.M. Rifle",
+          "missable": true,
+          "levels": {
+            "1": "A merchant purchase or stage pickup expands the mobile arsenal.",
+            "2": "Acquire P.M. Rifle; its documented route is found during Story Stage 17 PTAS.",
+            "3": "If a price is shown, unlock the merchant listing through Story progress and buy P.M. Rifle for found during Story Stage 17 PTAS. If it is stage-found, collect it before leaving the stated stage. Open inventory once to register it."
+          }
+        },
+        {
+          "id": "weapon-p-m-rifle-max",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Max Out P.M. Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Every visible stat line has its own endpoint.",
+            "2": "Purchase every available upgrade row for P.M. Rifle.",
+            "3": "At successive merchant visits, raise each displayed category one step at a time—power, capacity, size, speed, range, scope, piercing, critical chance, or blast radius as applicable—until every row reads MAX."
+          }
+        },
+        {
+          "id": "weapon-mine-thrower",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Mine Thrower",
+          "missable": true,
+          "levels": {
+            "1": "A merchant purchase or stage pickup expands the mobile arsenal.",
+            "2": "Acquire Mine Thrower; its documented route is 16,000 PTAS.",
+            "3": "If a price is shown, unlock the merchant listing through Story progress and buy Mine Thrower for 16,000 PTAS. If it is stage-found, collect it before leaving the stated stage. Open inventory once to register it."
+          }
+        },
+        {
+          "id": "weapon-mine-thrower-max",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Max Out Mine Thrower",
+          "missable": false,
+          "levels": {
+            "1": "Every visible stat line has its own endpoint.",
+            "2": "Purchase every available upgrade row for Mine Thrower.",
+            "3": "At successive merchant visits, raise each displayed category one step at a time—power, capacity, size, speed, range, scope, piercing, critical chance, or blast radius as applicable—until every row reads MAX."
+          }
+        },
+        {
+          "id": "weapon-rocket-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Rocket Launcher",
+          "missable": true,
+          "levels": {
+            "1": "A merchant purchase or stage pickup expands the mobile arsenal.",
+            "2": "Acquire Rocket Launcher; its documented route is 27,000 PTAS.",
+            "3": "If a price is shown, unlock the merchant listing through Story progress and buy Rocket Launcher for 27,000 PTAS. If it is stage-found, collect it before leaving the stated stage. Open inventory once to register it."
+          }
+        },
+        {
+          "id": "weapon-rocket-launcher-max",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Max Out Rocket Launcher",
+          "missable": false,
+          "levels": {
+            "1": "Every visible stat line has its own endpoint.",
+            "2": "Purchase every available upgrade row for Rocket Launcher.",
+            "3": "At successive merchant visits, raise each displayed category one step at a time—power, capacity, size, speed, range, scope, piercing, critical chance, or blast radius as applicable—until every row reads MAX."
+          }
+        },
+        {
+          "id": "weapon-infinite-grenades",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Infinite Grenades",
+          "missable": true,
+          "levels": {
+            "1": "A merchant purchase or stage pickup expands the mobile arsenal.",
+            "2": "Acquire Infinite Grenades; its documented route is 400,000 PTAS.",
+            "3": "If a price is shown, unlock the merchant listing through Story progress and buy Infinite Grenades for 400,000 PTAS. If it is stage-found, collect it before leaving the stated stage. Open inventory once to register it."
+          }
+        },
+        {
+          "id": "weapon-infinite-grenades-max",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Max Out Infinite Grenades",
+          "missable": false,
+          "levels": {
+            "1": "Every visible stat line has its own endpoint.",
+            "2": "Purchase every available upgrade row for Infinite Grenades.",
+            "3": "At successive merchant visits, raise each displayed category one step at a time—power, capacity, size, speed, range, scope, piercing, critical chance, or blast radius as applicable—until every row reads MAX."
+          }
+        },
+        {
+          "id": "weapon-infinite-r-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Infinite R.Launcher",
+          "missable": true,
+          "levels": {
+            "1": "A merchant purchase or stage pickup expands the mobile arsenal.",
+            "2": "Acquire Infinite R.Launcher; its documented route is 800,000 PTAS.",
+            "3": "If a price is shown, unlock the merchant listing through Story progress and buy Infinite R.Launcher for 800,000 PTAS. If it is stage-found, collect it before leaving the stated stage. Open inventory once to register it."
+          }
+        },
+        {
+          "id": "weapon-infinite-r-launcher-max",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Max Out Infinite R.Launcher",
+          "missable": false,
+          "levels": {
+            "1": "Every visible stat line has its own endpoint.",
+            "2": "Purchase every available upgrade row for Infinite R.Launcher.",
+            "3": "At successive merchant visits, raise each displayed category one step at a time—power, capacity, size, speed, range, scope, piercing, critical chance, or blast radius as applicable—until every row reads MAX."
+          }
+        },
+        {
+          "id": "weapon-chicago-typewriter",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Chicago Typewriter",
+          "missable": true,
+          "levels": {
+            "1": "A merchant purchase or stage pickup expands the mobile arsenal.",
+            "2": "Acquire Chicago Typewriter; its documented route is 800,000 PTAS.",
+            "3": "If a price is shown, unlock the merchant listing through Story progress and buy Chicago Typewriter for 800,000 PTAS. If it is stage-found, collect it before leaving the stated stage. Open inventory once to register it."
+          }
+        },
+        {
+          "id": "weapon-chicago-typewriter-max",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Max Out Chicago Typewriter",
+          "missable": false,
+          "levels": {
+            "1": "Every visible stat line has its own endpoint.",
+            "2": "Purchase every available upgrade row for Chicago Typewriter.",
+            "3": "At successive merchant visits, raise each displayed category one step at a time—power, capacity, size, speed, range, scope, piercing, critical chance, or blast radius as applicable—until every row reads MAX."
+          }
+        },
+        {
+          "id": "combine-crown",
+          "type": "treasure",
+          "safe_type": "Combination",
+          "label": "Complete the Crown",
+          "missable": true,
+          "levels": {
+            "1": "Two stage treasures fit together before sale.",
+            "2": "Combine Crown with Divots and Crown Jewel.",
+            "3": "Retain the Crown with Divots from Story Stage 10, obtain the Crown Jewel in Stage 12, combine them in the treasure menu, and sell only the completed Crown."
+          }
+        },
+        {
+          "id": "combine-butterfly-lamp",
+          "type": "treasure",
+          "safe_type": "Combination",
+          "label": "Complete the Butterfly Lamp",
+          "missable": true,
+          "levels": {
+            "1": "Three colored fittings belong in one lamp.",
+            "2": "Combine Butterfly Lamp with Green, Red, and Blue Eyes.",
+            "3": "Keep the lamp from Stage 15, add the Green Eye from Stage 16, Red Eye from Stage 17, and Blue Eye from Stage 18, then sell the fully fitted result."
+          }
+        },
+        {
+          "id": "combine-golden-lynx",
+          "type": "treasure",
+          "safe_type": "Combination",
+          "label": "Complete the Golden Lynx",
+          "missable": true,
+          "levels": {
+            "1": "Three named stones finish the late treasure.",
+            "2": "Combine Golden Lynx with all three colored stones.",
+            "3": "Retain the Golden Lynx from Stage 19, insert the Red Stone of Faith, Green Stone of Judgment, and Blue Stone of Treason from Stages 20–22, then sell the completed piece."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    },
+    {
+      "id": "coin-shooting",
+      "name": "Coin Shooting",
+      "location_cue": "The village target course opened from the extra-mode menu after a Story clear.",
+      "note": "Collect every target using text-only landmark cues.",
+      "items": [
+        {
+          "id": "coin-shooting-unlock",
+          "type": "secret",
+          "safe_type": "Mode",
+          "label": "Unlock Coin Shooting",
+          "missable": false,
+          "levels": {
+            "1": "A successful Story clear opens a noncombat target course.",
+            "2": "Complete Story once, then select Coin Shooting from the extra-mode menu.",
+            "3": "Save the Story completion result, return to the title menu, open the newly available extra mode, and confirm the village target course loads."
+          }
+        },
+        {
+          "id": "coin-01",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 01",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around behind start; gate top.",
+            "3": "Walk to behind start; gate top, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-02",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 02",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around forward right; wooden fence.",
+            "3": "Walk to forward right; wooden fence, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-03",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 03",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around left; hanging at first house.",
+            "3": "Walk to left; hanging at first house, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-04",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 04",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around same first-house rooftop.",
+            "3": "Walk to same first-house rooftop, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-05",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 05",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around behind first left house fence.",
+            "3": "Walk to behind first left house fence, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-06",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 06",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around right; awning between houses.",
+            "3": "Walk to right; awning between houses, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-07",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 07",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around same position; upper house.",
+            "3": "Walk to same position; upper house, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-08",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 08",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around two-storey back path corner.",
+            "3": "Walk to two-storey back path corner, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-09",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 09",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around left path; forward fence.",
+            "3": "Walk to left path; forward fence, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-10",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 10",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around opposite side; insignia roof.",
+            "3": "Walk to opposite side; insignia roof, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-11",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 11",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around central clearing; two-storey rooftop.",
+            "3": "Walk to central clearing; two-storey rooftop, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-12",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 12",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around small shack beside insignia building.",
+            "3": "Walk to small shack beside insignia building, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-13",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 13",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around insignia path; left fence.",
+            "3": "Walk to insignia path; left fence, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-14",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 14",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around right-house back path; hanging.",
+            "3": "Walk to right-house back path; hanging, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-15",
+          "type": "collectible",
+          "safe_type": "Coin",
+          "label": "Coin 15",
+          "missable": true,
+          "levels": {
+            "1": "Scan fences, roofs, and awnings around the current house cluster.",
+            "2": "In Coin Shooting, look around toward start; behind wooden fence.",
+            "3": "Walk to toward start; behind wooden fence, stop moving, pan slowly across the upper edge or fence line, and shoot the coin once it glints. Confirm the counter increases before continuing around the map."
+          }
+        },
+        {
+          "id": "coin-shooting-complete",
+          "type": "secret",
+          "safe_type": "Mode",
+          "label": "Collect All Coin-Shooting Targets",
+          "missable": true,
+          "levels": {
+            "1": "A complete lap returns to the starting edge.",
+            "2": "Finish one run with all fifteen coins collected.",
+            "3": "Follow coins 01–15 in order around the village perimeter, verify each counter increment, and leave the course only after the display confirms all fifteen targets."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the stage-entry save",
+        "why": "A completed mobile stage closes its treasure and challenge windows."
+      },
+      "point_of_no_return": {
+        "title": "Stage exit marker",
+        "warning": "Confirm every treasure and difficulty marker before accepting the result."
+      }
+    }
+  ]
+}

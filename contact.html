@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official public contact routes for Sami Mirash.">
+  <meta property="og:title" content="Contact | Sami Mirash">
+  <meta property="og:description" content="Use the official public channels for Sami Mirash updates.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.samimirash.com/contact.html">
+  <meta property="og:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="theme-color" content="#080705">
+  <link rel="canonical" href="https://www.samimirash.com/contact.html">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <title>Contact | Sami Mirash</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"Contact Sami Mirash","url":"https://www.samimirash.com/contact.html"}</script>
+  <script defer src="assets/site.js"></script>
+  <script defer src="assets/content.js"></script>
+  <script defer src="js/config.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="assets/seo.js"></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header></header>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <h1>Use the official public channels.</h1>
+        <p class="lede">Public channels work now. The form below writes to Supabase if the project table is installed.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <article class="card">
+          <p class="eyebrow">Email</p>
+          <h2>Reach Sami directly</h2>
+          <p>For anything that needs a reply, email <a href="mailto:contact@samimirash.com">contact@samimirash.com</a>. Business, press, and booking enquiries are welcome here too.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap grid four" data-contact-channels></div>
+    </section>
+    <section class="section">
+      <div class="wrap grid two">
+        <article class="auth-panel">
+          <h2>Send a message</h2>
+          <p class="status-text" data-auth-status></p>
+          <p class="status-text" data-config-warning></p>
+          <form class="auth-form" id="contact-form">
+            <label>Name<input name="name" autocomplete="name"></label>
+            <label>Email<input name="email" type="email" autocomplete="email" required></label>
+            <label>Reason<select name="reason"><option value="general">General</option><option value="business">Business</option><option value="privacy">Privacy</option></select></label>
+            <label>Message<textarea name="message" rows="5" required></textarea></label>
+            <button class="button primary" type="submit">Send</button>
+          </form>
+        </article>
+        <article class="card"><h2>Business note</h2><p>No sponsor packages, prices, or private claims are published before real partnerships exist.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" data-site-footer></footer>
+</body>
+</html>

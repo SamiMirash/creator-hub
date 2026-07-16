@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The exact graphics, display, and mod setup Sami Mirash runs on stream for each game, pulled straight from the game's own settings. Resident Evil Requiem and more.">
+  <meta property="og:title" content="My Game Settings & Mods | Sami Mirash">
+  <meta property="og:description" content="Per-game settings: the exact graphics, display, and mods Sami runs on stream, starting with Resident Evil Requiem.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.samimirash.com/setup.html">
+  <meta property="og:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="theme-color" content="#080705">
+  <link rel="canonical" href="https://www.samimirash.com/setup.html">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <title>My Game Settings & Mods | Sami Mirash</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"My Game Settings & Mods","url":"https://www.samimirash.com/setup.html","description":"Per-game graphics, display, and mod setup used on stream."}</script>
+  <script defer src="assets/site.js"></script>
+  <script defer src="assets/seo.js"></script>
+</head>
+<body data-page="setup">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header></header>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">My Game Settings &amp; Mods</p>
+          <h1>The exact setup I play on.</h1>
+          <p class="lede" data-setup-intro>Loading&hellip;</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#games">See the games</a>
+            <a class="button" href="games.html">Game archive</a>
+          </div>
+        </div>
+        <aside class="studio-card">
+          <span class="pill">Straight from the game</span>
+          <h2>Real settings, not guesses.</h2>
+          <p>Each list is read from the game's own settings file, so it matches exactly what runs on stream &mdash; resolution, ray tracing, what's switched off, and the mods on top.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="wrap section-head">
+        <div>
+          <p class="eyebrow">Per game</p>
+          <h2>Settings &amp; mods, game by game.</h2>
+          <p class="sub" data-setup-count>Loading setups&hellip;</p>
+        </div>
+      </div>
+      <div class="wrap" data-setup-list>
+        <p class="sub">Loading setups&hellip;</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" data-site-footer></footer>
+
+  <script>
+  // Per-game "Game Settings + Mods" renderer. Reads data/setups.json and paints
+  // one card per game: grouped settings + the installed mods. Adding a future
+  // game is just another entry in setups.json -- no markup changes needed.
+  (function () {
+    "use strict";
+    var introEl = document.querySelector("[data-setup-intro]");
+    var listEl = document.querySelector("[data-setup-list]");
+    var countEl = document.querySelector("[data-setup-count]");
+
+    function esc(s) {
+      return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+      });
+    }
+
+    function settingRow(s) {
+      return '<div class="setup-row">' +
+        '<span class="setup-key">' + esc(s.label) + '</span>' +
+        '<span class="setup-val">' + esc(s.value) + '</span>' +
+        '</div>';
+    }
+
+    function group(g) {
+      var rows = (g.settings || []).map(settingRow).join("");
+      return '<div class="setup-group">' +
+        '<h4 class="setup-group-title">' + esc(g.name) + '</h4>' +
+        '<div class="setup-rows">' + rows + '</div>' +
+        '</div>';
+    }
+
+    function modItem(m) {
+      var note = m.note ? '<p class="sub">' + esc(m.note) + '</p>' : '';
+      return '<li><strong>' + esc(m.name) + '</strong>' + note + '</li>';
+    }
+
+    // A standalone block (NVIDIA / DLSS) = a titled section with one or more
+    // setting groups, an optional intro line, and an optional footnote.
+    function settingsBlock(block) {
+      if (!block) return "";
+      var intro = block.intro ? '<p class="sub setup-block-intro">' + esc(block.intro) + '</p>' : '';
+      var groups;
+      if (block.groups && block.groups.length) {
+        groups = '<div class="setup-grid">' + block.groups.map(group).join("") + '</div>';
+      } else if (block.settings && block.settings.length) {
+        groups = '<div class="setup-rows">' + block.settings.map(settingRow).join("") + '</div>';
+      } else {
+        groups = "";
+      }
+      var note = block.note ? '<p class="sub setup-note">' + esc(block.note) + '</p>' : '';
+      return '<div class="setup-block">' +
+        '<h3>' + esc(block.title) + '</h3>' +
+        intro + groups + note +
+      '</div>';
+    }
+
+    function hdrWriteup(w) {
+      if (!w) return "";
+      var paras = (w.paragraphs || []).map(function (p) {
+        return '<p>' + esc(p) + '</p>';
+      }).join("");
+      return '<div class="setup-block setup-writeup">' +
+        '<h3>' + esc(w.title) + '</h3>' + paras +
+      '</div>';
+    }
+
+    function gameCard(game) {
+      var meta = [];
+      if (game.status) meta.push('<span class="pill">' + esc(game.status) + '</span>');
+      if (game.rig) meta.push('<span class="pill subtle">' + esc(game.rig) + '</span>');
+
+      var groups = (game.groups || []).map(group).join("");
+      var settingsNote = game.settingsNote
+        ? '<p class="sub setup-note">' + esc(game.settingsNote) + '</p>' : '';
+
+      var modsHtml = "";
+      if (game.mods && game.mods.length) {
+        modsHtml = '<div class="setup-mods">' +
+          '<h3>Mods</h3>' +
+          '<ul class="setup-mod-list">' + game.mods.map(modItem).join("") + '</ul>' +
+          (game.modsNote ? '<p class="sub setup-note">' + esc(game.modsNote) + '</p>' : '') +
+          '</div>';
+      } else {
+        modsHtml = '<div class="setup-mods"><h3>Mods</h3>' +
+          '<p class="sub">No mods on this one &mdash; played as it ships.</p></div>';
+      }
+
+      var summary = game.summary ? '<p class="lede">' + esc(game.summary) + '</p>' : '';
+
+      var hdrHtml = hdrWriteup(game.hdrWriteup);
+      var nvidiaHtml = settingsBlock(game.nvidia);
+      var dlssHtml = settingsBlock(game.dlss);
+
+      return '<article class="card setup-card" id="game-' + esc(game.id) + '">' +
+        '<div class="setup-head">' +
+          '<div class="setup-meta">' + meta.join("") + '</div>' +
+          '<h2>' + esc(game.title) + '</h2>' +
+          summary +
+        '</div>' +
+        '<div class="setup-grid">' + groups + '</div>' +
+        settingsNote +
+        hdrHtml +
+        dlssHtml +
+        nvidiaHtml +
+        modsHtml +
+      '</article>';
+    }
+
+    fetch("data/setups.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("setups " + r.status); return r.json(); })
+      .then(function (data) {
+        if (introEl) introEl.textContent = data.intro || "";
+        var games = data.games || [];
+        if (!games.length) {
+          listEl.innerHTML = '<p class="sub">Setups are being added &mdash; check back soon.</p>';
+          if (countEl) countEl.textContent = "";
+          return;
+        }
+        listEl.innerHTML = games.map(gameCard).join("");
+        if (countEl) {
+          var n = games.length;
+          countEl.textContent = n === 1
+            ? "1 game so far. More are added as I play them."
+            : n + " games so far. More are added as I play them.";
+        }
+      })
+      .catch(function () {
+        if (introEl) introEl.textContent = "";
+        listEl.innerHTML = '<p class="sub">The setup list could not load right now. Please try again shortly.</p>';
+        if (countEl) countEl.textContent = "";
+      });
+  })();
+  </script>
+</body>
+</html>

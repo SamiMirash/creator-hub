@@ -1,0 +1,569 @@
+{
+  "id": "resident-evil-assault-the-nightmare",
+  "game": "Resident Evil Assault the Nightmare (2002)",
+  "target": "100% archival completion of the selected original mobile route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "archival-route",
+      "name": "Original Mobile Route",
+      "location_cue": "The title screen, handset controls, version information, and first mansion view.",
+      "note": "Preserve each phone build before testing completion boundaries.",
+      "items": [
+        {
+          "id": "setup-original-mobile-build",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Preserve the Original Mobile Build",
+          "missable": false,
+          "levels": {
+            "1": "This release belongs to an older phone ecosystem.",
+            "2": "Use the original 2002 mobile build on a compatible preserved handset.",
+            "3": "Before play, archive the application package, handset model, firmware, save storage, control layout, language, and service state. Keep an untouched clone; no verified current storefront or general-purpose emulator route is documented."
+          }
+        },
+        {
+          "id": "setup-japanese-release",
+          "type": "optional",
+          "safe_type": "Version",
+          "label": "Record the Japanese Release",
+          "missable": false,
+          "levels": {
+            "1": "The earliest edition came through a regional phone service.",
+            "2": "Document the Japanese Capcom Party build separately from later adaptations.",
+            "3": "Boot the Japanese release, capture its title and version screens, record the handset and service configuration, and complete a mechanically representative room without exposing narrative text in the public guide."
+          }
+        },
+        {
+          "id": "setup-western-adaptation",
+          "type": "optional",
+          "safe_type": "Version",
+          "label": "Record the Western Adaptation",
+          "missable": false,
+          "levels": {
+            "1": "A later phone edition may not be identical.",
+            "2": "Preserve the mid-2000s Western mobile adaptation as a separate build.",
+            "3": "Archive the Western package and its device profile, then compare title screens, controls, weapon menu, room order, pickup behavior, and all ending flags against the Japanese build. Do not merge differences until direct captures prove equivalence."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "setup-continuous-capture",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Capture the Entire Session",
+          "missable": false,
+          "levels": {
+            "1": "Brief prompts and result screens may be the only surviving evidence.",
+            "2": "Record continuously from application launch through every result screen.",
+            "3": "Capture at native timing with button input visible where possible. Save raw video, periodic save-state or handset backups, and a written room-by-room input log before testing alternate routes or outcomes."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Clone the handset state first",
+        "why": "The original distribution route is not reliably replaceable."
+      }
+    },
+    {
+      "id": "aiming-and-exploration",
+      "name": "Aiming and Exploration",
+      "location_cue": "The first-person mansion views navigated with directional phone inputs.",
+      "note": "Establish controls and a room ledger before spending scarce ammunition.",
+      "items": [
+        {
+          "id": "control-aiming",
+          "type": "interaction",
+          "safe_type": "Control",
+          "label": "Master Directional Aiming",
+          "missable": false,
+          "levels": {
+            "1": "Combat is built around a phone keypad rather than free movement.",
+            "2": "Use the directional keys to place the reticle over each visible target.",
+            "3": "Enter a safe early encounter, move the reticle through every supported direction, record its travel limits, and fire only after centering it on the target. Repeat on each verified handset layout so diagonal or remapped inputs are not missed."
+          }
+        },
+        {
+          "id": "control-fire-window",
+          "type": "interaction",
+          "safe_type": "Combat",
+          "label": "Confirm Every Hit",
+          "missable": false,
+          "levels": {
+            "1": "A visible target does not guarantee a registered shot.",
+            "2": "Center the reticle and fire while the target occupies the active window.",
+            "3": "Watch for the game's hit response after each shot. If none appears, reacquire the target before spending more ammunition; record shot counts per target type from a backed-up state rather than assuming damage values."
+          }
+        },
+        {
+          "id": "control-room-sweep",
+          "type": "interaction",
+          "safe_type": "Exploration",
+          "label": "Sweep Every View",
+          "missable": true,
+          "levels": {
+            "1": "Important objects can share the screen with hostile targets.",
+            "2": "Check every available aiming direction before leaving each mansion view.",
+            "3": "After combat stops, sweep the reticle across the full screen, test each navigation command once, and record every connected view. Revisit the view after obtaining each key because a progression object may only become usable later."
+          }
+        },
+        {
+          "id": "control-shoot-pickups",
+          "type": "interaction",
+          "safe_type": "Pickup",
+          "label": "Shoot Floating Pickups",
+          "missable": true,
+          "levels": {
+            "1": "Supplies are collected differently from conventional floor items.",
+            "2": "Aim at a floating object and shoot it to add it to the inventory.",
+            "3": "Clear immediate threats, center the reticle on the floating pickup, fire once, and confirm the inventory or status change before leaving. Reload a backup if the object disappears without a recorded award."
+          }
+        },
+        {
+          "id": "control-ammo-ledger",
+          "type": "interaction",
+          "safe_type": "Resource",
+          "label": "Track Ammunition Manually",
+          "missable": false,
+          "levels": {
+            "1": "Every test shot can affect later route evidence.",
+            "2": "Record ammunition before and after each encounter and pickup.",
+            "3": "Maintain a per-room ledger for starting ammunition, shots fired, confirmed hits, ammunition collected, and remaining stock. Clone the save before measuring enemy durability so the archival completion route retains enough resources."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before damage tests",
+        "why": "Input and durability tests consume limited resources."
+      }
+    },
+    {
+      "id": "weapon-records",
+      "name": "Weapon Records",
+      "location_cue": "Weapon pickups and the status display used throughout the isolated mansion.",
+      "note": "Document only the four weapons directly supported by the preserved record.",
+      "items": [
+        {
+          "id": "weapon-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Handgun",
+          "missable": true,
+          "levels": {
+            "1": "Establish the basic weapon first.",
+            "2": "Use the handgun against an early ground target.",
+            "3": "Equip the handgun, record its starting ammunition and firing cadence, defeat one early target with confirmed hits, then preserve the shot count from a cloned state."
+          }
+        },
+        {
+          "id": "weapon-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "A broader close-range option appears later.",
+            "2": "Acquire and fire the shotgun in a documented room.",
+            "3": "Shoot the floating or awarded shotgun pickup, verify it in the weapon display, record ammunition, and test one carefully centered shot against a nearby target from a backup."
+          }
+        },
+        {
+          "id": "weapon-submachine-gun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Submachine Gun",
+          "missable": true,
+          "levels": {
+            "1": "One weapon trades individual shots for rapid fire.",
+            "2": "Acquire the submachine gun and verify sustained input.",
+            "3": "Confirm the weapon pickup, note its ammunition unit, test a brief controlled burst, and record whether holding or repeatedly pressing fire changes consumption. Restore the pre-test state afterward."
+          }
+        },
+        {
+          "id": "weapon-grenade-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade Launcher",
+          "missable": true,
+          "levels": {
+            "1": "The heaviest option should be preserved for a demanding encounter.",
+            "2": "Acquire the grenade launcher before the final verified combat stretch.",
+            "3": "Confirm the launcher in the weapon menu, record its ammunition separately, and save before firing. Test one shot for area and damage behavior, reload, then retain the ammunition for the last corridor encounter."
+          }
+        },
+        {
+          "id": "weapon-roster-check",
+          "type": "optional",
+          "safe_type": "Weapon Set",
+          "label": "Verify the Four-Weapon Roster",
+          "missable": false,
+          "levels": {
+            "1": "A complete archive should show every confirmed weapon in one ledger.",
+            "2": "Record the handgun, shotgun, submachine gun, and grenade launcher.",
+            "3": "Capture each weapon's acquisition, menu entry, ammunition counter, firing behavior, and one confirmed hit. Keep the four records linked to the same build and do not add familiar series weapons without direct evidence."
+          }
+        },
+        {
+          "id": "weapon-resource-finish",
+          "type": "interaction",
+          "safe_type": "Resource Plan",
+          "label": "Reach the Final Corridor Prepared",
+          "missable": true,
+          "levels": {
+            "1": "Heavy ammunition is more valuable near the end.",
+            "2": "Carry saved shotgun, submachine-gun, and launcher ammunition into the final corridor.",
+            "3": "Use the handgun for safely measured early targets, collect every visible ammunition pack, and make a backup before the last corridor. Enter with all four weapon records complete and enough heavy ammunition to retry the encounter without overwriting the pre-corridor state."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep a pre-test resource save",
+        "why": "Weapon behavior tests alter ammunition totals."
+      }
+    },
+    {
+      "id": "pickup-records",
+      "name": "Pickup Records",
+      "location_cue": "Floating objects visible after scanning each cleared mansion view.",
+      "note": "Shoot each object and verify the resulting inventory or status change.",
+      "items": [
+        {
+          "id": "pickup-green-herb",
+          "type": "collectible",
+          "safe_type": "Recovery Item",
+          "label": "Green Herb",
+          "missable": true,
+          "levels": {
+            "1": "Watch for a floating recovery object after danger clears.",
+            "2": "Shoot every visible green herb pickup before leaving its view.",
+            "3": "Clear enemies first, shoot the herb once, confirm the recovery or inventory change, and record health immediately before and after. Preserve a backup to distinguish collection from automatic use."
+          }
+        },
+        {
+          "id": "pickup-ammunition-pack",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Ammunition Pack",
+          "missable": true,
+          "levels": {
+            "1": "Resource pickups can be easy to overlook during aiming combat.",
+            "2": "Shoot each floating ammunition pack and check the active weapon counter.",
+            "3": "Record every weapon counter, shoot the pack, then record all counters again to identify its recipient. If no value changes, reload and repeat with a different equipped weapon before marking it collected."
+          }
+        },
+        {
+          "id": "pickup-key-items",
+          "type": "collectible",
+          "safe_type": "Progression Item",
+          "label": "Keys and Progression Items",
+          "missable": true,
+          "levels": {
+            "1": "Not every floating object is a combat supply.",
+            "2": "Shoot each distinct key or progression object and revisit blocked exits.",
+            "3": "Capture the object before collection, shoot it once, record its displayed name or icon, and test only previously documented blocked routes. Keep a backup before use because the object may be consumed and its exact placement is not yet fully preserved."
+          }
+        },
+        {
+          "id": "pickup-per-room-ledger",
+          "type": "interaction",
+          "safe_type": "Completion Check",
+          "label": "Log Every Room Pickup",
+          "missable": true,
+          "levels": {
+            "1": "The surviving public record does not provide a complete placement table.",
+            "2": "Create a room-indexed list of every herb, ammunition pack, key, and other object.",
+            "3": "Assign each view a neutral code, capture it before and after combat, and log object position, collection input, resulting counter or icon, and whether it respawns. Recheck every code after each new key before leaving the build's final corridor."
+          },
+          "internal_uncertain": true
+        }
+      ],
+      "save_backup": {
+        "title": "Save before collecting unknown objects",
+        "why": "Some progression items may be consumed immediately."
+      }
+    },
+    {
+      "id": "combat-records",
+      "name": "Combat Records",
+      "location_cue": "Ground, airborne, wall-level, and final-corridor aiming encounters.",
+      "note": "Use neutral mechanical labels to avoid revealing narrative identities.",
+      "items": [
+        {
+          "id": "target-ground",
+          "type": "optional",
+          "safe_type": "Enemy Record",
+          "label": "Ground Target Record",
+          "missable": false,
+          "levels": {
+            "1": "Begin with the slowest visible threat.",
+            "2": "Record one complete encounter with a walking ground target.",
+            "3": "From a cloned save, capture its entry, movement, attack cue, every confirmed hit, defeat response, and ammunition total. Repeat once to verify the shot count before using that value in the route."
+          }
+        },
+        {
+          "id": "target-flying",
+          "type": "optional",
+          "safe_type": "Enemy Record",
+          "label": "Flying Target Record",
+          "missable": false,
+          "levels": {
+            "1": "Some targets cross the aiming field quickly.",
+            "2": "Record one complete encounter with a flying target.",
+            "3": "Track the target without firing for one cycle, note its safe aiming window, reload, then defeat it with confirmed shots. Record missed shots separately so durability is not overstated."
+          }
+        },
+        {
+          "id": "target-wall",
+          "type": "optional",
+          "safe_type": "Enemy Record",
+          "label": "Fast Target Record",
+          "missable": false,
+          "levels": {
+            "1": "A more agile threat demands a shorter firing window.",
+            "2": "Record one complete encounter with the fast wall-crawling target type.",
+            "3": "Back up before the encounter, observe one movement and attack cycle, then reload and fire only during the verified vulnerable window. Capture damage taken, ammunition spent, and recovery use."
+          }
+        },
+        {
+          "id": "target-final-corridor",
+          "type": "interaction",
+          "safe_type": "Final Encounter",
+          "label": "Clear the Final Corridor Encounter",
+          "missable": true,
+          "levels": {
+            "1": "Save heavy ammunition for the last documented combat stretch.",
+            "2": "Back up before the final corridor and enter with the strongest available weapon.",
+            "3": "Confirm all prior rooms and pickups are logged, make an external save copy, equip a heavy weapon, and fire only on registered aiming windows until the corridor clears. Preserve the pre-encounter state for outcome and version testing."
+          }
+        },
+        {
+          "id": "target-complete-ledger",
+          "type": "optional",
+          "safe_type": "Enemy Set",
+          "label": "Complete the Target-Type Ledger",
+          "missable": false,
+          "levels": {
+            "1": "Completion includes documenting every distinct mechanical threat.",
+            "2": "Record ground, flying, fast wall-crawling, and final-corridor target categories.",
+            "3": "For each category, retain an entry capture, attack cycle, clean defeat, measured ammunition cost, damage received, and room code. Treat any additional animation or durability pattern as a provisional new type until reproduced."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve a pre-corridor backup",
+        "why": "The last encounter is needed for every outcome test."
+      },
+      "point_of_no_return": {
+        "title": "Final corridor",
+        "warning": "Finish the room and pickup ledger before clearing this encounter."
+      }
+    },
+    {
+      "id": "rescue-outcomes",
+      "name": "Rescue Outcomes",
+      "location_cue": "The completion result reached after the final documented combat corridor.",
+      "note": "Four outcomes are confirmed; their exact route flags remain unverified.",
+      "items": [
+        {
+          "id": "outcome-a",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Rescue Outcome A",
+          "missable": true,
+          "levels": {
+            "1": "Different route flags can change the final rescue result.",
+            "2": "Preserve a separate completion displaying rescue outcome A.",
+            "3": "NEEDS VERIFICATION: exact trigger mapping for rescue outcome A. Start from the pre-corridor backup, alter only one documented route choice or rescued flag, finish the corridor, and capture the complete result screen. Do not publish a trigger until the same change reproduces this outcome twice."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "outcome-b",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Rescue Outcome B",
+          "missable": true,
+          "levels": {
+            "1": "Different route flags can change the final rescue result.",
+            "2": "Preserve a separate completion displaying rescue outcome B.",
+            "3": "NEEDS VERIFICATION: exact trigger mapping for rescue outcome B. Start from the pre-corridor backup, alter only one documented route choice or rescued flag, finish the corridor, and capture the complete result screen. Do not publish a trigger until the same change reproduces this outcome twice."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "outcome-c",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Rescue Outcome C",
+          "missable": true,
+          "levels": {
+            "1": "Different route flags can change the final rescue result.",
+            "2": "Preserve a separate completion displaying rescue outcome C.",
+            "3": "NEEDS VERIFICATION: exact trigger mapping for rescue outcome C. Start from the pre-corridor backup, alter only one documented route choice or rescued flag, finish the corridor, and capture the complete result screen. Do not publish a trigger until the same change reproduces this outcome twice."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "outcome-d",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Rescue Outcome D",
+          "missable": true,
+          "levels": {
+            "1": "Different route flags can change the final rescue result.",
+            "2": "Preserve a separate completion displaying rescue outcome D.",
+            "3": "NEEDS VERIFICATION: exact trigger mapping for rescue outcome D. Start from the pre-corridor backup, alter only one documented route choice or rescued flag, finish the corridor, and capture the complete result screen. Do not publish a trigger until the same change reproduces this outcome twice."
+          },
+          "internal_uncertain": true
+        }
+      ],
+      "save_backup": {
+        "title": "Clone the pre-corridor save four ways",
+        "why": "Each result needs an independently reproducible route."
+      }
+    },
+    {
+      "id": "verification-holds",
+      "name": "Unverified Completion Boundaries",
+      "location_cue": "Any undocumented room, placement, rank, difficulty, unlock, version difference, or terminal result.",
+      "note": "Unknown values are withheld rather than guessed.",
+      "items": [
+        {
+          "id": "verification-01",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Exact Room Graph",
+          "missable": false,
+          "levels": {
+            "1": "The surviving evidence does not establish this completion boundary.",
+            "2": "Resolve it only through direct observation of a lawful preserved build.",
+            "3": "NEEDS VERIFICATION: exact room graph. Capture the raw game state, reproduce the condition from a cloned backup, and update the private research notes before replacing this hold. Never infer the answer from another Resident Evil release."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-02",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Complete Key Placement",
+          "missable": false,
+          "levels": {
+            "1": "The surviving evidence does not establish this completion boundary.",
+            "2": "Resolve it only through direct observation of a lawful preserved build.",
+            "3": "NEEDS VERIFICATION: complete key placement. Capture the raw game state, reproduce the condition from a cloned backup, and update the private research notes before replacing this hold. Never infer the answer from another Resident Evil release."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-03",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Complete Pickup Placement",
+          "missable": false,
+          "levels": {
+            "1": "The surviving evidence does not establish this completion boundary.",
+            "2": "Resolve it only through direct observation of a lawful preserved build.",
+            "3": "NEEDS VERIFICATION: complete pickup placement. Capture the raw game state, reproduce the condition from a cloned backup, and update the private research notes before replacing this hold. Never infer the answer from another Resident Evil release."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-04",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Outcome Trigger Mapping",
+          "missable": false,
+          "levels": {
+            "1": "The surviving evidence does not establish this completion boundary.",
+            "2": "Resolve it only through direct observation of a lawful preserved build.",
+            "3": "NEEDS VERIFICATION: outcome trigger mapping. Capture the raw game state, reproduce the condition from a cloned backup, and update the private research notes before replacing this hold. Never infer the answer from another Resident Evil release."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-05",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Stage Count",
+          "missable": false,
+          "levels": {
+            "1": "The surviving evidence does not establish this completion boundary.",
+            "2": "Resolve it only through direct observation of a lawful preserved build.",
+            "3": "NEEDS VERIFICATION: stage count. Capture the raw game state, reproduce the condition from a cloned backup, and update the private research notes before replacing this hold. Never infer the answer from another Resident Evil release."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-06",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Score Thresholds",
+          "missable": false,
+          "levels": {
+            "1": "The surviving evidence does not establish this completion boundary.",
+            "2": "Resolve it only through direct observation of a lawful preserved build.",
+            "3": "NEEDS VERIFICATION: score thresholds. Capture the raw game state, reproduce the condition from a cloned backup, and update the private research notes before replacing this hold. Never infer the answer from another Resident Evil release."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-07",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Rank Thresholds",
+          "missable": false,
+          "levels": {
+            "1": "The surviving evidence does not establish this completion boundary.",
+            "2": "Resolve it only through direct observation of a lawful preserved build.",
+            "3": "NEEDS VERIFICATION: rank thresholds. Capture the raw game state, reproduce the condition from a cloned backup, and update the private research notes before replacing this hold. Never infer the answer from another Resident Evil release."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-08",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Difficulty Variants",
+          "missable": false,
+          "levels": {
+            "1": "The surviving evidence does not establish this completion boundary.",
+            "2": "Resolve it only through direct observation of a lawful preserved build.",
+            "3": "NEEDS VERIFICATION: difficulty variants. Capture the raw game state, reproduce the condition from a cloned backup, and update the private research notes before replacing this hold. Never infer the answer from another Resident Evil release."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-09",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Completion Unlocks",
+          "missable": false,
+          "levels": {
+            "1": "The surviving evidence does not establish this completion boundary.",
+            "2": "Resolve it only through direct observation of a lawful preserved build.",
+            "3": "NEEDS VERIFICATION: completion unlocks. Capture the raw game state, reproduce the condition from a cloned backup, and update the private research notes before replacing this hold. Never infer the answer from another Resident Evil release."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-10",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Western Content Differences",
+          "missable": false,
+          "levels": {
+            "1": "The surviving evidence does not establish this completion boundary.",
+            "2": "Resolve it only through direct observation of a lawful preserved build.",
+            "3": "NEEDS VERIFICATION: Western content differences. Capture the raw game state, reproduce the condition from a cloned backup, and update the private research notes before replacing this hold. Never infer the answer from another Resident Evil release."
+          },
+          "internal_uncertain": true
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve raw evidence",
+        "why": "A hold should only be replaced by reproducible direct capture."
+      }
+    }
+  ]
+}

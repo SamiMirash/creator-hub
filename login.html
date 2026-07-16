@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Log in to the free Sami Mirash member room.">
+  <meta property="og:title" content="Login | Sami Mirash">
+  <meta property="og:description" content="Open your free Sami Mirash member account.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.samimirash.com/login.html">
+  <meta property="og:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="theme-color" content="#080705">
+  <link rel="canonical" href="https://www.samimirash.com/login.html">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <title>Login | Sami Mirash</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Login","url":"https://www.samimirash.com/login.html"}</script>
+  <script defer src="assets/site.js"></script>
+  <script defer src="js/config.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="assets/seo.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header></header>
+  <main id="main">
+    <section class="hero"><div class="wrap"><p class="eyebrow">Member login</p><h1>Open your free member account.</h1><p class="lede">The account layer is ready before the stream launches. It uses Supabase Auth with the public browser key only.</p></div></section>
+    <section class="section">
+      <div class="wrap grid two">
+        <article class="auth-panel">
+          <h2>Log in</h2>
+          <p class="status-text" data-auth-status></p>
+          <p class="status-text" data-config-warning></p>
+          <form class="auth-form" id="login-form">
+            <label>Email<input name="email" type="email" autocomplete="email" required></label>
+            <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+            <button class="button primary" type="submit">Log in</button>
+          </form>
+        </article>
+        <article class="card"><h2>Need an account?</h2><p>Create a free member profile. No payment flow is attached to this site.</p><a class="button" href="join.html">Join free</a></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" data-site-footer></footer>
+</body>
+</html>

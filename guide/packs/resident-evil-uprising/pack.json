@@ -1,0 +1,986 @@
+{
+  "id": "resident-evil-uprising",
+  "game": "Resident Evil: Uprising (2009)",
+  "target": "Spoiler-free 100% completion of the original mobile campaign, verified pickups, puzzle interactions, optional challenge, and documented secret",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "route-and-version",
+      "name": "Route and Version",
+      "location_cue": "The title screen and opening station rooms.",
+      "note": "Confirm the retired mobile build and its two-position controls before committing progress.",
+      "items": [
+        {
+          "id": "route-original-mobile",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Original Mobile Release",
+          "missable": false,
+          "levels": {
+            "1": "This checklist belongs to the retired feature-phone game.",
+            "2": "Run the original BlackBerry or Windows Mobile release rather than another similarly named title.",
+            "3": "Confirm the title screen identifies Resident Evil: Uprising and provides the partner-switching campaign. Preserve the installed application and save container because no current storefront recovery is guaranteed."
+          }
+        },
+        {
+          "id": "route-backup",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Create a Clean Save Backup",
+          "missable": false,
+          "levels": {
+            "1": "Retired mobile software deserves an early recovery point.",
+            "2": "Back up the complete application data before beginning the station route.",
+            "3": "Close the game, copy its full save and application-data folders, reopen the original, and verify that loading and saving work before relying on the backup."
+          }
+        },
+        {
+          "id": "route-partner-controls",
+          "type": "interaction",
+          "safe_type": "Mechanic",
+          "label": "Verify Partner Switching",
+          "missable": false,
+          "levels": {
+            "1": "Later doors require control of both playable positions.",
+            "2": "Test item exchange and the number-7 partner switch in the opening station rooms.",
+            "3": "Place the characters apart, exchange a harmless item, press 7, and confirm control changes while the inactive partner stays put; the sewer solution depends on this behavior."
+          }
+        },
+        {
+          "id": "route-combat-gauge",
+          "type": "interaction",
+          "safe_type": "Mechanic",
+          "label": "Learn the Combat Gauge",
+          "missable": false,
+          "levels": {
+            "1": "Waiting briefly can make limited ammunition last longer.",
+            "2": "Aim until the attack gauge changes from gray through yellow to red.",
+            "3": "Gray means the target is outside effective range, yellow permits ordinary damage, and red enables a one-shot defeat; use red attacks during the timed challenge when space allows."
+          }
+        }
+      ]
+    },
+    {
+      "id": "station-entry",
+      "name": "Station Entry",
+      "location_cue": "Front hall and central desk.",
+      "note": "Finish this physical section before advancing; the compact mobile route offers limited backtracking.",
+      "save_backup": {
+        "title": "Back up before leaving this section",
+        "why": "Later route changes can permanently close access to unchecked rooms.",
+        "detail": "Use a separate save copy and confirm every listed entry before continuing."
+      },
+      "items": [
+        {
+          "id": "station-entry-9mm-pistol",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "9mm Pistol",
+          "missable": true,
+          "levels": {
+            "1": "Search the early station rooms before operating any central equipment.",
+            "2": "In Lobby, collect 9mm Pistol during the starting floor pickup.",
+            "3": "In Lobby, collect 9mm Pistol during the starting floor pickup. Collect it before using the lobby computer and exhaust the room search before entering the opened passage."
+          }
+        },
+        {
+          "id": "station-entry-silver-keycard",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Silver Keycard",
+          "missable": true,
+          "levels": {
+            "1": "Search the early station rooms before operating any central equipment.",
+            "2": "In Lobby, collect Silver Keycard during the central desk computer.",
+            "3": "In Lobby, collect Silver Keycard during the central desk computer. Take it to the computer in the middle of the lobby desk and use it there; the nearby passage opens after the terminal interaction."
+          }
+        },
+        {
+          "id": "station-entry-black-king-plug",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Black King Plug",
+          "missable": true,
+          "levels": {
+            "1": "Search the early station rooms before operating any central equipment.",
+            "2": "In Lobby, collect Black King Plug during the starting hall search.",
+            "3": "In Lobby, collect Black King Plug during the starting hall search. Keep this plug rather than discarding it. Much later, the raised sewer console requires it together with the Black Knight Plug and Black Bishop Plug."
+          }
+        },
+        {
+          "id": "station-entry-city-pamphlet",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "City Pamphlet",
+          "missable": true,
+          "levels": {
+            "1": "Search the early station rooms before operating any central equipment.",
+            "2": "In Lobby, collect City Pamphlet during the starting hall search.",
+            "3": "In Lobby, collect City Pamphlet during the starting hall search. Collect it before using the lobby computer and exhaust the room search before entering the opened passage."
+          }
+        },
+        {
+          "id": "station-entry-purple-monkey",
+          "type": "key",
+          "safe_type": "Puzzle Item",
+          "label": "Purple Monkey",
+          "missable": true,
+          "levels": {
+            "1": "Search the early station rooms before operating any central equipment.",
+            "2": "In Main Room, collect Purple Monkey during the main room search.",
+            "3": "In Main Room, collect Purple Monkey during the main room search. At the bookcase puzzle, put Purple in the northernmost empty bookcase. Complete the Green and Amber positions before checking the revealed safe."
+          }
+        },
+        {
+          "id": "station-entry-9mm-rounds",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "9mm Rounds",
+          "missable": true,
+          "levels": {
+            "1": "Search the early station rooms before operating any central equipment.",
+            "2": "In Main Room, collect 9mm Rounds during the main room search.",
+            "3": "In Main Room, collect 9mm Rounds during the main room search. Collect it before using the lobby computer and exhaust the room search before entering the opened passage."
+          }
+        },
+        {
+          "id": "station-entry-bottle",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Bottle",
+          "missable": true,
+          "levels": {
+            "1": "Search the early station rooms before operating any central equipment.",
+            "2": "In Main Room, collect Bottle during the main room search.",
+            "3": "In Main Room, collect Bottle during the main room search. Keep the Bottle until the Rag and Gasoline are available. Those three components provide the incendiary needed on the paired sewer route."
+          }
+        },
+        {
+          "id": "station-entry-medkit",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Medkit",
+          "missable": true,
+          "levels": {
+            "1": "Search the early station rooms before operating any central equipment.",
+            "2": "In Main Room, collect Medkit during the main room search.",
+            "3": "In Main Room, collect Medkit during the main room search. Collect it before using the lobby computer and exhaust the room search before entering the opened passage."
+          }
+        },
+        {
+          "id": "station-entry-personal-diary",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Personal Diary",
+          "missable": true,
+          "levels": {
+            "1": "Search the early station rooms before operating any central equipment.",
+            "2": "In Main Room, collect Personal Diary during the main room document.",
+            "3": "In Main Room, collect Personal Diary during the main room document. Collect it before using the lobby computer and exhaust the room search before entering the opened passage."
+          }
+        },
+        {
+          "id": "station-entry-personal-mail",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Personal Mail",
+          "missable": true,
+          "levels": {
+            "1": "Search the early station rooms before operating any central equipment.",
+            "2": "In Main Room, collect Personal Mail during the main room document.",
+            "3": "In Main Room, collect Personal Mail during the main room document. Collect it before using the lobby computer and exhaust the room search before entering the opened passage."
+          }
+        },
+        {
+          "id": "station-entry-king-ospades",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "King o'Spades",
+          "missable": true,
+          "levels": {
+            "1": "Search the early station rooms before operating any central equipment.",
+            "2": "In Storage Room 1, collect King o'Spades during the southern side hallway.",
+            "3": "In Storage Room 1, collect King o'Spades during the southern side hallway. Collect it during the first Storage Room 1 sweep. No separate lock use is confirmed in the available route notes, so retain it through the station section."
+          }
+        },
+        {
+          "id": "station-entry-lighter",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Lighter",
+          "missable": true,
+          "levels": {
+            "1": "Search the early station rooms before operating any central equipment.",
+            "2": "In Storage Room 1, collect Lighter during the southern side hallway.",
+            "3": "In Storage Room 1, collect Lighter during the southern side hallway. Preserve it for the partner who takes a Sewer Card and the Molotov Cocktail into the sewer. Transfer all three before changing control."
+          }
+        }
+      ]
+    },
+    {
+      "id": "station-lower-storage",
+      "name": "Lower Level and Storage",
+      "location_cue": "Lower cells and storage rooms.",
+      "note": "Finish this physical section before advancing; the compact mobile route offers limited backtracking.",
+      "save_backup": {
+        "title": "Back up before leaving this section",
+        "why": "Later route changes can permanently close access to unchecked rooms.",
+        "detail": "Use a separate save copy and confirm every listed entry before continuing."
+      },
+      "items": [
+        {
+          "id": "station-lower-storage-arsonists-book",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Arsonist's Book",
+          "missable": true,
+          "levels": {
+            "1": "The lower cells and adjoining storage hold several easy-to-miss supplies.",
+            "2": "In Lower Level, collect Arsonist's Book during the search cell area.",
+            "3": "In Lower Level, collect Arsonist's Book during the search cell area. Clear the lower cell area and inspect every available pickup point before returning upstairs; later puzzle chains depend on several objects from this sweep."
+          }
+        },
+        {
+          "id": "station-lower-storage-rag",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Rag",
+          "missable": true,
+          "levels": {
+            "1": "The lower cells and adjoining storage hold several easy-to-miss supplies.",
+            "2": "In Lower Level, collect Rag during the search cell area.",
+            "3": "In Lower Level, collect Rag during the search cell area. Combine it with the Bottle and Gasoline to prepare the Molotov Cocktail; keep the Lighter with the partner assigned to the sewer walkway."
+          }
+        },
+        {
+          "id": "station-lower-storage-m79",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "M79",
+          "missable": true,
+          "levels": {
+            "1": "The lower cells and adjoining storage hold several easy-to-miss supplies.",
+            "2": "In Lower Level, collect M79 during the search cell area.",
+            "3": "In Lower Level, collect M79 during the search cell area. Clear the lower cell area and inspect every available pickup point before returning upstairs; later puzzle chains depend on several objects from this sweep."
+          }
+        },
+        {
+          "id": "station-lower-storage-detonator",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Detonator",
+          "missable": true,
+          "levels": {
+            "1": "The lower cells and adjoining storage hold several easy-to-miss supplies.",
+            "2": "In Lower Level, collect Detonator during the search cell area.",
+            "3": "In Lower Level, collect Detonator during the search cell area. Transfer this and the C4 Explosives to the other partner, switch control, and use the explosive charge on the debris blocking the southern passage."
+          }
+        },
+        {
+          "id": "station-lower-storage-police-memorandum",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Police Memorandum",
+          "missable": true,
+          "levels": {
+            "1": "The lower cells and adjoining storage hold several easy-to-miss supplies.",
+            "2": "In Lower Level, collect Police Memorandum during the search cell area.",
+            "3": "In Lower Level, collect Police Memorandum during the search cell area. Read the memorandum and record the safe digits shown in your current save. The number varies, so do not copy a code from another playthrough."
+          }
+        },
+        {
+          "id": "station-lower-storage-clock-tower-note",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Clock Tower Note",
+          "missable": true,
+          "levels": {
+            "1": "The lower cells and adjoining storage hold several easy-to-miss supplies.",
+            "2": "In Lower Level, collect Clock Tower Note during the search cell area.",
+            "3": "In Lower Level, collect Clock Tower Note during the search cell area. Clear the lower cell area and inspect every available pickup point before returning upstairs; later puzzle chains depend on several objects from this sweep."
+          }
+        },
+        {
+          "id": "station-lower-storage-amber-monkey",
+          "type": "key",
+          "safe_type": "Puzzle Item",
+          "label": "Amber Monkey",
+          "missable": true,
+          "levels": {
+            "1": "The lower cells and adjoining storage hold several easy-to-miss supplies.",
+            "2": "In Lower Level, collect Amber Monkey during the search cell area.",
+            "3": "In Lower Level, collect Amber Monkey during the search cell area. At the six-bookcase puzzle, set Amber in the empty position between the red and yellow statues. The other missing colors must also be placed correctly."
+          }
+        },
+        {
+          "id": "station-lower-storage-c4-explosives",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "C4 Explosives",
+          "missable": true,
+          "levels": {
+            "1": "The lower cells and adjoining storage hold several easy-to-miss supplies.",
+            "2": "In Lower Level, collect C4 Explosives during the search cell area.",
+            "3": "In Lower Level, collect C4 Explosives during the search cell area. Give the charge and Detonator to the other partner. Change control, walk to the southern debris pile, and activate the C4 from that side."
+          }
+        },
+        {
+          "id": "station-lower-storage-gasoline",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Gasoline",
+          "missable": true,
+          "levels": {
+            "1": "The lower cells and adjoining storage hold several easy-to-miss supplies.",
+            "2": "In Storage Room 2, collect Gasoline during the north side room.",
+            "3": "In Storage Room 2, collect Gasoline during the north side room. Use it with the Bottle and Rag to make the Molotov Cocktail. Do not enter the paired sewer sequence without the resulting weapon and Lighter."
+          }
+        },
+        {
+          "id": "station-lower-storage-molotov-cocktail",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Molotov Cocktail",
+          "missable": true,
+          "levels": {
+            "1": "The lower cells and adjoining storage hold several easy-to-miss supplies.",
+            "2": "In Storage Room 2, collect Molotov Cocktail during the combine earlier materials.",
+            "3": "In Storage Room 2, collect Molotov Cocktail during the combine earlier materials. Transfer this, the Lighter, and one Sewer Card to the same partner. At the far sewer walkway, use the cocktail to clear the route obstruction."
+          }
+        },
+        {
+          "id": "station-lower-storage-green-monkey",
+          "type": "key",
+          "safe_type": "Puzzle Item",
+          "label": "Green Monkey",
+          "missable": true,
+          "levels": {
+            "1": "The lower cells and adjoining storage hold several easy-to-miss supplies.",
+            "2": "In Storage Room 2, collect Green Monkey during the north side room.",
+            "3": "In Storage Room 2, collect Green Monkey during the north side room. At the six-bookcase puzzle, place Green in the empty bookcase closest to the room door, then complete the Amber and Purple placements."
+          }
+        }
+      ]
+    },
+    {
+      "id": "monkey-office-route",
+      "name": "Bookcase Room and Side Office",
+      "location_cue": "Bookcases and nearby offices.",
+      "note": "Finish this physical section before advancing; the compact mobile route offers limited backtracking.",
+      "save_backup": {
+        "title": "Back up before leaving this section",
+        "why": "Later route changes can permanently close access to unchecked rooms.",
+        "detail": "Use a separate save copy and confirm every listed entry before continuing."
+      },
+      "items": [
+        {
+          "id": "monkey-office-route-letter-1",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Letter 1",
+          "missable": true,
+          "levels": {
+            "1": "Sweep the bookcase room and its nearby side office carefully.",
+            "2": "In Monkey Room, collect Letter 1 during the bookcase room search.",
+            "3": "In Monkey Room, collect Letter 1 during the bookcase room search. Collect it during the first full sweep, before solving the bookcase safe and leaving through the newly available route."
+          }
+        },
+        {
+          "id": "monkey-office-route-black-knight-plug",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Black Knight Plug",
+          "missable": true,
+          "levels": {
+            "1": "Sweep the bookcase room and its nearby side office carefully.",
+            "2": "In Monkey Room, collect Black Knight Plug during the bookcase room search.",
+            "3": "In Monkey Room, collect Black Knight Plug during the bookcase room search. Save it for the raised console in the upper sewer. Insert it with the Black Bishop Plug and Black King Plug to complete that device."
+          }
+        },
+        {
+          "id": "monkey-office-route-user-registration",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "User Registration",
+          "missable": true,
+          "levels": {
+            "1": "Sweep the bookcase room and its nearby side office carefully.",
+            "2": "In Monkey Room, collect User Registration during the bookcase room document.",
+            "3": "In Monkey Room, collect User Registration during the bookcase room document. Collect it during the first full sweep, before solving the bookcase safe and leaving through the newly available route."
+          }
+        },
+        {
+          "id": "monkey-office-route-lockpick",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Lockpick",
+          "missable": true,
+          "levels": {
+            "1": "Sweep the bookcase room and its nearby side office carefully.",
+            "2": "In Monkey Room, collect Lockpick during the bookcase room search.",
+            "3": "In Monkey Room, collect Lockpick during the bookcase room search. Use it on the side-office door beside the Monkey Room, the washroom near the cleared debris, and the lower-level southern door when the route returns there."
+          }
+        },
+        {
+          "id": "monkey-office-route-small-gem-2",
+          "type": "key",
+          "safe_type": "Puzzle Item",
+          "label": "Small Gem 2",
+          "missable": true,
+          "levels": {
+            "1": "Sweep the bookcase room and its nearby side office carefully.",
+            "2": "In Monkey Room, collect Small Gem 2 during the bookcase room search.",
+            "3": "In Monkey Room, collect Small Gem 2 during the bookcase room search. Carry it to the large southern office. Insert Small Gem 1 and Small Gem 2 into the stuffed rabbit before operating the nearby light switch."
+          }
+        },
+        {
+          "id": "monkey-office-route-gargoyle-statuette",
+          "type": "key",
+          "safe_type": "Puzzle Item",
+          "label": "Gargoyle Statuette",
+          "missable": true,
+          "levels": {
+            "1": "Sweep the bookcase room and its nearby side office carefully.",
+            "2": "In Office Room, collect Gargoyle Statuette during the lockpicked side office.",
+            "3": "In Office Room, collect Gargoyle Statuette during the lockpicked side office. Return to the lobby fountain and place this statuette together with the Angel Statuette; both pieces are required before continuing the office route."
+          }
+        },
+        {
+          "id": "monkey-office-route-crowbar",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Crowbar",
+          "missable": true,
+          "levels": {
+            "1": "Sweep the bookcase room and its nearby side office carefully.",
+            "2": "In Office Room, collect Crowbar during the lockpicked side office.",
+            "3": "In Office Room, collect Crowbar during the lockpicked side office. Carry it up the stairs raised by the Crank. Use it to open the fuse-box cover in the Clock Tower before working the clock panel."
+          }
+        }
+      ]
+    },
+    {
+      "id": "southern-rooms",
+      "name": "Southern Rooms",
+      "location_cue": "Blocked southern corridor and washrooms.",
+      "note": "Finish this physical section before advancing; the compact mobile route offers limited backtracking.",
+      "save_backup": {
+        "title": "Back up before leaving this section",
+        "why": "Later route changes can permanently close access to unchecked rooms.",
+        "detail": "Use a separate save copy and confirm every listed entry before continuing."
+      },
+      "items": [
+        {
+          "id": "southern-rooms-semi-auto-pistol",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Semi-Auto Pistol",
+          "missable": true,
+          "levels": {
+            "1": "Check every newly reachable room along the blocked southern corridor.",
+            "2": "In Bathroom 1, collect Semi-Auto Pistol during the lockpicked washroom.",
+            "3": "In Bathroom 1, collect Semi-Auto Pistol during the lockpicked washroom. Pick it up before completing the southern-room sequence; the corridor route later moves toward the offices and sewer setup."
+          }
+        },
+        {
+          "id": "southern-rooms-angel-statuette",
+          "type": "key",
+          "safe_type": "Puzzle Item",
+          "label": "Angel Statuette",
+          "missable": true,
+          "levels": {
+            "1": "Check every newly reachable room along the blocked southern corridor.",
+            "2": "In Storage Room 3, collect Angel Statuette during the upper southern door.",
+            "3": "In Storage Room 3, collect Angel Statuette during the upper southern door. Pair it with the Gargoyle Statuette at the lobby fountain. Place both before leaving the fountain route for the southern offices."
+          }
+        },
+        {
+          "id": "southern-rooms-crank",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Crank",
+          "missable": true,
+          "levels": {
+            "1": "Check every newly reachable room along the blocked southern corridor.",
+            "2": "In Storage Room 3, collect Crank during the upper southern door.",
+            "3": "In Storage Room 3, collect Crank during the upper southern door. Use the Crank on the mechanism at the back of Storage Room 3. This lowers the stairs leading to the Clock Tower pickups."
+          }
+        },
+        {
+          "id": "southern-rooms-op-report-1",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Op Report 1",
+          "missable": true,
+          "levels": {
+            "1": "Check every newly reachable room along the blocked southern corridor.",
+            "2": "In Storage Room 3, collect Op Report 1 during the upper southern document.",
+            "3": "In Storage Room 3, collect Op Report 1 during the upper southern document. Pick it up before completing the southern-room sequence; the corridor route later moves toward the offices and sewer setup."
+          }
+        },
+        {
+          "id": "southern-rooms-valve-handle",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Valve Handle",
+          "missable": true,
+          "levels": {
+            "1": "Check every newly reachable room along the blocked southern corridor.",
+            "2": "In Bathroom 2, collect Valve Handle during the sink beneath broken mirror.",
+            "3": "In Bathroom 2, collect Valve Handle during the sink beneath broken mirror. On the lower sewer route, attach it to the pipe near the stairs in Keycard Room 1 before using that character's Sewer Card at the bottom door."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lobby-big-office",
+      "name": "Lobby and Large Office",
+      "location_cue": "Fountain and large southern office.",
+      "note": "Finish this physical section before advancing; the compact mobile route offers limited backtracking.",
+      "save_backup": {
+        "title": "Back up before leaving this section",
+        "why": "Later route changes can permanently close access to unchecked rooms.",
+        "detail": "Use a separate save copy and confirm every listed entry before continuing."
+      },
+      "items": [
+        {
+          "id": "lobby-big-office-king-oclubs",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "King o'Clubs",
+          "missable": true,
+          "levels": {
+            "1": "Revisit the fountain, then search the large southern office thoroughly.",
+            "2": "In Lobby, collect King o'Clubs during the fountain return search.",
+            "3": "In Lobby, collect King o'Clubs during the fountain return search. Use this card on the northern unopened door from the main room. Search the storage room beyond it for the Shotgun, Cogwheel, and Chess Tutorial."
+          }
+        },
+        {
+          "id": "lobby-big-office-small-gem-1",
+          "type": "key",
+          "safe_type": "Puzzle Item",
+          "label": "Small Gem 1",
+          "missable": true,
+          "levels": {
+            "1": "Revisit the fountain, then search the large southern office thoroughly.",
+            "2": "In Lobby, collect Small Gem 1 during the fountain return search.",
+            "3": "In Lobby, collect Small Gem 1 during the fountain return search. Take both numbered gems to the large office and fit them into the stuffed rabbit. Then use the light switch and inspect the raven clue."
+          }
+        },
+        {
+          "id": "lobby-big-office-letter-2",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Letter 2",
+          "missable": true,
+          "levels": {
+            "1": "Revisit the fountain, then search the large southern office thoroughly.",
+            "2": "In Big Office, collect Letter 2 during the southern double doors.",
+            "3": "In Big Office, collect Letter 2 during the southern double doors. Take it during this office sweep and do not leave until the fountain, two-gem prop, wall clue, and hidden-office interactions are complete."
+          }
+        },
+        {
+          "id": "lobby-big-office-queen-ohearts",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Queen o'Hearts",
+          "missable": true,
+          "levels": {
+            "1": "Revisit the fountain, then search the large southern office thoroughly.",
+            "2": "In Big Office, collect Queen o'Hearts during the southern double doors.",
+            "3": "In Big Office, collect Queen o'Hearts during the southern double doors. Keep this card through the laboratory route. After the required machine item has been used, return to the platform and insert the card at the train terminal."
+          }
+        },
+        {
+          "id": "lobby-big-office-office-diary",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Office Diary",
+          "missable": true,
+          "levels": {
+            "1": "Revisit the fountain, then search the large southern office thoroughly.",
+            "2": "In Inner Office, collect Office Diary during the hidden office search.",
+            "3": "In Inner Office, collect Office Diary during the hidden office search. Read the document inside the hidden office before leaving. Return through the opening afterward so the second sewer card can be collected in the large office."
+          }
+        },
+        {
+          "id": "lobby-big-office-sewer-card-2",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Sewer Card 2",
+          "missable": true,
+          "levels": {
+            "1": "Revisit the fountain, then search the large southern office thoroughly.",
+            "2": "In Big Office, collect Sewer Card 2 during the return after inner office.",
+            "3": "In Big Office, collect Sewer Card 2 during the return after inner office. Give either Sewer Card to the partner taking the office-side tunnel and keep the other with the lower-route character. Each side must operate its own card door."
+          }
+        }
+      ]
+    },
+    {
+      "id": "clock-tower",
+      "name": "Clock Tower",
+      "location_cue": "Storage stairs and clock machinery.",
+      "note": "Finish this physical section before advancing; the compact mobile route offers limited backtracking.",
+      "save_backup": {
+        "title": "Back up before leaving this section",
+        "why": "Later route changes can permanently close access to unchecked rooms.",
+        "detail": "Use a separate save copy and confirm every listed entry before continuing."
+      },
+      "items": [
+        {
+          "id": "clock-tower-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "Do not leave the raised clock machinery area with unchecked pickups.",
+            "2": "In Storage Room 4, collect Shotgun during the King o'Clubs door.",
+            "3": "In Storage Room 4, collect Shotgun during the King o'Clubs door. Collect it before descending the lowered stairs again. Finish the fuse-box and clock-panel interactions while still in the tower."
+          }
+        },
+        {
+          "id": "clock-tower-cogwheel",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Cogwheel",
+          "missable": true,
+          "levels": {
+            "1": "Do not leave the raised clock machinery area with unchecked pickups.",
+            "2": "In Storage Room 4, collect Cogwheel during the King o'Clubs door.",
+            "3": "In Storage Room 4, collect Cogwheel during the King o'Clubs door. After using the Crank to reach the tower, fit the Cogwheel into the panel beside the stairs and turn the displayed hour hand to 3."
+          }
+        },
+        {
+          "id": "clock-tower-chess-tutorial",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Chess Tutorial",
+          "missable": true,
+          "levels": {
+            "1": "Do not leave the raised clock machinery area with unchecked pickups.",
+            "2": "In Storage Room 4, collect Chess Tutorial during the King o'Clubs door.",
+            "3": "In Storage Room 4, collect Chess Tutorial during the King o'Clubs door. Collect it before descending the lowered stairs again. Finish the fuse-box and clock-panel interactions while still in the tower."
+          }
+        },
+        {
+          "id": "clock-tower-medkit",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Medkit",
+          "missable": true,
+          "levels": {
+            "1": "Do not leave the raised clock machinery area with unchecked pickups.",
+            "2": "In Clock Tower, collect Medkit during the top of lowered stairs.",
+            "3": "In Clock Tower, collect Medkit during the top of lowered stairs. Collect it before descending the lowered stairs again. Finish the fuse-box and clock-panel interactions while still in the tower."
+          }
+        },
+        {
+          "id": "clock-tower-fuse",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Fuse",
+          "missable": true,
+          "levels": {
+            "1": "Do not leave the raised clock machinery area with unchecked pickups.",
+            "2": "In Clock Tower, collect Fuse during the top of lowered stairs.",
+            "3": "In Clock Tower, collect Fuse during the top of lowered stairs. Carry it into Lab 3 and place it in that room's opened electrical box. The laboratory power route cannot be completed without it."
+          }
+        },
+        {
+          "id": "clock-tower-sewer-card-1",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Sewer Card 1",
+          "missable": true,
+          "levels": {
+            "1": "Do not leave the raised clock machinery area with unchecked pickups.",
+            "2": "In Clock Tower, collect Sewer Card 1 during the top of lowered stairs.",
+            "3": "In Clock Tower, collect Sewer Card 1 during the top of lowered stairs. Split the two Sewer Cards between the partners. In Keycard Room 1, attach the Valve Handle first, then use this side's card at the lower door."
+          }
+        },
+        {
+          "id": "clock-tower-black-bishop-plug",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Black Bishop Plug",
+          "missable": true,
+          "levels": {
+            "1": "Do not leave the raised clock machinery area with unchecked pickups.",
+            "2": "In Clock Tower, collect Black Bishop Plug during the top of lowered stairs.",
+            "3": "In Clock Tower, collect Black Bishop Plug during the top of lowered stairs. At the upper sewer console, install this piece with the Black Knight Plug and Black King Plug. All three plugs must have been retained."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sewer-switch-route",
+      "name": "Sewer Switch Route",
+      "location_cue": "Paired keycard chambers and walkways.",
+      "note": "Finish this physical section before advancing; the compact mobile route offers limited backtracking.",
+      "save_backup": {
+        "title": "Back up before leaving this section",
+        "why": "Later route changes can permanently close access to unchecked rooms.",
+        "detail": "Use a separate save copy and confirm every listed entry before continuing."
+      },
+      "items": [
+        {
+          "id": "sewer-switch-route-lab-access-card",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Lab Access Card",
+          "missable": true,
+          "levels": {
+            "1": "The paired sewer route has one essential access item beyond its doors.",
+            "2": "In Upper Sewer, collect Lab Access Card during the after keycard hallway.",
+            "3": "In Upper Sewer, collect Lab Access Card during the after keycard hallway. After crossing the paired keycard hallway, collect it before leaving the upper sewer. Use it on the laboratory platform's double doors."
+          }
+        }
+      ],
+      "point_of_no_return": {
+        "title": "One-way route transition ahead",
+        "why": "Completing the final interaction in this section prevents a normal return to earlier pickups.",
+        "detail": "Keep a backup from before the transition until the entire checklist is confirmed."
+      }
+    },
+    {
+      "id": "laboratory-arrival",
+      "name": "Laboratory Arrival",
+      "location_cue": "Train platform and first laboratory hall.",
+      "note": "Finish this physical section before advancing; the compact mobile route offers limited backtracking.",
+      "save_backup": {
+        "title": "Back up before leaving this section",
+        "why": "Later route changes can permanently close access to unchecked rooms.",
+        "detail": "Use a separate save copy and confirm every listed entry before continuing."
+      },
+      "items": [
+        {
+          "id": "laboratory-arrival-power-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Power Key",
+          "missable": true,
+          "levels": {
+            "1": "Search each room along the first laboratory hallway before restoring access.",
+            "2": "In Safe Room, collect Power Key during the platform walkway end.",
+            "3": "In Safe Room, collect Power Key during the platform walkway end. Take it from the safe room at the end of the platform walkway and use it at the laboratory power panel before entering the powered rooms."
+          }
+        },
+        {
+          "id": "laboratory-arrival-shotgun-ammo",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Shotgun Ammo",
+          "missable": true,
+          "levels": {
+            "1": "Search each room along the first laboratory hallway before restoring access.",
+            "2": "In Safe Room, collect Shotgun Ammo during the platform walkway end.",
+            "3": "In Safe Room, collect Shotgun Ammo during the platform walkway end. Search the named room before moving farther through the laboratory; power and access items from this section gate the remaining machine rooms."
+          }
+        },
+        {
+          "id": "laboratory-arrival-semi-auto-pistol-ammo",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Semi-Auto Pistol Ammo",
+          "missable": true,
+          "levels": {
+            "1": "Search each room along the first laboratory hallway before restoring access.",
+            "2": "In Lab 1, collect Semi-Auto Pistol Ammo during the first hallway door.",
+            "3": "In Lab 1, collect Semi-Auto Pistol Ammo during the first hallway door. Search the named room before moving farther through the laboratory; power and access items from this section gate the remaining machine rooms."
+          }
+        },
+        {
+          "id": "laboratory-arrival-medkit",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Medkit",
+          "missable": true,
+          "levels": {
+            "1": "Search each room along the first laboratory hallway before restoring access.",
+            "2": "In Lab 1, collect Medkit during the first hallway door.",
+            "3": "In Lab 1, collect Medkit during the first hallway door. Search the named room before moving farther through the laboratory; power and access items from this section gate the remaining machine rooms."
+          }
+        },
+        {
+          "id": "laboratory-arrival-security-manual",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Security Manual",
+          "missable": true,
+          "levels": {
+            "1": "Search each room along the first laboratory hallway before restoring access.",
+            "2": "In Lab 1, collect Security Manual during the first hallway document.",
+            "3": "In Lab 1, collect Security Manual during the first hallway document. Search the named room before moving farther through the laboratory; power and access items from this section gate the remaining machine rooms."
+          }
+        },
+        {
+          "id": "laboratory-arrival-mother-virus",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Mother Virus",
+          "missable": true,
+          "levels": {
+            "1": "Search each room along the first laboratory hallway before restoring access.",
+            "2": "In Lab 1, collect Mother Virus during the first hallway room.",
+            "3": "In Lab 1, collect Mother Virus during the first hallway room. Collect this container during the first Lab 1 sweep. The documented vaccine procedure uses the separate Virus Sample, not this item."
+          }
+        },
+        {
+          "id": "laboratory-arrival-wanted-ad",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Wanted Ad",
+          "missable": true,
+          "levels": {
+            "1": "Search each room along the first laboratory hallway before restoring access.",
+            "2": "In Lab 3, collect Wanted Ad during the powered laboratory room.",
+            "3": "In Lab 3, collect Wanted Ad during the powered laboratory room. Search the named room before moving farther through the laboratory; power and access items from this section gate the remaining machine rooms."
+          }
+        },
+        {
+          "id": "laboratory-arrival-vaccine-cartridge",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Vaccine Cartridge",
+          "missable": true,
+          "levels": {
+            "1": "Search each room along the first laboratory hallway before restoring access.",
+            "2": "In Experimentation Room, collect Vaccine Cartridge during the hallway end left.",
+            "3": "In Experimentation Room, collect Vaccine Cartridge during the hallway end left. Take it to the machine in Vaccine Lab 2. Activate that machine to receive the Base Vaccine, then return to the first machine room."
+          }
+        }
+      ]
+    },
+    {
+      "id": "vaccine-labs",
+      "name": "Vaccine Rooms",
+      "location_cue": "Coded door and two machine rooms.",
+      "note": "Finish this physical section before advancing; the compact mobile route offers limited backtracking.",
+      "save_backup": {
+        "title": "Back up before leaving this section",
+        "why": "Later route changes can permanently close access to unchecked rooms.",
+        "detail": "Use a separate save copy and confirm every listed entry before continuing."
+      },
+      "items": [
+        {
+          "id": "vaccine-labs-antigen-info",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Antigen Info",
+          "missable": true,
+          "levels": {
+            "1": "The coded laboratory wing contains the remaining machine-chain pieces.",
+            "2": "In Lab 2, collect Antigen Info during the return after experimentation room.",
+            "3": "In Lab 2, collect Antigen Info during the return after experimentation room. Take it during the machine-room sequence and finish every processing step before returning to the train platform."
+          }
+        },
+        {
+          "id": "vaccine-labs-virus-sample",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Virus Sample",
+          "missable": true,
+          "levels": {
+            "1": "The coded laboratory wing contains the remaining machine-chain pieces.",
+            "2": "In Lab 2, collect Virus Sample during the return after experimentation room.",
+            "3": "In Lab 2, collect Virus Sample during the return after experimentation room. Enter the door code GUEST, then place the sample in the large machine in Vaccine Lab 1 before processing the cartridge next door."
+          }
+        },
+        {
+          "id": "vaccine-labs-base-vaccine",
+          "type": "interaction",
+          "safe_type": "Crafted Item",
+          "label": "Base Vaccine",
+          "missable": true,
+          "levels": {
+            "1": "The coded laboratory wing contains the remaining machine-chain pieces.",
+            "2": "In Vaccine Lab 2, collect Base Vaccine during the cartridge machine output.",
+            "3": "In Vaccine Lab 2, collect Base Vaccine during the cartridge machine output. Return this output to the large machine in Vaccine Lab 1 after the Virus Sample has been installed. The machine then produces the Anti-virus."
+          }
+        },
+        {
+          "id": "vaccine-labs-anti-virus",
+          "type": "interaction",
+          "safe_type": "Crafted Item",
+          "label": "Anti-virus",
+          "missable": true,
+          "levels": {
+            "1": "The coded laboratory wing contains the remaining machine-chain pieces.",
+            "2": "In Vaccine Lab 1, collect Anti-virus during the large machine output.",
+            "3": "In Vaccine Lab 1, collect Anti-virus during the large machine output. Collect it from the large machine after returning the Base Vaccine. Use it at the required safe-room interaction before going back to the train platform."
+          }
+        }
+      ]
+    },
+    {
+      "id": "train-finale",
+      "name": "Train Platform",
+      "location_cue": "Laboratory train platform.",
+      "note": "Finish this physical section before advancing; the compact mobile route offers limited backtracking.",
+      "save_backup": {
+        "title": "Back up before leaving this section",
+        "why": "Later route changes can permanently close access to unchecked rooms.",
+        "detail": "Use a separate save copy and confirm every listed entry before continuing."
+      },
+      "items": [
+        {
+          "id": "train-finale-campaign-clear",
+          "type": "ending",
+          "safe_type": "Completion",
+          "label": "Campaign Clear",
+          "missable": true,
+          "levels": {
+            "1": "The documented route concludes after the laboratory machine chain.",
+            "2": "Finish the required safe-room interaction, then return to the train platform.",
+            "3": "Use the Anti-virus at the required interaction, return to the platform, insert the Queen o'Hearts at the train terminal, and clear the encounter inside. Story results remain hidden."
+          }
+        }
+      ],
+      "point_of_no_return": {
+        "title": "One-way route transition ahead",
+        "why": "Completing the final interaction in this section prevents a normal return to earlier pickups.",
+        "detail": "Keep a backup from before the transition until the entire checklist is confirmed."
+      }
+    },
+    {
+      "id": "extras",
+      "name": "Optional Challenges and Secrets",
+      "location_cue": "Timed challenge and searchable desk.",
+      "note": "Finish this physical section before advancing; the compact mobile route offers limited backtracking.",
+      "save_backup": {
+        "title": "Back up before leaving this section",
+        "why": "Later route changes can permanently close access to unchecked rooms.",
+        "detail": "Use a separate save copy and confirm every listed entry before continuing."
+      },
+      "items": [
+        {
+          "id": "extras-mission-1",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Mission 1",
+          "missable": true,
+          "levels": {
+            "1": "A separate timed combat task is available outside the campaign.",
+            "2": "Choose Mission 1 in Challenge Mode and prepare for a sixteen-target timer.",
+            "3": "Open Challenge Mode and defeat sixteen targets before the countdown expires. Wait for a red combat gauge when practical to conserve ammunition with one-shot attacks."
+          }
+        },
+        {
+          "id": "extras-sandwich-recipe",
+          "type": "document",
+          "safe_type": "Document",
+          "label": "Sandwich Recipe",
+          "missable": true,
+          "levels": {
+            "1": "One station desk hides a harmless optional reading item.",
+            "2": "Before leaving the police station, inspect the searchable desk for a recipe.",
+            "3": "Search the optional police-station desk until the recipe text appears. Read it before advancing beyond the station because the later route does not return here."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2377 @@
+{
+  "id": "god-of-war-ghost-of-sparta",
+  "game": "God of War: Ghost of Sparta",
+  "target": "100% completion on the chosen PS3 Origins Collection route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "route-and-save-setup",
+      "name": "Route and Save Setup",
+      "location_cue": "The Origins Collection menu, difficulty selector, save screen, and post-clear bonus menus.",
+      "note": "Chosen route: PS3 Origins Collection remaster through RPCS3 or original hardware.",
+      "save_backup": {
+        "title": "Create a rotating save set",
+        "why": "Fixed campaign objects cannot be recovered through chapter selection."
+      },
+      "items": [
+        {
+          "id": "route-origins-remaster",
+          "type": "interaction",
+          "safe_type": "Platform Route",
+          "label": "Use the PS3 Origins Remaster",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the collection version before making completion saves.",
+            "2": "Play the PS3 Origins Collection release through RPCS3 or original PS3 hardware.",
+            "3": "Launch Ghost of Sparta from God of War: Origins Collection or the equivalent Saga entitlement. Verify the Legionnaire skin, Forest bonus arena, and Game Directors Live documentary are present."
+          }
+        },
+        {
+          "id": "route-rotating-saves",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Maintain Rotating Saves",
+          "missable": false,
+          "levels": {
+            "1": "There is no chapter-select cleanup for fixed campaign pickups.",
+            "2": "Keep multiple manual saves and preserve one before each major physical transition.",
+            "3": "Rotate at least four slots. Do not overwrite the prior regional save until its pickup and chest sweep is checked; missing a fixed relic otherwise requires another campaign cycle."
+          }
+        },
+        {
+          "id": "route-first-clear",
+          "type": "interaction",
+          "safe_type": "Campaign",
+          "label": "Complete a First Campaign",
+          "missable": false,
+          "levels": {
+            "1": "Clear data opens the large post-game economy and challenge layer.",
+            "2": "Finish the campaign once and retain the completed save.",
+            "3": "Save the completed file, return to the menu, and confirm Bonus Play, God difficulty, the Ares challenges, Combat Arena, Temple of Zeus, two first-clear costumes, and bonus menus are available."
+          }
+        },
+        {
+          "id": "route-god-clear",
+          "type": "interaction",
+          "safe_type": "Difficulty",
+          "label": "Complete God Difficulty",
+          "missable": false,
+          "levels": {
+            "1": "One costume is gated behind the maximum setting.",
+            "2": "Finish a complete campaign on God difficulty.",
+            "3": "Unlock God difficulty with a first clear, begin a fresh or permitted Bonus Play file on that setting, and complete it without lowering the preset. Save the resulting clear data."
+          }
+        },
+        {
+          "id": "route-bonus-play-limit",
+          "type": "interaction",
+          "safe_type": "Carryover Rule",
+          "label": "Respect the Bonus Play Difficulty Limit",
+          "missable": false,
+          "levels": {
+            "1": "Carryover is restricted by the difficulty of the completed file.",
+            "2": "Use previous upgrades and relics only on the same difficulty or a lower one.",
+            "3": "When starting Bonus Play, select the completed save and choose a difficulty no higher than that file's clear setting. Confirm the equipment, upgrades, and relic toggles load before overwriting anything."
+          }
+        }
+      ]
+    },
+    {
+      "id": "atlantis",
+      "name": "Atlantis",
+      "location_cue": "A storm-battered ship and seaside structure with a large crank, climbable walls, and a descent rope.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "atlantis-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "eye-01",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #01",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "Above the opening crank, continue climbing to the rope platform.",
+            "3": "After operating the large crank, climb the adjacent wall, move left past the hidden red chest, and continue upward. Open the special chest beside the descent rope."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ruins-of-atlantis",
+      "name": "Ruins of Atlantis",
+      "location_cue": "Broken stone platforms, waterfalls, movable blocks, pressure switches, and grapple gaps.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "ruins-of-atlantis-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "surplus-special-chest-01",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #01",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "In the early ruins, break the blocks on the right side of the path.",
+            "3": "After passing through the lowered doorway, follow the path left and smash the block pile on its right edge. Open the special chest behind it."
+          }
+        },
+        {
+          "id": "eye-02",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #02",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "In the ruins, use the movable block on the long pressure switch.",
+            "3": "Push the block onto the central switch to stop the waterfall and expose the grapple point. Before swinging away, return along the path and open the special chest facing the switch."
+          }
+        }
+      ]
+    },
+    {
+      "id": "temple-of-poseidon",
+      "name": "Temple of Poseidon",
+      "location_cue": "A polished temple interior whose lowered gates divide into left and right paths.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "temple-of-poseidon-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "eye-03",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #03",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "After the temple gates lower, search the right-hand path.",
+            "3": "Leave the acquisition chamber by the right route and open both special chests before approaching the balcony. This is the health chest in that pair."
+          }
+        },
+        {
+          "id": "feather-01",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #01",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "The temple's right-hand path contains a paired special-chest stop.",
+            "3": "Once the gates open, follow the corridor on the right and open both special chests before taking the left route. This is the magic chest in the pair."
+          }
+        },
+        {
+          "id": "feather-02",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #02",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "After the forced exterior transition, inspect the first safe path before the save light.",
+            "3": "Regain control on the volcanic approach, follow the only walkway, and open the special chest before using the nearby recovery chests or save point."
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-caldera-cont",
+      "name": "The Caldera Cont.",
+      "location_cue": "A lava-filled return route with screw mechanisms, fire-sealed doors, and floating rock platforms.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "the-caldera-cont-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "eye-04",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #04",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "On returning to the caldera with the fire ability, open the chest beside the screw mechanism.",
+            "3": "Re-enter the caldera, stop before breaking the gears on the large screw, and open the special chest beside the mechanism. Collect it before backtracking through the newly breakable door."
+          }
+        },
+        {
+          "id": "horn-01",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #01",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "Ride the lava-rock platform and search the wall landing at its end.",
+            "3": "Stay on the floating rock until it begins to fail, jump to the climbable wall, and ascend. Open the special chest at the top before sidling right."
+          }
+        },
+        {
+          "id": "surplus-special-chest-02",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #02",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "After the second screw mechanism, open the chest beyond the fire door.",
+            "3": "Break the gears, climb to the recovery chests, destroy the next fire-sealed door, and open the special chest before squeezing through the narrow crevice."
+          }
+        }
+      ]
+    },
+    {
+      "id": "volcano-core",
+      "name": "Volcano Core",
+      "location_cue": "A vertical volcanic chamber of climbable walls, grapple points, and collapsing ramps.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "volcano-core-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "eye-05",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #05",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "In the volcano core, slide down the far-left side of the first wall.",
+            "3": "Climb onto the wall at the start of the core, descend fully along its left edge, clear the small enemies, and open the special chest beside the red chest."
+          }
+        }
+      ]
+    },
+    {
+      "id": "island-of-crete",
+      "name": "Island of Crete",
+      "location_cue": "Rooftops, beams, ladders, ropes, and a circular upper platform overlooking a coastal settlement.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "island-of-crete-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "feather-03",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #03",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "Before crossing the island's first beam, climb down the concealed ladder on the left.",
+            "3": "Reach the beam after the opening ladder, turn left instead of crossing, and descend the hidden ladder. Open the special chest at its bottom, then climb back to the beam."
+          }
+        },
+        {
+          "id": "eye-06",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #06",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "After the alternating ladder jumps, open the chest on the rope platform.",
+            "3": "Leap between the two ladders until reaching the shelf with an overhead rope. Open the special chest before using the rope to cross."
+          }
+        },
+        {
+          "id": "feather-04",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #04",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "In the circular upper arena, open both special chests before taking the descent rope.",
+            "3": "Use the movable block as cover, climb to the upper ledge, and enter the circular platform. Open both special chests; this is the magic pickup."
+          }
+        },
+        {
+          "id": "horn-02",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #02",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "The circular arena before the temple holds a second special chest.",
+            "3": "After reaching the upper circular platform, collect both special chests before sliding down the rope. This is the fire-meter pickup in the pair."
+          }
+        }
+      ]
+    },
+    {
+      "id": "temple-of-athena",
+      "name": "Temple of Athena",
+      "location_cue": "A gear-driven temple containing dog pits, moving levers, grapple transfers, and a suspended stone block.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "temple-of-athena-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "surplus-special-chest-03",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #03",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "At the temple lever ledge, open the second special chest as well.",
+            "3": "Turn left before the descending lever and open both special chests. Once the magic pickup is taken, the other chest supplies the current substitution reward."
+          }
+        },
+        {
+          "id": "feather-05",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #05",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "At the descending lever, take the left ledge and open both special chests.",
+            "3": "Break the dog-powered gear, ride the platform down, and turn left before operating the next lever. Open both special chests on the side ledge."
+          }
+        },
+        {
+          "id": "eye-07",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #07",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "In the debris-and-block chamber, open the special chest before using the lever.",
+            "3": "After the second grapple transfer, enter the room containing a trapped route and suspended stone block. Open the special chest beside the lever before moving the block."
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-bathhouse",
+      "name": "The Bathhouse",
+      "location_cue": "A tiled pool chamber reached beside a save light, with breakable underwater rocks.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "the-bathhouse-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "horn-03",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #03",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "The bathhouse special chest is just beyond its save point.",
+            "3": "Enter the bathhouse, open the special chest immediately past the save light, then save and dive into the pool. Do not break the underwater rocks first."
+          }
+        }
+      ]
+    },
+    {
+      "id": "heraklion",
+      "name": "Heraklion",
+      "location_cue": "A city interior of beams, ladders, cracked arenas, walls, and rope crossings.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "heraklion-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "feather-06",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #06",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "At the Heraklion save point, climb the ladder on the left.",
+            "3": "Cross the beam sequence, stop at the save light, and take the nearby ladder to the left. Open the special chest above, return, and save before entering the building."
+          }
+        },
+        {
+          "id": "eye-08",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #08",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "After dropping to the archer group, open both special chests before returning to the rope.",
+            "3": "Break the extra wall beside the doorway for the red chests, drop to the lower archer area, and clear it. Open both special chests before climbing back to the rope."
+          }
+        },
+        {
+          "id": "horn-04",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #04",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "The lower archer area contains a paired special-chest stop.",
+            "3": "After defeating the archers below the broken wall, open both special chests before crossing back over the rope. This is the fire-meter pickup."
+          }
+        }
+      ]
+    },
+    {
+      "id": "heraklion-forum",
+      "name": "Heraklion Forum",
+      "location_cue": "A civic hall with fire doors, narrow beams, movable stone blocks, and cracked flooring.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "heraklion-forum-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "horn-05",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #05",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "In the forum beam room, deliberately drop from a beam to the lower shelf.",
+            "3": "Reach the beam crossing beyond the fire door, step off onto the lower hidden landing, and open the red chest plus special chest. Backtrack to resume the beam route."
+          }
+        },
+        {
+          "id": "feather-07",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #07",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "Use the tall movable block to reach the forum's upper-left shelf.",
+            "3": "Raise the gate, route the tall block through the right corridor, and push it left across the upper ledge. Climb onto it to reach the red and special chests."
+          }
+        }
+      ]
+    },
+    {
+      "id": "streets-of-heraklion",
+      "name": "Streets of Heraklion",
+      "location_cue": "Outdoor streets of lava flows, ladders, slides, grapples, and an elevator return.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "streets-of-heraklion-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "eye-09",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #09",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "Beyond the street's lava flow, climb the ladder at the path's end.",
+            "3": "Cross the lava-side ledge, open the red chest, and follow the narrow path to its ladder. Climb up and open the special chest before moving right."
+          }
+        },
+        {
+          "id": "eye-10",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #10",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "After the slide-and-grapple sequence, open the chest beside the red one.",
+            "3": "Complete every slide jump and grapple without dropping, then follow the safe path until a red chest appears. Open the adjacent special chest before using the elevator back."
+          }
+        }
+      ]
+    },
+    {
+      "id": "temple-of-athena-cont",
+      "name": "Temple of Athena Cont.",
+      "location_cue": "The earlier temple revisited through a keyed gate and a room containing a round electrical enemy.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "temple-of-athena-cont-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "feather-08",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #08",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "On the temple return, check the left room after the electrical enemy.",
+            "3": "Defeat the round electrical enemy, enter the building, collect the recovery chests, and take the left passage. Open both special chests before using the key gate."
+          }
+        },
+        {
+          "id": "horn-06",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #06",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "The temple return's left room contains a second special chest.",
+            "3": "After the electrical encounter, enter the left-side room beyond the recovery chests and open both special containers. This is the fire-meter pickup."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mounts-of-aroania",
+      "name": "Mounts of Aroania",
+      "location_cue": "Frozen mountain platforms with elevators, ice barriers, hanging blocks, and long wall climbs.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "mounts-of-aroania-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "eye-11",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #11",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "On the mountain platform, burn the ice barrier to the left before climbing.",
+            "3": "Clear the platform reached after the moving structure, then ignite the frozen barrier on the left. Open both special chests behind it before scaling the wall."
+          }
+        },
+        {
+          "id": "feather-09",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #09",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "The burned ice barrier hides a paired special-chest stop.",
+            "3": "Before climbing from the large mountain platform, destroy the frozen wall on the left with the fire ability and open both special chests. This is the magic pickup."
+          }
+        },
+        {
+          "id": "horn-07",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #07",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "At the top of the second elevator, break the ice wall before stepping onto the hanging block.",
+            "3": "Use the debris pile to release the flying enemies, call the distant lift, and ride it upward. Break the frozen wall at the top and open the special chest."
+          }
+        }
+      ]
+    },
+    {
+      "id": "chasm-of-solace",
+      "name": "Chasm of Solace",
+      "location_cue": "A snowy chasm of grapple swings, caves, gear doors, and an underwater exit.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "chasm-of-solace-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "feather-10",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #10",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "At the mountain grapple, jump backward instead of continuing into the cave.",
+            "3": "Swing to the next ledge, land, and immediately jump back toward the hidden shelf behind you. Open the special chest, then return and enter the cavern."
+          }
+        },
+        {
+          "id": "eye-12",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #12",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "After using the replacement gear, enter the raised gate and check the right side.",
+            "3": "Free the automaton, take its gear, raise the central gate, and enter the small room. Open the special chest on the right before using the recovery chests or diving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "aroania-pass",
+      "name": "Aroania Pass",
+      "location_cue": "A broad mountain pass leading toward stone gates and a save point.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "aroania-pass-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "horn-08",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #08",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "After the open pass encounter, open both special chests before the save point.",
+            "3": "Clear the broad outdoor arena with the newly acquired magic, then follow the path until a paired special-chest stop appears. This is the fire-meter chest."
+          }
+        },
+        {
+          "id": "eye-13",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #13",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "The open pass path contains a second special chest before the save light.",
+            "3": "After the large exterior encounter, continue along the only path and open both special chests before saving. This is the health pickup."
+          }
+        }
+      ]
+    },
+    {
+      "id": "jails-of-sparta",
+      "name": "Jails of Sparta",
+      "location_cue": "A barred prison corridor with levers, breakable cells, walls, and upper ladders.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "jails-of-sparta-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "horn-09",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #09",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "In the jail, break the first gate on the left after raising the main gate.",
+            "3": "Use the lever, lift the gate manually, and enter the next cell row. Smash the left-hand gate and open the special chest before pursuing the forward route."
+          }
+        },
+        {
+          "id": "surplus-special-chest-04",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #04",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "In the jail, break the wall behind the opened cell.",
+            "3": "After taking the horn from the left cell, smash the rear wall of the nearby holding space and open the additional special chest before climbing onward."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mounts-of-laconia",
+      "name": "Mounts of Laconia",
+      "location_cue": "A rocky climb of ditches, grapple points, walls, distant archers, and ropes.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "mounts-of-laconia-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "eye-14",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #14",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "At the mountain start, drop into the ditch on the left.",
+            "3": "Enter the mountain area, collect the recovery chests on the right, then search the shallow depression on the left. Open its special chest before following the trail."
+          }
+        },
+        {
+          "id": "feather-11",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #11",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "After the long wall climb, take the right side at the top.",
+            "3": "Use the final grapple to reach the climbable wall, slide for the red chest, then climb all the way up. Turn right for the special chest before going left toward the rope."
+          }
+        }
+      ]
+    },
+    {
+      "id": "temple-of-ares",
+      "name": "Temple of Ares",
+      "location_cue": "A symmetrical main hall with twin staircases, a central seat, and a rear passage.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "temple-of-ares-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "feather-12",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #12",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "Inside the temple, open the special chest on one side of the throne.",
+            "3": "Climb either staircase in the main hall and open both special chests placed on opposite sides of the central seat. This is the magic pickup."
+          }
+        },
+        {
+          "id": "eye-15",
+          "type": "collectible",
+          "safe_type": "Health Pickup",
+          "label": "Gorgon Eye #15",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "The main temple hall holds a second chest on the opposite side.",
+            "3": "Before entering the rear passage, circle to both sides of the central seat and open both special chests. This is the final health pickup."
+          }
+        }
+      ]
+    },
+    {
+      "id": "path-of-reckoning",
+      "name": "Path of Reckoning",
+      "location_cue": "A narrow bridge route guarded by distant archers and an elevator.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "path-of-reckoning-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "horn-10",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #10",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "On the shielded bridge route, open the chest after reaching the archers.",
+            "3": "Advance behind the shield until the distant archers can be cleared, then open the special chest on their side before operating the elevator lever."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mounts-of-aroania-cont",
+      "name": "Mounts of Aroania Cont.",
+      "location_cue": "The frozen mountains revisited around a collapsible upper bridge and elevator.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "mounts-of-aroania-cont-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "horn-11",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #11",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "After collapsing the upper bridge, climb it and open both special chests.",
+            "3": "Use the spear to bring down the bridge overhead, climb the fallen section, and reach the next ledge. Open both special chests before using the elevator."
+          }
+        },
+        {
+          "id": "feather-13",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #13",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "The ledge above the collapsed bridge contains a second special chest.",
+            "3": "Climb the bridge section you dropped with the spear and open both special chests beside the recovery chest. This is the magic pickup."
+          }
+        }
+      ]
+    },
+    {
+      "id": "shrine-of-boreas",
+      "name": "Shrine of Boreas",
+      "location_cue": "A cold stone shrine entered after an outdoor combat space.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "shrine-of-boreas-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "horn-12",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #12",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "At the cold shrine entrance, open the special chest before following the interior path.",
+            "3": "Clear the soldiers outside, enter the shrine, and open the special chest beside the red one. Collect it before reaching the next save light."
+          }
+        }
+      ]
+    },
+    {
+      "id": "canyons-of-sorrow",
+      "name": "Canyons of Sorrow",
+      "location_cue": "A canyon of broken bridges, ledges, debris, switches, and a newly opened gate.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "canyons-of-sorrow-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "horn-13",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #13",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "Beside the golden body, break the debris on the right and sidle along the ledge.",
+            "3": "Open the recovery chest near the golden figure, smash the rubble to its right, climb onto the exposed ledge, and shimmy right to the special chest."
+          }
+        },
+        {
+          "id": "feather-14",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #14",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "Before entering the newly opened canyon gate, jump to the ledge on the right.",
+            "3": "Operate the distant gate mechanism, cross the broken bridge, and clear the small enemies. Do not enter the gate yet; jump right to the isolated special chest and return."
+          }
+        }
+      ]
+    },
+    {
+      "id": "river-of-lament",
+      "name": "River of Lament",
+      "location_cue": "A golden river route with ropes, lava platforms, caverns, beams, and gates.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "river-of-lament-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "surplus-special-chest-05",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #05",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "Along the golden trail, open the special chest beside the elevated save point.",
+            "3": "Before using the long descent rope, climb the ledge containing the save light and open its special chest. Its contents depend on which meters are already complete."
+          }
+        },
+        {
+          "id": "feather-15",
+          "type": "collectible",
+          "safe_type": "Magic Pickup",
+          "label": "Phoenix Feather #15",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "On the long descent rope, jump left at the first ledge.",
+            "3": "Reach the save point atop the golden trail, save, and begin sliding down the rope. Leap left at the first reachable shelf and open the special chest before continuing downward."
+          }
+        },
+        {
+          "id": "horn-14",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #14",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "After the recovery-chest encounter, cross the platforms directly ahead.",
+            "3": "Clear the soldiers, open the green and blue chests, and jump across the straight platform chain in front of them. Open the special chest, then return to the right-hand path."
+          }
+        },
+        {
+          "id": "surplus-special-chest-06",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #06",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "At the rope after the platform chest, climb all the way up and jump off.",
+            "3": "Open the horn chest across the platforms, return to the right-side rope, and climb to its highest point. Jump to the hidden shelf and open the special chest."
+          }
+        },
+        {
+          "id": "surplus-special-chest-07",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #07",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "After leaving the lava cavern, open the special chest inside the next gate.",
+            "3": "Save near the cavern exit, pass outside, clear the soldiers, and break the gate. Open the special chest immediately inside before turning toward the ladder."
+          }
+        },
+        {
+          "id": "surplus-special-chest-08",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #08",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "After crossing the narrow beams, break the wooden debris on the right.",
+            "3": "Clear the archers, traverse the beams, and throw the spear into the wooden obstruction to the right. Follow the opened side path to its special chest."
+          }
+        }
+      ]
+    },
+    {
+      "id": "port-of-atlantis",
+      "name": "Port of Atlantis",
+      "location_cue": "A waterfront elevator controlled by breakable chains and a lower corridor.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "port-of-atlantis-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "horn-15",
+          "type": "collectible",
+          "safe_type": "Fire Pickup",
+          "label": "Minotaur Horn #15",
+          "missable": true,
+          "levels": {
+            "1": "Inspect optional climbing branches and special chests before advancing.",
+            "2": "At the port elevator's lower level, run to the far end before turning toward the flying enemies.",
+            "3": "Break both elevator chains and ride down, then follow the lower corridor all the way to its special chest. Open it before engaging the enemies on the left."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sunken-atlantis",
+      "name": "Sunken Atlantis",
+      "location_cue": "Flooded tunnels, grapple walls, hidden shelves, breakable walls, and a save alcove.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "sunken-atlantis-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "surplus-special-chest-09",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #09",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "In the sunken route, jump backward from the first post-grapple wall path.",
+            "3": "Surface from the underwater tunnel, use the grapple to reach the wall, and climb up. Before following the main path, jump back to the concealed shelf and open its special chest."
+          }
+        },
+        {
+          "id": "surplus-special-chest-10",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #10",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "At the sunken save point, break the left wall and open both special chests.",
+            "3": "Climb from the sentry tunnel, collect the recovery chest beside the save light, and smash the wall on the left. Open both special chests before saving."
+          }
+        },
+        {
+          "id": "surplus-special-chest-11",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #11",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "The broken wall beside the sunken save point contains a second special chest.",
+            "3": "After reaching the save light, destroy its left-hand wall and collect both special chests. Check both containers before ignoring the enemy wall opposite."
+          }
+        }
+      ]
+    },
+    {
+      "id": "flooded-hall",
+      "name": "Flooded Hall",
+      "location_cue": "An underwater gate puzzle beneath a circular surface chamber.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "flooded-hall-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "surplus-special-chest-12",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #12",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "In the flooded circular chamber, break the wall on the right before using the timed levers.",
+            "3": "Surface above the two underwater levers, turn right, and smash the weak wall. Open the special chest, then dive back to begin the timed gate swim."
+          }
+        }
+      ]
+    },
+    {
+      "id": "nexus-of-atlantis",
+      "name": "Nexus of Atlantis",
+      "location_cue": "Long flooded channels, gear rooms, bridges, crushing walls, and return staircases.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "nexus-of-atlantis-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "surplus-special-chest-13",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #13",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "Near the nexus bridge, walk toward the screen before crossing.",
+            "3": "After taking the automaton gear, enter the bridge area and move toward the camera. Open the special chest there before collecting the other chests and using the gear."
+          }
+        },
+        {
+          "id": "surplus-special-chest-14",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #14",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "After escaping the second crushing channel, open the special chest beside the recovery chests.",
+            "3": "Break the next wall, surface, clear the sentries, and open the green, blue, and special chests before climbing the left staircase."
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-domain-of-death",
+      "name": "The Domain of Death",
+      "location_cue": "A dark platform route of grapple points, movable statues, blocks, and upper ledges.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "the-domain-of-death-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "surplus-special-chest-15",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #15",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "In the death-domain platform room, move the statue on the right.",
+            "3": "Clear the flying and burrowing enemies, go to the right side, and push the statue away from its position. Open the special chest revealed behind it."
+          }
+        },
+        {
+          "id": "surplus-special-chest-16",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #16",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "Before the death-domain save point, inspect the left edge of the path.",
+            "3": "Use the movable block to climb, collect the recovery chest, and follow the upper path left. Move toward the camera near the save light to find the hidden special chest."
+          }
+        }
+      ]
+    },
+    {
+      "id": "temple-of-thanatos",
+      "name": "Temple of Thanatos",
+      "location_cue": "A high stone temple with movable blocks, a hanging chain, and side ledges.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "temple-of-thanatos-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "surplus-special-chest-17",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #17",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "Inside the final temple, check the left side of the first movable block.",
+            "3": "Pass the entry save point, reach the large block, and walk around its left side. Open the special chest before pushing the block toward the chain."
+          }
+        },
+        {
+          "id": "surplus-special-chest-18",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #18",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "Use the movable block to reach the ledge right of the chain.",
+            "3": "Push the block beneath the hanging chain, climb onto it, and jump to the elevated shelf on the right. Open the second special chest before crossing the chain."
+          }
+        }
+      ]
+    },
+    {
+      "id": "death-trap",
+      "name": "Death Trap",
+      "location_cue": "A mechanical corridor containing a retractable trap, flame gate, rotating bridge, and grapple route.",
+      "note": "Complete the numbered pickups and ordinary chest sweep before using the main exit.",
+      "save_backup": {
+        "title": "Preserve a save before leaving",
+        "why": "This linear campaign may not return to these containers."
+      },
+      "items": [
+        {
+          "id": "death-trap-ordinary-chest-sweep",
+          "type": "collectible",
+          "safe_type": "Chest Sweep",
+          "label": "Open Every Ordinary Chest",
+          "missable": true,
+          "levels": {
+            "1": "Check side ledges, breakable walls, underwater recesses, and camera-facing corners.",
+            "2": "Open every red, green, blue, and combination chest encountered in this physical region.",
+            "3": "Before leaving, retrace each optional ledge and breakable surface described by the location cue. Open all ordinary resource chests, then verify no unopened glow or interaction prompt remains."
+          }
+        },
+        {
+          "id": "surplus-special-chest-19",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #19",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "After retracting the death trap, climb from the recovery chest to the upper ledge.",
+            "3": "Push the trap fully back, enter the opened left route, and jump onto the green chest. Climb to the ledge above it and open the special chest."
+          }
+        },
+        {
+          "id": "surplus-special-chest-20",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #20",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "Beyond that recovery chest, open the special chest straight ahead.",
+            "3": "Drop from the upper ledge, open the green chest, lift the door, and continue directly forward. Open the special chest before using the spear-created grapple route."
+          }
+        },
+        {
+          "id": "surplus-special-chest-21",
+          "type": "collectible",
+          "safe_type": "Special Chest",
+          "label": "Surplus Special Chest #21",
+          "missable": true,
+          "levels": {
+            "1": "An additional special container is hidden away from the required route.",
+            "2": "At the rotating flame bridge, search the left side before centering it.",
+            "3": "Block the flames and strike both gate supports, then use the lever to rotate the bridge. Open the special chest on the left before aligning the bridge and pushing through."
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-clear-relics",
+      "name": "Post-Clear Relics",
+      "location_cue": "Campaign floors and the completed Temple of Zeus, followed by the Bonus Play relic menu.",
+      "note": "Collect all six relics and test their mechanical effects after a clear.",
+      "save_backup": {
+        "title": "Retain the previous campaign save",
+        "why": "Five relic locations are fixed to linear campaign moments."
+      },
+      "items": [
+        {
+          "id": "relic-01",
+          "type": "treasure",
+          "safe_type": "Post-Clear Relic",
+          "label": "Post-Clear Relic #1",
+          "missable": true,
+          "levels": {
+            "1": "A flashing object remains on the floor after an early interior arena.",
+            "2": "Before leaving the arena where the first magic acquisition follows, collect the small object from the floor.",
+            "3": "Finish the arena encounter, regain control, and inspect the ground beside the exit before entering the magic room. In Bonus Play, toggle the relic and confirm automatic success on a quick-input sequence."
+          }
+        },
+        {
+          "id": "relic-02",
+          "type": "treasure",
+          "safe_type": "Post-Clear Relic",
+          "label": "Post-Clear Relic #2",
+          "missable": true,
+          "levels": {
+            "1": "The temple entrance contains a small object before its first rope climb.",
+            "2": "Pick up the flashing object on the floor near the temple's sealed main door.",
+            "3": "Enter the temple, stop before climbing the rope beside the large door, and collect the object on the floor. In Bonus Play, enable it and verify nearby treasure receives an added visual cue."
+          }
+        },
+        {
+          "id": "relic-03",
+          "type": "treasure",
+          "safe_type": "Post-Clear Relic",
+          "label": "Post-Clear Relic #3",
+          "missable": true,
+          "levels": {
+            "1": "A repeatable optional interaction in Sparta grants a relic after the third success.",
+            "2": "Find the optional side room in Sparta and complete its interaction successfully three times.",
+            "3": "Enter the optional room, finish the button sequence without failing, leave or reset as required, and repeat until three wins are recorded. Collect the relic reward and test its unlocked heavy attack in Bonus Play."
+          }
+        },
+        {
+          "id": "relic-04",
+          "type": "treasure",
+          "safe_type": "Post-Clear Relic",
+          "label": "Post-Clear Relic #4",
+          "missable": true,
+          "levels": {
+            "1": "Search the ground where the golden river route changes state.",
+            "2": "At the endpoint of the golden-river mechanism, collect the ring-like object from the ground.",
+            "3": "Complete the required river interaction, then inspect the ground before following the new trail. Collect the flashing ring and later enable it in Bonus Play to verify red-orb value is multiplied."
+          }
+        },
+        {
+          "id": "relic-05",
+          "type": "treasure",
+          "safe_type": "Post-Clear Relic",
+          "label": "Post-Clear Relic #5",
+          "missable": true,
+          "levels": {
+            "1": "The entrance to the final dark domain has an object lying on the path.",
+            "2": "Collect the flashing object immediately after entering the dark domain.",
+            "3": "As soon as the new domain loads, search the floor around the entrance before using its first grapple or movable object. Pick up the relic and test its unlimited-magic modifier in Bonus Play."
+          }
+        },
+        {
+          "id": "relic-06",
+          "type": "treasure",
+          "safe_type": "Post-Clear Relic",
+          "label": "Post-Clear Relic #6",
+          "missable": false,
+          "levels": {
+            "1": "The last relic is hidden behind complete Temple of Zeus ownership.",
+            "2": "Buy every Temple unlock, raise the central structure, and enter the revealed cavern.",
+            "3": "Spend the full one-million-red-orb ledger, climb the central column, use the two grapples, and turn the hand crank. Descend the opened staircase, collect the shovel-like relic, and verify its arena-only character becomes selectable."
+          }
+        }
+      ]
+    },
+    {
+      "id": "weapons-magic-and-meters",
+      "name": "Weapons, Magic, and Meters",
+      "location_cue": "The pause-menu upgrade screen and status display for weapons, magic, health, and fire.",
+      "note": "Maximize all six upgradable tools and all three permanent meters.",
+      "items": [
+        {
+          "id": "maximize-blades-of-athena",
+          "type": "upgrade",
+          "safe_type": "Full Upgrade",
+          "label": "Maximize Blades of Athena",
+          "missable": false,
+          "levels": {
+            "1": "Keep collecting red orbs until every level for this tool is purchased.",
+            "2": "Spend 29,000 red orbs across all remaining Blades of Athena upgrade levels.",
+            "3": "Open the upgrade screen and buy each Blades of Athena level at the listed thresholds: 2,950, 8,550, 17,500. Confirm its move list shows no locked level and test the final technique once."
+          }
+        },
+        {
+          "id": "maximize-thera-s-bane",
+          "type": "upgrade",
+          "safe_type": "Full Upgrade",
+          "label": "Maximize Thera's Bane",
+          "missable": false,
+          "levels": {
+            "1": "Keep collecting red orbs until every level for this tool is purchased.",
+            "2": "Spend 17,550 red orbs across all remaining Thera's Bane upgrade levels.",
+            "3": "Open the upgrade screen and buy each Thera's Bane level at the listed thresholds: 6,350, 11,200. Confirm its move list shows no locked level and test the final technique once."
+          }
+        },
+        {
+          "id": "maximize-arms-of-sparta",
+          "type": "upgrade",
+          "safe_type": "Full Upgrade",
+          "label": "Maximize Arms of Sparta",
+          "missable": false,
+          "levels": {
+            "1": "Keep collecting red orbs until every level for this tool is purchased.",
+            "2": "Spend 25,000 red orbs across all remaining Arms of Sparta upgrade levels.",
+            "3": "Open the upgrade screen and buy each Arms of Sparta level at the listed thresholds: 3,750, 8,500, 12,750. Confirm its move list shows no locked level and test the final technique once."
+          }
+        },
+        {
+          "id": "maximize-eye-of-atlantis",
+          "type": "upgrade",
+          "safe_type": "Full Upgrade",
+          "label": "Maximize Eye of Atlantis",
+          "missable": false,
+          "levels": {
+            "1": "Keep collecting red orbs until every level for this tool is purchased.",
+            "2": "Spend 16,000 red orbs across all remaining Eye of Atlantis upgrade levels.",
+            "3": "Open the upgrade screen and buy each Eye of Atlantis level at the listed thresholds: 4,500, 11,500. Confirm its move list shows no locked level and test the final technique once."
+          }
+        },
+        {
+          "id": "maximize-scourge-of-erinys",
+          "type": "upgrade",
+          "safe_type": "Full Upgrade",
+          "label": "Maximize Scourge of Erinys",
+          "missable": false,
+          "levels": {
+            "1": "Keep collecting red orbs until every level for this tool is purchased.",
+            "2": "Spend 18,000 red orbs across all remaining Scourge of Erinys upgrade levels.",
+            "3": "Open the upgrade screen and buy each Scourge of Erinys level at the listed thresholds: 5,650, 12,350. Confirm its move list shows no locked level and test the final technique once."
+          }
+        },
+        {
+          "id": "maximize-horn-of-boreas",
+          "type": "upgrade",
+          "safe_type": "Full Upgrade",
+          "label": "Maximize Horn of Boreas",
+          "missable": false,
+          "levels": {
+            "1": "Keep collecting red orbs until every level for this tool is purchased.",
+            "2": "Spend 19,000 red orbs across all remaining Horn of Boreas upgrade levels.",
+            "3": "Open the upgrade screen and buy each Horn of Boreas level at the listed thresholds: 6,350, 12,650. Confirm its move list shows no locked level and test the final technique once."
+          }
+        },
+        {
+          "id": "health-maximum",
+          "type": "upgrade",
+          "safe_type": "Meter Upgrade",
+          "label": "Maximize Health",
+          "missable": false,
+          "levels": {
+            "1": "Health grows after repeated groups of eye pickups.",
+            "2": "Collect all fifteen required Gorgon Eyes.",
+            "3": "Open the numbered health chests until the fifteenth eye completes the final increase. Continue opening every later special chest because substitution containers become orb rewards after the meter is full."
+          }
+        },
+        {
+          "id": "magic-maximum",
+          "type": "upgrade",
+          "safe_type": "Meter Upgrade",
+          "label": "Maximize Magic",
+          "missable": false,
+          "levels": {
+            "1": "Magic has its own fifteen-pickup track.",
+            "2": "Collect all fifteen required Phoenix Feathers.",
+            "3": "Verify each group of five feathers increases the blue meter and the fifteenth completes it. Keep collecting surplus special chests after the cap for their converted contents."
+          }
+        },
+        {
+          "id": "fire-maximum",
+          "type": "upgrade",
+          "safe_type": "Meter Upgrade",
+          "label": "Maximize the Fire Meter",
+          "missable": false,
+          "levels": {
+            "1": "The fire ability uses a third independent pickup track.",
+            "2": "Collect all fifteen required Minotaur Horns.",
+            "3": "Open every numbered horn chest and confirm the fifteenth produces the final fire-meter increase. Do not skip later special chests merely because their upgrade content converts to orbs."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ares-challenges",
+      "name": "Ares Challenges",
+      "location_cue": "The first post-clear challenge menu containing five selectable trials.",
+      "note": "Complete all five first-clear challenges.",
+      "items": [
+        {
+          "id": "ares-six-ways-to-die",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Six Ways to Die",
+          "missable": false,
+          "levels": {
+            "1": "Study the failure condition before beginning the trial.",
+            "2": "Open all six arena chests without dying.",
+            "3": "Start with the nearest unguarded chests, then use crowd-control magic to hold enemies away while opening the last containers. The attempt ends only when all six are opened."
+          }
+        },
+        {
+          "id": "ares-the-gauntlet",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "The Gauntlet",
+          "missable": false,
+          "levels": {
+            "1": "Study the failure condition before beginning the trial.",
+            "2": "Survive and eliminate all three enemy waves.",
+            "3": "Use grabs on flying targets, preserve the mixed recovery chest until needed, and save most magic for the later waves. Clear each wave fully to begin the next."
+          }
+        },
+        {
+          "id": "ares-nocrates",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Nocrates",
+          "missable": false,
+          "levels": {
+            "1": "Study the failure condition before beginning the trial.",
+            "2": "Break the layered crate and claim its red-orb chest before time expires.",
+            "3": "Throw enemies into the crate or drive them against it with rush attacks, then open the exposed chest immediately. Damage alone is not enough; the chest interaction must finish before the clock."
+          }
+        },
+        {
+          "id": "ares-unscathed",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Unscathed",
+          "missable": false,
+          "levels": {
+            "1": "Study the failure condition before beginning the trial.",
+            "2": "Clear four waves without taking any damage.",
+            "3": "Fight at range, use control magic before enemies surround you, and restart after any hit. Keep the final clustered wave frozen or staggered until every target is removed."
+          }
+        },
+        {
+          "id": "ares-gear-up",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Gear Up",
+          "missable": false,
+          "levels": {
+            "1": "Study the failure condition before beginning the trial.",
+            "2": "Collect three automaton gears while health continuously drains.",
+            "3": "Break each automaton's armor with fire attacks and finish it quickly; each gear restores health. Defensive magic pauses the drain while active, so use it between kills."
+          }
+        }
+      ]
+    },
+    {
+      "id": "athena-challenges",
+      "name": "Athena Challenges",
+      "location_cue": "The second challenge menu after both Temple challenge bundles have been purchased.",
+      "note": "Buy both Temple bundles, then complete all eight additional trials.",
+      "items": [
+        {
+          "id": "athena-airborne",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Airborne",
+          "missable": false,
+          "levels": {
+            "1": "This purchased trial tests a single combat technique.",
+            "2": "Remain off the ground for ten consecutive seconds.",
+            "3": "Launch an undamaged enemy, follow it upward, and chain aerial grabs to reset your height. Do not touch the floor until the ten-second counter completes."
+          }
+        },
+        {
+          "id": "athena-ground-pounder",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Ground Pounder",
+          "missable": false,
+          "levels": {
+            "1": "This purchased trial tests a single combat technique.",
+            "2": "Rush one enemy into the floor and land ten uninterrupted hits.",
+            "3": "Use crowd control to isolate a target, perform the downward rush, and continue the ground sequence without being interrupted until the tenth hit registers."
+          }
+        },
+        {
+          "id": "athena-guard-break",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Guard Break",
+          "missable": false,
+          "levels": {
+            "1": "This purchased trial tests a single combat technique.",
+            "2": "Destroy five shields at the same moment.",
+            "3": "Gather all shielded enemies into a tight group, stand centrally, and charge the freezing horn repeatedly. Every pulse must connect with all five until their shields break together."
+          }
+        },
+        {
+          "id": "athena-ricochet",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Ricochet",
+          "missable": false,
+          "levels": {
+            "1": "This purchased trial tests a single combat technique.",
+            "2": "Parry five arrows consecutively.",
+            "3": "Face the respawning archers, block just after each release, and reflect five shots without missing or taking another action. Reset the rhythm if a parry fails."
+          }
+        },
+        {
+          "id": "athena-fear-kratos",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Fear Kratos",
+          "missable": false,
+          "levels": {
+            "1": "This purchased trial tests a single combat technique.",
+            "2": "Make all ten civilians cower at the same time.",
+            "3": "Herd the civilians into one compact section, keep moving around the outside to prevent escapes, and wait until all ten are crouched simultaneously."
+          }
+        },
+        {
+          "id": "athena-frozen-in-flight",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Frozen in Flight",
+          "missable": false,
+          "levels": {
+            "1": "This purchased trial tests a single combat technique.",
+            "2": "Freeze and shatter five ravens simultaneously.",
+            "3": "Wait for at least five flying targets to cluster, fully charge the freezing horn in their center, and release only when all are within the effect radius."
+          }
+        },
+        {
+          "id": "athena-magic-maker",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Magic Maker",
+          "missable": false,
+          "levels": {
+            "1": "This purchased trial tests a single combat technique.",
+            "2": "Refill an empty magic meter completely.",
+            "3": "Defeat the magic-dropping enemies while avoiding unnecessary spell use and collect every blue orb. A post-clear infinite-magic relic may also satisfy the meter condition if enabled."
+          }
+        },
+        {
+          "id": "athena-bone-crusher",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Bone Crusher",
+          "missable": false,
+          "levels": {
+            "1": "This purchased trial tests a single combat technique.",
+            "2": "Kill ten skeletal enemies with grabs.",
+            "3": "Launch each target with an aerial rush and grab it during the rise for a quick finish. Repeat until the counter reaches ten; weapon kills do not count."
+          }
+        }
+      ]
+    },
+    {
+      "id": "temple-of-zeus",
+      "name": "Temple of Zeus",
+      "location_cue": "A post-clear circular room lined with ten small columns, eight lion statues, and a large central monument.",
+      "note": "Buy all eighteen nodes, verify every reward, and open the central secret.",
+      "items": [
+        {
+          "id": "temple-orb-ledger",
+          "type": "optional",
+          "safe_type": "Temple Economy",
+          "label": "Spend One Million Red Orbs",
+          "missable": false,
+          "levels": {
+            "1": "The post-clear temple consumes more than the maximum amount that can be held at once.",
+            "2": "Purchase all eighteen temple nodes for a combined 1,000,000 red orbs.",
+            "3": "Enter with a near-full bank, buy nodes until the balance is exhausted, earn at least one more orb through campaign or arena play, and return for the final purchase. Confirm every pedestal is lit."
+          }
+        },
+        {
+          "id": "temple-left-column-1",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Left Column #1 — Arena Enemy Set",
+          "missable": false,
+          "levels": {
+            "1": "One left-side small column still holds a purchasable bonus.",
+            "2": "Spend 10,000 red orbs at Left Column #1.",
+            "3": "Approach the matching left-side small column, confirm its price is 10,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the arena enemies set one reward is available."
+          }
+        },
+        {
+          "id": "temple-left-column-2",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Left Column #2 — Art Galleries",
+          "missable": false,
+          "levels": {
+            "1": "One left-side small column still holds a purchasable bonus.",
+            "2": "Spend 5,000 red orbs at Left Column #2.",
+            "3": "Approach the matching left-side small column, confirm its price is 5,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the environment two miscellaneous galleries reward is available."
+          }
+        },
+        {
+          "id": "temple-left-column-3",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Left Column #3 — Arena Enemy Set",
+          "missable": false,
+          "levels": {
+            "1": "One left-side small column still holds a purchasable bonus.",
+            "2": "Spend 20,000 red orbs at Left Column #3.",
+            "3": "Approach the matching left-side small column, confirm its price is 20,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the arena enemies set two reward is available."
+          }
+        },
+        {
+          "id": "temple-left-column-4",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Left Column #4 — Athena Trial Bundle",
+          "missable": false,
+          "levels": {
+            "1": "One left-side small column still holds a purchasable bonus.",
+            "2": "Spend 40,000 red orbs at Left Column #4.",
+            "3": "Approach the matching left-side small column, confirm its price is 40,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the Athena challenges set one reward is available."
+          }
+        },
+        {
+          "id": "temple-left-column-5",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Left Column #5 — Arena Backdrop",
+          "missable": false,
+          "levels": {
+            "1": "One left-side small column still holds a purchasable bonus.",
+            "2": "Spend 15,000 red orbs at Left Column #5.",
+            "3": "Approach the matching left-side small column, confirm its price is 15,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the Arctic arena backdrop reward is available."
+          }
+        },
+        {
+          "id": "temple-left-lion-1",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Left Lion #1 — Athena Trial Bundle",
+          "missable": false,
+          "levels": {
+            "1": "One left-side lion statue still holds a purchasable bonus.",
+            "2": "Spend 70,000 red orbs at Left Lion #1.",
+            "3": "Approach the matching left-side lion statue, confirm its price is 70,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the Athena challenges set two reward is available."
+          }
+        },
+        {
+          "id": "temple-left-lion-2",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Left Lion #2 — Bonus Video",
+          "missable": false,
+          "levels": {
+            "1": "One left-side lion statue still holds a purchasable bonus.",
+            "2": "Spend 150,000 red orbs at Left Lion #2.",
+            "3": "Approach the matching left-side lion statue, confirm its price is 150,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the Marked Warrior video reward is available."
+          }
+        },
+        {
+          "id": "temple-left-lion-3",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Left Lion #3 — Arena Enemy Set",
+          "missable": false,
+          "levels": {
+            "1": "One left-side lion statue still holds a purchasable bonus.",
+            "2": "Spend 75,000 red orbs at Left Lion #3.",
+            "3": "Approach the matching left-side lion statue, confirm its price is 75,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the arena enemies set three reward is available."
+          }
+        },
+        {
+          "id": "temple-left-lion-4",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Left Lion #4 — Bonus Video",
+          "missable": false,
+          "levels": {
+            "1": "One left-side lion statue still holds a purchasable bonus.",
+            "2": "Spend 75,000 red orbs at Left Lion #4.",
+            "3": "Approach the matching left-side lion statue, confirm its price is 75,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the Pride Sparta video reward is available."
+          }
+        },
+        {
+          "id": "temple-right-column-1",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Right Column #1 — Arena Backdrop",
+          "missable": false,
+          "levels": {
+            "1": "One right-side small column still holds a purchasable bonus.",
+            "2": "Spend 25,000 red orbs at Right Column #1.",
+            "3": "Approach the matching right-side small column, confirm its price is 25,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the Atlantis arena backdrop reward is available."
+          }
+        },
+        {
+          "id": "temple-right-column-2",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Right Column #2 — Bonus Video",
+          "missable": false,
+          "levels": {
+            "1": "One right-side small column still holds a purchasable bonus.",
+            "2": "Spend 25,000 red orbs at Right Column #2.",
+            "3": "Approach the matching right-side small column, confirm its price is 25,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the Brother video reward is available."
+          }
+        },
+        {
+          "id": "temple-right-column-3",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Right Column #3 — Art Galleries",
+          "missable": false,
+          "levels": {
+            "1": "One right-side small column still holds a purchasable bonus.",
+            "2": "Spend 15,000 red orbs at Right Column #3.",
+            "3": "Approach the matching right-side small column, confirm its price is 15,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the character two environment one galleries reward is available."
+          }
+        },
+        {
+          "id": "temple-right-column-4",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Right Column #4 — Arena Enemy Set",
+          "missable": false,
+          "levels": {
+            "1": "One right-side small column still holds a purchasable bonus.",
+            "2": "Spend 30,000 red orbs at Right Column #4.",
+            "3": "Approach the matching right-side small column, confirm its price is 30,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the arena enemies set four reward is available."
+          }
+        },
+        {
+          "id": "temple-right-column-5",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Right Column #5 — Art Galleries",
+          "missable": false,
+          "levels": {
+            "1": "One right-side small column still holds a purchasable bonus.",
+            "2": "Spend 10,000 red orbs at Right Column #5.",
+            "3": "Approach the matching right-side small column, confirm its price is 10,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the three art galleries reward is available."
+          }
+        },
+        {
+          "id": "temple-right-lion-1",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Right Lion #1 — Costume",
+          "missable": false,
+          "levels": {
+            "1": "One right-side lion statue still holds a purchasable bonus.",
+            "2": "Spend 250,000 red orbs at Right Lion #1.",
+            "3": "Approach the matching right-side lion statue, confirm its price is 250,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the Robotos costume reward is available."
+          }
+        },
+        {
+          "id": "temple-right-lion-2",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Right Lion #2 — Arena Backdrop",
+          "missable": false,
+          "levels": {
+            "1": "One right-side lion statue still holds a purchasable bonus.",
+            "2": "Spend 40,000 red orbs at Right Lion #2.",
+            "3": "Approach the matching right-side lion statue, confirm its price is 40,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the Hades arena backdrop reward is available."
+          }
+        },
+        {
+          "id": "temple-right-lion-3",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Right Lion #3 — Arena Enemy Set",
+          "missable": false,
+          "levels": {
+            "1": "One right-side lion statue still holds a purchasable bonus.",
+            "2": "Spend 80,000 red orbs at Right Lion #3.",
+            "3": "Approach the matching right-side lion statue, confirm its price is 80,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the arena enemies set five reward is available."
+          }
+        },
+        {
+          "id": "temple-right-lion-4",
+          "type": "optional",
+          "safe_type": "Temple Unlock",
+          "label": "Right Lion #4 — Arena Backdrop",
+          "missable": false,
+          "levels": {
+            "1": "One right-side lion statue still holds a purchasable bonus.",
+            "2": "Spend 65,000 red orbs at Right Lion #4.",
+            "3": "Approach the matching right-side lion statue, confirm its price is 65,000, and complete the sacrifice. Return to the relevant challenge, arena, costume, video, or gallery menu and verify the Desert arena backdrop reward is available."
+          }
+        },
+        {
+          "id": "temple-secret-cavern",
+          "type": "secret",
+          "safe_type": "Temple Secret",
+          "label": "Open the Temple's Central Secret",
+          "missable": false,
+          "levels": {
+            "1": "Complete ownership changes the center of the temple.",
+            "2": "After buying every node, climb the raised central column and reach the statue's hand.",
+            "3": "Use the ladder on the new column, cross both grapple points, and turn the crank on the large hand. Descend the staircase that opens around the column and enter the cavern for the final relic."
+          }
+        }
+      ]
+    },
+    {
+      "id": "combat-arena-costumes-and-galleries",
+      "name": "Combat Arena, Costumes, and Galleries",
+      "location_cue": "The post-clear arena setup, Bonus Play costume selector, collection bonus menu, and gallery screens.",
+      "note": "Verify all chosen-route bonus content, costumes, viewers, galleries, and the largest combat milestone.",
+      "items": [
+        {
+          "id": "combat-arena",
+          "type": "interaction",
+          "safe_type": "Custom Arena",
+          "label": "Use Combat Arena",
+          "missable": false,
+          "levels": {
+            "1": "The first clear opens a configurable combat space.",
+            "2": "Create a match using both enemy slots and change the player and arena settings.",
+            "3": "Select two enemy types, set their counts, health, attacks, and respawn behavior, then change player health, magic, costume, backdrop, and difficulty. Start and finish or safely exit the match."
+          }
+        },
+        {
+          "id": "forest-arena",
+          "type": "interaction",
+          "safe_type": "Bonus Arena",
+          "label": "Use the Forest Bonus Arena",
+          "missable": false,
+          "levels": {
+            "1": "The chosen Origins Collection route includes an extra combat backdrop.",
+            "2": "Select the Forest of the Forgotten bonus arena from the included content.",
+            "3": "Open the bonus combat setup, choose the forest arena, configure at least one enemy group, and begin a playable match to verify the on-disc bonus is installed."
+          }
+        },
+        {
+          "id": "costume-01",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "First-Clear Costume #1",
+          "missable": false,
+          "levels": {
+            "1": "An alternate appearance becomes available through a completion condition.",
+            "2": "Unlock this selection by completing the following condition: complete the campaign once.",
+            "3": "Meet the condition to complete the campaign once, open the Bonus Play or arena selector, choose the newly available appearance, and begin a controllable section to confirm its model and listed modifiers load."
+          }
+        },
+        {
+          "id": "costume-02",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "First-Clear Costume #2",
+          "missable": false,
+          "levels": {
+            "1": "An alternate appearance becomes available through a completion condition.",
+            "2": "Unlock this selection by completing the following condition: complete the campaign once.",
+            "3": "Meet the condition to complete the campaign once, open the Bonus Play or arena selector, choose the newly available appearance, and begin a controllable section to confirm its model and listed modifiers load."
+          }
+        },
+        {
+          "id": "costume-03",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "God-Clear Costume",
+          "missable": false,
+          "levels": {
+            "1": "An alternate appearance becomes available through a completion condition.",
+            "2": "Unlock this selection by completing the following condition: complete God difficulty.",
+            "3": "Meet the condition to complete God difficulty, open the Bonus Play or arena selector, choose the newly available appearance, and begin a controllable section to confirm its model and listed modifiers load."
+          }
+        },
+        {
+          "id": "costume-04",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Temple Costume",
+          "missable": false,
+          "levels": {
+            "1": "An alternate appearance becomes available through a completion condition.",
+            "2": "Unlock this selection by completing the following condition: buy the 250,000-orb right lion.",
+            "3": "Meet the condition to buy the 250,000-orb right lion, open the Bonus Play or arena selector, choose the newly available appearance, and begin a controllable section to confirm its model and listed modifiers load."
+          }
+        },
+        {
+          "id": "costume-05",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Origins Bonus Costume",
+          "missable": false,
+          "levels": {
+            "1": "An alternate appearance becomes available through a completion condition.",
+            "2": "Unlock this selection by completing the following condition: use the included Origins Collection bonus.",
+            "3": "Meet the condition to use the included Origins Collection bonus, open the Bonus Play or arena selector, choose the newly available appearance, and begin a controllable section to confirm its model and listed modifiers load."
+          }
+        },
+        {
+          "id": "costume-06",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Temple-Completion Arena Character",
+          "missable": false,
+          "levels": {
+            "1": "An alternate appearance becomes available through a completion condition.",
+            "2": "Unlock this selection by completing the following condition: complete every Temple purchase.",
+            "3": "Meet the condition to complete every Temple purchase, open the Bonus Play or arena selector, choose the newly available appearance, and begin a controllable section to confirm its model and listed modifiers load."
+          }
+        },
+        {
+          "id": "bonus-in-game-movies",
+          "type": "optional",
+          "safe_type": "Bonus Gallery",
+          "label": "Open the In-Game Movie Viewer",
+          "missable": false,
+          "levels": {
+            "1": "Clear data exposes a replay viewer.",
+            "2": "Open the in-game movie category after finishing the campaign.",
+            "3": "Enter the bonus video menu and open the in-game movie viewer once. Narrative entries are intentionally not described here; inspect them only after the campaign clear."
+          }
+        },
+        {
+          "id": "bonus-credits",
+          "type": "optional",
+          "safe_type": "Bonus Gallery",
+          "label": "Open the Credits Viewer",
+          "missable": false,
+          "levels": {
+            "1": "The bonus menu retains a separate credits entry.",
+            "2": "Select the credits from the post-clear bonus menu.",
+            "3": "After clear data is saved, open the credits entry and confirm playback begins, then return to the bonus menu."
+          }
+        },
+        {
+          "id": "bonus-all-art",
+          "type": "optional",
+          "safe_type": "Bonus Gallery",
+          "label": "Open All Seven Art Galleries",
+          "missable": false,
+          "levels": {
+            "1": "Several galleries are split between the base clear and Temple purchases.",
+            "2": "Unlock and open every character, environment, miscellaneous, Sparta, and color-script gallery.",
+            "3": "Buy every gallery-bearing Temple node, enter each of the seven gallery categories, and page through every unlocked plate. Return to the category screen and verify none remains locked."
+          }
+        },
+        {
+          "id": "bonus-directors-live",
+          "type": "optional",
+          "safe_type": "Documentary",
+          "label": "Open Game Directors Live",
+          "missable": false,
+          "levels": {
+            "1": "The chosen collection includes an additional documentary.",
+            "2": "Select Game Directors Live from the Origins Collection bonus content.",
+            "3": "Open the collection-level bonus menu, start the documentary, and confirm playback. Its discussion is not summarized here because it may reference material outside the current campaign."
+          }
+        },
+        {
+          "id": "combo-1000",
+          "type": "optional",
+          "safe_type": "Combat Milestone",
+          "label": "Reach a 1,000-Hit Combo",
+          "missable": false,
+          "levels": {
+            "1": "A dense arena setup makes the game's largest combo milestone manageable.",
+            "2": "Use a durable enemy group and sustained area magic to raise the counter to 1,000.",
+            "3": "Configure Combat Arena with high-health or respawning enemies, equip meter-friendly modifiers, and maintain uninterrupted attacks until the displayed combo reaches four digits. Avoid finishers that end the target supply."
+          }
+        }
+      ]
+    }
+  ]
+}

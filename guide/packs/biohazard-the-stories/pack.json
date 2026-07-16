@@ -1,0 +1,673 @@
+{
+  "id": "biohazard-the-stories",
+  "game": "Biohazard The Stories (2004)",
+  "target": "100% of the original Japanese DoCoMo route, spoiler-free and preservation-honest",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "route-and-preservation",
+      "name": "Selected DoCoMo Route and Preservation",
+      "location_cue": "The Japanese DoCoMo application menu, carrier data, Stories mode, and Situations mode.",
+      "note": "Separate the complete subscribed release from the preserved public trial before recording progress.",
+      "save_backup": {
+        "title": "Clone the handset storage",
+        "why": "Server-delivered scenario data cannot be recovered from an overwritten device."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "original-docomo-route",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Use the Original DoCoMo Release",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the carrier build before treating a save as the completion record.",
+            "2": "The selected route is the Japanese DoCoMo version distributed through the original mobile service.",
+            "3": "Use a preserved compatible DoCoMo environment containing the full subscribed application and all downloaded scenario data. Record the handset model, application version, and local scenario files before starting."
+          }
+        },
+        {
+          "id": "do-not-substitute-trial",
+          "type": "interaction",
+          "safe_type": "Preservation Check",
+          "label": "Do Not Substitute the Trial Client",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public application is not the complete release.",
+            "2": "The preserved trial contains three offline Situation stages; Stories mode still requests the retired server.",
+            "3": "At the mode menu, confirm whether Stories opens Scenario 01 without a network error and whether more than the three trial Situations exist. If either check fails, label the environment trial-only and do not claim full completion."
+          },
+          "internal_unavailable": true
+        },
+        {
+          "id": "preserve-full-client",
+          "type": "optional",
+          "safe_type": "Archive",
+          "label": "Preserve All Downloaded Scenario Data",
+          "missable": false,
+          "levels": {
+            "1": "This title originally delivered scenarios through a carrier service.",
+            "2": "Back up the application plus every downloaded Stories-mode data file before play.",
+            "3": "Create two read-only copies of the full handset storage, hash the application and data files separately, cold-boot one duplicate without network access, and verify that all previously downloaded scenarios remain selectable."
+          }
+        },
+        {
+          "id": "clean-save",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Create a Clean Completion Save",
+          "missable": false,
+          "levels": {
+            "1": "A preloaded archive can hide the real point and unlock trail.",
+            "2": "Begin with no purchased equipment, completed scenario, or extra character marked.",
+            "3": "Capture the initial Stories list, Situations list, point balance, shop, file index, outfit screen, and character screen. Keep the untouched backup beside milestone saves."
+          }
+        }
+      ]
+    },
+    {
+      "id": "stories-scenarios-a",
+      "name": "Stories Scenario Set A",
+      "location_cue": "The first group of downloaded nodes in the Stories selection menu.",
+      "note": "Exact routes are withheld because the retail scenario data is not publicly preserved.",
+      "save_backup": {
+        "title": "Back up before each scenario",
+        "why": "A rare downloaded node should never be tested on the sole copy."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "story-scenario-01",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 01 - Prelude",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Open Stories mode and select Scenario 01 - Prelude.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "story-scenario-02",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 02",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 02 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "story-scenario-03",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 03",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 03 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "story-scenario-04",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 04",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 04 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "story-scenario-05",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 05",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 05 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        }
+      ]
+    },
+    {
+      "id": "stories-scenarios-b",
+      "name": "Stories Scenario Set B",
+      "location_cue": "The middle group of downloaded nodes in the Stories selection menu.",
+      "note": "Scenario names and mechanics remain verification holds.",
+      "save_backup": {
+        "title": "Back up before each scenario",
+        "why": "A rare downloaded node should never be tested on the sole copy."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "story-scenario-06",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 06",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 06 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "story-scenario-07",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 07",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 07 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "story-scenario-08",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 08",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 08 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "story-scenario-09",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 09",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 09 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "story-scenario-10",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 10",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 10 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        }
+      ]
+    },
+    {
+      "id": "stories-scenarios-c",
+      "name": "Stories Scenario Set C",
+      "location_cue": "The later group of downloaded nodes in the Stories selection menu.",
+      "note": "No narrative outcome is exposed in reader-visible labels.",
+      "save_backup": {
+        "title": "Back up before each scenario",
+        "why": "A rare downloaded node should never be tested on the sole copy."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "story-scenario-11",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 11",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 11 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "story-scenario-12",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 12",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 12 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "story-scenario-13",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 13",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 13 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "story-scenario-14",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 14",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 14 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "story-scenario-15",
+          "type": "optional",
+          "safe_type": "Story Scenario",
+          "label": "Scenario 15",
+          "missable": false,
+          "levels": {
+            "1": "A later downloadable scenario belongs in the completion record.",
+            "2": "Unlock the next downloaded Stories node and select Scenario 15 from the scenario list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        }
+      ]
+    },
+    {
+      "id": "situations-mode",
+      "name": "Situations Mode",
+      "location_cue": "The short-challenge menu and its offline trial stages.",
+      "note": "Three trial stages are preserved; the full retail count is not.",
+      "save_backup": {
+        "title": "Clone before retail comparison",
+        "why": "Do not overwrite the only preserved profile while probing unavailable stages."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "trial-situation-01",
+          "type": "optional",
+          "safe_type": "Situation",
+          "label": "Preserved Situation 01",
+          "missable": false,
+          "levels": {
+            "1": "One short offline challenge is available in the preserved trial.",
+            "2": "From Situations mode, select preserved stage 01 and complete its displayed rescue or supply objective.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "trial-situation-02",
+          "type": "optional",
+          "safe_type": "Situation",
+          "label": "Preserved Situation 02",
+          "missable": false,
+          "levels": {
+            "1": "One short offline challenge is available in the preserved trial.",
+            "2": "From Situations mode, select preserved stage 02 and complete its displayed rescue or supply objective.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "trial-situation-03",
+          "type": "optional",
+          "safe_type": "Situation",
+          "label": "Preserved Situation 03",
+          "missable": false,
+          "levels": {
+            "1": "One short offline challenge is available in the preserved trial.",
+            "2": "From Situations mode, select preserved stage 03 and complete its displayed rescue or supply objective.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "full-situation-catalogue",
+          "type": "optional",
+          "safe_type": "Situation Audit",
+          "label": "Complete the Full Situation Catalogue",
+          "missable": false,
+          "levels": {
+            "1": "The retail service contained more than the three trial stages.",
+            "2": "Compare a full subscribed client against the preserved three-stage trial list.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "situation-rescue-variant",
+          "type": "optional",
+          "safe_type": "Situation Type",
+          "label": "Complete Every Rescue Variant",
+          "missable": false,
+          "levels": {
+            "1": "Some short challenges center on keeping another person safe.",
+            "2": "Clear every Situations entry whose objective asks for a rescue.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "situation-ammunition-variant",
+          "type": "optional",
+          "safe_type": "Situation Type",
+          "label": "Complete Every Ammunition Variant",
+          "missable": false,
+          "levels": {
+            "1": "Some short challenges are built around securing limited supplies.",
+            "2": "Clear every Situations entry whose objective asks for ammunition acquisition.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        }
+      ]
+    },
+    {
+      "id": "points-files-items-puzzles",
+      "name": "Points, Files, Items, and Puzzles",
+      "location_cue": "Scenario result screens, the point shop, file index, inventory, and room interactions.",
+      "note": "Known categories are complete; exact retail lists remain unavailable.",
+      "save_backup": {
+        "title": "Record balances before spending",
+        "why": "The clean point trail is needed to reconstruct unlock thresholds."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "all-scenario-points",
+          "type": "optional",
+          "safe_type": "Point Record",
+          "label": "Earn Points from Every Scenario",
+          "missable": false,
+          "levels": {
+            "1": "Clears feed the currency used to open later content.",
+            "2": "After each Stories clear, record the awarded points before spending them.",
+            "3": "Finish each available scenario once, save its result screen, and reconcile the new point balance against purchases. Repeat completed scenarios only after the first-clear ledger is complete."
+          }
+        },
+        {
+          "id": "all-shop-weapons",
+          "type": "upgrade",
+          "safe_type": "Weapon Collection",
+          "label": "Purchase Every Weapon",
+          "missable": false,
+          "levels": {
+            "1": "The point shop contains combat unlocks beyond the starting loadout.",
+            "2": "Open the point shop and buy every weapon entry in the full retail client.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "all-shop-items",
+          "type": "upgrade",
+          "safe_type": "Item Collection",
+          "label": "Purchase Every Special Item",
+          "missable": false,
+          "levels": {
+            "1": "Utility upgrades share the same scenario-point economy.",
+            "2": "Open the point shop and buy every non-weapon equipment entry.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "all-files",
+          "type": "collectible",
+          "safe_type": "File Collection",
+          "label": "Collect Every File",
+          "missable": false,
+          "levels": {
+            "1": "Some scenario rooms contain optional documents.",
+            "2": "Before leaving each scenario, inspect readable objects and verify every new file in the index.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "all-items",
+          "type": "collectible",
+          "safe_type": "Item Collection",
+          "label": "Collect Every Scenario Item",
+          "missable": false,
+          "levels": {
+            "1": "Optional pickups can sit away from the direct puzzle route.",
+            "2": "Sweep every reachable room in all fifteen scenarios before accepting the clear.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "all-puzzles",
+          "type": "optional",
+          "safe_type": "Puzzle Audit",
+          "label": "Solve Every Puzzle State",
+          "missable": false,
+          "levels": {
+            "1": "Stories mode includes mechanical locks and item-use problems.",
+            "2": "Record each puzzle, its required inventory item, and the successful interaction across all scenarios.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        }
+      ]
+    },
+    {
+      "id": "characters-and-outfits",
+      "name": "Playable Unlocks and Outfits",
+      "location_cue": "Character and outfit selection screens reached from the full retail menu.",
+      "note": "Six unlock slots are confirmed, but their exact gates are not preserved.",
+      "save_backup": {
+        "title": "Clone before testing thresholds",
+        "why": "Unlock experiments must use a duplicate retail save."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "extra-character-1",
+          "type": "upgrade",
+          "safe_type": "Character Unlock",
+          "label": "Extra Playable Character 1",
+          "missable": false,
+          "levels": {
+            "1": "Continued completion opens another playable loadout.",
+            "2": "Clear the known scenario list, then inspect the character-selection screen for a new slot.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "extra-character-2",
+          "type": "upgrade",
+          "safe_type": "Character Unlock",
+          "label": "Extra Playable Character 2",
+          "missable": false,
+          "levels": {
+            "1": "Continued completion opens another playable loadout.",
+            "2": "Clear the known scenario list, then inspect the character-selection screen for a new slot.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "extra-character-3",
+          "type": "upgrade",
+          "safe_type": "Character Unlock",
+          "label": "Extra Playable Character 3",
+          "missable": false,
+          "levels": {
+            "1": "Continued completion opens another playable loadout.",
+            "2": "Clear the known scenario list, then inspect the character-selection screen for a new slot.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "alternate-outfit-1",
+          "type": "upgrade",
+          "safe_type": "Outfit Unlock",
+          "label": "Alternate Outfit 1",
+          "missable": false,
+          "levels": {
+            "1": "The retail collection includes another visual loadout.",
+            "2": "Spend scenario points and complete later nodes, then inspect the outfit-selection screen.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "alternate-outfit-2",
+          "type": "upgrade",
+          "safe_type": "Outfit Unlock",
+          "label": "Alternate Outfit 2",
+          "missable": false,
+          "levels": {
+            "1": "The retail collection includes another visual loadout.",
+            "2": "Spend scenario points and complete later nodes, then inspect the outfit-selection screen.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "alternate-outfit-3",
+          "type": "upgrade",
+          "safe_type": "Outfit Unlock",
+          "label": "Alternate Outfit 3",
+          "missable": false,
+          "levels": {
+            "1": "The retail collection includes another visual loadout.",
+            "2": "Spend scenario points and complete later nodes, then inspect the outfit-selection screen.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        }
+      ]
+    },
+    {
+      "id": "completion-and-archive-audit",
+      "name": "Completion and Archive Audit",
+      "location_cue": "All scenario, Situation, shop, file, outfit, character, and storage records.",
+      "note": "A trial-only environment cannot satisfy the full retail checklist.",
+      "save_backup": {
+        "title": "Write-protect final copies",
+        "why": "Complete service data is irreplaceable preservation material."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "all-fifteen-scenarios",
+          "type": "optional",
+          "safe_type": "Completion Audit",
+          "label": "Verify All Fifteen Stories Records",
+          "missable": false,
+          "levels": {
+            "1": "A single downloaded episode is only the public trial footprint.",
+            "2": "The full Stories list must contain fifteen distinct cleared scenario records.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "all-situations",
+          "type": "optional",
+          "safe_type": "Completion Audit",
+          "label": "Verify Every Situation Record",
+          "missable": false,
+          "levels": {
+            "1": "The retail Situation count is absent from surviving public documentation.",
+            "2": "Capture the full retail list and clear every slot, including rescue and ammunition variants.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "all-purchases-and-unlocks",
+          "type": "optional",
+          "safe_type": "Completion Audit",
+          "label": "Verify Every Persistent Unlock",
+          "missable": false,
+          "levels": {
+            "1": "Completion requires the point shop and selection screens to agree.",
+            "2": "Compare the weapon, item, file, outfit, and character screens against the clean-save captures.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "preserve-complete-save",
+          "type": "optional",
+          "safe_type": "Archive",
+          "label": "Preserve the Complete Retail Save",
+          "missable": false,
+          "levels": {
+            "1": "A complete subscribed handset would be a rare preservation artifact.",
+            "2": "Keep two read-only storage images plus complete menu and result captures.",
+            "3": "Hash the full handset dump, clone it twice, capture every scenario, Situation, shop, file, outfit, and character page, and document the exact hardware and carrier build without redistributing proprietary data."
+          }
+        }
+      ]
+    }
+  ]
+}

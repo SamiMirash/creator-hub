@@ -1,0 +1,149 @@
+{
+  "id": "god-of-war-collection",
+  "game": "God of War Collection",
+  "target": "100% completion of both included remasters, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "collection-setup",
+      "name": "Collection Setup",
+      "location_cue": "The PS3 collection launcher, two-game selector, display settings, and save-data utility.",
+      "note": "This package contains remastered versions of the first two games; it introduces no third campaign.",
+      "items": [
+        {
+          "id": "use-ps3-release",
+          "type": "interaction",
+          "safe_type": "Platform Route",
+          "label": "Use the PS3 Collection",
+          "missable": false,
+          "levels": {
+            "1": "Choose the higher-fidelity collection release.",
+            "2": "Run the PlayStation 3 version on original hardware or RPCS3.",
+            "3": "Launch the PS3 God of War Collection, confirm both games appear in its selector, and avoid the lower-fidelity Vita port for the chosen route. No Vita-exclusive gameplay content requires a secondary pass."
+          }
+        },
+        {
+          "id": "verify-hd-output",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Verify the HD Presentation",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the remaster is not running through a PS2 fallback.",
+            "2": "Check that the collection outputs its remastered HD mode.",
+            "3": "Open either game, inspect the display information through the PS3 or emulator, and confirm the collection build is active with its HD presentation and smooth target frame rate. Do not apply gameplay-altering patches during completion."
+          }
+        },
+        {
+          "id": "separate-save-data",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Keep Both Games' Saves Separate",
+          "missable": false,
+          "levels": {
+            "1": "The two campaigns maintain independent progress and clear data.",
+            "2": "Create labelled rotating saves for the first game and the second game.",
+            "3": "Use distinct save slots and backup folders for each title. Preserve the first game's challenge and difficulty clear data separately from the second game's Bonus Play, urn, ranking, and Arena data."
+          }
+        }
+      ]
+    },
+    {
+      "id": "first-game-component",
+      "name": "First Game Component",
+      "location_cue": "The first title in the collection selector and its own campaign, Treasures, and challenge menus.",
+      "note": "All gameplay requirements are defined in the verified standalone `god-of-war-2005` pack.",
+      "items": [
+        {
+          "id": "complete-first-game-pack",
+          "type": "interaction",
+          "safe_type": "Component Pack",
+          "label": "Complete God of War (2005)",
+          "missable": false,
+          "levels": {
+            "1": "Treat the first disc component as its own full completion project.",
+            "2": "Finish every requirement in `game_guide/out/god-of-war-2005/pack.READY.json`.",
+            "3": "Complete all 104 requirements in the standalone pack: 330-chest regional ledger, 18 eyes, 18 feathers, two optional keys, full arsenal, Spartan and God clears, ten challenges, five costumes, both secret messages, and every Treasures unlock."
+          }
+        },
+        {
+          "id": "verify-first-game-clear-data",
+          "type": "interaction",
+          "safe_type": "Save Check",
+          "label": "Verify First-Game Clear Data",
+          "missable": false,
+          "levels": {
+            "1": "Return to the collection menu only after the bonus state is saved.",
+            "2": "Confirm the first game's hardest clear, challenges, costumes, and Treasures remain accessible.",
+            "3": "Load the first game's final save, enter its post-clear menus, and verify every completed bonus entry remains unlocked. Exit normally to the collection selector and reload once to confirm persistence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "second-game-component",
+      "name": "Second Game Component",
+      "location_cue": "The second title in the collection selector and its campaign, Bonus Play, challenge, and Arena menus.",
+      "note": "All gameplay requirements are defined in the verified standalone `god-of-war-2` pack.",
+      "items": [
+        {
+          "id": "complete-second-game-pack",
+          "type": "interaction",
+          "safe_type": "Component Pack",
+          "label": "Complete God of War II",
+          "missable": false,
+          "levels": {
+            "1": "The second component has its own larger persistent-unlock ledger.",
+            "2": "Finish every requirement in `game_guide/out/god-of-war-2/pack.READY.json`.",
+            "3": "Complete all 118 requirements in the standalone pack: 169 tracked reward chests, 18 eyes, 18 feathers, six urns, three permanent gifts, all upgrades and relics, 20 extracted eyes, God and Titan clears, Bonus Play, seven ranked challenges, seven costumes, movie viewers, and Arena."
+          }
+        },
+        {
+          "id": "verify-second-game-bonus-data",
+          "type": "interaction",
+          "safe_type": "Save Check",
+          "label": "Verify Second-Game Bonus Data",
+          "missable": false,
+          "levels": {
+            "1": "Bonus Play and ranked challenge rewards depend on retained clear data.",
+            "2": "Confirm all six urns, seven costumes, and Arena remain available after reloading.",
+            "3": "Load the second game's clear data, enter Bonus Play to inspect all six urn toggles, then return to its bonus menu and open Arena. Exit to the collection selector, reload, and verify the state persists."
+          }
+        },
+        {
+          "id": "verify-original-bonus-material",
+          "type": "interaction",
+          "safe_type": "Bonus Menu",
+          "label": "Verify the Original Bonus Material",
+          "missable": false,
+          "levels": {
+            "1": "The selected remaster retains the second game's original bonus features.",
+            "2": "Open the second game's movie viewers, costumes, Challenge of the Titans, and Arena.",
+            "3": "From the second game's bonus menus, open both movie viewers, inspect all costume choices, enter the seven-trial challenge selector, and launch one custom Arena setup. Narrative contents remain intentionally undisclosed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "collection-final-audit",
+      "name": "Collection Final Audit",
+      "location_cue": "The collection selector and both titles' load and bonus menus.",
+      "note": "The wrapper is complete only when both constituent standalone packs remain independently complete.",
+      "items": [
+        {
+          "id": "reload-both-components",
+          "type": "interaction",
+          "safe_type": "Final Audit",
+          "label": "Reload Both Completed Components",
+          "missable": false,
+          "levels": {
+            "1": "A final reload catches save separation or clear-data mistakes.",
+            "2": "Launch each game from the collection selector and reload its completed save.",
+            "3": "Open the first game and verify its post-clear challenge and Treasures state, return to the selector, then open the second game and verify Bonus Play, urns, challenge ranks, and Arena. Keep both backup sets afterward."
+          }
+        }
+      ]
+    }
+  ]
+}

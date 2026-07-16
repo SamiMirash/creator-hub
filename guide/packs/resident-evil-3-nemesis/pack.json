@@ -1,0 +1,2073 @@
+{
+  "id": "resident-evil-3-nemesis",
+  "game": "Resident Evil 3: Nemesis (1999)",
+  "target": "100% completion of the chosen classic Windows route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "setup",
+      "name": "Route and Save Setup",
+      "location_cue": "The Windows launcher, mode selectors, costume menu, and save directory.",
+      "note": "Primary route: classic Windows PC; no secondary platform pass.",
+      "items": [
+        {
+          "id": "setup-pc",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the 1999 Windows Release",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the classic version before creating completion data.",
+            "2": "Install the GOG or Steam classic Windows release.",
+            "3": "Launch Resident Evil 3: Nemesis (1999) from GOG or Steam and keep its save folder separate from the 2020 remake. Confirm costume selection and The Mercenaries appear at the PC menu."
+          }
+        },
+        {
+          "id": "setup-backup",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Protect Completion Data",
+          "missable": false,
+          "levels": {
+            "1": "Several clears and purchases must remain on one continuing file.",
+            "2": "Back up the save folder before every ending branch and reward purchase.",
+            "3": "Close the game, copy the save directory to a dated folder, and label difficulty, route choices, clear count, epilogues, and Mercenaries purchases. Restore files only while cloud synchronization is closed."
+          }
+        },
+        {
+          "id": "setup-heavy",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Heavy Completion File",
+          "missable": false,
+          "levels": {
+            "1": "The full reward chain exists only on the harder setting.",
+            "2": "Create the primary completion file on Heavy.",
+            "3": "Start Heavy with the default handgun and eight inventory spaces. Use this file for the seven-drop chain, S rank, ordered files, ending branches, eight epilogue clears, and purchased Mercenaries rewards."
+          }
+        },
+        {
+          "id": "setup-light",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Light Completion Clear",
+          "missable": false,
+          "levels": {
+            "1": "The assisted setting has a distinct loadout and dodge behavior.",
+            "2": "Finish one complete run on Light.",
+            "3": "Start Light, inspect its expanded weapon supply, automatic dodge, ten inventory spaces, and infinite ribbons, then finish once. Do not use this run for the pursuer drops or epilogue ledger."
+          }
+        },
+        {
+          "id": "setup-original-arrange",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Original and Arrange Rules",
+          "missable": false,
+          "levels": {
+            "1": "The PC release includes two regional rule families.",
+            "2": "Finish one Heavy run under Original and one under Arrange.",
+            "3": "Select Original Heavy for one full clear, then repeat under Arrange Heavy. Record their enemy resilience and regional rule differences separately; do not confuse these with the 2020 remake."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up the continuing file",
+        "why": "Eight clears, branches, and shop purchases share completion data."
+      }
+    },
+    {
+      "id": "live-selections",
+      "name": "Live Selection Matrix",
+      "location_cue": "Timed prompts across the station, downtown, cable car, tower, park, and factory.",
+      "note": "SAVE-BACKUP: record both choices and timeout at every prompt.",
+      "items": [
+        {
+          "id": "live-station",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Station Courtyard Selection",
+          "missable": true,
+          "levels": {
+            "1": "A timed prompt can change rooms, supplies, or later mechanics.",
+            "2": "At the fight outside or enter the station.",
+            "3": "Keep a save before the courtyard prompt. Record fighting outside, entering the station, and allowing the timer to expire; each changes the immediate pursuit and item opportunity."
+          }
+        },
+        {
+          "id": "live-restaurant",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Restaurant Selection",
+          "missable": true,
+          "levels": {
+            "1": "A timed prompt can change rooms, supplies, or later mechanics.",
+            "2": "At the use the basement or hide in the kitchen.",
+            "3": "Visit the Restaurant before the Press Office, save before meeting the other survivor, then record basement, kitchen, and timeout. The kitchen route creates a Heavy-mode drop opportunity."
+          }
+        },
+        {
+          "id": "live-press",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Press Office Selection",
+          "missable": true,
+          "levels": {
+            "1": "A timed prompt can change rooms, supplies, or later mechanics.",
+            "2": "At the jump through the window or hide in back.",
+            "3": "On another run visit the Press Office first. Record the window, rear hiding place, and timeout; the hiding route creates the corresponding Heavy-mode drop opportunity."
+          }
+        },
+        {
+          "id": "live-substation",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Sub Station Selection",
+          "missable": true,
+          "levels": {
+            "1": "A timed prompt can change rooms, supplies, or later mechanics.",
+            "2": "At the raise electrical output or use the emergency exit.",
+            "3": "Back up before the control-room breach. Record increased output, emergency exit, and timeout, then note whether the next pursuer encounter moves to the entrance or later alley."
+          }
+        },
+        {
+          "id": "live-garage",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Garage Collapse Selection",
+          "missable": true,
+          "levels": {
+            "1": "A timed prompt can change rooms, supplies, or later mechanics.",
+            "2": "At the climb upward or jump into the opening.",
+            "3": "After collecting the oil additive, save before the garage collapse. Record climbing, jumping, and timeout; jumping exposes a short underground passage before returning to the street."
+          }
+        },
+        {
+          "id": "live-cable-car",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Cable-Car Selection",
+          "missable": true,
+          "levels": {
+            "1": "A timed prompt can change rooms, supplies, or later mechanics.",
+            "2": "At the jump from the window or operate the emergency brake.",
+            "3": "Back up before repairing the car. Record both choices and timeout because the Clock Tower entrance, supplies, and later room state change."
+          }
+        },
+        {
+          "id": "live-balcony",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Clock Tower Balcony Selection",
+          "missable": true,
+          "levels": {
+            "1": "A timed prompt can change rooms, supplies, or later mechanics.",
+            "2": "At the use the light or connect the cord.",
+            "3": "Save before the balcony prompt. The light avoids a later chase but forfeits this drop; the cord creates an immediate knockdown and lets Heavy collect reward six."
+          }
+        },
+        {
+          "id": "live-bridge",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Park Bridge Selection",
+          "missable": true,
+          "levels": {
+            "1": "A timed prompt can change rooms, supplies, or later mechanics.",
+            "2": "At the push the pursuer away or jump from the bridge.",
+            "3": "Keep the park bridge save permanently. Record push, jump, and timeout; timeout follows the jump route with damage. These branches select different factory entrances and ending mechanics."
+          }
+        },
+        {
+          "id": "live-helicopter",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Factory Helicopter Selection",
+          "missable": true,
+          "levels": {
+            "1": "A timed prompt can change rooms, supplies, or later mechanics.",
+            "2": "At the negotiate by radio or return fire.",
+            "3": "Reach this prompt from the jump-or-timeout bridge branch. Record negotiation, direct return fire, and timeout on separate saves before continuing to the final machinery."
+          }
+        },
+        {
+          "id": "live-final",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Final Evacuation Selection",
+          "missable": true,
+          "levels": {
+            "1": "A timed prompt can change rooms, supplies, or later mechanics.",
+            "2": "At the finish the remaining threat or evacuate.",
+            "3": "Back up after the final machinery activates. Record both displayed choices and timeout; this changes only the last physical encounter, not the already selected rescue route."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep a save before every prompt",
+        "why": "Choices alter rooms, supplies, drops, and ending mechanics."
+      }
+    },
+    {
+      "id": "city-puzzles",
+      "name": "City and Station Puzzles",
+      "location_cue": "Warehouse alleys, the police station, downtown businesses, and cable-car machinery.",
+      "note": "Physical puzzle answers only; no story outcomes are described.",
+      "items": [
+        {
+          "id": "puzzle-lighter",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Warehouse Lighter",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, combine the Empty Lighter with Lighter Oil.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, combine the Empty Lighter with Lighter Oil; confirm the completed Lighter and the rope-blocked alley before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-stars-card",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Police Computer Card",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, examine the Card Case and use its card at the lobby terminal.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, examine the Card Case and use its card at the lobby terminal; confirm the S.T.A.R.S. Office key code before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-city-gems",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "City Hall Gems",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, place the Sapphire and Emerald into the gate panel.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, place the Sapphire and Emerald into the gate panel; confirm the downtown gate before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-book-compass",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Book and Compass Exchange",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, place the Book of Wisdom in the bronze recess, then put the Future Compass in the mayor statue.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, place the Book of Wisdom in the bronze recess, then put the Future Compass in the mayor statue; confirm the Battery before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-hose",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Fire Hose Connection",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, loosen the hose with the Wrench and attach it at the hydrant.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, loosen the hose with the Wrench and attach it at the hydrant; confirm the extinguished alley fire before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-sales-password",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Sales Office Password",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, watch the product advertisement and enter SAFSPRIN, ADRAVIL, or AQUACURE to match it.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, watch the product advertisement and enter SAFSPRIN, ADRAVIL, or AQUACURE to match it; confirm the Oil Additive cabinet before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-sub-power",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Sub Station Voltage",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, adjust the controls to place one output inside each shutter range.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, adjust the controls to place one output inside each shutter range; confirm both supply shutters before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-cable-repair",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Cable-Car Repair",
+          "missable": true,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, install the Power Cable, Fuse, and Mixed Oil.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, install the Power Cable, Fuse, and Mixed Oil; confirm a working cable car before discarding spent items or crossing the next locked route."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before repairing the cable car",
+        "why": "Departure closes most downtown cleanup."
+      },
+      "point_of_no_return": {
+        "title": "Cable-car departure ends downtown cleanup",
+        "why": "Finish files, random pickups, and selection branches first."
+      }
+    },
+    {
+      "id": "tower-hospital-park-puzzles",
+      "name": "Tower, Hospital, and Park Puzzles",
+      "location_cue": "Clock mechanisms, medical equipment, park waterworks, and a graveyard room.",
+      "note": "Some codes and melodies randomize; use the in-room clue rather than a fixed guess.",
+      "items": [
+        {
+          "id": "puzzle-music-box",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Clock Tower Music Box",
+          "missable": true,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, copy the played melody using the six switches.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, copy the played melody using the six switches; confirm the Chronos Chain before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-three-clocks",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Three-Clock Weights",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, move the amber, obsidian, and crystal balls until the center clock reaches midnight.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, move the amber, obsidian, and crystal balls until the center clock reaches midnight; confirm the Gold Gear before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-chronos-gear",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Chronos Gear",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, combine Gold Gear and Silver Gear, then fit the result upstairs.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, combine Gold Gear and Silver Gear, then fit the result upstairs; confirm the bell mechanism before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-hospital-safe",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Hospital Room Safe",
+          "missable": true,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, read the body position in the Data Room and use its paired code in Room 401.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, read the body position in the Data Room and use its paired code in Room 401; confirm the Sickroom Key before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-vaccine",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Hospital Vaccine",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, combine Vaccine Base and Vaccine Medium after operating both laboratory machines.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, combine Vaccine Base and Vaccine Medium after operating both laboratory machines; confirm the completed Vaccine before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-park-fountain",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Park Fountain Gears",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, arrange the black and white gears so both diagrams match.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, arrange the black and white gears so both diagrams match; confirm the drained fountain passage before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-grave-fireplace",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Graveyard Fireplace",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, light the fireplace, then strike the weakened wall with the Iron Pipe.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, light the fireplace, then strike the weakened wall with the Iron Pipe; confirm the concealed communications room before discarding spent items or crossing the next locked route."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before leaving each major building",
+        "why": "Files and route-dependent layouts close after transitions."
+      }
+    },
+    {
+      "id": "factory-puzzles",
+      "name": "Factory Puzzles",
+      "location_cue": "Water-treatment controls, steam valves, industrial corridors, and powered machinery.",
+      "note": "SAVE-BACKUP: factory entrance and radio choices determine ending mechanics.",
+      "items": [
+        {
+          "id": "puzzle-water-sample",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Factory Water Sample",
+          "missable": true,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, shift columns A, B, and C until their combined profile matches the sample.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, shift columns A, B, and C until their combined profile matches the sample; confirm the drainage lock before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-steam",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Factory Steam Controls",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, alternate the wall valves and safety panel until the steam no longer blocks the route.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, alternate the wall valves and safety panel until the steam no longer blocks the route; confirm the System Disk corridor before discarding spent items or crossing the next locked route."
+          }
+        },
+        {
+          "id": "puzzle-rail-cannon",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Rail Cannon Batteries",
+          "missable": false,
+          "levels": {
+            "1": "Inspect nearby machines, movable objects, and item descriptions.",
+            "2": "At the relevant mechanism, activate batteries one, two, and three in sequence.",
+            "3": "Bring every key item named by the nearby route. At the mechanism, activate batteries one, two, and three in sequence; confirm the powered cannon before discarding spent items or crossing the next locked route."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the park bridge save",
+        "why": "It is the earliest clean branch for every ending."
+      },
+      "point_of_no_return": {
+        "title": "Final machinery closes all cleanup",
+        "why": "Collect factory files and resolve the chosen radio branch first."
+      }
+    },
+    {
+      "id": "complete-file-archive",
+      "name": "Complete File Archive",
+      "location_cue": "Document surfaces from the starting inventory through the final industrial yard.",
+      "note": "Collect all 30 in exact menu order to create Jill’s Diary.",
+      "items": [
+        {
+          "id": "file-game-a",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #1 — Game Instructions A",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Game Instructions A at the starting inventory.",
+            "3": "Keep the files in numerical order. Reach the starting inventory, examine Game Instructions A, and verify it occupies slot 1. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-game-b",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #2 — Game Instructions B",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Game Instructions B at the starting inventory.",
+            "3": "Keep the files in numerical order. Reach the starting inventory, examine Game Instructions B, and verify it occupies slot 2. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-clock-postcard",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #3 — Clock Tower Postcard",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Clock Tower Postcard at the Black Jack bar.",
+            "3": "Keep the files in numerical order. Reach the Black Jack bar, examine Clock Tower Postcard, and verify it occupies slot 3. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-photo-a",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #4 — Photo A",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Photo A at the barricaded passage corpse.",
+            "3": "Keep the files in numerical order. Reach the barricaded passage corpse, examine Photo A, and verify it occupies slot 4. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-marvins-report",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #5 — Marvin's Report",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Marvin's Report at the west-office small room.",
+            "3": "Keep the files in numerical order. Reach the west-office small room, examine Marvin's Report, and verify it occupies slot 5. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-davids-memo",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #6 — David's Memo",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect David's Memo at the Dark Room table.",
+            "3": "Keep the files in numerical order. Reach the Dark Room table, examine David's Memo, and verify it occupies slot 6. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-kendo-fax",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #7 — Fax From Kendo Gun Shop",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Fax From Kendo Gun Shop at the STARS fax machine.",
+            "3": "Keep the files in numerical order. Reach the STARS fax machine, examine Fax From Kendo Gun Shop, and verify it occupies slot 7. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-mercenary-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #8 — Mercenary's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Mercenary's Diary at the Zigzag Alley corpse.",
+            "3": "Keep the files in numerical order. Reach the Zigzag Alley corpse, examine Mercenary's Diary, and verify it occupies slot 8. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-city-guide",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #9 — City Guide",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect City Guide at the Restaurant front table.",
+            "3": "Keep the files in numerical order. Reach the Restaurant front table, examine City Guide, and verify it occupies slot 9. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-photo-b",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #10 — Photo B",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Photo B at the Press lobby payphone.",
+            "3": "Keep the files in numerical order. Reach the Press lobby payphone, examine Photo B, and verify it occupies slot 10. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-photo-c",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #11 — Photo C",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Photo C at the Press central table.",
+            "3": "Keep the files in numerical order. Reach the Press central table, examine Photo C, and verify it occupies slot 11. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-reporters-memo",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #12 — Reporter's Memo",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Reporter's Memo at the Press radiator boxes.",
+            "3": "Keep the files in numerical order. Reach the Press radiator boxes, examine Reporter's Memo, and verify it occupies slot 12. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-mechanics-memo",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #13 — Mechanic's Memo",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Mechanic's Memo at the cable-car rear dashboard.",
+            "3": "Keep the files in numerical order. Reach the cable-car rear dashboard, examine Mechanic's Memo, and verify it occupies slot 13. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-managers-report",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #14 — Manager's Report",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Manager's Report at the Sales Office table.",
+            "3": "Keep the files in numerical order. Reach the Sales Office table, examine Manager's Report, and verify it occupies slot 14. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-business-fax",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #15 — Business Fax",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Business Fax at the Sales Office cabinets.",
+            "3": "Keep the files in numerical order. Reach the Sales Office cabinets, examine Business Fax, and verify it occupies slot 15. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-darios-memo",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #16 — Dario's Memo",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Dario's Memo at the warehouse trailer boxes.",
+            "3": "Keep the files in numerical order. Reach the warehouse trailer boxes, examine Dario's Memo, and verify it occupies slot 16. Return after obtaining the Lockpick, enter the now-accessible warehouse trailer, and inspect the boxes. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-operation-instruction",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #17 — Operation Instruction",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Operation Instruction at the Clock Tower Main Hall.",
+            "3": "Keep the files in numerical order. Reach the Clock Tower Main Hall, examine Operation Instruction, and verify it occupies slot 17. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-art-postcard",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #18 — Art Picture Postcard",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Art Picture Postcard at the Clock Tower library table.",
+            "3": "Keep the files in numerical order. Reach the Clock Tower library table, examine Art Picture Postcard, and verify it occupies slot 18. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-mercenary-pocketbook",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #19 — Mercenary's Pocketbook",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Mercenary's Pocketbook at the Clock Room corpse.",
+            "3": "Keep the files in numerical order. Reach the Clock Room corpse, examine Mercenary's Pocketbook, and verify it occupies slot 19. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-directors-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #20 — Director's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Director's Diary at the hospital lounge floor.",
+            "3": "Keep the files in numerical order. Reach the hospital lounge floor, examine Director's Diary, and verify it occupies slot 20. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-photo-d",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #21 — Photo D",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Photo D at the hospital Data Room desk.",
+            "3": "Keep the files in numerical order. Reach the hospital Data Room desk, examine Photo D, and verify it occupies slot 21. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-medical-manual",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #22 — Medical Instruction Manual",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Medical Instruction Manual at the hospital experiment desk.",
+            "3": "Keep the files in numerical order. Reach the hospital experiment desk, examine Medical Instruction Manual, and verify it occupies slot 22. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-photo-e",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #23 — Photo E",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Photo E at the Park Office table.",
+            "3": "Keep the files in numerical order. Reach the Park Office table, examine Photo E, and verify it occupies slot 23. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-written-order",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #24 — Written Order to Supervisors",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Written Order to Supervisors at the forest clearing corpse.",
+            "3": "Keep the files in numerical order. Reach the forest clearing corpse, examine Written Order to Supervisors, and verify it occupies slot 24. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-supervisors-report",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #25 — Supervisor's Report",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Supervisor's Report at the communications-room table.",
+            "3": "Keep the files in numerical order. Reach the communications-room table, examine Supervisor's Report, and verify it occupies slot 25. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-headquarters-fax",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #26 — Fax From Headquarters",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Fax From Headquarters at the communications map board.",
+            "3": "Keep the files in numerical order. Reach the communications map board, examine Fax From Headquarters, and verify it occupies slot 26. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-managers-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #27 — Manager's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Manager's Diary at the factory resting-room table.",
+            "3": "Keep the files in numerical order. Reach the factory resting-room table, examine Manager's Diary, and verify it occupies slot 27. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-security-manual",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #28 — Security Manual",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Security Manual at the factory monitoring bench.",
+            "3": "Keep the files in numerical order. Reach the factory monitoring bench, examine Security Manual, and verify it occupies slot 28. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-incinerator-manual",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #29 — Incinerator Manual",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Incinerator Manual at the emergency-tunnel wall.",
+            "3": "Keep the files in numerical order. Reach the emergency-tunnel wall, examine Incinerator Manual, and verify it occupies slot 29. Open it fully and advance to its last page before closing the menu."
+          }
+        },
+        {
+          "id": "file-classified-photo",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #30 — Classified Photo File",
+          "missable": true,
+          "levels": {
+            "1": "Read every document when its next empty file slot appears.",
+            "2": "Collect Classified Photo File at the car-yard floor.",
+            "3": "Keep the files in numerical order. Reach the car-yard floor, examine Classified Photo File, and verify it occupies slot 30. Open it fully and advance to its last page before closing the menu. If all thirty were taken in order, Jill’s Diary immediately replaces Game Instructions A."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before every area exit",
+        "why": "A skipped or out-of-order file prevents the diary transformation."
+      }
+    },
+    {
+      "id": "weapons-ammunition",
+      "name": "Weapons and Ammunition",
+      "location_cue": "Fixed lockers, randomized cabinets, crafted powders, Heavy drops, and reward storage.",
+      "note": "Handle every weapon and manufacture every ammunition family.",
+      "items": [
+        {
+          "id": "weapon-combat-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Combat Knife",
+          "missable": false,
+          "levels": {
+            "1": "Check fixed, randomized, crafted, dropped, and purchased weapon sources.",
+            "2": "Obtain Combat Knife from the starting Item Box.",
+            "3": "Reach the starting Item Box using the required Heavy route or linked completion data, take or assemble Combat Knife, equip it once, and verify its ammunition behavior before marking it complete."
+          }
+        },
+        {
+          "id": "weapon-custom-beretta-m92fs",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Custom Beretta M92FS",
+          "missable": false,
+          "levels": {
+            "1": "Check fixed, randomized, crafted, dropped, and purchased weapon sources.",
+            "2": "Obtain Custom Beretta M92FS from the Heavy starting inventory.",
+            "3": "Reach the Heavy starting inventory using the required Heavy route or linked completion data, take or assemble Custom Beretta M92FS, equip it once, and verify its ammunition behavior before marking it complete."
+          }
+        },
+        {
+          "id": "weapon-benelli-m3s-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Benelli M3S Shotgun",
+          "missable": false,
+          "levels": {
+            "1": "Check fixed, randomized, crafted, dropped, and purchased weapon sources.",
+            "2": "Obtain Benelli M3S Shotgun from the police Evidence Room.",
+            "3": "Reach the police Evidence Room using the required Heavy route or linked completion data, take or assemble Benelli M3S Shotgun, equip it once, and verify its ammunition behavior before marking it complete."
+          }
+        },
+        {
+          "id": "weapon-sandw-m629c-magnum",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "S&W M629C Magnum",
+          "missable": false,
+          "levels": {
+            "1": "Check fixed, randomized, crafted, dropped, and purchased weapon sources.",
+            "2": "Obtain S&W M629C Magnum from the S.T.A.R.S. Office or Sub Station.",
+            "3": "Reach the S.T.A.R.S. Office or Sub Station using the required Heavy route or linked completion data, take or assemble S&W M629C Magnum, equip it once, and verify its ammunition behavior before marking it complete."
+          }
+        },
+        {
+          "id": "weapon-grenade-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade Launcher",
+          "missable": false,
+          "levels": {
+            "1": "Check fixed, randomized, crafted, dropped, and purchased weapon sources.",
+            "2": "Obtain Grenade Launcher from the S.T.A.R.S. Office or Sub Station.",
+            "3": "Reach the S.T.A.R.S. Office or Sub Station using the required Heavy route or linked completion data, take or assemble Grenade Launcher, equip it once, and verify its ammunition behavior before marking it complete."
+          }
+        },
+        {
+          "id": "weapon-mine-thrower",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Mine Thrower",
+          "missable": false,
+          "levels": {
+            "1": "Check fixed, randomized, crafted, dropped, and purchased weapon sources.",
+            "2": "Obtain Mine Thrower from the Clock Tower body on Heavy.",
+            "3": "Reach the Clock Tower body on Heavy using the required Heavy route or linked completion data, take or assemble Mine Thrower, equip it once, and verify its ammunition behavior before marking it complete."
+          }
+        },
+        {
+          "id": "weapon-m4a1-assault-rifle",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "M4A1 Assault Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Check fixed, randomized, crafted, dropped, and purchased weapon sources.",
+            "2": "Obtain M4A1 Assault Rifle from the Light supply or seventh Heavy drop.",
+            "3": "Reach the Light supply or seventh Heavy drop using the required Heavy route or linked completion data, take or assemble M4A1 Assault Rifle, equip it once, and verify its ammunition behavior before marking it complete."
+          }
+        },
+        {
+          "id": "weapon-sti-eagle-60",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "STI EAGLE 6.0",
+          "missable": false,
+          "levels": {
+            "1": "Check fixed, randomized, crafted, dropped, and purchased weapon sources.",
+            "2": "Obtain STI EAGLE 6.0 from the combined EAGLE parts.",
+            "3": "Reach the combined EAGLE parts using the required Heavy route or linked completion data, take or assemble STI EAGLE 6.0, equip it once, and verify its ammunition behavior before marking it complete."
+          }
+        },
+        {
+          "id": "weapon-western-custom-m37",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Western Custom M37",
+          "missable": false,
+          "levels": {
+            "1": "Check fixed, randomized, crafted, dropped, and purchased weapon sources.",
+            "2": "Obtain Western Custom M37 from the combined M37 parts.",
+            "3": "Reach the combined M37 parts using the required Heavy route or linked completion data, take or assemble Western Custom M37, equip it once, and verify its ammunition behavior before marking it complete."
+          }
+        },
+        {
+          "id": "weapon-gatling-gun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Gatling Gun",
+          "missable": false,
+          "levels": {
+            "1": "Check fixed, randomized, crafted, dropped, and purchased weapon sources.",
+            "2": "Obtain Gatling Gun from the Mercenaries reward shop.",
+            "3": "Reach the Mercenaries reward shop using the required Heavy route or linked completion data, take or assemble Gatling Gun, equip it once, and verify its ammunition behavior before marking it complete."
+          }
+        },
+        {
+          "id": "weapon-rocket-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Rocket Launcher",
+          "missable": false,
+          "levels": {
+            "1": "Check fixed, randomized, crafted, dropped, and purchased weapon sources.",
+            "2": "Obtain Rocket Launcher from the Mercenaries reward shop.",
+            "3": "Reach the Mercenaries reward shop using the required Heavy route or linked completion data, take or assemble Rocket Launcher, equip it once, and verify its ammunition behavior before marking it complete."
+          }
+        },
+        {
+          "id": "weapon-infinite-bullets",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Infinite Bullets",
+          "missable": false,
+          "levels": {
+            "1": "Check fixed, randomized, crafted, dropped, and purchased weapon sources.",
+            "2": "Obtain Infinite Bullets from the later seven-drop chain or Mercenaries shop.",
+            "3": "Reach the later seven-drop chain or Mercenaries shop using the required Heavy route or linked completion data, take or assemble Infinite Bullets, equip it once, and verify its ammunition behavior before marking it complete."
+          }
+        },
+        {
+          "id": "ammo-handgun",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Handgun Bullets",
+          "missable": false,
+          "levels": {
+            "1": "Experiment with the Reloading Tool and repeated powder recipes.",
+            "2": "Create Handgun Bullets using Gunpowder A.",
+            "3": "Keep the Reloading Tool in inventory, combine the stated powders if needed, and apply Gunpowder A. For enhanced ammunition, complete seven ordinary batches in that weapon family, accept the special-ammunition prompt on the next eligible craft, and test it in the standard handgun or shotgun."
+          }
+        },
+        {
+          "id": "ammo-shotgun",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Shotgun Shells",
+          "missable": false,
+          "levels": {
+            "1": "Experiment with the Reloading Tool and repeated powder recipes.",
+            "2": "Create Shotgun Shells using Gunpowder B.",
+            "3": "Keep the Reloading Tool in inventory, combine the stated powders if needed, and apply Gunpowder B. For enhanced ammunition, complete seven ordinary batches in that weapon family, accept the special-ammunition prompt on the next eligible craft, and test it in the standard handgun or shotgun."
+          }
+        },
+        {
+          "id": "ammo-grenade",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Grenade Rounds",
+          "missable": false,
+          "levels": {
+            "1": "Experiment with the Reloading Tool and repeated powder recipes.",
+            "2": "Create Grenade Rounds using Gunpowder C.",
+            "3": "Keep the Reloading Tool in inventory, combine the stated powders if needed, and apply Gunpowder C. For enhanced ammunition, complete seven ordinary batches in that weapon family, accept the special-ammunition prompt on the next eligible craft, and test it in the standard handgun or shotgun."
+          }
+        },
+        {
+          "id": "ammo-flame",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Flame Rounds",
+          "missable": false,
+          "levels": {
+            "1": "Experiment with the Reloading Tool and repeated powder recipes.",
+            "2": "Create Flame Rounds using Gunpowder A plus C.",
+            "3": "Keep the Reloading Tool in inventory, combine the stated powders if needed, and apply Gunpowder A plus C. For enhanced ammunition, complete seven ordinary batches in that weapon family, accept the special-ammunition prompt on the next eligible craft, and test it in the standard handgun or shotgun."
+          }
+        },
+        {
+          "id": "ammo-acid",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Acid Rounds",
+          "missable": false,
+          "levels": {
+            "1": "Experiment with the Reloading Tool and repeated powder recipes.",
+            "2": "Create Acid Rounds using Gunpowder B plus C.",
+            "3": "Keep the Reloading Tool in inventory, combine the stated powders if needed, and apply Gunpowder B plus C. For enhanced ammunition, complete seven ordinary batches in that weapon family, accept the special-ammunition prompt on the next eligible craft, and test it in the standard handgun or shotgun."
+          }
+        },
+        {
+          "id": "ammo-freeze",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Freeze Rounds",
+          "missable": false,
+          "levels": {
+            "1": "Experiment with the Reloading Tool and repeated powder recipes.",
+            "2": "Create Freeze Rounds using two Gunpowder C.",
+            "3": "Keep the Reloading Tool in inventory, combine the stated powders if needed, and apply two Gunpowder C. For enhanced ammunition, complete seven ordinary batches in that weapon family, accept the special-ammunition prompt on the next eligible craft, and test it in the standard handgun or shotgun."
+          }
+        },
+        {
+          "id": "ammo-magnum",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Magnum Bullets",
+          "missable": false,
+          "levels": {
+            "1": "Experiment with the Reloading Tool and repeated powder recipes.",
+            "2": "Create Magnum Bullets using three Gunpowder C.",
+            "3": "Keep the Reloading Tool in inventory, combine the stated powders if needed, and apply three Gunpowder C. For enhanced ammunition, complete seven ordinary batches in that weapon family, accept the special-ammunition prompt on the next eligible craft, and test it in the standard handgun or shotgun."
+          }
+        },
+        {
+          "id": "ammo-enhanced-handgun",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Enhanced Handgun Bullets",
+          "missable": false,
+          "levels": {
+            "1": "Experiment with the Reloading Tool and repeated powder recipes.",
+            "2": "Create Enhanced Handgun Bullets using seven handgun-bullet batches.",
+            "3": "Keep the Reloading Tool in inventory, combine the stated powders if needed, and apply seven handgun-bullet batches. For enhanced ammunition, complete seven ordinary batches in that weapon family, accept the special-ammunition prompt on the next eligible craft, and test it in the standard handgun or shotgun."
+          }
+        },
+        {
+          "id": "ammo-enhanced-shotgun",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Enhanced Shotgun Shells",
+          "missable": false,
+          "levels": {
+            "1": "Experiment with the Reloading Tool and repeated powder recipes.",
+            "2": "Create Enhanced Shotgun Shells using seven shotgun-shell batches.",
+            "3": "Keep the Reloading Tool in inventory, combine the stated powders if needed, and apply seven shotgun-shell batches. For enhanced ammunition, complete seven ordinary batches in that weapon family, accept the special-ammunition prompt on the next eligible craft, and test it in the standard handgun or shotgun."
+          }
+        }
+      ]
+    },
+    {
+      "id": "main-game-rankings",
+      "name": "Main-Game Rankings",
+      "location_cue": "The result screen and the time, save, and health-recovery ledgers behind it.",
+      "note": "Earn S and understand every category used to calculate it.",
+      "items": [
+        {
+          "id": "rank-main-s",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Earn Main-Game Rank S",
+          "missable": false,
+          "levels": {
+            "1": "Three result categories contribute equally to the final grade.",
+            "2": "Finish with at least 270 total ranking points.",
+            "3": "Target a combined 270 across time, saves, and restored health. The clean maximum is under 2:30, zero saves, and no more than 1,500 health restored; any other category combination reaching 270 also awards S."
+          }
+        },
+        {
+          "id": "rank-time",
+          "type": "interaction",
+          "safe_type": "Rank Rule",
+          "label": "Time Category",
+          "missable": false,
+          "levels": {
+            "1": "The first scoring band ends just before two and a half hours.",
+            "2": "Finish by 2:29:59 for 100 time points.",
+            "3": "Plan room splits around 2:29:59 or faster. At 2:30 the time category falls to 90, then continues declining through later fixed bands; compensate elsewhere if the run crosses a boundary."
+          }
+        },
+        {
+          "id": "rank-saves",
+          "type": "interaction",
+          "safe_type": "Rank Rule",
+          "label": "Save Category",
+          "missable": false,
+          "levels": {
+            "1": "Every typewriter use lowers one result category.",
+            "2": "Use zero typewriter saves for 100 save points.",
+            "3": "A run with no typewriter use earns 100 in the save category; one save earns 90 and two earn 80. A clear-data write after the result does not belong to the completed run."
+          }
+        },
+        {
+          "id": "rank-recovery",
+          "type": "interaction",
+          "safe_type": "Rank Rule",
+          "label": "Recovery Category",
+          "missable": false,
+          "levels": {
+            "1": "The game totals restored health rather than counting item names.",
+            "2": "Restore no more than 1,500 health for 100 recovery points.",
+            "3": "Track actual health restored across herbs and sprays. Stay at or below 1,500 for 100 points; full-heal items add up quickly, so avoid healing when only slightly injured during the S-rank run."
+          }
+        },
+        {
+          "id": "rank-heavy-s",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Heavy Rank S Clear",
+          "missable": false,
+          "levels": {
+            "1": "Combine the full reward route with the top result when practical.",
+            "2": "Earn S on Heavy without abandoning the seven-drop completion data.",
+            "3": "Use a dedicated Heavy branch, collect only drops compatible with the time target, avoid typewriters, and limit recovery. Finish at 270 or more, save the result, and preserve it separately from slower file and route-variant clears."
+          }
+        }
+      ]
+    },
+    {
+      "id": "randomized-layouts",
+      "name": "Randomized Layouts",
+      "location_cue": "Paired supply surfaces and enemy formations across the station, downtown, tower, hospital, park, and factory.",
+      "note": "Observe both members of each documented random placement pool across repeat files.",
+      "items": [
+        {
+          "id": "random-rpd-shells",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Police shotgun shells",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Police shotgun shells at either West Office side room or Operations Room fireplace.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check West Office side room; if Police shotgun shells is absent, verify the paired placement at Operations Room fireplace. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-rpd-red-herbs",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Police red herbs",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Police red herbs at either Briefing Room corridor or S.T.A.R.S. corridor.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check Briefing Room corridor; if Police red herbs is absent, verify the paired placement at S.T.A.R.S. corridor. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-magnum-launcher",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Magnum and Grenade Launcher",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Magnum and Grenade Launcher at either S.T.A.R.S. Office cabinet or Sub Station cabinet.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check S.T.A.R.S. Office cabinet; if Magnum and Grenade Launcher is absent, verify the paired placement at Sub Station cabinet. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-downtown-green-herbs",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Downtown green herbs",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Downtown green herbs at either Fire Hose alley or mayor-statue area.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check Fire Hose alley; if Downtown green herbs is absent, verify the paired placement at mayor-statue area. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-powder-a-two",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Two Gunpowder A",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Two Gunpowder A at either Restaurant or Press Office.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check Restaurant; if Two Gunpowder A is absent, verify the paired placement at Press Office. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-powder-a-three",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Three Gunpowder A",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Three Gunpowder A at either Gas Station or Sales Office storeroom.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check Gas Station; if Three Gunpowder A is absent, verify the paired placement at Sales Office storeroom. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-powder-b-three",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Three Gunpowder B",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Three Gunpowder B at either Sub Station exit desk or Sales Office storeroom.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check Sub Station exit desk; if Three Gunpowder B is absent, verify the paired placement at Sales Office storeroom. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-downtown-red-herbs",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Downtown red herbs",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Downtown red herbs at either gas pumps or Sub Station entrance.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check gas pumps; if Downtown red herbs is absent, verify the paired placement at Sub Station entrance. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-tower-powders",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Clock Tower powder set",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Clock Tower powder set at either bedroom or chapel.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check bedroom; if Clock Tower powder set is absent, verify the paired placement at chapel. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-tower-grenades",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Clock Tower grenade rounds",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Clock Tower grenade rounds at either library table or dining-room mantel.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check library table; if Clock Tower grenade rounds is absent, verify the paired placement at dining-room mantel. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-tower-attic",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Clock Tower attic item",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Clock Tower attic item at either two Gunpowder A or Mine Thrower rounds.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check two Gunpowder A; if Clock Tower attic item is absent, verify the paired placement at Mine Thrower rounds. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-park-office",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Park Office ammunition",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Park Office ammunition at either two grenade-round boxes or two Mine Thrower-round boxes.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check two grenade-round boxes; if Park Office ammunition is absent, verify the paired placement at two Mine Thrower-round boxes. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-factory-items",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Factory item set",
+          "missable": false,
+          "levels": {
+            "1": "A new run can place this supply in one of two pools.",
+            "2": "Observe Factory item set at either upper save room or Water Sample room.",
+            "3": "Back up before the relevant area or begin another Heavy file. Check upper save room; if Factory item set is absent, verify the paired placement at Water Sample room. Record both layouts across separate runs rather than assuming a missing item was skipped."
+          }
+        },
+        {
+          "id": "random-enemy-rpd",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Police corridor formation",
+          "missable": true,
+          "levels": {
+            "1": "Enemy composition can differ between valid new-game seeds.",
+            "2": "Observe both forms of the Police corridor formation.",
+            "3": "Use separate new-game files, reach the Police corridor formation without forcing a Live Selection branch change, and record its two possible enemy arrangements. Do not describe named late enemies in the reader-facing checklist."
+          }
+        },
+        {
+          "id": "random-enemy-dirty-alley",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Dirty Alley formation",
+          "missable": true,
+          "levels": {
+            "1": "Enemy composition can differ between valid new-game seeds.",
+            "2": "Observe both forms of the Dirty Alley formation.",
+            "3": "Use separate new-game files, reach the Dirty Alley formation without forcing a Live Selection branch change, and record its two possible enemy arrangements. Do not describe named late enemies in the reader-facing checklist."
+          }
+        },
+        {
+          "id": "random-enemy-zigzag",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Zigzag Alley creature set",
+          "missable": true,
+          "levels": {
+            "1": "Enemy composition can differ between valid new-game seeds.",
+            "2": "Observe both forms of the Zigzag Alley creature set.",
+            "3": "Use separate new-game files, reach the Zigzag Alley creature set without forcing a Live Selection branch change, and record its two possible enemy arrangements. Do not describe named late enemies in the reader-facing checklist."
+          }
+        },
+        {
+          "id": "random-enemy-tower-dining",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Clock Tower dining-room set",
+          "missable": true,
+          "levels": {
+            "1": "Enemy composition can differ between valid new-game seeds.",
+            "2": "Observe both forms of the Clock Tower dining-room set.",
+            "3": "Use separate new-game files, reach the Clock Tower dining-room set without forcing a Live Selection branch change, and record its two possible enemy arrangements. Do not describe named late enemies in the reader-facing checklist."
+          }
+        },
+        {
+          "id": "random-enemy-hospital-401",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Hospital Room 401 set",
+          "missable": true,
+          "levels": {
+            "1": "Enemy composition can differ between valid new-game seeds.",
+            "2": "Observe both forms of the Hospital Room 401 set.",
+            "3": "Use separate new-game files, reach the Hospital Room 401 set without forcing a Live Selection branch change, and record its two possible enemy arrangements. Do not describe named late enemies in the reader-facing checklist."
+          }
+        },
+        {
+          "id": "random-enemy-park-entry",
+          "type": "choice",
+          "safe_type": "Random Layout",
+          "label": "Main Park entrance set",
+          "missable": true,
+          "levels": {
+            "1": "Enemy composition can differ between valid new-game seeds.",
+            "2": "Observe both forms of the Main Park entrance set.",
+            "3": "Use separate new-game files, reach the Main Park entrance set without forcing a Live Selection branch change, and record its two possible enemy arrangements. Do not describe named late enemies in the reader-facing checklist."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up at each area entrance",
+        "why": "A generated placement remains fixed for that run."
+      }
+    },
+    {
+      "id": "heavy-drop-chain",
+      "name": "Heavy Drop Chain",
+      "location_cue": "Seven rewardable pursuit encounters from the station courtyard through the ruined tower.",
+      "note": "SAVE-BACKUP: every case advances a fixed chain, and one balcony choice can forfeit case six.",
+      "items": [
+        {
+          "id": "drop-1",
+          "type": "collectible",
+          "safe_type": "Drop",
+          "label": "Heavy Drop #1 — EAGLE Parts A",
+          "missable": true,
+          "levels": {
+            "1": "Only a full knockdown at a rewardable encounter produces the next case.",
+            "2": "Defeat the pursuer at the police courtyard and collect drop #1.",
+            "3": "On Heavy, fully incapacitate the pursuer at rewardable encounter 1 in the police courtyard, wait for the item case, and take EAGLE Parts A. Skipped encounters do not reset the chain; the next case advances its fixed reward number."
+          }
+        },
+        {
+          "id": "drop-2",
+          "type": "collectible",
+          "safe_type": "Drop",
+          "label": "Heavy Drop #2 — EAGLE Parts B",
+          "missable": true,
+          "levels": {
+            "1": "Only a full knockdown at a rewardable encounter produces the next case.",
+            "2": "Defeat the pursuer at the west stairway and collect drop #2.",
+            "3": "On Heavy, fully incapacitate the pursuer at rewardable encounter 2 in the west stairway, wait for the item case, and take EAGLE Parts B. Skipped encounters do not reset the chain; the next case advances its fixed reward number."
+          }
+        },
+        {
+          "id": "drop-3",
+          "type": "collectible",
+          "safe_type": "Drop",
+          "label": "Heavy Drop #3 — First Aid Box",
+          "missable": true,
+          "levels": {
+            "1": "Only a full knockdown at a rewardable encounter produces the next case.",
+            "2": "Defeat the pursuer at the Restaurant or Press and collect drop #3.",
+            "3": "On Heavy, fully incapacitate the pursuer at rewardable encounter 3 in the Restaurant or Press, wait for the item case, and take First Aid Box. Skipped encounters do not reset the chain; the next case advances its fixed reward number."
+          }
+        },
+        {
+          "id": "drop-4",
+          "type": "collectible",
+          "safe_type": "Drop",
+          "label": "Heavy Drop #4 — M37 Parts A",
+          "missable": true,
+          "levels": {
+            "1": "Only a full knockdown at a rewardable encounter produces the next case.",
+            "2": "Defeat the pursuer at the Sub Station or Forked Alley and collect drop #4.",
+            "3": "On Heavy, fully incapacitate the pursuer at rewardable encounter 4 in the Sub Station or Forked Alley, wait for the item case, and take M37 Parts A. Skipped encounters do not reset the chain; the next case advances its fixed reward number."
+          }
+        },
+        {
+          "id": "drop-5",
+          "type": "collectible",
+          "safe_type": "Drop",
+          "label": "Heavy Drop #5 — M37 Parts B",
+          "missable": true,
+          "levels": {
+            "1": "Only a full knockdown at a rewardable encounter produces the next case.",
+            "2": "Defeat the pursuer at the Three Points Street and collect drop #5.",
+            "3": "On Heavy, fully incapacitate the pursuer at rewardable encounter 5 in the Three Points Street, wait for the item case, and take M37 Parts B. Skipped encounters do not reset the chain; the next case advances its fixed reward number."
+          }
+        },
+        {
+          "id": "drop-6",
+          "type": "collectible",
+          "safe_type": "Drop",
+          "label": "Heavy Drop #6 — First Aid Box",
+          "missable": true,
+          "levels": {
+            "1": "Only a full knockdown at a rewardable encounter produces the next case.",
+            "2": "Defeat the pursuer at the Clock Tower balcony and collect drop #6.",
+            "3": "On Heavy, fully incapacitate the pursuer at rewardable encounter 6 in the Clock Tower balcony, wait for the item case, and take First Aid Box. Skipped encounters do not reset the chain; the next case advances its fixed reward number. Use the balcony cord; the light route forfeits this case."
+          }
+        },
+        {
+          "id": "drop-7",
+          "type": "collectible",
+          "safe_type": "Drop",
+          "label": "Heavy Drop #7 — M4A1 first chain",
+          "missable": true,
+          "levels": {
+            "1": "Only a full knockdown at a rewardable encounter produces the next case.",
+            "2": "Defeat the pursuer at the ruined Clock Tower and collect drop #7.",
+            "3": "On Heavy, fully incapacitate the pursuer at rewardable encounter 7 in the ruined Clock Tower, wait for the item case, and take M4A1 first chain. Skipped encounters do not reset the chain; the next case advances its fixed reward number. The first completed chain gives the rifle; repeat all seven on continuing data for Infinite Bullets."
+          }
+        },
+        {
+          "id": "drop-eagle-build",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Assemble STI EAGLE 6.0",
+          "missable": false,
+          "levels": {
+            "1": "Two early cases form a unique handgun.",
+            "2": "Combine EAGLE Parts A and B.",
+            "3": "After collecting the first two Heavy cases, combine EAGLE Parts A with EAGLE Parts B. Equip the finished handgun; it has its own fast handling but cannot use enhanced handgun bullets."
+          }
+        },
+        {
+          "id": "drop-m37-build",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Assemble Western Custom M37",
+          "missable": false,
+          "levels": {
+            "1": "Two middle cases form a unique shotgun.",
+            "2": "Combine M37 Parts A and B.",
+            "3": "Take parts A and B from Heavy cases four and five, combine them, and test the six-shell Western Custom M37. It cannot accept enhanced shotgun shells."
+          }
+        },
+        {
+          "id": "drop-infinite-later",
+          "type": "collectible",
+          "safe_type": "Upgrade",
+          "label": "Repeat the Seven-Drop Chain",
+          "missable": false,
+          "levels": {
+            "1": "The last reward changes after one completed-data cycle.",
+            "2": "On continuing data, collect all seven Heavy cases again.",
+            "3": "Load Next Game data after the rifle chain, remain on Heavy, and incapacitate the pursuer at all seven rewardable encounters. The seventh case now contains Infinite Bullets; apply it to a chosen compatible weapon only after backing up."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before each rewardable encounter",
+        "why": "A missed case shifts later rewards and may force another full clear."
+      }
+    },
+    {
+      "id": "mercenaries",
+      "name": "The Mercenaries",
+      "location_cue": "A timed reverse city route from the cable car to the Warehouse, with six rescue rooms.",
+      "note": "Complete all three characters, every rescue set, S rank, and all four purchases.",
+      "items": [
+        {
+          "id": "merc-clear-carlos",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Mercenaries Clear — Carlos",
+          "missable": false,
+          "levels": {
+            "1": "Each character rewards a different balance of combat, rescue, and evasion.",
+            "2": "Reach the Warehouse endpoint with Carlos.",
+            "3": "Select Carlos, whose route emphasizes assault rifle and generous healing. Travel from the cable car to the Warehouse before time expires, rescue all six civilians, and use enemy or boss time bonuses only where they outweigh the delay."
+          }
+        },
+        {
+          "id": "merc-clear-mikhail",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Mercenaries Clear — Mikhail",
+          "missable": false,
+          "levels": {
+            "1": "Each character rewards a different balance of combat, rescue, and evasion.",
+            "2": "Reach the Warehouse endpoint with Mikhail.",
+            "3": "Select Mikhail, whose route emphasizes shotgun, magnum, and rockets. Travel from the cable car to the Warehouse before time expires, rescue all six civilians, and use enemy or boss time bonuses only where they outweigh the delay."
+          }
+        },
+        {
+          "id": "merc-clear-nicholai",
+          "type": "optional",
+          "safe_type": "Bonus Clear",
+          "label": "Mercenaries Clear — Nicholai",
+          "missable": false,
+          "levels": {
+            "1": "Each character rewards a different balance of combat, rescue, and evasion.",
+            "2": "Reach the Warehouse endpoint with Nicholai.",
+            "3": "Select Nicholai, whose route emphasizes handgun, knife, and precision bonuses. Travel from the cable car to the Warehouse before time expires, rescue all six civilians, and use enemy or boss time bonuses only where they outweigh the delay."
+          }
+        },
+        {
+          "id": "merc-rescues-carlos",
+          "type": "optional",
+          "safe_type": "Rescue Set",
+          "label": "All Six Rescues — Carlos",
+          "missable": false,
+          "levels": {
+            "1": "Side rooms can add time and supplies if reached before their windows close.",
+            "2": "Rescue all six civilians during a Carlos run.",
+            "3": "Visit the Gas Station, Press Office, restaurant basement, Sub Station, Sales Office, and bar rescue rooms before their individual states expire. Confirm all six rescues during the same Carlos clear."
+          }
+        },
+        {
+          "id": "merc-rescues-mikhail",
+          "type": "optional",
+          "safe_type": "Rescue Set",
+          "label": "All Six Rescues — Mikhail",
+          "missable": false,
+          "levels": {
+            "1": "Side rooms can add time and supplies if reached before their windows close.",
+            "2": "Rescue all six civilians during a Mikhail run.",
+            "3": "Visit the Gas Station, Press Office, restaurant basement, Sub Station, Sales Office, and bar rescue rooms before their individual states expire. Confirm all six rescues during the same Mikhail clear."
+          }
+        },
+        {
+          "id": "merc-rescues-nicholai",
+          "type": "optional",
+          "safe_type": "Rescue Set",
+          "label": "All Six Rescues — Nicholai",
+          "missable": false,
+          "levels": {
+            "1": "Side rooms can add time and supplies if reached before their windows close.",
+            "2": "Rescue all six civilians during a Nicholai run.",
+            "3": "Visit the Gas Station, Press Office, restaurant basement, Sub Station, Sales Office, and bar rescue rooms before their individual states expire. Confirm all six rescues during the same Nicholai clear."
+          }
+        },
+        {
+          "id": "merc-buy-rifle",
+          "type": "upgrade",
+          "safe_type": "Reward",
+          "label": "Infinite Assault Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Bank earnings across clears before spending completion data. ",
+            "2": "Purchase Infinite Assault Rifle for $2000.",
+            "3": "Earn at least $2000 in The Mercenaries, select Infinite Assault Rifle in its reward menu, and save the purchase onto the intended difficulty file. Restart or continue the main game from that data and verify the reward in the Item Box."
+          }
+        },
+        {
+          "id": "merc-buy-gatling",
+          "type": "upgrade",
+          "safe_type": "Reward",
+          "label": "Infinite Gatling Gun",
+          "missable": false,
+          "levels": {
+            "1": "Bank earnings across clears before spending completion data. ",
+            "2": "Purchase Infinite Gatling Gun for $3000.",
+            "3": "Earn at least $3000 in The Mercenaries, select Infinite Gatling Gun in its reward menu, and save the purchase onto the intended difficulty file. Restart or continue the main game from that data and verify the reward in the Item Box."
+          }
+        },
+        {
+          "id": "merc-buy-rocket",
+          "type": "upgrade",
+          "safe_type": "Reward",
+          "label": "Infinite Rocket Launcher",
+          "missable": false,
+          "levels": {
+            "1": "Bank earnings across clears before spending completion data. ",
+            "2": "Purchase Infinite Rocket Launcher for $4000.",
+            "3": "Earn at least $4000 in The Mercenaries, select Infinite Rocket Launcher in its reward menu, and save the purchase onto the intended difficulty file. Restart or continue the main game from that data and verify the reward in the Item Box."
+          }
+        },
+        {
+          "id": "merc-buy-ammo",
+          "type": "upgrade",
+          "safe_type": "Reward",
+          "label": "Infinite Ammo for All Weapons",
+          "missable": false,
+          "levels": {
+            "1": "Bank earnings across clears before spending completion data. ",
+            "2": "Purchase Infinite Ammo for All Weapons for $9999.",
+            "3": "Earn at least $9999 in The Mercenaries, select Infinite Ammo for All Weapons in its reward menu, and save the purchase onto the intended difficulty file. Restart or continue the main game from that data and verify the reward in the Item Box."
+          }
+        },
+        {
+          "id": "merc-s-rank",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Mercenaries S Rank",
+          "missable": false,
+          "levels": {
+            "1": "Civilian rescues and remaining time matter more than unnecessary fights.",
+            "2": "Earn an S result in The Mercenaries.",
+            "3": "Use the character whose inventory best fits your route, rescue all six civilians, build time with safe high-value encounters, and reach the Warehouse with a strong remaining clock. Repeat until the result screen awards S."
+          }
+        }
+      ]
+    },
+    {
+      "id": "endings-epilogues",
+      "name": "Ending and Epilogue Matrix",
+      "location_cue": "The park bridge, late factory radio prompt, final machinery, and postgame viewer.",
+      "note": "SAVE-BACKUP: ending descriptions expose mechanics only; epilogue narrative is withheld.",
+      "items": [
+        {
+          "id": "ending-route-a",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Ending Route A",
+          "missable": true,
+          "levels": {
+            "1": "The park bridge decision selects the first mechanical route.",
+            "2": "At the park bridge, choose to push the pursuer away, then finish the game.",
+            "3": "Preserve the bridge save, select the push option, enter the factory from the upper approach, and finish without changing the final route flag. Record the result without opening its epilogue text."
+          }
+        },
+        {
+          "id": "ending-route-b",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Ending Route B",
+          "missable": true,
+          "levels": {
+            "1": "The other bridge option enables a later radio branch.",
+            "2": "At the park bridge, jump away; later choose negotiation, then finish.",
+            "3": "Reload the bridge save, choose the jump option, use the lower factory approach, and select negotiation at the later helicopter prompt. Finish and record this mechanical outcome only."
+          }
+        },
+        {
+          "id": "ending-route-c",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Ending Route C",
+          "missable": true,
+          "levels": {
+            "1": "The second late radio response produces another variation.",
+            "2": "Take the jump route, return fire at the later prompt, and finish.",
+            "3": "Restore the jump-route factory save, select return fire, remain for the optional encounter until its route resolves, then complete the game and record the distinct result."
+          }
+        },
+        {
+          "id": "ending-timeout",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Park Bridge Timeout",
+          "missable": true,
+          "levels": {
+            "1": "Allowing the timer to expire shares one route but adds damage.",
+            "2": "Let the park bridge selection expire, then finish that branch.",
+            "3": "Restore the bridge backup and make no selection. The route proceeds like the jump branch after an unavoidable hit; heal afterward, continue to the helicopter prompt, and record the timeout variant."
+          }
+        },
+        {
+          "id": "epilogue-1",
+          "type": "collectible",
+          "safe_type": "Epilogue",
+          "label": "Epilogue File #1",
+          "missable": false,
+          "levels": {
+            "1": "Continuing Heavy clears add one postgame file at a time.",
+            "2": "Finish Heavy clear #1 on the same completion data.",
+            "3": "Load the same continuing Heavy completion file, finish full clear number 1, save the result, and open Epilogue File #1 from the postgame viewer. Do not describe or expose its narrative text in the guide."
+          }
+        },
+        {
+          "id": "epilogue-2",
+          "type": "collectible",
+          "safe_type": "Epilogue",
+          "label": "Epilogue File #2",
+          "missable": false,
+          "levels": {
+            "1": "Continuing Heavy clears add one postgame file at a time.",
+            "2": "Finish Heavy clear #2 on the same completion data.",
+            "3": "Load the same continuing Heavy completion file, finish full clear number 2, save the result, and open Epilogue File #2 from the postgame viewer. Do not describe or expose its narrative text in the guide."
+          }
+        },
+        {
+          "id": "epilogue-3",
+          "type": "collectible",
+          "safe_type": "Epilogue",
+          "label": "Epilogue File #3",
+          "missable": false,
+          "levels": {
+            "1": "Continuing Heavy clears add one postgame file at a time.",
+            "2": "Finish Heavy clear #3 on the same completion data.",
+            "3": "Load the same continuing Heavy completion file, finish full clear number 3, save the result, and open Epilogue File #3 from the postgame viewer. Do not describe or expose its narrative text in the guide."
+          }
+        },
+        {
+          "id": "epilogue-4",
+          "type": "collectible",
+          "safe_type": "Epilogue",
+          "label": "Epilogue File #4",
+          "missable": false,
+          "levels": {
+            "1": "Continuing Heavy clears add one postgame file at a time.",
+            "2": "Finish Heavy clear #4 on the same completion data.",
+            "3": "Load the same continuing Heavy completion file, finish full clear number 4, save the result, and open Epilogue File #4 from the postgame viewer. Do not describe or expose its narrative text in the guide."
+          }
+        },
+        {
+          "id": "epilogue-5",
+          "type": "collectible",
+          "safe_type": "Epilogue",
+          "label": "Epilogue File #5",
+          "missable": false,
+          "levels": {
+            "1": "Continuing Heavy clears add one postgame file at a time.",
+            "2": "Finish Heavy clear #5 on the same completion data.",
+            "3": "Load the same continuing Heavy completion file, finish full clear number 5, save the result, and open Epilogue File #5 from the postgame viewer. Do not describe or expose its narrative text in the guide."
+          }
+        },
+        {
+          "id": "epilogue-6",
+          "type": "collectible",
+          "safe_type": "Epilogue",
+          "label": "Epilogue File #6",
+          "missable": false,
+          "levels": {
+            "1": "Continuing Heavy clears add one postgame file at a time.",
+            "2": "Finish Heavy clear #6 on the same completion data.",
+            "3": "Load the same continuing Heavy completion file, finish full clear number 6, save the result, and open Epilogue File #6 from the postgame viewer. Do not describe or expose its narrative text in the guide."
+          }
+        },
+        {
+          "id": "epilogue-7",
+          "type": "collectible",
+          "safe_type": "Epilogue",
+          "label": "Epilogue File #7",
+          "missable": false,
+          "levels": {
+            "1": "Continuing Heavy clears add one postgame file at a time.",
+            "2": "Finish Heavy clear #7 on the same completion data.",
+            "3": "Load the same continuing Heavy completion file, finish full clear number 7, save the result, and open Epilogue File #7 from the postgame viewer. Do not describe or expose its narrative text in the guide."
+          }
+        },
+        {
+          "id": "epilogue-8",
+          "type": "collectible",
+          "safe_type": "Epilogue",
+          "label": "Epilogue File #8",
+          "missable": false,
+          "levels": {
+            "1": "Continuing Heavy clears add one postgame file at a time.",
+            "2": "Finish Heavy clear #8 on the same completion data.",
+            "3": "Load the same continuing Heavy completion file, finish full clear number 8, save the result, and open Epilogue File #8 from the postgame viewer. Do not describe or expose its narrative text in the guide."
+          }
+        },
+        {
+          "id": "epilogue-hidden-message",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Final Epilogue Message",
+          "missable": true,
+          "levels": {
+            "1": "The last file viewer contains one additional one-time detail.",
+            "2": "After Epilogue File #8 unlocks, inspect the viewer before exiting.",
+            "3": "Complete the eighth Heavy clear on the same data, open the final epilogue slot, and inspect the exit interface before returning to the title screen. Record the hidden message without transcribing its story content."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep the bridge and factory-radio saves",
+        "why": "They generate every mechanical ending route without replaying the full game."
+      },
+      "point_of_no_return": {
+        "title": "Final machinery commits the selected outcome",
+        "why": "Finish files and save before activating it."
+      }
+    },
+    {
+      "id": "costumes-secrets-diary",
+      "name": "Costumes, Secrets, and Diary",
+      "location_cue": "The PC costume selector, environmental references, file menu, and epilogue viewer.",
+      "note": "PC starts with eight outfits and has no Boutique.",
+      "items": [
+        {
+          "id": "costume-normal",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "NORMAL",
+          "missable": false,
+          "levels": {
+            "1": "The PC version exposes its wardrobe directly at New Game.",
+            "2": "Select NORMAL once from the PC costume menu.",
+            "3": "Choose New Game, open the costume selector, highlight NORMAL, and begin far enough to confirm the model. Return to the menu without overwriting completion data; PC has no Boutique Key requirement."
+          }
+        },
+        {
+          "id": "costume-stars",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "STARS",
+          "missable": false,
+          "levels": {
+            "1": "The PC version exposes its wardrobe directly at New Game.",
+            "2": "Select STARS once from the PC costume menu.",
+            "3": "Choose New Game, open the costume selector, highlight STARS, and begin far enough to confirm the model. Return to the menu without overwriting completion data; PC has no Boutique Key requirement."
+          }
+        },
+        {
+          "id": "costume-police",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "POLICE",
+          "missable": false,
+          "levels": {
+            "1": "The PC version exposes its wardrobe directly at New Game.",
+            "2": "Select POLICE once from the PC costume menu.",
+            "3": "Choose New Game, open the costume selector, highlight POLICE, and begin far enough to confirm the model. Return to the menu without overwriting completion data; PC has no Boutique Key requirement."
+          }
+        },
+        {
+          "id": "costume-disco",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "DISCO",
+          "missable": false,
+          "levels": {
+            "1": "The PC version exposes its wardrobe directly at New Game.",
+            "2": "Select DISCO once from the PC costume menu.",
+            "3": "Choose New Game, open the costume selector, highlight DISCO, and begin far enough to confirm the model. Return to the menu without overwriting completion data; PC has no Boutique Key requirement."
+          }
+        },
+        {
+          "id": "costume-biker",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "BIKER",
+          "missable": false,
+          "levels": {
+            "1": "The PC version exposes its wardrobe directly at New Game.",
+            "2": "Select BIKER once from the PC costume menu.",
+            "3": "Choose New Game, open the costume selector, highlight BIKER, and begin far enough to confirm the model. Return to the menu without overwriting completion data; PC has no Boutique Key requirement."
+          }
+        },
+        {
+          "id": "costume-dino",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "DINO",
+          "missable": false,
+          "levels": {
+            "1": "The PC version exposes its wardrobe directly at New Game.",
+            "2": "Select DINO once from the PC costume menu.",
+            "3": "Choose New Game, open the costume selector, highlight DINO, and begin far enough to confirm the model. Return to the menu without overwriting completion data; PC has no Boutique Key requirement."
+          }
+        },
+        {
+          "id": "costume-red-blue-black",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "RED Blue Black",
+          "missable": false,
+          "levels": {
+            "1": "The PC version exposes its wardrobe directly at New Game.",
+            "2": "Select RED Blue Black once from the PC costume menu.",
+            "3": "Choose New Game, open the costume selector, highlight RED Blue Black, and begin far enough to confirm the model. Return to the menu without overwriting completion data; PC has no Boutique Key requirement."
+          }
+        },
+        {
+          "id": "costume-gi-black-casual",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "GI Black Casual",
+          "missable": false,
+          "levels": {
+            "1": "The PC version exposes its wardrobe directly at New Game.",
+            "2": "Select GI Black Casual once from the PC costume menu.",
+            "3": "Choose New Game, open the costume selector, highlight GI Black Casual, and begin far enough to confirm the model. Return to the menu without overwriting completion data; PC has no Boutique Key requirement."
+          }
+        },
+        {
+          "id": "secret-1",
+          "type": "secret",
+          "safe_type": "Easter Egg",
+          "label": "Biohazard 4 theater poster",
+          "missable": false,
+          "levels": {
+            "1": "Inspect posters, signs, wrecks, lockers, and late industrial scenery.",
+            "2": "Locate and inspect Biohazard 4 theater poster.",
+            "3": "Reach the relevant city, station, hospital, epilogue, or factory surface, clear immediate danger, and move close enough to read or recognize Biohazard 4 theater poster. Mark it only after viewing the detail directly."
+          }
+        },
+        {
+          "id": "secret-2",
+          "type": "secret",
+          "safe_type": "Easter Egg",
+          "label": "Dino Crisis hospital poster",
+          "missable": false,
+          "levels": {
+            "1": "Inspect posters, signs, wrecks, lockers, and late industrial scenery.",
+            "2": "Locate and inspect Dino Crisis hospital poster.",
+            "3": "Reach the relevant city, station, hospital, epilogue, or factory surface, clear immediate danger, and move close enough to read or recognize Dino Crisis hospital poster. Mark it only after viewing the detail directly."
+          }
+        },
+        {
+          "id": "secret-3",
+          "type": "secret",
+          "safe_type": "Easter Egg",
+          "label": "CAPCOM above hose door",
+          "missable": false,
+          "levels": {
+            "1": "Inspect posters, signs, wrecks, lockers, and late industrial scenery.",
+            "2": "Locate and inspect CAPCOM above hose door.",
+            "3": "Reach the relevant city, station, hospital, epilogue, or factory surface, clear immediate danger, and move close enough to read or recognize CAPCOM above hose door. Mark it only after viewing the detail directly."
+          }
+        },
+        {
+          "id": "secret-4",
+          "type": "secret",
+          "safe_type": "Easter Egg",
+          "label": "hidden epilogue exit message",
+          "missable": false,
+          "levels": {
+            "1": "Inspect posters, signs, wrecks, lockers, and late industrial scenery.",
+            "2": "Locate and inspect hidden epilogue exit message.",
+            "3": "Reach the relevant city, station, hospital, epilogue, or factory surface, clear immediate danger, and move close enough to read or recognize hidden epilogue exit message. Mark it only after viewing the detail directly."
+          }
+        },
+        {
+          "id": "secret-5",
+          "type": "secret",
+          "safe_type": "Easter Egg",
+          "label": "JoJo west-office locker",
+          "missable": false,
+          "levels": {
+            "1": "Inspect posters, signs, wrecks, lockers, and late industrial scenery.",
+            "2": "Locate and inspect JoJo west-office locker.",
+            "3": "Reach the relevant city, station, hospital, epilogue, or factory surface, clear immediate danger, and move close enough to read or recognize JoJo west-office locker. Mark it only after viewing the detail directly."
+          }
+        },
+        {
+          "id": "secret-6",
+          "type": "secret",
+          "safe_type": "Easter Egg",
+          "label": "wrecked DeLorean reference",
+          "missable": false,
+          "levels": {
+            "1": "Inspect posters, signs, wrecks, lockers, and late industrial scenery.",
+            "2": "Locate and inspect wrecked DeLorean reference.",
+            "3": "Reach the relevant city, station, hospital, epilogue, or factory surface, clear immediate danger, and move close enough to read or recognize wrecked DeLorean reference. Mark it only after viewing the detail directly."
+          }
+        },
+        {
+          "id": "secret-7",
+          "type": "secret",
+          "safe_type": "Easter Egg",
+          "label": "factory large-body RE2 reference",
+          "missable": false,
+          "levels": {
+            "1": "Inspect posters, signs, wrecks, lockers, and late industrial scenery.",
+            "2": "Locate and inspect factory large-body RE2 reference.",
+            "3": "Reach the relevant city, station, hospital, epilogue, or factory surface, clear immediate danger, and move close enough to read or recognize factory large-body RE2 reference. Mark it only after viewing the detail directly."
+          }
+        },
+        {
+          "id": "jills-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Jill's Diary",
+          "missable": true,
+          "levels": {
+            "1": "The complete ordered archive transforms its first entry.",
+            "2": "Collect and read all 30 files in menu order.",
+            "3": "Take Files 1 through 30 strictly in the listed sequence and read each through its final page. When Classified Photo File is registered last, reopen the file menu and verify Jill’s Diary has replaced Game Instructions A."
+          }
+        },
+        {
+          "id": "diary-route-order",
+          "type": "interaction",
+          "safe_type": "Route Plan",
+          "label": "Jill's Diary Route Order",
+          "missable": true,
+          "levels": {
+            "1": "Four route choices keep the physical documents aligned with their menu slots.",
+            "2": "Visit the Restaurant first, brake the cable car, visit Hospital 4F first, and push at the park bridge.",
+            "3": "Before the Press Office, complete the Restaurant file stop. Choose the emergency brake on the cable car; during the hospital segment visit 4F before B3; at the park bridge choose the push option. Collect and fully read every file as listed, including Dario’s Memo after obtaining the Lockpick."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before taking File #30",
+        "why": "The archive order must already be correct for Jill’s Diary."
+      }
+    }
+  ]
+}

@@ -1,0 +1,657 @@
+{
+  "id": "god-of-war-betrayal",
+  "game": "God of War: Betrayal",
+  "target": "100% completion on the chosen Java ME route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "route-and-setup",
+      "name": "Route and Setup",
+      "location_cue": "The Java ME launcher, keypad mapping, title menu, Level Select, and upgrade screen.",
+      "note": "Chosen route: original Java ME build; archival availability and emulator compatibility are the practical blockers.",
+      "save_backup": {
+        "title": "Back up emulator storage",
+        "why": "Legacy Java ME saves can be fragile, and upgrades require repeated level clears."
+      },
+      "items": [
+        {
+          "id": "route-java-me",
+          "type": "interaction",
+          "safe_type": "Platform Route",
+          "label": "Use the Original Java ME Release",
+          "missable": false,
+          "levels": {
+            "1": "This entry has no remaster or collection version.",
+            "2": "Run the original mobile build on compatible Java ME hardware or a preservation emulator.",
+            "3": "Use a legally obtained original JAR/JAD pair on a compatible handset or Java ME emulator. Confirm the title screen offers Play Game, Arena, and level replay before creating the completion file."
+          }
+        },
+        {
+          "id": "route-input-test",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Verify the Keypad Mapping",
+          "missable": false,
+          "levels": {
+            "1": "Platforming requires reliable diagonal, soft-key, and grab inputs.",
+            "2": "Test movement, jump, Down interaction, both soft keys, star cycling, and the power-up key.",
+            "3": "Before the first level, map the numeric pad or emulator controls so directional movement, jump, Down/grab, both soft keys, `*`, and `#` register separately. Re-test rope grabs and diagonal jumps before serious collectible attempts."
+          }
+        },
+        {
+          "id": "route-complete-ten-levels",
+          "type": "interaction",
+          "safe_type": "Campaign",
+          "label": "Complete All Ten Levels",
+          "missable": false,
+          "levels": {
+            "1": "Level Select makes cleanup possible after the first clear.",
+            "2": "Finish every named level from For Sparta through Messenger.",
+            "3": "Complete all ten entries in Level Select: For Sparta, Dead Rider, Minotaur, Garden, The Beast, Ruins, Catacombs, Labyrinth, The Tower, and Messenger. Confirm every entry can be replayed afterward."
+          }
+        },
+        {
+          "id": "route-orb-cap-cleanup",
+          "type": "optional",
+          "safe_type": "Completion Ledger",
+          "label": "Drain Every Level's Red-Orb Supply",
+          "missable": false,
+          "levels": {
+            "1": "Red-orb rewards are finite per level but refill when replayed before their cap is exhausted.",
+            "2": "Replay each level until its red chests and enemy waves stop yielding additional red orbs.",
+            "3": "Open every red chest, remain in each encounter until its respawning waves stop, and finish the level. Replay through Level Select until those sources are empty for that level, then spend the accumulated orbs on the four maximum upgrades."
+          }
+        },
+        {
+          "id": "route-permanent-upgrades",
+          "type": "optional",
+          "safe_type": "Completion Ledger",
+          "label": "Collect All Permanent Meter Upgrades",
+          "missable": false,
+          "levels": {
+            "1": "Unlike ordinary orb chests, these pickups do not refill.",
+            "2": "Collect six health eyes and five magic feathers across the ten levels.",
+            "3": "Use the eleven exact entries in this pack and confirm the meter grows after every pickup. Level Select allows missed locations to be revisited, but an already collected permanent chest remains empty."
+          }
+        }
+      ]
+    },
+    {
+      "id": "for-sparta",
+      "name": "Waterfall Approach",
+      "location_cue": "A side-scrolling city route with a waterfall, movable box, ladders, rope, pool, and two levers.",
+      "note": "Level Select remains available, so missed pickups can be revisited without restarting the full campaign.",
+      "items": [
+        {
+          "id": "complete-for-sparta",
+          "type": "interaction",
+          "safe_type": "Level",
+          "label": "Complete Waterfall Approach",
+          "missable": false,
+          "levels": {
+            "1": "Use the opening tutorials to register every carried weapon and power.",
+            "2": "Finish the For Sparta level and return to Level Select.",
+            "3": "Cross the waterfall, move the box beneath the high ledge, pull the upper lever, and complete both power tutorials. After the rope and pool, clear the seven-enemy door, move the statue from the lower passage, and pull the final lever."
+          }
+        },
+        {
+          "id": "orbs-for-sparta",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Exhaust Waterfall Approach's Red-Orb Sources",
+          "missable": false,
+          "levels": {
+            "1": "Let each combat wave finish spawning before leaving its arena.",
+            "2": "Open every red chest and clear every repeatable wave in For Sparta.",
+            "3": "Explore both side routes described in the level detail, open each red chest, and stay in locked encounters until no new enemies appear. Finish the level so the orb total and upgrade spending persist."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dead-rider",
+      "name": "Rooftops and Saw Corridor",
+      "location_cue": "Connected rooftops leading into a horizontal saw corridor and a two-level lever route.",
+      "note": "Level Select remains available, so missed pickups can be revisited without restarting the full campaign.",
+      "items": [
+        {
+          "id": "complete-dead-rider",
+          "type": "interaction",
+          "safe_type": "Level",
+          "label": "Complete Rooftops and Saw Corridor",
+          "missable": false,
+          "levels": {
+            "1": "Explore every rooftop before entering the saw corridor.",
+            "2": "Finish the Dead Rider level and return to Level Select.",
+            "3": "Climb from the opening ladder, sweep the left swing and each rooftop, then clear both locked waves. Cross the saw corridor, take the lower route to its lever, backtrack to the upper beams, and use the opened door to finish."
+          }
+        },
+        {
+          "id": "orbs-dead-rider",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Exhaust Rooftops and Saw Corridor's Red-Orb Sources",
+          "missable": false,
+          "levels": {
+            "1": "Let each combat wave finish spawning before leaving its arena.",
+            "2": "Open every red chest and clear every repeatable wave in Dead Rider.",
+            "3": "Explore both side routes described in the level detail, open each red chest, and stay in locked encounters until no new enemies appear. Finish the level so the orb total and upgrade spending persist."
+          }
+        },
+        {
+          "id": "eye-01",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #1",
+          "missable": false,
+          "levels": {
+            "1": "Check the route above, below, or behind the obvious exit.",
+            "2": "On the early rooftops, break the cracked wall beside the next jump.",
+            "3": "After several short rooftop jumps, stop at the visibly damaged wall and smash it. Open both chests behind it; one contains red orbs and the other grants the first health increase. Verify the meter increases before finishing the level."
+          }
+        },
+        {
+          "id": "feather-01",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #1",
+          "missable": false,
+          "levels": {
+            "1": "Check the route above, below, or behind the obvious exit.",
+            "2": "After the saw corridor, drop through the opening and take the right-hand lower path.",
+            "3": "From the upper route beyond the saws, drop into the lower section, go right, and open the two red-orb chests along the way. Continue to the final chest on that branch for the first magic increase. Verify the meter increases before finishing the level."
+          }
+        }
+      ]
+    },
+    {
+      "id": "minotaur",
+      "name": "Spike Pit and Beam Tower",
+      "location_cue": "A spike-pit arena beneath ladders, flaming arrows, saw-lined beams, a movable statue, and a distant gate.",
+      "note": "Level Select remains available, so missed pickups can be revisited without restarting the full campaign.",
+      "items": [
+        {
+          "id": "complete-minotaur",
+          "type": "interaction",
+          "safe_type": "Level",
+          "label": "Complete Spike Pit and Beam Tower",
+          "missable": false,
+          "levels": {
+            "1": "Remember the unopened gate beside the opening spike pit.",
+            "2": "Finish the Minotaur level and return to Level Select.",
+            "3": "Clear both sides of the spike pit, climb past the arrows, and use the statue to reach the upper saw beams. After the far rope, position the box beneath the gate, finish the lower arena, place that box on the switch above, then drop back to the original gate."
+          }
+        },
+        {
+          "id": "orbs-minotaur",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Exhaust Spike Pit and Beam Tower's Red-Orb Sources",
+          "missable": false,
+          "levels": {
+            "1": "Let each combat wave finish spawning before leaving its arena.",
+            "2": "Open every red chest and clear every repeatable wave in Minotaur.",
+            "3": "Explore both side routes described in the level detail, open each red chest, and stay in locked encounters until no new enemies appear. Finish the level so the orb total and upgrade spending persist."
+          }
+        },
+        {
+          "id": "eye-02",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #2",
+          "missable": false,
+          "levels": {
+            "1": "Check the route above, below, or behind the obvious exit.",
+            "2": "At the end of the second saw-beam climb, open the chest after clearing the enemies.",
+            "3": "Use the movable statue to reach the upper beam route, cross the grapple gap, and climb to the next saw-lined level. Defeat the enemies at its far end and open the permanent health chest before climbing again. Verify the meter increases before finishing the level."
+          }
+        }
+      ]
+    },
+    {
+      "id": "garden",
+      "name": "Garden Ladders",
+      "location_cue": "A vertical garden of alternating ladders, side ledges, a rope swing, and three moving platforms.",
+      "note": "Level Select remains available, so missed pickups can be revisited without restarting the full campaign.",
+      "items": [
+        {
+          "id": "complete-garden",
+          "type": "interaction",
+          "safe_type": "Level",
+          "label": "Complete Garden Ladders",
+          "missable": false,
+          "levels": {
+            "1": "Check the left ladder route and both lower ledges before the platform puzzle.",
+            "2": "Finish the Garden level and return to Level Select.",
+            "3": "Climb the alternating ladders, continue left past the recovery chest, and collect the hidden magic upgrade. After the rope swing, descend to the three-chest recess, then activate all three moving platforms and cross them before they reset."
+          }
+        },
+        {
+          "id": "orbs-garden",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Exhaust Garden Ladders's Red-Orb Sources",
+          "missable": false,
+          "levels": {
+            "1": "Let each combat wave finish spawning before leaving its arena.",
+            "2": "Open every red chest and clear every repeatable wave in Garden.",
+            "3": "Explore both side routes described in the level detail, open each red chest, and stay in locked encounters until no new enemies appear. Finish the level so the orb total and upgrade spending persist."
+          }
+        },
+        {
+          "id": "feather-02",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #2",
+          "missable": false,
+          "levels": {
+            "1": "Check the route above, below, or behind the obvious exit.",
+            "2": "In the garden, climb the alternating ladders and continue left beyond the recovery chest.",
+            "3": "Ascend the staggered ladders, follow the upper route left, and pass the green recovery chest. Continue along that same ledge to the next chest, which permanently increases the magic bar. Verify the meter increases before finishing the level."
+          }
+        },
+        {
+          "id": "eye-03",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #3",
+          "missable": false,
+          "levels": {
+            "1": "Check the route above, below, or behind the obvious exit.",
+            "2": "After the garden rope swing, descend to the side recess containing three chests.",
+            "3": "Land from the rope, clear the nearby enemies, and drop to the lower side ledge before starting the moving-platform puzzle. Open all three chests; two hold red orbs and one grants the third health increase. Verify the meter increases before finishing the level."
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-beast",
+      "name": "Rope and Button Passage",
+      "location_cue": "A trapped rope crossing followed by a cracked wall, upper stairs, movable box, and two floor buttons.",
+      "note": "Level Select remains available, so missed pickups can be revisited without restarting the full campaign.",
+      "items": [
+        {
+          "id": "complete-the-beast",
+          "type": "interaction",
+          "safe_type": "Level",
+          "label": "Complete Rope and Button Passage",
+          "missable": false,
+          "levels": {
+            "1": "Search above and below the cracked-wall route before moving the box.",
+            "2": "Finish the The Beast level and return to Level Select.",
+            "3": "Cross the saw-lined rope, break the damaged wall, and clear the locked encounter. Use the rear platform and stairs for the hidden magic chest, then move the box onto the right-hand button and pass its gate. Finish the final physical encounter by steadily forcing the target toward the open sewer edge."
+          }
+        },
+        {
+          "id": "orbs-the-beast",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Exhaust Rope and Button Passage's Red-Orb Sources",
+          "missable": false,
+          "levels": {
+            "1": "Let each combat wave finish spawning before leaving its arena.",
+            "2": "Open every red chest and clear every repeatable wave in The Beast.",
+            "3": "Explore both side routes described in the level detail, open each red chest, and stay in locked encounters until no new enemies appear. Finish the level so the orb total and upgrade spending persist."
+          }
+        },
+        {
+          "id": "feather-03",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #3",
+          "missable": false,
+          "levels": {
+            "1": "Check the route above, below, or behind the obvious exit.",
+            "2": "Beyond the cracked wall, climb the rear platform and stairs before starting the button puzzle.",
+            "3": "Clear the locked encounter after the damaged wall, climb onto the platform behind the starting position, and take the stairs. Follow the left upper route for a red chest, then descend to the permanent magic chest. Verify the meter increases before finishing the level."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ruins",
+      "name": "Ruined Halls",
+      "location_cue": "Broken multi-level ruins with grapple gaps, a caged lower chamber, movable statues, ropes, pools, and a floor switch.",
+      "note": "Level Select remains available, so missed pickups can be revisited without restarting the full campaign.",
+      "items": [
+        {
+          "id": "complete-ruins",
+          "type": "interaction",
+          "safe_type": "Level",
+          "label": "Complete Ruined Halls",
+          "missable": false,
+          "levels": {
+            "1": "The first movable statue opens the earlier caged chamber.",
+            "2": "Finish the Ruins level and return to Level Select.",
+            "3": "Clear the opening route, descend through the ruins, and use the statue to reach the upper lever. Return to the opened cage for its health chest, then push the second statue to reach the rope. Beyond both pools, move the final box onto the floor switch and cross the gate."
+          }
+        },
+        {
+          "id": "orbs-ruins",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Exhaust Ruined Halls's Red-Orb Sources",
+          "missable": false,
+          "levels": {
+            "1": "Let each combat wave finish spawning before leaving its arena.",
+            "2": "Open every red chest and clear every repeatable wave in Ruins.",
+            "3": "Explore both side routes described in the level detail, open each red chest, and stay in locked encounters until no new enemies appear. Finish the level so the orb total and upgrade spending persist."
+          }
+        },
+        {
+          "id": "eye-04",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #4",
+          "missable": false,
+          "levels": {
+            "1": "Check the route above, below, or behind the obvious exit.",
+            "2": "Return to the lower cage after using the first movable statue to reach its lever.",
+            "3": "In the ruins, note the caged chests below, move the nearby statue into climbing position, and pull the upper lever. Backtrack through the opened gate, defeat the enclosed creature, and open the health-upgrade chest. Verify the meter increases before finishing the level."
+          }
+        }
+      ]
+    },
+    {
+      "id": "catacombs",
+      "name": "Catacomb Traps",
+      "location_cue": "Descending stone tunnels filled with saw floors, arrow lanes, an overhead rope, closing doors, and split paths.",
+      "note": "Level Select remains available, so missed pickups can be revisited without restarting the full campaign.",
+      "items": [
+        {
+          "id": "complete-catacombs",
+          "type": "interaction",
+          "safe_type": "Level",
+          "label": "Complete Catacomb Traps",
+          "missable": false,
+          "levels": {
+            "1": "Both branches before the final ladder hold permanent upgrades.",
+            "2": "Finish the Catacombs level and return to Level Select.",
+            "3": "Descend through the cracked floors, use the overhead rope above the arrow lane, and collect the magic chest at its far stairs. Pass the closing doors, take the left saw branch for the health chest, then use the rope over the right branch and climb the arrow-covered ledges to the exit."
+          }
+        },
+        {
+          "id": "orbs-catacombs",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Exhaust Catacomb Traps's Red-Orb Sources",
+          "missable": false,
+          "levels": {
+            "1": "Let each combat wave finish spawning before leaving its arena.",
+            "2": "Open every red chest and clear every repeatable wave in Catacombs.",
+            "3": "Explore both side routes described in the level detail, open each red chest, and stay in locked encounters until no new enemies appear. Finish the level so the orb total and upgrade spending persist."
+          }
+        },
+        {
+          "id": "feather-04",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #4",
+          "missable": false,
+          "levels": {
+            "1": "Check the route above, below, or behind the obvious exit.",
+            "2": "In the catacombs, use the rope above the arrow lane and open the chest at the far stairs.",
+            "3": "When arrows block the lower route, grab the overhead rope and cross while removing enemies in the way. Climb the stairs at the far end and open both chests, including the permanent magic upgrade. Verify the meter increases before finishing the level."
+          }
+        },
+        {
+          "id": "eye-05",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #5",
+          "missable": false,
+          "levels": {
+            "1": "Check the route above, below, or behind the obvious exit.",
+            "2": "Before taking the right trap branch, follow the left saw-lined path to its end.",
+            "3": "After the closing-door corridor, descend and choose the left route first. Time each floor saw, continue to the end, and open the health chest beside the red-orb chest before returning to the split. Verify the meter increases before finishing the level."
+          }
+        }
+      ]
+    },
+    {
+      "id": "labyrinth",
+      "name": "Labyrinth",
+      "location_cue": "A vertical maze of ropes, ladders, lethal wall traps, barred side rooms, and two distant levers.",
+      "note": "Level Select remains available, so missed pickups can be revisited without restarting the full campaign.",
+      "items": [
+        {
+          "id": "complete-labyrinth",
+          "type": "interaction",
+          "safe_type": "Level",
+          "label": "Complete Labyrinth",
+          "missable": false,
+          "levels": {
+            "1": "The high right-hand lever opens a chest far below.",
+            "2": "Finish the Labyrinth level and return to Level Select.",
+            "3": "Traverse the opening ropes, descend through the enemy rooms, and time the two-hit traps carefully. Climb the right-side ledges to pull the upper lever, backtrack to the previously barred chest for the magic upgrade, then use the cracked wall and second lever to reopen the final route."
+          }
+        },
+        {
+          "id": "orbs-labyrinth",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Exhaust Labyrinth's Red-Orb Sources",
+          "missable": false,
+          "levels": {
+            "1": "Let each combat wave finish spawning before leaving its arena.",
+            "2": "Open every red chest and clear every repeatable wave in Labyrinth.",
+            "3": "Explore both side routes described in the level detail, open each red chest, and stay in locked encounters until no new enemies appear. Finish the level so the orb total and upgrade spending persist."
+          }
+        },
+        {
+          "id": "feather-05",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #5",
+          "missable": false,
+          "levels": {
+            "1": "Check the route above, below, or behind the obvious exit.",
+            "2": "Pull the labyrinth's high right-hand lever, then backtrack to the barred chest below.",
+            "3": "Climb the right-side ledges above the lethal traps and activate the upper lever. Descend along the route you just used, locate the cage that was previously closed, and open its now-accessible magic-upgrade chest. Verify the meter increases before finishing the level."
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-tower",
+      "name": "Tower",
+      "location_cue": "A tall climb of cracked walls, ropes, ladders, saw corridors, narrow ledges, and a movable statue.",
+      "note": "Level Select remains available, so missed pickups can be revisited without restarting the full campaign.",
+      "items": [
+        {
+          "id": "complete-the-tower",
+          "type": "interaction",
+          "safe_type": "Level",
+          "label": "Complete Tower",
+          "missable": false,
+          "levels": {
+            "1": "The last health upgrade is visible above the starting position.",
+            "2": "Finish the The Tower level and return to Level Select.",
+            "3": "Back up at the start and running-jump to the overhead chest. Continue through the cracked walls and saw climbs, breaking the red-chest recess near the upper corridor. Push the final statue beneath the high lever, activate it, reposition the statue for the left passage, and take the last rope to the exit."
+          }
+        },
+        {
+          "id": "orbs-the-tower",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Exhaust Tower's Red-Orb Sources",
+          "missable": false,
+          "levels": {
+            "1": "Let each combat wave finish spawning before leaving its arena.",
+            "2": "Open every red chest and clear every repeatable wave in The Tower.",
+            "3": "Explore both side routes described in the level detail, open each red chest, and stay in locked encounters until no new enemies appear. Finish the level so the orb total and upgrade spending persist."
+          }
+        },
+        {
+          "id": "eye-06",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #6",
+          "missable": false,
+          "levels": {
+            "1": "Check the route above, below, or behind the obvious exit.",
+            "2": "At the tower entrance, back up and running-jump to the chest overhead.",
+            "3": "Before moving right from the starting point, retreat far enough to build momentum, run forward, and jump onto the high shelf. Open the visible chest there to claim the sixth and final health increase. Verify the meter increases before finishing the level."
+          }
+        }
+      ]
+    },
+    {
+      "id": "messenger",
+      "name": "Final Platforms",
+      "location_cue": "A compact final route of moving platforms, paired levers, an aerial breakable wall, and an enclosed combat room.",
+      "note": "Level Select remains available, so missed pickups can be revisited without restarting the full campaign.",
+      "items": [
+        {
+          "id": "complete-messenger",
+          "type": "interaction",
+          "safe_type": "Level",
+          "label": "Complete Final Platforms",
+          "missable": false,
+          "levels": {
+            "1": "Use both levers before attempting the cracked wall.",
+            "2": "Finish the Messenger level and return to Level Select.",
+            "3": "Clear the opening enemies, activate the left platform, cross right, and pull the second lever. Ride the new platform and break the high cracked wall with jumping attacks. In the final room, control the additional enemies, respond to each grab prompt, and complete all three successful finisher sequences."
+          }
+        },
+        {
+          "id": "orbs-messenger",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Exhaust Final Platforms's Red-Orb Sources",
+          "missable": false,
+          "levels": {
+            "1": "Let each combat wave finish spawning before leaving its arena.",
+            "2": "Open every red chest and clear every repeatable wave in Messenger.",
+            "3": "Explore both side routes described in the level detail, open each red chest, and stay in locked encounters until no new enemies appear. Finish the level so the orb total and upgrade spending persist."
+          }
+        }
+      ]
+    },
+    {
+      "id": "arsenal-and-upgrades",
+      "name": "Arsenal and Upgrades",
+      "location_cue": "The in-level `#` power-up menu and the fixed-order weapon selector.",
+      "note": "Four tools each require 10,000 red orbs to reach level 5.",
+      "items": [
+        {
+          "id": "max-blades-athena",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Primary Chained Blades",
+          "missable": false,
+          "levels": {
+            "1": "Spend red orbs on one tool until its fifth level is complete.",
+            "2": "Raise Primary Chained Blades from level 1 to level 5.",
+            "3": "Open the power-up menu with `#` and buy levels 2, 3, 4, and 5 for 1,000, 2,000, 3,000, and 4,000 red orbs. The total is 10,000 for this tool; confirm level 5 is displayed."
+          }
+        },
+        {
+          "id": "max-blade-artemis",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Secondary Heavy Blade",
+          "missable": false,
+          "levels": {
+            "1": "Spend red orbs on one tool until its fifth level is complete.",
+            "2": "Raise Secondary Heavy Blade from level 1 to level 5.",
+            "3": "Open the power-up menu with `#` and buy levels 2, 3, 4, and 5 for 1,000, 2,000, 3,000, and 4,000 red orbs. The total is 10,000 for this tool; confirm level 5 is displayed."
+          }
+        },
+        {
+          "id": "max-medusa-gaze",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Petrification Power",
+          "missable": false,
+          "levels": {
+            "1": "Spend red orbs on one tool until its fifth level is complete.",
+            "2": "Raise Petrification Power from level 1 to level 5.",
+            "3": "Open the power-up menu with `#` and buy levels 2, 3, 4, and 5 for 1,000, 2,000, 3,000, and 4,000 red orbs. The total is 10,000 for this tool; confirm level 5 is displayed."
+          }
+        },
+        {
+          "id": "max-army-hades",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Summoning Power",
+          "missable": false,
+          "levels": {
+            "1": "Spend red orbs on one tool until its fifth level is complete.",
+            "2": "Raise Summoning Power from level 1 to level 5.",
+            "3": "Open the power-up menu with `#` and buy levels 2, 3, 4, and 5 for 1,000, 2,000, 3,000, and 4,000 red orbs. The total is 10,000 for this tool; confirm level 5 is displayed."
+          }
+        },
+        {
+          "id": "max-all-four-tools",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize the Full Arsenal",
+          "missable": false,
+          "levels": {
+            "1": "Several level replays are expected because first-run orbs are insufficient.",
+            "2": "Spend 40,000 red orbs to maximize both weapons and both magic powers.",
+            "3": "Complete all four individual level-5 records. Replay levels, reopen refilled red chests, and clear respawning enemy waves until the remaining total is earned; upgrades persist between replays."
+          }
+        },
+        {
+          "id": "test-all-four-tools",
+          "type": "optional",
+          "safe_type": "Arsenal",
+          "label": "Use Every Combat Tool",
+          "missable": false,
+          "levels": {
+            "1": "The soft key cycles through a fixed weapon-and-magic order.",
+            "2": "Score a confirmed elimination with each of the four tools.",
+            "3": "Cycle with `*` or the mapped soft key, select each tool in turn, and defeat at least one valid enemy with it. The heavy blade consumes magic while active, so refill the blue meter before testing it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "arena-mode",
+      "name": "Arena Mode",
+      "location_cue": "The standalone Arena option on the title menu and its vertical endurance stage.",
+      "note": "The mode is endless after its progressive upper tiers; surviving to the highest tier is the finite completion boundary.",
+      "items": [
+        {
+          "id": "arena-enter",
+          "type": "interaction",
+          "safe_type": "Arena",
+          "label": "Enter Arena Mode",
+          "missable": false,
+          "levels": {
+            "1": "The title menu contains a separate endurance option.",
+            "2": "Select Arena and begin one run.",
+            "3": "Open Arena from the main menu, verify the run starts with a fresh endurance state, and defeat the opening group without dying so the vertical progression begins."
+          }
+        },
+        {
+          "id": "arena-highest-tier",
+          "type": "optional",
+          "safe_type": "Arena",
+          "label": "Reach the Highest Arena Tier",
+          "missable": false,
+          "levels": {
+            "1": "Enemy eliminations progressively open the stage's upper levels.",
+            "2": "Survive without dying until every upper Arena level has opened.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "arena-100-enemies",
+          "type": "optional",
+          "safe_type": "Arena Record",
+          "label": "Defeat 100 Arena Enemies",
+          "missable": false,
+          "levels": {
+            "1": "Use the community's stable finite endurance benchmark after unlocking the upper stage.",
+            "2": "Defeat 100 enemies in one Arena run without dying.",
+            "3": "Enter with all four tools at level 5, preserve magic for crowded waves, and use aerial attacks when surrounded. Keep the run alive until the elimination counter reaches 100; this is a reviewable finite record, not an invented endpoint for the endless mode."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sami Mirash's spoiler-free 100% completion guides: search a game and open a no-spoiler walkthrough for collecting everything, every secret, and all endings in one run.">
+  <meta property="og:title" content="Spoiler-Free 100% Guides | Sami Mirash">
+  <meta property="og:description" content="Search a game and open a no-spoiler guide for 100% completion: every collectible, hidden item, secret, and all endings in a single playthrough.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.samimirash.com/guides.html">
+  <meta property="og:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="theme-color" content="#080705">
+  <link rel="canonical" href="https://www.samimirash.com/guides.html">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <title>Spoiler-Free 100% Guides | Sami Mirash</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Spoiler-Free 100% Guides","url":"https://www.samimirash.com/guides.html","description":"Searchable spoiler-free guides for 100% game completion: every collectible, hidden secret, and all endings in one run."}</script>
+  <script defer src="assets/site.js"></script>
+  <script defer src="assets/seo.js"></script>
+</head>
+<body data-page="guides">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header></header>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Spoiler-Free 100% Guides</p>
+          <h1>Find a game. Get everything. Spoil nothing.</h1>
+          <p class="lede">Search a game below and open its no-spoiler guide. Each one walks you to 100% completion in a single run &mdash; every collectible, every hidden item, every secret, and all endings &mdash; without ever showing you a spoiler you did not ask to see.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#library">Browse guides</a>
+            <a class="button" href="#how">How it works</a>
+          </div>
+        </div>
+        <aside class="studio-card">
+          <span class="pill">The rule</span>
+          <h2>100% means everything.</h2>
+          <p>Not trophies or achievements &mdash; the whole game. Every collectible and secret, and all endings, the way you would want it on a first playthrough.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="wrap grid three">
+        <article class="feature-card">
+          <span class="pill">1</span>
+          <h2>Hidden by default.</h2>
+          <p>Every guide opens with names and locations hidden. You reveal exactly as much as you want, one item at a time, so nothing is spoiled by accident.</p>
+        </article>
+        <article class="feature-card">
+          <span class="pill">2</span>
+          <h2>Everything, in one run.</h2>
+          <p>Built around 100% completion: all collectibles, hidden items, secret content, and every ending &mdash; tracked area by area so you never miss a thing.</p>
+        </article>
+        <article class="feature-card">
+          <span class="pill">3</span>
+          <h2>Never lose a path.</h2>
+          <p>When something ahead is permanent or branching, the guide tells you to back up your save first &mdash; so you can finish one path, reload, and still get the others in a single playthrough.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="library">
+      <div class="wrap section-head">
+        <div>
+          <p class="eyebrow">Guide library</p>
+          <h2>Search by game.</h2>
+          <p data-guides-count>Loading guides&hellip;</p>
+        </div>
+      </div>
+      <div class="wrap library-controls">
+        <label class="search-field">
+          <span>Search</span>
+          <input type="search" data-guides-search autocomplete="off" placeholder="Type a game name">
+        </label>
+      </div>
+      <div class="wrap games-list" data-guides-list>
+        <p class="sub">Loading guides&hellip;</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" data-site-footer></footer>
+
+  <script>
+  // Searchable spoiler-free guide library. Reads the phone viewer's pack index
+  // (guide/packs/index.json) and links each game to its no-spoiler guide at
+  // guide/?pack=<id>. No spoiler content is ever loaded or shown here -- only the
+  // game's title. The guide itself hides spoilers until the reader asks.
+  (function () {
+    "use strict";
+    var listEl = document.querySelector("[data-guides-list]");
+    var countEl = document.querySelector("[data-guides-count]");
+    var searchEl = document.querySelector("[data-guides-search]");
+    var packs = [];
+
+    function esc(s) {
+      return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+      });
+    }
+
+    function card(p) {
+      var href = "guide/?pack=" + encodeURIComponent(p.id);
+      return '<a class="card guide-card" href="' + href + '">' +
+        '<span class="pill">Spoiler-free</span>' +
+        '<h3>' + esc(p.title) + '</h3>' +
+        '<p class="sub">100% completion &mdash; every collectible, secret, and all endings in one run.</p>' +
+        '<span class="guide-open">Open guide &#8594;</span>' +
+        '</a>';
+    }
+
+    function paint(items) {
+      if (!items.length) {
+        listEl.innerHTML = '<p class="sub">No guide matches that search yet. Try another game name.</p>';
+      } else {
+        listEl.innerHTML = items.map(card).join("");
+      }
+      if (countEl) {
+        var n = packs.length;
+        countEl.textContent = n
+          ? (n + (n === 1 ? " game has a guide" : " games have guides") +
+             " so far. More are added as Sami plays them.")
+          : "No guides published yet -- check back soon.";
+      }
+    }
+
+    function applyFilter() {
+      var q = (searchEl && searchEl.value || "").trim().toLowerCase();
+      if (!q) { paint(packs); return; }
+      paint(packs.filter(function (p) {
+        return String(p.title || "").toLowerCase().indexOf(q) !== -1 ||
+               String(p.id || "").toLowerCase().indexOf(q) !== -1;
+      }));
+    }
+
+    if (searchEl) searchEl.addEventListener("input", applyFilter);
+
+    fetch("guide/packs/index.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("index " + r.status); return r.json(); })
+      .then(function (idx) {
+        packs = (idx.packs || []).slice().sort(function (a, b) {
+          return String(a.title || "").localeCompare(String(b.title || ""));
+        });
+        paint(packs);
+      })
+      .catch(function () {
+        listEl.innerHTML = '<p class="sub">Guides could not load right now. Please try again shortly.</p>';
+        if (countEl) countEl.textContent = "";
+      });
+  })();
+  </script>
+</body>
+</html>

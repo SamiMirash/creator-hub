@@ -1,0 +1,1301 @@
+{
+  "id": "resident-evil-dead-aim",
+  "game": "Resident Evil: Dead Aim (2003)",
+  "target": "100% completion of the selected original PlayStation 2 route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "ps2-route-and-controls",
+      "name": "PS2 Route and Controls",
+      "location_cue": "The original PlayStation 2 title screen, input calibration, Room 104, and first save room.",
+      "note": "Establish the selected build and all supported control methods before the completion runs.",
+      "items": [
+        {
+          "id": "route-original-ps2",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Original PlayStation 2 Release",
+          "missable": false,
+          "levels": {
+            "1": "This entry has one complete platform route.",
+            "2": "Play the original PlayStation 2 release on native hardware or a tested emulator.",
+            "3": "Use an unmodified disc image from your own copy, confirm the region and save-card identity, and test aiming, movies, audio, vibration, and memory-card writes before beginning. There is no secondary or remastered content route to merge."
+          }
+        },
+        {
+          "id": "control-standard-pad",
+          "type": "interaction",
+          "safe_type": "Control",
+          "label": "Complete a Standard-Controller Test",
+          "missable": false,
+          "levels": {
+            "1": "Exploration and aiming use different camera styles.",
+            "2": "Verify third-person movement and first-person aiming with a DualShock 2.",
+            "3": "In the opening safe space, test walking, running, turning, the quick turn, aiming, firing, reloading, the status screen, and direct map access. Confirm that releasing aim returns to third-person movement without losing input."
+          }
+        },
+        {
+          "id": "control-guncon2",
+          "type": "optional",
+          "safe_type": "Control",
+          "label": "Complete a GunCon 2 Test",
+          "missable": false,
+          "levels": {
+            "1": "The game supports its contemporary light-gun route.",
+            "2": "Connect and calibrate a compatible GunCon 2 before starting a separate control test.",
+            "3": "Use supported display hardware, calibrate at the game's prompt, confirm edge and center accuracy, then complete one encounter and one movement corridor. Record any display or region limitation; do not claim light-gun completion from an uncalibrated adapter."
+          }
+        },
+        {
+          "id": "control-usb-mouse",
+          "type": "optional",
+          "safe_type": "Control",
+          "label": "Complete a USB-Mouse Test",
+          "missable": false,
+          "levels": {
+            "1": "A second pointing method can replace stick aiming.",
+            "2": "Connect a compatible USB mouse and verify first-person cursor response.",
+            "3": "Boot with the mouse connected, test horizontal and vertical travel, both fire and action inputs, sensitivity, and return to movement. Complete one encounter without controller aiming, then retain the configuration record with the save."
+          }
+        },
+        {
+          "id": "system-save-room",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Use a Typewriter and Ammo Cabinet",
+          "missable": false,
+          "levels": {
+            "1": "Safe rooms support both saving and basic ammunition recovery.",
+            "2": "Enter the second-deck Lounge and test the typewriter and handgun-ammunition cabinet.",
+            "3": "Make a numbered memory-card save without an ink ribbon, withdraw handgun ammunition, leave the room, and return to confirm the cabinet refresh. Do not repeatedly refill during a rank attempt if the extra movement threatens its time target."
+          }
+        },
+        {
+          "id": "system-map-legend",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Verify the Map Legend",
+          "missable": false,
+          "levels": {
+            "1": "Door colors show which routes still need an item.",
+            "2": "Open the map directly and compare passable, locked, and opened doors.",
+            "3": "Stand beside one locked door, note its map mark, unlock it with the correct item, then reopen the map and verify the changed connection. Use this visual check before abandoning any deck."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Clone the memory card before testing",
+        "why": "Control and result experiments should never overwrite the master file."
+      }
+    },
+    {
+      "id": "ship-upper-route",
+      "name": "Passenger and Leisure Deck Route",
+      "location_cue": "Guest cabins, VIP room, spiral staircase, restaurant, pool, third-class rooms, bar, and store space.",
+      "note": "Collect route items before each deck becomes inconvenient or inaccessible.",
+      "items": [
+        {
+          "id": "route-room-101",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Open the First-Class Route",
+          "missable": true,
+          "levels": {
+            "1": "The earliest required key shares a room with a map.",
+            "2": "Search the rear corridor of Room 101 for the 1st Class Key and Upper Decks Map.",
+            "3": "Enter Room 101 from Guest Room 1, cross the living area, and inspect the body in the rear corridor. Take both objects, return promptly, and use the key on the double doors at the end of Guest Room 1."
+          }
+        },
+        {
+          "id": "route-vip-keycard",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Activate the Guest Keycard",
+          "missable": true,
+          "levels": {
+            "1": "The VIP space contains both a document and electronic access.",
+            "2": "Take the Guest Keycard beside the seated body in the VIP Room.",
+            "3": "Collect the nearby file first, then take the card and leave before the room becomes crowded. At the Spiral Staircase Hall panel, insert the card to enable the corresponding second-deck electronic doors."
+          }
+        },
+        {
+          "id": "route-id-card",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Activate the ID Card",
+          "missable": true,
+          "levels": {
+            "1": "A bed in the second-class rooms holds the next access credential.",
+            "2": "Take the ID Card from Room 203 and return to the Spiral Staircase Hall panel.",
+            "3": "Enter Room 203 through its open doorway, collect the card from the bed, and withdraw immediately. Use it at the first-floor panel to enable the restaurant-pool side and the third-class side."
+          }
+        },
+        {
+          "id": "route-pool-key",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Open the Maintenance Shutter",
+          "missable": true,
+          "levels": {
+            "1": "The pool machinery provides a key before the hatch itself can open.",
+            "2": "Take the Maintenance Key from the Pool Deck control panel.",
+            "3": "Approach the control panel near the closed deck hatch, collect the key, and read the paper fixed beside the hatch. Carry the key through the third-class corridor and use it on the shutter leading toward the Stairs Hall."
+          }
+        },
+        {
+          "id": "route-store-handle",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Recover the Hatch Handle",
+          "missable": true,
+          "levels": {
+            "1": "A removable control part was stored away from the pool.",
+            "2": "Take the Handle from the Store House shelf and return to the Pool Deck.",
+            "3": "Search the Store House shelving after entering from the bar-side route. Collect the diary and supplies before taking the Handle, then return to the pool machinery and fit it into the hatch control to open the downward route."
+          }
+        },
+        {
+          "id": "route-presentation-crowbar",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Take the Crowbar",
+          "missable": true,
+          "levels": {
+            "1": "A tool on the lower ship deck opens marked cargo containers.",
+            "2": "Collect the Crowbar from the Presentation Room floor.",
+            "3": "Read the report on the northern display stand, then take the Crowbar lying nearby. Leave through the available route and carry it into the Cargo Room; do not discard it before the required crate search."
+          }
+        },
+        {
+          "id": "route-random-cargo-crate",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Find the Crewman's Keycard",
+          "missable": true,
+          "levels": {
+            "1": "The required cargo container changes between runs.",
+            "2": "Use the Crowbar on marked crew crates until the Crewman's Keycard appears.",
+            "3": "Make a save before entering the Cargo Room, open marked crates systematically along one wall, and continue until the keycard is found. The correct crate is randomized, so a fixed box number is unreliable; optional medicine can occupy other crates."
+          }
+        },
+        {
+          "id": "route-recreation-key",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Open the Bar-Side Door",
+          "missable": true,
+          "levels": {
+            "1": "The lower-deck monitor room holds an emblem-shaped key.",
+            "2": "Take the Recreation Room Key from the Monitor Room and use it in Bar Seven Seas.",
+            "3": "Collect the key and Restructuring Notice from the Monitor Room, return through the lower-deck route, then unlock the symbol-marked door on the east side of Bar Seven Seas to reach the stairs and captain's section."
+          }
+        },
+        {
+          "id": "route-timed-deck-exit",
+          "type": "interaction",
+          "safe_type": "Timed Route",
+          "label": "Clear the Deck Escape",
+          "missable": true,
+          "levels": {
+            "1": "A later ship segment begins a difficulty-dependent timer.",
+            "2": "Reach the heliport within seven minutes on So Sweet, five on Recommend, or 135 seconds on Extreme.",
+            "3": "Back up before the timer begins, reload all carried weapons, and memorize the direct door sequence. Ignore optional fights, take only supplies already on the path, and reach the heliport before the displayed clock expires; Extreme permits two minutes fifteen seconds."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before the timed escape",
+        "why": "The difficulty timer and one-way transitions make cleanup unreliable."
+      },
+      "point_of_no_return": {
+        "title": "Timed heliport approach",
+        "warning": "Finish every upper- and lower-deck collection before completing the escape."
+      }
+    },
+    {
+      "id": "facility-route",
+      "name": "Wastewater, Freight, and Laboratory Route",
+      "location_cue": "Concrete channels, lettered freight corridors, storage aisles, residence rooms, and clean-room approach.",
+      "note": "Complete each map and file sweep before using its lift or final access item.",
+      "items": [
+        {
+          "id": "route-sewer-launcher",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Enter the Groundwater Route",
+          "missable": true,
+          "levels": {
+            "1": "The first wastewater passage contains a map and heavy weapon.",
+            "2": "Collect the Groundwater Ways B1 Map and Grenade Launcher in Sewer Passage A.",
+            "3": "After reaching the wastewater area, check Sewer Passage A before advancing. Take the wall map and launcher, load it only when needed, and preserve grenade rounds for threats that cannot be safely bypassed."
+          }
+        },
+        {
+          "id": "route-sector-key",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Open the Waterway Control Room",
+          "missable": true,
+          "levels": {
+            "1": "A body in the channels carries the administrative key.",
+            "2": "Take the Sector Admin Key from the body in Waterway D.",
+            "3": "Traverse the B2 channels after obtaining their map, inspect the body in Waterway D, and take the key. Return to the matching control-room door and unlock it before moving deeper into the freight section."
+          }
+        },
+        {
+          "id": "route-elevator-card",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Activate the Freight Elevator",
+          "missable": true,
+          "levels": {
+            "1": "The deepest freight lift needs its own card.",
+            "2": "Take the Elevator Keycard from the body in Freight Passageway G.",
+            "3": "Search the body beyond the freight gate in Passageway G, collect the nearby paper and ammunition, then carry the card to the B5 Elevator Room. Insert it at the lift control only after finishing the freight map and file sweep."
+          }
+        },
+        {
+          "id": "route-dark-room",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Cross the Dark Sound-Sensitive Room",
+          "missable": true,
+          "levels": {
+            "1": "Noise matters more than firepower in one freight encounter.",
+            "2": "Move quietly through the dark room and attack only during a safe opening.",
+            "3": "Make a save beforehand, walk instead of running, avoid unnecessary gunfire, and use directional sound to keep distance from the large occupant. If combat becomes mandatory, create space, strike its exposed target, and resume quiet movement toward the exit."
+          }
+        },
+        {
+          "id": "route-pod-card",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Open the Pod Landing",
+          "missable": true,
+          "levels": {
+            "1": "The laboratory storage aisles contain a red access card.",
+            "2": "Take the Pod Bay Keycard from the last aisle of the first-floor storage room.",
+            "3": "Sweep the storage room from its entrance: collect the memo and map in the first aisle, then continue to the last aisle for the card. Ride the elevator to the third floor and use it on the Pod Landing Place door."
+          }
+        },
+        {
+          "id": "route-recorder",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Record the Voice Message",
+          "missable": true,
+          "levels": {
+            "1": "A blank recorder must be filled at a separate terminal.",
+            "2": "Take the Digital Recorder from the Pod Landing Place, then open the email in Room 2D-01.",
+            "3": "Collect the recorder from the northwest computer desk on 3F, descend to 2F, and examine the corner computer in Room 2D-01. Open the email and accept the recording prompt to convert it into the full recorder."
+          }
+        },
+        {
+          "id": "route-voice-door",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Open the Voice-Locked Door",
+          "missable": true,
+          "levels": {
+            "1": "The filled recorder supplies the required audio sample.",
+            "2": "Use the full Digital Recorder on the first-floor voice panel.",
+            "3": "Return to the first-floor corridor, examine the panel beside the locked clean-room door, and play the recorded message. Confirm that the door opens and that the recorder has served its purpose before entering."
+          }
+        },
+        {
+          "id": "route-particle-rifle",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Acquire the Charged Particle Rifle",
+          "missable": true,
+          "levels": {
+            "1": "The laboratory's open chamber contains the final weapon and an exit key.",
+            "2": "Take the rifle, its manual, and the Backyard Key from the open laboratory chamber.",
+            "3": "Read the manual beside the weapon, collect the Charged Particle Rifle, and inspect the body inside the opened chamber for the Backyard Key. Fully charge each shot; the weapon uses a limited energy supply rather than ordinary ammunition."
+          }
+        },
+        {
+          "id": "route-final-backup",
+          "type": "interaction",
+          "safe_type": "Final Preparation",
+          "label": "Prepare the Final Save",
+          "missable": true,
+          "levels": {
+            "1": "The last corridors close the remaining exploration window.",
+            "2": "Finish all files, maps, weapons, and key-item records before leaving the final save room.",
+            "3": "Compare the archive against all nineteen files, six maps, and eight weapons; reload and fill every carried weapon, take recovery supplies, and create a separate memory-card backup. Keep this save for rank practice and alternate-character verification."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep the final save-room backup",
+        "why": "It preserves rank practice and collection verification."
+      },
+      "point_of_no_return": {
+        "title": "Leave the final save room",
+        "warning": "The remaining approach does not support a full area cleanup."
+      }
+    },
+    {
+      "id": "all-files",
+      "name": "All Files",
+      "location_cue": "Readable papers, notebooks, reports, orders, manuals, and journals across the ship and facilities.",
+      "note": "Nineteen document entries complete the file archive.",
+      "items": [
+        {
+          "id": "file-01-intelligence-operations-manual",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Intelligence Operations Manual",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Intelligence Operations Manual at Room 104 starting inventory.",
+            "3": "Open the starting inventory in Room 104 and read the manual before leaving the room."
+          }
+        },
+        {
+          "id": "file-02-emergency-fax-from-paris-branch",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Emergency FAX from Paris Branch",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Emergency FAX from Paris Branch at VIP Room scattered papers.",
+            "3": "In the VIP Room, inspect the papers spread across the floor before taking the nearby keycard."
+          }
+        },
+        {
+          "id": "file-03-regular-report-no-1162",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Regular Report No.1162",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Regular Report No.1162 at Room 201 bathroom.",
+            "3": "Enter Room 201 and inspect the bathroom floor beside its inactive occupant before returning to the corridor."
+          }
+        },
+        {
+          "id": "file-04-admin-report",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Admin Report",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Admin Report at Pool Deck closed hatch.",
+            "3": "On the Pool Deck, examine the sheet attached beside the sealed machinery hatch before leaving with the key."
+          }
+        },
+        {
+          "id": "file-05-waiter-s-letter",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Waiter's Letter",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Waiter's Letter at Bar Seven Seas counter.",
+            "3": "In Bar Seven Seas, check the serving counter before using the symbol-marked door later in the route."
+          }
+        },
+        {
+          "id": "file-06-freight-crewman-s-diary",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Freight Crewman's Diary",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Freight Crewman's Diary at Store House floor.",
+            "3": "Search the Store House floor and shelving before taking the hatch Handle and leaving the room."
+          }
+        },
+        {
+          "id": "file-07-research-report-220329",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Research Report #220329",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Research Report #220329 at Presentation Room northern stand.",
+            "3": "Inside the Presentation Room, inspect the stand along the north side of the glass display area before taking the Crowbar."
+          }
+        },
+        {
+          "id": "file-08-restructuring-notice",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Restructuring Notice",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Restructuring Notice at Monitor Room.",
+            "3": "Collect this notice from the Monitor Room during the same sweep that yields the Recreation Room Key."
+          }
+        },
+        {
+          "id": "file-09-ship-s-log",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Ship's Log",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Ship's Log at Captain's Room.",
+            "3": "In the captain's section, search the Captain's Room before leaving with the Magnum and its ammunition."
+          }
+        },
+        {
+          "id": "file-10-operator-s-notebook",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Operator's Notebook",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Operator's Notebook at Sewer save room.",
+            "3": "At the first wastewater save room, inspect the documents near the save equipment before entering the channels."
+          }
+        },
+        {
+          "id": "file-11-biological-report-1",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Biological Report 1",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Biological Report 1 at Sewer save room.",
+            "3": "Read the second document in the wastewater save room during the same visit as the Operator's Notebook."
+          }
+        },
+        {
+          "id": "file-12-biological-report-2",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Biological Report 2",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Biological Report 2 at Freight save room table.",
+            "3": "At the freight-passage save room, inspect the document on the table before heading into the dark corridors."
+          }
+        },
+        {
+          "id": "file-13-experiment-alpha-log",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Experiment Alpha Log",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Experiment Alpha Log at follows Biological Report 2.",
+            "3": "Finish reading Biological Report 2 and continue through the linked document prompt instead of closing the file screen early."
+          }
+        },
+        {
+          "id": "file-14-transport-orders",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Transport Orders",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Transport Orders at Freight Passageway G.",
+            "3": "In Freight Passageway G, inspect the document beside the keycard-bearing body before activating the B5 lift."
+          }
+        },
+        {
+          "id": "file-15-architect-s-memo",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Architect's Memo",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Architect's Memo at Laboratory storage first aisle.",
+            "3": "Search the first aisle of the laboratory storage room; take it together with the map before crossing to the final aisle."
+          }
+        },
+        {
+          "id": "file-16-research-report-220120",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Research Report #220120",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Research Report #220120 at Room 2D-02.",
+            "3": "Enter Room 2D-02 from the second-floor laboratory corridor and inspect the room before returning to the elevator."
+          }
+        },
+        {
+          "id": "file-17-orders-from-morpheus",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Orders from Morpheus",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Orders from Morpheus at Room 2B-01.",
+            "3": "Enter Room 2B-01 and collect the document from its accessible interior before completing the voice-recording route."
+          }
+        },
+        {
+          "id": "file-18-charged-particle-rifle-user-s-manual",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Charged Particle Rifle User's Manual",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Charged Particle Rifle User's Manual at Laboratory beside rifle.",
+            "3": "Read the manual beside the special rifle in the laboratory before lifting the weapon from its chamber."
+          }
+        },
+        {
+          "id": "file-19-morpheus-s-journal",
+          "type": "collectible",
+          "safe_type": "File",
+          "label": "Morpheus's Journal",
+          "missable": true,
+          "levels": {
+            "1": "A readable document is available during this area's one-way sweep.",
+            "2": "Find Morpheus's Journal at office near final approach.",
+            "3": "Search the office adjoining the final laboratory approach before proceeding to the last save room."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving each major facility",
+        "why": "Most documents cannot be recovered after a one-way transition."
+      }
+    },
+    {
+      "id": "all-maps",
+      "name": "All Maps",
+      "location_cue": "Wall plans and floor diagrams placed near the start of each major physical section.",
+      "note": "Six maps cover the ship, waterways, freight section, and laboratory.",
+      "items": [
+        {
+          "id": "map-01-upper-decks-map",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Upper Decks Map",
+          "missable": true,
+          "levels": {
+            "1": "The local floor plan is available before the route becomes complicated.",
+            "2": "Collect Upper Decks Map at Room 101 rear corridor.",
+            "3": "In Room 101, inspect the rear corridor beside the body that also holds the 1st Class Key; take both before returning to Guest Room 1."
+          }
+        },
+        {
+          "id": "map-02-lower-decks-map",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Lower Decks Map",
+          "missable": true,
+          "levels": {
+            "1": "The local floor plan is available before the route becomes complicated.",
+            "2": "Collect Lower Decks Map at spiral staircase bottom wall.",
+            "3": "Descend to the bottom of the Spiral Staircase Hall and inspect the wall immediately along the lower-deck passage before entering Cargo Room."
+          }
+        },
+        {
+          "id": "map-03-groundwater-ways-b1-map",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Groundwater Ways B1 Map",
+          "missable": true,
+          "levels": {
+            "1": "The local floor plan is available before the route becomes complicated.",
+            "2": "Collect Groundwater Ways B1 Map at Sewer Passage A.",
+            "3": "On first entering Sewer Passage A, take the map before committing to the waterway route; the Grenade Launcher is in the same passage."
+          }
+        },
+        {
+          "id": "map-04-groundwater-ways-b2-map",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Groundwater Ways B2 Map",
+          "missable": true,
+          "levels": {
+            "1": "The local floor plan is available before the route becomes complicated.",
+            "2": "Collect Groundwater Ways B2 Map at Sewer Passage D.",
+            "3": "In Sewer Passage D, inspect the wall during the lower-channel sweep before searching Waterway D for its administrative key."
+          }
+        },
+        {
+          "id": "map-05-freight-passage-map",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Freight Passage Map",
+          "missable": true,
+          "levels": {
+            "1": "The local floor plan is available before the route becomes complicated.",
+            "2": "Collect Freight Passage Map at freight save room wall.",
+            "3": "At the freight-passage save room, take the wall map together with both files before entering the sequence of lettered corridors."
+          }
+        },
+        {
+          "id": "map-06-benthic-laboratory-map",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Benthic Laboratory Map",
+          "missable": true,
+          "levels": {
+            "1": "The local floor plan is available before the route becomes complicated.",
+            "2": "Collect Benthic Laboratory Map at laboratory storage first aisle.",
+            "3": "Search the first aisle of the laboratory storage room; collect the map and Architect's Memo before moving toward the Pod Bay Keycard."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Collect maps on first arrival",
+        "why": "Later routes may not return to their pickup walls."
+      }
+    },
+    {
+      "id": "all-weapons",
+      "name": "All Weapons",
+      "location_cue": "Starting inventory, guest cabins, cold storage, captain's room, wastewater passage, suit room, and laboratory chamber.",
+      "note": "Record all eight firearms and their difficulty-dependent placements.",
+      "items": [
+        {
+          "id": "weapon-01-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Handgun",
+          "missable": true,
+          "levels": {
+            "1": "A distinct weapon belongs in the completed loadout record.",
+            "2": "Acquire the Handgun: starting weapon.",
+            "3": "Verify it in the opening inventory, fire and reload it once, and retain its ammunition as the most renewable resource because safe-room cabinets replenish handgun rounds."
+          }
+        },
+        {
+          "id": "weapon-02-silencer-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Silencer Handgun",
+          "missable": true,
+          "levels": {
+            "1": "A distinct weapon belongs in the completed loadout record.",
+            "2": "Acquire the Silencer Handgun: Room 206 desk chair.",
+            "3": "Enter Room 206 from the second guest-room corridor and take it from the desk chair. Test it against one isolated target to confirm its quieter report."
+          }
+        },
+        {
+          "id": "weapon-03-semi-automatic-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Semi-automatic Handgun",
+          "missable": true,
+          "levels": {
+            "1": "A distinct weapon belongs in the completed loadout record.",
+            "2": "Acquire the Semi-automatic Handgun: Room 302 bed.",
+            "3": "Search the bed in Room 302 before leaving the third-class guest corridor. Record its firing cadence separately from the standard and silenced handguns."
+          }
+        },
+        {
+          "id": "weapon-04-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "A distinct weapon belongs in the completed loadout record.",
+            "2": "Acquire the Shotgun: Easy start; harder freezer.",
+            "3": "So Sweet supplies it at the beginning. On Recommend or Extreme, enter the Freezing Room through the Kitchen and take the gun with its nearby shells before withdrawing."
+          }
+        },
+        {
+          "id": "weapon-05-magnum",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Magnum",
+          "missable": true,
+          "levels": {
+            "1": "A distinct weapon belongs in the completed loadout record.",
+            "2": "Acquire the Magnum: Captain's Room bed.",
+            "3": "Open the bar-side route with the Recreation Room Key, reach the Captain's Room, and take the Magnum from the bed. Preserve its rounds for the hardest late encounters."
+          }
+        },
+        {
+          "id": "weapon-06-grenade-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade Launcher",
+          "missable": true,
+          "levels": {
+            "1": "A distinct weapon belongs in the completed loadout record.",
+            "2": "Acquire the Grenade Launcher: Sewer Passage A.",
+            "3": "Collect it in Sewer Passage A beside the first groundwater map. Keep its six-round reload behavior and ammunition ledger separate from every firearm."
+          }
+        },
+        {
+          "id": "weapon-07-assault-rifle",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Assault Rifle",
+          "missable": true,
+          "levels": {
+            "1": "A distinct weapon belongs in the completed loadout record.",
+            "2": "Acquire the Assault Rifle: Easy freezer; harder suit room.",
+            "3": "On So Sweet, take it in the Freezing Room; on Recommend or Extreme, collect it from the open locker in the laboratory Environment Suit Room."
+          }
+        },
+        {
+          "id": "weapon-08-charged-particle-rifle",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Charged Particle Rifle",
+          "missable": true,
+          "levels": {
+            "1": "A distinct weapon belongs in the completed loadout record.",
+            "2": "Acquire the Charged Particle Rifle: Laboratory open chamber.",
+            "3": "In the laboratory's open chamber, read its manual, take the rifle, and hold the trigger until each energy shot is fully charged before release."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before weapon testing",
+        "why": "Ammunition and special energy are finite during ordinary runs."
+      }
+    },
+    {
+      "id": "all-key-items",
+      "name": "All Key Items",
+      "location_cue": "Beds, bodies, panels, shelves, cargo crates, storage aisles, terminals, and the open laboratory chamber.",
+      "note": "Fourteen key-item states define the complete progression chain.",
+      "items": [
+        {
+          "id": "key-item-01-1st-class-key",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "1st Class Key",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect 1st Class Key at Room 101 rear corpse.",
+            "3": "Take it from the rear body in Room 101, then unlock the first-class double doors at the far end of Guest Room 1."
+          }
+        },
+        {
+          "id": "key-item-02-guest-keycard",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "Guest Keycard",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect Guest Keycard at VIP Room seated body.",
+            "3": "Take it beside the seated body in the VIP Room and insert it into the Spiral Staircase Hall control panel to enable the guest-area electronic doors."
+          }
+        },
+        {
+          "id": "key-item-03-id-card",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "ID Card",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect ID Card at Room 203 bed.",
+            "3": "Collect it from the bed in Room 203, return to the first-floor staircase panel, and enable the restaurant-pool and third-class routes."
+          }
+        },
+        {
+          "id": "key-item-04-maintenance-key",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "Maintenance Key",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect Maintenance Key at Pool Deck control panel.",
+            "3": "Take it from the Pool Deck control panel, carry it through the third-class corridors, and unlock the shutter that reconnects with the Stairs Hall."
+          }
+        },
+        {
+          "id": "key-item-05-handle",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "Handle",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect Handle at Store House shelf.",
+            "3": "Take it from the Store House shelf, return to the Pool Deck, and fit it into the hatch mechanism to open the lower route."
+          }
+        },
+        {
+          "id": "key-item-06-crewman-s-keycard",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "Crewman's Keycard",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect Crewman's Keycard at random marked cargo crate.",
+            "3": "Use the Crowbar on marked Cargo Room crates until the randomized card appears, then use it on the matching lower-deck electronic door."
+          }
+        },
+        {
+          "id": "key-item-07-crowbar",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "Crowbar",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect Crowbar at Presentation Room floor.",
+            "3": "Take it from the Presentation Room floor and keep it until every marked crew crate in Cargo Room has been checked."
+          }
+        },
+        {
+          "id": "key-item-08-recreation-room-key",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "Recreation Room Key",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect Recreation Room Key at Monitor Room.",
+            "3": "Collect it in the Monitor Room, return to Bar Seven Seas, and unlock the east-side symbol door leading to the captain's section."
+          }
+        },
+        {
+          "id": "key-item-09-sector-admin-key",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "Sector Admin Key",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect Sector Admin Key at Waterway D body.",
+            "3": "Take it from the body in Waterway D and return to the matching groundwater control-room door."
+          }
+        },
+        {
+          "id": "key-item-10-elevator-keycard",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "Elevator Keycard",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect Elevator Keycard at Freight Passageway G body.",
+            "3": "Collect it from the body in Freight Passageway G and insert it at the B5 Elevator Room control."
+          }
+        },
+        {
+          "id": "key-item-11-pod-bay-keycard",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "Pod Bay Keycard",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect Pod Bay Keycard at laboratory storage last aisle.",
+            "3": "Take it from the last aisle of the laboratory storage room and use it at the third-floor Pod Landing Place door."
+          }
+        },
+        {
+          "id": "key-item-12-digital-recorder",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "Digital Recorder",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect Digital Recorder at pod landing northwest desk.",
+            "3": "Take the blank unit from the northwest desk in the Pod Landing Place, then carry it to the email computer in Room 2D-01."
+          }
+        },
+        {
+          "id": "key-item-13-digital-recorder-full",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "Digital Recorder Full",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect Digital Recorder Full at Room 2D-01 email terminal.",
+            "3": "At the Room 2D-01 terminal, open the message and accept recording; play the filled device at the first-floor voice-locked door."
+          }
+        },
+        {
+          "id": "key-item-14-backyard-key",
+          "type": "collectible",
+          "safe_type": "Key Item",
+          "label": "Backyard Key",
+          "missable": true,
+          "levels": {
+            "1": "This progression object is consumed or transformed along the main route.",
+            "2": "Collect Backyard Key at Laboratory open chamber body.",
+            "3": "After taking the special rifle, inspect the body in the open laboratory chamber and use the key on the exterior door along the final approach."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before consuming a key item",
+        "why": "Used and transformed objects may disappear from the inventory."
+      }
+    },
+    {
+      "id": "result-formula",
+      "name": "Result Formula and Rank Tiers",
+      "location_cue": "The post-clear result screen showing combat, accuracy, time, saves, recovery use, bonuses, and total grade.",
+      "note": "Calculate ranks from verified factors rather than relying on vague speed advice.",
+      "items": [
+        {
+          "id": "rank-formula-enemies",
+          "type": "optional",
+          "safe_type": "Rank Factor",
+          "label": "Enemy-Clear Contribution",
+          "missable": false,
+          "levels": {
+            "1": "The result screen rewards one part of the enemy-clear percentage.",
+            "2": "Divide the percentage of the full enemy population defeated by four.",
+            "3": "At the result screen, record the defeated-enemy percentage and divide it by four for this component. Avoid guessing the assumed population from a partial route; use the displayed percentage as the authoritative input."
+          }
+        },
+        {
+          "id": "rank-formula-critical",
+          "type": "optional",
+          "safe_type": "Rank Factor",
+          "label": "Critical-Hit Contribution",
+          "missable": false,
+          "levels": {
+            "1": "Accurate weak-point shots add a separate score component.",
+            "2": "Divide the critical-hit percentage among defeated enemies by three.",
+            "3": "Record both defeated targets and confirmed critical defeats, then use the result-screen percentage divided by three. A missed shot does not directly reduce this component unless it changes the displayed ratio."
+          }
+        },
+        {
+          "id": "rank-formula-time",
+          "type": "optional",
+          "safe_type": "Rank Factor",
+          "label": "Clear-Time Contribution",
+          "missable": false,
+          "levels": {
+            "1": "Faster completion provides up to thirty points.",
+            "2": "Earn 30/25/20/15/10/5 points below 120/135/150/180/240/300 minutes.",
+            "3": "Compare the final clear time against the first strict boundary it satisfies: under 120 minutes gives 30; then under 135 gives 25, under 150 gives 20, under 180 gives 15, under 240 gives 10, and under 300 gives 5."
+          }
+        },
+        {
+          "id": "rank-formula-saves",
+          "type": "optional",
+          "safe_type": "Rank Factor",
+          "label": "Save Contribution",
+          "missable": false,
+          "levels": {
+            "1": "Fewer typewriter uses preserve up to fifteen points.",
+            "2": "Earn 15 points with zero saves, 10 below four, or 5 below eight.",
+            "3": "For a maximum attempt, make no in-game save and rely on a separate cloned starting file for practice. Otherwise finish with one to three saves for 10 points, or four to seven for 5; eight or more earns none here."
+          }
+        },
+        {
+          "id": "rank-formula-sprays",
+          "type": "optional",
+          "safe_type": "Rank Factor",
+          "label": "Spray Contribution",
+          "missable": false,
+          "levels": {
+            "1": "Full-recovery sprays reduce one scoring category.",
+            "2": "Earn 15 points with none, 10 below two, or 5 below four sprays.",
+            "3": "Use herbs or Herbal Medicine when recovery is necessary. Zero Medicinal Sprays gives 15 points; exactly one gives 10; two or three give 5; four or more provide no points in this factor."
+          }
+        },
+        {
+          "id": "rank-bonus-top-agent",
+          "type": "optional",
+          "safe_type": "Rank Bonus",
+          "label": "Top Agent Bonus",
+          "missable": false,
+          "levels": {
+            "1": "A low-combat, no-assistance route grants the largest bonus.",
+            "2": "Finish below 30 defeated enemies with zero saves and zero Medicinal Sprays.",
+            "3": "Plan a bypass route, defeat only mandatory targets, and confirm the final defeated count remains under 30. Do not save or use Medicinal Spray at any point; meeting all three conditions adds 50 points."
+          }
+        },
+        {
+          "id": "rank-bonus-sniper",
+          "type": "optional",
+          "safe_type": "Rank Bonus",
+          "label": "Sniper Bonus",
+          "missable": false,
+          "levels": {
+            "1": "A combat-heavy precision route earns a different bonus.",
+            "2": "Defeat more than 100 enemies while keeping critical hits above 75 percent.",
+            "3": "Use silenced or standard handguns for controlled weak-point shots, avoid wasteful body finishes, and verify both final values: defeated count must exceed 100 and the critical-hit percentage must exceed 75. The bonus adds 40 points."
+          }
+        },
+        {
+          "id": "rank-bonus-ninja",
+          "type": "optional",
+          "safe_type": "Rank Bonus",
+          "label": "Ninja Bonus",
+          "missable": false,
+          "levels": {
+            "1": "The fastest route must also avoid saving.",
+            "2": "Clear in under 60 minutes without using a typewriter.",
+            "3": "Practice each transition on cloned saves, then begin a continuous run. Skip nonessential pickups and fights, never create an in-game save, and finish before 60:00 to add 30 points."
+          }
+        },
+        {
+          "id": "rank-threshold-s",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "S Rank",
+          "missable": false,
+          "levels": {
+            "1": "The highest result tier starts above a fixed point boundary.",
+            "2": "Finish with more than 90 total result points.",
+            "3": "Add enemy-clear, critical-hit, time, save, and spray points plus any earned conditional bonus. The total must exceed 90; a displayed total of exactly 90 does not satisfy the documented wording."
+          }
+        },
+        {
+          "id": "rank-threshold-a",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "A Rank",
+          "missable": false,
+          "levels": {
+            "1": "The second tier supports several reward routes.",
+            "2": "Finish above 65 points without reaching S.",
+            "3": "Calculate every category and bonus, then finish above 65 while below the S boundary. Preserve the result save because A on different difficulties unlocks distinct starting equipment."
+          }
+        },
+        {
+          "id": "rank-threshold-b",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "B Rank",
+          "missable": false,
+          "levels": {
+            "1": "A middle result still produces a recorded completion tier.",
+            "2": "Finish above 40 points without reaching A.",
+            "3": "Use a cloned run and intentionally relax one score category after securing the campaign clear. Confirm the total remains above 40 but does not cross the A boundary, then retain the result screen."
+          }
+        },
+        {
+          "id": "rank-threshold-c",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "C Rank",
+          "missable": false,
+          "levels": {
+            "1": "The lowest result tier completes the rank archive.",
+            "2": "Finish at 40 points or below.",
+            "3": "On a separate archival file, use enough saves, time, or sprays to hold the final total at 40 or less while still completing the campaign. Never damage the higher-rank reward file for this demonstration."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Clone a completed route for rank tests",
+        "why": "Deliberately lowering a score should not replace a reward save."
+      }
+    },
+    {
+      "id": "difficulty-and-rewards",
+      "name": "Difficulty Clears and Completion Rewards",
+      "location_cue": "New Game difficulty selection, result-file replay prompt, alternate title presentation, and opening inventories.",
+      "note": "Complete all difficulty, replay, rank, control, and reward states.",
+      "items": [
+        {
+          "id": "difficulty-so-sweet",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Complete So Sweet",
+          "missable": false,
+          "levels": {
+            "1": "The forgiving mode changes supplies and starting equipment.",
+            "2": "Finish the full campaign on So Sweet and preserve its result save.",
+            "3": "Collect its difficulty-specific weapon placements, complete the file and map ledger, meet the seven-minute deck escape, and finish once for a clean result. Keep this file for its separate rank-reward tiers."
+          }
+        },
+        {
+          "id": "difficulty-recommend",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Complete Recommend",
+          "missable": false,
+          "levels": {
+            "1": "The middle mode uses the standard resource layout.",
+            "2": "Finish the full campaign on Recommend and preserve its result save.",
+            "3": "Start from a clean Recommend file, collect the Shotgun in the Freezing Room and Assault Rifle in the suit room, meet the five-minute deck escape, and finish with all nineteen files before saving the result."
+          }
+        },
+        {
+          "id": "difficulty-extreme",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Complete Extreme",
+          "missable": false,
+          "levels": {
+            "1": "The hardest route reduces supplies and tightens the escape timer.",
+            "2": "Finish the full campaign on Extreme and preserve its result save.",
+            "3": "Practice on cloned saves, avoid optional combat, collect only route-critical resources and archives, meet the 135-second deck escape, and reach the final encounter with reserved Magnum and heavy ammunition."
+          }
+        },
+        {
+          "id": "unlock-first-clear",
+          "type": "upgrade",
+          "safe_type": "Replay Feature",
+          "label": "Unlock the Alternate Character Route",
+          "missable": false,
+          "levels": {
+            "1": "A cleared result file changes the next campaign start.",
+            "2": "Complete any difficulty, reload its result data, and accept the alternate-character prompt.",
+            "3": "Save after the first clear, choose New Game from that same result file, and answer yes when the alternate-character option appears. Verify the campaign starts under the alternate model and retain a separate save before overwriting anything."
+          }
+        },
+        {
+          "id": "unlock-alt-character-clear",
+          "type": "optional",
+          "safe_type": "Replay Feature",
+          "label": "Complete the Alternate Character Route",
+          "missable": false,
+          "levels": {
+            "1": "The replay option should be carried through the entire route.",
+            "2": "Finish one full campaign after selecting the alternate playable character.",
+            "3": "Use the cleared result file, select the alternate-character option, verify the changed starting inventory, then complete every physical section and save the result. The route structure is shared, so do not expose character or plot identities in public hints."
+          }
+        },
+        {
+          "id": "unlock-title-colors",
+          "type": "upgrade",
+          "safe_type": "Display Extra",
+          "label": "Unlock and Test the Title Colors",
+          "missable": false,
+          "levels": {
+            "1": "The first clear adds a cosmetic title-screen option.",
+            "2": "Finish once, return to the title screen, and cycle its available color presentation.",
+            "3": "After saving a completed result, return to the title screen and use the newly enabled color-changing input or option. Capture every distinct color state and confirm it remains available after a cold boot."
+          }
+        },
+        {
+          "id": "unlock-easy-a",
+          "type": "upgrade",
+          "safe_type": "Starting Loadout",
+          "label": "So Sweet A Reward",
+          "missable": false,
+          "levels": {
+            "1": "A strong So Sweet result expands the next starting inventory.",
+            "2": "Earn at least A on So Sweet to begin with all handguns and the Shotgun.",
+            "3": "Finish So Sweet above 65 points, save the result, and start a new game from it. Verify the standard, silenced, and semi-automatic handguns plus Shotgun are available at the opening inventory."
+          }
+        },
+        {
+          "id": "unlock-easy-s",
+          "type": "upgrade",
+          "safe_type": "Starting Loadout",
+          "label": "So Sweet S Reward",
+          "missable": false,
+          "levels": {
+            "1": "The top So Sweet result adds nearly the complete conventional arsenal.",
+            "2": "Earn S on So Sweet to start with every weapon except the Charged Particle Rifle.",
+            "3": "Finish So Sweet above 90 points, save the result, and load a new game from it. Verify all seven conventional firearms are present and the energy rifle is absent; record ammunition quantities separately."
+          }
+        },
+        {
+          "id": "unlock-normal-a",
+          "type": "upgrade",
+          "safe_type": "Starting Loadout",
+          "label": "Recommend A Reward",
+          "missable": false,
+          "levels": {
+            "1": "A strong middle-mode result matches the broad So Sweet reward.",
+            "2": "Earn at least A on Recommend to start with every weapon except the Charged Particle Rifle.",
+            "3": "Finish Recommend above 65 points, preserve the result file, then start a new campaign from it. Confirm all conventional firearms appear and the laboratory energy rifle remains excluded."
+          }
+        },
+        {
+          "id": "unlock-normal-s",
+          "type": "upgrade",
+          "safe_type": "Starting Loadout",
+          "label": "Recommend S Reward",
+          "missable": false,
+          "levels": {
+            "1": "The highest middle-mode result adds unlimited conventional ammunition.",
+            "2": "Earn S on Recommend for all conventional weapons with unlimited ammunition.",
+            "3": "Finish Recommend above 90 points and save the result. Begin a replay, verify the seven non-energy weapons are present, fire and reload each, and confirm their ammunition does not decrease; the Charged Particle Rifle is not part of this tier."
+          }
+        },
+        {
+          "id": "unlock-extreme-a",
+          "type": "upgrade",
+          "safe_type": "Starting Loadout",
+          "label": "Extreme A Reward",
+          "missable": false,
+          "levels": {
+            "1": "A strong hardest-mode result grants the same unlimited conventional set.",
+            "2": "Earn at least A on Extreme for all conventional weapons with unlimited ammunition.",
+            "3": "Finish Extreme above 65 points, save the result, and begin a replay from it. Test all seven conventional firearms for non-decreasing ammunition and confirm the energy rifle is still excluded."
+          }
+        },
+        {
+          "id": "unlock-extreme-s",
+          "type": "upgrade",
+          "safe_type": "Starting Loadout",
+          "label": "Extreme S Reward",
+          "missable": false,
+          "levels": {
+            "1": "The final reward removes ammunition limits from the complete arsenal.",
+            "2": "Earn S on Extreme to start with every weapon and unlimited ammunition.",
+            "3": "Finish Extreme above 90 points, retain the result save, and begin a replay. Verify all eight weapons, including the Charged Particle Rifle, are available; fire each repeatedly and confirm no ammunition or energy depletion."
+          }
+        },
+        {
+          "id": "mastery-all-ranks",
+          "type": "optional",
+          "safe_type": "Completion Record",
+          "label": "Archive Every Rank Tier",
+          "missable": false,
+          "levels": {
+            "1": "The result system contains four distinct displayed grades.",
+            "2": "Preserve separate S, A, B, and C result screens without sacrificing unlock data.",
+            "3": "Use cloned memory cards: keep the Extreme S file untouched, then tune score categories on copies to produce A, B, and C. Capture the exact point total and five base factors for every grade."
+          }
+        },
+        {
+          "id": "mastery-all-controls",
+          "type": "optional",
+          "safe_type": "Completion Record",
+          "label": "Archive Every Supported Control Route",
+          "missable": false,
+          "levels": {
+            "1": "The release supports pad, light gun, and mouse configurations.",
+            "2": "Complete a verified encounter using DualShock 2, GunCon 2, and USB mouse input.",
+            "3": "Keep one configuration record per device, including hardware, display, calibration, region, and sensitivity. Complete the same early encounter with each and compare only input behavior; a full three-device campaign clear is unnecessary."
+          }
+        },
+        {
+          "id": "mastery-complete-ledger",
+          "type": "optional",
+          "safe_type": "Completion Record",
+          "label": "Finalize the 100% Ledger",
+          "missable": false,
+          "levels": {
+            "1": "The final archive joins campaign, collection, control, rank, and reward evidence.",
+            "2": "Confirm three difficulty clears, alternate replay, 19 files, 6 maps, 8 weapons, and every rank reward.",
+            "3": "Cross-check every item ID in this pack, retain the Extreme S reward save plus clean backups, capture all four ranks and title colors, and verify no file, map, weapon, control route, difficulty, replay option, or starting-loadout tier remains unchecked."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Protect the Extreme S result file",
+        "why": "It is the definitive all-weapons unlimited-ammunition unlock state."
+      }
+    }
+  ]
+}

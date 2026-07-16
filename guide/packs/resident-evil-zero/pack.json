@@ -1,0 +1,2285 @@
+{
+  "id": "resident-evil-zero",
+  "game": "Resident Evil Zero HD Remaster (2016)",
+  "target": "100% completion of the selected Windows HD Remaster route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "setup",
+      "name": "PC Route and Save Architecture",
+      "location_cue": "The Windows title screen, settings, save slots, inventory, partner commands, and map.",
+      "note": "Separate difficulty chains before earning file-bound rewards.",
+      "items": [
+        {
+          "id": "setup-pc",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Windows HD Remaster",
+          "missable": false,
+          "levels": {
+            "1": "Choose the edition that includes the remaster-only extra mode.",
+            "2": "Run Resident Evil Zero HD Remaster natively on Windows.",
+            "3": "Install the Windows HD Remaster and verify that Wesker Mode and the costume Suitcase are present in the menus or documented unlock flow. No console-exclusive campaign, mode, item, or costume requires a second platform."
+          }
+        },
+        {
+          "id": "setup-clear-chain",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Keep One Clear-Data Chain per Difficulty",
+          "missable": false,
+          "levels": {
+            "1": "Bonus rewards attach to the difficulty of the completed file.",
+            "2": "Maintain separate Easy, Normal, and Hard clear-data slots.",
+            "3": "Start one save chain on each difficulty and never overwrite it with another setting. Load the file marked Clear to enter Leech Hunter or begin a rewarded replay; weapons and ammunition earned there remain tied to that chain."
+          }
+        },
+        {
+          "id": "setup-drop-map",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Build a Safe Item Depot",
+          "missable": false,
+          "levels": {
+            "1": "There are no storage boxes, but dropped objects remain mapped.",
+            "2": "Use the Training Facility main hall as the central drop point.",
+            "3": "Place spare weapons, ammunition, healing supplies, and long-term keys around the main-hall perimeter without stacking too many objects in one room. Check the map icons after every drop, and move the Hookshot forward whenever its next use approaches."
+          }
+        },
+        {
+          "id": "setup-partners",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Use Both Partner Control Styles",
+          "missable": false,
+          "levels": {
+            "1": "Several mechanisms require separation and rapid switching.",
+            "2": "Practice Team, Solo, Attack, Idle, exchange, and character switching.",
+            "3": "In a cleared room, switch the lead character, order the partner to follow or wait, exchange a two-slot weapon, and move both independently. Keep the idle partner armed when separated because an off-screen grab can still empty their health."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up the first save now",
+        "why": "Clear-data rewards and difficulty cannot be freely transferred."
+      }
+    },
+    {
+      "id": "campaigns",
+      "name": "Campaign Difficulties, Ranks, and Outcome",
+      "location_cue": "The new-game difficulty selector and post-clear result screen.",
+      "note": "Complete every setting and preserve both timed rank bands.",
+      "items": [
+        {
+          "id": "campaign-easy",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Clear Easy",
+          "missable": false,
+          "levels": {
+            "1": "Each setting has its own supplies and reward-bearing save chain.",
+            "2": "Finish the campaign on Easy and save the Clear file.",
+            "3": "Select Easy for a fresh game, complete every physical region, and save the result into its own slot. Reload the Clear file once to verify its Extra Game options and keep later Leech Hunter rewards on that same difficulty."
+          }
+        },
+        {
+          "id": "campaign-normal",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Clear Normal",
+          "missable": false,
+          "levels": {
+            "1": "Each setting has its own supplies and reward-bearing save chain.",
+            "2": "Finish the campaign on Normal and save the Clear file.",
+            "3": "Select Normal for a fresh game, complete every physical region, and save the result into its own slot. Reload the Clear file once to verify its Extra Game options and keep later Leech Hunter rewards on that same difficulty."
+          }
+        },
+        {
+          "id": "campaign-hard",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Clear Hard",
+          "missable": false,
+          "levels": {
+            "1": "Each setting has its own supplies and reward-bearing save chain.",
+            "2": "Finish the campaign on Hard and save the Clear file.",
+            "3": "Select Hard for a fresh game, complete every physical region, and save the result into its own slot. Reload the Clear file once to verify its Extra Game options and keep later Leech Hunter rewards on that same difficulty."
+          }
+        },
+        {
+          "id": "campaign-s-rank",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Earn Campaign Rank S",
+          "missable": false,
+          "levels": {
+            "1": "The highest result depends only on the completion clock.",
+            "2": "Finish Normal or Hard in less than three hours thirty minutes.",
+            "3": "Use an established Normal or Hard clear route, stage essential two-slot tools near their next doors, pause when planning, and cross the final gate before 3:30:00. Save the Clear result separately and verify both timed weapons are available."
+          }
+        },
+        {
+          "id": "campaign-a-rank",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Earn Campaign Rank A",
+          "missable": false,
+          "levels": {
+            "1": "A second time band awards the automatic weapon separately.",
+            "2": "Finish Normal or Hard between three-thirty and five hours.",
+            "3": "Use Normal or Hard and finish after 3:30:00 but before 5:00:00, then preserve that result screen and Clear file. If Rank S already granted the same lower-tier reward, still record the A result as its own completion variant."
+          }
+        },
+        {
+          "id": "campaign-ending",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Complete the Campaign Outcome",
+          "missable": false,
+          "levels": {
+            "1": "This route has one mechanical completion outcome.",
+            "2": "Open the final four locks and finish the last arena.",
+            "3": "Carry both Shaft Keys into the final arena, operate the left and right controls with separate characters, then activate the four exposed locks in southwest, northwest, southeast, west order. Finish the remaining mechanical objective before the timer expires and save the Clear data."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep rank attempts in fresh slots",
+        "why": "A slower completion can overwrite a useful rewarded Clear file."
+      }
+    },
+    {
+      "id": "train",
+      "name": "Ecliptic Express",
+      "location_cue": "The multi-car passenger train with cabins, dining car, roof, undercarriage, and brake controls.",
+      "note": "Finish every cabin and file before activating both brake panels.",
+      "items": [
+        {
+          "id": "train-01-dining-car-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Dining Car Key",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At dining-car body, obtain or complete Dining Car Key; use it to open restaurant.",
+            "3": "Collect Dining Car Key from dining-car body. Inspect it for any hidden component, then carry it to the open restaurant interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "train-02-conductor-s-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Conductor's Key",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At roof Ice Pick route, obtain or complete Conductor's Key; use it to open conductor office.",
+            "3": "Collect Conductor's Key from roof Ice Pick route. Inspect it for any hidden component, then carry it to the open conductor office interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "train-03-ice-pick",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Ice Pick",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At service lift transfer, obtain or complete Ice Pick; use it to free kitchen door.",
+            "3": "Collect Ice Pick from service lift transfer. Inspect it for any hidden component, then carry it to the free kitchen door interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "train-04-gold-ring",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Gold Ring",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At train route pickup, obtain or complete Gold Ring; use it to attach Briefcase.",
+            "3": "Collect Gold Ring from train route pickup. Inspect it for any hidden component, then carry it to the attach Briefcase interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "train-05-silver-ring",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Silver Ring",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At Jewelry Box, obtain or complete Silver Ring; use it to attach Briefcase.",
+            "3": "Collect Silver Ring from Jewelry Box. Inspect it for any hidden component, then carry it to the attach Briefcase interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "train-06-briefcase",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Briefcase",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At inspect and add rings, obtain or complete Briefcase; use it to obtain Blue Keycard.",
+            "3": "Inspect the Briefcase, rotate it to its two circular recesses, and install the Gold and Silver Rings. Open it, take the Blue Keycard, and use that card at the reader blocking the forward train carriage."
+          }
+        },
+        {
+          "id": "train-07-panel-opener",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Panel Opener",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At conductor office, obtain or complete Panel Opener; use it to open floor hatch.",
+            "3": "Collect Panel Opener from conductor office. Inspect it for any hidden component, then carry it to the open floor hatch interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "train-08-hookshot",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Hookshot",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At rear deck, obtain or complete Hookshot; use it to keep through laboratory.",
+            "3": "Take the Hookshot from the rear deck and read its manual. Use it at the train window, training-facility roof route, church roof, and laboratory opening; after its final cable-car use, leave it permanently behind."
+          }
+        },
+        {
+          "id": "train-09-magnetic-card",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Magnetic Card",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At under-train route, obtain or complete Magnetic Card; use it to activate brakes.",
+            "3": "Collect Magnetic Card from under-train route. Inspect it for any hidden component, then carry it to the activate brakes interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "train-10-brake-controls",
+          "type": "lock",
+          "safe_type": "Key Item",
+          "label": "brake controls",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At displayed sum target, obtain or complete brake controls; use it to ten digits exactly.",
+            "3": "Insert the Magnetic Card at the rear panel, read the target total shown for the current attempt, and enter exactly ten digits whose sum equals it. Switch to the front control and repeat for its displayed target before time expires."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before inserting the Magnetic Card",
+        "why": "The brake sequence ends train exploration and leaves missed pickups behind."
+      },
+      "point_of_no_return": {
+        "title": "Emergency brakes ahead",
+        "why": "Completing both panels permanently ends access to the train."
+      }
+    },
+    {
+      "id": "training-facility",
+      "name": "Training Facility",
+      "location_cue": "The broad stone main hall surrounded by classrooms, library, living spaces, clock tower, and observatory.",
+      "note": "Use the main hall as an item depot and finish every optional room.",
+      "items": [
+        {
+          "id": "training-01-crank-handle",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Crank Handle",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At living room cabinet, obtain or complete Crank Handle; use it to operate library lift.",
+            "3": "Collect Crank Handle from living room cabinet. Inspect it for any hidden component, then carry it to the operate library lift interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "training-02-iron-needle",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Iron Needle",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At clock-tower cage, obtain or complete Iron Needle; use it to set clock 8:15.",
+            "3": "Collect the Iron Needle from the upper cage, install it in the clock face, set the hour hand to VIII and the minute hand to III, and confirm 8:15 to release both timed doors."
+          }
+        },
+        {
+          "id": "training-03-microfilm-a",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Microfilm A",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At library desk, obtain or complete Microfilm A; use it to use projector.",
+            "3": "Collect Microfilm A from library desk. Inspect it for any hidden component, then carry it to the use projector interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "training-04-microfilm-b",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Microfilm B",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At meeting-room fireplace, obtain or complete Microfilm B; use it to use projector.",
+            "3": "Collect Microfilm B from meeting-room fireplace. Inspect it for any hidden component, then carry it to the use projector interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "training-05-mo-disk",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "MO Disk",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At projector output, obtain or complete MO Disk; use it to auditorium podium.",
+            "3": "Collect MO Disk from projector output. Inspect it for any hidden component, then carry it to the auditorium podium interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "training-06-desk-code",
+          "type": "lock",
+          "safe_type": "Key Item",
+          "label": "desk code",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At random two symbols, obtain or complete desk code; use it to press matching seats together.",
+            "3": "Insert the MO Disk at the auditorium podium and note the randomized two-symbol result. Use the Microfilm Image to map each symbol to a seat, position one character at each console, and press both in sequence."
+          }
+        },
+        {
+          "id": "training-07-chess-puzzle",
+          "type": "lock",
+          "safe_type": "Key Item",
+          "label": "chess puzzle",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At move white king, obtain or complete chess puzzle; use it to down3 right1 up2.",
+            "3": "Study the small desk board without touching the floor pieces. From the fixed camera view, push only the white king down three squares, right one, then up two; moving another piece releases poison."
+          }
+        },
+        {
+          "id": "training-08-book-of-evil",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Book of Evil",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At chess compartment, obtain or complete Book of Evil; use it to inspect for Black Wing.",
+            "3": "Collect Book of Evil from chess compartment. Inspect it for any hidden component, then carry it to the inspect for Black Wing interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "training-09-book-of-good",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Book of Good",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At facility route, obtain or complete Book of Good; use it to inspect for Angel Wings.",
+            "3": "Collect Book of Good from facility route. Inspect it for any hidden component, then carry it to the inspect for Angel Wings interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "training-10-statue-scale",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "statue scale",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At complete both statues, obtain or complete statue scale; use it to balance scale.",
+            "3": "Inspect both books for their wings, attach Angel Wings to the White Statue and Black Wing to the Black Statue, then place the completed good and evil figures on the main-hall balance to open the rear passage."
+          }
+        },
+        {
+          "id": "training-11-power-regulator",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "power regulator",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At set seventy, obtain or complete power regulator; use it to all up except third.",
+            "3": "At the basement regulator, set switches one, two, four, and five upward and the third downward. Confirm 70 to release the chamber door, a remote corridor door, and the steam-blocked route."
+          }
+        },
+        {
+          "id": "training-12-duralumin-case",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Duralumin Case",
+          "missable": true,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At weapons locker, obtain or complete Duralumin Case; use it to enter 385.",
+            "3": "Use the Locker Key in the basement weapons room, take the case, inspect its marked corner, and enter 385. Remove the Handgun Parts and combine them with either character's handgun; repeat on another save for both custom models."
+          }
+        },
+        {
+          "id": "training-13-handgun-parts",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Handgun Parts",
+          "missable": true,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At inside Duralumin Case, obtain or complete Handgun Parts; use it to customize either handgun.",
+            "3": "Collect Handgun Parts from inside Duralumin Case. Inspect it for any hidden component, then carry it to the customize either handgun interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "training-14-animal-torches",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "animal torches",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At weakest to strongest, obtain or complete animal torches; use it to deer wolf horse bear snake eagle.",
+            "3": "Use Billy's filled Lighter and ignite the six statues from weakest to strongest: Deer, Wolf, Horse, Bear, Snake, Eagle. If the chain resets, begin again at Deer without leaving the room."
+          }
+        },
+        {
+          "id": "training-15-water-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Water Key",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At basement combat cage, obtain or complete Water Key; use it to open blue doors.",
+            "3": "Collect Water Key from basement combat cage. Inspect it for any hidden component, then carry it to the open blue doors interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "training-16-piano-room",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "piano room",
+          "missable": true,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At Billy plays correctly, obtain or complete piano room; use it to retrieve battery.",
+            "3": "Have Rebecca attempt the piano once, then switch to Billy and play it correctly. Send Rebecca into the opened alcove, collect its supplies and Battery, and switch back before Billy stops playing and closes the wall."
+          }
+        },
+        {
+          "id": "training-17-unity-tablet",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Unity Tablet",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At prison-bunks fireplace, obtain or complete Unity Tablet; use it to observatory podium.",
+            "3": "Collect Unity Tablet from prison-bunks fireplace. Inspect it for any hidden component, then carry it to the observatory podium interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "training-18-obedience-tablet",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Obedience Tablet",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At facility route, obtain or complete Obedience Tablet; use it to observatory podium.",
+            "3": "Collect Obedience Tablet from facility route. Inspect it for any hidden component, then carry it to the observatory podium interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "training-19-discipline-tablet",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Discipline Tablet",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At courtyard raised crate, obtain or complete Discipline Tablet; use it to observatory podium.",
+            "3": "Collect Discipline Tablet from courtyard raised crate. Inspect it for any hidden component, then carry it to the observatory podium interaction and use it from the correct character's inventory before leaving the region."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before placing all three tablets",
+        "why": "The observatory mechanism moves the route into the next region."
+      },
+      "point_of_no_return": {
+        "title": "Observatory mechanism ahead",
+        "why": "Using every tablet changes access and begins the laboratory route."
+      }
+    },
+    {
+      "id": "laboratory",
+      "name": "Laboratory",
+      "location_cue": "The church, roof opening, chemical rooms, colored bust doors, breeding room, and cable-car platforms.",
+      "note": "Keep the Hookshot and both coils until the cable car is powered.",
+      "items": [
+        {
+          "id": "laboratory-01-hookshot-ceiling",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Hookshot ceiling",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At reference room, obtain or complete Hookshot ceiling; use it to split characters.",
+            "3": "Collect Hookshot ceiling from reference room. Inspect it for any hidden component, then carry it to the split characters interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "laboratory-02-stripping-agent",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Stripping Agent",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At green plus red chemicals, obtain or complete Stripping Agent; use it to open Leech Capsule.",
+            "3": "With Rebecca's Mixing Set, combine Green Chemical and Red Chemical. Apply the resulting Stripping Agent to the Leech Capsule, remove the Blue Leech Charm, and send the needed object through the dumbwaiter when the partners are separated."
+          }
+        },
+        {
+          "id": "laboratory-03-blue-leech-charm",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Blue Leech Charm",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At opened capsule, obtain or complete Blue Leech Charm; use it to blue bust door.",
+            "3": "Collect Blue Leech Charm from opened capsule. Inspect it for any hidden component, then carry it to the blue bust door interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "laboratory-04-green-leech-charm",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Green Leech Charm",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At private art room, obtain or complete Green Leech Charm; use it to green bust door.",
+            "3": "Collect Green Leech Charm from private art room. Inspect it for any hidden component, then carry it to the green bust door interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "laboratory-05-sterilizing-agent",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Sterilizing Agent",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At morgue floor, obtain or complete Sterilizing Agent; use it to clear gas chamber.",
+            "3": "Collect Sterilizing Agent from morgue floor. Inspect it for any hidden component, then carry it to the clear gas chamber interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "laboratory-06-breeding-room-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Breeding Room Key",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At gas chamber, obtain or complete Breeding Room Key; use it to open breeding room.",
+            "3": "Collect Breeding Room Key from gas chamber. Inspect it for any hidden component, then carry it to the open breeding room interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "laboratory-07-dial",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Dial",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At breeding-room cage, obtain or complete Dial; use it to install lower door.",
+            "3": "Collect Dial from breeding-room cage. Inspect it for any hidden component, then carry it to the install lower door interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "laboratory-08-dial-code",
+          "type": "lock",
+          "safe_type": "Key Item",
+          "label": "dial code",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At growth record numbers, obtain or complete dial code; use it to 4863.",
+            "3": "Fit the Dial into the lower laboratory door and enter 4863, the emphasized sequence from the Leech Growth Records. Open the door, then keep both regulator coils for the cable-car console."
+          }
+        },
+        {
+          "id": "laboratory-09-input-regulator-coil",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Input Regulator Coil",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At lower office, obtain or complete Input Regulator Coil; use it to cable-car console.",
+            "3": "Collect Input Regulator Coil from lower office. Inspect it for any hidden component, then carry it to the cable-car console interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "laboratory-10-output-regulator-coil",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Output Regulator Coil",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At platform mechanism, obtain or complete Output Regulator Coil; use it to cable-car console.",
+            "3": "Collect Output Regulator Coil from platform mechanism. Inspect it for any hidden component, then carry it to the cable-car console interaction and use it from the correct character's inventory before leaving the region."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before boarding the cable car",
+        "why": "Partner inventory and dropped objects may become temporarily inaccessible."
+      },
+      "point_of_no_return": {
+        "title": "Cable car departure",
+        "why": "Boarding advances to the factory and separates the current inventory layout."
+      }
+    },
+    {
+      "id": "factory",
+      "name": "Factory",
+      "location_cue": "The industrial turntable, access lift, control room, and descending platforms.",
+      "note": "Search each landing before committing the restored platform.",
+      "items": [
+        {
+          "id": "factory-01-elevator-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Elevator Key",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At factory route, obtain or complete Elevator Key; use it to operate access lift.",
+            "3": "Collect Elevator Key from factory route. Inspect it for any hidden component, then carry it to the operate access lift interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "factory-02-up-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Up Key",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At factory route, obtain or complete Up Key; use it to raise turntable.",
+            "3": "Collect Up Key from factory route. Inspect it for any hidden component, then carry it to the raise turntable interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "factory-03-control-panel",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "control panel",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At restore platform alignment, obtain or complete control panel; use it to open lower route.",
+            "3": "Collect control panel from restore platform alignment. Inspect it for any hidden component, then carry it to the open lower route interaction and use it from the correct character's inventory before leaving the region."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before the lower lift route",
+        "why": "The next transition leads away from the factory's ordinary sweep."
+      }
+    },
+    {
+      "id": "treatment-plant",
+      "name": "Treatment Plant",
+      "location_cue": "The water pool, pipe rooms, gondola controls, chemical laboratory, forklift, and turbine door.",
+      "note": "Bring both characters and all late supplies together before the Keycard reader.",
+      "items": [
+        {
+          "id": "treatment-01-handle",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Handle",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At water-pool box bridge, obtain or complete Handle; use it to open round door.",
+            "3": "Collect Handle from water-pool box bridge. Inspect it for any hidden component, then carry it to the open round door interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "treatment-02-water-pool-puzzle",
+          "type": "lock",
+          "safe_type": "Key Item",
+          "label": "water-pool puzzle",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At Billy pushes crates, obtain or complete water-pool puzzle; use it to Rebecca rotates gate.",
+            "3": "Put Billy in the empty pool and Rebecca at the console. Move the metal crate to the right wall, turn the gate right, move both upper wooden crates toward the bottom, push the metal crate to the top, turn left, align the last wooden crate, then fill the pool."
+          }
+        },
+        {
+          "id": "treatment-03-water-pool-metal-crate",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "water-pool metal crate",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At right then top, obtain or complete water-pool metal crate; use it to never bridge.",
+            "3": "Collect water-pool metal crate from right then top. Inspect it for any hidden component, then carry it to the never bridge interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "treatment-04-water-pool-wooden-crates",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "water-pool wooden crates",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At align bottom row, obtain or complete water-pool wooden crates; use it to fill pool.",
+            "3": "Collect water-pool wooden crates from align bottom row. Inspect it for any hidden component, then carry it to the fill pool interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "treatment-05-motherboard",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Motherboard",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At upper wastewater pool, obtain or complete Motherboard; use it to install gondola console.",
+            "3": "Collect Motherboard from upper wastewater pool. Inspect it for any hidden component, then carry it to the install gondola console interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "treatment-06-empty-battery",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Empty Battery",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At plant laboratory shelf, obtain or complete Empty Battery; use it to add Battery Fluid.",
+            "3": "Collect Empty Battery from plant laboratory shelf. Inspect it for any hidden component, then carry it to the add Battery Fluid interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "treatment-07-sulfuric-acid",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Sulfuric Acid",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At red plus blue chemicals, obtain or complete Sulfuric Acid; use it to combine Industrial Water.",
+            "3": "Use Rebecca's Mixing Set to combine Red Chemical with Blue Chemical. Keep the resulting Sulfuric Acid until Industrial Water is available; neither Billy nor a character without the Mixing Set can perform this step."
+          }
+        },
+        {
+          "id": "treatment-08-battery-fluid",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Battery Fluid",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At acid plus Industrial Water, obtain or complete Battery Fluid; use it to fill Empty Battery.",
+            "3": "Combine Sulfuric Acid with Industrial Water in Rebecca's inventory. Add the Battery Fluid to the Empty Battery, producing the Hi-Power Battery needed by the forklift."
+          }
+        },
+        {
+          "id": "treatment-09-hi-power-battery",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Hi-Power Battery",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At completed battery, obtain or complete Hi-Power Battery; use it to power forklift.",
+            "3": "Collect Hi-Power Battery from completed battery. Inspect it for any hidden component, then carry it to the power forklift interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "treatment-10-keycard",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Keycard",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At forklift ledge, obtain or complete Keycard; use it to open turbine door.",
+            "3": "Collect Keycard from forklift ledge. Inspect it for any hidden component, then carry it to the open turbine door interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "treatment-11-shaft-key-l",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Shaft Key L",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At late arena, obtain or complete Shaft Key L; use it to left gate control.",
+            "3": "Collect Shaft Key L from late arena. Inspect it for any hidden component, then carry it to the left gate control interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "treatment-12-shaft-key-r",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Shaft Key R",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At late arena, obtain or complete Shaft Key R; use it to right gate control.",
+            "3": "Collect Shaft Key R from late arena. Inspect it for any hidden component, then carry it to the right gate control interaction and use it from the correct character's inventory before leaving the region."
+          }
+        },
+        {
+          "id": "treatment-13-gate-locks",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "gate locks",
+          "missable": false,
+          "levels": {
+            "1": "A nearby file, partner route, or object points toward this step.",
+            "2": "At southwest northwest southeast west, obtain or complete gate locks; use it to activate in order.",
+            "3": "Give one Shaft Key to each character and operate both side controls. During the timed gate sequence, turn the southwest lock first, northwest second, southeast third, and west last; do not wander between controls."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before using the Keycard",
+        "why": "The turbine door begins the final route and closes normal cleanup."
+      },
+      "point_of_no_return": {
+        "title": "Turbine door ahead",
+        "why": "Use of the Keycard commits the final sequence."
+      }
+    },
+    {
+      "id": "files",
+      "name": "Complete File Archive",
+      "location_cue": "Readable papers, manuals, desks, bunks, bodies, and automatic route entries across every region.",
+      "note": "Open all twenty-nine entries before the last Keycard door.",
+      "items": [
+        {
+          "id": "file-01-player-s-manual-1",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Player's Manual 1",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Player's Manual 1 at starting inventory.",
+            "3": "Open the starting file menu and read the full first manual before moving. It is already present, so no room pickup will replace a missed menu check."
+          }
+        },
+        {
+          "id": "file-02-player-s-manual-2",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Player's Manual 2",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Player's Manual 2 at post-restaurant encounter.",
+            "3": "After the restaurant encounter and character pairing, open the newly added manual and scroll through every partner-control section before returning to play."
+          }
+        },
+        {
+          "id": "file-03-court-order-for-transportation",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Court Order for Transportation",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Court Order for Transportation at starting inventory.",
+            "3": "Open the starting file menu and read this separate document immediately. Confirm it remains listed beside the first manual."
+          }
+        },
+        {
+          "id": "file-04-hookshot-operator-s-manual",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Hookshot Operator's Manual",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Hookshot Operator's Manual at rear deck Hookshot.",
+            "3": "At rear deck Hookshot, inspect the readable object and take Hookshot Operator's Manual. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-05-investigation-orders",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Investigation Orders",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Investigation Orders at Room 201 bed.",
+            "3": "At Room 201 bed, inspect the readable object and take Investigation Orders. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-06-notice-to-supervisors",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Notice to Supervisors",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Notice to Supervisors at dining-car kitchen table.",
+            "3": "At dining-car kitchen table, inspect the readable object and take Notice to Supervisors. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-07-passenger-s-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Passenger's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Passenger's Diary at Room 202 chair.",
+            "3": "At Room 202 chair, inspect the readable object and take Passenger's Diary. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-08-brake-operation-manual",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Brake Operation Manual",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Brake Operation Manual at driver compartment automatic.",
+            "3": "Enter the driver compartment and let the manual register automatically. Read all three control steps before sending a character toward the rear deck."
+          }
+        },
+        {
+          "id": "file-09-note-from-conductor",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Note from Conductor",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Note from Conductor at conductor office floor.",
+            "3": "At conductor office floor, inspect the readable object and take Note from Conductor. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-10-regulations-for-trainees",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Regulations for Trainees",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Regulations for Trainees at auditorium desk.",
+            "3": "At auditorium desk, inspect the readable object and take Regulations for Trainees. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-11-notice-to-all-staff",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Notice to All Staff",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Notice to All Staff at living-room coffee table.",
+            "3": "At living-room coffee table, inspect the readable object and take Notice to All Staff. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-12-marcus-diary-1",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Marcus' Diary 1",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Marcus' Diary 1 at chess office compartment.",
+            "3": "At chess office compartment, inspect the readable object and take Marcus' Diary 1. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-13-assistant-director-s-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Assistant Director's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Assistant Director's Diary at moose office desk.",
+            "3": "At moose office desk, inspect the readable object and take Assistant Director's Diary. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-14-about-the-power-regulator",
+          "type": "file",
+          "safe_type": "File",
+          "label": "About the Power Regulator",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read About the Power Regulator at torture chamber floor.",
+            "3": "At torture chamber floor, inspect the readable object and take About the Power Regulator. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-15-a-verse-of-poetry",
+          "type": "file",
+          "safe_type": "File",
+          "label": "A Verse of Poetry",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read A Verse of Poetry at second-floor meeting-room table.",
+            "3": "At second-floor meeting-room table, inspect the readable object and take A Verse of Poetry. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-16-management-trainee-s-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Management Trainee's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Management Trainee's Diary at prison bunks table.",
+            "3": "At prison bunks table, inspect the readable object and take Management Trainee's Diary. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-17-microfilm-image",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Microfilm Image",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Microfilm Image at projector after both films.",
+            "3": "At projector after both films, inspect the readable object and take Microfilm Image. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-18-inmates-list",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Inmates List",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Inmates List at basement office desk.",
+            "3": "At basement office desk, inspect the readable object and take Inmates List. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-19-1st-investigation-unit-notes",
+          "type": "file",
+          "safe_type": "File",
+          "label": "1st Investigation Unit Notes",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read 1st Investigation Unit Notes at infirmary bed cabinet.",
+            "3": "At infirmary bed cabinet, inspect the readable object and take 1st Investigation Unit Notes. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-20-marcus-diary-2",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Marcus' Diary 2",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Marcus' Diary 2 at laboratory reference-room desk.",
+            "3": "At laboratory reference-room desk, inspect the readable object and take Marcus' Diary 2. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-21-old-photograph",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Old Photograph",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Old Photograph at lower laboratory office shelf.",
+            "3": "At lower laboratory office shelf, inspect the readable object and take Old Photograph. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-22-investigator-s-report",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Investigator's Report",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Investigator's Report at laboratory operating table.",
+            "3": "At laboratory operating table, inspect the readable object and take Investigator's Report. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-23-leech-growth-records",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Leech Growth Records",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Leech Growth Records at gas-chamber table.",
+            "3": "At gas-chamber table, inspect the readable object and take Leech Growth Records. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-24-laboratory-manager-s-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Laboratory Manager's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Laboratory Manager's Diary at leech-storage chair.",
+            "3": "At leech-storage chair, inspect the readable object and take Laboratory Manager's Diary. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-25-b-o-w-report",
+          "type": "file",
+          "safe_type": "File",
+          "label": "B.O.W. Report",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read B.O.W. Report at breeding-room cages.",
+            "3": "At breeding-room cages, inspect the readable object and take B.O.W. Report. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-26-about-battery-fluid",
+          "type": "file",
+          "safe_type": "File",
+          "label": "About Battery Fluid",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read About Battery Fluid at treatment lodgings bed.",
+            "3": "At treatment lodgings bed, inspect the readable object and take About Battery Fluid. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-27-investigator-s-report-2",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Investigator's Report 2",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Investigator's Report 2 at upper pipe-room body.",
+            "3": "At upper pipe-room body, inspect the readable object and take Investigator's Report 2. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-28-treatment-plant-manager-s-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Treatment Plant Manager's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Treatment Plant Manager's Diary at gondola-room box.",
+            "3": "At gondola-room box, inspect the readable object and take Treatment Plant Manager's Diary. Open it from the file menu, scroll through every page, and confirm the title remains in the archive before crossing the next regional boundary."
+          }
+        },
+        {
+          "id": "file-29-gate-operation-manual",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Gate Operation Manual",
+          "missable": true,
+          "levels": {
+            "1": "Important papers cluster around workspaces, bunks, and puzzle equipment.",
+            "2": "Read Gate Operation Manual at automatic before gate controls.",
+            "3": "After the first late-arena phase, open the automatically added manual before touching a gate control. Memorize southwest, northwest, southeast, west."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Audit the file menu before the turbine door",
+        "why": "No chapter selection exists for a missed regional document."
+      }
+    },
+    {
+      "id": "weapons",
+      "name": "Weapons and Ammunition",
+      "location_cue": "Field pickups, crafting ingredients, rank rewards, and Leech Hunter reward files.",
+      "note": "Keep every weapon on one Normal-or-Hard clear-data chain.",
+      "items": [
+        {
+          "id": "weapon-01-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Knife",
+          "missable": false,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Knife from starting equipment.",
+            "3": "Retain a starting Knife, equip it, and defeat one ordinary enemy. Use a separate controlled encounter for the knife-only first-mimic challenge; partner gunfire must be disabled."
+          }
+        },
+        {
+          "id": "weapon-02-rebecca-s-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Rebecca's Handgun",
+          "missable": false,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Rebecca's Handgun from starting equipment.",
+            "3": "Acquire Rebecca's Handgun from starting equipment, make enough inventory room for its slot size, load compatible ammunition if required, and land one successful attack. Keep the weapon on the same reward-bearing clear-data chain."
+          }
+        },
+        {
+          "id": "weapon-03-billy-s-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Billy's Handgun",
+          "missable": false,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Billy's Handgun from Billy starting equipment.",
+            "3": "Acquire Billy's Handgun from Billy starting equipment, make enough inventory room for its slot size, load compatible ammunition if required, and land one successful attack. Keep the weapon on the same reward-bearing clear-data chain."
+          }
+        },
+        {
+          "id": "weapon-04-rebecca-s-custom-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Rebecca's Custom Handgun",
+          "missable": true,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Rebecca's Custom Handgun from combine handgun parts.",
+            "3": "Open the locked Duralumin Case with 385, remove the Handgun Parts, and combine them with Rebecca's Handgun. Fire the upgraded model once and preserve the same chain for the all-weapons record."
+          }
+        },
+        {
+          "id": "weapon-05-billy-s-custom-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Billy's Custom Handgun",
+          "missable": true,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Billy's Custom Handgun from combine handgun parts.",
+            "3": "Restore the pre-combination save or acquire the parts on another clear chain, then combine them with Billy's Handgun. Fire it once so both custom variants have been used."
+          }
+        },
+        {
+          "id": "weapon-06-molotov-cocktail",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Molotov Cocktail",
+          "missable": true,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Molotov Cocktail from bottle plus gas.",
+            "3": "Combine an Empty Bottle with a Gas Tank in either inventory. Throw one at an ordinary target and preserve several for fire-sensitive mimics and the knife-versus-fire challenge variants."
+          }
+        },
+        {
+          "id": "weapon-07-hunting-gun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Hunting Gun",
+          "missable": true,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Hunting Gun from train Room 101.",
+            "3": "Acquire Hunting Gun from train Room 101, make enough inventory room for its slot size, load compatible ammunition if required, and land one successful attack. Keep the weapon on the same reward-bearing clear-data chain."
+          }
+        },
+        {
+          "id": "weapon-08-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Shotgun from training storage room.",
+            "3": "Acquire Shotgun from training storage room, make enough inventory room for its slot size, load compatible ammunition if required, and land one successful attack. Keep the weapon on the same reward-bearing clear-data chain."
+          }
+        },
+        {
+          "id": "weapon-09-grenade-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade Launcher",
+          "missable": true,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Grenade Launcher from training art-room couch.",
+            "3": "Acquire Grenade Launcher from training art-room couch, make enough inventory room for its slot size, load compatible ammunition if required, and land one successful attack. Keep the weapon on the same reward-bearing clear-data chain."
+          }
+        },
+        {
+          "id": "weapon-10-magnum",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Magnum",
+          "missable": true,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Magnum from cable-car body.",
+            "3": "Acquire Magnum from cable-car body, make enough inventory room for its slot size, load compatible ammunition if required, and land one successful attack. Keep the weapon on the same reward-bearing clear-data chain."
+          }
+        },
+        {
+          "id": "weapon-11-magnum-revolver",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Magnum Revolver",
+          "missable": false,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Magnum Revolver from Leech B reward.",
+            "3": "Finish Leech Hunter with 90–99 charms on the target difficulty, save the reward into that Clear file, start a rewarded replay, and take the revolver from train Room 202."
+          }
+        },
+        {
+          "id": "weapon-12-rocket-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Rocket Launcher",
+          "missable": false,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Rocket Launcher from campaign S reward.",
+            "3": "Earn Campaign Rank S on Normal or Hard, save the result, and start a rewarded replay from that Clear file. Verify the launcher begins in Rebecca's inventory and fire it once."
+          }
+        },
+        {
+          "id": "weapon-13-sub-machinegun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Sub-Machinegun",
+          "missable": false,
+          "levels": {
+            "1": "The complete arsenal spans field pickups, crafting, ranks, and bonus rewards.",
+            "2": "Acquire Sub-Machinegun from campaign A reward.",
+            "3": "Earn Campaign Rank A or S on Normal or Hard, save the result, and begin a rewarded replay. Verify the automatic weapon starts with Billy and expend part of one magazine."
+          }
+        },
+        {
+          "id": "ammo-01-handgun-ammo",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Handgun Ammo",
+          "missable": false,
+          "levels": {
+            "1": "Search side rooms and enemy-heavy routes for every ammunition family.",
+            "2": "Collect Handgun Ammo and load its compatible weapon.",
+            "3": "Pick up Handgun Ammo on the relevant difficulty, transfer or drop it safely if inventory is full, then load and fire the compatible weapon once. For grenade types, cycle standard, acid, and napalm ammunition separately."
+          }
+        },
+        {
+          "id": "ammo-02-shotgun-ammo",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Shotgun Ammo",
+          "missable": false,
+          "levels": {
+            "1": "Search side rooms and enemy-heavy routes for every ammunition family.",
+            "2": "Collect Shotgun Ammo and load its compatible weapon.",
+            "3": "Pick up Shotgun Ammo on the relevant difficulty, transfer or drop it safely if inventory is full, then load and fire the compatible weapon once. For grenade types, cycle standard, acid, and napalm ammunition separately."
+          }
+        },
+        {
+          "id": "ammo-03-grenades",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Grenades",
+          "missable": false,
+          "levels": {
+            "1": "Search side rooms and enemy-heavy routes for every ammunition family.",
+            "2": "Collect Grenades and load its compatible weapon.",
+            "3": "Pick up Grenades on the relevant difficulty, transfer or drop it safely if inventory is full, then load and fire the compatible weapon once. For grenade types, cycle standard, acid, and napalm ammunition separately."
+          }
+        },
+        {
+          "id": "ammo-04-acid-grenades",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Acid Grenades",
+          "missable": false,
+          "levels": {
+            "1": "Search side rooms and enemy-heavy routes for every ammunition family.",
+            "2": "Collect Acid Grenades and load its compatible weapon.",
+            "3": "Pick up Acid Grenades on the relevant difficulty, transfer or drop it safely if inventory is full, then load and fire the compatible weapon once. For grenade types, cycle standard, acid, and napalm ammunition separately."
+          }
+        },
+        {
+          "id": "ammo-05-napalm-grenades",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Napalm Grenades",
+          "missable": false,
+          "levels": {
+            "1": "Search side rooms and enemy-heavy routes for every ammunition family.",
+            "2": "Collect Napalm Grenades and load its compatible weapon.",
+            "3": "Pick up Napalm Grenades on the relevant difficulty, transfer or drop it safely if inventory is full, then load and fire the compatible weapon once. For grenade types, cycle standard, acid, and napalm ammunition separately."
+          }
+        },
+        {
+          "id": "ammo-06-magnum-ammo",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Magnum Ammo",
+          "missable": false,
+          "levels": {
+            "1": "Search side rooms and enemy-heavy routes for every ammunition family.",
+            "2": "Collect Magnum Ammo and load its compatible weapon.",
+            "3": "Pick up Magnum Ammo on the relevant difficulty, transfer or drop it safely if inventory is full, then load and fire the compatible weapon once. For grenade types, cycle standard, acid, and napalm ammunition separately."
+          }
+        },
+        {
+          "id": "ammo-07-machinegun-ammo",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Machinegun Ammo",
+          "missable": false,
+          "levels": {
+            "1": "Search side rooms and enemy-heavy routes for every ammunition family.",
+            "2": "Collect Machinegun Ammo and load its compatible weapon.",
+            "3": "Pick up Machinegun Ammo on the relevant difficulty, transfer or drop it safely if inventory is full, then load and fire the compatible weapon once. For grenade types, cycle standard, acid, and napalm ammunition separately."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Branch before combining Handgun Parts",
+        "why": "One parts case cannot create both custom models on a single uninterrupted branch."
+      }
+    },
+    {
+      "id": "leech-hunter",
+      "name": "Leech Hunter",
+      "location_cue": "The rearranged Training Facility loaded through Extra Game from a Clear file.",
+      "note": "Clear enemies before permanent charm stacks consume the inventory.",
+      "items": [
+        {
+          "id": "leech-01-unlock",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Unlock",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: complete any campaign.",
+            "3": "Complete any campaign, save the Clear file, load that file rather than choosing Extras from the title screen, and select Extra Game. Its difficulty and later rewards inherit from the loaded save."
+          }
+        },
+        {
+          "id": "leech-02-blue-charms",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Blue Charms",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: Billy only, fifty total.",
+            "3": "Control Billy for every Blue Leech Charm. Collect all fifty, remembering that each stack holds ten and cannot be dropped or exchanged after pickup."
+          }
+        },
+        {
+          "id": "leech-03-green-charms",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Green Charms",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: Rebecca only, fifty total.",
+            "3": "Control Rebecca for every Green Leech Charm. Collect all fifty, reserve five inventory slots, and keep her alive through the front-door exit because a lost character's charms do not count."
+          }
+        },
+        {
+          "id": "leech-04-stack-limit",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Stack Limit",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: ten per inventory slot.",
+            "3": "In Leech Hunter, satisfy ten per inventory slot. Finish by taking both surviving characters through the Training Facility front door, then save the displayed reward into the same Clear-data chain."
+          }
+        },
+        {
+          "id": "leech-05-charms-undroppable",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Charms Undroppable",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: after pickup.",
+            "3": "In Leech Hunter, satisfy after pickup. Finish by taking both surviving characters through the Training Facility front door, then save the displayed reward into the same Clear-data chain."
+          }
+        },
+        {
+          "id": "leech-06-rank-e",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Rank E",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: zero through twenty-nine, machinegun ammunition.",
+            "3": "In Leech Hunter, satisfy zero through twenty-nine, machinegun ammunition. Finish by taking both surviving characters through the Training Facility front door, then save the displayed reward into the same Clear-data chain."
+          }
+        },
+        {
+          "id": "leech-07-rank-d",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Rank D",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: thirty through fifty-nine, infinite handgun ammunition.",
+            "3": "In Leech Hunter, satisfy thirty through fifty-nine, infinite handgun ammunition. Finish by taking both surviving characters through the Training Facility front door, then save the displayed reward into the same Clear-data chain."
+          }
+        },
+        {
+          "id": "leech-08-rank-c",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Rank C",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: sixty through eighty-nine, infinite Hunting Gun.",
+            "3": "In Leech Hunter, satisfy sixty through eighty-nine, infinite Hunting Gun. Finish by taking both surviving characters through the Training Facility front door, then save the displayed reward into the same Clear-data chain."
+          }
+        },
+        {
+          "id": "leech-09-rank-b",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Rank B",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: ninety through ninety-nine, Magnum Revolver.",
+            "3": "In Leech Hunter, satisfy ninety through ninety-nine, Magnum Revolver. Finish by taking both surviving characters through the Training Facility front door, then save the displayed reward into the same Clear-data chain."
+          }
+        },
+        {
+          "id": "leech-10-rank-a",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Rank A",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: all one hundred, infinite all weapons.",
+            "3": "In Leech Hunter, satisfy all one hundred, infinite all weapons. Finish by taking both surviving characters through the Training Facility front door, then save the displayed reward into the same Clear-data chain."
+          }
+        },
+        {
+          "id": "leech-11-ninety-trigger",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Ninety Trigger",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: enemy respawn wave.",
+            "3": "Before reaching ninety combined charms, clear the map and stage loaded weapons near the finishing rooms. The ninetieth pickup repopulates several cleared rooms; defeat that new wave before exiting for the enemy-clear record."
+          }
+        },
+        {
+          "id": "leech-12-enemy-clear-challenge",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Enemy Clear Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: defeat every enemy, include respawn wave.",
+            "3": "Sweep every accessible room before collecting charms, then trigger the ninety-charm respawn wave and sweep the listed rooms again. Exit only after both passes contain no remaining enemies."
+          }
+        },
+        {
+          "id": "leech-13-single-color-challenge",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Single Color Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: collect fifty matching charms.",
+            "3": "In Leech Hunter, satisfy collect fifty matching charms. Finish by taking both surviving characters through the Training Facility front door, then save the displayed reward into the same Clear-data chain."
+          }
+        },
+        {
+          "id": "leech-14-exit",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Exit",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: training-hall front door, both characters alive.",
+            "3": "Bring both living characters to the Training Facility entrance with the intended charm total, gather any final nearby charms, and use the front door. Leaving or losing either character immediately ends the attempt and counts only surviving inventories."
+          }
+        },
+        {
+          "id": "leech-15-random-layouts",
+          "type": "optional",
+          "safe_type": "Leech Hunter Task",
+          "label": "Random Layouts",
+          "missable": false,
+          "levels": {
+            "1": "Inventory planning matters more as permanent charm stacks accumulate.",
+            "2": "Complete this Leech Hunter condition: multiple item patterns, multiple charm patterns.",
+            "3": "Begin repeated Leech Hunter attempts and identify the current weapon/item pattern and charm pattern from early rooms. Complete at least one clean run under every layout encountered; do not assume one map has fixed pickups."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save the Clear file before every attempt",
+        "why": "Exiting with the wrong total awards a different reward band."
+      },
+      "point_of_no_return": {
+        "title": "Front door ends the attempt",
+        "why": "Crossing it immediately scores surviving characters' carried charms."
+      }
+    },
+    {
+      "id": "wesker-mode",
+      "name": "Wesker Mode",
+      "location_cue": "The remaster-only campaign option with altered dash and charged gaze attacks.",
+      "note": "Finish the mode and record both special attacks before its final route.",
+      "items": [
+        {
+          "id": "wesker-01-unlock",
+          "type": "optional",
+          "safe_type": "Wesker Mode Task",
+          "label": "Unlock",
+          "missable": false,
+          "levels": {
+            "1": "The remaster-only route changes one partner's movement and attacks.",
+            "2": "In Wesker Mode, complete: complete campaign.",
+            "3": "Complete the main campaign, save the Clear file, and select Wesker Mode from the newly available menu. Keep this mode's completion on a separate slot from ordinary rank attempts."
+          }
+        },
+        {
+          "id": "wesker-02-replacement-character",
+          "type": "optional",
+          "safe_type": "Wesker Mode Task",
+          "label": "Replacement Character",
+          "missable": false,
+          "levels": {
+            "1": "The remaster-only route changes one partner's movement and attacks.",
+            "2": "In Wesker Mode, complete: Billy mechanics altered.",
+            "3": "Enter Wesker Mode and complete the mechanical requirement: Billy mechanics altered. Preserve the mode result in its own slot before returning to the ordinary campaign."
+          }
+        },
+        {
+          "id": "wesker-03-shadow-dash",
+          "type": "optional",
+          "safe_type": "Wesker Mode Task",
+          "label": "Shadow Dash",
+          "missable": false,
+          "levels": {
+            "1": "The remaster-only route changes one partner's movement and attacks.",
+            "2": "In Wesker Mode, complete: charged movement attack.",
+            "3": "Hold the dash input until charged, aim down a clear corridor, and release for the high-speed movement attack. Use it for traversal and at least one successful enemy hit."
+          }
+        },
+        {
+          "id": "wesker-04-death-stare",
+          "type": "optional",
+          "safe_type": "Wesker Mode Task",
+          "label": "Death Stare",
+          "missable": false,
+          "levels": {
+            "1": "The remaster-only route changes one partner's movement and attacks.",
+            "2": "In Wesker Mode, complete: charged ranged attack.",
+            "3": "Hold the stare input while facing targets, wait for full charge, then release the ranged burst. Partial charges do not count toward the dedicated defeat total."
+          }
+        },
+        {
+          "id": "wesker-05-death-stare-challenge",
+          "type": "optional",
+          "safe_type": "Wesker Mode Task",
+          "label": "Death Stare Challenge",
+          "missable": false,
+          "levels": {
+            "1": "The remaster-only route changes one partner's movement and attacks.",
+            "2": "In Wesker Mode, complete: fifty full-charge defeats.",
+            "3": "Defeat fifty enemies by releasing Death Stare only at full charge. Track kills manually, avoid partner finishing shots, and continue until the completion notification appears."
+          }
+        },
+        {
+          "id": "wesker-06-completion-reward",
+          "type": "optional",
+          "safe_type": "Wesker Mode Task",
+          "label": "Completion Reward",
+          "missable": false,
+          "levels": {
+            "1": "The remaster-only route changes one partner's movement and attacks.",
+            "2": "In Wesker Mode, complete: Team Wesker costume.",
+            "3": "Finish the entire Wesker Mode campaign and allow its result to save. Start an ordinary main-game file, open the Suitcase, equip Team Wesker, and leave the menu wearing it."
+          }
+        },
+        {
+          "id": "wesker-07-single-ending",
+          "type": "optional",
+          "safe_type": "Wesker Mode Task",
+          "label": "Mode Outcome",
+          "missable": false,
+          "levels": {
+            "1": "The remaster-only route changes one partner's movement and attacks.",
+            "2": "In Wesker Mode, complete: same mechanical campaign route.",
+            "3": "Enter Wesker Mode and complete the mechanical requirement: same mechanical campaign route. Preserve the mode result in its own slot before returning to the ordinary campaign."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Use a separate Wesker Mode slot",
+        "why": "Its completion reward must be preserved before returning to the main game."
+      }
+    },
+    {
+      "id": "costumes",
+      "name": "Costume Suitcase",
+      "location_cue": "The inventory's Suitcase view and installed PC costume content.",
+      "note": "Equip every included, earned, and installed optional outfit.",
+      "items": [
+        {
+          "id": "costume-01-rebecca-default-uniform",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Rebecca Default Uniform",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Open the starting Suitcase and equip Rebecca Default Uniform.",
+            "3": "Begin the HD Remaster campaign, switch the Mixing Set display to the Suitcase, choose Rebecca Default Uniform, and close the inventory. Walk into the next camera angle to verify the complete outfit is active."
+          }
+        },
+        {
+          "id": "costume-02-billy-default-outfit",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Billy Default Outfit",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Open the starting Suitcase and equip Billy Default Outfit.",
+            "3": "Begin the HD Remaster campaign, switch the Mixing Set display to the Suitcase, choose Billy Default Outfit, and close the inventory. Walk into the next camera angle to verify the complete outfit is active."
+          }
+        },
+        {
+          "id": "costume-03-rebecca-cowgirl",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Rebecca Cowgirl",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Open the starting Suitcase and equip Rebecca Cowgirl.",
+            "3": "Begin the HD Remaster campaign, switch the Mixing Set display to the Suitcase, choose Rebecca Cowgirl, and close the inventory. Walk into the next camera angle to verify the complete outfit is active."
+          }
+        },
+        {
+          "id": "costume-04-rebecca-leather",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Rebecca Leather",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Open the starting Suitcase and equip Rebecca Leather.",
+            "3": "Begin the HD Remaster campaign, switch the Mixing Set display to the Suitcase, choose Rebecca Leather, and close the inventory. Walk into the next camera angle to verify the complete outfit is active."
+          }
+        },
+        {
+          "id": "costume-05-billy-jacket",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Billy Jacket",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Open the starting Suitcase and equip Billy Jacket.",
+            "3": "Begin the HD Remaster campaign, switch the Mixing Set display to the Suitcase, choose Billy Jacket, and close the inventory. Walk into the next camera angle to verify the complete outfit is active."
+          }
+        },
+        {
+          "id": "costume-06-rebecca-team-wesker",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Rebecca Team Wesker",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Finish Wesker Mode, then select Team Wesker from Rebecca's Suitcase.",
+            "3": "Complete Wesker Mode and save its result. Begin an ordinary campaign, change Rebecca's Mixing Set to the Suitcase view, select Team Wesker, close the inventory, and confirm the outfit in gameplay."
+          }
+        },
+        {
+          "id": "costume-07-rebecca-cheerleader-dlc",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Rebecca Cheerleader DLC",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Install the corresponding costume pack, then select Rebecca Cheerleader from the Suitcase.",
+            "3": "Verify the relevant PC costume pack is installed and enabled. Begin a campaign, open the Suitcase through the inventory switch, equip Rebecca Cheerleader, and return to gameplay to confirm the model; do not count an uninstalled menu listing."
+          }
+        },
+        {
+          "id": "costume-08-rebecca-nurse-dlc",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Rebecca Nurse DLC",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Install the corresponding costume pack, then select Rebecca Nurse from the Suitcase.",
+            "3": "Verify the relevant PC costume pack is installed and enabled. Begin a campaign, open the Suitcase through the inventory switch, equip Rebecca Nurse, and return to gameplay to confirm the model; do not count an uninstalled menu listing."
+          }
+        },
+        {
+          "id": "costume-09-rebecca-1997-uniform-dlc",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Rebecca 1997 uniform DLC",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Install the corresponding costume pack, then select Rebecca 1997 uniform from the Suitcase.",
+            "3": "Verify the relevant PC costume pack is installed and enabled. Begin a campaign, open the Suitcase through the inventory switch, equip Rebecca 1997 uniform, and return to gameplay to confirm the model; do not count an uninstalled menu listing."
+          }
+        },
+        {
+          "id": "costume-10-rebecca-sportswear-dlc",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Rebecca Sportswear DLC",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Install the corresponding costume pack, then select Rebecca Sportswear from the Suitcase.",
+            "3": "Verify the relevant PC costume pack is installed and enabled. Begin a campaign, open the Suitcase through the inventory switch, equip Rebecca Sportswear, and return to gameplay to confirm the model; do not count an uninstalled menu listing."
+          }
+        },
+        {
+          "id": "costume-11-rebecca-1996-uniform-dlc",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Rebecca 1996 uniform DLC",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Install the corresponding costume pack, then select Rebecca 1996 uniform from the Suitcase.",
+            "3": "Verify the relevant PC costume pack is installed and enabled. Begin a campaign, open the Suitcase through the inventory switch, equip Rebecca 1996 uniform, and return to gameplay to confirm the model; do not count an uninstalled menu listing."
+          }
+        },
+        {
+          "id": "costume-12-rebecca-prototype-dlc",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Rebecca Prototype DLC",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Install the corresponding costume pack, then select Rebecca Prototype from the Suitcase.",
+            "3": "Verify the relevant PC costume pack is installed and enabled. Begin a campaign, open the Suitcase through the inventory switch, equip Rebecca Prototype, and return to gameplay to confirm the model; do not count an uninstalled menu listing."
+          }
+        },
+        {
+          "id": "costume-13-billy-wolf-force-dlc",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Billy Wolf Force DLC",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Install the corresponding costume pack, then select Billy Wolf Force from the Suitcase.",
+            "3": "Verify the relevant PC costume pack is installed and enabled. Begin a campaign, open the Suitcase through the inventory switch, equip Billy Wolf Force, and return to gameplay to confirm the model; do not count an uninstalled menu listing."
+          }
+        },
+        {
+          "id": "costume-14-billy-cody-dlc",
+          "type": "upgrade",
+          "safe_type": "Costume",
+          "label": "Billy Cody DLC",
+          "missable": false,
+          "levels": {
+            "1": "The remaster's Suitcase holds base, earned, and optional installed outfits.",
+            "2": "Install the corresponding costume pack, then select Billy Cody from the Suitcase.",
+            "3": "Verify the relevant PC costume pack is installed and enabled. Begin a campaign, open the Suitcase through the inventory switch, equip Billy Cody, and return to gameplay to confirm the model; do not count an uninstalled menu listing."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Verify installed costume packs first",
+        "why": "Unavailable optional packs should not be mistaken for missed in-game unlocks."
+      }
+    },
+    {
+      "id": "challenges",
+      "name": "Mechanical Challenges",
+      "location_cue": "Disposable encounter saves and dedicated restricted campaign runs.",
+      "note": "Separate restrictions unless their combination has already been practiced.",
+      "items": [
+        {
+          "id": "challenge-01-no-herb-combining",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "No Herb Combining",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: finish campaign.",
+            "3": "Finish a fresh campaign without combining any herb colors. Single herbs and non-herb recovery are allowed for this restriction, but keep it separate from the stricter no-recovery run."
+          }
+        },
+        {
+          "id": "challenge-02-no-saves",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "No Saves",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: finish campaign.",
+            "3": "Complete a campaign without confirming any typewriter save. Pausing is safe, but closing the game loses progress; use a stable system and avoid mixing this with a first Hard attempt."
+          }
+        },
+        {
+          "id": "challenge-03-no-first-aid-spray",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "No First Aid Spray",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: finish campaign.",
+            "3": "Finish without using a First-Aid Spray. Leave every spray on the floor or carry one only as a marker; herbs remain allowed unless combining with another restriction."
+          }
+        },
+        {
+          "id": "challenge-04-no-recovery-items",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "No Recovery Items",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: including Green Chemical.",
+            "3": "Finish without using herbs, sprays, or Green Chemical as recovery. Avoid accidental inventory use, protect both characters, and keep this run isolated because partner healing also invalidates it."
+          }
+        },
+        {
+          "id": "challenge-05-rebecca-major-encounters",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Rebecca Major Encounters",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: all except mandatory partner encounter.",
+            "3": "Use Rebecca to deliver the finishing damage in every major encounter except the one mechanically assigned to her partner. Set the partner to Idle before each final phase so an automatic shot cannot take credit."
+          }
+        },
+        {
+          "id": "challenge-06-critical-headshot",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Critical Headshot",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: ordinary enemy.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: ordinary enemy. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-07-burning-defeat",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Burning Defeat",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: Molotov or Napalm.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: Molotov or Napalm. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-08-zombie-stomp",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Zombie Stomp",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: finish crawling zombie.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: finish crawling zombie. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-09-partner-rescue",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Partner Rescue",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: attack grappling enemy.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: attack grappling enemy. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-10-knife-defeat",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Knife Defeat",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: any enemy.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: any enemy. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-11-destroy-zombie-legs",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Destroy Zombie Legs",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: aim low.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: aim low. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-12-midair-knockdown",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Midair Knockdown",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: Hunter or Eliminator.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: Hunter or Eliminator. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-13-dog-break-free",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Dog Break Free",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: bite or knockdown grab.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: bite or knockdown grab. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-14-custom-handgun",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Custom Handgun",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: combine Handgun Parts.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: combine Handgun Parts. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-15-use-green-chemical",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Use Green Chemical",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: Rebecca Mixing Set.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: Rebecca Mixing Set. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-16-fire-against-mimic",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Fire Against Mimic",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: Molotov or Napalm.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: Molotov or Napalm. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-17-knife-first-mimic",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Knife First Mimic",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: no other damage.",
+            "3": "At the first mimic encounter, set the partner to Idle or leave them outside, equip the Knife, and deal all damage with it. Do not use a Molotov, napalm round, gunshot, or partner attack."
+          }
+        },
+        {
+          "id": "challenge-18-all-herb-mixtures",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "All Herb Mixtures",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: every valid combination.",
+            "3": "With Rebecca, create every valid recipe across the save chain: G+G, G+R, G+B, G+G+B, G+G+G, and G+R+B. Open each resulting inventory entry before consuming or dropping it."
+          }
+        },
+        {
+          "id": "challenge-19-sixteen-church-bats",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Sixteen Church Bats",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: before leaving.",
+            "3": "Remain in the church encounter long enough to defeat sixteen small bats before completing the large-target phase. Count each small body manually and avoid ending the encounter early with concentrated heavy fire."
+          }
+        },
+        {
+          "id": "challenge-20-rebecca-piano",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Rebecca Piano",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: attempt once.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: attempt once. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-21-rebecca-heavy-push",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Rebecca Heavy Push",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: attempt once.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: attempt once. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-22-bat-pickup",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Bat Pickup",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: allow grab attack.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: allow grab attack. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        },
+        {
+          "id": "challenge-23-all-keys",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "All Keys",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: obtain and exhaust.",
+            "3": "Collect every named key or keycard, use each on every matching lock, and wait for the discard prompt where applicable. Include both character-transfer keys and the two late Shaft Keys."
+          }
+        },
+        {
+          "id": "challenge-24-all-weapons",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "All Weapons",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: same clear-data chain.",
+            "3": "On one Normal-or-Hard clear-data chain, acquire every field weapon, either Custom Handgun, both campaign-rank rewards, and all Leech Hunter rewards. For the separate visual archive, use a cloned pre-parts save to build and fire the other character's custom model."
+          }
+        },
+        {
+          "id": "challenge-25-all-files",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "All Files",
+          "missable": true,
+          "levels": {
+            "1": "A controlled encounter or dedicated clear records this technique.",
+            "2": "Complete the condition: twenty-nine entries.",
+            "3": "Create a disposable save near a suitable encounter and perform this mechanical condition: twenty-nine entries. Keep the partner Idle when their attack could interfere, wait for the interaction to register, then restore the clean route save."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before every restricted run",
+        "why": "Many conditions fail silently after one forbidden action."
+      }
+    }
+  ]
+}

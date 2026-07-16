@@ -1,0 +1,780 @@
+{
+ "id": "resident-evil-requiem",
+ "game": "Resident Evil: Requiem",
+ "target": "100% completion in one run -- all collectibles, secrets & all endings, spoiler-free",
+ "spoiler_default": 0,
+ "generated_at": "2026-06-27",
+ "how_it_works": "There is NO chapter select. Once you trigger a point of no return, that area is locked FOR THAT SAVE FILE. The game lets you keep many manual save slots, so the way to get 100% in one run is to keep a BACKUP save before each lock. This helper warns you before every lock and tells you when to back up. Files and Mr. Raccoon figures carry across runs; Antique Coins, Pouches, Safes and weapons do NOT, so backups matter most for those.",
+ "sources": [
+  "https://gamerant.com/resident-evil-requiem-all-points-of-no-return-chapters-re9/",
+  "https://www.powerpyx.com/resident-evil-requiem-trophy-guide-roadmap/",
+  "https://game8.co/games/Resident-Evil-Requiem/archives/583246",
+  "https://gamingbolt.com/resident-evil-requiem-guide-all-files-antique-coins-pouch-and-mr-raccoon-locations",
+  "https://www.gamespot.com/gallery/resident-evil-requiem-points-of-no-return-campaign/2900-7532/"
+ ],
+ "areas": [
+  {
+   "id": "wrenwood-hotel",
+   "name": "Wrenwood Hotel",
+   "location_cue": "You start inside a small hotel with guest rooms off a single corridor and a reception desk at the front.",
+   "note": "Opening area. Small and self-contained. Look around fully before you inspect the bed in Room 204.",
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Inspecting the photo-covered bed in Room 204 ends this area for good. You cannot come back to the hotel.",
+    "detail": "Sweep every room first, then inspect the bed when you are ready to move on."
+   },
+   "items": [
+    {
+     "id": "wh-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Hotel files",
+     "missable": true,
+     "levels": {
+      "1": "A few readable files are scattered around the hotel rooms and the front desk.",
+      "2": "Check the guest rooms, the reception desk, and any open drawers before going to Room 204.",
+      "3": "Files here count toward your 75-file total and carry across playthroughs, so they are recoverable later even if missed."
+     },
+     "sketch": {
+      "src": "sketches/wh-files.svg",
+      "min_level": 2
+     }
+    }
+   ],
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Something ahead in this area is permanent. Make a separate backup save before you go on, so you can finish one path and reload to still get everything in a single run.",
+    "detail": "Keep this backup until the helper clears you for the next area."
+   }
+  },
+  {
+   "id": "main-street",
+   "name": "Main Street",
+   "location_cue": "You're outdoors on a wide street lined with shopfronts and side alleys, a highway running across the far end.",
+   "note": "Street section. Explore the open shopfronts before you push across the highway.",
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Crossing the zombie-filled highway moves the story on and locks this street behind you.",
+    "detail": "Clear the side shops and alleys first; then cross when you are done."
+   },
+   "items": [
+    {
+     "id": "ms-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Street files",
+     "missable": true,
+     "levels": {
+      "1": "Readable notes are tucked in the open stores and side alleys.",
+      "2": "Duck into every accessible shopfront and alley along the street before crossing the highway."
+     },
+     "sketch": {
+      "src": "sketches/ms-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "ms-raccoon",
+     "type": "figure",
+     "safe_type": "Mr. Raccoon figure",
+     "label": "Mr. Raccoon Memoriam",
+     "missable": true,
+     "levels": {
+      "1": "A breakable Mr. Raccoon figure is hidden somewhere off the main path.",
+      "2": "Listen for the rattling sound and check raised ledges / behind objects off the street.",
+      "3": "Mr. Raccoon figures (25 total) accumulate across playthroughs; after one full run you can buy a map that marks them all."
+     },
+     "sketch": {
+      "src": "sketches/ms-raccoon.svg",
+      "min_level": 2
+     }
+    }
+   ],
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Something ahead in this area is permanent. Make a separate backup save before you go on, so you can finish one path and reload to still get everything in a single run.",
+    "detail": "Keep this backup until the helper clears you for the next area."
+   }
+  },
+  {
+   "id": "care-center-203",
+   "name": "Care Center - Room 203",
+   "location_cue": "You enter the large multi-floor care/medical building and begin among the numbered patient rooms and nurse stations.",
+   "note": "Start of the big Care Center. This whole building is the most collectible-dense area in the game and is split into several locked segments - read the back-up warning.",
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "The Care Center is split into many one-way segments. It holds about 27 files, ALL of the Antique Coins, and several pouch upgrades. Coins and pouches are lost for this save once a segment locks, and there is no chapter select.",
+    "detail": "Make a brand-new manual save in an EMPTY slot here (do not overwrite). If you leave anything behind in the Care Center, reload this backup later to grab it. Keep this backup until you have fully cleared the whole Care Center."
+   },
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Placing the Fuse into Room 201 seals off this early part of the Care Center.",
+    "detail": "Finish exploring this section before you place the fuse."
+   },
+   "items": [
+    {
+     "id": "cc203-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Care Center files (early)",
+     "missable": true,
+     "levels": {
+      "1": "Several files are in the early patient rooms and offices.",
+      "2": "Search the patient rooms, nurse stations and desks in this wing before placing the fuse."
+     },
+     "sketch": {
+      "src": "sketches/cc203-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "cc203-coins",
+     "type": "coin",
+     "safe_type": "Antique Coins",
+     "label": "Antique Coins",
+     "missable": true,
+     "levels": {
+      "1": "Antique Coins start showing up here. You spend them in the Parlor to open lockers for upgrades.",
+      "2": "Coins sit on shelves, in drawers and on small tables. Grab every one - they do NOT carry across runs.",
+      "3": "There are about 22 coins total, almost all inside the Care Center. Missing coins means missing locker upgrades unless you reload a backup. Note: on Insanity difficulty their locations change."
+     },
+     "sketch": {
+      "src": "sketches/cc203-coins.svg",
+      "min_level": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "care-center-rehab",
+   "name": "Care Center - Rehabilitation Ward",
+   "location_cue": "You move through the medical building's rehabilitation wing — open therapy rooms and equipment, a ward of side rooms and locker banks.",
+   "note": "Continuation of the Care Center. Clear it before pushing through the ward.",
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Progressing through the Rehabilitation Ward locks the section behind you.",
+    "detail": "Pick up the Mr. Raccoon figure and any files in this ward before you advance."
+   },
+   "items": [
+    {
+     "id": "ccrw-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Ward files",
+     "missable": true,
+     "levels": {
+      "1": "More files are in the ward rooms and side offices.",
+      "2": "Check every side room and locker bank in the Rehabilitation Ward before advancing."
+     },
+     "sketch": {
+      "src": "sketches/ccrw-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "ccrw-raccoon",
+     "type": "figure",
+     "safe_type": "Mr. Raccoon figure",
+     "label": "Mr. Raccoon Memoriam",
+     "missable": true,
+     "levels": {
+      "1": "A breakable Mr. Raccoon figure is in this ward.",
+      "2": "Follow the rattling sound; it is usually up high or behind something in the ward."
+     },
+     "sketch": {
+      "src": "sketches/ccrw-raccoon.svg",
+      "min_level": 2
+     }
+    }
+   ],
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Something ahead in this area is permanent. Make a separate backup save before you go on, so you can finish one path and reload to still get everything in a single run.",
+    "detail": "Keep this backup until the helper clears you for the next area."
+   }
+  },
+  {
+   "id": "care-center-directors-office",
+   "name": "Care Center - Director's Office",
+   "location_cue": "You reach the upper floor of the medical building, around the administrative offices and a single elevator.",
+   "note": "Upper Care Center. The office elevator is a one-way trip.",
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Entering the elevator in the Director's Office locks the upper Care Center.",
+    "detail": "Open everything up here, including any safe, before taking the elevator."
+   },
+   "items": [
+    {
+     "id": "ccdo-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Office files",
+     "missable": true,
+     "levels": {
+      "1": "Files are in the upper offices and around the director's area.",
+      "2": "Search the upper-floor offices and desks before using the elevator."
+     },
+     "sketch": {
+      "src": "sketches/ccdo-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "ccdo-safe",
+     "type": "treasure",
+     "safe_type": "Safe",
+     "label": "Safe",
+     "missable": true,
+     "levels": {
+      "1": "There is a safe to open in this part of the building.",
+      "2": "Find the matching note or clue nearby for the combination, then open the safe before you leave.",
+      "3": "There are 5 safes in the game; their combinations can differ on higher difficulties, so read the in-area clue rather than memorising a code."
+     },
+     "sketch": {
+      "src": "sketches/ccdo-safe.svg",
+      "min_level": 2
+     }
+    }
+   ],
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Something ahead in this area is permanent. Make a separate backup save before you go on, so you can finish one path and reload to still get everything in a single run.",
+    "detail": "Keep this backup until the helper clears you for the next area."
+   }
+  },
+  {
+   "id": "care-center-basement",
+   "name": "Care Center - Basement / Holding Cells",
+   "location_cue": "You go down into the building's basement level — concrete holding cells and back storage rooms.",
+   "note": "Lower Care Center. Holds extra files and a pouch upgrade. The Joint Plugs are the lock.",
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Placing all 3 Joint Plugs locks the basement permanently for this save, and it contains a Hip Pouch upgrade plus several files.",
+    "detail": "Make a fresh manual save before you place the third Joint Plug, in case you missed the pouch or any file down here."
+   },
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Placing all 3 Joint Plugs east of the Holding Cells seals the basement.",
+    "detail": "Fully clear the basement and grab the pouch before placing the last plug."
+   },
+   "items": [
+    {
+     "id": "ccb-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Basement files",
+     "missable": true,
+     "levels": {
+      "1": "Several files are down in the basement and holding cells.",
+      "2": "Check each cell and storage room in the basement before placing the plugs."
+     },
+     "sketch": {
+      "src": "sketches/ccb-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "ccb-pouch",
+     "type": "pouch",
+     "safe_type": "Hip Pouch (inventory upgrade)",
+     "label": "Hip Pouch",
+     "missable": true,
+     "levels": {
+      "1": "An inventory-expanding Hip Pouch is hidden in the basement.",
+      "2": "Search the back storage / cell area of the basement for the pouch before you lock it with the plugs.",
+      "3": "Hip Pouches permanently expand your carrying space and do NOT carry across runs, so this one is worth a backup save."
+     },
+     "sketch": {
+      "src": "sketches/ccb-pouch.svg",
+      "min_level": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "care-center-courtyard",
+   "name": "Care Center Courtyard & Research Facility",
+   "location_cue": "You step out into the open-air courtyard ringed by the building's brick wings, with a separate research wing off it.",
+   "note": "Outdoor courtyard and research wing. Last chance for anything left in the whole Care Center.",
+   "save_backup": {
+    "title": "Back up your save now - last call for the Care Center",
+    "why": "Picking up the Helicopter Key triggers an escape and locks the entire Care Center and courtyard. The section that follows has no manual save, so this is your final chance to fix any missed Care Center coin, pouch, file or safe.",
+    "detail": "Before grabbing the Helicopter Key, make a backup save. If your coin or file count looks low, reload an earlier Care Center backup now - you will not get another chance on this file."
+   },
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Picking up the Helicopter Key by the computer forces an escape cutscene; the Care Center and courtyard are gone after this.",
+    "detail": "Clear the courtyard and research facility, then take the key last."
+   },
+   "items": [
+    {
+     "id": "ccc-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Courtyard / research files",
+     "missable": true,
+     "levels": {
+      "1": "Files are around the courtyard and inside the research facility.",
+      "2": "Sweep the research facility rooms and the courtyard perimeter before taking the helicopter key."
+     },
+     "sketch": {
+      "src": "sketches/ccc-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "ccc-coin",
+     "type": "coin",
+     "safe_type": "Antique Coins",
+     "label": "Antique Coins",
+     "missable": true,
+     "levels": {
+      "1": "Any remaining Antique Coins in this part should be grabbed now.",
+      "2": "This is effectively the last of the Care Center coins - check the research facility shelves and courtyard nooks."
+     },
+     "sketch": {
+      "src": "sketches/ccc-coin.svg",
+      "min_level": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "rooftop-church",
+   "name": "Care Center Rooftop & Church",
+   "location_cue": "You're up on the rooftop walkway that leads across into a church interior.",
+   "note": "Short rooftop-into-church section. No manual save here, so be deliberate.",
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Jumping down the open railing (and entering the church after the fight) locks this section.",
+    "detail": "Grab anything visible on the rooftop and in the church before you drop down."
+   },
+   "items": [
+    {
+     "id": "rc-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Rooftop / church files",
+     "missable": true,
+     "levels": {
+      "1": "A file or two are up on the rooftop path and inside the church.",
+      "2": "Look along the rooftop route and around the church interior before dropping down the railing."
+     },
+     "sketch": {
+      "src": "sketches/rc-files.svg",
+      "min_level": 2
+     }
+    }
+   ],
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Something ahead in this area is permanent. Make a separate backup save before you go on, so you can finish one path and reload to still get everything in a single run.",
+    "detail": "Keep this backup until the helper clears you for the next area."
+   }
+  },
+  {
+   "id": "water-treatment-plant",
+   "name": "Water Treatment Plant",
+   "location_cue": "You're inside an industrial plant of metal catwalks, large tanks and pump/control rooms.",
+   "note": "Industrial area. Explore the catwalks and side rooms before approaching the far door.",
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Approaching the door at the end of the plant starts a cutscene that skips to the next chapter; the plant locks behind you.",
+    "detail": "Cover the catwalks, pump rooms and side offices first."
+   },
+   "items": [
+    {
+     "id": "wtp-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Plant files",
+     "missable": true,
+     "levels": {
+      "1": "Files are spread across the plant's offices and control rooms.",
+      "2": "Check control rooms, lockers and the upper catwalk areas before reaching the final door."
+     },
+     "sketch": {
+      "src": "sketches/wtp-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "wtp-raccoon",
+     "type": "figure",
+     "safe_type": "Mr. Raccoon figure",
+     "label": "Mr. Raccoon Memoriam",
+     "missable": true,
+     "levels": {
+      "1": "A breakable Mr. Raccoon figure is hidden in the plant.",
+      "2": "Listen for the rattle around the machinery and elevated walkways."
+     },
+     "sketch": {
+      "src": "sketches/wtp-raccoon.svg",
+      "min_level": 2
+     }
+    }
+   ],
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Something ahead in this area is permanent. Make a separate backup save before you go on, so you can finish one path and reload to still get everything in a single run.",
+    "detail": "Keep this backup until the helper clears you for the next area."
+   }
+  },
+  {
+   "id": "east-raccoon-city",
+   "name": "East Raccoon City",
+   "location_cue": "You're back outdoors in an open city district of streets and enterable buildings.",
+   "note": "Open-ish city zone. You collect 3 Detonator Parts here; arming the bomb is the lock.",
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "After collecting all 3 Detonator Parts, interacting with the bomb on the wall locks East Raccoon City.",
+    "detail": "Fully explore for files, charms and any weapon part BEFORE you arm the bomb - the 3 parts are required to progress, so save the bomb for last."
+   },
+   "items": [
+    {
+     "id": "erc-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "City files",
+     "missable": true,
+     "levels": {
+      "1": "Files are in the open buildings and side streets.",
+      "2": "Enter every accessible building and check the alleys before arming the bomb."
+     },
+     "sketch": {
+      "src": "sketches/erc-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "erc-charm",
+     "type": "upgrade",
+     "safe_type": "Weapon charm / part",
+     "label": "Weapon charm or upgrade part",
+     "missable": true,
+     "levels": {
+      "1": "A weapon charm or upgrade part can be found around this district.",
+      "2": "Charms and parts tend to be in side rooms or on bodies - sweep the district before the bomb."
+     },
+     "sketch": {
+      "src": "sketches/erc-charm.svg",
+      "min_level": 2
+     }
+    }
+   ],
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Something ahead in this area is permanent. Make a separate backup save before you go on, so you can finish one path and reload to still get everything in a single run.",
+    "detail": "Keep this backup until the helper clears you for the next area."
+   }
+  },
+  {
+   "id": "raccoon-city-center",
+   "name": "Raccoon City Center",
+   "location_cue": "You reach an outdoor city-centre plaza with surrounding shops and a large gate at one side.",
+   "note": "City center hub. The gate to the R.P.D. is the lock - grab the figure here first.",
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Interacting with the gate to the R.P.D. entrance locks the outdoor city center.",
+    "detail": "Collect the Mr. Raccoon figure and clear the area before opening the gate."
+   },
+   "items": [
+    {
+     "id": "rcc-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "City center files",
+     "missable": true,
+     "levels": {
+      "1": "Files are around the plaza and surrounding shops.",
+      "2": "Check the shops and plaza edges before the R.P.D. gate."
+     },
+     "sketch": {
+      "src": "sketches/rcc-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "rcc-raccoon",
+     "type": "figure",
+     "safe_type": "Mr. Raccoon figure",
+     "label": "Mr. Raccoon Memoriam",
+     "missable": true,
+     "levels": {
+      "1": "A Mr. Raccoon figure is in the city center.",
+      "2": "Follow the rattle around the plaza before opening the gate."
+     },
+     "sketch": {
+      "src": "sketches/rcc-raccoon.svg",
+      "min_level": 2
+     }
+    }
+   ],
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Something ahead in this area is permanent. Make a separate backup save before you go on, so you can finish one path and reload to still get everything in a single run.",
+    "detail": "Keep this backup until the helper clears you for the next area."
+   }
+  },
+  {
+   "id": "orphanage",
+   "name": "Orphanage",
+   "location_cue": "You're inside a large old indoor building with an underground level beneath it.",
+   "note": "Indoor area with an underground chapel and lab. The slideshow remote is the lock.",
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Interacting with the remote to view the slideshow locks the orphanage.",
+    "detail": "Collect the files in the Underground Chapel and the Research Lab BEFORE using the remote."
+   },
+   "items": [
+    {
+     "id": "orph-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Orphanage files",
+     "missable": true,
+     "levels": {
+      "1": "Files are upstairs and down in the chapel and lab.",
+      "2": "Specifically clear the Underground Chapel and the Research Lab for files before touching the remote."
+     },
+     "sketch": {
+      "src": "sketches/orph-files.svg",
+      "min_level": 2
+     }
+    }
+   ],
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Something ahead in this area is permanent. Make a separate backup save before you go on, so you can finish one path and reload to still get everything in a single run.",
+    "detail": "Keep this backup until the helper clears you for the next area."
+   }
+  },
+  {
+   "id": "rpd",
+   "name": "R.P.D.",
+   "location_cue": "You enter the large police-station building with its main hall, offices and a connected garage.",
+   "note": "The police station. The Underground Garage and a gun shop stay open a little longer than the rest.",
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Heading down the rubble to the north locks the R.P.D. interior. (The Underground Garage stays briefly accessible even after this.)",
+    "detail": "Check the Underground Garage and the gun shop area before going north down the rubble."
+   },
+   "items": [
+    {
+     "id": "rpd-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "R.P.D. files",
+     "missable": true,
+     "levels": {
+      "1": "Files are throughout the station's rooms and the garage.",
+      "2": "Sweep the offices, the gun shop and the Underground Garage before heading north."
+     },
+     "sketch": {
+      "src": "sketches/rpd-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "rpd-weapon",
+     "type": "weapon",
+     "safe_type": "Weapon / part",
+     "label": "Weapon or upgrade part",
+     "missable": true,
+     "levels": {
+      "1": "A weapon or upgrade part can be found in or near the station.",
+      "2": "Check the gun shop and locked rooms for a weapon or part before the rubble lock."
+     },
+     "sketch": {
+      "src": "sketches/rpd-weapon.svg",
+      "min_level": 2
+     }
+    }
+   ],
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Something ahead in this area is permanent. Make a separate backup save before you go on, so you can finish one path and reload to still get everything in a single run.",
+    "detail": "Keep this backup until the helper clears you for the next area."
+   }
+  },
+  {
+   "id": "blackthorne-station",
+   "name": "Blackthorne Station",
+   "location_cue": "You're down in an underground transit station with platforms, ticket areas and maintenance tunnels.",
+   "note": "Underground station. Descending the rope is the lock and also closes the R.P.D. behind you.",
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Descending on the rope locks Blackthorne Station and the R.P.D. for good.",
+    "detail": "Clear the platforms and side tunnels before you rope down."
+   },
+   "items": [
+    {
+     "id": "bs-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Station files",
+     "missable": true,
+     "levels": {
+      "1": "Files are on the platforms and in the maintenance rooms.",
+      "2": "Check the platforms, ticket areas and maintenance tunnels before descending."
+     },
+     "sketch": {
+      "src": "sketches/bs-files.svg",
+      "min_level": 2
+     }
+    }
+   ],
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Something ahead in this area is permanent. Make a separate backup save before you go on, so you can finish one path and reload to still get everything in a single run.",
+    "detail": "Keep this backup until the helper clears you for the next area."
+   }
+  },
+  {
+   "id": "ark-1",
+   "name": "ARK - Part 1",
+   "location_cue": "You enter the final high-tech facility and start down its clean opening corridors and side labs.",
+   "note": "Final facility, first stretch. The Central Refilling System is the lock.",
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "The ARK is the final area and is split into one-way segments with a Hip Pouch and several files. Once you commit deeper there is no easy way back.",
+    "detail": "Make a fresh backup save as you enter the ARK so you can return for the pouch or any files if needed."
+   },
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Entering the Central Refilling System locks the ARK's starting area.",
+    "detail": "Explore the starting hallway fully first."
+   },
+   "items": [
+    {
+     "id": "ark1-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "ARK files",
+     "missable": true,
+     "levels": {
+      "1": "Files are along the ARK's opening corridors.",
+      "2": "Search the starting hallway and side labs before the Central Refilling System."
+     },
+     "sketch": {
+      "src": "sketches/ark1-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "ark1-pouch",
+     "type": "pouch",
+     "safe_type": "Hip Pouch (inventory upgrade)",
+     "label": "Hip Pouch",
+     "missable": true,
+     "levels": {
+      "1": "A final Hip Pouch is somewhere in the ARK.",
+      "2": "Check storage crates and pallet areas in the ARK for the last pouch.",
+      "3": "This is typically the last inventory upgrade; grab it before the deeper ARK locks."
+     },
+     "sketch": {
+      "src": "sketches/ark1-pouch.svg",
+      "min_level": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "ark-2-grace",
+   "name": "ARK - Control Room",
+   "location_cue": "You reach the facility's control area — a lobby with side rooms and a set of marked doors.",
+   "note": "Mid-ARK puzzle area with two Orbs. The central computer behind the red doors is the lock.",
+   "point_of_no_return": {
+    "title": "Point of no return ahead",
+    "why": "Entering the red doors and using the central computer locks the lobby and red-door areas.",
+    "detail": "Collect BOTH Orbs for the Recessed Panel puzzle before using the central computer."
+   },
+   "items": [
+    {
+     "id": "ark2-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Control room files",
+     "missable": true,
+     "levels": {
+      "1": "Files are around the lobby and control areas.",
+      "2": "Check the lobby and side rooms before the central computer."
+     },
+     "sketch": {
+      "src": "sketches/ark2-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "ark2-orbs",
+     "type": "key",
+     "safe_type": "Puzzle items (Orbs)",
+     "label": "Recessed Panel Orbs",
+     "missable": true,
+     "levels": {
+      "1": "Two Orbs are needed for a puzzle in this room.",
+      "2": "Find and place BOTH Orbs in the Recessed Panel before you use the central computer, or you can lock yourself out of finishing the puzzle."
+     },
+     "sketch": {
+      "src": "sketches/ark2-orbs.svg",
+      "min_level": 2
+     }
+    }
+   ],
+   "save_backup": {
+    "title": "Back up your save now",
+    "why": "Something ahead in this area is permanent. Make a separate backup save before you go on, so you can finish one path and reload to still get everything in a single run.",
+    "detail": "Keep this backup until the helper clears you for the next area."
+   }
+  },
+  {
+   "id": "ark-3-final",
+   "name": "ARK - Final Stretch",
+   "location_cue": "You're in the deepest part of the facility, among the repository rooms near a final elevator.",
+   "note": "The very end. The elevator in Bioweapon Repository 11 leads to the ending. You can get BOTH endings without a second run - see the choice note.",
+   "save_backup": {
+    "title": "Optional: save before the ending choice",
+    "why": "There is one final choice that decides the ending. You do NOT need two playthroughs or two save files for both endings - after you pick one you can reload the checkpoint just before the choice and pick the other, getting both ending rewards in this run.",
+    "detail": "A backup here is optional comfort only. The completion-safe approach: make your first choice, watch it, then reload to just before the choice and make the other to see both."
+   },
+   "point_of_no_return": {
+    "title": "Final point of no return",
+    "why": "Entering the elevator in Bioweapon Repository 11 commits you to the ending sequence and locks all previous areas.",
+    "detail": "Make sure your collectibles are done across all earlier areas (or that you have backups) before this elevator."
+   },
+   "items": [
+    {
+     "id": "ark3-files",
+     "type": "file",
+     "safe_type": "Files",
+     "label": "Final files",
+     "missable": true,
+     "levels": {
+      "1": "The last few files are in this final stretch.",
+      "2": "Sweep the repository rooms before the final elevator."
+     },
+     "sketch": {
+      "src": "sketches/ark3-files.svg",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "ark3-choice",
+     "type": "choice",
+     "safe_type": "Completion-safe choice",
+     "label": "Ending choice",
+     "missable": false,
+     "levels": {
+      "1": "A choice here decides the ending. It does not affect any collectible.",
+      "2": "Both outcomes give a reward. Pick one, then reload the checkpoint right before this choice to take the other - you keep both with no second playthrough.",
+      "3": "The choice is a hold-to-confirm at a terminal and you can back out before committing; reloading the pre-choice checkpoint lets you see and bank both endings on one file."
+     },
+     "sketch": {
+      "src": "sketches/ark3-choice.svg",
+      "min_level": 2
+     }
+    }
+   ]
+  }
+ ]
+}

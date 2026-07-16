@@ -1,0 +1,265 @@
+{
+  "id": "pachisuro-biohazard",
+  "game": "Pachisuro Biohazard (2008)",
+  "target": "Spoiler-free completion of every documented original-cabinet reel system, bonus type, ART state, premium branch, setting, and Wesker Mode encounter presentation",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "cabinet-route",
+      "name": "Original Yamasa Cabinet",
+      "location_cue": "The three-reel Japanese cabinet with its upper video display and BIOHAZARD branding.",
+      "note": "Physical cabinet and randomized amusement sequences only.",
+      "save_backup": {
+        "title": "Record the cabinet state now",
+        "why": "Randomized modes and configuration changes cannot be reconstructed from a normal save."
+      },
+      "point_of_no_return": {
+        "title": "Power or setting change",
+        "warning": "Photograph counters and finish the active mode before changing cabinet configuration."
+      },
+      "items": [
+        {
+          "id": "route-original-cabinet",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Original Cabinet",
+          "missable": false,
+          "levels": {
+            "1": "The machine hardware is the only verified playable release.",
+            "2": "Use an original 2008 Yamasa pachislot cabinet.",
+            "3": "Verify the cabinet, reels, stop buttons, lever, credit controls, hopper, and video display work before counting any sequence; no documented home port replaces this route."
+          }
+        },
+        {
+          "id": "route-settings-1-6",
+          "type": "optional",
+          "safe_type": "Configuration",
+          "label": "Test Settings 1 Through 6",
+          "missable": true,
+          "levels": {
+            "1": "Internal configuration changes the probability table.",
+            "2": "With owner/service access, verify normal play under each numbered setting.",
+            "3": "Power down, use the cabinet setting key, select one setting, restart, and record the displayed configuration. Repeat for settings 1–6 without treating payout variance as missing content."
+          }
+        },
+        {
+          "id": "route-safe-token-mode",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use Non-Cash Test Play",
+          "missable": false,
+          "levels": {
+            "1": "Completion requires sequences, not gambling losses.",
+            "2": "Operate with owned test medals or cabinet credit mode only.",
+            "3": "Use a privately owned machine in legal non-cash mode, fill the hopper or enable credits according to its service manual, and never frame monetary return as a completion objective."
+          }
+        }
+      ]
+    },
+    {
+      "id": "reel-and-bonus-systems",
+      "name": "Reels and Bonus Systems",
+      "location_cue": "The three mechanical reels and illuminated stop-order prompts below the video panel.",
+      "note": "Physical cabinet and randomized amusement sequences only.",
+      "save_backup": {
+        "title": "Record the cabinet state now",
+        "why": "Randomized modes and configuration changes cannot be reconstructed from a normal save."
+      },
+      "point_of_no_return": {
+        "title": "Power or setting change",
+        "warning": "Photograph counters and finish the active mode before changing cabinet configuration."
+      },
+      "items": [
+        {
+          "id": "reel-standard-awards",
+          "type": "optional",
+          "safe_type": "Reel Pattern",
+          "label": "Register Every Printed Payline Award",
+          "missable": true,
+          "levels": {
+            "1": "The cabinet glass identifies its ordinary symbol results.",
+            "2": "Land each standard printed payout pattern at least once.",
+            "3": "Follow the cabinet paytable rather than guessing symbols, record each unique award when the credit meter changes, and retain a photo of the payline and meter for the completion log."
+          }
+        },
+        {
+          "id": "bonus-big",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Complete BIG Bonus",
+          "missable": true,
+          "levels": {
+            "1": "One large bonus ends after a payout threshold.",
+            "2": "Enter BIG Bonus and play until its normal termination.",
+            "3": "During BIG, follow the reel guidance until total payout passes 408 medals; verify the mode closes normally and the net gain is approximately 342 rather than using that estimate as an exact target."
+          }
+        },
+        {
+          "id": "bonus-reg",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Complete REG Bonus",
+          "missable": true,
+          "levels": {
+            "1": "The smaller bonus ends by games or winning results.",
+            "2": "Enter REG Bonus and reach its built-in endpoint.",
+            "3": "Play REG until either twelve bonus games have elapsed or six winning results register. Confirm the mode exits; roughly eighty net medals is descriptive, not a completion condition."
+          }
+        },
+        {
+          "id": "single-to-art",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Convert a Single Bonus into ART",
+          "missable": true,
+          "levels": {
+            "1": "A voice and button prompt precede the assisted sequence.",
+            "2": "When a Single Bonus occurs, follow its first-stop symbol and remaining stop-order guidance.",
+            "3": "On the spoken chance prompt, visually time the specified symbol on the first reel, then press the other reels in the displayed order. Aligning the required sevens moves the machine from assist state into ART."
+          }
+        }
+      ]
+    },
+    {
+      "id": "art-and-premium",
+      "name": "ART and Premium Sequences",
+      "location_cue": "The upper display during the fifty-game assisted sequence and its continuation screens.",
+      "note": "Physical cabinet and randomized amusement sequences only.",
+      "save_backup": {
+        "title": "Record the cabinet state now",
+        "why": "Randomized modes and configuration changes cannot be reconstructed from a normal save."
+      },
+      "point_of_no_return": {
+        "title": "Power or setting change",
+        "warning": "Photograph counters and finish the active mode before changing cabinet configuration."
+      },
+      "items": [
+        {
+          "id": "art-complete-set",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Complete One Biohazard ART Set",
+          "missable": true,
+          "levels": {
+            "1": "The standard assisted run is arranged in a fixed-size set.",
+            "2": "Enter Biohazard ART and finish one fifty-game set.",
+            "3": "Maintain the prompted reel order through all fifty games, avoid an incorrect first stop, and record the transition or continuation screen at the set boundary."
+          }
+        },
+        {
+          "id": "premium-trigger",
+          "type": "secret",
+          "safe_type": "Mode",
+          "label": "Reach Premium ART",
+          "missable": true,
+          "levels": {
+            "1": "A rare confrontation can upgrade the assisted run.",
+            "2": "Win the qualifying confrontation and enter Premium ART.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "premium-next-big",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Carry Premium ART to BIG Bonus",
+          "missable": true,
+          "levels": {
+            "1": "Premium status protects the route into the next major bonus.",
+            "2": "Remain in Premium ART until the guaranteed next BIG Bonus begins.",
+            "3": "Follow every navigation prompt, do not interrupt power, and continue through all ART sets until BIG starts; record whether the post-BIG continuation succeeds because its chance is fifty percent."
+          }
+        },
+        {
+          "id": "premium-continuation-success",
+          "type": "secret",
+          "safe_type": "Mode",
+          "label": "See Premium Continuation",
+          "missable": true,
+          "levels": {
+            "1": "One branch after the protected BIG can extend the mode.",
+            "2": "Obtain a successful Premium ART continuation after the next BIG.",
+            "3": "Because the continuation check is random, preserve the cabinet state and keep playing valid Premium cycles until the continuation presentation occurs; do not claim deterministic input control."
+          }
+        },
+        {
+          "id": "premium-continuation-failure",
+          "type": "secret",
+          "safe_type": "Mode",
+          "label": "See Premium End State",
+          "missable": true,
+          "levels": {
+            "1": "The same random branch also has a closing presentation.",
+            "2": "Observe the non-continuing result after a Premium-linked BIG.",
+            "3": "Play a separate naturally reached Premium cycle until its fifty-percent continuation check fails, then record the distinct end-state presentation before returning to normal play."
+          }
+        }
+      ]
+    },
+    {
+      "id": "wesker-mode",
+      "name": "Wesker Mode",
+      "location_cue": "The alternate video-display mode centered on a control-room interface and chained encounters.",
+      "note": "Physical cabinet and randomized amusement sequences only.",
+      "save_backup": {
+        "title": "Record the cabinet state now",
+        "why": "Randomized modes and configuration changes cannot be reconstructed from a normal save."
+      },
+      "point_of_no_return": {
+        "title": "Power or setting change",
+        "warning": "Photograph counters and finish the active mode before changing cabinet configuration."
+      },
+      "items": [
+        {
+          "id": "wesker-mode-unlock",
+          "type": "secret",
+          "safe_type": "Mode",
+          "label": "Enter Wesker Mode",
+          "missable": true,
+          "levels": {
+            "1": "A separate presentation opens outside ordinary ART play.",
+            "2": "Trigger Wesker Mode on the original cabinet.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "wesker-49-encounters",
+          "type": "optional",
+          "safe_type": "Encounter Set",
+          "label": "Register All 49 Wesker-Mode Encounters",
+          "missable": true,
+          "levels": {
+            "1": "The mode draws from a finite enemy catalog.",
+            "2": "Maintain a numbered log until all forty-nine distinct encounter entries have appeared.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "wesker-character-a",
+          "type": "optional",
+          "safe_type": "Presentation",
+          "label": "Complete Wesker Mode with Lead A",
+          "missable": true,
+          "levels": {
+            "1": "The target presentation changes with the active lead.",
+            "2": "Finish a Wesker Mode sequence using the first lead-character presentation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "wesker-character-b",
+          "type": "optional",
+          "safe_type": "Presentation",
+          "label": "Complete Wesker Mode with Lead B",
+          "missable": true,
+          "levels": {
+            "1": "A second lead presentation belongs in the scene registry.",
+            "2": "Finish a Wesker Mode sequence using the other lead-character presentation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "intro": "The exact graphics, display, HDR, driver, and mod setup I run on stream, pulled straight from each game's own settings files, the NVIDIA driver, and DLSS Swapper. Nothing curated or trimmed - this is the full list so you can copy it exactly. Always match the HDR and monitor parts to your own screen, though; mine is the reference. New games get added here as I start playing them.",
+  "games": [
+    {
+      "id": "resident-evil-requiem",
+      "title": "Resident Evil Requiem",
+      "status": "Now playing",
+      "rig": "RTX 5090 / 4K HDR / ASUS ROG PG32UCDM3 OLED",
+      "summary": "Maxed-out path-traced 4K with a clean, grain-free image tuned for streaming. Every single setting from the game's own config is listed below so you can replicate it 1:1 - display, ray tracing, image quality, HDR sliders, the engine/render block, the exact DLSS versions I swapped in, and the driver profile. Film grain, motion blur, bloom, and lens distortion are off so the picture stays sharp on the encode.",
+      "groups": [
+        {
+          "name": "Display & window",
+          "settings": [
+            { "label": "Resolution", "value": "3840 x 2160 (4K)" },
+            { "label": "Window mode", "value": "Borderless" },
+            { "label": "Display device", "value": "ASUS ROG PG32UCDM3 (QD-OLED, target display 1)" },
+            { "label": "Refresh rate", "value": "60 Hz" },
+            { "label": "Frame rate", "value": "Variable (uncapped)" },
+            { "label": "V-Sync", "value": "On" },
+            { "label": "Color space", "value": "Rec. 2020" },
+            { "label": "Display gamma", "value": "10" },
+            { "label": "Display safe area", "value": "10" },
+            { "label": "Button icon type", "value": "Xbox Series (XBS)" },
+            { "label": "Image quality rate", "value": "5" }
+          ]
+        },
+        {
+          "name": "HDR & brightness (in-game HDR - read the notes below)",
+          "settings": [
+            { "label": "HDR", "value": "On (mode: Auto)" },
+            { "label": "Max Brightness", "value": "Slide fully RIGHT to the max stop (= +20)" },
+            { "label": "Min Brightness", "value": "Slide fully LEFT to the min stop (= -20)" },
+            { "label": "Brightness HDR", "value": "Leave the slider centered / middle - the default (= 0, ~300 nits)" }
+          ]
+        },
+        {
+          "name": "Upscaling & frame generation",
+          "settings": [
+            { "label": "Upscaling algorithm", "value": "DLSS" },
+            { "label": "DLSS quality", "value": "Max Quality" },
+            { "label": "Frame generation", "value": "DLSS 4x" },
+            { "label": "Reflex low latency (DLSS)", "value": "On" },
+            { "label": "Upscaling sharpness", "value": "0 (off)" },
+            { "label": "FSR1 upscaling quality (fallback)", "value": "Quality" }
+          ]
+        },
+        {
+          "name": "Ray tracing & lighting",
+          "settings": [
+            { "label": "Ray tracing", "value": "On - Path Tracing (Standard)" },
+            { "label": "Screen-space reflections (SSR)", "value": "On" },
+            { "label": "Contact shadows", "value": "On" },
+            { "label": "Dynamic shadows", "value": "On" },
+            { "label": "Shadow quality", "value": "Highest" },
+            { "label": "Shadow cache", "value": "On" },
+            { "label": "Ambient occlusion (AO) quality", "value": "High" },
+            { "label": "Volumetric fog quality", "value": "Highest" },
+            { "label": "Particle lighting", "value": "On" }
+          ]
+        },
+        {
+          "name": "Image quality",
+          "settings": [
+            { "label": "Overall draw-quality preset", "value": "Custom" },
+            { "label": "Visual quality level", "value": "High" },
+            { "label": "Texture quality", "value": "High" },
+            { "label": "Texture filtering", "value": "Anisotropic 16x" },
+            { "label": "Transparent buffer quality", "value": "Standard" },
+            { "label": "Mesh quality", "value": "High" },
+            { "label": "Effect quality", "value": "High" },
+            { "label": "Subsurface scattering (SSS) quality", "value": "High" },
+            { "label": "Lens flare quality", "value": "High" },
+            { "label": "Hair / strands", "value": "On" },
+            { "label": "Anti-aliasing", "value": "TAA" },
+            { "label": "Depth of field", "value": "On" }
+          ]
+        },
+        {
+          "name": "Turned off for a cleaner stream image",
+          "settings": [
+            { "label": "Film grain", "value": "Off" },
+            { "label": "Motion blur", "value": "Off" },
+            { "label": "Bloom", "value": "Off" },
+            { "label": "Lens distortion", "value": "Off" }
+          ]
+        },
+        {
+          "name": "Engine / render (advanced - the game's render block)",
+          "settings": [
+            { "label": "Graphics API", "value": "DirectX 12" },
+            { "label": "Mesh shaders", "value": "Allowed (force off)" },
+            { "label": "Parallel command-list build", "value": "On (8 worker threads)" },
+            { "label": "Compute queue pairing", "value": "On" },
+            { "label": "Independent render worker", "value": "On" },
+            { "label": "Tight-fit shader cache", "value": "On" },
+            { "label": "Eco shader cache", "value": "On" },
+            { "label": "Render worker thread priority above normal", "value": "Off" }
+          ]
+        }
+      ],
+      "hdrWriteup": {
+        "title": "Why my HDR sliders look like that (and why yours might differ)",
+        "paragraphs": [
+          "Resident Evil Requiem uses IN-GAME HDR - you calibrate it inside the game, not just in Windows. The catch: the in-game calibration image is misleading. The sliders show no numbers, and the picture you adjust against doesn't reflect what the game actually outputs, so it nudges you toward the wrong values on a bright display.",
+          "My monitor (ASUS ROG PG32UCDM3) is a QD-OLED that peaks around 1000 nits in HDR. Analysis of the game's actual output shows the Max Brightness slider reaches roughly 950 nits when pushed fully right (+20), while the default center (0) only puts out around 700 nits. So on a ~1000-nit screen I slide Max Brightness all the way right to use the full range my panel can show - the calibration image makes that look 'too bright,' but the real output is right where it should be.",
+          "Min Brightness goes fully left (-20) to hold a true black point. On an OLED, black pixels are genuinely off, so keeping the floor down preserves real inky blacks instead of lifting shadows into grey.",
+          "Brightness HDR I leave dead center at the default (0, about 300 nits). That's the mid/paper-white balance for the tone-map - the cleanest, easiest-on-the-eyes middle ground; pushing it just crushes or washes the mid-tones.",
+          "Important: these are tuned to MY 1000-nit OLED. If your monitor peaks lower (say 400-600 nits) you should NOT slam Max Brightness fully right - match it to your own panel's peak. Treat my numbers as the reference for a 1000-nit OLED, not a universal preset."
+        ]
+      },
+      "nvidia": {
+        "title": "NVIDIA App settings",
+        "intro": "These are my actual NVIDIA App settings, read straight off my screen - not defaults. I do most of the tuning at the global level so every game inherits it, and Resident Evil Requiem reads from that same global profile (no separate per-game overrides). Driver: GeForce Game Ready 610.62. The headline ones: Power Management on Prefer maximum performance, Texture Filtering on High quality, V-Sync On with G-SYNC, a 237 FPS frame cap, and the DLSS model-preset override below.",
+        "groups": [
+          {
+            "name": "NVIDIA - Global Settings (Graphics)",
+            "settings": [
+              { "label": "DLSS Override - Model Presets", "value": "Custom - FG: Preset B, SR: Preset K, RR: Recommended" },
+              { "label": "DLSS Override - Frame Generation Mode", "value": "Use 3D app setting" },
+              { "label": "DLSS Override - Super Resolution Mode", "value": "Use 3D app setting" },
+              { "label": "Smooth Motion", "value": "Off" },
+              { "label": "Low Latency Mode", "value": "Off" },
+              { "label": "CUDA - System Fallback Policy", "value": "Driver Default" },
+              { "label": "DSR - Factors", "value": "Off" },
+              { "label": "GPU App Assignment", "value": "NVIDIA GeForce RTX 5090" },
+              { "label": "Image Scaling", "value": "Off" },
+              { "label": "Max Frame Rate", "value": "237 FPS" },
+              { "label": "Monitor Technology", "value": "G-SYNC Compatible" },
+              { "label": "OpenGL GDI Compatibility", "value": "Auto" },
+              { "label": "Power Management Mode", "value": "Prefer maximum performance" },
+              { "label": "RTX Dynamic Vibrance", "value": "Off" },
+              { "label": "RTX HDR", "value": "Off" },
+              { "label": "Shader Cache", "value": "Size: Unlimited, Shader Compiler: Off" },
+              { "label": "Vertical Sync", "value": "On" },
+              { "label": "Virtual Reality - Variable Rate Super Sampling", "value": "Off" },
+              { "label": "Vulkan/OpenGL Present Method", "value": "Auto" },
+              { "label": "Anisotropic Filtering", "value": "Application-controlled" },
+              { "label": "Antialiasing - FXAA", "value": "Off" },
+              { "label": "Antialiasing - Transparency", "value": "Off" },
+              { "label": "Background Application Max Frame Rate", "value": "Off" },
+              { "label": "Multi-Frame Sampled AA (MFAA)", "value": "Off" },
+              { "label": "PhysX", "value": "NVIDIA GeForce RTX 5090" },
+              { "label": "Texture Filtering - Anisotropic Sample Optimization", "value": "Off" },
+              { "label": "Texture Filtering - Negative LOD Bias", "value": "Allow" },
+              { "label": "Texture Filtering - Quality", "value": "High quality" },
+              { "label": "Texture Filtering - Trilinear Optimization", "value": "On" }
+            ]
+          },
+          {
+            "name": "NVIDIA - Display & system (System tab)",
+            "settings": [
+              { "label": "G-SYNC", "value": "On, Full screen (G-SYNC Compatible VRR enabled)" },
+              { "label": "Display", "value": "ASUS ROG PG32UCDM3, DisplayPort, HDCP supported" },
+              { "label": "Resolution", "value": "3840 x 2160 (native)" },
+              { "label": "Refresh rate", "value": "240 Hz" },
+              { "label": "Scaling mode", "value": "No Scaling (scaling device: GPU)" },
+              { "label": "Output Color Format", "value": "RGB" },
+              { "label": "Output Color Depth", "value": "10 bpc" },
+              { "label": "Output Dynamic Range", "value": "Full" },
+              { "label": "Color Accuracy Mode", "value": "Accurate" },
+              { "label": "Digital Vibrance", "value": "50% (default)" },
+              { "label": "RTX Video - Super Resolution", "value": "Off" },
+              { "label": "RTX Video - HDR", "value": "Off" }
+            ]
+          },
+          {
+            "name": "NVIDIA - Resident Evil Requiem (per-game)",
+            "settings": [
+              { "label": "Per-game driver profile", "value": "Inherits the Global settings above - no separate overrides set" },
+              { "label": "DLSS Override - Model Presets", "value": "Global - FG: Preset B, SR: Preset K, RR: Recommended" },
+              { "label": "DLSS Override - Frame Generation Mode", "value": "Global - Use 3D app setting" },
+              { "label": "DLSS Override - Super Resolution Mode", "value": "Global - Use 3D app setting" },
+              { "label": "Max Frame Rate", "value": "Global - 237 FPS" },
+              { "label": "Power Management Mode", "value": "Global - Prefer maximum performance" },
+              { "label": "Vertical Sync", "value": "Global - On" },
+              { "label": "Texture Filtering - Quality", "value": "Global - High quality" },
+              { "label": "Game-optimization recommendation", "value": "Left as-is - I keep my own Custom in-game settings (Display Mode: Borderless, Graphics Quality: Custom, Hair Strands: On)" }
+            ]
+          }
+        ]
+      },
+      "dlss": {
+        "title": "DLSS version swap (via DLSS Swapper)",
+        "intro": "I updated all of Requiem's DLSS DLLs to the latest version using the DLSS Swapper app - upscaling, Ray Reconstruction, and Frame Generation - then set DLSS to Max Quality and Frame Generation to DLSS 4x in-game. The game shipped with the 310.3 DLLs; these are what I run now:",
+        "settings": [
+          { "label": "DLSS Super Resolution (nvngx_dlss.dll)", "value": "v310.7  (game shipped with v310.3)" },
+          { "label": "DLSS Ray Reconstruction (nvngx_dlssd.dll)", "value": "v310.7  (game shipped with v310.3)" },
+          { "label": "DLSS Frame Generation (nvngx_dlssg.dll)", "value": "v310.7  (game shipped with v310.3)" },
+          { "label": "In-game DLSS preset", "value": "Max Quality" },
+          { "label": "In-game Frame Generation", "value": "DLSS 4x" }
+        ],
+        "note": "DLSS Swapper only changes the DLL version - it keeps a backup of the original (.dlsss) so you can revert. The actual quality preset (Max Quality) and frame-gen multiplier (4x) are set in the game's own menu, not in the swapper."
+      },
+      "settingsNote": "Every setting above is read directly from the game's own config (config.ini, GameOption + render blocks), the NVIDIA driver profile database, and the DLSS Swapper database - so it matches exactly what runs on stream. Resident Evil Requiem keeps its audio levels, language, and subtitle settings inside the encrypted Steam Cloud save rather than the readable config file, so those few aren't listed here. Audio for the stream is handled on the mixer side (SM7B + RODECaster), not in-game.",
+      "mods": [
+        {
+          "name": "REFramework",
+          "note": "The modding framework for RE Engine games - required to load the script mods below. Installed here as dinput8.dll in the game folder."
+        },
+        {
+          "name": "No Film Grain (REFramework script)",
+          "note": "Disables the film-grain filter at runtime for a clean, sharp picture on stream - on top of the in-game film grain already being off."
+        }
+      ],
+      "modsNote": "Single-player, offline only. Installed and managed with Vortex. The REFramework config also keeps motion blur, lens distortion, and vignette in check for capture."
+    }
+  ]
+}

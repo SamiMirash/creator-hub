@@ -1,0 +1,2441 @@
+{
+  "id": "resident-evil-directors-cut",
+  "game": "Resident Evil Director's Cut (1997)",
+  "target": "100% completion of the selected PlayStation Director's Cut route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "dc-setup",
+      "name": "Director’s Cut Route and Modes",
+      "location_cue": "The PlayStation boot screen and three-option campaign selector.",
+      "note": "Use the original-soundtrack 1997 revision and preserve six route branches.",
+      "items": [
+        {
+          "id": "dc-setup",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the 1997 PlayStation Director's Cut",
+          "missable": false,
+          "levels": {
+            "1": "Choose the revision with the original soundtrack and Advanced mode.",
+            "2": "Run the non-DualShock Director's Cut on PlayStation hardware or a tested emulator.",
+            "3": "Use the 1997 non-DualShock PlayStation Director's Cut. Verify the menu offers Original, Beginner, and Advanced; avoid substituting the later DualShock revision, whose soundtrack and input support differ even though its rearranged campaign is mechanically similar."
+          }
+        },
+        {
+          "id": "dc-save-branches",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Keep One Branch per Mode and Character",
+          "missable": false,
+          "levels": {
+            "1": "Mode-specific rewards and outcome flags should not overwrite each other.",
+            "2": "Reserve separate slots for Jill and Chris in all three modes.",
+            "3": "Create six labeled save branches: Jill and Chris in Original, Beginner, and Advanced. Rotate additional saves before route decisions, the underground laboratory, and timed attempts so a reward or alternate outcome never destroys another clear."
+          }
+        },
+        {
+          "id": "dc-original-scope",
+          "type": "interaction",
+          "safe_type": "Mode",
+          "label": "Original Mode Scope",
+          "missable": false,
+          "levels": {
+            "1": "One menu option preserves the familiar PlayStation arrangement.",
+            "2": "Clear Original with both Jill and Chris.",
+            "3": "Select Original, complete both character campaigns, collect every file, map, weapon, and route variation listed in the physical-area sections, then preserve both clear files. The standard ledger below applies to Original and to Beginner unless a mode note says otherwise."
+          }
+        },
+        {
+          "id": "dc-beginner-scope",
+          "type": "interaction",
+          "safe_type": "Mode",
+          "label": "Beginner Mode Scope",
+          "missable": false,
+          "levels": {
+            "1": "The gentler arrangement is still a distinct playable mode.",
+            "2": "Clear Beginner with both Jill and Chris.",
+            "3": "Select Beginner and finish both character routes. Record its easier combat and supply balance as a separate clear; do not treat the double-ammunition Advanced input as a replacement for this menu mode."
+          }
+        },
+        {
+          "id": "dc-advanced-scope",
+          "type": "interaction",
+          "safe_type": "Mode",
+          "label": "Advanced Mode Scope",
+          "missable": false,
+          "levels": {
+            "1": "The final menu option rearranges items, enemies, cameras, and outfits.",
+            "2": "Clear Advanced with both Jill and Chris.",
+            "3": "Select Advanced normally for the intended hard arrangement. Follow the two Advanced location ledgers rather than the Original-mode pickup positions, see every altered room and encounter placement, and preserve each character clear separately."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up the memory card now",
+        "why": "Six character-and-mode branches plus reward clears need independent slots."
+      }
+    },
+    {
+      "id": "dc-mansion-first-pass",
+      "name": "Original/Beginner — Mansion First Pass",
+      "location_cue": "The two-storey entrance hall, dining room, galleries, bedrooms, bar, and connected east and west wings.",
+      "note": "For Original and Beginner modes only. Finish both wings and all four crest routes before opening the garden shed.",
+      "items": [
+        {
+          "id": "dc-mansion-map-first-floor",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Mansion First-Floor Map",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the small gallery, complete the nearby interaction to obtain Mansion First-Floor Map.",
+            "3": "Bring the key items gathered on the surrounding route. At the small gallery, move stepladder beside statue; then climb toward upper jug; then take map from jug. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-mansion-wooden-emblem",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Wooden Emblem",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the second-floor armor room, complete the nearby interaction to obtain Wooden Emblem.",
+            "3": "Bring the key items gathered on the surrounding route. At the second-floor armor room, cover both floor vents; then press central floor switch; then open released wall chest. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-mansion-blue-jewel",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Blue Jewel",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the upper dining balcony, complete the nearby interaction to obtain Blue Jewel.",
+            "3": "Bring the key items gathered on the surrounding route. At the upper dining balcony, push statue through broken railing; then return to dining floor; then collect jewel from fragments. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-mansion-wind-crest",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Wind Crest",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the green-corridor tiger room, complete the nearby interaction to obtain Wind Crest.",
+            "3": "Bring the key items gathered on the surrounding route. At the green-corridor tiger room, insert Blue Jewel; then take revealed Wind Crest. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-mansion-music-notes",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Music Notes",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the first-floor piano bar, complete the nearby interaction to obtain Music Notes.",
+            "3": "Bring the key items gathered on the surrounding route. At the first-floor piano bar, slide large bookcase right; then take hidden sheet music. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-mansion-gold-emblem",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Gold Emblem",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the piano bar hidden chamber, complete the nearby interaction to obtain Gold Emblem.",
+            "3": "Bring the key items gathered on the surrounding route. At the piano bar hidden chamber, use Music Notes on piano; then take Gold Emblem; then replace it with Wooden Emblem. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-mansion-shield-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Shield Key",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the first-floor dining room, complete the nearby interaction to obtain Shield Key.",
+            "3": "Bring the key items gathered on the surrounding route. At the first-floor dining room, insert Gold Emblem above fireplace; then inspect shifted grandfather clock; then take concealed Shield Key. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-mansion-sun-crest",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Sun Crest",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the east fountain room, complete the nearby interaction to obtain Sun Crest.",
+            "3": "Bring the key items gathered on the surrounding route. At the east fountain room, place Chemical into red pump; then walk behind dead growth; then take crest from shield. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-mansion-armor-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Armor Key",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the east fountain room, complete the nearby interaction to obtain Armor Key.",
+            "3": "Bring the key items gathered on the surrounding route. At the east fountain room, place Chemical into red pump; then walk behind dead growth; then take key from shield. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-mansion-moon-crest",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Moon Crest",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the second-floor attic, complete the nearby interaction to obtain Moon Crest.",
+            "3": "Bring the key items gathered on the surrounding route. At the second-floor attic, unlock attic with Shield Key; then circle past large snake; then take crest from wall opening. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-mansion-star-crest",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Star Crest",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the first-floor portrait gallery, complete the nearby interaction to obtain Star Crest.",
+            "3": "Bring the key items gathered on the surrounding route. At the first-floor portrait gallery, press portraits by age; then newborn then infant; then boy then young man; then middle-aged then old man; then press final portrait switch. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-mansion-square-crank",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Square Crank",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the crest-door garden shed, complete the nearby interaction to obtain Square Crank.",
+            "3": "Bring the key items gathered on the surrounding route. At the crest-door garden shed, insert all four crests; then move stepladder toward shelf; then take Square Crank above. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-mansion-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the east first-floor display room, complete the nearby interaction to obtain Shotgun.",
+            "3": "Bring the key items gathered on the surrounding route. At the east first-floor display room, chris needs Broken Shotgun; then swap weapons before exiting; then jill may trigger rescue. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-weapon-combat-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Combat Knife",
+          "missable": false,
+          "levels": {
+            "1": "Inspect both starting inventories before discarding anything.",
+            "2": "Confirm the Combat Knife is present when beginning with Jill and with Chris.",
+            "3": "Start a fresh file with each character, open the inventory before moving, and highlight the Combat Knife once. It is supplied automatically; do not discard the only copy before its character's weapon ledger is marked."
+          }
+        },
+        {
+          "id": "dc-weapon-beretta",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Beretta M92FS",
+          "missable": false,
+          "levels": {
+            "1": "One character starts armed; the other finds the same handgun during the opening circuit.",
+            "2": "Confirm Jill's starting handgun and collect Chris's handgun from the Main Hall floor.",
+            "3": "Jill begins with the Beretta already equipped. As Chris, finish the first dining-room circuit, return to the Main Hall, and inspect the central floor for the handgun. Open inventory after each pickup so both campaign ledgers record it."
+          }
+        },
+        {
+          "id": "dc-weapon-bazooka",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Bazooka",
+          "missable": false,
+          "levels": {
+            "1": "Jill can obtain a character-exclusive launcher on an outdoor upper route.",
+            "2": "With Jill, search the eastern second-floor terrace and take the Bazooka.",
+            "3": "Unlock the eastern upper terrace during the first mansion pass, step outside as Jill, and inspect the far side near the railing. Take the Bazooka and every nearby ammunition type before returning indoors; Chris cannot collect this weapon."
+          }
+        },
+        {
+          "id": "dc-file-botany-book",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Botany Book",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Botany Book at the small library round table.",
+            "3": "Reach the small library round table, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "dc-file-keepers-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Keeper's Diary",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Keeper's Diary at the employee bedroom desk.",
+            "3": "Reach the employee bedroom desk, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "dc-file-researchers-will",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Researcher's Will",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Researcher's Will at the aquarium study desk.",
+            "3": "Reach the aquarium study desk, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "dc-file-orders",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Orders",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Orders at the second floor trophy room table.",
+            "3": "Reach the second floor trophy room table, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before leaving the mansion",
+        "why": "This preserves an early file for alternate scenes and timed route variants."
+      },
+      "point_of_no_return": {
+        "title": "The four-crest door changes the active route",
+        "why": "Local puzzles remain accessible, but clearing them now prevents long backtracking."
+      }
+    },
+    {
+      "id": "dc-courtyard-and-guardhouse",
+      "name": "Original/Beginner — Courtyard and Guardhouse",
+      "location_cue": "The garden paths beyond the crest door, a drained channel, and a low dormitory building beside a fountain.",
+      "note": "For Original and Beginner modes only. SAVE-BACKUP: branch variants begin before Room 003. The outdoor route remains traversable afterward.",
+      "items": [
+        {
+          "id": "dc-courtyard-map",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Courtyard Map",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the garden north passage, complete the nearby interaction to obtain Courtyard Map.",
+            "3": "Bring the key items gathered on the surrounding route. At the garden north passage, check passage beyond herb bend; then take map at dead end. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-courtyard-water-channel",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Drain the Water Channel",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the courtyard orange-gate passage, complete the nearby interaction to obtain Drain the Water Channel.",
+            "3": "Bring the key items gathered on the surrounding route. At the courtyard orange-gate passage, use Square Crank on socket; then cross drained channel route. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-guardhouse-map",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Guardhouse Map",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the Room 002, complete the nearby interaction to obtain Guardhouse Map.",
+            "3": "Bring the key items gathered on the surrounding route. At the Room 002, inspect wall beside desk; then take mounted area map. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-guardhouse-hidden-ladder",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Room 002 Hidden Ladder",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the Room 002 behind bed, complete the nearby interaction to obtain Room 002 Hidden Ladder.",
+            "3": "Bring the key items gathered on the surrounding route. At the Room 002 behind bed, push left wardrobe forward; then slide right wardrobe sideways; then descend uncovered ladder. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-guardhouse-control-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Control Room Key",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the Room 001 bathroom, complete the nearby interaction to obtain Control Room Key.",
+            "3": "Bring the key items gathered on the surrounding route. At the Room 001 bathroom, pull bathtub drain plug; then inspect emptied bathtub; then take Control Room Key. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-guardhouse-crate-bridge",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Flooded Passage Crate Bridge",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the guardhouse basement corridor, complete the nearby interaction to obtain Flooded Passage Crate Bridge.",
+            "3": "Bring the key items gathered on the surrounding route. At the guardhouse basement corridor, move first crate around corner; then push all three into water; then cross completed crate bridge. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-guardhouse-003-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Room 003 Key",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the guardhouse weapon store, complete the nearby interaction to obtain Room 003 Key.",
+            "3": "Bring the key items gathered on the surrounding route. At the guardhouse weapon store, open drained basement route; then search right-hand weapon shelf; then take Room 003 Key. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-guardhouse-chemical-room",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Chemical Room Door",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the guardhouse keypad door, complete the nearby interaction to obtain Chemical Room Door.",
+            "3": "Bring the key items gathered on the surrounding route. At the guardhouse keypad door, read billiard-table clock clue; then try 3-4-5; then alternate build uses 2-1-5. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-guardhouse-v-jolt",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "V-JOLT",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the guardhouse chemical room, complete the nearby interaction to obtain V-JOLT.",
+            "3": "Bring the key items gathered on the surrounding route. At the guardhouse chemical room, water plus UMB No.2; then add UMB No.4; then combine UMB2 with UMB4; then join both mixtures; then make water plus UMB2; then add final mixture. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-guardhouse-root-treatment",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Use V-JOLT",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the flooded basement root chamber, complete the nearby interaction to obtain Use V-JOLT.",
+            "3": "Bring the key items gathered on the surrounding route. At the flooded basement root chamber, carry finished V-JOLT downstairs; then enter root chamber; then use mixture beside roots. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-guardhouse-red-book",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Red Book Shelf",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the Room 003 bookshelf, complete the nearby interaction to obtain Red Book Shelf.",
+            "3": "Bring the key items gathered on the surrounding route. At the Room 003 bookshelf, take gray book; then insert Red Book instead; then use opened hidden doorway. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-guardhouse-helmet-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Helmet Key",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the Room 003 fireplace, complete the nearby interaction to obtain Helmet Key.",
+            "3": "Bring the key items gathered on the surrounding route. At the Room 003 fireplace, finish room's mandatory encounter; then inspect fireplace afterward; then examine key to reveal emblem. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-file-plant-42-report",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Plant 42 Report",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Plant 42 Report at the Room 002 bed.",
+            "3": "Reach the Room 002 bed, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "dc-file-v-jolt-report",
+          "type": "file",
+          "safe_type": "File",
+          "label": "V-JOLT Report",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read V-JOLT Report at the Room 003 bookshelf.",
+            "3": "Reach the Room 003 bookshelf, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "dc-guardhouse-plant-variants",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Record Every Guardhouse Encounter Variant",
+          "missable": true,
+          "levels": {
+            "1": "The chemical mixture and an earlier support flag create distinct versions.",
+            "2": "Record the full fight, weakened fight, and support-assisted guardhouse variants on separate Jill or Chris saves.",
+            "3": "Back up before entering the hidden doorway in Room 003. For the weakened version, use V-JOLT on the basement roots first. For the full version, skip V-JOLT without an active rescue flag. For the assisted version, preserve the required support route and enter without using V-JOLT."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before opening Room 003",
+        "why": "The mixture and support flags select mutually exclusive encounter variants."
+      },
+      "point_of_no_return": {
+        "title": "Entering the hidden Room 003 doorway commits the variant",
+        "why": "Reload the backup to record the other mechanical versions."
+      }
+    },
+    {
+      "id": "dc-mansion-return",
+      "name": "Original/Beginner — Mansion Return and Library",
+      "location_cue": "The familiar mansion wings after returning from the garden, including newly opened helmet doors, the kitchen lift, and library.",
+      "note": "For Original and Beginner modes only. SAVE-BACKUP: two character-route files and support outcomes can close during this return.",
+      "items": [
+        {
+          "id": "dc-return-map-second-floor",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Mansion Second-Floor Map",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the second-floor fireplace room, complete the nearby interaction to obtain Mansion Second-Floor Map.",
+            "3": "Bring the key items gathered on the surrounding route. At the second-floor fireplace room, carry Lighter; then ignite unlit fireplace; then read revealed wall map. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-return-doom-book-one",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Doom Book Vol. 1",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the lit mansion study, complete the nearby interaction to obtain Doom Book Vol. 1.",
+            "3": "Bring the key items gathered on the surrounding route. At the lit mansion study, turn on table lamp; then take book from shelf; then examine book for Eagle Medal. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-return-red-jewel",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Red Jewel",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the second-floor trophy room, complete the nearby interaction to obtain Red Jewel.",
+            "3": "Bring the key items gathered on the surrounding route. At the second-floor trophy room, move stepladder under animal head; then turn off room light; then climb and take jewel. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-return-colt-python",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Colt Python",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the green-corridor tiger room, complete the nearby interaction to obtain Colt Python.",
+            "3": "Bring the key items gathered on the surrounding route. At the green-corridor tiger room, insert Red Jewel; then take revealed Colt Python. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-return-battery",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Battery",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the small office beside library elevator, complete the nearby interaction to obtain Battery.",
+            "3": "Bring the key items gathered on the surrounding route. At the small office beside library elevator, reach library through kitchen elevator; then enter nearest small office; then take Battery from floor. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-courtyard-waterfall",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Open the Waterfall Passage",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the courtyard disabled elevator, complete the nearby interaction to obtain Open the Waterfall Passage.",
+            "3": "Bring the key items gathered on the surrounding route. At the courtyard disabled elevator, install Battery beside elevator; then ride elevator upward; then use Square Crank above; then ride back down; then descend behind stopped waterfall. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-file-pass-number",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Pass Number",
+          "missable": true,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Pass Number at the Jill second rope passage.",
+            "3": "Use Jill, keep the support route active, and wait for the second rope after the upstairs encounter. Remain in the isolated passage until Pass Number is provided, then open the file menu once to register it."
+          }
+        },
+        {
+          "id": "dc-file-scrapbook",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Scrapbook",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Scrapbook at the large library side table.",
+            "3": "Reach the large library side table, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up at the first return save room",
+        "why": "Timed responses and a rope sequence alter later support and file access."
+      },
+      "point_of_no_return": {
+        "title": "The battery route leads below the courtyard",
+        "why": "Finish the Helmet Key rooms, library, and route-only file before descending."
+      }
+    },
+    {
+      "id": "dc-underground-tunnels",
+      "name": "Original/Beginner — Underground Tunnels",
+      "location_cue": "The damp passages reached by descending behind the stopped courtyard waterfall.",
+      "note": "For Original and Beginner modes only. SAVE-BACKUP: Jill's two underground answers set a later route flag.",
+      "items": [
+        {
+          "id": "dc-underground-hex-crank",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Hexagonal Crank",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the deep eastern tunnel, complete the nearby interaction to obtain Hexagonal Crank.",
+            "3": "Bring the key items gathered on the surrounding route. At the deep eastern tunnel, reach tunnel's far chamber; then inspect floor after encounter; then take Hexagonal Crank. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-underground-wall",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Rotating Tunnel Wall",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the tunnel dead end, complete the nearby interaction to obtain Rotating Tunnel Wall.",
+            "3": "Bring the key items gathered on the surrounding route. At the tunnel dead end, use Hexagonal Crank; then cross newly aligned doorway. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-underground-doom-book-two",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Doom Book Vol. 2",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the boulder-room statue puzzle, complete the nearby interaction to obtain Doom Book Vol. 2.",
+            "3": "Bring the key items gathered on the surrounding route. At the boulder-room statue puzzle, crank wall outward; then push statue onto floor panel; then take opened compartment book; then examine book for Wolf Medal. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-underground-mo-disk",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "MO Disk 2",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the second boulder alcove, complete the nearby interaction to obtain MO Disk 2.",
+            "3": "Bring the key items gathered on the surrounding route. At the second boulder alcove, trigger boulder; then retreat into side alcove; then search space behind boulder. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-underground-map",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Underground Map",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the second boulder alcove, complete the nearby interaction to obtain Underground Map.",
+            "3": "Bring the key items gathered on the surrounding route. At the second boulder alcove, trigger boulder; then retreat into side alcove; then take map behind boulder. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-underground-fountain",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Drain the Courtyard Fountain",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the courtyard fountain platform, complete the nearby interaction to obtain Drain the Courtyard Fountain.",
+            "3": "Bring the key items gathered on the surrounding route. At the courtyard fountain platform, examine both Doom Books; then recover Eagle and Wolf Medals; then insert both beside fountain; then descend revealed elevator. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-weapon-flamethrower",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Flamethrower",
+          "missable": false,
+          "levels": {
+            "1": "Chris can borrow a wall-mounted weapon that also acts as a door latch.",
+            "2": "With Chris, take the Flamethrower from its tunnel wall bracket.",
+            "3": "At the first deep tunnel junction, remove the Flamethrower from the wall as Chris and use it at least once. The door behind you locks while its bracket is empty, so replace the weapon in the matching holder before attempting to leave that section."
+          }
+        },
+        {
+          "id": "dc-underground-web-door",
+          "type": "interaction",
+          "safe_type": "Obstacle",
+          "label": "Cut the Webbed Door Clear",
+          "missable": false,
+          "levels": {
+            "1": "A basic starting tool becomes useful again after the large tunnel chamber.",
+            "2": "Take the Combat Knife in the large spider chamber and clear the web from the exit.",
+            "3": "After the mandatory chamber encounter, collect the Combat Knife from the room's edge if yours is stored elsewhere. Equip it, face the web-covered door, and slash until the interaction opens the route; retrieve nearby supplies before crossing."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up at the tunnel entrance",
+        "why": "A two-answer conversation creates four route variants and affects an ending flag."
+      },
+      "point_of_no_return": {
+        "title": "The medal fountain leads to the laboratory",
+        "why": "Collect the map, disk, book, and both medals before taking the hidden lift."
+      }
+    },
+    {
+      "id": "dc-laboratory",
+      "name": "Original/Beginner — Underground Laboratory",
+      "location_cue": "The multi-level concrete facility below the medal fountain, with a computer room, morgue, cells, and power corridors.",
+      "note": "For Original and Beginner modes only. SAVE-BACKUP: the central elevator begins the final route and can close unfinished file or ending work.",
+      "items": [
+        {
+          "id": "dc-laboratory-mo-disk",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "MO Disk 3",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the laboratory B2 stairway, complete the nearby interaction to obtain MO Disk 3.",
+            "3": "Bring the key items gathered on the surrounding route. At the laboratory B2 stairway, enter laboratory stairwell; then inspect table behind railings; then take final MO Disk. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-laboratory-computer",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Laboratory Computer",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the laboratory B2 computer room, complete the nearby interaction to obtain Laboratory Computer.",
+            "3": "Bring the key items gathered on the surrounding route. At the laboratory B2 computer room, enter login JOHN; then enter password ADA; then enter security code MOLE; then unlock B2 and B3 doors. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-laboratory-power-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Power Room Key",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the laboratory B2 visual room, complete the nearby interaction to obtain Power Room Key.",
+            "3": "Bring the key items gathered on the surrounding route. At the laboratory B2 visual room, open computer-unlocked room; then press small wall-panel switch; then take key from hidden recess. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-laboratory-morgue",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Morgue Vent Puzzle",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the laboratory B3 morgue, complete the nearby interaction to obtain Morgue Vent Puzzle.",
+            "3": "Bring the key items gathered on the surrounding route. At the laboratory B3 morgue, cover right vent with crate; then shift ladder away; then cover left vent; then place ladder beneath opening; then climb through safe vent. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-laboratory-cell",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Open the Optional Cell",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the laboratory B3 cell corridor, complete the nearby interaction to obtain Open the Optional Cell.",
+            "3": "Bring the key items gathered on the surrounding route. At the laboratory B3 cell corridor, collect three pass codes; then use corridor lock panel; then enter and open cell door. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-laboratory-power",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Restore Laboratory Power",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the laboratory B3 power rooms, complete the nearby interaction to obtain Restore Laboratory Power.",
+            "3": "Bring the key items gathered on the surrounding route. At the laboratory B3 power rooms, activate first power terminal; then cross into second room; then activate final power terminal; then return to central elevator. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "dc-file-researchers-letter",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Researcher's Letter",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Researcher's Letter at the B3 X ray room table.",
+            "3": "Reach the B3 X ray room table, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "dc-file-fax",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Fax",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Fax at the B3 private room wall alcove.",
+            "3": "Reach the B3 private room wall alcove, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "dc-file-security-system",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Security System",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Security System at the B2 visual room entrance shelf.",
+            "3": "Reach the B2 visual room entrance shelf, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "dc-file-pass-code-01",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Pass Code 01",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Pass Code 01 at the B3 private room disk terminal.",
+            "3": "Insert one MO Disk into the private-room B3 reader. Open the file menu and confirm Pass Code 01 appears before spending another disk or leaving B3."
+          }
+        },
+        {
+          "id": "dc-file-pass-code-02",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Pass Code 02",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Pass Code 02 at the B3 morgue disk terminal.",
+            "3": "Seal both morgue gas vents, climb through, and insert a disk into the reader beyond. Open the file menu and confirm Pass Code 02 appears before spending another disk or leaving B3."
+          }
+        },
+        {
+          "id": "dc-file-pass-code-03",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Pass Code 03",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Pass Code 03 at the B3 second power room terminal.",
+            "3": "Bring the remaining disk into B3's second power room and insert it at the side reader. Open the file menu and confirm Pass Code 03 appears before spending another disk or leaving B3."
+          }
+        },
+        {
+          "id": "dc-file-barrys-picture",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Barry's Picture",
+          "missable": true,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Barry's Picture at the Jill active support laboratory route.",
+            "3": "Use Jill and preserve the active support route through the underground choices. During the later laboratory path, finish the optional support scene and inspect Barry's Picture in the file menu before taking the central elevator."
+          }
+        },
+        {
+          "id": "dc-weapon-final-rocket",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Final Rocket Launcher",
+          "missable": false,
+          "levels": {
+            "1": "One ending route receives a single-use launcher during the last outdoor encounter.",
+            "2": "On an active-support ending, wait on the helipad for the Rocket Launcher supply drop.",
+            "3": "Open the optional cell and keep the character's support flag active, then reach the helipad. Use the flare, avoid the final physical threat until the launcher drops, collect it immediately, and fire one clean shot to register the weapon and finish that ending."
+          }
+        },
+        {
+          "id": "dc-laboratory-all-files-check",
+          "type": "optional",
+          "safe_type": "File Set",
+          "label": "Confirm All 15 Files",
+          "missable": false,
+          "levels": {
+            "1": "The file menu should contain mansion, guardhouse, terminal, and route-only entries.",
+            "2": "Before the central elevator, verify that the combined Jill and Chris ledger contains all 15 file titles.",
+            "3": "Compare the file menu against every File entry in this pack. Pass Number and Barry's Picture require Jill route flags, while three Pass Codes require separate MO Disks. Do not take the central elevator until every attainable title on the current route has been opened once."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before the central elevator",
+        "why": "The ending flags, optional cell, and route-only file must already match the intended outcome."
+      },
+      "point_of_no_return": {
+        "title": "The central elevator starts the final sequence",
+        "why": "Finish files, terminals, cell work, and the intended save branch before entering."
+      }
+    },
+    {
+      "id": "dc-jill-route-archive",
+      "name": "Original/Beginner — Jill Route Archive",
+      "location_cue": "The mansion dining room, eastern terrace, aquarium study, attic passages, Room 002, Room 003, and underground junctions.",
+      "note": "For Original and Beginner modes only. SAVE-BACKUP: this archive records mutually exclusive mechanical and scene variants without describing their story content.",
+      "items": [
+        {
+          "id": "dc-jill-branch-alternate-opening",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Alternate Opening",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to re-enter dining room early.",
+            "3": "Create a manual save before the relevant room, then re-enter dining room early. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-shotgun-trap",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Shotgun Trap",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to take shotgun before support meeting.",
+            "3": "Create a manual save before the relevant room, then take shotgun before support meeting. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-terrace-handoff",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Terrace Handoff",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to visit east terrace early.",
+            "3": "Create a manual save before the relevant room, then visit east terrace early. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-study-document-scene",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Study Document Scene",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to terrace route then aquarium study.",
+            "3": "Create a manual save before the relevant room, then terrace route then aquarium study. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-serum-fast",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Serum Fast",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to return with serum quickly.",
+            "3": "Create a manual save before the relevant room, then return with serum quickly. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-serum-slow",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Serum Slow",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to delay serum return.",
+            "3": "Create a manual save before the relevant room, then delay serum return. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-first-snake-unpoisoned",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — First Snake Unpoisoned",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to avoid poisoning during encounter.",
+            "3": "Create a manual save before the relevant room, then avoid poisoning during encounter. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-first-snake-poisoned",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — First Snake Poisoned",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to become poisoned during encounter.",
+            "3": "Create a manual save before the relevant room, then become poisoned during encounter. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-room-002-conversation",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Room 002 Conversation",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to enter room 002 before encounter.",
+            "3": "Create a manual save before the relevant room, then enter room 002 before encounter. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-plant-full-fight",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Plant Full Fight",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to skip v-jolt and rescue flag.",
+            "3": "Create a manual save before the relevant room, then skip v-jolt and rescue flag. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-plant-weakened",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Plant Weakened",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to use v-jolt before encounter.",
+            "3": "Create a manual save before the relevant room, then use v-jolt before encounter. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-plant-rescue",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Plant Rescue",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to skip v-jolt with support flag.",
+            "3": "Create a manual save before the relevant room, then skip v-jolt with support flag. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-second-rope-wait",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Second Rope Wait",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to wait for second rope.",
+            "3": "Create a manual save before the relevant room, then wait for second rope. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-second-rope-leave",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Second Rope Leave",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to leave before second rope.",
+            "3": "Create a manual save before the relevant room, then leave before second rope. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-underground-yes-yes",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Underground Yes Yes",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to choose yes then yes.",
+            "3": "Create a manual save before the relevant room, then choose yes then yes. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-underground-yes-no",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Underground Yes No",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to choose yes then no.",
+            "3": "Create a manual save before the relevant room, then choose yes then no. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-underground-no-yes",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Underground No Yes",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to choose no then yes.",
+            "3": "Create a manual save before the relevant room, then choose no then yes. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-jill-branch-underground-no-no",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Jill Branch — Underground No No",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Jill save, trigger this variant by choosing to choose no then no.",
+            "3": "Create a manual save before the relevant room, then choose no then no. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Use rolling Jill branch saves",
+        "why": "Several timings and answers cannot coexist on one continuous save."
+      },
+      "point_of_no_return": {
+        "title": "Each listed trigger commits its local variant",
+        "why": "Record it, then restore the preceding save for the paired condition."
+      }
+    },
+    {
+      "id": "dc-chris-route-archive",
+      "name": "Original/Beginner — Chris Route Archive",
+      "location_cue": "The west medical room, attic, piano bar, guardhouse, mansion return corridors, and upper library approach.",
+      "note": "For Original and Beginner modes only. SAVE-BACKUP: this archive records mutually exclusive mechanical and scene variants without revealing their outcomes.",
+      "items": [
+        {
+          "id": "dc-chris-branch-support-west-room",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Support West Room",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to visit west medical room early.",
+            "3": "Create a manual save before the relevant room, then visit west medical room early. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-support-upstairs",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Support Upstairs",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to skip west medical room.",
+            "3": "Create a manual save before the relevant room, then skip west medical room. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-support-answer-yes",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Support Answer Yes",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to answer first offer yes.",
+            "3": "Create a manual save before the relevant room, then answer first offer yes. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-support-answer-no",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Support Answer No",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to answer first offer no.",
+            "3": "Create a manual save before the relevant room, then answer first offer no. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-serum-fast",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Serum Fast",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to return with serum quickly.",
+            "3": "Create a manual save before the relevant room, then return with serum quickly. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-serum-slow",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Serum Slow",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to delay serum return.",
+            "3": "Create a manual save before the relevant room, then delay serum return. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-snake-unpoisoned",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Snake Unpoisoned",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to avoid poisoning during encounter.",
+            "3": "Create a manual save before the relevant room, then avoid poisoning during encounter. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-snake-self-serum",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Snake Self Serum",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to poisoned chris fetches serum.",
+            "3": "Create a manual save before the relevant room, then poisoned chris fetches serum. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-snake-support-serum",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Snake Support Serum",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to support fetches serum.",
+            "3": "Create a manual save before the relevant room, then support fetches serum. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-piano-practice-yes",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Piano Practice Yes",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to accept piano practice.",
+            "3": "Create a manual save before the relevant room, then accept piano practice. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-piano-practice-no",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Piano Practice No",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to decline piano practice.",
+            "3": "Create a manual save before the relevant room, then decline piano practice. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-plant-assisted",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Plant Assisted",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to prepare v-jolt before encounter.",
+            "3": "Create a manual save before the relevant room, then prepare v-jolt before encounter. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-plant-solo",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Plant Solo",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to enter without v-jolt setup.",
+            "3": "Create a manual save before the relevant room, then enter without v-jolt setup. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-return-library-rescue",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Return Library Rescue",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to rush toward upstairs scream.",
+            "3": "Create a manual save before the relevant room, then rush toward upstairs scream. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-return-library-delay",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Return Library Delay",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to ignore upstairs scream.",
+            "3": "Create a manual save before the relevant room, then ignore upstairs scream. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-return-save-room-rescue",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Return Save Room Rescue",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to rush west save-room route.",
+            "3": "Create a manual save before the relevant room, then rush west save-room route. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        },
+        {
+          "id": "dc-chris-branch-return-save-room-delay",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Chris Branch — Return Save Room Delay",
+          "missable": true,
+          "levels": {
+            "1": "Small timing and dialogue changes can alter the next optional scene without changing the main route.",
+            "2": "On a dedicated Chris save, trigger this variant by choosing to ignore west save-room route.",
+            "3": "Create a manual save before the relevant room, then ignore west save-room route. Continue only until the alternate scene or control change finishes, record the variant, and reload the backup before testing its paired condition; do not overwrite the shared pre-branch save."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Use rolling Chris branch saves",
+        "why": "Early answers and timed responses determine later variants and ending support."
+      },
+      "point_of_no_return": {
+        "title": "Each listed trigger commits its local variant",
+        "why": "Record it, then restore the preceding save for the paired condition."
+      }
+    },
+    {
+      "id": "dc-ending-matrix",
+      "name": "Original/Beginner — Ending Matrix",
+      "location_cue": "The final laboratory save room, optional cell corridor, central elevator, and outdoor extraction route.",
+      "note": "For Original and Beginner modes only. SAVE-BACKUP: preserve pre-elevator files for all support-flag and cell combinations.",
+      "items": [
+        {
+          "id": "dc-ending-jill-a",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Jill Ending A",
+          "missable": true,
+          "levels": {
+            "1": "Two optional flags determine this result; preserve a backup before the laboratory elevator.",
+            "2": "Finish with the support flag active and the optional laboratory opened.",
+            "3": "After the second attic encounter, wait for the second rope; in the underground, choose Yes to travel together and No when asked who should lead. Collect all three MO Disks, obtain all three Pass Codes, unlock the B3 corridor door, and open the cell before the central elevator. Finish the route and save its clear data in a distinct slot."
+          }
+        },
+        {
+          "id": "dc-ending-jill-b",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Jill Ending B",
+          "missable": true,
+          "levels": {
+            "1": "Two optional flags determine this result; preserve a backup before the laboratory elevator.",
+            "2": "Finish with the support flag active and the optional laboratory closed.",
+            "3": "After the second attic encounter, wait for the second rope; in the underground, choose Yes to travel together and No when asked who should lead. Leave the B3 cell locked and take the central elevator without using all three Pass Codes. Finish the route and save its clear data in a distinct slot."
+          }
+        },
+        {
+          "id": "dc-ending-jill-c",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Jill Ending C",
+          "missable": true,
+          "levels": {
+            "1": "Two optional flags determine this result; preserve a backup before the laboratory elevator.",
+            "2": "Finish with the support flag inactive and the optional laboratory opened.",
+            "3": "After the second attic encounter, leave before the second rope returns, keeping the support flag inactive through the underground. Collect all three MO Disks, obtain all three Pass Codes, unlock the B3 corridor door, and open the cell before the central elevator. Finish the route and save its clear data in a distinct slot."
+          }
+        },
+        {
+          "id": "dc-ending-jill-d",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Jill Ending D",
+          "missable": true,
+          "levels": {
+            "1": "Two optional flags determine this result; preserve a backup before the laboratory elevator.",
+            "2": "Finish with the support flag inactive and the optional laboratory closed.",
+            "3": "After the second attic encounter, leave before the second rope returns, keeping the support flag inactive through the underground. Leave the B3 cell locked and take the central elevator without using all three Pass Codes. Finish the route and save its clear data in a distinct slot."
+          }
+        },
+        {
+          "id": "dc-ending-chris-a",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Chris Ending A",
+          "missable": true,
+          "levels": {
+            "1": "Two optional flags determine this result; preserve a backup before the laboratory elevator.",
+            "2": "Finish with the support flag active and the optional laboratory opened.",
+            "3": "Meet the support character in the west medical room, answer Yes, then rush to the mini-library when the mansion-return warning is heard and clear the attacker. Collect all three MO Disks, obtain all three Pass Codes, unlock the B3 corridor door, and open the cell before the central elevator. Finish the route and save its clear data in a distinct slot."
+          }
+        },
+        {
+          "id": "dc-ending-chris-b",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Chris Ending B",
+          "missable": true,
+          "levels": {
+            "1": "Two optional flags determine this result; preserve a backup before the laboratory elevator.",
+            "2": "Finish with the support flag active and the optional laboratory closed.",
+            "3": "Meet the support character in the west medical room, answer Yes, then rush to the mini-library when the mansion-return warning is heard and clear the attacker. Leave the B3 cell locked and take the central elevator without using all three Pass Codes. Finish the route and save its clear data in a distinct slot."
+          }
+        },
+        {
+          "id": "dc-ending-chris-c",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Chris Ending C",
+          "missable": true,
+          "levels": {
+            "1": "Two optional flags determine this result; preserve a backup before the laboratory elevator.",
+            "2": "Finish with the support flag inactive and the optional laboratory opened.",
+            "3": "Answer No in the west medical room or ignore the mansion-return warning so the support flag remains inactive. Collect all three MO Disks, obtain all three Pass Codes, unlock the B3 corridor door, and open the cell before the central elevator. Finish the route and save its clear data in a distinct slot."
+          }
+        },
+        {
+          "id": "dc-ending-chris-d",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Chris Ending D",
+          "missable": true,
+          "levels": {
+            "1": "Two optional flags determine this result; preserve a backup before the laboratory elevator.",
+            "2": "Finish with the support flag inactive and the optional laboratory closed.",
+            "3": "Answer No in the west medical room or ignore the mansion-return warning so the support flag remains inactive. Leave the B3 cell locked and take the central elevator without using all three Pass Codes. Finish the route and save its clear data in a distinct slot."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before the laboratory elevator",
+        "why": "Restoring this point avoids replaying the full campaign for paired ending outcomes."
+      },
+      "point_of_no_return": {
+        "title": "Entering the central elevator locks the ending flags",
+        "why": "Verify support and cell state before crossing this line."
+      }
+    },
+    {
+      "id": "dc-advanced-differences",
+      "name": "Advanced Mode Differences",
+      "location_cue": "The Advanced selector and the mansion rooms whose camera, item, and enemy layouts no longer match Original.",
+      "note": "Treat Advanced as a separate rearranged campaign, not merely a difficulty toggle.",
+      "items": [
+        {
+          "id": "advanced-change-01-repositioned-key-items",
+          "type": "optional",
+          "safe_type": "Advanced Difference",
+          "label": "Repositioned Key Items",
+          "missable": true,
+          "levels": {
+            "1": "Familiar rooms behave differently in this mode.",
+            "2": "In Advanced, record the repositioned key items.",
+            "3": "Use the character-specific Advanced ledger for every key, crest, jewel, medal, disk, and battery. Do not rely on the Original-mode floor positions after selecting Advanced."
+          }
+        },
+        {
+          "id": "advanced-change-02-repositioned-ammunition",
+          "type": "optional",
+          "safe_type": "Advanced Difference",
+          "label": "Repositioned Ammunition",
+          "missable": true,
+          "levels": {
+            "1": "Familiar rooms behave differently in this mode.",
+            "2": "In Advanced, record the repositioned ammunition.",
+            "3": "Search every shelf, body, desk, and blind camera edge again in Advanced. Ammunition is only slightly rearranged, but the stronger enemies make each moved stack important."
+          }
+        },
+        {
+          "id": "advanced-change-03-altered-enemy-placements",
+          "type": "optional",
+          "safe_type": "Advanced Difference",
+          "label": "Altered Enemy Placements",
+          "missable": false,
+          "levels": {
+            "1": "Familiar rooms behave differently in this mode.",
+            "2": "In Advanced, record the altered enemy placements.",
+            "3": "Enter each familiar room prepared for a different enemy count or starting angle. Clear or evade the new placement before searching for its rearranged object."
+          }
+        },
+        {
+          "id": "advanced-change-04-stronger-enemy-damage",
+          "type": "optional",
+          "safe_type": "Advanced Difference",
+          "label": "Stronger Enemy Damage",
+          "missable": false,
+          "levels": {
+            "1": "Familiar rooms behave differently in this mode.",
+            "2": "In Advanced, record the stronger enemy damage.",
+            "3": "Treat two close-range hits as potentially fatal on the lighter character. Carry one mixed herb while learning each rearranged corridor and restore rather than gambling a branch save."
+          }
+        },
+        {
+          "id": "advanced-change-05-higher-enemy-durability",
+          "type": "optional",
+          "safe_type": "Advanced Difference",
+          "label": "Higher Enemy Durability",
+          "missable": false,
+          "levels": {
+            "1": "Familiar rooms behave differently in this mode.",
+            "2": "In Advanced, record the higher enemy durability.",
+            "3": "Use the Custom Beretta on ordinary targets, reserve shells and heavy rounds for narrow rooms, and verify a blood pool before walking over a fallen enemy."
+          }
+        },
+        {
+          "id": "advanced-change-06-new-camera-angles",
+          "type": "optional",
+          "safe_type": "Advanced Difference",
+          "label": "New Camera Angles",
+          "missable": false,
+          "levels": {
+            "1": "Familiar rooms behave differently in this mode.",
+            "2": "In Advanced, record the new camera angles.",
+            "3": "Pause at every camera cut and check both screen edges. Several pickups and threats are hidden by a view that does not exist in Original mode."
+          }
+        },
+        {
+          "id": "advanced-change-07-altered-laboratory-rooms",
+          "type": "optional",
+          "safe_type": "Advanced Difference",
+          "label": "Altered Laboratory Rooms",
+          "missable": false,
+          "levels": {
+            "1": "Familiar rooms behave differently in this mode.",
+            "2": "In Advanced, record the altered laboratory rooms.",
+            "3": "Sweep the laboratory as a separate layout: inspect its revised geometry, collect all three MO Disks, open every pass-code terminal, and finish item cleanup before the final lift."
+          }
+        },
+        {
+          "id": "advanced-change-08-three-ribbons-per-pickup",
+          "type": "optional",
+          "safe_type": "Advanced Difference",
+          "label": "Three Ribbons Per Pickup",
+          "missable": false,
+          "levels": {
+            "1": "Familiar rooms behave differently in this mode.",
+            "2": "In Advanced, record the three ribbons per pickup.",
+            "3": "Collect one Ink Ribbon stack in Advanced and confirm it adds three uses. Keep the stack on the relevant character or in the nearest item box before leaving."
+          }
+        },
+        {
+          "id": "advanced-change-09-different-starting-outfits",
+          "type": "optional",
+          "safe_type": "Advanced Difference",
+          "label": "Different Starting Outfits",
+          "missable": false,
+          "levels": {
+            "1": "Familiar rooms behave differently in this mode.",
+            "2": "In Advanced, record the different starting outfits.",
+            "3": "Begin Advanced with Jill and Chris separately, inspect each starting model, and also reach Rebecca on the Chris route to record her Advanced outfit."
+          }
+        },
+        {
+          "id": "advanced-change-10-custom-beretta-critical-chance",
+          "type": "optional",
+          "safe_type": "Advanced Difference",
+          "label": "Custom Beretta Critical Chance",
+          "missable": false,
+          "levels": {
+            "1": "Familiar rooms behave differently in this mode.",
+            "2": "In Advanced, record the Custom Beretta critical chance.",
+            "3": "Acquire the Advanced handgun, use it on ordinary standing enemies, and continue until its random one-shot critical effect occurs. Preserve ammunition by resetting a nearby save if needed."
+          }
+        },
+        {
+          "id": "advanced-change-11-upper-balcony-reanimation-scene",
+          "type": "optional",
+          "safe_type": "Advanced Difference",
+          "label": "Upper Balcony Reanimation Scene",
+          "missable": true,
+          "levels": {
+            "1": "Familiar rooms behave differently in this mode.",
+            "2": "In Advanced, record the upper balcony reanimation scene.",
+            "3": "On the Advanced mansion sweep, enter the upper outdoor balcony after making a backup and complete its unique reanimation encounter. The guide withholds the occupant identity; search the full balcony afterward."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before entering each altered region",
+        "why": "Advanced moves objects and adds a one-time balcony interaction."
+      }
+    },
+    {
+      "id": "dc-advanced-routes",
+      "name": "Advanced Character Route Ledgers",
+      "location_cue": "The mansion, courtyard, guardhouse, tunnels, and laboratory while Advanced is selected.",
+      "note": "Use these positions instead of the Original/Beginner ledger.",
+      "items": [
+        {
+          "id": "advanced-jill-01-beretta",
+          "type": "weapon",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Beretta",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Beretta at the east L-hall.",
+            "3": "Enter the east L-hall on Jill Advanced and search every available surface or puzzle reward until Beretta enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-02-shotgun",
+          "type": "weapon",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Shotgun at the living room.",
+            "3": "Enter the living room on Jill Advanced and search every available surface or puzzle reward until Shotgun enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-03-bazooka",
+          "type": "weapon",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Bazooka",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Bazooka at the upper balcony.",
+            "3": "Enter the upper balcony on Jill Advanced and search every available surface or puzzle reward until Bazooka enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-04-armor-key",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Armor Key",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Armor Key at the upper U-passage.",
+            "3": "Enter the upper U-passage on Jill Advanced and search every available surface or puzzle reward until Armor Key enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-05-moon-crest",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Moon Crest",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Moon Crest at the study.",
+            "3": "Enter the study on Jill Advanced and search every available surface or puzzle reward until Moon Crest enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-06-star-crest",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Star Crest",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Star Crest at the dining-room statue.",
+            "3": "Enter the dining-room statue on Jill Advanced and search every available surface or puzzle reward until Star Crest enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-07-gold-emblem",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Gold Emblem",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Gold Emblem at the bar.",
+            "3": "Enter the bar on Jill Advanced and search every available surface or puzzle reward until Gold Emblem enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-08-blue-jewel",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Blue Jewel",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Blue Jewel at the dining-room statue.",
+            "3": "Enter the dining-room statue on Jill Advanced and search every available surface or puzzle reward until Blue Jewel enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-09-sun-crest",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Sun Crest",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Sun Crest at the greenhouse.",
+            "3": "Enter the greenhouse on Jill Advanced and search every available surface or puzzle reward until Sun Crest enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-10-shield-key",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Shield Key",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Shield Key at the west save route.",
+            "3": "Enter the west save route on Jill Advanced and search every available surface or puzzle reward until Shield Key enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-11-wind-crest",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Wind Crest",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Wind Crest at the second gallery.",
+            "3": "Enter the second gallery on Jill Advanced and search every available surface or puzzle reward until Wind Crest enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-12-square-crank",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Square Crank",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Square Crank at the courtyard shed.",
+            "3": "Enter the courtyard shed on Jill Advanced and search every available surface or puzzle reward until Square Crank enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-13-helmet-key",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Helmet Key",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Helmet Key at the guardhouse save room.",
+            "3": "Enter the guardhouse save room on Jill Advanced and search every available surface or puzzle reward until Helmet Key enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-14-mo-disk-1",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — MO Disk 1",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect MO Disk 1 at the mansion office.",
+            "3": "Enter the mansion office on Jill Advanced and search every available surface or puzzle reward until MO Disk 1 enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-15-red-jewel",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Red Jewel",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Red Jewel at the east save route.",
+            "3": "Enter the east save route on Jill Advanced and search every available surface or puzzle reward until Red Jewel enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-16-battery",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Battery",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Battery at the hidden room.",
+            "3": "Enter the hidden room on Jill Advanced and search every available surface or puzzle reward until Battery enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-17-doom-book-1",
+          "type": "weapon",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Doom Book 1",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Doom Book 1 at the library office.",
+            "3": "Enter the library office on Jill Advanced and search every available surface or puzzle reward until Doom Book 1 enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-18-eagle-medal",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Eagle Medal",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Eagle Medal at the first Doom Book.",
+            "3": "Enter the first Doom Book on Jill Advanced and search every available surface or puzzle reward until Eagle Medal enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-19-mo-disk-2",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — MO Disk 2",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect MO Disk 2 at the laboratory main room.",
+            "3": "Enter the laboratory main room on Jill Advanced and search every available surface or puzzle reward until MO Disk 2 enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-20-mo-disk-3",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — MO Disk 3",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect MO Disk 3 at the laboratory elevator hall.",
+            "3": "Enter the laboratory elevator hall on Jill Advanced and search every available surface or puzzle reward until MO Disk 3 enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-21-doom-book-2",
+          "type": "weapon",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Doom Book 2",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Doom Book 2 at the second boulder room.",
+            "3": "Enter the second boulder room on Jill Advanced and search every available surface or puzzle reward until Doom Book 2 enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-22-wolf-medal",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Wolf Medal",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Wolf Medal at the second Doom Book.",
+            "3": "Enter the second Doom Book on Jill Advanced and search every available surface or puzzle reward until Wolf Medal enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-jill-23-laboratory-key",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Jill Advanced — Laboratory Key",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Jill Advanced, collect Laboratory Key at the gargoyle room.",
+            "3": "Enter the gargoyle room on Jill Advanced and search every available surface or puzzle reward until Laboratory Key enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-01-jill-s-beretta",
+          "type": "weapon",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Jill's Beretta",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Jill's Beretta at the main hall floor.",
+            "3": "Enter the main hall floor on Chris Advanced and search every available surface or puzzle reward until Jill's Beretta enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-02-armor-key",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Armor Key",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Armor Key at the upper U-passage.",
+            "3": "Enter the upper U-passage on Chris Advanced and search every available surface or puzzle reward until Armor Key enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-03-moon-crest",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Moon Crest",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Moon Crest at the study.",
+            "3": "Enter the study on Chris Advanced and search every available surface or puzzle reward until Moon Crest enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-04-lighter",
+          "type": "weapon",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Lighter",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Lighter at the bedroom.",
+            "3": "Enter the bedroom on Chris Advanced and search every available surface or puzzle reward until Lighter enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-05-star-crest",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Star Crest",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Star Crest at the dining-room statue.",
+            "3": "Enter the dining-room statue on Chris Advanced and search every available surface or puzzle reward until Star Crest enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-06-broken-shotgun",
+          "type": "weapon",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Broken Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Broken Shotgun at the east save room.",
+            "3": "Enter the east save room on Chris Advanced and search every available surface or puzzle reward until Broken Shotgun enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-07-sword-key",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Sword Key",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Sword Key at the east save room.",
+            "3": "Enter the east save room on Chris Advanced and search every available surface or puzzle reward until Sword Key enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-08-sun-crest",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Sun Crest",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Sun Crest at the greenhouse.",
+            "3": "Enter the greenhouse on Chris Advanced and search every available surface or puzzle reward until Sun Crest enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-09-gold-emblem",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Gold Emblem",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Gold Emblem at the bar.",
+            "3": "Enter the bar on Chris Advanced and search every available surface or puzzle reward until Gold Emblem enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-10-blue-jewel",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Blue Jewel",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Blue Jewel at the dining-room statue.",
+            "3": "Enter the dining-room statue on Chris Advanced and search every available surface or puzzle reward until Blue Jewel enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-11-shield-key",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Shield Key",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Shield Key at the green hall.",
+            "3": "Enter the green hall on Chris Advanced and search every available surface or puzzle reward until Shield Key enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-12-wind-crest",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Wind Crest",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Wind Crest at the second gallery.",
+            "3": "Enter the second gallery on Chris Advanced and search every available surface or puzzle reward until Wind Crest enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-13-square-crank",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Square Crank",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Square Crank at the courtyard shed.",
+            "3": "Enter the courtyard shed on Chris Advanced and search every available surface or puzzle reward until Square Crank enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-14-helmet-key",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Helmet Key",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Helmet Key at the guardhouse save room.",
+            "3": "Enter the guardhouse save room on Chris Advanced and search every available surface or puzzle reward until Helmet Key enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-15-mo-disk-1",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — MO Disk 1",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect MO Disk 1 at the mansion office.",
+            "3": "Enter the mansion office on Chris Advanced and search every available surface or puzzle reward until MO Disk 1 enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-16-red-jewel",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Red Jewel",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Red Jewel at the east stairs.",
+            "3": "Enter the east stairs on Chris Advanced and search every available surface or puzzle reward until Red Jewel enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-17-battery",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Battery",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Battery at the hidden room.",
+            "3": "Enter the hidden room on Chris Advanced and search every available surface or puzzle reward until Battery enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-18-doom-book-1",
+          "type": "weapon",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Doom Book 1",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Doom Book 1 at the library office.",
+            "3": "Enter the library office on Chris Advanced and search every available surface or puzzle reward until Doom Book 1 enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-19-eagle-medal",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Eagle Medal",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Eagle Medal at the first Doom Book.",
+            "3": "Enter the first Doom Book on Chris Advanced and search every available surface or puzzle reward until Eagle Medal enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-20-mo-disk-2",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — MO Disk 2",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect MO Disk 2 at the laboratory main room.",
+            "3": "Enter the laboratory main room on Chris Advanced and search every available surface or puzzle reward until MO Disk 2 enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-21-mo-disk-3",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — MO Disk 3",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect MO Disk 3 at the laboratory elevator hall.",
+            "3": "Enter the laboratory elevator hall on Chris Advanced and search every available surface or puzzle reward until MO Disk 3 enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-22-doom-book-2",
+          "type": "weapon",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Doom Book 2",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Doom Book 2 at the second boulder room.",
+            "3": "Enter the second boulder room on Chris Advanced and search every available surface or puzzle reward until Doom Book 2 enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-23-wolf-medal",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Wolf Medal",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Wolf Medal at the second Doom Book.",
+            "3": "Enter the second Doom Book on Chris Advanced and search every available surface or puzzle reward until Wolf Medal enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        },
+        {
+          "id": "advanced-chris-24-laboratory-key",
+          "type": "key",
+          "safe_type": "Advanced Route Item",
+          "label": "Chris Advanced — Laboratory Key",
+          "missable": true,
+          "levels": {
+            "1": "Advanced moves this object away from the standard route.",
+            "2": "On Chris Advanced, collect Laboratory Key at the gargoyle room.",
+            "3": "Enter the gargoyle room on Chris Advanced and search every available surface or puzzle reward until Laboratory Key enters the inventory. Inspect combinable books or statues immediately, carry keys to every matching lock, and stage long-term objects in the nearest item box."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep Jill and Chris Advanced saves separate",
+        "why": "Their early weapons and route objects differ."
+      }
+    },
+    {
+      "id": "dc-unlocks-secrets",
+      "name": "Director’s Cut Unlocks and Secrets",
+      "location_cue": "The clear-data screen, Advanced selector, tiger statue, and costume-room corridor.",
+      "note": "Earn both unlimited weapons and record every reproducible Advanced secret.",
+      "items": [
+        {
+          "id": "dc-unlock-01-infinite-colt-python",
+          "type": "upgrade",
+          "safe_type": "Unlockable",
+          "label": "Infinite Colt Python",
+          "missable": true,
+          "levels": {
+            "1": "A clear condition or title-screen input adds this extra.",
+            "2": "Unlock it through best outcome Advanced clear.",
+            "3": "Finish Advanced with the best mechanical outcome: preserve the route companion flag and open the laboratory cell with all three MO Disks. Save the clear, reload it, and verify the unlimited magnum reward."
+          }
+        },
+        {
+          "id": "dc-unlock-02-infinite-rocket-launcher",
+          "type": "upgrade",
+          "safe_type": "Unlockable",
+          "label": "Infinite Rocket Launcher",
+          "missable": true,
+          "levels": {
+            "1": "A clear condition or title-screen input adds this extra.",
+            "2": "Unlock it through under three-hour clear.",
+            "3": "Finish either character route in under three hours, save the result, and start a new eligible clear-data game. Verify the unlimited launcher appears before overwriting the timed clear."
+          }
+        },
+        {
+          "id": "dc-unlock-03-closet-key",
+          "type": "upgrade",
+          "safe_type": "Unlockable",
+          "label": "Closet Key",
+          "missable": true,
+          "levels": {
+            "1": "A clear condition or title-screen input adds this extra.",
+            "2": "Unlock it through best outcome clear.",
+            "3": "Finish with the best mechanical outcome, save the clear, and load a new game from it. Take the Closet Key, open the dressing-room door beside the mansion mirror corridor, and equip each alternate outfit."
+          }
+        },
+        {
+          "id": "dc-unlock-04-double-ammunition",
+          "type": "upgrade",
+          "safe_type": "Unlockable",
+          "label": "Double Ammunition",
+          "missable": true,
+          "levels": {
+            "1": "A clear condition or title-screen input adds this extra.",
+            "2": "Unlock it through hold right on Advanced, wait for green text.",
+            "3": "At the mode selector, highlight Advanced and hold Right until its text turns green. Start the game and confirm the first ammunition pickup grants twice its ordinary quantity; keep this as a separate assisted-Advanced clear."
+          }
+        },
+        {
+          "id": "dc-secret-01-magnum-ammunition-loop",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Magnum Ammunition Loop",
+          "missable": true,
+          "levels": {
+            "1": "Advanced hides an extra weapon, ammunition, or wardrobe behavior.",
+            "2": "Complete the magnum ammunition loop interaction.",
+            "3": "Make a disposable Advanced save, place the Red Jewel in the tiger statue, and take two of its three Magnum Round stacks. Leave and return; when two stacks reappear, take only one, leave, and repeat the one-stack cycle for the desired supply."
+          }
+        },
+        {
+          "id": "dc-secret-02-critical-custom-beretta",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Critical Custom Beretta",
+          "missable": true,
+          "levels": {
+            "1": "Advanced hides an extra weapon, ammunition, or wardrobe behavior.",
+            "2": "Complete the critical Custom Beretta interaction.",
+            "3": "Use the Advanced Custom Beretta against ordinary standing enemies until its random instant critical occurs. Reload a nearby save to demonstrate the effect without permanently spending the completion file ammunition."
+          }
+        },
+        {
+          "id": "dc-secret-03-costume-room",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Costume Room",
+          "missable": true,
+          "levels": {
+            "1": "Advanced hides an extra weapon, ammunition, or wardrobe behavior.",
+            "2": "Complete the costume room interaction.",
+            "3": "Load a best-outcome clear with the Closet Key, unlock the room beside the mirror corridor, and enter with both playable campaigns. Equip every available character outfit and leave the room wearing each one."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Clone the save before the gemstone loop",
+        "why": "The ammunition behavior is best isolated from a clean clear."
+      }
+    },
+    {
+      "id": "dc-outfits",
+      "name": "Director’s Cut Wardrobe",
+      "location_cue": "The Advanced starting models and the dressing room opened from clear data.",
+      "note": "Record all starting and closet models without describing narrative scenes.",
+      "items": [
+        {
+          "id": "dc-outfit-01-jill-advanced-default",
+          "type": "upgrade",
+          "safe_type": "Outfit",
+          "label": "Jill Advanced default",
+          "missable": true,
+          "levels": {
+            "1": "Advanced and clear data expose a distinct wardrobe model.",
+            "2": "Equip or inspect Jill Advanced default on its eligible route.",
+            "3": "Start the matching Advanced character route for its default model, or load a best-outcome clear and enter the Closet Key room for an alternate. Exit the inventory or closet and cross one camera boundary to confirm the full outfit."
+          }
+        },
+        {
+          "id": "dc-outfit-02-chris-advanced-default",
+          "type": "upgrade",
+          "safe_type": "Outfit",
+          "label": "Chris Advanced default",
+          "missable": true,
+          "levels": {
+            "1": "Advanced and clear data expose a distinct wardrobe model.",
+            "2": "Equip or inspect Chris Advanced default on its eligible route.",
+            "3": "Start the matching Advanced character route for its default model, or load a best-outcome clear and enter the Closet Key room for an alternate. Exit the inventory or closet and cross one camera boundary to confirm the full outfit."
+          }
+        },
+        {
+          "id": "dc-outfit-03-rebecca-advanced-default",
+          "type": "upgrade",
+          "safe_type": "Outfit",
+          "label": "Rebecca Advanced default",
+          "missable": true,
+          "levels": {
+            "1": "Advanced and clear data expose a distinct wardrobe model.",
+            "2": "Equip or inspect Rebecca Advanced default on its eligible route.",
+            "3": "Start the matching Advanced character route for its default model, or load a best-outcome clear and enter the Closet Key room for an alternate. Exit the inventory or closet and cross one camera boundary to confirm the full outfit."
+          }
+        },
+        {
+          "id": "dc-outfit-04-jill-closet-alternate",
+          "type": "upgrade",
+          "safe_type": "Outfit",
+          "label": "Jill closet alternate",
+          "missable": true,
+          "levels": {
+            "1": "Advanced and clear data expose a distinct wardrobe model.",
+            "2": "Equip or inspect Jill closet alternate on its eligible route.",
+            "3": "Start the matching Advanced character route for its default model, or load a best-outcome clear and enter the Closet Key room for an alternate. Exit the inventory or closet and cross one camera boundary to confirm the full outfit."
+          }
+        },
+        {
+          "id": "dc-outfit-05-chris-closet-alternate",
+          "type": "upgrade",
+          "safe_type": "Outfit",
+          "label": "Chris closet alternate",
+          "missable": true,
+          "levels": {
+            "1": "Advanced and clear data expose a distinct wardrobe model.",
+            "2": "Equip or inspect Chris closet alternate on its eligible route.",
+            "3": "Start the matching Advanced character route for its default model, or load a best-outcome clear and enter the Closet Key room for an alternate. Exit the inventory or closet and cross one camera boundary to confirm the full outfit."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep the best-outcome clear",
+        "why": "The Closet Key depends on its mechanical route flags."
+      }
+    },
+    {
+      "id": "dc-disc-extras",
+      "name": "Physical-Package Extras",
+      "location_cue": "Separate discs included with specific original regional packages.",
+      "note": "These archival extras sit outside the main campaign executable.",
+      "items": [
+        {
+          "id": "dc-disc-01-resident-evil-2-preview",
+          "type": "optional",
+          "safe_type": "Disc Extra",
+          "label": "Resident Evil 2 Preview",
+          "missable": true,
+          "levels": {
+            "1": "Some physical regional packages contain a separate archival disc.",
+            "2": "Access Resident Evil 2 Preview through North American bonus disc.",
+            "3": "Use the original North American Director's Cut package and insert its separate preview disc. Start the playable demo, test both movement and combat, explore until the demo endpoint, and record that endpoint without treating the later full game as part of this pack."
+          }
+        },
+        {
+          "id": "dc-disc-02-complete-disc-footage",
+          "type": "optional",
+          "safe_type": "Disc Extra",
+          "label": "Complete Disc footage",
+          "missable": true,
+          "levels": {
+            "1": "Some physical regional packages contain a separate archival disc.",
+            "2": "Access Complete Disc footage through Japanese bundle only, regional archival secondary.",
+            "3": "For a regional archival pass only, use the Japanese Complete Disc bundled with that edition and view every menu segment and development clip. This disc is not required for the chosen non-DualShock English campaign route and contains no additional playable campaign."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Use separate archival media",
+        "why": "Regional bonus discs are not substitutes for the chosen campaign disc."
+      }
+    }
+  ]
+}

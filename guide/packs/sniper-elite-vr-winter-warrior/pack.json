@@ -1,0 +1,1376 @@
+{
+  "id": "sniper-elite-vr-winter-warrior",
+  "game": "Sniper Elite VR: Winter Warrior",
+  "target": "100% completion",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-13",
+  "areas": [
+    {
+      "id": "route-and-save-setup",
+      "name": "Route and Save Setup",
+      "location_cue": "The Meta Quest library, headset settings, cloud-backup page, and home journal.",
+      "note": "Chosen-route exception: the catalog prefers PC/PCVR, but Winter Warrior was released only for Meta Quest 2, Quest Pro, and Quest 3. No native Windows build or emulation route is documented.",
+      "items": [
+        {
+          "id": "setup-quest-route",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the sourced Meta Quest release",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the headset edition before creating the completion profile.",
+            "2": "Install Sniper Elite VR: Winter Warrior from the Meta Quest store on supported Quest hardware.",
+            "3": "Install the native Quest release, update it before starting, and verify that the title screen says Winter Warrior. Do not substitute the earlier Sniper Elite VR PC build: it is a different game, and current official support lists Winter Warrior only on Quest 2, Quest Pro, and Quest 3."
+          }
+        },
+        {
+          "id": "setup-cloud-backup",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Confirm cloud backup before cleanup",
+          "missable": false,
+          "levels": {
+            "1": "Protect the single local profile before long mastery sessions.",
+            "2": "Close the game, leave the headset powered and online, then check Meta's cloud-backup page for a recent Winter Warrior entry.",
+            "3": "Quit the app cleanly, connect the headset to power and Wi-Fi, and inspect Meta's cloud-backup page. Continue only if Winter Warrior shows a recent timestamp; if it has no entry, do not uninstall the game, factory-reset the headset, or assume the profile can be restored."
+          }
+        },
+        {
+          "id": "setup-tutorial",
+          "type": "interaction",
+          "safe_type": "Training",
+          "label": "Complete the tutorial",
+          "missable": false,
+          "levels": {
+            "1": "Use the opening range to calibrate hands, height, and weapon handling.",
+            "2": "Finish every guided tutorial prompt until the home journal and mode pages become available.",
+            "3": "Set dominant hand, standing or seated height, turning, movement, comfort vignette, and rifle alignment first. Complete the guided shooting and interaction sequence, then return home and verify Campaign is available; Sniper Hunt and Last Stand unlock after the first operation is cleared."
+          }
+        },
+        {
+          "id": "setup-content-audit",
+          "type": "interaction",
+          "safe_type": "Content Audit",
+          "label": "Use every permanent mode in the current release",
+          "missable": false,
+          "levels": {
+            "1": "The home journal separates campaign cleanup from two repeatable modes.",
+            "2": "Complete Campaign, Sniper Hunt, Last Stand, the permanent weapon rack, mission stars, collectibles, and combat records.",
+            "3": "After updating the Quest build, inspect every page following Loadout. The finite checklist is the campaign journal, all stars and collectibles, every standard and gold rack slot, the Sniper Hunt records, the Last Stand records, and the global combat conditions. Current sources expose no downloaded campaign, online branch, New Game Plus, or rotating event requirement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "coastal-gun-site",
+      "name": "Coastal Gun Site",
+      "location_cue": "A snowy shoreline emplacement with a heavy gun, service paths, and nearby buildings.",
+      "note": "SAVE-BACKUP: confirm a current Quest cloud snapshot before cleanup. POINT OF NO RETURN: the result trigger closes this visit; inspect the stars and collectible ledger first. Mission Select permits replay.",
+      "save_backup": {
+        "title": "Confirm a current cloud snapshot",
+        "why": "Repeated operation cleanup changes the same profile, and Quest does not expose a normal file-copy route.",
+        "when": "Before entering the operation or beginning its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "The current visit ends at the result trigger",
+        "warning": "Inspect the middle star, score target, and collectible ledger first; the operation remains selectable afterward."
+      },
+      "items": [
+        {
+          "id": "coastal-gun-site-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the coastal gun site operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow required markers while checking side rooms before advancing.",
+            "2": "Complete every required objective in the coastal gun site and reach its result page.",
+            "3": "Complete the required objectives, wait for the operation-complete result to register, and return home only after the journal star appears. Mission Select can reopen the page for cleanup."
+          }
+        },
+        {
+          "id": "coastal-gun-site-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific star condition",
+          "missable": false,
+          "levels": {
+            "1": "The middle star rewards one deliberate combat or stealth pattern.",
+            "2": "Open the journal page and satisfy its middle-star instruction: Record three sound-masked eliminations.",
+            "3": "Use the easiest setting for cleanup and record three sound-masked eliminations. Remain in the operation until the result page fills the middle star; if the star fails, restart the operation rather than relying on a late checkpoint."
+          }
+        },
+        {
+          "id": "coastal-gun-site-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation's score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and a steady multiplier are safer than speed.",
+            "2": "Finish above 1,200 points, as printed beside the operation's third star.",
+            "3": "Keep the multiplier intact with accurate long-range head or organ hits and finish above 1,200 points. Do not stop exactly at the displayed target: the journal says above, so build a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "coastal-gun-site-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation's collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new interior or overlook and scan readable surfaces and distant stonework.",
+            "2": "Clear every nonzero Partisan Scarf, Letter From Home, Last Letter, and Stone Eagle slot shown on this operation's journal page.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "moonlit-mansion",
+      "name": "Moonlit Mansion",
+      "location_cue": "A large house reached through dark gardens, terraces, and interior stairways.",
+      "note": "SAVE-BACKUP: confirm a current Quest cloud snapshot before cleanup. POINT OF NO RETURN: the result trigger closes this visit; inspect the stars and collectible ledger first. Mission Select permits replay.",
+      "save_backup": {
+        "title": "Confirm a current cloud snapshot",
+        "why": "Repeated operation cleanup changes the same profile, and Quest does not expose a normal file-copy route.",
+        "when": "Before entering the operation or beginning its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "The current visit ends at the result trigger",
+        "warning": "Inspect the middle star, score target, and collectible ledger first; the operation remains selectable afterward."
+      },
+      "items": [
+        {
+          "id": "moonlit-mansion-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the moonlit mansion operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow required markers while checking side rooms before advancing.",
+            "2": "Complete every required objective in the moonlit mansion and reach its result page.",
+            "3": "Complete the required objectives, wait for the operation-complete result to register, and return home only after the journal star appears. Mission Select can reopen the page for cleanup."
+          }
+        },
+        {
+          "id": "moonlit-mansion-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific star condition",
+          "missable": false,
+          "levels": {
+            "1": "The middle star rewards one deliberate combat or stealth pattern.",
+            "2": "Open the journal page and satisfy its middle-star instruction: Record seven Ghost eliminations.",
+            "3": "Use the easiest setting for cleanup and record seven Ghost eliminations. Remain in the operation until the result page fills the middle star; if the star fails, restart the operation rather than relying on a late checkpoint."
+          }
+        },
+        {
+          "id": "moonlit-mansion-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation's score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and a steady multiplier are safer than speed.",
+            "2": "Finish above 1,250 points, as printed beside the operation's third star.",
+            "3": "Keep the multiplier intact with accurate long-range head or organ hits and finish above 1,250 points. Do not stop exactly at the displayed target: the journal says above, so build a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "moonlit-mansion-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation's collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new interior or overlook and scan readable surfaces and distant stonework.",
+            "2": "Clear every nonzero Partisan Scarf, Letter From Home, Last Letter, and Stone Eagle slot shown on this operation's journal page.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bunker-trap-site",
+      "name": "Bunker Trap Site",
+      "location_cue": "A snowbound road, watchtower, concrete bunkers, and long open shooting lanes.",
+      "note": "SAVE-BACKUP: confirm a current Quest cloud snapshot before cleanup. POINT OF NO RETURN: the result trigger closes this visit; inspect the stars and collectible ledger first. Mission Select permits replay.",
+      "save_backup": {
+        "title": "Confirm a current cloud snapshot",
+        "why": "Repeated operation cleanup changes the same profile, and Quest does not expose a normal file-copy route.",
+        "when": "Before entering the operation or beginning its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "The current visit ends at the result trigger",
+        "warning": "Inspect the middle star, score target, and collectible ledger first; the operation remains selectable afterward."
+      },
+      "items": [
+        {
+          "id": "bunker-trap-site-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the bunker trap site operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow required markers while checking side rooms before advancing.",
+            "2": "Complete every required objective in the bunker trap site and reach its result page.",
+            "3": "Complete the required objectives, wait for the operation-complete result to register, and return home only after the journal star appears. Mission Select can reopen the page for cleanup."
+          }
+        },
+        {
+          "id": "bunker-trap-site-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific star condition",
+          "missable": false,
+          "levels": {
+            "1": "The middle star rewards one deliberate combat or stealth pattern.",
+            "2": "Open the journal page and satisfy its middle-star instruction: Land the required number of headshots beyond 100 metres.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "bunker-trap-site-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation's score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and a steady multiplier are safer than speed.",
+            "2": "Finish above 2,000 points, as printed beside the operation's third star.",
+            "3": "Keep the multiplier intact with accurate long-range head or organ hits and finish above 2,000 points. Do not stop exactly at the displayed target: the journal says above, so build a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "bunker-trap-site-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation's collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new interior or overlook and scan readable surfaces and distant stonework.",
+            "2": "Clear every nonzero Partisan Scarf, Letter From Home, Last Letter, and Stone Eagle slot shown on this operation's journal page.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tank-minefield",
+      "name": "Tank Minefield",
+      "location_cue": "A frozen roadway and minefield bordered by watch positions and scattered cover.",
+      "note": "SAVE-BACKUP: confirm a current Quest cloud snapshot before cleanup. POINT OF NO RETURN: the result trigger closes this visit; inspect the stars and collectible ledger first. Mission Select permits replay.",
+      "save_backup": {
+        "title": "Confirm a current cloud snapshot",
+        "why": "Repeated operation cleanup changes the same profile, and Quest does not expose a normal file-copy route.",
+        "when": "Before entering the operation or beginning its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "The current visit ends at the result trigger",
+        "warning": "Inspect the middle star, score target, and collectible ledger first; the operation remains selectable afterward."
+      },
+      "items": [
+        {
+          "id": "tank-minefield-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the tank minefield operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow required markers while checking side rooms before advancing.",
+            "2": "Complete every required objective in the tank minefield and reach its result page.",
+            "3": "Complete the required objectives, wait for the operation-complete result to register, and return home only after the journal star appears. Mission Select can reopen the page for cleanup."
+          }
+        },
+        {
+          "id": "tank-minefield-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific star condition",
+          "missable": false,
+          "levels": {
+            "1": "The middle star rewards one deliberate combat or stealth pattern.",
+            "2": "Open the journal page and satisfy its middle-star instruction: Detonate the required number of grenades carried on enemy belts.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "tank-minefield-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation's score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and a steady multiplier are safer than speed.",
+            "2": "Finish above 2,200 points, as printed beside the operation's third star.",
+            "3": "Keep the multiplier intact with accurate long-range head or organ hits and finish above 2,200 points. Do not stop exactly at the displayed target: the journal says above, so build a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "tank-minefield-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation's collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new interior or overlook and scan readable surfaces and distant stonework.",
+            "2": "Clear every nonzero Partisan Scarf, Letter From Home, Last Letter, and Stone Eagle slot shown on this operation's journal page.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "blizzard-bunker-route",
+      "name": "Blizzard Bunker Route",
+      "location_cue": "A low-visibility approach through tunnels, bunkers, and exposed snow-covered ground.",
+      "note": "SAVE-BACKUP: confirm a current Quest cloud snapshot before cleanup. POINT OF NO RETURN: the result trigger closes this visit; inspect the stars and collectible ledger first. Mission Select permits replay.",
+      "save_backup": {
+        "title": "Confirm a current cloud snapshot",
+        "why": "Repeated operation cleanup changes the same profile, and Quest does not expose a normal file-copy route.",
+        "when": "Before entering the operation or beginning its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "The current visit ends at the result trigger",
+        "warning": "Inspect the middle star, score target, and collectible ledger first; the operation remains selectable afterward."
+      },
+      "items": [
+        {
+          "id": "blizzard-bunker-route-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the blizzard bunker route operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow required markers while checking side rooms before advancing.",
+            "2": "Complete every required objective in the blizzard bunker route and reach its result page.",
+            "3": "Complete the required objectives, wait for the operation-complete result to register, and return home only after the journal star appears. Mission Select can reopen the page for cleanup."
+          }
+        },
+        {
+          "id": "blizzard-bunker-route-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific star condition",
+          "missable": false,
+          "levels": {
+            "1": "The middle star rewards one deliberate combat or stealth pattern.",
+            "2": "Open the journal page and satisfy its middle-star instruction: Finish without triggering an alarm.",
+            "3": "Use the easiest setting for cleanup and finish without triggering an alarm. Remain in the operation until the result page fills the middle star; if the star fails, restart the operation rather than relying on a late checkpoint."
+          }
+        },
+        {
+          "id": "blizzard-bunker-route-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation's score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and a steady multiplier are safer than speed.",
+            "2": "Finish above 1,200 points, as printed beside the operation's third star.",
+            "3": "Keep the multiplier intact with accurate long-range head or organ hits and finish above 1,200 points. Do not stop exactly at the displayed target: the journal says above, so build a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "blizzard-bunker-route-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation's collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new interior or overlook and scan readable surfaces and distant stonework.",
+            "2": "Clear every nonzero Partisan Scarf, Letter From Home, Last Letter, and Stone Eagle slot shown on this operation's journal page.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frozen-airfield",
+      "name": "Frozen Airfield",
+      "location_cue": "A broad airfield with prototype aircraft, barricades, hangars, and connected bunkers.",
+      "note": "SAVE-BACKUP: confirm a current Quest cloud snapshot before cleanup. POINT OF NO RETURN: the result trigger closes this visit; inspect the stars and collectible ledger first. Mission Select permits replay.",
+      "save_backup": {
+        "title": "Confirm a current cloud snapshot",
+        "why": "Repeated operation cleanup changes the same profile, and Quest does not expose a normal file-copy route.",
+        "when": "Before entering the operation or beginning its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "The current visit ends at the result trigger",
+        "warning": "Inspect the middle star, score target, and collectible ledger first; the operation remains selectable afterward."
+      },
+      "items": [
+        {
+          "id": "frozen-airfield-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the frozen airfield operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow required markers while checking side rooms before advancing.",
+            "2": "Complete every required objective in the frozen airfield and reach its result page.",
+            "3": "Complete the required objectives, wait for the operation-complete result to register, and return home only after the journal star appears. Mission Select can reopen the page for cleanup."
+          }
+        },
+        {
+          "id": "frozen-airfield-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific star condition",
+          "missable": false,
+          "levels": {
+            "1": "The middle star rewards one deliberate combat or stealth pattern.",
+            "2": "Open the journal page and satisfy its middle-star instruction: Build the journal's required consecutive Ghost-elimination streak.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "frozen-airfield-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation's score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and a steady multiplier are safer than speed.",
+            "2": "Read this operation's score-star target from the journal before entering.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "frozen-airfield-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation's collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new interior or overlook and scan readable surfaces and distant stonework.",
+            "2": "Clear every nonzero Partisan Scarf, Letter From Home, Last Letter, and Stone Eagle slot shown on this operation's journal page.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "alpine-decoy-estate",
+      "name": "Alpine Decoy Estate",
+      "location_cue": "A fortified snowy estate with exterior approaches, interior rooms, and several matching officers.",
+      "note": "SAVE-BACKUP: confirm a current Quest cloud snapshot before cleanup. POINT OF NO RETURN: the result trigger closes this visit; inspect the stars and collectible ledger first. Mission Select permits replay.",
+      "save_backup": {
+        "title": "Confirm a current cloud snapshot",
+        "why": "Repeated operation cleanup changes the same profile, and Quest does not expose a normal file-copy route.",
+        "when": "Before entering the operation or beginning its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "The current visit ends at the result trigger",
+        "warning": "Inspect the middle star, score target, and collectible ledger first; the operation remains selectable afterward."
+      },
+      "items": [
+        {
+          "id": "alpine-decoy-estate-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the alpine decoy estate operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow required markers while checking side rooms before advancing.",
+            "2": "Complete every required objective in the alpine decoy estate and reach its result page.",
+            "3": "Complete the required objectives, wait for the operation-complete result to register, and return home only after the journal star appears. Mission Select can reopen the page for cleanup."
+          }
+        },
+        {
+          "id": "alpine-decoy-estate-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific star condition",
+          "missable": false,
+          "levels": {
+            "1": "The middle star rewards one deliberate combat or stealth pattern.",
+            "2": "Open the journal page and satisfy its middle-star instruction: Eliminate the primary target with an unscoped rifle.",
+            "3": "Use the easiest setting for cleanup and eliminate the primary target with an unscoped rifle. Remain in the operation until the result page fills the middle star; if the star fails, restart the operation rather than relying on a late checkpoint."
+          }
+        },
+        {
+          "id": "alpine-decoy-estate-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation's score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and a steady multiplier are safer than speed.",
+            "2": "Finish above 2,500 points, as printed beside the operation's third star.",
+            "3": "Keep the multiplier intact with accurate long-range head or organ hits and finish above 2,500 points. Do not stop exactly at the displayed target: the journal says above, so build a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "alpine-decoy-estate-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation's collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new interior or overlook and scan readable surfaces and distant stonework.",
+            "2": "Clear every nonzero Partisan Scarf, Letter From Home, Last Letter, and Stone Eagle slot shown on this operation's journal page.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "home-and-loadout",
+      "name": "Home and Loadout",
+      "location_cue": "The home journal, weapon rack, loadout page, and mode tabs.",
+      "note": "Reusable hub; no point of no return.",
+      "items": [
+        {
+          "id": "home-custom-loadout",
+          "type": "interaction",
+          "safe_type": "Loadout",
+          "label": "Save a custom loadout",
+          "missable": false,
+          "levels": {
+            "1": "Use the permanent rack to build one reliable cleanup kit.",
+            "2": "Equip one owned rifle, secondary weapon, sidearm, and available equipment on the Loadout page.",
+            "3": "At home, open Loadout, place an acquired weapon into every weapon slot, choose equipment, and confirm the selection. Leave and reopen the page once to verify that the setup persisted."
+          }
+        },
+        {
+          "id": "home-campaign-replay",
+          "type": "interaction",
+          "safe_type": "Replay System",
+          "label": "Use the journal for operation cleanup",
+          "missable": false,
+          "levels": {
+            "1": "A cleared page remains available for unfinished stars and collectibles.",
+            "2": "Select any cleared operation from the campaign journal and replay it on the setting needed for cleanup.",
+            "3": "At home, reopen the campaign journal, select an operation with a hollow star or collectible count, and start it again. Verify the corrected icon after reaching a checkpoint or result page; do not assume a pickup or challenge saved if the app was closed immediately."
+          }
+        },
+        {
+          "id": "home-mode-unlocks",
+          "type": "interaction",
+          "safe_type": "Mode Access",
+          "label": "Unlock both repeatable modes",
+          "missable": false,
+          "levels": {
+            "1": "The extra modes appear after the opening campaign training is established.",
+            "2": "Finish the tutorial and first operation, then turn past Loadout to reveal Last Stand and Sniper Hunt.",
+            "3": "Complete the tutorial and the first available campaign operation, return home, and turn the journal pages beyond Loadout. Confirm that both Last Stand and Sniper Hunt can be selected before beginning their record cleanup."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sniper-hunt",
+      "name": "Sniper Hunt",
+      "location_cue": "The repeatable mode page after Loadout and Last Stand, leading to open hunting grounds with patrols and distant marksmen.",
+      "note": "Unlocks after the tutorial and first operation. No permanent point of no return; each run ends at its result screen.",
+      "items": [
+        {
+          "id": "hunt-complete-run",
+          "type": "interaction",
+          "safe_type": "Mode Completion",
+          "label": "Complete a Sniper Hunt run",
+          "missable": false,
+          "levels": {
+            "1": "Use patrols to draw out the harder targets, then change position.",
+            "2": "Defeat patrol groups to reveal enemy snipers and continue until the mode posts a final result.",
+            "3": "Enter Sniper Hunt from its home page, clear a patrol to lure an enemy sniper, eliminate that sniper, then relocate when the next hunting area opens. Continue through the run and remain for the final score card."
+          }
+        },
+        {
+          "id": "hunt-thirty-minutes",
+          "type": "interaction",
+          "safe_type": "Mode Record",
+          "label": "Spend thirty minutes in Sniper Hunt",
+          "missable": false,
+          "levels": {
+            "1": "A careful long run can satisfy the duration naturally.",
+            "2": "Remain active in Sniper Hunt for at least thirty minutes before leaving the run.",
+            "3": "Start a fresh run, play normally, and do not exit to the home journal until thirty continuous minutes have elapsed in the mode. Paused or loading time may not count, so leave a buffer and finish the active encounter before checking the record."
+          }
+        },
+        {
+          "id": "hunt-one-round-each",
+          "type": "interaction",
+          "safe_type": "Mode Record",
+          "label": "Use exactly one round per enemy sniper",
+          "missable": false,
+          "levels": {
+            "1": "Tag and steady before firing; a wound ruins the clean sequence.",
+            "2": "In one Sniper Hunt run, eliminate every revealed enemy sniper with a single bullet each.",
+            "3": "Use patrol eliminations to expose each sniper, tag the position, settle the scope, and fire one lethal rifle round. Restart the run after any miss or nonlethal hit against a sniper; patrol ammunition does not affect this condition."
+          }
+        },
+        {
+          "id": "hunt-score-9000",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Finish Sniper Hunt above 9,000 points",
+          "missable": false,
+          "levels": {
+            "1": "Preserve the multiplier with precise, distant shots.",
+            "2": "Complete a Sniper Hunt run with a final score higher than 9,000.",
+            "3": "Favor long-range head and organ hits, avoid wasted rounds, and clear every revealed sniper while the multiplier remains healthy. Continue until the result screen shows more than 9,000; an exact 9,000 does not satisfy an above-threshold instruction."
+          }
+        }
+      ]
+    },
+    {
+      "id": "last-stand",
+      "name": "Last Stand",
+      "location_cue": "The repeatable survival-mode page after Loadout, leading to a defensible arena with ammunition, weapons, and trap positions.",
+      "note": "Unlocks after the tutorial and first operation. No permanent point of no return; prepare between waves before triggering the next attack.",
+      "items": [
+        {
+          "id": "stand-complete-run",
+          "type": "interaction",
+          "safe_type": "Mode Completion",
+          "label": "Complete a Last Stand result cycle",
+          "missable": false,
+          "levels": {
+            "1": "Learn the supply points and establish a fallback position before later waves.",
+            "2": "Enter Last Stand, gather equipment, set traps, and survive until the run posts its result.",
+            "3": "Use the preparation window to collect weapons and ammunition, place traps along narrow approaches, and choose a defensible firing position. Survive successive waves until the run ends and remain for the recorded result card."
+          }
+        },
+        {
+          "id": "stand-two-one-bullet",
+          "type": "interaction",
+          "safe_type": "Mode Record",
+          "label": "Eliminate two enemies with one bullet",
+          "missable": false,
+          "levels": {
+            "1": "Wait for two advancing enemies to overlap from your firing angle.",
+            "2": "During Last Stand, line up two enemies and finish both with the same rifle round.",
+            "3": "Use a narrow approach, let two enemies overlap chest-to-head from the scope's perspective, and fire a penetrating rifle round through both. The one bullet must supply both final hits; an explosive follow-up or wounded survivor does not count."
+          }
+        },
+        {
+          "id": "stand-primary-50",
+          "type": "interaction",
+          "safe_type": "Weapon Record",
+          "label": "Record fifty primary-weapon eliminations in Last Stand",
+          "missable": false,
+          "levels": {
+            "1": "Use early waves to build the rifle counter safely.",
+            "2": "Accumulate fifty Last Stand eliminations with rifles in the primary slot.",
+            "3": "Keep a rifle in the primary slot and make it deliver fifty final hits across Last Stand runs. Check the persistent record between runs; damage followed by a sidearm finish credits the finishing weapon instead."
+          }
+        },
+        {
+          "id": "stand-secondary-50",
+          "type": "interaction",
+          "safe_type": "Weapon Record",
+          "label": "Record fifty secondary-weapon eliminations in Last Stand",
+          "missable": false,
+          "levels": {
+            "1": "Short approaches make automatic weapons easier to control.",
+            "2": "Accumulate fifty Last Stand eliminations with weapons in the secondary slot.",
+            "3": "Equip a secondary weapon, funnel enemies into a close or medium lane, and make that weapon provide fifty final hits across runs. Conserve its ammunition during preparation phases and verify the persistent counter afterward."
+          }
+        },
+        {
+          "id": "stand-sidearm-50",
+          "type": "interaction",
+          "safe_type": "Weapon Record",
+          "label": "Record fifty sidearm eliminations in Last Stand",
+          "missable": false,
+          "levels": {
+            "1": "Weakened enemies are efficient sidearm finishes when ammunition is scarce.",
+            "2": "Accumulate fifty Last Stand eliminations with pistols in the sidearm slot.",
+            "3": "Use early waves or deliberately weakened enemies, switch to the sidearm before the finishing shot, and reach fifty credited kills across runs. A rifle or trap final hit will not advance this weapon-family counter."
+          }
+        },
+        {
+          "id": "stand-score-15000",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Finish Last Stand above 15,000 points",
+          "missable": false,
+          "levels": {
+            "1": "Accurate streaks and efficient trap placement keep the total climbing.",
+            "2": "End a Last Stand run with a final score higher than 15,000.",
+            "3": "Prepare every safe lane, use traps for dense groups, and favor accurate head or organ hits while avoiding wasted ammunition. Continue surviving until the score is safely beyond 15,000, then confirm the value on the result card."
+          }
+        }
+      ]
+    },
+    {
+      "id": "arsenal-and-mastery",
+      "name": "Arsenal and Mastery",
+      "location_cue": "The permanent home weapon rack and weapon pickups across campaign operations.",
+      "note": "No weapon is permanently missable because operations can be replayed. Exact gold-mastery recipes lack a dependable public transcription and are withheld rather than guessed.",
+      "items": [
+        {
+          "id": "weapon-carcano-scoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the scoped Carcano",
+          "missable": false,
+          "levels": {
+            "1": "Handle every unfamiliar rifle, even when its base model is already on the rack.",
+            "2": "Pick up the scoped Carcano once to fill its separate permanent rack slot.",
+            "3": "Take the scoped Carcano from the opening rack."
+          }
+        },
+        {
+          "id": "weapon-carcano-unscoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the unscoped Carcano",
+          "missable": false,
+          "levels": {
+            "1": "A missing rifle slot may be the iron-sight version rather than another model.",
+            "2": "Pick up the unscoped Carcano once to fill its separate permanent rack slot.",
+            "3": "In the moonlit-mansion gardens, go behind the house, take the right-hand path down to the middle terrace, and lift the unscoped Carcano resting against the railing."
+          }
+        },
+        {
+          "id": "weapon-carcano-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Carcano",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the weapon's mastery progress between campaign or mode runs.",
+            "2": "Complete every mastery counter assigned to the Carcano, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-m1-garand-scoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the scoped M1 Garand",
+          "missable": false,
+          "levels": {
+            "1": "Handle every unfamiliar rifle, even when its base model is already on the rack.",
+            "2": "Pick up the scoped M1 Garand once to fill its separate permanent rack slot.",
+            "3": "At the frozen airfield's early barricade, pick up the scoped M1 Garand."
+          }
+        },
+        {
+          "id": "weapon-m1-garand-unscoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the unscoped M1 Garand",
+          "missable": false,
+          "levels": {
+            "1": "A missing rifle slot may be the iron-sight version rather than another model.",
+            "2": "Pick up the unscoped M1 Garand once to fill its separate permanent rack slot.",
+            "3": "Near the end of the blizzard-bunker route, search the tunnels before the stairs leading outside; the unscoped M1 Garand leans against a crate."
+          }
+        },
+        {
+          "id": "weapon-m1-garand-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold M1 Garand",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the weapon's mastery progress between campaign or mode runs.",
+            "2": "Complete every mastery counter assigned to the M1 Garand, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-kar98k-scoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the scoped Kar98k",
+          "missable": false,
+          "levels": {
+            "1": "Handle every unfamiliar rifle, even when its base model is already on the rack.",
+            "2": "Pick up the scoped Kar98k once to fill its separate permanent rack slot.",
+            "3": "After disabling the coastal gun, descend the stairs inside the nearby building and take the scoped Kar98k leaning against the wall."
+          }
+        },
+        {
+          "id": "weapon-kar98k-unscoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the unscoped Kar98k",
+          "missable": false,
+          "levels": {
+            "1": "A missing rifle slot may be the iron-sight version rather than another model.",
+            "2": "Pick up the unscoped Kar98k once to fill its separate permanent rack slot.",
+            "3": "Disarm or eliminate a rifleman at the coastal gun site and pick up the dropped unscoped Kar98k."
+          }
+        },
+        {
+          "id": "weapon-kar98k-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Kar98k",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the weapon's mastery progress between campaign or mode runs.",
+            "2": "Complete every mastery counter assigned to the Kar98k, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-springfield-scoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the scoped Springfield",
+          "missable": false,
+          "levels": {
+            "1": "Handle every unfamiliar rifle, even when its base model is already on the rack.",
+            "2": "Pick up the scoped Springfield once to fill its separate permanent rack slot.",
+            "3": "At the moonlit mansion, climb the first ladder and take the scoped Springfield from the crate overlooking the house."
+          }
+        },
+        {
+          "id": "weapon-springfield-unscoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the unscoped Springfield",
+          "missable": false,
+          "levels": {
+            "1": "A missing rifle slot may be the iron-sight version rather than another model.",
+            "2": "Pick up the unscoped Springfield once to fill its separate permanent rack slot.",
+            "3": "Before walking up the ramp to the coastal gun, branch left and take the unscoped Springfield propped against a crate."
+          }
+        },
+        {
+          "id": "weapon-springfield-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Springfield",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the weapon's mastery progress between campaign or mode runs.",
+            "2": "Complete every mastery counter assigned to the Springfield, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-mosin-nagant-scoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the scoped Mosin-Nagant",
+          "missable": false,
+          "levels": {
+            "1": "Handle every unfamiliar rifle, even when its base model is already on the rack.",
+            "2": "Pick up the scoped Mosin-Nagant once to fill its separate permanent rack slot.",
+            "3": "Take the scoped Mosin-Nagant from the opening rack."
+          }
+        },
+        {
+          "id": "weapon-mosin-nagant-unscoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the unscoped Mosin-Nagant",
+          "missable": false,
+          "levels": {
+            "1": "A missing rifle slot may be the iron-sight version rather than another model.",
+            "2": "Pick up the unscoped Mosin-Nagant once to fill its separate permanent rack slot.",
+            "3": "At the alpine estate, enter the room used for the distant target shot and look left of the firing window; the unscoped Mosin rests beside a crate."
+          }
+        },
+        {
+          "id": "weapon-mosin-nagant-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Mosin-Nagant",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the weapon's mastery progress between campaign or mode runs.",
+            "2": "Complete every mastery counter assigned to the Mosin-Nagant, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-sten-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard STEN",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard STEN once so its permanent rack slot fills.",
+            "3": "Take the STEN from the opening rack."
+          }
+        },
+        {
+          "id": "weapon-sten-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold STEN",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the STEN, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-mp40-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard MP40",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard MP40 once so its permanent rack slot fills.",
+            "3": "At the coastal gun site, pick up an MP40 dropped by a guard."
+          }
+        },
+        {
+          "id": "weapon-mp40-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold MP40",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the MP40, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-thompson-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard M1A1 Thompson",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard M1A1 Thompson once so its permanent rack slot fills.",
+            "3": "At the coastal gun site, inspect the weapon crate beside the heavy-gun objective."
+          }
+        },
+        {
+          "id": "weapon-thompson-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold M1A1 Thompson",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the M1A1 Thompson, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-model-38-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard Model 38",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard Model 38 once so its permanent rack slot fills.",
+            "3": "At the tank minefield's start, turn around and collect the Model 38 from the tower behind the spawn point."
+          }
+        },
+        {
+          "id": "weapon-model-38-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Model 38",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the Model 38, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-mp44-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard MP44",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard MP44 once so its permanent rack slot fills.",
+            "3": "Inside the moonlit mansion, check the upper floor after reinforcements arrive and pick up an MP44 from the armoured paratrooper group."
+          }
+        },
+        {
+          "id": "weapon-mp44-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold MP44",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the MP44, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-m30-drilling-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard M30 Drilling",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard M30 Drilling once so its permanent rack slot fills.",
+            "3": "Near the beginning of the bunker-trap site, take the M30 Drilling from the wall before entering the bunker line."
+          }
+        },
+        {
+          "id": "weapon-m30-drilling-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold M30 Drilling",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the M30 Drilling, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-trench-gun-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard Trench Gun",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard Trench Gun once so its permanent rack slot fills.",
+            "3": "At the frozen airfield, enter the bunker after the second prototype aircraft and inspect the crate before the downward stairs."
+          }
+        },
+        {
+          "id": "weapon-trench-gun-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Trench Gun",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the Trench Gun, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-m1934-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard M1934",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard M1934 once so its permanent rack slot fills.",
+            "3": "Take the M1934 from the opening rack."
+          }
+        },
+        {
+          "id": "weapon-m1934-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold M1934",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the M1934, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-webley-vi-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard Webley VI",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard Webley VI once so its permanent rack slot fills.",
+            "3": "At the coastal gun site, search the bookshelf in the room containing the key and save point."
+          }
+        },
+        {
+          "id": "weapon-webley-vi-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Webley VI",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the Webley VI, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-welrod-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard Welrod",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard Welrod once so its permanent rack slot fills.",
+            "3": "At the moonlit mansion, climb the first ladder and collect the Welrod from the nearby crate."
+          }
+        },
+        {
+          "id": "weapon-welrod-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Welrod",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the Welrod, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-p08-luger-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard P08 Luger",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard P08 Luger once so its permanent rack slot fills.",
+            "3": "Search the upstairs office inside the moonlit mansion and take the pistol from its surface."
+          }
+        },
+        {
+          "id": "weapon-p08-luger-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold P08 Luger",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the P08 Luger, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-m1911-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard M1911",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard M1911 once so its permanent rack slot fills.",
+            "3": "Late in the frozen-airfield operation, leave the bunker near the third prototype, enter the building on the left beyond the tent, climb the steps, and take the M1911 from the table."
+          }
+        },
+        {
+          "id": "weapon-m1911-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold M1911",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the M1911, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-walther-ppk-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard Walther PPK",
+          "missable": false,
+          "levels": {
+            "1": "Pick up each unfamiliar secondary weapon or sidearm during an operation.",
+            "2": "Handle the standard Walther PPK once so its permanent rack slot fills.",
+            "3": "At the alpine estate, inspect the crate beside pistol ammunition before climbing the first stairs."
+          }
+        },
+        {
+          "id": "weapon-walther-ppk-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Walther PPK",
+          "missable": false,
+          "levels": {
+            "1": "Use the weapon regularly and inspect its mastery progress at home.",
+            "2": "Complete every mastery counter assigned to the Walther PPK, then verify its gold rack slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-rack-audit",
+          "type": "weapon",
+          "safe_type": "Arsenal Audit",
+          "label": "Fill every permanent weapon-rack slot",
+          "missable": false,
+          "levels": {
+            "1": "Count sight variants separately and do not mistake a mastery gap for a new model.",
+            "2": "Audit five rifles in scoped, unscoped, and gold forms; seven secondaries in standard and gold forms; and six sidearms in standard and gold forms.",
+            "3": "At home, inspect every rack position: fifteen rifle variants, fourteen secondary variants, and twelve sidearm variants. Revisit the listed pickup operation for an empty ordinary slot; for an empty gold slot, finish that weapon's own mastery counters before auditing again."
+          }
+        }
+      ]
+    },
+    {
+      "id": "campaign-records-and-final-audit",
+      "name": "Campaign Records and Final Audit",
+      "location_cue": "Campaign replays, result cards, mode records, and the home journal's persistent completion pages.",
+      "note": "All listed conditions are replayable. Identity-sensitive source wording is replaced by mechanical primary-target and decoy language.",
+      "items": [
+        {
+          "id": "record-tank-three-launchers",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Destroy the heavy vehicle with three launchers",
+          "missable": false,
+          "levels": {
+            "1": "Preserve each heavy launcher until the vehicle is exposed.",
+            "2": "At the tank minefield, hit the heavy vehicle with all three available Panzerfaust launchers.",
+            "3": "Search the route for all three Panzerfausts before committing to the vehicle encounter, carry each to a safe firing angle, and land all three rockets on the vehicle. Do not waste a round on infantry or scenery; a missed launcher can require an operation restart."
+          }
+        },
+        {
+          "id": "record-aircraft-before-landing",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Destroy the approaching aircraft before it lands",
+          "missable": false,
+          "levels": {
+            "1": "Prepare the firing position before the aircraft reaches the runway.",
+            "2": "At the frozen airfield, destroy the incoming prototype aircraft while it is still airborne.",
+            "3": "Reach the airfield firing sequence with ammunition ready, acquire the approaching aircraft as soon as it enters the open lane, and keep firing at its vulnerable sections until it breaks apart before touching down. Restart the operation if it lands first."
+          }
+        },
+        {
+          "id": "record-primary-target-three",
+          "type": "interaction",
+          "safe_type": "Identification Record",
+          "label": "Identify the correct primary target three times consecutively",
+          "missable": false,
+          "levels": {
+            "1": "Observe distinguishing details before choosing among matching officers.",
+            "2": "At the alpine estate, select the genuine primary target correctly in three consecutive attempts.",
+            "3": "Replay the estate identification sequence three times, study the operation's current physical tell, and eliminate only the genuine primary target on each run. A wrong decoy resets the consecutive sequence; because the exact randomized tell is not reliably transcribed, verify it in the current journal briefing."
+          }
+        },
+        {
+          "id": "record-sniper-eye-hit",
+          "type": "interaction",
+          "safe_type": "Precision Record",
+          "label": "Defeat an enemy sniper with an eye hit",
+          "missable": false,
+          "levels": {
+            "1": "Wait for a distant marksman to expose the face fully.",
+            "2": "At the bunker-trap site, place the finishing rifle round through an enemy sniper's eye.",
+            "3": "Tag an enemy sniper, settle the scope while the face is unobstructed, and place a lethal round through the eye rather than the broader head region. Wait for the detailed hit confirmation before continuing."
+          }
+        },
+        {
+          "id": "record-coastal-unseen",
+          "type": "interaction",
+          "safe_type": "Stealth Record",
+          "label": "Disable the coastal gun without being seen",
+          "missable": false,
+          "levels": {
+            "1": "Use sound cover and break sightlines after every shot.",
+            "2": "Complete the coastal gun objective without any enemy fully identifying you.",
+            "3": "Use crouched cover, mark patrols, fire only under environmental sound or from a position you can abandon, and prevent the detection indicator from completing. Disable the gun and reach the result trigger in that same unseen run; restart after full detection."
+          }
+        },
+        {
+          "id": "record-bunker-unseen",
+          "type": "interaction",
+          "safe_type": "Stealth Record",
+          "label": "Reach the bunker without being seen",
+          "missable": false,
+          "levels": {
+            "1": "The blizzard shortens sightlines, but close patrols still matter.",
+            "2": "On the blizzard-bunker route, reach the required bunker before any enemy fully identifies you.",
+            "3": "Stay low, use the storm and solid cover to cross open ground, wait for patrol backs to turn, and avoid shots that expose your route. The condition ends when the required bunker is reached; restart the operation if the detection indicator completes first."
+          }
+        },
+        {
+          "id": "record-target-and-decoys",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Clear the primary target and every matching decoy",
+          "missable": false,
+          "levels": {
+            "1": "Do not leave the estate after the correct identification; inspect every matching officer position.",
+            "2": "During one alpine-estate visit, eliminate the genuine primary target and all matching decoys before finishing.",
+            "3": "Identify and eliminate the genuine primary target, then search every remaining marked officer position and eliminate each decoy during the same operation. Confirm no matching marker remains before triggering the result."
+          }
+        },
+        {
+          "id": "record-testicle-hit",
+          "type": "interaction",
+          "safe_type": "Precision Record",
+          "label": "Land a testicle hit on the primary target",
+          "missable": false,
+          "levels": {
+            "1": "A stable side or frontal angle makes the organ region easier to isolate.",
+            "2": "At the alpine estate, make the lethal or credited rifle hit register on the primary target's testicle region.",
+            "3": "Identify the genuine primary target first, wait for an unobstructed lower-torso angle, and place the rifle round through the testicle region. Continue only after the detailed hit display identifies the required organ; an ordinary pelvis hit does not count."
+          }
+        },
+        {
+          "id": "campaign-sniper-elite",
+          "type": "interaction",
+          "safe_type": "Difficulty",
+          "label": "Clear every campaign operation on Sniper Elite difficulty",
+          "missable": false,
+          "levels": {
+            "1": "Save the hardest pass until the rack holds a familiar quiet rifle and sidearm.",
+            "2": "Replay each campaign operation with Sniper Elite selected and verify every page's difficulty clear.",
+            "3": "Select Sniper Elite before each uncleared operation and keep that setting active through its result page. Use checkpoints, sound masking, healing, and conservative cover as needed; stars and collectibles can be cleaned separately on an easier setting."
+          }
+        },
+        {
+          "id": "campaign-all-stars",
+          "type": "interaction",
+          "safe_type": "Completion Audit",
+          "label": "Fill every campaign star",
+          "missable": false,
+          "levels": {
+            "1": "Each journal page tracks a clear, a special condition, and a score target.",
+            "2": "Audit every operation page until all three star positions are filled.",
+            "3": "For each campaign page, confirm the ordinary clear star, middle condition star, and score star. Replay only the missing condition, reach the result page, and reopen the journal to ensure the icon persisted before moving to another operation."
+          }
+        },
+        {
+          "id": "campaign-all-collectibles",
+          "type": "collectible",
+          "safe_type": "Collectible Audit",
+          "label": "Complete every campaign collectible ledger",
+          "missable": false,
+          "levels": {
+            "1": "The journal exposes missing categories without revealing their exact room.",
+            "2": "Make every nonzero scarf, letter, last-letter, and stone-eagle counter complete across the campaign journal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "campaign-all-weapon-mastery",
+          "type": "weapon",
+          "safe_type": "Mastery Audit",
+          "label": "Complete every weapon mastery set",
+          "missable": false,
+          "levels": {
+            "1": "A full ordinary rack can still hide unfinished gold variants.",
+            "2": "Verify that every rifle, secondary weapon, and sidearm has its gold mastery form.",
+            "3": "At the home rack, inspect the gold slot paired with every permanent weapon model. The internal record specifically tracks the M1 Garand, Walther PPK, MP44, and M1911, but full in-game completion also requires filling all remaining gold slots; any unsupported recipe remains marked for gameplay verification rather than guessed."
+          }
+        },
+        {
+          "id": "campaign-final-audit",
+          "type": "interaction",
+          "safe_type": "Completion Audit",
+          "label": "Finish the permanent completion audit",
+          "missable": false,
+          "levels": {
+            "1": "Review journals and rack gaps before treating the profile as complete.",
+            "2": "Confirm all operation stars and collectible counters, every weapon slot, both repeatable-mode records, the hardest difficulty clear, and every combat record.",
+            "3": "At home, page through the full campaign journal, inspect every collectible counter and star, scan the entire weapon rack for ordinary and gold gaps, review Sniper Hunt and Last Stand results, and confirm all situational records. No online, seasonal, downloaded, or New Game Plus branch is currently part of this release."
+          }
+        }
+      ]
+    }
+  ]
+}

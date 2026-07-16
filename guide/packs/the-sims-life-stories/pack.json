@@ -1,0 +1,1061 @@
+{
+  "id": "the-sims-life-stories",
+  "game": "The Sims Life Stories",
+  "target": "Spoiler-free completion of all directed-story routes, outcomes, rewards, and finite Classic-mode systems",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "original-pc-mac-route",
+      "name": "Original PC or Mac Route",
+      "location_cue": "The original launcher, story selector, free-play selector, save folders, and graphics options.",
+      "note": "Chosen route: the original standalone Windows or Mac release; no secondary platform or later definitive edition exists.",
+      "save_backup": {
+        "title": "Create a clean backup first",
+        "why": "Directed-story rewards and the outcome branch are stored in the game’s save data.",
+        "detail": "Copy the complete save folder before directed play and keep another checkpoint before the outcome prompt."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "install-original-release",
+          "type": "interaction",
+          "safe_type": "Platform Route",
+          "label": "Use the Original Release",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the standalone Stories game rather than a similarly named Sims 2 package.",
+            "2": "Install the original Windows or Mac release and open its story selector.",
+            "3": "Launch the game, create a disposable free-play household, verify every story tile and Classic mode appear, then preserve the untouched save folder."
+          }
+        },
+        {
+          "id": "verify-two-story-slots",
+          "type": "interaction",
+          "safe_type": "Mode Audit",
+          "label": "Verify Every Directed-Story Slot",
+          "missable": false,
+          "levels": {
+            "1": "An additional directed route becomes available after required progress elsewhere.",
+            "2": "Record every story tile, its lock state, and the free-play option.",
+            "3": "Open the selector and record all current tiles, return after completing the required available route, and confirm every directed-story tile can be started."
+          }
+        },
+        {
+          "id": "disable-unsupported-mods",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Keep the Story Route Unmodified",
+          "missable": false,
+          "levels": {
+            "1": "Story triggers depend on the original objects, lots, and scripted households.",
+            "2": "Remove gameplay mods before beginning directed play.",
+            "3": "Use a clean user folder, retain only compatibility settings that do not alter goals, and test the first marker before committing the permanent save."
+          }
+        }
+      ]
+    },
+    {
+      "id": "four-corners-home-goals",
+      "name": "Four Corners Home Goals",
+      "location_cue": "The starting residence, its kitchen, wardrobe, mirrors, computer, phone, dining area, bedroom, and front path.",
+      "note": "Use these entries only when the active marker points to the home lot; story details are intentionally withheld.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "four-corners-segment-01",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Arrival and Household Basics",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep motives stable and follow the active marker in this order: give the marked Sim a friendly hug; eat a meal from the refrigerator; plan an Everyday outfit at a wardrobe; change appearance at a mirror; greet all visitors; use Play, then Tickle.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "four-corners-segment-02",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Work, Email, and Social Thresholds",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep motives stable and follow the active marker in this order: accept any job from the newspaper or computer; check email on the computer; invite marked contact; raise the required relationship to about 22; use Hit On; lower the hostile relationship to about -30; use Shove.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "four-corners-segment-04",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Cooking and Hosting",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep motives stable and follow the active marker in this order: raise Cooking to level four; greet evening visitor; use Romantic Kiss; serve dinner and call the guest to eat; use Leap Into Arms.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "four-corners-segment-07",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Home Socials",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep motives stable and follow the active marker in this order: use Charm; use Tender Kiss; use Make Out.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "four-corners-segment-09",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Relationship Recovery",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep motives stable and follow the active marker in this order: invite marked contact; raise the unseen partner-side relationship to 51; use phone conversations before retrying a refused invitation.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "four-corners-segment-10",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Household Conversations",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep motives stable and follow the active marker in this order: use Talk, then Chat with the marked household member; call the marked adviser and choose Talk.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        }
+      ]
+    },
+    {
+      "id": "four-corners-community-goals",
+      "name": "Four Corners Community Goals",
+      "location_cue": "Starlight Cafe and Market, Old Grove Park, Lead’s Gym, The Corner Boutique, and Old Grove Gardens.",
+      "note": "Community lots cannot be saved during the directed sequence, so finish each marked chain before leaving.",
+      "save_backup": {
+        "title": "Save before each community visit",
+        "why": "The directed route cannot be saved while a community-lot goal chain is active.",
+        "detail": "Save at home, fill motives, then travel and remain until the return prompt appears."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "four-corners-segment-03",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Cafe Visit",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the Starlight Cafe.",
+            "3": "Keep motives stable and follow the active marker in this order: call the marked adviser and choose Talk; invite marked contact; take a taxi to the cafe; practice chess and ask the marked Sim to join; request a table and order a meal; use First Kiss; wait for the directed return prompt. Risk: community lots cannot save. Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "four-corners-segment-05",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Park Activities",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the Old Grove Park.",
+            "3": "Keep motives stable and follow the active marker in this order: taxi to park; cook either available meal on the grill; use Play, then Tickle; use swing; raise the long-term relationship above 45; use Make Out.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "four-corners-segment-06",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Gym Visit",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the Lead's Gym.",
+            "3": "Keep motives stable and follow the active marker in this order: invite the marked contact to the gym; gain one Body skill point on a treadmill; enter hot tub; ask the marked contact to join; leave after prompt.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "four-corners-segment-08",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Boutique Visit",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the Corner Boutique.",
+            "3": "Keep motives stable and follow the active marker in this order: call the marked contact and choose Talk only; taxi to boutique; try two outfits; use Attack; spend at least §2,000 on clothing; leave after prompt.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "four-corners-segment-11",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Garden Venue",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the Old Grove Gardens.",
+            "3": "Keep motives stable and follow the active marker in this order: taxi to gardens; chat marked contact; use the currently highlighted arch interaction.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        }
+      ]
+    },
+    {
+      "id": "four-corners-directed-finish",
+      "name": "Four Corners Directed-Story Finish",
+      "location_cue": "The starting residence, its bedroom, buy catalog, phone, party spaces, and story-reward panel.",
+      "note": "The wording describes only controls and completion conditions, not the surrounding story.",
+      "save_backup": {
+        "title": "Back up before the concluding home goals",
+        "why": "Completing the concluding marked chain ends directed play and changes the neighborhood to open-ended play.",
+        "detail": "Copy the save before the current marker advances into its household milestone and party tasks."
+      },
+      "point_of_no_return": {
+        "title": "Directed goals conclude here",
+        "why": "Finishing the requested party closes this story’s guided objective sequence.",
+        "detail": "Confirm all earlier reward-panel slots from this route before completing the party."
+      },
+      "items": [
+        {
+          "id": "four-corners-segment-12",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Household Milestones and Party",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep motives stable and follow the active marker in this order: use the marked relationship action on the bed; repeat it until the confirmation chime plays; buy four requested nursery objects; wait until the active goal advances; invite at least three non-family friends; raise the party rating to Good Time.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "four-corners-unlock-second-story",
+          "type": "upgrade",
+          "safe_type": "Mode Unlock",
+          "label": "Unlock the Other Directed Story",
+          "missable": false,
+          "levels": {
+            "1": "The selector changes after enough goals in the available route are complete.",
+            "2": "Return to the main selector after finishing the Four Corners route.",
+            "3": "Complete the current directed sequence, allow its completion summary to finish, return to the selector, and verify the previously locked story can now be started."
+          }
+        },
+        {
+          "id": "four-corners-story-rewards",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Audit the Four Corners Story Rewards",
+          "missable": false,
+          "levels": {
+            "1": "Goal chains add exclusive objects to a separate reward panel.",
+            "2": "Open the reward panel and verify every earned Four Corners slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bitville-home-goals",
+      "name": "Bitville Home Goals",
+      "location_cue": "The large starting residence, study, kitchen, pool, stereo, game system, hot tub, guitar, television, telescope, and front path.",
+      "note": "Complete only the interactions displayed by the active marker; surrounding events remain undisclosed.",
+      "save_backup": {
+        "title": "Save before repair and houseguest goals",
+        "why": "One repair can shock the controlled Sim, and another visit can damage household objects.",
+        "detail": "Fill motives, improve Mechanical skill, and keep a pre-visit checkpoint."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "bitville-segment-01",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Household Reset",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting residence.",
+            "3": "Keep motives stable and follow the active marker in this order: perform the currently marked kiss interaction; hire a maid through phone services; sell the marked arch in Buy mode; eat meal; chat arriving friend; place the gifted computer from inventory onto the study desk.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "bitville-segment-06",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Pool and Repair Tasks",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting residence.",
+            "3": "Keep motives stable and follow the active marker in this order: invite both marked contacts to the residence; enter the pool and ask each guest to join; turn stereo on; repair stereo; take shower; use Serenade; use Say Goodbye To, then Everyone. Risk: repair can shock. Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "bitville-segment-07",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Home Recreation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting residence.",
+            "3": "Keep motives stable and follow the active marker in this order: chat arriving friend; call the currently marked contact; wear pajamas; play SSX 3; practice romance at a mirror.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "bitville-segment-09",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Home Meal and Hot Tub",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting residence.",
+            "3": "Keep motives stable and follow the active marker in this order: invite marked contact; chat contact; serve spaghetti; call the guest to the served meal; enter the hot tub and ask the marked Sim to join; cuddle in the hot tub, then use Make Out. Required condition: cooking skill three. Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "bitville-segment-10",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Email and Houseguest",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting residence.",
+            "3": "Keep motives stable and follow the active marker in this order: check email; invite marked contact; chat contact; use Ask to Leave on the marked contact; repair damaged sink. Risk: house damage and fire. Do not leave the lot until the next goal or return prompt appears."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bitville-community-goals",
+      "name": "Bitville Community Goals",
+      "location_cue": "Baliwood Star Lanes, Cliffside Park, Arcadium Plaza, and Don Calamari’s.",
+      "note": "Prepare needs and required clothing before travel; several visits depend on arrival time or relationship thresholds.",
+      "save_backup": {
+        "title": "Save before each timed visit",
+        "why": "A late arrival can postpone a marked meeting until the next in-game day.",
+        "detail": "Save at home, travel early, and remain until the directed return prompt appears."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "bitville-segment-02",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Bowling Venue",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the Baliwood Star Lanes.",
+            "3": "Keep motives stable and follow the active marker in this order: take a taxi to the bowling venue; start a game on a free bowling lane; order coffee; join the marked Sim at the pool table; perform a flirt interaction with three visitors.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "bitville-segment-03",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Park Meeting",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the Cliffside Park.",
+            "3": "Keep motives stable and follow the active marker in this order: change outfit; change appearance; invite contact to park; raise the daily relationship to 35; play Myshuno; chat contact.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "bitville-segment-04",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Plaza Meeting",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the Arcadium Plaza.",
+            "3": "Keep motives stable and follow the active marker in this order: call the currently marked contact; check email; use Gussy Up; arrive at the plaza before 6:00 p.m.; raise the daily relationship to 15; stay beside the marked Sim during the clothes fitting; introduce the two marked Sims to each other. Risk: late arrival delays goal. Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "bitville-segment-05",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Restaurant Visit",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the Don Calamari's.",
+            "3": "Keep motives stable and follow the active marker in this order: change into Formal clothing; take a taxi to the restaurant; greet marked contact; order coffee; use toilet; be seated; order the requested meals for both diners.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "bitville-segment-08",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Bowling-Lane Meeting",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the Baliwood Star Lanes.",
+            "3": "Keep motives stable and follow the active marker in this order: take a taxi to the bowling venue; share interests; order coffee; start darts and ask the marked Sim to join; sit, ask the marked Sim to join, then cuddle; use First Kiss.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "bitville-segment-11",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Plaza Conflict",
+          "missable": false,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the Arcadium Plaza.",
+            "3": "Keep motives stable and follow the active marker in this order: taxi to plaza; use Kiss, then Up Arm; use Irritate, then Argue on the marked Sim; use Fight, then Poke on the marked Sim.  Do not leave the lot until the next goal or return prompt appears."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bitville-final-choice",
+      "name": "Bitville Outcome Branch",
+      "location_cue": "The starting residence, outdoor telescope area, household portraits, outcome prompt, and story-reward panel.",
+      "note": "Every mechanical outcome is required; the story context and identities are deliberately withheld.",
+      "save_backup": {
+        "title": "Make a separate save before the outcome prompt",
+        "why": "The decision changes the household state, and only one branch awards the statue.",
+        "detail": "Keep the checkpoint untouched until every branch has been recorded."
+      },
+      "point_of_no_return": {
+        "title": "Outcome branch ahead",
+        "why": "Confirming either option ends the directed sequence and commits that branch’s household state.",
+        "detail": "Do not overwrite the pre-prompt checkpoint."
+      },
+      "items": [
+        {
+          "id": "bitville-segment-12",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Concluding Home Goal Set",
+          "missable": true,
+          "levels": {
+            "1": "Follow the active marker and prepare motives before starting its chained interactions.",
+            "2": "Complete every current goal around the starting residence.",
+            "3": "Keep motives stable and follow the active marker in this order: practice guitar; take shower; greet arriving contact; watch television for one in-game hour; lead the marked Sim to the telescope; practice guitar while the guest watches; propose Move In; have both household members stargaze outdoors; resolve the displayed outcome prompt. Stop before resolving the outcome branch and make a separate save. Do not leave the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "bitville-statue-outcome",
+          "type": "upgrade",
+          "safe_type": "Branch Reward",
+          "label": "Unlock the Branch Statue",
+          "missable": true,
+          "levels": {
+            "1": "One option preserves assets and adds an exclusive story reward.",
+            "2": "At the outcome prompt, choose the asset-preserving option first.",
+            "3": "Load the pre-prompt save, complete the marked outdoor actions, choose the option that retains the household’s assets, finish the summary, and verify the statue appears in Story Rewards."
+          }
+        },
+        {
+          "id": "bitville-alternate-outcome",
+          "type": "interaction",
+          "safe_type": "Alternate Outcome",
+          "label": "Record the Alternate Outcome",
+          "missable": true,
+          "levels": {
+            "1": "Restore the untouched checkpoint after confirming the reward branch.",
+            "2": "Select the relationship-preserving option on the restored branch.",
+            "3": "Reload the save made before the prompt, repeat the marked interaction, choose the option that preserves the relationship instead of the assets, and retain a separate post-choice save."
+          }
+        },
+        {
+          "id": "bitville-story-rewards",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Audit the Bitville Story Rewards",
+          "missable": false,
+          "levels": {
+            "1": "The directed goals and one outcome branch populate a separate object panel.",
+            "2": "Verify every Bitville reward slot, including the branch statue.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "classic-mode-aspirations-and-lifecycle",
+      "name": "Classic Mode Aspirations and Lifecycle",
+      "location_cue": "The free-play selector, Create-a-Sim, wants and fears panel, aspiration meter, relationship panel, date and outing meters, and household family tree.",
+      "note": "Classic mode is open-ended, so the pack uses finite aspirations, social meters, rewards, and life stages as its auditable boundary.",
+      "save_backup": {
+        "title": "Back up before reward experiments",
+        "why": "Low aspiration states can make powerful reward objects fail.",
+        "detail": "Use a disposable branch for negative outcomes and retain a clean platinum household."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "aspiration-family",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Family Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Use a dedicated free-play Sim so its wants can be followed consistently.",
+            "2": "Reach permanent platinum with a Family Sim.",
+            "3": "Create or select a Sim with the Family aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the resulting permanent platinum state."
+          }
+        },
+        {
+          "id": "aspiration-fortune",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Fortune Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Use a dedicated free-play Sim so its wants can be followed consistently.",
+            "2": "Reach permanent platinum with a Fortune Sim.",
+            "3": "Create or select a Sim with the Fortune aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the resulting permanent platinum state."
+          }
+        },
+        {
+          "id": "aspiration-knowledge",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Knowledge Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Use a dedicated free-play Sim so its wants can be followed consistently.",
+            "2": "Reach permanent platinum with a Knowledge Sim.",
+            "3": "Create or select a Sim with the Knowledge aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the resulting permanent platinum state."
+          }
+        },
+        {
+          "id": "aspiration-popularity",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Popularity Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Use a dedicated free-play Sim so its wants can be followed consistently.",
+            "2": "Reach permanent platinum with a Popularity Sim.",
+            "3": "Create or select a Sim with the Popularity aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the resulting permanent platinum state."
+          }
+        },
+        {
+          "id": "aspiration-romance",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Romance Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Use a dedicated free-play Sim so its wants can be followed consistently.",
+            "2": "Reach permanent platinum with a Romance Sim.",
+            "3": "Create or select a Sim with the Romance aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the resulting permanent platinum state."
+          }
+        },
+        {
+          "id": "free-play-dream-date",
+          "type": "interaction",
+          "safe_type": "Date Score",
+          "label": "Complete a Top-Rated Date",
+          "missable": false,
+          "levels": {
+            "1": "Compatible partners and fulfilled wants raise the shared meter.",
+            "2": "Finish a free-play date at its highest tier.",
+            "3": "Invite a compatible partner to a well-equipped lot, fulfill wants for both Sims, avoid rejected interactions and fears, and end only after the date meter reaches its top rating."
+          }
+        },
+        {
+          "id": "free-play-top-outing",
+          "type": "interaction",
+          "safe_type": "Group Outing",
+          "label": "Complete a Top-Rated Outing",
+          "missable": false,
+          "levels": {
+            "1": "Shared activities keep every group member involved.",
+            "2": "Finish a group outing at its highest tier.",
+            "3": "Form a group, travel to a community lot, rotate through activities everyone can use, satisfy social wants, and continue until the outing meter reaches its top rating."
+          }
+        },
+        {
+          "id": "free-play-three-bolt-chemistry",
+          "type": "interaction",
+          "safe_type": "Chemistry",
+          "label": "Create a Three-Bolt Pair",
+          "missable": false,
+          "levels": {
+            "1": "Aspiration, personality, and attraction settings combine into chemistry.",
+            "2": "Make one pair display three chemistry bolts.",
+            "3": "Choose compatible aspirations and personalities, adjust turn-ons and turn-offs, use the room-scoping interaction, and refine the pair until three bolts appear."
+          }
+        },
+        {
+          "id": "free-play-household-lifecycle",
+          "type": "interaction",
+          "safe_type": "Household Legacy",
+          "label": "Complete a Full Household Lifecycle",
+          "missable": false,
+          "levels": {
+            "1": "Classic mode remains open after the directed stories end.",
+            "2": "Raise one household through every available life stage.",
+            "3": "Create a household, preserve its family tree, satisfy age-specific needs and milestones, use safe birthdays, and continue until every available life stage has been played."
+          }
+        },
+        {
+          "id": "use-every-aspiration-reward",
+          "type": "interaction",
+          "safe_type": "Aspiration Reward",
+          "label": "Use Every Aspiration Reward",
+          "missable": false,
+          "levels": {
+            "1": "High aspiration points open a finite reward catalog.",
+            "2": "Place and successfully test every aspiration-reward object.",
+            "3": "Build points on specialist Sims, buy each reward while their aspiration state is safely high, perform its main interaction, and record the result on a backed-up lot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "classic-mode-careers-and-skills",
+      "name": "Classic Mode Careers and Skills",
+      "location_cue": "Newspapers, computers, job panels, carpools, skill objects, promotion requirements, and career-reward catalog.",
+      "note": "Top all ten inherited careers plus the two Life Stories-exclusive careers, then use every reward.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "career-athletic",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Athletic",
+          "missable": false,
+          "levels": {
+            "1": "Build the skills, friends, and daily performance needed for each promotion.",
+            "2": "Reach the highest rank of the Athletic career.",
+            "3": "Find the Athletic listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its career reward."
+          }
+        },
+        {
+          "id": "career-business",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Business",
+          "missable": false,
+          "levels": {
+            "1": "Build the skills, friends, and daily performance needed for each promotion.",
+            "2": "Reach the highest rank of the Business career.",
+            "3": "Find the Business listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its career reward."
+          }
+        },
+        {
+          "id": "career-criminal",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Criminal",
+          "missable": false,
+          "levels": {
+            "1": "Build the skills, friends, and daily performance needed for each promotion.",
+            "2": "Reach the highest rank of the Criminal career.",
+            "3": "Find the Criminal listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its career reward."
+          }
+        },
+        {
+          "id": "career-culinary",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Culinary",
+          "missable": false,
+          "levels": {
+            "1": "Build the skills, friends, and daily performance needed for each promotion.",
+            "2": "Reach the highest rank of the Culinary career.",
+            "3": "Find the Culinary listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its career reward."
+          }
+        },
+        {
+          "id": "career-law-enforcement",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Law Enforcement",
+          "missable": false,
+          "levels": {
+            "1": "Build the skills, friends, and daily performance needed for each promotion.",
+            "2": "Reach the highest rank of the Law Enforcement career.",
+            "3": "Find the Law Enforcement listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its career reward."
+          }
+        },
+        {
+          "id": "career-medicine",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Medicine",
+          "missable": false,
+          "levels": {
+            "1": "Build the skills, friends, and daily performance needed for each promotion.",
+            "2": "Reach the highest rank of the Medicine career.",
+            "3": "Find the Medicine listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its career reward."
+          }
+        },
+        {
+          "id": "career-military",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Military",
+          "missable": false,
+          "levels": {
+            "1": "Build the skills, friends, and daily performance needed for each promotion.",
+            "2": "Reach the highest rank of the Military career.",
+            "3": "Find the Military listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its career reward."
+          }
+        },
+        {
+          "id": "career-politics",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Politics",
+          "missable": false,
+          "levels": {
+            "1": "Build the skills, friends, and daily performance needed for each promotion.",
+            "2": "Reach the highest rank of the Politics career.",
+            "3": "Find the Politics listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its career reward."
+          }
+        },
+        {
+          "id": "career-science",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Science",
+          "missable": false,
+          "levels": {
+            "1": "Build the skills, friends, and daily performance needed for each promotion.",
+            "2": "Reach the highest rank of the Science career.",
+            "3": "Find the Science listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its career reward."
+          }
+        },
+        {
+          "id": "career-slacker",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Slacker",
+          "missable": false,
+          "levels": {
+            "1": "Build the skills, friends, and daily performance needed for each promotion.",
+            "2": "Reach the highest rank of the Slacker career.",
+            "3": "Find the Slacker listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its career reward."
+          }
+        },
+        {
+          "id": "career-entertainment",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Entertainment",
+          "missable": false,
+          "levels": {
+            "1": "Build the skills, friends, and daily performance needed for each promotion.",
+            "2": "Reach the highest rank of the Entertainment career.",
+            "3": "Find the Entertainment listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its career reward."
+          }
+        },
+        {
+          "id": "career-game-development",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Game Development",
+          "missable": false,
+          "levels": {
+            "1": "Build the skills, friends, and daily performance needed for each promotion.",
+            "2": "Reach the highest rank of the Game Development career.",
+            "3": "Find the Game Development listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its career reward."
+          }
+        },
+        {
+          "id": "skill-cooking",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Cooking",
+          "missable": false,
+          "levels": {
+            "1": "Use a suitable training object whenever motives are stable.",
+            "2": "Raise Cooking to level ten in Classic mode.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Cooking."
+          }
+        },
+        {
+          "id": "skill-mechanical",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Mechanical",
+          "missable": false,
+          "levels": {
+            "1": "Use a suitable training object whenever motives are stable.",
+            "2": "Raise Mechanical to level ten in Classic mode.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Mechanical."
+          }
+        },
+        {
+          "id": "skill-charisma",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Charisma",
+          "missable": false,
+          "levels": {
+            "1": "Use a suitable training object whenever motives are stable.",
+            "2": "Raise Charisma to level ten in Classic mode.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Charisma."
+          }
+        },
+        {
+          "id": "skill-body",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Body",
+          "missable": false,
+          "levels": {
+            "1": "Use a suitable training object whenever motives are stable.",
+            "2": "Raise Body to level ten in Classic mode.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Body."
+          }
+        },
+        {
+          "id": "skill-logic",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Logic",
+          "missable": false,
+          "levels": {
+            "1": "Use a suitable training object whenever motives are stable.",
+            "2": "Raise Logic to level ten in Classic mode.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Logic."
+          }
+        },
+        {
+          "id": "skill-creativity",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Creativity",
+          "missable": false,
+          "levels": {
+            "1": "Use a suitable training object whenever motives are stable.",
+            "2": "Raise Creativity to level ten in Classic mode.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Creativity."
+          }
+        },
+        {
+          "id": "skill-cleaning",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Cleaning",
+          "missable": false,
+          "levels": {
+            "1": "Use a suitable training object whenever motives are stable.",
+            "2": "Raise Cleaning to level ten in Classic mode.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Cleaning."
+          }
+        },
+        {
+          "id": "use-every-career-reward",
+          "type": "interaction",
+          "safe_type": "Career Reward",
+          "label": "Use Every Career Reward",
+          "missable": false,
+          "levels": {
+            "1": "Top ranks unlock objects with mechanics unavailable in the normal catalog.",
+            "2": "Place and use the reward from every career track.",
+            "3": "After topping all twelve careers, open the career-reward panel, place each unlocked object on a test lot, perform its primary interaction successfully, and retain a catalog record."
+          }
+        }
+      ]
+    },
+    {
+      "id": "community-lots-rewards-and-final-audit",
+      "name": "Community Lots, Rewards, and Final Audit",
+      "location_cue": "The Four Corners and Bitville neighborhood maps, eleven community lots, Story Rewards panel, buy catalog, and save folder.",
+      "note": "Visit every public venue, audit the exclusive catalogs, and preserve the completed multi-mode save.",
+      "save_backup": {
+        "title": "Archive before further free play",
+        "why": "Later household edits can change the auditable story and reward state.",
+        "detail": "Keep a dated read-only copy once all directed routes, outcomes, and Classic-mode ledgers are complete."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "lot-four-corners-lead-s-gym",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Lead's Gym Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each community lot contains a distinct combination of social and skill objects.",
+            "2": "Visit Lead's Gym and use every unique public interaction there.",
+            "3": "Travel from Four Corners, inspect every room and outdoor section, use each venue-specific object successfully, meet its service NPCs, and return home without leaving an active story marker behind."
+          }
+        },
+        {
+          "id": "lot-four-corners-old-grove-gardens",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Old Grove Gardens Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each community lot contains a distinct combination of social and skill objects.",
+            "2": "Visit Old Grove Gardens and use every unique public interaction there.",
+            "3": "Travel from Four Corners, inspect every room and outdoor section, use each venue-specific object successfully, meet its service NPCs, and return home without leaving an active story marker behind."
+          }
+        },
+        {
+          "id": "lot-four-corners-old-grove-park",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Old Grove Park Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each community lot contains a distinct combination of social and skill objects.",
+            "2": "Visit Old Grove Park and use every unique public interaction there.",
+            "3": "Travel from Four Corners, inspect every room and outdoor section, use each venue-specific object successfully, meet its service NPCs, and return home without leaving an active story marker behind."
+          }
+        },
+        {
+          "id": "lot-four-corners-starlight-cafe-and-market",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Starlight Cafe and Market Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each community lot contains a distinct combination of social and skill objects.",
+            "2": "Visit Starlight Cafe and Market and use every unique public interaction there.",
+            "3": "Travel from Four Corners, inspect every room and outdoor section, use each venue-specific object successfully, meet its service NPCs, and return home without leaving an active story marker behind."
+          }
+        },
+        {
+          "id": "lot-four-corners-the-corner-boutique",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the The Corner Boutique Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each community lot contains a distinct combination of social and skill objects.",
+            "2": "Visit The Corner Boutique and use every unique public interaction there.",
+            "3": "Travel from Four Corners, inspect every room and outdoor section, use each venue-specific object successfully, meet its service NPCs, and return home without leaving an active story marker behind."
+          }
+        },
+        {
+          "id": "lot-bitville-arcadium-plaza",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Arcadium Plaza Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each community lot contains a distinct combination of social and skill objects.",
+            "2": "Visit Arcadium Plaza and use every unique public interaction there.",
+            "3": "Travel from Bitville, inspect every room and outdoor section, use each venue-specific object successfully, meet its service NPCs, and return home without leaving an active story marker behind."
+          }
+        },
+        {
+          "id": "lot-bitville-baliwood-star-lanes",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Baliwood Star Lanes Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each community lot contains a distinct combination of social and skill objects.",
+            "2": "Visit Baliwood Star Lanes and use every unique public interaction there.",
+            "3": "Travel from Bitville, inspect every room and outdoor section, use each venue-specific object successfully, meet its service NPCs, and return home without leaving an active story marker behind."
+          }
+        },
+        {
+          "id": "lot-bitville-cliffside-park",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Cliffside Park Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each community lot contains a distinct combination of social and skill objects.",
+            "2": "Visit Cliffside Park and use every unique public interaction there.",
+            "3": "Travel from Bitville, inspect every room and outdoor section, use each venue-specific object successfully, meet its service NPCs, and return home without leaving an active story marker behind."
+          }
+        },
+        {
+          "id": "lot-bitville-don-calamari-s",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Don Calamari's Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each community lot contains a distinct combination of social and skill objects.",
+            "2": "Visit Don Calamari's and use every unique public interaction there.",
+            "3": "Travel from Bitville, inspect every room and outdoor section, use each venue-specific object successfully, meet its service NPCs, and return home without leaving an active story marker behind."
+          }
+        },
+        {
+          "id": "lot-bitville-gene-s-pool",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Gene's Pool Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each community lot contains a distinct combination of social and skill objects.",
+            "2": "Visit Gene's Pool and use every unique public interaction there.",
+            "3": "Travel from Bitville, inspect every room and outdoor section, use each venue-specific object successfully, meet its service NPCs, and return home without leaving an active story marker behind."
+          }
+        },
+        {
+          "id": "lot-bitville-hub-pub",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Hub Pub Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each community lot contains a distinct combination of social and skill objects.",
+            "2": "Visit Hub Pub and use every unique public interaction there.",
+            "3": "Travel from Bitville, inspect every room and outdoor section, use each venue-specific object successfully, meet its service NPCs, and return home without leaving an active story marker behind."
+          }
+        },
+        {
+          "id": "audit-story-reward-catalog",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Complete the Story Reward Catalog",
+          "missable": false,
+          "levels": {
+            "1": "Directed routes add exclusive objects, including one branch reward.",
+            "2": "Fill every available slot in the Story Rewards panel.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "audit-exclusive-object-catalog",
+          "type": "interaction",
+          "safe_type": "Exclusive Object",
+          "label": "Use Every Life Stories-Exclusive Object",
+          "missable": false,
+          "levels": {
+            "1": "The standalone release contains furniture and interactive objects absent from the base Sims 2 catalog.",
+            "2": "Place and test every distinct exclusive interactive object.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "archive-complete-save",
+          "type": "interaction",
+          "safe_type": "Completion Archive",
+          "label": "Archive the Completed Save",
+          "missable": false,
+          "levels": {
+            "1": "The completion state spans directed neighborhoods and Classic mode.",
+            "2": "Create a read-only archive after every ledger is verified.",
+            "3": "Exit the game, copy the complete user-data folder to dated storage, verify every story summary and outcome branch, all reward panels, careers, skills, aspirations, lots, and the Classic-mode household before resuming ordinary play."
+          }
+        }
+      ]
+    }
+  ]
+}

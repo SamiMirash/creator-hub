@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0c0a09">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Game Helper">
+  <title>Game Helper</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="guide.css">
+</head>
+<body>
+  <div id="app" aria-live="polite">
+    <div class="loading"><div class="spinner"></div><p>Loading helper&hellip;</p></div>
+  </div>
+
+  <!-- Pack picker (shown when no ?pack= is set) -->
+  <template id="tpl-picker">
+    <header class="topbar">
+      <div class="brand">Game Helper</div>
+      <div class="sub">Pick a game</div>
+    </header>
+    <main class="pad">
+      <ul class="pack-list" data-list></ul>
+      <p class="muted small">One-run, spoiler-free. Default view hides spoilers &mdash; you reveal only what you ask for.</p>
+    </main>
+  </template>
+
+  <!-- Main game viewer -->
+  <template id="tpl-game">
+    <header class="topbar">
+      <div class="brand" data-game-name>Game</div>
+      <div class="sub">Spoiler-free first playthrough</div>
+      <button class="link reset" data-reset title="Reset progress">reset</button>
+    </header>
+
+    <nav class="areanav">
+      <button class="navbtn" data-prev>&#8592;</button>
+      <div class="areapick">
+        <div class="arealabel" data-area-label>Area</div>
+        <div class="areameta"><span data-area-pos></span> &middot; <span data-area-status></span></div>
+      </div>
+      <button class="navbtn" data-next>&#8594;</button>
+    </nav>
+
+    <div class="areaselect-wrap">
+      <select data-area-select class="areaselect" aria-label="Jump to area"></select>
+    </div>
+
+    <main class="pad" data-body>
+
+      <!-- Area location cue: spoiler-free "how to know you're here" (physical
+           landmark only -- no story/characters/events). Shown for games that
+           don't display the area name on screen. -->
+      <div class="areacue" data-area-cue-wrap hidden>
+        <span class="areacue-tag">You&rsquo;re here when</span>
+        <span data-area-cue></span>
+      </div>
+
+      <!-- End-of-game message, revealed only when user advances past the last area -->
+      <div class="endcard" data-endcard hidden>
+        <h2>You&rsquo;ve reached the end</h2>
+        <p class="muted small">The game is complete &mdash; there&rsquo;s nothing further ahead. Nice run.</p>
+        <button class="bigbtn ghost" data-endback>&#8592; Back</button>
+      </div>
+
+
+      <!-- Save-backup / point-of-no-return banner injected here -->
+      <div data-warnzone></div>
+
+      <section class="checkcard">
+        <div class="checkhead">
+          <h2>Before you leave this area</h2>
+          <div class="counts" data-counts></div>
+        </div>
+        <p class="muted small" data-area-note></p>
+        <button class="bigbtn check" data-check>Before I leave &mdash; check me</button>
+      </section>
+
+      <div class="spoilerbar" data-spoilerbar hidden>
+        <span class="sl-label">Detail level</span>
+        <div class="sl-seg" role="group" aria-label="Spoiler level">
+          <button data-sl="0" class="sl-btn">0<small>count</small></button>
+          <button data-sl="1" class="sl-btn">1<small>hint</small></button>
+          <button data-sl="2" class="sl-btn">2<small>where</small></button>
+          <button data-sl="3" class="sl-btn">3<small>full</small></button>
+        </div>
+        <!-- Discoverability: most collectibles have a hand-drawn location sketch,
+             but it only appears at detail level 2+ (it would otherwise spoil the
+             spot). This hint tells the reader it exists. viewer.js hides it once
+             the level is already 2+ so it never nags. -->
+        <p class="sl-hint" data-sketch-hint>Raise to <strong>level 2 or 3</strong> to reveal a <strong>&#8220;Show sketch&#8221;</strong> button &mdash; a spoiler-safe hand sketch of where each collectible sits.</p>
+      </div>
+
+      <ul class="items" data-items hidden></ul>
+
+      <div class="areafoot" data-areafoot hidden>
+        <button class="bigbtn ghost" data-nextarea>I&rsquo;m done here &mdash; next area &#8594;</button>
+      </div>
+
+    </main>
+
+    <footer class="tipbar">
+      <span data-progress></span>
+      <span class="muted small">Saved on this phone</span>
+    </footer>
+  </template>
+
+  <script src="viewer.js"></script>
+</body>
+</html>

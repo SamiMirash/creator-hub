@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Watch Sami Mirash live on official channels when the first stream starts.">
+  <meta property="og:title" content="Live | Sami Mirash">
+  <meta property="og:description" content="Live status, official watch links, click-to-load players, and latest YouTube feed.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.samimirash.com/live.html">
+  <meta property="og:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="theme-color" content="#080705">
+  <link rel="canonical" href="https://www.samimirash.com/live.html">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <title>Live | Sami Mirash</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Live","url":"https://www.samimirash.com/live.html"}</script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="assets/site.js"></script>
+  <script defer src="assets/content.js"></script>
+  <script defer src="js/config.js"></script>
+  <script defer src="assets/seo.js"></script>
+</head>
+<body data-page="live">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header></header>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Live status</p>
+          <h1>Watch when the first stream starts.</h1>
+          <p class="lede">The page checks public status without API keys. If no channel ID or live signal exists, it stays honest and says offline.</p>
+        </div>
+        <aside data-live-badge></aside>
+      </div>
+    </section>
+    <section class="section"><div class="wrap section-head"><div><p class="eyebrow">Players</p><h2>Click-to-load embeds.</h2></div></div><div class="wrap grid three" data-live-players></div></section>
+    <section class="section"><div class="wrap section-head"><div><p class="eyebrow">Official channels</p><h2>Use these, not guesses.</h2></div></div><div class="wrap grid four" data-live-channels></div></section>
+    <section class="section"><div class="wrap grid two"><article class="card"><h2>Public-link rules</h2><ul class="quiet-list" data-live-rules></ul></article><div data-discord-widget></div></div></section>
+    <section class="section"><div class="wrap section-head"><div><p class="eyebrow">YouTube RSS</p><h2>Latest videos, when YouTube is connected.</h2></div></div><div class="wrap grid three" data-latest-videos></div></section>
+  </main>
+  <footer class="site-footer" data-site-footer></footer>
+</body>
+</html>

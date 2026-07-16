@@ -1,0 +1,1529 @@
+{
+  "id": "god-of-war-2005",
+  "game": "God of War (2005)",
+  "target": "100% completion on the chosen PS3 HD remaster route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "route-and-save-setup",
+      "name": "Route and Save Setup",
+      "location_cue": "The PS3 collection menu, difficulty selector, manual-save slots, and Treasures menu.",
+      "note": "Chosen route: PS3 HD remaster through original hardware or RPCS3; no secondary platform-exclusive content.",
+      "items": [
+        {
+          "id": "route-ps3-remaster",
+          "type": "interaction",
+          "safe_type": "Platform Route",
+          "label": "Use the PS3 HD Remaster",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the version before creating the completion file.",
+            "2": "Play the first game through God of War Collection or God of War Saga on PS3 or RPCS3.",
+            "3": "Launch the PS3 HD remaster and select the first game from the collection menu. Keep it separate from the 2018 title with the same name; no PS2- or Vita-exclusive gameplay branch is required."
+          }
+        },
+        {
+          "id": "route-save-backups",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Keep Rotating Manual Saves",
+          "missable": false,
+          "levels": {
+            "1": "This campaign has no chapter-select cleanup.",
+            "2": "Maintain several manual slots and preserve one save before leaving the rotating temple.",
+            "3": "Rotate through at least three slots, retain an early city save, and keep a permanent file in the rotating-ring hub before using the upward exit. A missed chest can require a new campaign once later replacement opportunities are exhausted."
+          }
+        },
+        {
+          "id": "route-first-clear",
+          "type": "interaction",
+          "safe_type": "Campaign",
+          "label": "Complete a First Campaign",
+          "missable": false,
+          "levels": {
+            "1": "A full clear opens the post-game completion menus.",
+            "2": "Finish one campaign on any available difficulty and retain its clear data.",
+            "3": "Complete the campaign through its final results, accept the clear-data save, and return to the main menu. Confirm that the hardest difficulty, the ten-part challenge set, and the first group of Treasures entries are now available."
+          }
+        },
+        {
+          "id": "route-spartan-clear",
+          "type": "interaction",
+          "safe_type": "Difficulty",
+          "label": "Complete Spartan Difficulty",
+          "missable": false,
+          "levels": {
+            "1": "One bonus entry has its own difficulty condition.",
+            "2": "Start a clean Spartan-difficulty campaign and finish it.",
+            "3": "Choose Spartan when beginning a new file, keep that setting unchanged, and complete the full campaign. Return to Treasures afterward and confirm the dedicated Spartan-clear entry has opened."
+          }
+        },
+        {
+          "id": "route-god-clear",
+          "type": "interaction",
+          "safe_type": "Difficulty",
+          "label": "Complete God Difficulty",
+          "missable": false,
+          "levels": {
+            "1": "The hardest setting appears only after a first clear.",
+            "2": "Finish a second full campaign on the unlocked God difficulty.",
+            "3": "After creating clear data, start God difficulty without selecting a costume, because costumes are disabled there. Finish the campaign and save again; this opens the final difficulty-gated Treasure entries."
+          }
+        },
+        {
+          "id": "route-dynamic-chests",
+          "type": "interaction",
+          "safe_type": "Completion Ledger",
+          "label": "Understand Dynamic Upgrade Chests",
+          "missable": false,
+          "levels": {
+            "1": "A missed upgrade may reappear later rather than vanish immediately.",
+            "2": "Track the first 18 eyes, 18 feathers, and both keys while also recording each area's chest total.",
+            "3": "Unlit chests can substitute a missed eye, feather, or key at later opportunities. Once a category is complete, later substitutes yield red orbs instead; after every weapon and power is maximized, red chests can change to magic recovery. Use the numbered rare-item route in this pack for a stable ledger."
+          }
+        },
+        {
+          "id": "route-all-chests",
+          "type": "optional",
+          "safe_type": "Completion Ledger",
+          "label": "Open All 330 Chests",
+          "missable": false,
+          "levels": {
+            "1": "Treat every branch, breakable wall, and camera-hidden ledge as part of the route.",
+            "2": "Use the per-area chest-sweep records until their totals add to 330.",
+            "3": "Record each area's total immediately before crossing its one-way exit. The full ledger is 46 health, 26 magic, 70 colour-changing, 151 red-orb, 18 eye, 17 feather, and two key chests; the eighteenth feather comes from an optional underwater interaction on the earliest route."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Create the rotating save set now",
+        "why": "There is no chapter select, and later one-way exits can make early cleanup impossible."
+      }
+    },
+    {
+      "id": "aegean-sea",
+      "name": "Aegean Sea",
+      "location_cue": "Three damaged ships joined by beams, nets, and ropes.",
+      "note": "SAVE-BACKUP: record 14 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "aegean-sea-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 14 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 14 chests in Aegean Sea.",
+            "3": "Count 5 health, 1 magic, 0 colour-changing, 6 red-orb, and 2 eye chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 14."
+          }
+        },
+        {
+          "id": "gorgon-eye-01",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #1",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "On the ship reached by the first long rope, check the cracked panels beside the central opening.",
+            "3": "Before breaking through the middle panel, destroy both cracked side panels. Open the unlit chest in the revealed side recess; the other recess contains red orbs. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "gorgon-eye-02",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #2",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "After the major ship encounter, inspect the platform used to reach the departing rope.",
+            "3": "Move onto the small departure platform after the arena is clear. Open the unlit chest beside the health chest before grabbing the rope and leaving the ships. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "aegean-area-magic",
+          "type": "weapon",
+          "safe_type": "Power",
+          "label": "Acquire the First Magic Power",
+          "missable": false,
+          "levels": {
+            "1": "The opening ship route introduces one mandatory area attack.",
+            "2": "Receive the magic power at the altar between the ship encounters.",
+            "3": "Follow the ship route until the altar interaction becomes available, accept the power, and complete its short combat tutorial. Open the inventory afterward and confirm the new power occupies its slot."
+          }
+        },
+        {
+          "id": "aegean-cabin-minigame",
+          "type": "optional",
+          "safe_type": "Secret Interaction",
+          "label": "Complete the Ship-Cabin Minigame",
+          "missable": true,
+          "levels": {
+            "1": "An optional interaction remains in the cabin before the harbour exit.",
+            "2": "Return to the cabin bed on the docked ship and interact when the prompt appears.",
+            "3": "Before climbing the harbour exit ladder, enter the ship cabin, jump onto the bed, and press the displayed interaction. Complete the full button sequence until the scene ends and the red-orb reward is released."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving Aegean Sea",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to The Gates of Athens."
+      }
+    },
+    {
+      "id": "gates-of-athens",
+      "name": "The Gates of Athens",
+      "location_cue": "The harbour lift, city gate courtyards, column rooms, and ballista chamber.",
+      "note": "SAVE-BACKUP: record 27 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "gates-of-athens-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 27 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 27 chests in The Gates of Athens.",
+            "3": "Count 9 health, 3 magic, 2 colour-changing, 9 red-orb, 2 eye, and 2 feather chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 27."
+          }
+        },
+        {
+          "id": "gorgon-eye-03",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #3",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "In the room of tall square columns, look above the lowered wooden crates.",
+            "3": "Break the wooden boxes around the two columns, climb onto the taller column on the right, and jump to the upper ledge revealed by the camera. Open the unlit chest there. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "gorgon-eye-04",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #4",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "Beyond the ballista-broken doorway, descend the left ladder and check beside the gate.",
+            "3": "Use the ballista to open the forward door, turn left, and climb down. Open the unlit chest beside the closed gate, then raise that gate before returning to the ballista room. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "phoenix-feather-01",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #1",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "Near the harbour lift switch, investigate the opening in the wall to the right.",
+            "3": "Before riding the lift, jump through the right-hand wall opening and drop into the water. Climb onto the landing ahead, follow the short corridor, and open the unlit chest. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "phoenix-feather-02",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #2",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "In the ballista room, see what the machine can break when turned toward the left wall.",
+            "3": "Pull the ballista's turning control twice so it faces left, fire once into the weak wall, and enter the opening. Open the unlit chest before rotating the machine toward the route door. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "gates-petrification-power",
+          "type": "weapon",
+          "safe_type": "Power",
+          "label": "Acquire the Petrification Power",
+          "missable": false,
+          "levels": {
+            "1": "A mandatory city-gate tutorial introduces a control tool.",
+            "2": "Complete the petrification tutorial in the column-room route.",
+            "3": "Proceed through the gate courtyards until the tutorial arena locks. Acquire the new power, use it exactly as prompted to freeze and shatter the required targets, and check that it remains selectable afterward."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving The Gates of Athens",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to The Road to Athens."
+      }
+    },
+    {
+      "id": "road-to-athens",
+      "name": "The Road to Athens",
+      "location_cue": "A straight residential road lined with enterable two-storey houses.",
+      "note": "SAVE-BACKUP: record 19 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "road-to-athens-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 19 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 19 chests in The Road to Athens.",
+            "3": "Count 1 health, 1 magic, 0 colour-changing, 13 red-orb, 2 eye, and 2 feather chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 19."
+          }
+        },
+        {
+          "id": "gorgon-eye-05",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #5",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "Along the residential road, search the upper floor of the fourth house on the right.",
+            "3": "Count houses from the road entrance. Break into right-side house four, climb to its second storey, and open the unlit chest before continuing toward the square. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "gorgon-eye-06",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #6",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "Along the same road, inspect the double-door room in the ninth house on the left.",
+            "3": "Count along the left row to house nine. Break through either entrance to its shared room and open both unlit chests; one contains this eye and the other holds a feather. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "phoenix-feather-03",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #3",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "On the residential road, search the ground floor of the fourth house on the left.",
+            "3": "Count from the road entrance to left-side house four, break its lower door, and open the unlit chest on the first floor before checking the upper houses. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "phoenix-feather-04",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #4",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "The ninth house on the left has a shared room reached through two doors.",
+            "3": "Enter left-side house nine through either of its doors and open both unlit chests in the common room. One provides this feather and the other contains an eye. Confirm the magic-piece counter advances before continuing."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving The Road to Athens",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to Athens Town Square."
+      }
+    },
+    {
+      "id": "athens-town-square",
+      "name": "Athens Town Square",
+      "location_cue": "The fountain plaza and the polished interior rooms above its locked hatch.",
+      "note": "SAVE-BACKUP: record 10 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "athens-town-square-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 10 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 10 chests in Athens Town Square.",
+            "3": "Count 1 health, 0 magic, 3 colour-changing, 3 red-orb, 2 eye, and 1 feather chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 10."
+          }
+        },
+        {
+          "id": "gorgon-eye-07",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #7",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "In the polished-floor room above the town square, inspect the damaged wall carving ahead.",
+            "3": "Enter the interior route from the square, cross into the room with polished flooring, and break the visibly fractured carving directly ahead. Open the unlit chest behind it. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "gorgon-eye-08",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #8",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "At the balcony gap during the upper-square route, investigate the ledge to the left.",
+            "3": "Double-jump toward the left edge instead of landing straight ahead, catch the wall, and shimmy around its corner. Leap backward to the opposite balcony, break its door, and open the chest. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "phoenix-feather-05",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #5",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "From the upper save balcony above the town square, check the level immediately below.",
+            "3": "Approach the save light on the high balcony, step over the nearby railing, and land on the narrow lower balcony. Open its unlit chest before returning to the main path. Confirm the magic-piece counter advances before continuing."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving Athens Town Square",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to Rooftops of Athens."
+      }
+    },
+    {
+      "id": "rooftops-of-athens",
+      "name": "Rooftops of Athens",
+      "location_cue": "Burning bridges, ladders, vines, and connected roofs above the city.",
+      "note": "SAVE-BACKUP: record 35 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "rooftops-of-athens-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 35 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 35 chests in Rooftops of Athens.",
+            "3": "Count 4 health, 4 magic, 6 colour-changing, 11 red-orb, 6 eye, and 4 feather chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 35."
+          }
+        },
+        {
+          "id": "gorgon-eye-09",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #9",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "In the first enclosed rooftop battle room, test the wooden door on the right.",
+            "3": "Clear enough space to work safely, smash the wooden door to the right of the room's visible chest, and open the unlit chest in the small recess beyond. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "gorgon-eye-10",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #10",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "After receiving the rooftop ranged power, search the newly accessible room for a cracked wall.",
+            "3": "Use the new ranged attack to clear the distant obstruction, enter the room that opens, and break its deeply cracked wall. The hidden group contains this eye and a feather. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "gorgon-eye-11",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #11",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "From the rooftop save room, climb the nearby ladders and inspect the upper ledge.",
+            "3": "Take the ladder from the save room to the roof, turn right to the second ladder, and climb again. Open the unlit chest on the ledge at its top. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "gorgon-eye-12",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #12",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "Before crossing from the third rooftop to the vines, inspect the broken upper-left edge.",
+            "3": "Stand at the upper-left corner while facing the vine wall. Break the edge if needed, step off carefully, and steer onto the concealed balcony below to reach the chest. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "gorgon-eye-13",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #13",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "Immediately after crossing the raised bridge, check both sides of the next doorway.",
+            "3": "Enter the room beyond the raised bridge and open the two unlit chests flanking the forward doorway. This eye and a feather occupy the pair; collect both before leaving. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "gorgon-eye-14",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #14",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "At the save point beyond the broken bridge, look for a lower opening to the right.",
+            "3": "Face away from the save light, jump outward, then curl back toward the ledge to catch it. Shimmy toward the building and reverse-jump into the lower alcove; open all three chests. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "phoenix-feather-06",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #6",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "On the rooftop with the large ground enemies, inspect the far-right break in the northern wall.",
+            "3": "Stay on the roof after the fight, walk to the northern edge, then move right along it into the concealed recess. Open both chests in the alcove before using the forward stairs. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "phoenix-feather-07",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #7",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "The cracked chamber opened after obtaining the ranged power hides more than one upgrade.",
+            "3": "Enter the newly accessible rooftop room, shatter the cracked inner wall, and open every chest behind it. The group contains this feather together with an eye and magic recovery. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "phoenix-feather-08",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #8",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "Beyond the raised bridge, open both unlit chests beside the next doorway.",
+            "3": "Cross the raised bridge and inspect the pair flanking the exit inside the next room. Collect both before passing through; the other chest contains an eye. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "phoenix-feather-09",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #9",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "The lower alcove beside the broken-bridge save point contains a three-chest group.",
+            "3": "Jump outward from the save ledge, curve back to catch it, shimmy toward the wall opening, and leap backward inside. Open all three chests to secure the feather and eye together. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "rooftops-ranged-power",
+          "type": "weapon",
+          "safe_type": "Power",
+          "label": "Acquire the Ranged Magic Power",
+          "missable": false,
+          "levels": {
+            "1": "A large rooftop statue grants the tool needed for distant switches.",
+            "2": "Interact with the large statue beside the broken burning bridge.",
+            "3": "Reach the statue platform, complete the interaction, and equip the new ranged power. Use it on the distant rooftop target to open the route, then check the power menu before leaving the neighbourhood."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving Rooftops of Athens",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to Temple of the Oracle."
+      }
+    },
+    {
+      "id": "temple-of-the-oracle",
+      "name": "Temple of the Oracle",
+      "location_cue": "A broad stairway, columned entrance, rafter hall, and timed outdoor courtyard.",
+      "note": "SAVE-BACKUP: record 22 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "temple-of-the-oracle-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 22 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 22 chests in Temple of the Oracle.",
+            "3": "Count 2 health, 1 magic, 3 colour-changing, 8 red-orb, 4 eye, and 4 feather chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 22."
+          }
+        },
+        {
+          "id": "gorgon-eye-15",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #15",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "At the columned temple entrance, open the unlit chest on the right side.",
+            "3": "Climb the broad exterior stairs but do not enter yet. Pass behind the right-hand pillars and open the unlit chest beside the doorway; the matching left chest holds a feather. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "gorgon-eye-16",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #16",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "Inside the main temple hall, hug the back-left wall until the camera reveals an upper ledge.",
+            "3": "From the entrance, move left while staying against the rear wall. When the view exposes the raised shelf, jump onto it and open the unlit chest before moving the statues. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "gorgon-eye-17",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #17",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "While crossing the temple's second-floor rafters, inspect the large pale window on the left.",
+            "3": "Balance along the upper beams until level with the large stained window. Double-jump to the narrow sill beneath it, break the glass, and open the unlit chest inside. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "gorgon-eye-18",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #18",
+          "missable": true,
+          "levels": {
+            "1": "Check unlit chests just off the main traversal line.",
+            "2": "In the lower timed courtyard, descend along the right wall and inspect the cracked alcove.",
+            "3": "After completing the timed route, return to the courtyard floor and follow the right boundary downward. Break the wall inside the first small alcove and open the final eye chest. Confirm the health-piece counter advances before leaving the area."
+          }
+        },
+        {
+          "id": "phoenix-feather-10",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #10",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "At the temple entrance, open the unlit chest behind the pillars on the left.",
+            "3": "Climb the exterior stairs and remain outside. Search behind the left-hand pillar group for the unlit chest, then collect the matching eye on the opposite side. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "phoenix-feather-11",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #11",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "After completing the timed courtyard route, retrace it and inspect the first beam-supported platform.",
+            "3": "Return through the climbing and wheel obstacles to the far beam section. At the first platform, walk right along its supporting beam to the wall ledge and open the chest. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "phoenix-feather-12",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #12",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "Before stepping onto the sword-shaped walkway, climb the monument stairs on the left.",
+            "3": "At the save light before the sewer approach, take the stairs away from the sword walkway. At the monument, jump onto the ledge to the right of the statue and open the chest. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "phoenix-feather-13",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #13",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "At the bottom of the spiral stairway, pull away from the sewer entrance and inspect beneath the steps.",
+            "3": "Do not enter the sewer immediately. Walk backward from its doorway until the camera exposes the space under the spiral stairs, then open the unlit chest hidden there. Confirm the magic-piece counter advances before continuing."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving Temple of the Oracle",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to Sewers of Athens."
+      },
+      "point_of_no_return": {
+        "title": "The final traversal leaves Temple of the Oracle",
+        "why": "Finish the local chest count and rare-item checks before crossing the last one-way obstacle."
+      }
+    },
+    {
+      "id": "sewers-of-athens",
+      "name": "Sewers of Athens",
+      "location_cue": "The sloped underground waterway reached beneath the spiral staircase.",
+      "note": "SAVE-BACKUP: record 16 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "sewers-of-athens-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 16 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 16 chests in Sewers of Athens.",
+            "3": "Count 0 health, 0 magic, 9 colour-changing, and 7 red-orb chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 16."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving Sewers of Athens",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to Desert of Lost Souls."
+      }
+    },
+    {
+      "id": "desert-crossing",
+      "name": "Desert of Lost Souls",
+      "location_cue": "Open sand, three distant structures, and the exit conveyor passage.",
+      "note": "SAVE-BACKUP: record 13 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "desert-crossing-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 13 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 13 chests in Desert of Lost Souls.",
+            "3": "Count 0 health, 0 magic, 6 colour-changing, and 7 red-orb chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 13."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving Desert of Lost Souls",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to Pandora's Temple."
+      }
+    },
+    {
+      "id": "mountain-temple-entrance",
+      "name": "Pandora's Temple",
+      "location_cue": "The cliff approach and large doorway at the mountain structure.",
+      "note": "SAVE-BACKUP: record 7 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "mountain-temple-entrance-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 7 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 7 chests in Pandora's Temple.",
+            "3": "Count 1 health, 0 magic, 4 colour-changing, 1 red-orb, and 1 feather chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 7."
+          }
+        },
+        {
+          "id": "phoenix-feather-14",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #14",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "At the top of the mountain-temple approach, search the far-right cliff edge.",
+            "3": "After climbing the final exterior stairs, remain outside the main doorway and walk to the rightmost cliff boundary. Open the unlit chest standing near the edge. Confirm the magic-piece counter advances before continuing."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving Pandora's Temple",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to Rings of Pandora."
+      }
+    },
+    {
+      "id": "rotating-rings",
+      "name": "Rings of Pandora",
+      "location_cue": "Concentric rotating corridors surrounding the central mechanism.",
+      "note": "SAVE-BACKUP: record 2 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "rotating-rings-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 2 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 2 chests in Rings of Pandora.",
+            "3": "Count 0 health, 0 magic, 1 colour-changing, and 1 red-orb chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 2."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving Rings of Pandora",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to The Challenge of Atlas."
+      }
+    },
+    {
+      "id": "mechanical-statue-route",
+      "name": "The Challenge of Atlas",
+      "location_cue": "Saw floors, balance beams, a split-floor tower, and a giant stone figure.",
+      "note": "SAVE-BACKUP: record 29 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "mechanical-statue-route-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 29 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 29 chests in The Challenge of Atlas.",
+            "3": "Count 2 health, 4 magic, 7 colour-changing, 13 red-orb, 2 feather, and 1 key chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 29."
+          }
+        },
+        {
+          "id": "phoenix-feather-15",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #15",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "On the bridge after the saw floor, investigate the broken section halfway across.",
+            "3": "At the bridge's damaged middle edge, face outward and double-jump across to the separated ledge. Take the right branch for the feather; the left branch holds red-orb chests. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "phoenix-feather-16",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #16",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "On the giant statue's second level, follow the left ledge back toward the figure.",
+            "3": "After reaching the chamber's upper floor, turn left instead of advancing. Walk along the ledge toward the statue until the camera reveals the unlit chest. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "muse-key-1",
+          "type": "key",
+          "safe_type": "Optional Key",
+          "label": "Optional Key #1",
+          "missable": true,
+          "levels": {
+            "1": "A hidden unlit chest sits close to a major mechanism.",
+            "2": "Open the hidden chest directly behind the giant stone figure.",
+            "3": "After completing the nearby mechanism, walk around the base of the giant figure instead of taking the exit. Open the unlit chest behind it and verify the inventory shows one Muse Key."
+          }
+        },
+        {
+          "id": "atlas-heavy-blade",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Acquire the Heavy Blade",
+          "missable": false,
+          "levels": {
+            "1": "The first internal challenge grants a slower secondary weapon.",
+            "2": "Accept the weapon at the opening of the mechanical statue route.",
+            "3": "Proceed from the rotating-ring hub into the mechanical route and complete the mandatory acquisition interaction. Switch between the chained blades and the new heavy weapon once, then verify both remain available."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving The Challenge of Atlas",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to The Challenge of Poseidon."
+      }
+    },
+    {
+      "id": "flooded-temple-route",
+      "name": "The Challenge of Poseidon",
+      "location_cue": "Rotating gates, sacrifice chamber, flooded rooms, and underwater tunnels.",
+      "note": "SAVE-BACKUP: record 34 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "flooded-temple-route-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 34 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 34 chests in The Challenge of Poseidon.",
+            "3": "Count 4 health, 2 magic, 10 colour-changing, 16 red-orb, 2 feather, and 1 key chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 34."
+          }
+        },
+        {
+          "id": "phoenix-feather-17",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #17",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "In the room containing the underwater relic, enter the water on the left.",
+            "3": "Before taking the rear exit, dive into the left pool, surface beside the ladder, and climb to the raised shelf. Open the unlit chest there, then collect the relic if still pending. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "phoenix-feather-18",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #18",
+          "missable": true,
+          "levels": {
+            "1": "Look above, below, or behind the route before moving onward.",
+            "2": "During the underwater route, break the cracked carving facing the large wall relief.",
+            "3": "Swim to the damaged carving, use the underwater charge to break it, and interact with the hidden figure inside. If seventeen feathers were collected earlier, this interaction grants the final one. Confirm the magic-piece counter advances before continuing."
+          }
+        },
+        {
+          "id": "muse-key-2",
+          "type": "key",
+          "safe_type": "Optional Key",
+          "label": "Optional Key #2",
+          "missable": true,
+          "levels": {
+            "1": "A hidden unlit chest sits close to a major mechanism.",
+            "2": "At the fourth exterior climbing ledge, travel right instead of taking the left exit.",
+            "3": "Climb the four exterior ledges, turn right on the highest one, and follow it to the far alcove. Open the unlit chest, confirm two Muse Keys are held, then return left to resume the route."
+          }
+        },
+        {
+          "id": "poseidon-underwater-relic",
+          "type": "key",
+          "safe_type": "Traversal Relic",
+          "label": "Acquire the Underwater Relic",
+          "missable": false,
+          "levels": {
+            "1": "A pedestal in the flooded central room changes underwater traversal.",
+            "2": "Take the relic from the central pedestal in the room with two pools.",
+            "3": "Enter the flooded chamber, collect both raised-ledge chests first, then interact with the central pedestal. Dive and hold the charge input to confirm unlimited breathing and the underwater dash are active."
+          }
+        },
+        {
+          "id": "nyad-01",
+          "type": "optional",
+          "safe_type": "Hidden Interaction",
+          "label": "Hidden Underwater Interaction #1",
+          "missable": false,
+          "levels": {
+            "1": "One optional figure is visible near the beginning of the flooded route.",
+            "2": "Interact with the visible figure near the first underwater section.",
+            "3": "At the flooded route's opening, approach the visible figure and press the grab interaction. It supplies a missing health collectible only if that category is incomplete; otherwise it gives no item."
+          }
+        },
+        {
+          "id": "nyad-02",
+          "type": "optional",
+          "safe_type": "Hidden Interaction",
+          "label": "Hidden Underwater Interaction #2",
+          "missable": false,
+          "levels": {
+            "1": "A damaged carving conceals an optional recovery interaction.",
+            "2": "Break the cracked underwater carving and interact with the figure behind it.",
+            "3": "Charge the underwater dash into the cracked carving, enter the recess, and press the interaction. With seventeen feathers collected, this gives the eighteenth and completes the magic upgrades."
+          }
+        },
+        {
+          "id": "nyad-03",
+          "type": "optional",
+          "safe_type": "Hidden Interaction",
+          "label": "Hidden Underwater Interaction #3",
+          "missable": false,
+          "levels": {
+            "1": "Listen and inspect the cracked wall left of the underwater save point.",
+            "2": "Break the cracked underwater wall to the left of the save light.",
+            "3": "From the underwater save point, swim left, charge through the fractured wall, and interact with the concealed figure. It replaces a missing health collectible if one remains."
+          }
+        },
+        {
+          "id": "nyad-04",
+          "type": "optional",
+          "safe_type": "Hidden Interaction",
+          "label": "Hidden Underwater Interaction #4",
+          "missable": false,
+          "levels": {
+            "1": "The final optional figure is hidden near the large underwater statue.",
+            "2": "Break the cracked wall to the right of the large statue.",
+            "3": "Search the statue's right side, use a charged underwater dash to open the fractured wall, and interact inside. It replaces a missing magic collectible if the feather set is still incomplete."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving The Challenge of Poseidon",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to Muse Key Room."
+      }
+    },
+    {
+      "id": "muse-key-room",
+      "name": "Muse Key Room",
+      "location_cue": "The black locked doorway revealed by rotating the outer ring.",
+      "note": "SAVE-BACKUP: record 2 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "muse-key-room-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 2 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 2 chests in Muse Key Room.",
+            "3": "Count 0 health, 0 magic, 0 colour-changing, and 2 red-orb chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 2."
+          }
+        },
+        {
+          "id": "muse-room-reward",
+          "type": "optional",
+          "safe_type": "Permanent Upgrade",
+          "label": "Claim the Optional Key-Room Reward",
+          "missable": true,
+          "levels": {
+            "1": "Spend both optional keys before taking the upward temple exit.",
+            "2": "Rotate the outer ring until the black two-key door aligns with the corridor.",
+            "3": "Return to the rotating hub after the flooded route, turn the outer ring until the black door is accessible, and spend both Muse Keys. Step on both upgrade circles, then open the two red-orb chests; verify health and magic each gained their fourth increase."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving Muse Key Room",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to The Challenge of Hades."
+      },
+      "point_of_no_return": {
+        "title": "The upward exit permanently closes the rotating temple",
+        "why": "Use both Muse Keys and finish every rotating-temple chest sweep before ascending."
+      }
+    },
+    {
+      "id": "dark-temple-route",
+      "name": "The Challenge of Hades",
+      "location_cue": "A dark statue hall, rising platforms, boulder corridor, and blade beams.",
+      "note": "SAVE-BACKUP: record 33 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "dark-temple-route-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 33 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 33 chests in The Challenge of Hades.",
+            "3": "Count 9 health, 3 magic, 4 colour-changing, and 17 red-orb chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 33."
+          }
+        },
+        {
+          "id": "hades-summoning-power",
+          "type": "weapon",
+          "safe_type": "Power",
+          "label": "Acquire the Summoning Power",
+          "missable": false,
+          "levels": {
+            "1": "A mandatory interaction inside the dark route grants the final magic slot.",
+            "2": "Receive the power at the large statue interaction in the dark temple.",
+            "3": "Advance through the dark route until the statue interaction becomes available, accept the final magic power, and use it during the required encounter. Confirm all four magic slots are filled before continuing."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving The Challenge of Hades",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to The Cliffs of Madness."
+      }
+    },
+    {
+      "id": "cliffs-and-caves",
+      "name": "The Cliffs of Madness",
+      "location_cue": "Forking cliff paths, rope lines, caves, and two necklace mechanisms.",
+      "note": "SAVE-BACKUP: record 30 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "cliffs-and-caves-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 30 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 30 chests in The Cliffs of Madness.",
+            "3": "Count 4 health, 3 magic, 6 colour-changing, and 17 red-orb chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 30."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving The Cliffs of Madness",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to The Architect's Tomb."
+      },
+      "point_of_no_return": {
+        "title": "The final traversal leaves The Cliffs of Madness",
+        "why": "Finish the local chest count and rare-item checks before crossing the last one-way obstacle."
+      }
+    },
+    {
+      "id": "architects-tomb",
+      "name": "The Architect's Tomb",
+      "location_cue": "An exposed courtyard with moving floors and a sealed stone entrance.",
+      "note": "SAVE-BACKUP: record 7 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "architects-tomb-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 7 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 7 chests in The Architect's Tomb.",
+            "3": "Count 0 health, 0 magic, 2 colour-changing, and 5 red-orb chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 7."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving The Architect's Tomb",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to The Path of Hades."
+      }
+    },
+    {
+      "id": "underworld-path",
+      "name": "The Path of Hades",
+      "location_cue": "Floating platforms, rotating blades, vertical columns, and narrow jumps.",
+      "note": "SAVE-BACKUP: record 23 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "underworld-path-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 23 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 23 chests in The Path of Hades.",
+            "3": "Count 2 health, 2 magic, 6 colour-changing, and 13 red-orb chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 23."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving The Path of Hades",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to Temple of the Oracle Destroyed."
+      },
+      "point_of_no_return": {
+        "title": "The final traversal leaves The Path of Hades",
+        "why": "Finish the local chest count and rare-item checks before crossing the last one-way obstacle."
+      }
+    },
+    {
+      "id": "ruined-temple-return",
+      "name": "Temple of the Oracle Destroyed",
+      "location_cue": "The damaged temple stairways and upper crossing on the return route.",
+      "note": "SAVE-BACKUP: record 7 local chests before the final traversal. No chapter select is available.",
+      "items": [
+        {
+          "id": "ruined-temple-return-all-chests",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 7 Chests",
+          "missable": true,
+          "levels": {
+            "1": "Sweep every side path before using the area's final exit.",
+            "2": "Open all 7 chests in Temple of the Oracle Destroyed.",
+            "3": "Count 2 health, 2 magic, 1 colour-changing, and 2 red-orb chests before leaving this physical section. Break damaged walls and doors, test ledges that change the camera, and revisit short side branches before the final traversal; mark the area only when the local total reaches 7."
+          }
+        },
+        {
+          "id": "final-statue-secret",
+          "type": "optional",
+          "safe_type": "Easter Egg",
+          "label": "Unlock the Second Secret Message",
+          "missable": true,
+          "levels": {
+            "1": "Two unusually durable statues in the final interior hide a menu secret.",
+            "2": "Before using the throne interaction, destroy both large statues in the room.",
+            "3": "Enter the final throne room but do not activate the central seat. Repeatedly strike each of the two large statues with the fully upgraded ground-wave attack until both collapse; wait for the scrambled message to register, then save the clear data."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before leaving Temple of the Oracle Destroyed",
+        "why": "The campaign has no chapter select. Preserve a slot before the route commits to the final campaign sequence."
+      }
+    },
+    {
+      "id": "arsenal-and-upgrades",
+      "name": "Arsenal and Upgrades",
+      "location_cue": "The pause-menu power-up screen and any safe room with enough accumulated red orbs.",
+      "note": "All six upgradable combat tools must reach their displayed maximum tier on a completed save.",
+      "items": [
+        {
+          "id": "max-starting-blades",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Starting Chained Blades",
+          "missable": false,
+          "levels": {
+            "1": "Spend red orbs deliberately instead of spreading them across unfinished powers.",
+            "2": "Raise Starting Chained Blades to level 5.",
+            "3": "Open the power-up menu and purchase every remaining tier in order: 1,500 + 2,250 + 3,750 + 9,000 red orbs, for 16,500 total. Do not mark this complete until the menu shows level 5 with no further purchase prompt."
+          }
+        },
+        {
+          "id": "max-area-magic",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Area Magic Power",
+          "missable": false,
+          "levels": {
+            "1": "Spend red orbs deliberately instead of spreading them across unfinished powers.",
+            "2": "Raise Area Magic Power to level 3.",
+            "3": "Open the power-up menu and purchase every remaining tier in order: 1,650 + 4,500 red orbs, for 6,150 total. Do not mark this complete until the menu shows level 3 with no further purchase prompt."
+          }
+        },
+        {
+          "id": "max-petrification-magic",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Petrification Power",
+          "missable": false,
+          "levels": {
+            "1": "Spend red orbs deliberately instead of spreading them across unfinished powers.",
+            "2": "Raise Petrification Power to level 3.",
+            "3": "Open the power-up menu and purchase every remaining tier in order: 3,000 + 7,500 red orbs, for 10,500 total. Do not mark this complete until the menu shows level 3 with no further purchase prompt."
+          }
+        },
+        {
+          "id": "max-ranged-magic",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Ranged Magic Power",
+          "missable": false,
+          "levels": {
+            "1": "Spend red orbs deliberately instead of spreading them across unfinished powers.",
+            "2": "Raise Ranged Magic Power to level 3.",
+            "3": "Open the power-up menu and purchase every remaining tier in order: 750 + 3,500 red orbs, for 4,250 total. Do not mark this complete until the menu shows level 3 with no further purchase prompt."
+          }
+        },
+        {
+          "id": "max-heavy-blade",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Heavy Blade",
+          "missable": false,
+          "levels": {
+            "1": "Spend red orbs deliberately instead of spreading them across unfinished powers.",
+            "2": "Raise Heavy Blade to level 3.",
+            "3": "Open the power-up menu and purchase every remaining tier in order: 3,750 + 10,000 red orbs, for 13,750 total. Do not mark this complete until the menu shows level 3 with no further purchase prompt."
+          }
+        },
+        {
+          "id": "max-summoning-magic",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Summoning Power",
+          "missable": false,
+          "levels": {
+            "1": "Spend red orbs deliberately instead of spreading them across unfinished powers.",
+            "2": "Raise Summoning Power to level 3.",
+            "3": "Open the power-up menu and purchase every remaining tier in order: 4,500 + 10,000 red orbs, for 14,500 total. Do not mark this complete until the menu shows level 3 with no further purchase prompt."
+          }
+        },
+        {
+          "id": "max-all-arsenal",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize the Entire Arsenal",
+          "missable": false,
+          "levels": {
+            "1": "The full upgrade ledger needs substantially more than a normal rushed route.",
+            "2": "Spend 65,650 red orbs across both weapons and all four magic powers.",
+            "3": "Complete the six individual maximum-upgrade records in this area. If normal chest and combat rewards leave a deficit, preserve a safe save and farm the repeating enemy or magic-chest opportunities before their puzzles are closed; confirm every red chest changes behaviour only after the full arsenal is maxed."
+          }
+        },
+        {
+          "id": "rage-final-property",
+          "type": "upgrade",
+          "safe_type": "Combat Upgrade",
+          "label": "Unlock the Final Rage Property",
+          "missable": false,
+          "levels": {
+            "1": "The starting weapon's last tier changes the full-meter state.",
+            "2": "Purchase level 5 of the starting chained blades.",
+            "3": "Buy all four chained-blade upgrades for 16,500 red orbs total. Fill the Rage meter, activate it with both stick-click inputs, and confirm the final tier allows magic use without draining the magic bar during that state."
+          }
+        }
+      ]
+    },
+    {
+      "id": "challenge-of-the-gods",
+      "name": "Challenge of the Gods",
+      "location_cue": "The post-clear Treasures menu and its isolated combat-trial arenas.",
+      "note": "The ten trials run consecutively with no between-trial save; finishing all ten unlocks the costume set.",
+      "items": [
+        {
+          "id": "unlock-challenge-of-the-gods",
+          "type": "interaction",
+          "safe_type": "Challenge Mode",
+          "label": "Unlock the Ten-Part Challenge",
+          "missable": false,
+          "levels": {
+            "1": "The post-clear menu contains a continuous trial sequence.",
+            "2": "Finish one campaign, then open Challenge of the Gods from Treasures.",
+            "3": "Create clear data after any campaign finish, return to the main menu, enter Treasures, and start the challenge set. The ten trials must be completed in one continuous session because progress cannot be saved between them."
+          }
+        },
+        {
+          "id": "challenge-of-the-gods-01",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Gods #1",
+          "missable": false,
+          "levels": {
+            "1": "Push enemies outward without defeating them directly.",
+            "2": "Knock eight enemies from the platform within 55 seconds without killing one first.",
+            "3": "Stay near the centre and use grabs, launches, or the ground-wave attack to send each target over an edge. Avoid long damage combos; a direct kill fails the trial, as does being pushed off."
+          }
+        },
+        {
+          "id": "challenge-of-the-gods-02",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Gods #2",
+          "missable": false,
+          "levels": {
+            "1": "Separate required ground targets from the endless airborne distractions.",
+            "2": "Eliminate every soldier and archer before 115 seconds expire.",
+            "3": "Ignore the flying enemies because they do not advance the objective. Clear archers first with ranged magic, then use the area spell and fast blade combos on the remaining soldiers until the trial ends."
+          }
+        },
+        {
+          "id": "challenge-of-the-gods-03",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Gods #3",
+          "missable": false,
+          "levels": {
+            "1": "Use broad attacks and keep moving around the perimeter.",
+            "2": "Break every pot within 21 seconds.",
+            "3": "Begin with a sweeping ground attack, circle the arena while using wide chained-blade strikes, and finish isolated pots with quick single hits. Restart immediately if the camera shows a missed pot behind you."
+          }
+        },
+        {
+          "id": "challenge-of-the-gods-04",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Gods #4",
+          "missable": false,
+          "levels": {
+            "1": "Target only the four large enemies.",
+            "2": "Defeat four large targets without killing any accompanying soldier.",
+            "3": "Avoid area magic and wide combos. Draw one large target away, petrify or damage it with focused attacks, finish it, and repeat; restart if a soldier is caught in the final blow."
+          }
+        },
+        {
+          "id": "challenge-of-the-gods-05",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Gods #5",
+          "missable": false,
+          "levels": {
+            "1": "Wait for a clean firing lane before releasing the fixed weapon.",
+            "2": "Use the ballista to hit every distant soldier while sparing all civilians.",
+            "3": "Track the moving figures on the far platform and fire only when a soldier stands clear of every civilian. There is no timer, so let unsafe alignments pass instead of risking an automatic failure."
+          }
+        },
+        {
+          "id": "challenge-of-the-gods-06",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Gods #6",
+          "missable": false,
+          "levels": {
+            "1": "Momentum matters more than fighting the archers.",
+            "2": "Reach the centre of the final platform within 35 seconds.",
+            "3": "Roll through incoming arrows, jump each gap from its near edge, and do not stop to attack. Correct the camera before every leap and land in the marked centre of the last platform before time expires."
+          }
+        },
+        {
+          "id": "challenge-of-the-gods-07",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Gods #7",
+          "missable": false,
+          "levels": {
+            "1": "Distance and airborne attacks reduce the chance of taking a hit.",
+            "2": "Defeat every enemy within 90 seconds without being struck.",
+            "3": "Open with ranged attacks on exposed targets, then repeatedly jump and use the airborne ground-wave move from outside melee range. Reset the instant any attack connects; one hit fails the trial."
+          }
+        },
+        {
+          "id": "challenge-of-the-gods-08",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Gods #8",
+          "missable": false,
+          "levels": {
+            "1": "Fight from the air and roll whenever a gaze begins.",
+            "2": "Defeat every enemy without magic; there is no time limit.",
+            "3": "Use airborne ground-wave attacks to control the crowd, land away from large targets, and roll continuously whenever the petrification beam starts. Resume attacking only after the beam ends."
+          }
+        },
+        {
+          "id": "challenge-of-the-gods-09",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Gods #9",
+          "missable": false,
+          "levels": {
+            "1": "Ignore the smaller attackers and burst down the four required targets.",
+            "2": "Defeat four cyclopes within 150 seconds.",
+            "3": "Keep the camera on a required target, use the heavy three-hit chained-blade combo, and evade smaller enemies rather than chasing them. Repeat on each new cyclops until the fourth falls."
+          }
+        },
+        {
+          "id": "challenge-of-the-gods-10",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Gods #10",
+          "missable": false,
+          "levels": {
+            "1": "Fight near the middle so the rising platform cannot shed you.",
+            "2": "Raise the combat platform to the upper ledge while enemies keep spawning.",
+            "3": "Stay near centre and use rising or airborne knockback attacks to throw smaller enemies outward. Successful attacks raise the platform, while hanging from its rim lowers it; recover inward after every jump until you can step onto the top ledge."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Set aside an uninterrupted challenge session",
+        "why": "Closing the mode before all ten are complete discards the current sequence."
+      }
+    },
+    {
+      "id": "costumes-and-treasures",
+      "name": "Costumes and Treasures",
+      "location_cue": "The post-clear Treasures menu, New Game difficulty prompt, and costume selector.",
+      "note": "Open every bonus-menu entry and test all five challenge costumes on a non-God save.",
+      "items": [
+        {
+          "id": "treasures-first-clear-set",
+          "type": "optional",
+          "safe_type": "Bonus Menu",
+          "label": "Unlock the First-Clear Treasure Set",
+          "missable": false,
+          "levels": {
+            "1": "Most bonus-menu entries open together after the initial campaign.",
+            "2": "After the first clear, inspect every newly available entry in Treasures.",
+            "3": "Save the clear data, return to Treasures, and open all eight first-clear entries at least once: the behind-the-scenes videos, galleries, credits, removed material, and in-game movie viewer. Leave the menu only after none of those eight remains newly marked."
+          }
+        },
+        {
+          "id": "treasures-spartan-entry",
+          "type": "optional",
+          "safe_type": "Bonus Menu",
+          "label": "Unlock the Spartan-Clear Treasure",
+          "missable": false,
+          "levels": {
+            "1": "One bonus entry is tied to the hard preset.",
+            "2": "Complete Spartan difficulty and inspect its newly opened Treasures entry.",
+            "3": "Finish a full Spartan campaign without lowering the difficulty, save the clear data, and return to Treasures. Open the single new Spartan-gated entry once so its unseen marker clears."
+          }
+        },
+        {
+          "id": "treasures-god-set",
+          "type": "optional",
+          "safe_type": "Bonus Menu",
+          "label": "Unlock the God-Clear Treasure Set",
+          "missable": false,
+          "levels": {
+            "1": "The last two menu rewards require the unlocked hardest preset.",
+            "2": "Complete God difficulty and inspect both newly opened Treasures entries.",
+            "3": "Finish the full God-difficulty campaign, save its clear data, and return to Treasures. Open both newly available entries—the final video and first secret-message record—without revealing their narrative contents in this guide."
+          }
+        },
+        {
+          "id": "treasures-secret-two",
+          "type": "optional",
+          "safe_type": "Bonus Menu",
+          "label": "Register the Second Secret Message",
+          "missable": false,
+          "levels": {
+            "1": "A physical Easter egg adds the remaining secret entry.",
+            "2": "Destroy both durable statues in the final throne room before ending the campaign.",
+            "3": "Use a fully upgraded ground-wave attack on each statue until both break, wait for the scrambled message, and finish the campaign normally. Reload the clear data and verify the second secret record is retained."
+          }
+        },
+        {
+          "id": "costume-chef-of-war",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Chef of War",
+          "missable": false,
+          "levels": {
+            "1": "The complete challenge set unlocks costumes with mechanical modifiers.",
+            "2": "Finish all ten challenges, start a new non-God campaign, and select Chef of War.",
+            "3": "Complete the challenge sequence, choose New Game on Mortal, Hero, or Spartan difficulty, and select Chef of War after the difficulty prompt. Reach the first controllable scene and confirm that it increases the magic restored by blue orbs; costumes cannot be used on God difficulty."
+          }
+        },
+        {
+          "id": "costume-bubbles",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Bubbles",
+          "missable": false,
+          "levels": {
+            "1": "The complete challenge set unlocks costumes with mechanical modifiers.",
+            "2": "Finish all ten challenges, start a new non-God campaign, and select Bubbles.",
+            "3": "Complete the challenge sequence, choose New Game on Mortal, Hero, or Spartan difficulty, and select Bubbles after the difficulty prompt. Reach the first controllable scene and confirm that it increases the health restored by green orbs; costumes cannot be used on God difficulty."
+          }
+        },
+        {
+          "id": "costume-tycoonius",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Tycoonius",
+          "missable": false,
+          "levels": {
+            "1": "The complete challenge set unlocks costumes with mechanical modifiers.",
+            "2": "Finish all ten challenges, start a new non-God campaign, and select Tycoonius.",
+            "3": "Complete the challenge sequence, choose New Game on Mortal, Hero, or Spartan difficulty, and select Tycoonius after the difficulty prompt. Reach the first controllable scene and confirm that it increases the experience supplied by red orbs; costumes cannot be used on God difficulty."
+          }
+        },
+        {
+          "id": "costume-dairy-bastard",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Dairy Bastard",
+          "missable": false,
+          "levels": {
+            "1": "The complete challenge set unlocks costumes with mechanical modifiers.",
+            "2": "Finish all ten challenges, start a new non-God campaign, and select Dairy Bastard.",
+            "3": "Complete the challenge sequence, choose New Game on Mortal, Hero, or Spartan difficulty, and select Dairy Bastard after the difficulty prompt. Reach the first controllable scene and confirm that it provides unlimited magic; costumes cannot be used on God difficulty."
+          }
+        },
+        {
+          "id": "costume-ares-armor",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Ares Armor",
+          "missable": false,
+          "levels": {
+            "1": "The complete challenge set unlocks costumes with mechanical modifiers.",
+            "2": "Finish all ten challenges, start a new non-God campaign, and select Ares Armor.",
+            "3": "Complete the challenge sequence, choose New Game on Mortal, Hero, or Spartan difficulty, and select Ares Armor after the difficulty prompt. Reach the first controllable scene and confirm that it raises attack and defence while reducing orb gains; costumes cannot be used on God difficulty."
+          }
+        }
+      ]
+    }
+  ]
+}

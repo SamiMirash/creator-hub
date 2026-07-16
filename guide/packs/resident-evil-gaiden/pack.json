@@ -1,0 +1,1405 @@
+{
+  "id": "resident-evil-gaiden",
+  "game": "Resident Evil Gaiden (2001)",
+  "target": "100% completion of the selected Game Boy Color route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "setup",
+      "name": "Game Boy Color Setup and Systems",
+      "location_cue": "The handheld title screen, three save slots, inventory, PDA, map, and first battle interface.",
+      "note": "Back up save-RAM externally because all three in-game slots can be lost together.",
+      "items": [
+        {
+          "id": "setup-gbc",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Original Game Boy Color Release",
+          "missable": false,
+          "levels": {
+            "1": "This handheld entry has one complete official version.",
+            "2": "Use the Game Boy Color cartridge or a tested GBC emulator.",
+            "3": "Launch the original Game Boy Color release on working hardware or an accurate emulator. Create a dedicated cartridge backup or save-RAM file; no port, remake, remaster, or secondary platform adds content to this route."
+          }
+        },
+        {
+          "id": "setup-save-backup",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Back Up the Cartridge Save",
+          "missable": false,
+          "levels": {
+            "1": "Rare reports describe spontaneous loss of all three slots.",
+            "2": "Copy the cartridge save or emulator save-RAM before each session.",
+            "3": "Dump the battery-backed save from original hardware when possible, or duplicate the emulator's save-RAM outside its active folder. Keep rotating dated copies because an occasional restart-and-slot-loss fault has been reported and cannot be prevented from inside the game."
+          }
+        },
+        {
+          "id": "setup-three-slots",
+          "type": "interaction",
+          "safe_type": "Save Rule",
+          "label": "Use All Three Save Slots",
+          "missable": false,
+          "levels": {
+            "1": "The game offers fixed save prompts rather than free saving.",
+            "2": "Rotate saves across Slots 1, 2, and 3 whenever prompted.",
+            "3": "At each prompted save window, write to the oldest of three rotating slots and wait for completion before continuing. Never rely only on Continue: it resumes the active checkpoint, while the numbered slots preserve earlier recovery positions."
+          }
+        },
+        {
+          "id": "setup-save-prompts",
+          "type": "interaction",
+          "safe_type": "Save Rule",
+          "label": "Accept Every Save Prompt",
+          "missable": false,
+          "levels": {
+            "1": "A declined opportunity cannot be reopened at that moment.",
+            "2": "Save whenever the game offers one of fourteen fixed windows.",
+            "3": "Choose Yes at every save prompt, rotate to the next slot, and make an external save-RAM backup afterward. If you walk beyond a prompt without saving, continue to the next checkpoint or restore the preceding slot; the missed window does not remain interactable."
+          }
+        },
+        {
+          "id": "setup-inventory",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Unlimited Inventory Ledger",
+          "missable": false,
+          "levels": {
+            "1": "Every route item can remain carried together.",
+            "2": "Keep keys, weapons, armor, herbs, and documents instead of discarding them.",
+            "3": "Open the inventory after each pickup and verify it appears under the correct character or shared item list. Ammunition for each weapon stops at 99, but the inventory itself has no slot limit, so discard only an equipped item when deliberately changing equipment."
+          }
+        },
+        {
+          "id": "setup-character-switch",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Use All Three Playable Characters",
+          "missable": false,
+          "levels": {
+            "1": "Party members can carry separate weapons and armor.",
+            "2": "Equip and control Barry, Leon, and Lucia during available phases.",
+            "3": "When more than one character is present, switch with B from the inventory or battle interface. Give each playable character a weapon and armor, land at least one successful attack with each, and keep the healthiest member active during dangerous travel."
+          }
+        },
+        {
+          "id": "setup-combat",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Master the Moving Target Bar",
+          "missable": false,
+          "levels": {
+            "1": "Centered timing deals substantially more damage.",
+            "2": "Press the action button as the cursor crosses the target's central square.",
+            "3": "Enter battle from a safe distance, watch the horizontal cursor, and fire when it overlaps the small weak-point square inside the wider body bar. Stronger weapons move the cursor faster, so practice with the Handgun before spending rare launcher ammunition."
+          }
+        },
+        {
+          "id": "setup-run",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Complete a Battle Escape",
+          "missable": false,
+          "levels": {
+            "1": "Running uses a separate red target without consuming ammunition.",
+            "2": "Press Start in battle and hit the Run Target exactly.",
+            "3": "Activate Run mode, wait for the red escape marker to align, and press the action button once. Enemies continue attacking while the marker moves and you cannot cancel back into ordinary battle, so attempt this with enough health and distance."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Create an external save-RAM copy",
+        "why": "The cartridge has a reported rare fault that can erase every internal slot."
+      }
+    },
+    {
+      "id": "campaign-route",
+      "name": "Complete Physical Campaign Route",
+      "location_cue": "Passenger decks, utility rooms, cabin corridors, upper decks, engine spaces, and the later compact vessel.",
+      "note": "SAVE-BACKUP: accept every fixed prompt and finish side-room cleanup before each physical transition.",
+      "items": [
+        {
+          "id": "phase-01",
+          "type": "interaction",
+          "safe_type": "Campaign Phase",
+          "label": "Opening Passenger Sweep",
+          "missable": false,
+          "levels": {
+            "1": "Follow the physical route while clearing every productive side room.",
+            "2": "Complete Opening Passenger Sweep and save at its next offered window.",
+            "3": "Sweep Side Deck, Lobby, Restaurant Balcony, Restaurant, Kitchen, Refrigerator, both Corridor A bathrooms, and the elevator crossing. Collect the opening documents, Fuse, Kitchen and Crew keys, Elevator 1 Key, Shotgun, herbs, bullets, and shells before Save Point 1."
+          }
+        },
+        {
+          "id": "phase-02",
+          "type": "interaction",
+          "safe_type": "Campaign Phase",
+          "label": "Upper Utility Sweep",
+          "missable": false,
+          "levels": {
+            "1": "Follow the physical route while clearing every productive side room.",
+            "2": "Complete Upper Utility Sweep and save at its next offered window.",
+            "3": "Use the Rear Elevator and inspect Corridor E, Seat Deck, Pool, Bar, Elevator Passage, Suite Room P, Cargo Bay, Special Storage, Crew Room, Computer Room, Data Control, Operation Room, Boiler Room, and Engine Room. Collect every utility item and armor copy before operating Security Room."
+          }
+        },
+        {
+          "id": "phase-03",
+          "type": "interaction",
+          "safe_type": "Campaign Phase",
+          "label": "First Upper-Deck Encounter",
+          "missable": false,
+          "levels": {
+            "1": "Follow the physical route while clearing every productive side room.",
+            "2": "Complete First Upper-Deck Encounter and save at its next offered window.",
+            "3": "After Save Point 2, travel east through the connected upper-deck rooms with the Shotgun equipped. Complete the encounter, return to Elevator Passage, heal the party, and use Save Point 3 before entering the cabin route."
+          }
+        },
+        {
+          "id": "phase-04",
+          "type": "interaction",
+          "safe_type": "Campaign Phase",
+          "label": "Second-Class Cabin Sweep",
+          "missable": false,
+          "levels": {
+            "1": "Follow the physical route while clearing every productive side room.",
+            "2": "Complete Second-Class Cabin Sweep and save at its next offered window.",
+            "3": "Unlock second class from Lobby Balcony and search every productive cabin. Take Kevlar, Semtex, Lock Pick, C34 Key, Assault Rifle, its clip, and 1st Class Key; leave empty western rooms until later only if their enemy encounters are unwanted."
+          }
+        },
+        {
+          "id": "phase-05",
+          "type": "interaction",
+          "safe_type": "Campaign Phase",
+          "label": "First-Class Descent",
+          "missable": false,
+          "levels": {
+            "1": "Follow the physical route while clearing every productive side room.",
+            "2": "Complete First-Class Descent and save at its next offered window.",
+            "3": "Open the Captain Room with Semtex for Diamet and Computer Card, then unlock first class. Enter the final cabin, use the Rope at the large floor opening, and accept Save Point 5 in Multi Purpose before exiting."
+          }
+        },
+        {
+          "id": "phase-06",
+          "type": "interaction",
+          "safe_type": "Campaign Phase",
+          "label": "Public Rooms and Medical Cleanup",
+          "missable": false,
+          "levels": {
+            "1": "Follow the physical route while clearing every productive side room.",
+            "2": "Complete Public Rooms and Medical Cleanup and save at its next offered window.",
+            "3": "From Corridor B, collect Medical and Library keys, clean the Shop and Piano Bar, revisit Refrigerator for Grenade Gun, then open Library and Medical Office. Continue through Viewing Lounge, Lounge Kitchen, Cabin F50, Dressing Room, and Security Room before Save Point 6."
+          }
+        },
+        {
+          "id": "phase-07",
+          "type": "interaction",
+          "safe_type": "Campaign Phase",
+          "label": "Side-Deck Commitment",
+          "missable": false,
+          "levels": {
+            "1": "Follow the physical route while clearing every productive side room.",
+            "2": "Complete Side-Deck Commitment and save at its next offered window.",
+            "3": "Reach the 2F Side Deck by any open path, collect the current supplies, save at Point 7, and prepare the Assault Rifle before crossing the Upper Deck doorway. Finish the encounter and physical transition without describing its narrative events."
+          }
+        },
+        {
+          "id": "phase-08",
+          "type": "interaction",
+          "safe_type": "Campaign Phase",
+          "label": "Computer and Fire-Control Route",
+          "missable": false,
+          "levels": {
+            "1": "Follow the physical route while clearing every productive side room.",
+            "2": "Complete Computer and Fire-Control Route and save at its next offered window.",
+            "3": "Use the newly controlled character to visit Computer Room, Cargo Bay, Special Storage, Data Control, and Security Room. Collect Rocket Launcher, extinguish the fire, apply Data Disk, operate the security console, and use Save Points 8 through 10."
+          }
+        },
+        {
+          "id": "phase-09",
+          "type": "interaction",
+          "safe_type": "Campaign Phase",
+          "label": "Engine Preparation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the physical route while clearing every productive side room.",
+            "2": "Complete Engine Preparation and save at its next offered window.",
+            "3": "After Save Point 11, collect Gas Launcher from Operation Room, gas rounds from first class, missiles from Boiler Room, grenade rounds from Power Control, and remaining shells and clips along the route. Enter the southern Engine Room ready for Save Point 12."
+          }
+        },
+        {
+          "id": "phase-10",
+          "type": "interaction",
+          "safe_type": "Campaign Phase",
+          "label": "Submarine Completion Sweep",
+          "missable": false,
+          "levels": {
+            "1": "Follow the physical route while clearing every productive side room.",
+            "2": "Complete Submarine Completion Sweep and save at its next offered window.",
+            "3": "Complete the engine combat, then search submarine Sickbay, Crew Quarters, Operation Room, stair corridor, Bridge, Torpedo Room, and Control Room. Take the third Diamet, every rare ammunition cache, and Save Point 13 before using the control console."
+          }
+        },
+        {
+          "id": "phase-11",
+          "type": "interaction",
+          "safe_type": "Campaign Phase",
+          "label": "Blocked-Corridor Return",
+          "missable": false,
+          "levels": {
+            "1": "Follow the physical route while clearing every productive side room.",
+            "2": "Complete Blocked-Corridor Return and save at its next offered window.",
+            "3": "Back on the ship, use the Pool's northern door, Seat Deck stairs, Rear Elevator, Corridor A, and Boiler Room because fire blocks the short balcony line. Finish the engine reunion, clean Power Control, and write Save Point 14."
+          }
+        },
+        {
+          "id": "phase-12",
+          "type": "interaction",
+          "safe_type": "Campaign Phase",
+          "label": "Final Upper-Deck Clear",
+          "missable": false,
+          "levels": {
+            "1": "Follow the physical route while clearing every productive side room.",
+            "2": "Complete Final Upper-Deck Clear and save at its next offered window.",
+            "3": "From Boiler Room, return through Corridor B, the Side Deck, and Corridor C to the Upper Deck. Equip Diamet on all three characters, load the Rocket Launcher, distribute strong backup weapons, finish the final combat, and let the single ending and credits complete."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Rotate all three slots throughout the route",
+        "why": "Later fire barriers and control changes can close the short return path."
+      },
+      "point_of_no_return": {
+        "title": "Save Point 14 precedes the final route",
+        "why": "Finish the archive, armor, weapons, and rare ammunition before the final Upper Deck."
+      }
+    },
+    {
+      "id": "route-items",
+      "name": "All Route Items",
+      "location_cue": "Corpses, cupboards, crates, consoles, cabin drawers, enemy drops, and locked utility rooms across all floors.",
+      "note": "Most doors require selecting the correct key manually from inventory.",
+      "items": [
+        {
+          "id": "key-01-pda",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "PDA",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at starting inventory; it stores documents and objectives.",
+            "3": "Open the starting inventory and inspect the PDA. Reopen it after every document pickup to verify the text and current objective have been recorded."
+          }
+        },
+        {
+          "id": "key-02-coolant-fuse",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Coolant Fuse",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Restaurant Balcony 2F; it opens refrigerator route.",
+            "3": "On the Restaurant Balcony at 2F, inspect the dark wall recess and take the fuse. Carry it downstairs, stand beside the Kitchen's southern door, and select Use from the inventory to open the Refrigerator."
+          }
+        },
+        {
+          "id": "key-03-kitchen-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Kitchen Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Restaurant corpse 1F; it opens western kitchen.",
+            "3": "Search the white-clothed body in the 1F Restaurant, take the key, stand at the western restaurant door, and use it manually to enter the Kitchen."
+          }
+        },
+        {
+          "id": "key-04-crew-area-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Crew Area Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Refrigerator 1F; it opens crew corridor.",
+            "3": "Inside the 1F Refrigerator, inspect the lower southern shelf and take the key. Return to the 2F Side Deck and use it on the second-to-last western door to enter Corridor C."
+          }
+        },
+        {
+          "id": "key-05-elevator-1-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Elevator 1 Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Corridor A zombie; it opens rear elevator.",
+            "3": "In 2F Corridor A, defeat the zombie carrying the key and search its body. Use the key at the western Rear Elevator only after collecting the Shotgun, nearby documents, and bathroom supplies."
+          }
+        },
+        {
+          "id": "key-06-security-card",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Security Card",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Seat Deck zombie; it opens security room.",
+            "3": "On the 4F Seat Deck, defeat the item-carrying zombie among the chair rows and search it. Use the card on the locked Security Room door beside the Pool."
+          }
+        },
+        {
+          "id": "key-07-rope",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Rope",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Pool cupboard 4F; it opens floor descent.",
+            "3": "At the 4F Pool, inspect the small cupboard immediately beside the entrance. Keep the Rope until the first-class route directs you to the large opening in the Multi Purpose floor, where it is used automatically or through the inventory prompt."
+          }
+        },
+        {
+          "id": "key-08-bar-room-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Bar Room Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Pool female zombie; it opens eastern bar.",
+            "3": "At the Pool, defeat the female zombie holding the key and search the body. Use it on the eastern door to enter the Bar and continue toward the Elevator Passage."
+          }
+        },
+        {
+          "id": "key-09-elevator-2-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Elevator 2 Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Suite Room P zombie; it opens main elevators.",
+            "3": "Enter Suite Room P from the eastern upper-deck route, defeat the zombie guarding the room, and take its key. Return to the Elevator Passage and use it to activate the central Main Elevators."
+          }
+        },
+        {
+          "id": "key-10-blowtorch",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Blowtorch",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Cargo Bay corpse; it opens special storage.",
+            "3": "Ride the Crew Elevators to the 1F Cargo Bay and inspect the body against the northern wall. Take the Blowtorch to the adjoining Storage Bay and use it on the western metal door."
+          }
+        },
+        {
+          "id": "key-11-computer-card-a",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Computer Card A",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Special Storage crates; it opens computer room.",
+            "3": "After cutting into Special Storage, search between the crates close to the entrance and collect the first Computer Card. Carry it to the 3F computer-area door reached by the Crew Elevators."
+          }
+        },
+        {
+          "id": "key-12-crowbar",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Crowbar",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Special Storage boxes; it opens crew room.",
+            "3": "In Special Storage, inspect the small boxes along the southern wall. Return to the 2F Crew Elevator landing and use the Crowbar on the jammed Crew Room door."
+          }
+        },
+        {
+          "id": "key-13-extinguisher",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Extinguisher",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Crew Room cupboard; it clears data-room fire.",
+            "3": "Open the 2F Crew Room with the Crowbar and take the Extinguisher from its cupboard. Keep it until the later 1F Storage Bay visit, then use it on the fire blocking Data Control."
+          }
+        },
+        {
+          "id": "key-14-control-pass",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Control Pass",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Computer Room console; it opens data control.",
+            "3": "Open the 3F Computer Room with either Computer Card and take the pass from the upper-left console. Use it on the middle Storage Bay door at 1F to enter Data Control."
+          }
+        },
+        {
+          "id": "key-15-elevator-pass",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Elevator Pass",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Data Control zombie; it opens fourth-floor elevator.",
+            "3": "Inside 1F Data Control, defeat the zombie carrying the pass and search its body. Use the pass at the Crew Elevator's sealed 4F doors to step into the upper access area."
+          }
+        },
+        {
+          "id": "key-16-data-disk",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Data Disk",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Data Control corpse; it operates data console.",
+            "3": "Search the blue-clothed body inside Data Control and take the disk. After the fire is removed and the room is re-entered later, approach the correct console so the disk is applied."
+          }
+        },
+        {
+          "id": "key-17-boiler-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Boiler Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Operation Room corpse; it opens boiler room.",
+            "3": "From the 4F Crew Elevator exit, enter the Operation Room and inspect the body for the key. Return to Corridor A on 2F and use it on the westernmost locked door."
+          }
+        },
+        {
+          "id": "key-18-2nd-class-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "2nd Class Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at second character inventory; it opens second-class cabins.",
+            "3": "When the 3F cabin objective begins, inspect the second party member's inventory and retain the supplied key. Use it on the western Lobby Balcony door to enter the second-class corridor."
+          }
+        },
+        {
+          "id": "key-19-semtex",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Semtex",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at second-class cabin; it opens captain-room door.",
+            "3": "In the second-class corridor, search the cupboard inside the middle lower-row cabin and take the explosive. Later, use it on the southern door beside the 3F Crew Elevators to enter the Captain Room."
+          }
+        },
+        {
+          "id": "key-20-lock-pick",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Lock Pick",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at second-class cabin; it opens northern cabin.",
+            "3": "Search the cupboard in a lower-row second-class cabin beyond the yellow-herb room. Return to the northernmost locked cabin and use the Lock Pick at its door."
+          }
+        },
+        {
+          "id": "key-21-cabin-c34-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Cabin C34 Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at locked cabin drawers; it opens southwest cabin.",
+            "3": "Inside the cabin opened with the Lock Pick, inspect the drawers for C34's key and collect the Assault Rifle from the cupboard. Use the key on the southwest second-class cabin."
+          }
+        },
+        {
+          "id": "key-22-1st-class-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "1st Class Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at C34 cabin cupboard; it opens first-class cabins.",
+            "3": "Open the C34 cabin and take the key from its cupboard. Return to the 3F Lobby Balcony and use it on the eastern door only after all second-class weapons, armor, and ammunition are collected."
+          }
+        },
+        {
+          "id": "key-23-computer-card-b",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Computer Card B",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Captain Room safe; it opens computer room.",
+            "3": "Open the Captain Room with Semtex and search its safe for the second Computer Card. This provides another route into the 3F Computer Room; retain it in the shared inventory afterward."
+          }
+        },
+        {
+          "id": "key-24-medical-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Medical Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Corridor B toilet; it opens medical office.",
+            "3": "After descending into Multi Purpose, reach Corridor B and inspect the toilet at its northeastern branch. Take the key and use it on the second locked door along 2F Corridor A."
+          }
+        },
+        {
+          "id": "key-25-library-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Library Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Piano Bar zombie; it opens second-floor library.",
+            "3": "Enter the 2F Piano Bar and defeat the female zombie standing in the dark near the piano. Search the body, return to Corridor A, and use the key on its first locked door."
+          }
+        },
+        {
+          "id": "key-26-lounge-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Lounge Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Library 2F; it opens viewing lounge.",
+            "3": "Inside the 2F Library, inspect the room thoroughly and take the ornate key with the other pickups. Ride the Rear Elevator to 3F and use it on Corridor E's western door."
+          }
+        },
+        {
+          "id": "key-27-operator-pass",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Operator Pass",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Viewing Lounge zombie; it reboots control computer.",
+            "3": "Open the 3F Viewing Lounge, travel to its far western side, defeat the item-carrying zombie, and search the body. Return to the Computer Room and approach the correct console to supply the required pass."
+          }
+        },
+        {
+          "id": "key-28-cabin-f50-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Cabin F50 Key",
+          "missable": false,
+          "levels": {
+            "1": "Route objects and carrying enemies open the ship in layers.",
+            "2": "Find it at Lounge Kitchen zombie; it opens first-class cabin.",
+            "3": "Enter the upper kitchen off the Viewing Lounge's middle aisle and defeat the female zombie carrying the key. Return to first class and open the fifth cabin from the left for its supply cache."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before using late access items",
+        "why": "A route item can move the campaign beyond an earlier cleanup corridor."
+      }
+    },
+    {
+      "id": "documents",
+      "name": "Complete PDA Document Archive",
+      "location_cue": "Readable papers on balconies, corridors, bathrooms, public rooms, the library, seat deck, and computer room.",
+      "note": "Every paper should remain readable from the PDA after pickup.",
+      "items": [
+        {
+          "id": "document-01-info-doc",
+          "type": "file",
+          "safe_type": "PDA Document",
+          "label": "Document 1 — Info Doc",
+          "missable": true,
+          "levels": {
+            "1": "Readable papers explain a mechanic or point toward a useful room.",
+            "2": "Read Info Doc in Side Deck 2F.",
+            "3": "At the opening 2F Side Deck, walk west from the start and read the document lying before the large Lobby door. Reopen it once through the PDA. Confirm its title remains available in the PDA archive before continuing."
+          }
+        },
+        {
+          "id": "document-02-run-doc",
+          "type": "file",
+          "safe_type": "PDA Document",
+          "label": "Document 2 — Run Doc",
+          "missable": true,
+          "levels": {
+            "1": "Readable papers explain a mechanic or point toward a useful room.",
+            "2": "Read Run Doc in Lobby 2F.",
+            "3": "Inside the 2F Lobby, move to the western wall and read the paper above the left exit before entering the Restaurant Balcony. Confirm its title remains available in the PDA archive before continuing."
+          }
+        },
+        {
+          "id": "document-03-health-doc",
+          "type": "file",
+          "safe_type": "PDA Document",
+          "label": "Document 3 — Health Doc",
+          "missable": true,
+          "levels": {
+            "1": "Readable papers explain a mechanic or point toward a useful room.",
+            "2": "Read Health Doc in Restaurant Balcony 2F.",
+            "3": "On the western Restaurant Balcony at 2F, collect the document near the first wall recess before taking the Coolant Fuse. Confirm its title remains available in the PDA archive before continuing."
+          }
+        },
+        {
+          "id": "document-04-equip-doc",
+          "type": "file",
+          "safe_type": "PDA Document",
+          "label": "Document 4 — Equip Doc",
+          "missable": true,
+          "levels": {
+            "1": "Readable papers explain a mechanic or point toward a useful room.",
+            "2": "Read Equip Doc in Restaurant Balcony 2F.",
+            "3": "Continue along the same 2F balcony toward Corridor A and read the document beside the next doorway before entering. Confirm its title remains available in the PDA archive before continuing."
+          }
+        },
+        {
+          "id": "document-05-poison-doc",
+          "type": "file",
+          "safe_type": "PDA Document",
+          "label": "Document 5 — Poison Doc",
+          "missable": true,
+          "levels": {
+            "1": "Readable papers explain a mechanic or point toward a useful room.",
+            "2": "Read Poison Doc in Bathroom 6 2F.",
+            "3": "Enter Bathroom 6 from Corridor A, deal with the occupants, and read the paper near the purple-herb pickup. Confirm its title remains available in the PDA archive before continuing."
+          }
+        },
+        {
+          "id": "document-06-items-doc",
+          "type": "file",
+          "safe_type": "PDA Document",
+          "label": "Document 6 — Items Doc",
+          "missable": true,
+          "levels": {
+            "1": "Readable papers explain a mechanic or point toward a useful room.",
+            "2": "Read Items Doc in Corridor A 2F.",
+            "3": "Proceed along 2F Corridor A and read the document at the bend before approaching the key-carrying zombie and Shotgun position. Confirm its title remains available in the PDA archive before continuing."
+          }
+        },
+        {
+          "id": "document-07-escape-doc",
+          "type": "file",
+          "safe_type": "PDA Document",
+          "label": "Document 7 — Escape Doc",
+          "missable": true,
+          "levels": {
+            "1": "Readable papers explain a mechanic or point toward a useful room.",
+            "2": "Read Escape Doc in Corridor A 2F.",
+            "3": "From Corridor A's central crossing, travel south and west, then read the paper before unlocking the Rear Elevator. Confirm its title remains available in the PDA archive before continuing."
+          }
+        },
+        {
+          "id": "document-08-targeting-doc",
+          "type": "file",
+          "safe_type": "PDA Document",
+          "label": "Document 8 — Targeting Doc",
+          "missable": true,
+          "levels": {
+            "1": "Readable papers explain a mechanic or point toward a useful room.",
+            "2": "Read Targeting Doc in Corridor E 3F.",
+            "3": "Ride the Rear Elevator to 3F, clear the immediate corridor, and read the paper near the stair route to the Seat Deck. Confirm its title remains available in the PDA archive before continuing."
+          }
+        },
+        {
+          "id": "document-09-armour-doc",
+          "type": "file",
+          "safe_type": "PDA Document",
+          "label": "Document 9 — Armour Doc",
+          "missable": true,
+          "levels": {
+            "1": "Readable papers explain a mechanic or point toward a useful room.",
+            "2": "Read Armour Doc in Seat Deck 4F.",
+            "3": "Climb to the 4F Seat Deck and read the document near the upper walkway before searching the western chair row for Kevlar. Confirm its title remains available in the PDA archive before continuing."
+          }
+        },
+        {
+          "id": "document-10-library-doc",
+          "type": "file",
+          "safe_type": "PDA Document",
+          "label": "Document 10 — Library Doc",
+          "missable": true,
+          "levels": {
+            "1": "Readable papers explain a mechanic or point toward a useful room.",
+            "2": "Read Library Doc in Piano Bar 2F.",
+            "3": "In the 2F Piano Bar, collect the paper before searching the dark piano area for the key-carrying enemy. Confirm its title remains available in the PDA archive before continuing."
+          }
+        },
+        {
+          "id": "document-11-kitchen-doc",
+          "type": "file",
+          "safe_type": "PDA Document",
+          "label": "Document 11 — Kitchen Doc",
+          "missable": true,
+          "levels": {
+            "1": "Readable papers explain a mechanic or point toward a useful room.",
+            "2": "Read Kitchen Doc in Library 2F.",
+            "3": "Open the 2F Library from Corridor A and read the document among its main pickups before taking the Lounge Key. Confirm its title remains available in the PDA archive before continuing."
+          }
+        },
+        {
+          "id": "document-12-computer-doc",
+          "type": "file",
+          "safe_type": "PDA Document",
+          "label": "Document 12 — Computer Doc",
+          "missable": true,
+          "levels": {
+            "1": "Readable papers explain a mechanic or point toward a useful room.",
+            "2": "Read Computer Doc in Computer Room 3F.",
+            "3": "Open the 3F Computer Room with a Computer Card and read the document beside the upper consoles before taking the Control Pass. Confirm its title remains available in the PDA archive before continuing."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Check the PDA before Save Point 14",
+        "why": "The final deck route is not a safe time for archive backtracking."
+      }
+    },
+    {
+      "id": "save-points",
+      "name": "Fourteen Fixed Save Windows",
+      "location_cue": "Prompt screens appearing after major room objectives from the Rear Elevator through the Boiler Room.",
+      "note": "Declining a prompt removes that exact opportunity; rotate all three slots.",
+      "items": [
+        {
+          "id": "save-point-01",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 1",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Rear Elevator 2F, after Elevator 1 Key.",
+            "3": "After collecting both Corridor A documents, the Shotgun, Elevator 1 Key, and nearby shells, use the Rear Elevator and accept the first save prompt. Write Slot 1 and back up save-RAM."
+          }
+        },
+        {
+          "id": "save-point-02",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 2",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Security Room 4F, after first console.",
+            "3": "Complete the early ship-wide utility sweep, use Security Card at the 4F Pool, operate the Security Room console, and save when the exit prompt appears. Write Slot 2."
+          }
+        },
+        {
+          "id": "save-point-03",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 3",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Elevator Passage 4F, after upper-deck combat.",
+            "3": "Complete the first upper-deck combat, return to Elevator Passage, and accept the prompt before taking the Main Elevators toward the cabin route. Write Slot 3."
+          }
+        },
+        {
+          "id": "save-point-04",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 4",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Second-Class Cabins 3F, after 1st Class Key.",
+            "3": "Finish the full second-class sweep, including Kevlar, Semtex, Lock Pick, Assault Rifle, C34 Key, ammunition, and 1st Class Key. Save before opening first class."
+          }
+        },
+        {
+          "id": "save-point-05",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 5",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Multi Purpose 4F, after floor descent.",
+            "3": "Open first class, complete its required transition, reach Multi Purpose through the floor descent, and save before leaving that room for Corridor B."
+          }
+        },
+        {
+          "id": "save-point-06",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 6",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Security Room 4F, after second console.",
+            "3": "Complete the Library, Medical Office, Lounge, cabin-cache, and Dressing Room cleanup, then operate the Security Room console again. Save at its exit."
+          }
+        },
+        {
+          "id": "save-point-07",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 7",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Side Deck 2F, before Upper Deck.",
+            "3": "Travel to the 2F Side Deck, collect its current cabinet and enemy drops, and accept the prompt immediately before the Upper Deck door."
+          }
+        },
+        {
+          "id": "save-point-08",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 8",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Computer Room 3F, after computer attempt.",
+            "3": "During the new playable phase, reach the 3F Computer Room, attempt the upper console with the required card and pass state, then save before descending to 1F."
+          }
+        },
+        {
+          "id": "save-point-09",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 9",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Data Control 1F, after Data Disk.",
+            "3": "Remove the Storage Bay fire, enter Data Control, apply Data Disk at the console, and save before beginning the return to Security Room."
+          }
+        },
+        {
+          "id": "save-point-10",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 10",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Security Room 4F, after third console.",
+            "3": "Operate the 4F Security Room console for the third time and accept the save prompt at its exit before traveling toward the Piano Bar."
+          }
+        },
+        {
+          "id": "save-point-11",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 11",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Upper Deck 2F, before solo equipment sweep.",
+            "3": "Finish the next physical transition and save on the Upper Deck before starting the solo weapon-and-ammunition sweep."
+          }
+        },
+        {
+          "id": "save-point-12",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 12",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Engine Room 1F, before engine combat.",
+            "3": "Collect Gas Launcher, its first rounds, Boiler Room missiles, Power Control grenade rounds, and engine supplies. Save at the southern Engine Room approach before combat."
+          }
+        },
+        {
+          "id": "save-point-13",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 13",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Submarine Control Room, before control console.",
+            "3": "On the submarine, collect Sickbay herbs, Crew Quarters armor and ammunition, Torpedo Room missiles, and Bridge gas rounds. Enter Control Room and save before operating its console."
+          }
+        },
+        {
+          "id": "save-point-14",
+          "type": "interaction",
+          "safe_type": "Save Point",
+          "label": "Save Point 14",
+          "missable": true,
+          "levels": {
+            "1": "A one-time prompt appears after a major physical objective.",
+            "2": "Save at Boiler Room 2F, before final deck return.",
+            "3": "Return through the ship's unblocked northern route, regroup in the Engine Room, clean Power Control, and save in the Boiler Room before the final Upper Deck journey."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep three rotating slots",
+        "why": "Each window should preserve a different recovery point."
+      }
+    },
+    {
+      "id": "weapons",
+      "name": "Complete Weapon Roster",
+      "location_cue": "Starting inventory, Corridor A, second-class cabins, Refrigerator, Special Storage, and Operation Room.",
+      "note": "Own every weapon before collecting its associated rare ammunition caches.",
+      "items": [
+        {
+          "id": "weapon-1-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Knife",
+          "missable": false,
+          "levels": {
+            "1": "The arsenal expands through increasingly remote side rooms.",
+            "2": "Collect it from starting inventory; close-range reusable.",
+            "3": "Open the starting inventory, equip the Knife, and land a centered hit against a lone nearby enemy. Its attack consumes nothing, but its range begins only when the enemy is close enough to retaliate."
+          }
+        },
+        {
+          "id": "weapon-2-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Handgun",
+          "missable": false,
+          "levels": {
+            "1": "The arsenal expands through increasingly remote side rooms.",
+            "2": "Collect it from starting inventory; uses HG Bullets.",
+            "3": "Equip the starting Handgun, collect its first bullets from the opening Side Deck cabinet, and land a central weak-point shot. Use it for ordinary encounters to preserve rarer ammunition."
+          }
+        },
+        {
+          "id": "weapon-3-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "The arsenal expands through increasingly remote side rooms.",
+            "2": "Collect it from Corridor A vase; uses SG Shells.",
+            "3": "In 2F Corridor A, search the wall recess beside the second vase after obtaining Elevator 1 Key. Take the Shotgun, backtrack through both bathrooms and the balcony for shells, then fire it during a successful encounter."
+          }
+        },
+        {
+          "id": "weapon-4-assault-rifle",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Assault Rifle",
+          "missable": true,
+          "levels": {
+            "1": "The arsenal expands through increasingly remote side rooms.",
+            "2": "Collect it from locked second-class cabin; uses AR Bullet Clips.",
+            "3": "Use the Lock Pick on the northernmost second-class cabin, take C34 Key from the drawers, and collect the Assault Rifle from the cupboard. Retrieve the nearby wall-plant clip before leaving the cabin area."
+          }
+        },
+        {
+          "id": "weapon-5-grenade-gun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade Gun",
+          "missable": true,
+          "levels": {
+            "1": "The arsenal expands through increasingly remote side rooms.",
+            "2": "Collect it from Refrigerator 1F; uses GL Rounds.",
+            "3": "After obtaining Medical and Library access, revisit the 1F Refrigerator and inspect its weapon pickup. Collect grenade rounds from the Restaurant curtain and later side rooms, then fire the weapon during a completed battle."
+          }
+        },
+        {
+          "id": "weapon-6-rocket-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Rocket Launcher",
+          "missable": true,
+          "levels": {
+            "1": "The arsenal expands through increasingly remote side rooms.",
+            "2": "Collect it from Special Storage corner; uses RL Missiles.",
+            "3": "During the later solo 1F sweep, enter Special Storage and clear the upper-left corner. Take the Rocket Launcher, then collect missiles from the Boiler Room, first-class cache, and submarine Torpedo Room before the final deck."
+          }
+        },
+        {
+          "id": "weapon-7-gas-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Gas Launcher",
+          "missable": true,
+          "levels": {
+            "1": "The arsenal expands through increasingly remote side rooms.",
+            "2": "Collect it from Operation Room console; uses GG Rounds.",
+            "3": "After the eleventh save window, ride the Crew Elevators to 4F and inspect the eastern Operation Room console. Take the Gas Launcher, collect rounds from first class and the submarine Bridge, and use one normal shot before testing its run-mode glitch."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve rare ammunition",
+        "why": "Launcher supplies are finite unless the optional late glitch is used."
+      }
+    },
+    {
+      "id": "armor-herbs",
+      "name": "Armor and Herb Types",
+      "location_cue": "Chair rows, cabin cupboards, library and medical rooms, shops, utility passages, and submarine compartments.",
+      "note": "Collect all three copies of every armor tier so each party member can upgrade.",
+      "items": [
+        {
+          "id": "armor-1-kevlar",
+          "type": "upgrade",
+          "safe_type": "Armor",
+          "label": "Kevlar",
+          "missable": true,
+          "levels": {
+            "1": "Three copies let the whole party share one protection tier.",
+            "2": "Collect all copies: Seat Deck 4F, second-class cabin 3F, Library 2F.",
+            "3": "Collect the three light-armor copies from the western chair row on Seat Deck 4F, a cupboard in the second-class cabins, and the 2F Library. Equip one on each party member until stronger armor replaces it."
+          }
+        },
+        {
+          "id": "armor-2-titanium",
+          "type": "upgrade",
+          "safe_type": "Armor",
+          "label": "Titanium",
+          "missable": true,
+          "levels": {
+            "1": "Three copies let the whole party share one protection tier.",
+            "2": "Collect all copies: Elevator Passage 4F, Shop 2F, first-class cabin 3F.",
+            "3": "Collect the medium-armor copies from the northern Elevator Passage at 4F, the first display behind the 2F Shop counter, and a first-class cabin. Replace Kevlar on every character as copies become available."
+          }
+        },
+        {
+          "id": "armor-3-diamet",
+          "type": "upgrade",
+          "safe_type": "Armor",
+          "label": "Diamet",
+          "missable": true,
+          "levels": {
+            "1": "Three copies let the whole party share one protection tier.",
+            "2": "Collect all copies: Medical Office 2F, Captain Room 3F, Submarine Crew Quarters.",
+            "3": "Collect the heavy-armor copies from the 2F Medical Office, the 3F Captain Room cupboard, and the submarine Crew Quarters. Equip all three before the late return route so each playable character receives maximum protection."
+          }
+        },
+        {
+          "id": "herb-1-green-herb",
+          "type": "collectible",
+          "safe_type": "Herb Type",
+          "label": "Green Herb",
+          "missable": false,
+          "levels": {
+            "1": "Each color has a distinct recovery purpose.",
+            "2": "Collect and use one; it provides light healing.",
+            "3": "Collect one from the Restaurant Balcony recess and use it only after light damage. Additional green herbs appear throughout passenger, security, and submarine rooms."
+          }
+        },
+        {
+          "id": "herb-2-yellow-herb",
+          "type": "collectible",
+          "safe_type": "Herb Type",
+          "label": "Yellow Herb",
+          "missable": false,
+          "levels": {
+            "1": "Each color has a distinct recovery purpose.",
+            "2": "Collect and use one; it provides medium healing.",
+            "3": "Take the opening yellow herbs from the Side Deck cabinet and use one after moderate damage. Check passenger rooms and Sickbay for later copies."
+          }
+        },
+        {
+          "id": "herb-3-red-herb",
+          "type": "collectible",
+          "safe_type": "Herb Type",
+          "label": "Red Herb",
+          "missable": false,
+          "levels": {
+            "1": "Each color has a distinct recovery purpose.",
+            "2": "Collect and use one; it provides heavy healing.",
+            "3": "Collect the first red herb from the 1F Restaurant and use it after heavy damage. Preserve another copy for the long blocked-corridor return."
+          }
+        },
+        {
+          "id": "herb-4-blue-herb",
+          "type": "collectible",
+          "safe_type": "Herb Type",
+          "label": "Blue Herb",
+          "missable": false,
+          "levels": {
+            "1": "Each color has a distinct recovery purpose.",
+            "2": "Collect and use one; it provides cures poison.",
+            "3": "Take a blue herb from the 4F Dressing Room or submarine Sickbay and use it while the poison indicator is active. It removes poison without serving as the main healing item."
+          }
+        },
+        {
+          "id": "herb-5-purple-herb",
+          "type": "collectible",
+          "safe_type": "Herb Type",
+          "label": "Purple Herb",
+          "missable": false,
+          "levels": {
+            "1": "Each color has a distinct recovery purpose.",
+            "2": "Collect and use one; it provides heavy healing plus antidote.",
+            "3": "Collect the first purple herbs from Bathroom 6 and test one while both poisoned and injured. It removes poison and restores heavy damage in the same inventory action."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Equip the whole party before Save Point 14",
+        "why": "The final return is safer with heavy protection on every character."
+      }
+    },
+    {
+      "id": "ammunition",
+      "name": "Finite Ammunition Cleanup",
+      "location_cue": "Wall cabinets, vases, curtains, bathrooms, corpses, enemy drops, cabins, utility rooms, and submarine storage.",
+      "note": "The game refuses ammunition for weapons not yet owned, so remember and revisit early caches.",
+      "items": [
+        {
+          "id": "ammo-1-grenade-rounds",
+          "type": "collectible",
+          "safe_type": "Ammunition Family",
+          "label": "Grenade Rounds",
+          "missable": true,
+          "levels": {
+            "1": "Finite caches appear only after their matching weapon is owned.",
+            "2": "Collect its caches from Restaurant curtain, Shop 2F, Dressing Room 4F, Suite Room S.",
+            "3": "After collecting the Grenade Gun, recover its caches from the 1F Restaurant curtain, 2F Shop, 4F Dressing Room, and Suite Room S, then collect later Power Control and submarine rounds. Do not approach an ammo pickup before owning its weapon because the game refuses it."
+          }
+        },
+        {
+          "id": "ammo-2-rocket-missiles",
+          "type": "collectible",
+          "safe_type": "Ammunition Family",
+          "label": "Rocket Missiles",
+          "missable": true,
+          "levels": {
+            "1": "Finite caches appear only after their matching weapon is owned.",
+            "2": "Collect its caches from Boiler Room 2F, first-class cabin 3F, Submarine Torpedo Room.",
+            "3": "After taking the Rocket Launcher, collect missiles from the 2F Boiler Room, the remembered first-class cabin cache, and the submarine Torpedo Room. Reserve enough for the final upper-deck combat and use the repeated-cache glitch only on a separate slot."
+          }
+        },
+        {
+          "id": "ammo-3-gas-rounds",
+          "type": "collectible",
+          "safe_type": "Ammunition Family",
+          "label": "Gas Rounds",
+          "missable": true,
+          "levels": {
+            "1": "Finite caches appear only after their matching weapon is owned.",
+            "2": "Collect its caches from first-class cabin 3F, Submarine Bridge.",
+            "3": "After taking Gas Launcher, revisit the remembered first-class cabin cache and collect the box near the submarine Bridge periscope. Keep one round for the run-target glitch test and the rest for crowded rooms."
+          }
+        },
+        {
+          "id": "ammo-4-assault-clips",
+          "type": "collectible",
+          "safe_type": "Ammunition Family",
+          "label": "Assault Clips",
+          "missable": true,
+          "levels": {
+            "1": "Finite caches appear only after their matching weapon is owned.",
+            "2": "Collect its caches from second-class wall plant, Library zombie, Submarine Crew Quarters.",
+            "3": "Take the first clip from the wall plant in the second-class corridor after obtaining the Assault Rifle. Later collect clips from an item-carrying Library enemy and the submarine Crew Quarters."
+          }
+        },
+        {
+          "id": "ammo-5-shotgun-shells",
+          "type": "collectible",
+          "safe_type": "Ammunition Family",
+          "label": "Shotgun Shells",
+          "missable": true,
+          "levels": {
+            "1": "Finite caches appear only after their matching weapon is owned.",
+            "2": "Collect its caches from bathrooms and corpses, submarine route, final return.",
+            "3": "After collecting the Shotgun, revisit both Corridor A bathrooms, the Restaurant Balcony body, and nearby corpses. Continue checking side-deck, library, engine, submarine, and final-return enemies for later shell drops."
+          }
+        },
+        {
+          "id": "ammo-6-handgun-bullets",
+          "type": "collectible",
+          "safe_type": "Ammunition Family",
+          "label": "Handgun Bullets",
+          "missable": true,
+          "levels": {
+            "1": "Finite caches appear only after their matching weapon is owned.",
+            "2": "Collect its caches from many cabinets zombies, all route phases.",
+            "3": "Inspect opening wall cabinets and vases, then search defeated item-carrying zombies throughout every floor. Keep the total below 99 only when an upcoming pickup would otherwise be wasted."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before launcher testing",
+        "why": "Scarce rounds should remain available for the final deck."
+      }
+    },
+    {
+      "id": "secrets",
+      "name": "Reproducible Ammunition Glitches",
+      "location_cue": "The battle escape interface and the connected Boiler, Engine, and Power Control rooms around Save Point 12.",
+      "note": "Use separate slots so glitch testing never replaces the normal campaign state.",
+      "items": [
+        {
+          "id": "secret-gas-run-shot",
+          "type": "secret",
+          "safe_type": "Glitch",
+          "label": "Free Gas Launcher Run Shot",
+          "missable": true,
+          "levels": {
+            "1": "One battle-state transition can fire without reducing the counter.",
+            "2": "Enter Run mode with Gas Launcher equipped and at least one round.",
+            "3": "Equip Gas Launcher while it holds one or more rounds, enter a battle, press Start to activate the red Run Target, then press the normal fire action before completing the escape. The shot clears the visible enemies without decreasing gas ammunition; test this on a separate save and then reload."
+          }
+        },
+        {
+          "id": "secret-engine-ammo-loop",
+          "type": "secret",
+          "safe_type": "Glitch",
+          "label": "Engine-Room Ammunition Loop",
+          "missable": true,
+          "levels": {
+            "1": "A late Continue repopulates three nearby supplies.",
+            "2": "At Save Point 12, lose the engine combat and choose Continue.",
+            "3": "Use a separate Slot 3 save at Point 12. Collect the Engine Room handgun bullets, Power Control grenade rounds, and Boiler Room missiles, enter the nearby combat, intentionally lose, and choose Continue. Repeat the three pickups until the desired counters reach 99, then preserve the normal pre-glitch slot separately."
+          }
+        },
+        {
+          "id": "secret-max-handgun",
+          "type": "collectible",
+          "safe_type": "Glitch Result",
+          "label": "99 Handgun Bullets",
+          "missable": false,
+          "levels": {
+            "1": "The nearest repeated cache fills the basic weapon first.",
+            "2": "Repeat the engine loop until Handgun ammunition reaches 99.",
+            "3": "After each Continue at Save Point 12, take the repopulated Handgun bullets in Engine Room before re-entering combat. Stop when the inventory displays 99 so no later pickup is silently wasted."
+          }
+        },
+        {
+          "id": "secret-max-grenade",
+          "type": "collectible",
+          "safe_type": "Glitch Result",
+          "label": "99 Grenade Rounds",
+          "missable": false,
+          "levels": {
+            "1": "A side-room cache also returns after the same Continue.",
+            "2": "Repeat the engine loop through Power Control until Grenade ammunition reaches 99.",
+            "3": "From the resumed checkpoint, detour into Power Control, collect the restored grenade rounds, return to the engine combat, lose, and Continue. Repeat while retaining the Grenade Gun until its counter reaches 99."
+          }
+        },
+        {
+          "id": "secret-max-rockets",
+          "type": "collectible",
+          "safe_type": "Glitch Result",
+          "label": "99 Rocket Missiles",
+          "missable": false,
+          "levels": {
+            "1": "The boiler cache is the rarest repeated supply.",
+            "2": "Repeat the engine loop through Boiler Room until Rocket ammunition reaches 99.",
+            "3": "After each Continue, climb back to Boiler Room and take the restored missile box, then return to the engine combat and repeat. Because each trip is long, maintain the untouched normal Slot 1 or Slot 2 in case the cartridge state becomes unstable."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve a clean pre-glitch slot",
+        "why": "The loop requires intentional defeat and repeated Continue use."
+      }
+    },
+    {
+      "id": "completion",
+      "name": "Campaign and Completion Ledger",
+      "location_cue": "The final Upper Deck, ending presentation, credits, title screen, PDA, and character equipment screens.",
+      "note": "One ending and one campaign setting exist; completion comes from the full content ledger.",
+      "items": [
+        {
+          "id": "completion-single-campaign",
+          "type": "ending",
+          "safe_type": "Campaign Clear",
+          "label": "Complete the Full Campaign",
+          "missable": false,
+          "levels": {
+            "1": "One continuous route covers every mandatory location.",
+            "2": "Finish the final Upper Deck combat and reach the credits.",
+            "3": "Use the Save Point 14 file, distribute heavy armor and strong weapons across all three characters, return through Corridor B and Corridor C, complete the last combat without using an older Continue state, and allow the entire ending presentation and credits to finish."
+          }
+        },
+        {
+          "id": "completion-one-ending",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Record the Single Ending",
+          "missable": false,
+          "levels": {
+            "1": "There is no alternate branch or character-specific conclusion.",
+            "2": "Finish once and record the ending without describing its events.",
+            "3": "Complete the campaign from any valid Save Point 14 file and let the final presentation play. The game has one ending, no route choices that alter it, and no separate ending unlock, so preserve one completed credits recording in the ledger."
+          }
+        },
+        {
+          "id": "completion-all-characters",
+          "type": "optional",
+          "safe_type": "Character Ledger",
+          "label": "Use Every Playable Character",
+          "missable": false,
+          "levels": {
+            "1": "The campaign changes control and permits party switching.",
+            "2": "Land a successful attack as Barry, Leon, and Lucia.",
+            "3": "During each available party configuration, place a weapon and armor on every character, switch to that character in battle, and land one centered hit. Record all three names in the completion ledger before the final deck."
+          }
+        },
+        {
+          "id": "completion-full-pda",
+          "type": "collectible",
+          "safe_type": "Collection",
+          "label": "Complete the PDA Archive",
+          "missable": false,
+          "levels": {
+            "1": "Every readable mechanic sheet remains accessible in one menu.",
+            "2": "Verify all twelve document titles in the PDA.",
+            "3": "Before Save Point 14, open the PDA and compare its archive against the twelve-document guide list. Revisit any still-accessible floor for missing papers, then preserve a slot showing the complete archive before finishing."
+          }
+        },
+        {
+          "id": "completion-no-difficulty",
+          "type": "optional",
+          "safe_type": "Scope Note",
+          "label": "No Difficulty Clears Required",
+          "missable": false,
+          "levels": {
+            "1": "This release offers no selectable difficulty ladder.",
+            "2": "Complete the sole campaign setting once.",
+            "3": "Do not invent Easy, Normal, Hard, rank, or New Game Plus requirements: the Game Boy Color release exposes one campaign setting and no post-clear difficulty unlock. Completion is the full content ledger on that route."
+          }
+        },
+        {
+          "id": "completion-no-unlocks",
+          "type": "optional",
+          "safe_type": "Scope Note",
+          "label": "No Post-Clear Unlocks",
+          "missable": false,
+          "levels": {
+            "1": "Credits do not add a bonus weapon, costume, or mode.",
+            "2": "Verify the title screen after one full clear.",
+            "3": "After credits, return to the title screen and inspect its available options. Record that no new mode, outfit, rank reward, weapon, or extra scenario appears; retain the completed save only as evidence of the clear."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep the Save Point 14 file",
+        "why": "It preserves the complete inventory and archive immediately before the ending."
+      }
+    }
+  ]
+}

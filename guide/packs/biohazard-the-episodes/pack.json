@@ -1,0 +1,301 @@
+{
+  "id": "biohazard-the-episodes",
+  "game": "BIOHAZARD the episodes (2007)",
+  "target": "100% completion of the original Japanese FOMA 903i release, including every Episode branch, Mission node and rank route, roster unlock, weapon, and item, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "route-and-controls",
+      "name": "Original Mobile Route",
+      "location_cue": "The FOMA 903i application menu, keypad configuration, and first controllable room.",
+      "note": "The original network service is retired; preserve an untouched archival copy before recording progress.",
+      "items": [
+        {
+          "id": "route-original-foma",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Original FOMA 903i Release",
+          "missable": false,
+          "levels": {
+            "1": "This game was built for one Japanese feature-phone family.",
+            "2": "Run the original 2007 i-mode application on compatible FOMA 903i hardware.",
+            "3": "Use an authenticated original handset installation where available, keep its application and downloaded data together, confirm the title reaches both modes, and clone the storage before creating completion data."
+          }
+        },
+        {
+          "id": "route-archival-copy",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Document the Archival Launcher Limitation",
+          "missable": false,
+          "levels": {
+            "1": "The modern preservation route does not contain every historical unlock.",
+            "2": "If using the preserved launcher copy, record its build and confirm that extra characters are absent.",
+            "3": "Keep the preserved package unmodified, note the launcher version and package hash, and open the character-select screens in both modes. The recovered copy is reported complete for ordinary play but lacks extra-character data, so it cannot prove an original-release 100% roster."
+          }
+        },
+        {
+          "id": "controls-key-type",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Verify Both Key Types",
+          "missable": false,
+          "levels": {
+            "1": "The application permits a control-layout change.",
+            "2": "Open settings and test each available key type in a safe room.",
+            "3": "For each key layout, confirm the direction pad moves, 2 toggles running, Confirm examines or fires, the right soft key raises or lowers the weapon, and the left soft key opens the menu. Retain the layout that produces no stuck inputs."
+          }
+        },
+        {
+          "id": "controls-aiming",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Calibrate Aiming and Target Selection",
+          "missable": false,
+          "levels": {
+            "1": "Combat changes the meaning of the direction pad.",
+            "2": "Raise a weapon and test vertical aim plus left-right target changes.",
+            "3": "Enter a repeatable early encounter, hold the aim soft key, use Up and Down to alter elevation, then use Left and Right to cycle visible targets. Fire once with Confirm and verify releasing aim restores ordinary movement."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Clone the application data first",
+        "why": "The original service cannot redownload lost episode or unlock data."
+      }
+    },
+    {
+      "id": "episode-mode",
+      "name": "Episode Mode",
+      "location_cue": "The outdoor Uptown blocks and enclosed police-station corridors joined by branching objectives.",
+      "note": "Public documentation gives an approximate episode count, not a complete branch table.",
+      "items": [
+        {
+          "id": "episode-new-file",
+          "type": "interaction",
+          "safe_type": "Mode",
+          "label": "Start Episode Mode from Clean Data",
+          "missable": false,
+          "levels": {
+            "1": "Branch tracking is clearest without inherited flags.",
+            "2": "Begin Episode Mode on a blank save and record the first objective message.",
+            "3": "Create a clean profile, select Episode Mode, copy each displayed objective into a private ledger, and save at every offered transition. Do not use plot wording in public notes; identify branches by geography and objective type."
+          }
+        },
+        {
+          "id": "episode-uptown-pass",
+          "type": "optional",
+          "safe_type": "Route",
+          "label": "Clear Every Uptown Episode",
+          "missable": true,
+          "levels": {
+            "1": "One half of the route uses open streets.",
+            "2": "Complete every Episode Mode branch whose playable space is Uptown.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "episode-station-pass",
+          "type": "optional",
+          "safe_type": "Route",
+          "label": "Clear Every Police-Station Episode",
+          "missable": true,
+          "levels": {
+            "1": "The other half uses enclosed corridors.",
+            "2": "Complete every Episode Mode branch inside the police station.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "episode-crossovers",
+          "type": "choice",
+          "safe_type": "Branch",
+          "label": "Clear Every Cross-Area Branch",
+          "missable": true,
+          "levels": {
+            "1": "Some objectives move between the two physical regions.",
+            "2": "Replay branch points until every route connecting Uptown and the station is recorded.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "episode-objective-messages",
+          "type": "file",
+          "safe_type": "Objective",
+          "label": "Register Every Objective Message",
+          "missable": true,
+          "levels": {
+            "1": "Short messages disclose what opens the next node.",
+            "2": "Read every unique objective message across all Episode Mode branches.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "episode-terminal-results",
+          "type": "ending",
+          "safe_type": "Result",
+          "label": "Record Every Episode Route Result",
+          "missable": true,
+          "levels": {
+            "1": "Different branch paths may terminate at different result records.",
+            "2": "Reach and record every distinct terminal result shown by Episode Mode.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up at every episode choice",
+        "why": "The documented structure varies with branches, and the retired service makes a full restart fragile."
+      },
+      "point_of_no_return": {
+        "title": "An episode result can close its branch",
+        "why": "Use the transition backup to inspect the other objective path."
+      }
+    },
+    {
+      "id": "mission-mode",
+      "name": "Mission Mode Pyramid",
+      "location_cue": "The pyramid-shaped stage-select screen and the compact Uptown or station challenge maps.",
+      "note": "Official launch coverage says roughly one hundred nodes; no surviving public table establishes the exact final count.",
+      "items": [
+        {
+          "id": "mission-reveal-pyramid",
+          "type": "interaction",
+          "safe_type": "Mode",
+          "label": "Reveal the Full Mission Pyramid",
+          "missable": false,
+          "levels": {
+            "1": "Stage clears expose additional connected nodes.",
+            "2": "Clear available missions until no unopened ordinary node remains on the pyramid.",
+            "3": "Begin at each exposed base node, satisfy its displayed objective, remain through the results screen, and revisit the pyramid. Continue every newly opened connection; do not assume an approximate published count is an exact total."
+          }
+        },
+        {
+          "id": "mission-clear-every-node",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Clear Every Mission Node",
+          "missable": true,
+          "levels": {
+            "1": "Each short stage has its own objective.",
+            "2": "Finish every selectable ordinary and hidden mission on the pyramid.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "mission-s-rank-every-node",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Earn S on Every Mission",
+          "missable": true,
+          "levels": {
+            "1": "Top results unlock additional paths.",
+            "2": "Replay every cleared mission until its results screen displays S rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "mission-hidden-routes",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Open Every S-Rank Route",
+          "missable": true,
+          "levels": {
+            "1": "Some pyramid connections appear only after exceptional results.",
+            "2": "After each S rank, return to stage select and inspect every new branch.",
+            "3": "Because public sources do not preserve the node-to-node unlock table, photograph the pyramid before and after each S result, clear every newly exposed node, and repeat until an S rank no longer changes any connection. Exact nodes require original-build verification."
+          }
+        },
+        {
+          "id": "mission-objective-types",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Complete Every Objective Type",
+          "missable": true,
+          "levels": {
+            "1": "The compact stages vary their success condition.",
+            "2": "Record and finish every distinct objective wording used by Mission Mode.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Copy the save before rank cleanup",
+        "why": "Hidden S-rank links are not mapped in surviving public documentation."
+      }
+    },
+    {
+      "id": "archive-and-unlocks",
+      "name": "Original-Release Archive and Unlocks",
+      "location_cue": "Character selection, equipment menus, results records, and the completed mission pyramid.",
+      "note": "The preserved 2025 package is explicitly reported to omit extra characters.",
+      "items": [
+        {
+          "id": "unlock-extra-characters",
+          "type": "figure",
+          "safe_type": "Unlock",
+          "label": "Unlock Every Extra Character",
+          "missable": false,
+          "levels": {
+            "1": "The historical release contained roster data missing from the current preservation copy.",
+            "2": "On an original complete installation, unlock every additional playable character.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "unlock-use-every-character",
+          "type": "figure",
+          "safe_type": "Roster",
+          "label": "Clear a Mission with Every Character",
+          "missable": false,
+          "levels": {
+            "1": "An unlocked roster entry should be tested in play.",
+            "2": "Select every available character and finish at least one Mission Mode stage.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "archive-weapons",
+          "type": "weapon",
+          "safe_type": "Equipment",
+          "label": "Register Every Weapon",
+          "missable": true,
+          "levels": {
+            "1": "Some compact objectives may expose different equipment.",
+            "2": "Collect or equip every distinct weapon present across both modes.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "archive-items",
+          "type": "collectible",
+          "safe_type": "Inventory",
+          "label": "Register Every Usable Item",
+          "missable": true,
+          "levels": {
+            "1": "Branch and mission inventories may not be identical.",
+            "2": "Pick up and use every distinct non-weapon item across all routes.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "archive-full-results",
+          "type": "optional",
+          "safe_type": "Archive",
+          "label": "Complete the Results Ledger",
+          "missable": true,
+          "levels": {
+            "1": "The only reliable final check is the original build itself.",
+            "2": "Verify every Episode result, Mission node, S rank, hidden connection, character, weapon, and item on one preserved completion ledger.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep original and archival saves separate",
+        "why": "A launcher copy missing roster assets must never be mistaken for a historically complete save."
+      }
+    }
+  ]
+}

@@ -1,0 +1,1569 @@
+{
+  "id": "resident-evil-survivor-2-code-veronica",
+  "game": "Resident Evil Survivor 2 – Code: Veronica (2001)",
+  "target": "100% completion of the selected PlayStation 2 route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "setup",
+      "name": "PlayStation 2 Setup and Global Data",
+      "location_cue": "The PlayStation 2 title screen, input calibration, options, and memory-card display.",
+      "note": "Use the home version because it contains the cabinet route plus all additional local modes.",
+      "items": [
+        {
+          "id": "setup-ps2",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the PlayStation 2 Release",
+          "missable": false,
+          "levels": {
+            "1": "Choose the home edition containing the broadest local feature set.",
+            "2": "Use the original PlayStation 2 release on hardware or a tested emulator.",
+            "3": "Launch the PAL English or Japanese PlayStation 2 edition and create a dedicated memory-card file. This route contains the arcade campaign plus the home-exclusive Dungeon and Vs. Roach modes, so the separate cabinet version adds no completion content."
+          }
+        },
+        {
+          "id": "setup-memory",
+          "type": "interaction",
+          "safe_type": "Save Rule",
+          "label": "Preserve the Global System File",
+          "missable": false,
+          "levels": {
+            "1": "Progress belongs to one automatically updated record.",
+            "2": "Keep a backup of the dedicated system-data file before long sessions.",
+            "3": "Allow the title to finish each automatic write before resetting or closing the emulator. Copy the memory-card image before experimenting with old states; restoring an earlier image can remove later characters, reports, ammunition rewards, and time-based options."
+          }
+        },
+        {
+          "id": "setup-controller",
+          "type": "interaction",
+          "safe_type": "Control Mode",
+          "label": "Standard Controller Clear",
+          "missable": false,
+          "levels": {
+            "1": "Every required mode works with the ordinary pad.",
+            "2": "Configure a DualShock 2 layout and complete an Arcade run.",
+            "3": "Set aiming, firing, movement, weapon selection, and camera controls in Options, then calibrate sensitivity in the first stage. Finish one complete Arcade run with the pad so completion does not depend on light-gun hardware."
+          }
+        },
+        {
+          "id": "setup-guncon",
+          "type": "optional",
+          "safe_type": "Control Mode",
+          "label": "GunCon 2 Clear",
+          "missable": false,
+          "levels": {
+            "1": "The home release also supports compatible light-gun play.",
+            "2": "Calibrate a GunCon 2 where your display or emulator supports it.",
+            "3": "Connect compatible hardware, open the calibration screen, verify all screen edges, and complete one Arcade run. If the chosen modern display or emulator cannot reproduce GunCon 2 input accurately, record the hardware limitation rather than fabricating a clear."
+          }
+        },
+        {
+          "id": "setup-claire",
+          "type": "optional",
+          "safe_type": "Character",
+          "label": "Claire Arcade Clear",
+          "missable": false,
+          "levels": {
+            "1": "Both selectable leads deserve a complete route.",
+            "2": "Choose Claire and clear all five Arcade stages.",
+            "3": "Start Arcade as Claire, finish every timed stage in sequence, save the result automatically, and confirm the clear contributes to the partner-level options. Use a later run for jewels, messages, and S grades if the first is exploratory."
+          }
+        },
+        {
+          "id": "setup-steve",
+          "type": "optional",
+          "safe_type": "Character",
+          "label": "Steve Arcade Clear",
+          "missable": false,
+          "levels": {
+            "1": "The second lead carries a different basic weapon.",
+            "2": "Choose Steve and clear all five Arcade stages.",
+            "3": "Start a fresh Arcade run as Steve and finish the same five-stage route. Test his starting weapon and character-specific heavy weapon during the run, then wait for the system-data write before returning to the title screen."
+          }
+        },
+        {
+          "id": "setup-coop",
+          "type": "optional",
+          "safe_type": "Play Mode",
+          "label": "Two-Player Arcade Clear",
+          "missable": false,
+          "levels": {
+            "1": "The home version permits a shared run.",
+            "2": "Connect a second input and clear Arcade with two players.",
+            "3": "Join the second player at character selection, choose one lead per player, and finish all five stages. Either player may enter an open stage exit to move both onward, but collect each jewel and message before anyone crosses that boundary."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up the dedicated system file",
+        "why": "Automatic writes hold every time-based option, report, reward, and character unlock."
+      }
+    },
+    {
+      "id": "arcade-rules",
+      "name": "Arcade Completion and Scoring",
+      "location_cue": "The Arcade character screen, five-stage run, stage result panels, and global options.",
+      "note": "Explore first, then separate jewel, message, S-grade, solo, and cooperative attempts as needed.",
+      "items": [
+        {
+          "id": "arcade-full-clear",
+          "type": "ending",
+          "safe_type": "Campaign Clear",
+          "label": "Complete Arcade Mode",
+          "missable": false,
+          "levels": {
+            "1": "Five compact routes form one continuous clear.",
+            "2": "Finish Stages 1 through 5 without abandoning the run.",
+            "3": "Select either lead, clear each timed route and its closing combat, then finish the last encounter and allow the ending presentation to conclude. Save the resulting global progress; the optional encounter does not create a different ending."
+          }
+        },
+        {
+          "id": "arcade-all-jewels-run",
+          "type": "collectible",
+          "safe_type": "Collection",
+          "label": "Collect All Five Jewels in One Run",
+          "missable": true,
+          "levels": {
+            "1": "Each stage hides one colored object inside its route.",
+            "2": "Take one jewel in every stage before leaving its exit.",
+            "3": "Collect the red, blue, green, purple, and gold-grey jewels during the same continuous Arcade run. After the normal Stage 5 combat, remain ready for the gated optional encounter; complete it and then preserve the automatic clear data."
+          }
+        },
+        {
+          "id": "arcade-extra-encounter",
+          "type": "secret",
+          "safe_type": "Optional Encounter",
+          "label": "Complete the Jewel-Gated Encounter",
+          "missable": true,
+          "levels": {
+            "1": "A full jewel set changes the final combat sequence.",
+            "2": "Carry all five jewels through the end of Stage 5.",
+            "3": "Do not spend or drop the stage jewels; they are tracked automatically. Defeat the ordinary final opponent, collect the special launcher presented in the next arena, and finish the additional encounter. The ending afterward is the same, so only the combat itself is a separate requirement."
+          }
+        },
+        {
+          "id": "arcade-five-messages",
+          "type": "collectible",
+          "safe_type": "Secret Message",
+          "label": "Collect Every Hidden Message",
+          "missable": true,
+          "levels": {
+            "1": "Each route contains one short code away from its exit line.",
+            "2": "Read FIVE, JEWEL, 25MIN, NEMESIS, and KILL across the five stages.",
+            "3": "Approach each marked wall, typewriter, or carousel position until its code is clearly registered. Collect all five on local runs even though the historical website they once addressed is unavailable; the codes remain part of the software's discoverable content."
+          }
+        },
+        {
+          "id": "arcade-stage-s-grades",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Earn S on Every Arcade Stage",
+          "missable": false,
+          "levels": {
+            "1": "Accurate close shots and an unbroken life bar drive the best results.",
+            "2": "Finish each stage with an S grade on the result panel.",
+            "3": "Use close-range critical hits, destroy point-bearing scenery, keep the no-damage chain intact, and finish quickly with the basic weapon whenever safe. Stage 1 requires at least 35,000 points; for later stages, repeat until the displayed result is S because reliable exact thresholds were not published."
+          }
+        },
+        {
+          "id": "arcade-score-crates",
+          "type": "interaction",
+          "safe_type": "Score Rule",
+          "label": "Score Breakable Scenery",
+          "missable": false,
+          "levels": {
+            "1": "Ordinary route objects contribute small but useful points.",
+            "2": "Destroy marked crates and safe breakables before each exit.",
+            "3": "Shoot every red-cross crate that does not threaten the timer, along with eligible lamps and drums. Each crate adds 200 points, and a full-health first-aid pickup adds a separate bonus, so route these between enemy waves rather than after opening the exit."
+          }
+        },
+        {
+          "id": "arcade-score-critical",
+          "type": "interaction",
+          "safe_type": "Score Rule",
+          "label": "Use Critical Hits",
+          "missable": false,
+          "levels": {
+            "1": "Very close, centered shots multiply enemy value.",
+            "2": "Approach safely and land critical hits on suitable targets.",
+            "3": "Stun or isolate a target, step into the short critical range, center the reticle, and fire once. Do not force this against crowded or lunging enemies; preserving the no-damage bonus can be worth more than a risky multiplier."
+          }
+        },
+        {
+          "id": "arcade-score-no-damage",
+          "type": "interaction",
+          "safe_type": "Score Rule",
+          "label": "Preserve the No-Damage Chain",
+          "missable": false,
+          "levels": {
+            "1": "Clean stages build a growing end-of-stage bonus.",
+            "2": "Clear consecutive stages without losing health.",
+            "3": "Learn enemy entrances on a practice file, retreat before ambush triggers, and take no damage from Stage 1 onward. A hit breaks the cumulative chain, so restart early if the current run is intended to record all five S grades."
+          }
+        },
+        {
+          "id": "arcade-score-basic",
+          "type": "interaction",
+          "safe_type": "Score Rule",
+          "label": "Use Only the Basic Weapon",
+          "missable": false,
+          "levels": {
+            "1": "A restricted arsenal earns an end-of-stage bonus.",
+            "2": "Finish a stage without firing a collected secondary weapon.",
+            "3": "Keep Claire's handgun or Steve's Golden Lugers equipped for the full stage. A solo basic-weapon clear awards 10,000 points; a two-player clear awards 5,000, so reserve this tactic for routes whose boss can be handled safely without a pickup."
+          }
+        },
+        {
+          "id": "arcade-score-continue",
+          "type": "interaction",
+          "safe_type": "Score Warning",
+          "label": "Avoid Continues on Ranking Runs",
+          "missable": false,
+          "levels": {
+            "1": "Continuing preserves progress but destroys the active score.",
+            "2": "Reach the stage result without using Continue.",
+            "3": "If defeated during an S-grade attempt, restart rather than continuing because the accumulated score returns to zero. Use unlocked continues only for exploration, message collection, or time-based option grinding."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve global data before ranking",
+        "why": "A continue resets the active score even though system progress remains."
+      }
+    },
+    {
+      "id": "arcade-unlocks",
+      "name": "Arcade Time and Clear Unlocks",
+      "location_cue": "The accumulated-play timer, Arcade options menu, and character selection screen.",
+      "note": "Repeated clears and stored play time expand partner, continue, and stage-select settings.",
+      "items": [
+        {
+          "id": "arcade-unlock-partner-level-four",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Partner Level Four",
+          "missable": false,
+          "levels": {
+            "1": "Persistent play or repeated clears expand the Arcade options.",
+            "2": "Unlock partner level four after one Arcade clear.",
+            "3": "Finish Arcade once, open Options, and raise the partner setting as high as level 4. Start a stage with computer assistance and confirm the stronger partner is active."
+          }
+        },
+        {
+          "id": "arcade-unlock-partner-level-eight",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Partner Level Eight",
+          "missable": false,
+          "levels": {
+            "1": "Persistent play or repeated clears expand the Arcade options.",
+            "2": "Unlock partner level eight after two Arcade clears.",
+            "3": "Finish Arcade a second time on the same global data, return to Options, and raise the partner setting to level 8. Begin another run and verify the maximum selection remains available."
+          }
+        },
+        {
+          "id": "arcade-unlock-six-continues",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Six Continues",
+          "missable": false,
+          "levels": {
+            "1": "Persistent play or repeated clears expand the Arcade options.",
+            "2": "Unlock six continues after two Arcade hours.",
+            "3": "Accumulate two hours inside Arcade Mode on the same system file, then reopen its options and confirm that six continues are selectable."
+          }
+        },
+        {
+          "id": "arcade-unlock-twelve-continues",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Twelve Continues",
+          "missable": false,
+          "levels": {
+            "1": "Persistent play or repeated clears expand the Arcade options.",
+            "2": "Unlock twelve continues after four Arcade hours.",
+            "3": "Raise the accumulated Arcade timer beyond four hours, return to the options menu, and confirm the available continue count has increased to twelve."
+          }
+        },
+        {
+          "id": "arcade-unlock-unlimited-continues",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Unlimited Continues",
+          "missable": false,
+          "levels": {
+            "1": "Persistent play or repeated clears expand the Arcade options.",
+            "2": "Unlock unlimited continues after twelve Arcade hours.",
+            "3": "Accumulate more than twelve hours of Arcade play, reopen the continue setting, and choose the unlimited option. Time spent in other modes does not replace the Arcade requirement."
+          }
+        },
+        {
+          "id": "arcade-unlock-stage-one-select",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Stage One Select",
+          "missable": false,
+          "levels": {
+            "1": "Persistent play or repeated clears expand the Arcade options.",
+            "2": "Unlock stage one select after two total hours.",
+            "3": "Raise total play time beyond two hours, hold or press Select at Arcade character selection, and verify Stage 1 can be launched directly."
+          }
+        },
+        {
+          "id": "arcade-unlock-stage-two-select",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Stage Two Select",
+          "missable": false,
+          "levels": {
+            "1": "Persistent play or repeated clears expand the Arcade options.",
+            "2": "Unlock stage two select after three total hours.",
+            "3": "Raise total play time beyond three hours, use Select at Arcade character selection, and launch Stage 2 from the unlocked stage list."
+          }
+        },
+        {
+          "id": "arcade-unlock-stage-three-select",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Stage Three Select",
+          "missable": false,
+          "levels": {
+            "1": "Persistent play or repeated clears expand the Arcade options.",
+            "2": "Unlock stage three select after four total hours.",
+            "3": "Raise total play time beyond four hours, use Select at Arcade character selection, and launch Stage 3 from the unlocked stage list."
+          }
+        },
+        {
+          "id": "arcade-unlock-stage-four-select",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Stage Four Select",
+          "missable": false,
+          "levels": {
+            "1": "Persistent play or repeated clears expand the Arcade options.",
+            "2": "Unlock stage four select after five total hours.",
+            "3": "Raise total play time beyond five hours, use Select at Arcade character selection, and launch Stage 4 from the unlocked stage list."
+          }
+        },
+        {
+          "id": "arcade-unlock-stage-five-select",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Stage Five Select",
+          "missable": false,
+          "levels": {
+            "1": "Persistent play or repeated clears expand the Arcade options.",
+            "2": "Unlock stage five select after six total hours.",
+            "3": "Raise total play time beyond six hours, use Select at Arcade character selection, and launch Stage 5 from the unlocked stage list."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up after each time threshold",
+        "why": "Restoring an old system file can remove later option unlocks."
+      }
+    },
+    {
+      "id": "arcade-stages",
+      "name": "Five Arcade Stages",
+      "location_cue": "Timed prison, residence, training, mansion, and airport routes with marked exits.",
+      "note": "SAVE-BACKUP: jewels and messages must be collected before each stage exit.",
+      "items": [
+        {
+          "id": "arcade-stage-1-clear",
+          "type": "interaction",
+          "safe_type": "Stage Clear",
+          "label": "Stage 1 — Prison Clear",
+          "missable": true,
+          "levels": {
+            "1": "The route ends when its key work and combat are complete.",
+            "2": "Clear Prison within three minutes using one key.",
+            "3": "Enter with a practiced path, collect the required key, open the marked exit, and complete the closing combat before the timer's failure state. Collect this stage's jewel and message before crossing the exit because the route cannot be revisited in the same run."
+          }
+        },
+        {
+          "id": "arcade-stage-1-jewel",
+          "type": "collectible",
+          "safe_type": "Jewel",
+          "label": "Stage 1 Jewel",
+          "missable": true,
+          "levels": {
+            "1": "One breakable or side-space contains the stage's colored jewel.",
+            "2": "Collect the hidden jewel before leaving Prison.",
+            "3": "Search the shower end of the sleeping quarters and take the red jewel before returning outside. Carry it through the stage result so the corresponding local report and five-jewel encounter can register."
+          }
+        },
+        {
+          "id": "arcade-stage-1-message",
+          "type": "collectible",
+          "safe_type": "Secret Message",
+          "label": "Stage 1 Hidden Message",
+          "missable": true,
+          "levels": {
+            "1": "A wall or readable surface holds a short code.",
+            "2": "Find the message before finishing Prison.",
+            "3": "Turn around in the alley before the prison grounds and follow it to the steel wall marked FIVE. Wait until the code is displayed clearly, then continue; entering the stage exit first closes the opportunity."
+          }
+        },
+        {
+          "id": "arcade-stage-1-s",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Stage 1 S Grade",
+          "missable": false,
+          "levels": {
+            "1": "A fast, accurate, undamaged route supports the highest grade.",
+            "2": "Finish Prison with an S on its result panel.",
+            "3": "Practice the key route first, then combine critical hits, breakable-object points, remaining time, and the no-damage chain. Use the result panel itself as the authority for Stage 1; restart the individual stage later through Stage Select if it falls below S."
+          }
+        },
+        {
+          "id": "arcade-stage-2-clear",
+          "type": "interaction",
+          "safe_type": "Stage Clear",
+          "label": "Stage 2 — Official Residence Clear",
+          "missable": true,
+          "levels": {
+            "1": "The route ends when its key work and combat are complete.",
+            "2": "Clear Official Residence within four minutes using one key.",
+            "3": "Enter with a practiced path, collect the required key, open the marked exit, and complete the closing combat before the timer's failure state. Collect this stage's jewel and message before crossing the exit because the route cannot be revisited in the same run."
+          }
+        },
+        {
+          "id": "arcade-stage-2-jewel",
+          "type": "collectible",
+          "safe_type": "Jewel",
+          "label": "Stage 2 Jewel",
+          "missable": true,
+          "levels": {
+            "1": "One breakable or side-space contains the stage's colored jewel.",
+            "2": "Collect the hidden jewel before leaving Official Residence.",
+            "3": "In the main lobby, shoot the crate tucked behind the reception desk to reveal the blue jewel. Carry it through the stage result so the corresponding local report and five-jewel encounter can register."
+          }
+        },
+        {
+          "id": "arcade-stage-2-message",
+          "type": "collectible",
+          "safe_type": "Secret Message",
+          "label": "Stage 2 Hidden Message",
+          "missable": true,
+          "levels": {
+            "1": "A wall or readable surface holds a short code.",
+            "2": "Find the message before finishing Official Residence.",
+            "3": "Take the portrait-passage route into the Study and inspect the typewriter showing JEWEL. Wait until the code is displayed clearly, then continue; entering the stage exit first closes the opportunity."
+          }
+        },
+        {
+          "id": "arcade-stage-2-s",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Stage 2 S Grade",
+          "missable": false,
+          "levels": {
+            "1": "A fast, accurate, undamaged route supports the highest grade.",
+            "2": "Finish Official Residence with an S on its result panel.",
+            "3": "Practice the key route first, then combine critical hits, breakable-object points, remaining time, and the no-damage chain. Use the result panel itself as the authority for Stage 2; restart the individual stage later through Stage Select if it falls below S."
+          }
+        },
+        {
+          "id": "arcade-stage-3-clear",
+          "type": "interaction",
+          "safe_type": "Stage Clear",
+          "label": "Stage 3 — Training Camp Clear",
+          "missable": true,
+          "levels": {
+            "1": "The route ends when its key work and combat are complete.",
+            "2": "Clear Training Camp within five minutes using two keys.",
+            "3": "Enter with a practiced path, collect the required keys, open the marked exit, and complete the closing combat before the timer's failure state. Collect this stage's jewel and message before crossing the exit because the route cannot be revisited in the same run."
+          }
+        },
+        {
+          "id": "arcade-stage-3-jewel",
+          "type": "collectible",
+          "safe_type": "Jewel",
+          "label": "Stage 3 Jewel",
+          "missable": true,
+          "levels": {
+            "1": "One breakable or side-space contains the stage's colored jewel.",
+            "2": "Collect the hidden jewel before leaving Training Camp.",
+            "3": "Reach the computer room, clear the immediate threats, and break the corner crate beside the terminals for the green jewel. Carry it through the stage result so the corresponding local report and five-jewel encounter can register."
+          }
+        },
+        {
+          "id": "arcade-stage-3-message",
+          "type": "collectible",
+          "safe_type": "Secret Message",
+          "label": "Stage 3 Hidden Message",
+          "missable": true,
+          "levels": {
+            "1": "A wall or readable surface holds a short code.",
+            "2": "Find the message before finishing Training Camp.",
+            "3": "Enter the waiting room connected to the key route and inspect its typewriter for 25MIN. Wait until the code is displayed clearly, then continue; entering the stage exit first closes the opportunity."
+          }
+        },
+        {
+          "id": "arcade-stage-3-s",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Stage 3 S Grade",
+          "missable": false,
+          "levels": {
+            "1": "A fast, accurate, undamaged route supports the highest grade.",
+            "2": "Finish Training Camp with an S on its result panel.",
+            "3": "Practice the key route first, then combine critical hits, breakable-object points, remaining time, and the no-damage chain. Use the result panel itself as the authority for Stage 3; restart the individual stage later through Stage Select if it falls below S."
+          }
+        },
+        {
+          "id": "arcade-stage-4-clear",
+          "type": "interaction",
+          "safe_type": "Stage Clear",
+          "label": "Stage 4 — Private Residence Clear",
+          "missable": true,
+          "levels": {
+            "1": "The route ends when its key work and combat are complete.",
+            "2": "Clear Private Residence within two linked countdowns using one key.",
+            "3": "Enter with a practiced path, collect the required key, open the marked exit, and complete the closing combat before the timer's failure state. Collect this stage's jewel and message before crossing the exit because the route cannot be revisited in the same run."
+          }
+        },
+        {
+          "id": "arcade-stage-4-jewel",
+          "type": "collectible",
+          "safe_type": "Jewel",
+          "label": "Stage 4 Jewel",
+          "missable": true,
+          "levels": {
+            "1": "One breakable or side-space contains the stage's colored jewel.",
+            "2": "Collect the hidden jewel before leaving Private Residence.",
+            "3": "After the mansion interior opens, weave behind the obstructing crates and destroy the concealed box for the purple jewel. Carry it through the stage result so the corresponding local report and five-jewel encounter can register."
+          }
+        },
+        {
+          "id": "arcade-stage-4-message",
+          "type": "collectible",
+          "safe_type": "Secret Message",
+          "label": "Stage 4 Hidden Message",
+          "missable": true,
+          "levels": {
+            "1": "A wall or readable surface holds a short code.",
+            "2": "Find the message before finishing Private Residence.",
+            "3": "Enter the Study off the bedroom corridor and inspect the typewriter for NEMESIS before advancing. Wait until the code is displayed clearly, then continue; entering the stage exit first closes the opportunity."
+          }
+        },
+        {
+          "id": "arcade-stage-4-s",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Stage 4 S Grade",
+          "missable": false,
+          "levels": {
+            "1": "A fast, accurate, undamaged route supports the highest grade.",
+            "2": "Finish Private Residence with an S on its result panel.",
+            "3": "Practice the key route first, then combine critical hits, breakable-object points, remaining time, and the no-damage chain. Use the result panel itself as the authority for Stage 4; restart the individual stage later through Stage Select if it falls below S."
+          }
+        },
+        {
+          "id": "arcade-stage-5-clear",
+          "type": "interaction",
+          "safe_type": "Stage Clear",
+          "label": "Stage 5 — Airport Clear",
+          "missable": true,
+          "levels": {
+            "1": "The route ends when its key work and combat are complete.",
+            "2": "Clear Airport within five minutes using no keys.",
+            "3": "Enter with a practiced path, collect the required key, open the marked exit, and complete the closing combat before the timer's failure state. Collect this stage's jewel and message before crossing the exit because the route cannot be revisited in the same run."
+          }
+        },
+        {
+          "id": "arcade-stage-5-jewel",
+          "type": "collectible",
+          "safe_type": "Jewel",
+          "label": "Stage 5 Jewel",
+          "missable": true,
+          "levels": {
+            "1": "One breakable or side-space contains the stage's colored jewel.",
+            "2": "Collect the hidden jewel before leaving Airport.",
+            "3": "At the opening mansion grounds, turn right and destroy the isolated crate for the final gold-grey jewel. Carry it through the stage result so the corresponding local report and five-jewel encounter can register."
+          }
+        },
+        {
+          "id": "arcade-stage-5-message",
+          "type": "collectible",
+          "safe_type": "Secret Message",
+          "label": "Stage 5 Hidden Message",
+          "missable": true,
+          "levels": {
+            "1": "A wall or readable surface holds a short code.",
+            "2": "Find the message before finishing Airport.",
+            "3": "Approach the carousel before taking the lift and register the KILL message beside its route. Wait until the code is displayed clearly, then continue; entering the stage exit first closes the opportunity."
+          }
+        },
+        {
+          "id": "arcade-stage-5-s",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Stage 5 S Grade",
+          "missable": false,
+          "levels": {
+            "1": "A fast, accurate, undamaged route supports the highest grade.",
+            "2": "Finish Airport with an S on its result panel.",
+            "3": "Practice the key route first, then combine critical hits, breakable-object points, remaining time, and the no-damage chain. Use the result panel itself as the authority for Stage 5; restart the individual stage later through Stage Select if it falls below S."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Snapshot before each stage exit",
+        "why": "The next stage cannot return to the prior route in the same run."
+      },
+      "point_of_no_return": {
+        "title": "Crossing a marked exit ends stage cleanup",
+        "why": "Collect the jewel and message, then open the exit and finish the combat."
+      }
+    },
+    {
+      "id": "secret-reports",
+      "name": "Local Secret Report Archive",
+      "location_cue": "The title-screen report list unlocked by colored Arcade jewels.",
+      "note": "Narrative contents are withheld; only collection and reading mechanics are described.",
+      "items": [
+        {
+          "id": "report-1",
+          "type": "file",
+          "safe_type": "Secret Report",
+          "label": "Secret Report 1 — Diary of Chief Warden",
+          "missable": true,
+          "levels": {
+            "1": "A stage jewel opens one local title-screen document.",
+            "2": "Collect the red jewel during stage one, then read its report.",
+            "3": "Collect the red jewel in Stage 1, allow the stage result to save, then open the report list from the title screen and read every page."
+          }
+        },
+        {
+          "id": "report-2",
+          "type": "file",
+          "safe_type": "Secret Report",
+          "label": "Secret Report 2 — Inspector Letter to Commander",
+          "missable": true,
+          "levels": {
+            "1": "A stage jewel opens one local title-screen document.",
+            "2": "Collect the blue jewel during stage two, then read its report.",
+            "3": "Collect the blue jewel in Stage 2, preserve the automatic result, and read the newly opened inspector letter completely from the title-screen report list."
+          }
+        },
+        {
+          "id": "report-3",
+          "type": "file",
+          "safe_type": "Secret Report",
+          "label": "Secret Report 3 — Training Facility Wall Message",
+          "missable": true,
+          "levels": {
+            "1": "A stage jewel opens one local title-screen document.",
+            "2": "Collect the green jewel during stage three, then read its report.",
+            "3": "Collect the green jewel in Stage 3, finish the stage, and open the third report from the title screen. Advance through its final page before backing out."
+          }
+        },
+        {
+          "id": "report-4",
+          "type": "file",
+          "safe_type": "Secret Report",
+          "label": "Secret Report 4 — Secret Agent Email",
+          "missable": true,
+          "levels": {
+            "1": "A stage jewel opens one local title-screen document.",
+            "2": "Collect the purple jewel during stage four, then read its report.",
+            "3": "Collect the purple jewel in Stage 4, complete the stage, and read the unlocked email from beginning to end in the title-screen report menu."
+          }
+        },
+        {
+          "id": "report-5",
+          "type": "file",
+          "safe_type": "Secret Report",
+          "label": "Secret Report 5 — Monologue of Claire",
+          "missable": true,
+          "levels": {
+            "1": "A stage jewel opens one local title-screen document.",
+            "2": "Collect the grey jewel during stage five, then read its report.",
+            "3": "Collect the final gold-grey jewel in Stage 5, complete the run, and open the fifth report at the title screen. Read it without summarizing its narrative content in the guide."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Protect the system file after every jewel",
+        "why": "Each report unlock is stored in the global data."
+      }
+    },
+    {
+      "id": "dungeon-overview",
+      "name": "Dungeon Completion and Unlocks",
+      "location_cue": "The Dungeon character screen, three map lists, weapon loadout, results, and persistent reward totals.",
+      "note": "Complete every numbered mission with both base characters, then test the two unlockable characters.",
+      "items": [
+        {
+          "id": "dungeon-first-clear",
+          "type": "interaction",
+          "safe_type": "Mode Clear",
+          "label": "Complete the First Dungeon Mission",
+          "missable": false,
+          "levels": {
+            "1": "The opening challenge starts the persistent unlock chain.",
+            "2": "Clear Clock Tower Mission 1 and save its reward.",
+            "3": "Choose Clock Tower Mission 1, take three dependable weapons, defeat its area boss, and remain through the score tally. Confirm the handgun ammunition is stored and that Vs. Roach Mode appears at the title menu."
+          }
+        },
+        {
+          "id": "dungeon-all-clock",
+          "type": "optional",
+          "safe_type": "Mode Set",
+          "label": "Complete Clock Tower",
+          "missable": false,
+          "levels": {
+            "1": "Six objectives cover combat, collection, combo, speed, and score.",
+            "2": "Clear all six Clock Tower missions.",
+            "3": "Complete Missions 1 through 6 and verify a result record for each: boss, four jewels, 97 enemies, a 60-hit combo, a sub-six-minute escape, and more than 60 million points. Confirm every ammunition reward afterward."
+          }
+        },
+        {
+          "id": "dungeon-all-underground",
+          "type": "optional",
+          "safe_type": "Mode Set",
+          "label": "Complete Underground",
+          "missable": false,
+          "levels": {
+            "1": "The second map raises every numerical target.",
+            "2": "Clear all six Underground missions.",
+            "3": "Record all six clears: boss, four jewels, 178 enemies, a 70-hit combo, an escape within eight minutes, and more than 70 million points. Use the saved ammunition rewards to prepare the Inferno set."
+          }
+        },
+        {
+          "id": "dungeon-all-inferno",
+          "type": "optional",
+          "safe_type": "Mode Set",
+          "label": "Complete Inferno",
+          "missable": false,
+          "levels": {
+            "1": "The final map adds a seventh extermination objective.",
+            "2": "Clear all seven Inferno missions.",
+            "3": "Finish the three-boss, five-jewel, 202-enemy, 80-combo, ten-minute, 90-million, and 300-enemy objectives. Verify both unlockable Dungeon characters afterward; do not overwrite the system data with an earlier state."
+          }
+        },
+        {
+          "id": "dungeon-claire-full",
+          "type": "optional",
+          "safe_type": "Character",
+          "label": "Claire Dungeon Set",
+          "missable": false,
+          "levels": {
+            "1": "The base characters use different restricted arsenals.",
+            "2": "Complete every Dungeon mission as Claire.",
+            "3": "Use Claire to clear all nineteen numbered missions across Clock Tower, Underground, and Inferno. Equip her handgun, Assault Rifle, Magnum, Bow Gun, and shared heavy weapons across the set so every accessible weapon is exercised."
+          }
+        },
+        {
+          "id": "dungeon-steve-full",
+          "type": "optional",
+          "safe_type": "Character",
+          "label": "Steve Dungeon Set",
+          "missable": false,
+          "levels": {
+            "1": "The second base character changes starting and automatic weapons.",
+            "2": "Complete every Dungeon mission as Steve.",
+            "3": "Repeat the nineteen Dungeon objectives as Steve, using the Golden Lugers, Submachine Guns, and shared weapons. Confirm each mission result is recorded separately before switching to an unlocked character."
+          }
+        },
+        {
+          "id": "dungeon-unlock-vs-roach-mode",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Vs. Roach mode",
+          "missable": false,
+          "levels": {
+            "1": "High Dungeon progress opens an additional character, weapon, or mode.",
+            "2": "Unlock Vs. Roach mode through first Dungeon mission.",
+            "3": "Clear the first available Dungeon mission and return to the title screen after its automatic write. Select the newly displayed Vs. Roach option once."
+          }
+        },
+        {
+          "id": "dungeon-unlock-chris-character",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Chris character",
+          "missable": false,
+          "levels": {
+            "1": "High Dungeon progress opens an additional character, weapon, or mode.",
+            "2": "Unlock Chris character through Inferno mission six.",
+            "3": "Clear Inferno Mission 6 by scoring more than 90 million, finish the result write, and select Chris from the Dungeon character screen."
+          }
+        },
+        {
+          "id": "dungeon-unlock-chris-linear-launcher",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Chris Linear Launcher",
+          "missable": false,
+          "levels": {
+            "1": "High Dungeon progress opens an additional character, weapon, or mode.",
+            "2": "Unlock Chris Linear Launcher through infinite ammunition.",
+            "3": "Choose Chris after his unlock and start a Dungeon mission. Equip his Linear Launcher, fire several shots, and confirm the ammunition count does not decrease."
+          }
+        },
+        {
+          "id": "dungeon-unlock-rodrigo-character",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Rodrigo character",
+          "missable": false,
+          "levels": {
+            "1": "High Dungeon progress opens an additional character, weapon, or mode.",
+            "2": "Unlock Rodrigo character through all Inferno missions.",
+            "3": "Complete every Inferno mission, including Mission 7's 300-enemy target, then return to character selection and choose Rodrigo."
+          }
+        },
+        {
+          "id": "dungeon-unlock-rodrigo-knife",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Rodrigo knife",
+          "missable": false,
+          "levels": {
+            "1": "High Dungeon progress opens an additional character, weapon, or mode.",
+            "2": "Unlock Rodrigo knife through only starting weapon.",
+            "3": "Start a Dungeon mission as Rodrigo and verify that his only opening weapon is the Knife. Complete at least one mission using that restricted loadout."
+          }
+        },
+        {
+          "id": "dungeon-unlock-claire-steve-linear-launcher",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Claire Steve Linear Launcher",
+          "missable": false,
+          "levels": {
+            "1": "High Dungeon progress opens an additional character, weapon, or mode.",
+            "2": "Unlock Claire Steve Linear Launcher through score beyond 300 million.",
+            "3": "Raise the Dungeon score beyond 300 million points on the persistent record, then start as Claire and Steve separately and verify the Linear Launcher is available to both."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before high-score grinding",
+        "why": "Characters, weapon access, and ammunition rewards accumulate globally."
+      }
+    },
+    {
+      "id": "clock-tower",
+      "name": "Dungeon — Clock Tower",
+      "location_cue": "A compact tower map with corridors, display rooms, storage, bedrooms, and six mission cards.",
+      "note": "Mission 2's four jewels disappear when that attempt ends, so collect all four together.",
+      "items": [
+        {
+          "id": "clock-tower-mission-1",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Clock Tower Mission 1",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete defeat area boss; earn 150 handgun rounds.",
+            "3": "Select Clock Tower Mission 1, prepare three suitable weapons, and complete the stated objective in one attempt: defeat area boss. Stay through the result and confirm 150 handgun rounds is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "clock-tower-mission-2",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Clock Tower Mission 2",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete collect four jewels; earn 50 percent automatic ammunition.",
+            "3": "Select Clock Tower Mission 2, prepare three suitable weapons, and complete the stated objective in one attempt: collect four jewels. Stay through the result and confirm 50 percent automatic ammunition is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "clock-tower-mission-3",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Clock Tower Mission 3",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete defeat 97 monsters; earn 30 shotgun shells.",
+            "3": "Select Clock Tower Mission 3, prepare three suitable weapons, and complete the stated objective in one attempt: defeat 97 monsters. Stay through the result and confirm 30 shotgun shells is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "clock-tower-mission-4",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Clock Tower Mission 4",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete reach 60-hit combo; earn 20 heavy rounds.",
+            "3": "Select Clock Tower Mission 4, prepare three suitable weapons, and complete the stated objective in one attempt: reach 60-hit combo. Stay through the result and confirm 20 heavy rounds is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "clock-tower-mission-5",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Clock Tower Mission 5",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete escape within six minutes; earn three Panzerfaust torpedoes.",
+            "3": "Select Clock Tower Mission 5, prepare three suitable weapons, and complete the stated objective in one attempt: escape within six minutes. Stay through the result and confirm three Panzerfaust torpedoes is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "clock-tower-mission-6",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Clock Tower Mission 6",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete score over 60 million; earn ten rocket shots.",
+            "3": "Select Clock Tower Mission 6, prepare three suitable weapons, and complete the stated objective in one attempt: score over 60 million. Stay through the result and confirm ten rocket shots is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "clock-tower-jewel-1",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Clock Tower Jewel 1",
+          "missable": true,
+          "levels": {
+            "1": "The collection mission uses four distinct rooms.",
+            "2": "Collect the floating corridor jewel during Mission 2.",
+            "3": "Follow the main corridor and collect the jewel floating directly in its path before changing rooms."
+          }
+        },
+        {
+          "id": "clock-tower-jewel-2",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Clock Tower Jewel 2",
+          "missable": true,
+          "levels": {
+            "1": "The collection mission uses four distinct rooms.",
+            "2": "Collect the plate-room corner jewel during Mission 2.",
+            "3": "Enter the plate display room and sweep its corner before leaving; the second jewel rests there without requiring a crate."
+          }
+        },
+        {
+          "id": "clock-tower-jewel-3",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Clock Tower Jewel 3",
+          "missable": true,
+          "levels": {
+            "1": "The collection mission uses four distinct rooms.",
+            "2": "Collect the break box in cupboard room during Mission 2.",
+            "3": "Search the room containing boxes and a cupboard, destroy the marked box, and collect the jewel it conceals."
+          }
+        },
+        {
+          "id": "clock-tower-jewel-4",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Clock Tower Jewel 4",
+          "missable": true,
+          "levels": {
+            "1": "The collection mission uses four distinct rooms.",
+            "2": "Collect the bedroom jewel behind zombies during Mission 2.",
+            "3": "Enter the bedroom, clear the nearby zombies so they do not interrupt the pickup, and take the fourth jewel behind them."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Snapshot before Mission 2",
+        "why": "All four jewels must be obtained in one successful collection attempt."
+      }
+    },
+    {
+      "id": "underground",
+      "name": "Dungeon — Underground",
+      "location_cue": "An underground room network with bats, rest spaces, crates, dead ends, and six mission cards.",
+      "note": "The speed mission is easiest with the numbered route rehearsed before the attempt.",
+      "items": [
+        {
+          "id": "underground-mission-1",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Underground Mission 1",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete defeat area boss; earn 150 handgun rounds.",
+            "3": "Select Underground Mission 1, prepare three suitable weapons, and complete the stated objective in one attempt: defeat area boss. Stay through the result and confirm 150 handgun rounds is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "underground-mission-2",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Underground Mission 2",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete collect four jewels; earn 150 automatic rounds.",
+            "3": "Select Underground Mission 2, prepare three suitable weapons, and complete the stated objective in one attempt: collect four jewels. Stay through the result and confirm 150 automatic rounds is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "underground-mission-3",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Underground Mission 3",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete defeat 178 monsters; earn 50 shotgun shells.",
+            "3": "Select Underground Mission 3, prepare three suitable weapons, and complete the stated objective in one attempt: defeat 178 monsters. Stay through the result and confirm 50 shotgun shells is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "underground-mission-4",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Underground Mission 4",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete reach 70-hit combo; earn 20 heavy rounds.",
+            "3": "Select Underground Mission 4, prepare three suitable weapons, and complete the stated objective in one attempt: reach 70-hit combo. Stay through the result and confirm 20 heavy rounds is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "underground-mission-5",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Underground Mission 5",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete escape within eight minutes; earn five Panzerfaust torpedoes.",
+            "3": "Select Underground Mission 5, prepare three suitable weapons, and complete the stated objective in one attempt: escape within eight minutes. Stay through the result and confirm five Panzerfaust torpedoes is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "underground-mission-6",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Underground Mission 6",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete score over 70 million; earn ten rocket shots.",
+            "3": "Select Underground Mission 6, prepare three suitable weapons, and complete the stated objective in one attempt: score over 70 million. Stay through the result and confirm ten rocket shots is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "underground-jewel-1",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Underground Jewel 1",
+          "missable": true,
+          "levels": {
+            "1": "Four route branches hold the collection target.",
+            "2": "Collect the bat room wall-hole corner during Mission 2.",
+            "3": "In the room with bats and the opening in the wall, inspect the far corner and collect the first jewel before passing through."
+          }
+        },
+        {
+          "id": "underground-jewel-2",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Underground Jewel 2",
+          "missable": true,
+          "levels": {
+            "1": "Four route branches hold the collection target.",
+            "2": "Collect the rest room weapon corner during Mission 2.",
+            "3": "Enter the rest room containing the heavier weapon pickups and collect the jewel from the nearby corner before changing equipment."
+          }
+        },
+        {
+          "id": "underground-jewel-3",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Underground Jewel 3",
+          "missable": true,
+          "levels": {
+            "1": "Four route branches hold the collection target.",
+            "2": "Collect the corridor breakable crate during Mission 2.",
+            "3": "Along the corridor route, shoot the marked crate and take the jewel revealed inside before the combo counter draws you onward."
+          }
+        },
+        {
+          "id": "underground-jewel-4",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Underground Jewel 4",
+          "missable": true,
+          "levels": {
+            "1": "Four route branches hold the collection target.",
+            "2": "Collect the dead-end room corner during Mission 2.",
+            "3": "Follow the branch into the dead-end room, collect the final jewel from its corner, then reverse course to finish the mission."
+          }
+        },
+        {
+          "id": "underground-speed-route",
+          "type": "interaction",
+          "safe_type": "Speed Route",
+          "label": "Underground Eight-Minute Route",
+          "missable": false,
+          "levels": {
+            "1": "The timed mission rewards a rehearsed room sequence.",
+            "2": "Follow the numbered room chain without detours.",
+            "3": "Begin in room 39; continue through rooms 40, 41, and 33. The next block is 34, 26, 27, and 28, followed by 42, 35, 29, and 30. Continue to 36, return through 30, then take 23, 22, 19, 18, 15, and 12. Finish through 13, 9, 8, 4, 3, 2, and 1. Fight only when a doorway is blocked and exit within eight minutes."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Snapshot before the speed attempt",
+        "why": "A wrong room branch can consume the eight-minute allowance."
+      }
+    },
+    {
+      "id": "inferno",
+      "name": "Dungeon — Inferno",
+      "location_cue": "A three-section laboratory network with shutters, numbered rooms, dense waves, and seven mission cards.",
+      "note": "The sixth and seventh missions control the two unlockable-character rewards.",
+      "items": [
+        {
+          "id": "inferno-mission-1",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Inferno Mission 1",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete defeat three area bosses; earn 300 handgun rounds.",
+            "3": "Select Inferno Mission 1, prepare three suitable weapons, and complete the stated objective in one attempt: defeat three area bosses. Stay through the result and confirm 300 handgun rounds is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "inferno-mission-2",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Inferno Mission 2",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete collect five jewels; earn double automatic ammunition.",
+            "3": "Select Inferno Mission 2, prepare three suitable weapons, and complete the stated objective in one attempt: collect five jewels. Stay through the result and confirm double automatic ammunition is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "inferno-mission-3",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Inferno Mission 3",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete defeat 202 monsters; earn 50 shotgun shells.",
+            "3": "Select Inferno Mission 3, prepare three suitable weapons, and complete the stated objective in one attempt: defeat 202 monsters. Stay through the result and confirm 50 shotgun shells is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "inferno-mission-4",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Inferno Mission 4",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete reach 80-hit combo; earn 20 Magnum rounds.",
+            "3": "Select Inferno Mission 4, prepare three suitable weapons, and complete the stated objective in one attempt: reach 80-hit combo. Stay through the result and confirm 20 Magnum rounds is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "inferno-mission-5",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Inferno Mission 5",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete escape within ten minutes; earn three Panzerfaust torpedoes.",
+            "3": "Select Inferno Mission 5, prepare three suitable weapons, and complete the stated objective in one attempt: escape within ten minutes. Stay through the result and confirm three Panzerfaust torpedoes is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "inferno-mission-6",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Inferno Mission 6",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete score over 90 million; earn 60 rocket shots.",
+            "3": "Select Inferno Mission 6, prepare three suitable weapons, and complete the stated objective in one attempt: score over 90 million. Stay through the result and confirm 60 rocket shots is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "inferno-mission-7",
+          "type": "optional",
+          "safe_type": "Dungeon Mission",
+          "label": "Inferno Mission 7",
+          "missable": false,
+          "levels": {
+            "1": "Each numbered room set has one fixed target and reward.",
+            "2": "Complete defeat at least 300; earn Rodrigo character unlock.",
+            "3": "Select Inferno Mission 7, prepare three suitable weapons, and complete the stated objective in one attempt: defeat at least 300. Stay through the result and confirm Rodrigo character unlock is added to the persistent Dungeon supply before leaving the mode."
+          }
+        },
+        {
+          "id": "inferno-jewel-1",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Inferno Jewel 1",
+          "missable": true,
+          "levels": {
+            "1": "The largest collection mission spans all three sections.",
+            "2": "Collect the first breakable crate during Mission 2.",
+            "3": "At the first suitable breakable cluster, destroy the marked crate and take the jewel before leaving the opening section."
+          }
+        },
+        {
+          "id": "inferno-jewel-2",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Inferno Jewel 2",
+          "missable": true,
+          "levels": {
+            "1": "The largest collection mission spans all three sections.",
+            "2": "Collect the room 23 shutter path during Mission 2.",
+            "3": "After the shutter route opens in room 23, clear the Hunter guarding the continuation and collect the jewel behind that position."
+          }
+        },
+        {
+          "id": "inferno-jewel-3",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Inferno Jewel 3",
+          "missable": true,
+          "levels": {
+            "1": "The largest collection mission spans all three sections.",
+            "2": "Collect the room eight zombie chamber during Mission 2.",
+            "3": "Enter room 8, control the dense zombie group from the doorway, and take the jewel from inside once the pickup line is safe."
+          }
+        },
+        {
+          "id": "inferno-jewel-4",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Inferno Jewel 4",
+          "missable": true,
+          "levels": {
+            "1": "The largest collection mission spans all three sections.",
+            "2": "Collect the two long-arm enemy corner during Mission 2.",
+            "3": "In the corner occupied by two long-armed enemies, defeat or stagger both before stepping in to collect the jewel."
+          }
+        },
+        {
+          "id": "inferno-jewel-5",
+          "type": "collectible",
+          "safe_type": "Mission Jewel",
+          "label": "Inferno Jewel 5",
+          "missable": true,
+          "levels": {
+            "1": "The largest collection mission spans all three sections.",
+            "2": "Collect the area three ending crate during Mission 2.",
+            "3": "Near the end of Area 3, break the final marked crate and collect the fifth jewel before completing the mission objective."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before Missions 6 and 7",
+        "why": "Their high score and extermination thresholds gate persistent characters and weapons."
+      }
+    },
+    {
+      "id": "weapons",
+      "name": "Complete Weapon Roster",
+      "location_cue": "Arcade weapon icons and the Dungeon three-slot loadout screen, ammunition rewards, and character selector.",
+      "note": "Use every weapon with each eligible character; mode restrictions are part of the ledger.",
+      "items": [
+        {
+          "id": "weapon-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Knife",
+          "missable": false,
+          "levels": {
+            "1": "Character and mode restrictions determine where this weapon appears.",
+            "2": "Use the Knife through Rodrigo Dungeon only.",
+            "3": "Unlock Rodrigo, start a Dungeon mission as him, equip the Knife, and defeat at least one enemy with its close strike before finishing a mission."
+          }
+        },
+        {
+          "id": "weapon-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Handgun",
+          "missable": false,
+          "levels": {
+            "1": "Character and mode restrictions determine where this weapon appears.",
+            "2": "Use the Handgun through Claire basic weapon.",
+            "3": "Begin Dungeon as Claire, equip her basic Handgun, and use it in a completed mission. Preserve its ammunition reward from the boss challenges."
+          }
+        },
+        {
+          "id": "weapon-golden-lugers",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Golden Lugers",
+          "missable": false,
+          "levels": {
+            "1": "Character and mode restrictions determine where this weapon appears.",
+            "2": "Use the Golden Lugers through Steve basic weapon.",
+            "3": "Begin Dungeon as Steve, equip the Golden Lugers, and finish one mission with them active. Their ammunition shares the handgun reward family."
+          }
+        },
+        {
+          "id": "weapon-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": false,
+          "levels": {
+            "1": "Character and mode restrictions determine where this weapon appears.",
+            "2": "Use the Shotgun through both main characters.",
+            "3": "Include the Shotgun in a three-weapon Dungeon loadout, collect shell rewards from extermination missions, and fire it during a successful clear with each base character."
+          }
+        },
+        {
+          "id": "weapon-assault-rifle",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Assault Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Character and mode restrictions determine where this weapon appears.",
+            "2": "Use the Assault Rifle through Claire Dungeon weapon.",
+            "3": "Choose Claire in Dungeon, assign the Assault Rifle, collect automatic-ammunition rewards, and finish one mission while using it against a dense wave."
+          }
+        },
+        {
+          "id": "weapon-magnum",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Magnum",
+          "missable": false,
+          "levels": {
+            "1": "Character and mode restrictions determine where this weapon appears.",
+            "2": "Use the Magnum through Claire heavy weapon.",
+            "3": "Choose Claire, place the Magnum in the Dungeon loadout, earn heavy rounds from a combo mission, and fire it during a successful high-threat clear."
+          }
+        },
+        {
+          "id": "weapon-bow-gun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Bow Gun",
+          "missable": false,
+          "levels": {
+            "1": "Character and mode restrictions determine where this weapon appears.",
+            "2": "Use the Bow Gun through Claire ranged weapon.",
+            "3": "Choose Claire, select the Bow Gun among the three starting weapons, and complete a mission after using it against at least one enemy group."
+          }
+        },
+        {
+          "id": "weapon-panzerfaust-ex",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Panzerfaust EX",
+          "missable": false,
+          "levels": {
+            "1": "Character and mode restrictions determine where this weapon appears.",
+            "2": "Use the Panzerfaust EX through both Dungeon characters.",
+            "3": "Assign the Panzerfaust EX to Claire and Steve on separate Dungeon runs, earn torpedoes from speed missions, and complete one mission with each character."
+          }
+        },
+        {
+          "id": "weapon-linear-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Linear Launcher",
+          "missable": false,
+          "levels": {
+            "1": "Character and mode restrictions determine where this weapon appears.",
+            "2": "Use the Linear Launcher through special unlock weapon.",
+            "3": "Unlock the launcher for Claire and Steve through the score threshold and for Chris through Inferno Mission 6. Fire the infinite version as every eligible character."
+          }
+        },
+        {
+          "id": "weapon-rocket-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Rocket Launcher",
+          "missable": false,
+          "levels": {
+            "1": "Character and mode restrictions determine where this weapon appears.",
+            "2": "Use the Rocket Launcher through Dungeon reward weapon.",
+            "3": "Earn rocket shots from the score missions, assign the Rocket Launcher to a Dungeon loadout, and complete a mission after firing at least one saved round."
+          }
+        },
+        {
+          "id": "weapon-submachine-guns",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Submachine Guns",
+          "missable": false,
+          "levels": {
+            "1": "Character and mode restrictions determine where this weapon appears.",
+            "2": "Use the Submachine Guns through Steve Dungeon weapon.",
+            "3": "Choose Steve in Dungeon, assign the Submachine Guns, collect automatic rounds, and finish a mission while using their sustained fire on a wave."
+          }
+        },
+        {
+          "id": "weapon-grenade-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade Launcher",
+          "missable": false,
+          "levels": {
+            "1": "Character and mode restrictions determine where this weapon appears.",
+            "2": "Use the Grenade Launcher through Steve Arcade heavy weapon.",
+            "3": "Start Arcade as Steve, collect his character-specific heavy-weapon icon, fire the Grenade Launcher during a stage clear, and note that replacing it discards the previous secondary weapon."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Protect rare ammunition totals",
+        "why": "Dungeon rewards persist, while replacing an Arcade secondary discards the previous pickup."
+      }
+    },
+    {
+      "id": "vs-roach",
+      "name": "Vs. Roach Lessons",
+      "location_cue": "Five small insect arenas reached from the home-version title menu.",
+      "note": "Complete all lessons to unlock the mode-specific infinite heavy weapon.",
+      "items": [
+        {
+          "id": "roach-1",
+          "type": "optional",
+          "safe_type": "Roach Lesson",
+          "label": "Lesson 1 Roach Attack",
+          "missable": false,
+          "levels": {
+            "1": "Each compact lesson uses a fixed insect arena.",
+            "2": "Complete Clock Tower fifth floor; handle ground insects only.",
+            "3": "Open Vs. Roach after the first Dungeon clear, choose Lesson 1, and eliminate every ground insect in the Clock Tower fifth-floor room before the counter expires."
+          }
+        },
+        {
+          "id": "roach-2",
+          "type": "optional",
+          "safe_type": "Roach Lesson",
+          "label": "Lesson 2 Wipe Out",
+          "missable": false,
+          "levels": {
+            "1": "Each compact lesson uses a fixed insect arena.",
+            "2": "Complete Underground chamber; handle ground insects only.",
+            "3": "Select Lesson 2 and clear the Underground chamber of every ground insect. Sweep the floor edges before assuming the counter is stalled."
+          }
+        },
+        {
+          "id": "roach-3",
+          "type": "optional",
+          "safe_type": "Roach Lesson",
+          "label": "Lesson 3 Roach Revenge",
+          "missable": false,
+          "levels": {
+            "1": "Each compact lesson uses a fixed insect arena.",
+            "2": "Complete Inferno laboratory; handle insects and moths.",
+            "3": "In Lesson 3's Inferno laboratory, eliminate the ground insects and moths. If one count remains, check the floor for a downed moth and step on it."
+          }
+        },
+        {
+          "id": "roach-4",
+          "type": "optional",
+          "safe_type": "Roach Lesson",
+          "label": "Lesson 4 Insect World",
+          "missable": false,
+          "levels": {
+            "1": "Each compact lesson uses a fixed insect arena.",
+            "2": "Complete mixed insect chamber; handle insects and moths.",
+            "3": "Clear Lesson 4's mixed insect room, alternating high aim for airborne moths with a floor sweep for roaches. Finish every remaining counter entry."
+          }
+        },
+        {
+          "id": "roach-5",
+          "type": "optional",
+          "safe_type": "Roach Lesson",
+          "label": "Lesson 5 Final Showdown",
+          "missable": false,
+          "levels": {
+            "1": "Each compact lesson uses a fixed insect arena.",
+            "2": "Complete laser room; handle avoid wall laser.",
+            "3": "Enter Lesson 5's laser room, stay away from the active wall beam, and remove every insect without being trapped against its sweep line."
+          }
+        },
+        {
+          "id": "roach-6",
+          "type": "upgrade",
+          "safe_type": "Reward",
+          "label": "infinite Panzerfaust EX",
+          "missable": false,
+          "levels": {
+            "1": "Each compact lesson uses a fixed insect arena.",
+            "2": "Complete clear all five lessons; handle Roach mode only.",
+            "3": "After all five lessons show complete, return to Vs. Roach, equip the Panzerfaust EX, fire several torpedoes, and confirm its ammunition is unlimited only in this mode."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up after every lesson",
+        "why": "The final reward depends on all five completion flags."
+      }
+    },
+    {
+      "id": "legacy",
+      "name": "Legacy Codes and Current Completion",
+      "location_cue": "Five in-game message surfaces, the local report menu, and a retired external service.",
+      "note": "The historical website is unavailable; local messages and reports remain the current achievable requirements.",
+      "items": [
+        {
+          "id": "historical-five-codes",
+          "type": "secret",
+          "safe_type": "Legacy Secret",
+          "label": "Record the Five Website Codes",
+          "missable": false,
+          "levels": {
+            "1": "Hidden messages once linked the cabinet to an external page.",
+            "2": "Record FIVE, JEWEL, 25MIN, NEMESIS, and KILL locally.",
+            "3": "Collect all five messages inside Arcade and keep them in the completion ledger. Do not attempt to submit them: the linked service closed in December 2003, and present-day completion ends with discovering the in-game codes themselves."
+          }
+        },
+        {
+          "id": "historical-web-service",
+          "type": "optional",
+          "safe_type": "Unavailable Feature",
+          "label": "Retired Online Code Service",
+          "missable": false,
+          "levels": {
+            "1": "One historical external feature can no longer be completed normally.",
+            "2": "Treat the closed website as unavailable, not as a missing save requirement.",
+            "3": "The official code-submission page no longer operates, so a modern normal save cannot access that online presentation. Document its retired status internally, collect the five local messages, and do not imply that the inaccessible website is required for current completion."
+          }
+        },
+        {
+          "id": "historical-local-reports",
+          "type": "file",
+          "safe_type": "Collection",
+          "label": "Read All Five Local Secret Reports",
+          "missable": false,
+          "levels": {
+            "1": "The home port preserves a local counterpart to the hidden discoveries.",
+            "2": "Unlock and read every title-screen Secret Report.",
+            "3": "Collect every stage jewel, finish the relevant stages, return to the title-screen report menu, and advance through all five documents. This local collection remains fully achievable even though the old external service is gone."
+          }
+        }
+      ]
+    }
+  ]
+}

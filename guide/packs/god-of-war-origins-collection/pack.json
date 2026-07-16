@@ -1,0 +1,137 @@
+{
+  "id": "god-of-war-origins-collection",
+  "game": "God of War: Origins Collection",
+  "target": "Spoiler-free 100% completion of both included PSP remasters on the selected PS3/RPCS3 route",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "wrapper-setup",
+      "name": "Collection and Remaster Setup",
+      "location_cue": "The PS3 Origins Collection launcher, two-game selector, 1080p output settings, and separate save-data entries.",
+      "note": "This package remasters Chains of Olympus and Ghost of Sparta and adds no third campaign.",
+      "items": [
+        {
+          "id": "use-origins-ps3",
+          "type": "interaction",
+          "safe_type": "Platform Route",
+          "label": "Use the PS3 Origins Collection",
+          "missable": false,
+          "levels": {
+            "1": "Choose the collection route selected in the catalog.",
+            "2": "Run the PS3 Origins Collection on original hardware or RPCS3.",
+            "3": "Launch the collection, confirm both remastered PSP titles appear, use separate save slots, and avoid gameplay-altering emulator patches."
+          }
+        },
+        {
+          "id": "verify-origins-output",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Verify the Remastered Output",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the native collection build is active.",
+            "2": "Check the PS3 or emulator display information.",
+            "3": "Open either component and verify the Origins Collection build is producing its intended high-resolution presentation and smooth frame-rate target."
+          }
+        },
+        {
+          "id": "separate-origins-saves",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Separate Both Component Saves",
+          "missable": false,
+          "levels": {
+            "1": "The two games retain independent clear data.",
+            "2": "Create labelled backup sets for both included titles.",
+            "3": "Use distinct save slots and backup folders for Chains of Olympus and Ghost of Sparta, preserving their difficulty, challenge, costume, and bonus states independently."
+          }
+        }
+      ]
+    },
+    {
+      "id": "component-god-of-war-chains-of-olympus",
+      "name": "God of War: Chains of Olympus Component",
+      "location_cue": "The God of War: Chains of Olympus entry in the package selector and its own load, challenge, and bonus menus.",
+      "note": "All gameplay requirements live in the verified standalone `god-of-war-chains-of-olympus` pack.",
+      "items": [
+        {
+          "id": "complete-god-of-war-chains-of-olympus",
+          "type": "interaction",
+          "safe_type": "Component Pack",
+          "label": "Complete God of War: Chains of Olympus",
+          "missable": false,
+          "levels": {
+            "1": "Treat this included title as a complete standalone project.",
+            "2": "Finish every requirement in `game_guide/out/god-of-war-chains-of-olympus/pack.READY.json`.",
+            "3": "Complete the standalone God of War: Chains of Olympus pack in full, including its campaign clears, finite collectibles, upgrades, difficulty-gated rewards, challenges, secrets, and post-clear menus. Preserve its completed save separately."
+          }
+        },
+        {
+          "id": "verify-god-of-war-chains-of-olympus-save",
+          "type": "interaction",
+          "safe_type": "Save Check",
+          "label": "Verify God of War: Chains of Olympus Clear Data",
+          "missable": false,
+          "levels": {
+            "1": "Return to the package selector only after its persistent unlocks are saved.",
+            "2": "Reload the completed component and inspect its post-clear menus.",
+            "3": "Load the completed God of War: Chains of Olympus data, open every challenge, replay, costume, treasure, arena, or bonus menu used by its standalone pack, exit normally, then reload once to confirm persistence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "component-god-of-war-ghost-of-sparta",
+      "name": "God of War: Ghost of Sparta Component",
+      "location_cue": "The God of War: Ghost of Sparta entry in the package selector and its own load, challenge, and bonus menus.",
+      "note": "All gameplay requirements live in the verified standalone `god-of-war-ghost-of-sparta` pack.",
+      "items": [
+        {
+          "id": "complete-god-of-war-ghost-of-sparta",
+          "type": "interaction",
+          "safe_type": "Component Pack",
+          "label": "Complete God of War: Ghost of Sparta",
+          "missable": false,
+          "levels": {
+            "1": "Treat this included title as a complete standalone project.",
+            "2": "Finish every requirement in `game_guide/out/god-of-war-ghost-of-sparta/pack.READY.json`.",
+            "3": "Complete the standalone God of War: Ghost of Sparta pack in full, including its campaign clears, finite collectibles, upgrades, difficulty-gated rewards, challenges, secrets, and post-clear menus. Preserve its completed save separately."
+          }
+        },
+        {
+          "id": "verify-god-of-war-ghost-of-sparta-save",
+          "type": "interaction",
+          "safe_type": "Save Check",
+          "label": "Verify God of War: Ghost of Sparta Clear Data",
+          "missable": false,
+          "levels": {
+            "1": "Return to the package selector only after its persistent unlocks are saved.",
+            "2": "Reload the completed component and inspect its post-clear menus.",
+            "3": "Load the completed God of War: Ghost of Sparta data, open every challenge, replay, costume, treasure, arena, or bonus menu used by its standalone pack, exit normally, then reload once to confirm persistence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "wrapper-final-audit",
+      "name": "Final Wrapper Audit",
+      "location_cue": "The package selector and every included title's load and bonus menus.",
+      "note": "The wrapper is complete only when every constituent standalone pack remains complete.",
+      "items": [
+        {
+          "id": "reload-all-components",
+          "type": "interaction",
+          "safe_type": "Final Audit",
+          "label": "Reload Every Completed Component",
+          "missable": false,
+          "levels": {
+            "1": "A final pass catches mixed saves, missing entitlements, or lost clear data.",
+            "2": "Launch every included title and reload its completed save.",
+            "3": "Open each component in turn, verify its standalone completion menus and inventory, return cleanly to the package selector, and retain separate backups for every game."
+          }
+        }
+      ]
+    }
+  ]
+}

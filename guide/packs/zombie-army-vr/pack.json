@@ -1,0 +1,2747 @@
+{
+  "id": "zombie-army-vr",
+  "game": "Zombie Army VR",
+  "target": "100% completion",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14T00:00:00Z",
+  "areas": [
+    {
+      "id": "route-and-profile-setup",
+      "name": "Route and Profile Setup",
+      "location_cue": "The Steam library, SteamVR runtime, title menu, campaign hub, and profile panels.",
+      "note": "Chosen route: native Windows PC VR through SteamVR. Quest and PlayStation VR add no separately required content. Online co-op closed on 30 March 2026; all still-achievable work is single-player.",
+      "items": [
+        {
+          "id": "setup-pc-steamvr-route",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Windows PC VR release",
+          "missable": false,
+          "levels": {
+            "1": "Verify the headset runtime and game edition before creating the completion profile.",
+            "2": "Install the current Steam build and launch it through SteamVR on the chosen PC route.",
+            "3": "Update Zombie Army VR in Steam, start SteamVR, connect the intended headset and controllers, and launch the native Windows build. Confirm campaign and Horde are both present before beginning; no secondary platform contains exclusive completion content."
+          }
+        },
+        {
+          "id": "setup-cloud-sync",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Protect the campaign profile",
+          "missable": false,
+          "levels": {
+            "1": "Let Steam finish synchronizing before and after long cleanup sessions.",
+            "2": "Close the game normally and confirm Steam reports that Cloud status is up to date.",
+            "3": "Return to the hub, quit through the game menu, and wait in Steam until Cloud status says up to date. Do not uninstall, switch PCs, or overwrite a conflict prompt while the newer medals, collectibles, or upgrades exist only locally."
+          }
+        },
+        {
+          "id": "setup-comfort-and-reload",
+          "type": "interaction",
+          "safe_type": "Controls",
+          "label": "Calibrate VR handling and comfort",
+          "missable": false,
+          "levels": {
+            "1": "Reliable aiming and reloading prevent avoidable failures during score cleanup.",
+            "2": "Set handedness, height, turning, movement, weapon angle, and a preferred reload style before the campaign.",
+            "3": "Use the tutorial range to align every weapon class, position body pouches within easy reach, and test automatic, manual, or authentic reloading. Keep one control profile for score attempts so changing angles does not disturb muscle memory."
+          }
+        },
+        {
+          "id": "setup-tutorial",
+          "type": "interaction",
+          "safe_type": "Training",
+          "label": "Complete the opening tutorial",
+          "missable": false,
+          "levels": {
+            "1": "The hub and permanent progression tools open after the handling lesson.",
+            "2": "Finish every guided prompt and reach the campaign hub.",
+            "3": "Complete movement, aiming, reloading, equipment, and firing prompts, then continue until the hub loads. Inspect the mission board, workbench, firing range, collectible display, and loadout wall before deploying."
+          }
+        },
+        {
+          "id": "setup-content-ledger",
+          "type": "interaction",
+          "safe_type": "Content Audit",
+          "label": "Audit every permanent completion branch",
+          "missable": false,
+          "levels": {
+            "1": "The hub separates campaign cleanup from weapons, range records, displays, and Horde.",
+            "2": "Track campaign clears, medals, Z-Challenges, collectibles, guns, upgrades, range medals, combat records, skins, characters, and Horde maps.",
+            "3": "Build one checklist from the mission board, collectible displays, weapon wall, workbench, firing-range result cards, character and skin selectors, combat counters, and all four Horde maps. Co-op is unavailable and is not a routine requirement; no New Game Plus or rotating event branch is currently exposed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "farmhouse-training-yard",
+      "name": "Farmhouse Training Yard",
+      "location_cue": "A route through farmhouse range yard wooden platforms.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "farmhouse-training-yard-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the farmhouse training yard",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the farmhouse training yard and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "farmhouse-training-yard-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "farmhouse-training-yard-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "farmhouse-training-yard-doll-christine",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Christine",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the hay shelter stone wall corner and collect Cursed Doll - Christine.",
+            "3": "Reach the hay shelter stone wall corner, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Christine. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "farmhouse-training-yard-paint-01",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 1",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the truck sandbags beyond hay shelter and collect Weapon Skin Can 1.",
+            "3": "Reach the truck sandbags beyond hay shelter, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 1. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "farmhouse-training-yard-paint-02",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 2",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the wooden stairs upper platform and collect Weapon Skin Can 2.",
+            "3": "Reach the wooden stairs upper platform, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 2. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "farmhouse-training-yard-paint-03",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 3",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the fenced corner below watchtower and collect Weapon Skin Can 3.",
+            "3": "Reach the fenced corner below watchtower, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 3. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "farmhouse-training-yard-hand-01",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 1",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the shed roof from raised platform, locate the moving hand and shoot it.",
+            "3": "Reach the shed roof from raised platform, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 1 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "farmhouse-training-yard-weapon-m1911",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the M1911",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the M1911 at the farmhouse training firing stall and handle it once.",
+            "3": "Reach the farmhouse training firing stall, pick up the M1911, and hold it until the arsenal registration appears. Carry it to the next checkpoint before swapping it out; merely seeing the weapon does not fill its rack slot."
+          }
+        },
+        {
+          "id": "farmhouse-training-yard-weapon-m1a1-gov",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the M1A1 Gov.",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the M1A1 Gov. at the farmhouse training firing stall and handle it once.",
+            "3": "Reach the farmhouse training firing stall, pick up the M1A1 Gov., and hold it until the arsenal registration appears. Carry it to the next checkpoint before swapping it out; merely seeing the weapon does not fill its rack slot."
+          }
+        },
+        {
+          "id": "farmhouse-training-yard-weapon-m1895",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the M1895",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the M1895 at the wooden platform beyond firing stall and handle it once.",
+            "3": "Reach the wooden platform beyond firing stall, pick up the M1895, and hold it until the arsenal registration appears. Carry it to the next checkpoint before swapping it out; merely seeing the weapon does not fill its rack slot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "garrison-trenches",
+      "name": "Garrison Trenches",
+      "location_cue": "A route through trenches tents bunker timber rooms.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "garrison-trenches-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the garrison trenches",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the garrison trenches and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "garrison-trenches-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "garrison-trenches-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "garrison-trenches-doll-oliwia",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Oliwia",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the circus tent folding table and collect Cursed Doll - Oliwia.",
+            "3": "Reach the circus tent folding table, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Oliwia. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "garrison-trenches-paint-04",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 4",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the canvas tent rear corner and collect Weapon Skin Can 4.",
+            "3": "Reach the canvas tent rear corner, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 4. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "garrison-trenches-paint-05",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 5",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the red bunker sandbag recess and collect Weapon Skin Can 5.",
+            "3": "Reach the red bunker sandbag recess, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 5. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "garrison-trenches-kit-01",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 1",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the upper timber shelf bunker and collect Upgrade Kit 1.",
+            "3": "Reach the upper timber shelf bunker, inspect the nearest low surface, shelf, or recess, and take Upgrade Kit 1. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "garrison-trenches-hand-02",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 2",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the ceiling breach above lantern, locate the moving hand and shoot it.",
+            "3": "Reach the ceiling breach above lantern, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 2 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "garrison-trenches-weapon-trench-gun",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the Trench Gun",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the Trench Gun at the garrison upper wooden rooftop and handle it once.",
+            "3": "Reach the garrison upper wooden rooftop, pick up the Trench Gun, and hold it until the arsenal registration appears. Carry it to the next checkpoint before swapping it out; merely seeing the weapon does not fill its rack slot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "fortified-farmstead",
+      "name": "Fortified Farmstead",
+      "location_cue": "A route through farm lanes barn cellar bunker.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "fortified-farmstead-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the fortified farmstead",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the fortified farmstead and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "fortified-farmstead-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "fortified-farmstead-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "fortified-farmstead-paint-06",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 6",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the raised platform overlooking farm and collect Weapon Skin Can 6.",
+            "3": "Reach the raised platform overlooking farm, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 6. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "fortified-farmstead-kit-02",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 2",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the blue bathtub stone wall edge and collect Upgrade Kit 2.",
+            "3": "Reach the blue bathtub stone wall edge, inspect the nearest low surface, shelf, or recess, and take Upgrade Kit 2. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "fortified-farmstead-hand-03",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 3",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the barn entrance beside tractor, locate the moving hand and shoot it.",
+            "3": "Reach the barn entrance beside tractor, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 3 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "fortified-farmstead-paint-07",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 7",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the cellar table candles lockers and collect Weapon Skin Can 7.",
+            "3": "Reach the cellar table candles lockers, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 7. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "fortified-farmstead-paint-08",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 8",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the blue door tunnel behind crate and collect Weapon Skin Can 8.",
+            "3": "Reach the blue door tunnel behind crate, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 8. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "fortified-farmstead-doll-ligea",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Ligea",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the sandbag alcove beside lantern and collect Cursed Doll - Ligea.",
+            "3": "Reach the sandbag alcove beside lantern, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Ligea. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "fortified-farmstead-weapon-grease-gun",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the Grease Gun",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the Grease Gun at the farm gate beside red tractor and handle it once.",
+            "3": "Reach the farm gate beside red tractor, pick up the Grease Gun, and hold it until the arsenal registration appears. Carry it to the next checkpoint before swapping it out; merely seeing the weapon does not fill its rack slot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "excavation-outpost",
+      "name": "Excavation Outpost",
+      "location_cue": "A route through snowy outpost warehouse mine tunnels.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "excavation-outpost-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the excavation outpost",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the excavation outpost and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "excavation-outpost-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "excavation-outpost-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "excavation-outpost-kit-03",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 3",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the brick room floor beside window and collect Upgrade Kit 3.",
+            "3": "Reach the brick room floor beside window, inspect the nearest low surface, shelf, or recess, and take Upgrade Kit 3. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "excavation-outpost-hand-04",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 4",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the warehouse roof beam skylight, locate the moving hand and shoot it.",
+            "3": "Reach the warehouse roof beam skylight, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 4 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "excavation-outpost-paint-09",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 9",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the brick room propaganda poster and collect Weapon Skin Can 9.",
+            "3": "Reach the brick room propaganda poster, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 9. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "excavation-outpost-doll-chucky",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Chucky",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the canvas tent beside barrels and collect Cursed Doll - Chucky.",
+            "3": "Reach the canvas tent beside barrels, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Chucky. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "excavation-outpost-paint-10",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 10",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the orange tunnel stacked crates and collect Weapon Skin Can 10.",
+            "3": "Reach the orange tunnel stacked crates, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 10. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "excavation-outpost-weapon-mpist-44",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the M.Pist.44",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the M.Pist.44 at the mine tunnel beside ammo crate and handle it once.",
+            "3": "Reach the mine tunnel beside ammo crate, pick up the M.Pist.44, and hold it until the arsenal registration appears. Carry it to the next checkpoint before swapping it out; merely seeing the weapon does not fill its rack slot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "subterranean-temples",
+      "name": "Subterranean Temples",
+      "location_cue": "A route through lava caverns temples carved chambers.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "subterranean-temples-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the subterranean temples",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the subterranean temples and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "subterranean-temples-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "subterranean-temples-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "subterranean-temples-paint-11",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 11",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the crate beside green lava and collect Weapon Skin Can 11.",
+            "3": "Reach the crate beside green lava, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 11. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "subterranean-temples-paint-12",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 12",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the stone chest beneath stairs and collect Weapon Skin Can 12.",
+            "3": "Reach the stone chest beneath stairs, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 12. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "subterranean-temples-doll-lilith",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Lilith",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the green alcove candle altar and collect Cursed Doll - Lilith.",
+            "3": "Reach the green alcove candle altar, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Lilith. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "subterranean-temples-hand-05",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 5",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the distant red rock across lava, locate the moving hand and shoot it.",
+            "3": "Reach the distant red rock across lava, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 5 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "subterranean-temples-kit-04",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 4",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the orange carved wall niche and collect Upgrade Kit 4.",
+            "3": "Reach the orange carved wall niche, inspect the nearest low surface, shelf, or recess, and take Upgrade Kit 4. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "subterranean-temples-paint-13",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 13",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the blue crate beside pillar and collect Weapon Skin Can 13.",
+            "3": "Reach the blue crate beside pillar, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 13. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "subterranean-temples-weapon-m1903",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the M.1903",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the M.1903 at the temple rock ledge angel chamber and handle it once.",
+            "3": "Reach the temple rock ledge angel chamber, pick up the M.1903, and hold it until the arsenal registration appears. Carry it to the next checkpoint before swapping it out; merely seeing the weapon does not fill its rack slot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "industrial-laboratory",
+      "name": "Industrial Laboratory",
+      "location_cue": "A route through blue laboratory corridors silo platforms.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "industrial-laboratory-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the industrial laboratory",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the industrial laboratory and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "industrial-laboratory-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "industrial-laboratory-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "industrial-laboratory-paint-14",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 14",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the red doorway wall recess and collect Weapon Skin Can 14.",
+            "3": "Reach the red doorway wall recess, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 14. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "industrial-laboratory-kit-05",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 5",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the occult candle wall puzzle and collect Upgrade Kit 5.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "industrial-laboratory-doll-shelley",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Shelley",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the low table corridor lantern and collect Cursed Doll - Shelley.",
+            "3": "Reach the low table corridor lantern, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Shelley. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "industrial-laboratory-paint-15",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 15",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the candle niche beside trolley and collect Weapon Skin Can 15.",
+            "3": "Reach the candle niche beside trolley, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 15. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "industrial-laboratory-hand-06",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 6",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the high reactor silo framework, locate the moving hand and shoot it.",
+            "3": "Reach the high reactor silo framework, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 6 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "industrial-laboratory-paint-16",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 16",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the green wall box beside doorway and collect Weapon Skin Can 16.",
+            "3": "Reach the green wall box beside doorway, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 16. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "industrial-laboratory-weapon-mk-vi",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the MK VI",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the MK VI at the laboratory crate floor lamp and handle it once.",
+            "3": "Reach the laboratory crate floor lamp, pick up the MK VI, and hold it until the arsenal registration appears. Carry it to the next checkpoint before swapping it out; merely seeing the weapon does not fill its rack slot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "reactor-facility",
+      "name": "Reactor Facility",
+      "location_cue": "A route through red catwalks machinery research rooms.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "reactor-facility-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the reactor facility",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the reactor facility and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "reactor-facility-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "reactor-facility-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "reactor-facility-paint-17",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 17",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the lantern crate red pipe catwalk and collect Weapon Skin Can 17.",
+            "3": "Reach the lantern crate red pipe catwalk, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 17. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "reactor-facility-paint-18",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 18",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the small bedroom cot corner and collect Weapon Skin Can 18.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "reactor-facility-doll-megan",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Megan",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the far lab table through window and collect Cursed Doll - Megan.",
+            "3": "Reach the far lab table through window, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Megan. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "reactor-facility-kit-06",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 6",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the work table beside lantern and collect Upgrade Kit 6.",
+            "3": "Reach the work table beside lantern, inspect the nearest low surface, shelf, or recess, and take Upgrade Kit 6. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "reactor-facility-hand-07",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 7",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the upper industrial balcony railing, locate the moving hand and shoot it.",
+            "3": "Reach the upper industrial balcony railing, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 7 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "reactor-facility-weapon-m1-garand",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the M1 Garand",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the M1 Garand at the reactor red catwalk route and handle it once.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mountain-ruins",
+      "name": "Mountain Ruins",
+      "location_cue": "A route through mountain road cabins ruined stonework.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "mountain-ruins-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the mountain ruins",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the mountain ruins and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "mountain-ruins-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "mountain-ruins-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "mountain-ruins-paint-19",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 19",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the striped roadside sentry box and collect Weapon Skin Can 19.",
+            "3": "Reach the striped roadside sentry box, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 19. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "mountain-ruins-paint-20",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 20",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the cabin box beneath window and collect Weapon Skin Can 20.",
+            "3": "Reach the cabin box beneath window, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 20. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "mountain-ruins-hand-08",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 8",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the boarded opening above lantern, locate the moving hand and shoot it.",
+            "3": "Reach the boarded opening above lantern, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 8 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "mountain-ruins-doll-barbara",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Barbara",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the ruined room beside doorway and collect Cursed Doll - Barbara.",
+            "3": "Reach the ruined room beside doorway, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Barbara. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "mountain-ruins-paint-21",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 21",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the cabin table graffiti wall and collect Weapon Skin Can 21.",
+            "3": "Reach the cabin table graffiti wall, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 21. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "mountain-ruins-kit-07",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 7",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the church courtyard stone pedestal and collect Upgrade Kit 7.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "mountain-ruins-weapon-gewehr-43",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the Gewehr 43",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the Gewehr 43 at the mountain cabin candle fireplace and handle it once.",
+            "3": "Reach the mountain cabin candle fireplace, pick up the Gewehr 43, and hold it until the arsenal registration appears. Carry it to the next checkpoint before swapping it out; merely seeing the weapon does not fill its rack slot."
+          }
+        },
+        {
+          "id": "mountain-ruins-weapon-p08",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the P08",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the P08 at the mountain village target puzzle and handle it once.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "forest-catacombs",
+      "name": "Forest Catacombs",
+      "location_cue": "A route through forest cabins graveyard crypt passages.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "forest-catacombs-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the forest catacombs",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the forest catacombs and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "forest-catacombs-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "forest-catacombs-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "forest-catacombs-paint-22",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 22",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the black chest beside lantern and collect Weapon Skin Can 22.",
+            "3": "Reach the black chest beside lantern, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 22. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "forest-catacombs-kit-08",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 8",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the stone trough beside doorway and collect Upgrade Kit 8.",
+            "3": "Reach the stone trough beside doorway, inspect the nearest low surface, shelf, or recess, and take Upgrade Kit 8. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "forest-catacombs-paint-23",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 23",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the graveyard arch shelf and collect Weapon Skin Can 23.",
+            "3": "Reach the graveyard arch shelf, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 23. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "forest-catacombs-hand-09",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 9",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the high ruined wall candles, locate the moving hand and shoot it.",
+            "3": "Reach the high ruined wall candles, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 9 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "forest-catacombs-doll-anna",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Anna",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the inside cabin doorway and collect Cursed Doll - Anna.",
+            "3": "Reach the inside cabin doorway, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Anna. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "forest-catacombs-paint-24",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 24",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the upper walkway above stone arch and collect Weapon Skin Can 24.",
+            "3": "Reach the upper walkway above stone arch, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 24. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "forest-catacombs-weapon-m30-drilling",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the M30 Luftwaffe Drilling",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the M30 Luftwaffe Drilling at the graveyard green lit building and handle it once.",
+            "3": "Reach the graveyard green lit building, pick up the M30 Luftwaffe Drilling, and hold it until the arsenal registration appears. Carry it to the next checkpoint before swapping it out; merely seeing the weapon does not fill its rack slot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "prison-labyrinth",
+      "name": "Prison Labyrinth",
+      "location_cue": "A route through stone prison green halls labyrinth.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "prison-labyrinth-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the prison labyrinth",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the prison labyrinth and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "prison-labyrinth-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "prison-labyrinth-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "prison-labyrinth-hand-10",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 10",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the barrel cellar distant opening, locate the moving hand and shoot it.",
+            "3": "Reach the barrel cellar distant opening, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 10 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "prison-labyrinth-paint-25",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 25",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the wood cart green arch and collect Weapon Skin Can 25.",
+            "3": "Reach the wood cart green arch, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 25. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "prison-labyrinth-doll-mana",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Mana",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the glowing skull painting and collect Cursed Doll - Mana.",
+            "3": "Reach the glowing skull painting, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Mana. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "prison-labyrinth-kit-09",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 9",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the stone room stacked firewood and collect Upgrade Kit 9.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "prison-labyrinth-hand-11",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 11",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the high beam candle chamber, locate the moving hand and shoot it.",
+            "3": "Reach the high beam candle chamber, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 11 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "prison-labyrinth-paint-26",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 26",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the behind prison bed frame and collect Weapon Skin Can 26.",
+            "3": "Reach the behind prison bed frame, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 26. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "prison-labyrinth-doll-carfax",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Carfax",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the office beneath framed portrait and collect Cursed Doll - Carfax.",
+            "3": "Reach the office beneath framed portrait, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Carfax. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "prison-labyrinth-weapon-lee-enfield",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the Lee Enfield No.4",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the Lee Enfield No.4 at the prison skull altar puzzle and handle it once.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "floating-ruins",
+      "name": "Floating Ruins",
+      "location_cue": "A route through floating rocks lava temples airlocks.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "floating-ruins-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the floating ruins",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the floating ruins and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "floating-ruins-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "floating-ruins-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "floating-ruins-paint-27",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 27",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the lava ledge beside brazier and collect Weapon Skin Can 27.",
+            "3": "Reach the lava ledge beside brazier, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 27. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "floating-ruins-paint-28",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 28",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the narrow blue rock crevice and collect Weapon Skin Can 28.",
+            "3": "Reach the narrow blue rock crevice, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 28. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "floating-ruins-kit-10",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 10",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the temple platform candle marker and collect Upgrade Kit 10.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "floating-ruins-hand-12",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 12",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the red floor below clock door, locate the moving hand and shoot it.",
+            "3": "Reach the red floor below clock door, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 12 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "floating-ruins-doll-nancy",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Nancy",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the clock switch side room and collect Cursed Doll - Nancy.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "floating-ruins-weapon-c96",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the C96",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the C96 at the floating ruins clock puzzle and handle it once.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "snowbound-warehouse",
+      "name": "Snowbound Warehouse",
+      "location_cue": "A route through snow quarry warehouse crane shelters.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "snowbound-warehouse-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the snowbound warehouse",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the snowbound warehouse and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "snowbound-warehouse-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "snowbound-warehouse-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "snowbound-warehouse-doll-lucretia",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Lucretia",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the black crate red building and collect Cursed Doll - Lucretia.",
+            "3": "Reach the black crate red building, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Lucretia. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "snowbound-warehouse-paint-29",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 29",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the canvas shelter crate barrels and collect Weapon Skin Can 29.",
+            "3": "Reach the canvas shelter crate barrels, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 29. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "snowbound-warehouse-hand-13",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 13",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the warehouse ceiling girder, locate the moving hand and shoot it.",
+            "3": "Reach the warehouse ceiling girder, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 13 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "snowbound-warehouse-paint-30",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 30",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the upper crane cab window and collect Weapon Skin Can 30.",
+            "3": "Reach the upper crane cab window, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 30. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "snowbound-warehouse-kit-11",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 11",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the sandbags beside rocky shelter and collect Upgrade Kit 11.",
+            "3": "Reach the sandbags beside rocky shelter, inspect the nearest low surface, shelf, or recess, and take Upgrade Kit 11. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "snowbound-warehouse-weapon-ppsh-41",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the PPSH-41",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the PPSH-41 at the warehouse crate lower floor and handle it once.",
+            "3": "Reach the warehouse crate lower floor, pick up the PPSH-41, and hold it until the arsenal registration appears. Carry it to the next checkpoint before swapping it out; merely seeing the weapon does not fill its rack slot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "battlefield-trenches",
+      "name": "Battlefield Trenches",
+      "location_cue": "A route through trenches ruined buildings supply positions.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "battlefield-trenches-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the battlefield trenches",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the battlefield trenches and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "battlefield-trenches-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "battlefield-trenches-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "battlefield-trenches-paint-31",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 31",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the dark ruin low wall and collect Weapon Skin Can 31.",
+            "3": "Reach the dark ruin low wall, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 31. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "battlefield-trenches-paint-32",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 32",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the corridor trolley damaged plaster and collect Weapon Skin Can 32.",
+            "3": "Reach the corridor trolley damaged plaster, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 32. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "battlefield-trenches-kit-12",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 12",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the trench low wall supply area and collect Upgrade Kit 12.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "battlefield-trenches-doll-amelia",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Amelia",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the red truck bunker entrance and collect Cursed Doll - Amelia.",
+            "3": "Reach the red truck bunker entrance, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Amelia. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "battlefield-trenches-hand-14",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 14",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the upper barricade above steps, locate the moving hand and shoot it.",
+            "3": "Reach the upper barricade above steps, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 14 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "battlefield-trenches-weapon-auto-burglar",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the Auto Burglar",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the Auto Burglar at the trench cave shrine table and handle it once.",
+            "3": "Reach the trench cave shrine table, pick up the Auto Burglar, and hold it until the arsenal registration appears. Carry it to the next checkpoint before swapping it out; merely seeing the weapon does not fill its rack slot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "castle-interior",
+      "name": "Castle Interior",
+      "location_cue": "A route through castle library cellars courtyard corridors.",
+      "note": "SAVE-BACKUP: confirm Steam Cloud is current before cleanup. POINT OF NO RETURN: the result trigger ends this visit; collect nearby items first. The area remains replayable from the hub.",
+      "save_backup": {
+        "title": "Confirm the profile has synchronized",
+        "why": "Collectibles, upgrades, medals, and challenge marks all modify the same campaign profile.",
+        "when": "Before replaying the area or beginning its final marked encounter."
+      },
+      "point_of_no_return": {
+        "title": "The result trigger closes this visit",
+        "warning": "Finish local pickups before the final marker; the hub can launch the area again afterward."
+      },
+      "items": [
+        {
+          "id": "castle-interior-clear",
+          "type": "interaction",
+          "safe_type": "Area Completion",
+          "label": "Clear the castle interior",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but finish nearby searches before entering the next sealed route.",
+            "2": "Complete every required encounter in the castle interior and reach its result card.",
+            "3": "Complete each marked objective, survive the final encounter in this physical area, and remain until the result card records the clear. Reopen the area from the hub if its completion mark is still empty."
+          }
+        },
+        {
+          "id": "castle-interior-gold-medal",
+          "type": "interaction",
+          "safe_type": "Score Medal",
+          "label": "Earn the area's gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Accurate headshots and an unbroken multiplier matter more than rushing.",
+            "2": "Replay this area until its result card awards the gold score medal.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "castle-interior-z-challenge",
+          "type": "interaction",
+          "safe_type": "Area Challenge",
+          "label": "Complete the area's Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read the optional condition before deploying and build the loadout around it.",
+            "2": "Open this area's mission panel, note its Z-Challenge, and satisfy the condition in one recorded run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "castle-interior-paint-33",
+          "type": "collectible",
+          "safe_type": "Weapon Skin",
+          "label": "Weapon Skin Can 33",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the library shelf beside books and collect Weapon Skin Can 33.",
+            "3": "Reach the library shelf beside books, inspect the nearest low surface, shelf, or recess, and take Weapon Skin Can 33. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "castle-interior-doll-carmilla",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Carmilla",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the cell bench behind bars and collect Cursed Doll - Carmilla.",
+            "3": "Reach the cell bench behind bars, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Carmilla. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "castle-interior-hand-15",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 15",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the low arch green cellar, locate the moving hand and shoot it.",
+            "3": "Reach the low arch green cellar, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 15 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "castle-interior-doll-morticia",
+          "type": "collectible",
+          "safe_type": "Cursed Doll",
+          "label": "Cursed Doll - Morticia",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the courtyard ledge near barrels and collect Cursed Doll - Morticia.",
+            "3": "Reach the courtyard ledge near barrels, inspect the nearest low surface, shelf, or recess, and take Cursed Doll - Morticia. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "castle-interior-kit-13",
+          "type": "collectible",
+          "safe_type": "Upgrade Kit",
+          "label": "Upgrade Kit 13",
+          "missable": false,
+          "levels": {
+            "1": "Check optional corners and small surfaces before following the next objective marker.",
+            "2": "Search the barrel cellar candle table and collect Upgrade Kit 13.",
+            "3": "Reach the barrel cellar candle table, inspect the nearest low surface, shelf, or recess, and take Upgrade Kit 13. Wait for its pickup notice, then reach a checkpoint before returning to the hub or restarting."
+          }
+        },
+        {
+          "id": "castle-interior-hand-16",
+          "type": "collectible",
+          "safe_type": "Zombie Hand",
+          "label": "Zombie Hand 16",
+          "missable": false,
+          "levels": {
+            "1": "Pause at broad sightlines and inspect surfaces that are easy to pass without aiming.",
+            "2": "At the long torch corridor floor, locate the moving hand and shoot it.",
+            "3": "Reach the long torch corridor floor, stop before advancing, and scan the indicated surface through a steady sight. Shoot Zombie Hand 16 once, confirm the hand counter changes, and cross the next checkpoint before leaving the level."
+          }
+        },
+        {
+          "id": "castle-interior-weapon-m1-carbine",
+          "type": "collectible",
+          "safe_type": "Weapon",
+          "label": "Unlock the M1 Carbine",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon racks, lit surfaces, and optional side rooms before leaving the area.",
+            "2": "Find the M1 Carbine at the castle three skull altar puzzle and handle it once.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "campaign-mastery",
+      "name": "Campaign Mastery",
+      "location_cue": "The hub mission board, difficulty selector, and completed-area result cards.",
+      "note": "Every area can be replayed. Difficulty cleanup is cumulative across the complete campaign profile.",
+      "items": [
+        {
+          "id": "campaign-standard-clear",
+          "type": "interaction",
+          "safe_type": "Difficulty",
+          "label": "Complete the campaign on Standard",
+          "missable": false,
+          "levels": {
+            "1": "A first clear establishes the route and leaves a forgiving collectible cleanup pass.",
+            "2": "Finish every campaign area with Standard selected.",
+            "3": "Select Standard before the first uncleared area, finish the full route, and verify that every area card is marked complete. If the global Standard record does not register, replay any card completed on a lower setting and remain through its result screen."
+          }
+        },
+        {
+          "id": "campaign-hard-clear",
+          "type": "interaction",
+          "safe_type": "Difficulty",
+          "label": "Complete the campaign on Hard",
+          "missable": false,
+          "levels": {
+            "1": "Upgrade a complete loadout and learn each arena before starting the harder pass.",
+            "2": "Finish every campaign area with Hard selected.",
+            "3": "Fully upgrade one rifle, one close-range weapon, and one sidearm first. Start each area on Hard, use checkpoints without lowering the setting, and remain through every result card. After the last clear, inspect the global difficulty record before changing settings."
+          }
+        },
+        {
+          "id": "campaign-all-collectibles",
+          "type": "interaction",
+          "safe_type": "Collectible Set",
+          "label": "Complete every campaign collectible display",
+          "missable": false,
+          "levels": {
+            "1": "Empty silhouettes in the hub identify the collectible type that still needs attention.",
+            "2": "Collect all 16 dolls, 16 zombie hands, 33 paint cans, and 13 hidden upgrade kits.",
+            "3": "Use the individual area entries to reach 16/16 cursed dolls, 16/16 zombie hands, 33/33 hidden paint cans, and 13/13 hidden upgrade kits. Let each pickup reach a checkpoint, then inspect every hub display and mission ledger for an empty slot."
+          }
+        },
+        {
+          "id": "campaign-all-gold-medals",
+          "type": "interaction",
+          "safe_type": "Score Set",
+          "label": "Earn every campaign gold score medal",
+          "missable": false,
+          "levels": {
+            "1": "Replay one area at a time with a stable multiplier-focused loadout.",
+            "2": "Fill the gold-medal slot on every campaign area card.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "campaign-all-z-challenges",
+          "type": "interaction",
+          "safe_type": "Challenge Set",
+          "label": "Complete every Z-Challenge",
+          "missable": false,
+          "levels": {
+            "1": "Read each condition before deploying; many require a deliberately restricted approach.",
+            "2": "Fill the Z-Challenge slot on every campaign area card.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "arsenal-and-firing-range",
+      "name": "Arsenal and Firing Range",
+      "location_cue": "The hub weapon wall, workbench, skin selector, loadout table, and timed firing lane.",
+      "note": "Weapon discoveries are listed in their physical campaign areas. This area tracks permanent upgrades, cosmetics, and all seventeen gold range records.",
+      "items": [
+        {
+          "id": "arsenal-upgrade-m1911",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the M1911",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the M1911.",
+            "3": "Select the M1911 at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-m1911",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the M1911",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the M1911 in the hub firing range and finish with a gold result.",
+            "3": "Equip the M1911, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-m1a1-gov",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the M1A1 Gov.",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the M1A1 Gov..",
+            "3": "Select the M1A1 Gov. at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-m1a1-gov",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the M1A1 Gov.",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the M1A1 Gov. in the hub firing range and finish with a gold result.",
+            "3": "Equip the M1A1 Gov., press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-m1895",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the M1895",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the M1895.",
+            "3": "Select the M1895 at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-m1895",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the M1895",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the M1895 in the hub firing range and finish with a gold result.",
+            "3": "Equip the M1895, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-trench-gun",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the Trench Gun",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the Trench Gun.",
+            "3": "Select the Trench Gun at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-trench-gun",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the Trench Gun",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the Trench Gun in the hub firing range and finish with a gold result.",
+            "3": "Equip the Trench Gun, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-grease-gun",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the Grease Gun",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the Grease Gun.",
+            "3": "Select the Grease Gun at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-grease-gun",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the Grease Gun",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the Grease Gun in the hub firing range and finish with a gold result.",
+            "3": "Equip the Grease Gun, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-mpist-44",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the M.Pist.44",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the M.Pist.44.",
+            "3": "Select the M.Pist.44 at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-mpist-44",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the M.Pist.44",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the M.Pist.44 in the hub firing range and finish with a gold result.",
+            "3": "Equip the M.Pist.44, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-m1903",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the M.1903",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the M.1903.",
+            "3": "Select the M.1903 at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-m1903",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the M.1903",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the M.1903 in the hub firing range and finish with a gold result.",
+            "3": "Equip the M.1903, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-mk-vi",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the MK VI",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the MK VI.",
+            "3": "Select the MK VI at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-mk-vi",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the MK VI",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the MK VI in the hub firing range and finish with a gold result.",
+            "3": "Equip the MK VI, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-m1-garand",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the M1 Garand",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the M1 Garand.",
+            "3": "Select the M1 Garand at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-m1-garand",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the M1 Garand",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the M1 Garand in the hub firing range and finish with a gold result.",
+            "3": "Equip the M1 Garand, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-gewehr-43",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the Gewehr 43",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the Gewehr 43.",
+            "3": "Select the Gewehr 43 at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-gewehr-43",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the Gewehr 43",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the Gewehr 43 in the hub firing range and finish with a gold result.",
+            "3": "Equip the Gewehr 43, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-p08",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the P08",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the P08.",
+            "3": "Select the P08 at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-p08",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the P08",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the P08 in the hub firing range and finish with a gold result.",
+            "3": "Equip the P08, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-m30-drilling",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the M30 Luftwaffe Drilling",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the M30 Luftwaffe Drilling.",
+            "3": "Select the M30 Luftwaffe Drilling at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-m30-drilling",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the M30 Luftwaffe Drilling",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the M30 Luftwaffe Drilling in the hub firing range and finish with a gold result.",
+            "3": "Equip the M30 Luftwaffe Drilling, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-lee-enfield",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the Lee Enfield No.4",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the Lee Enfield No.4.",
+            "3": "Select the Lee Enfield No.4 at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-lee-enfield",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the Lee Enfield No.4",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the Lee Enfield No.4 in the hub firing range and finish with a gold result.",
+            "3": "Equip the Lee Enfield No.4, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-c96",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the C96",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the C96.",
+            "3": "Select the C96 at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-c96",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the C96",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the C96 in the hub firing range and finish with a gold result.",
+            "3": "Equip the C96, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-ppsh-41",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the PPSH-41",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the PPSH-41.",
+            "3": "Select the PPSH-41 at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-ppsh-41",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the PPSH-41",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the PPSH-41 in the hub firing range and finish with a gold result.",
+            "3": "Equip the PPSH-41, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-auto-burglar",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the Auto Burglar",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the Auto Burglar.",
+            "3": "Select the Auto Burglar at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-auto-burglar",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the Auto Burglar",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the Auto Burglar in the hub firing range and finish with a gold result.",
+            "3": "Equip the Auto Burglar, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-upgrade-m1-carbine",
+          "type": "interaction",
+          "safe_type": "Weapon Upgrade",
+          "label": "Fully upgrade the M1 Carbine",
+          "missable": false,
+          "levels": {
+            "1": "Spend kits only after checking which weapon still has an empty workbench node.",
+            "2": "At the hub workbench, purchase every available upgrade node for the M1 Carbine.",
+            "3": "Select the M1 Carbine at the workbench and spend upgrade kits until every range, handling, damage, sight, ammunition, or capacity node shown for that weapon is filled. If kits run short, finish unclaimed collectibles, medals, challenges, and XP levels before returning."
+          }
+        },
+        {
+          "id": "range-gold-m1-carbine",
+          "type": "interaction",
+          "safe_type": "Range Medal",
+          "label": "Earn firing-range gold with the M1 Carbine",
+          "missable": false,
+          "levels": {
+            "1": "Learn the target order first, then trade wild speed for clean first shots.",
+            "2": "Choose the M1 Carbine in the hub firing range and finish with a gold result.",
+            "3": "Equip the M1 Carbine, press the range start control, and hit every presented target as soon as it becomes valid. Reload during gaps rather than while a target is exposed, retry after any miss, and leave only when the result board labels the run Gold."
+          }
+        },
+        {
+          "id": "arsenal-all-skins",
+          "type": "interaction",
+          "safe_type": "Cosmetic Set",
+          "label": "Unlock and equip every permanent weapon skin",
+          "missable": false,
+          "levels": {
+            "1": "Paint cans, challenges, updates, and Horde each add choices to the skin selector.",
+            "2": "Fill the available Alternate, Camo, Russian Doll, Golden, Spitfire, Black Ice, Toxic Hazard, Strange Brigade, Atomfall, and Zombie Army skin entries.",
+            "3": "Collect all 33 campaign paint cans and finish the challenge routes that feed the skin selector. Update to the current build for the two Horde skins and the three March 2026 grant skins, then inspect each weapon and equip every newly available skin at least once."
+          }
+        },
+        {
+          "id": "arsenal-entire-loadout",
+          "type": "interaction",
+          "safe_type": "Loadout",
+          "label": "Equip a fully upgraded loadout",
+          "missable": false,
+          "levels": {
+            "1": "Choose three weapons whose completed workbench pages cover every combat distance.",
+            "2": "Equip a fully upgraded rifle, close-range weapon, and sidearm together.",
+            "3": "At the workbench, confirm that every node is filled on one weapon for each body slot. Place those three weapons into the active loadout, leave the workbench, and reopen it once to verify that both the loadout and upgrades persisted."
+          }
+        }
+      ]
+    },
+    {
+      "id": "combat-records",
+      "name": "Combat Records",
+      "location_cue": "Repeatable campaign encounters, score-cleanup routes, the firing range, and solo Horde arenas.",
+      "note": "These are mechanical counters and one-run feats; none requires online co-op.",
+      "items": [
+        {
+          "id": "record-sever-limbs-50",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Sever 50 limbs",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: sever 50 limbs.",
+            "3": "Aim below shoulders and hips with powerful close-range weapons until the limb counter reaches 50."
+          }
+        },
+        {
+          "id": "record-melee-25",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Melee 25 zombies",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: melee 25 zombies.",
+            "3": "Use weapon-butt strikes or environmental melee objects for the final hit on 25 ordinary zombies."
+          }
+        },
+        {
+          "id": "record-explosions-50",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Explosion kills 50",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: explosion kills 50.",
+            "3": "Use grenades, mines, dynamite, and explosive scenery until 50 zombies die from blast damage."
+          }
+        },
+        {
+          "id": "record-decapitations-100",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Decapitate 100 zombies",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: decapitate 100 zombies.",
+            "3": "Keep shots at head height and confirm 100 zombies lose their heads before dying."
+          }
+        },
+        {
+          "id": "record-suiciders-10",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Eliminate 10 Suiciders",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: eliminate 10 suiciders.",
+            "3": "Shoot the explosive carried by ten charging Suiciders before they reach you."
+          }
+        },
+        {
+          "id": "record-total-666",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Eliminate 666 zombies",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: eliminate 666 zombies.",
+            "3": "Continue campaign, score, or Horde cleanup until the persistent elimination counter passes 666."
+          }
+        },
+        {
+          "id": "record-suicider-chain-4",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "One Suicider blast kills four",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: one suicider blast kills four.",
+            "3": "Gather four ordinary zombies around a living Suicider, then detonate its carried explosive without another blast stealing a kill."
+          }
+        },
+        {
+          "id": "record-jumping-snipers-2",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Shoot two airborne snipers",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: shoot two airborne snipers.",
+            "3": "Watch a sniper's relocation arc and land the killing shot while it is airborne; repeat once."
+          }
+        },
+        {
+          "id": "record-total-4190",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Eliminate 4190 zombies",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: eliminate 4190 zombies.",
+            "3": "Use remaining medal, upgrade, range, and Horde cleanup until the persistent elimination total reaches 4,190."
+          }
+        },
+        {
+          "id": "record-combo-50",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Reach 50 elimination combo",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: reach 50 elimination combo.",
+            "3": "Maintain rapid eliminations without letting the combo timer expire until the display reaches 50."
+          }
+        },
+        {
+          "id": "record-combo-100",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Reach 100 elimination combo",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: reach 100 elimination combo.",
+            "3": "Use a dense arena or Horde run, preserve spare ammunition, and keep eliminating targets until the combo reaches 100."
+          }
+        },
+        {
+          "id": "record-crows-25",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Shoot 25 crows",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: shoot 25 crows.",
+            "3": "Inspect rooftops, trees, posts, and railings between encounters and shoot 25 crows across repeatable visits."
+          }
+        },
+        {
+          "id": "record-rats-25",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Shoot 25 rats",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: shoot 25 rats.",
+            "3": "Check floors, corners, and wall edges in interiors and tunnels, shooting 25 rats across replays."
+          }
+        },
+        {
+          "id": "record-sidearm-only",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Clear level sidearm only",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: clear level sidearm only.",
+            "3": "Start an easy replay with a dependable pistol and finish without firing, throwing, or striking with another weapon class."
+          }
+        },
+        {
+          "id": "record-crow-grenade-six",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "One grenade kills six crows",
+          "missable": false,
+          "levels": {
+            "1": "Use campaign or Horde cleanup to build this counter without a separate grind when possible.",
+            "2": "Complete the persistent combat condition: one grenade kills six crows.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "horde-mode",
+      "name": "Horde Mode",
+      "location_cue": "The hub Horde panel leading to four self-contained wave arenas with weapon and ammunition stations.",
+      "note": "TIME-SERVICE NOTICE: the four maps remain playable solo. Online co-op closed permanently on 30 March 2026 and is excluded from normal completion.",
+      "items": [
+        {
+          "id": "horde-apocalyptic-raid",
+          "type": "interaction",
+          "safe_type": "Horde Map",
+          "label": "Record a solo run on Apocalyptic Raid",
+          "missable": false,
+          "levels": {
+            "1": "Learn the supply points and reserve explosives for the denser later waves.",
+            "2": "Launch Apocalyptic Raid from Horde in solo play and continue through increasing waves.",
+            "3": "Select Apocalyptic Raid, choose solo play, collect the opening weapons and ammunition, and establish a fallback route before starting. Continue through successively harder waves until the run ends, then remain for the final score card so this map has a recorded result."
+          }
+        },
+        {
+          "id": "horde-sector-z",
+          "type": "interaction",
+          "safe_type": "Horde Map",
+          "label": "Record a solo run on Sector Z",
+          "missable": false,
+          "levels": {
+            "1": "Learn the supply points and reserve explosives for the denser later waves.",
+            "2": "Launch Sector Z from Horde in solo play and continue through increasing waves.",
+            "3": "Select Sector Z, choose solo play, collect the opening weapons and ammunition, and establish a fallback route before starting. Continue through successively harder waves until the run ends, then remain for the final score card so this map has a recorded result."
+          }
+        },
+        {
+          "id": "horde-last-stop",
+          "type": "interaction",
+          "safe_type": "Horde Map",
+          "label": "Record a solo run on Last Stop",
+          "missable": false,
+          "levels": {
+            "1": "Learn the supply points and reserve explosives for the denser later waves.",
+            "2": "Launch Last Stop from Horde in solo play and continue through increasing waves.",
+            "3": "Select Last Stop, choose solo play, collect the opening weapons and ammunition, and establish a fallback route before starting. Continue through successively harder waves until the run ends, then remain for the final score card so this map has a recorded result."
+          }
+        },
+        {
+          "id": "horde-hallowed-ground",
+          "type": "interaction",
+          "safe_type": "Horde Map",
+          "label": "Record a solo run on Hallowed Ground",
+          "missable": false,
+          "levels": {
+            "1": "Learn the supply points and reserve explosives for the denser later waves.",
+            "2": "Launch Hallowed Ground from Horde in solo play and continue through increasing waves.",
+            "3": "Select Hallowed Ground, choose solo play, collect the opening weapons and ammunition, and establish a fallback route before starting. Continue through successively harder waves until the run ends, then remain for the final score card so this map has a recorded result."
+          }
+        },
+        {
+          "id": "horde-character-roster",
+          "type": "interaction",
+          "safe_type": "Character Set",
+          "label": "Use every permanent Deadhunter",
+          "missable": false,
+          "levels": {
+            "1": "The current character selector contains the launch roster plus two Horde additions.",
+            "2": "Deploy once as Karl, Shola, Jun, Hector, Boris, and Marie.",
+            "3": "At the character selector, choose each of the six permanent Deadhunters in turn and begin a campaign replay or solo Horde run. Reach active gameplay before returning to the hub so every roster choice has been used."
+          }
+        },
+        {
+          "id": "horde-update-skins",
+          "type": "interaction",
+          "safe_type": "Cosmetic Set",
+          "label": "Equip both Horde weapon skins",
+          "missable": false,
+          "levels": {
+            "1": "The free Horde update added two themed finishes to the permanent selector.",
+            "2": "Equip Black Ice and Toxic Hazard on any compatible weapons.",
+            "3": "Update the game, open the hub skin selector, locate Black Ice and Toxic Hazard, and equip each on a compatible weapon. Leave and reopen the loadout screen to confirm both finishes remain available."
+          }
+        },
+        {
+          "id": "horde-coop-closure",
+          "type": "interaction",
+          "safe_type": "Availability Notice",
+          "label": "Exclude closed online co-op from the achievable checklist",
+          "missable": false,
+          "levels": {
+            "1": "The single-player campaign and solo Horde remain available in the current build.",
+            "2": "Do not wait for a partner lobby; the co-op servers closed on 30 March 2026.",
+            "3": "Use solo campaign and solo Horde for every remaining requirement. Matchmaking, hosting, partner sharing, and co-op score comparisons are no longer achievable through the retired service, so they are documented here but are not presented as incomplete save progress."
+          }
+        }
+      ]
+    }
+  ]
+}

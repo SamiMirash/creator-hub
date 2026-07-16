@@ -1,0 +1,3673 @@
+{
+  "id": "resident-evil-3-remake",
+  "game": "Resident Evil 3 (2020) — Current Windows PC Route",
+  "target": "Spoiler-free total completion of every field entry, puzzle, Record, difficulty, rank, native Shop reward, gallery unlock, costume, and harmless environmental secret",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-15",
+  "areas": [
+    {
+      "id": "route-setup",
+      "name": "PC Route Setup",
+      "location_cue": "The Steam DLC manager and the game's title screen before starting a new save.",
+      "note": "The selected archive route is the current Windows release with no secondary platform branch.",
+      "save_backup": {
+        "title": "Preserve a clean starting profile",
+        "why": "A paid shortcut can mark native rewards complete without their required play.",
+        "detail": "Keep the clean profile until the completion audit passes."
+      },
+      "items": [
+        {
+          "id": "setup-current-windows",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Current Windows Release",
+          "missable": false,
+          "levels": {
+            "1": "Begin with the archive's selected native version.",
+            "2": "Install Resident Evil 3 on Windows and finish updating it.",
+            "3": "Use the current Windows PC build. Keep the 1999 original and the bundled online game under their own archive entries; neither replaces this remake route."
+          }
+        },
+        {
+          "id": "setup-native-rewards",
+          "type": "choice",
+          "safe_type": "Setup",
+          "label": "Leave the Reward Shortcut Disabled",
+          "missable": false,
+          "levels": {
+            "1": "Use the game's own completion path for bonus equipment.",
+            "2": "Disable the All In-game Rewards Unlock add-on before creating the completion profile.",
+            "3": "In the Steam DLC manager, clear the instant-rewards add-on. Unlock the Shop, higher difficulties, models, and concept art through play so every native condition is verified."
+          }
+        }
+      ]
+    },
+    {
+      "id": "opening",
+      "name": "Opening Interior",
+      "location_cue": "The furnished apartment at the start, before the route reaches the street.",
+      "note": "Inspect every lit surface before using the final exit.",
+      "save_backup": {
+        "title": "Back up your save before leaving",
+        "why": "This route contains entries that become unreachable after its next one-way transition.",
+        "detail": "Keep the backup until every visible checklist entry in this section is checked off."
+      },
+      "point_of_no_return": {
+        "title": "One-way route ahead",
+        "why": "Do not take the next major exit until this area's checklist is complete.",
+        "detail": "The warning refers only to the physical departure, without describing what follows."
+      },
+      "items": [
+        {
+          "id": "loc-file-01",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Jill's Report",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Opening Interior, inspect the photograph wall.",
+            "3": "Reach the photograph wall after you restore room lights. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "apartment",
+          "fact_number": 1
+        },
+        {
+          "id": "loc-file-02",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Investigation Notes",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Opening Interior, inspect the photograph wall.",
+            "3": "Reach the photograph wall after you restore room lights. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "apartment",
+          "fact_number": 2
+        },
+        {
+          "id": "loc-file-03",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Unsealed Envelope",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Opening Interior, inspect the shelf beside photographs.",
+            "3": "Reach the shelf beside photographs after you restore room lights. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "apartment",
+          "fact_number": 3
+        },
+        {
+          "id": "loc-file-04",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Message from a Colleague",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Opening Interior, inspect the kitchen pizza counter.",
+            "3": "Reach the kitchen pizza counter after you restore room lights. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "apartment",
+          "fact_number": 4
+        },
+        {
+          "id": "loc-weapon-01",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Survival Knife",
+          "missable": false,
+          "levels": {
+            "1": "Search side rooms before relying only on your starting arsenal.",
+            "2": "In Opening Interior, inspect opening inventory.",
+            "3": "Reach opening inventory after you continue opening route. Take the weapon and place it in the item box only after the arsenal register has updated."
+          },
+          "fact_area": "apartment",
+          "fact_number": 1
+        },
+        {
+          "id": "loc-weapon-02",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "G19 Handgun",
+          "missable": false,
+          "levels": {
+            "1": "Search side rooms before relying only on your starting arsenal.",
+            "2": "In Opening Interior, inspect opening inventory.",
+            "3": "Reach opening inventory after you continue opening route. Take the weapon and place it in the item box only after the arsenal register has updated."
+          },
+          "fact_area": "apartment",
+          "fact_number": 2
+        }
+      ]
+    },
+    {
+      "id": "station-downtown",
+      "name": "Redstone Station and Downtown",
+      "location_cue": "The underground platform leading to a compact street grid of shops and railway offices.",
+      "note": "Keep the station accessible while clearing every shop, office, and locked container.",
+      "save_backup": {
+        "title": "Back up your save before leaving",
+        "why": "This route contains entries that become unreachable after its next one-way transition.",
+        "detail": "Keep the backup until every visible checklist entry in this section is checked off."
+      },
+      "point_of_no_return": {
+        "title": "One-way route ahead",
+        "why": "Do not take the next major exit until this area's checklist is complete.",
+        "detail": "The warning refers only to the physical departure, without describing what follows."
+      },
+      "items": [
+        {
+          "id": "loc-file-05",
+          "type": "file",
+          "safe_type": "File",
+          "label": "U.B.C.S. Ammo Crafting Guide",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Redstone Station and Downtown, inspect the bench beyond platform.",
+            "3": "Reach the bench beyond platform after you reach underground station. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "station",
+          "fact_number": 5
+        },
+        {
+          "id": "loc-file-06",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Tabloid Front Page",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Redstone Station and Downtown, inspect the upstairs kiosk.",
+            "3": "Reach the upstairs kiosk after you leave platform. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "station",
+          "fact_number": 6
+        },
+        {
+          "id": "loc-file-07",
+          "type": "file",
+          "safe_type": "File",
+          "label": "U.B.C.S. Herb Field Manual",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Redstone Station and Downtown, inspect the first safe-room table.",
+            "3": "Reach the first safe-room table after you reach street exit. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "station",
+          "fact_number": 7
+        },
+        {
+          "id": "loc-file-08",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Drugstore Owner's Journal",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Redstone Station and Downtown, inspect the upstairs room beside safe.",
+            "3": "Reach the upstairs room beside safe after you climb exterior stairs. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "downtown",
+          "fact_number": 8
+        },
+        {
+          "id": "loc-file-09",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Kite Bros. Railway Manual",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Redstone Station and Downtown, inspect the subway office front room.",
+            "3": "Reach the subway office front room after you enter railway office. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "downtown",
+          "fact_number": 9
+        },
+        {
+          "id": "loc-file-10",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Subway Employee's Memo",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Redstone Station and Downtown, inspect the shotgun-room table.",
+            "3": "Reach the shotgun-room table after you enter railway office. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "downtown",
+          "fact_number": 10
+        },
+        {
+          "id": "loc-file-11",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Training Log",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Redstone Station and Downtown, inspect the garage floor.",
+            "3": "Reach the garage floor after you use fire hose. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "downtown",
+          "fact_number": 11
+        },
+        {
+          "id": "loc-file-12",
+          "type": "file",
+          "safe_type": "File",
+          "label": "U.B.C.S. Suicide Note",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Redstone Station and Downtown, inspect the right alley dead end.",
+            "3": "Reach the right alley dead end after you leave garage. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "downtown",
+          "fact_number": 12
+        },
+        {
+          "id": "loc-file-13",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Electrician's Note",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Redstone Station and Downtown, inspect the wall outside garage.",
+            "3": "Reach the wall outside garage after you leave garage. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "downtown",
+          "fact_number": 13
+        },
+        {
+          "id": "loc-file-17",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Your Charlie Doll",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Redstone Station and Downtown, inspect the toy-shop poster.",
+            "3": "Reach the toy-shop poster after you use lock pick. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "downtown",
+          "fact_number": 17
+        },
+        {
+          "id": "loc-doll-01",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #1",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Redstone Station and Downtown, inspect the newspaper machines upstairs.",
+            "3": "Reach the newspaper machines upstairs after you turn back after arrival. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "station",
+          "fact_number": 1
+        },
+        {
+          "id": "loc-doll-02",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #2",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Redstone Station and Downtown, inspect the donut counter microwave.",
+            "3": "Reach the donut counter microwave after you enter donut shop. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "downtown",
+          "fact_number": 2
+        },
+        {
+          "id": "loc-doll-03",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #3",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Redstone Station and Downtown, inspect the upper shelf near safe.",
+            "3": "Reach the upper shelf near safe after you climb exterior stairs. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "downtown",
+          "fact_number": 3
+        },
+        {
+          "id": "loc-doll-04",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #4",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Redstone Station and Downtown, inspect the subway-office table underside.",
+            "3": "Reach the subway-office table underside after you enter railway office. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "downtown",
+          "fact_number": 4
+        },
+        {
+          "id": "loc-doll-06",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #6",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Redstone Station and Downtown, inspect the toy-shop display.",
+            "3": "Reach the toy-shop display after you use lock pick. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "downtown",
+          "fact_number": 6
+        },
+        {
+          "id": "loc-lock-01",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Downtown Safe",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Redstone Station and Downtown, inspect the upstairs pharmacy-side room.",
+            "3": "At the upstairs pharmacy-side room, left 9, right 3, left 7. Confirm the input and remove everything inside before leaving."
+          },
+          "fact_area": "downtown",
+          "fact_number": 1
+        },
+        {
+          "id": "loc-lock-04",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Garage Locker",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Redstone Station and Downtown, inspect the bolt-cutter room locker.",
+            "3": "Reach the bolt-cutter room locker with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "downtown",
+          "fact_number": 4
+        },
+        {
+          "id": "loc-lock-05",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Toy Uncle Padlock",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Redstone Station and Downtown, inspect the toy-shop entrance.",
+            "3": "Reach the toy-shop entrance with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "downtown",
+          "fact_number": 5
+        },
+        {
+          "id": "loc-lock-06",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Donut Shop Locker",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Redstone Station and Downtown, inspect the rear shop locker.",
+            "3": "Reach the rear shop locker with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "downtown",
+          "fact_number": 6
+        },
+        {
+          "id": "loc-lock-07",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Subway Office Strongbox",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Redstone Station and Downtown, inspect the office front room.",
+            "3": "Reach the office front room with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "downtown",
+          "fact_number": 7
+        },
+        {
+          "id": "loc-lock-08",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Subway Office Locker",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Redstone Station and Downtown, inspect the shotgun room locker.",
+            "3": "Reach the shotgun room locker with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "downtown",
+          "fact_number": 8
+        },
+        {
+          "id": "loc-lock-09",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Station Strongbox",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Redstone Station and Downtown, inspect the first item-box room.",
+            "3": "Reach the first item-box room with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "station",
+          "fact_number": 9
+        },
+        {
+          "id": "loc-weapon-part-01",
+          "type": "upgrade",
+          "safe_type": "Weapon Part",
+          "label": "G19 Handgun Dot Sight",
+          "missable": true,
+          "levels": {
+            "1": "One optional improvement is close to this route.",
+            "2": "In Redstone Station and Downtown, inspect the upstairs safe.",
+            "3": "Reach the upstairs safe after you open downtown safe. Take the boxed part and combine it with the G19 from the inventory screen."
+          },
+          "fact_area": "downtown",
+          "fact_number": 1
+        },
+        {
+          "id": "loc-weapon-part-02",
+          "type": "upgrade",
+          "safe_type": "Weapon Part",
+          "label": "M3 Shotgun Tactical Stock",
+          "missable": true,
+          "levels": {
+            "1": "One optional improvement is close to this route.",
+            "2": "In Redstone Station and Downtown, inspect the clock monument.",
+            "3": "Reach the clock monument after you insert two jewels. Take the boxed part and combine it with the M3 from the inventory screen."
+          },
+          "fact_area": "station",
+          "fact_number": 2
+        },
+        {
+          "id": "loc-weapon-part-04",
+          "type": "upgrade",
+          "safe_type": "Weapon Part",
+          "label": "G19 Moderator",
+          "missable": true,
+          "levels": {
+            "1": "One optional improvement is close to this route.",
+            "2": "In Redstone Station and Downtown, inspect the second pursuit supply case.",
+            "3": "During the next downtown pursuit window, force a full knockdown and open the dropped supply case immediately. Later knockdowns cannot replace this part."
+          },
+          "fact_area": "downtown",
+          "fact_number": 4
+        },
+        {
+          "id": "loc-inventory-upgrade-02",
+          "type": "upgrade",
+          "safe_type": "Inventory Upgrade",
+          "label": "Hip Pouch #2",
+          "missable": true,
+          "levels": {
+            "1": "A little exploration here can expand your carrying room.",
+            "2": "In Redstone Station and Downtown, inspect the clock monument.",
+            "3": "Reach the clock monument after you insert all three jewels. Take the pouch immediately; it adds two inventory spaces and must be collected before departure."
+          },
+          "fact_area": "station",
+          "fact_number": 2
+        },
+        {
+          "id": "loc-key-item-01",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Fire Hose",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Redstone Station and Downtown, inspect the subway-office corridor.",
+            "3": "Reach the subway-office corridor after you collect before shotgun room. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "downtown",
+          "fact_number": 1
+        },
+        {
+          "id": "loc-key-item-02",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Bolt Cutters",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Redstone Station and Downtown, inspect the room beyond hydrant.",
+            "3": "Reach the room beyond hydrant after you use fire hose. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "downtown",
+          "fact_number": 2
+        },
+        {
+          "id": "loc-key-item-04",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Green Jewel",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Redstone Station and Downtown, inspect the toy-shop fancy box.",
+            "3": "Reach the toy-shop fancy box after you examine opened box. Open the Fancy Box from the inventory and keep the jewel for the station monument."
+          },
+          "fact_area": "downtown",
+          "fact_number": 4
+        },
+        {
+          "id": "loc-key-item-05",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Blue Jewel",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Redstone Station and Downtown, inspect the supermarket fancy box.",
+            "3": "Reach the supermarket fancy box after you use bolt cutters. Cut the supermarket chain, open the Fancy Box in your inventory, and keep its jewel."
+          },
+          "fact_area": "downtown",
+          "fact_number": 5
+        },
+        {
+          "id": "loc-key-item-06",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Red Jewel",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Redstone Station and Downtown, inspect the donut safe-room fancy box.",
+            "3": "Reach the donut safe-room fancy box after you examine opened box. Open the Fancy Box from the inventory and keep the jewel for the station monument."
+          },
+          "fact_area": "downtown",
+          "fact_number": 6
+        },
+        {
+          "id": "loc-weapon-07",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "M3 Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "Search side rooms before relying only on your starting arsenal.",
+            "2": "In Redstone Station and Downtown, inspect the subway-office weapon rack.",
+            "3": "Reach the subway-office weapon rack after you use bolt cutters. Take the weapon and place it in the item box only after the arsenal register has updated."
+          },
+          "fact_area": "downtown",
+          "fact_number": 7
+        },
+        {
+          "id": "puzzle-01-downtown-safe",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Downtown Safe",
+          "missable": true,
+          "levels": {
+            "1": "A nearby written clue supplies the intended input.",
+            "2": "Use the controls at the pharmacy-side upper room.",
+            "3": "At the pharmacy-side upper room, enter 9L 3R 7L. Confirm every indicator before leaving the console."
+          }
+        },
+        {
+          "id": "puzzle-02-subway-route",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Subway Route",
+          "missable": true,
+          "levels": {
+            "1": "A nearby written clue supplies the intended input.",
+            "2": "Use the controls at the subway office console.",
+            "3": "At the subway office console, enter RE01 FA02 RA03 SA02 FO01. Confirm every indicator before leaving the console."
+          }
+        },
+        {
+          "id": "secret-01-toy-shop-blue-bomber-display",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Toy-Shop Blue Bomber Display",
+          "missable": true,
+          "levels": {
+            "1": "Look beyond useful pickups; a harmless visual reference is nearby.",
+            "2": "Inspect the environmental details around the downtown toy shop.",
+            "3": "At the downtown toy shop, stop and examine the named prop or lettering. No interaction or combat result is required; seeing it completes this secret check."
+          }
+        },
+        {
+          "id": "secret-02-science-forum-poster-names",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Science-Forum Poster Names",
+          "missable": true,
+          "levels": {
+            "1": "Look beyond useful pickups; a harmless visual reference is nearby.",
+            "2": "Inspect the environmental details around the street poster displays.",
+            "3": "At the street poster displays, stop and examine the named prop or lettering. No interaction or combat result is required; seeing it completes this secret check."
+          }
+        },
+        {
+          "id": "secret-03-classic-boutique-sign",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Classic Boutique Sign",
+          "missable": true,
+          "levels": {
+            "1": "Look beyond useful pickups; a harmless visual reference is nearby.",
+            "2": "Inspect the environmental details around the downtown storefront.",
+            "3": "At the downtown storefront, stop and examine the named prop or lettering. No interaction or combat result is required; seeing it completes this secret check."
+          }
+        },
+        {
+          "id": "secret-06-alien-style-movie-poster",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Alien-Style Movie Poster",
+          "missable": true,
+          "levels": {
+            "1": "Look beyond useful pickups; a harmless visual reference is nearby.",
+            "2": "Inspect the environmental details around the subway poster wall.",
+            "3": "At the subway poster wall, stop and examine the named prop or lettering. No interaction or combat result is required; seeing it completes this secret check."
+          }
+        },
+        {
+          "id": "secret-07-machine-hunter-movie-poster",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Machine-Hunter Movie Poster",
+          "missable": true,
+          "levels": {
+            "1": "Look beyond useful pickups; a harmless visual reference is nearby.",
+            "2": "Inspect the environmental details around the subway poster wall.",
+            "3": "At the subway poster wall, stop and examine the named prop or lettering. No interaction or combat result is required; seeing it completes this secret check."
+          }
+        },
+        {
+          "id": "secret-08-clown-horror-movie-poster",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Clown-Horror Movie Poster",
+          "missable": true,
+          "levels": {
+            "1": "Look beyond useful pickups; a harmless visual reference is nearby.",
+            "2": "Inspect the environmental details around the subway poster wall.",
+            "3": "At the subway poster wall, stop and examine the named prop or lettering. No interaction or combat result is required; seeing it completes this secret check."
+          }
+        },
+        {
+          "id": "secret-09-pilot-movie-poster",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Pilot-Movie Poster",
+          "missable": true,
+          "levels": {
+            "1": "Look beyond useful pickups; a harmless visual reference is nearby.",
+            "2": "Inspect the environmental details around the subway poster wall.",
+            "3": "At the subway poster wall, stop and examine the named prop or lettering. No interaction or combat result is required; seeing it completes this secret check."
+          }
+        },
+        {
+          "id": "secret-10-armored-hero-movie-poster",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Armored-Hero Movie Poster",
+          "missable": true,
+          "levels": {
+            "1": "Look beyond useful pickups; a harmless visual reference is nearby.",
+            "2": "Inspect the environmental details around the subway poster wall.",
+            "3": "At the subway poster wall, stop and examine the named prop or lettering. No interaction or combat result is required; seeing it completes this secret check."
+          }
+        }
+      ]
+    },
+    {
+      "id": "power-substation",
+      "name": "Power Substation",
+      "location_cue": "The fenced utility building and its narrow maintenance passages.",
+      "note": "Finish the lock-pick backtrack and every maintenance-platform entry before returning downtown.",
+      "save_backup": {
+        "title": "Back up your save before leaving",
+        "why": "This route contains entries that become unreachable after its next one-way transition.",
+        "detail": "Keep the backup until every visible checklist entry in this section is checked off."
+      },
+      "point_of_no_return": {
+        "title": "One-way route ahead",
+        "why": "Do not take the next major exit until this area's checklist is complete.",
+        "detail": "The warning refers only to the physical departure, without describing what follows."
+      },
+      "items": [
+        {
+          "id": "loc-file-14",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Fax from Substation Chief",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Power Substation, inspect the upper control-room desk.",
+            "3": "Reach the upper control-room desk after you enter power building. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "substation",
+          "fact_number": 14
+        },
+        {
+          "id": "loc-file-15",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Green Herbs: They Work!",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Power Substation, inspect the bench outside safe room.",
+            "3": "Reach the bench outside safe room after you leave control room. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "substation",
+          "fact_number": 15
+        },
+        {
+          "id": "loc-file-16",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Substation Internal Memo",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Power Substation, inspect the fence-side wall.",
+            "3": "Reach the fence-side wall after you approach inner gate. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "substation",
+          "fact_number": 16
+        },
+        {
+          "id": "loc-file-18",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Chad's Notes",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Power Substation, inspect the upper maintenance scaffold.",
+            "3": "Reach the upper maintenance scaffold after you restore four breakers. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "substation",
+          "fact_number": 18
+        },
+        {
+          "id": "loc-doll-05",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #5",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Power Substation, inspect the control-room exit shelf.",
+            "3": "Reach the control-room exit shelf after you enter upper control room. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "substation",
+          "fact_number": 5
+        },
+        {
+          "id": "loc-lock-02",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Substation Padlock Door",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Power Substation, inspect the inner fenced gate.",
+            "3": "Reach the inner fenced gate with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "substation",
+          "fact_number": 2
+        },
+        {
+          "id": "loc-lock-03",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Substation Ground-Floor Locker",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Power Substation, inspect the ground-floor locker.",
+            "3": "Reach the ground-floor locker with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "substation",
+          "fact_number": 3
+        },
+        {
+          "id": "loc-weapon-part-03",
+          "type": "upgrade",
+          "safe_type": "Weapon Part",
+          "label": "G19 Extended Magazine",
+          "missable": true,
+          "levels": {
+            "1": "One optional improvement is close to this route.",
+            "2": "In Power Substation, inspect the first pursuit supply case.",
+            "3": "During the first downtown pursuit window, force a full knockdown and open the dropped supply case immediately. Later knockdowns cannot replace this part."
+          },
+          "fact_area": "substation",
+          "fact_number": 3
+        },
+        {
+          "id": "loc-inventory-upgrade-01",
+          "type": "upgrade",
+          "safe_type": "Inventory Upgrade",
+          "label": "Hip Pouch #1",
+          "missable": true,
+          "levels": {
+            "1": "A little exploration here can expand your carrying room.",
+            "2": "In Power Substation, inspect the upper control room.",
+            "3": "Reach the upper control room after you enter power building. Take the pouch immediately; it adds two inventory spaces and must be collected before departure."
+          },
+          "fact_area": "substation",
+          "fact_number": 1
+        },
+        {
+          "id": "loc-key-item-03",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Lock Pick",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Power Substation, inspect the case held near gate.",
+            "3": "Reach the case held near gate after you examine and open case. Examine the case on every side, open it, and retain the Lock Pick for the full downtown and hospital sweeps."
+          },
+          "fact_area": "substation",
+          "fact_number": 3
+        }
+      ]
+    },
+    {
+      "id": "sewers",
+      "name": "Sewers",
+      "location_cue": "Concrete waterways branching below a manager's office and battery-powered doors.",
+      "note": "Clear both lower channels and the upper security room before taking the exit ladder.",
+      "save_backup": {
+        "title": "Back up your save before leaving",
+        "why": "This route contains entries that become unreachable after its next one-way transition.",
+        "detail": "Keep the backup until every visible checklist entry in this section is checked off."
+      },
+      "point_of_no_return": {
+        "title": "One-way route ahead",
+        "why": "Do not take the next major exit until this area's checklist is complete.",
+        "detail": "The warning refers only to the physical departure, without describing what follows."
+      },
+      "items": [
+        {
+          "id": "loc-file-19",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Increased Sewer Security",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Sewers, inspect the wall before waterway.",
+            "3": "Reach the wall before waterway after you enter sewer route. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "sewers",
+          "fact_number": 19
+        },
+        {
+          "id": "loc-file-20",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Research Assistant's Logs",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Sewers, inspect the lower side safe room.",
+            "3": "Reach the lower side safe room after you take left waterway. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "sewers",
+          "fact_number": 20
+        },
+        {
+          "id": "loc-file-21",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Invoice from Gun Shop Kendo",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Sewers, inspect the lower side safe room.",
+            "3": "Reach the lower side safe room after you take left waterway. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "sewers",
+          "fact_number": 21
+        },
+        {
+          "id": "loc-file-22",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Sewer Worker's Notes",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Sewers, inspect the alcove behind waterfall.",
+            "3": "Reach the alcove behind waterfall after you take right waterway. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "sewers",
+          "fact_number": 22
+        },
+        {
+          "id": "loc-file-23",
+          "type": "file",
+          "safe_type": "File",
+          "label": "A Love Letter?",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Sewers, inspect the laboratory table.",
+            "3": "Reach the laboratory table after you climb lower ladder. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "sewers",
+          "fact_number": 23
+        },
+        {
+          "id": "loc-doll-07",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #7",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Sewers, inspect the bars beside lower ladder.",
+            "3": "Reach the bars beside lower ladder after you pass waterfall. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "sewers",
+          "fact_number": 7
+        },
+        {
+          "id": "loc-doll-08",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #8",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Sewers, inspect the above battery-pack doorway.",
+            "3": "Reach the above battery-pack doorway after you unlock upper route. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "sewers",
+          "fact_number": 8
+        },
+        {
+          "id": "loc-lock-10",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Sewer Lab Locker",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Sewers, inspect the lower laboratory locker.",
+            "3": "Reach the lower laboratory locker with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "sewers",
+          "fact_number": 10
+        },
+        {
+          "id": "loc-inventory-upgrade-03",
+          "type": "upgrade",
+          "safe_type": "Inventory Upgrade",
+          "label": "Hip Pouch #3",
+          "missable": true,
+          "levels": {
+            "1": "A little exploration here can expand your carrying room.",
+            "2": "In Sewers, inspect the upper security room.",
+            "3": "Reach the upper security room after you reuse battery pack. Take the pouch immediately; it adds two inventory spaces and must be collected before departure."
+          },
+          "fact_area": "sewers",
+          "fact_number": 3
+        },
+        {
+          "id": "loc-key-item-07",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Battery Pack",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Sewers, inspect the lower laboratory.",
+            "3": "Reach the lower laboratory after you climb lower ladder. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "sewers",
+          "fact_number": 7
+        },
+        {
+          "id": "loc-weapon-05",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Hand Grenade",
+          "missable": true,
+          "levels": {
+            "1": "Search side rooms before relying only on your starting arsenal.",
+            "2": "In Sewers, inspect the lower-waterway debris.",
+            "3": "Reach the lower-waterway debris after you follow left channel. Take the weapon and place it in the item box only after the arsenal register has updated."
+          },
+          "fact_area": "sewers",
+          "fact_number": 5
+        },
+        {
+          "id": "loc-weapon-08",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "MGL Grenade Launcher",
+          "missable": true,
+          "levels": {
+            "1": "Search side rooms before relying only on your starting arsenal.",
+            "2": "In Sewers, inspect the lower side safe room.",
+            "3": "Reach the lower side safe room after you take left waterway. Take the weapon and place it in the item box only after the arsenal register has updated."
+          },
+          "fact_area": "sewers",
+          "fact_number": 8
+        },
+        {
+          "id": "loc-map-01",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Sewers Map",
+          "missable": true,
+          "levels": {
+            "1": "A posted floor plan can make the remaining sweep easier.",
+            "2": "In Sewers, inspect the manager-office wall.",
+            "3": "Reach the manager-office wall after you enter sewer safe room. Take the posted map and verify that its floor layer appears in the map screen."
+          },
+          "fact_area": "sewers",
+          "fact_number": 1
+        }
+      ]
+    },
+    {
+      "id": "demolition-kendo",
+      "name": "Demolition Block",
+      "location_cue": "The construction floors and the nearby shop-lined street beyond them.",
+      "note": "Check the safe rooms and every room behind the shop-side gate before leaving the block.",
+      "save_backup": {
+        "title": "Back up your save before leaving",
+        "why": "This route contains entries that become unreachable after its next one-way transition.",
+        "detail": "Keep the backup until every visible checklist entry in this section is checked off."
+      },
+      "point_of_no_return": {
+        "title": "One-way route ahead",
+        "why": "Do not take the next major exit until this area's checklist is complete.",
+        "detail": "The warning refers only to the physical departure, without describing what follows."
+      },
+      "items": [
+        {
+          "id": "loc-file-24",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Notice of Demolition Delay",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Demolition Block, inspect the upper safe-room typewriter.",
+            "3": "Reach the upper safe-room typewriter after you climb worksite. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "demolition",
+          "fact_number": 24
+        },
+        {
+          "id": "loc-file-25",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Raccoon Times Reader's Column",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Demolition Block, inspect the upstairs bedroom.",
+            "3": "Reach the upstairs bedroom after you open gun-shop gate. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "kendo-block",
+          "fact_number": 25
+        },
+        {
+          "id": "loc-doll-09",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #9",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Demolition Block, inspect the gate-building table.",
+            "3": "Reach the gate-building table after you use gun-shop gate key. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "kendo-block",
+          "fact_number": 9
+        },
+        {
+          "id": "loc-lock-11",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Kendo-Block Strongbox",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Demolition Block, inspect the upstairs bedroom.",
+            "3": "Reach the upstairs bedroom with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "kendo-block",
+          "fact_number": 11
+        },
+        {
+          "id": "loc-weapon-part-05",
+          "type": "upgrade",
+          "safe_type": "Weapon Part",
+          "label": "M3 Semi-Auto Barrel",
+          "missable": true,
+          "levels": {
+            "1": "One optional improvement is close to this route.",
+            "2": "In Demolition Block, inspect the gun-shop shelf.",
+            "3": "Reach the gun-shop shelf after you enter gun shop. Take the boxed part and combine it with the M3 from the inventory screen."
+          },
+          "fact_area": "kendo-block",
+          "fact_number": 5
+        },
+        {
+          "id": "loc-key-item-08",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Kendo's Gate Key",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Demolition Block, inspect the gun-shop wall.",
+            "3": "Reach the gun-shop wall after you enter gun shop. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "kendo-block",
+          "fact_number": 8
+        },
+        {
+          "id": "secret-04-closed-door-conversation",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Closed-Door Conversation",
+          "missable": true,
+          "levels": {
+            "1": "Look beyond useful pickups; a harmless visual reference is nearby.",
+            "2": "Inspect the environmental details around the gun-shop side door.",
+            "3": "At the gun-shop side door, remain beside the closed door until the optional exchange ends; no later interaction is required."
+          }
+        }
+      ]
+    },
+    {
+      "id": "police-station",
+      "name": "Police Station",
+      "location_cue": "The stone entrance hall connected to west offices, lockers, and a third-floor stairwell.",
+      "note": "This visit uses a compact route; open every accessible west-side room before departing.",
+      "save_backup": {
+        "title": "Back up your save before leaving",
+        "why": "This route contains entries that become unreachable after its next one-way transition.",
+        "detail": "Keep the backup until every visible checklist entry in this section is checked off."
+      },
+      "point_of_no_return": {
+        "title": "One-way route ahead",
+        "why": "Do not take the next major exit until this area's checklist is complete.",
+        "detail": "The warning refers only to the physical departure, without describing what follows."
+      },
+      "items": [
+        {
+          "id": "loc-file-26",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Email Outbox",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Police Station, inspect the entrance stairwell side room.",
+            "3": "Reach the entrance stairwell side room after you backtrack before main doors. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "rpd",
+          "fact_number": 26
+        },
+        {
+          "id": "loc-file-27",
+          "type": "file",
+          "safe_type": "File",
+          "label": "ID Card Security Protocols",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Police Station, inspect the reception desk.",
+            "3": "Reach the reception desk after you open entrance shutter. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "rpd",
+          "fact_number": 27
+        },
+        {
+          "id": "loc-file-28",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Sept. 20 Arrest Report",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Police Station, inspect the west-office central desk.",
+            "3": "Reach the west-office central desk after you enter west office. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "rpd",
+          "fact_number": 28
+        },
+        {
+          "id": "loc-file-29",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Internal Memo",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Police Station, inspect the darkroom table.",
+            "3": "Reach the darkroom table after you descend west stairs. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "rpd",
+          "fact_number": 29
+        },
+        {
+          "id": "loc-file-30",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Note to a Friend",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Police Station, inspect the second-floor shower room.",
+            "3": "Reach the second-floor shower room after you climb west stairs. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "rpd",
+          "fact_number": 30
+        },
+        {
+          "id": "loc-file-31",
+          "type": "file",
+          "safe_type": "File",
+          "label": "3F Locker",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Police Station, inspect the deposit-room whiteboard.",
+            "3": "Reach the deposit-room whiteboard after you unlock key door. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "rpd",
+          "fact_number": 31
+        },
+        {
+          "id": "loc-file-32",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Report on the Mansion Incident",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Police Station, inspect the S.T.A.R.S. side-office desk.",
+            "3": "Reach the S.T.A.R.S. side-office desk after you open shower wall. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "rpd",
+          "fact_number": 32
+        },
+        {
+          "id": "loc-doll-10",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #10",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Police Station, inspect the entrance alley wall.",
+            "3": "Reach the entrance alley wall after you check before main doors. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "rpd",
+          "fact_number": 10
+        },
+        {
+          "id": "loc-doll-11",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #11",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Police Station, inspect the deposit-room rear shelf.",
+            "3": "Reach the deposit-room rear shelf after you unlock key door. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "rpd",
+          "fact_number": 11
+        },
+        {
+          "id": "loc-lock-12",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "West Office Safe",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Police Station, inspect the west-office side room.",
+            "3": "At the west-office side room, left 9, right 15, left 7. Confirm the input and remove everything inside before leaving."
+          },
+          "fact_area": "rpd",
+          "fact_number": 12
+        },
+        {
+          "id": "loc-lock-13",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Third-Floor Locker",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Police Station, inspect the top stairwell hall.",
+            "3": "At the top stairwell hall, set the letters to DCM. Confirm the input and remove everything inside before leaving."
+          },
+          "fact_area": "rpd",
+          "fact_number": 13
+        },
+        {
+          "id": "loc-lock-14",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Shower-Room Locker",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Police Station, inspect the second-floor shower room.",
+            "3": "At the second-floor shower room, set the letters to CAP. Confirm the input and remove everything inside before leaving."
+          },
+          "fact_area": "rpd",
+          "fact_number": 14
+        },
+        {
+          "id": "loc-weapon-part-06",
+          "type": "upgrade",
+          "safe_type": "Weapon Part",
+          "label": "CQBR Assault Rifle Scope",
+          "missable": true,
+          "levels": {
+            "1": "One optional improvement is close to this route.",
+            "2": "In Police Station, inspect the west-office ID box.",
+            "3": "Reach the west-office ID box after you use ID card. Take the boxed part and combine it with the CQBR from the inventory screen."
+          },
+          "fact_area": "rpd",
+          "fact_number": 6
+        },
+        {
+          "id": "loc-inventory-upgrade-04",
+          "type": "upgrade",
+          "safe_type": "Inventory Upgrade",
+          "label": "Hip Pouch #4",
+          "missable": true,
+          "levels": {
+            "1": "A little exploration here can expand your carrying room.",
+            "2": "In Police Station, inspect the west-office safe.",
+            "3": "Reach the west-office safe after you 9L 15R 7L. Take the pouch immediately; it adds two inventory spaces and must be collected before departure."
+          },
+          "fact_area": "rpd",
+          "fact_number": 4
+        },
+        {
+          "id": "loc-key-item-09",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "ID Card",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Police Station, inspect the outdoor starting route.",
+            "3": "Reach the outdoor starting route after you search first special enemy. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "rpd",
+          "fact_number": 9
+        },
+        {
+          "id": "loc-key-item-10",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Key",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Police Station, inspect the third-floor stairwell crate.",
+            "3": "Reach the third-floor stairwell crate after you climb western stairs. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "rpd",
+          "fact_number": 10
+        },
+        {
+          "id": "loc-key-item-11",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Electronic Gadget",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Police Station, inspect the shower-room wall.",
+            "3": "Reach the shower-room wall after you reach second floor. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "rpd",
+          "fact_number": 11
+        },
+        {
+          "id": "loc-key-item-12",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Battery and Detonator",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Police Station, inspect the deposit locker 104.",
+            "3": "Reach the deposit locker 104 after you combine with gadget. Enter 104 on the deposit keypad, take the battery, and combine it with the wall gadget."
+          },
+          "fact_area": "rpd",
+          "fact_number": 12
+        },
+        {
+          "id": "loc-weapon-03",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Combat Knife",
+          "missable": false,
+          "levels": {
+            "1": "Search side rooms before relying only on your starting arsenal.",
+            "2": "In Police Station, inspect route inventory.",
+            "3": "Reach route inventory after you begin station segment. Take the weapon and place it in the item box only after the arsenal register has updated."
+          },
+          "fact_area": "rpd",
+          "fact_number": 3
+        },
+        {
+          "id": "loc-weapon-04",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "G18 Handgun",
+          "missable": false,
+          "levels": {
+            "1": "Search side rooms before relying only on your starting arsenal.",
+            "2": "In Police Station, inspect route inventory.",
+            "3": "Reach route inventory after you begin station segment. Take the weapon and place it in the item box only after the arsenal register has updated."
+          },
+          "fact_area": "rpd",
+          "fact_number": 4
+        },
+        {
+          "id": "loc-weapon-06",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Flash Grenade",
+          "missable": true,
+          "levels": {
+            "1": "Search side rooms before relying only on your starting arsenal.",
+            "2": "In Police Station, inspect the shower-room locker.",
+            "3": "Reach the shower-room locker after you enter CAP. Take the weapon and place it in the item box only after the arsenal register has updated."
+          },
+          "fact_area": "rpd",
+          "fact_number": 6
+        },
+        {
+          "id": "loc-weapon-11",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "CQBR Assault Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Search side rooms before relying only on your starting arsenal.",
+            "2": "In Police Station, inspect route inventory.",
+            "3": "Reach route inventory after you begin station segment. Take the weapon and place it in the item box only after the arsenal register has updated."
+          },
+          "fact_area": "rpd",
+          "fact_number": 11
+        },
+        {
+          "id": "puzzle-03-west-office-safe",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "West Office Safe",
+          "missable": true,
+          "levels": {
+            "1": "A nearby written clue supplies the intended input.",
+            "2": "Use the controls at the west-office side room.",
+            "3": "At the west-office side room, enter 9L 15R 7L. Confirm every indicator before leaving the console."
+          }
+        },
+        {
+          "id": "puzzle-04-third-floor-locker",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Third-Floor Locker",
+          "missable": true,
+          "levels": {
+            "1": "A nearby written clue supplies the intended input.",
+            "2": "Use the controls at the top stairwell hall.",
+            "3": "At the top stairwell hall, enter DCM. Confirm every indicator before leaving the console."
+          }
+        },
+        {
+          "id": "puzzle-05-shower-room-locker",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Shower-Room Locker",
+          "missable": true,
+          "levels": {
+            "1": "A nearby written clue supplies the intended input.",
+            "2": "Use the controls at the second-floor shower room.",
+            "3": "At the second-floor shower room, enter CAP. Confirm every indicator before leaving the console."
+          }
+        },
+        {
+          "id": "secret-05-parking-garage-view",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Parking-Garage View",
+          "missable": true,
+          "levels": {
+            "1": "Look beyond useful pickups; a harmless visual reference is nearby.",
+            "2": "Inspect the environmental details around the police-station exterior.",
+            "3": "At the police-station exterior, stop and examine the named prop or lettering. No interaction or combat result is required; seeing it completes this secret check."
+          }
+        },
+        {
+          "id": "secret-11-locker-code-callback",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Locker-Code Callback",
+          "missable": true,
+          "levels": {
+            "1": "Look beyond useful pickups; a harmless visual reference is nearby.",
+            "2": "Inspect the environmental details around the police-station lockers.",
+            "3": "At the police-station lockers, stop and examine the named prop or lettering. No interaction or combat result is required; seeing it completes this secret check."
+          }
+        }
+      ]
+    },
+    {
+      "id": "tunnels-plaza",
+      "name": "Subway Tunnels and Riverside Plaza",
+      "location_cue": "A shelter corridor that opens onto a riverside space beside a clock-faced building.",
+      "note": "Sweep the cells, parked vehicles, and river benches before crossing the plaza.",
+      "save_backup": {
+        "title": "Back up your save before leaving",
+        "why": "This route contains entries that become unreachable after its next one-way transition.",
+        "detail": "Keep the backup until every visible checklist entry in this section is checked off."
+      },
+      "point_of_no_return": {
+        "title": "One-way route ahead",
+        "why": "Do not take the next major exit until this area's checklist is complete.",
+        "detail": "The warning refers only to the physical departure, without describing what follows."
+      },
+      "items": [
+        {
+          "id": "loc-file-33",
+          "type": "file",
+          "safe_type": "File",
+          "label": "U.B.C.S. New Weaponry Notice",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Subway Tunnels and Riverside Plaza, inspect the shelter bench.",
+            "3": "Reach the shelter bench after you re-enter playable route. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "tunnels",
+          "fact_number": 33
+        },
+        {
+          "id": "loc-file-34",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Clock Tower Brochure",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Subway Tunnels and Riverside Plaza, inspect the riverside bench.",
+            "3": "Reach the riverside bench after you climb exterior ladder. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "plaza",
+          "fact_number": 34
+        },
+        {
+          "id": "loc-doll-12",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #12",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Subway Tunnels and Riverside Plaza, inspect the second right cell.",
+            "3": "Reach the second right cell after you leave shelter. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "tunnels",
+          "fact_number": 12
+        },
+        {
+          "id": "loc-doll-13",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #13",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Subway Tunnels and Riverside Plaza, inspect the behind green van.",
+            "3": "Reach the behind green van after you climb exterior ladder. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "plaza",
+          "fact_number": 13
+        }
+      ]
+    },
+    {
+      "id": "hospital",
+      "name": "Hospital",
+      "location_cue": "A two-level medical building with reception, a courtyard, staff rooms, and a roof.",
+      "note": "Both playable visits share this map; finish the second lock-pick sweep before using the basement route.",
+      "save_backup": {
+        "title": "Back up your save before leaving",
+        "why": "This route contains entries that become unreachable after its next one-way transition.",
+        "detail": "Keep the backup until every visible checklist entry in this section is checked off."
+      },
+      "point_of_no_return": {
+        "title": "One-way route ahead",
+        "why": "Do not take the next major exit until this area's checklist is complete.",
+        "detail": "The warning refers only to the physical departure, without describing what follows."
+      },
+      "items": [
+        {
+          "id": "loc-file-35",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Spencer Memorial Pamphlet",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Hospital, inspect the reception newsstand.",
+            "3": "Reach the reception newsstand after you enter hospital. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "hospital",
+          "fact_number": 35
+        },
+        {
+          "id": "loc-file-36",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Nurse's Journal: Sept. 25",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Hospital, inspect the lab-reception desk.",
+            "3": "Reach the lab-reception desk after you reach lab reception. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "hospital",
+          "fact_number": 36
+        },
+        {
+          "id": "loc-file-37",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Nurse's Journal: Sept. 27",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Hospital, inspect the records-room shelf.",
+            "3": "Reach the records-room shelf after you reach second floor. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "hospital",
+          "fact_number": 37
+        },
+        {
+          "id": "loc-file-38",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Nurse's Journal: Sept. 29",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Hospital, inspect the staff-room desk.",
+            "3": "Reach the staff-room desk after you reach second floor. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "hospital",
+          "fact_number": 38
+        },
+        {
+          "id": "loc-file-39",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Memos from Administration",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Hospital, inspect the staff-room wall.",
+            "3": "Reach the staff-room wall after you reach second floor. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "hospital",
+          "fact_number": 39
+        },
+        {
+          "id": "loc-file-40",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Note about a Tape Recording",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Hospital, inspect the nurses-station table.",
+            "3": "Reach the nurses-station table after you enter nurses station. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "hospital",
+          "fact_number": 40
+        },
+        {
+          "id": "loc-file-41",
+          "type": "file",
+          "safe_type": "File",
+          "label": "RE: Lost Items",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Hospital, inspect the operating-room chair.",
+            "3": "Reach the operating-room chair after you use hospital card. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "hospital",
+          "fact_number": 41
+        },
+        {
+          "id": "loc-file-42",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Banquet Invitation",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Hospital, inspect the room behind voice door.",
+            "3": "Reach the room behind voice door after you assemble tape player. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "hospital",
+          "fact_number": 42
+        },
+        {
+          "id": "loc-file-43",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Email from Nathaniel Bard",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Hospital, inspect the office computer.",
+            "3": "Reach the office computer after you open voice door. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "hospital",
+          "fact_number": 43
+        },
+        {
+          "id": "loc-doll-14",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #14",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Hospital, inspect the reception-exit hall end.",
+            "3": "Reach the reception-exit hall end after you leave reception. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "hospital",
+          "fact_number": 14
+        },
+        {
+          "id": "loc-doll-15",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #15",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Hospital, inspect the roof doorway floor.",
+            "3": "Reach the roof doorway floor after you reach roof. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "hospital",
+          "fact_number": 15
+        },
+        {
+          "id": "loc-doll-16",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #16",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Hospital, inspect the sickroom waste bin.",
+            "3": "Reach the sickroom waste bin after you enter beside nurses station. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "hospital",
+          "fact_number": 16
+        },
+        {
+          "id": "loc-lock-15",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Nurses' Station Safe",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Hospital, inspect the nurses-station corner.",
+            "3": "At the nurses-station corner, left 9, right 3,. Confirm the input and remove everything inside before leaving."
+          },
+          "fact_area": "hospital",
+          "fact_number": 15
+        },
+        {
+          "id": "loc-lock-16",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Reception Padlock Door",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Hospital, inspect the reception right door.",
+            "3": "Reach the reception right door with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "hospital",
+          "fact_number": 16
+        },
+        {
+          "id": "loc-lock-17",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "First-Floor Strongbox",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Hospital, inspect the left hall dead end.",
+            "3": "Reach the left hall dead end with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "hospital",
+          "fact_number": 17
+        },
+        {
+          "id": "loc-lock-18",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Emergency Entrance Locker",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Hospital, inspect the broken-window passage.",
+            "3": "Reach the broken-window passage with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "hospital",
+          "fact_number": 18
+        },
+        {
+          "id": "loc-lock-19",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Staff-Room Locker",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Hospital, inspect the second-floor staff room.",
+            "3": "Reach the second-floor staff room with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "hospital",
+          "fact_number": 19
+        },
+        {
+          "id": "loc-lock-20",
+          "type": "lock",
+          "safe_type": "Lock",
+          "label": "Linen-Room Locker",
+          "missable": true,
+          "levels": {
+            "1": "Keep newly opened routes available for one more container sweep.",
+            "2": "In Hospital, inspect the second-floor linen corner.",
+            "3": "Reach the second-floor linen corner with the Lock Pick, release the lock, and empty the container before the route closes."
+          },
+          "fact_area": "hospital",
+          "fact_number": 20
+        },
+        {
+          "id": "loc-weapon-part-07",
+          "type": "upgrade",
+          "safe_type": "Weapon Part",
+          "label": "CQBR Tactical Grip",
+          "missable": true,
+          "levels": {
+            "1": "One optional improvement is close to this route.",
+            "2": "In Hospital, inspect the courtyard first landing.",
+            "3": "Reach the courtyard first landing after you use first broken window. Take the boxed part and combine it with the CQBR from the inventory screen."
+          },
+          "fact_area": "hospital",
+          "fact_number": 7
+        },
+        {
+          "id": "loc-weapon-part-08",
+          "type": "upgrade",
+          "safe_type": "Weapon Part",
+          "label": "CQBR Dual Magazine",
+          "missable": true,
+          "levels": {
+            "1": "One optional improvement is close to this route.",
+            "2": "In Hospital, inspect the nurses-station safe.",
+            "3": "Reach the nurses-station safe after you 9L 3R. Take the boxed part and combine it with the CQBR from the inventory screen."
+          },
+          "fact_area": "hospital",
+          "fact_number": 8
+        },
+        {
+          "id": "loc-inventory-upgrade-05",
+          "type": "upgrade",
+          "safe_type": "Inventory Upgrade",
+          "label": "Hip Pouch #5",
+          "missable": true,
+          "levels": {
+            "1": "A little exploration here can expand your carrying room.",
+            "2": "In Hospital, inspect the reception side room.",
+            "3": "Reach the reception side room after you wait for door breach. Take the pouch immediately; it adds two inventory spaces and must be collected before departure."
+          },
+          "fact_area": "hospital",
+          "fact_number": 5
+        },
+        {
+          "id": "loc-key-item-13",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Tape Player",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Hospital, inspect the lab-reception desk.",
+            "3": "Reach the lab-reception desk after you reach lab reception. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "hospital",
+          "fact_number": 13
+        },
+        {
+          "id": "loc-key-item-14",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Locker Room Key",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Hospital, inspect the courtyard first landing.",
+            "3": "Reach the courtyard first landing after you use first broken window. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "hospital",
+          "fact_number": 14
+        },
+        {
+          "id": "loc-key-item-15",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Hospital ID Card",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Hospital, inspect the staff-room locker room.",
+            "3": "Reach the staff-room locker room after you use locker-room key. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "hospital",
+          "fact_number": 15
+        },
+        {
+          "id": "loc-key-item-16",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Audiocassette Tape",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Hospital, inspect the second-floor treatment room.",
+            "3": "Reach the second-floor treatment room after you use hospital card. Use the hospital card on the treatment-room route, take the cassette, then combine it with the player."
+          },
+          "fact_area": "hospital",
+          "fact_number": 16
+        },
+        {
+          "id": "loc-key-item-17",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Vaccine Sample",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Hospital, inspect the cabinet beyond voice door.",
+            "3": "Reach the cabinet beyond voice door after you assemble tape player. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "hospital",
+          "fact_number": 17
+        },
+        {
+          "id": "loc-key-item-18",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Detonator",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Hospital, inspect the reception supply crate.",
+            "3": "Reach the reception supply crate after you inspect during defense. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "hospital",
+          "fact_number": 18
+        },
+        {
+          "id": "loc-weapon-09",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "G18 Burst Model",
+          "missable": true,
+          "levels": {
+            "1": "Search side rooms before relying only on your starting arsenal.",
+            "2": "In Hospital, inspect the makeshift-room counter.",
+            "3": "Reach the makeshift-room counter after you regain control there. Take the weapon and place it in the item box only after the arsenal register has updated."
+          },
+          "fact_area": "hospital",
+          "fact_number": 9
+        },
+        {
+          "id": "loc-weapon-10",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": ".44 AE Lightning Hawk",
+          "missable": true,
+          "levels": {
+            "1": "Search side rooms before relying only on your starting arsenal.",
+            "2": "In Hospital, inspect the courtyard silver case.",
+            "3": "Reach the courtyard silver case after you crawl under second-floor rubble. Take the weapon and place it in the item box only after the arsenal register has updated."
+          },
+          "fact_area": "hospital",
+          "fact_number": 10
+        },
+        {
+          "id": "loc-map-02",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Hospital Map",
+          "missable": true,
+          "levels": {
+            "1": "A posted floor plan can make the remaining sweep easier.",
+            "2": "In Hospital, inspect the second-floor message board.",
+            "3": "Reach the second-floor message board after you reach records-room hall. Take the posted map and verify that its floor layer appears in the map screen."
+          },
+          "fact_area": "hospital",
+          "fact_number": 2
+        },
+        {
+          "id": "puzzle-06-nurses-station-safe",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Nurses' Station Safe",
+          "missable": true,
+          "levels": {
+            "1": "A nearby written clue supplies the intended input.",
+            "2": "Use the controls at the nurses-station corner.",
+            "3": "At the nurses-station corner, enter 9L 3R. Confirm every indicator before leaving the console."
+          }
+        }
+      ]
+    },
+    {
+      "id": "underground-storage",
+      "name": "Underground Storage",
+      "location_cue": "A freight warehouse filled with movable lifts, shelving gaps, and a surveillance office.",
+      "note": "Complete the timed fuse route, then search the surveillance room before its exit.",
+      "save_backup": {
+        "title": "Back up your save before leaving",
+        "why": "This route contains entries that become unreachable after its next one-way transition.",
+        "detail": "Keep the backup until every visible checklist entry in this section is checked off."
+      },
+      "point_of_no_return": {
+        "title": "One-way route ahead",
+        "why": "Do not take the next major exit until this area's checklist is complete.",
+        "detail": "The warning refers only to the physical departure, without describing what follows."
+      },
+      "items": [
+        {
+          "id": "loc-file-44",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Elevator Notice",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Underground Storage, inspect the first safe-room wall.",
+            "3": "Reach the first safe-room wall after you ride freight elevator. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "storage",
+          "fact_number": 44
+        },
+        {
+          "id": "loc-file-45",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Employee Memo",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Underground Storage, inspect the room south of office.",
+            "3": "Reach the room south of office after you begin fuse search. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "storage",
+          "fact_number": 45
+        },
+        {
+          "id": "loc-file-46",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Unfinished Activity Log",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In Underground Storage, inspect the surveillance computer.",
+            "3": "Reach the surveillance computer after you install three fuses. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "storage",
+          "fact_number": 46
+        },
+        {
+          "id": "loc-doll-17",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #17",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Underground Storage, inspect the forklift before elevator.",
+            "3": "Reach the forklift before elevator after you use reception lockpick door. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "storage",
+          "fact_number": 17
+        },
+        {
+          "id": "loc-doll-18",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #18",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In Underground Storage, inspect the shelf beyond squeeze gap.",
+            "3": "Reach the shelf beyond squeeze gap after you begin fuse search. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "storage",
+          "fact_number": 18
+        },
+        {
+          "id": "loc-weapon-part-09",
+          "type": "upgrade",
+          "safe_type": "Weapon Part",
+          "label": "M3 Shell Holder",
+          "missable": true,
+          "levels": {
+            "1": "One optional improvement is close to this route.",
+            "2": "In Underground Storage, inspect the lift-crossing case.",
+            "3": "Reach the lift-crossing case after you lower nearby lift. Take the boxed part and combine it with the M3 from the inventory screen."
+          },
+          "fact_area": "storage",
+          "fact_number": 9
+        },
+        {
+          "id": "loc-weapon-part-10",
+          "type": "upgrade",
+          "safe_type": "Weapon Part",
+          "label": "MAG Extended Barrel",
+          "missable": true,
+          "levels": {
+            "1": "One optional improvement is close to this route.",
+            "2": "In Underground Storage, inspect the surveillance-room case.",
+            "3": "Reach the surveillance-room case after you install three fuses. Take the boxed part and combine it with the MAG from the inventory screen."
+          },
+          "fact_area": "storage",
+          "fact_number": 10
+        },
+        {
+          "id": "loc-inventory-upgrade-06",
+          "type": "upgrade",
+          "safe_type": "Inventory Upgrade",
+          "label": "Hip Pouch #6",
+          "missable": true,
+          "levels": {
+            "1": "A little exploration here can expand your carrying room.",
+            "2": "In Underground Storage, inspect the first safe-room desk.",
+            "3": "Reach the first safe-room desk after you ride freight elevator. Take the pouch immediately; it adds two inventory spaces and must be collected before departure."
+          },
+          "fact_area": "storage",
+          "fact_number": 6
+        },
+        {
+          "id": "loc-key-item-19",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Fuse 3",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Underground Storage, inspect the first raised platform.",
+            "3": "Reach the first raised platform after you begin fuse search. Take this fuse first, then leave it in your inventory while collecting the other two."
+          },
+          "fact_area": "storage",
+          "fact_number": 19
+        },
+        {
+          "id": "loc-key-item-20",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Fuse 2",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Underground Storage, inspect the lower side passage.",
+            "3": "Reach the lower side passage after you descend side-room ladder. Descend the side ladder, follow the lower passage to its end, and remove the second fuse."
+          },
+          "fact_area": "storage",
+          "fact_number": 20
+        },
+        {
+          "id": "loc-key-item-21",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Fuse 1",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In Underground Storage, inspect the container-door platform.",
+            "3": "Reach the container-door platform after you cross two lifts. Cross both lift platforms, descend, and take the fuse beside the opened container."
+          },
+          "fact_area": "storage",
+          "fact_number": 21
+        }
+      ]
+    },
+    {
+      "id": "nest-2",
+      "name": "NEST 2",
+      "location_cue": "A white industrial laboratory with two floors, green consoles, and incubation equipment.",
+      "note": "Collect both sample components and finish every floor before using the final interior door.",
+      "save_backup": {
+        "title": "Back up your save before leaving",
+        "why": "This route contains entries that become unreachable after its next one-way transition.",
+        "detail": "Keep the backup until every visible checklist entry in this section is checked off."
+      },
+      "point_of_no_return": {
+        "title": "One-way route ahead",
+        "why": "Do not take the next major exit until this area's checklist is complete.",
+        "detail": "The warning refers only to the physical departure, without describing what follows."
+      },
+      "items": [
+        {
+          "id": "loc-file-47",
+          "type": "file",
+          "safe_type": "File",
+          "label": "NEST 2 Employee Regulations",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In NEST 2, inspect the first-floor safe room.",
+            "3": "Reach the first-floor safe room after you enter laboratory. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "nest2",
+          "fact_number": 47
+        },
+        {
+          "id": "loc-file-48",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Isaac Graves' Diary",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In NEST 2, inspect the upper hall floor.",
+            "3": "Reach the upper hall floor after you climb main stairs. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "nest2",
+          "fact_number": 48
+        },
+        {
+          "id": "loc-file-49",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Essay on Vaccine Synthesis",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In NEST 2, inspect the unnamed laboratory bedroom.",
+            "3": "Reach the unnamed laboratory bedroom after you reach upper wing. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "nest2",
+          "fact_number": 49
+        },
+        {
+          "id": "loc-file-50",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Shipping Notice",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In NEST 2, inspect the first-floor tray.",
+            "3": "Reach the first-floor tray after you use flash drive. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "nest2",
+          "fact_number": 50
+        },
+        {
+          "id": "loc-file-51",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Weaponry Authorization Request",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In NEST 2, inspect the Lab 1 desk.",
+            "3": "Reach the Lab 1 desk after you enter Lab 1. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "nest2",
+          "fact_number": 51
+        },
+        {
+          "id": "loc-file-52",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Scientist's Dying Message",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In NEST 2, inspect the body-bag passage floor.",
+            "3": "Reach the body-bag passage floor after you leave secured room. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "nest2",
+          "fact_number": 52
+        },
+        {
+          "id": "loc-file-53",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Expression of Concern",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In NEST 2, inspect the incubation-lab table.",
+            "3": "Reach the incubation-lab table after you enter incubation lab. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "nest2",
+          "fact_number": 53
+        },
+        {
+          "id": "loc-file-54",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Disposal Center",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In NEST 2, inspect the worker-room wall.",
+            "3": "Reach the worker-room wall after you regain control indoors. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "nest2",
+          "fact_number": 54
+        },
+        {
+          "id": "loc-file-55",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Weapon Spec Sheet",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In NEST 2, inspect the B1 safe-room bench.",
+            "3": "Reach the B1 safe-room bench after you reach lower safe room. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "nest2",
+          "fact_number": 55
+        },
+        {
+          "id": "loc-file-56",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Suspicious Contract Memo",
+          "missable": true,
+          "levels": {
+            "1": "Check readable surfaces before advancing from this section.",
+            "2": "In NEST 2, inspect the ladder-top floor.",
+            "3": "Reach the ladder-top floor after you inspect before final door. Pick up the document and open it once so the file register records the read."
+          },
+          "fact_area": "nest2",
+          "fact_number": 56
+        },
+        {
+          "id": "loc-doll-19",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #19",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In NEST 2, inspect the unnamed-room balcony corner.",
+            "3": "Reach the unnamed-room balcony corner after you reach upper wing. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "nest2",
+          "fact_number": 19
+        },
+        {
+          "id": "loc-doll-20",
+          "type": "figure",
+          "safe_type": "Figure",
+          "label": "Charlie Doll #20",
+          "missable": true,
+          "levels": {
+            "1": "Pause occasionally and listen for a tiny mechanical sound.",
+            "2": "In NEST 2, inspect the Lab 1 backroom floor.",
+            "3": "Reach the Lab 1 backroom floor after you enter Lab 1. Aim at the small figure and break it; its flag persists after later reloads."
+          },
+          "fact_area": "nest2",
+          "fact_number": 20
+        },
+        {
+          "id": "loc-key-item-22",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Flash Drive",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In NEST 2, inspect the unnamed-room green console.",
+            "3": "Reach the unnamed-room green console after you reach upper wing. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "nest2",
+          "fact_number": 22
+        },
+        {
+          "id": "loc-key-item-23",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Liquid-filled Test Tube",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In NEST 2, inspect the incubation-lab drawer.",
+            "3": "Reach the incubation-lab drawer after you enter incubation lab. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "nest2",
+          "fact_number": 23
+        },
+        {
+          "id": "loc-key-item-24",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Culture Sample",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In NEST 2, inspect the Lab 1 green console.",
+            "3": "Reach the Lab 1 green console after you use flash drive. Take the key item, examine it, and retain it until every matching lock or console has been cleared."
+          },
+          "fact_area": "nest2",
+          "fact_number": 24
+        },
+        {
+          "id": "loc-key-item-25",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Vaccine Base",
+          "missable": true,
+          "levels": {
+            "1": "Examine each unusual pickup before deciding it is finished.",
+            "2": "In NEST 2, inspect the synthesizer console.",
+            "3": "Reach the synthesizer console after you combine both samples. Combine the test tube with the culture, insert the result, then set the controls to MID, HIGH, LOW."
+          },
+          "fact_area": "nest2",
+          "fact_number": 25
+        },
+        {
+          "id": "loc-map-03",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "NEST 2 Map",
+          "missable": true,
+          "levels": {
+            "1": "A posted floor plan can make the remaining sweep easier.",
+            "2": "In NEST 2, inspect the first-floor safe room.",
+            "3": "Reach the first-floor safe room after you take employee-regulations file. Take the posted map and verify that its floor layer appears in the map screen."
+          },
+          "fact_area": "nest2",
+          "fact_number": 3
+        },
+        {
+          "id": "puzzle-07-vaccine-synthesizer",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Vaccine Synthesizer",
+          "missable": true,
+          "levels": {
+            "1": "A nearby written clue supplies the intended input.",
+            "2": "Use the controls at the upper synthesizer console.",
+            "3": "At the upper synthesizer console, enter MID HIGH LOW. Confirm every indicator before leaving the console."
+          }
+        }
+      ]
+    },
+    {
+      "id": "replay-difficulties",
+      "name": "Replay Difficulties and Results",
+      "location_cue": "The New Game difficulty selector and the results screen after a completed run.",
+      "note": "Use independent new-game saves; persistent Records and Shop purchases remain profile-wide.",
+      "save_backup": {
+        "title": "Keep the clean completion profile",
+        "why": "Restricted-save and low-resource runs are easier to retry from planned manual checkpoints.",
+        "detail": "Preserve the profile and each useful checkpoint until every result is registered."
+      },
+      "items": [
+        {
+          "id": "rank-s-assisted",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Assisted S Rank",
+          "missable": false,
+          "levels": {
+            "1": "A fast, deliberate replay is required for the top result.",
+            "2": "Clear Assisted within 2:30:00 while using no more than 5 manual saves.",
+            "3": "Choose Assisted, finish at or below 2:30:00, and keep the results-screen save count at 5 or fewer. Bonus-shop equipment is allowed; retry deaths from the main menu so failed time is not retained."
+          }
+        },
+        {
+          "id": "rank-s-standard",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Standard S Rank",
+          "missable": false,
+          "levels": {
+            "1": "A fast, deliberate replay is required for the top result.",
+            "2": "Clear Standard within 2:00:00 while using no more than 5 manual saves.",
+            "3": "Choose Standard, finish at or below 2:00:00, and keep the results-screen save count at 5 or fewer. Bonus-shop equipment is allowed; retry deaths from the main menu so failed time is not retained."
+          }
+        },
+        {
+          "id": "rank-s-hardcore",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Hardcore S Rank",
+          "missable": false,
+          "levels": {
+            "1": "A fast, deliberate replay is required for the top result.",
+            "2": "Clear Hardcore within 1:45:00 while using no more than 5 manual saves.",
+            "3": "Choose Hardcore, finish at or below 1:45:00, and keep the results-screen save count at 5 or fewer. Bonus-shop equipment is allowed; retry deaths from the main menu so failed time is not retained."
+          }
+        },
+        {
+          "id": "rank-s-nightmare",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Nightmare S Rank",
+          "missable": false,
+          "levels": {
+            "1": "A fast, deliberate replay is required for the top result.",
+            "2": "Clear Nightmare within 2:00:00 while using no more than 5 manual saves.",
+            "3": "Choose Nightmare, finish at or below 2:00:00, and keep the results-screen save count at 5 or fewer. Bonus-shop equipment is allowed; retry deaths from the main menu so failed time is not retained."
+          }
+        },
+        {
+          "id": "rank-s-inferno",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Inferno S Rank",
+          "missable": false,
+          "levels": {
+            "1": "A fast, deliberate replay is required for the top result.",
+            "2": "Clear Inferno within 2:00:00 while using no more than 5 manual saves.",
+            "3": "Choose Inferno, finish at or below 2:00:00, and keep the results-screen save count at 5 or fewer. Bonus-shop equipment is allowed; retry deaths from the main menu so failed time is not retained."
+          }
+        },
+        {
+          "id": "mode-nightmare",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Nightmare Difficulty",
+          "missable": false,
+          "levels": {
+            "1": "A completed harder run opens a rearranged challenge.",
+            "2": "Finish Hardcore once to make Nightmare selectable.",
+            "3": "Complete a native Hardcore run, return to New Game, and verify Nightmare appears. Its placements and encounters are remixed, so clear it as its own route rather than treating it as a faster duplicate."
+          }
+        },
+        {
+          "id": "mode-inferno",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Inferno Difficulty",
+          "missable": false,
+          "levels": {
+            "1": "The final difficulty follows the rearranged challenge.",
+            "2": "Finish Nightmare once to make Inferno selectable.",
+            "3": "Complete Nightmare, start a separate Inferno save, and plan manual checkpoints carefully because ordinary autosaving is unavailable. Finish the mode and retain its result screen."
+          }
+        },
+        {
+          "id": "campaign-native-clear",
+          "type": "optional",
+          "safe_type": "Completion",
+          "label": "Native Campaign Clear",
+          "missable": false,
+          "levels": {
+            "1": "Finish the route once before planning reward cleanup.",
+            "2": "Complete a new game without the instant-reward add-on.",
+            "3": "Reach the natural results screen on a clean profile. This unlocks the Records-funded Shop; there is no inventory-carrying New Game Plus route, so later runs begin through New Game with Shop items placed in item boxes."
+          }
+        },
+        {
+          "id": "campaign-conclusion-audit",
+          "type": "ending",
+          "safe_type": "Conclusion",
+          "label": "Conclusion Audit",
+          "missable": false,
+          "levels": {
+            "1": "No mid-run branch needs a separate backup path.",
+            "2": "Finish the campaign normally and retain its completed save data.",
+            "3": "A normal clear registers the campaign's conclusion without a branching choice. Keep the completed profile because its Records, Shop purchases, figures, and files remain persistent across later new-game runs."
+          }
+        }
+      ]
+    },
+    {
+      "id": "records-ledger-1",
+      "name": "Records Ledger 1",
+      "location_cue": "The Records screen under Bonuses after returning to the title menu.",
+      "note": "These counters are profile-wide and can be advanced across repeated clean saves.",
+      "items": [
+        {
+          "id": "record-01-so-long-rc",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "So Long, RC",
+          "missable": false,
+          "levels": {
+            "1": "This registers naturally while completing the current route.",
+            "2": "Complete this condition: all other records.",
+            "3": "In Records, track all other records; finish the action until the entry changes to complete. It grants 0 Shop points and final gallery entry."
+          }
+        },
+        {
+          "id": "record-02-first-escape",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "First Escape",
+          "missable": false,
+          "levels": {
+            "1": "This registers naturally while completing the current route.",
+            "2": "Complete this condition: automatic route milestone.",
+            "3": "In Records, track automatic route milestone; finish the action until the entry changes to complete. It grants 80 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-03-somebody-to-lean-on",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Somebody to Lean On",
+          "missable": false,
+          "levels": {
+            "1": "This registers naturally while completing the current route.",
+            "2": "Complete this condition: automatic route milestone.",
+            "3": "In Records, track automatic route milestone; finish the action until the entry changes to complete. It grants 100 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-04-rooftop-milestone",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Rooftop Milestone",
+          "missable": false,
+          "levels": {
+            "1": "This registers naturally while completing the current route.",
+            "2": "Complete this condition: automatic route milestone.",
+            "3": "In Records, track automatic route milestone; finish the action until the entry changes to complete. It grants 120 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-05-downtown-milestone",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Downtown Milestone",
+          "missable": false,
+          "levels": {
+            "1": "This registers naturally while completing the current route.",
+            "2": "Complete this condition: automatic route milestone.",
+            "3": "In Records, track automatic route milestone; finish the action until the entry changes to complete. It grants 120 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-06-station-milestone",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Station Milestone",
+          "missable": false,
+          "levels": {
+            "1": "This registers naturally while completing the current route.",
+            "2": "Complete this condition: automatic route milestone.",
+            "3": "In Records, track automatic route milestone; finish the action until the entry changes to complete. It grants 120 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-07-plaza-milestone",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Plaza Milestone",
+          "missable": false,
+          "levels": {
+            "1": "This registers naturally while completing the current route.",
+            "2": "Complete this condition: automatic route milestone.",
+            "3": "In Records, track automatic route milestone; finish the action until the entry changes to complete. It grants 140 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-08-hospital-defense-milestone",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Hospital Defense Milestone",
+          "missable": false,
+          "levels": {
+            "1": "This registers naturally while completing the current route.",
+            "2": "Complete this condition: automatic route milestone.",
+            "3": "In Records, track automatic route milestone; finish the action until the entry changes to complete. It grants 160 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-09-underground-milestone",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Underground Milestone",
+          "missable": false,
+          "levels": {
+            "1": "This registers naturally while completing the current route.",
+            "2": "Complete this condition: automatic route milestone.",
+            "3": "In Records, track automatic route milestone; finish the action until the entry changes to complete. It grants 180 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-10-late-battle-milestone-a",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Late Battle Milestone A",
+          "missable": false,
+          "levels": {
+            "1": "This registers naturally while completing the current route.",
+            "2": "Complete this condition: automatic route milestone.",
+            "3": "In Records, track automatic route milestone; finish the action until the entry changes to complete. It grants 260 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-11-late-battle-milestone-b",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Late Battle Milestone B",
+          "missable": false,
+          "levels": {
+            "1": "This registers naturally while completing the current route.",
+            "2": "Complete this condition: automatic route milestone.",
+            "3": "In Records, track automatic route milestone; finish the action until the entry changes to complete. It grants 800 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-12-basic-chemistry",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Basic Chemistry",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: craft one item.",
+            "3": "In Records, track craft one item; finish the action until the entry changes to complete. It grants 160 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-13-gunsmith",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Gunsmith",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: fit one weapon part.",
+            "3": "In Records, track fit one weapon part; finish the action until the entry changes to complete. It grants 150 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-14-get-organized",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Get Organized",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: collect one hip pouch.",
+            "3": "In Records, track collect one hip pouch; finish the action until the entry changes to complete. It grants 150 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-15-master-of-sidestepping",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Master of Sidestepping",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: perform one perfect dodge.",
+            "3": "In Records, track perform one perfect dodge; finish the action until the entry changes to complete. It grants 200 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-16-counterattack-practice",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Counterattack Practice",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: perform one perfect punch.",
+            "3": "In Records, track perform one perfect punch; finish the action until the entry changes to complete. It grants 200 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-17-hello-charlie",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Hello, Charlie!",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: break one Charlie Doll.",
+            "3": "In Records, track break one Charlie Doll; finish the action until the entry changes to complete. It grants 200 Shop points and gallery model. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-18-trusty-sidearm",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Trusty Sidearm",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 80 handgun eliminations.",
+            "3": "In Records, track 80 handgun eliminations; finish the action until the entry changes to complete. It grants 1200 Shop points and concept art. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-19-gunslinger",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Gunslinger",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 200 handgun eliminations.",
+            "3": "In Records, track 200 handgun eliminations; finish the action until the entry changes to complete. It grants 5200 Shop points and gallery model. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-20-close-range-companion",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Close-Range Companion",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 100 shotgun eliminations.",
+            "3": "In Records, track 100 shotgun eliminations; finish the action until the entry changes to complete. It grants 3200 Shop points and concept art. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-21-point-blank-professional",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Point-Blank Professional",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 130 shotgun eliminations.",
+            "3": "In Records, track 130 shotgun eliminations; finish the action until the entry changes to complete. It grants 6200 Shop points and gallery model. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-22-make-some-noise",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Make Some Noise",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 80 grenade-launcher eliminations.",
+            "3": "In Records, track 80 grenade-launcher eliminations; finish the action until the entry changes to complete. It grants 6200 Shop points and gallery model. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-23-grenadier",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Grenadier",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 120 grenade-launcher eliminations.",
+            "3": "In Records, track 120 grenade-launcher eliminations; finish the action until the entry changes to complete. It grants 10400 Shop points and gallery model. RAI-DEN eliminations also advance this MAG-category counter."
+          }
+        },
+        {
+          "id": "record-24-do-you-feel-lucky",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Do You Feel Lucky?",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 20 MAG-category eliminations.",
+            "3": "In Records, track 20 MAG-category eliminations; finish the action until the entry changes to complete. It grants 6600 Shop points and concept art. RAI-DEN eliminations also advance this MAG-category counter."
+          }
+        },
+        {
+          "id": "record-25-well-do-ya",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Well? Do Ya?",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 80 MAG-category eliminations.",
+            "3": "In Records, track 80 MAG-category eliminations; finish the action until the entry changes to complete. It grants 10400 Shop points and gallery model. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-26-suppressing-fire",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Suppressing Fire",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 200 assault-rifle eliminations.",
+            "3": "In Records, track 200 assault-rifle eliminations; finish the action until the entry changes to complete. It grants 3400 Shop points and gallery model. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-27-spitting-lead",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Spitting Lead",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 400 assault-rifle eliminations.",
+            "3": "In Records, track 400 assault-rifle eliminations; finish the action until the entry changes to complete. It grants 8400 Shop points and concept art. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-28-necessary-violence",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Necessary Violence",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 400 total eliminations.",
+            "3": "In Records, track 400 total eliminations; finish the action until the entry changes to complete. It grants 5200 Shop points and concept art. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-29-making-a-dent",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Making a Dent",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 800 total eliminations.",
+            "3": "In Records, track 800 total eliminations; finish the action until the entry changes to complete. It grants 8200 Shop points and concept art. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        }
+      ]
+    },
+    {
+      "id": "records-ledger-2",
+      "name": "Records Ledger 2",
+      "location_cue": "The Records screen under Bonuses after returning to the title menu.",
+      "note": "These counters are profile-wide and can be advanced across repeated clean saves.",
+      "items": [
+        {
+          "id": "record-30-thinning-the-horde",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Thinning the Horde",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 1100 total eliminations.",
+            "3": "In Records, track 1100 total eliminations; finish the action until the entry changes to complete. It grants 10400 Shop points and concept art. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-31-zombie-exterminator",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Zombie Exterminator",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 1400 total eliminations.",
+            "3": "In Records, track 1400 total eliminations; finish the action until the entry changes to complete. It grants 10600 Shop points and concept art. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-32-the-one-zombies-fear",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "The One Zombies Fear",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: 2000 total eliminations.",
+            "3": "In Records, track 2000 total eliminations; finish the action until the entry changes to complete. It grants 11000 Shop points and concept art. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-33-two-for-one-deal",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Two For One Deal",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: two targets one shot.",
+            "3": "In Records, track two targets one shot; finish the action until the entry changes to complete. It grants 1000 Shop points and gallery model. Counter progress persists across a save reload, so a dense encounter can be repeated safely."
+          }
+        },
+        {
+          "id": "record-34-hats-off",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Hats Off!",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: remove 28 hats.",
+            "3": "In Records, track remove 28 hats; finish the action until the entry changes to complete. It grants 2000 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-35-supply-case-record",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Supply-Case Record",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: force one supply drop.",
+            "3": "In Records, track force one supply drop; finish the action until the entry changes to complete. It grants 600 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-36-conversation-record",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Conversation Record",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: finish every opening conversation.",
+            "3": "In Records, track finish every opening conversation; finish the action until the entry changes to complete. It grants 200 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-37-special-target-record",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Special Target Record",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: defeat optional station target.",
+            "3": "In Records, track defeat optional station target; finish the action until the entry changes to complete. It grants 120 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-38-power-stones",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Power Stones",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: insert all three jewels.",
+            "3": "In Records, track insert all three jewels; finish the action until the entry changes to complete. It grants 600 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-39-electric-slide",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Electric Slide",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: three fuses under five minutes.",
+            "3": "In Records, track three fuses under five minutes; finish the action until the entry changes to complete. It grants 2000 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-40-kendo-s-armory",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Kendo's Armory",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: collect every field weapon.",
+            "3": "In Records, track collect every field weapon; finish the action until the entry changes to complete. It grants 600 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-41-kendo-s-prot-g",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Kendo's Protégé",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: collect ten weapon parts.",
+            "3": "In Records, track collect ten weapon parts; finish the action until the entry changes to complete. It grants 300 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-42-bookworm",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Bookworm",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: read all 56 files.",
+            "3": "In Records, track read all 56 files; finish the action until the entry changes to complete. It grants 1000 Shop points and art and model."
+          }
+        },
+        {
+          "id": "record-43-goodbye-charlie",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Goodbye, Charlie!",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: break all 20 dolls.",
+            "3": "In Records, track break all 20 dolls; finish the action until the entry changes to complete. It grants 1000 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-44-master-of-unlocking",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Master of Unlocking",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: open all 20 locks.",
+            "3": "In Records, track open all 20 locks; finish the action until the entry changes to complete. It grants 1000 Shop points and art and model."
+          }
+        },
+        {
+          "id": "record-45-escapee",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Escapee",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: clear Assisted or higher.",
+            "3": "In Records, track clear Assisted or higher; finish the action until the entry changes to complete. It grants 800 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-46-survivor",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Survivor",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: clear Standard or higher.",
+            "3": "In Records, track clear Standard or higher; finish the action until the entry changes to complete. It grants 1000 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-47-veteran",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Veteran",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: clear Hardcore or higher.",
+            "3": "In Records, track clear Hardcore or higher; finish the action until the entry changes to complete. It grants 1200 Shop points and art and Nightmare mode."
+          }
+        },
+        {
+          "id": "record-48-conqueror",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Conqueror",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: clear Nightmare.",
+            "3": "In Records, track clear Nightmare; finish the action until the entry changes to complete. It grants 3000 Shop points and art and Inferno mode."
+          }
+        },
+        {
+          "id": "record-49-dominator",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Dominator",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: clear Inferno.",
+            "3": "In Records, track clear Inferno; finish the action until the entry changes to complete. It grants 8000 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-50-r-p-d-material",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "R.P.D. Material",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: Standard-or-higher S rank.",
+            "3": "In Records, track Standard-or-higher S rank; finish the action until the entry changes to complete. It grants 3800 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-51-u-b-c-s-material",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "U.B.C.S. Material",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: Hardcore-or-higher S rank.",
+            "3": "In Records, track Hardcore-or-higher S rank; finish the action until the entry changes to complete. It grants 6200 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-52-s-t-a-r-s-material",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "S.T.A.R.S. Material",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: Nightmare-or-higher S rank.",
+            "3": "In Records, track Nightmare-or-higher S rank; finish the action until the entry changes to complete. It grants 8000 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-53-inferno-s-record",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Inferno S Record",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: Inferno S rank.",
+            "3": "In Records, track Inferno S rank; finish the action until the entry changes to complete. It grants 0 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-54-a-rank-player",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "A-rank Player",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: A rank or better.",
+            "3": "In Records, track A rank or better; finish the action until the entry changes to complete. It grants 840 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-55-s-rank-player",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "S-rank Player",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: S rank or better.",
+            "3": "In Records, track S rank or better; finish the action until the entry changes to complete. It grants 1200 Shop points and concept art."
+          }
+        },
+        {
+          "id": "record-56-minimalist",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Minimalist",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: never open item box.",
+            "3": "In Records, track never open item box; finish the action until the entry changes to complete. It grants 7000 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-57-frugalist",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Frugalist",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: one recovery use maximum.",
+            "3": "In Records, track one recovery use maximum; finish the action until the entry changes to complete. It grants 7000 Shop points and gallery model."
+          }
+        },
+        {
+          "id": "record-58-sprinter",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Sprinter",
+          "missable": false,
+          "levels": {
+            "1": "Use the Records screen to watch this persistent counter.",
+            "2": "Complete this condition: clear under two hours.",
+            "3": "In Records, track clear under two hours; finish the action until the entry changes to complete. It grants 7000 Shop points and gallery model."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bonus-shop",
+      "name": "Post-Clear Shop",
+      "location_cue": "The Bonuses and Shop screens available from the main menu after a completed run.",
+      "note": "Earn rewards natively; leave the paid instant-unlock shortcut disabled.",
+      "items": [
+        {
+          "id": "shop-01-jill-s-t-a-r-s-gear",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Jill - S.T.A.R.S. Gear",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Jill - S.T.A.R.S. Gear from the post-clear Shop for 2000 points.",
+            "3": "After a native clear, spend 2000 points on Jill - S.T.A.R.S. Gear. Start or load a New Game and confirm its costume copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-02-recovery-coin-a",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Recovery Coin A",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Recovery Coin A from the post-clear Shop for 4000 points.",
+            "3": "After a native clear, spend 4000 points on Recovery Coin A. Start or load a New Game and confirm its regeneration booster copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-03-recovery-coin-b",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Recovery Coin B",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Recovery Coin B from the post-clear Shop for 4000 points.",
+            "3": "After a native clear, spend 4000 points on Recovery Coin B. Start or load a New Game and confirm its regeneration booster copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-04-iron-defense-coin-a",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Iron Defense Coin A",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Iron Defense Coin A from the post-clear Shop for 4000 points.",
+            "3": "After a native clear, spend 4000 points on Iron Defense Coin A. Start or load a New Game and confirm its defence booster copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-05-iron-defense-coin-b",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Iron Defense Coin B",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Iron Defense Coin B from the post-clear Shop for 4000 points.",
+            "3": "After a native clear, spend 4000 points on Iron Defense Coin B. Start or load a New Game and confirm its defence booster copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-06-assault-coin-a",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Assault Coin A",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Assault Coin A from the post-clear Shop for 4000 points.",
+            "3": "After a native clear, spend 4000 points on Assault Coin A. Start or load a New Game and confirm its damage booster copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-07-assault-coin-b",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Assault Coin B",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Assault Coin B from the post-clear Shop for 4000 points.",
+            "3": "After a native clear, spend 4000 points on Assault Coin B. Start or load a New Game and confirm its damage booster copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-08-crafting-companion",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Crafting Companion",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Crafting Companion from the post-clear Shop for 4000 points.",
+            "3": "After a native clear, spend 4000 points on Crafting Companion. Start or load a New Game and confirm its extra ammunition crafting copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-09-s-t-a-r-s-field-combat-manual-a",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "S.T.A.R.S. Field Combat Manual A",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy S.T.A.R.S. Field Combat Manual A from the post-clear Shop for 6400 points.",
+            "3": "After a native clear, spend 6400 points on S.T.A.R.S. Field Combat Manual A. Start or load a New Game and confirm its wider dodge timing copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-10-lock-pick",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Lock Pick",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Lock Pick from the post-clear Shop for 2800 points.",
+            "3": "After a native clear, spend 2800 points on Lock Pick. Start or load a New Game and confirm its early lock access copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-11-bolt-cutters",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Bolt Cutters",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Bolt Cutters from the post-clear Shop for 2800 points.",
+            "3": "After a native clear, spend 2800 points on Bolt Cutters. Start or load a New Game and confirm its early chain access copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-12-hip-pouch-a",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Hip Pouch A",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Hip Pouch A from the post-clear Shop for 4800 points.",
+            "3": "After a native clear, spend 4800 points on Hip Pouch A. Start or load a New Game and confirm its two inventory spaces copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-13-hip-pouch-b",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Hip Pouch B",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Hip Pouch B from the post-clear Shop for 4800 points.",
+            "3": "After a native clear, spend 4800 points on Hip Pouch B. Start or load a New Game and confirm its two inventory spaces copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-14-hot-dogger",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "HOT DOGGER",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy HOT DOGGER from the post-clear Shop for 7200 points.",
+            "3": "After a native clear, spend 7200 points on HOT DOGGER. Start or load a New Game and confirm its heated melee weapon copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-15-samurai-edge",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Samurai Edge",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Samurai Edge from the post-clear Shop for 5600 points.",
+            "3": "After a native clear, spend 5600 points on Samurai Edge. Start or load a New Game and confirm its precision handgun copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-16-rai-den",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "RAI-DEN",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy RAI-DEN from the post-clear Shop for 12000 points.",
+            "3": "After a native clear, spend 12000 points on RAI-DEN. Start or load a New Game and confirm its weak-point energy weapon copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-17-infinite-mup-handgun",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Infinite MUP Handgun",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Infinite MUP Handgun from the post-clear Shop for 8000 points.",
+            "3": "After a native clear, spend 8000 points on Infinite MUP Handgun. Start or load a New Game and confirm its unlimited handgun ammunition copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-18-infinite-cqbr-assault-rifle",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Infinite CQBR Assault Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Infinite CQBR Assault Rifle from the post-clear Shop for 28400 points.",
+            "3": "After a native clear, spend 28400 points on Infinite CQBR Assault Rifle. Start or load a New Game and confirm its unlimited rifle ammunition copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-19-infinite-rocket-launcher",
+          "type": "collectible",
+          "safe_type": "Shop Unlock",
+          "label": "Infinite Rocket Launcher",
+          "missable": false,
+          "levels": {
+            "1": "Save enough Record points for another permanent reward.",
+            "2": "Buy Infinite Rocket Launcher from the post-clear Shop for 62400 points.",
+            "3": "After a native clear, spend 62400 points on Infinite Rocket Launcher. Start or load a New Game and confirm its unlimited launcher ammunition copy appears in the first item box or the appropriate menu."
+          }
+        },
+        {
+          "id": "shop-complete-audit",
+          "type": "optional",
+          "safe_type": "Audit",
+          "label": "Purchase the Entire Shop",
+          "missable": false,
+          "levels": {
+            "1": "Every Record point has a permanent use.",
+            "2": "Complete all Records and purchase every Shop listing and duplicate copy.",
+            "3": "Finish the full Records ledger to earn the complete point pool, then buy every listing, including both copies of each coin and pouch. The total native spend is 175,200 points."
+          }
+        },
+        {
+          "id": "costume-classic-pack",
+          "type": "collectible",
+          "safe_type": "Costume",
+          "label": "Classic Costume Pack",
+          "missable": false,
+          "levels": {
+            "1": "One cosmetic pair belongs to the current PC route but is not earned in the Shop.",
+            "2": "Install the Classic Costume Pack and open the Costumes menu.",
+            "3": "Enable the official Classic Costume Pack, select the classic outfit and alternate hairstyle once each, then return both to default if desired. The paid reward-unlock shortcut is unrelated and stays disabled."
+          }
+        },
+        {
+          "id": "gallery-complete-audit",
+          "type": "collectible",
+          "safe_type": "Gallery",
+          "label": "Models and Concept Art Audit",
+          "missable": false,
+          "levels": {
+            "1": "Record rewards fill two post-clear galleries.",
+            "2": "Open the Models and Concept Art menus after all Records are complete.",
+            "3": "Complete all 58 Records, then visit both gallery tabs and move through every newly unlocked tile. The final all-Records entry supplies the last gallery reward; no separate currency purchase is needed."
+          }
+        },
+        {
+          "id": "online-renet-audit",
+          "type": "optional",
+          "safe_type": "Online Check",
+          "label": "RESIDENT EVIL.NET Data Check",
+          "missable": false,
+          "levels": {
+            "1": "An optional profile page can confirm uploaded play statistics.",
+            "2": "Link the PC profile to RE.NET and inspect the Resident Evil 3 statistics page.",
+            "3": "Enable play-data transmission only if desired, save once to trigger an upload, and confirm the current World Records page recognizes the profile. It supplies no rotating campaign reward required by this pack."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1373 @@
+{
+  "id": "the-sims-pet-stories",
+  "game": "The Sims Pet Stories",
+  "target": "Spoiler-free completion of all directed routes, outcome branches, pet systems, rewards, careers, and finite free-play ledgers",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "original-pc-mac-route",
+      "name": "Original PC or Mac Route",
+      "location_cue": "The original launcher, story selector, free-play selector, graphics options, and user-data folder.",
+      "note": "Chosen route: the original standalone Windows or Mac release; no later definitive edition or secondary platform is required.",
+      "save_backup": {
+        "title": "Create a clean backup first",
+        "why": "Directed-story rewards, pet training, and outcome branches are stored in the user-data folder.",
+        "detail": "Copy the complete folder before directed play and keep another checkpoint before any outcome selection."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "install-original-release",
+          "type": "interaction",
+          "safe_type": "Platform Route",
+          "label": "Use the Original Release",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the standalone Pet Stories application before creating the completion save.",
+            "2": "Install the original Windows or Mac release and open its mode selector.",
+            "3": "Launch the game, create a disposable free-play household, verify every directed-story tile and free-play option, then preserve the untouched user-data folder."
+          }
+        },
+        {
+          "id": "verify-story-and-freeplay-modes",
+          "type": "interaction",
+          "safe_type": "Mode Audit",
+          "label": "Verify Every Play Mode",
+          "missable": false,
+          "levels": {
+            "1": "A directed route may remain locked until enough progress is made elsewhere.",
+            "2": "Record every story tile, its current lock state, and free-play mode.",
+            "3": "Open the selector, record all visible modes, complete the required available route, return to the selector, and confirm every directed story can be started."
+          }
+        },
+        {
+          "id": "keep-story-save-unmodified",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Keep Directed Play Unmodified",
+          "missable": false,
+          "levels": {
+            "1": "Scripted lots, pets, objects, and markers rely on the original data.",
+            "2": "Remove gameplay-changing mods before starting directed play.",
+            "3": "Use a clean user folder, retain only non-gameplay compatibility settings, test the opening marker, and keep the untouched backup separate."
+          }
+        }
+      ]
+    },
+    {
+      "id": "garden-heights-home-and-training",
+      "name": "Garden Heights Home and Training",
+      "location_cue": "The starting home, easel, pet bowls, furniture, training yard, sink, bath, phone, and delivered obstacle equipment.",
+      "note": "These entries expose only pet-care controls, obstacle training, and active-marker mechanics.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "garden-heights-segment-01",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Home and Basic Dog Training",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: finish one painting; use an affectionate interaction with the dog; change clothes; change appearance; scold the dog for chewing furniture; teach the Come Here command; ask the marked visitor to leave; walk dog.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "garden-heights-segment-03",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "A-Frame Practice",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: invite the marked friend to the home; chat visitors; train the dog on the A-Frame.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "garden-heights-segment-04",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Home Repair and Teeter Training",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: scold the dog for digging; use the marked contact to repair the sink; clean kitchen; play with the visiting dog; train the dog on the Teeter Totter.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "garden-heights-segment-07",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Advanced Communication",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: greet passing mentor; complete the mentor’s advanced communication lesson.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "garden-heights-segment-09",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Tire Training and Mentor Visit",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: place the delivered Tire Jump; train the dog on the Tire Jump; confront marked visitor; inspect the empty position of the missing training item; talk mentor; call friend.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "garden-heights-segment-10",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Tunnel Training",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: place the delivered Collapsible Chute Tunnel; train the dog on every obstacle until each routine succeeds.  Remain on the lot until the next goal or return prompt appears."
+          }
+        }
+      ]
+    },
+    {
+      "id": "garden-heights-venues-and-shows",
+      "name": "Garden Heights Venues and Shows",
+      "location_cue": "Playground for Precious, Vista Strip Mall, Simoleon Diner, Training Grounds, The Show Park, Cafe Grounds, Abandoned House, and Bartholomew Greens.",
+      "note": "Fill motives and pet needs before travel; several goal chains must be finished before returning home.",
+      "save_backup": {
+        "title": "Save before community-lot goal chains",
+        "why": "Travel and show sequences can be lengthy, and directed community lots do not provide a safe mid-chain checkpoint.",
+        "detail": "Save at home, train every available obstacle, then travel with full motives."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "garden-heights-segment-02",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Registration Venue",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Playground for Precious.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: travel with the dog to the marked lot; use the registration interaction; chat with the marked contestants.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "garden-heights-segment-05",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Training Magazine Route",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Vista Strip Mall.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: buy the dog-training magazine; travel to Simoleon Diner; return home and clean the pet mess; read magazine; use the magazine’s Training Grounds visit.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "garden-heights-segment-06",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Local Dog Show",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Show Park.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: train the dog on the High Jump; practice every currently owned obstacle; bathe dog; travel Show Park; register and begin the marked dog show; qualify.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "garden-heights-segment-08",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Neighborhood Search",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Garden Heights search route.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: call police; inspect every highlighted clue around the home; travel to Cafe Grounds; travel to the Abandoned House; complete the highlighted confrontation; use the marked interaction to recover the dog.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "garden-heights-segment-11",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Championship Venue",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Bartholomew Greens.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: travel with the dog to the marked lot; register for the show at the venue; sit in the highlighted seat; complete the full obstacle routine without an untrained station. Required condition: all obstacle skills trained. Remain on the lot until the next goal or return prompt appears."
+          }
+        }
+      ]
+    },
+    {
+      "id": "garden-heights-directed-finish",
+      "name": "Garden Heights Directed Finish",
+      "location_cue": "The starting home, phone, kitchen, dining space, puppy-care area, and Story Rewards panel.",
+      "note": "The concluding controls are described without identifying story events or characters.",
+      "save_backup": {
+        "title": "Back up before the concluding home goals",
+        "why": "Completing the celebration and puppy-care chain ends directed play.",
+        "detail": "Confirm all earlier Garden Heights rewards and training equipment before advancing."
+      },
+      "point_of_no_return": {
+        "title": "Directed goals conclude here",
+        "why": "Finishing the current home chain changes the neighborhood to open-ended play.",
+        "detail": "Audit the story-reward panel before completing the last active marker."
+      },
+      "items": [
+        {
+          "id": "garden-heights-segment-12",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Home Celebration and Puppy Care",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: invite supporting friends; serve group meal; feed, settle, and monitor the newborn puppy litter.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "garden-heights-story-rewards",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Audit the Garden Heights Story Rewards",
+          "missable": false,
+          "levels": {
+            "1": "Goal chains add exclusive pet and household objects to a separate panel.",
+            "2": "Verify every earned Garden Heights slot in Story Rewards.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mesa-flats-home-and-pet-care",
+      "name": "Mesa Flats Home and Pet Care",
+      "location_cue": "The starting home, kitchen, sofa, cat equipment, exercise objects, telephone, food-preparation surfaces, and sculpture station.",
+      "note": "Complete the displayed pet-care and cooking mechanics while keeping the story context hidden.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "mesa-flats-segment-02",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Cat Arrival and Furniture Rules",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the starting home.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: greet the arriving cat and handler; invite the visitor inside for coffee; scold the cat for scratching the sofa.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "mesa-flats-segment-06",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Cooking and Plaza Errands",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the home and Six Points Plaza.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: clean kitchen; prepare salad; buy the requested groceries; demonstrate the Roll Over command; eat delivered soup; prepare the replacement salad; give the finished dish to the marked collector.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "mesa-flats-segment-07",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Cooking and Bar Visit",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the home and Flat Hat Bar.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: prepare the requested lobster dish; give the finished dish to the marked collector; travel to Flat Hat Bar; play poker; dance marked contact; complete only the interactions shown by the active marker.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "mesa-flats-segment-10",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Plaza Errands and Sculpture",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Six Points Plaza and home.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: travel plaza; complete the marked mask-shopping interaction; buy the requested roses; use the highlighted apology interaction; return home; finish the requested ice sculpture; give the sculpture to the marked collector.  Remain on the lot until the next goal or return prompt appears."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mesa-flats-community-goals",
+      "name": "Mesa Flats Community Goals",
+      "location_cue": "The chapel, Mesa Flats Pet Supply, Club Z, Chez Prix, Flat Hat Bar, Sal’s Bratwurst and Culture, Six Points Plaza, and Amber Hall.",
+      "note": "Use the active marker at each venue; identities, motives, and surrounding story events are withheld.",
+      "save_backup": {
+        "title": "Save before each venue chain",
+        "why": "The directed visits combine travel, pet commands, meals, socials, and temporary objects.",
+        "detail": "Fill motives, bring the required pet when marked, and remain until the return prompt appears."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "mesa-flats-segment-01",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Home and Chapel Tasks",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the home and chapel.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: cook the requested first meal; greet work visitor; travel to the highlighted chapel; use the marked apology interaction; eat buffet; introduce yourself to the marked guest; dance with the marked guest; use the marked invitation interaction; accept temporary care of the cat.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "mesa-flats-segment-03",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Pet-Supply Visit",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Mesa Flats Pet Supply.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: travel with the cat to the marked lot; buy the requested litter box; return home; invite the marked friend to the home; watch the requested television news segment.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "mesa-flats-segment-04",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Club Visit",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Club Z.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: complete the requested workout; call marked contact; travel to Club Z; dance.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "mesa-flats-segment-05",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Restaurant and Cat Training",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Chez Prix.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: teach the Roll Over command; travel to the highlighted restaurant; eat dinner; take the requested photo-booth picture; return home.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "mesa-flats-segment-08",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Karaoke Club Visit",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Club Z.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: travel to Club Z; perform karaoke with the marked Sim; use the currently highlighted kiss interaction; return home.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "mesa-flats-segment-09",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Restaurant Socials",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Sal's Bratwurst and Culture.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: travel to the highlighted restaurant; introduce the marked Sims to each other; request a table at the host stand; eat meal; slow dance; return home.  Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "mesa-flats-segment-11",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Masquerade Venue",
+          "missable": false,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Amber Hall.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: call marked contact; select a mask at the prompted wardrobe; travel to Amber Hall; dance marked contact; equip the temporarily available disguise; follow the marked Sim to the upper area; use Beguile; report the discovered information to the marked ally.  Remain on the lot until the next goal or return prompt appears."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mesa-flats-outcome-branch",
+      "name": "Mesa Flats Outcome Branch",
+      "location_cue": "Amber Hall’s selection prompt, the starting home, household portraits, inbox, and Story Rewards panel.",
+      "note": "Every mechanical branch is included without naming the people or surrounding events.",
+      "save_backup": {
+        "title": "Make a separate save before the selection",
+        "why": "Each option creates a different household state, and one grants a hot-tub reward.",
+        "detail": "Keep the pre-selection checkpoint untouched until both branches are recorded."
+      },
+      "point_of_no_return": {
+        "title": "Outcome branch ahead",
+        "why": "Confirming an option closes the directed goal sequence.",
+        "detail": "Do not overwrite the pre-selection checkpoint."
+      },
+      "items": [
+        {
+          "id": "mesa-flats-segment-12",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Outcome Selection",
+          "missable": true,
+          "levels": {
+            "1": "Prepare both the controlled Sim and pet before beginning the next marked chain.",
+            "2": "Complete every current goal around the Amber Hall and home.",
+            "3": "Keep human and pet motives stable, then follow the active markers in this order: resolve the displayed outcome selection; return home; check email. Stop before the outcome selection and create a separate save. Remain on the lot until the next goal or return prompt appears."
+          }
+        },
+        {
+          "id": "mesa-flats-hot-tub-branch",
+          "type": "upgrade",
+          "safe_type": "Branch Reward",
+          "label": "Unlock the Hot-Tub Branch Reward",
+          "missable": true,
+          "levels": {
+            "1": "One selection adds a household member and grants an exclusive object.",
+            "2": "Choose the move-in option on the first branch.",
+            "3": "Load the pre-selection save, choose the option associated with moving into the household, finish the directed summary, and verify the hot tub appears in the resulting rewards or household inventory."
+          }
+        },
+        {
+          "id": "mesa-flats-alternate-branch",
+          "type": "choice",
+          "safe_type": "Alternate Outcome",
+          "label": "Record the Alternate Outcome",
+          "missable": true,
+          "levels": {
+            "1": "Restore the untouched checkpoint after verifying the object-reward branch.",
+            "2": "Choose the engagement-and-travel option on the restored branch.",
+            "3": "Reload the pre-selection save, choose the option associated with engagement and travel, allow the summary to complete, and retain this household state in a separate save."
+          }
+        },
+        {
+          "id": "mesa-flats-story-rewards",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Audit the Mesa Flats Story Rewards",
+          "missable": false,
+          "levels": {
+            "1": "Directed goals and the outcome branch populate a separate object panel.",
+            "2": "Verify every Mesa Flats reward slot after both branches are recorded.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "classic-mode-pet-mastery",
+      "name": "Classic Mode Pet Mastery",
+      "location_cue": "Create-a-Pet, pet relationship panels, command menu, bowls, beds, litter boxes, pet houses, training yard, and show equipment.",
+      "note": "Complete every finite command, obstacle, behavior, breeding, relationship, and show system.",
+      "save_backup": {
+        "title": "Back up before breeding or behavior experiments",
+        "why": "Household limits and unwanted learned behaviors can disrupt the completion family.",
+        "detail": "Keep a clean checkpoint before adding litters or deliberately testing negative behavior."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "pet-command-come-here",
+          "type": "upgrade",
+          "safe_type": "Pet Command",
+          "label": "Teach Come Here",
+          "missable": false,
+          "levels": {
+            "1": "A patient trainer and high relationship make command lessons more reliable.",
+            "2": "Teach one dog the Come Here command.",
+            "3": "Keep the dog’s motives high, use Train Command and select Come Here, praise successful attempts, and continue until the learned-command panel confirms mastery."
+          }
+        },
+        {
+          "id": "pet-command-sit-up",
+          "type": "upgrade",
+          "safe_type": "Pet Command",
+          "label": "Teach Sit Up",
+          "missable": false,
+          "levels": {
+            "1": "A patient trainer and high relationship make command lessons more reliable.",
+            "2": "Teach one dog the Sit Up command.",
+            "3": "Keep the dog’s motives high, use Train Command and select Sit Up, praise successful attempts, and continue until the learned-command panel confirms mastery."
+          }
+        },
+        {
+          "id": "pet-command-stay",
+          "type": "upgrade",
+          "safe_type": "Pet Command",
+          "label": "Teach Stay",
+          "missable": false,
+          "levels": {
+            "1": "A patient trainer and high relationship make command lessons more reliable.",
+            "2": "Teach one dog the Stay command.",
+            "3": "Keep the dog’s motives high, use Train Command and select Stay, praise successful attempts, and continue until the learned-command panel confirms mastery."
+          }
+        },
+        {
+          "id": "pet-command-shake",
+          "type": "upgrade",
+          "safe_type": "Pet Command",
+          "label": "Teach Shake",
+          "missable": false,
+          "levels": {
+            "1": "A patient trainer and high relationship make command lessons more reliable.",
+            "2": "Teach one dog the Shake command.",
+            "3": "Keep the dog’s motives high, use Train Command and select Shake, praise successful attempts, and continue until the learned-command panel confirms mastery."
+          }
+        },
+        {
+          "id": "pet-command-speak",
+          "type": "upgrade",
+          "safe_type": "Pet Command",
+          "label": "Teach Speak",
+          "missable": false,
+          "levels": {
+            "1": "A patient trainer and high relationship make command lessons more reliable.",
+            "2": "Teach one dog the Speak command.",
+            "3": "Keep the dog’s motives high, use Train Command and select Speak, praise successful attempts, and continue until the learned-command panel confirms mastery."
+          }
+        },
+        {
+          "id": "pet-command-roll-over",
+          "type": "upgrade",
+          "safe_type": "Pet Command",
+          "label": "Teach Roll Over",
+          "missable": false,
+          "levels": {
+            "1": "A patient trainer and high relationship make command lessons more reliable.",
+            "2": "Teach one dog the Roll Over command.",
+            "3": "Keep the dog’s motives high, use Train Command and select Roll Over, praise successful attempts, and continue until the learned-command panel confirms mastery."
+          }
+        },
+        {
+          "id": "pet-command-play-dead",
+          "type": "upgrade",
+          "safe_type": "Pet Command",
+          "label": "Teach Play Dead",
+          "missable": false,
+          "levels": {
+            "1": "A patient trainer and high relationship make command lessons more reliable.",
+            "2": "Teach one dog the Play Dead command.",
+            "3": "Keep the dog’s motives high, use Train Command and select Play Dead, praise successful attempts, and continue until the learned-command panel confirms mastery."
+          }
+        },
+        {
+          "id": "pet-obstacle-a-frame",
+          "type": "upgrade",
+          "safe_type": "Training Obstacle",
+          "label": "Master the A-Frame",
+          "missable": false,
+          "levels": {
+            "1": "Repeat clean runs while the dog is rested and attentive.",
+            "2": "Train one dog to complete the A-Frame reliably.",
+            "3": "Place the A-Frame on a clear lot, direct the dog through repeated practice, praise successful runs, correct failures without exhausting the pet, and verify a clean performance."
+          }
+        },
+        {
+          "id": "pet-obstacle-teeter-totter",
+          "type": "upgrade",
+          "safe_type": "Training Obstacle",
+          "label": "Master the Teeter Totter",
+          "missable": false,
+          "levels": {
+            "1": "Repeat clean runs while the dog is rested and attentive.",
+            "2": "Train one dog to complete the Teeter Totter reliably.",
+            "3": "Place the Teeter Totter on a clear lot, direct the dog through repeated practice, praise successful runs, correct failures without exhausting the pet, and verify a clean performance."
+          }
+        },
+        {
+          "id": "pet-obstacle-high-jump",
+          "type": "upgrade",
+          "safe_type": "Training Obstacle",
+          "label": "Master the High Jump",
+          "missable": false,
+          "levels": {
+            "1": "Repeat clean runs while the dog is rested and attentive.",
+            "2": "Train one dog to complete the High Jump reliably.",
+            "3": "Place the High Jump on a clear lot, direct the dog through repeated practice, praise successful runs, correct failures without exhausting the pet, and verify a clean performance."
+          }
+        },
+        {
+          "id": "pet-obstacle-tire-jump",
+          "type": "upgrade",
+          "safe_type": "Training Obstacle",
+          "label": "Master the Tire Jump",
+          "missable": false,
+          "levels": {
+            "1": "Repeat clean runs while the dog is rested and attentive.",
+            "2": "Train one dog to complete the Tire Jump reliably.",
+            "3": "Place the Tire Jump on a clear lot, direct the dog through repeated practice, praise successful runs, correct failures without exhausting the pet, and verify a clean performance."
+          }
+        },
+        {
+          "id": "pet-obstacle-collapsible-chute-tunnel",
+          "type": "upgrade",
+          "safe_type": "Training Obstacle",
+          "label": "Master the Collapsible Chute Tunnel",
+          "missable": false,
+          "levels": {
+            "1": "Repeat clean runs while the dog is rested and attentive.",
+            "2": "Train one dog to complete the Collapsible Chute Tunnel reliably.",
+            "3": "Place the Collapsible Chute Tunnel on a clear lot, direct the dog through repeated practice, praise successful runs, correct failures without exhausting the pet, and verify a clean performance."
+          }
+        },
+        {
+          "id": "pet-housebreak-dog",
+          "type": "upgrade",
+          "safe_type": "Pet Behavior",
+          "label": "Housebreak a Dog",
+          "missable": false,
+          "levels": {
+            "1": "Praise outdoor relief and interrupt indoor accidents consistently.",
+            "2": "Train one dog to use the correct relief behavior.",
+            "3": "Maintain a regular outdoor schedule, praise the dog immediately after relieving itself outside, scold only a witnessed indoor accident, and continue until the behavior is learned."
+          }
+        },
+        {
+          "id": "pet-litter-train-cat",
+          "type": "upgrade",
+          "safe_type": "Pet Behavior",
+          "label": "Litter-Train a Cat",
+          "missable": false,
+          "levels": {
+            "1": "Provide an accessible clean litter box before the need becomes urgent.",
+            "2": "Make one cat use the litter box reliably.",
+            "3": "Place a litter box on the home lot, keep it clean and reachable, redirect the cat after an accident, and praise correct use until the household routine is stable."
+          }
+        },
+        {
+          "id": "pet-all-learned-behaviors",
+          "type": "collectible",
+          "safe_type": "Pet Behavior Ledger",
+          "label": "Complete Every Learned Pet Behavior",
+          "missable": false,
+          "levels": {
+            "1": "Praise and scold responses build a finite behavior ledger.",
+            "2": "Fill every positive learned-behavior state on suitable pets.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "pet-breed-dog",
+          "type": "interaction",
+          "safe_type": "Pet Breeding",
+          "label": "Breed and Raise a Dog Litter",
+          "missable": false,
+          "levels": {
+            "1": "Compatible adult dogs need a strong relationship and suitable pet house.",
+            "2": "Produce a dog litter and raise every puppy through its next stage.",
+            "3": "Build the dogs’ relationship, provide the required pet house, use the breeding interaction, care for the pregnant pet, then feed and socialize the puppies until they age up."
+          }
+        },
+        {
+          "id": "pet-breed-cat",
+          "type": "interaction",
+          "safe_type": "Pet Breeding",
+          "label": "Breed and Raise a Cat Litter",
+          "missable": false,
+          "levels": {
+            "1": "Compatible adult cats use the same household breeding system.",
+            "2": "Produce a cat litter and raise every kitten through its next stage.",
+            "3": "Build the cats’ relationship, provide the required pet house, initiate breeding, care for the pregnant pet, then feed and socialize the kittens until they age up."
+          }
+        },
+        {
+          "id": "pet-max-human-relationship",
+          "type": "interaction",
+          "safe_type": "Pet Relationship",
+          "label": "Maximize a Human–Pet Relationship",
+          "missable": false,
+          "levels": {
+            "1": "Daily care, play, praise, and training build both relationship bars.",
+            "2": "Reach the maximum relationship between a Sim and one pet.",
+            "3": "Assign one caretaker, satisfy the pet’s needs, use varied positive socials, train without overworking, and continue until both short- and long-term relationship bars are full."
+          }
+        },
+        {
+          "id": "pet-show-perfect-routine",
+          "type": "interaction",
+          "safe_type": "Dog Show",
+          "label": "Complete a Clean Full Show Routine",
+          "missable": false,
+          "levels": {
+            "1": "Every obstacle should be trained before entering the competition lot.",
+            "2": "Finish a dog-show routine without an untrained obstacle failure.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "classic-mode-careers-skills-and-aspirations",
+      "name": "Classic Mode Careers, Skills, and Aspirations",
+      "location_cue": "Newspapers, computers, human and pet job panels, carpools, command requirements, skill objects, aspiration panel, and reward catalogs.",
+      "note": "Top every human and pet career, maximize all skills and aspirations, and retain every unlock.",
+      "save_backup": {
+        "title": "Back up before aspiration-reward tests",
+        "why": "Some reward objects can fail when the controlled Sim’s aspiration state is low.",
+        "detail": "Use a separate branch for failed outcomes and preserve the completed household."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "human-career-athletic",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Athletic",
+          "missable": false,
+          "levels": {
+            "1": "Meet the skills, friends, and daily performance required for promotion.",
+            "2": "Reach the highest rank of the Athletic career.",
+            "3": "Find the Athletic listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its reward."
+          }
+        },
+        {
+          "id": "human-career-business",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Business",
+          "missable": false,
+          "levels": {
+            "1": "Meet the skills, friends, and daily performance required for promotion.",
+            "2": "Reach the highest rank of the Business career.",
+            "3": "Find the Business listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its reward."
+          }
+        },
+        {
+          "id": "human-career-criminal",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Criminal",
+          "missable": false,
+          "levels": {
+            "1": "Meet the skills, friends, and daily performance required for promotion.",
+            "2": "Reach the highest rank of the Criminal career.",
+            "3": "Find the Criminal listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its reward."
+          }
+        },
+        {
+          "id": "human-career-culinary",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Culinary",
+          "missable": false,
+          "levels": {
+            "1": "Meet the skills, friends, and daily performance required for promotion.",
+            "2": "Reach the highest rank of the Culinary career.",
+            "3": "Find the Culinary listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its reward."
+          }
+        },
+        {
+          "id": "human-career-law-enforcement",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Law Enforcement",
+          "missable": false,
+          "levels": {
+            "1": "Meet the skills, friends, and daily performance required for promotion.",
+            "2": "Reach the highest rank of the Law Enforcement career.",
+            "3": "Find the Law Enforcement listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its reward."
+          }
+        },
+        {
+          "id": "human-career-medicine",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Medicine",
+          "missable": false,
+          "levels": {
+            "1": "Meet the skills, friends, and daily performance required for promotion.",
+            "2": "Reach the highest rank of the Medicine career.",
+            "3": "Find the Medicine listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its reward."
+          }
+        },
+        {
+          "id": "human-career-military",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Military",
+          "missable": false,
+          "levels": {
+            "1": "Meet the skills, friends, and daily performance required for promotion.",
+            "2": "Reach the highest rank of the Military career.",
+            "3": "Find the Military listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its reward."
+          }
+        },
+        {
+          "id": "human-career-politics",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Politics",
+          "missable": false,
+          "levels": {
+            "1": "Meet the skills, friends, and daily performance required for promotion.",
+            "2": "Reach the highest rank of the Politics career.",
+            "3": "Find the Politics listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its reward."
+          }
+        },
+        {
+          "id": "human-career-science",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Science",
+          "missable": false,
+          "levels": {
+            "1": "Meet the skills, friends, and daily performance required for promotion.",
+            "2": "Reach the highest rank of the Science career.",
+            "3": "Find the Science listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its reward."
+          }
+        },
+        {
+          "id": "human-career-slacker",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Slacker",
+          "missable": false,
+          "levels": {
+            "1": "Meet the skills, friends, and daily performance required for promotion.",
+            "2": "Reach the highest rank of the Slacker career.",
+            "3": "Find the Slacker listing through the newspaper or computer, attend work with strong motives, satisfy every promotion requirement, reach the final rank, and place its reward."
+          }
+        },
+        {
+          "id": "pet-career-security",
+          "type": "interaction",
+          "safe_type": "Pet Career",
+          "label": "Reach the Top of Pet Security",
+          "missable": false,
+          "levels": {
+            "1": "Pet promotions depend on learned commands rather than household friends.",
+            "2": "Reach the maximum rank of the pet Security career.",
+            "3": "Use a teen-or-older Sim to find the pet job, teach every command shown by the promotion panel, keep the pet’s motives high before the carpool, and continue until the top rank and appearance unlocks register."
+          }
+        },
+        {
+          "id": "pet-career-service",
+          "type": "interaction",
+          "safe_type": "Pet Career",
+          "label": "Reach the Top of Pet Service",
+          "missable": false,
+          "levels": {
+            "1": "Pet promotions depend on learned commands rather than household friends.",
+            "2": "Reach the maximum rank of the pet Service career.",
+            "3": "Use a teen-or-older Sim to find the pet job, teach every command shown by the promotion panel, keep the pet’s motives high before the carpool, and continue until the top rank and appearance unlocks register."
+          }
+        },
+        {
+          "id": "pet-career-show-business",
+          "type": "interaction",
+          "safe_type": "Pet Career",
+          "label": "Reach the Top of Pet Show Business",
+          "missable": false,
+          "levels": {
+            "1": "Pet promotions depend on learned commands rather than household friends.",
+            "2": "Reach the maximum rank of the pet Show Business career.",
+            "3": "Use a teen-or-older Sim to find the pet job, teach every command shown by the promotion panel, keep the pet’s motives high before the carpool, and continue until the top rank and appearance unlocks register."
+          }
+        },
+        {
+          "id": "skill-cooking",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Cooking",
+          "missable": false,
+          "levels": {
+            "1": "Train whenever motives are stable and use career rewards where available.",
+            "2": "Raise Cooking to level ten in free play.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Cooking."
+          }
+        },
+        {
+          "id": "skill-mechanical",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Mechanical",
+          "missable": false,
+          "levels": {
+            "1": "Train whenever motives are stable and use career rewards where available.",
+            "2": "Raise Mechanical to level ten in free play.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Mechanical."
+          }
+        },
+        {
+          "id": "skill-charisma",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Charisma",
+          "missable": false,
+          "levels": {
+            "1": "Train whenever motives are stable and use career rewards where available.",
+            "2": "Raise Charisma to level ten in free play.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Charisma."
+          }
+        },
+        {
+          "id": "skill-body",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Body",
+          "missable": false,
+          "levels": {
+            "1": "Train whenever motives are stable and use career rewards where available.",
+            "2": "Raise Body to level ten in free play.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Body."
+          }
+        },
+        {
+          "id": "skill-logic",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Logic",
+          "missable": false,
+          "levels": {
+            "1": "Train whenever motives are stable and use career rewards where available.",
+            "2": "Raise Logic to level ten in free play.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Logic."
+          }
+        },
+        {
+          "id": "skill-creativity",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Creativity",
+          "missable": false,
+          "levels": {
+            "1": "Train whenever motives are stable and use career rewards where available.",
+            "2": "Raise Creativity to level ten in free play.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Creativity."
+          }
+        },
+        {
+          "id": "skill-cleaning",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Cleaning",
+          "missable": false,
+          "levels": {
+            "1": "Train whenever motives are stable and use career rewards where available.",
+            "2": "Raise Cleaning to level ten in free play.",
+            "3": "Use the matching book, mirror, exercise, game, art, repair, or household interaction repeatedly until the skill panel shows level ten for Cleaning."
+          }
+        },
+        {
+          "id": "aspiration-family",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Family Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Follow one dedicated Sim’s wants consistently.",
+            "2": "Reach permanent platinum with a Family Sim.",
+            "3": "Create or select a Sim with the Family aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the permanent platinum state."
+          }
+        },
+        {
+          "id": "aspiration-fortune",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Fortune Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Follow one dedicated Sim’s wants consistently.",
+            "2": "Reach permanent platinum with a Fortune Sim.",
+            "3": "Create or select a Sim with the Fortune aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the permanent platinum state."
+          }
+        },
+        {
+          "id": "aspiration-knowledge",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Knowledge Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Follow one dedicated Sim’s wants consistently.",
+            "2": "Reach permanent platinum with a Knowledge Sim.",
+            "3": "Create or select a Sim with the Knowledge aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the permanent platinum state."
+          }
+        },
+        {
+          "id": "aspiration-popularity",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Popularity Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Follow one dedicated Sim’s wants consistently.",
+            "2": "Reach permanent platinum with a Popularity Sim.",
+            "3": "Create or select a Sim with the Popularity aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the permanent platinum state."
+          }
+        },
+        {
+          "id": "aspiration-romance",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Romance Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Follow one dedicated Sim’s wants consistently.",
+            "2": "Reach permanent platinum with a Romance Sim.",
+            "3": "Create or select a Sim with the Romance aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the permanent platinum state."
+          }
+        },
+        {
+          "id": "use-every-human-career-reward",
+          "type": "interaction",
+          "safe_type": "Career Reward",
+          "label": "Use Every Human Career Reward",
+          "missable": false,
+          "levels": {
+            "1": "Upper career ranks unlock objects with unique interactions.",
+            "2": "Place and use the reward from every human career.",
+            "3": "After topping all human careers, open the reward panel, place each unlocked object on a test lot, perform its main interaction successfully, and retain a catalog record."
+          }
+        },
+        {
+          "id": "unlock-every-pet-career-part",
+          "type": "collectible",
+          "safe_type": "Pet Career Unlock",
+          "label": "Unlock Every Pet Career Appearance Part",
+          "missable": false,
+          "levels": {
+            "1": "Pet promotions add collars, markings, or other Create-a-Pet parts.",
+            "2": "Record every appearance unlock from all pet-career ranks.",
+            "3": "Top all three pet careers with cats and dogs where their rewards differ, reopen Create-a-Pet after each promotion, and record every newly available appearance part."
+          }
+        },
+        {
+          "id": "use-every-aspiration-reward",
+          "type": "interaction",
+          "safe_type": "Aspiration Reward",
+          "label": "Use Every Aspiration Reward",
+          "missable": false,
+          "levels": {
+            "1": "High aspiration points open a finite reward catalog.",
+            "2": "Place and test every aspiration-reward object.",
+            "3": "Build points on specialist Sims, buy each reward while aspiration is safely high, perform its main interaction, and restore the backup after any harmful result."
+          }
+        }
+      ]
+    },
+    {
+      "id": "community-lots-rewards-and-final-audit",
+      "name": "Community Lots, Rewards, and Final Audit",
+      "location_cue": "The Garden Heights and Mesa Flats maps, public lots, Story Rewards panel, pet catalogs, and user-data folder.",
+      "note": "Visit every venue, audit every exclusive catalog, and preserve the completed multi-mode save.",
+      "save_backup": {
+        "title": "Archive before further free play",
+        "why": "Later household, pet, or reward changes can disturb the auditable completion state.",
+        "detail": "Keep a dated read-only copy after every directed and free-play ledger is complete."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "lot-garden-heights-abandoned-house",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Abandoned House Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Abandoned House and use every unique public interaction there.",
+            "3": "Travel from Garden Heights, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-garden-heights-bartholomew-greens",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Bartholomew Greens Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Bartholomew Greens and use every unique public interaction there.",
+            "3": "Travel from Garden Heights, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-garden-heights-cafe-grounds",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Cafe Grounds Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Cafe Grounds and use every unique public interaction there.",
+            "3": "Travel from Garden Heights, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-garden-heights-debore-s-pet-store",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the DeBore's Pet Store Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit DeBore's Pet Store and use every unique public interaction there.",
+            "3": "Travel from Garden Heights, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-garden-heights-playground-for-precious",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Playground for Precious Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Playground for Precious and use every unique public interaction there.",
+            "3": "Travel from Garden Heights, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-garden-heights-simoleon-diner",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Simoleon Diner Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Simoleon Diner and use every unique public interaction there.",
+            "3": "Travel from Garden Heights, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-garden-heights-strongheart-park",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Strongheart Park Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Strongheart Park and use every unique public interaction there.",
+            "3": "Travel from Garden Heights, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-garden-heights-the-show-park",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the The Show Park Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit The Show Park and use every unique public interaction there.",
+            "3": "Travel from Garden Heights, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-garden-heights-training-grounds",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Training Grounds Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Training Grounds and use every unique public interaction there.",
+            "3": "Travel from Garden Heights, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-garden-heights-vista-strip-mall",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Vista Strip Mall Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Vista Strip Mall and use every unique public interaction there.",
+            "3": "Travel from Garden Heights, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-mesa-flats-a-little-salmon-wedding-chapel",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the A Little Salmon Wedding Chapel Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit A Little Salmon Wedding Chapel and use every unique public interaction there.",
+            "3": "Travel from Mesa Flats, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-mesa-flats-amber-hall",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Amber Hall Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Amber Hall and use every unique public interaction there.",
+            "3": "Travel from Mesa Flats, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-mesa-flats-caffeine-corner",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Caffeine Corner Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Caffeine Corner and use every unique public interaction there.",
+            "3": "Travel from Mesa Flats, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-mesa-flats-chez-prix",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Chez Prix Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Chez Prix and use every unique public interaction there.",
+            "3": "Travel from Mesa Flats, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-mesa-flats-club-a",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Club A Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Club A and use every unique public interaction there.",
+            "3": "Travel from Mesa Flats, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-mesa-flats-club-z",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Club Z Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Club Z and use every unique public interaction there.",
+            "3": "Travel from Mesa Flats, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-mesa-flats-flat-hat-bar",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Flat Hat Bar Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Flat Hat Bar and use every unique public interaction there.",
+            "3": "Travel from Mesa Flats, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-mesa-flats-mesa-flats-pet-meet-and-greet",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Mesa Flats Pet Meet and Greet Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Mesa Flats Pet Meet and Greet and use every unique public interaction there.",
+            "3": "Travel from Mesa Flats, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-mesa-flats-mesa-flats-pet-supply",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Mesa Flats Pet Supply Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Mesa Flats Pet Supply and use every unique public interaction there.",
+            "3": "Travel from Mesa Flats, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-mesa-flats-sal-s-bratwurst-and-culture",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Sal's Bratwurst and Culture Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Sal's Bratwurst and Culture and use every unique public interaction there.",
+            "3": "Travel from Mesa Flats, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "lot-mesa-flats-six-points-plaza",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Six Points Plaza Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot combines a distinct set of pet, social, dining, shopping, or training objects.",
+            "2": "Visit Six Points Plaza and use every unique public interaction there.",
+            "3": "Travel from Mesa Flats, inspect every room and outdoor section, use each venue-specific object successfully, include the pet when its facilities require one, and return home with no active marker left behind."
+          }
+        },
+        {
+          "id": "audit-complete-story-rewards",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Complete the Story Reward Catalog",
+          "missable": false,
+          "levels": {
+            "1": "Directed goals and one outcome branch unlock exclusive objects.",
+            "2": "Fill every available slot in the Story Rewards panel.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "audit-exclusive-object-catalog",
+          "type": "interaction",
+          "safe_type": "Exclusive Object",
+          "label": "Use Every Pet Stories-Exclusive Object",
+          "missable": false,
+          "levels": {
+            "1": "The standalone release includes objects and pet equipment absent from the base Sims 2 catalog.",
+            "2": "Place and test every distinct exclusive interactive object.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "archive-completed-save",
+          "type": "interaction",
+          "safe_type": "Completion Archive",
+          "label": "Archive the Completed Save",
+          "missable": false,
+          "levels": {
+            "1": "The auditable state spans directed neighborhoods, outcome branches, pets, and free-play households.",
+            "2": "Create a dated read-only copy after every ledger is verified.",
+            "3": "Exit the game, copy the complete user-data folder, then verify all story summaries, branches, reward panels, commands, obstacles, careers, skills, aspirations, pet unlocks, litters, lots, and the free-play household before resuming ordinary play."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1301 @@
+{
+  "id": "resident-evil-survivor",
+  "game": "Resident Evil Survivor (2000)",
+  "target": "100% completion of the selected PlayStation route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "setup",
+      "name": "PlayStation Setup and Persistent Data",
+      "location_cue": "The PlayStation title menu, difficulty selector, controller options, and memory-card screen.",
+      "note": "The game has no ordinary mid-run save; completion data records collections instead of position.",
+      "items": [
+        {
+          "id": "setup-ps1",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Original PlayStation Release",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the edition and input method before starting.",
+            "2": "Use the PlayStation version on original hardware or a tested PS1 emulator.",
+            "3": "Launch the original PlayStation release and keep its memory-card image separate from later Gun Survivor games. The uncommon regional Windows conversion adds no required content and is outside the selected route."
+          }
+        },
+        {
+          "id": "setup-controller",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Standard Controller Clear",
+          "missable": false,
+          "levels": {
+            "1": "The worldwide release always supports an ordinary pad.",
+            "2": "Configure digital or analog controller aiming and finish one campaign.",
+            "3": "Choose the control preset that maps aiming, firing, turning, and the quick turn comfortably. Complete one full campaign with the standard controller and preserve its clear data on the dedicated memory card."
+          }
+        },
+        {
+          "id": "setup-guncon",
+          "type": "optional",
+          "safe_type": "Control Mode",
+          "label": "GunCon Clear Where Supported",
+          "missable": false,
+          "levels": {
+            "1": "Some regional discs retain the original light-gun option.",
+            "2": "Use a Japanese or PAL disc with compatible GunCon support.",
+            "3": "If you own a supported Japanese or PAL release and compatible display or emulator input, calibrate the GunCon from Options and finish one campaign with it. The North American disc removed this control method, so do not mark it missing there."
+          }
+        },
+        {
+          "id": "setup-easy",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Easy Campaign Clear",
+          "missable": false,
+          "levels": {
+            "1": "One assisted run is useful for learning every branch transition.",
+            "2": "Start on Easy and finish a complete route.",
+            "3": "Create an Easy file, take one unrecorded combination of the four route choices, and finish without attempting the S-rank ledger. Save the completed inventory and archive when the result screen offers a memory-card write."
+          }
+        },
+        {
+          "id": "setup-normal",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Normal Campaign Clear",
+          "missable": false,
+          "levels": {
+            "1": "The standard setting enables the top rank and its reward.",
+            "2": "Finish one full campaign on Normal.",
+            "3": "Start Normal from the accumulated memory-card data, carry forward collected weapons and files, and complete a route. Use a separate Normal attempt for S rank so exploration and route documentation do not compromise accuracy or time."
+          }
+        },
+        {
+          "id": "setup-no-mid-save",
+          "type": "interaction",
+          "safe_type": "Save Rule",
+          "label": "No Mid-Campaign Save",
+          "missable": false,
+          "levels": {
+            "1": "This game records collections, not room position.",
+            "2": "Plan to finish each attempt in one sitting.",
+            "3": "There are no typewriters or ordinary checkpoints. A completion write—or declining to continue after failure—stores weapons, ammunition, files, and statistics, but loading always begins a new campaign from the opening area."
+          }
+        },
+        {
+          "id": "setup-emulator-backups",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Preserve Branch States Carefully",
+          "missable": false,
+          "levels": {
+            "1": "Three-way doors close permanently during an attempt.",
+            "2": "Create emulator states before each of the four route selections.",
+            "3": "When emulating, make a labelled state before spending each route key, but keep a legitimate cleared-data file as the completion ledger. On original hardware, cover the same choices through three short full campaigns instead."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up the memory-card image",
+        "why": "Every route, file, weapon, and reward accumulates on one continuing record."
+      }
+    },
+    {
+      "id": "opening-routes",
+      "name": "Opening Three-Way Route",
+      "location_cue": "The first street room with three locked building entrances and one fragile key.",
+      "note": "SAVE-BACKUP: opening one door destroys the key and closes the other two for that attempt.",
+      "items": [
+        {
+          "id": "route-one-chapel",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Opening Route — Chapel",
+          "missable": true,
+          "levels": {
+            "1": "The first fragile key can open only one of three buildings.",
+            "2": "Use the opening key on the Chapel entrance.",
+            "3": "Use the first dropped key on the chapel door. Take the Chapel Key and Clock Winder from the right-side room, open the opposite wing, read its document, fit the winder into the clock, descend, and recover the rear exit key."
+          }
+        },
+        {
+          "id": "route-one-chapel-keys",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Complete the Chapel Key Sequence",
+          "missable": true,
+          "levels": {
+            "1": "Each building has its own short physical mechanism.",
+            "2": "Collect and use the route items inside Chapel.",
+            "3": "Use the first dropped key on the chapel door. Take the Chapel Key and Clock Winder from the right-side room, open the opposite wing, read its document, fit the winder into the clock, descend, and recover the rear exit key."
+          }
+        },
+        {
+          "id": "route-one-restaurant",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Opening Route — Restaurant",
+          "missable": true,
+          "levels": {
+            "1": "The first fragile key can open only one of three buildings.",
+            "2": "Use the opening key on the Restaurant entrance.",
+            "3": "Spend the first dropped key on the restaurant entrance. Search the kitchen for its document, take the route key from the refrigerator area, collect the passage herb, and unlock the street exit without entering either other opening route."
+          }
+        },
+        {
+          "id": "route-one-restaurant-keys",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Complete the Restaurant Key Sequence",
+          "missable": true,
+          "levels": {
+            "1": "Each building has its own short physical mechanism.",
+            "2": "Collect and use the route items inside Restaurant.",
+            "3": "Spend the first dropped key on the restaurant entrance. Search the kitchen for its document, take the route key from the refrigerator area, collect the passage herb, and unlock the street exit without entering either other opening route."
+          }
+        },
+        {
+          "id": "route-one-cinema",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Opening Route — Cinema",
+          "missable": true,
+          "levels": {
+            "1": "The first fragile key can open only one of three buildings.",
+            "2": "Use the opening key on the Cinema entrance.",
+            "3": "Choose the cinema with the first dropped key, climb to the projector level, collect the document and 35mm Film, insert the film into the projector, return downstairs, take the key that appears by the screen, and unlock the remaining exit."
+          }
+        },
+        {
+          "id": "route-one-cinema-keys",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Complete the Cinema Key Sequence",
+          "missable": true,
+          "levels": {
+            "1": "Each building has its own short physical mechanism.",
+            "2": "Collect and use the route items inside Cinema.",
+            "3": "Choose the cinema with the first dropped key, climb to the projector level, collect the document and 35mm Film, insert the film into the projector, return downstairs, take the key that appears by the screen, and unlock the remaining exit."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before using the first key",
+        "why": "Chapel, Restaurant, and Cinema contain mutually exclusive mechanics and documents."
+      },
+      "point_of_no_return": {
+        "title": "Spending the first key locks the opening route",
+        "why": "Finish the chosen building; the other two require another branch state or clear."
+      }
+    },
+    {
+      "id": "waterfront-routes",
+      "name": "Waterfront Three-Way Route",
+      "location_cue": "The street reached after the second telephone, facing an arcade, hospital, and library.",
+      "note": "SAVE-BACKUP: this choice selects a handgun, route file, and final presentation.",
+      "items": [
+        {
+          "id": "route-two-arcade",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Waterfront Route — Arcade",
+          "missable": true,
+          "levels": {
+            "1": "The second junction selects a weapon and later presentation.",
+            "2": "After the second telephone, enter the Arcade.",
+            "3": "After the second telephone area, enter the Arcade. Clear or evade the armed occupants, take the Manhole Opener, descend through the casino side, collect Hand Gun C near the sewer access, and use the opener on the manhole."
+          }
+        },
+        {
+          "id": "route-two-arcade-mechanics",
+          "type": "interaction",
+          "safe_type": "Route Mechanic",
+          "label": "Complete the Arcade Route",
+          "missable": true,
+          "levels": {
+            "1": "Search its offices and vertical exits before entering the sewer.",
+            "2": "Obtain Manhole Opener and Hand Gun C along the Arcade route.",
+            "3": "After the second telephone area, enter the Arcade. Clear or evade the armed occupants, take the Manhole Opener, descend through the casino side, collect Hand Gun C near the sewer access, and use the opener on the manhole."
+          }
+        },
+        {
+          "id": "route-two-hospital",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Waterfront Route — Hospital",
+          "missable": true,
+          "levels": {
+            "1": "The second junction selects a weapon and later presentation.",
+            "2": "After the second telephone, enter the Hospital.",
+            "3": "Choose the Hospital, take the key from the examination scanner, unlock the medicine-room chain, read the doctor's-office file, collect Hand Gun B from the upstairs office, operate the electrical controls, and leave through the basement manhole."
+          }
+        },
+        {
+          "id": "route-two-hospital-mechanics",
+          "type": "interaction",
+          "safe_type": "Route Mechanic",
+          "label": "Complete the Hospital Route",
+          "missable": true,
+          "levels": {
+            "1": "Search its offices and vertical exits before entering the sewer.",
+            "2": "Obtain Medicine Room Key and Hand Gun B along the Hospital route.",
+            "3": "Choose the Hospital, take the key from the examination scanner, unlock the medicine-room chain, read the doctor's-office file, collect Hand Gun B from the upstairs office, operate the electrical controls, and leave through the basement manhole."
+          }
+        },
+        {
+          "id": "route-two-library",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Waterfront Route — Library",
+          "missable": true,
+          "levels": {
+            "1": "The second junction selects a weapon and later presentation.",
+            "2": "After the second telephone, enter the Library.",
+            "3": "Enter the Library, climb upstairs, survive the locked reading room, collect Hand Gun D from its far corner, then leave when the door releases. Read the first-floor desk file and use the Manhole Opener at the sewer access."
+          }
+        },
+        {
+          "id": "route-two-library-mechanics",
+          "type": "interaction",
+          "safe_type": "Route Mechanic",
+          "label": "Complete the Library Route",
+          "missable": true,
+          "levels": {
+            "1": "Search its offices and vertical exits before entering the sewer.",
+            "2": "Obtain locked Hunter room and Hand Gun D along the Library route.",
+            "3": "Enter the Library, climb upstairs, survive the locked reading room, collect Hand Gun D from its far corner, then leave when the door releases. Read the first-floor desk file and use the Manhole Opener at the sewer access."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up at the second telephone",
+        "why": "All three buildings must be finished on separate branches."
+      },
+      "point_of_no_return": {
+        "title": "Entering one waterfront building closes the others",
+        "why": "Preserve this state before crossing any entrance."
+      }
+    },
+    {
+      "id": "sewers-prison",
+      "name": "Sewers and Prison Cleanup",
+      "location_cue": "Orange-marked sewer rooms leading into offices, cells, showers, and a three-way exit.",
+      "note": "Collect the common documents, Rope, and Shotgun before choosing the next route.",
+      "items": [
+        {
+          "id": "common-andy-room",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Sewer Caretaker Room",
+          "missable": true,
+          "levels": {
+            "1": "A photograph-filled workroom holds a common-route document.",
+            "2": "Read the diary on the caretaker-room desk and take the shells from its shelf.",
+            "3": "Follow the orange-marked sewer rooms to the caretaker's workroom. Read the desk document completely, then turn toward the shelf on the right and collect the Shotgun Bullets before following the only open continuation."
+          }
+        },
+        {
+          "id": "common-prison-office",
+          "type": "interaction",
+          "safe_type": "Route Item",
+          "label": "Prison Office Key",
+          "missable": true,
+          "levels": {
+            "1": "The administrative rooms open the cell block.",
+            "2": "Take the Prison Cell Key from the office corner desk.",
+            "3": "Enter the two connected prison offices, clear enough space to circle the large table, take the Prison Cell Key from the corner desk, and read the Prison Chief's Diary from the opposite side before returning to the main hall."
+          }
+        },
+        {
+          "id": "common-prison-rope",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Prison Rope",
+          "missable": true,
+          "levels": {
+            "1": "One cell-block item enables the tower branch.",
+            "2": "Take the Rope from the long prison corridor before choosing an exit.",
+            "3": "Unlock the cell block, collect the Rope from the corridor desk, and read the separate diary inside the open cell. Keep the Rope even if the current run will use the underground route; it persists only after a completed data write."
+          }
+        },
+        {
+          "id": "common-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Prison Shower Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "A side room before the third junction contains a heavy weapon.",
+            "2": "Take the Shotgun from the far corner of the prison shower.",
+            "3": "Before committing to the guard tower or underground stairs, enter the nearer right-hand shower room, clear the occupants, and collect the SPAS-12 from the far corner. Equip it once and retain its limited shells."
+          }
+        },
+        {
+          "id": "common-prison-cleanup",
+          "type": "interaction",
+          "safe_type": "Cleanup",
+          "label": "Prison Branch Backup",
+          "missable": true,
+          "levels": {
+            "1": "The next doorway separates three mutually exclusive paths.",
+            "2": "Finish both office documents, the cell document, Rope, and Shotgun first.",
+            "3": "Check the prison office, cell block, and shower before leaving. If emulating, make a state at the third junction; otherwise record which branch this full clear will cover on the persistent ledger."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up at the prison exit",
+        "why": "The tower, nightclub, and underground waterway cannot be combined in one attempt."
+      },
+      "point_of_no_return": {
+        "title": "Leaving the prison commits the third route",
+        "why": "Finish offices, cells, shower, and supplies first."
+      }
+    },
+    {
+      "id": "prison-exit-routes",
+      "name": "Prison Exit Routes",
+      "location_cue": "The junction beyond the prison shower, with upper stairs, a street door, and underground access.",
+      "note": "Each path has different combat spaces even when it rejoins the same headquarters approach.",
+      "items": [
+        {
+          "id": "route-three-rooftop",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Prison Exit — Guard Tower Rooftop",
+          "missable": true,
+          "levels": {
+            "1": "The prison exit offers three physically distinct approaches.",
+            "2": "Choose the Guard Tower Rooftop route after collecting the prison Rope and Shotgun.",
+            "3": "Take the guard-tower stairs, cross the upper walkway, use the Rope at the marked edge, and clear the rooftop squad before descending toward headquarters. Record both the tower crossing and the rooftop combat on this attempt."
+          }
+        },
+        {
+          "id": "route-three-nightclub",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Prison Exit — Nightclub",
+          "missable": true,
+          "levels": {
+            "1": "The prison exit offers three physically distinct approaches.",
+            "2": "Choose the Nightclub route after collecting the prison Rope and Shotgun.",
+            "3": "Use the street-level nightclub approach after leaving the prison. The large pursuer can appear three times along this line; defeat each instance to document its ammunition drops, then use the club key or access card to reach headquarters."
+          }
+        },
+        {
+          "id": "route-three-underground",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Prison Exit — Underground Waterway",
+          "missable": true,
+          "levels": {
+            "1": "The prison exit offers three physically distinct approaches.",
+            "2": "Choose the Underground Waterway route after collecting the prison Rope and Shotgun.",
+            "3": "Descend the prison's underground stairs, pass the moth, Hunter, and Licker rooms, use the Rope where prompted, and enter the waterway. Defeat or bypass the first alligator, then reach the ladder guarded by the second to complete the hidden route."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve the prison-junction state",
+        "why": "All three physical paths belong in the completion ledger."
+      }
+    },
+    {
+      "id": "headquarters-house",
+      "name": "Headquarters, Canal, and House",
+      "location_cue": "A damaged corporate lobby, working elevator, parking lot, shallow canal, and small family house.",
+      "note": "This common route contains two files, a rare ammunition pickup, a weapon, and transport power.",
+      "items": [
+        {
+          "id": "hq-magnum-ammo",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Headquarters Magnum Rounds",
+          "missable": false,
+          "levels": {
+            "1": "The ruined lobby rewards a careful check behind its central emblem.",
+            "2": "Take the Magnum Rounds from the headquarters entrance pedestal.",
+            "3": "Enter headquarters, clear or evade the two agile enemies, and inspect the pedestal carrying the large company emblem. Take the first rare Magnum Rounds before using the working elevator."
+          }
+        },
+        {
+          "id": "hq-vincent-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Thirteenth-Floor Office File",
+          "missable": true,
+          "levels": {
+            "1": "The upper office holds a document and the next access card.",
+            "2": "Read the diary in the red-doored office on floor thirteen.",
+            "3": "Ride the functioning elevator to floor thirteen, pass the corridor enemies, enter the red-doored office, read the document from the wall-side case, and take the Card Key beside the desk before leaving."
+          }
+        },
+        {
+          "id": "hq-card-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Headquarters Card Key",
+          "missable": false,
+          "levels": {
+            "1": "An office card opens a shutter on the same floor.",
+            "2": "Take the Card Key beside the thirteenth-floor desk.",
+            "3": "Collect the card immediately after the office file, return through the red shutter, and use it at the next locked barrier before crossing the blue floor sensor. Keep moving through the opened communications route."
+          }
+        },
+        {
+          "id": "hq-wiretap",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Communications-Room File",
+          "missable": true,
+          "levels": {
+            "1": "A bank of consoles contains another common document.",
+            "2": "Read the wiretapping record from the communication-room console.",
+            "3": "After opening the card-controlled shutter, enter the communications room, examine the active console, and read the full record. Check the room before calling the elevator because a large pursuer can enter afterward."
+          }
+        },
+        {
+          "id": "hq-grenade-gun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Parking-Lot Grenade Gun",
+          "missable": true,
+          "levels": {
+            "1": "A weapon rests on a vehicle before the canal transition.",
+            "2": "Take the Grenade Gun from the car in the headquarters parking lot.",
+            "3": "Return to the lower floor, descend into the parking lot, clear the dogs, and inspect the car before taking the ramp exit. Collect the M79 Grenade Gun and verify that grenade, flame, and acid loads remain separate."
+          }
+        },
+        {
+          "id": "house-lott-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Children's-House Bedroom File",
+          "missable": true,
+          "levels": {
+            "1": "One bedroom contains a document behind its occupant.",
+            "2": "Read the diary from the desk in the children's bedroom.",
+            "3": "Cross the canal, enter the small house, and search the children's bedroom after the conversation finishes. The diary sits behind the room's occupant; open all pages before returning to the yard."
+          }
+        },
+        {
+          "id": "cable-car-power",
+          "type": "interaction",
+          "safe_type": "Route Mechanic",
+          "label": "Cable-Car Power",
+          "missable": false,
+          "levels": {
+            "1": "The next transport requires a nearby control room.",
+            "2": "Restore power in the room beside the cable-car platform.",
+            "3": "At the cable-car building, enter the side control room, activate the power panel, and leave promptly when ceiling enemies enter. Board only after the arrival animation completes and collect nearby supplies first."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before boarding the cable car",
+        "why": "The headquarters and house cannot be revisited afterward."
+      },
+      "point_of_no_return": {
+        "title": "The cable car ends headquarters cleanup",
+        "why": "Take both files, the card, launcher, and house secret first."
+      }
+    },
+    {
+      "id": "factory-approaches",
+      "name": "Three Factory Approaches",
+      "location_cue": "The junction after the cable car with a right doorway, central lift, and left grass path.",
+      "note": "The cliff, tunnel, and grassland routes are mutually exclusive for the attempt.",
+      "items": [
+        {
+          "id": "route-four-cliff",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Factory Approach — Cliff Route",
+          "missable": true,
+          "levels": {
+            "1": "The last outdoor junction divides into three approaches.",
+            "2": "Select the Cliff Route at the three-way factory approach.",
+            "3": "At the three-way approach beyond the cable car, take the right-hand doorway. Continue after the rockfall, keep distance from the repeated large pursuers, and follow the descending path until it reconnects with the factory entrance."
+          }
+        },
+        {
+          "id": "route-four-elevator",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Factory Approach — Tunnel Elevator",
+          "missable": true,
+          "levels": {
+            "1": "The last outdoor junction divides into three approaches.",
+            "2": "Select the Tunnel Elevator at the three-way factory approach.",
+            "3": "Choose the central lift at the final approach, ride into the tunnel, and use the direct doors while avoiding the agile enemies. This is the shortest of the three lines and reaches the factory without grassland combat."
+          }
+        },
+        {
+          "id": "route-four-grasslands",
+          "type": "choice",
+          "safe_type": "Route Choice",
+          "label": "Factory Approach — Grassland Route",
+          "missable": true,
+          "levels": {
+            "1": "The last outdoor junction divides into three approaches.",
+            "2": "Select the Grassland Route at the three-way factory approach.",
+            "3": "Use the left-hand doorway, cross the outdoor grass path, and clear each armed group separately before advancing. Follow the perimeter line to the factory gate and inspect the laser-targeting visual on a non-ranking run."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before selecting an approach",
+        "why": "Each route has distinct physical rooms and enemy layouts."
+      }
+    },
+    {
+      "id": "factory-final",
+      "name": "Factory Systems and Final Transport",
+      "location_cue": "A dark industrial building with security controls, laboratories, shutters, capsules, and a train platform.",
+      "note": "SAVE-BACKUP: collect every factory item before opening the train shutter.",
+      "items": [
+        {
+          "id": "factory-power-magnum",
+          "type": "interaction",
+          "safe_type": "Route Mechanic",
+          "label": "Factory Security Power",
+          "missable": false,
+          "levels": {
+            "1": "A side security room restores machinery and contains a weapon.",
+            "2": "Use the security-room switch and take the Magnum beside it.",
+            "3": "Enter the factory through the side route, descend to the Security Room, activate its power control, and collect the S&W M19 from the same section. Load it only after finding the scarce Magnum Rounds."
+          }
+        },
+        {
+          "id": "factory-activation-disk",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Activation Disk",
+          "missable": false,
+          "levels": {
+            "1": "A laboratory desk holds the first power-routing item.",
+            "2": "Take the Activation Disk from the laboratory beyond the specimen rooms.",
+            "3": "After restoring initial power, ride the elevator, pass the occupied corridors and capsule room, and enter the laboratory. Take the Activation Disk from its desk, then retreat before the ceiling enemies crowd the exit."
+          }
+        },
+        {
+          "id": "factory-disk-console",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Activation-Disk Console",
+          "missable": false,
+          "levels": {
+            "1": "The disk belongs beside the facility's emergency device.",
+            "2": "Insert the Activation Disk at the bomb-room control panel.",
+            "3": "Return to the room adjoining the naked-zombie corridor, insert the Activation Disk into the control beside the emergency device, and defeat the newly released occupants. Check the opened hot-pipe room for Grenade Rounds."
+          }
+        },
+        {
+          "id": "factory-id-card",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Factory ID Card",
+          "missable": false,
+          "levels": {
+            "1": "A blue wall control opens access to a fallen researcher.",
+            "2": "Press the blue hallway switch, then take the ID Card from the body.",
+            "3": "Return toward the Activation Disk laboratory, activate the blue-lit shutter switch, move past the nearby plant enemies, and collect the ID Card from the researcher. Use it at the next plant-area shutter to reach the upper machinery."
+          }
+        },
+        {
+          "id": "factory-e-area",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "E-Area Power Sequence",
+          "missable": false,
+          "levels": {
+            "1": "A second console and corridor switch open the restricted laboratory.",
+            "2": "Power E-Area from Operations, then press the hallway shutter control.",
+            "3": "Inside Operations, use the console facing the locked route to energize E-Area. Return to the corridor, press its newly active switch, pass the two plant enemies, and enter the cultivation chamber."
+          }
+        },
+        {
+          "id": "factory-master-key",
+          "type": "key",
+          "safe_type": "Route Item",
+          "label": "Master Key",
+          "missable": false,
+          "levels": {
+            "1": "The final laboratory console holds the universal exit key.",
+            "2": "Take the Master Key from the cultivation chamber's central console.",
+            "3": "In the cultivation chamber, read the file beside the large capsule, take the Master Key from the middle console, and return to Operations. Use the key on the far exit only after all factory documents and ammunition are collected."
+          }
+        },
+        {
+          "id": "factory-train-shutter",
+          "type": "interaction",
+          "safe_type": "Point of No Return",
+          "label": "Train-Shutter Control",
+          "missable": true,
+          "levels": {
+            "1": "A nearby exterior switch commits the final transport.",
+            "2": "Open the train shutter with the platform switch, then board.",
+            "3": "After using the Master Key, cross the last industrial area, take the ammunition to the left, and activate the shutter switch to the right. Board the train only after confirming the archive, Magnum, and launcher ammunition are complete."
+          }
+        },
+        {
+          "id": "factory-complete-clear",
+          "type": "ending",
+          "safe_type": "Campaign Result",
+          "label": "Complete the Final Combat Sequence",
+          "missable": true,
+          "levels": {
+            "1": "The transport leads directly to the result screen.",
+            "2": "Finish the remaining encounters and save the completion data.",
+            "3": "Leave the train, complete each remaining combat form without selecting Continue, and wait through the final presentation. At the result screen save to the established memory-card file so weapons, ammunition, documents, and statistics carry forward."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve a state before the train switch",
+        "why": "The final transport closes the factory and leads directly to the result."
+      },
+      "point_of_no_return": {
+        "title": "Boarding the train ends all cleanup",
+        "why": "Finish the disk chain, files, Magnum, and ammunition first."
+      }
+    },
+    {
+      "id": "file-archive",
+      "name": "Complete File Archive",
+      "location_cue": "Document surfaces distributed across route buildings, sewers, prison, headquarters, house, and factory.",
+      "note": "Five of the thirteen files require mutually exclusive early-route clears.",
+      "items": [
+        {
+          "id": "file-church-manager",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #1 — Church Manager's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect Church Manager's Diary from the chapel side-room table.",
+            "3": "Reach the chapel side-room table, examine the document prompt, and advance Church Manager's Diary through its final page. This file exists only on the Chapel opening route. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        },
+        {
+          "id": "file-restaurant-owner",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #2 — Restaurant Owner's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect Restaurant Owner's Diary from the restaurant kitchen.",
+            "3": "Reach the restaurant kitchen, examine the document prompt, and advance Restaurant Owner's Diary through its final page. This file exists only on the Restaurant opening route. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        },
+        {
+          "id": "file-destroyed-city",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #3 — Destroyed Raccoon City Report",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect Destroyed Raccoon City Report from the cinema projector room.",
+            "3": "Reach the cinema projector room, examine the document prompt, and advance Destroyed Raccoon City Report through its final page. This file exists only on the Cinema opening route. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        },
+        {
+          "id": "file-umbrella-secret",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #4 — Umbrella Top Secret File",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect Umbrella Top Secret File from the library first-floor desk.",
+            "3": "Reach the library first-floor desk, examine the document prompt, and advance Umbrella Top Secret File through its final page. This file exists only on the Library waterfront route. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        },
+        {
+          "id": "file-patients-chart",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #5 — Patients' Chart",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect Patients' Chart from the hospital doctor's office.",
+            "3": "Reach the hospital doctor's office, examine the document prompt, and advance Patients' Chart through its final page. This file exists only on the Hospital waterfront route. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        },
+        {
+          "id": "file-andy-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #6 — Janitor Andy's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect Janitor Andy's Diary from the sewer caretaker room.",
+            "3": "Reach the sewer caretaker room, examine the document prompt, and advance Janitor Andy's Diary through its final page. Collect it before leaving its common-route building. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        },
+        {
+          "id": "file-prison-chief",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #7 — Prison Chief's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect Prison Chief's Diary from the prison office table.",
+            "3": "Reach the prison office table, examine the document prompt, and advance Prison Chief's Diary through its final page. Collect it before leaving its common-route building. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        },
+        {
+          "id": "file-imprisoned-boy",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #8 — An Imprisoned Boy's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect An Imprisoned Boy's Diary from the prison cell.",
+            "3": "Reach the prison cell, examine the document prompt, and advance An Imprisoned Boy's Diary through its final page. Collect it before leaving its common-route building. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        },
+        {
+          "id": "file-vincent-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #9 — Commander Vincent's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect Commander Vincent's Diary from the headquarters thirteenth-floor office.",
+            "3": "Reach the headquarters thirteenth-floor office, examine the document prompt, and advance Commander Vincent's Diary through its final page. Collect it before leaving its common-route building. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        },
+        {
+          "id": "file-wiretap",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #10 — Wiretapping Record of Vincent",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect Wiretapping Record of Vincent from the headquarters communication room.",
+            "3": "Reach the headquarters communication room, examine the document prompt, and advance Wiretapping Record of Vincent through its final page. Collect it before leaving its common-route building. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        },
+        {
+          "id": "file-lott-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #11 — Lott's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect Lott's Diary from the children's house bedroom.",
+            "3": "Reach the children's house bedroom, examine the document prompt, and advance Lott's Diary through its final page. Collect it before leaving its common-route building. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        },
+        {
+          "id": "file-factory-worker",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #12 — Factory Worker's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect Factory Worker's Diary from the system-disk laboratory desk.",
+            "3": "Reach the system-disk laboratory desk, examine the document prompt, and advance Factory Worker's Diary through its final page. Collect it before leaving its common-route building. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        },
+        {
+          "id": "file-extraction",
+          "type": "file",
+          "safe_type": "File",
+          "label": "File #13 — How to Extract Material",
+          "missable": true,
+          "levels": {
+            "1": "Inspect desks, consoles, cells, and bedroom furniture before each exit.",
+            "2": "Collect How to Extract Material from the cultivation chamber console.",
+            "3": "Reach the cultivation chamber console, examine the document prompt, and advance How to Extract Material through its final page. Collect it before leaving its common-route building. Save a completed campaign afterward so the archive entry persists across future route clears."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save after every completed branch",
+        "why": "A file persists only when its run reaches a valid data write."
+      }
+    },
+    {
+      "id": "weapons-ammunition",
+      "name": "Weapons and Ammunition",
+      "location_cue": "Starting inventory, three route-specific rooms, prison shower, parking lot, factory security, and reward data.",
+      "note": "Complete the eight-weapon ledger and handle every limited ammunition family.",
+      "items": [
+        {
+          "id": "weapon-handgun-a",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Hand Gun A — Glock 17",
+          "missable": false,
+          "levels": {
+            "1": "Every handgun route and limited-ammunition weapon must reach the persistent ledger.",
+            "2": "Obtain Hand Gun A from the starting weapon; it uses infinite ammunition.",
+            "3": "Begin any campaign, inspect the Glock 17 listed as Hand Gun A, equip it, and fire one aimed shot. Its ammunition is unlimited, so use it to protect rare shells and launcher rounds."
+          }
+        },
+        {
+          "id": "weapon-handgun-b",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Hand Gun B — CZ 75",
+          "missable": true,
+          "levels": {
+            "1": "Every handgun route and limited-ammunition weapon must reach the persistent ledger.",
+            "2": "Obtain Hand Gun B from the hospital office table; it uses infinite ammunition.",
+            "3": "Choose the Hospital at the second junction, reach the upstairs office opposite the patient rooms, and take the CZ 75 from the table. Equip and fire it before entering the basement exit."
+          }
+        },
+        {
+          "id": "weapon-handgun-c",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Hand Gun C — M8000 Cougar G",
+          "missable": true,
+          "levels": {
+            "1": "Every handgun route and limited-ammunition weapon must reach the persistent ledger.",
+            "2": "Obtain Hand Gun C from the arcade manhole room; it uses infinite ammunition.",
+            "3": "Choose the Arcade at the second junction, pass through the casino rooms, and take the M8000 Cougar G beside the manhole. Equip it before using the Manhole Opener."
+          }
+        },
+        {
+          "id": "weapon-handgun-d",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Hand Gun D — Nanbu 14 Custom",
+          "missable": true,
+          "levels": {
+            "1": "Every handgun route and limited-ammunition weapon must reach the persistent ledger.",
+            "2": "Obtain Hand Gun D from the library Hunter room; it uses infinite ammunition.",
+            "3": "Choose the Library at the second junction, climb upstairs, and take the Nanbu 14 Custom from the far corner of the locked Hunter room. Survive until the door reopens and finish the campaign to preserve it."
+          }
+        },
+        {
+          "id": "weapon-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun — SPAS-12",
+          "missable": true,
+          "levels": {
+            "1": "Every handgun route and limited-ammunition weapon must reach the persistent ledger.",
+            "2": "Obtain Shotgun from the prison shower corner; it uses limited shells.",
+            "3": "Before selecting the third route, enter the prison shower and take the SPAS-12 from the far corner. Fire one shell, then reserve the remaining limited ammunition for agile targets and late encounters."
+          }
+        },
+        {
+          "id": "weapon-grenade-gun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade Gun — M79",
+          "missable": true,
+          "levels": {
+            "1": "Every handgun route and limited-ammunition weapon must reach the persistent ledger.",
+            "2": "Obtain Grenade Gun from the headquarters parking-lot car; it uses three round types.",
+            "3": "In the headquarters parking lot, inspect the car before taking the ramp exit and collect the M79. Fire one grenade, one flame, and one acid round on separate non-ranking branches."
+          }
+        },
+        {
+          "id": "weapon-magnum",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Magnum — S&W M19",
+          "missable": true,
+          "levels": {
+            "1": "Every handgun route and limited-ammunition weapon must reach the persistent ledger.",
+            "2": "Obtain Magnum from the factory security room; it uses limited rare rounds.",
+            "3": "Restore power in the factory Security Room and take the S&W M19 beside its controls. Load one of the scarce six-round Normal pickups, fire a test shot on a backup branch, and reserve the rest for the final sequence."
+          }
+        },
+        {
+          "id": "weapon-rocket",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Rocket Launcher — M20A1",
+          "missable": true,
+          "levels": {
+            "1": "Every handgun route and limited-ammunition weapon must reach the persistent ledger.",
+            "2": "Obtain Rocket Launcher from the Normal S-rank reward; it uses infinite rockets.",
+            "3": "Earn S on Normal, save the result to the continuing memory-card file, and begin a new campaign from that data. Confirm the M20A1 Rocket Launcher is in the opening inventory and fire one unlimited rocket."
+          }
+        },
+        {
+          "id": "ammo-shotgun",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Shotgun Bullets",
+          "missable": false,
+          "levels": {
+            "1": "Limited ammunition should be handled on exploration clears, not the rank run.",
+            "2": "Collect Shotgun Bullets from fixed pickups pursuer drops.",
+            "3": "Collect fixed Shotgun Bullets and defeat the recurring large pursuer on a nightclub-route clear to observe its random ammunition drops. Load the SPAS-12 and fire one shell."
+          }
+        },
+        {
+          "id": "ammo-grenade",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Grenade Rounds",
+          "missable": false,
+          "levels": {
+            "1": "Limited ammunition should be handled on exploration clears, not the rank run.",
+            "2": "Collect Grenade Rounds from standard launcher ammunition.",
+            "3": "Take Grenade Rounds from fixed factory and route pickups, load them into an empty M79, and fire one standard explosive shell. Preserve another stack on cleared data."
+          }
+        },
+        {
+          "id": "ammo-flame",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Flame Rounds",
+          "missable": false,
+          "levels": {
+            "1": "Limited ammunition should be handled on exploration clears, not the rank run.",
+            "2": "Collect Flame Rounds from launcher fire ammunition.",
+            "3": "Collect Flame Rounds from fixed pickups or large-pursuer drops, load the M79, and fire once against an ordinary non-story target on a non-ranking attempt."
+          }
+        },
+        {
+          "id": "ammo-acid",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Acid Rounds",
+          "missable": false,
+          "levels": {
+            "1": "Limited ammunition should be handled on exploration clears, not the rank run.",
+            "2": "Collect Acid Rounds from launcher acid ammunition.",
+            "3": "Search the factory capsule rooms for Acid Rounds, load them into the M79 after its current chamber is empty, and fire one shell before saving cleared data."
+          }
+        },
+        {
+          "id": "ammo-magnum",
+          "type": "collectible",
+          "safe_type": "Ammunition",
+          "label": "Magnum Rounds",
+          "missable": false,
+          "levels": {
+            "1": "Limited ammunition should be handled on exploration clears, not the rank run.",
+            "2": "Collect Magnum Rounds from two scarce pickups.",
+            "3": "Take both documented Magnum Round pickups across headquarters and factory, load the S&W M19, and retain at least one surviving stack through a completed campaign write."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before rare-ammunition tests",
+        "why": "Exploration shots should not strand the final combat or rank attempt."
+      }
+    },
+    {
+      "id": "persistent-endings",
+      "name": "Persistent Collection and Ending Variations",
+      "location_cue": "The memory-card result screen and the three endings selected by the waterfront branch.",
+      "note": "Narrative content is withheld; only route flags and collection mechanics are recorded.",
+      "items": [
+        {
+          "id": "persistent-save-clear",
+          "type": "interaction",
+          "safe_type": "Clear Data",
+          "label": "Save Completed Campaign Data",
+          "missable": false,
+          "levels": {
+            "1": "The memory card carries collection state between full attempts.",
+            "2": "Write the result screen to the same continuing file after every clear.",
+            "3": "At each result screen, save over the designated continuing collection file only after making an external backup. Loading it begins at the opening but retains registered weapons, ammunition, files, and cumulative collection information."
+          }
+        },
+        {
+          "id": "persistent-eight-weapons",
+          "type": "collectible",
+          "safe_type": "Collection",
+          "label": "Complete the Eight-Weapon Ledger",
+          "missable": false,
+          "levels": {
+            "1": "Several guns occupy mutually exclusive branches or a rank reward.",
+            "2": "Carry all eight weapon types onto one continuing memory-card file.",
+            "3": "Finish the Hospital, Arcade, and Library routes on the same data to retain Hand Guns B, C, and D alongside starting Hand Gun A. Also collect the Shotgun, Grenade Gun, Magnum, then earn and load the Rocket Launcher reward."
+          }
+        },
+        {
+          "id": "persistent-thirteen-files",
+          "type": "collectible",
+          "safe_type": "Collection",
+          "label": "Complete the Thirteen-File Archive",
+          "missable": false,
+          "levels": {
+            "1": "Five documents sit inside mutually exclusive early routes.",
+            "2": "Save every file onto one continuing memory-card record.",
+            "3": "Complete the Chapel, Restaurant, Cinema, Hospital, and Library branches across repeat clears while collecting all eight common-route documents. After each result, save to the same backed-up data and verify all thirteen archive slots remain filled."
+          }
+        },
+        {
+          "id": "ending-arcade",
+          "type": "ending",
+          "safe_type": "Ending Variation",
+          "label": "Arcade ending presentation",
+          "missable": true,
+          "levels": {
+            "1": "The second three-way building choice selects a different final presentation.",
+            "2": "Choose the Arcade waterfront route and finish that campaign.",
+            "3": "At the second junction enter the Arcade, complete the entire campaign without loading a different branch state, and record the ending presentation reached from that flag. Do not describe its character or narrative content in the guide."
+          }
+        },
+        {
+          "id": "ending-hospital",
+          "type": "ending",
+          "safe_type": "Ending Variation",
+          "label": "Hospital ending presentation",
+          "missable": true,
+          "levels": {
+            "1": "The second three-way building choice selects a different final presentation.",
+            "2": "Choose the Hospital waterfront route and finish that campaign.",
+            "3": "At the second junction enter the Hospital, complete the entire campaign without loading a different branch state, and record the ending presentation reached from that flag. Do not describe its character or narrative content in the guide."
+          }
+        },
+        {
+          "id": "ending-library",
+          "type": "ending",
+          "safe_type": "Ending Variation",
+          "label": "Library ending presentation",
+          "missable": true,
+          "levels": {
+            "1": "The second three-way building choice selects a different final presentation.",
+            "2": "Choose the Library waterfront route and finish that campaign.",
+            "3": "At the second junction enter the Library, complete the entire campaign without loading a different branch state, and record the ending presentation reached from that flag. Do not describe its character or narrative content in the guide."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before overwriting clear data",
+        "why": "Three presentation flags and the full collection must remain recoverable."
+      }
+    },
+    {
+      "id": "normal-s-rank",
+      "name": "Normal S Rank and Reward",
+      "location_cue": "The Normal difficulty selector, full campaign timer, result statistics, and next-run inventory.",
+      "note": "Use conservative targets because the internal rank formula is not displayed or officially published.",
+      "items": [
+        {
+          "id": "rank-normal-s",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Normal Rank S",
+          "missable": false,
+          "levels": {
+            "1": "The top result combines speed, accuracy, survival, and a strong kill count.",
+            "2": "Finish Normal under 1:30 with no spray or continue and strong statistics.",
+            "3": "Use Normal, finish before 1:30:00, use no First Aid Spray, and select no Continue. Because the exact formula was never published, target at least 85% accuracy and 150 defeated enemies to stay above every consistently reported threshold."
+          }
+        },
+        {
+          "id": "rank-time",
+          "type": "interaction",
+          "safe_type": "Rank Rule",
+          "label": "Finish Before 1:30",
+          "missable": false,
+          "levels": {
+            "1": "Use the shortest branch combination and avoid unnecessary rooms.",
+            "2": "Keep the final clear time below ninety minutes.",
+            "3": "Use Restaurant first, Library second, the nightclub line third, and the central elevator fourth. Pre-learn every key location, skip files and weapons already preserved, and reach the result screen at 1:29:59 or faster."
+          }
+        },
+        {
+          "id": "rank-accuracy",
+          "type": "interaction",
+          "safe_type": "Rank Rule",
+          "label": "Maintain 85% Accuracy",
+          "missable": false,
+          "levels": {
+            "1": "Every missed unlimited-handgun shot lowers the result statistic.",
+            "2": "Keep the displayed hit average at 85% or higher.",
+            "3": "Fire only with a centered target, favor close controlled handgun shots, and stop shooting during invulnerable animations. Check the result statistic after practice clears; 85% is a conservative target above the varying reported minimums."
+          }
+        },
+        {
+          "id": "rank-kills",
+          "type": "interaction",
+          "safe_type": "Rank Rule",
+          "label": "Target 150 Defeated Enemies",
+          "missable": false,
+          "levels": {
+            "1": "Pure evasion can produce an excellent time but an insufficient combat record.",
+            "2": "Defeat at least 150 enemies while remaining under the time limit.",
+            "3": "Use dense but quick rooms along the chosen short route, count confirmed dissolves or collapses, and finish with 150 or more. This conservative target avoids the lower-rank outcomes reported on otherwise clean runs near 130."
+          }
+        },
+        {
+          "id": "rank-no-spray",
+          "type": "interaction",
+          "safe_type": "Rank Rule",
+          "label": "Use No First Aid Spray",
+          "missable": false,
+          "levels": {
+            "1": "Herb mixtures heal without triggering the spray restriction.",
+            "2": "Never activate a First Aid Spray during the S attempt.",
+            "3": "Ignore every spray or leave it in inventory unused. Heal with green herbs, green-red mixtures, or green-red-blue mixtures; check the item name carefully before confirming Use."
+          }
+        },
+        {
+          "id": "rank-no-continue",
+          "type": "interaction",
+          "safe_type": "Rank Rule",
+          "label": "Use No Continues",
+          "missable": false,
+          "levels": {
+            "1": "A death should end the attempt rather than resume it.",
+            "2": "Do not select Continue after a failure.",
+            "3": "If defeated, decline continuation, save the accumulated collection only if desired, then reload from the campaign beginning. The successful S attempt must reach the result screen without a continue."
+          }
+        },
+        {
+          "id": "rank-rocket",
+          "type": "upgrade",
+          "safe_type": "Reward",
+          "label": "Infinite Rocket Launcher",
+          "missable": false,
+          "levels": {
+            "1": "Saving the top result adds a weapon to the next opening inventory.",
+            "2": "Save a Normal S result and load that continuing data.",
+            "3": "When the result screen displays S, write it to the protected memory-card file. Start another campaign from that record, inspect the opening inventory for the M20A1, equip it, and confirm its rocket supply does not decrease."
+          }
+        },
+        {
+          "id": "rank-formula-note",
+          "type": "interaction",
+          "safe_type": "Verification Note",
+          "label": "Conservative S-Rank Targets",
+          "missable": false,
+          "levels": {
+            "1": "The software exposes statistics but not its internal scoring equation.",
+            "2": "Use all four safe targets together rather than relying on one rumored minimum.",
+            "3": "Treat Normal, sub-1:30 time, zero sprays, and zero continues as fixed. Keep accuracy at 85% or better and kills at 150 or more; these deliberately exceed conflicting historical estimates without inventing a hidden formula."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Protect the practiced Normal data",
+        "why": "A failed attempt restarts at the opening and the result appears only after a full clear."
+      }
+    },
+    {
+      "id": "secrets",
+      "name": "Environmental Secrets and Regional Control",
+      "location_cue": "Arcade walls, house bedrooms, the underground waterway, grassland targeting view, and regional options menu.",
+      "note": "Inspect these on exploration clears; none should compromise the S-rank route.",
+      "items": [
+        {
+          "id": "secret-dino",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Dino Crisis Poster",
+          "missable": false,
+          "levels": {
+            "1": "Optional route details reward close inspection away from ranking attempts.",
+            "2": "Inspect Arcade wall for Dino Crisis Poster.",
+            "3": "On an Arcade-route exploration run, clear the first public room and inspect the bright promotional artwork on its wall. Approach until the Dino Crisis design is fully legible, then continue without transcribing story material."
+          }
+        },
+        {
+          "id": "secret-darkstalkers",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Darkstalkers Poster",
+          "missable": false,
+          "levels": {
+            "1": "Optional route details reward close inspection away from ranking attempts.",
+            "2": "Inspect Arcade first combat room for Darkstalkers Poster.",
+            "3": "In the Arcade's first armed encounter room, face the wall opposite the more obvious promotional art and move close to the darker poster. Confirm the Darkstalkers design before entering the casino route."
+          }
+        },
+        {
+          "id": "secret-street-fighter",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Street Fighter II Poster",
+          "missable": false,
+          "levels": {
+            "1": "Optional route details reward close inspection away from ranking attempts.",
+            "2": "Inspect children's bedroom for Street Fighter II Poster.",
+            "3": "Inside the children's house, enter the bedroom and inspect the wall around the beds. Move close enough to recognize the Street Fighter II poster before collecting the room's file."
+          }
+        },
+        {
+          "id": "secret-ghouls",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Ghouls 'n Ghosts Poster",
+          "missable": false,
+          "levels": {
+            "1": "Optional route details reward close inspection away from ranking attempts.",
+            "2": "Inspect children's bedroom for Ghouls 'n Ghosts Poster.",
+            "3": "Remain in the same bedroom and inspect the second game poster separately. Confirm the Ghouls 'n Ghosts artwork rather than counting both wall references as one secret."
+          }
+        },
+        {
+          "id": "secret-bedroom-zombie",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Bedroom Zombie Animation",
+          "missable": false,
+          "levels": {
+            "1": "Optional route details reward close inspection away from ranking attempts.",
+            "2": "Inspect approach beds slowly for Bedroom Zombie Animation.",
+            "3": "Enter the other bedroom in the small house, avoid firing, and walk slowly toward the beds. Observe the seated zombie's unusual idle animation from a safe distance before leaving."
+          }
+        },
+        {
+          "id": "secret-alligator-route",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Hidden Alligator Route",
+          "missable": true,
+          "levels": {
+            "1": "Optional route details reward close inspection away from ranking attempts.",
+            "2": "Inspect prison underground stairs for Hidden Alligator Route.",
+            "3": "At the prison's third junction, descend the underground stairs rather than using the tower or nightclub line. Continue through the ventilation and waterway rooms until both alligators and the far ladder have been reached."
+          }
+        },
+        {
+          "id": "secret-large-cleaner",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Oversized Cleaner Glitch",
+          "missable": false,
+          "levels": {
+            "1": "Optional route details reward close inspection away from ranking attempts.",
+            "2": "Inspect grassland laser targeting for Oversized Cleaner Glitch.",
+            "3": "On a non-ranking Grassland-route attempt, aim near the red targeting lasers while distant armed enemies are present. Record the occasional oversized model glitch only if it occurs naturally; never use it as required progression."
+          }
+        },
+        {
+          "id": "secret-regional-guncon",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "GunCon Control Route",
+          "missable": true,
+          "levels": {
+            "1": "Optional route details reward close inspection away from ranking attempts.",
+            "2": "Inspect Japanese PAL releases only for GunCon Control Route.",
+            "3": "Use a Japanese or PAL PlayStation disc, connect and calibrate a compatible GunCon, and finish one complete route. North American copies do not expose this option, so platform absence is a valid completion state."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Use a non-ranking branch",
+        "why": "Several secrets require slower inspection, a rare glitch, or a different regional disc."
+      }
+    }
+  ]
+}

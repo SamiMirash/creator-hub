@@ -1,0 +1,734 @@
+{
+  "id": "resident-evil-zombiebuster",
+  "game": "Resident Evil ZombieBuster (2011)",
+  "target": "Spoiler-free maximum verifiable completion of the 2011 Japanese mobile remake route",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "archival-route",
+      "name": "Archival Remake Route",
+      "location_cue": "The preserved Japanese feature phone, carrier package, runtime metadata, and remake title screen.",
+      "note": "The chosen route is the 2011 remake; the earlier mobile version is not substituted for missing remake evidence.",
+      "save_backup": {
+        "title": "Duplicate the build before launch",
+        "why": "There is no verified replacement storefront or emulator route.",
+        "detail": "Copy every accessible application file and photograph the handset state before testing controls or network functions."
+      },
+      "items": [
+        {
+          "id": "route-remake-build",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "2011 Japanese Remake Route",
+          "missable": true,
+          "levels": {
+            "1": "The selected catalog route is a discontinued feature-phone remake.",
+            "2": "Use a lawfully preserved copy of the 2011 Japanese mobile release.",
+            "3": "Verify the Japanese title screen, 2011 build context, handset model, application files, and carrier metadata before play. A modern imitation or footage-only reconstruction cannot establish completion of this route."
+          }
+        },
+        {
+          "id": "route-carrier-variant",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Carrier Variant Record",
+          "missable": false,
+          "levels": {
+            "1": "Several Japanese networks distributed the remake.",
+            "2": "Identify whether the surviving package belongs to docomo, au, or SoftBank.",
+            "3": "Photograph the handset and record the network branding, application identifier, file metadata, and launch path. Preserve each distinct carrier package separately rather than assuming their files are interchangeable."
+          }
+        },
+        {
+          "id": "route-flash-runtime",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Flash Runtime Record",
+          "missable": false,
+          "levels": {
+            "1": "The required Flash generation depends on the carrier build.",
+            "2": "Record Flash Lite 3.0 for docomo or Flash Lite 2.0 for au and SoftBank.",
+            "3": "Confirm the runtime reported by the handset or preserved technical metadata before launching. Keep the phone firmware and browser version with the archive because timing and compatibility may change across implementations."
+          }
+        },
+        {
+          "id": "route-subscription-context",
+          "type": "interaction",
+          "safe_type": "Archive Fact",
+          "label": "Original Subscription Context",
+          "missable": false,
+          "levels": {
+            "1": "The remake came through a monthly mobile service.",
+            "2": "Record the historical access price as 315 yen per month.",
+            "3": "Store any surviving subscription or carrier page beside the build. Treat 315 yen as historical context only; it does not identify a current lawful storefront or a working modern service."
+          }
+        },
+        {
+          "id": "route-original-version-scope",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Earlier Version Exclusion",
+          "missable": false,
+          "levels": {
+            "1": "An older release exists outside the chosen route.",
+            "2": "Keep the 2001 version only as a historical comparison.",
+            "3": "Complete the 2011 remake for this pack. Do not merge screenshots, timing values, graphics, controls, or balance observations from the earlier mobile version into the remake checklist unless direct comparison proves they match."
+          }
+        },
+        {
+          "id": "route-session-capture",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Complete Session Capture",
+          "missable": true,
+          "levels": {
+            "1": "A working launch may be difficult to repeat.",
+            "2": "Record from application boot through menus, play, score result, and exit.",
+            "3": "Begin native-resolution capture before launch, include every input and result screen without cuts, and save the raw recording with the handset metadata. Duplicate both application data and footage to two checked storage locations."
+          }
+        }
+      ]
+    },
+    {
+      "id": "operator-routes",
+      "name": "Operator Routes",
+      "location_cue": "The character-selection screen and the opening enemy formation.",
+      "note": "Player-facing text distinguishes the selections by mechanics and does not expose character identities.",
+      "save_backup": {
+        "title": "Preserve a neutral start",
+        "why": "Selecting an operator changes the active firing characteristics.",
+        "detail": "Keep a title-screen copy or reproducible relaunch state before recording either comparison run."
+      },
+      "items": [
+        {
+          "id": "character-power-route",
+          "type": "choice",
+          "safe_type": "Character Style",
+          "label": "Power-Focused Operator",
+          "missable": false,
+          "levels": {
+            "1": "One selection favors stronger individual shots.",
+            "2": "Choose the menu portrait whose weapon pushes targets back farther.",
+            "3": "Start a fresh run with the power-focused selection. Record the selection screen, then measure target displacement and time between shots against the same early formation used for the other operator; avoid assigning numerical stats without frame-tested evidence."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "character-rapid-route",
+          "type": "choice",
+          "safe_type": "Character Style",
+          "label": "Rapid-Fire Operator",
+          "missable": false,
+          "levels": {
+            "1": "The other selection trades impact for firing speed.",
+            "2": "Choose the menu portrait that can shoot more rapidly.",
+            "3": "Start a separate run with the rapid-fire selection. Capture identical early targets and compare shot spacing, knockback, reload timing, and survival margin with the power-focused run while keeping all unverified numerical values out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "character-comparison",
+          "type": "optional",
+          "safe_type": "Character Audit",
+          "label": "Operator Comparison",
+          "missable": false,
+          "levels": {
+            "1": "Both control styles need evidence from equivalent conditions.",
+            "2": "Record one comparable opening sequence with each operator style.",
+            "3": "Use the same handset, formation, capture rate, and input method for both runs. Compare only directly visible differences in impact and firing cadence, then retain the two recordings together so later hardware latency is not mistaken for character balance."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "defense-loop",
+      "name": "Verified Defense Loop",
+      "location_cue": "The single-screen playfield, horizontal firing lane, approaching targets, and lower defense boundary.",
+      "note": "Only directly supported controls, reload behavior, and failure mechanics are stated as established facts.",
+      "save_backup": {
+        "title": "Capture controls before a full run",
+        "why": "A handset mismatch could make movement or firing impossible.",
+        "detail": "Record a short input test and verify native timing before committing the preserved build to extended play."
+      },
+      "items": [
+        {
+          "id": "loop-horizontal-positioning",
+          "type": "interaction",
+          "safe_type": "Core Control",
+          "label": "Horizontal Positioning",
+          "missable": false,
+          "levels": {
+            "1": "The defense line is protected by lateral movement.",
+            "2": "Move sideways until the weapon is aligned with the approaching target.",
+            "3": "Track the target's lane, shift horizontally into alignment, and leave enough distance to recover from the next forced reload. Record the actual handset inputs because the surviving sources do not establish a universal key layout."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "loop-fire",
+          "type": "interaction",
+          "safe_type": "Core Control",
+          "label": "Fire",
+          "missable": false,
+          "levels": {
+            "1": "Aligned shots are the only verified attack.",
+            "2": "Shoot the nearest target before it reaches the lower boundary.",
+            "3": "Fire while aligned, watch for visible recoil or backward movement, and prioritize the threat closest to the defense line. Keep shooting only as fast as the chosen operator and reload cycle allow."
+          }
+        },
+        {
+          "id": "loop-knockback",
+          "type": "optional",
+          "safe_type": "Combat Mechanic",
+          "label": "Target Knockback",
+          "missable": false,
+          "levels": {
+            "1": "A hit creates space before it finishes a target.",
+            "2": "Use repeated shots to drive an approaching target away from the boundary.",
+            "3": "Confirm a hit by visible rearward movement, then use that space to address another lane or prepare for reload. The power-focused operator creates the larger displacement, but the exact distance remains unverified."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "loop-defeat",
+          "type": "optional",
+          "safe_type": "Combat Mechanic",
+          "label": "Target Defeat",
+          "missable": false,
+          "levels": {
+            "1": "Knockback alone does not clear the formation.",
+            "2": "Continue landing hits until the aligned target disappears or enters its defeat state.",
+            "3": "Maintain lane alignment through the target's full damage sequence and confirm the defeat animation before changing lanes. Do not infer a fixed hit count because durability can change later in the run."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "loop-six-shot-reload",
+          "type": "interaction",
+          "safe_type": "Weapon Cycle",
+          "label": "Six-Shot Reload",
+          "missable": false,
+          "levels": {
+            "1": "The weapon pauses after a short fixed firing cycle.",
+            "2": "Expect a reload immediately after every sixth shot.",
+            "3": "Count fired rounds from the last completed reload and create distance before round six. The reload begins automatically, so plan the final shot for the most urgent lane instead of spending it on a distant target."
+          }
+        },
+        {
+          "id": "loop-reload-exposure",
+          "type": "optional",
+          "safe_type": "Weapon Cycle",
+          "label": "Reload Exposure",
+          "missable": false,
+          "levels": {
+            "1": "No shot can be fired during the reload pause.",
+            "2": "Use knockback and lateral spacing before the weapon becomes unavailable.",
+            "3": "Push the nearest threat back before the sixth round, begin the reload with no target touching the lower boundary, and reposition while firing is locked. Resume shooting only when the game visibly returns control."
+          }
+        },
+        {
+          "id": "loop-defense-line",
+          "type": "optional",
+          "safe_type": "Failure Rule",
+          "label": "Defense-Line Breach",
+          "missable": true,
+          "levels": {
+            "1": "The run ends when an approaching threat crosses the protected boundary.",
+            "2": "Keep every target above the defense line at the bottom of the playfield.",
+            "3": "Watch the lowest target rather than the largest group. If a controlled archival attempt is available, capture one natural breach, the full result screen, and every retry or exit option without risking the only preserved session."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "loop-wave-clear",
+          "type": "optional",
+          "safe_type": "Progression",
+          "label": "Formation Clear",
+          "missable": false,
+          "levels": {
+            "1": "Removing an ordinary formation advances the run.",
+            "2": "Defeat every standard target currently present on the playfield.",
+            "3": "Sweep lanes until no ordinary target remains, preserve the transition that follows, and continue recording into the next distinct encounter. Do not use a presumed stage number or order in the player-facing guide."
+          }
+        }
+      ]
+    },
+    {
+      "id": "special-encounters",
+      "name": "Documented Special Encounters",
+      "location_cue": "The same defense playfield after an ordinary formation has been cleared.",
+      "note": "Physical descriptions replace identity names, and no encounter order is exposed.",
+      "save_backup": {
+        "title": "Keep the first complete encounter capture",
+        "why": "Later runs become faster and may not reproduce a clean recording.",
+        "detail": "Save each uninterrupted encounter recording and its preceding transition before continuing the survival loop."
+      },
+      "items": [
+        {
+          "id": "special-encounter-01-large-humanoid-encounter",
+          "type": "optional",
+          "safe_type": "Special Encounter",
+          "label": "Large Humanoid Encounter",
+          "missable": false,
+          "levels": {
+            "1": "A tall single target replaces the ordinary formation.",
+            "2": "Continue clearing formations until the large upright target appears.",
+            "3": "Stay aligned with its lane, use early shots to preserve distance, and enter each forced reload with room above the boundary. Capture its full appearance, movement, hit response, defeat state, score change, and the next screen without naming its franchise identity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "special-encounter-02-serpentine-encounter",
+          "type": "optional",
+          "safe_type": "Special Encounter",
+          "label": "Serpentine Encounter",
+          "missable": false,
+          "levels": {
+            "1": "A long-bodied target creates a different defense pattern.",
+            "2": "Continue the run until the giant serpentine target appears.",
+            "3": "Record its occupied lanes and movement before committing to a firing rhythm. Use the chosen operator's knockback to protect the nearest boundary point, count every reload cycle, and preserve the complete defeat transition without exposing its identity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "special-encounter-03-airborne-flock-encounter",
+          "type": "optional",
+          "safe_type": "Special Encounter",
+          "label": "Airborne Flock Encounter",
+          "missable": false,
+          "levels": {
+            "1": "Several airborne targets share one special encounter.",
+            "2": "Continue clearing formations until the multi-target flock appears.",
+            "3": "Track each airborne threat separately, shoot the lowest one first, and avoid beginning a reload while another remains close to the boundary. Capture the full target count, movement, individual defeats, score changes, and completion transition."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "survival-progression",
+      "name": "Escalating Survival Run",
+      "location_cue": "Later repeats of the defense playfield, transition screens, live score, and final result.",
+      "note": "The pack follows only the visible survival mechanics and does not describe story structure.",
+      "save_backup": {
+        "title": "Preserve the best complete attempt",
+        "why": "Later cycles increase pressure and a replacement session may be unavailable.",
+        "detail": "Keep the uninterrupted raw capture and score ledger before experimenting with additional runs."
+      },
+      "items": [
+        {
+          "id": "progress-repeat-cycle",
+          "type": "optional",
+          "safe_type": "Survival Progression",
+          "label": "Repeating Encounter Cycle",
+          "missable": false,
+          "levels": {
+            "1": "Clearing the documented encounters does not finish the survival run.",
+            "2": "Continue playing when the game returns to another defense formation.",
+            "3": "Treat the new formation as a later cycle of the same run, keep the score and operator unchanged, and continue until the result screen appears. Preserve the transition without assigning a stage number or narrative meaning."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "progress-speed-escalation",
+          "type": "optional",
+          "safe_type": "Survival Progression",
+          "label": "Movement-Speed Escalation",
+          "missable": false,
+          "levels": {
+            "1": "Later threats close the distance more quickly.",
+            "2": "Compare target travel time after each completed encounter cycle.",
+            "3": "Measure from a consistent spawn point to the defense line and record the cycle context. Adjust lane priority and reload spacing to the observed increase, but do not publish a multiplier until repeated footage confirms it."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "progress-durability-escalation",
+          "type": "optional",
+          "safe_type": "Survival Progression",
+          "label": "Durability Escalation",
+          "missable": false,
+          "levels": {
+            "1": "Later targets require more sustained fire.",
+            "2": "Count confirmed hits on matching targets across later cycles.",
+            "3": "Use the same operator and target type, exclude missed shots, and record the defeat frame. Plan extra reloads when durability rises, while leaving exact health and scaling values marked unverified."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "progress-score-record",
+          "type": "optional",
+          "safe_type": "Score",
+          "label": "Run Score Record",
+          "missable": false,
+          "levels": {
+            "1": "The survival attempt produces a score for comparison.",
+            "2": "Capture the score before play, after each transition, and at failure.",
+            "3": "Keep a ledger containing operator style, cycle context, formation result, special encounter, reload count, breach moment, and final score. Repeat comparable actions before assigning points or bonuses to any event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "progress-natural-end",
+          "type": "optional",
+          "safe_type": "Completion Boundary",
+          "label": "Natural Run End",
+          "missable": true,
+          "levels": {
+            "1": "Maximum verifiable completion ends with a documented survival attempt.",
+            "2": "Continue the escalating loop until a target reaches the defense line.",
+            "3": "Record the entire longest lawful attempt, including the final breach and result screen. Archive completion requires every verified mechanic and encounter plus one uninterrupted attempt from character selection through that final result."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "network-ranking",
+      "name": "Historical Network Ranking",
+      "location_cue": "The score result, upload prompt, carrier connection screen, and ranking table or error response.",
+      "note": "Rotating or discontinued network data is never presented as an ordinary requirement available today.",
+      "save_backup": {
+        "title": "Capture local results first",
+        "why": "Testing a retired endpoint may interrupt or alter the preserved session.",
+        "detail": "Save the local score screen and duplicate the build before attempting any network connection."
+      },
+      "items": [
+        {
+          "id": "online-ranking-menu",
+          "type": "optional",
+          "safe_type": "Online Record",
+          "label": "Network Ranking",
+          "missable": true,
+          "levels": {
+            "1": "The original release could compare scores through a carrier service.",
+            "2": "Open the ranking or score-upload option if the preserved build still exposes it.",
+            "3": "Capture the menu path, submitted score, connection request, endpoint response, displayed table, and date. If the carrier service no longer responds, retain the failure evidence and mark live placement unobtainable."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "online-offline-record",
+          "type": "optional",
+          "safe_type": "Online Record",
+          "label": "Discontinued-Service Evidence",
+          "missable": true,
+          "levels": {
+            "1": "A dead endpoint is an archival result, not a missing score target.",
+            "2": "Record the complete network error or unavailable screen.",
+            "3": "Preserve the unedited connection attempt with handset clock, network state, application version, and error text. Do not emulate a successful submission or invent a ranking threshold when the historical service cannot answer."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "verification-holds",
+      "name": "Unverified Completion Boundaries",
+      "location_cue": "Any undocumented control, menu, statistic, wave, score, reward, save, or retry screen exposed by a lawful remake build.",
+      "note": "Unknown data remains visibly withheld instead of being padded into false completion instructions.",
+      "save_backup": {
+        "title": "Retain evidence before resolving a hold",
+        "why": "A single observation may reflect handset timing or an incomplete build.",
+        "detail": "Store the untouched footage and transcription, then require a repeat result before editing the fact notes or guide text."
+      },
+      "items": [
+        {
+          "id": "verification-hold-01",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #1",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: exact movement key mapping. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-02",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #2",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: exact firing key mapping. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-03",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #3",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: character numerical statistics. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-04",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #4",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: ordinary enemy roster. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-05",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #5",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: wave sizes and schedules. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-06",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #6",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: target health values. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-07",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #7",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: target attack patterns. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-08",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #8",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: score formula and bonuses. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-09",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #9",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: ranking thresholds and rewards. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-10",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #10",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: leaderboard service availability. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-11",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #11",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: difficulty settings. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-12",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #12",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: save and session persistence. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-13",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #13",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: pause and option menus. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-14",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #14",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: continue or retry rules. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-15",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #15",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: unlockable content. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-16",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #16",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this mechanical value.",
+            "2": "Resolve this entry only with a lawful remake build and uninterrupted direct capture.",
+            "3": "NEEDS VERIFICATION: complete lawful remake build. Record the original Japanese screen, exact starting state, inputs, visible result, and a repeat observation before replacing this hold. Do not infer a number, reward, menu, control, or service behavior from promotional images alone."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "final-archival-audit",
+      "name": "Final Archival Audit",
+      "location_cue": "The preserved remake package, operator captures, encounter index, score ledger, network evidence, and verification-hold list.",
+      "note": "This audit defines maximum verifiable completion for a discontinued mobile survival game.",
+      "save_backup": {
+        "title": "Duplicate the final evidence set",
+        "why": "The audit depends on irreplaceable original-device captures and branching operator runs.",
+        "detail": "Keep two checked copies of the build, raw footage, metadata, translations, and ledger before reconciling the final checklist."
+      },
+      "items": [
+        {
+          "id": "audit-route",
+          "type": "interaction",
+          "safe_type": "Final Audit",
+          "label": "Remake Route Audit",
+          "missable": false,
+          "levels": {
+            "1": "The completed archive must identify the exact release being played.",
+            "2": "Confirm the remake title screen, carrier package, runtime, handset, and two backups.",
+            "3": "Compare the device photographs, application metadata, carrier record, native capture, and backup checksums. Reject evidence taken only from the earlier mobile version or an unidentified reproduction."
+          }
+        },
+        {
+          "id": "audit-operators",
+          "type": "choice",
+          "safe_type": "Final Audit",
+          "label": "Operator-Style Audit",
+          "missable": false,
+          "levels": {
+            "1": "Both mechanical selections need comparable evidence.",
+            "2": "Confirm one captured run for the power-focused style and one for the rapid-fire style.",
+            "3": "Review the two opening runs under matching conditions and verify visible differences in shot impact and cadence. Keep exact statistics withheld unless repeated frame analysis establishes them."
+          }
+        },
+        {
+          "id": "audit-defense-loop",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Defense-Loop Audit",
+          "missable": false,
+          "levels": {
+            "1": "Every verified control and failure rule should appear in one continuous record.",
+            "2": "Confirm movement, firing, knockback, defeat, reload, formation clear, and a defense-line breach.",
+            "3": "Use the session index to locate each mechanic in uninterrupted footage. Check that the six-shot reload and firing lock are visible and that the breach result includes the complete retry or exit screen."
+          }
+        },
+        {
+          "id": "audit-special-encounters",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Special-Encounter Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each documented physical encounter archetype needs a complete capture.",
+            "2": "Confirm the large humanoid, serpentine, and airborne-flock encounters.",
+            "3": "Verify that every recording includes the preceding formation transition, full encounter, defeat state, score change, and following screen. Keep franchise identities out of player-facing text."
+          }
+        },
+        {
+          "id": "audit-progression",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Escalation and Score Audit",
+          "missable": false,
+          "levels": {
+            "1": "The archive must show how the survival run changes over time.",
+            "2": "Confirm a repeated cycle, faster movement, increased durability, final score, and natural failure.",
+            "3": "Compare timestamped examples made with the same operator and target type, then preserve the longest complete run and its score ledger. Leave unsupported scaling numbers and scoring formulas uncertain."
+          }
+        },
+        {
+          "id": "audit-verification-holds",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Verification-Hold Audit",
+          "missable": false,
+          "levels": {
+            "1": "A complete archival record separates known mechanics from lost data.",
+            "2": "Review every verification hold and attach direct evidence to any resolved entry.",
+            "3": "Keep unsupported holds marked uncertain. Replace a hold only after repeatable remake-build evidence establishes the exact value or behavior, and list all remaining holds in the report."
+          }
+        }
+      ]
+    }
+  ]
+}

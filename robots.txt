@@ -1,0 +1,100 @@
+# Sami Mirash - creator site
+# Open to search engines and to AI search / training crawlers, so the site is
+# discoverable both in classic search AND in AI assistants / AI search.
+# The spoiler-free game-guide VIEWER (/guide/) is intentionally kept out of all
+# indexes (it is also noindex via meta) so guide content is never surfaced.
+
+User-agent: *
+Allow: /
+Disallow: /guide/
+
+# --- AI search & AI training crawlers: explicitly ALLOWED ---
+# Listed by name so the site shows up in AI search results and AI answers.
+# (A blanket "User-agent: *  Allow: /" already permits these; the explicit
+#  entries make the intent unambiguous to crawlers that look for their own name.)
+
+User-agent: GPTBot
+Allow: /
+Disallow: /guide/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /guide/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /guide/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /guide/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /guide/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /guide/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /guide/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /guide/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /guide/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /guide/
+
+User-agent: Applebot
+Allow: /
+Disallow: /guide/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /guide/
+
+User-agent: CCBot
+Allow: /
+Disallow: /guide/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /guide/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /guide/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /guide/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /guide/
+
+User-agent: YouBot
+Allow: /
+Disallow: /guide/
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /guide/
+
+User-agent: Diffbot
+Allow: /
+Disallow: /guide/
+
+User-agent: Timpibot
+Allow: /
+Disallow: /guide/
+
+Sitemap: https://www.samimirash.com/sitemap.xml

@@ -1,0 +1,1773 @@
+{
+  "id": "resident-evil-deadly-silence",
+  "game": "Resident Evil: Deadly Silence (2006)",
+  "target": "100% completion of the original Nintendo DS release, including Classic, Rebirth, all ending flags, clear-data rewards, Master of Knifing, and local wireless modes, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "route-and-modes",
+      "name": "DS Route and Campaign Modes",
+      "location_cue": "The DS title menu, both screens, and the opening playable rooms.",
+      "note": "Configure the only complete platform route before creating clear data.",
+      "items": [
+        {
+          "id": "route-ds-release",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Nintendo DS Release",
+          "missable": false,
+          "levels": {
+            "1": "This version depends on two-screen input.",
+            "2": "Run the original Nintendo DS game with touch and microphone input available.",
+            "3": "Use DS hardware or a tested emulator, verify both screens render without cropping, map the touch panel accurately, test microphone input, and keep a clean save before beginning either ruleset."
+          }
+        },
+        {
+          "id": "route-touch-calibration",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Calibrate Touch Input",
+          "missable": false,
+          "levels": {
+            "1": "Precise short strokes matter in the added challenges.",
+            "2": "Test taps, straight drags, and diagonal drags on the lower screen.",
+            "3": "Calibrate the stylus before the first campaign. Confirm a tap lands under the cursor, each cardinal drag reads cleanly, and rapid taps do not become swipes; emulator mouse scaling must remain one-to-one."
+          }
+        },
+        {
+          "id": "route-microphone",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Verify Microphone Input",
+          "missable": false,
+          "levels": {
+            "1": "Several Rebirth interactions listen for breath.",
+            "2": "Confirm the DS microphone responds before starting Rebirth mode.",
+            "3": "Open the hardware or emulator microphone test, sustain a moderate breath, and confirm the input meter moves. Avoid always-on noise injection because it can trigger a puzzle or defensive response at the wrong moment."
+          }
+        },
+        {
+          "id": "mode-classic-eight-slot",
+          "type": "interaction",
+          "safe_type": "Campaign",
+          "label": "Clear Classic with the Eight-Slot Character",
+          "missable": false,
+          "levels": {
+            "1": "The room layout is familiar, but one inventory route is more forgiving.",
+            "2": "Finish Classic mode once with the eight-slot character and save the clear data.",
+            "3": "Choose Classic at the title screen, select the character with eight inventory spaces and lock-picking access, finish the route, and save the completion record. Keep this clear slot separate from Rebirth progress."
+          }
+        },
+        {
+          "id": "mode-classic-six-slot",
+          "type": "interaction",
+          "safe_type": "Campaign",
+          "label": "Clear Classic with the Six-Slot Character",
+          "missable": false,
+          "levels": {
+            "1": "The smaller inventory creates a distinct route.",
+            "2": "Finish Classic mode once with the six-slot character and save the clear data.",
+            "3": "Start a separate Classic file with six inventory spaces, collect the small keys needed for simple locks, finish the route, and retain its clear record. Do not overwrite the other character's completion."
+          }
+        },
+        {
+          "id": "mode-rebirth-eight-slot",
+          "type": "interaction",
+          "safe_type": "Campaign",
+          "label": "Clear Rebirth with the Eight-Slot Character",
+          "missable": false,
+          "levels": {
+            "1": "The DS-specific ruleset changes puzzles and encounters.",
+            "2": "Finish Rebirth mode once with the eight-slot character.",
+            "3": "Select Rebirth, use the eight-slot route, solve every mandatory touch or microphone interaction, finish the campaign, and save the result so its character unlock can be verified in wireless play."
+          }
+        },
+        {
+          "id": "mode-rebirth-six-slot",
+          "type": "interaction",
+          "safe_type": "Campaign",
+          "label": "Clear Rebirth with the Six-Slot Character",
+          "missable": false,
+          "levels": {
+            "1": "The alternate inventory route also has unique DS rewards.",
+            "2": "Finish Rebirth mode once with the six-slot character.",
+            "3": "Create another Rebirth file with six spaces, account for its different coloured-node chest solutions, complete all mandatory DS interactions, and retain the clear data for the corresponding wireless unlock."
+          }
+        },
+        {
+          "id": "mode-hidden-easy",
+          "type": "interaction",
+          "safe_type": "Mode",
+          "label": "Reveal Easy Difficulty",
+          "missable": false,
+          "levels": {
+            "1": "A title-screen input exposes a gentler ruleset.",
+            "2": "Highlight Classic or Rebirth and hold Right until the difficulty label changes colour.",
+            "3": "At mode selection, rest on Classic or Rebirth without confirming and hold Right long enough for the label to turn green. Start the run and verify the increased ammunition and reduced enemy durability; this setting does not grant completion rewards."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep separate clear slots",
+        "why": "Classic, Rebirth, ending flags, and timed unlock checks should not overwrite one another."
+      }
+    },
+    {
+      "id": "classic-mansion-first-pass",
+      "name": "Classic — Mansion First Pass",
+      "location_cue": "The two-storey entrance hall, dining room, galleries, bedrooms, bar, and connected east and west wings.",
+      "note": "Finish both wings and all four crest routes before opening the garden shed.",
+      "items": [
+        {
+          "id": "classic-mansion-map-first-floor",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Mansion First-Floor Map",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the small gallery, complete the nearby interaction to obtain Mansion First-Floor Map.",
+            "3": "Bring the key items gathered on the surrounding route. At the small gallery, move stepladder beside statue; then climb toward upper jug; then take map from jug. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-mansion-wooden-emblem",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Wooden Emblem",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the second-floor armor room, complete the nearby interaction to obtain Wooden Emblem.",
+            "3": "Bring the key items gathered on the surrounding route. At the second-floor armor room, cover both floor vents; then press central floor switch; then open released wall chest. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-mansion-blue-jewel",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Blue Jewel",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the upper dining balcony, complete the nearby interaction to obtain Blue Jewel.",
+            "3": "Bring the key items gathered on the surrounding route. At the upper dining balcony, push statue through broken railing; then return to dining floor; then collect jewel from fragments. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-mansion-wind-crest",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Wind Crest",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the green-corridor tiger room, complete the nearby interaction to obtain Wind Crest.",
+            "3": "Bring the key items gathered on the surrounding route. At the green-corridor tiger room, insert Blue Jewel; then take revealed Wind Crest. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-mansion-music-notes",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Music Notes",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the first-floor piano bar, complete the nearby interaction to obtain Music Notes.",
+            "3": "Bring the key items gathered on the surrounding route. At the first-floor piano bar, slide large bookcase right; then take hidden sheet music. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-mansion-gold-emblem",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Gold Emblem",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the piano bar hidden chamber, complete the nearby interaction to obtain Gold Emblem.",
+            "3": "Bring the key items gathered on the surrounding route. At the piano bar hidden chamber, use Music Notes on piano; then take Gold Emblem; then replace it with Wooden Emblem. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-mansion-shield-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Shield Key",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the first-floor dining room, complete the nearby interaction to obtain Shield Key.",
+            "3": "Bring the key items gathered on the surrounding route. At the first-floor dining room, insert Gold Emblem above fireplace; then inspect shifted grandfather clock; then take concealed Shield Key. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-mansion-sun-crest",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Sun Crest",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the east fountain room, complete the nearby interaction to obtain Sun Crest.",
+            "3": "Bring the key items gathered on the surrounding route. At the east fountain room, place Chemical into red pump; then walk behind dead growth; then take crest from shield. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-mansion-armor-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Armor Key",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the east fountain room, complete the nearby interaction to obtain Armor Key.",
+            "3": "Bring the key items gathered on the surrounding route. At the east fountain room, place Chemical into red pump; then walk behind dead growth; then take key from shield. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-mansion-moon-crest",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Moon Crest",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the second-floor attic, complete the nearby interaction to obtain Moon Crest.",
+            "3": "Bring the key items gathered on the surrounding route. At the second-floor attic, unlock attic with Shield Key; then circle past large snake; then take crest from wall opening. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-mansion-star-crest",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Star Crest",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the first-floor portrait gallery, complete the nearby interaction to obtain Star Crest.",
+            "3": "Bring the key items gathered on the surrounding route. At the first-floor portrait gallery, press portraits by age; then newborn then infant; then boy then young man; then middle-aged then old man; then press final portrait switch. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-mansion-square-crank",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Square Crank",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the crest-door garden shed, complete the nearby interaction to obtain Square Crank.",
+            "3": "Bring the key items gathered on the surrounding route. At the crest-door garden shed, insert all four crests; then move stepladder toward shelf; then take Square Crank above. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-mansion-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the east first-floor display room, complete the nearby interaction to obtain Shotgun.",
+            "3": "Bring the key items gathered on the surrounding route. At the east first-floor display room, the six-slot character needs Broken Shotgun; then swap weapons before exiting; then the eight-slot character may trigger rescue. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-weapon-combat-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Combat Knife",
+          "missable": false,
+          "levels": {
+            "1": "Inspect both starting inventories before discarding anything.",
+            "2": "Confirm the Combat Knife is present when beginning with the eight-slot character and with the six-slot character.",
+            "3": "Start a fresh file with each character, open the inventory before moving, and highlight the Combat Knife once. It is supplied automatically; do not discard the only copy before its character's weapon ledger is marked."
+          }
+        },
+        {
+          "id": "classic-weapon-beretta",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Beretta M92FS",
+          "missable": false,
+          "levels": {
+            "1": "One character starts armed; the other finds the same handgun during the opening circuit.",
+            "2": "Confirm the eight-slot character's starting handgun and collect the six-slot character's handgun from the Main Hall floor.",
+            "3": "the eight-slot character begins with the Beretta already equipped. As the six-slot character, finish the first dining-room circuit, return to the Main Hall, and inspect the central floor for the handgun. Open inventory after each pickup so both campaign ledgers record it."
+          }
+        },
+        {
+          "id": "classic-weapon-bazooka",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Bazooka",
+          "missable": false,
+          "levels": {
+            "1": "the eight-slot character can obtain a character-exclusive launcher on an outdoor upper route.",
+            "2": "With the eight-slot character, search the eastern second-floor terrace and take the Bazooka.",
+            "3": "Unlock the eastern upper terrace during the first mansion pass, step outside as the eight-slot character, and inspect the far side near the railing. Take the Bazooka and every nearby ammunition type before returning indoors; the six-slot character cannot collect this weapon."
+          }
+        },
+        {
+          "id": "classic-file-botany-book",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Botany Book",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Botany Book at the small library round table.",
+            "3": "Reach the small library round table, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "classic-file-keepers-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Keeper's Diary",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Keeper's Diary at the employee bedroom desk.",
+            "3": "Reach the employee bedroom desk, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "classic-file-researchers-will",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Researcher's Will",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Researcher's Will at the aquarium study desk.",
+            "3": "Reach the aquarium study desk, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "classic-file-orders",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Orders",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Orders at the second floor trophy room table.",
+            "3": "Reach the second floor trophy room table, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before leaving the mansion",
+        "why": "This preserves an early file for alternate scenes and timed route variants."
+      },
+      "point_of_no_return": {
+        "title": "The four-crest door changes the active route",
+        "why": "Local puzzles remain accessible, but clearing them now prevents long backtracking."
+      }
+    },
+    {
+      "id": "classic-courtyard-and-guardhouse",
+      "name": "Classic — Courtyard and Guardhouse",
+      "location_cue": "The garden paths beyond the crest door, a drained channel, and a low dormitory building beside a fountain.",
+      "note": "SAVE-BACKUP: branch variants begin before Room 003. The outdoor route remains traversable afterward.",
+      "items": [
+        {
+          "id": "classic-courtyard-map",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Courtyard Map",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the garden north passage, complete the nearby interaction to obtain Courtyard Map.",
+            "3": "Bring the key items gathered on the surrounding route. At the garden north passage, check passage beyond herb bend; then take map at dead end. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-courtyard-water-channel",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Drain the Water Channel",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the courtyard orange-gate passage, complete the nearby interaction to obtain Drain the Water Channel.",
+            "3": "Bring the key items gathered on the surrounding route. At the courtyard orange-gate passage, use Square Crank on socket; then cross drained channel route. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-guardhouse-map",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Guardhouse Map",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the Room 002, complete the nearby interaction to obtain Guardhouse Map.",
+            "3": "Bring the key items gathered on the surrounding route. At the Room 002, inspect wall beside desk; then take mounted area map. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-guardhouse-hidden-ladder",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Room 002 Hidden Ladder",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the Room 002 behind bed, complete the nearby interaction to obtain Room 002 Hidden Ladder.",
+            "3": "Bring the key items gathered on the surrounding route. At the Room 002 behind bed, push left wardrobe forward; then slide right wardrobe sideways; then descend uncovered ladder. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-guardhouse-control-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Control Room Key",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the Room 001 bathroom, complete the nearby interaction to obtain Control Room Key.",
+            "3": "Bring the key items gathered on the surrounding route. At the Room 001 bathroom, pull bathtub drain plug; then inspect emptied bathtub; then take Control Room Key. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-guardhouse-crate-bridge",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Flooded Passage Crate Bridge",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the guardhouse basement corridor, complete the nearby interaction to obtain Flooded Passage Crate Bridge.",
+            "3": "Bring the key items gathered on the surrounding route. At the guardhouse basement corridor, move first crate around corner; then push all three into water; then cross completed crate bridge. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-guardhouse-003-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Room 003 Key",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the guardhouse weapon store, complete the nearby interaction to obtain Room 003 Key.",
+            "3": "Bring the key items gathered on the surrounding route. At the guardhouse weapon store, open drained basement route; then search right-hand weapon shelf; then take Room 003 Key. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-guardhouse-chemical-room",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Chemical Room Door",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the guardhouse keypad door, complete the nearby interaction to obtain Chemical Room Door.",
+            "3": "Bring the key items gathered on the surrounding route. At the guardhouse keypad door, read billiard-table clock clue; then try 3-4-5; then alternate build uses 2-1-5. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-guardhouse-v-jolt",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "V-JOLT",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the guardhouse chemical room, complete the nearby interaction to obtain V-JOLT.",
+            "3": "Bring the key items gathered on the surrounding route. At the guardhouse chemical room, water plus UMB No.2; then add UMB No.4; then combine UMB2 with UMB4; then join both mixtures; then make water plus UMB2; then add final mixture. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-guardhouse-root-treatment",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Use V-JOLT",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the flooded basement root chamber, complete the nearby interaction to obtain Use V-JOLT.",
+            "3": "Bring the key items gathered on the surrounding route. At the flooded basement root chamber, carry finished V-JOLT downstairs; then enter root chamber; then use mixture beside roots. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-guardhouse-red-book",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Red Book Shelf",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the Room 003 bookshelf, complete the nearby interaction to obtain Red Book Shelf.",
+            "3": "Bring the key items gathered on the surrounding route. At the Room 003 bookshelf, take gray book; then insert Red Book instead; then use opened hidden doorway. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-guardhouse-helmet-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Helmet Key",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the Room 003 fireplace, complete the nearby interaction to obtain Helmet Key.",
+            "3": "Bring the key items gathered on the surrounding route. At the Room 003 fireplace, finish room's mandatory encounter; then inspect fireplace afterward; then examine key to reveal emblem. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-file-plant-42-report",
+          "type": "file",
+          "safe_type": "File",
+          "label": "the guardhouse obstacle Report",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read the guardhouse obstacle Report at the Room 002 bed.",
+            "3": "Reach the Room 002 bed, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "classic-file-v-jolt-report",
+          "type": "file",
+          "safe_type": "File",
+          "label": "V-JOLT Report",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read V-JOLT Report at the Room 003 bookshelf.",
+            "3": "Reach the Room 003 bookshelf, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "classic-guardhouse-plant-variants",
+          "type": "choice",
+          "safe_type": "Route Variant",
+          "label": "Record Every Guardhouse Encounter Variant",
+          "missable": true,
+          "levels": {
+            "1": "The chemical mixture and an earlier support flag create distinct versions.",
+            "2": "Record the full fight, weakened fight, and support-assisted guardhouse variants on separate the eight-slot character or the six-slot character saves.",
+            "3": "Back up before entering the hidden doorway in Room 003. For the weakened version, use V-JOLT on the basement roots first. For the full version, skip V-JOLT without an active rescue flag. For the assisted version, preserve the required support route and enter without using V-JOLT."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before opening Room 003",
+        "why": "The mixture and support flags select mutually exclusive encounter variants."
+      },
+      "point_of_no_return": {
+        "title": "Entering the hidden Room 003 doorway commits the variant",
+        "why": "Reload the backup to record the other mechanical versions."
+      }
+    },
+    {
+      "id": "classic-mansion-return",
+      "name": "Classic — Mansion Return and Library",
+      "location_cue": "The familiar mansion wings after returning from the garden, including newly opened helmet doors, the kitchen lift, and library.",
+      "note": "SAVE-BACKUP: two character-route files and support outcomes can close during this return.",
+      "items": [
+        {
+          "id": "classic-return-map-second-floor",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Mansion Second-Floor Map",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the second-floor fireplace room, complete the nearby interaction to obtain Mansion Second-Floor Map.",
+            "3": "Bring the key items gathered on the surrounding route. At the second-floor fireplace room, carry Lighter; then ignite unlit fireplace; then read revealed wall map. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-return-doom-book-one",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Doom Book Vol. 1",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the lit mansion study, complete the nearby interaction to obtain Doom Book Vol. 1.",
+            "3": "Bring the key items gathered on the surrounding route. At the lit mansion study, turn on table lamp; then take book from shelf; then examine book for Eagle Medal. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-return-red-jewel",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Red Jewel",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the second-floor trophy room, complete the nearby interaction to obtain Red Jewel.",
+            "3": "Bring the key items gathered on the surrounding route. At the second-floor trophy room, move stepladder under animal head; then turn off room light; then climb and take jewel. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-return-colt-python",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Colt Python",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the green-corridor tiger room, complete the nearby interaction to obtain Colt Python.",
+            "3": "Bring the key items gathered on the surrounding route. At the green-corridor tiger room, insert Red Jewel; then take revealed Colt Python. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-return-battery",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Battery",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the small office beside library elevator, complete the nearby interaction to obtain Battery.",
+            "3": "Bring the key items gathered on the surrounding route. At the small office beside library elevator, reach library through kitchen elevator; then enter nearest small office; then take Battery from floor. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-courtyard-waterfall",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Open the Waterfall Passage",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the courtyard disabled elevator, complete the nearby interaction to obtain Open the Waterfall Passage.",
+            "3": "Bring the key items gathered on the surrounding route. At the courtyard disabled elevator, install Battery beside elevator; then ride elevator upward; then use Square Crank above; then ride back down; then descend behind stopped waterfall. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-file-pass-number",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Pass Number",
+          "missable": true,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Pass Number at the the eight-slot character second rope passage.",
+            "3": "Use the eight-slot character, keep the support route active, and wait for the second rope after the upstairs encounter. Remain in the isolated passage until Pass Number is provided, then open the file menu once to register it."
+          }
+        },
+        {
+          "id": "classic-file-scrapbook",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Scrapbook",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Scrapbook at the large library side table.",
+            "3": "Reach the large library side table, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up at the first return save room",
+        "why": "Timed responses and a rope sequence alter later support and file access."
+      },
+      "point_of_no_return": {
+        "title": "The battery route leads below the courtyard",
+        "why": "Finish the Helmet Key rooms, library, and route-only file before descending."
+      }
+    },
+    {
+      "id": "classic-underground-tunnels",
+      "name": "Classic — Underground Tunnels",
+      "location_cue": "The damp passages reached by descending behind the stopped courtyard waterfall.",
+      "note": "SAVE-BACKUP: the eight-slot character's two underground answers set a later route flag.",
+      "items": [
+        {
+          "id": "classic-underground-hex-crank",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Hexagonal Crank",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the deep eastern tunnel, complete the nearby interaction to obtain Hexagonal Crank.",
+            "3": "Bring the key items gathered on the surrounding route. At the deep eastern tunnel, reach tunnel's far chamber; then inspect floor after encounter; then take Hexagonal Crank. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-underground-wall",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Rotating Tunnel Wall",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the tunnel dead end, complete the nearby interaction to obtain Rotating Tunnel Wall.",
+            "3": "Bring the key items gathered on the surrounding route. At the tunnel dead end, use Hexagonal Crank; then cross newly aligned doorway. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-underground-doom-book-two",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Doom Book Vol. 2",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the boulder-room statue puzzle, complete the nearby interaction to obtain Doom Book Vol. 2.",
+            "3": "Bring the key items gathered on the surrounding route. At the boulder-room statue puzzle, crank wall outward; then push statue onto floor panel; then take opened compartment book; then examine book for Wolf Medal. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-underground-mo-disk",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "MO Disk 2",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the second boulder alcove, complete the nearby interaction to obtain MO Disk 2.",
+            "3": "Bring the key items gathered on the surrounding route. At the second boulder alcove, trigger boulder; then retreat into side alcove; then search space behind boulder. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-underground-map",
+          "type": "collectible",
+          "safe_type": "Map",
+          "label": "Underground Map",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the second boulder alcove, complete the nearby interaction to obtain Underground Map.",
+            "3": "Bring the key items gathered on the surrounding route. At the second boulder alcove, trigger boulder; then retreat into side alcove; then take map behind boulder. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-underground-fountain",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Drain the Courtyard Fountain",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the courtyard fountain platform, complete the nearby interaction to obtain Drain the Courtyard Fountain.",
+            "3": "Bring the key items gathered on the surrounding route. At the courtyard fountain platform, examine both Doom Books; then recover Eagle and Wolf Medals; then insert both beside fountain; then descend revealed elevator. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-weapon-flamethrower",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Flamethrower",
+          "missable": false,
+          "levels": {
+            "1": "the six-slot character can borrow a wall-mounted weapon that also acts as a door latch.",
+            "2": "With the six-slot character, take the Flamethrower from its tunnel wall bracket.",
+            "3": "At the first deep tunnel junction, remove the Flamethrower from the wall as the six-slot character and use it at least once. The door behind you locks while its bracket is empty, so replace the weapon in the matching holder before attempting to leave that section."
+          }
+        },
+        {
+          "id": "classic-underground-web-door",
+          "type": "interaction",
+          "safe_type": "Obstacle",
+          "label": "Cut the Webbed Door Clear",
+          "missable": false,
+          "levels": {
+            "1": "A basic starting tool becomes useful again after the large tunnel chamber.",
+            "2": "Take the Combat Knife in the large spider chamber and clear the web from the exit.",
+            "3": "After the mandatory chamber encounter, collect the Combat Knife from the room's edge if yours is stored elsewhere. Equip it, face the web-covered door, and slash until the interaction opens the route; retrieve nearby supplies before crossing."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up at the tunnel entrance",
+        "why": "A two-answer conversation creates four route variants and affects an ending flag."
+      },
+      "point_of_no_return": {
+        "title": "The medal fountain leads to the laboratory",
+        "why": "Collect the map, disk, book, and both medals before taking the hidden lift."
+      }
+    },
+    {
+      "id": "classic-laboratory",
+      "name": "Classic — Underground Laboratory",
+      "location_cue": "The multi-level concrete facility below the medal fountain, with a computer room, morgue, cells, and power corridors.",
+      "note": "SAVE-BACKUP: the central elevator begins the final route and can close unfinished file or ending work.",
+      "items": [
+        {
+          "id": "classic-laboratory-mo-disk",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "MO Disk 3",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the laboratory B2 stairway, complete the nearby interaction to obtain MO Disk 3.",
+            "3": "Bring the key items gathered on the surrounding route. At the laboratory B2 stairway, enter laboratory stairwell; then inspect table behind railings; then take final MO Disk. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-laboratory-computer",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Laboratory Computer",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the laboratory B2 computer room, complete the nearby interaction to obtain Laboratory Computer.",
+            "3": "Bring the key items gathered on the surrounding route. At the laboratory B2 computer room, enter login JOHN; then enter password ADA; then enter security code MOLE; then unlock B2 and B3 doors. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-laboratory-power-key",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Power Room Key",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the laboratory B2 visual room, complete the nearby interaction to obtain Power Room Key.",
+            "3": "Bring the key items gathered on the surrounding route. At the laboratory B2 visual room, open computer-unlocked room; then press small wall-panel switch; then take key from hidden recess. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-laboratory-morgue",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Morgue Vent Puzzle",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the laboratory B3 morgue, complete the nearby interaction to obtain Morgue Vent Puzzle.",
+            "3": "Bring the key items gathered on the surrounding route. At the laboratory B3 morgue, cover right vent with crate; then shift ladder away; then cover left vent; then place ladder beneath opening; then climb through safe vent. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-laboratory-cell",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Open the Optional Cell",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the laboratory B3 cell corridor, complete the nearby interaction to obtain Open the Optional Cell.",
+            "3": "Bring the key items gathered on the surrounding route. At the laboratory B3 cell corridor, collect three pass codes; then use corridor lock panel; then enter and open cell door. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-laboratory-power",
+          "type": "interaction",
+          "safe_type": "Puzzle",
+          "label": "Restore Laboratory Power",
+          "missable": false,
+          "levels": {
+            "1": "Inspect movable furniture, wall displays, and quiet side rooms before advancing.",
+            "2": "In the laboratory B3 power rooms, complete the nearby interaction to obtain Restore Laboratory Power.",
+            "3": "Bring the key items gathered on the surrounding route. At the laboratory B3 power rooms, activate first power terminal; then cross into second room; then activate final power terminal; then return to central elevator. Confirm the new item or opened path before leaving the room."
+          }
+        },
+        {
+          "id": "classic-file-researchers-letter",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Researcher's Letter",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Researcher's Letter at the B3 X ray room table.",
+            "3": "Reach the B3 X ray room table, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "classic-file-fax",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Fax",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Fax at the B3 private room wall alcove.",
+            "3": "Reach the B3 private room wall alcove, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "classic-file-security-system",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Security System",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Security System at the B2 visual room entrance shelf.",
+            "3": "Reach the B2 visual room entrance shelf, examine the document until its file title appears, and open it once. Verify the file remains listed before crossing the next major door."
+          }
+        },
+        {
+          "id": "classic-file-pass-code-01",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Pass Code 01",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Pass Code 01 at the B3 private room disk terminal.",
+            "3": "Insert one MO Disk into the private-room B3 reader. Open the file menu and confirm Pass Code 01 appears before spending another disk or leaving B3."
+          }
+        },
+        {
+          "id": "classic-file-pass-code-02",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Pass Code 02",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Pass Code 02 at the B3 morgue disk terminal.",
+            "3": "Seal both morgue gas vents, climb through, and insert a disk into the reader beyond. Open the file menu and confirm Pass Code 02 appears before spending another disk or leaving B3."
+          }
+        },
+        {
+          "id": "classic-file-pass-code-03",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Pass Code 03",
+          "missable": false,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read Pass Code 03 at the B3 second power room terminal.",
+            "3": "Bring the remaining disk into B3's second power room and insert it at the side reader. Open the file menu and confirm Pass Code 03 appears before spending another disk or leaving B3."
+          }
+        },
+        {
+          "id": "classic-file-barrys-picture",
+          "type": "file",
+          "safe_type": "File",
+          "label": "the support partner's Picture",
+          "missable": true,
+          "levels": {
+            "1": "Slow down around desks, shelves, tables, and any document offered during a route scene.",
+            "2": "Read the support partner's Picture at the the eight-slot character active support laboratory route.",
+            "3": "Use the eight-slot character and preserve the active support route through the underground choices. During the later laboratory path, finish the optional support scene and inspect the support partner's Picture in the file menu before taking the central elevator."
+          }
+        },
+        {
+          "id": "classic-weapon-final-rocket",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Final Rocket Launcher",
+          "missable": false,
+          "levels": {
+            "1": "One ending route receives a single-use launcher during the last outdoor encounter.",
+            "2": "On an active-support ending, wait on the helipad for the Rocket Launcher supply drop.",
+            "3": "Open the optional cell and keep the character's support flag active, then reach the helipad. Use the flare, avoid the final physical threat until the launcher drops, collect it immediately, and fire one clean shot to register the weapon and finish that ending."
+          }
+        },
+        {
+          "id": "classic-laboratory-all-files-check",
+          "type": "optional",
+          "safe_type": "File Set",
+          "label": "Confirm All 15 Files",
+          "missable": false,
+          "levels": {
+            "1": "The file menu should contain mansion, guardhouse, terminal, and route-only entries.",
+            "2": "Before the central elevator, verify that the combined the eight-slot character and the six-slot character ledger contains all 15 file titles.",
+            "3": "Compare the file menu against every File entry in this pack. Pass Number and the support partner's Picture require the eight-slot character route flags, while three Pass Codes require separate MO Disks. Do not take the central elevator until every attainable title on the current route has been opened once."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before the central elevator",
+        "why": "The ending flags, optional cell, and route-only file must already match the intended outcome."
+      },
+      "point_of_no_return": {
+        "title": "The central elevator starts the final sequence",
+        "why": "Finish files, terminals, cell work, and the intended save branch before entering."
+      }
+    },
+    {
+      "id": "rebirth-touch-puzzles",
+      "name": "Rebirth Touch and Microphone Checklist",
+      "location_cue": "Optional blue containers and altered mechanisms across the mansion, guardhouse, tunnels, and laboratory.",
+      "note": "Complete each DS-only interaction on a backed-up Rebirth route.",
+      "items": [
+        {
+          "id": "rebirth-chest-west-save",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "West Save-Room Node Chest",
+          "missable": true,
+          "levels": {
+            "1": "An optional blue container rewards a clean node sequence.",
+            "2": "Open the Rebirth container in the western first-floor save room; its sequence depends on the selected inventory route.",
+            "3": "Save before touching the panel. Enter eight-slot: E-D, B-D, D-C, E-A; six-slot: B-D, D-A, E-C. Do not improvise after a wrong link: cancel or reload, repeat the sequence from the beginning, and confirm the container yields Red Herb / Shotgun Shells."
+          }
+        },
+        {
+          "id": "rebirth-chest-east-save",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "East Save-Room Node Chest",
+          "missable": true,
+          "levels": {
+            "1": "An optional blue container rewards a clean node sequence.",
+            "2": "Open the Rebirth container in the eastern first-floor save room; its sequence depends on the selected inventory route.",
+            "3": "Save before touching the panel. Enter eight-slot: A-B, A-E, D-C; six-slot: A-E, D-E, D-C. Do not improvise after a wrong link: cancel or reload, repeat the sequence from the beginning, and confirm the container yields Red Herb / First Aid Spray."
+          }
+        },
+        {
+          "id": "rebirth-chest-guardhouse",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Guardhouse Node Chest",
+          "missable": true,
+          "levels": {
+            "1": "An optional blue container rewards a clean node sequence.",
+            "2": "Open the Rebirth container in the first guardhouse save room; its sequence depends on the selected inventory route.",
+            "3": "Save before touching the panel. Enter eight-slot: A-C, E-C, B-D, D-F; six-slot: E-C, B-D, A-D, E-B. Do not improvise after a wrong link: cancel or reload, repeat the sequence from the beginning, and confirm the container yields Shotgun Shells."
+          }
+        },
+        {
+          "id": "rebirth-chest-tunnel",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Tunnel Node Chest",
+          "missable": true,
+          "levels": {
+            "1": "An optional blue container rewards a clean node sequence.",
+            "2": "Open the Rebirth container in the underground east save room; its sequence depends on the selected inventory route.",
+            "3": "Save before touching the panel. Enter eight-slot: D-E, B-C, C-D, F-E; six-slot: A-C, F-D, C-E, G-E. Do not improvise after a wrong link: cancel or reload, repeat the sequence from the beginning, and confirm the container yields Explosive Rounds / Magnum Rounds."
+          }
+        },
+        {
+          "id": "rebirth-chest-lab-entry",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Laboratory Entry Node Chest",
+          "missable": true,
+          "levels": {
+            "1": "An optional blue container rewards a clean node sequence.",
+            "2": "Open the Rebirth container in the ladder-side laboratory storage room; its sequence depends on the selected inventory route.",
+            "3": "Save before touching the panel. Enter eight-slot: F-E, A-B, A-F, D-C; six-slot: H-C, A-D, D-G, H-E, A-F. Do not improvise after a wrong link: cancel or reload, repeat the sequence from the beginning, and confirm the container yields Magnum Rounds."
+          }
+        },
+        {
+          "id": "rebirth-chest-lab-power",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Laboratory Power Node Chest",
+          "missable": true,
+          "levels": {
+            "1": "An optional blue container rewards a clean node sequence.",
+            "2": "Open the Rebirth container in the eastern lower-laboratory save room; its sequence depends on the selected inventory route.",
+            "3": "Save before touching the panel. Enter eight-slot: B-GFE, F-ABC, A-FED, E-HAB; six-slot: A-DEF, D-EFA, E-BCD. Do not improvise after a wrong link: cancel or reload, repeat the sequence from the beginning, and confirm the container yields Magnum Rounds / First Aid Spray."
+          }
+        },
+        {
+          "id": "rebirth-clock",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Dining-Room Clock Touch Puzzle",
+          "missable": true,
+          "levels": {
+            "1": "The familiar clock now expects direct manipulation.",
+            "2": "Rotate the dining-room clock to 3:00 in Rebirth mode.",
+            "3": "After returning the gold emblem, drag the clock hands until the hour hand points to 3 and the minute hand to 12. Confirm before leaving and collect the Shield Key from the opened compartment."
+          }
+        },
+        {
+          "id": "rebirth-balance",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Upper Gallery Balance Puzzle",
+          "missable": true,
+          "levels": {
+            "1": "The vent puzzle is replaced by coloured weights.",
+            "2": "Balance the touch-screen scale in the upper green-door room.",
+            "3": "For the six-slot route, place two red jewels plus green, blue, and yellow. For the eight-slot route, use blue, red, two green, and yellow. Confirm both pans settle level, then take the Sun Crest."
+          }
+        },
+        {
+          "id": "rebirth-resuscitation",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Microphone Resuscitation",
+          "missable": true,
+          "levels": {
+            "1": "A timed aid sequence uses steady breath.",
+            "2": "During the eight-slot Rebirth route, breathe into the microphone at the injured-officer interaction.",
+            "3": "Begin only after the prompt appears, then give several even breaths rather than one sharp blast. Watch the response meter and pause between breaths. Successful aid provides the 8:12 clock cue and Shotgun Shells; reload if the sequence fails."
+          }
+        },
+        {
+          "id": "rebirth-water-valve",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Guardhouse Drain Valve",
+          "missable": true,
+          "levels": {
+            "1": "The flooded control room adds a manual valve.",
+            "2": "Turn the guardhouse control-room valve counter-clockwise until four red indicators illuminate.",
+            "3": "Reach the drain controls, pull the main lever, then immediately drag around the valve in repeated counter-clockwise circles. Keep the motion inside the ring until all four lamps are red and the water has fully lowered."
+          }
+        },
+        {
+          "id": "rebirth-electrolock",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Guardhouse Electro-Lock",
+          "missable": true,
+          "levels": {
+            "1": "The adjacent door uses a number-grid check.",
+            "2": "Set the guardhouse electro-lock to the 3×3 grid 843 / 591 / 267.",
+            "3": "After draining the water, open the wall panel and arrange the rows as 8-4-3, 5-9-1, and 2-6-7. Confirm the totals display 15, 8, and 3, unlock the supply room, and take the 003 Dormitory Key."
+          }
+        },
+        {
+          "id": "rebirth-candle",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Microphone Candle Puzzle",
+          "missable": true,
+          "levels": {
+            "1": "A dark display needs the room's air disturbed.",
+            "2": "Blow out the candle in the western upper display room.",
+            "3": "Stand beside the lit candle and give one controlled breath into the microphone. Once darkness exposes the glint, move the step ladder beneath it, climb, and take the Red Jewel from the mounted display."
+          }
+        },
+        {
+          "id": "rebirth-record",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Touch-Screen Record Puzzle",
+          "missable": true,
+          "levels": {
+            "1": "An upstairs music device must hold a steady speed.",
+            "2": "Spin the record clockwise and keep its meter in the green zone.",
+            "3": "Place the stylus near the record edge and trace smooth clockwise circles. Adjust speed gradually so the gauge stays green through the final segment; lifting early resets progress. Complete it before approaching the room's next encounter."
+          }
+        },
+        {
+          "id": "rebirth-finger",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Finger-Gap Touch Puzzle",
+          "missable": true,
+          "levels": {
+            "1": "The drop route contains a brief precision test.",
+            "2": "Tap each blue point between the fingers after entering the second-rope opening.",
+            "3": "When the lower screen shows the hand, tap only the currently blue gap. The sequence accelerates and eventually uses all six positions; keep the stylus close, avoid the fingers, and finish before descending the exposed ladder."
+          }
+        },
+        {
+          "id": "rebirth-flame-panel",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Underground Heat Panel",
+          "missable": true,
+          "levels": {
+            "1": "One tunnel door needs a carried weapon as a tool.",
+            "2": "Use the Flamethrower on the western underground door panel.",
+            "3": "Take the Flamethrower from the wall after dropping underground, carry it through the west passage, and fire at the marked panel until it releases the door. Preserve enough fuel and remember that a wall holder may still be needed to reopen the return path."
+          }
+        },
+        {
+          "id": "rebirth-erics-letter",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Eric's Letter",
+          "missable": true,
+          "levels": {
+            "1": "Rebirth adds one document behind movable shelving.",
+            "2": "Read Eric's Letter behind the bookcase in the western upper mansion rooms.",
+            "3": "During the mansion return, enter the upstairs library section, operate the light-and-statue arrangement that shifts the bookcase, and inspect the revealed document before leaving for the courtyard. Open it once in the file menu to register it."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before each DS panel",
+        "why": "Failed timed inputs can consume health, close a reward attempt, or force a room reset."
+      }
+    },
+    {
+      "id": "ending-matrix",
+      "name": "Ending Flag Matrix",
+      "location_cue": "The route-support choices, three MO Disk readers, optional cell, and final elevator.",
+      "note": "The labels expose only mechanical flag combinations.",
+      "items": [
+        {
+          "id": "ending-eight-a",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Eight-Slot Ending A",
+          "missable": true,
+          "levels": {
+            "1": "Two route flags determine this final variation.",
+            "2": "Finish the eight-slot route with support inactive and the optional cell closed.",
+            "3": "Do not wait for the second rope; then leave the optional laboratory cell closed. Keep a save before the central elevator, complete the final route, and record the result without overwriting the shared branch backup."
+          }
+        },
+        {
+          "id": "ending-eight-b",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Eight-Slot Ending B",
+          "missable": true,
+          "levels": {
+            "1": "Two route flags determine this final variation.",
+            "2": "Finish the eight-slot route with support active and the optional cell closed.",
+            "3": "Do wait for the second rope; then leave the optional laboratory cell closed. Keep a save before the central elevator, complete the final route, and record the result without overwriting the shared branch backup."
+          }
+        },
+        {
+          "id": "ending-eight-c",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Eight-Slot Ending C",
+          "missable": true,
+          "levels": {
+            "1": "Two route flags determine this final variation.",
+            "2": "Finish the eight-slot route with support inactive and the optional cell opened.",
+            "3": "Do not wait for the second rope; then use all three mo disks and open the optional laboratory cell. Keep a save before the central elevator, complete the final route, and record the result without overwriting the shared branch backup."
+          }
+        },
+        {
+          "id": "ending-eight-d",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Eight-Slot Ending D",
+          "missable": true,
+          "levels": {
+            "1": "Two route flags determine this final variation.",
+            "2": "Finish the eight-slot route with support active and the optional cell opened.",
+            "3": "Do wait for the second rope; then use all three mo disks and open the optional laboratory cell. Keep a save before the central elevator, complete the final route, and record the result without overwriting the shared branch backup."
+          }
+        },
+        {
+          "id": "ending-six-a",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Six-Slot Ending A",
+          "missable": true,
+          "levels": {
+            "1": "Two route flags determine this final variation.",
+            "2": "Finish the six-slot route with support inactive and the optional cell closed.",
+            "3": "Allow the support route flag during the mansion return; then leave the optional laboratory cell closed. Keep a save before the central elevator, complete the final route, and record the result without overwriting the shared branch backup."
+          }
+        },
+        {
+          "id": "ending-six-b",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Six-Slot Ending B",
+          "missable": true,
+          "levels": {
+            "1": "Two route flags determine this final variation.",
+            "2": "Finish the six-slot route with support active and the optional cell closed.",
+            "3": "Preserve the support route flag during the mansion return; then leave the optional laboratory cell closed. Keep a save before the central elevator, complete the final route, and record the result without overwriting the shared branch backup."
+          }
+        },
+        {
+          "id": "ending-six-c",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Six-Slot Ending C",
+          "missable": true,
+          "levels": {
+            "1": "Two route flags determine this final variation.",
+            "2": "Finish the six-slot route with support inactive and the optional cell opened.",
+            "3": "Allow the support route flag during the mansion return; then use all three mo disks and open the optional laboratory cell. Keep a save before the central elevator, complete the final route, and record the result without overwriting the shared branch backup."
+          }
+        },
+        {
+          "id": "ending-six-d",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Six-Slot Ending D",
+          "missable": true,
+          "levels": {
+            "1": "Two route flags determine this final variation.",
+            "2": "Finish the six-slot route with support active and the optional cell opened.",
+            "3": "Preserve the support route flag during the mansion return; then use all three mo disks and open the optional laboratory cell. Keep a save before the central elevator, complete the final route, and record the result without overwriting the shared branch backup."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before the final elevator",
+        "why": "Both ending flags must already match the intended variation."
+      },
+      "point_of_no_return": {
+        "title": "The final elevator locks the outcome",
+        "why": "Restore the pre-elevator save to test the paired cell or support state."
+      }
+    },
+    {
+      "id": "clear-data-unlocks",
+      "name": "Clear-Data Unlocks",
+      "location_cue": "The results screen, first item box, and first-floor dressing room.",
+      "note": "Verify each reward on loaded clear data rather than assuming the result saved.",
+      "items": [
+        {
+          "id": "unlock-special-key-eight",
+          "type": "key",
+          "safe_type": "Unlock",
+          "label": "Eight-Slot Special Key",
+          "missable": false,
+          "levels": {
+            "1": "The strongest route result opens a wardrobe on a later cycle.",
+            "2": "Complete the eight-slot best-result ending and save clear data.",
+            "3": "Keep both route flags active: wait for the returning rope and open the optional cell with three MO Disks. Finish the run, save clear data, load it, and confirm the Special Key appears for the new cycle."
+          }
+        },
+        {
+          "id": "unlock-special-key-six",
+          "type": "key",
+          "safe_type": "Unlock",
+          "label": "Six-Slot Special Key",
+          "missable": false,
+          "levels": {
+            "1": "The other character has an equivalent wardrobe key.",
+            "2": "Complete the six-slot best-result ending and save clear data.",
+            "3": "Preserve the support route, open the optional cell with all three MO Disks, finish the run, and save the result. Begin from that clear data and verify the Special Key is available."
+          }
+        },
+        {
+          "id": "unlock-costume-eight-one",
+          "type": "collectible",
+          "safe_type": "Outfit",
+          "label": "Eight-Slot Alternate Outfit 1",
+          "missable": false,
+          "levels": {
+            "1": "One wardrobe contains two choices.",
+            "2": "Use the eight-slot Special Key in the first-floor dressing room and select the first outfit.",
+            "3": "Load the correct clear data, carry the Special Key to the northeastern first-floor wardrobe beyond the Armor Key door, unlock it, choose the first alternate outfit, and pass through a corridor to confirm it remains equipped."
+          }
+        },
+        {
+          "id": "unlock-costume-eight-two",
+          "type": "collectible",
+          "safe_type": "Outfit",
+          "label": "Eight-Slot Alternate Outfit 2",
+          "missable": false,
+          "levels": {
+            "1": "Return to the same unlocked wardrobe.",
+            "2": "Select the second eight-slot outfit from the first-floor dressing room.",
+            "3": "On the same clear-data cycle, revisit the unlocked wardrobe, interact again until the other alternate costume is worn, leave the room, and inspect the inventory model. Keep both outfit checks in the completion ledger."
+          }
+        },
+        {
+          "id": "unlock-costume-six-one",
+          "type": "collectible",
+          "safe_type": "Outfit",
+          "label": "Six-Slot Alternate Outfit 1",
+          "missable": false,
+          "levels": {
+            "1": "The six-slot route also has two wardrobe changes.",
+            "2": "Use the six-slot Special Key and select the first outfit.",
+            "3": "Start from the six-slot best-result clear, unlock the first-floor dressing room's inner wardrobe, equip its first alternate costume, and move into the hall to verify the model persists."
+          }
+        },
+        {
+          "id": "unlock-costume-six-two",
+          "type": "collectible",
+          "safe_type": "Outfit",
+          "label": "Six-Slot Alternate Outfit 2",
+          "missable": false,
+          "levels": {
+            "1": "A second change completes that wardrobe.",
+            "2": "Return with the six-slot clear data and select the other outfit.",
+            "3": "Re-enter the already unlocked dressing room, cycle to the remaining six-slot costume, confirm the change, and leave through a door. Record it separately from the first wardrobe choice."
+          }
+        },
+        {
+          "id": "unlock-infinite-launcher",
+          "type": "weapon",
+          "safe_type": "Unlock",
+          "label": "Unlimited Rocket Launcher",
+          "missable": false,
+          "levels": {
+            "1": "A fast best-result clear awards the strongest replay weapon.",
+            "2": "Finish a campaign below 3:00:00 with both route flags active.",
+            "3": "Use either character and either ruleset, retain the support flag, open the optional cell, skip nonessential pickups and door animations, and finish before the timer reaches three hours. Save the clear record, load it, and verify the unlimited launcher in the first item box."
+          }
+        }
+      ]
+    },
+    {
+      "id": "master-of-knifing",
+      "name": "Master of Knifing",
+      "location_cue": "Five first-person touch challenges selected from the main menu.",
+      "note": "Complete and rank both character routes; visible labels withhold enemy identities.",
+      "items": [
+        {
+          "id": "knife-unlock",
+          "type": "interaction",
+          "safe_type": "Mode",
+          "label": "Unlock Master of Knifing",
+          "missable": false,
+          "levels": {
+            "1": "Any completed campaign opens a touch-only challenge.",
+            "2": "Clear one campaign and return to the title menu.",
+            "3": "Save the campaign completion when prompted, return to the main menu without deleting that record, and confirm Master of Knifing is selectable. A clear in Classic or Rebirth is sufficient."
+          }
+        },
+        {
+          "id": "knife-eight-stage-1",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Eight-Slot Knife Stage 1 — S Rank",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, combos, time, and damage shape the result.",
+            "2": "Clear Master of Knifing stage 1 with the eight-slot character and earn S rank.",
+            "3": "Use taps for forward stabs and drags for slashes, counter immediately before an incoming hit for critical damage, and blow back projectile attacks when prompted. Maintain a combo, minimize damage, finish quickly, and verify S on the stage-1 results."
+          }
+        },
+        {
+          "id": "knife-eight-stage-2",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Eight-Slot Knife Stage 2 — S Rank",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, combos, time, and damage shape the result.",
+            "2": "Clear Master of Knifing stage 2 with the eight-slot character and earn S rank.",
+            "3": "Use taps for forward stabs and drags for slashes, counter immediately before an incoming hit for critical damage, and blow back projectile attacks when prompted. Maintain a combo, minimize damage, finish quickly, and verify S on the stage-2 results."
+          }
+        },
+        {
+          "id": "knife-eight-stage-3",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Eight-Slot Knife Stage 3 — S Rank",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, combos, time, and damage shape the result.",
+            "2": "Clear Master of Knifing stage 3 with the eight-slot character and earn S rank.",
+            "3": "Use taps for forward stabs and drags for slashes, counter immediately before an incoming hit for critical damage, and blow back projectile attacks when prompted. Maintain a combo, minimize damage, finish quickly, and verify S on the stage-3 results."
+          }
+        },
+        {
+          "id": "knife-eight-stage-4",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Eight-Slot Knife Stage 4 — S Rank",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, combos, time, and damage shape the result.",
+            "2": "Clear Master of Knifing stage 4 with the eight-slot character and earn S rank.",
+            "3": "Use taps for forward stabs and drags for slashes, counter immediately before an incoming hit for critical damage, and blow back projectile attacks when prompted. Maintain a combo, minimize damage, finish quickly, and verify S on the stage-4 results."
+          }
+        },
+        {
+          "id": "knife-eight-stage-5",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Eight-Slot Knife Stage 5 — S Rank",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, combos, time, and damage shape the result.",
+            "2": "Clear Master of Knifing stage 5 with the eight-slot character and earn S rank.",
+            "3": "Use taps for forward stabs and drags for slashes, counter immediately before an incoming hit for critical damage, and blow back projectile attacks when prompted. Maintain a combo, minimize damage, finish quickly, and verify S on the stage-5 results."
+          }
+        },
+        {
+          "id": "knife-eight-full-clear",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Complete Master of Knifing with the Eight-Slot Character",
+          "missable": false,
+          "levels": {
+            "1": "The five stages form one continuous character route.",
+            "2": "Finish all five knife stages with the eight-slot character.",
+            "3": "Begin with a calibrated stylus and microphone, clear stages 1–5 without changing character, and remain through final scoring. Record the overall result separately; the six-slot route has the more demanding enemy counts."
+          }
+        },
+        {
+          "id": "knife-six-stage-1",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Six-Slot Knife Stage 1 — S Rank",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, combos, time, and damage shape the result.",
+            "2": "Clear Master of Knifing stage 1 with the six-slot character and earn S rank.",
+            "3": "Use taps for forward stabs and drags for slashes, counter immediately before an incoming hit for critical damage, and blow back projectile attacks when prompted. Expect extra enemies and lower durability on this harder route. Maintain a combo, minimize damage, finish quickly, and verify S on the stage-1 results."
+          }
+        },
+        {
+          "id": "knife-six-stage-2",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Six-Slot Knife Stage 2 — S Rank",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, combos, time, and damage shape the result.",
+            "2": "Clear Master of Knifing stage 2 with the six-slot character and earn S rank.",
+            "3": "Use taps for forward stabs and drags for slashes, counter immediately before an incoming hit for critical damage, and blow back projectile attacks when prompted. Expect extra enemies and lower durability on this harder route. Maintain a combo, minimize damage, finish quickly, and verify S on the stage-2 results."
+          }
+        },
+        {
+          "id": "knife-six-stage-3",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Six-Slot Knife Stage 3 — S Rank",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, combos, time, and damage shape the result.",
+            "2": "Clear Master of Knifing stage 3 with the six-slot character and earn S rank.",
+            "3": "Use taps for forward stabs and drags for slashes, counter immediately before an incoming hit for critical damage, and blow back projectile attacks when prompted. Expect extra enemies and lower durability on this harder route. Maintain a combo, minimize damage, finish quickly, and verify S on the stage-3 results."
+          }
+        },
+        {
+          "id": "knife-six-stage-4",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Six-Slot Knife Stage 4 — S Rank",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, combos, time, and damage shape the result.",
+            "2": "Clear Master of Knifing stage 4 with the six-slot character and earn S rank.",
+            "3": "Use taps for forward stabs and drags for slashes, counter immediately before an incoming hit for critical damage, and blow back projectile attacks when prompted. Expect extra enemies and lower durability on this harder route. Maintain a combo, minimize damage, finish quickly, and verify S on the stage-4 results."
+          }
+        },
+        {
+          "id": "knife-six-stage-5",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Six-Slot Knife Stage 5 — S Rank",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, combos, time, and damage shape the result.",
+            "2": "Clear Master of Knifing stage 5 with the six-slot character and earn S rank.",
+            "3": "Use taps for forward stabs and drags for slashes, counter immediately before an incoming hit for critical damage, and blow back projectile attacks when prompted. Expect extra enemies and lower durability on this harder route. Maintain a combo, minimize damage, finish quickly, and verify S on the stage-5 results."
+          }
+        },
+        {
+          "id": "knife-six-full-clear",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Complete Master of Knifing with the Six-Slot Character",
+          "missable": false,
+          "levels": {
+            "1": "The five stages form one continuous character route.",
+            "2": "Finish all five knife stages with the six-slot character.",
+            "3": "Begin with a calibrated stylus and microphone, clear stages 1–5 without changing character, and remain through final scoring. Record the overall result separately; the six-slot route has the more demanding enemy counts."
+          }
+        },
+        {
+          "id": "knife-b-rank-unlock",
+          "type": "figure",
+          "safe_type": "Unlock",
+          "label": "Multiplayer Character Slot 7",
+          "missable": false,
+          "levels": {
+            "1": "A solid knife-mode result opens a wireless roster slot.",
+            "2": "Finish every Master of Knifing stage at B rank or better.",
+            "3": "Use one character for a complete five-stage run, secure at least B on each result through clean critical counters and low damage, return to the wireless character screen, and confirm the seventh slot is selectable."
+          }
+        }
+      ]
+    },
+    {
+      "id": "local-wireless",
+      "name": "Local Wireless Completion",
+      "location_cue": "Three compact maps entered through two-to-four-player local wireless.",
+      "note": "No online matchmaking exists; retain the host save that receives the roster unlocks.",
+      "items": [
+        {
+          "id": "wireless-hardware",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Prepare Local Wireless Play",
+          "missable": false,
+          "levels": {
+            "1": "This mode cannot be completed alone on one system.",
+            "2": "Prepare two to four DS systems and matching game cards within local-wireless range.",
+            "3": "Use at least two physical systems or a tested emulator setup that genuinely supports DS local multiplayer. Give every participant a separate save, connect through the game's wireless lobby, and confirm movement synchronizes before attempting completion clears."
+          }
+        },
+        {
+          "id": "wireless-slot-1",
+          "type": "figure",
+          "safe_type": "Roster",
+          "label": "Multiplayer Character Slot 1",
+          "missable": false,
+          "levels": {
+            "1": "This roster choice is initially available.",
+            "2": "Make wireless slot 1 selectable; condition: available from the start.",
+            "3": "On the save that will host multiplayer, available from the start. Return to the local-wireless character screen, move the cursor onto slot 1, begin a stage with it, and retain that save so the unlock is not lost."
+          }
+        },
+        {
+          "id": "wireless-slot-2",
+          "type": "figure",
+          "safe_type": "Roster",
+          "label": "Multiplayer Character Slot 2",
+          "missable": false,
+          "levels": {
+            "1": "This roster choice is initially available.",
+            "2": "Make wireless slot 2 selectable; condition: available from the start.",
+            "3": "On the save that will host multiplayer, available from the start. Return to the local-wireless character screen, move the cursor onto slot 2, begin a stage with it, and retain that save so the unlock is not lost."
+          }
+        },
+        {
+          "id": "wireless-slot-3",
+          "type": "figure",
+          "safe_type": "Roster",
+          "label": "Multiplayer Character Slot 3",
+          "missable": false,
+          "levels": {
+            "1": "A campaign or multiplayer milestone expands the roster.",
+            "2": "Make wireless slot 3 selectable; condition: clear eight-slot Rebirth.",
+            "3": "On the save that will host multiplayer, clear eight-slot Rebirth. Return to the local-wireless character screen, move the cursor onto slot 3, begin a stage with it, and retain that save so the unlock is not lost."
+          }
+        },
+        {
+          "id": "wireless-slot-4",
+          "type": "figure",
+          "safe_type": "Roster",
+          "label": "Multiplayer Character Slot 4",
+          "missable": false,
+          "levels": {
+            "1": "A campaign or multiplayer milestone expands the roster.",
+            "2": "Make wireless slot 4 selectable; condition: clear six-slot Rebirth.",
+            "3": "On the save that will host multiplayer, clear six-slot Rebirth. Return to the local-wireless character screen, move the cursor onto slot 4, begin a stage with it, and retain that save so the unlock is not lost."
+          }
+        },
+        {
+          "id": "wireless-slot-5",
+          "type": "figure",
+          "safe_type": "Roster",
+          "label": "Multiplayer Character Slot 5",
+          "missable": false,
+          "levels": {
+            "1": "A campaign or multiplayer milestone expands the roster.",
+            "2": "Make wireless slot 5 selectable; condition: clear eight-slot Classic.",
+            "3": "On the save that will host multiplayer, clear eight-slot Classic. Return to the local-wireless character screen, move the cursor onto slot 5, begin a stage with it, and retain that save so the unlock is not lost."
+          }
+        },
+        {
+          "id": "wireless-slot-6",
+          "type": "figure",
+          "safe_type": "Roster",
+          "label": "Multiplayer Character Slot 6",
+          "missable": false,
+          "levels": {
+            "1": "A campaign or multiplayer milestone expands the roster.",
+            "2": "Make wireless slot 6 selectable; condition: clear six-slot Classic.",
+            "3": "On the save that will host multiplayer, clear six-slot Classic. Return to the local-wireless character screen, move the cursor onto slot 6, begin a stage with it, and retain that save so the unlock is not lost."
+          }
+        },
+        {
+          "id": "wireless-slot-7",
+          "type": "figure",
+          "safe_type": "Roster",
+          "label": "Multiplayer Character Slot 7",
+          "missable": false,
+          "levels": {
+            "1": "A campaign or multiplayer milestone expands the roster.",
+            "2": "Make wireless slot 7 selectable; condition: earn B or better throughout Master of Knifing.",
+            "3": "On the save that will host multiplayer, earn B or better throughout Master of Knifing. Return to the local-wireless character screen, move the cursor onto slot 7, begin a stage with it, and retain that save so the unlock is not lost."
+          }
+        },
+        {
+          "id": "wireless-slot-8",
+          "type": "figure",
+          "safe_type": "Roster",
+          "label": "Multiplayer Character Slot 8",
+          "missable": false,
+          "levels": {
+            "1": "A campaign or multiplayer milestone expands the roster.",
+            "2": "Make wireless slot 8 selectable; condition: clear all three Co-op stages.",
+            "3": "On the save that will host multiplayer, clear all three Co-op stages. Return to the local-wireless character screen, move the cursor onto slot 8, begin a stage with it, and retain that save so the unlock is not lost."
+          }
+        },
+        {
+          "id": "wireless-slot-9",
+          "type": "figure",
+          "safe_type": "Roster",
+          "label": "Multiplayer Character Slot 9",
+          "missable": false,
+          "levels": {
+            "1": "A campaign or multiplayer milestone expands the roster.",
+            "2": "Make wireless slot 9 selectable; condition: clear all three Versus stages.",
+            "3": "On the save that will host multiplayer, clear all three Versus stages. Return to the local-wireless character screen, move the cursor onto slot 9, begin a stage with it, and retain that save so the unlock is not lost."
+          }
+        },
+        {
+          "id": "wireless-co-op-1",
+          "type": "optional",
+          "safe_type": "Wireless",
+          "label": "Clear Co-op — Mansion",
+          "missable": false,
+          "levels": {
+            "1": "The same geography behaves differently with other players.",
+            "2": "Finish the Mansion stage in local-wireless Co-op mode.",
+            "3": "Coordinate room changes because the team shares health; each player must collect required quest items, while only one player may claim a blue box. Keep every participant connected through the Mansion exit, remain until results appear, and verify the host save records the Co-op clear."
+          }
+        },
+        {
+          "id": "wireless-co-op-2",
+          "type": "optional",
+          "safe_type": "Wireless",
+          "label": "Clear Co-op — Guardhouse",
+          "missable": false,
+          "levels": {
+            "1": "The same geography behaves differently with other players.",
+            "2": "Finish the Guardhouse stage in local-wireless Co-op mode.",
+            "3": "Coordinate room changes because the team shares health; each player must collect required quest items, while only one player may claim a blue box. Keep every participant connected through the Guardhouse exit, remain until results appear, and verify the host save records the Co-op clear."
+          }
+        },
+        {
+          "id": "wireless-co-op-3",
+          "type": "optional",
+          "safe_type": "Wireless",
+          "label": "Clear Co-op — Laboratory",
+          "missable": false,
+          "levels": {
+            "1": "The same geography behaves differently with other players.",
+            "2": "Finish the Laboratory stage in local-wireless Co-op mode.",
+            "3": "Coordinate room changes because the team shares health; each player must collect required quest items, while only one player may claim a blue box. Keep every participant connected through the Laboratory exit, remain until results appear, and verify the host save records the Co-op clear."
+          }
+        },
+        {
+          "id": "wireless-versus-1",
+          "type": "optional",
+          "safe_type": "Wireless",
+          "label": "Clear Versus — Mansion",
+          "missable": false,
+          "levels": {
+            "1": "The same geography behaves differently with other players.",
+            "2": "Finish the Mansion stage in local-wireless Versus mode.",
+            "3": "Defeat yellow targets to strengthen opponents and purple targets to restrict their movement; only one player can claim each blue chest. Keep every participant connected through the Mansion exit, remain until results appear, and verify the host save records the Versus clear."
+          }
+        },
+        {
+          "id": "wireless-versus-2",
+          "type": "optional",
+          "safe_type": "Wireless",
+          "label": "Clear Versus — Guardhouse",
+          "missable": false,
+          "levels": {
+            "1": "The same geography behaves differently with other players.",
+            "2": "Finish the Guardhouse stage in local-wireless Versus mode.",
+            "3": "Defeat yellow targets to strengthen opponents and purple targets to restrict their movement; only one player can claim each blue chest. Keep every participant connected through the Guardhouse exit, remain until results appear, and verify the host save records the Versus clear."
+          }
+        },
+        {
+          "id": "wireless-versus-3",
+          "type": "optional",
+          "safe_type": "Wireless",
+          "label": "Clear Versus — Laboratory",
+          "missable": false,
+          "levels": {
+            "1": "The same geography behaves differently with other players.",
+            "2": "Finish the Laboratory stage in local-wireless Versus mode.",
+            "3": "Defeat yellow targets to strengthen opponents and purple targets to restrict their movement; only one player can claim each blue chest. Keep every participant connected through the Laboratory exit, remain until results appear, and verify the host save records the Versus clear."
+          }
+        }
+      ]
+    }
+  ]
+}

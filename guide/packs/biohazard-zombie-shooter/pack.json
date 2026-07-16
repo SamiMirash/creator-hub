@@ -1,0 +1,270 @@
+{
+  "id": "biohazard-zombie-shooter",
+  "game": "Biohazard Zombie Shooter (2001)",
+  "target": "100% archival completion of the selected original mobile route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "archival-setup",
+      "name": "Archival Mobile Setup",
+      "location_cue": "The original Japanese handset title screen and carrier-era application menu.",
+      "note": "This discontinued service title must be preserved before ordinary play.",
+      "items": [
+        {
+          "id": "setup-original-handset",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Original Japanese Mobile Release",
+          "missable": false,
+          "levels": {
+            "1": "Only the discontinued handset version contains the game.",
+            "2": "Use a documented compatible Japanese phone with the original service build installed.",
+            "3": "Preserve the handset and its storage before launching. Keep the original application files, device model, firmware, carrier information, and service state together; no current storefront, verified dump, or dependable emulator route is documented."
+          }
+        },
+        {
+          "id": "setup-offline-capture",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Record the Entire Available Session",
+          "missable": false,
+          "levels": {
+            "1": "A surviving installation may be impossible to replace.",
+            "2": "Capture boot, menus, controls, every play loop, score screen, and failure state.",
+            "3": "Before pressing Start, record the title and option screens. Continue capturing without cuts through every distinct target sequence, damage state, score change, failure screen, retry, and any terminal screen; export the recording and handset files to two backups."
+          }
+        },
+        {
+          "id": "setup-language",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Preserve Japanese Interface Text",
+          "missable": false,
+          "levels": {
+            "1": "The surviving build was distributed only in Japan.",
+            "2": "Photograph every menu and result string before translating it.",
+            "3": "Capture each Japanese screen at native resolution, transcribe its characters separately, and keep any translation in an external note. Do not replace original strings inside the archive or infer a menu function from icon appearance alone."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up the handset first",
+        "why": "The only known route depends on discontinued mobile distribution."
+      }
+    },
+    {
+      "id": "verified-gameplay",
+      "name": "Verified Gameplay Loop",
+      "location_cue": "The dark target windows, keypad prompts, health display, and score counter.",
+      "note": "Only directly documented mechanics are presented as routine instructions.",
+      "items": [
+        {
+          "id": "mechanic-target-buttons",
+          "type": "interaction",
+          "safe_type": "Mechanic",
+          "label": "Match Phone Buttons to Targets",
+          "missable": false,
+          "levels": {
+            "1": "Dark windows demand quick keypad reactions.",
+            "2": "Press the corresponding handset button when a target appears.",
+            "3": "Keep both hands on the keypad, identify the on-screen position or prompt associated with each numeric button, and press once for every required shot. Record the mapping from observed play rather than assuming a modern touchscreen layout."
+          }
+        },
+        {
+          "id": "mechanic-attack-window",
+          "type": "interaction",
+          "safe_type": "Mechanic",
+          "label": "Fire Before the Attack Window Closes",
+          "missable": false,
+          "levels": {
+            "1": "Waiting too long converts an encounter into damage.",
+            "2": "Shoot each visible target before its attack animation completes.",
+            "3": "Prioritize the nearest or most advanced attack animation, deliver the required number of keypad shots, and watch the health display after every miss. Retry the same sequence to verify whether timing or target order changed."
+          }
+        },
+        {
+          "id": "mechanic-variable-health",
+          "type": "interaction",
+          "safe_type": "Mechanic",
+          "label": "Verify Each Target’s Shot Count",
+          "missable": false,
+          "levels": {
+            "1": "Not every opponent is removed by one hit.",
+            "2": "Count successful shots separately for every visible target type.",
+            "3": "Start from a clean attempt, fire only confirmed hits, and record how many are required before each target disappears. Repeat the measurement because public records confirm variable durability but do not preserve a complete health table."
+          }
+        },
+        {
+          "id": "mechanic-score",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Record the Score System",
+          "missable": false,
+          "levels": {
+            "1": "The preserved descriptions mention scoring without publishing its table.",
+            "2": "Capture every score change, bonus, penalty, and final total.",
+            "3": "Note the score before and after each hit, defeat, miss, damage event, wave, and retry. If a multiplier or threshold appears, reproduce it in a second attempt before treating it as a completion condition."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "target-01",
+          "type": "collectible",
+          "safe_type": "Target Type",
+          "label": "T-Virus Zombie",
+          "missable": true,
+          "levels": {
+            "1": "At least three mechanically different targets are documented.",
+            "2": "Encounter and defeat this target type during a surviving session.",
+            "3": "Wait until T-Virus Zombie is clearly visible, capture its complete appearance and attack animation, determine its keypad position and required successful-shot count through observed play, then defeat it without taking damage. Do not infer any narrative identity or role beyond the displayed target."
+          }
+        },
+        {
+          "id": "target-02",
+          "type": "collectible",
+          "safe_type": "Target Type",
+          "label": "Hunter alpha",
+          "missable": true,
+          "levels": {
+            "1": "At least three mechanically different targets are documented.",
+            "2": "Encounter and defeat this target type during a surviving session.",
+            "3": "Wait until Hunter alpha is clearly visible, capture its complete appearance and attack animation, determine its keypad position and required successful-shot count through observed play, then defeat it without taking damage. Do not infer any narrative identity or role beyond the displayed target."
+          }
+        },
+        {
+          "id": "target-03",
+          "type": "collectible",
+          "safe_type": "Target Type",
+          "label": "Nemesis-T Type",
+          "missable": true,
+          "levels": {
+            "1": "At least three mechanically different targets are documented.",
+            "2": "Encounter and defeat this target type during a surviving session.",
+            "3": "Wait until Nemesis-T Type is clearly visible, capture its complete appearance and attack animation, determine its keypad position and required successful-shot count through observed play, then defeat it without taking damage. Do not infer any narrative identity or role beyond the displayed target."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Capture before experimenting",
+        "why": "A failure or device fault may erase the only observable session."
+      }
+    },
+    {
+      "id": "verification-holds",
+      "name": "Unverified Completion Boundaries",
+      "location_cue": "Any score, result, rank, stage-change, unlock, or terminal screen shown by a surviving build.",
+      "note": "Unknown boundaries are withheld rather than guessed.",
+      "items": [
+        {
+          "id": "verification-01",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Stage Count Unknown",
+          "missable": false,
+          "levels": {
+            "1": "Public records do not preserve this completion detail.",
+            "2": "Verify this only from a lawful surviving build or Sami’s own captured session.",
+            "3": "NEEDS VERIFICATION: stage count unknown. Do not publish a number, condition, route, reward, or narrative claim until the original build visibly demonstrates it. Add the observed screen and exact mechanical trigger to the local research record before converting this hold into guidance."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-02",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Ending Condition Unknown",
+          "missable": false,
+          "levels": {
+            "1": "Public records do not preserve this completion detail.",
+            "2": "Verify this only from a lawful surviving build or Sami’s own captured session.",
+            "3": "NEEDS VERIFICATION: ending condition unknown. Do not publish a number, condition, route, reward, or narrative claim until the original build visibly demonstrates it. Add the observed screen and exact mechanical trigger to the local research record before converting this hold into guidance."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-03",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Score Thresholds Unknown",
+          "missable": false,
+          "levels": {
+            "1": "Public records do not preserve this completion detail.",
+            "2": "Verify this only from a lawful surviving build or Sami’s own captured session.",
+            "3": "NEEDS VERIFICATION: score thresholds unknown. Do not publish a number, condition, route, reward, or narrative claim until the original build visibly demonstrates it. Add the observed screen and exact mechanical trigger to the local research record before converting this hold into guidance."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-04",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Rank Table Unknown",
+          "missable": false,
+          "levels": {
+            "1": "Public records do not preserve this completion detail.",
+            "2": "Verify this only from a lawful surviving build or Sami’s own captured session.",
+            "3": "NEEDS VERIFICATION: rank table unknown. Do not publish a number, condition, route, reward, or narrative claim until the original build visibly demonstrates it. Add the observed screen and exact mechanical trigger to the local research record before converting this hold into guidance."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-05",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Unlock List Unknown",
+          "missable": false,
+          "levels": {
+            "1": "Public records do not preserve this completion detail.",
+            "2": "Verify this only from a lawful surviving build or Sami’s own captured session.",
+            "3": "NEEDS VERIFICATION: unlock list unknown. Do not publish a number, condition, route, reward, or narrative claim until the original build visibly demonstrates it. Add the observed screen and exact mechanical trigger to the local research record before converting this hold into guidance."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-06",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Character Presence Contradictory",
+          "missable": false,
+          "levels": {
+            "1": "Public records do not preserve this completion detail.",
+            "2": "Verify this only from a lawful surviving build or Sami’s own captured session.",
+            "3": "NEEDS VERIFICATION: character presence contradictory. Do not publish a number, condition, route, reward, or narrative claim until the original build visibly demonstrates it. Add the observed screen and exact mechanical trigger to the local research record before converting this hold into guidance."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-07",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Story Presence Unconfirmed",
+          "missable": false,
+          "levels": {
+            "1": "Public records do not preserve this completion detail.",
+            "2": "Verify this only from a lawful surviving build or Sami’s own captured session.",
+            "3": "NEEDS VERIFICATION: story presence unconfirmed. Do not publish a number, condition, route, reward, or narrative claim until the original build visibly demonstrates it. Add the observed screen and exact mechanical trigger to the local research record before converting this hold into guidance."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-08",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Complete Build Availability Unknown",
+          "missable": false,
+          "levels": {
+            "1": "Public records do not preserve this completion detail.",
+            "2": "Verify this only from a lawful surviving build or Sami’s own captured session.",
+            "3": "NEEDS VERIFICATION: complete build availability unknown. Do not publish a number, condition, route, reward, or narrative claim until the original build visibly demonstrates it. Add the observed screen and exact mechanical trigger to the local research record before converting this hold into guidance."
+          },
+          "internal_uncertain": true
+        }
+      ],
+      "save_backup": {
+        "title": "Keep raw footage before updating",
+        "why": "Every resolved hold needs direct build evidence."
+      }
+    }
+  ]
+}

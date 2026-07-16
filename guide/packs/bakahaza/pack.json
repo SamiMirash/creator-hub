@@ -1,0 +1,3792 @@
+{
+  "id": "bakahaza",
+  "game": "Bakahaza (2016)",
+  "target": "Spoiler-free maximum verifiable completion of the preserved Android release",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "route",
+      "name": "Preserved Mobile Route",
+      "location_cue": "The Japanese title screen, pixel-art main menu, application information, save slots, and touch controls.",
+      "note": "Use only a legally preserved Android build; the delisted iOS route has no verified exclusive content.",
+      "save_backup": {
+        "title": "Back up this save now",
+        "why": "Limited saves, branching choices, and scarce records can become permanent.",
+        "detail": "Copy the application data and keep an unused in-game save before spending ribbons, discarding keys, changing companions, or making choices."
+      },
+      "items": [
+        {
+          "id": "route-android",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Preserved Android Release",
+          "missable": true,
+          "levels": {
+            "1": "The selected route is the practical preserved mobile build.",
+            "2": "Use a lawful copy of the original Android application.",
+            "3": "Verify package identifier, version, signature, device or emulator, permissions, language, save location, offline behaviour, controls, and complete launch. Do not substitute a fan recreation."
+          }
+        },
+        {
+          "id": "route-ios",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "iOS Equivalence Check",
+          "missable": true,
+          "levels": {
+            "1": "The first release also appeared on Apple devices.",
+            "2": "Keep iOS evidence separate and compare it with Android.",
+            "3": "Record owned-account provenance, application version, device, operating system, controls, menus, content, saves, and audiovisual differences. A second playthrough is unnecessary unless an exclusive difference is proven."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "route-delisting",
+          "type": "interaction",
+          "safe_type": "Access Status",
+          "label": "Distribution Ended",
+          "missable": true,
+          "levels": {
+            "1": "The official download window has closed.",
+            "2": "Treat May 23, 2024 as the distribution cutoff.",
+            "3": "Preserve lawful packages, store receipts, application metadata, compatible-device backups, and launch recordings. Do not seek unauthorized downloads or claim ordinary storefront availability."
+          }
+        },
+        {
+          "id": "route-clean-backup",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Untouched Application Backup",
+          "missable": true,
+          "levels": {
+            "1": "A failed migration can erase the only playable copy.",
+            "2": "Duplicate the package and save data before first launch.",
+            "3": "Keep checksums for the untouched application, each version, a blank save, the working completion save, and an exported device snapshot before updates or emulator changes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "systems",
+      "name": "Controls and Survival Systems",
+      "location_cue": "The touch-control overlay, status menu, equipment, companion panel, save device, storage box, and inventory grid.",
+      "note": "Test controls before committing scarce resources.",
+      "save_backup": {
+        "title": "Back up this save now",
+        "why": "Limited saves, branching choices, and scarce records can become permanent.",
+        "detail": "Copy the application data and keep an unused in-game save before spending ribbons, discarding keys, changing companions, or making choices."
+      },
+      "items": [
+        {
+          "id": "system-tap-movement",
+          "type": "optional",
+          "safe_type": "Game System",
+          "label": "Tap Movement",
+          "missable": false,
+          "levels": {
+            "1": "A basic survival system needs one verified example.",
+            "2": "Use the early safe rooms to test tap movement.",
+            "3": "Record the exact touch input, inventory or status state, complete tap movement response, any resource consumed, failure behaviour, save impact, and resulting screen. Restore the backup after destructive tests."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "system-swipe-movement",
+          "type": "optional",
+          "safe_type": "Game System",
+          "label": "Swipe Movement",
+          "missable": false,
+          "levels": {
+            "1": "A basic survival system needs one verified example.",
+            "2": "Use the early safe rooms to test swipe movement.",
+            "3": "Record the exact touch input, inventory or status state, complete swipe movement response, any resource consumed, failure behaviour, save impact, and resulting screen. Restore the backup after destructive tests."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "system-touch-attack",
+          "type": "optional",
+          "safe_type": "Game System",
+          "label": "Touch Attack",
+          "missable": false,
+          "levels": {
+            "1": "A basic survival system needs one verified example.",
+            "2": "Use the early safe rooms to test touch attack.",
+            "3": "Record the exact touch input, inventory or status state, complete touch attack response, any resource consumed, failure behaviour, save impact, and resulting screen. Restore the backup after destructive tests."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "system-equipped-weapon",
+          "type": "optional",
+          "safe_type": "Game System",
+          "label": "Equipped Weapon",
+          "missable": false,
+          "levels": {
+            "1": "A basic survival system needs one verified example.",
+            "2": "Use the early safe rooms to test equipped weapon.",
+            "3": "Record the exact touch input, inventory or status state, complete equipped weapon response, any resource consumed, failure behaviour, save impact, and resulting screen. Restore the backup after destructive tests."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "system-companion-health",
+          "type": "optional",
+          "safe_type": "Game System",
+          "label": "Companion Health",
+          "missable": false,
+          "levels": {
+            "1": "A basic survival system needs one verified example.",
+            "2": "Use the early safe rooms to test companion health.",
+            "3": "Record the exact touch input, inventory or status state, complete companion health response, any resource consumed, failure behaviour, save impact, and resulting screen. Restore the backup after destructive tests."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "system-manual-save-point",
+          "type": "optional",
+          "safe_type": "Game System",
+          "label": "Manual Save Point",
+          "missable": false,
+          "levels": {
+            "1": "A basic survival system needs one verified example.",
+            "2": "Use the early safe rooms to test manual save point.",
+            "3": "Record the exact touch input, inventory or status state, complete manual save point response, any resource consumed, failure behaviour, save impact, and resulting screen. Restore the backup after destructive tests."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "system-ink-ribbon-save",
+          "type": "optional",
+          "safe_type": "Game System",
+          "label": "Ink-Ribbon Save",
+          "missable": true,
+          "levels": {
+            "1": "A basic survival system needs one verified example.",
+            "2": "Use the early safe rooms to test ink-ribbon save.",
+            "3": "Record the exact touch input, inventory or status state, complete ink-ribbon save response, any resource consumed, failure behaviour, save impact, and resulting screen. Restore the backup after destructive tests."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "system-item-box",
+          "type": "optional",
+          "safe_type": "Game System",
+          "label": "Item Box",
+          "missable": false,
+          "levels": {
+            "1": "A basic survival system needs one verified example.",
+            "2": "Use the early safe rooms to test item box.",
+            "3": "Record the exact touch input, inventory or status state, complete item box response, any resource consumed, failure behaviour, save impact, and resulting screen. Restore the backup after destructive tests."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "system-limited-inventory",
+          "type": "optional",
+          "safe_type": "Game System",
+          "label": "Limited Inventory",
+          "missable": true,
+          "levels": {
+            "1": "A basic survival system needs one verified example.",
+            "2": "Use the early safe rooms to test limited inventory.",
+            "3": "Record the exact touch input, inventory or status state, complete limited inventory response, any resource consumed, failure behaviour, save impact, and resulting screen. Restore the backup after destructive tests."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "system-item-combination",
+          "type": "optional",
+          "safe_type": "Game System",
+          "label": "Item Combination",
+          "missable": false,
+          "levels": {
+            "1": "A basic survival system needs one verified example.",
+            "2": "Use the early safe rooms to test item combination.",
+            "3": "Record the exact touch input, inventory or status state, complete item combination response, any resource consumed, failure behaviour, save impact, and resulting screen. Restore the backup after destructive tests."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "system-pushable-furniture",
+          "type": "optional",
+          "safe_type": "Game System",
+          "label": "Pushable Furniture",
+          "missable": false,
+          "levels": {
+            "1": "A basic survival system needs one verified example.",
+            "2": "Use the early safe rooms to test pushable furniture.",
+            "3": "Record the exact touch input, inventory or status state, complete pushable furniture response, any resource consumed, failure behaviour, save impact, and resulting screen. Restore the backup after destructive tests."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "verified-mansion-items",
+      "name": "Verified Mansion Items",
+      "location_cue": "The entrance hall and connected dining, art, terrace, reading, storage, greenhouse, bar, sitting, bathing, study, armor, practice, and attic rooms.",
+      "note": "This area contains every item location established by the surviving written walkthrough.",
+      "save_backup": {
+        "title": "Back up this save now",
+        "why": "Limited saves, branching choices, and scarce records can become permanent.",
+        "detail": "Copy the application data and keep an unused in-game save before spending ribbons, discarding keys, changing companions, or making choices."
+      },
+      "items": [
+        {
+          "id": "early-item-001-ink-ribbon",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Ink Ribbon",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the dining-room surface.",
+            "3": "Reach the dining-room surface, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Ink Ribbon is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-002-dentures",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Dentures",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the dining-room surface.",
+            "3": "Reach the dining-room surface, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Dentures is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-003-bookmark",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Bookmark",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the rest-area corridor.",
+            "3": "Reach the rest-area corridor, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Bookmark is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-004-mallet",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Mallet",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the entrance hall.",
+            "3": "Reach the entrance hall, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Mallet is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-005-first-floor-map",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "First-Floor Map",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the art room statue.",
+            "3": "Reach the art room statue, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until First-Floor Map is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-006-ink-ribbon",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Ink Ribbon",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the art preparation room.",
+            "3": "Reach the art preparation room, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Ink Ribbon is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-007-small-key",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Small Key",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the upper terrace corridor.",
+            "3": "Reach the upper terrace corridor, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Small Key is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-008-water-pistol",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Water Pistol",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the terrace floor.",
+            "3": "Reach the terrace floor, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Water Pistol is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-009-botany-file",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Botany File",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the upper reading room.",
+            "3": "Reach the upper reading room, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Botany File is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-010-red-water-bottle",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Red-Water Bottle",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the upper desk.",
+            "3": "Reach the upper desk, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Red-Water Bottle is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-011-green-kelp",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Green Kelp",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the east stair landing.",
+            "3": "Reach the east stair landing, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Green Kelp is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-012-herbicide",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Herbicide",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the east storage room.",
+            "3": "Reach the east storage room, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Herbicide is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-013-squid-key",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Squid Key",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the west storage room.",
+            "3": "Reach the west storage room, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Squid Key is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-014-healing-spray",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Healing Spray",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the west storage room.",
+            "3": "Reach the west storage room, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Healing Spray is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-015-octopus-key",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Octopus Key",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the greenhouse wall.",
+            "3": "Reach the greenhouse wall, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Octopus Key is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-016-green-kelp",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Green Kelp",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the greenhouse recess.",
+            "3": "Reach the greenhouse recess, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Green Kelp is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-017-red-kelp",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Red Kelp",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the greenhouse recess.",
+            "3": "Reach the greenhouse recess, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Red Kelp is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-018-red-water-bottle",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Red-Water Bottle",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the keeper room bed.",
+            "3": "Reach the keeper room bed, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Red-Water Bottle is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-019-shot-ammunition",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Shot Ammunition",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the keeper room desk.",
+            "3": "Reach the keeper room desk, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Shot Ammunition is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-020-keeper-diary",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Keeper Diary",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the keeper room desk.",
+            "3": "Reach the keeper room desk, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Keeper Diary is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-021-broken-shot-weapon",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Broken Shot Weapon",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the armory shelf.",
+            "3": "Reach the armory shelf, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Broken Shot Weapon is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-022-red-water-bottle",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Red-Water Bottle",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the bar counter.",
+            "3": "Reach the bar counter, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Red-Water Bottle is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-023-music-sheet",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Music Sheet",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the bar hidden shelf.",
+            "3": "Reach the bar hidden shelf, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Music Sheet is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-024-blue-candy",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Blue Candy",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the broken dining statue.",
+            "3": "Reach the broken dining statue, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Blue Candy is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-025-golden-dentures",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Golden Dentures",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the bar concealed room.",
+            "3": "Reach the bar concealed room, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Golden Dentures is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-026-shrimp-key",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Shrimp Key",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the dining-room safe.",
+            "3": "Reach the dining-room safe, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Shrimp Key is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-027-biography-file",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Biography File",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the sitting-room desk.",
+            "3": "Reach the sitting-room desk, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Biography File is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-028-red-water-bottle",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Red-Water Bottle",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the sitting-room desk.",
+            "3": "Reach the sitting-room desk, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Red-Water Bottle is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-029-ink-ribbon",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Ink Ribbon",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the wardrobe room.",
+            "3": "Reach the wardrobe room, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Ink Ribbon is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-030-green-kelp",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Green Kelp",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the wardrobe room.",
+            "3": "Reach the wardrobe room, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Green Kelp is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-031-small-key",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Small Key",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the bath tub.",
+            "3": "Reach the bath tub, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Small Key is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-032-pork-crest",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Pork Crest",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the painting puzzle.",
+            "3": "Reach the painting puzzle, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Pork Crest is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-033-lighter",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Lighter",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the upper bedroom.",
+            "3": "Reach the upper bedroom, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Lighter is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-034-red-kelp",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Red Kelp",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the upper bedroom.",
+            "3": "Reach the upper bedroom, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Red Kelp is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-035-researcher-will",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Researcher Will",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the upper study desk.",
+            "3": "Reach the upper study desk, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Researcher Will is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-036-ink-ribbon",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Ink Ribbon",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the upper study clothing.",
+            "3": "Reach the upper study clothing, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Ink Ribbon is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-037-shot-ammunition",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Shot Ammunition",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the upper study safe.",
+            "3": "Reach the upper study safe, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Shot Ammunition is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-038-second-floor-map",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Second-Floor Map",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the practice-room fireplace.",
+            "3": "Reach the practice-room fireplace, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Second-Floor Map is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-039-ram-crest",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Ram Crest",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the armor-room shelf.",
+            "3": "Reach the armor-room shelf, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Ram Crest is added. Save only after confirming it remains in inventory or storage."
+          }
+        },
+        {
+          "id": "early-item-040-shot-ammunition",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Shot Ammunition",
+          "missable": true,
+          "levels": {
+            "1": "Search carefully through the mansion's reachable rooms and furniture.",
+            "2": "Find it at the attic-landing side room.",
+            "3": "Reach the attic-landing side room, clear or evade nearby threats, free an inventory slot, and inspect the highlighted surface or container until Shot Ammunition is added. Save only after confirming it remains in inventory or storage."
+          }
+        }
+      ]
+    },
+    {
+      "id": "verified-puzzles",
+      "name": "Verified Mansion Puzzles",
+      "location_cue": "Rooms with movable stairs or shelves, a greenhouse tap, concealed bar panel, dining mechanism, bath, paintings, aquarium, fireplace, armor statues, and candles.",
+      "note": "Puzzle instructions are physical and expose no narrative context.",
+      "save_backup": {
+        "title": "Back up this save now",
+        "why": "Limited saves, branching choices, and scarce records can become permanent.",
+        "detail": "Copy the application data and keep an unused in-game save before spending ribbons, discarding keys, changing companions, or making choices."
+      },
+      "items": [
+        {
+          "id": "puzzle-01",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Mansion Puzzle #01",
+          "missable": true,
+          "levels": {
+            "1": "A movable object, fixture, or ordered display opens the next search space.",
+            "2": "Use the relevant mansion room to solve puzzle 01.",
+            "3": "Complete this verified physical action: move art-room stairs. Check the revealed space immediately, collect its item before leaving, and confirm the room remains traversable. Reload if a scarce item was tested incorrectly."
+          }
+        },
+        {
+          "id": "puzzle-02",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Mansion Puzzle #02",
+          "missable": true,
+          "levels": {
+            "1": "A movable object, fixture, or ordered display opens the next search space.",
+            "2": "Use the relevant mansion room to solve puzzle 02.",
+            "3": "Complete this verified physical action: move art-room shelf. Check the revealed space immediately, collect its item before leaving, and confirm the room remains traversable. Reload if a scarce item was tested incorrectly."
+          }
+        },
+        {
+          "id": "puzzle-03",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Mansion Puzzle #03",
+          "missable": true,
+          "levels": {
+            "1": "A movable object, fixture, or ordered display opens the next search space.",
+            "2": "Use the relevant mansion room to solve puzzle 03.",
+            "3": "Complete this verified physical action: use herbicide at greenhouse water. Check the revealed space immediately, collect its item before leaving, and confirm the room remains traversable. Reload if a scarce item was tested incorrectly."
+          }
+        },
+        {
+          "id": "puzzle-04",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Mansion Puzzle #04",
+          "missable": true,
+          "levels": {
+            "1": "A movable object, fixture, or ordered display opens the next search space.",
+            "2": "Use the relevant mansion room to solve puzzle 04.",
+            "3": "Complete this verified physical action: move bar shelf. Check the revealed space immediately, collect its item before leaving, and confirm the room remains traversable. Reload if a scarce item was tested incorrectly."
+          }
+        },
+        {
+          "id": "puzzle-05",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Mansion Puzzle #05",
+          "missable": true,
+          "levels": {
+            "1": "A movable object, fixture, or ordered display opens the next search space.",
+            "2": "Use the relevant mansion room to solve puzzle 05.",
+            "3": "Complete this verified physical action: gold dentures reveal safe. Check the revealed space immediately, collect its item before leaving, and confirm the room remains traversable. Reload if a scarce item was tested incorrectly."
+          }
+        },
+        {
+          "id": "puzzle-06",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Mansion Puzzle #06",
+          "missable": true,
+          "levels": {
+            "1": "A movable object, fixture, or ordered display opens the next search space.",
+            "2": "Use the relevant mansion room to solve puzzle 06.",
+            "3": "Complete this verified physical action: drain bath tub. Check the revealed space immediately, collect its item before leaving, and confirm the room remains traversable. Reload if a scarce item was tested incorrectly."
+          }
+        },
+        {
+          "id": "puzzle-07",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Mansion Puzzle #07",
+          "missable": true,
+          "levels": {
+            "1": "A movable object, fixture, or ordered display opens the next search space.",
+            "2": "Use the relevant mansion room to solve puzzle 07.",
+            "3": "Complete this verified physical action: age-order painting switches. Check the revealed space immediately, collect its item before leaving, and confirm the room remains traversable. Reload if a scarce item was tested incorrectly."
+          }
+        },
+        {
+          "id": "puzzle-08",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Mansion Puzzle #08",
+          "missable": true,
+          "levels": {
+            "1": "A movable object, fixture, or ordered display opens the next search space.",
+            "2": "Use the relevant mansion room to solve puzzle 08.",
+            "3": "Complete this verified physical action: drain aquarium then move furniture. Check the revealed space immediately, collect its item before leaving, and confirm the room remains traversable. Reload if a scarce item was tested incorrectly."
+          }
+        },
+        {
+          "id": "puzzle-09",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Mansion Puzzle #09",
+          "missable": true,
+          "levels": {
+            "1": "A movable object, fixture, or ordered display opens the next search space.",
+            "2": "Use the relevant mansion room to solve puzzle 09.",
+            "3": "Complete this verified physical action: light fireplace. Check the revealed space immediately, collect its item before leaving, and confirm the room remains traversable. Reload if a scarce item was tested incorrectly."
+          }
+        },
+        {
+          "id": "puzzle-10",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Mansion Puzzle #10",
+          "missable": true,
+          "levels": {
+            "1": "A movable object, fixture, or ordered display opens the next search space.",
+            "2": "Use the relevant mansion room to solve puzzle 10.",
+            "3": "Complete this verified physical action: cover two floor vents. Check the revealed space immediately, collect its item before leaving, and confirm the room remains traversable. Reload if a scarce item was tested incorrectly."
+          }
+        },
+        {
+          "id": "puzzle-11",
+          "type": "optional",
+          "safe_type": "Puzzle",
+          "label": "Mansion Puzzle #11",
+          "missable": true,
+          "levels": {
+            "1": "A movable object, fixture, or ordered display opens the next search space.",
+            "2": "Use the relevant mansion room to solve puzzle 11.",
+            "3": "Complete this verified physical action: light candle then move shelf. Check the revealed space immediately, collect its item before leaving, and confirm the room remains traversable. Reload if a scarce item was tested incorrectly."
+          }
+        }
+      ]
+    },
+    {
+      "id": "region-sweeps",
+      "name": "Full Region Sweeps",
+      "location_cue": "The forest approach, mansion floors, rear grounds, lower passages, and laboratory-like rooms as they appear on the in-game maps.",
+      "note": "Late geography is kept neutral because the surviving written route is incomplete.",
+      "save_backup": {
+        "title": "Back up this save now",
+        "why": "Limited saves, branching choices, and scarce records can become permanent.",
+        "detail": "Copy the application data and keep an unused in-game save before spending ribbons, discarding keys, changing companions, or making choices."
+      },
+      "items": [
+        {
+          "id": "region-01-forest-approach",
+          "type": "optional",
+          "safe_type": "Exploration Region",
+          "label": "Exploration Region #01",
+          "missable": true,
+          "levels": {
+            "1": "A distinct physical region belongs in the full map audit.",
+            "2": "Confirm every reachable room and door in forest approach.",
+            "3": "Before leaving forest approach, sweep each wall clockwise, inspect furniture and floor highlights, test every key, record locked-door symbols, collect files and supplies, update the map, and store evidence of any inaccessible route. Late-region specifics remain under verification."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "region-02-entrance-hall",
+          "type": "optional",
+          "safe_type": "Exploration Region",
+          "label": "Exploration Region #02",
+          "missable": true,
+          "levels": {
+            "1": "A distinct physical region belongs in the full map audit.",
+            "2": "Confirm every reachable room and door in entrance hall.",
+            "3": "Before leaving entrance hall, sweep each wall clockwise, inspect furniture and floor highlights, test every key, record locked-door symbols, collect files and supplies, update the map, and store evidence of any inaccessible route. Late-region specifics remain under verification."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "region-03-dining-wing",
+          "type": "optional",
+          "safe_type": "Exploration Region",
+          "label": "Exploration Region #03",
+          "missable": true,
+          "levels": {
+            "1": "A distinct physical region belongs in the full map audit.",
+            "2": "Confirm every reachable room and door in dining wing.",
+            "3": "Before leaving dining wing, sweep each wall clockwise, inspect furniture and floor highlights, test every key, record locked-door symbols, collect files and supplies, update the map, and store evidence of any inaccessible route. Late-region specifics remain under verification."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "region-04-east-wing",
+          "type": "optional",
+          "safe_type": "Exploration Region",
+          "label": "Exploration Region #04",
+          "missable": true,
+          "levels": {
+            "1": "A distinct physical region belongs in the full map audit.",
+            "2": "Confirm every reachable room and door in east wing.",
+            "3": "Before leaving east wing, sweep each wall clockwise, inspect furniture and floor highlights, test every key, record locked-door symbols, collect files and supplies, update the map, and store evidence of any inaccessible route. Late-region specifics remain under verification."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "region-05-west-wing",
+          "type": "optional",
+          "safe_type": "Exploration Region",
+          "label": "Exploration Region #05",
+          "missable": true,
+          "levels": {
+            "1": "A distinct physical region belongs in the full map audit.",
+            "2": "Confirm every reachable room and door in west wing.",
+            "3": "Before leaving west wing, sweep each wall clockwise, inspect furniture and floor highlights, test every key, record locked-door symbols, collect files and supplies, update the map, and store evidence of any inaccessible route. Late-region specifics remain under verification."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "region-06-upper-galleries",
+          "type": "optional",
+          "safe_type": "Exploration Region",
+          "label": "Exploration Region #06",
+          "missable": true,
+          "levels": {
+            "1": "A distinct physical region belongs in the full map audit.",
+            "2": "Confirm every reachable room and door in upper galleries.",
+            "3": "Before leaving upper galleries, sweep each wall clockwise, inspect furniture and floor highlights, test every key, record locked-door symbols, collect files and supplies, update the map, and store evidence of any inaccessible route. Late-region specifics remain under verification."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "region-07-rear-passages",
+          "type": "optional",
+          "safe_type": "Exploration Region",
+          "label": "Exploration Region #07",
+          "missable": true,
+          "levels": {
+            "1": "A distinct physical region belongs in the full map audit.",
+            "2": "Confirm every reachable room and door in rear passages.",
+            "3": "Before leaving rear passages, sweep each wall clockwise, inspect furniture and floor highlights, test every key, record locked-door symbols, collect files and supplies, update the map, and store evidence of any inaccessible route. Late-region specifics remain under verification."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "region-08-attic",
+          "type": "optional",
+          "safe_type": "Exploration Region",
+          "label": "Exploration Region #08",
+          "missable": true,
+          "levels": {
+            "1": "A distinct physical region belongs in the full map audit.",
+            "2": "Confirm every reachable room and door in attic.",
+            "3": "Before leaving attic, sweep each wall clockwise, inspect furniture and floor highlights, test every key, record locked-door symbols, collect files and supplies, update the map, and store evidence of any inaccessible route. Late-region specifics remain under verification."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "region-09-courtyard",
+          "type": "optional",
+          "safe_type": "Exploration Region",
+          "label": "Exploration Region #09",
+          "missable": true,
+          "levels": {
+            "1": "A distinct physical region belongs in the full map audit.",
+            "2": "Confirm every reachable room and door in courtyard.",
+            "3": "Before leaving courtyard, sweep each wall clockwise, inspect furniture and floor highlights, test every key, record locked-door symbols, collect files and supplies, update the map, and store evidence of any inaccessible route. Late-region specifics remain under verification."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "region-10-underground-route",
+          "type": "optional",
+          "safe_type": "Exploration Region",
+          "label": "Exploration Region #10",
+          "missable": true,
+          "levels": {
+            "1": "A distinct physical region belongs in the full map audit.",
+            "2": "Confirm every reachable room and door in underground route.",
+            "3": "Before leaving underground route, sweep each wall clockwise, inspect furniture and floor highlights, test every key, record locked-door symbols, collect files and supplies, update the map, and store evidence of any inaccessible route. Late-region specifics remain under verification."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "region-11-laboratory",
+          "type": "optional",
+          "safe_type": "Exploration Region",
+          "label": "Exploration Region #11",
+          "missable": true,
+          "levels": {
+            "1": "A distinct physical region belongs in the full map audit.",
+            "2": "Confirm every reachable room and door in laboratory.",
+            "3": "Before leaving laboratory, sweep each wall clockwise, inspect furniture and floor highlights, test every key, record locked-door symbols, collect files and supplies, update the map, and store evidence of any inaccessible route. Late-region specifics remain under verification."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "collection",
+      "name": "Collection Ledger",
+      "location_cue": "The numbered in-game collection menu showing locked and completed records.",
+      "note": "The archive documents 175 numbered records; unknown triggers remain explicit.",
+      "save_backup": {
+        "title": "Back up this save now",
+        "why": "Limited saves, branching choices, and scarce records can become permanent.",
+        "detail": "Copy the application data and keep an unused in-game save before spending ribbons, discarding keys, changing companions, or making choices."
+      },
+      "items": [
+        {
+          "id": "collection-record-001",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #001",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 001.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 001. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-002",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #002",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 002.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 002. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-003",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #003",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 003.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 003. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-004",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #004",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 004.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 004. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-005",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #005",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 005.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 005. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-006",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #006",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 006.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 006. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-007",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #007",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 007.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 007. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-008",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #008",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 008.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 008. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-009",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #009",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 009.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 009. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-010",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #010",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 010.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 010. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-011",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #011",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 011.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 011. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-012",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #012",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 012.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 012. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-013",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #013",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 013.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 013. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-014",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #014",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 014.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 014. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-015",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #015",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 015.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 015. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-016",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #016",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 016.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 016. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-017",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #017",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 017.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 017. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-018",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #018",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 018.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 018. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-019",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #019",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 019.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 019. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-020",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #020",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 020.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 020. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-021",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #021",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 021.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 021. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-022",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #022",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 022.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 022. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-023",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #023",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 023.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 023. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-024",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #024",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 024.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 024. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-025",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #025",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 025.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 025. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-026",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #026",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 026.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 026. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-027",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #027",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 027.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 027. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-028",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #028",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 028.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 028. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-029",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #029",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 029.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 029. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-030",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #030",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 030.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 030. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-031",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #031",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 031.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 031. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-032",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #032",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 032.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 032. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-033",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #033",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 033.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 033. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-034",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #034",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 034.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 034. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-035",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #035",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 035.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 035. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-036",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #036",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 036.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 036. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-037",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #037",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 037.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 037. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-038",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #038",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 038.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 038. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-039",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #039",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 039.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 039. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-040",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #040",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 040.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 040. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-041",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #041",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 041.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 041. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-042",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #042",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 042.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 042. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-043",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #043",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 043.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 043. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-044",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #044",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 044.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 044. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-045",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #045",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 045.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 045. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-046",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #046",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 046.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 046. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-047",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #047",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 047.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 047. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-048",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #048",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 048.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 048. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-049",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #049",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 049.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 049. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-050",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #050",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 050.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 050. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-051",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #051",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 051.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 051. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-052",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #052",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 052.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 052. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-053",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #053",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 053.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 053. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-054",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #054",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 054.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 054. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-055",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #055",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 055.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 055. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-056",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #056",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 056.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 056. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-057",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #057",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 057.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 057. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-058",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #058",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 058.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 058. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-059",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #059",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 059.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 059. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-060",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #060",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 060.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 060. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-061",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #061",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 061.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 061. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-062",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #062",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 062.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 062. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-063",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #063",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 063.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 063. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-064",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #064",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 064.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 064. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-065",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #065",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 065.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 065. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-066",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #066",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 066.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 066. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-067",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #067",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 067.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 067. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-068",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #068",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 068.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 068. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-069",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #069",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 069.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 069. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-070",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #070",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 070.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 070. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-071",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #071",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 071.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 071. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-072",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #072",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 072.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 072. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-073",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #073",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 073.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 073. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-074",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #074",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 074.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 074. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-075",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #075",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 075.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 075. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-076",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #076",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 076.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 076. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-077",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #077",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 077.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 077. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-078",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #078",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 078.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 078. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-079",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #079",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 079.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 079. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-080",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #080",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 080.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 080. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-081",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #081",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 081.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 081. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-082",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #082",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 082.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 082. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-083",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #083",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 083.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 083. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-084",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #084",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 084.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 084. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-085",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #085",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 085.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 085. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-086",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #086",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 086.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 086. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-087",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #087",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 087.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 087. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-088",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #088",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 088.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 088. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-089",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #089",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 089.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 089. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-090",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #090",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 090.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 090. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-091",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #091",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 091.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 091. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-092",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #092",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 092.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 092. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-093",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #093",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 093.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 093. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-094",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #094",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 094.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 094. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-095",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #095",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 095.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 095. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-096",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #096",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 096.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 096. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-097",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #097",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 097.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 097. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-098",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #098",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 098.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 098. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-099",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #099",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 099.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 099. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-100",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #100",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 100.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 100. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-101",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #101",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 101.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 101. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-102",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #102",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 102.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 102. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-103",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #103",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 103.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 103. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-104",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #104",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 104.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 104. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-105",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #105",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 105.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 105. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-106",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #106",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 106.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 106. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-107",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #107",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 107.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 107. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-108",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #108",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 108.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 108. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-109",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #109",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 109.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 109. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-110",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #110",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 110.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 110. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-111",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #111",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 111.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 111. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-112",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #112",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 112.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 112. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-113",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #113",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 113.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 113. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-114",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #114",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 114.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 114. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-115",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #115",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 115.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 115. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-116",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #116",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 116.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 116. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-117",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #117",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 117.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 117. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-118",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #118",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 118.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 118. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-119",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #119",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 119.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 119. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-120",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #120",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 120.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 120. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-121",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #121",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 121.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 121. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-122",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #122",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 122.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 122. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-123",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #123",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 123.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 123. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-124",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #124",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 124.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 124. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-125",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #125",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 125.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 125. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-126",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #126",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 126.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 126. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-127",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #127",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 127.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 127. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-128",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #128",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 128.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 128. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-129",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #129",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 129.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 129. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-130",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #130",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 130.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 130. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-131",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #131",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 131.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 131. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-132",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #132",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 132.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 132. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-133",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #133",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 133.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 133. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-134",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #134",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 134.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 134. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-135",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #135",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 135.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 135. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-136",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #136",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 136.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 136. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-137",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #137",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 137.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 137. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-138",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #138",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 138.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 138. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-139",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #139",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 139.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 139. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-140",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #140",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 140.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 140. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-141",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #141",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 141.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 141. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-142",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #142",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 142.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 142. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-143",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #143",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 143.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 143. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-144",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #144",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 144.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 144. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-145",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #145",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 145.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 145. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-146",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #146",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 146.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 146. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-147",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #147",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 147.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 147. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-148",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #148",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 148.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 148. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-149",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #149",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 149.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 149. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-150",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #150",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 150.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 150. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-151",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #151",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 151.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 151. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-152",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #152",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 152.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 152. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-153",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #153",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 153.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 153. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-154",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #154",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 154.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 154. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-155",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #155",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 155.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 155. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-156",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #156",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 156.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 156. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-157",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #157",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 157.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 157. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-158",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #158",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 158.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 158. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-159",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #159",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 159.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 159. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-160",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #160",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 160.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 160. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-161",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #161",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 161.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 161. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-162",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #162",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 162.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 162. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-163",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #163",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 163.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 163. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-164",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #164",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 164.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 164. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-165",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #165",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 165.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 165. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-166",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #166",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 166.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 166. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-167",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #167",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 167.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 167. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-168",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #168",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 168.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 168. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-169",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #169",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 169.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 169. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-170",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #170",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 170.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 170. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-171",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #171",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 171.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 171. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-172",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #172",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 172.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 172. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-173",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #173",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Open the Collection menu and inspect slot 173.",
+            "3": "NEEDS VERIFICATION: exact trigger for collection record 173. Preserve the locked and unlocked slot, triggering room or action, inventory and companion state, version, timestamp, and a replay from the prior save."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "collection-record-174",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #174",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Finish the game without satisfying the complete-rescue condition.",
+            "3": "Keep a backup before the closing route, finish with at least one rescue unresolved, and confirm collection record 174 appears. Reload the backup afterward so this branch does not replace the best-ending attempt."
+          }
+        },
+        {
+          "id": "collection-record-175",
+          "type": "collectible",
+          "safe_type": "Collection Record",
+          "label": "Collection Record #175",
+          "missable": true,
+          "levels": {
+            "1": "One tracked action or discovery fills this collection slot.",
+            "2": "Resolve every available rescue before the final route.",
+            "3": "Back up before any companion or rescue can be lost, complete every rescue on one save, finish the game, and confirm the last collection slot records the fully resolved ending."
+          }
+        }
+      ]
+    },
+    {
+      "id": "endings",
+      "name": "Ending Branches",
+      "location_cue": "The last safe storage and save point before the closing route, followed by the final results and collection menu.",
+      "note": "Ending labels reveal no plot; only the mechanical rescue condition is shown.",
+      "save_backup": {
+        "title": "Back up this save now",
+        "why": "The next route resolves companion state and can lock an ending.",
+        "detail": "Copy the application data and keep an unused in-game save before spending ribbons, discarding keys, changing companions, or making choices."
+      },
+      "items": [
+        {
+          "id": "ending-normal",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Alternate Ending",
+          "missable": true,
+          "levels": {
+            "1": "One conclusion appears when the rescue state is incomplete.",
+            "2": "Keep at least one available rescue unresolved before the closing route.",
+            "3": "Back up before the closing route, leave one rescue incomplete, finish, and confirm collection record 174. Reload afterward; do not overwrite the pre-branch save."
+          }
+        },
+        {
+          "id": "ending-best",
+          "type": "ending",
+          "safe_type": "Ending",
+          "label": "Best Ending",
+          "missable": true,
+          "levels": {
+            "1": "The strongest conclusion requires a fully resolved rescue state.",
+            "2": "Complete every available rescue before entering the closing route.",
+            "3": "Use a pre-branch backup, verify every rescued companion remains safe, then finish and confirm collection record 175. If it stays locked, reload and audit every rescue rather than guessing at a story choice."
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlockables",
+      "name": "Post-Clear and Optional Unlockables",
+      "location_cue": "The cleared-save menu, collection ledger, item inventory, shop or optional-item screen, and new-game loadout.",
+      "note": "No paid purchase is required or recommended; unavailable effects remain archival.",
+      "save_backup": {
+        "title": "Back up this save now",
+        "why": "Limited saves, branching choices, and scarce records can become permanent.",
+        "detail": "Copy the application data and keep an unused in-game save before spending ribbons, discarding keys, changing companions, or making choices."
+      },
+      "items": [
+        {
+          "id": "unlock-01",
+          "type": "collectible",
+          "safe_type": "Unlockable",
+          "label": "Unlockable Record #01",
+          "missable": true,
+          "levels": {
+            "1": "A post-clear or optional item exists outside ordinary progression.",
+            "2": "Inspect the version-specific extras and cleared-save menus for unlockable 01.",
+            "3": "NEEDS VERIFICATION: exact acquisition and persistence rules for infinite rocket water weapon. Preserve version, cleared save, collection total, menu path, item description, effect test, and new-run availability before marking it complete."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "unlock-02",
+          "type": "collectible",
+          "safe_type": "Unlockable",
+          "label": "Unlockable Record #02",
+          "missable": true,
+          "levels": {
+            "1": "A post-clear or optional item exists outside ordinary progression.",
+            "2": "Inspect the version-specific extras and cleared-save menus for unlockable 02.",
+            "3": "NEEDS VERIFICATION: exact acquisition and persistence rules for paid hidden-effect items. Preserve version, cleared save, collection total, menu path, item description, effect test, and new-run availability before marking it complete."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "verification-holds",
+      "name": "Unverified Completion Boundaries",
+      "location_cue": "Any undocumented ending, rescue, late room, item, weapon, file, puzzle, secret, rank, difficulty, version, or carryover rule.",
+      "note": "Incomplete archival evidence is never filled with assumptions.",
+      "save_backup": {
+        "title": "Back up this save now",
+        "why": "Limited saves, branching choices, and scarce records can become permanent.",
+        "detail": "Copy the application data and keep an unused in-game save before spending ribbons, discarding keys, changing companions, or making choices."
+      },
+      "items": [
+        {
+          "id": "hold-01",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #1",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: complete ending count. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-02",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #2",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: every ending gate. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-03",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #3",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: all rescue locations. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-04",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #4",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: late-area walkthrough. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-05",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #5",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: complete item census. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-06",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #6",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: complete weapon census. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-07",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #7",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: complete ammunition census. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-08",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #8",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: all files. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-09",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #9",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: all maps. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-10",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #10",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: all keys. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-11",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #11",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: all crests. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-12",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #12",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: all healing items. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-13",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #13",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: all puzzles. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-14",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #14",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: all secrets. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-15",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #15",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: all paid-item effects. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-16",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #16",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: infinite weapon unlock condition. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-17",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #17",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: collection records 1 through 173. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-18",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #18",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: difficulty options. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-19",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #19",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: rank system. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-20",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #20",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: new-game carryover. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-21",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #21",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: version differences. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-22",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #22",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: Android and iOS parity. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-23",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #23",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this completion boundary.",
+            "2": "Resolve it only from the preserved application, complete footage, or original documentation.",
+            "3": "NEEDS VERIFICATION: current package integrity. Preserve version, save, physical region, menu path, exact inputs, inventory, companions, result, collection change, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "final-audit",
+      "name": "Final Completion Audit",
+      "location_cue": "The package archive, map captures, item and puzzle ledger, collection menu, ending backups, cleared saves, and unresolved holds.",
+      "note": "Completion is the maximum verified record of the preserved mobile release.",
+      "save_backup": {
+        "title": "Back up this save now",
+        "why": "Limited saves, branching choices, and scarce records can become permanent.",
+        "detail": "Copy the application data and keep an unused in-game save before spending ribbons, discarding keys, changing companions, or making choices."
+      },
+      "items": [
+        {
+          "id": "audit-route",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Route Audit",
+          "missable": false,
+          "levels": {
+            "1": "The run needs a final consistency check.",
+            "2": "Confirm Android provenance, the iOS comparison, delisting evidence, and two backups.",
+            "3": "Reconcile packages, signatures, versions, devices, launch results, saves, recordings, and checksums."
+          }
+        },
+        {
+          "id": "audit-system",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "System Audit",
+          "missable": false,
+          "levels": {
+            "1": "The run needs a final consistency check.",
+            "2": "Confirm every touch, equipment, companion, inventory, storage, and limited-save system.",
+            "3": "Review inputs, resources, failure behaviour, save effects, and restored state."
+          }
+        },
+        {
+          "id": "audit-items",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Item and Puzzle Audit",
+          "missable": false,
+          "levels": {
+            "1": "The run needs a final consistency check.",
+            "2": "Confirm all verified item locations and physical puzzle actions.",
+            "3": "Check pickup persistence, storage, key disposal, revealed spaces, maps, and remaining locked doors."
+          }
+        },
+        {
+          "id": "audit-regions",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Region Audit",
+          "missable": false,
+          "levels": {
+            "1": "The run needs a final consistency check.",
+            "2": "Confirm every mapped room and every unresolved door across all physical regions.",
+            "3": "Sweep walls, furniture, floor highlights, files, supplies, keys, map states, and inaccessible routes."
+          }
+        },
+        {
+          "id": "audit-collection",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Collection Audit",
+          "missable": false,
+          "levels": {
+            "1": "The run needs a final consistency check.",
+            "2": "Reconcile all 175 numbered records against versioned save evidence.",
+            "3": "Keep locked and unlocked captures, triggers, region, inventory, companions, results, and timestamps."
+          }
+        },
+        {
+          "id": "audit-endings",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Ending Audit",
+          "missable": false,
+          "levels": {
+            "1": "The run needs a final consistency check.",
+            "2": "Confirm both verified ending records from one backed-up run.",
+            "3": "Use the rescue-state backup to obtain records 174 and 175 without exposing plot."
+          }
+        },
+        {
+          "id": "audit-holds",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Verification-Hold Audit",
+          "missable": false,
+          "levels": {
+            "1": "The run needs a final consistency check.",
+            "2": "Review every unresolved late-game and version boundary.",
+            "3": "Replace a hold only with reproducible primary evidence; retain uncertainty otherwise."
+          }
+        }
+      ]
+    }
+  ]
+}

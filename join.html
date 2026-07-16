@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create a free Sami Mirash member profile.">
+  <meta property="og:title" content="Join | Sami Mirash">
+  <meta property="og:description" content="Create a free member profile before the first stream begins.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.samimirash.com/join.html">
+  <meta property="og:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="theme-color" content="#080705">
+  <link rel="canonical" href="https://www.samimirash.com/join.html">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <title>Join | Sami Mirash</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"RegisterAction","name":"Join Sami Mirash member room","target":"https://www.samimirash.com/join.html"}</script>
+  <script defer src="assets/site.js"></script>
+  <script defer src="js/config.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="assets/seo.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header></header>
+  <main id="main">
+    <section class="hero"><div class="wrap"><p class="eyebrow">Free membership</p><h1>Create a member profile.</h1><p class="lede">The member room is free and early. It is here so viewers can be ready before the first stream, not because there is a paid archive.</p></div></section>
+    <section class="section">
+      <div class="wrap grid two">
+        <article class="auth-panel">
+          <h2>Sign up</h2>
+          <p class="status-text" data-auth-status></p>
+          <p class="status-text" data-config-warning></p>
+          <form class="auth-form" id="signup-form">
+            <label>Display name<input name="display_name" autocomplete="name" required></label>
+            <label>Email<input name="email" type="email" autocomplete="email" required></label>
+            <label>Password<input name="password" type="password" autocomplete="new-password" minlength="8" required></label>
+            <button class="button primary" type="submit">Create account</button>
+          </form>
+        </article>
+        <article class="card"><h2>Already a member?</h2><p>Log in to open the member room or edit your profile.</p><div class="button-row"><a class="button" href="login.html">Log in</a><a class="button ghost" href="privacy.html">Privacy</a></div></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" data-site-footer></footer>
+</body>
+</html>

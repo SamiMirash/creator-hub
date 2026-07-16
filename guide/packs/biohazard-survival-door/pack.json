@@ -1,0 +1,669 @@
+{
+  "id": "biohazard-survival-door",
+  "game": "BIOHAZARD Survival Door (2010)",
+  "target": "Spoiler-free maximum verifiable archival completion of the original Japanese mobile-phone route",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "archival-route",
+      "name": "Archival Mobile Route",
+      "location_cue": "The original Japanese handset, browser application, carrier metadata, and title screen.",
+      "note": "This discontinued browser title must be preserved before ordinary play begins.",
+      "items": [
+        {
+          "id": "route-original-mobile",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Original Japanese Mobile Route",
+          "missable": true,
+          "levels": {
+            "1": "Only a discontinued carrier-era release is documented.",
+            "2": "Use a lawful surviving installation on a compatible Japanese mobile phone.",
+            "3": "Preserve the original handset, browser application, firmware, carrier information, storage, and account state before launching. No current store, console port, PC version, or reliable emulator route is verified."
+          }
+        },
+        {
+          "id": "route-three-networks",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Documented Carrier Versions",
+          "missable": false,
+          "levels": {
+            "1": "The browser release was distributed through several Japanese networks.",
+            "2": "Check whether the surviving build identifies i-mode, EZweb, or SoftBank.",
+            "3": "Record the exact carrier variant shown by the handset or application metadata. Keep separate copies if more than one network build survives; do not assume that one package represents all three distributions."
+          }
+        },
+        {
+          "id": "route-original-price",
+          "type": "interaction",
+          "safe_type": "Archive Fact",
+          "label": "Original Subscription Record",
+          "missable": false,
+          "levels": {
+            "1": "Preserve the storefront context alongside the application.",
+            "2": "Record the documented monthly price of 315 yen in the archive notes.",
+            "3": "Capture any surviving purchase, subscription, or carrier screen and store it with the build. The 315-yen figure describes the original monthly access model; it is not a current purchase route."
+          }
+        },
+        {
+          "id": "route-full-session-capture",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Uninterrupted Session Capture",
+          "missable": true,
+          "levels": {
+            "1": "A working session may be impossible to reproduce.",
+            "2": "Record boot, menus, every door choice, encounters, items, score changes, failure, retry, and any terminal screen.",
+            "3": "Begin recording before launch and avoid cuts. Preserve original Japanese screens at native resolution, then create separate translations and notes. Export the capture and device files to at least two storage locations."
+          }
+        },
+        {
+          "id": "route-input-map",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Physical Keypad Map",
+          "missable": false,
+          "levels": {
+            "1": "Original controls depend on handset number keys.",
+            "2": "Photograph the handset and document the positions of keys 1, 2, and 3.",
+            "3": "Record the phone model, keypad layout, browser navigation controls, confirm and cancel keys, and any timing delay. Keep this mapping beside the footage so later analysis does not mistake hardware latency for a game rule."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up the handset before launch",
+        "why": "No replaceable modern distribution route is documented.",
+        "detail": "Copy all accessible application and device data, then capture the title and carrier metadata before experimenting."
+      }
+    },
+    {
+      "id": "verified-door-loop",
+      "name": "Verified Door and Encounter Loop",
+      "location_cue": "The three numbered doors, revealed result screen, fight-or-flee choice, and keypad prompt.",
+      "note": "Only directly documented result categories and controls are presented as normal instructions.",
+      "items": [
+        {
+          "id": "loop-door-choice",
+          "type": "choice",
+          "safe_type": "Door Choice",
+          "label": "Numbered Door Choice",
+          "missable": false,
+          "levels": {
+            "1": "Each step presents a small set of identical-looking routes.",
+            "2": "Choose one of the three displayed doors with keypad key 1, 2, or 3.",
+            "3": "Match the left, middle, and right door positions to the on-screen numeric labels, press the corresponding physical key once, and record both the choice and revealed result. Do not claim a safe route from one attempt because outcomes are described as chance-based."
+          }
+        },
+        {
+          "id": "loop-points-result",
+          "type": "optional",
+          "safe_type": "Door Result",
+          "label": "Points Result",
+          "missable": false,
+          "levels": {
+            "1": "Some doors advance the score without beginning combat.",
+            "2": "Choose doors until one produces an immediate points result.",
+            "3": "Record the score immediately before the choice, press the selected numeric key, and capture the entire points animation and new total. Repeat from a comparable state before inferring whether the award is fixed or variable."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "loop-next-door-result",
+          "type": "choice",
+          "safe_type": "Door Result",
+          "label": "Another Door Choice",
+          "missable": false,
+          "levels": {
+            "1": "A safe reveal may continue the route rather than ending it.",
+            "2": "Choose a door that leads directly to another three-door screen.",
+            "3": "Capture the transition without skipping, note whether the score or health changes, and number the new choice depth in external notes. Continue until a different result appears; the complete sequence length remains unverified."
+          }
+        },
+        {
+          "id": "loop-item-result",
+          "type": "collectible",
+          "safe_type": "Door Result",
+          "label": "Item Result",
+          "missable": false,
+          "levels": {
+            "1": "A door may supply help instead of points or danger.",
+            "2": "Choose doors until an item pickup appears.",
+            "3": "Capture the item name or icon, the inventory or health state before and after collection, and whether pickup is automatic. Do not assign a numerical effect until a repeatable observed change confirms it."
+          }
+        },
+        {
+          "id": "loop-creature-result",
+          "type": "optional",
+          "safe_type": "Door Result",
+          "label": "Creature Encounter",
+          "missable": false,
+          "levels": {
+            "1": "A dangerous reveal changes the screen into a reaction sequence.",
+            "2": "Choose doors until a creature encounter begins.",
+            "3": "Record the complete reveal, every prompt, the player health before and after, and the score result. Preserve one fight attempt and one flee attempt against the same visible creature slot if the build allows both choices."
+          }
+        },
+        {
+          "id": "loop-fight-choice",
+          "type": "choice",
+          "safe_type": "Encounter Choice",
+          "label": "Fight",
+          "missable": false,
+          "levels": {
+            "1": "One encounter response spends time and weapon resources to continue.",
+            "2": "Select the fight option when a creature appears.",
+            "3": "Choose fight, follow only the prompts actually displayed by the build, and record each successful and failed key press. Capture weapon, ammunition, damage, score, and continuation state before drawing any rule from the result."
+          }
+        },
+        {
+          "id": "loop-flee-choice",
+          "type": "choice",
+          "safe_type": "Encounter Choice",
+          "label": "Flee",
+          "missable": false,
+          "levels": {
+            "1": "Avoidance may trade immediate safety for another consequence.",
+            "2": "Select the flee option during a compatible creature encounter.",
+            "3": "Choose flee, capture the full success or failure response, and compare health, score, route depth, and encounter persistence with the fight attempt. Do not assume escape is guaranteed or penalty-free."
+          }
+        },
+        {
+          "id": "loop-timed-response",
+          "type": "interaction",
+          "safe_type": "Combat Input",
+          "label": "Timed Keypad Response",
+          "missable": false,
+          "levels": {
+            "1": "Combat requires reacting to the instruction shown on screen.",
+            "2": "Press the displayed keypad command before its response window closes.",
+            "3": "Record the exact prompt, the physical key used, input timing, visible confirmation, and outcome. Repeat the same prompt at least twice to distinguish a timing rule from random failure or handset latency."
+          },
+          "internal_uncertain": true
+        }
+      ],
+      "save_backup": {
+        "title": "Capture before testing choices",
+        "why": "A failed input or browser session may close the only observable run.",
+        "detail": "Keep continuous footage and a written choice log for every attempt."
+      }
+    },
+    {
+      "id": "verified-items",
+      "name": "Verified Item Types",
+      "location_cue": "The item-reveal screen reached after a numbered door choice.",
+      "note": "Names are verified from surviving records; numerical effects and persistence remain withheld.",
+      "items": [
+        {
+          "id": "verified-item-01-green-herb",
+          "type": "collectible",
+          "safe_type": "Item Type",
+          "label": "Green Herb",
+          "missable": true,
+          "levels": {
+            "1": "One documented door reward belongs to the small survival inventory.",
+            "2": "Open doors until Green Herb appears and capture its pickup screen.",
+            "3": "Record health, weapon, ammunition, inventory, and score immediately before receiving Green Herb, then capture the same values afterward. Repeat the pickup before assigning any exact restoration, ammunition, or persistence value."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verified-item-02-health-kit",
+          "type": "collectible",
+          "safe_type": "Item Type",
+          "label": "Health Kit",
+          "missable": true,
+          "levels": {
+            "1": "One documented door reward belongs to the small survival inventory.",
+            "2": "Open doors until Health Kit appears and capture its pickup screen.",
+            "3": "Record health, weapon, ammunition, inventory, and score immediately before receiving Health Kit, then capture the same values afterward. Repeat the pickup before assigning any exact restoration, ammunition, or persistence value."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verified-item-03-handgun",
+          "type": "collectible",
+          "safe_type": "Item Type",
+          "label": "Handgun",
+          "missable": true,
+          "levels": {
+            "1": "One documented door reward belongs to the small survival inventory.",
+            "2": "Open doors until Handgun appears and capture its pickup screen.",
+            "3": "Record health, weapon, ammunition, inventory, and score immediately before receiving Handgun, then capture the same values afterward. Repeat the pickup before assigning any exact restoration, ammunition, or persistence value."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verified-item-04-shotgun",
+          "type": "collectible",
+          "safe_type": "Item Type",
+          "label": "Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "One documented door reward belongs to the small survival inventory.",
+            "2": "Open doors until Shotgun appears and capture its pickup screen.",
+            "3": "Record health, weapon, ammunition, inventory, and score immediately before receiving Shotgun, then capture the same values afterward. Repeat the pickup before assigning any exact restoration, ammunition, or persistence value."
+          },
+          "internal_uncertain": true
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve each first appearance",
+        "why": "Public descriptions do not retain a complete item-effect table.",
+        "detail": "Capture the full pickup and adjacent status screens before continuing."
+      }
+    },
+    {
+      "id": "verified-creature-slots",
+      "name": "Verified Creature Slots",
+      "location_cue": "The encounter screen following an unsafe door reveal.",
+      "note": "Creature identities are deliberately hidden; mechanically distinct captured slots remain individually checkable.",
+      "items": [
+        {
+          "id": "creature-slot-01",
+          "type": "optional",
+          "safe_type": "Creature Type",
+          "label": "Creature Type #1",
+          "missable": true,
+          "levels": {
+            "1": "At least three visually distinct encounter types survive in public records.",
+            "2": "Reach and complete an encounter with creature slot #1.",
+            "3": "Identify creature slot #1 only by its order in Sami's captured encounter ledger. Record its reveal, attack, fight prompts, flee response, required successful inputs, damage, score, and continuation screen without exposing its franchise identity in the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "creature-slot-02",
+          "type": "optional",
+          "safe_type": "Creature Type",
+          "label": "Creature Type #2",
+          "missable": true,
+          "levels": {
+            "1": "At least three visually distinct encounter types survive in public records.",
+            "2": "Reach and complete an encounter with creature slot #2.",
+            "3": "Identify creature slot #2 only by its order in Sami's captured encounter ledger. Record its reveal, attack, fight prompts, flee response, required successful inputs, damage, score, and continuation screen without exposing its franchise identity in the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "creature-slot-03",
+          "type": "optional",
+          "safe_type": "Creature Type",
+          "label": "Creature Type #3",
+          "missable": true,
+          "levels": {
+            "1": "At least three visually distinct encounter types survive in public records.",
+            "2": "Reach and complete an encounter with creature slot #3.",
+            "3": "Identify creature slot #3 only by its order in Sami's captured encounter ledger. Record its reveal, attack, fight prompts, flee response, required successful inputs, damage, score, and continuation screen without exposing its franchise identity in the guide."
+          },
+          "internal_uncertain": true
+        }
+      ],
+      "save_backup": {
+        "title": "Capture every distinct encounter",
+        "why": "A random door sequence may not reproduce the same creature before service or device failure.",
+        "detail": "Keep the first complete recording of each distinct visual and mechanical encounter."
+      }
+    },
+    {
+      "id": "score-and-leaderboard",
+      "name": "Score and Leaderboard",
+      "location_cue": "The live score display, failure result, upload prompt, and historical national ranking page.",
+      "note": "Scoring is verified, but its formula and present online availability are not reconstructed from guesses.",
+      "items": [
+        {
+          "id": "score-counter",
+          "type": "optional",
+          "safe_type": "Score",
+          "label": "Score Counter",
+          "missable": false,
+          "levels": {
+            "1": "Every safe and dangerous result may affect one cumulative total.",
+            "2": "Record the score before and after every door result and encounter.",
+            "3": "Build a table from direct observation: starting total, selected door, result category, combat choice, successful inputs, damage, and ending total. Reproduce each apparent score change before treating it as fixed."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "score-failure-state",
+          "type": "optional",
+          "safe_type": "Result",
+          "label": "Game Over State",
+          "missable": true,
+          "levels": {
+            "1": "A failed run has its own result and retry flow.",
+            "2": "Capture one natural Game Over screen and the complete retry or exit sequence.",
+            "3": "Allow a documented failed attempt without endangering the archive, then record the final score, any rank or message, available buttons, retry behavior, and whether the next run preserves anything. Do not force failure if the build or session cannot be restored."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "score-leaderboard",
+          "type": "optional",
+          "safe_type": "Online Record",
+          "label": "National Leaderboard",
+          "missable": true,
+          "levels": {
+            "1": "The original service compared uploaded scores.",
+            "2": "Open the leaderboard option or upload prompt if it remains reachable.",
+            "3": "Capture the connection attempt, endpoint response, score-upload prompt, displayed records, and error state. If the historical service is offline, preserve the dated failure and treat online placement as unobtainable rather than fabricating a target."
+          },
+          "internal_uncertain": true
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve result evidence",
+        "why": "Leaderboard and session records depend on discontinued carrier infrastructure.",
+        "detail": "Capture every local result and connection response before leaving the screen."
+      }
+    },
+    {
+      "id": "verification-holds",
+      "name": "Unverified Completion Boundaries",
+      "location_cue": "Any previously undocumented menu, score, room, reward, save, difficulty, or terminal screen exposed by a lawful surviving build.",
+      "note": "Unknown content remains explicit and internal rather than being padded with invented requirements.",
+      "items": [
+        {
+          "id": "verification-hold-01",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #1",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: complete door sequence length. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-02",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #2",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: stage or room count. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-03",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #3",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: terminal clear condition. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-04",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #4",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: ending or final result structure. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-05",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #5",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: door outcome probabilities. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-06",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #6",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: score formula and bonuses. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-07",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #7",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: rank or score thresholds. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-08",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #8",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: leaderboard service availability. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-09",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #9",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: weapon ammunition and damage values. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-10",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #10",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: item numerical effects. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-11",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #11",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: fight and flee success rules. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-12",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #12",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: keypad prompt mapping and timing. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-13",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #13",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: save and session persistence. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-14",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #14",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: unlockable rewards or modes. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-15",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #15",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: additional playable characters. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-16",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #16",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: difficulty settings. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-17",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #17",
+          "missable": false,
+          "levels": {
+            "1": "Surviving public records do not establish this completion boundary.",
+            "2": "Resolve this entry only from a lawful working build and Sami's uninterrupted capture.",
+            "3": "NEEDS VERIFICATION: complete lawful build availability. Record the original Japanese screen, exact trigger, preceding choices, observed value, and repeat result before replacing this hold with player-facing guidance. Do not infer a number, reward, route, identity, or terminal condition from screenshots alone."
+          },
+          "internal_uncertain": true
+        }
+      ],
+      "save_backup": {
+        "title": "Retain raw evidence before updating",
+        "why": "Every resolved hold must remain auditable to direct original-build capture.",
+        "detail": "Store the untouched footage and transcription before editing fact notes or guide prose."
+      }
+    },
+    {
+      "id": "final-archival-audit",
+      "name": "Final Archival Audit",
+      "location_cue": "The preserved handset package, uninterrupted footage, choice ledger, result table, and verification-hold list.",
+      "note": "This audit represents maximum verifiable completion when the original service and full build are not publicly recoverable.",
+      "items": [
+        {
+          "id": "audit-route",
+          "type": "interaction",
+          "safe_type": "Final Audit",
+          "label": "Archival Route Audit",
+          "missable": false,
+          "levels": {
+            "1": "The hardware and application record must remain reproducible.",
+            "2": "Confirm handset, firmware, carrier variant, application files, and two backups are documented.",
+            "3": "Compare the device photographs, metadata, copied files, carrier build, original Japanese title screen, and backup checksums. A guide completion record without lawful build provenance is not sufficient."
+          }
+        },
+        {
+          "id": "audit-door-results",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Door Result Audit",
+          "missable": false,
+          "levels": {
+            "1": "Every verified result category should appear in the session ledger.",
+            "2": "Confirm captured examples of points, another door choice, an item, and a creature encounter.",
+            "3": "Review the uninterrupted footage and choice log, marking one complete example of each verified door result. Keep additional categories as verification holds until repeated build evidence establishes them."
+          }
+        },
+        {
+          "id": "audit-choices",
+          "type": "choice",
+          "safe_type": "Final Audit",
+          "label": "Fight and Flee Audit",
+          "missable": false,
+          "levels": {
+            "1": "Both encounter responses need direct mechanical evidence.",
+            "2": "Confirm one captured fight attempt and one captured flee attempt.",
+            "3": "Compare the two attempts for prompts, health, score, route continuation, resource use, and failure risk. Do not generalize success rules from encounters that used different creature slots."
+          }
+        },
+        {
+          "id": "audit-catalogue",
+          "type": "collectible",
+          "safe_type": "Final Audit",
+          "label": "Verified Catalogue Audit",
+          "missable": false,
+          "levels": {
+            "1": "The preserved public record supports four items and three creature slots.",
+            "2": "Confirm all four item types and all three neutral creature slots have complete captures.",
+            "3": "Open the capture index and verify every item includes before-and-after status evidence and every creature slot includes reveal, prompts, result, and continuation. Identity names remain outside the player-facing pack."
+          }
+        },
+        {
+          "id": "audit-unknowns",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Verification-Hold Audit",
+          "missable": false,
+          "levels": {
+            "1": "A complete archival guide distinguishes known content from lost data.",
+            "2": "Review all 17 verification holds and attach evidence to any resolved entry.",
+            "3": "Leave unsupported holds marked uncertain. Convert one only after a lawful build demonstrates the value or condition repeatedly; list still-unresolved holds in the report rather than silently declaring them complete."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Duplicate the final evidence set",
+        "why": "The audit compares branching choices and irreplaceable original-device captures.",
+        "detail": "Keep two checked copies of the footage, application files, metadata, and written ledger before reconciling the final checklist."
+      }
+    }
+  ]
+}

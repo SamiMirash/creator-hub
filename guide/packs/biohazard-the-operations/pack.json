@@ -1,0 +1,1989 @@
+{
+  "id": "biohazard-the-operations",
+  "game": "BIOHAZARD THE OPERATIONS (2007)",
+  "target": "100% completion of the original Japanese mobile release, including all 80 Operation Mode nodes, all 50 Scenario operations, every rank unlock, roster route, weapon, and item, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "route-and-controls",
+      "name": "Original Mobile Route",
+      "location_cue": "The Japanese feature-phone application manager, title menu, and first mission room.",
+      "note": "Preserve original data before testing the partially recovered modern route.",
+      "items": [
+        {
+          "id": "route-original-mobile",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Original Japanese Mobile Release",
+          "missable": false,
+          "levels": {
+            "1": "The complete historical route depended on a carrier application.",
+            "2": "Run the original application on its supported Japanese feature-phone environment.",
+            "3": "Preserve the installed package and downloaded data together, clone the handset storage, verify Operation and Scenario menus load, and keep an untouched baseline because the retired service cannot restore missing data."
+          }
+        },
+        {
+          "id": "route-version-ledger",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Record the Mobile Version",
+          "missable": false,
+          "levels": {
+            "1": "More than one Japanese carrier received the game.",
+            "2": "Record whether the installation is the AU release or later i-mode edition.",
+            "3": "At the title screen and handset application manager, capture the carrier build, device model, application version, package size, and save-data date. Do not merge progress across builds until their unlock tables are proven identical."
+          }
+        },
+        {
+          "id": "route-preservation-limit",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Document Partial Preservation Status",
+          "missable": false,
+          "levels": {
+            "1": "The accessible archival reconstruction is not the whole original release.",
+            "2": "If using the 2025 preservation build, mark it as partial before starting.",
+            "3": "Record the archival launcher and package hashes, test every visible mode, and keep its progress separate from original-device completion. The preservation reporting explicitly describes a partial recovery, so absent stages or server data remain verification holds."
+          }
+        },
+        {
+          "id": "controls-key-config",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Verify Key Configuration",
+          "missable": false,
+          "levels": {
+            "1": "The keypad bindings can be changed.",
+            "2": "Test movement, aiming, interaction, firing, status, map, and menu inputs.",
+            "3": "In a safe opening operation, confirm the direction pad moves; while aiming it changes elevation or target; Confirm examines or fires; the right soft key toggles aim; and the left soft key opens the menu. Test the configured dash, status, and map keys before timed runs."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Clone the save and package first",
+        "why": "Carrier shutdown prevents a normal redownload."
+      }
+    },
+    {
+      "id": "operation-stage-1",
+      "name": "Operation Mode — Stage 1",
+      "location_cue": "The Stage 1 band of the indexed mansion mission grid.",
+      "note": "Clear and rank every numbered node; exact objectives are withheld where surviving pages are empty.",
+      "items": [
+        {
+          "id": "operation-01",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 01",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 01 in Stage 1 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-02",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 02",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 02 in Stage 1 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-03",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 03",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 03 in Stage 1 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before Stage 1 rank cleanup",
+        "why": "A qualifying result can reveal a new node, and most surviving pages do not preserve the required threshold."
+      }
+    },
+    {
+      "id": "operation-stage-2",
+      "name": "Operation Mode — Stage 2",
+      "location_cue": "The Stage 2 band of the indexed mansion mission grid.",
+      "note": "Clear and rank every numbered node; exact objectives are withheld where surviving pages are empty.",
+      "items": [
+        {
+          "id": "operation-04",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 04",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 04 in Stage 2 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-05",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 05",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 05 in Stage 2 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-06",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 06",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 06 in Stage 2 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-07",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 07",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 07 in Stage 2 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-08",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 08",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 08 in Stage 2 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before Stage 2 rank cleanup",
+        "why": "A qualifying result can reveal a new node, and most surviving pages do not preserve the required threshold."
+      }
+    },
+    {
+      "id": "operation-stage-3",
+      "name": "Operation Mode — Stage 3",
+      "location_cue": "The Stage 3 band of the indexed mansion mission grid.",
+      "note": "Clear and rank every numbered node; exact objectives are withheld where surviving pages are empty.",
+      "items": [
+        {
+          "id": "operation-09",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 09",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 09 in Stage 3 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-10",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 10",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 10 in Stage 3 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-11",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 11",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 11 in Stage 3 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-12",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 12",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 12 in Stage 3 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-13",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 13",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 13 in Stage 3 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-14",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 14",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 14 in Stage 3 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-15",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 15",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 15 in Stage 3 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before Stage 3 rank cleanup",
+        "why": "A qualifying result can reveal a new node, and most surviving pages do not preserve the required threshold."
+      }
+    },
+    {
+      "id": "operation-stage-4",
+      "name": "Operation Mode — Stage 4",
+      "location_cue": "The Stage 4 band of the indexed mansion mission grid.",
+      "note": "Clear and rank every numbered node; exact objectives are withheld where surviving pages are empty.",
+      "items": [
+        {
+          "id": "operation-16",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 16",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 16 in Stage 4 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-17",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 17",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 17 in Stage 4 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-18",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 18",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 18 in Stage 4 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-19",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 19",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 19 in Stage 4 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-20",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 20",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 20 in Stage 4 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-21",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 21",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 21 in Stage 4 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-22",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 22",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 22 in Stage 4 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-23",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 23",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 23 in Stage 4 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-24",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 24",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 24 in Stage 4 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before Stage 4 rank cleanup",
+        "why": "A qualifying result can reveal a new node, and most surviving pages do not preserve the required threshold."
+      }
+    },
+    {
+      "id": "operation-stage-5",
+      "name": "Operation Mode — Stage 5",
+      "location_cue": "The Stage 5 band of the indexed mansion mission grid.",
+      "note": "Clear and rank every numbered node; exact objectives are withheld where surviving pages are empty.",
+      "items": [
+        {
+          "id": "operation-25",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 25",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 25 in Stage 5 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-26",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 26",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 26 in Stage 5 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-27",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 27",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 27 in Stage 5 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-28",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 28",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 28 in Stage 5 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-29",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 29",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 29 in Stage 5 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-30",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 30",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 30 in Stage 5 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-31",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 31",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 31 in Stage 5 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-32",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 32",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 32 in Stage 5 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-33",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 33",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 33 in Stage 5 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-34",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 34",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 34 in Stage 5 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-35",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 35",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 35 in Stage 5 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before Stage 5 rank cleanup",
+        "why": "A qualifying result can reveal a new node, and most surviving pages do not preserve the required threshold."
+      }
+    },
+    {
+      "id": "operation-stage-6",
+      "name": "Operation Mode — Stage 6",
+      "location_cue": "The Stage 6 band of the indexed mansion mission grid.",
+      "note": "Clear and rank every numbered node; exact objectives are withheld where surviving pages are empty.",
+      "items": [
+        {
+          "id": "operation-36",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 36",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 36 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-37",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 37",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 37 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-38",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 38",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 38 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-39",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 39",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 39 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-40",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 40",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 40 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-41",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 41",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 41 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-42",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 42",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 42 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-43",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 43",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 43 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-44",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 44",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 44 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-45",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 45",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 45 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-46",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 46",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 46 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-47",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 47",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 47 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-48",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 48",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 48 in Stage 6 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before Stage 6 rank cleanup",
+        "why": "A qualifying result can reveal a new node, and most surviving pages do not preserve the required threshold."
+      }
+    },
+    {
+      "id": "operation-stage-7",
+      "name": "Operation Mode — Stage 7",
+      "location_cue": "The Stage 7 band of the indexed mansion mission grid.",
+      "note": "Clear and rank every numbered node; exact objectives are withheld where surviving pages are empty.",
+      "items": [
+        {
+          "id": "operation-49",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 49",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 49 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-50",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 50",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 50 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-51",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 51",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 51 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-52",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 52",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 52 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-53",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 53",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 53 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-54",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 54",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 54 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-55",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 55",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 55 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-56",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 56",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 56 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-57",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 57",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 57 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-58",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 58",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 58 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-59",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 59",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 59 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-60",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 60",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 60 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-61",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 61",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 61 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-62",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 62",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 62 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-63",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 63",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 63 in Stage 7 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before Stage 7 rank cleanup",
+        "why": "A qualifying result can reveal a new node, and most surviving pages do not preserve the required threshold."
+      }
+    },
+    {
+      "id": "operation-stage-8",
+      "name": "Operation Mode — Stage 8",
+      "location_cue": "The Stage 8 band of the indexed mansion mission grid.",
+      "note": "Clear and rank every numbered node; exact objectives are withheld where surviving pages are empty.",
+      "items": [
+        {
+          "id": "operation-64",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 64",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 64 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-65",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 65",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 65 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-66",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 66",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 66 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-67",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 67",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 67 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-68",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 68",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 68 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-69",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 69",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 69 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-70",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 70",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 70 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-71",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 71",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 71 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-72",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 72",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 72 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-73",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 73",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 73 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-74",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 74",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 74 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-75",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 75",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 75 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-76",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 76",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 76 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-77",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 77",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 77 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-78",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 78",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 78 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-79",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 79",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 79 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "operation-80",
+          "type": "optional",
+          "safe_type": "Operation",
+          "label": "Operation 80",
+          "missable": true,
+          "levels": {
+            "1": "A compact timed objective occupies this node.",
+            "2": "Clear Operation 80 in Stage 8 and record its highest result rank.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before Stage 8 rank cleanup",
+        "why": "A qualifying result can reveal a new node, and most surviving pages do not preserve the required threshold."
+      }
+    },
+    {
+      "id": "scenario-slot-1",
+      "name": "Scenario Mode — Character Slot 1",
+      "location_cue": "The ten-node scenario row purchased for roster slot 1.",
+      "note": "Internal route identity: eight-slot lead; public labels intentionally hide names.",
+      "items": [
+        {
+          "id": "scenario-slot-1-unlock",
+          "type": "secret",
+          "safe_type": "Unlock",
+          "label": "Unlock Scenario Character Slot 1",
+          "missable": false,
+          "levels": {
+            "1": "Operation clears provide the currency used for character routes.",
+            "2": "Accumulate Operation Mode currency and purchase Scenario character slot 1.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-1-01",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 1 — Scenario 01",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 1 and clear its operation 01.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-1-02",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 1 — Scenario 02",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 1 and clear its operation 02.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-1-03",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 1 — Scenario 03",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 1 and clear its operation 03.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-1-04",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 1 — Scenario 04",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 1 and clear its operation 04.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-1-05",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 1 — Scenario 05",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 1 and clear its operation 05.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-1-06",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 1 — Scenario 06",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 1 and clear its operation 06.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-1-07",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 1 — Scenario 07",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 1 and clear its operation 07.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-1-08",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 1 — Scenario 08",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 1 and clear its operation 08.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-1-09",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 1 — Scenario 09",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 1 and clear its operation 09.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-1-10",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 1 — Scenario 10",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 1 and clear its operation 10.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before buying slot 1",
+        "why": "The historical purchase price and refund behaviour are not preserved in public instructions."
+      }
+    },
+    {
+      "id": "scenario-slot-2",
+      "name": "Scenario Mode — Character Slot 2",
+      "location_cue": "The ten-node scenario row purchased for roster slot 2.",
+      "note": "Internal route identity: six-slot lead; public labels intentionally hide names.",
+      "items": [
+        {
+          "id": "scenario-slot-2-unlock",
+          "type": "secret",
+          "safe_type": "Unlock",
+          "label": "Unlock Scenario Character Slot 2",
+          "missable": false,
+          "levels": {
+            "1": "Operation clears provide the currency used for character routes.",
+            "2": "Accumulate Operation Mode currency and purchase Scenario character slot 2.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-2-01",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 2 — Scenario 01",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 2 and clear its operation 01.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-2-02",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 2 — Scenario 02",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 2 and clear its operation 02.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-2-03",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 2 — Scenario 03",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 2 and clear its operation 03.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-2-04",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 2 — Scenario 04",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 2 and clear its operation 04.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-2-05",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 2 — Scenario 05",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 2 and clear its operation 05.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-2-06",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 2 — Scenario 06",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 2 and clear its operation 06.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-2-07",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 2 — Scenario 07",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 2 and clear its operation 07.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-2-08",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 2 — Scenario 08",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 2 and clear its operation 08.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-2-09",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 2 — Scenario 09",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 2 and clear its operation 09.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-2-10",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 2 — Scenario 10",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 2 and clear its operation 10.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before buying slot 2",
+        "why": "The historical purchase price and refund behaviour are not preserved in public instructions."
+      }
+    },
+    {
+      "id": "scenario-slot-3",
+      "name": "Scenario Mode — Character Slot 3",
+      "location_cue": "The ten-node scenario row purchased for roster slot 3.",
+      "note": "Internal route identity: support specialist A; public labels intentionally hide names.",
+      "items": [
+        {
+          "id": "scenario-slot-3-unlock",
+          "type": "secret",
+          "safe_type": "Unlock",
+          "label": "Unlock Scenario Character Slot 3",
+          "missable": false,
+          "levels": {
+            "1": "Operation clears provide the currency used for character routes.",
+            "2": "Accumulate Operation Mode currency and purchase Scenario character slot 3.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-3-01",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 3 — Scenario 01",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 3 and clear its operation 01.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-3-02",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 3 — Scenario 02",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 3 and clear its operation 02.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-3-03",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 3 — Scenario 03",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 3 and clear its operation 03.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-3-04",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 3 — Scenario 04",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 3 and clear its operation 04.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-3-05",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 3 — Scenario 05",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 3 and clear its operation 05.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-3-06",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 3 — Scenario 06",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 3 and clear its operation 06.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-3-07",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 3 — Scenario 07",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 3 and clear its operation 07.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-3-08",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 3 — Scenario 08",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 3 and clear its operation 08.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-3-09",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 3 — Scenario 09",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 3 and clear its operation 09.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-3-10",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 3 — Scenario 10",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 3 and clear its operation 10.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before buying slot 3",
+        "why": "The historical purchase price and refund behaviour are not preserved in public instructions."
+      }
+    },
+    {
+      "id": "scenario-slot-4",
+      "name": "Scenario Mode — Character Slot 4",
+      "location_cue": "The ten-node scenario row purchased for roster slot 4.",
+      "note": "Internal route identity: support specialist B; public labels intentionally hide names.",
+      "items": [
+        {
+          "id": "scenario-slot-4-unlock",
+          "type": "secret",
+          "safe_type": "Unlock",
+          "label": "Unlock Scenario Character Slot 4",
+          "missable": false,
+          "levels": {
+            "1": "Operation clears provide the currency used for character routes.",
+            "2": "Accumulate Operation Mode currency and purchase Scenario character slot 4.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-4-01",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 4 — Scenario 01",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 4 and clear its operation 01.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-4-02",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 4 — Scenario 02",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 4 and clear its operation 02.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-4-03",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 4 — Scenario 03",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 4 and clear its operation 03.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-4-04",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 4 — Scenario 04",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 4 and clear its operation 04.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-4-05",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 4 — Scenario 05",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 4 and clear its operation 05.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-4-06",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 4 — Scenario 06",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 4 and clear its operation 06.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-4-07",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 4 — Scenario 07",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 4 and clear its operation 07.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-4-08",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 4 — Scenario 08",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 4 and clear its operation 08.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-4-09",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 4 — Scenario 09",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 4 and clear its operation 09.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-4-10",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 4 — Scenario 10",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 4 and clear its operation 10.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before buying slot 4",
+        "why": "The historical purchase price and refund behaviour are not preserved in public instructions."
+      }
+    },
+    {
+      "id": "scenario-slot-5",
+      "name": "Scenario Mode — Character Slot 5",
+      "location_cue": "The ten-node scenario row purchased for roster slot 5.",
+      "note": "Internal route identity: command specialist; public labels intentionally hide names.",
+      "items": [
+        {
+          "id": "scenario-slot-5-unlock",
+          "type": "secret",
+          "safe_type": "Unlock",
+          "label": "Unlock Scenario Character Slot 5",
+          "missable": false,
+          "levels": {
+            "1": "Operation clears provide the currency used for character routes.",
+            "2": "Accumulate Operation Mode currency and purchase Scenario character slot 5.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-5-01",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 5 — Scenario 01",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 5 and clear its operation 01.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-5-02",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 5 — Scenario 02",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 5 and clear its operation 02.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-5-03",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 5 — Scenario 03",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 5 and clear its operation 03.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-5-04",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 5 — Scenario 04",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 5 and clear its operation 04.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-5-05",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 5 — Scenario 05",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 5 and clear its operation 05.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-5-06",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 5 — Scenario 06",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 5 and clear its operation 06.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-5-07",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 5 — Scenario 07",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 5 and clear its operation 07.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-5-08",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 5 — Scenario 08",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 5 and clear its operation 08.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-5-09",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 5 — Scenario 09",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 5 and clear its operation 09.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "scenario-slot-5-10",
+          "type": "optional",
+          "safe_type": "Scenario",
+          "label": "Character Slot 5 — Scenario 10",
+          "missable": true,
+          "levels": {
+            "1": "Each roster route contains ten short operations.",
+            "2": "Use Scenario character slot 5 and clear its operation 10.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before buying slot 5",
+        "why": "The historical purchase price and refund behaviour are not preserved in public instructions."
+      }
+    },
+    {
+      "id": "equipment-and-items",
+      "name": "Equipment and Item Archive",
+      "location_cue": "Operation loadouts, in-stage pickups, status screen, and post-mission records.",
+      "note": "Six weapons and three ordinary items are documented; one weapon slot and vitality set need original-build confirmation.",
+      "items": [
+        {
+          "id": "weapon-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Knife",
+          "missable": true,
+          "levels": {
+            "1": "A close-range fallback appears in the armory.",
+            "2": "Register the Knife in an operation loadout.",
+            "3": "Select an operation that supplies the Knife, equip it from status, land a confirmed hit, finish the objective, and verify the results retain the weapon entry. The exact first source node requires original-build verification."
+          }
+        },
+        {
+          "id": "weapon-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Handgun",
+          "missable": true,
+          "levels": {
+            "1": "The basic firearm supports precision shots.",
+            "2": "Register the Handgun in an operation loadout.",
+            "3": "Equip the Handgun, use the raised-weapon reticle to land a critical hit, complete the active objective, and confirm the armory or result record. Its earliest unlock node remains build-dependent."
+          }
+        },
+        {
+          "id": "weapon-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "One unlock covers a wider close-range arc.",
+            "2": "Register the Shotgun in an operation loadout.",
+            "3": "Acquire the Shotgun from a ranked unlock or stage supply, group nearby targets, fire within effective range, and finish the mission with it retained. Verify the weapon appears on later loadout screens."
+          }
+        },
+        {
+          "id": "weapon-magnum",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Magnum",
+          "missable": true,
+          "levels": {
+            "1": "The strongest single-shot sidearm has heavy recoil.",
+            "2": "Register the Magnum in an operation loadout.",
+            "3": "Unlock or collect the Magnum, fire at a durable target from a stable position, allow the recoil animation to finish, and complete the objective. Check that the post-mission equipment record includes it."
+          }
+        },
+        {
+          "id": "weapon-flamethrower",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Flamethrower",
+          "missable": true,
+          "levels": {
+            "1": "A sustained weapon trades fuel for rapid damage.",
+            "2": "Register the Flamethrower in an operation loadout.",
+            "3": "Obtain the Flamethrower through the rank progression, hold its stream on one target only long enough to confirm damage, conserve remaining fuel, finish the operation, and verify it remains available where the build permits."
+          }
+        },
+        {
+          "id": "weapon-grenade-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade Launcher",
+          "missable": true,
+          "levels": {
+            "1": "An explosive weapon controls clustered targets.",
+            "2": "Register the Grenade Launcher in an operation loadout.",
+            "3": "Unlock or collect the launcher, create distance before firing at a group, avoid wasting its limited ammunition, and complete the active operation. Confirm the result or armory records the weapon."
+          }
+        },
+        {
+          "id": "weapon-slot-seven",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Weapon Slot 7",
+          "missable": true,
+          "levels": {
+            "1": "Launch coverage reports seven weapons, while surviving lists name only six.",
+            "2": "Identify and register the seventh weapon on an original complete build.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "item-green-herb",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Green Herb",
+          "missable": true,
+          "levels": {
+            "1": "The smaller healing item restores part of the health bar.",
+            "2": "Use a Green Herb after losing at least forty percent health.",
+            "3": "Take controlled damage until the heal is not wasted, open status, consume the herb, and verify roughly two-fifths of the health bar returns. Finish the operation so the use is represented in the ledger."
+          }
+        },
+        {
+          "id": "item-first-aid",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "First Aid Spray",
+          "missable": true,
+          "levels": {
+            "1": "The larger healing item refills the health bar.",
+            "2": "Use a First Aid Spray while substantially injured.",
+            "3": "Lower health safely, consume the spray from status, and confirm the bar reaches full. Complete the mission after the test; reload a backup if the item is scarce and its use would obstruct the rank attempt."
+          }
+        },
+        {
+          "id": "item-reserve-ammo",
+          "type": "collectible",
+          "safe_type": "Item",
+          "label": "Reserve Ammunition",
+          "missable": true,
+          "levels": {
+            "1": "A utility pickup refills an empty weapon.",
+            "2": "Use Reserve Ammunition after depleting a firearm.",
+            "3": "Choose a repeatable stage, empty the selected gun without ending the objective, use Reserve Ammunition from status, and verify the weapon can fire again. Record the item before restoring the rank-cleanup save."
+          }
+        },
+        {
+          "id": "item-vitality-upgrades",
+          "type": "upgrade",
+          "safe_type": "Upgrade",
+          "label": "Maximum Vitality",
+          "missable": true,
+          "levels": {
+            "1": "Special pickups permanently enlarge survivability.",
+            "2": "Collect every vitality-increasing item and reach the build maximum.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Use a disposable equipment test save",
+        "why": "Healing, ammunition, and rare weapon tests can damage a rank attempt."
+      }
+    }
+  ]
+}

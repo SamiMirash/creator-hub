@@ -1,0 +1,2171 @@
+{
+  "id": "sniper-elite-vr",
+  "game": "Sniper Elite VR",
+  "target": "100% completion",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-13",
+  "areas": [
+    {
+      "id": "route-and-save-setup",
+      "name": "Route and Save Setup",
+      "location_cue": "Steam, the Windows save folder, the journal, and the Resistance Base.",
+      "note": "Chosen route: native Windows PC VR through SteamVR-compatible hardware; no secondary-platform content or emulation branch applies.",
+      "items": [
+        {
+          "id": "setup-pcvr-route",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the chosen Windows PC VR release",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the headset runtime before starting the campaign.",
+            "2": "Install the Steam release and launch it through a SteamVR-compatible headset.",
+            "3": "Install app 752480, start SteamVR first, then launch the game and verify motion controls, dominant hand, seated or standing height, and rifle alignment in the tutorial. The Quest and PlayStation VR editions add no separate campaign content to this chosen route."
+          }
+        },
+        {
+          "id": "setup-progression-backup",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Back up progression before cleanup",
+          "missable": false,
+          "levels": {
+            "1": "Protect the journal before grinding stars and weapon variants.",
+            "2": "Copy the ProgressionSaveData folder under %USERPROFILE%\\AppData\\LocalLow\\Just Add Water\\SniperEliteVR.",
+            "3": "Close the game and open %USERPROFILE%\\AppData\\LocalLow. Inside the developer folder named Just Add Water, copy SniperEliteVR\\ProgressionSaveData to a dated folder elsewhere; retain it until the journal, arsenal wall, and mastery counters have all been audited."
+          }
+        },
+        {
+          "id": "setup-replay-journal",
+          "type": "interaction",
+          "safe_type": "Replay System",
+          "label": "Use the journal for cleanup",
+          "missable": false,
+          "levels": {
+            "1": "One profile can retain the whole completion record.",
+            "2": "Turn back to any cleared operation page and select it again when a star or collectible slot is incomplete.",
+            "3": "At the base, page backward through the journal, select any cleared operation, and replay it on the needed difficulty. Collectibles persist after a checkpoint or completed run, and difficulty can be changed without erasing them; verify each icon before leaving the page."
+          }
+        },
+        {
+          "id": "setup-content-audit",
+          "type": "interaction",
+          "safe_type": "Content Audit",
+          "label": "Confirm the release has no extra campaign branch",
+          "missable": false,
+          "levels": {
+            "1": "Keep the route limited to content actually shipped for this edition.",
+            "2": "Use the Windows release’s campaign, base ranges, arsenal, stars, and records; no downloaded campaign or New Game Plus selector exists.",
+            "3": "After updating the Windows build, inspect the main journal and mode selector. Complete the tutorial/base, every available operation page, three firing ranges, arsenal wall, mastery variants, and gameplay records. Do not add Quest or PlayStation replays: current sources identify no exclusive missions, downloaded campaign, or additional completion branch."
+          }
+        }
+      ]
+    },
+    {
+      "id": "walled-village-gate",
+      "name": "Walled Village Gate",
+      "location_cue": "A village entrance lined with stone buildings, sandbags, and a defended gate.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "walled-village-gate-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the walled village gate operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the walled village gate and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "walled-village-gate-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run: Land one headshot from beyond 25 metres.",
+            "3": "Use Cadet for cleanup and land one headshot from beyond 25 metres. Finish the operation after the star appears; restarting from a checkpoint can discard challenge progress, so restart the whole operation when an attempt fails."
+          }
+        },
+        {
+          "id": "walled-village-gate-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Finish with more than 1,000 points; the threshold is printed on this operation’s journal page.",
+            "3": "Play on Cadet, avoid misses so the multiplier survives, favour distant headshots and organ hits, and finish above 1,000 points. A score equal to the printed threshold may not satisfy wording that says ‘more than,’ so leave a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "walled-village-gate-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hillside-support-position",
+      "name": "Hillside Support Position",
+      "location_cue": "Raised firing positions overlooking clustered village roofs and approach roads.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "hillside-support-position-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the hillside support position operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the hillside support position and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "hillside-support-position-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run: Record five eliminations with grenades or explosive objects.",
+            "3": "Use Cadet for cleanup and record five eliminations with grenades or explosive objects. Finish the operation after the star appears; restarting from a checkpoint can discard challenge progress, so restart the whole operation when an attempt fails."
+          }
+        },
+        {
+          "id": "hillside-support-position-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Finish with more than 2,000 points; the threshold is printed on this operation’s journal page.",
+            "3": "Play on Cadet, avoid misses so the multiplier survives, favour distant headshots and organ hits, and finish above 2,000 points. A score equal to the printed threshold may not satisfy wording that says ‘more than,’ so leave a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "hillside-support-position-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rail-bridge-gorge",
+      "name": "Rail Bridge Gorge",
+      "location_cue": "A steep gorge crossed by a railway bridge, with paths along both sides.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "rail-bridge-gorge-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the rail bridge gorge operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the rail bridge gorge and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "rail-bridge-gorge-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run: Finish the operation in under ten minutes.",
+            "3": "Use Cadet for cleanup and finish the operation in under ten minutes. Finish the operation after the star appears; restarting from a checkpoint can discard challenge progress, so restart the whole operation when an attempt fails."
+          }
+        },
+        {
+          "id": "rail-bridge-gorge-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Finish with more than 1,500 points; the threshold is printed on this operation’s journal page.",
+            "3": "Play on Cadet, avoid misses so the multiplier survives, favour distant headshots and organ hits, and finish above 1,500 points. A score equal to the printed threshold may not satisfy wording that says ‘more than,’ so leave a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "rail-bridge-gorge-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "supply-depot",
+      "name": "Supply Depot",
+      "location_cue": "Warehouses, loading platforms, rail equipment, and narrow service lanes.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "supply-depot-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the supply depot operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the supply depot and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "supply-depot-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run: Record twelve eliminations with the MKB 42.",
+            "3": "Use Cadet for cleanup and record twelve eliminations with the MKB 42. Finish the operation after the star appears; restarting from a checkpoint can discard challenge progress, so restart the whole operation when an attempt fails."
+          }
+        },
+        {
+          "id": "supply-depot-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Finish with more than 2,000 points; the threshold is printed on this operation’s journal page.",
+            "3": "Play on Cadet, avoid misses so the multiplier survives, favour distant headshots and organ hits, and finish above 2,000 points. A score equal to the printed threshold may not satisfy wording that says ‘more than,’ so leave a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "supply-depot-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "water-tower-platform",
+      "name": "Water-Tower Platform",
+      "location_cue": "A compact elevated platform surrounding a tall industrial tower.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "water-tower-platform-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the water-tower platform operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the water-tower platform and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "water-tower-platform-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run: Record ten eliminations with grenades or explosive objects.",
+            "3": "Use Cadet for cleanup and record ten eliminations with grenades or explosive objects. Finish the operation after the star appears; restarting from a checkpoint can discard challenge progress, so restart the whole operation when an attempt fails."
+          }
+        },
+        {
+          "id": "water-tower-platform-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Finish with more than 2,000 points; the threshold is printed on this operation’s journal page.",
+            "3": "Play on Cadet, avoid misses so the multiplier survives, favour distant headshots and organ hits, and finish above 2,000 points. A score equal to the printed threshold may not satisfy wording that says ‘more than,’ so leave a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "water-tower-platform-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mountain-crash-site",
+      "name": "Mountain Crash Site",
+      "location_cue": "Rocky mountain ground, scattered wreckage, and short defensive lanes.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "mountain-crash-site-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the mountain crash site operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the mountain crash site and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "mountain-crash-site-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run: Land six headshots.",
+            "3": "Use Cadet for cleanup and land six headshots. Finish the operation after the star appears; restarting from a checkpoint can discard challenge progress, so restart the whole operation when an attempt fails."
+          }
+        },
+        {
+          "id": "mountain-crash-site-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Finish with more than 2,000 points; the threshold is printed on this operation’s journal page.",
+            "3": "Play on Cadet, avoid misses so the multiplier survives, favour distant headshots and organ hits, and finish above 2,000 points. A score equal to the printed threshold may not satisfy wording that says ‘more than,’ so leave a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "mountain-crash-site-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mountain-estate",
+      "name": "Mountain Estate",
+      "location_cue": "A hillside estate approached through rocks, paths, and enclosed courtyards.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "mountain-estate-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the mountain estate operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the mountain estate and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "mountain-estate-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run: Finish without alerting an enemy.",
+            "3": "Use Cadet for cleanup and finish without alerting an enemy. Finish the operation after the star appears; restarting from a checkpoint can discard challenge progress, so restart the whole operation when an attempt fails."
+          }
+        },
+        {
+          "id": "mountain-estate-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Finish with more than 2,500 points; the threshold is printed on this operation’s journal page.",
+            "3": "Play on Cadet, avoid misses so the multiplier survives, favour distant headshots and organ hits, and finish above 2,500 points. A score equal to the printed threshold may not satisfy wording that says ‘more than,’ so leave a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "mountain-estate-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "church-vantage",
+      "name": "Church Vantage",
+      "location_cue": "A church firing position facing a distant road and open valley.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "church-vantage-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the church vantage operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the church vantage and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "church-vantage-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run: Record five eliminations from at least 25 metres without Focus.",
+            "3": "Use Cadet for cleanup and record five eliminations from at least 25 metres without Focus. Finish the operation after the star appears; restarting from a checkpoint can discard challenge progress, so restart the whole operation when an attempt fails."
+          }
+        },
+        {
+          "id": "church-vantage-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Finish with more than 3,500 points; the threshold is printed on this operation’s journal page.",
+            "3": "Play on Cadet, avoid misses so the multiplier survives, favour distant headshots and organ hits, and finish above 3,500 points. A score equal to the printed threshold may not satisfy wording that says ‘more than,’ so leave a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "church-vantage-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "coastal-gun-line",
+      "name": "Coastal Gun Line",
+      "location_cue": "Cliffside anti-air positions, bunkers, and paths above the sea.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "coastal-gun-line-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the coastal gun line operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the coastal gun line and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "coastal-gun-line-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run: Finish the operation in under ten minutes.",
+            "3": "Use Cadet for cleanup and finish the operation in under ten minutes. Finish the operation after the star appears; restarting from a checkpoint can discard challenge progress, so restart the whole operation when an attempt fails."
+          }
+        },
+        {
+          "id": "coastal-gun-line-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Finish with more than 3,000 points; the threshold is printed on this operation’s journal page.",
+            "3": "Play on Cadet, avoid misses so the multiplier survives, favour distant headshots and organ hits, and finish above 3,000 points. A score equal to the printed threshold may not satisfy wording that says ‘more than,’ so leave a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "coastal-gun-line-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mountain-bunkers",
+      "name": "Mountain Bunkers",
+      "location_cue": "Concrete rooms, trenches, and wooded approaches cut into a mountainside.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "mountain-bunkers-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the mountain bunkers operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the mountain bunkers and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "mountain-bunkers-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run: Record ten eliminations with the Trench Gun.",
+            "3": "Use Cadet for cleanup and record ten eliminations with the Trench Gun. Finish the operation after the star appears; restarting from a checkpoint can discard challenge progress, so restart the whole operation when an attempt fails."
+          }
+        },
+        {
+          "id": "mountain-bunkers-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Finish with more than 3,500 points; the threshold is printed on this operation’s journal page.",
+            "3": "Play on Cadet, avoid misses so the multiplier survives, favour distant headshots and organ hits, and finish above 3,500 points. A score equal to the printed threshold may not satisfy wording that says ‘more than,’ so leave a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "mountain-bunkers-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lakeside-house",
+      "name": "Lakeside House",
+      "location_cue": "A multi-level rural house beside a lake, with outdoor approach lanes.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "lakeside-house-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the lakeside house operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the lakeside house and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "lakeside-house-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "lakeside-house-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Read the third-star score threshold on this operation’s journal page before starting.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "lakeside-house-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cliffside-route",
+      "name": "Cliffside Route",
+      "location_cue": "A steep outdoor route through rocks, sparse buildings, and overlook points.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "cliffside-route-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the cliffside route operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the cliffside route and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "cliffside-route-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run: Finish without alerting an enemy.",
+            "3": "Use Cadet for cleanup and finish without alerting an enemy. Finish the operation after the star appears; restarting from a checkpoint can discard challenge progress, so restart the whole operation when an attempt fails."
+          }
+        },
+        {
+          "id": "cliffside-route-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Finish with more than 2,500 points; the threshold is printed on this operation’s journal page.",
+            "3": "Play on Cadet, avoid misses so the multiplier survives, favour distant headshots and organ hits, and finish above 2,500 points. A score equal to the printed threshold may not satisfy wording that says ‘more than,’ so leave a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "cliffside-route-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "castle-courtyard",
+      "name": "Castle Courtyard",
+      "location_cue": "Stone rooms and balconies overlooking an enclosed castle courtyard.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "castle-courtyard-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the castle courtyard operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the castle courtyard and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "castle-courtyard-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run: Record ten eliminations with grenades or explosive objects.",
+            "3": "Use Cadet for cleanup and record ten eliminations with grenades or explosive objects. Finish the operation after the star appears; restarting from a checkpoint can discard challenge progress, so restart the whole operation when an attempt fails."
+          }
+        },
+        {
+          "id": "castle-courtyard-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Finish with more than 4,000 points; the threshold is printed on this operation’s journal page.",
+            "3": "Play on Cadet, avoid misses so the multiplier survives, favour distant headshots and organ hits, and finish above 4,000 points. A score equal to the printed threshold may not satisfy wording that says ‘more than,’ so leave a margin before completing the final objective."
+          }
+        },
+        {
+          "id": "castle-courtyard-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fortified-sabotage-site",
+      "name": "Fortified Sabotage Site",
+      "location_cue": "A fortified outdoor site with emplacements, work areas, and covered firing lanes.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "fortified-sabotage-site-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the fortified sabotage site operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the fortified sabotage site and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "fortified-sabotage-site-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "fortified-sabotage-site-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Read the third-star score threshold on this operation’s journal page before starting.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "fortified-sabotage-site-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "underground-installation",
+      "name": "Underground Installation",
+      "location_cue": "Interior control rooms, corridors, and industrial chambers below ground.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "underground-installation-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the underground installation operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the underground installation and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "underground-installation-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "underground-installation-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Read the third-star score threshold on this operation’s journal page before starting.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "underground-installation-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "forest-lakeside-camp",
+      "name": "Forest Lakeside Camp",
+      "location_cue": "Wooded paths, tents, cabins, and a small lakeside compound.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "forest-lakeside-camp-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the forest lakeside camp operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the forest lakeside camp and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "forest-lakeside-camp-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "forest-lakeside-camp-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Read the third-star score threshold on this operation’s journal page before starting.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "forest-lakeside-camp-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shoreline-cannon-position",
+      "name": "Shoreline Cannon Position",
+      "location_cue": "Coastal fortifications and heavy-gun platforms above open water.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "shoreline-cannon-position-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the shoreline cannon position operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the shoreline cannon position and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "shoreline-cannon-position-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "shoreline-cannon-position-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Read the third-star score threshold on this operation’s journal page before starting.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "shoreline-cannon-position-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lighthouse-approach",
+      "name": "Lighthouse Approach",
+      "location_cue": "A final coastal route of bunkers, cliffs, and lighthouse structures.",
+      "note": "SAVE-BACKUP: copy the PC progression folder before cleanup. POINT OF NO RETURN: the operation endpoint closes this visit; inspect both stars and the collectible column first. Mission Select reopens it.",
+      "save_backup": {
+        "title": "Back up progression before cleanup",
+        "why": "The endpoint closes the current visit; a copied progression folder protects the persistent journal while stars, collectibles, and weapon counters are being replayed.",
+        "when": "Before beginning the operation or entering its final marked sequence."
+      },
+      "point_of_no_return": {
+        "title": "Current visit ends at the operation endpoint",
+        "warning": "Inspect the challenge star, score star, and collectible column first; Mission Select remains available afterward."
+      },
+      "items": [
+        {
+          "id": "lighthouse-approach-clear",
+          "type": "interaction",
+          "safe_type": "Operation",
+          "label": "Clear the lighthouse approach operation",
+          "missable": false,
+          "levels": {
+            "1": "Follow the required markers, but inspect side paths before leaving.",
+            "2": "Complete every required objective in the lighthouse approach and reach its endpoint.",
+            "3": "Complete the required objective chain, wait for the operation-complete page, and return to the journal only after the clear has registered. The endpoint closes the current visit, but the page remains replayable."
+          }
+        },
+        {
+          "id": "lighthouse-approach-challenge-star",
+          "type": "interaction",
+          "safe_type": "Mission Challenge",
+          "label": "Complete the operation-specific challenge",
+          "missable": false,
+          "levels": {
+            "1": "The middle star asks for a deliberate play style or weapon choice.",
+            "2": "Open this operation’s journal page and satisfy its named challenge during one run.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "lighthouse-approach-score-star",
+          "type": "interaction",
+          "safe_type": "Score Challenge",
+          "label": "Earn the operation’s score star",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy, distance, and an unbroken multiplier matter more than rushing.",
+            "2": "Read the third-star score threshold on this operation’s journal page before starting.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "lighthouse-approach-collectible-page",
+          "type": "collectible",
+          "safe_type": "Collectible Set",
+          "label": "Complete the operation’s collectible page",
+          "missable": false,
+          "levels": {
+            "1": "Pause at each new room or overlook and scan surfaces, shelves, and distant stonework.",
+            "2": "Use the journal’s Collectibles column to clear every nonzero letter, scarf, and stone-eagle slot in this operation.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "resistance-base",
+      "name": "Resistance Base",
+      "location_cue": "The safe hillside base, journal table, weapon wall, and three firing lanes.",
+      "note": "Reusable hub; no point of no return.",
+      "items": [
+        {
+          "id": "base-tutorial",
+          "type": "interaction",
+          "safe_type": "Training",
+          "label": "Complete the base tutorial",
+          "missable": false,
+          "levels": {
+            "1": "Use the opening space to settle controls before chasing records.",
+            "2": "Finish the Partisan HQ tutorial and return to the journal.",
+            "3": "Complete the guided weapon handling and movement prompts at Partisan HQ until the journal and firing ranges are available. Recalibrate height or handedness here rather than during a scored operation."
+          }
+        },
+        {
+          "id": "base-custom-loadout",
+          "type": "interaction",
+          "safe_type": "Loadout",
+          "label": "Save a custom loadout",
+          "missable": false,
+          "levels": {
+            "1": "The weapon wall supports a personal starting kit.",
+            "2": "Choose a rifle, secondary, sidearm, and equipment at the Resistance Base, then save the selection.",
+            "3": "At the base weapon wall, place one acquired weapon into each available loadout slot, adjust equipment, and confirm the custom setup. Reopen the page once to verify the saved selection persists."
+          }
+        },
+        {
+          "id": "base-range-1",
+          "type": "interaction",
+          "safe_type": "Firing Range",
+          "label": "Complete the rifle range",
+          "missable": false,
+          "levels": {
+            "1": "The Resistance Base has a separate trial for each weapon family.",
+            "2": "Enter the rifle range at the base and post a finished score.",
+            "3": "Select the rifle range, shoot through its complete target sequence, and remain until the results card records a score. A partial attempt or early exit does not count as a completed range."
+          }
+        },
+        {
+          "id": "base-range-2",
+          "type": "interaction",
+          "safe_type": "Firing Range",
+          "label": "Complete the secondary-weapon range",
+          "missable": false,
+          "levels": {
+            "1": "The Resistance Base has a separate trial for each weapon family.",
+            "2": "Enter the secondary-weapon range at the base and post a finished score.",
+            "3": "Select the secondary-weapon range, shoot through its complete target sequence, and remain until the results card records a score. A partial attempt or early exit does not count as a completed range."
+          }
+        },
+        {
+          "id": "base-range-3",
+          "type": "interaction",
+          "safe_type": "Firing Range",
+          "label": "Complete the sidearm range",
+          "missable": false,
+          "levels": {
+            "1": "The Resistance Base has a separate trial for each weapon family.",
+            "2": "Enter the sidearm range at the base and post a finished score.",
+            "3": "Select the sidearm range, shoot through its complete target sequence, and remain until the results card records a score. A partial attempt or early exit does not count as a completed range."
+          }
+        }
+      ]
+    },
+    {
+      "id": "arsenal-and-mastery",
+      "name": "Arsenal and Mastery",
+      "location_cue": "The weapon wall at Partisan HQ and weapon pickups throughout replayable operations.",
+      "note": "No weapon is permanently missable; operation replay remains available. Gold secondary and sidearm conditions lack a trustworthy public transcription and are withheld rather than guessed.",
+      "items": [
+        {
+          "id": "weapon-carcano-m91-41-scoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the scoped Carcano M91/41",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the scoped Carcano M91/41 once so its rack position fills at the Resistance Base.",
+            "3": "Take the scoped Carcano from the starting base rack; it is part of the opening arsenal."
+          }
+        },
+        {
+          "id": "weapon-carcano-m91-41-iron-sight",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the iron-sight Carcano M91/41",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the iron-sight Carcano M91/41 once so its rack position fills at the Resistance Base.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-carcano-m91-41-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Carcano M91/41",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the writing on the rifle’s side to track its three counters.",
+            "2": "Complete all three Carcano M91/41 mastery counters: 100 eliminations; 100 Focus eliminations; 15 eliminations from beyond 50 metres.",
+            "3": "Use either ordinary Carcano M91/41 sight variant; progress is shared. Complete 100 eliminations; 100 Focus eliminations; 15 eliminations from beyond 50 metres, checking the inscription on the weapon after each run. Restart the whole operation rather than a checkpoint when farming, because checkpoint reloads can roll back mastery progress. Return to the base and verify the gold variant occupies its rack slot."
+          }
+        },
+        {
+          "id": "weapon-lee-enfield-no-4-scoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the scoped Lee Enfield No. 4",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the scoped Lee Enfield No. 4 once so its rack position fills at the Resistance Base.",
+            "3": "Pick up the scoped Lee Enfield beside the starting position on the water-tower-platform operation."
+          }
+        },
+        {
+          "id": "weapon-lee-enfield-no-4-iron-sight",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the iron-sight Lee Enfield No. 4",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the iron-sight Lee Enfield No. 4 once so its rack position fills at the Resistance Base.",
+            "3": "In the castle-courtyard operation, take the unscoped Lee Enfield from the wall of the room overlooking the courtyard."
+          }
+        },
+        {
+          "id": "weapon-lee-enfield-no-4-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Lee Enfield No. 4",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the writing on the rifle’s side to track its three counters.",
+            "2": "Complete all three Lee Enfield No. 4 mastery counters: 100 eliminations; 100 Focus eliminations; 20 heart hits.",
+            "3": "Use either ordinary Lee Enfield No. 4 sight variant; progress is shared. Complete 100 eliminations; 100 Focus eliminations; 20 heart hits, checking the inscription on the weapon after each run. Restart the whole operation rather than a checkpoint when farming, because checkpoint reloads can roll back mastery progress. Return to the base and verify the gold variant occupies its rack slot."
+          }
+        },
+        {
+          "id": "weapon-gewehr-98-scoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the scoped Gewehr 98",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the scoped Gewehr 98 once so its rack position fills at the Resistance Base.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-gewehr-98-iron-sight",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the iron-sight Gewehr 98",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the iron-sight Gewehr 98 once so its rack position fills at the Resistance Base.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-gewehr-98-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Gewehr 98",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the writing on the rifle’s side to track its three counters.",
+            "2": "Complete all three Gewehr 98 mastery counters: 100 eliminations; 20 heart hits; 100 Focus eliminations.",
+            "3": "Use either ordinary Gewehr 98 sight variant; progress is shared. Complete 100 eliminations; 20 heart hits; 100 Focus eliminations, checking the inscription on the weapon after each run. Restart the whole operation rather than a checkpoint when farming, because checkpoint reloads can roll back mastery progress. Return to the base and verify the gold variant occupies its rack slot."
+          }
+        },
+        {
+          "id": "weapon-gewehr-43-scoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the scoped Gewehr 43",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the scoped Gewehr 43 once so its rack position fills at the Resistance Base.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-gewehr-43-iron-sight",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the iron-sight Gewehr 43",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the iron-sight Gewehr 43 once so its rack position fills at the Resistance Base.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-gewehr-43-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Gewehr 43",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the writing on the rifle’s side to track its three counters.",
+            "2": "Complete all three Gewehr 43 mastery counters: 100 eliminations; 100 Focus eliminations; 25 sound-masked eliminations.",
+            "3": "Use either ordinary Gewehr 43 sight variant; progress is shared. Complete 100 eliminations; 100 Focus eliminations; 25 sound-masked eliminations, checking the inscription on the weapon after each run. Restart the whole operation rather than a checkpoint when farming, because checkpoint reloads can roll back mastery progress. Return to the base and verify the gold variant occupies its rack slot."
+          }
+        },
+        {
+          "id": "weapon-springfield-1903-scoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the scoped Springfield 1903",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the scoped Springfield 1903 once so its rack position fills at the Resistance Base.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-springfield-1903-iron-sight",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the iron-sight Springfield 1903",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the iron-sight Springfield 1903 once so its rack position fills at the Resistance Base.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-springfield-1903-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Springfield 1903",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the writing on the rifle’s side to track its three counters.",
+            "2": "Complete all three Springfield 1903 mastery counters: 100 eliminations; 15 eliminations from beyond 50 metres; 100 headshots.",
+            "3": "Use either ordinary Springfield 1903 sight variant; progress is shared. Complete 100 eliminations; 15 eliminations from beyond 50 metres; 100 headshots, checking the inscription on the weapon after each run. Restart the whole operation rather than a checkpoint when farming, because checkpoint reloads can roll back mastery progress. Return to the base and verify the gold variant occupies its rack slot."
+          }
+        },
+        {
+          "id": "weapon-mosin-nagant-m91-30-scoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the scoped Mosin-Nagant M91/30",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the scoped Mosin-Nagant M91/30 once so its rack position fills at the Resistance Base.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-mosin-nagant-m91-30-iron-sight",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the iron-sight Mosin-Nagant M91/30",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the iron-sight Mosin-Nagant M91/30 once so its rack position fills at the Resistance Base.",
+            "3": "In the lighthouse-approach operation, unlock the early door and pick up the unscoped Mosin immediately beyond it."
+          }
+        },
+        {
+          "id": "weapon-mosin-nagant-m91-30-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Mosin-Nagant M91/30",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the writing on the rifle’s side to track its three counters.",
+            "2": "Complete all three Mosin-Nagant M91/30 mastery counters: 100 eliminations; 20 heart hits; 100 headshots.",
+            "3": "Use either ordinary Mosin-Nagant M91/30 sight variant; progress is shared. Complete 100 eliminations; 20 heart hits; 100 headshots, checking the inscription on the weapon after each run. Restart the whole operation rather than a checkpoint when farming, because checkpoint reloads can roll back mastery progress. Return to the base and verify the gold variant occupies its rack slot."
+          }
+        },
+        {
+          "id": "weapon-delisle-carbine-scoped",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the scoped Delisle Carbine",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the scoped Delisle Carbine once so its rack position fills at the Resistance Base.",
+            "3": "Search the underground-installation operation and pick up this variant when its model appears; the scoped and iron-sight placements require separate pickups."
+          }
+        },
+        {
+          "id": "weapon-delisle-carbine-iron-sight",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the iron-sight Delisle Carbine",
+          "missable": false,
+          "levels": {
+            "1": "Handle unfamiliar rifles whenever one appears in an operation.",
+            "2": "Pick up the iron-sight Delisle Carbine once so its rack position fills at the Resistance Base.",
+            "3": "Search the underground-installation operation and pick up this variant when its model appears; the scoped and iron-sight placements require separate pickups."
+          }
+        },
+        {
+          "id": "weapon-delisle-carbine-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Delisle Carbine",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the writing on the rifle’s side to track its three counters.",
+            "2": "Complete all three Delisle Carbine mastery counters: 100 eliminations; 20 heart hits; 25 headshots.",
+            "3": "Use either ordinary Delisle Carbine sight variant; progress is shared. Complete 100 eliminations; 20 heart hits; 25 headshots, checking the inscription on the weapon after each run. Restart the whole operation rather than a checkpoint when farming, because checkpoint reloads can roll back mastery progress. Return to the base and verify the gold variant occupies its rack slot."
+          }
+        },
+        {
+          "id": "weapon-mkb-42-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard MKB 42",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard MKB 42 during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-mkb-42-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold MKB 42",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the MKB 42, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-m30-drilling-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard M30 Drilling",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard M30 Drilling during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-m30-drilling-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold M30 Drilling",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the M30 Drilling, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-ovp-1918-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard OVP 1918",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard OVP 1918 during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-ovp-1918-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold OVP 1918",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the OVP 1918, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-trench-gun-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard Trench Gun",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard Trench Gun during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-trench-gun-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Trench Gun",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the Trench Gun, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-mab-38-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard MAB 38",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard MAB 38 during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-mab-38-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold MAB 38",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the MAB 38, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-fnab-43-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard FNAB-43",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard FNAB-43 during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-fnab-43-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold FNAB-43",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the FNAB-43, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-mp40-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard MP40",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard MP40 during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-mp40-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold MP40",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the MP40, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-sten-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard STEN",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard STEN during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-sten-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold STEN",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the STEN, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-m1934-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard M1934",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard M1934 during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-m1934-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold M1934",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the M1934, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-luger-p08-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard Luger P08",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard Luger P08 during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-luger-p08-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Luger P08",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the Luger P08, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-welrod-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard Welrod",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard Welrod during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-welrod-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Welrod",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the Welrod, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-m1911-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard M1911",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard M1911 during an operation so its base-rack slot fills.",
+            "3": "Pick up an M1911 on the lower level of the lakeside house; taking it in hand is enough to register the standard model."
+          }
+        },
+        {
+          "id": "weapon-m1911-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold M1911",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the M1911, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-mauser-m712-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard Mauser M712 Schnellfeuer",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard Mauser M712 Schnellfeuer during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-mauser-m712-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Mauser M712 Schnellfeuer",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the Mauser M712 Schnellfeuer, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-webley-mkiv-standard",
+          "type": "weapon",
+          "safe_type": "Weapon Variant",
+          "label": "Acquire the standard Webley MkIV",
+          "missable": false,
+          "levels": {
+            "1": "Pick up every unfamiliar secondary or sidearm you pass.",
+            "2": "Handle the standard Webley MkIV during an operation so its base-rack slot fills.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-webley-mkiv-gold",
+          "type": "weapon",
+          "safe_type": "Weapon Mastery",
+          "label": "Unlock the gold Webley MkIV",
+          "missable": false,
+          "levels": {
+            "1": "Turn the weapon sideways and inspect its printed progression counters.",
+            "2": "Complete every mastery counter printed on the Webley MkIV, then verify its gold version on the base rack.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "weapon-census-audit",
+          "type": "weapon",
+          "safe_type": "Arsenal Audit",
+          "label": "Fill every weapon-wall slot",
+          "missable": false,
+          "levels": {
+            "1": "An apparent gap can indicate a missing sight variant rather than a new model.",
+            "2": "Audit all rifle, secondary, and sidearm rack positions, including ordinary sight variants and gold mastery versions.",
+            "3": "At Partisan HQ, compare the wall against seven rifles with scoped, iron-sight, and gold versions; eight secondaries with standard and gold versions; and six sidearms with standard and gold versions. Revisit any blank position’s operation or finish its printed mastery counters until no intended slot remains empty."
+          }
+        },
+        {
+          "id": "weapon-panzerfaust",
+          "type": "weapon",
+          "safe_type": "Found Weapon",
+          "label": "Use a found Panzerfaust",
+          "missable": false,
+          "levels": {
+            "1": "Heavy launchers appear inside operations rather than on the permanent wall.",
+            "2": "Pick up a Panzerfaust from an operation and fire it at a valid target or vehicle.",
+            "3": "Search weapon crates and heavy-emplacement areas for a Panzerfaust, lift it as a found weapon, and fire its single round during that visit. It is not a persistent loadout unlock and therefore should not be mistaken for a missing base-rack slot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "campaign-records",
+      "name": "Campaign Records",
+      "location_cue": "Replayable operations, the journal ledger, and the post-operation results cards.",
+      "note": "These are persistent gameplay and completion records, not platform-reward framing.",
+      "items": [
+        {
+          "id": "organ-census",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Register every organ-hit category",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Use rifle kill-cam hits until every distinct organ entry has registered; consult the in-game record between attempts so repeated organs are not mistaken for new ones."
+          }
+        },
+        {
+          "id": "long-shot-200",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Record an elimination beyond 200 metres",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Use a range with a long open lane, tag a target beyond 200 metres, compensate for drop, and confirm the distance shown after the hit."
+          }
+        },
+        {
+          "id": "tnt-multi",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Eliminate multiple guards by shooting TNT",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "During the lakeside-house operation, move TNT from the upper floor into an approaching group’s route, wait for at least two guards to enter its blast radius, then detonate it with a rifle round."
+          }
+        },
+        {
+          "id": "undetected-operation",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Finish an operation without breaking concealment",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Use Cadet for cleanup, fire only under sound cover or from a position you can abandon, and restart if any guard fully identifies you before the endpoint."
+          }
+        },
+        {
+          "id": "tripmine-elimination",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Record a trip-mine elimination",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Take a trip mine from the lakeside house’s lower floor, arm it across a narrow approach, and let a walking guard trigger it; a nearby detonation that does not use the tripwire does not count."
+          }
+        },
+        {
+          "id": "alarm-runner",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Stop a guard actively running for an alarm",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "At the forest-lakeside camp, expose yourself near the opening tents and alarm bell, allow a guard to begin the alarm run, then eliminate that runner before the bell is reached."
+          }
+        },
+        {
+          "id": "headshot-streak",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Land ten consecutive headshots without a miss",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Use Cadet and a stable short-range sequence. Any missed shot breaks the chain, so pause between targets and reload only after the current magazine is safely clear."
+          }
+        },
+        {
+          "id": "carcano-speed-distance",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Land three distant Carcano eliminations in 8.3 seconds",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Equip the Carcano, choose a wave or fixed-vantage operation, line up three targets at least 81 metres away, then begin the timed sequence with the first confirmed elimination and finish the other two inside 8.3 seconds."
+          }
+        },
+        {
+          "id": "perfect-rifle-magazine",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Make every rifle round in one magazine lethal",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "On Cadet, begin with a full rifle magazine and make every shot a confirmed elimination until the magazine is empty; reloading early, wounding without finishing, or missing invalidates the attempt."
+          }
+        },
+        {
+          "id": "single-blast-three",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Eliminate three guards with one explosion",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Group three active guards around one explosive source or use a Panzerfaust on a tight formation; the same blast must provide all three final hits."
+          }
+        },
+        {
+          "id": "sniper-eye-hit",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Defeat a sniper with an eye hit",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Enable the detailed hit camera, steady on an exposed enemy sniper, and place the rifle round through the eye rather than merely inside the broader head-hit region."
+          }
+        },
+        {
+          "id": "thrown-object-followup",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Follow a thrown-object stagger with an immediate elimination",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Pick up a bottle or other loose prop, throw it hard enough to stagger rather than kill a guard, and fire the finishing shot before the stagger animation ends."
+          }
+        },
+        {
+          "id": "church-unscoped-shot",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Use an unscoped weapon from the church vantage",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Load the church-vantage operation with an iron-sight rifle, wait for the marked distant vehicle stop, fire from the church, and deliver a second shot if the first only incapacitates; the red score confirmation must appear."
+          }
+        },
+        {
+          "id": "belt-grenade",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Detonate a grenade carried by a guard",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "View a guard from the side so the belt grenade is unobstructed, aim directly at the grenade, and make the explosion—not the bullet’s body damage—supply the elimination."
+          }
+        },
+        {
+          "id": "ricochet-elimination",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Record a ricochet elimination",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Use a hard surface at a shallow angle and line the deflected trajectory through a nearby guard. Confirm the ricochet notification rather than accepting an ordinary direct hit."
+          }
+        },
+        {
+          "id": "double-testicle-hit",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Hit both testicles with one round",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Use a side-on or downed target on Cadet, align the shot through both testicles, and wait for the specific double-organ confirmation before moving on."
+          }
+        },
+        {
+          "id": "near-death-elite-clear",
+          "type": "interaction",
+          "safe_type": "Combat Record",
+          "label": "Survive near death during a Sniper Elite clear",
+          "missable": false,
+          "levels": {
+            "1": "Set up the condition deliberately during cleanup.",
+            "2": "Use Cadet unless the condition names Sniper Elite difficulty.",
+            "3": "Choose the short village-gate operation on Sniper Elite, deliberately take damage until the near-death state appears, recover without dying, then finish the operation in that same attempt."
+          }
+        },
+        {
+          "id": "campaign-sniper-elite-clear",
+          "type": "interaction",
+          "safe_type": "Difficulty",
+          "label": "Clear the campaign on Sniper Elite difficulty",
+          "missable": false,
+          "levels": {
+            "1": "Save this pass until the arsenal includes a quiet rifle and familiar sidearm.",
+            "2": "Replay every operation with Sniper Elite selected and verify the campaign difficulty record after the final clear.",
+            "3": "Select the built-in Sniper Elite preset before each uncleared operation, keep it active through the results page, and use cover, sound masking, healing, and checkpoints as needed. Stars and collectibles may be cleaned on Cadet separately; only the difficulty clear must remain on Sniper Elite."
+          }
+        },
+        {
+          "id": "campaign-all-stars-audit",
+          "type": "interaction",
+          "safe_type": "Completion Audit",
+          "label": "Verify every operation has all three stars",
+          "missable": false,
+          "levels": {
+            "1": "The journal is the authoritative completion ledger.",
+            "2": "Turn through every operation page and confirm its completion, special-challenge, and score stars are filled.",
+            "3": "At Partisan HQ, inspect each replayable operation page. A full page needs the completion star, its operation-specific challenge star, and its score-threshold star. Replay only the missing condition; cumulative stars open later pages, but true completion requires every page to show all three."
+          }
+        },
+        {
+          "id": "campaign-all-collectibles-audit",
+          "type": "collectible",
+          "safe_type": "Completion Audit",
+          "label": "Verify every collectible slot is filled",
+          "missable": false,
+          "levels": {
+            "1": "Do not rely on memory after a pickup-heavy replay.",
+            "2": "Inspect the collectible column on every operation page and clear each nonzero counter.",
+            "3": "Turn through the journal after all collectible runs. Letters and partisan scarves register when picked up; stone eagles register when destroyed. A pickup must survive to a checkpoint or completed operation. Replay any page with an incomplete numerator until the complete-census record appears."
+          }
+        }
+      ]
+    }
+  ]
+}
