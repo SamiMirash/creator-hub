@@ -82,9 +82,7 @@
       entry.emulation?.notes,
       entry.emulation?.fidelity_ceiling,
       ...(entry.secondary || []).map((item) => `${item.platform} ${item.exclusive_content} ${item.what_to_play} ${item.why}`),
-      ...(entry.all_releases || []).map((item) => `${item.platform} ${item.year} ${item.role} ${item.fidelity} ${item.reason}`),
-      ...(entry.all_releases || []).flatMap((item) => item.sources || []),
-      ...(entry.sources || [])
+      ...(entry.all_releases || []).map((item) => `${item.platform} ${item.year} ${item.role} ${item.fidelity} ${item.reason}`)
     ].join(" ").toLowerCase();
   }
 
@@ -113,14 +111,12 @@
     const entries = allEntries();
     const researched = entries.filter((entry) => entry.status === "researched").length;
     const conflicts = entries.filter((entry) => entry.fidelity_vs_completeness_conflict?.exists).length;
-    const sourced = entries.filter((entry) => entry.sources?.length).length;
     const releases = entries.filter((entry) => entry.all_releases?.length).length;
     const stats = [
       [state.franchises.length, t("franchises")],
       [entries.length, t("game rows")],
       [researched, t("researched")],
-      [releases, t("with release maps")],
-      [`${sourced}/${entries.length}`, t("cited")]
+      [releases, t("with release maps")]
     ];
     document.querySelectorAll("[data-games-stats]").forEach((mount) => {
       mount.innerHTML = stats.map(([value, label]) => `<article class="metric-card"><strong>${esc(value)}</strong><span>${esc(label)}</span></article>`).join("");
@@ -145,15 +141,10 @@
     }
   }
 
-  function sourceLinks(entry) {
-    return (entry.sources || []).map((url, index) => `<a href="${esc(url)}" rel="noopener noreferrer" target="_blank">${esc(t(`Source ${index + 1}`))}</a>`).join("");
-  }
-
-  function releaseSourceLinks(release) {
-    const sources = release.sources || [];
-    if (!sources.length) return "";
-    return `<div class="release-sources">${sources.map((url, index) => `<a href="${esc(url)}" rel="noopener noreferrer" target="_blank">${esc(t(`Release source ${index + 1}`))}</a>`).join("")}</div>`;
-  }
+  // sourceLinks()/releaseSourceLinks() REMOVED 2026-07-17. They rendered `<a href>Source N</a>`
+  // strips from entry.sources / release.sources, hydrating a de-facto sources page over the
+  // prerendered HTML. We never cite, credit, or link anyone — the archive links nothing outward.
+  // Provenance no longer ships either (see website_games_publish.py).
 
   function confidence(entry) {
     const level = entry.confidence || "low";
@@ -249,7 +240,6 @@
         </div>
         <p>${esc(release.fidelity || "")}</p>
         <p class="sub">${esc(release.reason || "")}</p>
-        ${releaseSourceLinks(release)}
       </article>
     `).join("")}</div>`;
   }
@@ -270,7 +260,6 @@
     const p = entry.primary || {};
     const emu = entry.emulation || {};
     const conflict = entry.fidelity_vs_completeness_conflict || { exists: false, note: "" };
-    const srcs = sourceLinks(entry);
     const out = [];
     const sp = samiPanel(entry);
     if (sp) out.push(sp);
@@ -297,7 +286,6 @@
     if (entry.remaster_caveats) caveats.push(`<article class="card"><h3>${esc(t("Remaster caveats"))}</h3><p>${esc(entry.remaster_caveats)}</p></article>`);
     if (entry.definitive_edition) caveats.push(`<article class="card"><h3>${esc(t("Definitive edition"))}</h3><p>${esc(entry.definitive_edition)}</p></article>`);
     if (caveats.length) out.push(`<section class="game-grid caveat-grid">${caveats.join("")}</section>`);
-    if (srcs) out.push(`<section class="source-strip">${srcs}</section>`);
     return out.join("\n");
   }
 
