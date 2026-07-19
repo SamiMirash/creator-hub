@@ -1,0 +1,289 @@
+{
+  "id": "project-rene",
+  "game": "Project Rene",
+  "target": "Spoiler-free release-readiness record for an unreleased Sims project",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-18",
+  "areas": [
+    {
+      "id": "unreleased-product-boundary",
+      "name": "Unreleased Product Boundary",
+      "location_cue": "Official 2026 status updates, release announcements, platform listings, and public client availability.",
+      "note": "Project Rene remains in development; no final completion route exists at the July 18, 2026 cutoff.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "status-unreleased",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Wait for a Final Public Release",
+          "missable": false,
+          "levels": {
+            "1": "Playtest material is not a finished completion route.",
+            "2": "Do not begin a permanent guide until EA publishes an accessible final build.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "status-route-unconfirmed",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Verify the Final Platform Route",
+          "missable": false,
+          "levels": {
+            "1": "The current mobile-first direction does not establish the shipping platform matrix.",
+            "2": "Re-read games.json and official release pages after launch; record primary, secondary, cross-platform, and regional differences.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "status-content-unconfirmed",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Verify the Launch Content Model",
+          "missable": false,
+          "levels": {
+            "1": "Prototype activities may change or disappear before release.",
+            "2": "Research the shipped progression, catalogs, social systems, finite goals, purchases, seasons, and offline behavior from final-build sources.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "status-no-percentage",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Do Not Claim a Completion Percentage",
+          "missable": false,
+          "levels": {
+            "1": "There is no stable launch checklist to measure yet.",
+            "2": "Keep every gameplay requirement uncounted until a public build exposes finite, reproducible completion state.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "historical-playtest-scope",
+      "name": "Historical Playtest Scope",
+      "location_cue": "Official development articles and limited test descriptions for experimental mobile and PC builds.",
+      "note": "These systems document tests only and are not launch promises.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "prototype-01-apartment-customization",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Apartment Customization",
+          "missable": false,
+          "levels": {
+            "1": "Treat this as evidence of development direction, not promised launch content.",
+            "2": "Archive official references to apartment customization without converting the prototype into a completion task.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "prototype-02-furniture-customization",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Furniture Customization",
+          "missable": false,
+          "levels": {
+            "1": "Treat this as evidence of development direction, not promised launch content.",
+            "2": "Archive official references to furniture customization without converting the prototype into a completion task.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "prototype-03-collaborative-interior-design",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Collaborative Interior Design",
+          "missable": false,
+          "levels": {
+            "1": "Treat this as evidence of development direction, not promised launch content.",
+            "2": "Archive official references to collaborative interior design without converting the prototype into a completion task.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "prototype-04-mobile-and-pc-tests",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Mobile And Pc Tests",
+          "missable": false,
+          "levels": {
+            "1": "Treat this as evidence of development direction, not promised launch content.",
+            "2": "Archive official references to mobile and PC tests without converting the prototype into a completion task.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "prototype-05-experimental-social-play",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Experimental Social Play",
+          "missable": false,
+          "levels": {
+            "1": "Treat this as evidence of development direction, not promised launch content.",
+            "2": "Archive official references to experimental social play without converting the prototype into a completion task.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "release-day-verification-ledger",
+      "name": "Release-Day Verification Ledger",
+      "location_cue": "The eventual official store pages, final client, account menus, progression panels, catalogs, and service notices.",
+      "note": "Every unresolved product fact must be researched after an actual release rather than invented now.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "release-audit-01-release-platforms",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Verify Release Platforms",
+          "missable": false,
+          "levels": {
+            "1": "Wait for final official documentation and an accessible release build.",
+            "2": "At release, establish release platforms from current first-party material and direct build inspection.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "release-audit-02-launch-content",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Verify Launch Content",
+          "missable": false,
+          "levels": {
+            "1": "Wait for final official documentation and an accessible release build.",
+            "2": "At release, establish launch content from current first-party material and direct build inspection.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "release-audit-03-completion-systems",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Verify Completion Systems",
+          "missable": false,
+          "levels": {
+            "1": "Wait for final official documentation and an accessible release build.",
+            "2": "At release, establish completion systems from current first-party material and direct build inspection.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "release-audit-04-catalog-scope",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Verify Catalog Scope",
+          "missable": false,
+          "levels": {
+            "1": "Wait for final official documentation and an accessible release build.",
+            "2": "At release, establish catalog scope from current first-party material and direct build inspection.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "release-audit-05-progression-model",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Verify Progression Model",
+          "missable": false,
+          "levels": {
+            "1": "Wait for final official documentation and an accessible release build.",
+            "2": "At release, establish progression model from current first-party material and direct build inspection.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "release-audit-06-offline-availability",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Verify Offline Availability",
+          "missable": false,
+          "levels": {
+            "1": "Wait for final official documentation and an accessible release build.",
+            "2": "At release, establish offline availability from current first-party material and direct build inspection.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "release-audit-07-pricing-model",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Verify Pricing Model",
+          "missable": false,
+          "levels": {
+            "1": "Wait for final official documentation and an accessible release build.",
+            "2": "At release, establish pricing model from current first-party material and direct build inspection.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "release-audit-08-regional-availability",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Verify Regional Availability",
+          "missable": false,
+          "levels": {
+            "1": "Wait for final official documentation and an accessible release build.",
+            "2": "At release, establish regional availability from current first-party material and direct build inspection.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "release-audit-09-final-title",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Verify Final Title",
+          "missable": false,
+          "levels": {
+            "1": "Wait for final official documentation and an accessible release build.",
+            "2": "At release, establish final title from current first-party material and direct build inspection.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "future-guide-handoff",
+      "name": "Future Guide Handoff",
+      "location_cue": "The dated research archive, final-build notes, replacement checklist, validator output, and verbatim report.",
+      "note": "This readiness pack must be replaced, not expanded blindly, after release.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "final-research-rebuild",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Replace This Pack After Release",
+          "missable": false,
+          "levels": {
+            "1": "A real guide begins only when the shipped systems can be tested.",
+            "2": "Fetch a new source corpus, reduce it to fact notes, rebuild every requirement from the final game, validate the schema, and run the independent verbatim gate.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "final-playtest-separation",
+          "type": "interaction",
+          "safe_type": "Release Readiness",
+          "label": "Keep Playtest Evidence Separate",
+          "missable": false,
+          "levels": {
+            "1": "Temporary tests can contain altered or abandoned mechanics.",
+            "2": "Store prototype captures in a dated research archive and never mix them with instructions for a later public build.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    }
+  ]
+}
