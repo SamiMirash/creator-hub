@@ -1,10 +1,38 @@
 {
-  "updated_at": "2026-07-18T21:00:04",
+  "updated_at": "2026-07-19T21:00:04",
   "explainer": "Network drops = OBS 'dropped frames due to insufficient bandwidth/connection stalls' (the stream couldn't be uploaded fast enough = ISP/upload). Encoding/rendering lag are LOCAL (GPU/CPU) and are listed separately so they are not blamed on the ISP.",
-  "session_count": 0,
+  "session_count": 1,
   "total_network_dropped_frames": 0,
-  "worst_session": null,
-  "sessions": [],
+  "worst_session": {
+    "date": "2026-07-19",
+    "file": "2026-07-19 14-43-17.txt",
+    "start": "2026-07-19T14:43:17",
+    "end": "2026-07-19T17:57:52",
+    "game": "",
+    "network_dropped_frames": 0,
+    "network_dropped_percent": 0.0,
+    "encoding_skipped_frames": 4707,
+    "encoding_skipped_percent": 96.9,
+    "rendering_lagged_frames": 0,
+    "rendering_lagged_percent": 0.0,
+    "verdict": "encoding/rendering (not network)"
+  },
+  "sessions": [
+    {
+      "date": "2026-07-19",
+      "file": "2026-07-19 14-43-17.txt",
+      "start": "2026-07-19T14:43:17",
+      "end": "2026-07-19T17:57:52",
+      "game": "",
+      "network_dropped_frames": 0,
+      "network_dropped_percent": 0.0,
+      "encoding_skipped_frames": 4707,
+      "encoding_skipped_percent": 96.9,
+      "rendering_lagged_frames": 0,
+      "rendering_lagged_percent": 0.0,
+      "verdict": "encoding/rendering (not network)"
+    }
+  ],
   "public_automation": false,
   "obs_control": false,
   "chat_send": false,
