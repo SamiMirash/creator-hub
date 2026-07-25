@@ -156,6 +156,9 @@
     </footer>
   </template>
 
-  <script src="viewer.js"></script>
+  <!-- ⚠️ VERSION THIS WHENEVER viewer.js CHANGES. It was unversioned while guide.css
+       carried ?v=, so iPads kept running a cached copy of the old viewer and Sami saw
+       "fixed" behaviour that had never actually reached his device. Bump the string. -->
+  <script src="viewer.js?v=20260725c"></script>
 </body>
 </html>
