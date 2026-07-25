@@ -25,6 +25,14 @@ body{
   border-bottom:1px solid var(--line);padding:14px 18px calc(14px + env(safe-area-inset-top));
   padding-top:max(14px,env(safe-area-inset-top));display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .brand{font-weight:700;font-size:18px;letter-spacing:.2px}
+/* Back-to-site link. The guide is a standalone mini-app at /guide/ and had no way back to
+   samimirash.com at all (Sami, 2026-07-25). Full width so it sits on its own line above the
+   game name; 44px tap target so it is comfortable on a phone. */
+.homelink{flex:0 0 100%;order:-1;display:inline-flex;align-items:center;gap:6px;
+  min-height:44px;color:var(--muted);text-decoration:none;font-size:13px;
+  letter-spacing:.4px;text-transform:uppercase}
+.homelink span{text-decoration:underline;text-underline-offset:3px}
+.homelink:hover,.homelink:focus-visible{color:var(--gold)}
 .topbar .sub{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:1px}
 .reset{margin-left:auto}
 .link{background:none;border:none;color:var(--gold-dim);font-size:12px;padding:6px;cursor:pointer;text-decoration:underline}

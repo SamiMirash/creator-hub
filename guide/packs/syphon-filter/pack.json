@@ -1,0 +1,1153 @@
+{
+  "id": "syphon-filter",
+  "game": "Syphon Filter",
+  "target": "Spoiler-free complete play of the original PlayStation campaign, mission parameters, hidden equipment, codes, modes, and easter eggs",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-25",
+  "areas": [
+    {
+      "id": "sf-run-setup",
+      "name": "Run Setup",
+      "location_cue": "The title screen before loading New Game.",
+      "note": "This route uses the original North American PlayStation content through DuckStation.",
+      "items": [
+        {
+          "id": "sf-route-original-ps1",
+          "type": "optional",
+          "safe_type": "Play route",
+          "label": "Original PlayStation Route",
+          "missable": false,
+          "levels": {
+            "1": "Use the release that preserves the 1999 campaign exactly.",
+            "2": "Load the NTSC-U PlayStation disc image in DuckStation; no second console version is required for content.",
+            "3": "Use a verified NTSC-U BIN/CUE dump of your disc in DuckStation. Keep the game at four-by-three, use a normal virtual memory card, and treat enhancement settings as presentation-only. The later Classics wrapper adds emulator conveniences but no separate campaign material, so one original-version run covers the game itself."
+          }
+        },
+        {
+          "id": "sf-duckstation-save-safety",
+          "type": "optional",
+          "safe_type": "Setup",
+          "label": "Memory-Card Safety",
+          "missable": false,
+          "levels": {
+            "1": "Prepare recovery options before the first mission.",
+            "2": "Create a dedicated virtual memory card and a manual save-state rotation before beginning.",
+            "3": "Assign this game its own virtual memory card, confirm a test save reloads, and rotate at least three manual save states. Keep the card save as the completion record; use states only for recovery from emulator trouble or a missed checkpoint, not to replace the game's progression."
+          }
+        },
+        {
+          "id": "sf-training-video",
+          "type": "optional",
+          "safe_type": "Training",
+          "label": "Training Video",
+          "missable": false,
+          "levels": {
+            "1": "The main menu contains a short controls refresher.",
+            "2": "Open Training Video from the title menu before New Game.",
+            "3": "Choose Training Video at the title screen and watch each controls segment once. Practice manual aiming, target locking, crouching, rolling, interacting, and inventory selection before returning to New Game."
+          }
+        },
+        {
+          "id": "sf-normal-campaign",
+          "type": "optional",
+          "safe_type": "Campaign",
+          "label": "Standard Campaign Run",
+          "missable": false,
+          "levels": {
+            "1": "Learn the objectives and parameters without altering the rules.",
+            "2": "Start New Game normally and complete every mission while obeying the listed parameters.",
+            "3": "Begin New Game without entering a code. At every briefing, read both Objectives and Parameters; a parameter violation can fail the mission even when the route objective is complete. Use the mission guides below only as deeply as needed, and keep one memory-card save after each successful debrief."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-georgia-street",
+      "name": "Georgia Street",
+      "location_cue": "Burning downtown streets and subway.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-georgia-street-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "Power is the first obstacle below street level; finish the nearby street sweep before committing to the terminal.",
+            "2": "Restore terminal power, remove the communications equipment, protect the technicians at the bank, and tag both rail-platform devices.",
+            "3": "At the locked subway gate, enter the bar beside the station and pass through its rear corridor. Break the side-room window, cross the alley, shoot the fence padlock, ride down, and use the switch on the right in the dark utility space. Return to the street, clear the armored guard in the bar's rear room, and destroy the laptop there. Cross to the bank and keep attackers away from the bomb squad. In the terminal, tag the device along the upper tracks before approaching the lower-platform device that closes the mission."
+          }
+        },
+        {
+          "id": "sf-georgia-street-hidden-m-79",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Hidden M-79",
+          "missable": false,
+          "levels": {
+            "1": "A vertical street detour hides a heavy launcher before the terminal.",
+            "2": "Climb the blue container in the alley, cross the catwalk and overhead pipe, then open the crate on the opposite platform.",
+            "3": "After leaving the bar through the broken side-room window, climb onto the blue container. Step to the catwalk, balance across the overhead pipe, and drop onto the catwalk opposite your starting side. Open the crate there to take the M-79 before restoring power."
+          },
+          "sketch": {
+            "src": "sketches/sf-georgia-street-hidden-m-79.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-destroyed-subway",
+      "name": "Destroyed Subway",
+      "location_cue": "Damaged platforms and utility passages.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-destroyed-subway-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "Search both track levels before asking the demolition team to open the blocked route.",
+            "2": "Collect the charge by the lower rails, open the upper security passage, escort the technician, then close the gas main across the tracks.",
+            "3": "Take the C4 from the crate near the lower tracks. Use the vending machine and adjacent pipes to reach the upper security door, then plant the charge on the marked obstruction. Stay with the demolition technician and remove threats before they can reach him. Before dropping through the lower opening, cross the rails and close the gas valve in the dark service section. Keep explosives and gunfire away from friendly technicians and every planted device."
+          }
+        },
+        {
+          "id": "sf-destroyed-subway-m-79-ammunition",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "M-79 ammunition",
+          "missable": false,
+          "levels": {
+            "1": "Check the side route after the first track crossing.",
+            "2": "After crossing the rails, turn right and use the entrance on the left to reach the launcher-ammunition crate.",
+            "3": "Cross the tracks during the route toward the upper demolition point. Turn right, then enter the first usable opening on the left. Open the crate inside before returning to the technician."
+          },
+          "sketch": {
+            "src": "sketches/sf-destroyed-subway-m-79-ammunition.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-main-subway-line",
+      "name": "Main Subway Line",
+      "location_cue": "Active rails with passing trains.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-main-subway-line-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "Speed matters more than clearing every opponent; keep watching the live rails.",
+            "2": "Follow the active tracks, change lanes around trains, and stop the fleeing combatant at the recess on the right.",
+            "3": "Run the pursuit route without using grenades or the M-79. Watch the approaching trains and swap tracks early instead of fighting in their path. The fleeing combatant eventually pauses in a shallow recess on the right; use manual aim for a clean headshot before the escape window closes."
+          }
+        },
+        {
+          "id": "sf-main-subway-line-opening-long-range-shortcut",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Opening long-range shortcut",
+          "missable": false,
+          "levels": {
+            "1": "A very fast manual-aim shot can end the chase before it begins.",
+            "2": "From the opening position, immediately aim down the rails toward the distant fleeing figure.",
+            "3": "Skip the opening scene if desired, enter manual aim at once, and line up the distant target down the tracks. A successful early headshot ends the pursuit without running the train route. This is an optional execution trick, not a separate unlock."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-washington-park",
+      "name": "Washington Park",
+      "location_cue": "Monuments, gardens, tennis court.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-washington-park-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "The park is a timed circuit; pair each tagged device with a short defensive hold.",
+            "2": "Sweep the entrance square, statue, open field, and garden path before handling the tennis court, monument, and hedge maze.",
+            "3": "You have twenty minutes. Tag the first device in the entrance square, the second behind the statue, the third in the open field where night vision helps, and the fourth along the garden path on the statue's far side. After each tag, protect the arriving technician until the work finishes. At the tennis court, remove the hostage holder before the remaining attackers. Climb the concrete monument and disable its communications array. In the hedge maze, cut off the fleeing operator near the northwest corner and use a headshot, then leave through the memorial entrance."
+          }
+        },
+        {
+          "id": "sf-washington-park-nightvision-rifle-pickup",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "Nightvision rifle pickup",
+          "missable": false,
+          "levels": {
+            "1": "The darkest open section supplies its own answer.",
+            "2": "Search the opponents around the open field containing the third device for the night-vision rifle.",
+            "3": "Before tagging the third device in the open field, clear and inspect the armed group there. Take the night-vision rifle from the dropped equipment, use its scope to control the dark perimeter, and keep it until the technician finishes."
+          },
+          "sketch": {
+            "src": "sketches/sf-washington-park-nightvision-rifle-pickup.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-freedom-memorial",
+      "name": "Freedom Memorial",
+      "location_cue": "Circular colonnade around central monument.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-freedom-memorial-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "The columns are both cover and a way to expose the armored threat's weakness.",
+            "2": "Circle the central colonnade, avoid explosives, and attack the fuel assembly on the opponent's back.",
+            "3": "Do not fire grenades or the M-79 near the central device. Keep a column between you and the flamethrower, step out after a flame burst, and aim at the exposed tank on the armored opponent's back. Continue rotating from column to column so the flame stream never pins you in the open."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-expo-center-reception",
+      "name": "Expo Center Reception",
+      "location_cue": "Museum halls and themed exhibits.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-expo-center-reception-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "Quiet movement through the exhibits preserves the opening objective and makes the later keycard route easier.",
+            "2": "Shadow the marked person through the exhibits, resolve the meeting without harming the person you followed, then collect the remaining keycards through the upper vent route.",
+            "3": "Follow at a distance through the Stone Hedge and Egyptian exhibits, using quiet headshots only when a guard blocks the route. Do not let the followed person see you and never shoot them. At the meeting, use exhibit cover and manually aim at the armored hostile's unprotected head; take the first keycard afterward. Climb the statue, cross the catwalk, and enter the vent. Take another keycard from the pyramid-floor guard. In the rocket display, shoot the sparking control above the elevator switch to continue and obtain the final access item along the corridor route."
+          }
+        },
+        {
+          "id": "sf-expo-center-reception-g-18-locker",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "G-18 locker",
+          "missable": false,
+          "levels": {
+            "1": "A locker near the rocket exhibit holds a rapid sidearm and protection.",
+            "2": "After opening the rocket-display elevator, check the nearby locker for the G-18 and an armor jacket.",
+            "3": "Shoot the sparking elevator control above the switch, then inspect the locker in the same rocket-display section before riding onward. Collect both the G-18 and the armor jacket."
+          },
+          "sketch": {
+            "src": "sketches/sf-expo-center-reception-g-18-locker.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "sf-expo-center-reception-k3g4-crate",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "K3G4 crate",
+          "missable": false,
+          "levels": {
+            "1": "The moon exhibit has a weapon crate beyond the direct route.",
+            "2": "Follow the moon-exhibit corridor to its end and open the crate there for the K3G4.",
+            "3": "After completing the vent-and-keycard route, enter the moon-themed exhibit and continue past the obvious turn. Open the crate at the corridor's far end, then backtrack to the main objective path."
+          },
+          "sketch": {
+            "src": "sketches/sf-expo-center-reception-k3g4-crate.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-expo-center-dinorama",
+      "name": "Expo Center Dinorama",
+      "location_cue": "Dinosaur displays and upper girders.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-expo-center-dinorama-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "The exhibit structure itself forms the route; look above the floor before searching for another door.",
+            "2": "Cross the reception girder, obtain the door card from the armored guard, break the rear showcase, and climb the dinosaur display to the upper level.",
+            "3": "Leave the control room, clear the upper approach, and use the central girder to cross the reception hall before dropping down. The armored shotgun guard above the next door carries the required keycard. In the dinosaur section, break the glass at the rear showcase and follow the service corridor. When the sniper appears, shoot the weapon from their hands rather than the person. Climb from the dinosaur's tail to its head, transfer to the overhead girder, and reach the upper position. Keep both designated people alive and prioritize anyone attacking the one under your protection."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-rhoemers-base",
+      "name": "Remote Base",
+      "location_cue": "Snowy fenced compound with fuel tanks.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-rhoemers-base-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "The quiet route is easier; searchlights and loud alarms steadily add pressure.",
+            "2": "Plant charges on five fuel tanks, obtain the card near the fourth, then disable the motion sensors beyond the fifth.",
+            "3": "Take gas grenades from the starting shed if desired. Move through the compound in order, destroying searchlights before crossing their beams and planting C4 on each of the five marked tanks. Near the fourth tank, obtain the keycard from the guarded officer; gas can neutralize the group without hitting nearby equipment. Beyond the fifth tank, shoot the padlock on the fence and use the motion-sensor control panel. Never fire into the barrels beside a tank after its charge is armed."
+          }
+        },
+        {
+          "id": "sf-rhoemers-base-gas-grenades",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "Gas grenades",
+          "missable": false,
+          "levels": {
+            "1": "The starting shelter contains a quieter tool for armored groups.",
+            "2": "Open the locker inside the shed at the mission start to collect gas grenades.",
+            "3": "Before leaving the opening shed, turn to its locker and take the gas grenades. Save at least one for the guarded keycard near the fourth fuel tank; the cloud can clear the group without striking a planted charge."
+          },
+          "sketch": {
+            "src": "sketches/sf-rhoemers-base-gas-grenades.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-base-bunker",
+      "name": "Base Bunker",
+      "location_cue": "Laser-guarded missile storage rooms.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-base-bunker-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "Laser colors tell you what to shoot and what to operate.",
+            "2": "Record every stored missile, use the control panel to raise the central group, unlock the armory, then take the freight lift to the roof.",
+            "3": "Shoot red laser controls and operate green door controls. Catalog the first pair of missiles, then use the nearby panel to raise and scan the next group of four. Continue to the final room and catalog its four missiles. After the last laser section, use the control-room computer and defend it until the armory unlock completes. Collect anything wanted from the newly opened room, then take the freight elevator to the roof."
+          }
+        },
+        {
+          "id": "sf-base-bunker-hidden-armory",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Hidden armory",
+          "missable": false,
+          "levels": {
+            "1": "A computer after the last laser barrier opens more than the forward route.",
+            "2": "Use and defend the final control-room computer until the concealed armory door unlocks.",
+            "3": "After passing the last set of laser defenses, activate the control-room computer. Remain beside it and defeat the attackers without letting the console be destroyed. When the unlock finishes, enter the newly available armory and collect its ammunition and protection before taking the roof elevator."
+          },
+          "sketch": {
+            "src": "sketches/sf-base-bunker-hidden-armory.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-base-tower",
+      "name": "Base Tower",
+      "location_cue": "Rooftop radar and open landing pad.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-base-tower-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "The rooftop has supplies on both sides; use the dish structure as orientation.",
+            "2": "Disable the radar from its rear control and fight the aircraft from the ammunition positions flanking the roof.",
+            "3": "Circle behind the radar dish and operate its rear panel. Collect PK-102 ammunition and armor from both sides of the roof before committing to the aircraft fight. Strafe diagonally while it crosses and fire during each exposed pass. When it begins hovering and attacking from the sides, switch cover with its movement and keep bursts short enough to preserve accuracy."
+          }
+        },
+        {
+          "id": "sf-base-tower-pk-102-ammunition",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "PK-102 ammunition",
+          "missable": false,
+          "levels": {
+            "1": "Both rooftop flanks are stocked before the aircraft arrives.",
+            "2": "Collect the PK-102 ammunition positioned on both sides of the rooftop.",
+            "3": "Before engaging the aircraft, sweep the left and right edges of the roof and take every PK-102 ammunition pickup. Keep the dish between you and incoming fire while moving between supplies."
+          },
+          "sketch": {
+            "src": "sketches/sf-base-tower-pk-102-ammunition.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "sf-base-tower-armor-jackets",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "Armor jackets",
+          "missable": false,
+          "levels": {
+            "1": "The rooftop supply sweep includes protection as well as ammunition.",
+            "2": "Check both sides of the rooftop for armor jackets before beginning the main fight.",
+            "3": "Circle the roof once before committing to the aircraft encounter. Collect the armor jackets beside the ammunition positions on both flanks, replacing damaged armor only after the nearer attackers are down."
+          },
+          "sketch": {
+            "src": "sketches/sf-base-tower-armor-jackets.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-base-escape",
+      "name": "Compound Trenches and Gate",
+      "location_cue": "Trenches, catwalks, and compound gate.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-base-escape-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "There is time for one deliberate detour before the direct run to the outer gate.",
+            "2": "Within three minutes, cross the trenches and catwalks to the main gate; the former power room contains an optional launcher.",
+            "3": "The clock starts at three minutes. For the hidden M-79, turn around immediately and return to the power room; the guarded crate sits near the earlier control panel. Retrace your route without stopping for unnecessary fights, enter the trenches, climb to the catwalk, and follow it toward the main gate. A safe drop shortens the last section, but keep enough health for the landing and the final guards."
+          }
+        },
+        {
+          "id": "sf-base-escape-hidden-m-79",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Hidden M-79",
+          "missable": false,
+          "levels": {
+            "1": "The best detour is behind the starting direction.",
+            "2": "Turn around immediately and return to the former power room; a guarded crate near the panel contains the M-79.",
+            "3": "As soon as the timer starts, reverse course to the power plant. Clear only the guards blocking the control panel, open the crate beside it for the M-79, then sprint back to the opening route. Leave roughly two minutes for the trenches, catwalk, and gate."
+          },
+          "sketch": {
+            "src": "sketches/sf-base-escape-hidden-m-79.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "sf-base-escape-unused-warning-easter-egg",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Unused warning easter egg",
+          "missable": false,
+          "levels": {
+            "1": "One fuel tank can trigger an unusual warning without being destroyed.",
+            "2": "Shoot a fuel tank once during the escape, but do not make it explode.",
+            "3": "During the timed run, put a single controlled bullet into one of the fuel tanks and stop firing before it detonates. The game plays a rarely heard warning line. Continue to the gate; the line is the entire easter egg and grants no item."
+          },
+          "sketch": {
+            "src": "sketches/sf-base-escape-unused-warning-easter-egg.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-stronghold",
+      "name": "Stone Stronghold",
+      "location_cue": "Cathedral roof, laboratories, stained glass.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-stronghold-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "Count both required groups as you move through the connected laboratory rooms.",
+            "2": "Enter through the stained glass, treat six test subjects, clear ten armed researchers, collect the laboratory card, and use the small elevator near the column.",
+            "3": "Cross the cathedral roof through the right arch and enter through the stained glass. Administer antigen to two subjects in the first small room, one in the first laboratory, one in the next laboratory, one above the incline, and the final subject later on the route. Clear all ten armed researchers across the laboratories, balconies, and box rooms. Obtain the keycard from the third laboratory group and use it on the large wooden door. Continue until the small elevator beside the column becomes accessible; use it only after both objective counters are complete."
+          }
+        },
+        {
+          "id": "sf-stronghold-stained-glass-k3g4",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "Stained-glass K3G4",
+          "missable": false,
+          "levels": {
+            "1": "Not every stained-glass opening is only a doorway.",
+            "2": "Break and pass through the fourth stained-glass section to reach a hidden K3G4.",
+            "3": "Count the stained-glass openings along the cathedral route. At the fourth suitable panel, break the glass and enter the recess behind it. Take the K3G4 before returning to the laboratory sweep."
+          },
+          "sketch": {
+            "src": "sketches/sf-stronghold-stained-glass-k3g4.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "sf-stronghold-box-room-k3g4",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "Box-room K3G4",
+          "missable": false,
+          "levels": {
+            "1": "A dark storage room rewards climbing rather than floor searching.",
+            "2": "In the unlit box room, climb to the top of the stacked crates to find a K3G4.",
+            "3": "Use the flashlight in the dark storage room, climb the boxes from their lowest side, and continue to the highest stable crate. Collect the K3G4 there before dropping back to the laboratory route."
+          },
+          "sketch": {
+            "src": "sketches/sf-stronghold-box-room-k3g4.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "sf-stronghold-window-route-m-79",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "Window-route M-79",
+          "missable": false,
+          "levels": {
+            "1": "A second stained-glass detour leads outside the normal room sequence.",
+            "2": "After leaving the laboratory, use the second stained-glass window route to reach the M-79 behind the adjacent door.",
+            "3": "When the route returns beside the cathedral windows, break the second accessible stained-glass panel and pass through. Follow the narrow exterior connection to the door on the other side and open the crate beyond it for the M-79."
+          },
+          "sketch": {
+            "src": "sketches/sf-stronghold-window-route-m-79.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-stronghold-lower-level",
+      "name": "Stronghold Lower Level",
+      "location_cue": "Lower laboratories, balconies, cemetery tunnels.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-stronghold-lower-level-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "Use the subject count as a checkpoint while clearing each laboratory branch.",
+            "2": "Treat four subjects, clear nine armed researchers, gather the carried access cards, then leave through the cemetery tunnels.",
+            "3": "Treat the first subject in the room below the opening slope. Reach the second by climbing through the box tunnel and window into the next laboratory. The third is down the slope after the third lab; the fourth waits beyond the arch-and-box corridor. Clear all nine armed researchers as you sweep the labs and balconies, taking the access cards carried by the armed groups. Avoid breaking the hazardous test tubes. Continue through the rose-window chapel, cross the cemetery, and follow the tunnels to the catacomb entrance."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-stronghold-catacombs",
+      "name": "Stronghold Catacombs",
+      "location_cue": "Stone crossings, cells, broad stairs.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-stronghold-catacombs-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "Patience in the opening crossings prevents a much harder escort section.",
+            "2": "Follow the stealth turns through the crossings, reach the first cell, escort its occupant to the stair checkpoint, then guide the second escort back out.",
+            "3": "Crouch through the first section and use silent headshots. At the crossing before the paired guards, turn right; take the next left and then another left. A gas grenade between the paired guards is a safe alternative. Reach the first cell and stay close during the escort, removing the nearest threat before chasing distant shooters. The broad stair room creates a checkpoint. Find the second person and reverse the protected route toward the entrance until the exit registers."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-pharcom-warehouses",
+      "name": "PHARCOM Warehouses",
+      "location_cue": "Industrial yards numbered warehouses.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-pharcom-warehouses-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "The numbered buildings and rooftop wires are your map through the industrial yard.",
+            "2": "Obtain the scanner in the right office, tag three carriers across the numbered warehouses, restore the fence route, and reach Warehouse 76.",
+            "3": "Enter the office to the right by using its low sloped roof and window; take the viral scanner inside. Continue beyond the office opening to scan the first carrier. Reach Warehouse 38 through its small roof and window for the second. At Warehouse 36, detonate the barrels to open the tunnel. During the fight near Warehouse 45, climb the blue container, cross the overhead wire to the cornice, and operate the fence-power switch. The third carrier is inside Warehouse 69 near the right-hand window; use the barrels for the exit. Let the opposing groups distract each other while you take the roof-and-building route to Warehouse 76."
+          }
+        },
+        {
+          "id": "sf-pharcom-warehouses-viral-scanner",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "Viral scanner",
+          "missable": false,
+          "levels": {
+            "1": "The first office contains the tool needed for every carrier scan.",
+            "2": "Enter the office on the right through its low roof and window, then take the viral scanner inside.",
+            "3": "From the starting yard, approach the right-hand office, climb the sloped roof, and break or use the window. Pick up the viral scanner before leaving; the three carrier objectives will not register without it."
+          },
+          "sketch": {
+            "src": "sketches/sf-pharcom-warehouses-viral-scanner.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "sf-pharcom-warehouses-hidden-m-79",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Hidden M-79",
+          "missable": false,
+          "levels": {
+            "1": "A rooftop path begins from the building on the starting yard's opposite side.",
+            "2": "Climb the boxes by the left building, pass through its large window, and cross the roof to the M-79 crate.",
+            "3": "Before entering the right office, go to the left building. Use the stacked boxes to reach the large window, pass through, climb out onto the roof, and follow the roofline to the isolated crate containing the M-79."
+          },
+          "sketch": {
+            "src": "sketches/sf-pharcom-warehouses-hidden-m-79.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-pharcom-elite-guards",
+      "name": "Warehouse Guard Sector",
+      "location_cue": "Connected warehouse roofs and fenced lanes.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-pharcom-elite-guards-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "Three rooftop scans form a direct line toward the final numbered warehouse.",
+            "2": "Scan carriers in the opening building, Warehouse 74, and the roof route near the tunnel before entering Warehouse 76.",
+            "3": "Climb through the opening warehouse roof and window to tag the first carrier. The second is inside Warehouse 74. From the yard, cross the central building by climbing to its roof, walking the wood beam, and dropping to the lower roof; scan the third carrier near the tunnel. Enter the tunnel and take the first left, then the next left. Sprint the final exposed lane into Warehouse 76."
+          }
+        },
+        {
+          "id": "sf-pharcom-elite-guards-biz-2-crate",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "BIZ-2 crate",
+          "missable": false,
+          "levels": {
+            "1": "Warehouse 74 has a weapon pickup away from its carrier.",
+            "2": "After scanning the carrier in Warehouse 74, check the room's corner for the BIZ-2 crate.",
+            "3": "Enter Warehouse 74 and complete the carrier scan first. Sweep the perimeter before leaving and open the crate in the corner to take the BIZ-2."
+          },
+          "sketch": {
+            "src": "sketches/sf-pharcom-elite-guards-biz-2-crate.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "sf-pharcom-elite-guards-hidden-m-79",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Hidden M-79",
+          "missable": false,
+          "levels": {
+            "1": "The boxes beside Warehouse 74 start a route over the fence.",
+            "2": "Climb the boxes to the right of Warehouse 74, cross its roof, and drop beyond the fence to the M-79 crate.",
+            "3": "Exit Warehouse 74 on the side with stacked boxes. Climb them to the roof, cross to the fence edge, and drop into the enclosed lane beyond. Open the isolated crate for the M-79, then use the same roof approach to resume the carrier route."
+          },
+          "sketch": {
+            "src": "sketches/sf-pharcom-elite-guards-hidden-m-79.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-warehouse-76",
+      "name": "Warehouse 76",
+      "location_cue": "Burning warehouse with collapsing catwalks.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-warehouse-76-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "Keep moving; flames and collapsing walkways punish hesitation more than enemies do.",
+            "2": "Use containers and wall openings to bypass the fire, cross both collapsing catwalks, shoot the elevator control, and board the freight lift.",
+            "3": "The timer is fifteen minutes. Begin on the right-hand container, climb the boxes, roll through the wall opening, and run the first catwalk before it falls. After the checkpoint, use the stacked boxes to pass the floor flames. In the final section, climb the container, pass through the wall gap, and get beneath the catwalk. Strafe around the ninety-degree collapsing walkway without pausing. Drop near the freight elevator, shoot the control panel to the left of the fire-obscured opening, and board immediately."
+          }
+        },
+        {
+          "id": "sf-warehouse-76-m-79-ammunition",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "M-79 ammunition",
+          "missable": false,
+          "levels": {
+            "1": "The broad room beyond the first fire route has supplies above floor level.",
+            "2": "In the far room, climb the boxes and container to reach two M-79 ammunition crates on the catwalk.",
+            "3": "After the first collapsing walkway, enter the larger distant room. Climb the stacked boxes onto the container, transfer to the catwalk, and open both crates for M-79 rounds before returning to the timed path."
+          },
+          "sketch": {
+            "src": "sketches/sf-warehouse-76-m-79-ammunition.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "sf-warehouse-76-hidden-m-79",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Hidden M-79",
+          "missable": false,
+          "levels": {
+            "1": "A crawl-sized opening branches from the room with the three-enemy drop.",
+            "2": "Take the small passage on the right, roll through the hole, then climb the boxes and container to the left catwalk.",
+            "3": "At the room where three opponents drop into your path, enter the small opening on the right. Roll through the wall hole, climb the boxes and container, and step onto the catwalk to the left. Open its crate for the M-79, then retrace the branch quickly."
+          },
+          "sketch": {
+            "src": "sketches/sf-warehouse-76-hidden-m-79.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-silo-access-tunnels",
+      "name": "Silo Access Tunnels",
+      "location_cue": "Bridges, lasers, boxes, broken elevator.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-silo-access-tunnels-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "When the laser corridor appears blocked, search below the bridges rather than forcing the beam line.",
+            "2": "Use the right tunnel to bypass the lasers, restore power through the red-lit passage, then operate three control-room consoles.",
+            "3": "Enter the tunnel on the right beneath the first bridge to pass the laser barrier. At the dead end, climb the high boxes to the upper level and test the central elevator panel. From the elevator, use the small boxes on the right and follow the red-lit tunnel to the power control. Ride the restored elevator down. Later, call the lift, turn away from it, take the right catwalk into the control room, and operate all three consoles to reroute the system."
+          }
+        },
+        {
+          "id": "sf-silo-access-tunnels-hidden-k3g4",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Hidden K3G4",
+          "missable": false,
+          "levels": {
+            "1": "The laser-bypass tunnel continues beyond the second bridge.",
+            "2": "Stay in the lower tunnel past the second bridge, approach the next laser barrier, and use the flashlight to find the right-side crate.",
+            "3": "After using the tunnel beneath the first bridge, do not climb out at the second bridge. Continue toward the next laser line, switch on the flashlight, and inspect the recess on the right. Open the crate there for the K3G4."
+          },
+          "sketch": {
+            "src": "sketches/sf-silo-access-tunnels-hidden-k3g4.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "sf-silo-access-tunnels-hidden-m-79",
+          "type": "secret",
+          "safe_type": "Secret",
+          "label": "Hidden M-79",
+          "missable": false,
+          "levels": {
+            "1": "The broken-elevator chamber has a high route along its boxes and beam.",
+            "2": "Climb the large boxes near the elevator, shimmy across the beam, and enter the alcove containing the M-79.",
+            "3": "Before restoring the elevator, climb the tallest stack of boxes in its chamber. Transfer onto the narrow beam, shimmy to the far side, and pull into the alcove. Take the M-79 from the crate, then return to the red-lit power route."
+          },
+          "sketch": {
+            "src": "sketches/sf-silo-access-tunnels-hidden-m-79.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-tunnel-blackout",
+      "name": "Tunnel Blackout",
+      "location_cue": "Unlit shaft with beams and pits.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-tunnel-blackout-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "The first colored beam is the safest landmark in the darkness.",
+            "2": "Descend the central shaft by the bent red beam, collect lighting equipment at the bottom, and follow the platform climbs to the silo lift.",
+            "3": "Drop into the central opening and locate the bent red beam shaped like a reversed L. Descend from beam to beam instead of jumping straight to the floor. At the bottom, open the two crates on the right for night-vision equipment and armor. A viral scanner can illuminate nearby geometry without advertising your position. Follow the pit edges, climbing platforms and catwalks until you reach the silo elevator."
+          }
+        },
+        {
+          "id": "sf-tunnel-blackout-nightvision-rifle",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "Nightvision rifle",
+          "missable": false,
+          "levels": {
+            "1": "The bottom of the opening shaft supplies vision for the darkness.",
+            "2": "After descending the bent red beam route, open the right-hand crate at the bottom for the night-vision rifle.",
+            "3": "Use the successive beams to reach the shaft floor safely. Turn right before entering the pit route and open the first of the two nearby crates to obtain the night-vision rifle."
+          },
+          "sketch": {
+            "src": "sketches/sf-tunnel-blackout-nightvision-rifle.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "sf-tunnel-blackout-armor-jacket",
+          "type": "weapon",
+          "safe_type": "Weapon pickup",
+          "label": "Armor jacket",
+          "missable": false,
+          "levels": {
+            "1": "The lighting pickup has a second supply crate beside it.",
+            "2": "At the bottom of the opening shaft, open the other right-hand crate for an armor jacket.",
+            "3": "After collecting the night-vision rifle at the shaft floor, open the adjacent crate before leaving the area. Equip the armor jacket, then begin the platform climbs."
+          },
+          "sketch": {
+            "src": "sketches/sf-tunnel-blackout-armor-jacket.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-missile-silo",
+      "name": "Missile Silo",
+      "location_cue": "Vertical launch chamber and control rooms.",
+      "note": "All mission-specific pickups can be recovered through mission replay; nothing here permanently damages the save.",
+      "items": [
+        {
+          "id": "sf-missile-silo-completion",
+          "type": "optional",
+          "safe_type": "Mission requirement",
+          "label": "Complete the Mission",
+          "missable": false,
+          "levels": {
+            "1": "Both objective windows are timed, even before the interface makes the urgency obvious.",
+            "2": "Use the opposite lift and missile-side beams for the first interaction, then reach the command room and complete the final encounter with gas.",
+            "3": "Move immediately: the first objective has a hidden countdown, announced only during its last ten seconds. Call the elevator on the chamber's far side, descend along the left side of the missile, climb the two beams, and operate the nearby hardware. The next section allows three minutes. Take the opposite elevator to the command level, obtain the locked-door card from the armed researcher, and use the rear-center console in the computer room. During the last fight, ordinary bullets and explosives cannot complete the objective; climb to the upper gallery, take gas grenades from the corner crate, and place a gas cloud on the armored opponent."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-extras",
+      "name": "Post-Campaign Extras",
+      "location_cue": "The title screen and pause menus after completing the standard run.",
+      "note": "These codes and easter eggs are optional game-provided variants; use them after the spoiler-safe campaign route.",
+      "items": [
+        {
+          "id": "sf-hard-mode",
+          "type": "optional",
+          "safe_type": "Extra mode",
+          "label": "Hard Mode",
+          "missable": false,
+          "levels": {
+            "1": "The original game hides a tougher ruleset at the title screen.",
+            "2": "At the title screen, highlight New Game and enter the North American Hard Mode chord.",
+            "3": "Highlight New Game. Hold Left, L1, and R2; while keeping them pressed, add Select, Square, Circle, and X. Start after the confirmation sound. Complete a separate Hard Mode run if you want every built-in play variant; it changes challenge, not campaign content or the ending."
+          }
+        },
+        {
+          "id": "sf-level-select-code",
+          "type": "secret",
+          "safe_type": "Code",
+          "label": "Level Select",
+          "missable": false,
+          "levels": {
+            "1": "A pause-menu chord opens every mission for practice.",
+            "2": "Pause, open Options, highlight Select Level, and enter the North American code.",
+            "3": "During play, pause and choose Options. Highlight Select Level, then hold Left + R1 + L1 + Select + Square + X. Use the unlocked list only for cleanup or practice; the normal memory-card progression remains the cleaner completion record."
+          }
+        },
+        {
+          "id": "sf-all-weapons-code",
+          "type": "secret",
+          "safe_type": "Code",
+          "label": "All Weapons and Infinite Ammunition",
+          "missable": false,
+          "levels": {
+            "1": "The Weapons screen accepts a full-arsenal chord.",
+            "2": "Pause on Weapons and enter the North American full-arsenal code.",
+            "3": "Pause during a mission and open Weapons. Hold Right + L2 + R2 + Circle + Square + X together. The code fills the arsenal and removes ammunition limits for the current play session; use it after the standard run so it does not replace finding the hidden launchers."
+          }
+        },
+        {
+          "id": "sf-super-9mm-code",
+          "type": "secret",
+          "safe_type": "Code",
+          "label": "Super Silenced 9mm",
+          "missable": false,
+          "levels": {
+            "1": "One inventory highlight accepts a stronger-pistol chord.",
+            "2": "Pause on Weapons, highlight Silenced 9mm, and enter the North American code.",
+            "3": "Open the paused Weapons list and highlight Silenced 9mm. Hold Left + L1 + R2 + Select + Square + X. Test the modified pistol in a replayed mission, then reload or restart if you want the normal weapon balance again."
+          }
+        },
+        {
+          "id": "sf-weak-enemies-code",
+          "type": "secret",
+          "safe_type": "Code",
+          "label": "Weak Enemies",
+          "missable": false,
+          "levels": {
+            "1": "The map screen conceals a low-resistance modifier.",
+            "2": "Pause on Map and enter the North American weak-enemies chord.",
+            "3": "Pause during play and highlight Map. Hold Right + L2 + R1 + X. Use the modifier for experimentation or the movie-room secret, not as a substitute for the ordinary campaign clear."
+          }
+        },
+        {
+          "id": "sf-movie-theater",
+          "type": "secret",
+          "safe_type": "Easter egg",
+          "label": "Georgia Street Movie Theater",
+          "missable": false,
+          "levels": {
+            "1": "A boarded public venue can become an extras room after the main run.",
+            "2": "Replay Georgia Street, reach the theater entrance, and use the weak-enemies chord while Map is highlighted.",
+            "3": "Finish the campaign first because this room exposes story scenes. Replay Georgia Street and follow the opening route through the bar window to the street with burning vehicles. At the theater doors, pause, highlight Map, and hold Right + L2 + R1 + X. Enter through the red curtains to access the movie room and sample its available scenes."
+          }
+        },
+        {
+          "id": "sf-base-escape-warning-egg",
+          "type": "secret",
+          "safe_type": "Easter egg",
+          "label": "Fuel-Tank Warning Line",
+          "missable": false,
+          "levels": {
+            "1": "A controlled shot during the timed escape triggers a rare response.",
+            "2": "During the timed compound-gate route, put one bullet into a fuel tank without detonating it.",
+            "3": "Replay the timed compound-gate route and fire one controlled round into any fuel tank, then stop before the tank explodes. Listen for the special warning and continue to the exit. It awards nothing and is complete as soon as the line plays."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-arsenal",
+      "name": "Arsenal Familiarization",
+      "location_cue": "The Weapons pause tab during any suitable mission.",
+      "note": "The game does not keep a permanent weapon collection; this section documents every distinct weapon behavior without inventing an unlock grind.",
+      "items": [
+        {
+          "id": "sf-arsenal-silenced-9mm",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Silenced 9mm",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire Silenced 9mm during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Use it for quiet manual-aim headshots during stealth parameters. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-45",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": ".45",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire .45 during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Test its stronger close-range shot where silence is not required. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-m-16",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "M-16",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire M-16 during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Use controlled bursts at medium range and avoid wasting the magazine. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire Shotgun during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Try it at close range against an unarmored opponent. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-combat-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Combat Shotgun",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire Combat Shotgun during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Compare its faster follow-up shots with the standard shotgun. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-hk-5",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "HK-5",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire HK-5 during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Use short automatic bursts while moving through confined rooms. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-g-18",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "G-18",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire G-18 during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Collect the exhibit locker example and test its very fast fire rate. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-pk-102",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "PK-102",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire PK-102 during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Use rooftop ammunition to test sustained fire against a large target. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-biz-2",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "BIZ-2",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire BIZ-2 during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Collect the Warehouse 74 crate and try its compact automatic handling. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-k3g4",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "K3G4",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire K3G4 during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Use one of the documented hidden crates and test precise automatic fire. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-sniper-rifle",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Sniper Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire Sniper Rifle during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Use the scope for distant headshots when the route provides room. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-nightvision-rifle",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Nightvision Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire Nightvision Rifle during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Collect it in darkness and compare its illuminated scope. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-grenade",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire Grenade during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Test one only where mission parameters and nearby objectives allow explosives. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-gas-grenade",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Gas Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire Gas Grenade during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Use a cloud against grouped or armored opponents without striking equipment. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-m-79",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "M-79",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire M-79 during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Collect at least one hidden launcher and test it away from protected objects. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        },
+        {
+          "id": "sf-arsenal-taser",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Taser",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct weapon when the campaign places it in your inventory or nearby.",
+            "2": "Acquire Taser during a mission or enable the post-campaign full-arsenal code, then use it once.",
+            "3": "Hold the beam on one safe target long enough to observe its full effect. Weapons are mission equipment rather than permanent save-file unlocks, so recording one successful use is sufficient for an all-content playthrough."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -2,8 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
-  <meta name="robots" content="noindex, nofollow">
+  <!-- maximum-scale=1 was BLOCKING PINCH-ZOOM on iOS (Sami, 2026-07-25). A location sketch
+       you cannot zoom into is useless on a phone, and it is an accessibility failure. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Indexing ENABLED 2026-07-25 on Sami's explicit call. It was noindex,nofollow (and
+       Disallow: /guide/ in robots.txt) to keep collectible locations out of search. He
+       decided the opposite: "we want people to be able to search collectible items or
+       locations… that's OK if it shows up in the search result." -->
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0c0a09">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -20,6 +26,9 @@
   <!-- Pack picker (shown when no ?pack= is set) -->
   <template id="tpl-picker">
     <header class="topbar">
+      <!-- Back to the site. The guide is a separate mini-app at /guide/, so without this
+           there was NO way out of it back to samimirash.com (Sami, 2026-07-25). -->
+      <a class="homelink" href="/" aria-label="Back to samimirash.com">&#8592; <span>samimirash.com</span></a>
       <div class="brand">Game Helper</div>
       <div class="sub">Pick a game</div>
     </header>
@@ -32,6 +41,7 @@
   <!-- Main game viewer -->
   <template id="tpl-game">
     <header class="topbar">
+      <a class="homelink" href="/" aria-label="Back to samimirash.com">&#8592; <span>samimirash.com</span></a>
       <div class="brand" data-game-name>Game</div>
       <div class="sub">Spoiler-free first playthrough</div>
       <button class="link reset" data-reset title="Reset progress">reset</button>
