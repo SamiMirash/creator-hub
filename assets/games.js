@@ -58,7 +58,7 @@
   }
 
   function searchBlob(entry) {
-    return [
+    const blob = [
       entry.franchise,
       entry.title,
       entry.era,
@@ -83,12 +83,26 @@
       entry.emulation?.fidelity_ceiling,
       ...(entry.secondary || []).map((item) => `${item.platform} ${item.exclusive_content} ${item.what_to_play} ${item.why}`),
       ...(entry.all_releases || []).map((item) => `${item.platform} ${item.year} ${item.role} ${item.fidelity} ${item.reason}`)
-    ].join(" ").toLowerCase();
+    ].join(" ");
+    // PUNCTUATION-INSENSITIVE (Sami, 2026-07-25): the blob used to keep punctuation, so the stored
+    // title "Resident Evil: Requiem" did NOT contain the substring "resident evil requiem" and a
+    // reader who omitted the colon got ZERO results. Normalise with the SAME `playtimeKey` helper
+    // already used for playtime matching (lowercase, any run of non-alphanumerics -> one space) so
+    // ':' ';' '-' '/' etc. can never break a search. Reuse, don't re-implement.
+    return playtimeKey(blob);
   }
 
   function hasQuery(entry, query) {
-    if (!query) return true;
-    return searchBlob(entry).includes(query.toLowerCase());
+    const needle = playtimeKey(query);
+    if (!needle) return true;
+    // NORMALISED PHRASE match. Both sides go through playtimeKey, so punctuation the reader types
+    // (or omits) is irrelevant: "Resident Evil: Requiem", "resident evil requiem" and
+    // "Resident  Evil   Requiem" all hit the same entry.
+    // ⚠️ Deliberately NOT "every term matches anywhere" — measured 2026-07-25 on the real 4,569-entry
+    // data, that pulled Silent Hill 3 / Origins / Shattered Memories into a "silent hill 2" search
+    // (the bare "2" matches a year or "PlayStation 2" deep in the blob), and "the" matched 4,446 of
+    // 4,569 rows. Loosening recall that far makes the search WORSE, not smarter.
+    return searchBlob(entry).includes(needle);
   }
 
   function visibleEntries() {
