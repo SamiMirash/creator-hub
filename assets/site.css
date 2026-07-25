@@ -3693,15 +3693,27 @@ html.command-open {
   }
 }
 
+/* ⛔ CONTENT IS NEVER HIDDEN BY DEFAULT (fixed 2026-07-25).
+   This used to be `opacity: 0; transform: translateY(26px)`, revealed only when
+   site.js's IntersectionObserver added `.is-visible`. On Sami's iPhone and iPad the
+   observer never revealed anything below the fold, so the whole page existed in the
+   DOM at opacity 0 -- you saw the hero and the first cards and NOTHING under them,
+   on every reload, forever. It looked exactly like "the games won't load" when in
+   fact they had loaded and were invisible.
+
+   Content visibility must NEVER depend on JavaScript running correctly. The reveal is
+   now purely additive: everything starts visible, and `.is-visible` only supplies a
+   soft entrance when the observer happens to work. If the JS never runs, never fires,
+   or the browser lacks IntersectionObserver, the page is still completely readable. */
 .motion-reveal {
-  opacity: 0;
-  transform: translateY(26px);
+  opacity: 1;
+  transform: none;
   transition: opacity 680ms ease, transform 680ms ease;
 }
 
 .motion-reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 .grid.three > *:nth-child(2),
