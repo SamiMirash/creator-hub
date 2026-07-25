@@ -26,7 +26,9 @@
 
   async function loadJson(path, fallback) {
     try {
-      const res = await fetch(path, { cache: "no-store" });
+      // no-store forced a fresh network hit every single load and forbade any cache
+      // fallback, so one flaky moment on mobile meant total failure. Revalidate instead.
+      const res = await fetch(path, { cache: "no-cache" });
       if (!res.ok) throw new Error(`Could not load ${path}`);
       return await res.json();
     } catch (_) {
@@ -373,34 +375,50 @@
     });
   }
 
+  // LAZY DATA (2026-07-25). data/games.json is 8.16 MB. Downloading and parsing it on
+  // every page load is what made this page unusable on Sami's iPad. It is only needed to
+  // SEARCH and FILTER -- the full list is already in the HTML, server-rendered. So the
+  // page now costs nothing extra to read, and the 8 MB is fetched on the first search or
+  // filter interaction only. Concurrent callers share one in-flight promise.
+  async function ensureData() {
+    if (state.franchises && state.franchises.length) return true;
+    if (state._loading) return state._loading;
+    state._loading = (async () => {
+      const [franchises, playtime] = await Promise.all([
+        loadJson("data/games.json", []),
+        loadJson("data/playtime_totals.json", { games: {} })
+      ]);
+      state.franchises = Array.isArray(franchises) ? franchises : [];
+      state.playtime = (playtime && typeof playtime.games === "object" && playtime.games) || {};
+      if (state.franchises.length) { renderStats(); renderControls(); }
+      return state.franchises.length > 0;
+    })();
+    return state._loading;
+  }
+
   function bindControls() {
     const search = document.querySelector("[data-games-search]");
     const franchise = document.querySelector("[data-games-franchise]");
     const platform = document.querySelector("[data-games-platform]");
     const era = document.querySelector("[data-games-era]");
+    // Every control routes through ensureData() so the archive is pulled in exactly once,
+    // the first time the reader actually asks to narrow the list.
+    const onInteract = async (apply) => {
+      apply();
+      const ok = await ensureData();
+      if (ok) renderEntries();
+    };
     if (search) {
-      search.addEventListener("input", () => {
-        state.query = search.value.trim();
-        renderEntries();
-      });
+      search.addEventListener("input", () => onInteract(() => { state.query = search.value.trim(); }));
     }
     if (franchise) {
-      franchise.addEventListener("change", () => {
-        state.franchise = franchise.value;
-        renderEntries();
-      });
+      franchise.addEventListener("change", () => onInteract(() => { state.franchise = franchise.value; }));
     }
     if (platform) {
-      platform.addEventListener("change", () => {
-        state.platform = platform.value;
-        renderEntries();
-      });
+      platform.addEventListener("change", () => onInteract(() => { state.platform = platform.value; }));
     }
     if (era) {
-      era.addEventListener("change", () => {
-        state.era = era.value;
-        renderEntries();
-      });
+      era.addEventListener("change", () => onInteract(() => { state.era = era.value; }));
     }
   }
 
@@ -423,14 +441,16 @@
     state.franchise = params.get("franchise") || "";
     state.platform = params.get("platform") || "";
     state.era = params.get("era") || "";
-    const [franchises, playtime] = await Promise.all([
-      loadJson("data/games.json", []),
-      loadJson("data/playtime_totals.json", { games: {} })
-    ]);
-    state.franchises = Array.isArray(franchises) ? franchises : [];
-    state.playtime = (playtime && typeof playtime.games === "object" && playtime.games) || {};
-    renderAll();
     bindControls();
+    // Only pull the 8 MB archive up front if the URL already asks for a filtered view
+    // (?q= / ?franchise= / ?platform= / ?era=, or an archive screenshot mode). A plain
+    // visit renders entirely from the server-rendered HTML and downloads nothing extra.
+    const wantsFilteredView = !!(state.query || state.franchise || state.platform || state.era)
+      || params.get("shot") === "archive" || params.get("shot") === "release";
+    if (wantsFilteredView) {
+      const ok = await ensureData();
+      if (ok) renderAll();
+    }
     if (location.hash === "#archive" || params.get("shot") === "archive" || params.get("shot") === "release") {
       window.setTimeout(() => {
         const target = params.get("shot") === "release"
