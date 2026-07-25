@@ -182,6 +182,14 @@
     this.atEnd = false;
     this.areaIdx = idx;
     this.checkOpen = false;
+    // A NEW AREA STARTS SPOILER-FREE (Sami, 2026-07-25). Previously the detail level
+    // carried over from the last area, so walking into a new place immediately dumped
+    // level-3 locations on you -- the opposite of what this tool is for. Worse, the
+    // spoiler bar was never re-synced after the move, so its highlight disagreed with
+    // the level actually being rendered and the buttons looked dead until you reloaded
+    // the page. Reset the level AND re-sync the bar on every area change.
+    this.spoiler = 0;
+    this.prog.data.spoiler = 0;
     this.prog.data.areaIdx = idx;
     if (idx > this.reached) { this.reached = idx; this.prog.data.reached = idx; this.renderAreaSelect(); }
     this.prog.save();
@@ -189,6 +197,7 @@
     // scroll to top of body so the new area starts clean
     window.scrollTo(0, 0);
     this.renderArea();
+    this.syncSpoilerBar();
   };
 
   // Populate the jump dropdown with ONLY the areas the user has reached so far.
