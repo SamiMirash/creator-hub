@@ -140,7 +140,7 @@
 
     if (searchEl) searchEl.addEventListener("input", applyFilter);
 
-    fetch("guide/packs/index.json", { cache: "no-store" })
+    fetch("guide/packs/index.json", { cache: "no-cache" })  /* no-store forced a fresh network hit every load, so any flaky connection failed outright; no-cache still revalidates but may fall back to a cached copy */
       .then(function (r) { if (!r.ok) throw new Error("index " + r.status); return r.json(); })
       .then(function (idx) {
         packs = (idx.packs || []).slice().sort(function (a, b) {
@@ -149,6 +149,20 @@
         paint(packs);
       })
       .catch(function () {
+        // ⛔ DO NOT WIPE THE PRERENDERED LIST (fixed 2026-07-25). This used to replace the
+        // whole list with "Guides could not load right now" -- which is what Sami saw on
+        // his iPad: no games at all to pick from. The deploy already prerenders every
+        // guide card into [data-guides-list] as plain HTML, so if this fetch fails the
+        // right move is to KEEP that list (it works with zero JavaScript) and only drop
+        // the live search. Wiping it turned a working page into an empty one, and
+        // "try again shortly" never helped because the next load failed identically.
+        if (listEl && listEl.querySelector("a, .guide-card")) {
+          if (countEl) {
+            countEl.textContent = "Live search is unavailable right now, but every guide is listed below.";
+          }
+          if (searchEl) { searchEl.disabled = true; searchEl.placeholder = "Search unavailable offline"; }
+          return;
+        }
         listEl.innerHTML = '<p class="sub">Guides could not load right now. Please try again shortly.</p>';
         if (countEl) countEl.textContent = "";
       });

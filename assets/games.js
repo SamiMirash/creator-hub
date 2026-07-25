@@ -329,6 +329,14 @@
 
   function renderEntries() {
     const entries = visibleEntries();
+    // Companion guard to the init().catch() fix below: if the dataset never loaded at all
+    // (0 entries in total, not 0 *matches*), do not touch the mount -- the server-rendered
+    // list is already correct and complete, and replacing it with an empty state would
+    // hide the entire archive. Only a real, loaded dataset is allowed to re-render.
+    if (!entries.length && !(state.franchises && state.franchises.length)) {
+      const hasPrerendered = document.querySelector("[data-games-list] .game-entry, [data-games-list] details");
+      if (hasPrerendered) return;
+    }
     state.rendered = entries;
     document.querySelectorAll("[data-games-count]").forEach((node) => {
       node.textContent = t(`${entries.length} matching games`);
@@ -436,8 +444,28 @@
 
   init().catch((error) => {
     console.error(error);
+    // ⛔ NEVER WIPE THE PRERENDERED LIST (fixed 2026-07-25).
+    // This used to replace [data-games-list] with "Game archive could not load. Refresh
+    // the page and try again." That was the iPad bug Sami hit: data/games.json is 8.16 MB,
+    // and when that fetch fails or is killed for memory on iOS, this handler DELETED all
+    // 4,569 entries that the server had already prerendered into the HTML -- turning a
+    // slow-but-working page into an empty one. And "refresh and try again" could never
+    // help, because the next load fails at exactly the same place.
+    // The prerendered markup is complete and usable with ZERO JavaScript, so the correct
+    // failure mode is to LEAVE IT ALONE and just say that live filtering is unavailable.
     document.querySelectorAll("[data-games-list]").forEach((mount) => {
-      mount.innerHTML = `<article class="card"><h2>Game archive could not load.</h2><p>Refresh the page and try again.</p></article>`;
+      if (mount.querySelector(".game-entry, details")) {
+        if (!mount.previousElementSibling || !mount.previousElementSibling.classList.contains("archive-degraded")) {
+          const note = document.createElement("article");
+          note.className = "card archive-degraded";
+          note.innerHTML = "<h2>Showing the full archive</h2><p>Search and filters are"
+            + " unavailable on this connection, but every game is listed below. Use your"
+            + " browser's find-in-page to jump to one.</p>";
+          mount.parentNode.insertBefore(note, mount);
+        }
+      } else {
+        mount.innerHTML = `<article class="card"><h2>Game archive could not load.</h2><p>Refresh the page and try again.</p></article>`;
+      }
     });
   });
 })();

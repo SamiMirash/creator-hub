@@ -16,7 +16,44 @@
   <meta name="apple-mobile-web-app-title" content="Game Helper">
   <title>Game Helper</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="guide.css">
+  <link rel="stylesheet" href="guide.css?v=20260725b">
+  <script>
+  /* SELF-HEAL (2026-07-25). The guide would not open on Sami's iPad at all -- endless
+     "Loading helper…" no matter how many reloads. Cause: this page is a standalone
+     mini-app and does NOT load assets/site.js, which is the ONLY place the retired
+     PWA service worker gets unregistered. So a device still holding the old worker
+     had it intercepting every request here forever, and nothing on this page could
+     ever clear it. Refreshing cannot fix that -- the worker answers the refresh too.
+
+     This runs BEFORE viewer.js: kill any worker, drop every cache, then reload ONCE
+     (sessionStorage guard, so it can never become a reload loop). */
+  (function () {
+    try {
+      var HEALED = "gg_sw_healed";
+      var work = [];
+      if ("serviceWorker" in navigator && navigator.serviceWorker.getRegistrations) {
+        work.push(navigator.serviceWorker.getRegistrations().then(function (rs) {
+          return Promise.all(rs.map(function (r) { return r.unregister(); }))
+            .then(function (res) { return res.some(Boolean); });
+        }).catch(function () { return false; }));
+      }
+      if (self.caches && caches.keys) {
+        work.push(caches.keys().then(function (ks) {
+          return Promise.all(ks.map(function (k) { return caches.delete(k); }))
+            .then(function () { return ks.length > 0; });
+        }).catch(function () { return false; }));
+      }
+      if (!work.length) return;
+      Promise.all(work).then(function (found) {
+        var hadStale = found.indexOf(true) !== -1;
+        if (hadStale && !sessionStorage.getItem(HEALED)) {
+          sessionStorage.setItem(HEALED, "1");
+          location.reload();
+        }
+      });
+    } catch (e) { /* never block the guide on the self-heal */ }
+  })();
+  </script>
 </head>
 <body>
   <div id="app" aria-live="polite">
