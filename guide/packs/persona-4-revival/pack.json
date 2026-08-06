@@ -1,0 +1,137 @@
+{
+  "id": "persona-4-revival",
+  "game": "Persona 4 Revival",
+  "target": {
+    "platform": "Windows PC (provisional)",
+    "version": "Unreleased; announced for 2027-02-18",
+    "route": "Final route and completion scope require post-release verification"
+  },
+  "spoiler_default": 0,
+  "generated_at": "2026-07-29",
+  "areas": [
+    {
+      "id": "p4r-pre-release",
+      "name": "Pre-Release Verification Gate",
+      "location_cue": "The official product page, platform list, edition table, and release notice.",
+      "note": "No collectible, ending, calendar, challenge, or location claim is made before the final build exists.",
+      "save_backup": {
+        "title": "Archive the offer before expiry",
+        "why": "Storefront availability can change before launch.",
+        "detail": "Keep the receipt, edition listing, region, and cutoff time."
+      },
+      "point_of_no_return": {
+        "title": "Availability boundary",
+        "why": "The advertised early-purchase music offer has a real storefront cutoff.",
+        "detail": "Re-check the official product page before acting."
+      },
+      "items": [
+        {
+          "id": "p4r-release-gate",
+          "type": "optional",
+          "safe_type": "Pre-release verification",
+          "label": "Final Build Required",
+          "missable": false,
+          "levels": {
+            "1": "Wait for a playable release.",
+            "2": "The announced launch is February 18, 2027.",
+            "3": "Do not start a completion checklist until the final global build can be inspected on or after February 18, 2027. Re-fetch official materials, patch notes, and in-game menus before replacing this holding row."
+          }
+        },
+        {
+          "id": "p4r-route-gate",
+          "type": "optional",
+          "safe_type": "Pre-release verification",
+          "label": "Provisional Windows Route",
+          "missable": false,
+          "levels": {
+            "1": "PC is the likely fidelity route.",
+            "2": "Windows and Steam are announced alongside current consoles.",
+            "3": "Treat Windows as provisional only. At release, compare content, patch parity, performance, save behavior, language support, and any platform-exclusive items before locking Sami's route."
+          }
+        },
+        {
+          "id": "p4r-edition-gate",
+          "type": "optional",
+          "safe_type": "Pre-release verification",
+          "label": "Complete-Content Edition Check",
+          "missable": false,
+          "levels": {
+            "1": "Edition extras require a launch-day inventory.",
+            "2": "The Digital Premium edition advertises costume, Persona, and music sets.",
+            "3": "Before purchase, list every separately sold and edition-locked gameplay item. Verify whether the four Persona sets alter the registry and whether the Velvet costume remains edition-exclusive; do not count physical merchandise as game completion."
+          }
+        },
+        {
+          "id": "p4r-preorder-gate",
+          "type": "optional",
+          "safe_type": "Pre-release verification",
+          "label": "Early Music Bonus Window",
+          "missable": true,
+          "levels": {
+            "1": "One announced bonus has a purchase cutoff.",
+            "2": "The extra P3R/P5R music set is tied to early purchase.",
+            "3": "If Sami wants the archival audio set, confirm the local storefront deadline and purchase eligibility before February 18, 2027. The bonus is optional music, not a routine completion failure after expiry."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p4r-post-release-research",
+      "name": "Post-Release Rebuild Checklist",
+      "location_cue": "The final title screen, calendar, exploration maps, compendium, social menus, inventory, and clear data.",
+      "note": "Every row here is a research gate, not an invented in-game task.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "p4r-audit-content",
+          "type": "optional",
+          "safe_type": "Pre-release verification",
+          "label": "Completion-Scope Audit",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the game itself before writing.",
+            "2": "Inventory every ending, rescue window, bond, Persona, request, book, activity, meal, equipment row, costume, challenge, and restart feature.",
+            "3": "On the final patched build, record every finite menu and branch from direct play. Compare it with official materials and independent references, then write new fact notes with source pages closed."
+          }
+        },
+        {
+          "id": "p4r-audit-differences",
+          "type": "optional",
+          "safe_type": "Pre-release verification",
+          "label": "Golden-to-Revival Difference Audit",
+          "missable": false,
+          "levels": {
+            "1": "The remake changes more than presentation.",
+            "2": "Verify new scenes, voiced bonds, guarding, knockback, Baton Pass, and Prime Time directly.",
+            "3": "Build the Revival checklist from its own final systems. Never copy Persona 4 Golden's dates, dungeon rules, items, endings, or compendium denominator without in-game confirmation."
+          }
+        },
+        {
+          "id": "p4r-audit-visuals",
+          "type": "optional",
+          "safe_type": "Pre-release verification",
+          "label": "Location-Visual Gate",
+          "missable": false,
+          "levels": {
+            "1": "No final geometry means no honest sketch.",
+            "2": "Create zero location images before release.",
+            "3": "After direct final-build footage or verified location facts exist, draw original perpendicular item scenes or orthographic room schematics. Until then, keep every entry text-only and do not adapt trailer frames."
+          }
+        },
+        {
+          "id": "p4r-audit-validation",
+          "type": "optional",
+          "safe_type": "Pre-release verification",
+          "label": "Schema and Provenance Gate",
+          "missable": false,
+          "levels": {
+            "1": "The real pack must pass every existing checker.",
+            "2": "Require schema validation, a fetched prose corpus, zero eight-word copied runs, and honest image provenance.",
+            "3": "Rebuild this holding pack after launch, validate with compile_pack.py, run verify_no_verbatim.py against the fetched local corpus, inspect a contact sheet, and retain DO_NOT_SHIP until Sami reviews it."
+          }
+        }
+      ]
+    }
+  ]
+}

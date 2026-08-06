@@ -1,0 +1,1925 @@
+{
+  "id": "syphon-filter-the-omega-strain",
+  "game": "Syphon Filter: The Omega Strain",
+  "target": "Spoiler-free complete play of the original PS2 release: all mission objectives, performance records, ranks, ratings, awards, equipment, and preserved co-op requirements",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-28",
+  "areas": [
+    {
+      "id": "sftos-run-setup",
+      "name": "Run Setup",
+      "location_cue": "The title screen and agent dossier before the first deployment.",
+      "note": "This route uses the original North American PlayStation 2 release through PCSX2.",
+      "items": [
+        {
+          "id": "sftos-ps2-route",
+          "type": "optional",
+          "safe_type": "Play route",
+          "label": "Original PlayStation 2 Route",
+          "missable": false,
+          "levels": {
+            "1": "Keep the 2004 release as the content authority.",
+            "2": "Load a verified personal North American PS2 disc dump in PCSX2.",
+            "3": "Use a verified personal ISO dump with a dedicated virtual memory card. Internal-resolution scaling and texture filtering are presentation changes only; avoid patches or codes that alter objectives, rank points, timers, or inventory."
+          }
+        },
+        {
+          "id": "sftos-save-safety",
+          "type": "optional",
+          "safe_type": "Setup",
+          "label": "Memory-Card and State Safety",
+          "missable": false,
+          "levels": {
+            "1": "Protect the dossier before long rating grinds.",
+            "2": "Use one dedicated virtual card and rotate mission-start states.",
+            "3": "Confirm a normal dossier save reloads before starting. Keep memory-card saves as the permanent record, retain a clean state at each mission briefing, and make a separate backup before online sessions or emulator updates."
+          }
+        },
+        {
+          "id": "sftos-online-route",
+          "type": "optional",
+          "safe_type": "Network",
+          "label": "Preserved Online Co-op",
+          "missable": false,
+          "levels": {
+            "1": "Some completion records require partners.",
+            "2": "Use PCSX2 networking with the current PS Rewired service and arrange co-op partners.",
+            "3": "As of 2026-07-28, PS Rewired lists the NTSC release as supported. Enable PCSX2 DEV9 networking, use the service's current DNS rather than an old hard-coded address, create a separate network profile, and schedule partners before attempting team-only objectives or the nine team pars."
+          }
+        },
+        {
+          "id": "sftos-offline-boundary",
+          "type": "optional",
+          "safe_type": "Completion rule",
+          "label": "Offline Completion Boundary",
+          "missable": false,
+          "levels": {
+            "1": "Separate solo completion from preserved-network completion.",
+            "2": "Finish every solo objective and deadline even if partners are temporarily unavailable.",
+            "3": "A solo-only dossier can reach Commander C6 but cannot legitimately reach T4 because team objectives and team-par ratings contribute required points. Mark the online branch pending rather than using save edits or fake lobby flags."
+          }
+        },
+        {
+          "id": "sftos-retail-boundary",
+          "type": "optional",
+          "safe_type": "Completion rule",
+          "label": "Retail Content Boundary",
+          "missable": false,
+          "levels": {
+            "1": "Count obtainable retail content, not dormant developer data.",
+            "2": "Exclude beta weapons that require external memory codes.",
+            "3": "The disc contains unused and incomplete equipment entries, but they are not awarded by normal play and do not persist without external manipulation. They are recorded in the internal audit only and are not requirements for a legitimate dossier."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-training-center",
+      "name": "IPCA European Command: Training Center",
+      "location_cue": "A compact indoor exercise course with a firing lane and body-handling room.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-training-center-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "IPCA European Command: Training Center Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Enter the course, collect a firearm at the range, finish its targets, carry the supplied body into the screened hiding space, and use the marked exit."
+          }
+        },
+        {
+          "id": "sftos-training-center-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "IPCA European Command: Training Center Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Do not harm any protected training staff.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Do not harm any protected training staff. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-training-center-hidden",
+          "type": "secret",
+          "safe_type": "Hidden objective",
+          "label": "IPCA European Command: Training Center Hidden Objective",
+          "missable": false,
+          "levels": {
+            "1": "Search the optional route before extraction.",
+            "2": "Clear every range target within forty-five seconds.",
+            "3": "Start the range only when ready, use quick target lock for the close silhouettes and manual aim for the distant ones, then hit the final target before 0:45 appears."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-carthage-quarantine-zone",
+      "name": "Carthage: Quarantine Zone",
+      "location_cue": "Flooded residential streets contained by temporary medical and security stations.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-carthage-quarantine-zone-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Carthage: Quarantine Zone Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Replace the field-analysis kit, examine the marked remains, scan the tissue, keep the response officers safe, sample all five water points, and neutralize the marked hostile."
+          }
+        },
+        {
+          "id": "sftos-carthage-quarantine-zone-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Carthage: Quarantine Zone Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Do not injure response officers or civilians.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Do not injure response officers or civilians. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-carthage-quarantine-zone-team",
+          "type": "optional",
+          "safe_type": "Team objective",
+          "label": "Carthage: Quarantine Zone Team Objective",
+          "missable": false,
+          "levels": {
+            "1": "A partner opens an objective that solo play cannot register.",
+            "2": "Recover the laptop inside the apartment reached through the co-op access route.",
+            "3": "Bring at least two players. Use the partner-assisted climb into the apartment block, cross to the marked room, and interact with the laptop before extraction."
+          }
+        },
+        {
+          "id": "sftos-carthage-quarantine-zone-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Carthage: Quarantine Zone Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 11:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 11:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-carthage-quarantine-zone-team-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Carthage: Quarantine Zone Team Par",
+          "missable": false,
+          "levels": {
+            "1": "Divide the route before starting the co-op clock.",
+            "2": "Finish the complete team objective set within 7:00.",
+            "3": "Assign objective zones in the lobby, include the team-only task, preserve all parameters, and extract at or below 7:00. This record counts toward Team Efficiency."
+          }
+        },
+        {
+          "id": "sftos-carthage-quarantine-zone-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Carthage: Quarantine Zone Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-carthage-warehouse-district",
+      "name": "Carthage: Warehouse District",
+      "location_cue": "Canals, warehouse passages, a theatre, and nearby street-level rooftops.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-carthage-warehouse-district-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Carthage: Warehouse District Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Stop the three water contaminants, search them for three containers, clear four roaming assassins, handle the marked rooftop threats, protect the response officer, provide covering fire, and finish at extraction."
+          }
+        },
+        {
+          "id": "sftos-carthage-warehouse-district-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Carthage: Warehouse District Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Protect the response officer and avoid all collateral casualties.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Protect the response officer and avoid all collateral casualties. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-carthage-warehouse-district-hidden",
+          "type": "secret",
+          "safe_type": "Hidden objective",
+          "label": "Carthage: Warehouse District Hidden Objective",
+          "missable": false,
+          "levels": {
+            "1": "Search the optional route before extraction.",
+            "2": "Recover the recorder inside the theatre.",
+            "3": "Enter the theatre from the street, clear the hostile presence without hitting the response officer, then inspect the interior near the auditorium route for the recorder before leaving."
+          }
+        },
+        {
+          "id": "sftos-carthage-warehouse-district-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Carthage: Warehouse District Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 8:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 8:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-carthage-warehouse-district-team-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Carthage: Warehouse District Team Par",
+          "missable": false,
+          "levels": {
+            "1": "Divide the route before starting the co-op clock.",
+            "2": "Finish the complete team objective set within 5:00.",
+            "3": "Assign objective zones in the lobby, include the team-only task, preserve all parameters, and extract at or below 5:00. This record counts toward Team Efficiency."
+          }
+        },
+        {
+          "id": "sftos-carthage-warehouse-district-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Carthage: Warehouse District Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-carthage-mall",
+      "name": "Carthage: Mall",
+      "location_cue": "A sealed shopping concourse with two planted devices and shutter controls.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-carthage-mall-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Carthage: Mall Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Disarm both viral devices, operate every entrance lock, complete the marked enforcement order, and leave through the final cleared route."
+          }
+        },
+        {
+          "id": "sftos-carthage-mall-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Carthage: Mall Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Avoid collateral casualties throughout the concourse.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Avoid collateral casualties throughout the concourse. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-carthage-mall-team",
+          "type": "optional",
+          "safe_type": "Team objective",
+          "label": "Carthage: Mall Team Objective",
+          "missable": false,
+          "levels": {
+            "1": "A partner opens an objective that solo play cannot register.",
+            "2": "Rescue both injured officers during the mall sweep.",
+            "3": "Use two players to divide the concourse. Reach each downed officer before advancing the final objective, interact to stabilize both, and confirm both rescues on the mission list."
+          }
+        },
+        {
+          "id": "sftos-carthage-mall-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Carthage: Mall Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 5:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 5:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-carthage-mall-team-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Carthage: Mall Team Par",
+          "missable": false,
+          "levels": {
+            "1": "Divide the route before starting the co-op clock.",
+            "2": "Finish the complete team objective set within 3:00.",
+            "3": "Assign objective zones in the lobby, include the team-only task, preserve all parameters, and extract at or below 3:00. This record counts toward Team Efficiency."
+          }
+        },
+        {
+          "id": "sftos-carthage-mall-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Carthage: Mall Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-pescara-square",
+      "name": "Pescara: St. Cetteo Square",
+      "location_cue": "A quiet stone plaza overlooked by a bell tower and surrounding windows.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-pescara-square-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Pescara: St. Cetteo Square Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Place the decoy charges, reach the prescribed firing position, make the timed bell-tower shot at 3:00 PM, and move directly to extraction."
+          }
+        },
+        {
+          "id": "sftos-pescara-square-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Pescara: St. Cetteo Square Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Remain unseen for the entire operation.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Remain unseen for the entire operation. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-pescara-square-unlock",
+          "type": "secret",
+          "safe_type": "Bonus mission",
+          "label": "Unlock Pescara: St. Cetteo Square",
+          "missable": false,
+          "levels": {
+            "1": "The earlier regional deadline records open this operation.",
+            "2": "Beat all three Carthage solo deadlines while satisfying their parameters to open this bonus operation.",
+            "3": "Beat all three Carthage solo deadlines while satisfying their parameters to open this bonus operation. A valid record requires every standard objective and parameter; the displayed time alone is insufficient."
+          }
+        },
+        {
+          "id": "sftos-pescara-square-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Pescara: St. Cetteo Square Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 7:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 7:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-pescara-square-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Pescara: St. Cetteo Square Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-krivorozhstal-mill",
+      "name": "Krivorozhstal Mill",
+      "location_cue": "A sprawling steel mill with worker platforms, overloaded machinery, offices, and livestock pens.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-krivorozhstal-mill-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Krivorozhstal Mill Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Disarm the explosive stacks, rescue the trapped worker, take the safe documents, escort workers out, shut down the overloaded equipment, sample the marked carcass, clear the hostile force, and finish the marked confrontation."
+          }
+        },
+        {
+          "id": "sftos-krivorozhstal-mill-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Krivorozhstal Mill Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Do not harm any mill workers.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Do not harm any mill workers. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-krivorozhstal-mill-team",
+          "type": "optional",
+          "safe_type": "Team objective",
+          "label": "Krivorozhstal Mill Team Objective",
+          "missable": false,
+          "levels": {
+            "1": "A partner opens an objective that solo play cannot register.",
+            "2": "Escort every worker rather than only the minimum group.",
+            "3": "Split the factory between players, open each worker route before the machinery objective closes the area, and escort every green-marked worker to safety until the counter is complete."
+          }
+        },
+        {
+          "id": "sftos-krivorozhstal-mill-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Krivorozhstal Mill Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 18:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 18:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-krivorozhstal-mill-team-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Krivorozhstal Mill Team Par",
+          "missable": false,
+          "levels": {
+            "1": "Divide the route before starting the co-op clock.",
+            "2": "Finish the complete team objective set within 13:00.",
+            "3": "Assign objective zones in the lobby, include the team-only task, preserve all parameters, and extract at or below 13:00. This record counts toward Team Efficiency."
+          }
+        },
+        {
+          "id": "sftos-krivorozhstal-mill-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Krivorozhstal Mill Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-belaya-vezha",
+      "name": "Belaya Vezha",
+      "location_cue": "A rural military zone linking a crash site, sewer trench, power facilities, towers, and a bridge.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-belaya-vezha-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Belaya Vezha Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Recover equipment at the wreck, collect the sewer sample, destroy the substation and communications truck, disable the anti-air tower, shut the gas main, destroy the missile, clear the marked hostile, rescue the trapped operative, and stop the tank."
+          }
+        },
+        {
+          "id": "sftos-belaya-vezha-hidden",
+          "type": "secret",
+          "safe_type": "Hidden objective",
+          "label": "Belaya Vezha Hidden Objective",
+          "missable": false,
+          "levels": {
+            "1": "Search the optional route before extraction.",
+            "2": "Recover the papers from one of the mission's possible attic locations.",
+            "3": "Search every accessible attic as you cross the settlement; the papers are randomized between valid attic spawns. Collect them before triggering the final armored encounter."
+          }
+        },
+        {
+          "id": "sftos-belaya-vezha-team",
+          "type": "optional",
+          "safe_type": "Team objective",
+          "label": "Belaya Vezha Team Objective",
+          "missable": false,
+          "levels": {
+            "1": "A partner opens an objective that solo play cannot register.",
+            "2": "Demolish the bridge to stop the tank.",
+            "3": "Bring two players to the bridge supports, place the required charges on the co-op points, clear the blast area, and detonate before the tank completes its crossing."
+          }
+        },
+        {
+          "id": "sftos-belaya-vezha-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Belaya Vezha Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 15:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 15:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-belaya-vezha-team-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Belaya Vezha Team Par",
+          "missable": false,
+          "levels": {
+            "1": "Divide the route before starting the co-op clock.",
+            "2": "Finish the complete team objective set within 7:00.",
+            "3": "Assign objective zones in the lobby, include the team-only task, preserve all parameters, and extract at or below 7:00. This record counts toward Team Efficiency."
+          }
+        },
+        {
+          "id": "sftos-belaya-vezha-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Belaya Vezha Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-saydahmats-village",
+      "name": "Tash Kumyr: Saydahmat's Village",
+      "location_cue": "A mountain village with a guarded meeting house, outfit rooms, and a ceremonial dining area.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-saydahmats-village-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Tash Kumyr: Saydahmat's Village Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Observe the arms exchange, take the transferred container, use the available disguises to pass guarded sections, deliver the container as instructed, poison the marked chalice, change into the extraction outfit, and reach the pickup zone."
+          }
+        },
+        {
+          "id": "sftos-saydahmats-village-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Tash Kumyr: Saydahmat's Village Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Maintain cover and avoid detection.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Maintain cover and avoid detection. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-saydahmats-village-hidden",
+          "type": "secret",
+          "safe_type": "Hidden objective",
+          "label": "Tash Kumyr: Saydahmat's Village Hidden Objective",
+          "missable": false,
+          "levels": {
+            "1": "Search the optional route before extraction.",
+            "2": "Locate the papers and complete the second discreet-elimination opportunity.",
+            "3": "Search the private rooms before the container exchange for the documents. Complete the optional marked elimination quietly before changing into the final extraction outfit."
+          }
+        },
+        {
+          "id": "sftos-saydahmats-village-unlock",
+          "type": "secret",
+          "safe_type": "Bonus mission",
+          "label": "Unlock Tash Kumyr: Saydahmat's Village",
+          "missable": false,
+          "levels": {
+            "1": "The earlier regional deadline records open this operation.",
+            "2": "Beat both Belarus solo deadlines with every parameter satisfied to open this bonus operation.",
+            "3": "Beat both Belarus solo deadlines with every parameter satisfied to open this bonus operation. A valid record requires every standard objective and parameter; the displayed time alone is insufficient."
+          }
+        },
+        {
+          "id": "sftos-saydahmats-village-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Tash Kumyr: Saydahmat's Village Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 13:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 13:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-saydahmats-village-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Tash Kumyr: Saydahmat's Village Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-sanaa-arms-bazaar",
+      "name": "Sana'a: Arms Bazaar",
+      "location_cue": "A dense market of stalls, locked compounds, communications gear, and overlooking roofs.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-sanaa-arms-bazaar-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Sana'a: Arms Bazaar Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Obtain entry credentials, enter the bazaar, destroy all communications devices, recover the video evidence, clear the marked hostile groups, obtain and deliver the explosives, and complete both marked eliminations."
+          }
+        },
+        {
+          "id": "sftos-sanaa-arms-bazaar-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Sana'a: Arms Bazaar Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Keep the infiltration undiscovered.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Keep the infiltration undiscovered. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-sanaa-arms-bazaar-hidden",
+          "type": "secret",
+          "safe_type": "Hidden objective",
+          "label": "Sana'a: Arms Bazaar Hidden Objective",
+          "missable": false,
+          "levels": {
+            "1": "Search the optional route before extraction.",
+            "2": "Photograph the files and take the second credential set.",
+            "3": "Before entering the main market, photograph the files in the guarded office. Later, search the marked foreign operative after a silent takedown to add the second credentials."
+          }
+        },
+        {
+          "id": "sftos-sanaa-arms-bazaar-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Sana'a: Arms Bazaar Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 18:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 18:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-sanaa-arms-bazaar-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Sana'a: Arms Bazaar Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-taherir-palace",
+      "name": "Sana'a: Taherir Palace",
+      "location_cue": "A palace security wing followed by a compact rooftop extraction position.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-taherir-palace-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Sana'a: Taherir Palace Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Clear the security-room guards before five minutes, keep the alarm silent through the marked elimination, recover weapons from the cage, provide covering fire, and jump to the extraction aircraft."
+          }
+        },
+        {
+          "id": "sftos-taherir-palace-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Sana'a: Taherir Palace Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Cause no collateral damage.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Cause no collateral damage. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-taherir-palace-team",
+          "type": "optional",
+          "safe_type": "Team objective",
+          "label": "Sana'a: Taherir Palace Team Objective",
+          "missable": false,
+          "levels": {
+            "1": "A partner opens an objective that solo play cannot register.",
+            "2": "Destroy the missile firing mechanism.",
+            "3": "After the stealth section, send the co-op partner to the additional mechanism while the other player covers the rooftop. Operate or destroy every marked component before extraction."
+          }
+        },
+        {
+          "id": "sftos-taherir-palace-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Sana'a: Taherir Palace Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 17:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 17:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-taherir-palace-team-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Sana'a: Taherir Palace Team Par",
+          "missable": false,
+          "levels": {
+            "1": "Divide the route before starting the co-op clock.",
+            "2": "Finish the complete team objective set within 15:00.",
+            "3": "Assign objective zones in the lobby, include the team-only task, preserve all parameters, and extract at or below 15:00. This record counts toward Team Efficiency."
+          }
+        },
+        {
+          "id": "sftos-taherir-palace-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Sana'a: Taherir Palace Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-minsk-university",
+      "name": "Minsk: International University",
+      "location_cue": "Snowy university streets above a refrigerated warehouse and underground laboratory.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-minsk-university-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Minsk: International University Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Collect the safehouse gear, place four viral sniffers, download the records, beacon the refrigerated truck, bug both randomized containers, use the office elevator, place five surveillance units, operate four serum terminals, turn the underground gas valve, and return to the street extraction."
+          }
+        },
+        {
+          "id": "sftos-minsk-university-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Minsk: International University Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Maintain cover on the streets and do not harm university security.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Maintain cover on the streets and do not harm university security. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-minsk-university-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Minsk: International University Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 20:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 20:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-minsk-university-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Minsk: International University Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-ivankovs-home",
+      "name": "Samashki: Ivankov's Home",
+      "location_cue": "A damaged village of homes, public buildings, graves, and a guarded extraction lane.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-ivankovs-home-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Samashki: Ivankov's Home Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Recover the house code; photograph the school, field contact, hospital, three graves, and church; collect the tissue sample; free the prisoners; rescue the hostage; and reach extraction."
+          }
+        },
+        {
+          "id": "sftos-ivankovs-home-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Samashki: Ivankov's Home Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Stay unseen and use no lethal force.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Stay unseen and use no lethal force. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-ivankovs-home-unlock",
+          "type": "secret",
+          "safe_type": "Bonus mission",
+          "label": "Unlock Samashki: Ivankov's Home",
+          "missable": false,
+          "levels": {
+            "1": "The earlier regional deadline records open this operation.",
+            "2": "Beat the Minsk solo deadline with every parameter satisfied to open this bonus operation.",
+            "3": "Beat the Minsk solo deadline with every parameter satisfied to open this bonus operation. A valid record requires every standard objective and parameter; the displayed time alone is insufficient."
+          }
+        },
+        {
+          "id": "sftos-ivankovs-home-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Samashki: Ivankov's Home Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 12:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 12:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-ivankovs-home-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Samashki: Ivankov's Home Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-lorelei-salvage-rig",
+      "name": "North Atlantic: Lorelei Salvage Rig",
+      "location_cue": "A numbered offshore platform connected by lifts, sealed doors, pumps, and a lower docking bay.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-lorelei-salvage-rig-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "North Atlantic: Lorelei Salvage Rig Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Obtain the level-five codes and level-two uniform, collect the original sample, enter the lower decks, start the emergency pumps within three minutes, rescue the level-five personnel, open the level-two door, reach level thirteen, cover the field contact, operate the launch override, administer the medication, place four charges below, clear the level-thirteen threat, and reach the mini-sub dock."
+          }
+        },
+        {
+          "id": "sftos-lorelei-salvage-rig-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "North Atlantic: Lorelei Salvage Rig Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Keep cover until the rendezvous and cause no collateral harm.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Keep cover until the rendezvous and cause no collateral harm. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-lorelei-salvage-rig-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "North Atlantic: Lorelei Salvage Rig Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 28:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 28:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-lorelei-salvage-rig-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "North Atlantic: Lorelei Salvage Rig Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-murakawa-tower",
+      "name": "Tokyo: Murakawa Tower",
+      "location_cue": "A high-rise entered from a damaged rooftop landing zone, with vents, offices, laboratories, and a helipad.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-murakawa-tower-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Tokyo: Murakawa Tower Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Defend the landing zone, clear the marked leaders, enter the tower, remove the security officers, cross the security floor without an alarm, upload the data, secure the roof, obtain the sample, place the laboratory charges, and reach the helipad."
+          }
+        },
+        {
+          "id": "sftos-murakawa-tower-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Tokyo: Murakawa Tower Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Do not trigger the security-floor alarm.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Do not trigger the security-floor alarm. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-murakawa-tower-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Tokyo: Murakawa Tower Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 15:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 15:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-murakawa-tower-team-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Tokyo: Murakawa Tower Team Par",
+          "missable": false,
+          "levels": {
+            "1": "Divide the route before starting the co-op clock.",
+            "2": "Finish the complete team objective set within 9:00.",
+            "3": "Assign objective zones in the lobby, include the team-only task, preserve all parameters, and extract at or below 9:00. This record counts toward Team Efficiency."
+          }
+        },
+        {
+          "id": "sftos-murakawa-tower-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Tokyo: Murakawa Tower Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-irawaddy-basin",
+      "name": "Irawaddy Basin",
+      "location_cue": "A jungle route of log bridges, radar equipment, a crash site, and a river extraction point.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-irawaddy-basin-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Irawaddy Basin Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Place four claymores, charge the footbridge and both log bridges, complete the marked elimination, destroy the radar, recover the briefcase, locate the missing agents and tracking device, take the hostile documents and container, and reach the river boat with the recovered agent."
+          }
+        },
+        {
+          "id": "sftos-irawaddy-basin-team",
+          "type": "optional",
+          "safe_type": "Team objective",
+          "label": "Irawaddy Basin Team Objective",
+          "missable": false,
+          "levels": {
+            "1": "A partner opens an objective that solo play cannot register.",
+            "2": "Recover the aircraft flight recorder.",
+            "3": "At the crash area, have one player hold the hostile wave while another searches the wreckage and interacts with the recorder. Confirm the team objective before leaving the site."
+          }
+        },
+        {
+          "id": "sftos-irawaddy-basin-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Irawaddy Basin Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 20:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 20:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-irawaddy-basin-team-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Irawaddy Basin Team Par",
+          "missable": false,
+          "levels": {
+            "1": "Divide the route before starting the co-op clock.",
+            "2": "Finish the complete team objective set within 8:00.",
+            "3": "Assign objective zones in the lobby, include the team-only task, preserve all parameters, and extract at or below 8:00. This record counts toward Team Efficiency."
+          }
+        },
+        {
+          "id": "sftos-irawaddy-basin-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Irawaddy Basin Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-niculescu-funds-tower",
+      "name": "Zurich: Niculescu Funds Tower",
+      "location_cue": "A modern office tower with a lobby scanner, emergency lifts, numbered floors, and secured vault rooms.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-niculescu-funds-tower-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Zurich: Niculescu Funds Tower Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Acquire the security handprint, bypass the red lasers, recover the financial records, power the elevators, insert four transmitters, access the mainframe, search the third- and fourth-floor vaults, place four camera transceivers, obtain the Birchim files, and rendezvous at the final vault."
+          }
+        },
+        {
+          "id": "sftos-niculescu-funds-tower-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Zurich: Niculescu Funds Tower Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Remain unseen and use only nonlethal force on protected guards.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Remain unseen and use only nonlethal force on protected guards. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-niculescu-funds-tower-hidden",
+          "type": "secret",
+          "safe_type": "Hidden objective",
+          "label": "Zurich: Niculescu Funds Tower Hidden Objective",
+          "missable": false,
+          "levels": {
+            "1": "Search the optional route before extraction.",
+            "2": "Collect both document sets before the final vault rendezvous.",
+            "3": "Take the financial records from their office terminal early in the climb. Search the fourth-floor vault storage before the rendezvous to secure the Birchim files."
+          }
+        },
+        {
+          "id": "sftos-niculescu-funds-tower-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Zurich: Niculescu Funds Tower Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 18:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 18:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-niculescu-funds-tower-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Zurich: Niculescu Funds Tower Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-niculescu-villa",
+      "name": "Budva: Niculescu's Villa Estate",
+      "location_cue": "A guarded coastal estate with exterior stairs, an art room, bedroom wing, and courtyard.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-niculescu-villa-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Budva: Niculescu's Villa Estate Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Take the bedroom key from the guard captain, search the art-room safe for the evidence, prevent the timed courtyard harm, and leave by the cleared estate route."
+          }
+        },
+        {
+          "id": "sftos-niculescu-villa-parameters",
+          "type": "optional",
+          "safe_type": "Parameter",
+          "label": "Budva: Niculescu's Villa Estate Parameters",
+          "missable": false,
+          "levels": {
+            "1": "The mission can finish while a conduct condition remains failed.",
+            "2": "Maintain stealth throughout the estate.",
+            "3": "Check the Parameters tab at the briefing and again before extraction. Maintain stealth throughout the estate. Restart immediately after any red failure notice; finishing cannot repair that record."
+          }
+        },
+        {
+          "id": "sftos-niculescu-villa-hidden",
+          "type": "secret",
+          "safe_type": "Hidden objective",
+          "label": "Budva: Niculescu's Villa Estate Hidden Objective",
+          "missable": false,
+          "levels": {
+            "1": "Search the optional route before extraction.",
+            "2": "Recover the Zeus file from the concealed art-room safe.",
+            "3": "In the art room, inspect the painting on the right-hand wall from the entrance, move it, and open the hidden safe before approaching the courtyard."
+          }
+        },
+        {
+          "id": "sftos-niculescu-villa-unlock",
+          "type": "secret",
+          "safe_type": "Bonus mission",
+          "label": "Unlock Budva: Niculescu's Villa Estate",
+          "missable": false,
+          "levels": {
+            "1": "The earlier regional deadline records open this operation.",
+            "2": "Beat the Zurich solo deadline with every parameter satisfied to open this bonus operation.",
+            "3": "Beat the Zurich solo deadline with every parameter satisfied to open this bonus operation. A valid record requires every standard objective and parameter; the displayed time alone is insufficient."
+          }
+        },
+        {
+          "id": "sftos-niculescu-villa-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Budva: Niculescu's Villa Estate Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 10:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 10:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-niculescu-villa-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Budva: Niculescu's Villa Estate Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-ukraine-base",
+      "name": "Ukraine: Chechen Terrorist Base",
+      "location_cue": "A fortified airfield above a multi-level underground complex and missile-control silo.",
+      "note": "Mission replay remains available; no permanent story choice is attached to this area.",
+      "items": [
+        {
+          "id": "sftos-ukraine-base-objectives",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Ukraine: Chechen Terrorist Base Objective Set",
+          "missable": false,
+          "levels": {
+            "1": "Clear the visible checklist before chasing performance records.",
+            "2": "Complete every standard objective shown in the mission folder.",
+            "3": "Cover the allied advance, disable the helicopter controls, clear the four marked lieutenants, enter the underground computer lab for the DNA code, bring the stranded agent to safety, and protect the silo-control work until complete."
+          }
+        },
+        {
+          "id": "sftos-ukraine-base-team",
+          "type": "optional",
+          "safe_type": "Team objective",
+          "label": "Ukraine: Chechen Terrorist Base Team Objective",
+          "missable": false,
+          "levels": {
+            "1": "A partner opens an objective that solo play cannot register.",
+            "2": "Prevent the missile launch by operating the paired control computers.",
+            "3": "Use three players. Reach both marked computers on the lower level and activate them within twenty seconds of each other while the third player holds the approach."
+          }
+        },
+        {
+          "id": "sftos-ukraine-base-solo-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Ukraine: Chechen Terrorist Base Solo Par",
+          "missable": false,
+          "levels": {
+            "1": "Learn the route before attempting the deadline.",
+            "2": "Finish the complete solo objective set within 25:00.",
+            "3": "Run the objectives in route order, ignore unneeded fights and pickups, satisfy every parameter, and extract at or below 25:00. A run with a failed parameter does not register even when its clock is fast enough."
+          }
+        },
+        {
+          "id": "sftos-ukraine-base-team-par",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Ukraine: Chechen Terrorist Base Team Par",
+          "missable": false,
+          "levels": {
+            "1": "Divide the route before starting the co-op clock.",
+            "2": "Finish the complete team objective set within 15:00.",
+            "3": "Assign objective zones in the lobby, include the team-only task, preserve all parameters, and extract at or below 15:00. This record counts toward Team Efficiency."
+          }
+        },
+        {
+          "id": "sftos-ukraine-base-zero-death",
+          "type": "optional",
+          "safe_type": "Performance",
+          "label": "Ukraine: Chechen Terrorist Base Zero-Death Record",
+          "missable": false,
+          "levels": {
+            "1": "Secure a clean survival result after learning the level.",
+            "2": "Finish the mission without any player death.",
+            "3": "Use a separate attempt from the par run if necessary. A checkpoint recovery still records a death, so restart the mission after any player is downed and finish with the dossier showing zero."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-ranks",
+      "name": "Agent Rank Ladder",
+      "location_cue": "The Rank page inside the agent dossier.",
+      "note": "Rank is a combined score from unique completion records.",
+      "items": [
+        {
+          "id": "sftos-rank-recruit",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Recruit Ranks",
+          "missable": false,
+          "levels": {
+            "1": "Raise the dossier through objectives, ratings, awards, and performance records.",
+            "2": "Complete enough distinct progression records to enter this rank band.",
+            "3": "The dossier begins at R1, Field Agent. R2 carries the Investigative Agent title and awards a G-17. R3 changes the title to Intelligence Agent and adds the Combat Shotgun. Rank points come from the combined dossier rather than one repeatable grind; later top-brass ranks require legitimate online records."
+          }
+        },
+        {
+          "id": "sftos-rank-officer-one",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Officer Ranks O1–O5",
+          "missable": false,
+          "levels": {
+            "1": "Raise the dossier through objectives, ratings, awards, and performance records.",
+            "2": "Complete enough distinct progression records to enter this rank band.",
+            "3": "O1 grants the Field Officer title plus AU300 Mod-SMG. O2 becomes Investigative Officer and awards M16 A1. O3 is Intelligence Officer with M1911 A1. O4 is Field Research Specialist with Jerico-41. O5 is Investigative Research Specialist with MAK-10 10mm. Rank points come from the combined dossier rather than one repeatable grind; later top-brass ranks require legitimate online records."
+          }
+        },
+        {
+          "id": "sftos-rank-officer-two",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Officer Ranks O6–O9",
+          "missable": false,
+          "levels": {
+            "1": "Raise the dossier through objectives, ratings, awards, and performance records.",
+            "2": "Complete enough distinct progression records to enter this rank band.",
+            "3": "O6 is Intelligence Research Specialist and supplies MDS-7. O7 is Field Analyst Specialist with Slug Defender. O8 is Investigative Analyst Specialist with SSG 550. O9 is Intelligence Analyst Specialist and awards SP-57. Rank points come from the combined dossier rather than one repeatable grind; later top-brass ranks require legitimate online records."
+          }
+        },
+        {
+          "id": "sftos-rank-commander",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Commander Ranks",
+          "missable": false,
+          "levels": {
+            "1": "Raise the dossier through objectives, ratings, awards, and performance records.",
+            "2": "Complete enough distinct progression records to enter this rank band.",
+            "3": "C1 is Field Supervisor with Mark 23. C2 is Investigative Supervisor with M4 Carbine. C3 is Intelligence Supervisor with M16 A2. C4 becomes Field Operations Commander and awards ShotHammer. C5 is Investigative Operations Commander with M4. C6 is Intelligence Operations Commander with Stava M70 B1. Rank points come from the combined dossier rather than one repeatable grind; later top-brass ranks require legitimate online records."
+          }
+        },
+        {
+          "id": "sftos-rank-top-brass",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Top-Brass Ranks",
+          "missable": false,
+          "levels": {
+            "1": "Raise the dossier through objectives, ratings, awards, and performance records.",
+            "2": "Complete enough distinct progression records to enter this rank band.",
+            "3": "T1 is Assistant Chief of Operations and awards SlugHammer. T2 becomes Deputy Chief of Operations with AU300 H-BAR. T3 is Chief of Operations with GAWS 12 Gauge. T4 is Commander in Chief and supplies Mark 23 SD. Rank points come from the combined dossier rather than one repeatable grind; later top-brass ranks require legitimate online records."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-ratings",
+      "name": "Cumulative Ratings",
+      "location_cue": "The Ratings pages inside the agent dossier.",
+      "note": "Each rating has four cumulative tiers.",
+      "items": [
+        {
+          "id": "sftos-rating-combat",
+          "type": "optional",
+          "safe_type": "Rating",
+          "label": "Combat Specialist",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary mission replays to build the lethal takedowns total.",
+            "2": "Reach all four cumulative lethal takedowns thresholds.",
+            "3": "300—G 33E; 600—FA-MAS; 900—FAL; 1,300—C8 Rifle. The counters are cumulative, so reaching the final threshold also secures all earlier tiers."
+          }
+        },
+        {
+          "id": "sftos-rating-knife",
+          "type": "optional",
+          "safe_type": "Rating",
+          "label": "Combat Knife Specialist",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary mission replays to build the knife takedowns total.",
+            "2": "Reach all four cumulative knife takedowns thresholds.",
+            "3": "50—Stiletto; 100—Shuriken; 250—IPCA Commando; 450—VibroBlade. The counters are cumulative, so reaching the final threshold also secures all earlier tiers."
+          }
+        },
+        {
+          "id": "sftos-rating-headshot",
+          "type": "optional",
+          "safe_type": "Rating",
+          "label": "Combat Sharpshooter",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary mission replays to build the headshots total.",
+            "2": "Reach all four cumulative headshots thresholds.",
+            "3": "200—Dragunov; 450—AU300 Mod-R; 750—ACR; 1,100—M82 BFG. The counters are cumulative, so reaching the final threshold also secures all earlier tiers."
+          }
+        },
+        {
+          "id": "sftos-rating-nonlethal",
+          "type": "optional",
+          "safe_type": "Rating",
+          "label": "Non-Lethal Force Specialist",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary mission replays to build the nonlethal knockouts total.",
+            "2": "Reach all four cumulative nonlethal knockouts thresholds.",
+            "3": "50—E.D.T.; 100—DormaGen Gas; 200—Air Pistol; 350—E.P.D.D. The counters are cumulative, so reaching the final threshold also secures all earlier tiers."
+          }
+        },
+        {
+          "id": "sftos-rating-explosives",
+          "type": "optional",
+          "safe_type": "Rating",
+          "label": "Tactical Explosives Specialist",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary mission replays to build the explosive takedowns total.",
+            "2": "Reach all four cumulative explosive takedowns thresholds.",
+            "3": "100—M61 Frag; 200—Incendiary Grenade; 350—Sarin Agent; 500—M79. The counters are cumulative, so reaching the final threshold also secures all earlier tiers."
+          }
+        },
+        {
+          "id": "sftos-rating-team",
+          "type": "optional",
+          "safe_type": "Rating",
+          "label": "Team Efficiency Specialist",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary mission replays to build the different team par records total.",
+            "2": "Reach all four cumulative different team par records thresholds.",
+            "3": "2 team pars—M1 Super 90; 4—Shot Defender; 6—MDS A3; 9—M-16K. The counters are cumulative, so reaching the final threshold also secures all earlier tiers."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-special-ratings",
+      "name": "Special Ratings",
+      "location_cue": "The Special Ratings page inside the agent dossier.",
+      "note": "Open a rating in the dossier to inspect its component checklist.",
+      "items": [
+        {
+          "id": "sftos-special-bio-data",
+          "type": "optional",
+          "safe_type": "Special rating",
+          "label": "Bio-Data Retrieval Expert",
+          "missable": false,
+          "levels": {
+            "1": "Combine related objectives across several missions.",
+            "2": "Complete the six biological collection objectives across Carthage, Belarus, Minsk, and Chechnya.",
+            "3": "Complete the six biological collection objectives across Carthage, Belarus, Minsk, and Chechnya. Confirm every component in the Special Ratings folder; completion awards Fifty-percent jacket increase."
+          }
+        },
+        {
+          "id": "sftos-special-computer-data",
+          "type": "optional",
+          "safe_type": "Special rating",
+          "label": "Computer Information Expert",
+          "missable": false,
+          "levels": {
+            "1": "Combine related objectives across several missions.",
+            "2": "Complete the laptop, records, upload, mainframe, and DNA-code objectives.",
+            "3": "Complete the laptop, records, upload, mainframe, and DNA-code objectives. Confirm every component in the Special Ratings folder; completion awards UNP 45."
+          }
+        },
+        {
+          "id": "sftos-special-discreet",
+          "type": "optional",
+          "safe_type": "Special rating",
+          "label": "Elite Discreet Personnel Elimination Expert",
+          "missable": false,
+          "levels": {
+            "1": "Combine related objectives across several missions.",
+            "2": "Complete the four designated discreet eliminations in Kyrgyzstan, Yemen, Tokyo, and Myanmar.",
+            "3": "Complete the four designated discreet eliminations in Kyrgyzstan, Yemen, Tokyo, and Myanmar. Confirm every component in the Special Ratings folder; completion awards Headshot lock."
+          }
+        },
+        {
+          "id": "sftos-special-stealth",
+          "type": "optional",
+          "safe_type": "Special rating",
+          "label": "Stealth Operations Expert",
+          "missable": false,
+          "levels": {
+            "1": "Combine related objectives across several missions.",
+            "2": "Satisfy the stealth parameter in all nine missions that display it.",
+            "3": "Satisfy the stealth parameter in all nine missions that display it. Confirm every component in the Special Ratings folder; completion awards VSS-DU."
+          }
+        },
+        {
+          "id": "sftos-special-military",
+          "type": "optional",
+          "safe_type": "Special rating",
+          "label": "Military Tactics Expert",
+          "missable": false,
+          "levels": {
+            "1": "Combine related objectives across several missions.",
+            "2": "Complete every listed demolition objective plus the complete Ukraine objective set.",
+            "3": "Complete every listed demolition objective plus the complete Ukraine objective set. Confirm every component in the Special Ratings folder; completion awards MGL."
+          }
+        },
+        {
+          "id": "sftos-special-elite-combat",
+          "type": "optional",
+          "safe_type": "Special rating",
+          "label": "Elite Combat Expert",
+          "missable": false,
+          "levels": {
+            "1": "Combine related objectives across several missions.",
+            "2": "Reach Elite in all six rating ladders and earn the discreet-elimination special rating.",
+            "3": "Reach Elite in all six rating ladders and earn the discreet-elimination special rating. Confirm every component in the Special Ratings folder; completion awards SSP 90."
+          }
+        },
+        {
+          "id": "sftos-special-field-efficiency",
+          "type": "optional",
+          "safe_type": "Special rating",
+          "label": "Field Efficiency Expert",
+          "missable": false,
+          "levels": {
+            "1": "Combine related objectives across several missions.",
+            "2": "Record every solo mission deadline.",
+            "3": "Record every solo mission deadline. Confirm every component in the Special Ratings folder; completion awards Increased ammunition capacity."
+          }
+        },
+        {
+          "id": "sftos-special-survival",
+          "type": "optional",
+          "safe_type": "Special rating",
+          "label": "Survival Tactics Expert",
+          "missable": false,
+          "levels": {
+            "1": "Combine related objectives across several missions.",
+            "2": "Finish every mission with a zero-death record.",
+            "3": "Finish every mission with a zero-death record. Confirm every component in the Special Ratings folder; completion awards Fifty-percent health increase."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-commendations",
+      "name": "Commendations",
+      "location_cue": "The Commendations page inside the agent dossier.",
+      "note": "Regional full-objective sets award distinct equipment.",
+      "items": [
+        {
+          "id": "sftos-commendation-carthage",
+          "type": "optional",
+          "safe_type": "Commendation",
+          "label": "Carthage Commendation",
+          "missable": false,
+          "levels": {
+            "1": "Finish the associated regional objective groups.",
+            "2": "Complete every objective in all three Carthage missions.",
+            "3": "Complete every objective in all three Carthage missions. Team-only objectives count where listed. The completed commendation adds 93R to the armory."
+          }
+        },
+        {
+          "id": "sftos-commendation-belarus",
+          "type": "optional",
+          "safe_type": "Commendation",
+          "label": "Belarus Commendation",
+          "missable": false,
+          "levels": {
+            "1": "Finish the associated regional objective groups.",
+            "2": "Complete every objective in Italy and both Belarus missions.",
+            "3": "Complete every objective in Italy and both Belarus missions. Team-only objectives count where listed. The completed commendation adds SR-15 to the armory."
+          }
+        },
+        {
+          "id": "sftos-commendation-yemen",
+          "type": "optional",
+          "safe_type": "Commendation",
+          "label": "Yemen Commendation",
+          "missable": false,
+          "levels": {
+            "1": "Finish the associated regional objective groups.",
+            "2": "Complete every objective in both Yemen missions.",
+            "3": "Complete every objective in both Yemen missions. Team-only objectives count where listed. The completed commendation adds Desert Sniper .44 to the armory."
+          }
+        },
+        {
+          "id": "sftos-commendation-minsk",
+          "type": "optional",
+          "safe_type": "Commendation",
+          "label": "Minsk Commendation",
+          "missable": false,
+          "levels": {
+            "1": "Finish the associated regional objective groups.",
+            "2": "Complete every objective in Minsk.",
+            "3": "Complete every objective in Minsk. Team-only objectives count where listed. The completed commendation adds CZ Mach-9 to the armory."
+          }
+        },
+        {
+          "id": "sftos-commendation-lorelei",
+          "type": "optional",
+          "safe_type": "Commendation",
+          "label": "Lorelei Commendation",
+          "missable": false,
+          "levels": {
+            "1": "Finish the associated regional objective groups.",
+            "2": "Complete every objective in Chechnya and Lorelei.",
+            "3": "Complete every objective in Chechnya and Lorelei. Team-only objectives count where listed. The completed commendation adds Riot Shotgun to the armory."
+          }
+        },
+        {
+          "id": "sftos-commendation-zurich",
+          "type": "optional",
+          "safe_type": "Commendation",
+          "label": "Zurich Commendation",
+          "missable": false,
+          "levels": {
+            "1": "Finish the associated regional objective groups.",
+            "2": "Complete every objective in Zurich.",
+            "3": "Complete every objective in Zurich. Team-only objectives count where listed. The completed commendation adds G 53 to the armory."
+          }
+        },
+        {
+          "id": "sftos-commendation-asia",
+          "type": "optional",
+          "safe_type": "Commendation",
+          "label": "Asia Commendation",
+          "missable": false,
+          "levels": {
+            "1": "Finish the associated regional objective groups.",
+            "2": "Complete every objective in Kyrgyzstan, Tokyo, and Myanmar.",
+            "3": "Complete every objective in Kyrgyzstan, Tokyo, and Myanmar. Team-only objectives count where listed. The completed commendation adds China Type 67 to the armory."
+          }
+        },
+        {
+          "id": "sftos-commendation-final",
+          "type": "optional",
+          "safe_type": "Commendation",
+          "label": "Final Operations Commendation",
+          "missable": false,
+          "levels": {
+            "1": "Finish the associated regional objective groups.",
+            "2": "Complete every objective in Montenegro and Ukraine.",
+            "3": "Complete every objective in Montenegro and Ukraine. Team-only objectives count where listed. The completed commendation adds Desert Express .50 to the armory."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-medals",
+      "name": "Medals and Service Awards",
+      "location_cue": "The Medals page inside the agent dossier.",
+      "note": "These awards combine objectives from several operations.",
+      "items": [
+        {
+          "id": "sftos-medal-distinction",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "Medal of Distinction",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Beat every solo deadline.",
+            "3": "Beat every solo deadline. Verify every component in the Medals folder; the completed award unlocks US M60 E3."
+          }
+        },
+        {
+          "id": "sftos-medal-valor",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "Agency Medal of Valor",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Earn every rating, special rating, commendation, other medal, and the highest rank.",
+            "3": "Earn every rating, special rating, commendation, other medal, and the highest rank. Verify every component in the Medals folder; the completed award unlocks M-249 SAW."
+          }
+        },
+        {
+          "id": "sftos-medal-courage",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "Stone's Medal of Courage",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Complete the rescue in Belarus 2 and the matching cover objective in Ukraine.",
+            "3": "Complete the rescue in Belarus 2 and the matching cover objective in Ukraine. Verify every component in the Medals folder; the completed award unlocks SPA-15 Shotgun."
+          }
+        },
+        {
+          "id": "sftos-medal-carthage-service",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "Carthage Exemplary Service Tribute",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Protect the officers in Carthage 1 and 2, clear all four assassins in Carthage 2, and rescue both injured officers in Carthage 3.",
+            "3": "Protect the officers in Carthage 1 and 2, clear all four assassins in Carthage 2, and rescue both injured officers in Carthage 3. Verify every component in the Medals folder; the completed award unlocks Spectre."
+          }
+        },
+        {
+          "id": "sftos-medal-homeland",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "Homeland Security Citation",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Earn both prerequisite service awards and recover the Birchim files in Zurich.",
+            "3": "Earn both prerequisite service awards and recover the Birchim files in Zurich. Verify every component in the Medals folder; the completed award unlocks FAL SG-1."
+          }
+        },
+        {
+          "id": "sftos-medal-warner",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "Ellison Warner Award",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Destroy both designated missile systems and recover the Myanmar flight recorder.",
+            "3": "Destroy both designated missile systems and recover the Myanmar flight recorder. Verify every component in the Medals folder; the completed award unlocks Tec 45."
+          }
+        },
+        {
+          "id": "sftos-medal-unicorn",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "Karkadann Unicorn Charm",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Complete both Yemen objective sets and bring the stranded agent to safety in Ukraine.",
+            "3": "Complete both Yemen objective sets and bring the stranded agent to safety in Ukraine. Verify every component in the Medals folder; the completed award unlocks Desert Eliminator .357."
+          }
+        },
+        {
+          "id": "sftos-medal-korea",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "Republic of Korea Service Award",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Collect the Kyrgyzstan papers, the second Yemen credentials, the Tokyo upload, and the Myanmar briefcase.",
+            "3": "Collect the Kyrgyzstan papers, the second Yemen credentials, the Tokyo upload, and the Myanmar briefcase. Verify every component in the Medals folder; the completed award unlocks China Type 56."
+          }
+        },
+        {
+          "id": "sftos-medal-freedom",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "South African Freedom Medal",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Maintain zero collateral damage everywhere, earn both prerequisite rescue awards, escort every Belarus worker, and save the level-five rig personnel.",
+            "3": "Maintain zero collateral damage everywhere, earn both prerequisite rescue awards, escort every Belarus worker, and save the level-five rig personnel. Verify every component in the Medals folder; the completed award unlocks Sweeper 12 Gauge."
+          }
+        },
+        {
+          "id": "sftos-medal-liberty",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "President's Official Liberty Award",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Complete the five specified discreet eliminations across Carthage 3, Italy, Belarus 1, Kyrgyzstan, and Myanmar.",
+            "3": "Complete the five specified discreet eliminations across Carthage 3, Italy, Belarus 1, Kyrgyzstan, and Myanmar. Verify every component in the Medals folder; the completed award unlocks DSC-1."
+          }
+        },
+        {
+          "id": "sftos-medal-great-lakes",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "Great Lakes Service Medal",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Complete all Carthage objectives, photograph the Yemen files, and recover the Zurich financial records.",
+            "3": "Complete all Carthage objectives, photograph the Yemen files, and recover the Zurich financial records. Verify every component in the Medals folder; the completed award unlocks MDS-K PDW."
+          }
+        },
+        {
+          "id": "sftos-medal-golden-dragon",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "Order of the Golden Dragon",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Earn the Korea award and complete every objective in Kyrgyzstan, Tokyo, and Myanmar.",
+            "3": "Earn the Korea award and complete every objective in Kyrgyzstan, Tokyo, and Myanmar. Verify every component in the Medals folder; the completed award unlocks SPA-12 Shotgun."
+          }
+        },
+        {
+          "id": "sftos-medal-golden-cross",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "Golden Cross of Russia",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Complete both Belarus requirements plus the specified Kyrgyzstan, Yemen, Minsk, Montenegro, and Ukraine requirements.",
+            "3": "Complete both Belarus requirements plus the specified Kyrgyzstan, Yemen, Minsk, Montenegro, and Ukraine requirements. Verify every component in the Medals folder; the completed award unlocks TH3 Blaster."
+          }
+        },
+        {
+          "id": "sftos-medal-peace-friend",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "Mossad Friend to Peace Medal",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Earn the unicorn charm and complete the optional Kyrgyzstan elimination.",
+            "3": "Earn the unicorn charm and complete the optional Kyrgyzstan elimination. Verify every component in the Medals folder; the completed award unlocks Galil SG-1."
+          }
+        },
+        {
+          "id": "sftos-medal-un-peace",
+          "type": "optional",
+          "safe_type": "Medal",
+          "label": "United Nations Peace Award",
+          "missable": false,
+          "levels": {
+            "1": "Complete the linked cross-mission conditions.",
+            "2": "Complete the full Omega Strain cure chain.",
+            "3": "Complete the full Omega Strain cure chain. Verify every component in the Medals folder; the completed award unlocks C11."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sftos-final-audit",
+      "name": "Final Dossier Audit",
+      "location_cue": "The Personnel folder after all mission regions are available.",
+      "note": "Use this area only after completing the mission-by-mission checklist.",
+      "items": [
+        {
+          "id": "sftos-cure-chain",
+          "type": "optional",
+          "safe_type": "Completion chain",
+          "label": "Omega Strain Cure Chain",
+          "missable": false,
+          "levels": {
+            "1": "Preserve every biological and computer sample encountered across the campaign.",
+            "2": "Complete the ten sample objectives listed in the Personnel folder.",
+            "3": "Register these mission records: the Carthage 1 tissue scan; Carthage 2 recorder; Belarus 1 carcass sample and safe documents; Belarus 2 sewer sample; Yemen 2 container; Minsk serum; Lorelei original sample; Tokyo sample; and Ukraine DNA code. The finished chain unlocks the United Nations Peace Award and C11."
+          }
+        },
+        {
+          "id": "sftos-complete-dossier",
+          "type": "optional",
+          "safe_type": "Final audit",
+          "label": "T4 Complete Dossier",
+          "missable": false,
+          "levels": {
+            "1": "Leave this until every folder is nearly full.",
+            "2": "Reach T4 after finishing all solo and team progression.",
+            "3": "Confirm all mission objectives, eighteen solo deadlines, nine team pars, zero-death records, six Elite rating ladders, eight special ratings, eight commendations, fifteen medals, the cure chain, and every reward weapon. T4 awards the Mark 23 SD; the Agency Medal of Valor supplies the final award weapon."
+          }
+        }
+      ]
+    }
+  ]
+}

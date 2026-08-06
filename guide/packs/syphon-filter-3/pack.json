@@ -1,0 +1,1101 @@
+{
+  "id": "syphon-filter-3",
+  "game": "Syphon Filter 3",
+  "target": "Spoiler-free complete play of the original PlayStation release: campaign, mission parameters, unlocks, modes, secrets, and distinct equipment",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-28",
+  "areas": [
+    {
+      "id": "sf3-run-setup",
+      "name": "Run Setup",
+      "location_cue": "The title screen before starting a new campaign.",
+      "note": "This route follows the original North American PlayStation release through DuckStation.",
+      "items": [
+        {
+          "id": "sf3-ps1-route",
+          "type": "optional",
+          "safe_type": "Play route",
+          "label": "Original PlayStation Route",
+          "missable": false,
+          "levels": {
+            "1": "Use the original console content as the authority for this run.",
+            "2": "Load your North American PlayStation disc dump in DuckStation.",
+            "3": "Use a verified personal BIN/CUE dump and retain the original four-by-three picture. Load the verified BIN/CUE disc set directly in DuckStation. Enhancements may improve presentation, but do not use patches that alter objectives, enemy rules, or unlock conditions."
+          }
+        },
+        {
+          "id": "sf3-memory-card",
+          "type": "optional",
+          "safe_type": "Setup",
+          "label": "Memory-Card and State Safety",
+          "missable": false,
+          "levels": {
+            "1": "Prepare a reliable recovery path before the opening mission.",
+            "2": "Assign a dedicated virtual memory card and rotate three manual save states.",
+            "3": "Confirm that a test memory-card save reloads before beginning. Keep card saves as the permanent record, use one state at mission start and another after important unlock attempts, and never overwrite every recovery slot at once."
+          }
+        },
+        {
+          "id": "sf3-training",
+          "type": "optional",
+          "safe_type": "Training",
+          "label": "Controls Practice",
+          "missable": false,
+          "levels": {
+            "1": "Refresh the movement and aiming systems before committing to a run.",
+            "2": "Practice manual aim, target lock, crouching, rolling, climbing, and inventory selection.",
+            "3": "Use the opening mission or menu demonstrations to verify every control. In particular, practice quick manual headshots, corner peeking, target-lock strafing, and changing equipment without losing your orientation."
+          }
+        },
+        {
+          "id": "sf3-normal-campaign",
+          "type": "optional",
+          "safe_type": "Campaign",
+          "label": "Standard Campaign Run",
+          "missable": false,
+          "levels": {
+            "1": "Begin under the intended rules before experimenting with modifiers.",
+            "2": "Start New Game normally and obey every Objectives and Parameters screen.",
+            "3": "Read both briefing tabs at each mission start. A route can be physically complete yet still fail because a protected person, stealth rule, timer, or prohibited weapon was ignored. Save after every successful mission and preserve the completed file."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-hotel-fukashima",
+      "name": "Hotel Fukashima",
+      "location_cue": "When you enter a city hotel facing another building across the street.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-hotel-fukashima-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Hotel Fukashima Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Recover the room equipment, clear the opposite windows, descend, and leave through the bar.",
+            "3": "Go to room 413, take the equipment from the bathroom, use the window for the long-range section, clear each required uniformed opponent while protecting the captive, descend through the hotel, then cross the bar and use its far-right exit."
+          }
+        },
+        {
+          "id": "sf3-hotel-fukashima-military-base",
+          "type": "secret",
+          "safe_type": "Hidden arena",
+          "label": "Military Base Minigame Arena",
+          "missable": false,
+          "levels": {
+            "1": "Protect the captive visible from room 413.",
+            "2": "From the room 413 window, headshot the visibly different attacker, immediately remove the nearby uniformed guard, then keep the captive alive through the remaining window fight.",
+            "3": "From the room 413 window, headshot the visibly different attacker, immediately remove the nearby uniformed guard, then keep the captive alive through the remaining window fight."
+          }
+        },
+        {
+          "id": "sf3-hotel-fukashima-biathlon",
+          "type": "secret",
+          "safe_type": "Hidden mode",
+          "label": "Biathlon Minigame",
+          "missable": false,
+          "levels": {
+            "1": "Use the electrical tool throughout the hotel fight.",
+            "2": "After the primary window target is down, use the air taser to eliminate every required officer and guard.",
+            "3": "After the primary window target is down, use the air taser to eliminate every required officer and guard. Roll away whenever the danger meter fills, reacquire the target, and continue until the mode unlocks."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-costa-rican-plantation",
+      "name": "Costa Rican Plantation",
+      "location_cue": "When you enter a jungle plantation with turret nests and marked mines.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-costa-rican-plantation-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Costa Rican Plantation Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Cross the plantation, remove the turret nests, and follow the detector route into the tunnel.",
+            "3": "Follow the guide through the fields, destroy each turret with a grenade, use trees and terrain against the sniper, complete the worker-rescue detour if desired, then watch the mine detector and hug the safe edge into the final tunnel."
+          }
+        },
+        {
+          "id": "sf3-costa-rican-plantation-rhoemers-labs",
+          "type": "secret",
+          "safe_type": "Hidden arena",
+          "label": "Rhoemer's Labs Multiplayer Arena",
+          "missable": false,
+          "levels": {
+            "1": "Complete the optional worker-rescue objective.",
+            "2": "At the plantation, intervene at the first threatened worker, follow the resulting request to the second location, and free both before entering the final tunnel.",
+            "3": "At the plantation, intervene at the first threatened worker, follow the resulting request to the second location, and free both before entering the final tunnel."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-c5-galaxy-transport",
+      "name": "C-5 Galaxy Transport",
+      "location_cue": "When you enter the cargo hold and cockpit of a large transport aircraft.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-c5-galaxy-transport-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "C-5 Galaxy Transport Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Reach the cockpit, open the cargo door, then force the armored opponent through it.",
+            "3": "Clear the two cargo rooms, take the UAS-12 from the right-hand crate, go upstairs, wait for the armed cockpit crew member to draw before responding, operate the cargo-door switch, return to the rear, and use repeated shotgun blasts to push the armored opponent out."
+          }
+        },
+        {
+          "id": "sf3-c5-galaxy-transport-computer-center",
+          "type": "secret",
+          "safe_type": "Hidden arena",
+          "label": "Computer Center Multiplayer Arena",
+          "missable": false,
+          "levels": {
+            "1": "Leave the non-hostile cockpit occupant alive.",
+            "2": "In the cockpit, wait for the armed crew member to draw and neutralize only that person.",
+            "3": "In the cockpit, wait for the armed crew member to draw and neutralize only that person. Do not shoot the co-pilot; open the cargo bay and finish the mission normally."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-pugari-gold-mine",
+      "name": "Pugari Gold Mine",
+      "location_cue": "When you enter open mine ledges, pipes, tunnels, and mine carts.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-pugari-gold-mine-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Pugari Gold Mine Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Recover explosives, free the workers, remove the snipers, and rig the mine.",
+            "3": "Land on the narrow pipe, collect the explosives from the upper crate, descend by the small ledges, use the right-hand tunnel around the open pit, free both workers, clear every marked sniper, return to the mine-cart room, and plant the charge at the central prompt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-pugari-complex",
+      "name": "Pugari Complex",
+      "location_cue": "When you enter mine-cart tracks opening into an industrial compound.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-pugari-complex-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Pugari Complex Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Survive the cart route, cross the complex, and clear the final launcher team.",
+            "3": "Crouch beneath the overhead beams on the cart and roll off before the crash. Continue past the foreman's office, use the available long-range rifle for the elevated threats, then take the wall-penetrating AU300 and remove the four final launcher guards."
+          }
+        },
+        {
+          "id": "sf3-pugari-complex-colorado-bridge",
+          "type": "secret",
+          "safe_type": "Hidden arena",
+          "label": "Colorado Bridge Minigame Arena",
+          "missable": false,
+          "levels": {
+            "1": "Do not shoot the foreman in the office.",
+            "2": "Enter the office and allow the foreman to survive.",
+            "3": "Enter the office and allow the foreman to survive. Leave immediately after the interaction and continue the complex route; the arena registers at mission completion."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-kabul-afghanistan",
+      "name": "Kabul, Afghanistan",
+      "location_cue": "When you enter ruined streets, broken walls, and rooftop sniper posts.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-kabul-afghanistan-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Kabul, Afghanistan Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Clear the seven sniper checkpoints, collect the AU300, and remove the launcher team.",
+            "3": "Use the silenced pistol on the rooftop snipers while advancing through wall openings. For the arena condition, eliminate all seven before the danger meter appears and do not collect the AU300 early. Then take the rifle and use its wall-penetrating view on the final four launchers."
+          }
+        },
+        {
+          "id": "sf3-kabul-afghanistan-kabul-arena",
+          "type": "secret",
+          "safe_type": "Hidden arena",
+          "label": "Kabul Multiplayer Arena",
+          "missable": false,
+          "levels": {
+            "1": "Clear the rooftop marks without raising danger.",
+            "2": "Kill all seven snipers before the danger meter ever appears and do not take the AU300 until they are all down.",
+            "3": "Kill all seven snipers before the danger meter ever appears and do not take the AU300 until they are all down. Use the silenced pistol and fire only from unseen angles."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-ss-lorelei",
+      "name": "S.S. Lorelei",
+      "location_cue": "When you enter cargo holds and narrow passageways aboard a large ship.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-ss-lorelei-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "S.S. Lorelei Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Plant the required charges, free the two detainees, and protect the crane operator.",
+            "3": "Plant explosives at each marked cargo-hold corner, use the service passages between holds, open both cells and speak to their occupants, then reach the crane room and protect its operator from alternating left and right attacks until the mechanism is active."
+          }
+        },
+        {
+          "id": "sf3-ss-lorelei-lorelei-arena",
+          "type": "secret",
+          "safe_type": "Hidden arena",
+          "label": "S.S. Lorelei Multiplayer Arena",
+          "missable": false,
+          "levels": {
+            "1": "Pass the kitchen without harming its noncombatant.",
+            "2": "When you reach the cook, stay unseen, bypass the kitchen, and enter the dumbwaiter room without attacking or alerting that person.",
+            "3": "When you reach the cook, stay unseen, bypass the kitchen, and enter the dumbwaiter room without attacking or alerting that person. Finish the mission normally."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-aztec-ruins",
+      "name": "Aztec Ruins",
+      "location_cue": "When you enter stone chambers, pits, crates, and narrow ruin corridors.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-aztec-ruins-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Aztec Ruins Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Traverse the ruins, open both final cells, and contact each occupant.",
+            "3": "Take the left opening route, climb through the upper room, follow the corridor and stair sequence, use stacked crates to bypass the lower pit, continue through the marked chambers, place charges on both final cell walls, then enter each opening and interact inside."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-waterfront",
+      "name": "Waterfront",
+      "location_cue": "When you enter dockside warehouses, cargo stacks, and parked trucks.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-waterfront-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Waterfront Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Cover the route through the warehouses and plant charges on every marked truck.",
+            "3": "Use pillars and cargo stacks against the sniper, plant the first truck charge, shoot the fuel tanks to open the warehouse exit, escort the partner through cover, reach the tunnel, plant the last truck charge, and clear the gate while the detonation completes."
+          }
+        },
+        {
+          "id": "sf3-waterfront-warehouses",
+          "type": "secret",
+          "safe_type": "Timed unlock",
+          "label": "Warehouses Minigame Arena",
+          "missable": false,
+          "levels": {
+            "1": "Use the most direct route through the docks.",
+            "2": "Complete Waterfront in under two minutes.",
+            "3": "Complete Waterfront in under two minutes. Skip optional ammunition, move ahead of the escort to clear each lane, plant every truck charge immediately, and skip noninteractive pauses."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-docks-final-assault",
+      "name": "Docks Final Assault",
+      "location_cue": "When you enter a cargo dock with containers, pillars, and service roads.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-docks-final-assault-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Docks Final Assault Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Escort the protected operative between cover points and stop the departing truck.",
+            "3": "Meet the operative near the fence, move ahead to clear each container lane before signaling the route forward, keep the sniper's angle blocked by cargo, reach the service road, then pursue the truck and use controlled fire to end the mission without losing the escort."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-convoy",
+      "name": "Convoy",
+      "location_cue": "When you enter a desert road, caves, and repeated barricades.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-convoy-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Convoy Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Protect the convoy, bypass the mortar zone through the cave, and destroy the last roadblock.",
+            "3": "Clear the opening roadside group, stay beside the truck until mortar fire begins, take the side cave around the impact zone, rejoin the convoy, remove each barricade team, then plant the final explosive and retreat behind the truck before detonation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-the-beast",
+      "name": "The Beast",
+      "location_cue": "When you enter a damaged town square surrounding a heavy vehicle.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-the-beast-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "The Beast Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Acquire C4, attach it safely, and detonate after the vehicle begins moving.",
+            "3": "Clear the square perimeter, collect C4 from the lit ruined building, wait until the vehicle reaches the middle, approach from behind while avoiding its gun arc, attach the charge at the rear prompt, retreat toward the convoy, and trigger the detonator only after it moves away."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-australian-outback",
+      "name": "Australian Outback",
+      "location_cue": "When you enter a tented desert camp with towers and a communications dish.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-australian-outback-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Australian Outback Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Disable communications, document the marked site, gather components, and reach the helicopter.",
+            "3": "Access the dish, photograph the shallow marked area, clear the tower compound, use the detector to gather every required component, protect the medical specialist during assembly, then collect the K3G4 ammunition before stepping into the helicopter zone."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-st-george-australia",
+      "name": "St. George Australia",
+      "location_cue": "When you enter a dusty settlement with hostages, towers, and a vehicle route.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-st-george-australia-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "St. George Australia Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Free and treat every captive, obtain the truck, and reach the helicopter.",
+            "3": "Use the outer slope to bypass patrols, neutralize the guard pair at each captive, administer the antidote at every prompt, preserve stealth for the hidden unlock, reach and take the truck, then clear the unavoidable final helicopter group."
+          }
+        },
+        {
+          "id": "sf3-st-george-australia-fortress",
+          "type": "secret",
+          "safe_type": "Stealth unlock",
+          "label": "Rhoemer's Fortress Minigame Arena",
+          "missable": false,
+          "levels": {
+            "1": "Keep the settlement unaware until the unavoidable extraction.",
+            "2": "Remain unseen through roughly the first ninety percent of the mission: use the sniper rifle from long range, separate paired guards, free every captive quietly, and allow detection only at the final helicopter group.",
+            "3": "Remain unseen through roughly the first ninety percent of the mission: use the sniper rifle from long range, separate paired guards, free every captive quietly, and allow detection only at the final helicopter group."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-paradise-ridge",
+      "name": "Paradise Ridge",
+      "location_cue": "When you enter wooded ridges, towers, boulders, and power-line pylons.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-paradise-ridge-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Paradise Ridge Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Free the captive, mark the required pylons, and enter the compound.",
+            "3": "Snipe the opening towers, free the tied operative beyond the boulders, avoid harming protected militia, attach homing beacons to the marked power structures, follow the final ridge, remove the hostile sniper, and cross into the compound."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-militia-compound",
+      "name": "Militia Compound",
+      "location_cue": "When you enter red industrial buildings connected by bridges and tunnels.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-militia-compound-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Militia Compound Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Cross the compound, protect the captives, clear the towers, and open the hidden passage.",
+            "3": "Move through the red buildings, use the floor opening into the tunnel route, save all three captives for the arena condition, clear the opposing sniper positions, descend to the underground room, remove the remaining hostiles, and pull away the dirty mattress to expose the exit."
+          }
+        },
+        {
+          "id": "sf3-militia-compound-izmailovo",
+          "type": "secret",
+          "safe_type": "Hidden arena",
+          "label": "Izmailovo Park Multiplayer Arena",
+          "missable": false,
+          "levels": {
+            "1": "Save every captive in the compound.",
+            "2": "After the first checkpoint, drop into the stall room and quickly headshot both captors; later, turn the tunnel corner and eliminate the next pair before they can harm either captive.",
+            "3": "After the first checkpoint, drop into the stall room and quickly headshot both captors; later, turn the tunnel corner and eliminate the next pair before they can harm either captive. Speak to all three survivors."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-underground-bunker",
+      "name": "Underground Bunker",
+      "location_cue": "When you enter dark ramps, bridges, and flag-marked service rooms.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-underground-bunker-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Underground Bunker Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Escort both companions through the bunker and reach the ladder passage.",
+            "3": "Follow the demolition specialist through the opening ramps, collect the infrared goggles, protect both escorts across the dark bridge and spiral route, hold each room until they finish interacting, then enter the passage behind the flag and climb to the exit ladder."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-senate-building",
+      "name": "Senate Building",
+      "location_cue": "When you enter office corridors, restrooms, vents, and a subway connection.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-senate-building-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Senate Building Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Use the vent to open the security gates and reach the underground tracks.",
+            "3": "Clear the first corridors, enter the opposite restroom, shoot the vent, climb from the sink, drop into the control room, operate the computer, return through the opened sections, take the elevator down, wait for the first train, and cross the remaining tracks safely."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-dc-subway",
+      "name": "D.C. Subway",
+      "location_cue": "When you enter connected train cars and an underground platform.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf3-dc-subway-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "D.C. Subway Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and protect every restricted condition.",
+            "2": "Advance through the cars, save all three captives, and finish the platform route.",
+            "3": "Clear each carriage before advancing, preserve H11 ammunition for the paired captors, shoot both through the door windows before either can react, untie all three captives, continue through the remaining train cars, and finish the last platform encounter."
+          }
+        },
+        {
+          "id": "sf3-dc-subway-mesa-verde",
+          "type": "secret",
+          "safe_type": "Timed unlock",
+          "label": "Mesa Verde Exhibit Minigame Arena",
+          "missable": false,
+          "levels": {
+            "1": "Keep moving through the train and platform.",
+            "2": "Complete the mission in under fifteen minutes.",
+            "3": "Complete the mission in under fifteen minutes. Preserve H11 ammunition for the captive rooms, clear each car before opening the next door, and avoid backtracking after reaching the platform."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-minigames",
+      "name": "Minigame Completion",
+      "location_cue": "Minigames under New Game on the title menu.",
+      "note": "Finish every available mode through Commander rank; unlock conditions are documented in their campaign areas.",
+      "items": [
+        {
+          "id": "sf3-minigame-assassinate",
+          "type": "optional",
+          "safe_type": "Minigame",
+          "label": "Assassinate — All Ranks",
+          "missable": false,
+          "levels": {
+            "1": "Learn the objective on Trainee before advancing.",
+            "2": "Complete Trainee, Rookie, Agent, Special Agent, and Commander for this mode.",
+            "3": "Remain unseen and remove every marked target before the timer expires. On the highest rank, crouch-walk into knife range and plan each escape route before attacking."
+          }
+        },
+        {
+          "id": "sf3-minigame-eliminate",
+          "type": "optional",
+          "safe_type": "Minigame",
+          "label": "Eliminate — All Ranks",
+          "missable": false,
+          "levels": {
+            "1": "Learn the objective on Trainee before advancing.",
+            "2": "Complete Trainee, Rookie, Agent, Special Agent, and Commander for this mode.",
+            "3": "Clear every enemy wave. Circle the arena to trigger remaining spawns, take dropped ammunition, and prioritize headshots when the later ranks reduce your starting equipment."
+          }
+        },
+        {
+          "id": "sf3-minigame-demolition",
+          "type": "optional",
+          "safe_type": "Minigame",
+          "label": "Demolition — All Ranks",
+          "missable": false,
+          "levels": {
+            "1": "Learn the objective on Trainee before advancing.",
+            "2": "Complete Trainee, Rookie, Agent, Special Agent, and Commander for this mode.",
+            "3": "Protect the technician while every device is disarmed. Stand between the technician and incoming fire, remove elevated attackers first, and rotate around the work point as waves change direction."
+          }
+        },
+        {
+          "id": "sf3-minigame-thief",
+          "type": "optional",
+          "safe_type": "Minigame",
+          "label": "Thief — All Ranks",
+          "missable": false,
+          "levels": {
+            "1": "Learn the objective on Trainee before advancing.",
+            "2": "Complete Trainee, Rookie, Agent, Special Agent, and Commander for this mode.",
+            "3": "Reach the briefcase and return it to the start without detection. Use the radar for the case, avoid close passes behind guards, and reserve enough time for the more dangerous return route."
+          }
+        },
+        {
+          "id": "sf3-minigame-biathlon",
+          "type": "optional",
+          "safe_type": "Minigame",
+          "label": "Biathlon — All Ranks",
+          "missable": false,
+          "levels": {
+            "1": "Learn the objective on Trainee before advancing.",
+            "2": "Complete Trainee, Rookie, Agent, Special Agent, and Commander for this mode.",
+            "3": "Follow the marked course and break every target from its firing station. Conserve sniper rounds, use moderate zoom, and line up overlapping moving targets on Commander whenever possible."
+          }
+        },
+        {
+          "id": "sf3-minigame-arena-whispering-woods-mortuary",
+          "type": "optional",
+          "safe_type": "Minigame arena",
+          "label": "Whispering Woods Mortuary",
+          "missable": false,
+          "levels": {
+            "1": "Confirm that this environment appears in the minigame selector.",
+            "2": "Unlock Whispering Woods Mortuary if required, then finish at least one valid minigame there.",
+            "3": "Select Whispering Woods Mortuary, choose any compatible mode, and complete the objective once. The five modes still require their full rank ladders separately; this entry confirms the arena itself has been unlocked and used."
+          }
+        },
+        {
+          "id": "sf3-minigame-arena-new-york-slums",
+          "type": "optional",
+          "safe_type": "Minigame arena",
+          "label": "New York Slums",
+          "missable": false,
+          "levels": {
+            "1": "Confirm that this environment appears in the minigame selector.",
+            "2": "Unlock New York Slums if required, then finish at least one valid minigame there.",
+            "3": "Select New York Slums, choose any compatible mode, and complete the objective once. The five modes still require their full rank ladders separately; this entry confirms the arena itself has been unlocked and used."
+          }
+        },
+        {
+          "id": "sf3-minigame-arena-colorado-bridge",
+          "type": "optional",
+          "safe_type": "Minigame arena",
+          "label": "Colorado Bridge",
+          "missable": false,
+          "levels": {
+            "1": "Confirm that this environment appears in the minigame selector.",
+            "2": "Unlock Colorado Bridge if required, then finish at least one valid minigame there.",
+            "3": "Select Colorado Bridge, choose any compatible mode, and complete the objective once. The five modes still require their full rank ladders separately; this entry confirms the arena itself has been unlocked and used."
+          }
+        },
+        {
+          "id": "sf3-minigame-arena-washington-park",
+          "type": "optional",
+          "safe_type": "Minigame arena",
+          "label": "Washington Park",
+          "missable": false,
+          "levels": {
+            "1": "Confirm that this environment appears in the minigame selector.",
+            "2": "Unlock Washington Park if required, then finish at least one valid minigame there.",
+            "3": "Select Washington Park, choose any compatible mode, and complete the objective once. The five modes still require their full rank ladders separately; this entry confirms the arena itself has been unlocked and used."
+          }
+        },
+        {
+          "id": "sf3-minigame-arena-dc-subway",
+          "type": "optional",
+          "safe_type": "Minigame arena",
+          "label": "D.C. Subway",
+          "missable": false,
+          "levels": {
+            "1": "Confirm that this environment appears in the minigame selector.",
+            "2": "Unlock D.C. Subway if required, then finish at least one valid minigame there.",
+            "3": "Select D.C. Subway, choose any compatible mode, and complete the objective once. The five modes still require their full rank ladders separately; this entry confirms the arena itself has been unlocked and used."
+          }
+        },
+        {
+          "id": "sf3-minigame-arena-rhoemers-fortress",
+          "type": "optional",
+          "safe_type": "Minigame arena",
+          "label": "Rhoemer's Fortress",
+          "missable": false,
+          "levels": {
+            "1": "Confirm that this environment appears in the minigame selector.",
+            "2": "Unlock Rhoemer's Fortress if required, then finish at least one valid minigame there.",
+            "3": "Select Rhoemer's Fortress, choose any compatible mode, and complete the objective once. The five modes still require their full rank ladders separately; this entry confirms the arena itself has been unlocked and used."
+          }
+        },
+        {
+          "id": "sf3-minigame-arena-phagans-warehouse",
+          "type": "optional",
+          "safe_type": "Minigame arena",
+          "label": "Phagan's Warehouse",
+          "missable": false,
+          "levels": {
+            "1": "Confirm that this environment appears in the minigame selector.",
+            "2": "Unlock Phagan's Warehouse if required, then finish at least one valid minigame there.",
+            "3": "Select Phagan's Warehouse, choose any compatible mode, and complete the objective once. The five modes still require their full rank ladders separately; this entry confirms the arena itself has been unlocked and used."
+          }
+        },
+        {
+          "id": "sf3-minigame-arena-china-exhibit",
+          "type": "optional",
+          "safe_type": "Minigame arena",
+          "label": "China Exhibit",
+          "missable": false,
+          "levels": {
+            "1": "Confirm that this environment appears in the minigame selector.",
+            "2": "Unlock China Exhibit if required, then finish at least one valid minigame there.",
+            "3": "Select China Exhibit, choose any compatible mode, and complete the objective once. The five modes still require their full rank ladders separately; this entry confirms the arena itself has been unlocked and used."
+          }
+        },
+        {
+          "id": "sf3-minigame-arena-military-base",
+          "type": "optional",
+          "safe_type": "Minigame arena",
+          "label": "Military Base",
+          "missable": false,
+          "levels": {
+            "1": "Confirm that this environment appears in the minigame selector.",
+            "2": "Unlock Military Base if required, then finish at least one valid minigame there.",
+            "3": "Select Military Base, choose any compatible mode, and complete the objective once. The five modes still require their full rank ladders separately; this entry confirms the arena itself has been unlocked and used."
+          }
+        },
+        {
+          "id": "sf3-minigame-arena-mesa-verde-exhibit",
+          "type": "optional",
+          "safe_type": "Minigame arena",
+          "label": "Mesa Verde Exhibit",
+          "missable": false,
+          "levels": {
+            "1": "Confirm that this environment appears in the minigame selector.",
+            "2": "Unlock Mesa Verde Exhibit if required, then finish at least one valid minigame there.",
+            "3": "Select Mesa Verde Exhibit, choose any compatible mode, and complete the objective once. The five modes still require their full rank ladders separately; this entry confirms the arena itself has been unlocked and used."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-modes-and-codes",
+      "name": "Campaign Modes and Codes",
+      "location_cue": "The title menu, completed-save menu, and pause screen.",
+      "note": "Keep an unmodified completed save before testing shortcuts.",
+      "items": [
+        {
+          "id": "sf3-hard-mode",
+          "type": "secret",
+          "safe_type": "Mode",
+          "label": "Hard Mode",
+          "missable": false,
+          "levels": {
+            "1": "A stricter campaign rule set is available before New Game.",
+            "2": "Highlight One Player; hold Up + Select + L1 + R2, then add Square + Circle + X.",
+            "3": "At the title screen, highlight One Player and press the full chord together. Start a new campaign after the confirmation and complete every mission again under the harder health, accuracy, and timing rules."
+          }
+        },
+        {
+          "id": "sf3-level-select-end-level",
+          "type": "secret",
+          "safe_type": "Menu option",
+          "label": "Select Level and End Level",
+          "missable": false,
+          "levels": {
+            "1": "Completing the normal campaign expands the cheat menu.",
+            "2": "Finish One Player on Normal without activating the Hard code, then save.",
+            "3": "Complete the normal campaign and preserve the final save. Reload it and confirm that Select Level and End Level appear. Use Select Level for cleanup; test End Level only on a disposable state because skipping does not count as a real completion."
+          }
+        },
+        {
+          "id": "sf3-super-agent",
+          "type": "secret",
+          "safe_type": "Mode",
+          "label": "Super Agent",
+          "missable": false,
+          "levels": {
+            "1": "Mastering the complete minigame ladder opens a combat modifier.",
+            "2": "Finish every minigame mode on every difficulty rank.",
+            "3": "Complete Assassinate, Eliminate, Demolition, Thief, and Biathlon on Trainee, Rookie, Agent, Special Agent, and Commander. Return to the Cheats menu and confirm Super Agent is available; enable it once on a replay, then switch it off."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-multiplayer",
+      "name": "Two-Player Mode",
+      "location_cue": "Two Player on the title menu with two controllers connected.",
+      "note": "Campaign challenge unlocks expand the local arena list.",
+      "items": [
+        {
+          "id": "sf3-multiplayer-all-arenas",
+          "type": "optional",
+          "safe_type": "Multiplayer",
+          "label": "Every Arena Match",
+          "missable": false,
+          "levels": {
+            "1": "Use the completed save to inspect every arena.",
+            "2": "Earn every campaign arena unlock and finish one two-player match on each arena.",
+            "3": "Connect a second controller, load the completed save, and finish a match on every default and unlocked arena. Verify the added list includes Rhoemer's Labs, Computer Center, Kabul, S.S. Lorelei, Warehouses, and Izmailovo Park."
+          }
+        },
+        {
+          "id": "sf3-multiplayer-roster",
+          "type": "optional",
+          "safe_type": "Multiplayer",
+          "label": "Complete Character Roster",
+          "missable": false,
+          "levels": {
+            "1": "Inspect every page of the character selector.",
+            "2": "After completing the campaign and hidden arena conditions, select every available character once.",
+            "3": "Open Two Player with the completed save, scroll through the entire roster in both player slots, and start one match using a character from each selector page. No online service is required; this is local multiplayer content."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf3-arsenal",
+      "name": "Arsenal Familiarization",
+      "location_cue": "The Weaponry pause tab during campaign or minigame play.",
+      "note": "Equipment is scenario inventory rather than a persistent collection.",
+      "items": [
+        {
+          "id": "sf3-arsenal-9mm",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "9mm Handgun",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire 9mm Handgun during campaign or minigame play and use it once.",
+            "3": "Test its defining role: quiet manual-aim headshots. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-45",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": ".45 Handgun",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire .45 Handgun during campaign or minigame play and use it once.",
+            "3": "Test its defining role: strong semiautomatic close-range fire. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-falcon",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Falcon",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire Falcon during campaign or minigame play and use it once.",
+            "3": "Test its defining role: powerful deliberate pistol shots. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-hk5",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Silenced HK-5",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire Silenced HK-5 during campaign or minigame play and use it once.",
+            "3": "Test its defining role: short quiet automatic bursts. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-g18",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "G-18",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire G-18 during campaign or minigame play and use it once.",
+            "3": "Test its defining role: very rapid close-range fire. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-mars",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "MARS",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire MARS during campaign or minigame play and use it once.",
+            "3": "Test its defining role: compact automatic room clearing. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-spyder",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Spyder",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire Spyder during campaign or minigame play and use it once.",
+            "3": "Test its defining role: mobile automatic cover fire. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-m16",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "M16",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire M16 during campaign or minigame play and use it once.",
+            "3": "Test its defining role: controlled three-round bursts. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-pk102",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "PK-102",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire PK-102 during campaign or minigame play and use it once.",
+            "3": "Test its defining role: sustained assault-rifle fire. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-k3g4",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "K3G4",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire K3G4 during campaign or minigame play and use it once.",
+            "3": "Test its defining role: accurate automatic bursts. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-au300",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "AU300",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire AU300 during campaign or minigame play and use it once.",
+            "3": "Test its defining role: infrared wall-penetrating precision. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-h11",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "H11",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire H11 during campaign or minigame play and use it once.",
+            "3": "Test its defining role: long-range rapid sniper fire. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-silenced-sniper",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Silenced Sniper Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire Silenced Sniper Rifle during campaign or minigame play and use it once.",
+            "3": "Test its defining role: quiet long-range headshots. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire Shotgun during campaign or minigame play and use it once.",
+            "3": "Test its defining role: single close-range blasts. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-uas12",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "UAS-12",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire UAS-12 during campaign or minigame play and use it once.",
+            "3": "Test its defining role: rapid shotgun knockback. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-m79",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "M-79",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire M-79 during campaign or minigame play and use it once.",
+            "3": "Test its defining role: long-range explosive impact. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-grenade",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire Grenade during campaign or minigame play and use it once.",
+            "3": "Test its defining role: delayed area damage. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-gas-grenade",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Gas Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire Gas Grenade during campaign or minigame play and use it once.",
+            "3": "Test its defining role: nonstandard area incapacitation. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-c4",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "C4 and Detonator",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire C4 and Detonator during campaign or minigame play and use it once.",
+            "3": "Test its defining role: marked placement and remote detonation. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Knife",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire Knife during campaign or minigame play and use it once.",
+            "3": "Test its defining role: silent crouched melee. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        },
+        {
+          "id": "sf3-arsenal-air-taser",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Air Taser",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct weapon when a scenario supplies it.",
+            "2": "Acquire Air Taser during campaign or minigame play and use it once.",
+            "3": "Test its defining role: continuous electrical line-of-sight. Use a mission or minigame that permits the tool, obey protected-person and stealth parameters, and record one successful use rather than treating temporary inventory as a permanent unlock."
+          }
+        }
+      ]
+    }
+  ]
+}

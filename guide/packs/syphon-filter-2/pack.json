@@ -1,0 +1,1069 @@
+{
+  "id": "syphon-filter-2",
+  "game": "Syphon Filter 2",
+  "target": "Spoiler-free complete play of the original PlayStation release: campaign, mission parameters, unlocks, modes, secrets, and distinct equipment",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-28",
+  "areas": [
+    {
+      "id": "sf2-run-setup",
+      "name": "Run Setup",
+      "location_cue": "The title screen before starting a new campaign.",
+      "note": "This route follows the original North American PlayStation release through DuckStation.",
+      "items": [
+        {
+          "id": "sf2-ps1-route",
+          "type": "optional",
+          "safe_type": "Play route",
+          "label": "Original PlayStation Route",
+          "missable": false,
+          "levels": {
+            "1": "Use the original console content as the authority for this run.",
+            "2": "Load your North American PlayStation disc dump in DuckStation.",
+            "3": "Use a verified personal BIN/CUE dump and retain the original four-by-three picture. Keep both BIN/CUE disc sets in one DuckStation playlist and change discs only when the game requests it. Enhancements may improve presentation, but do not use patches that alter objectives, enemy rules, or unlock conditions."
+          }
+        },
+        {
+          "id": "sf2-memory-card",
+          "type": "optional",
+          "safe_type": "Setup",
+          "label": "Memory-Card and State Safety",
+          "missable": false,
+          "levels": {
+            "1": "Prepare a reliable recovery path before the opening mission.",
+            "2": "Assign a dedicated virtual memory card and rotate three manual save states.",
+            "3": "Confirm that a test memory-card save reloads before beginning. Keep card saves as the permanent record, use one state at mission start and another after important unlock attempts, and never overwrite every recovery slot at once."
+          }
+        },
+        {
+          "id": "sf2-training",
+          "type": "optional",
+          "safe_type": "Training",
+          "label": "Controls Practice",
+          "missable": false,
+          "levels": {
+            "1": "Refresh the movement and aiming systems before committing to a run.",
+            "2": "Practice manual aim, target lock, crouching, rolling, climbing, and inventory selection.",
+            "3": "Use the opening mission or menu demonstrations to verify every control. In particular, practice quick manual headshots, corner peeking, target-lock strafing, and changing equipment without losing your orientation."
+          }
+        },
+        {
+          "id": "sf2-normal-campaign",
+          "type": "optional",
+          "safe_type": "Campaign",
+          "label": "Standard Campaign Run",
+          "missable": false,
+          "levels": {
+            "1": "Begin under the intended rules before experimenting with modifiers.",
+            "2": "Start New Game normally and obey every Objectives and Parameters screen.",
+            "3": "Read both briefing tabs at each mission start. A route can be physically complete yet still fail because a protected person, stealth rule, timer, or prohibited weapon was ignored. Save after every successful mission and preserve the completed file."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-colorado-mountains",
+      "name": "Colorado Mountains",
+      "location_cue": "When you enter snowy cliffs, a waterfall, and mountain caves.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-colorado-mountains-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Colorado Mountains Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Reach the highway after restoring the transponder signal and clearing the blocked cave.",
+            "3": "Meet the friendly patrol, collect the locator, climb to high ground, recover C4, open the cave route, remove the snipers, defend the soldiers, and continue to the highway without friendly fire."
+          }
+        },
+        {
+          "id": "sf2-colorado-mountains-h11-cave",
+          "type": "secret",
+          "safe_type": "Hidden equipment",
+          "label": "Colorado Rockies Arena",
+          "missable": false,
+          "levels": {
+            "1": "Search below the waterfall ledge.",
+            "2": "At the waterfall, crawl to the edge, hang down, enter the small cave, and collect the H11 to register the arena unlock.",
+            "3": "At the waterfall, crawl to the edge, hang down, enter the small cave, and collect the H11 to register the arena unlock."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-mckenzie-airbase-interior",
+      "name": "McKenzie Airbase Interior",
+      "location_cue": "When you enter sterile holding corridors and guarded utility rooms.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-mckenzie-airbase-interior-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "McKenzie Airbase Interior Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Find the stimulant, recover combat gear, and leave the holding facility without detection.",
+            "3": "The opening stimulant timer is two minutes. Wait for patrol gaps, use the hand taser rather than lethal force, collect the injection first, recover the equipment, and follow the unobserved corridor route to the exit."
+          }
+        },
+        {
+          "id": "sf2-mckenzie-airbase-interior-under-three-minutes",
+          "type": "secret",
+          "safe_type": "Timed unlock",
+          "label": "Wacky Character Set",
+          "missable": false,
+          "levels": {
+            "1": "Escape the interior quickly and cleanly.",
+            "2": "Finish the entire mission in under three minutes.",
+            "3": "Finish the entire mission in under three minutes. Take the stimulant first, use only the shortest taser route, collect the required gear, and leave without being seen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-colorado-interstate-70",
+      "name": "Colorado Interstate 70",
+      "location_cue": "When you enter a snowbound highway tunnel filled with transport trucks.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-colorado-interstate-70-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Colorado Interstate 70 Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Rearm inside the tunnel, cut its power, protect your ally, and reach the wreck route.",
+            "3": "Roll past the opening fire while the distraction is active, search the rear of the trucks for weapons, enter the tunnel utility rooms, disable the power, then cover the advancing ally and leave through the far highway opening."
+          }
+        },
+        {
+          "id": "sf2-colorado-interstate-70-binoculars",
+          "type": "secret",
+          "safe_type": "Hidden equipment",
+          "label": "Caves Arena",
+          "missable": false,
+          "levels": {
+            "1": "Check a side room inside the first tunnel.",
+            "2": "Enter the first tunnel, open the door on the left, turn left again through the connecting hall, and collect the binoculars in the small room.",
+            "3": "Enter the first tunnel, open the door on the left, turn left again through the connecting hall, and collect the binoculars in the small room."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-i70-mountain-bridge",
+      "name": "I-70 Mountain Bridge",
+      "location_cue": "When you enter a vehicle bridge with accessible scaffolding underneath.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-i70-mountain-bridge-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "I-70 Mountain Bridge Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Silence the commander, disarm four charges below the bridge, free the soldiers, and cross.",
+            "3": "You have roughly two minutes to stop the detonation order. Collect the silent equipment from the truck, neutralize the commander without raising the alarm, climb beneath the deck, interact with all four C4 packs, then rescue the captives and continue toward the crash site."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-mckenzie-airbase-exterior",
+      "name": "McKenzie Airbase Exterior",
+      "location_cue": "When you enter a snowy runway complex, hangars, and control tower.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-mckenzie-airbase-exterior-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "McKenzie Airbase Exterior Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Reach the tower and secure transport while leaving base personnel unharmed.",
+            "3": "Stay in cover, obtain the silenced weapon, remove only hostile operatives, sabotage the marked aircraft, gather the required information without killing its holder, create the distraction, obtain the tower frequency, and reach the helicopter without triggering the base alarm."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-colorado-train-ride",
+      "name": "Colorado Train Ride",
+      "location_cue": "When you enter the roofs and interiors of a moving freight train.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-colorado-train-ride-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Colorado Train Ride Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Advance across the train and reach the engine controls.",
+            "3": "Collect the jacket in the first carriage if needed, alternate between roofs and car interiors, clear each boarding group before crossing exposed flatbeds, and interact with the controls in the front engine."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-colorado-train-race",
+      "name": "Colorado Train Race",
+      "location_cue": "When you enter a moving freight train approaching a broken bridge.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-colorado-train-race-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Colorado Train Race Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Reach the engine before the train arrives at the damaged crossing.",
+            "3": "The normal timer is about eight minutes and is shorter on Hard. Keep moving forward, use car interiors when roof fire becomes dense, collect only ammunition directly on the route, climb the final cars, and operate the engine control before time expires."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-c130-wreck-site",
+      "name": "C-130 Wreck Site",
+      "location_cue": "When you enter a snowy aircraft wreck scattered through a clearing.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-c130-wreck-site-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "C-130 Wreck Site Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Search the tail section, recover the required case, and finish the clearing encounter.",
+            "3": "Drop beside the wreck, clear the path along the aircraft, search the tail for the objective case, then follow the moving target and complete the final exchange. Preserve sniper ammunition if attempting the one-shot arena condition."
+          }
+        },
+        {
+          "id": "sf2-c130-wreck-site-one-shot",
+          "type": "secret",
+          "safe_type": "Challenge",
+          "label": "Jungle Arena",
+          "missable": false,
+          "levels": {
+            "1": "Make the decisive distant shot count.",
+            "2": "During the moving-helicopter opportunity, kill the exposed target with a single shot.",
+            "3": "During the moving-helicopter opportunity, kill the exposed target with a single shot. Save beforehand because any grazing hit voids the condition."
+          }
+        },
+        {
+          "id": "sf2-c130-wreck-site-under-three-minutes",
+          "type": "secret",
+          "safe_type": "Timed unlock",
+          "label": "Original Character Set",
+          "missable": false,
+          "levels": {
+            "1": "Treat the wreck site as a direct sprint.",
+            "2": "Complete the mission in under three minutes.",
+            "3": "Complete the mission in under three minutes. Ignore optional ammunition, run the left side of the wreck, collect the objective immediately, and finish the final exchange without stopping."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-pharcom-expo-center",
+      "name": "Pharcom Expo Center",
+      "location_cue": "When you enter dark museum exhibits and overhead ventilation shafts.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-pharcom-expo-center-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Pharcom Expo Center Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Plant the distraction and enter the Ancient China exhibit through the vents.",
+            "3": "Use silent tools around soldiers, plant C4 at the marked decoy point, climb from the exhibit structure into the ventilation route, and follow the ducts into Ancient China without killing or alerting the military patrols."
+          }
+        },
+        {
+          "id": "sf2-pharcom-expo-center-magazine",
+          "type": "secret",
+          "safe_type": "Hidden item",
+          "label": "PHARCOM Incubator Lab Arena",
+          "missable": false,
+          "levels": {
+            "1": "Listen for soldiers discussing a locker.",
+            "2": "Near the Mars exhibit, enter the locker room after hearing the nearby conversation and collect the magazine from the indicated locker.",
+            "3": "Near the Mars exhibit, enter the locker room after hearing the nearby conversation and collect the magazine from the indicated locker."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-morgan",
+      "name": "Morgan",
+      "location_cue": "When you enter the Ancient China exhibit and its connected roofs.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-morgan-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Morgan Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Disable every active charge before completing the confrontation.",
+            "3": "Stay with the bomb-disposal route and protect your partner. Do not finish the armed opponent while any charge remains active: the held switch will detonate them. After every device is safe, force the final opening and end the encounter."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-moscow-club-32",
+      "name": "Moscow Club 32",
+      "location_cue": "When you enter a multi-level nightclub with bridges above the dance floor.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-moscow-club-32-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Moscow Club 32 Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Pursue the fleeing target through the club without harming militia personnel.",
+            "3": "Clear hostile bodyguards on the upper bridges and dance floors, distinguish militia uniforms before firing, descend through the club sections, and keep the moving target in range without using lethal force on that target."
+          }
+        },
+        {
+          "id": "sf2-moscow-club-32-opening-guards",
+          "type": "secret",
+          "safe_type": "Challenge",
+          "label": "Disco Basement Arena",
+          "missable": false,
+          "levels": {
+            "1": "Control the first dance-floor group immediately.",
+            "2": "At the beginning, eliminate all three hostile guards on the first dance floor before any of them throws a grenade.",
+            "3": "At the beginning, eliminate all three hostile guards on the first dance floor before any of them throws a grenade."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-moscow-streets",
+      "name": "Moscow Streets",
+      "location_cue": "When you enter foggy industrial roads with parked cars and rooftops.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-moscow-streets-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Moscow Streets Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Continue the pursuit, locate the tear-gas launcher, and preserve protected personnel.",
+            "3": "Follow the street route while avoiding militia casualties. After the pair of white cars rushes you, evade them, remove their hostile drivers, then continue to the launcher position and use its nonlethal gas to keep the pursuit moving."
+          }
+        },
+        {
+          "id": "sf2-moscow-streets-white-car-pk102",
+          "type": "secret",
+          "safe_type": "Hidden equipment",
+          "label": "Rhoemer's Bunker Arena",
+          "missable": false,
+          "levels": {
+            "1": "Revisit the cars after dodging them.",
+            "2": "After two white cars attempt to run you down, evade them, turn back, remove both hostile drivers, and collect the PK-102 from one vehicle.",
+            "3": "After two white cars attempt to run you down, evade them, turn back, remove both hostile drivers, and collect the PK-102 from one vehicle."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-volkov-park",
+      "name": "Volkov Park",
+      "location_cue": "When you enter a dark park with paths, cars, and heavy fog.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-volkov-park-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Volkov Park Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Maintain contact through the park and prevent a lethal outcome.",
+            "3": "Immediately stop the opening saboteur if attempting the hidden pickup, then follow the target markers through the fog. Do not fall far enough behind to lose the route and do not use lethal weapons on the pursued person."
+          }
+        },
+        {
+          "id": "sf2-volkov-park-biz2-car",
+          "type": "secret",
+          "safe_type": "Hidden equipment",
+          "label": "Surreal Arena",
+          "missable": false,
+          "levels": {
+            "1": "Act before the opening vehicle is destroyed.",
+            "2": "Immediately eliminate the hostile beside the car before the explosion is triggered, then collect the BIZ-2 from inside the vehicle.",
+            "3": "Immediately eliminate the hostile beside the car before the explosion is triggered, then collect the BIZ-2 from inside the vehicle."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-gregorov",
+      "name": "Gregorov",
+      "location_cue": "When you enter a foggy park clearing with cover and fixed lighting.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-gregorov-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Gregorov Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "End the encounter using a nonlethal tool.",
+            "3": "Use the tear-gas launcher if ammunition remains; otherwise create a safe angle and hold the hand taser until the target is incapacitated. Any lethal hit fails the parameter."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-aljir-prison-break-in",
+      "name": "Aljir Prison Break-In",
+      "location_cue": "When you enter stone prison corridors, cells, and a power room.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-aljir-prison-break-in-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Aljir Prison Break-In Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Enter unseen, protect both prisoners, shut down power, and reach the detention area.",
+            "3": "Use the hand taser and patrol timing through the opening corridors, avoid killing prisoners, intervene quickly at both threatened cells, reach the electrical controls, disable prison power, and continue to the secured detention route."
+          }
+        },
+        {
+          "id": "sf2-aljir-prison-break-in-no-crossbow",
+          "type": "secret",
+          "safe_type": "Challenge",
+          "label": "Aljir Prison Arena",
+          "missable": false,
+          "levels": {
+            "1": "Use a different quiet tool for the entire break-in.",
+            "2": "Complete the mission without firing the crossbow.",
+            "3": "Complete the mission without firing the crossbow. Use the hand taser, stealth movement, and any permitted later equipment instead."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-aljir-prison-escape",
+      "name": "Aljir Prison Escape",
+      "location_cue": "When you enter dark cell blocks leading toward the outer wall.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-aljir-prison-escape-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Aljir Prison Escape Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Find the escort target, incapacitate hostile prisoners, and reach the wall exit.",
+            "3": "Move through the unpowered cell blocks, reserve lethal fire for armed guards, use gas or the taser on prisoners, locate the protected escort, stay close enough to cover each junction, then climb to the east-wall escape point."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-agency-biolab",
+      "name": "Agency BioLab",
+      "location_cue": "When you enter bright laboratory corridors with cameras and ventilation grilles.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-agency-biolab-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Agency BioLab Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Cross the security network, recover gear, install the modem, and complete synthesis.",
+            "3": "While disguised, walk rather than crouch and do not approach staff or cameras closely. Follow the A3 corridors, retrieve equipment, use the vent into the office, install the cellular modem, locate the required personnel in sequence, then operate the synthesis-lab controls without sounding an alarm."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-agency-biolab-escape",
+      "name": "Agency BioLab Escape",
+      "location_cue": "When you enter alerted laboratories, vents, and reinforced security rooms.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-agency-biolab-escape-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Agency BioLab Escape Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Leave the laboratory complex and reach street level.",
+            "3": "Break out of the synthesis room, use explosives or environmental hazards against fully armored units, travel back through the ventilation and computer-lab route, climb through the upper security sections, and continue until the street exit is open."
+          }
+        },
+        {
+          "id": "sf2-agency-biolab-escape-operating-theatre",
+          "type": "secret",
+          "safe_type": "Hidden route",
+          "label": "Agency Computer Lab Arena",
+          "missable": false,
+          "levels": {
+            "1": "Backtrack through the earlier medical room.",
+            "2": "Use the vent route to re-enter the operating theatre during the escape; stepping inside the room registers the arena unlock.",
+            "3": "Use the vent route to re-enter the operating theatre during the escape; stepping inside the room registers the arena unlock."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-new-york-slums",
+      "name": "New York Slums",
+      "location_cue": "When you enter narrow alleys and a burning apartment building.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-new-york-slums-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "New York Slums Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Remove the rooftop snipers and reach the parking-garage helicopter route.",
+            "3": "Use the alleys for cover, eliminate each sniper before crossing open streets, enter the burning building, climb through its interior without lingering in fire, then cross into the parking structure and continue toward the roof."
+          }
+        },
+        {
+          "id": "sf2-new-york-slums-dirty-laundry",
+          "type": "secret",
+          "safe_type": "Hidden item",
+          "label": "D.C. City Park Arena",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the laundry machines in the burning building.",
+            "2": "Before dropping through the weak black floor tiles, face the row of washers and collect the dirty clothing from the rightmost machine.",
+            "3": "Before dropping through the weak black floor tiles, face the row of washers and collect the dirty clothing from the rightmost machine."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-new-york-sewer",
+      "name": "New York Sewer",
+      "location_cue": "When you enter sewer channels beneath a multi-storey parking structure.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-new-york-sewer-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "New York Sewer Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Open the sewage route, protect your partner, and reach the helicopter.",
+            "3": "Follow the escort through the tunnels, locate and turn the drain valve, cover every stop, climb the parking-garage stairs, and finish the final room before continuing to the helicopter. Do not abandon the escort during enemy waves."
+          }
+        },
+        {
+          "id": "sf2-new-york-sewer-stairwell-m79",
+          "type": "secret",
+          "safe_type": "Hidden equipment",
+          "label": "Syphon Filter 2 Character Set",
+          "missable": false,
+          "levels": {
+            "1": "Continue upward before entering the final room.",
+            "2": "In the parking structure, keep climbing past the final-room landing, clear the upper stairwell, and open the crate at the top for M-79 ammunition.",
+            "3": "In the parking structure, keep climbing past the final-room landing, clear the upper stairwell, and open the crate at the top for M-79 ammunition."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-finale",
+      "name": "Finale",
+      "location_cue": "When you enter a rooftop helicopter pad and its small service building.",
+      "note": "Complete the mission parameters before leaving this location.",
+      "items": [
+        {
+          "id": "sf2-finale-completion",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Finale Completion",
+          "missable": false,
+          "levels": {
+            "1": "Follow the briefing order and preserve every protected condition.",
+            "2": "Complete the rooftop confrontation without damaging the helicopter.",
+            "3": "Normal gunfire only staggers the fully armored opponent. Take the heavy shotgun from the crate, line up repeated blasts so the opponent is driven toward the helicopter rotor, and keep your shots away from the aircraft itself."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-hard-and-theater",
+      "name": "Hard Mode and Movie Theater",
+      "location_cue": "The title menu and the Options screen after campaign progress has been saved.",
+      "note": "Use a separate save so the standard completed campaign remains intact.",
+      "items": [
+        {
+          "id": "sf2-hard-mode",
+          "type": "secret",
+          "safe_type": "Mode",
+          "label": "Hard Mode",
+          "missable": false,
+          "levels": {
+            "1": "A stricter campaign setting is available from the title screen.",
+            "2": "Highlight New Game and hold Up, Select, L1, R2, Square, Circle, and X together.",
+            "3": "At the title screen, highlight New Game and press the full chord simultaneously until the confirmation is accepted. Complete a fresh campaign on this setting; enemies are more dangerous and several timers are shorter."
+          }
+        },
+        {
+          "id": "sf2-bonus-movie-1",
+          "type": "secret",
+          "safe_type": "Bonus movie",
+          "label": "Hard-Mode Bonus Movie 1",
+          "missable": false,
+          "levels": {
+            "1": "Hard progress opens an additional theater entry.",
+            "2": "Reach the early campaign Hard-mode completion checkpoint and save.",
+            "3": "Play on Hard until the early campaign checkpoint is complete, preserve the save, and open the Movie Theater from the appropriate disc. Confirm that Bonus Movie 1 is selectable and watch it once."
+          }
+        },
+        {
+          "id": "sf2-bonus-movie-2",
+          "type": "secret",
+          "safe_type": "Bonus movie",
+          "label": "Hard-Mode Bonus Movie 2",
+          "missable": false,
+          "levels": {
+            "1": "Hard progress opens an additional theater entry.",
+            "2": "Reach the Expo Center Hard-mode completion checkpoint and save.",
+            "3": "Play on Hard until the Expo Center checkpoint is complete, preserve the save, and open the Movie Theater from the appropriate disc. Confirm that Bonus Movie 2 is selectable and watch it once."
+          }
+        },
+        {
+          "id": "sf2-bonus-movie-3",
+          "type": "secret",
+          "safe_type": "Bonus movie",
+          "label": "Hard-Mode Bonus Movie 3",
+          "missable": false,
+          "levels": {
+            "1": "Hard progress opens an additional theater entry.",
+            "2": "Reach the prison escape Hard-mode completion checkpoint and save.",
+            "3": "Play on Hard until the prison escape checkpoint is complete, preserve the save, and open the Movie Theater from the appropriate disc. Confirm that Bonus Movie 3 is selectable and watch it once."
+          }
+        },
+        {
+          "id": "sf2-bonus-movie-4",
+          "type": "secret",
+          "safe_type": "Bonus movie",
+          "label": "Hard-Mode Bonus Movie 4",
+          "missable": false,
+          "levels": {
+            "1": "Hard progress opens an additional theater entry.",
+            "2": "Reach the full Hard campaign Hard-mode completion checkpoint and save.",
+            "3": "Play on Hard until the full Hard campaign checkpoint is complete, preserve the save, and open the Movie Theater from the appropriate disc. Confirm that Bonus Movie 4 is selectable and watch it once."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-codes-and-replay",
+      "name": "Codes and Mission Replay",
+      "location_cue": "The pause menu and completed-game Options screen.",
+      "note": "Codes are optional content; do not use End Level to claim a real mission completion.",
+      "items": [
+        {
+          "id": "sf2-mission-select",
+          "type": "secret",
+          "safe_type": "Replay option",
+          "label": "Mission Select",
+          "missable": false,
+          "levels": {
+            "1": "A completed save opens direct replay.",
+            "2": "Finish the normal campaign, save when prompted, and load that completed file.",
+            "3": "Complete the campaign without skipping missions, accept the final save prompt, then load the completed memory-card file. Open Mission Select and confirm every mission is selectable."
+          }
+        },
+        {
+          "id": "sf2-movie-theater-code",
+          "type": "secret",
+          "safe_type": "Menu code",
+          "label": "Movie Theater Code",
+          "missable": false,
+          "levels": {
+            "1": "The theater can be exposed without waiting for every unlock.",
+            "2": "Pause, highlight Briefing, and hold Right, L1, R2, Circle, and X.",
+            "3": "During play, pause and highlight Briefing. Press the full chord together until the confirmation sound plays, then open Options, Cheats, and enable Movie Theater."
+          }
+        },
+        {
+          "id": "sf2-end-level-code",
+          "type": "secret",
+          "safe_type": "Menu code",
+          "label": "End Level Code",
+          "missable": false,
+          "levels": {
+            "1": "A debug-style completion control is hidden in the pause menu.",
+            "2": "Pause, highlight Map, and hold Right, L2, R2, Square, Circle, and X.",
+            "3": "Enter the chord while Map is highlighted, then open Options and Cheats to expose End Level. Test it only on a disposable state; it does not replace completing a mission correctly."
+          }
+        },
+        {
+          "id": "sf2-super-agent-code",
+          "type": "secret",
+          "safe_type": "Menu code",
+          "label": "Super Agent Mode",
+          "missable": false,
+          "levels": {
+            "1": "A one-shot modifier can be enabled from the weapon tab.",
+            "2": "Pause, highlight Weaponry, and hold L2, Select, Circle, Square, and X.",
+            "3": "Enter the chord while Weaponry is highlighted, then open Options and Cheats and enable the one-shot modifier. Confirm it on a replayed mission, then disable it before normal completion work."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-multiplayer",
+      "name": "Two-Player Mode",
+      "location_cue": "Two Player on the title menu after loading the completed save.",
+      "note": "The original PlayStation release supports local two-player matches.",
+      "items": [
+        {
+          "id": "sf2-multiplayer-all-arenas",
+          "type": "optional",
+          "safe_type": "Multiplayer",
+          "label": "Every Arena Match",
+          "missable": false,
+          "levels": {
+            "1": "Use the completed save to inspect the expanded arena list.",
+            "2": "After earning every campaign arena unlock, play one completed match on each available arena.",
+            "3": "Connect a second controller, load the completed file, and finish one match on every listed arena. Include Colorado Rockies, Caves, Jungle, PHARCOM Incubator Lab, Disco Basement, Rhoemer's Bunker, Surreal, Aljir Prison, Agency Computer Lab, D.C. City Park, and every arena present by default."
+          }
+        },
+        {
+          "id": "sf2-multiplayer-character-roster",
+          "type": "optional",
+          "safe_type": "Multiplayer",
+          "label": "Complete Character Roster",
+          "missable": false,
+          "levels": {
+            "1": "Several campaign challenges expand the selectable roster.",
+            "2": "Earn both timed character sets and the sewer-stairwell character set.",
+            "3": "Complete the under-three-minute Airbase Interior challenge, the under-three-minute Wreck Site challenge, and the upper-stairwell M-79 pickup in New York Sewer. Then enter character select and verify every newly added group is present."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf2-arsenal",
+      "name": "Arsenal Familiarization",
+      "location_cue": "The Weaponry pause tab whenever campaign equipment is available.",
+      "note": "Weapons are mission equipment, not a permanent collection.",
+      "items": [
+        {
+          "id": "sf2-arsenal-9mm",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "9mm Handgun",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire 9mm Handgun during opening mountain missions and use it once.",
+            "3": "Use manual aim for economical headshots. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-45",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": ".45 Handgun",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire .45 Handgun during the airbase exterior and use it once.",
+            "3": "Use its stronger semiautomatic shot at close range. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-h11",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "H11",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire H11 during the hidden mountain cave and use it once.",
+            "3": "Use its scope for accurate long-range fire. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-m16",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "M16",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire M16 during the opening mountain route and use it once.",
+            "3": "Fire controlled bursts while moving. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire Shotgun during the mountain caves and use it once.",
+            "3": "Use it close to unarmored targets. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-uas12",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "UAS-12",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire UAS-12 during the late sewer sequence and use it once.",
+            "3": "Use the rapid shotgun only where parameters permit. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-hk5",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Silenced HK-5",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire Silenced HK-5 during the airbase exterior and use it once.",
+            "3": "Use short quiet bursts during stealth. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-g18",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "G-18",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire G-18 during the BioLab escape and use it once.",
+            "3": "Control its very high fire rate. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-pk102",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "PK-102",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire PK-102 during the Moscow route and use it once.",
+            "3": "Use sustained fire against armored threats. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-biz2",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "BIZ-2",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire BIZ-2 during the Moscow route and use it once.",
+            "3": "Try its compact automatic handling. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-k3g4",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "K3G4",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire K3G4 during the BioLab escape and use it once.",
+            "3": "Use accurate bursts at medium range. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-sniper",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Silenced Sniper Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire Silenced Sniper Rifle during the mountain bridge route and use it once.",
+            "3": "Reserve it for distant quiet headshots. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-nightvision",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Nightvision Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire Nightvision Rifle during the Moscow streets and use it once.",
+            "3": "Use its illuminated view in fog or darkness. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-crossbow",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Crossbow",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire Crossbow during the Expo Center and use it once.",
+            "3": "Use it only when its mission condition allows. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-m79",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "M-79",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire M-79 during the wreck site and later routes and use it once.",
+            "3": "Keep blast radius away from protected people and objects. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-grenade",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire Grenade during the opening mountain route and use it once.",
+            "3": "Test the blast only in an unrestricted encounter. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-gas-grenade",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Gas Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire Gas Grenade during the mountain bridge and use it once.",
+            "3": "Use the cloud for quiet incapacitation. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-teargas",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Tear-Gas Launcher",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire Tear-Gas Launcher during the Moscow streets and use it once.",
+            "3": "Use gas to complete nonlethal captures. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-hand-taser",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Hand Taser",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire Hand Taser during the airbase interior and use it once.",
+            "3": "Hold contact until the target is incapacitated. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-air-taser",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Air Taser",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire Air Taser during the mountain route and use it once.",
+            "3": "Maintain the beam while keeping line of sight. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Knife",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire Knife during the highway tunnel and use it once.",
+            "3": "Use from very close range when ammunition is absent. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        },
+        {
+          "id": "sf2-arsenal-c4",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "C4",
+          "missable": false,
+          "levels": {
+            "1": "Try every distinct tool when the campaign supplies it.",
+            "2": "Acquire C4 during the mountain caves and use it once.",
+            "3": "Plant only on marked objective points. Mission inventories change with the scenario, so one successful, parameter-safe use is enough to document this tool without inventing a permanent unlock grind."
+          }
+        }
+      ]
+    }
+  ]
+}

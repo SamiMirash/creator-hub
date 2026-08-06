@@ -1,0 +1,1969 @@
+{
+  "id": "syphon-filter-combat-ops",
+  "game": "Syphon Filter: Combat Ops",
+  "target": "Original PSP PlayStation Network release via PPSSPP; Ad Hoc reachable, official infrastructure retired",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-28",
+  "areas": [
+    {
+      "id": "sfco-run-setup",
+      "name": "Run Setup",
+      "location_cue": "The PSP package, PPSSPP profile, and first title-screen load.",
+      "note": "The original PlayStation Network PSP release is the sole content route.",
+      "items": [
+        {
+          "id": "sfco-original-psp-route",
+          "type": "optional",
+          "safe_type": "Play route",
+          "label": "Original PSP Release",
+          "missable": false,
+          "levels": {
+            "1": "Keep the downloadable handheld build as the authority.",
+            "2": "Use a personally preserved PSP package through PPSSPP.",
+            "3": "Load the original North American NPUG-80114 package, or a verified equivalent regional release, in a dedicated PPSSPP profile. Do not substitute the smaller preview embedded in Logan's Shadow."
+          }
+        },
+        {
+          "id": "sfco-full-release-check",
+          "type": "optional",
+          "safe_type": "Version boundary",
+          "label": "Full Release Check",
+          "missable": false,
+          "levels": {
+            "1": "Confirm that all editor environments are present.",
+            "2": "The full game exposes four customizable environments.",
+            "3": "Open Mission Modifier and verify that Fortress, Village, Aerospace, and Ruins are selectable. If only one environment appears, you launched the Logan's Shadow preview rather than the full release."
+          }
+        },
+        {
+          "id": "sfco-save-safety",
+          "type": "optional",
+          "safe_type": "Setup",
+          "label": "Profile and Mission Backup",
+          "missable": false,
+          "levels": {
+            "1": "Protect the preserved package and created missions.",
+            "2": "Back up the PSP savedata and user-mission files.",
+            "3": "Confirm the profile reloads normally, then copy its PPSSPP savedata and mission files before emulator upgrades. Use save states only for testing; saved missions should survive a full application restart."
+          }
+        },
+        {
+          "id": "sfco-controls",
+          "type": "optional",
+          "safe_type": "Setup",
+          "label": "PPSSPP Controls",
+          "missable": false,
+          "levels": {
+            "1": "Map the handheld camera controls comfortably.",
+            "2": "Bind movement, face-button camera input, aiming, and modifier shortcuts.",
+            "3": "Create a game-specific controller profile. A right-stick remap for PSP camera buttons is safe, but do not enable cheats that alter rank, inventory, movement, object limits, or match scoring."
+          }
+        },
+        {
+          "id": "sfco-no-story",
+          "type": "optional",
+          "safe_type": "Completion rule",
+          "label": "No Campaign Boundary",
+          "missable": false,
+          "levels": {
+            "1": "Treat this as a multiplayer construction game.",
+            "2": "There is no story route, collectible campaign, or ending.",
+            "3": "Completion consists of the built-in mission library, editor environments and tools, playable Ad Hoc rules, armory and avatar records, plus an honest archive of retired infrastructure features."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-availability",
+      "name": "Availability and Preservation",
+      "location_cue": "The opening network choice and PPSSPP multiplayer configuration.",
+      "note": "Official infrastructure is retired; local Ad Hoc is the reachable play branch.",
+      "items": [
+        {
+          "id": "sfco-official-shutdown",
+          "type": "optional",
+          "safe_type": "Network",
+          "label": "Official Service Retirement",
+          "missable": false,
+          "levels": {
+            "1": "Separate local play from the closed hosted service.",
+            "2": "Infrastructure features stopped operating on 27 June 2012.",
+            "3": "Do not wait for an official login to succeed. Hosted matchmaking, ranked progression, shared-mission browsing, ratings, friends, cells, and community lists are historical records unless a verified preservation service adds Combat Ops support."
+          }
+        },
+        {
+          "id": "sfco-preservation-status",
+          "type": "optional",
+          "safe_type": "Network",
+          "label": "Preservation Support Check",
+          "missable": false,
+          "levels": {
+            "1": "Recheck community support before each serious run.",
+            "2": "Combat Ops is absent from the preservation-service list checked on 28 July 2026.",
+            "3": "Consult the current preservation-service compatibility page before configuring infrastructure. If Combat Ops is still absent, keep every infrastructure-only record marked unavailable rather than borrowing settings from Dark Mirror or Logan's Shadow."
+          }
+        },
+        {
+          "id": "sfco-adhoc-session",
+          "type": "optional",
+          "safe_type": "Network",
+          "label": "Ad Hoc Session",
+          "missable": false,
+          "levels": {
+            "1": "Use the local wireless branch with real partners.",
+            "2": "Connect two or more matching PPSSPP clients through Ad Hoc networking.",
+            "3": "Use legally preserved matching regional builds, align PPSSPP networking settings, enter the same private Ad Hoc room, and complete a short test match. Up to eight participants are supported."
+          }
+        },
+        {
+          "id": "sfco-no-solo-combat",
+          "type": "optional",
+          "safe_type": "Completion rule",
+          "label": "No Solo Match Substitute",
+          "missable": false,
+          "levels": {
+            "1": "Editor access does not create computer opponents.",
+            "2": "Use at least one real second participant to complete combat tests.",
+            "3": "Build and save missions alone if needed, but use another player for match completion. Do not claim that walking an empty editor map replaces the multiplayer portion."
+          }
+        },
+        {
+          "id": "sfco-achievable-boundary",
+          "type": "optional",
+          "safe_type": "Completion rule",
+          "label": "Reachable Completion Boundary",
+          "missable": false,
+          "levels": {
+            "1": "Finish everything the surviving local branch exposes.",
+            "2": "Complete editor, built-in, armory, and Ad Hoc checks; archive retired records separately.",
+            "3": "A present-day clean record includes every locally accessible menu, environment, mode, official mission, object tool, avatar, and armory entry. Infrastructure XP, downloads, uploads, ratings, and locked skins remain unavailable unless service preservation becomes real."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-environments",
+      "name": "Editable Environments",
+      "location_cue": "The Area of Operations list inside Mission Modifier.",
+      "note": "The full release contains four construction settings with multiple zone combinations.",
+      "items": [
+        {
+          "id": "sfco-environment-fortress",
+          "type": "optional",
+          "safe_type": "Editor environment",
+          "label": "Fortress",
+          "missable": false,
+          "levels": {
+            "1": "Open each distinct construction setting.",
+            "2": "Select Fortress from Mission Modifier's environment list.",
+            "3": "Create a new mission, choose Fortress, confirm a Central Zone, and inspect every offered Alpha and Beta attachment without assuming that another environment's pieces are identical."
+          }
+        },
+        {
+          "id": "sfco-environment-village",
+          "type": "optional",
+          "safe_type": "Editor environment",
+          "label": "Village",
+          "missable": false,
+          "levels": {
+            "1": "Open each distinct construction setting.",
+            "2": "Select Village from Mission Modifier's environment list.",
+            "3": "Create a new mission, choose Village, confirm a Central Zone, and inspect every offered Alpha and Beta attachment without assuming that another environment's pieces are identical."
+          }
+        },
+        {
+          "id": "sfco-environment-aerospace",
+          "type": "optional",
+          "safe_type": "Editor environment",
+          "label": "Aerospace",
+          "missable": false,
+          "levels": {
+            "1": "Open each distinct construction setting.",
+            "2": "Select Aerospace from Mission Modifier's environment list.",
+            "3": "Create a new mission, choose Aerospace, confirm a Central Zone, and inspect every offered Alpha and Beta attachment without assuming that another environment's pieces are identical."
+          }
+        },
+        {
+          "id": "sfco-environment-ruins",
+          "type": "optional",
+          "safe_type": "Editor environment",
+          "label": "Ruins",
+          "missable": false,
+          "levels": {
+            "1": "Open each distinct construction setting.",
+            "2": "Select Ruins from Mission Modifier's environment list.",
+            "3": "Create a new mission, choose Ruins, confirm a Central Zone, and inspect every offered Alpha and Beta attachment without assuming that another environment's pieces are identical."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-modes",
+      "name": "Combat Types",
+      "location_cue": "The Combat Type menu reached during the second editor phase.",
+      "note": "Each rule set has different validity requirements.",
+      "items": [
+        {
+          "id": "sfco-mode-deathmatch",
+          "type": "optional",
+          "safe_type": "Multiplayer mode",
+          "label": "Deathmatch",
+          "missable": false,
+          "levels": {
+            "1": "Build and finish a match using this rule set.",
+            "2": "Select Deathmatch in Combat Type and make the mission valid.",
+            "3": "Configure Deathmatch: Every participant scores independently. Place every required spawn or objective marker, save only after the validity check passes, then finish one Ad Hoc match with a real partner."
+          }
+        },
+        {
+          "id": "sfco-mode-team-deathmatch",
+          "type": "optional",
+          "safe_type": "Multiplayer mode",
+          "label": "Team Deathmatch",
+          "missable": false,
+          "levels": {
+            "1": "Build and finish a match using this rule set.",
+            "2": "Select Team Deathmatch in Combat Type and make the mission valid.",
+            "3": "Configure Team Deathmatch: Two forces compete through combined eliminations. Place every required spawn or objective marker, save only after the validity check passes, then finish one Ad Hoc match with a real partner."
+          }
+        },
+        {
+          "id": "sfco-mode-retrieval",
+          "type": "optional",
+          "safe_type": "Multiplayer mode",
+          "label": "Retrieval",
+          "missable": false,
+          "levels": {
+            "1": "Build and finish a match using this rule set.",
+            "2": "Select Retrieval in Combat Type and make the mission valid.",
+            "3": "Configure Retrieval: Teams move an objective beacon to a scoring point. Place every required spawn or objective marker, save only after the validity check passes, then finish one Ad Hoc match with a real partner."
+          }
+        },
+        {
+          "id": "sfco-mode-sabotage",
+          "type": "optional",
+          "safe_type": "Multiplayer mode",
+          "label": "Sabotage",
+          "missable": false,
+          "levels": {
+            "1": "Build and finish a match using this rule set.",
+            "2": "Select Sabotage in Combat Type and make the mission valid.",
+            "3": "Configure Sabotage: Teams obtain a code and attack the opposing warhead. Place every required spawn or objective marker, save only after the validity check passes, then finish one Ad Hoc match with a real partner."
+          }
+        },
+        {
+          "id": "sfco-mode-rogue-agent",
+          "type": "optional",
+          "safe_type": "Multiplayer mode",
+          "label": "Rogue Agent",
+          "missable": false,
+          "levels": {
+            "1": "Build and finish a match using this rule set.",
+            "2": "Select Rogue Agent in Combat Type and make the mission valid.",
+            "3": "Configure Rogue Agent: A neutral credential transfers the empowered role between players. Place every required spawn or objective marker, save only after the validity check passes, then finish one Ad Hoc match with a real partner."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-built-in-library",
+      "name": "Built-In Mission Library",
+      "location_cue": "The official mission list available before opening community downloads.",
+      "note": "Twenty developer-made missions shipped with the full release.",
+      "items": [
+        {
+          "id": "sfco-official-missions-all",
+          "type": "optional",
+          "safe_type": "Mission library",
+          "label": "All Built-In Missions",
+          "missable": false,
+          "levels": {
+            "1": "Work through the entire official list.",
+            "2": "Complete every one of the twenty shipping missions.",
+            "3": "Filter the mission browser to official content, begin at the first entry, and remain through each match result until all twenty have a recorded play. Individual historical menu names were not safely established in the corpus, so this pack does not invent them."
+          }
+        },
+        {
+          "id": "sfco-official-remix",
+          "type": "optional",
+          "safe_type": "Editor exercise",
+          "label": "Official Mission Remix",
+          "missable": false,
+          "levels": {
+            "1": "Use one shipping mission as a starting point.",
+            "2": "Load an official mission and change at least one valid combat element.",
+            "3": "Choose an official mission, enter its modifier, alter a spawn, objective, combat object, or navigation object, give the copy a new name, pass validation, save it, and complete a local test."
+          }
+        },
+        {
+          "id": "sfco-local-library-audit",
+          "type": "optional",
+          "safe_type": "Mission library",
+          "label": "Local Mission List Audit",
+          "missable": false,
+          "levels": {
+            "1": "Check that saved work survives a restart.",
+            "2": "Reload every locally created or remixed mission from Memory Stick storage.",
+            "3": "Close the game fully, relaunch it, open Load User Mission, and confirm each completed editor exercise remains listed and can enter its review screen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-mission-modifier",
+      "name": "Mission Modifier",
+      "location_cue": "The first editor phase, before entering the map as a combatant.",
+      "note": "This phase assembles terrain, lighting, weather, and factions.",
+      "items": [
+        {
+          "id": "sfco-editor-new-mission",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Create New Mission",
+          "missable": false,
+          "levels": {
+            "1": "Start with an empty local design rather than a downloaded map.",
+            "2": "Choose Create New Mission and advance to Area of Operations.",
+            "3": "Begin a fresh mission, select one of the four environments, and proceed only after each required menu displays a checkmark."
+          }
+        },
+        {
+          "id": "sfco-editor-central-zone",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Central Zone",
+          "missable": false,
+          "levels": {
+            "1": "Choose the required core of the map.",
+            "2": "Assign one Central Zone layout.",
+            "3": "Review every Central Zone choice for the selected environment, select one, and confirm it as the mission's mandatory core."
+          }
+        },
+        {
+          "id": "sfco-editor-alpha-zone",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Alpha Zone",
+          "missable": false,
+          "levels": {
+            "1": "Extend one side of the core.",
+            "2": "Attach an available Alpha Zone.",
+            "3": "Open the Alpha attachment list, inspect its available terrain pieces, connect one compatible option, and verify the overview map updates."
+          }
+        },
+        {
+          "id": "sfco-editor-beta-zone",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Beta Zone",
+          "missable": false,
+          "levels": {
+            "1": "Extend the remaining side.",
+            "2": "Attach an available Beta Zone.",
+            "3": "Choose a compatible Beta attachment, then inspect the complete Central–Alpha–Beta footprint on the overview map."
+          }
+        },
+        {
+          "id": "sfco-editor-time",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Time of Day",
+          "missable": false,
+          "levels": {
+            "1": "Try both lighting states.",
+            "2": "Save one daytime and one nighttime variant.",
+            "3": "In Mission Logistics, switch the same layout between day and night, save distinct local copies, and load each once to verify the setting."
+          }
+        },
+        {
+          "id": "sfco-editor-weather",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Weather Conditions",
+          "missable": false,
+          "levels": {
+            "1": "Exercise the environmental controls.",
+            "2": "Test clear, fog, rain, snow, dust, and flooding wherever offered.",
+            "3": "Cycle through every weather choice the selected environment exposes. Save and load at least one altered-weather version; do not claim an option on maps where the menu omits it."
+          }
+        },
+        {
+          "id": "sfco-editor-combatants",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Mission Combatants",
+          "missable": false,
+          "levels": {
+            "1": "Assign both sides deliberately.",
+            "2": "Choose a valid avatar faction for each force.",
+            "3": "Open Mission Combatants, set Force A and Force B to distinct available factions, then verify the review screen records both selections."
+          }
+        },
+        {
+          "id": "sfco-editor-overview",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Overview Map",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the full assembled footprint.",
+            "2": "Open the overview during both editor phases.",
+            "3": "Use the overview shortcut before placing objects and again after the mission validates. Confirm zone links, spawn coverage, and objective separation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-combat-modifier",
+      "name": "Combat Modifier",
+      "location_cue": "The second editor phase, entered as a third-person combatant inside the assembled map.",
+      "note": "This phase places objectives, spawns, combat objects, and navigation tools.",
+      "items": [
+        {
+          "id": "sfco-combat-tool-object-boxes",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Wireframe Placement Boxes",
+          "missable": false,
+          "levels": {
+            "1": "Learn where the editor permits objects.",
+            "2": "Approach and activate the red wireframe positions.",
+            "3": "Walk the map in Combat Modifier, aim at each red wireframe box, and open its assignment menu. Objects can only occupy supported boxes."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-spawn-a",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Force A Spawn",
+          "missable": false,
+          "levels": {
+            "1": "Give the first team a valid entry.",
+            "2": "Assign at least one spawn location to Force A.",
+            "3": "Select an allowed spawn box, activate it, assign Force A, and confirm the validity panel counts it."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-spawn-b",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Force B Spawn",
+          "missable": false,
+          "levels": {
+            "1": "Give the second team a valid entry.",
+            "2": "Assign at least one spawn location to Force B.",
+            "3": "Activate a separate supported spawn box for Force B and verify that both teams now satisfy the mode's minimum."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-objectives",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Objective Locations",
+          "missable": false,
+          "levels": {
+            "1": "Objective modes require their own markers.",
+            "2": "Place the required markers for Retrieval, Sabotage, and Rogue Agent.",
+            "3": "Switch through the three objective modes, activate their required objective boxes, assign Force A, Force B, or Neutral as appropriate, and rename the markers only if the mission remains valid."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-barrels",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Barrels",
+          "missable": false,
+          "levels": {
+            "1": "Add an environmental combat object.",
+            "2": "Activate a supported barrel position.",
+            "3": "Open Combat Objects at a wireframe box, choose a barrel option, stay within the displayed object limit, and verify it appears in the review."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-turrets",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Turrets",
+          "missable": false,
+          "levels": {
+            "1": "Use a supported defensive position.",
+            "2": "Activate a turret at a valid box.",
+            "3": "Find a turret-compatible box, place the turret, confirm its facing in a local test, and move or remove it if it controls a spawn unfairly."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-weapons",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Weapon Crates",
+          "missable": false,
+          "levels": {
+            "1": "Populate the map's loadout choices.",
+            "2": "Place and configure a weapon crate.",
+            "3": "Activate a weapon box, choose an available armory entry, and test that the crate supplies the selected item during a local match."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-rtl",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "RTL",
+          "missable": false,
+          "levels": {
+            "1": "Add one rapid traversal object.",
+            "2": "Activate an RTL-compatible navigation box.",
+            "3": "Choose RTL under Navigation Objects, place it only at a supported connection, and test both its entry and landing during an Ad Hoc match."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-zipline",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Zipline",
+          "missable": false,
+          "levels": {
+            "1": "Use height to create a one-way route.",
+            "2": "Place a zipline between compatible elevations.",
+            "3": "Find a zipline-supported box with sufficient height difference, activate it, and complete a test ride without landing outside the playable terrain."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-ladder",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Ladder",
+          "missable": false,
+          "levels": {
+            "1": "Open a supported vertical path.",
+            "2": "Place a ladder in a navigation box.",
+            "3": "Activate a ladder-compatible box, confirm both ends connect to walkable surfaces, and climb it in a test match."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-crates",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Crates",
+          "missable": false,
+          "levels": {
+            "1": "Use a supported obstacle or step.",
+            "2": "Activate a crate navigation object.",
+            "3": "Place a crate at a permitted box, then test that it does not block a required spawn or objective route."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-vantage",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Vantage-Point Jump",
+          "missable": false,
+          "levels": {
+            "1": "Use the editor's navigation shortcut.",
+            "2": "Jump between provided vantage positions.",
+            "3": "During Combat Modifier, use the vantage shortcut at least once in each zone and inspect hard-to-reach object boxes without treating the shortcut as a player route."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-teleport",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Editor Teleport",
+          "missable": false,
+          "levels": {
+            "1": "Move quickly between editing zones.",
+            "2": "Use teleport to reach another map section.",
+            "3": "Open the editor navigation controls, teleport to a different zone, and confirm the location panel updates to the correct map section."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-text",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Mission Text",
+          "missable": false,
+          "levels": {
+            "1": "Name and describe the local design.",
+            "2": "Set a location name and a concise objective description.",
+            "3": "Use Mission Text Editor to enter an original title and plain mechanical description. Avoid story claims or copied community text."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-review",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Mission Review",
+          "missable": false,
+          "levels": {
+            "1": "Do not save an invalid design.",
+            "2": "Reach a valid review state.",
+            "3": "Open Mission Review, check terrain, logistics, combatants, mode, spawns, objectives, and object limits, then correct every invalid marker before saving."
+          }
+        },
+        {
+          "id": "sfco-combat-tool-save",
+          "type": "optional",
+          "safe_type": "Editor tool",
+          "label": "Save and Reload",
+          "missable": false,
+          "levels": {
+            "1": "Prove the mission file is durable.",
+            "2": "Name, save, close, and reload the mission.",
+            "3": "Save the valid mission to Memory Stick storage, exit to the main menu, load it again, and verify the review settings match the original design."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-initial-avatars",
+      "name": "Starting Avatars",
+      "location_cue": "The Mission Combatants list before any historical rank unlocks.",
+      "note": "These ten models belong to the initial editor roster.",
+      "items": [
+        {
+          "id": "sfco-avatar-initial-ipca",
+          "type": "optional",
+          "safe_type": "Avatar",
+          "label": "IPCA",
+          "missable": false,
+          "levels": {
+            "1": "Confirm this starting faction or model is available.",
+            "2": "Select IPCA for a force in Mission Combatants.",
+            "3": "Create or edit a local mission, assign IPCA to either force, save the valid mission, and load one local test so the model is recorded in use."
+          }
+        },
+        {
+          "id": "sfco-avatar-initial-contractor",
+          "type": "optional",
+          "safe_type": "Avatar",
+          "label": "Contractor",
+          "missable": false,
+          "levels": {
+            "1": "Confirm this starting faction or model is available.",
+            "2": "Select Contractor for a force in Mission Combatants.",
+            "3": "Create or edit a local mission, assign Contractor to either force, save the valid mission, and load one local test so the model is recorded in use."
+          }
+        },
+        {
+          "id": "sfco-avatar-initial-brotherhood",
+          "type": "optional",
+          "safe_type": "Avatar",
+          "label": "Brotherhood",
+          "missable": false,
+          "levels": {
+            "1": "Confirm this starting faction or model is available.",
+            "2": "Select Brotherhood for a force in Mission Combatants.",
+            "3": "Create or edit a local mission, assign Brotherhood to either force, save the valid mission, and load one local test so the model is recorded in use."
+          }
+        },
+        {
+          "id": "sfco-avatar-initial-guerrilla",
+          "type": "optional",
+          "safe_type": "Avatar",
+          "label": "Guerrilla",
+          "missable": false,
+          "levels": {
+            "1": "Confirm this starting faction or model is available.",
+            "2": "Select Guerrilla for a force in Mission Combatants.",
+            "3": "Create or edit a local mission, assign Guerrilla to either force, save the valid mission, and load one local test so the model is recorded in use."
+          }
+        },
+        {
+          "id": "sfco-avatar-initial-renegade",
+          "type": "optional",
+          "safe_type": "Avatar",
+          "label": "Renegade",
+          "missable": false,
+          "levels": {
+            "1": "Confirm this starting faction or model is available.",
+            "2": "Select Renegade for a force in Mission Combatants.",
+            "3": "Create or edit a local mission, assign Renegade to either force, save the valid mission, and load one local test so the model is recorded in use."
+          }
+        },
+        {
+          "id": "sfco-avatar-initial-mercenary",
+          "type": "optional",
+          "safe_type": "Avatar",
+          "label": "Mercenary",
+          "missable": false,
+          "levels": {
+            "1": "Confirm this starting faction or model is available.",
+            "2": "Select Mercenary for a force in Mission Combatants.",
+            "3": "Create or edit a local mission, assign Mercenary to either force, save the valid mission, and load one local test so the model is recorded in use."
+          }
+        },
+        {
+          "id": "sfco-avatar-initial-special-ops",
+          "type": "optional",
+          "safe_type": "Avatar",
+          "label": "Special Ops",
+          "missable": false,
+          "levels": {
+            "1": "Confirm this starting faction or model is available.",
+            "2": "Select Special Ops for a force in Mission Combatants.",
+            "3": "Create or edit a local mission, assign Special Ops to either force, save the valid mission, and load one local test so the model is recorded in use."
+          }
+        },
+        {
+          "id": "sfco-avatar-initial-peacekeeper",
+          "type": "optional",
+          "safe_type": "Avatar",
+          "label": "Peacekeeper",
+          "missable": false,
+          "levels": {
+            "1": "Confirm this starting faction or model is available.",
+            "2": "Select Peacekeeper for a force in Mission Combatants.",
+            "3": "Create or edit a local mission, assign Peacekeeper to either force, save the valid mission, and load one local test so the model is recorded in use."
+          }
+        },
+        {
+          "id": "sfco-avatar-initial-resistance",
+          "type": "optional",
+          "safe_type": "Avatar",
+          "label": "Resistance",
+          "missable": false,
+          "levels": {
+            "1": "Confirm this starting faction or model is available.",
+            "2": "Select Resistance for a force in Mission Combatants.",
+            "3": "Create or edit a local mission, assign Resistance to either force, save the valid mission, and load one local test so the model is recorded in use."
+          }
+        },
+        {
+          "id": "sfco-avatar-initial-soldier",
+          "type": "optional",
+          "safe_type": "Avatar",
+          "label": "Soldier",
+          "missable": false,
+          "levels": {
+            "1": "Confirm this starting faction or model is available.",
+            "2": "Select Soldier for a force in Mission Combatants.",
+            "3": "Create or edit a local mission, assign Soldier to either force, save the valid mission, and load one local test so the model is recorded in use."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-ranked-avatars",
+      "name": "Ranked Avatar Archive",
+      "location_cue": "The avatar list entries that were tied to the retired infrastructure profile.",
+      "note": "Two editor models opened at each historical rank from R1 through T3.",
+      "items": [
+        {
+          "id": "sfco-avatar-r1-alien",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Alien",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank R1.",
+            "2": "Reach infrastructure rank R1 to unlock Alien.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Alien cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-r1-agent",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Agent",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank R1.",
+            "2": "Reach infrastructure rank R1 to unlock Agent.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Agent cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-r2-football-player",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Football Player",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank R2.",
+            "2": "Reach infrastructure rank R2 to unlock Football Player.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Football Player cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-r2-cheerleader",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Cheerleader",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank R2.",
+            "2": "Reach infrastructure rank R2 to unlock Cheerleader.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Cheerleader cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-r3-caveman",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Caveman",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank R3.",
+            "2": "Reach infrastructure rank R3 to unlock Caveman.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Caveman cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-r3-robot",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Robot",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank R3.",
+            "2": "Reach infrastructure rank R3 to unlock Robot.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Robot cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-o1-pirate",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Pirate",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank O1.",
+            "2": "Reach infrastructure rank O1 to unlock Pirate.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Pirate cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-o1-assassin",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Assassin",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank O1.",
+            "2": "Reach infrastructure rank O1 to unlock Assassin.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Assassin cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-o2-clown",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Clown",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank O2.",
+            "2": "Reach infrastructure rank O2 to unlock Clown.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Clown cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-o2-mime",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Mime",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank O2.",
+            "2": "Reach infrastructure rank O2 to unlock Mime.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Mime cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-o3-sasquatch",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Sasquatch",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank O3.",
+            "2": "Reach infrastructure rank O3 to unlock Sasquatch.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Sasquatch cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-o3-hunter",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Hunter",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank O3.",
+            "2": "Reach infrastructure rank O3 to unlock Hunter.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Hunter cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-o4-gabe-skin",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Gabe Skin",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank O4.",
+            "2": "Reach infrastructure rank O4 to unlock Gabe Skin.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Gabe Skin cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-o4-mara-skin",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Mara Skin",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank O4.",
+            "2": "Reach infrastructure rank O4 to unlock Mara Skin.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Mara Skin cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-t1-zombie",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Zombie",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank T1.",
+            "2": "Reach infrastructure rank T1 to unlock Zombie.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Zombie cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-t1-operative",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Operative",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank T1.",
+            "2": "Reach infrastructure rank T1 to unlock Operative.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Operative cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-t2-drunk",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Drunk",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank T2.",
+            "2": "Reach infrastructure rank T2 to unlock Drunk.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Drunk cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-t2-homeless",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Homeless",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank T2.",
+            "2": "Reach infrastructure rank T2 to unlock Homeless.",
+            "3": "The exact numeric threshold was not safely established in the retained corpus. Official ranked play is retired, so Homeless cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-t3-thug",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Thug",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank T3.",
+            "2": "Reach infrastructure rank T3 to unlock Thug.",
+            "3": "The historical record places the final rank at 20,000 infrastructure XP. Official ranked play is retired, so Thug cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        },
+        {
+          "id": "sfco-avatar-t3-bad-girl",
+          "type": "optional",
+          "safe_type": "Retired unlock",
+          "label": "Bad Girl",
+          "missable": false,
+          "levels": {
+            "1": "This editor avatar belonged to historical rank T3.",
+            "2": "Reach infrastructure rank T3 to unlock Bad Girl.",
+            "3": "The historical record places the final rank at 20,000 infrastructure XP. Official ranked play is retired, so Bad Girl cannot be newly earned through ordinary Ad Hoc play today. Preserve an existing legitimate profile if available; do not fabricate rank progress."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-armory-pistols",
+      "name": "Pistols",
+      "location_cue": "The pistols portion of the equipment or weapon-crate selector.",
+      "note": "Availability can depend on the preserved profile's historical infrastructure rank.",
+      "items": [
+        {
+          "id": "sfco-armory-pistols-mark-23-sd",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Mark 23 SD",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Mark 23 SD under Pistols.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Mark 23 SD. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-pistols-sp-57",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "SP-57",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate SP-57 under Pistols.",
+            "3": "Open a matching weapon-crate or loadout selector and look for SP-57. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-pistols-makarov-pm",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Makarov PM",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Makarov PM under Pistols.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Makarov PM. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-pistols-desert-eagle-357",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Desert Eagle .357",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Desert Eagle .357 under Pistols.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Desert Eagle .357. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-pistols-desert-eagle-50",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Desert Eagle .50",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Desert Eagle .50 under Pistols.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Desert Eagle .50. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-pistols-mp7",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "MP7",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate MP7 under Pistols.",
+            "3": "Open a matching weapon-crate or loadout selector and look for MP7. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-pistols-sawed-off-pistol",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Sawed-Off Pistol",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Sawed-Off Pistol under Pistols.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Sawed-Off Pistol. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-pistols-glock-g-17",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Glock G-17",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Glock G-17 under Pistols.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Glock G-17. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-pistols-ripper",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Ripper",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Ripper under Pistols.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Ripper. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-armory-submachine-guns",
+      "name": "Submachine Guns",
+      "location_cue": "The submachine guns portion of the equipment or weapon-crate selector.",
+      "note": "Availability can depend on the preserved profile's historical infrastructure rank.",
+      "items": [
+        {
+          "id": "sfco-armory-submachine-guns-mac-10",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "MAC-10",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate MAC-10 under Submachine Guns.",
+            "3": "Open a matching weapon-crate or loadout selector and look for MAC-10. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-submachine-guns-spectre",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Spectre",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Spectre under Submachine Guns.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Spectre. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-submachine-guns-ug9",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "UG9",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate UG9 under Submachine Guns.",
+            "3": "Open a matching weapon-crate or loadout selector and look for UG9. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-submachine-guns-mp5a3",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "MP5A3",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate MP5A3 under Submachine Guns.",
+            "3": "Open a matching weapon-crate or loadout selector and look for MP5A3. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-armory-shotguns",
+      "name": "Shotguns",
+      "location_cue": "The shotguns portion of the equipment or weapon-crate selector.",
+      "note": "Availability can depend on the preserved profile's historical infrastructure rank.",
+      "items": [
+        {
+          "id": "sfco-armory-shotguns-usas-12",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "USAS-12",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate USAS-12 under Shotguns.",
+            "3": "Open a matching weapon-crate or loadout selector and look for USAS-12. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-shotguns-shot-defender",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Shot Defender",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Shot Defender under Shotguns.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Shot Defender. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-shotguns-street-sweeper",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Street Sweeper",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Street Sweeper under Shotguns.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Street Sweeper. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-shotguns-spa-12",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "SPA-12",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate SPA-12 under Shotguns.",
+            "3": "Open a matching weapon-crate or loadout selector and look for SPA-12. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-shotguns-sawed-off-shotgun",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Sawed-Off Shotgun",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Sawed-Off Shotgun under Shotguns.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Sawed-Off Shotgun. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-armory-launchers",
+      "name": "Launchers",
+      "location_cue": "The launchers portion of the equipment or weapon-crate selector.",
+      "note": "Availability can depend on the preserved profile's historical infrastructure rank.",
+      "items": [
+        {
+          "id": "sfco-armory-launchers-smaw",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "SMAW",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate SMAW under Launchers.",
+            "3": "Open a matching weapon-crate or loadout selector and look for SMAW. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-launchers-mgl",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "MGL",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate MGL under Launchers.",
+            "3": "Open a matching weapon-crate or loadout selector and look for MGL. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-launchers-m79",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "M79",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate M79 under Launchers.",
+            "3": "Open a matching weapon-crate or loadout selector and look for M79. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-launchers-mgl-smoke",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "MGL Smoke",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate MGL Smoke under Launchers.",
+            "3": "Open a matching weapon-crate or loadout selector and look for MGL Smoke. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-armory-assault-rifles",
+      "name": "Assault Rifles",
+      "location_cue": "The assault rifles portion of the equipment or weapon-crate selector.",
+      "note": "Availability can depend on the preserved profile's historical infrastructure rank.",
+      "items": [
+        {
+          "id": "sfco-armory-assault-rifles-galil-ar",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Galil AR",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Galil AR under Assault Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Galil AR. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-assault-rifles-chinese-type-56",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Chinese Type 56",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Chinese Type 56 under Assault Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Chinese Type 56. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-assault-rifles-famas",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "FAMAS",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate FAMAS under Assault Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for FAMAS. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-assault-rifles-ak-47",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "AK-47",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate AK-47 under Assault Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for AK-47. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-assault-rifles-aug-hbar",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "AUG HBAR",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate AUG HBAR under Assault Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for AUG HBAR. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-assault-rifles-m16a2",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "M16A2",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate M16A2 under Assault Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for M16A2. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-assault-rifles-m16k",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "M16K",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate M16K under Assault Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for M16K. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-assault-rifles-tripbar",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "TripBar",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate TripBar under Assault Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for TripBar. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-assault-rifles-over-under",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Over Under",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Over Under under Assault Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Over Under. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-armory-sniper-rifles",
+      "name": "Sniper Rifles",
+      "location_cue": "The sniper rifles portion of the equipment or weapon-crate selector.",
+      "note": "Availability can depend on the preserved profile's historical infrastructure rank.",
+      "items": [
+        {
+          "id": "sfco-armory-sniper-rifles-dragunov-svd",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Dragunov SVD",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Dragunov SVD under Sniper Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Dragunov SVD. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-sniper-rifles-m82-bfg",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "M82 BFG",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate M82 BFG under Sniper Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for M82 BFG. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-sniper-rifles-mb-150",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "MB-150",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate MB-150 under Sniper Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for MB-150. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-sniper-rifles-c8-rifle",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "C8 Rifle",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate C8 Rifle under Sniper Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for C8 Rifle. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-sniper-rifles-dsc-1-thermal",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "DSC-1 Thermal",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate DSC-1 Thermal under Sniper Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for DSC-1 Thermal. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-sniper-rifles-ar-15",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "AR-15",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate AR-15 under Sniper Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for AR-15. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-sniper-rifles-sg-76",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "SG-76",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate SG-76 under Sniper Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for SG-76. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-sniper-rifles-g3a3",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "G3A3",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate G3A3 under Sniper Rifles.",
+            "3": "Open a matching weapon-crate or loadout selector and look for G3A3. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-armory-machine-guns",
+      "name": "Machine Guns",
+      "location_cue": "The machine guns portion of the equipment or weapon-crate selector.",
+      "note": "Availability can depend on the preserved profile's historical infrastructure rank.",
+      "items": [
+        {
+          "id": "sfco-armory-machine-guns-m60-e-3",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "M60 E-3",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate M60 E-3 under Machine Guns.",
+            "3": "Open a matching weapon-crate or loadout selector and look for M60 E-3. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-armory-explosives",
+      "name": "Explosives",
+      "location_cue": "The explosives portion of the equipment or weapon-crate selector.",
+      "note": "Availability can depend on the preserved profile's historical infrastructure rank.",
+      "items": [
+        {
+          "id": "sfco-armory-explosives-m67-fragmentation-grenade",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "M67 Fragmentation Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate M67 Fragmentation Grenade under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for M67 Fragmentation Grenade. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-explosives-laser-mine",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Laser Mine",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Laser Mine under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Laser Mine. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-explosives-emp-grenade",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "EMP Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate EMP Grenade under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for EMP Grenade. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-explosives-anti-personnel-mine",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Anti-Personnel Mine",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Anti-Personnel Mine under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Anti-Personnel Mine. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-explosives-claymore-mine",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Claymore Mine",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Claymore Mine under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Claymore Mine. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-explosives-claymore-trigger",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Claymore Trigger",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Claymore Trigger under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Claymore Trigger. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-explosives-x34-nerve-agent",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "X34 Nerve Agent",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate X34 Nerve Agent under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for X34 Nerve Agent. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-explosives-smoke-grenade",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Smoke Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Smoke Grenade under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Smoke Grenade. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-explosives-flashbang-grenade",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Flashbang Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Flashbang Grenade under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Flashbang Grenade. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-explosives-m61-fragmentation-grenade",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "M61 Fragmentation Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate M61 Fragmentation Grenade under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for M61 Fragmentation Grenade. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-explosives-incendiary-grenade",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Incendiary Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Incendiary Grenade under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Incendiary Grenade. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-explosives-bouncing-betty",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Bouncing Betty",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Bouncing Betty under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Bouncing Betty. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-explosives-sticky-mine",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Sticky Mine",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Sticky Mine under Explosives.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Sticky Mine. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-armory-special-equipment",
+      "name": "Special Equipment",
+      "location_cue": "The special equipment portion of the equipment or weapon-crate selector.",
+      "note": "Availability can depend on the preserved profile's historical infrastructure rank.",
+      "items": [
+        {
+          "id": "sfco-armory-special-equipment-flamethrower",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Flamethrower",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Flamethrower under Special Equipment.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Flamethrower. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-special-equipment-epdd",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "EPDD",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate EPDD under Special Equipment.",
+            "3": "Open a matching weapon-crate or loadout selector and look for EPDD. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-special-equipment-fairbairn-sykes-knife",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Fairbairn-Sykes Knife",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Fairbairn-Sykes Knife under Special Equipment.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Fairbairn-Sykes Knife. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-special-equipment-sg-10-bolt-pistol",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "SG-10 Bolt Pistol",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate SG-10 Bolt Pistol under Special Equipment.",
+            "3": "Open a matching weapon-crate or loadout selector and look for SG-10 Bolt Pistol. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-special-equipment-sg-75-bolt-gun",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "SG-75 Bolt Gun",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate SG-75 Bolt Gun under Special Equipment.",
+            "3": "Open a matching weapon-crate or loadout selector and look for SG-75 Bolt Gun. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-special-equipment-rd-9-speargun",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "RD-9 Speargun",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate RD-9 Speargun under Special Equipment.",
+            "3": "Open a matching weapon-crate or loadout selector and look for RD-9 Speargun. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-special-equipment-night-vision",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "Night Vision",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate Night Vision under Special Equipment.",
+            "3": "Open a matching weapon-crate or loadout selector and look for Night Vision. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-special-equipment-edsu",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "EDSU",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate EDSU under Special Equipment.",
+            "3": "Open a matching weapon-crate or loadout selector and look for EDSU. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-special-equipment-pid",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "PID",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate PID under Special Equipment.",
+            "3": "Open a matching weapon-crate or loadout selector and look for PID. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-special-equipment-rtl",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "RTL",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate RTL under Special Equipment.",
+            "3": "Open a matching weapon-crate or loadout selector and look for RTL. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        },
+        {
+          "id": "sfco-armory-special-equipment-azl",
+          "type": "optional",
+          "safe_type": "Armory entry",
+          "label": "AZL",
+          "missable": false,
+          "levels": {
+            "1": "Check this equipment family in the crate or loadout list.",
+            "2": "Locate AZL under Special Equipment.",
+            "3": "Open a matching weapon-crate or loadout selector and look for AZL. If available, place it and complete a short local test. If the entry is rank-locked, record it as retired infrastructure content; the retained corpus does not justify inventing a rank threshold."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-retired-community",
+      "name": "Retired Community Features",
+      "location_cue": "The historical Infrastructure and Community branches.",
+      "note": "These records explain unavailable content; they are not routine completion tasks today.",
+      "items": [
+        {
+          "id": "sfco-community-uploads",
+          "type": "optional",
+          "safe_type": "Unavailable record",
+          "label": "Mission Upload",
+          "missable": false,
+          "levels": {
+            "1": "Keep this historical feature outside the local checklist.",
+            "2": "Uploading local missions required the retired hosted community.",
+            "3": "Uploading local missions required the retired hosted community. Official service is closed, and no verified replacement currently exposes this function. Mark it unavailable as of 2026-07-28; never fake a successful record."
+          }
+        },
+        {
+          "id": "sfco-community-downloads",
+          "type": "optional",
+          "safe_type": "Unavailable record",
+          "label": "Community Download",
+          "missable": false,
+          "levels": {
+            "1": "Keep this historical feature outside the local checklist.",
+            "2": "Browsing and downloading shared missions required the retired hosted community.",
+            "3": "Browsing and downloading shared missions required the retired hosted community. Official service is closed, and no verified replacement currently exposes this function. Mark it unavailable as of 2026-07-28; never fake a successful record."
+          }
+        },
+        {
+          "id": "sfco-community-ratings",
+          "type": "optional",
+          "safe_type": "Unavailable record",
+          "label": "Mission Rating",
+          "missable": false,
+          "levels": {
+            "1": "Keep this historical feature outside the local checklist.",
+            "2": "The one-to-five-star community rating system required hosted mission records.",
+            "3": "The one-to-five-star community rating system required hosted mission records. Official service is closed, and no verified replacement currently exposes this function. Mark it unavailable as of 2026-07-28; never fake a successful record."
+          }
+        },
+        {
+          "id": "sfco-community-favorites",
+          "type": "optional",
+          "safe_type": "Unavailable record",
+          "label": "Favorites List",
+          "missable": false,
+          "levels": {
+            "1": "Keep this historical feature outside the local checklist.",
+            "2": "Online favorites depended on the hosted mission catalogue.",
+            "3": "Online favorites depended on the hosted mission catalogue. Official service is closed, and no verified replacement currently exposes this function. Mark it unavailable as of 2026-07-28; never fake a successful record."
+          }
+        },
+        {
+          "id": "sfco-community-friends",
+          "type": "optional",
+          "safe_type": "Unavailable record",
+          "label": "PlayStation Network Friends",
+          "missable": false,
+          "levels": {
+            "1": "Keep this historical feature outside the local checklist.",
+            "2": "Infrastructure login linked the game to the historical friends list.",
+            "3": "Infrastructure login linked the game to the historical friends list. Official service is closed, and no verified replacement currently exposes this function. Mark it unavailable as of 2026-07-28; never fake a successful record."
+          }
+        },
+        {
+          "id": "sfco-community-cells",
+          "type": "optional",
+          "safe_type": "Unavailable record",
+          "label": "Agency Cells",
+          "missable": false,
+          "levels": {
+            "1": "Keep this historical feature outside the local checklist.",
+            "2": "Hosted group creation, membership, and cell matches depended on infrastructure.",
+            "3": "Hosted group creation, membership, and cell matches depended on infrastructure. Official service is closed, and no verified replacement currently exposes this function. Mark it unavailable as of 2026-07-28; never fake a successful record."
+          }
+        },
+        {
+          "id": "sfco-community-leaderboards",
+          "type": "optional",
+          "safe_type": "Unavailable record",
+          "label": "Rankings and Statistics",
+          "missable": false,
+          "levels": {
+            "1": "Keep this historical feature outside the local checklist.",
+            "2": "Public rank and comparison screens depended on the retired service.",
+            "3": "Public rank and comparison screens depended on the retired service. Official service is closed, and no verified replacement currently exposes this function. Mark it unavailable as of 2026-07-28; never fake a successful record."
+          }
+        },
+        {
+          "id": "sfco-community-mail",
+          "type": "optional",
+          "safe_type": "Unavailable record",
+          "label": "Community Messages",
+          "missable": false,
+          "levels": {
+            "1": "Keep this historical feature outside the local checklist.",
+            "2": "Hosted mail, boards, and other community communication are no longer available.",
+            "3": "Hosted mail, boards, and other community communication are no longer available. Official service is closed, and no verified replacement currently exposes this function. Mark it unavailable as of 2026-07-28; never fake a successful record."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfco-final-audit",
+      "name": "Final Completion Audit",
+      "location_cue": "The local mission browser, editor menus, avatar list, and armory selectors.",
+      "note": "The audit separates reachable local completion from retired hosted records.",
+      "items": [
+        {
+          "id": "sfco-final-reachable",
+          "type": "optional",
+          "safe_type": "Final audit",
+          "label": "Reachable Local Completion",
+          "missable": false,
+          "levels": {
+            "1": "Confirm every surviving local system has a record.",
+            "2": "Review environments, modes, built-in missions, editor tools, avatars, armory, and Ad Hoc tests.",
+            "3": "Verify all four environments, all five modes, the full twenty-mission official library, every editor control, all ten starting avatars, every visible armory entry, saved mission reloads, and at least one real-partner Ad Hoc match. Keep every inaccessible rank or community function marked unavailable."
+          }
+        },
+        {
+          "id": "sfco-final-historical",
+          "type": "optional",
+          "safe_type": "Final audit",
+          "label": "Historical Content Archive",
+          "missable": false,
+          "levels": {
+            "1": "Preserve the closed-service boundary honestly.",
+            "2": "Record all ten rank steps, twenty ranked avatars, and hosted community functions.",
+            "3": "Confirm the guide lists R1 through T3, both avatar rewards at each rank, the final 20,000-XP record, and every hosted feature lost with infrastructure. This is documentation, not a claim that the retired service was completed today."
+          }
+        }
+      ]
+    }
+  ]
+}
