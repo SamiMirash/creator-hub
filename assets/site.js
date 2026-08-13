@@ -21,6 +21,7 @@
     ["Games", "games.html"],
     ["100% Guides", "guides.html"],
     ["About", "about.html"],
+      ["Marginalia", "marginalia.html"],
     ["Game Settings", "setup.html"],
     // Themed groups (Sami 2026-07-14: "not many people click on More" -- everything that was
     // buried there now lives in a visible, named group. NOTHING removed except the Sponsors
@@ -55,6 +56,7 @@
 
   const footerItems = [
     ["About", "about.html"],
+    ["Marginalia", "marginalia.html"],
     ["Live", "live.html"],
     ["Games", "games.html"],
     ["100% Guides", "guides.html"],
