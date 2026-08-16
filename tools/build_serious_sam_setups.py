@@ -128,6 +128,12 @@ def build(h):
                              "Serious Sam HD: The Second Encounter", "hd-tse")):
         c = {k: clean(v) for k, v in h[key]["cfg"].items()}
         dg = h[key]["dgv"]
+        # HD TSE also carries a user.cfg with the banned post-processing effects
+        cv = h.get("usercfg", {}).get(key, [])
+        extra_group = ([{"name": "Tuned settings (from the game's own user.cfg)",
+                         "settings": [S(x["key"], x["value"] +
+                                        (f"   -  {x['why']}" if x["why"] else ""))
+                                      for x in cv]}] if cv else [])
         games.append({
             "id": gid, "title": title, "status": "Set up, not yet played",
             "summary": ("A DirectX 9 game with no HDR of its own, running 4K HDR anyway: dgVoodoo2 "
@@ -159,7 +165,7 @@ def build(h):
                     ("Anti-aliasing", dg.get("Antialiasing")),
                     ("Watermark", dg.get("dgVoodooWatermark")),
                 ]),
-            ],
+            ] + extra_group,
             "hdrWriteup": {
                 "title": "How a 2009 DirectX 9 game ends up in HDR",
                 "paragraphs": [
@@ -422,35 +428,64 @@ def build(h):
         "settingsNote": "Read directly from the emulator's own config.",
     })
 
+    # ---- the Serious Engine 3/4 games, tuned through user.cfg -------------------------------
+    # ⚠️ user.cfg is where the real tuning lives for these. Searching only for '*.ini' missed it
+    # and I wrongly reported these as having no config at all.
+    for gid, title, key, platform, summary, extra_mods in (
+        ("serious-sam-3-bfe", "Serious Sam 3: BFE", "ss3", "PC",
+         "4K with every post-processing effect that smears the image switched off, and a derived "
+         "16:9 field of view. HDR is added by the graphics driver, since the game has none.", []),
+        ("serious-sam-4", "Serious Sam 4", "ss4", "PC (GOG)",
+         "4K with the game's own native HDR switched on. Worth knowing: the GOG build is a version "
+         "AHEAD of the Steam one.", []),
+        ("serious-sam-siberian-mayhem", "Serious Sam: Siberian Mayhem", "siberian", "PC (GOG)",
+         "Same engine and the same treatment as Serious Sam 4, with native HDR on.", []),
+    ):
+        cv = h["usercfg"][key]
+        games.append({
+            "id": gid, "title": title, "status": "Set up, not yet played",
+            "summary": summary,
+            "groups": [
+                group("Display", [("Resolution", "3840 x 2160 (4K)"),
+                                  ("Platform", platform),
+                                  ("Display device", "my monitor")]),
+                {"name": "Tuned settings (from the game's own user.cfg)",
+                 "settings": [S(c["key"], c["value"] + (f"   -  {c['why']}" if c["why"] else ""))
+                              for c in cv]},
+            ],
+            "mods": extra_mods,
+            "modsNote": ("Nothing is modded here - these are the engine's own console variables, "
+                         "written to user.cfg so they load after the saved settings and win."),
+            "settingsNote": ("Read directly from the game's user.cfg. The comments are the actual "
+                             "reasons the value was chosen, not added afterwards. " + FOV_NOTE),
+        })
+
+    # ---- Serious Sam Advance (emulated) -------------------------------------------------------
+    nba = h["nanoboyadvance"]
+    games.append({
+        "id": "serious-sam-advance", "title": "Serious Sam Advance",
+        "status": "Set up, not yet played",
+        "summary": "The Game Boy Advance entry - an original story, not a port - on a "
+                   "cycle-accurate emulator.",
+        "groups": [group("Emulation", [
+            ("Emulator", "NanoBoyAdvance (cycle-accurate)"),
+            ("Scale", nba.get("scale")),
+            ("Fullscreen", nba.get("fullscreen")),
+            ("Filter", nba.get("filter")),
+            ("Colour correction", f"{nba.get('color_correction')} - matches the original "
+                                  f"handheld screen's colour response"),
+            ("LCD ghosting", nba.get("lcd_ghosting")),
+            ("Display device", "my monitor"),
+        ])],
+        "mods": [],
+        "settingsNote": "Read directly from the emulator's own config file.",
+    })
+
     # ---- entries whose own config file does not exist on disk yet ---------------------------
     # ⛔ These have NO readable config (GOG installs keep theirs elsewhere, and a game that has not
     # been launched since reinstall has not written one). Publishing invented numbers would be
     # worse than publishing none, so these state only what is verified and say so plainly.
-    pending = [
-        ("serious-sam-3-bfe", "Serious Sam 3: BFE", "PC",
-         "Runs at 4K. HDR comes from the graphics driver's own SDR-to-HDR conversion rather than "
-         "from the game, which has none of its own."),
-        ("serious-sam-4", "Serious Sam 4", "PC (GOG)",
-         "Runs at 4K with the game's own native HDR - no wrapper or injector needed. Worth knowing: "
-         "the GOG build is a version AHEAD of the Steam one."),
-        ("serious-sam-siberian-mayhem", "Serious Sam: Siberian Mayhem", "PC (GOG)",
-         "Runs at 4K with the game's own native HDR."),
-        ("serious-sam-advance", "Serious Sam Advance", "Game Boy Advance, emulated",
-         "Emulated on a cycle-accurate core, output scaled to 4K."),
-    ]
-    for gid, title, platform, summary in pending:
-        games.append({
-            "id": gid, "title": title, "status": "Set up, not yet played",
-            "summary": summary,
-            "groups": [group("Display", [("Resolution", "3840 x 2160 (4K)"),
-                                         ("Platform", platform),
-                                         ("Display device", "my monitor")])],
-            "mods": [],
-            "settingsNote": ("Per-setting detail for this one is not published yet: it writes its "
-                             "config the first time it is played, and nothing here is written from "
-                             "memory. It will be filled in from the game's own file after the "
-                             "first session."),
-        })
+    # (the former 'pending' stubs are gone - all four now have real, harvested settings)
 
     return games
 

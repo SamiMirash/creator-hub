@@ -772,7 +772,7 @@
    "id": "serious-sam-3-bfe",
    "title": "Serious Sam 3: BFE",
    "status": "Set up, not yet played",
-   "summary": "Runs at 4K. HDR comes from the graphics driver's own SDR-to-HDR conversion rather than from the game, which has none of its own.",
+   "summary": "4K with every post-processing effect that smears the image switched off, and a derived 16:9 field of view. HDR is added by the graphics driver, since the game has none.",
    "groups": [
     {
      "name": "Display",
@@ -790,16 +790,70 @@
        "value": "my monitor"
       }
      ]
+    },
+    {
+     "name": "Tuned settings (from the game's own user.cfg)",
+     "settings": [
+      {
+       "label": "gfx_bFullScreen",
+       "value": "1   -  exclusive fullscreen - lowest latency"
+      },
+      {
+       "label": "gfx_pixResWidth",
+       "value": "3840   -  4K is the floor"
+      },
+      {
+       "label": "gfx_pixResHeight",
+       "value": "2160"
+      },
+      {
+       "label": "gfx_iWaitVSyncs",
+       "value": "0   -  in-game VSync OFF - the NVIDIA app owns it"
+      },
+      {
+       "label": "gfx_iMaxFPSActive",
+       "value": "10000   -  cap unlimited - driver owns the 237 cap"
+      },
+      {
+       "label": "ren_fMax3DRenderingMPix",
+       "value": "8.3   -  QL5 caps 3D at 2.0 MPix (~1885x1060); 4K needs 8.2944"
+      },
+      {
+       "label": "tex_iAnisotropy",
+       "value": "16   -  16x anisotropic"
+      },
+      {
+       "label": "tex_pixMaxSize",
+       "value": "4096   -  allow 4096 textures"
+      },
+      {
+       "label": "efx_bMotionBlur",
+       "value": "0   -  BANNED"
+      },
+      {
+       "label": "efx_bDepthOfField",
+       "value": "0   -  BANNED"
+      },
+      {
+       "label": "sha_bAllowZoomBlurring",
+       "value": "0   -  BANNED - blur"
+      },
+      {
+       "label": "plr_fFOVOverride",
+       "value": "106.2602   -  derived: base 90 -> 16:9"
+      }
+     ]
     }
    ],
    "mods": [],
-   "settingsNote": "Per-setting detail for this one is not published yet: it writes its config the first time it is played, and nothing here is written from memory. It will be filled in from the game's own file after the first session."
+   "modsNote": "Nothing is modded here - these are the engine's own console variables, written to user.cfg so they load after the saved settings and win.",
+   "settingsNote": "Read directly from the game's user.cfg. The comments are the actual reasons the value was chosen, not added afterwards. Field of view is derived, never copied between games: hfov(16:9) = 2*atan(tan(hfov(4:3)/2) * 3/4 * 16/9). Every engine has a different 4:3 default, so the same number is a different view in a different game."
   },
   {
    "id": "serious-sam-4",
    "title": "Serious Sam 4",
    "status": "Set up, not yet played",
-   "summary": "Runs at 4K with the game's own native HDR - no wrapper or injector needed. Worth knowing: the GOG build is a version AHEAD of the Steam one.",
+   "summary": "4K with the game's own native HDR switched on. Worth knowing: the GOG build is a version AHEAD of the Steam one.",
    "groups": [
     {
      "name": "Display",
@@ -817,27 +871,93 @@
        "value": "my monitor"
       }
      ]
+    },
+    {
+     "name": "Tuned settings (from the game's own user.cfg)",
+     "settings": [
+      {
+       "label": "gfx_bFullScreen",
+       "value": "1   -  exclusive fullscreen - lowest latency"
+      },
+      {
+       "label": "gfx_pixResWidth",
+       "value": "3840   -  4K is the floor"
+      },
+      {
+       "label": "gfx_pixResHeight",
+       "value": "2160"
+      },
+      {
+       "label": "gfx_iWaitVSyncs",
+       "value": "0   -  in-game VSync OFF - the NVIDIA app owns it"
+      },
+      {
+       "label": "gfx_iMaxFPSActive",
+       "value": "10000   -  cap unlimited - driver owns the 237 cap"
+      },
+      {
+       "label": "ren_fMax3DRenderingMPix",
+       "value": "8.3   -  QL5 caps 3D at 2.0 MPix (~1885x1060); 4K needs 8.2944"
+      },
+      {
+       "label": "tex_iAnisotropy",
+       "value": "16   -  16x anisotropic"
+      },
+      {
+       "label": "tex_pixMaxSize",
+       "value": "4096   -  allow 4096 textures"
+      },
+      {
+       "label": "efx_bMotionBlur",
+       "value": "0   -  BANNED"
+      },
+      {
+       "label": "efx_bDepthOfField",
+       "value": "0   -  BANNED"
+      },
+      {
+       "label": "gfx_bHDROutput",
+       "value": "1   -  NATIVE HDR ON (then RTX HDR must be OFF for this exe)"
+      }
+     ]
     }
    ],
    "mods": [],
-   "settingsNote": "Per-setting detail for this one is not published yet: it writes its config the first time it is played, and nothing here is written from memory. It will be filled in from the game's own file after the first session."
+   "modsNote": "Nothing is modded here - these are the engine's own console variables, written to user.cfg so they load after the saved settings and win.",
+   "settingsNote": "Read directly from the game's user.cfg. The comments are the actual reasons the value was chosen, not added afterwards. Field of view is derived, never copied between games: hfov(16:9) = 2*atan(tan(hfov(4:3)/2) * 3/4 * 16/9). Every engine has a different 4:3 default, so the same number is a different view in a different game."
   },
   {
    "id": "serious-sam-advance",
    "title": "Serious Sam Advance",
    "status": "Set up, not yet played",
-   "summary": "Emulated on a cycle-accurate core, output scaled to 4K.",
+   "summary": "The Game Boy Advance entry - an original story, not a port - on a cycle-accurate emulator.",
    "groups": [
     {
-     "name": "Display",
+     "name": "Emulation",
      "settings": [
       {
-       "label": "Resolution",
-       "value": "3840 x 2160 (4K)"
+       "label": "Emulator",
+       "value": "NanoBoyAdvance (cycle-accurate)"
       },
       {
-       "label": "Platform",
-       "value": "Game Boy Advance, emulated"
+       "label": "Scale",
+       "value": "2"
+      },
+      {
+       "label": "Fullscreen",
+       "value": "true"
+      },
+      {
+       "label": "Filter",
+       "value": "sharp"
+      },
+      {
+       "label": "Colour correction",
+       "value": "agb - matches the original handheld screen's colour response"
+      },
+      {
+       "label": "LCD ghosting",
+       "value": "false"
       },
       {
        "label": "Display device",
@@ -847,7 +967,7 @@
     }
    ],
    "mods": [],
-   "settingsNote": "Per-setting detail for this one is not published yet: it writes its config the first time it is played, and nothing here is written from memory. It will be filled in from the game's own file after the first session."
+   "settingsNote": "Read directly from the emulator's own config file."
   },
   {
    "id": "serious-sam-classics-revolution",
@@ -1237,6 +1357,67 @@
        "value": "false"
       }
      ]
+    },
+    {
+     "name": "Tuned settings (from the game's own user.cfg)",
+     "settings": [
+      {
+       "label": "gfx_bFullScreen",
+       "value": "1   -  exclusive fullscreen - lowest latency"
+      },
+      {
+       "label": "gfx_pixResWidth",
+       "value": "3840   -  4K is the floor"
+      },
+      {
+       "label": "gfx_pixResHeight",
+       "value": "2160"
+      },
+      {
+       "label": "gfx_iWaitVSyncs",
+       "value": "0   -  in-game VSync OFF - the NVIDIA app owns it"
+      },
+      {
+       "label": "gfx_iMaxFPSActive",
+       "value": "10000   -  cap unlimited - driver owns the 237 cap"
+      },
+      {
+       "label": "ren_fMax3DRenderingMPix",
+       "value": "8.3   -  QL5 caps 3D at 2.0 MPix (~1885x1060); 4K needs 8.2944"
+      },
+      {
+       "label": "tex_iAnisotropy",
+       "value": "16   -  16x anisotropic"
+      },
+      {
+       "label": "tex_pixMaxSize",
+       "value": "4096   -  allow 4096 textures"
+      },
+      {
+       "label": "efx_bMotionBlur",
+       "value": "0   -  BANNED"
+      },
+      {
+       "label": "efx_bDepthOfField",
+       "value": "0   -  BANNED"
+      },
+      {
+       "label": "sha_bAllowZoomBlurring",
+       "value": "0   -  BANNED - blur"
+      },
+      {
+       "label": "inp_bMouseAcceleration",
+       "value": "0   -  BANNED"
+      },
+      {
+       "label": "inp_bMouseSmoothing",
+       "value": "0   -  BANNED"
+      },
+      {
+       "label": "plr_fFOVOverride",
+       "value": "106.2602   -  derived: base 90 -> 16:9"
+      }
+     ]
     }
    ],
    "hdrWriteup": {
@@ -1413,7 +1594,7 @@
    "id": "serious-sam-siberian-mayhem",
    "title": "Serious Sam: Siberian Mayhem",
    "status": "Set up, not yet played",
-   "summary": "Runs at 4K with the game's own native HDR.",
+   "summary": "Same engine and the same treatment as Serious Sam 4, with native HDR on.",
    "groups": [
     {
      "name": "Display",
@@ -1431,10 +1612,60 @@
        "value": "my monitor"
       }
      ]
+    },
+    {
+     "name": "Tuned settings (from the game's own user.cfg)",
+     "settings": [
+      {
+       "label": "gfx_bFullScreen",
+       "value": "1   -  exclusive fullscreen - lowest latency"
+      },
+      {
+       "label": "gfx_pixResWidth",
+       "value": "3840   -  4K is the floor"
+      },
+      {
+       "label": "gfx_pixResHeight",
+       "value": "2160"
+      },
+      {
+       "label": "gfx_iWaitVSyncs",
+       "value": "0   -  in-game VSync OFF - the NVIDIA app owns it"
+      },
+      {
+       "label": "gfx_iMaxFPSActive",
+       "value": "10000   -  cap unlimited - driver owns the 237 cap"
+      },
+      {
+       "label": "ren_fMax3DRenderingMPix",
+       "value": "8.3   -  QL5 caps 3D at 2.0 MPix (~1885x1060); 4K needs 8.2944"
+      },
+      {
+       "label": "tex_iAnisotropy",
+       "value": "16   -  16x anisotropic"
+      },
+      {
+       "label": "tex_pixMaxSize",
+       "value": "4096   -  allow 4096 textures"
+      },
+      {
+       "label": "efx_bMotionBlur",
+       "value": "0   -  BANNED"
+      },
+      {
+       "label": "efx_bDepthOfField",
+       "value": "0   -  BANNED"
+      },
+      {
+       "label": "gfx_bHDROutput",
+       "value": "1   -  NATIVE HDR ON (then RTX HDR must be OFF for this exe)"
+      }
+     ]
     }
    ],
    "mods": [],
-   "settingsNote": "Per-setting detail for this one is not published yet: it writes its config the first time it is played, and nothing here is written from memory. It will be filled in from the game's own file after the first session."
+   "modsNote": "Nothing is modded here - these are the engine's own console variables, written to user.cfg so they load after the saved settings and win.",
+   "settingsNote": "Read directly from the game's user.cfg. The comments are the actual reasons the value was chosen, not added afterwards. Field of view is derived, never copied between games: hfov(16:9) = 2*atan(tan(hfov(4:3)/2) * 3/4 * 16/9). Every engine has a different 4:3 default, so the same number is a different view in a different game."
   },
   {
    "id": "serious-sam-the-first-encounter",
