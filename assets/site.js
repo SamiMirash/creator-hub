@@ -18,6 +18,10 @@
   const navItems = [
     ["Home", "index.html"],
     ["Live", "live.html"],
+    // Game Hub merges the game list, its settings, its guide and its playtime onto ONE page
+    // per game (Sami 2026-08-16: "I want everything about that game to be there").
+    // The three source pages stay — their URLs are indexed and still work.
+    ["Game Hub", "game.html"],
     ["Games", "games.html"],
     ["100% Guides", "guides.html"],
     ["About", "about.html"],
@@ -58,6 +62,7 @@
     ["About", "about.html"],
     ["Marginalia", "marginalia.html"],
     ["Live", "live.html"],
+    ["Game Hub", "game.html"],
     ["Games", "games.html"],
     ["100% Guides", "guides.html"],
     ["Game Settings", "setup.html"],

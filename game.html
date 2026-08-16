@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Everything about one game in one place: the edition worth playing, the exact settings used, the spoiler-free 100% guide, and how long it took.">
+  <meta property="og:title" content="Game Hub | Sami Mirash">
+  <meta property="og:description" content="Search a game and get everything in one place: chosen edition, exact settings, spoiler-free guide, and playtime.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.samimirash.com/game.html">
+  <meta property="og:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.samimirash.com/og-image.png">
+  <meta name="theme-color" content="#080705">
+  <link rel="canonical" href="https://www.samimirash.com/game.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <title>Game Hub | Sami Mirash</title>
+  <script defer src="assets/site.js"></script>
+  <script defer src="assets/seo.js"></script>
+  <style>
+    .gh-search{position:relative;max-width:620px}
+    .gh-search input{width:100%;padding:14px 16px;font-size:16px;border-radius:10px;
+      border:1px solid var(--line,#333);background:rgba(0,0,0,.35);color:inherit}
+    .gh-results{list-style:none;margin:8px 0 0;padding:0;max-height:420px;overflow:auto;
+      border:1px solid var(--line,#333);border-radius:10px;display:none}
+    .gh-results.show{display:block}
+    .gh-results li{border-bottom:1px solid var(--line,#333)}
+    .gh-results li:last-child{border-bottom:0}
+    .gh-results button{display:block;width:100%;text-align:left;padding:11px 14px;
+      background:none;border:0;color:inherit;font:inherit;cursor:pointer}
+    .gh-results button:hover,.gh-results button:focus{background:rgba(255,255,255,.07)}
+    .gh-flags{font-size:12px;opacity:.72;margin-left:8px}
+    .gh-entry{border:1px solid var(--line,#333);border-radius:12px;padding:16px 18px;margin:14px 0}
+    .gh-entry h3{margin:.1em 0 .35em;font-size:19px}
+    .gh-meta{display:flex;flex-wrap:wrap;gap:8px;margin:.4em 0 .8em}
+    .gh-tag{font-size:12px;border:1px solid var(--line,#333);border-radius:999px;padding:3px 10px;opacity:.9}
+    .gh-sect{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--line,#333)}
+    .gh-sect h4{margin:0 0 .4em;font-size:13px;letter-spacing:.6px;text-transform:uppercase;
+      opacity:.75;font-weight:700}
+    .gh-kv{display:grid;grid-template-columns:minmax(120px,auto) 1fr;gap:4px 14px;font-size:14px}
+    .gh-kv dt{opacity:.7}
+    .gh-kv dd{margin:0}
+    .gh-none{opacity:.55;font-size:14px;font-style:italic}
+    .gh-settings-group{margin:.5em 0}
+    .gh-settings-group b{display:block;font-size:13px;opacity:.8;margin-bottom:.2em}
+    .gh-settings-group table{width:100%;border-collapse:collapse;font-size:13px}
+    .gh-settings-group td{padding:3px 8px 3px 0;vertical-align:top}
+    .gh-settings-group td:first-child{opacity:.7;white-space:nowrap}
+    @media(max-width:640px){.gh-kv{grid-template-columns:1fr}}
+  </style>
+</head>
+<body data-page="game">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header></header>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Game Hub</p>
+        <h1>One game. Everything about it.</h1>
+        <p class="lede">Search a game and get the whole picture in one place &mdash; which edition is
+          worth playing, the exact settings used, the spoiler-free 100% guide, and how long it took.
+          No more hopping between three pages.</p>
+        <div class="gh-search">
+          <input id="gh-q" type="search" autocomplete="off" spellcheck="false"
+                 placeholder="Search a game or franchise&hellip;" aria-label="Search games">
+          <ul id="gh-results" class="gh-results" role="listbox"></ul>
+        </div>
+      </div>
+    </section>
+    <section class="wrap" id="gh-detail" aria-live="polite"></section>
+  </main>
+
+<script>
+(function () {
+  "use strict";
+  var idx = [], byId = {}, cache = {};
+  var q = document.getElementById("gh-q");
+  var list = document.getElementById("gh-results");
+  var detail = document.getElementById("gh-detail");
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c];
+    });
+  }
+
+  fetch("data/game_index.json", { cache: "no-cache" })
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      idx = d.games || [];
+      idx.forEach(function (g) { byId[g.slug] = g; });
+      var params = new URLSearchParams(location.search);
+      var pre = params.get("slug");
+      if (pre) { open(pre); }
+      // ?q= makes a search shareable, and is how this page gets tested
+      var pq = params.get("q");
+      if (pq) { q.value = pq; search(pq); }
+    })
+    .catch(function () {
+      detail.innerHTML = '<p class="gh-none">The game index could not be loaded.</p>';
+    });
+
+  function score(g, needle) {
+    var hay = (g.franchise + " " + (g.titles || []).join(" ")).toLowerCase();
+    var i = hay.indexOf(needle);
+    if (i < 0) { return -1; }
+    return (g.franchise.toLowerCase().indexOf(needle) === 0 ? 0 : 1) * 1000 + i;
+  }
+
+  function search(needle) {
+    needle = needle.trim().toLowerCase();
+    if (needle.length < 2) { list.classList.remove("show"); list.innerHTML = ""; return; }
+    var hits = [];
+    for (var i = 0; i < idx.length; i++) {
+      var s = score(idx[i], needle);
+      if (s >= 0) { hits.push([s, idx[i]]); }
+    }
+    hits.sort(function (a, b) { return a[0] - b[0]; });
+    hits = hits.slice(0, 40);
+    list.innerHTML = hits.map(function (h) {
+      var g = h[1];
+      var flags = [];
+      if (g.has_guide) { flags.push("guide"); }
+      if (g.has_settings) { flags.push("settings"); }
+      if (g.has_playtime) { flags.push("playtime"); }
+      var yrs = (g.years && g.years.length)
+        ? g.years[0] + (g.years.length > 1 ? "&ndash;" + g.years[g.years.length - 1] : "")
+        : "";
+      return '<li><button type="button" data-slug="' + esc(g.slug) + '">' +
+        esc(g.franchise) + ' <span class="gh-flags">' + yrs +
+        (flags.length ? " &middot; " + flags.join(", ") : "") + "</span></button></li>";
+    }).join("");
+    list.classList.toggle("show", hits.length > 0);
+  }
+
+  q.addEventListener("input", function () { search(q.value); });
+  list.addEventListener("click", function (ev) {
+    var b = ev.target.closest("button[data-slug]");
+    if (b) { open(b.getAttribute("data-slug")); }
+  });
+
+  function open(slug) {
+    list.classList.remove("show");
+    if (cache[slug]) { render(cache[slug]); return; }
+    detail.innerHTML = '<p class="gh-none">Loading&hellip;</p>';
+    fetch("data/games/" + encodeURIComponent(slug) + ".json", { cache: "no-cache" })
+      .then(function (r) { if (!r.ok) { throw 0; } return r.json(); })
+      .then(function (d) { cache[slug] = d; render(d); })
+      .catch(function () {
+        detail.innerHTML = '<p class="gh-none">No record found for that game.</p>';
+      });
+  }
+
+  function kv(pairs) {
+    var rows = pairs.filter(function (p) { return p[1]; })
+      .map(function (p) { return "<dt>" + esc(p[0]) + "</dt><dd>" + esc(p[1]) + "</dd>"; });
+    return rows.length ? '<dl class="gh-kv">' + rows.join("") + "</dl>" : "";
+  }
+
+  function settingsBlock(s) {
+    if (!s) { return '<p class="gh-none">No settings recorded for this one yet.</p>'; }
+    var out = "";
+    if (s.summary) { out += "<p>" + esc(s.summary) + "</p>"; }
+    (s.groups || []).forEach(function (g) {
+      var rows = (g.items || g.settings || []).map(function (it) {
+        var k = it.label || it.name || it.key || "";
+        var v = it.value == null ? "" : it.value;
+        return "<tr><td>" + esc(k) + "</td><td>" + esc(v) + "</td></tr>";
+      }).join("");
+      if (rows) {
+        out += '<div class="gh-settings-group"><b>' + esc(g.title || g.name || "") +
+          "</b><table>" + rows + "</table></div>";
+      }
+    });
+    if (s.settingsNote) { out += "<p>" + esc(s.settingsNote) + "</p>"; }
+    return out || '<p class="gh-none">No settings recorded for this one yet.</p>';
+  }
+
+  function render(d) {
+    var html = "<h2>" + esc(d.franchise) + "</h2>";
+    if (d.summary) { html += '<p class="lede">' + esc(d.summary) + "</p>"; }
+    (d.entries || []).forEach(function (e) {
+      var s = e.sami || {};
+      html += '<article class="gh-entry"><h3>' + esc(e.title) +
+        (e.release_year ? " <span class=\"gh-flags\">" + esc(e.release_year) + "</span>" : "") +
+        "</h3>";
+
+      var tags = [];
+      if (s.chosen_platform) { tags.push("Played on " + s.chosen_platform); }
+      if (e.status) { tags.push(e.status); }
+      if (s.rating) { tags.push("Rated " + s.rating); }
+      if (s.difficulty) { tags.push(s.difficulty); }
+      if (tags.length) {
+        html += '<div class="gh-meta">' + tags.map(function (t) {
+          return '<span class="gh-tag">' + esc(t) + "</span>";
+        }).join("") + "</div>";
+      }
+
+      html += '<div class="gh-sect"><h4>The version to play</h4>' + (kv([
+        ["Definitive edition", e.definitive_edition],
+        ["Primary", e.primary],
+        ["Secondary", e.secondary],
+        ["Emulation", e.emulation],
+        ["Caveats", e.remaster_caveats]
+      ]) || '<p class="gh-none">Not recorded.</p>') + "</div>";
+
+      html += '<div class="gh-sect"><h4>Settings</h4>' + settingsBlock(e.settings) + "</div>";
+
+      html += '<div class="gh-sect"><h4>Guide</h4>';
+      html += e.guide
+        ? '<p><a class="button primary" href="' + esc(e.guide.url) + '">Open the spoiler-free 100% guide</a></p>'
+        : '<p class="gh-none">No guide for this one yet.</p>';
+      html += "</div>";
+
+      html += '<div class="gh-sect"><h4>Time played</h4>';
+      html += e.playtime
+        ? "<p>" + esc(e.playtime.total_label || "") +
+          (e.playtime.sessions ? " across " + esc(e.playtime.sessions) + " session(s)" : "") + "</p>"
+        : '<p class="gh-none">Not played yet.</p>';
+      html += "</div>";
+
+      if (s.notes) {
+        html += '<div class="gh-sect"><h4>Notes</h4><p>' + esc(s.notes) + "</p></div>";
+      }
+      html += "</article>";
+    });
+    detail.innerHTML = html;
+    history.replaceState(null, "", "game.html?slug=" + encodeURIComponent(d.slug));
+    detail.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+})();
+</script>
+</body>
+</html>
