@@ -1,538 +1,1786 @@
 {
-  "intro": "The exact graphics, display, HDR, driver, and mod setup I run on stream, pulled straight from each game's own settings files, the NVIDIA driver, and DLSS Swapper. Nothing curated or trimmed - this is the full list so you can copy it exactly. Always match the HDR and monitor parts to your own screen, though; mine is the reference. New games get added here as I start playing them.",
-  "games": [
+ "intro": "The exact graphics, display, HDR, driver, and mod setup I run on stream, pulled straight from each game's own settings files, the NVIDIA driver, and DLSS Swapper. Nothing curated or trimmed - this is the full list so you can copy it exactly. Always match the HDR and monitor parts to your own screen, though; mine is the reference. New games get added here as I start playing them.",
+ "games": [
+  {
+   "id": "i-hate-running-backwards",
+   "title": "I Hate Running Backwards",
+   "status": "Set up, not yet played",
+   "summary": "4K with scRGB HDR retrofitted by Special K onto the existing swap chain.",
+   "groups": [
     {
-      "id": "resident-evil-requiem",
-      "title": "Resident Evil Requiem",
-      "status": "Now playing",
-      "summary": "Maxed-out path-traced 4K with a clean, grain-free image tuned for streaming. Every single setting from the game's own config is listed below so you can replicate it 1:1 - display, ray tracing, image quality, HDR sliders, the engine/render block, the exact DLSS versions I swapped in, and the driver profile. Film grain, motion blur, bloom, and lens distortion are off so the picture stays sharp on the encode.",
-      "groups": [
-        {
-          "name": "Display & window",
-          "settings": [
-            {
-              "label": "Resolution",
-              "value": "3840 x 2160 (4K)"
-            },
-            {
-              "label": "Window mode",
-              "value": "Borderless"
-            },
-            {
-              "label": "Display device",
-              "value": "my monitor"
-            },
-            {
-              "label": "Refresh rate",
-              "value": "60 Hz"
-            },
-            {
-              "label": "Frame rate",
-              "value": "Variable (uncapped)"
-            },
-            {
-              "label": "V-Sync",
-              "value": "On"
-            },
-            {
-              "label": "Color space",
-              "value": "Rec. 2020"
-            },
-            {
-              "label": "Display gamma",
-              "value": "10"
-            },
-            {
-              "label": "Display safe area",
-              "value": "10"
-            },
-            {
-              "label": "Button icon type",
-              "value": "Xbox Series (XBS)"
-            },
-            {
-              "label": "Image quality rate",
-              "value": "5"
-            }
-          ]
-        },
-        {
-          "name": "HDR & brightness (in-game HDR - read the notes below)",
-          "settings": [
-            {
-              "label": "HDR",
-              "value": "On (mode: Auto)"
-            },
-            {
-              "label": "Max Brightness",
-              "value": "Slide fully RIGHT to the max stop (= +20)"
-            },
-            {
-              "label": "Min Brightness",
-              "value": "Slide fully LEFT to the min stop (= -20)"
-            },
-            {
-              "label": "Brightness HDR",
-              "value": "Leave the slider centered / middle - the default (= 0, ~300 nits)"
-            }
-          ]
-        },
-        {
-          "name": "Upscaling & frame generation",
-          "settings": [
-            {
-              "label": "Upscaling algorithm",
-              "value": "DLSS"
-            },
-            {
-              "label": "DLSS quality",
-              "value": "Max Quality"
-            },
-            {
-              "label": "Frame generation",
-              "value": "DLSS 4x"
-            },
-            {
-              "label": "Reflex low latency (DLSS)",
-              "value": "On"
-            },
-            {
-              "label": "Upscaling sharpness",
-              "value": "0 (off)"
-            },
-            {
-              "label": "FSR1 upscaling quality (fallback)",
-              "value": "Quality"
-            }
-          ]
-        },
-        {
-          "name": "Ray tracing & lighting",
-          "settings": [
-            {
-              "label": "Ray tracing",
-              "value": "On - Path Tracing (Standard)"
-            },
-            {
-              "label": "Screen-space reflections (SSR)",
-              "value": "On"
-            },
-            {
-              "label": "Contact shadows",
-              "value": "On"
-            },
-            {
-              "label": "Dynamic shadows",
-              "value": "On"
-            },
-            {
-              "label": "Shadow quality",
-              "value": "Highest"
-            },
-            {
-              "label": "Shadow cache",
-              "value": "On"
-            },
-            {
-              "label": "Ambient occlusion (AO) quality",
-              "value": "High"
-            },
-            {
-              "label": "Volumetric fog quality",
-              "value": "Highest"
-            },
-            {
-              "label": "Particle lighting",
-              "value": "On"
-            }
-          ]
-        },
-        {
-          "name": "Image quality",
-          "settings": [
-            {
-              "label": "Overall draw-quality preset",
-              "value": "Custom"
-            },
-            {
-              "label": "Visual quality level",
-              "value": "High"
-            },
-            {
-              "label": "Texture quality",
-              "value": "High"
-            },
-            {
-              "label": "Texture filtering",
-              "value": "Anisotropic 16x"
-            },
-            {
-              "label": "Transparent buffer quality",
-              "value": "Standard"
-            },
-            {
-              "label": "Mesh quality",
-              "value": "High"
-            },
-            {
-              "label": "Effect quality",
-              "value": "High"
-            },
-            {
-              "label": "Subsurface scattering (SSS) quality",
-              "value": "High"
-            },
-            {
-              "label": "Lens flare quality",
-              "value": "High"
-            },
-            {
-              "label": "Hair / strands",
-              "value": "On"
-            },
-            {
-              "label": "Anti-aliasing",
-              "value": "TAA"
-            },
-            {
-              "label": "Depth of field",
-              "value": "On"
-            }
-          ]
-        },
-        {
-          "name": "Turned off for a cleaner stream image",
-          "settings": [
-            {
-              "label": "Film grain",
-              "value": "Off"
-            },
-            {
-              "label": "Motion blur",
-              "value": "Off"
-            },
-            {
-              "label": "Bloom",
-              "value": "Off"
-            },
-            {
-              "label": "Lens distortion",
-              "value": "Off"
-            }
-          ]
-        },
-        {
-          "name": "Engine / render (advanced - the game's render block)",
-          "settings": [
-            {
-              "label": "Graphics API",
-              "value": "DirectX 12"
-            },
-            {
-              "label": "Mesh shaders",
-              "value": "Allowed (force off)"
-            },
-            {
-              "label": "Parallel command-list build",
-              "value": "On (8 worker threads)"
-            },
-            {
-              "label": "Compute queue pairing",
-              "value": "On"
-            },
-            {
-              "label": "Independent render worker",
-              "value": "On"
-            },
-            {
-              "label": "Tight-fit shader cache",
-              "value": "On"
-            },
-            {
-              "label": "Eco shader cache",
-              "value": "On"
-            },
-            {
-              "label": "Render worker thread priority above normal",
-              "value": "Off"
-            }
-          ]
-        }
-      ],
-      "hdrWriteup": {
-        "title": "Why my HDR sliders look like that (and why yours might differ)",
-        "paragraphs": [
-          "Resident Evil Requiem uses IN-GAME HDR - you calibrate it inside the game, not just in Windows. The catch: the in-game calibration image is misleading. The sliders show no numbers, and the picture you adjust against doesn't reflect what the game actually outputs, so it nudges you toward the wrong values on a bright display.",
-          "My monitor is an OLED that peaks around 1000 nits in HDR. Analysis of the game's actual output shows the Max Brightness slider reaches roughly 950 nits when pushed fully right (+20), while the default center (0) only puts out around 700 nits. So on a ~1000-nit screen I slide Max Brightness all the way right to use the full range my panel can show - the calibration image makes that look 'too bright,' but the real output is right where it should be.",
-          "Min Brightness goes fully left (-20) to hold a true black point. On an OLED, black pixels are genuinely off, so keeping the floor down preserves real inky blacks instead of lifting shadows into grey.",
-          "Brightness HDR I leave dead center at the default (0, about 300 nits). That's the mid/paper-white balance for the tone-map - the cleanest, easiest-on-the-eyes middle ground; pushing it just crushes or washes the mid-tones.",
-          "Important: these are tuned to MY 1000-nit OLED. If your monitor peaks lower (say 400-600 nits) you should NOT slam Max Brightness fully right - match it to your own panel's peak. Treat my numbers as the reference for a 1000-nit OLED, not a universal preset."
-        ]
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
       },
-      "nvidia": {
-        "title": "NVIDIA App settings",
-        "intro": "These are my actual NVIDIA App settings, read straight off my screen - not defaults. I do most of the tuning at the global level so every game inherits it, and Resident Evil Requiem reads from that same global profile (no separate per-game overrides). Driver: GeForce Game Ready 610.62. The headline ones: Power Management on Prefer maximum performance, Texture Filtering on High quality, V-Sync On with G-SYNC, a 237 FPS frame cap, and the DLSS model-preset override below.",
-        "groups": [
-          {
-            "name": "NVIDIA - Global Settings (Graphics)",
-            "settings": [
-              {
-                "label": "DLSS Override - Model Presets",
-                "value": "Custom - FG: Preset B, SR: Preset K, RR: Recommended"
-              },
-              {
-                "label": "DLSS Override - Frame Generation Mode",
-                "value": "Use 3D app setting"
-              },
-              {
-                "label": "DLSS Override - Super Resolution Mode",
-                "value": "Use 3D app setting"
-              },
-              {
-                "label": "Smooth Motion",
-                "value": "Off"
-              },
-              {
-                "label": "Low Latency Mode",
-                "value": "Off"
-              },
-              {
-                "label": "CUDA - System Fallback Policy",
-                "value": "Driver Default"
-              },
-              {
-                "label": "DSR - Factors",
-                "value": "Off"
-              },
-              {
-                "label": "GPU App Assignment",
-                "value": "my GPU"
-              },
-              {
-                "label": "Image Scaling",
-                "value": "Off"
-              },
-              {
-                "label": "Max Frame Rate",
-                "value": "237 FPS"
-              },
-              {
-                "label": "Monitor Technology",
-                "value": "G-SYNC Compatible"
-              },
-              {
-                "label": "OpenGL GDI Compatibility",
-                "value": "Auto"
-              },
-              {
-                "label": "Power Management Mode",
-                "value": "Prefer maximum performance"
-              },
-              {
-                "label": "RTX Dynamic Vibrance",
-                "value": "Off"
-              },
-              {
-                "label": "RTX HDR",
-                "value": "Off"
-              },
-              {
-                "label": "Shader Cache",
-                "value": "Size: Unlimited, Shader Compiler: Off"
-              },
-              {
-                "label": "Vertical Sync",
-                "value": "On"
-              },
-              {
-                "label": "Virtual Reality - Variable Rate Super Sampling",
-                "value": "Off"
-              },
-              {
-                "label": "Vulkan/OpenGL Present Method",
-                "value": "Auto"
-              },
-              {
-                "label": "Anisotropic Filtering",
-                "value": "Application-controlled"
-              },
-              {
-                "label": "Antialiasing - FXAA",
-                "value": "Off"
-              },
-              {
-                "label": "Antialiasing - Transparency",
-                "value": "Off"
-              },
-              {
-                "label": "Background Application Max Frame Rate",
-                "value": "Off"
-              },
-              {
-                "label": "Multi-Frame Sampled AA (MFAA)",
-                "value": "Off"
-              },
-              {
-                "label": "PhysX",
-                "value": "my GPU"
-              },
-              {
-                "label": "Texture Filtering - Anisotropic Sample Optimization",
-                "value": "Off"
-              },
-              {
-                "label": "Texture Filtering - Negative LOD Bias",
-                "value": "Allow"
-              },
-              {
-                "label": "Texture Filtering - Quality",
-                "value": "High quality"
-              },
-              {
-                "label": "Texture Filtering - Trilinear Optimization",
-                "value": "On"
-              }
-            ]
-          },
-          {
-            "name": "NVIDIA - Display & system (System tab)",
-            "settings": [
-              {
-                "label": "G-SYNC",
-                "value": "On, Full screen (G-SYNC Compatible VRR enabled)"
-              },
-              {
-                "label": "Display",
-                "value": "My main display, DisplayPort, HDCP supported"
-              },
-              {
-                "label": "Resolution",
-                "value": "3840 x 2160 (native)"
-              },
-              {
-                "label": "Refresh rate",
-                "value": "240 Hz"
-              },
-              {
-                "label": "Scaling mode",
-                "value": "No Scaling (scaling device: GPU)"
-              },
-              {
-                "label": "Output Color Format",
-                "value": "RGB"
-              },
-              {
-                "label": "Output Color Depth",
-                "value": "10 bpc"
-              },
-              {
-                "label": "Output Dynamic Range",
-                "value": "Full"
-              },
-              {
-                "label": "Color Accuracy Mode",
-                "value": "Accurate"
-              },
-              {
-                "label": "Digital Vibrance",
-                "value": "50% (default)"
-              },
-              {
-                "label": "RTX Video - Super Resolution",
-                "value": "Off"
-              },
-              {
-                "label": "RTX Video - HDR",
-                "value": "Off"
-              }
-            ]
-          },
-          {
-            "name": "NVIDIA - Resident Evil Requiem (per-game)",
-            "settings": [
-              {
-                "label": "Per-game driver profile",
-                "value": "Inherits the Global settings above - no separate overrides set"
-              },
-              {
-                "label": "DLSS Override - Model Presets",
-                "value": "Global - FG: Preset B, SR: Preset K, RR: Recommended"
-              },
-              {
-                "label": "DLSS Override - Frame Generation Mode",
-                "value": "Global - Use 3D app setting"
-              },
-              {
-                "label": "DLSS Override - Super Resolution Mode",
-                "value": "Global - Use 3D app setting"
-              },
-              {
-                "label": "Max Frame Rate",
-                "value": "Global - 237 FPS"
-              },
-              {
-                "label": "Power Management Mode",
-                "value": "Global - Prefer maximum performance"
-              },
-              {
-                "label": "Vertical Sync",
-                "value": "Global - On"
-              },
-              {
-                "label": "Texture Filtering - Quality",
-                "value": "Global - High quality"
-              },
-              {
-                "label": "Game-optimization recommendation",
-                "value": "Left as-is - I keep my own Custom in-game settings (Display Mode: Borderless, Graphics Quality: Custom, Hair Strands: On)"
-              }
-            ]
-          }
-        ]
+      {
+       "label": "Window mode",
+       "value": "Exclusive fullscreen"
       },
-      "dlss": {
-        "title": "DLSS version swap (via DLSS Swapper)",
-        "intro": "I updated all of Requiem's DLSS DLLs to the latest version using the DLSS Swapper app - upscaling, Ray Reconstruction, and Frame Generation - then set DLSS to Max Quality and Frame Generation to DLSS 4x in-game. The game shipped with the 310.3 DLLs; these are what I run now:",
-        "settings": [
-          {
-            "label": "DLSS Super Resolution (nvngx_dlss.dll)",
-            "value": "v310.7  (game shipped with v310.3)"
-          },
-          {
-            "label": "DLSS Ray Reconstruction (nvngx_dlssd.dll)",
-            "value": "v310.7  (game shipped with v310.3)"
-          },
-          {
-            "label": "DLSS Frame Generation (nvngx_dlssg.dll)",
-            "value": "v310.7  (game shipped with v310.3)"
-          },
-          {
-            "label": "In-game DLSS preset",
-            "value": "Max Quality"
-          },
-          {
-            "label": "In-game Frame Generation",
-            "value": "DLSS 4x"
-          }
-        ],
-        "note": "DLSS Swapper only changes the DLL version - it keeps a backup of the original (.dlsss) so you can revert. The actual quality preset (Max Quality) and frame-gen multiplier (4x) are set in the game's own menu, not in the swapper."
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      }
+     ]
+    },
+    {
+     "name": "HDR (Special K)",
+     "settings": [
+      {
+       "label": "16-bit swap chain",
+       "value": "true"
       },
-      "settingsNote": "Every setting above is read directly from the game's own config (config.ini, GameOption + render blocks), the NVIDIA driver profile database, and the DLSS Swapper database - so it matches exactly what runs on stream. Resident Evil Requiem keeps its audio levels, language, and subtitle settings inside the encrypted Steam Cloud save rather than the readable config file, so those few aren't listed here. Audio for the stream is handled on the mixer side (SM7B + RODECaster), not in-game.",
-      "mods": [
-        {
-          "name": "REFramework",
-          "note": "The modding framework for RE Engine games - required to load the script mods below. Installed here as dinput8.dll in the game folder."
-        },
-        {
-          "name": "No Film Grain (REFramework script)",
-          "note": "Disables the film-grain filter at runtime for a clean, sharp picture on stream - on top of the in-game film grain already being off."
-        },
-        {
-          "name": "Requiem FOV (REFramework script)",
-          "note": "Adds the field-of-view control the game ships without. Set wide but not fish-eye: 100 degrees horizontal for both Leon and Grace; aim-down-sights left at stock so it still zooms in. Per-character Leon/Grace profiles, and the interaction prompts and item markers stay anchored across the camera change."
-        }
-      ],
-      "modsNote": "Single-player, offline only. Every one of these is a PRESENTATION or capture adjustment - film grain, motion blur, lens distortion, vignette, field of view - never content, art, enemies, or difficulty. Same principle as running the game sharper than the hardware of its day could: the game the developers built is untouched; only how it reaches the camera changes. Installed with Vortex plus hand-placed REFramework scripts."
+      {
+       "label": "scRGB luminance",
+       "value": "12.5  (= 1000 nits)"
+      },
+      {
+       "label": "scRGB paper white",
+       "value": "2.5  (= 200 nits)"
+      }
+     ]
     }
-  ]
+   ],
+   "mods": [
+    {
+     "name": "Special K",
+     "note": "Loaded as dxgi.dll beside the executable."
+    }
+   ],
+   "settingsNote": "Read directly from the Special K profile beside the game."
+  },
+  {
+   "id": "resident-evil-requiem",
+   "title": "Resident Evil Requiem",
+   "status": "Now playing",
+   "summary": "Maxed-out path-traced 4K with a clean, grain-free image tuned for streaming. Every single setting from the game's own config is listed below so you can replicate it 1:1 - display, ray tracing, image quality, HDR sliders, the engine/render block, the exact DLSS versions I swapped in, and the driver profile. Film grain, motion blur, bloom, and lens distortion are off so the picture stays sharp on the encode.",
+   "groups": [
+    {
+     "name": "Display & window",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Window mode",
+       "value": "Borderless"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      },
+      {
+       "label": "Refresh rate",
+       "value": "60 Hz"
+      },
+      {
+       "label": "Frame rate",
+       "value": "Variable (uncapped)"
+      },
+      {
+       "label": "V-Sync",
+       "value": "On"
+      },
+      {
+       "label": "Color space",
+       "value": "Rec. 2020"
+      },
+      {
+       "label": "Display gamma",
+       "value": "10"
+      },
+      {
+       "label": "Display safe area",
+       "value": "10"
+      },
+      {
+       "label": "Button icon type",
+       "value": "Xbox Series (XBS)"
+      },
+      {
+       "label": "Image quality rate",
+       "value": "5"
+      }
+     ]
+    },
+    {
+     "name": "HDR & brightness (in-game HDR - read the notes below)",
+     "settings": [
+      {
+       "label": "HDR",
+       "value": "On (mode: Auto)"
+      },
+      {
+       "label": "Max Brightness",
+       "value": "Slide fully RIGHT to the max stop (= +20)"
+      },
+      {
+       "label": "Min Brightness",
+       "value": "Slide fully LEFT to the min stop (= -20)"
+      },
+      {
+       "label": "Brightness HDR",
+       "value": "Leave the slider centered / middle - the default (= 0, ~300 nits)"
+      }
+     ]
+    },
+    {
+     "name": "Upscaling & frame generation",
+     "settings": [
+      {
+       "label": "Upscaling algorithm",
+       "value": "DLSS"
+      },
+      {
+       "label": "DLSS quality",
+       "value": "Max Quality"
+      },
+      {
+       "label": "Frame generation",
+       "value": "DLSS 4x"
+      },
+      {
+       "label": "Reflex low latency (DLSS)",
+       "value": "On"
+      },
+      {
+       "label": "Upscaling sharpness",
+       "value": "0 (off)"
+      },
+      {
+       "label": "FSR1 upscaling quality (fallback)",
+       "value": "Quality"
+      }
+     ]
+    },
+    {
+     "name": "Ray tracing & lighting",
+     "settings": [
+      {
+       "label": "Ray tracing",
+       "value": "On - Path Tracing (Standard)"
+      },
+      {
+       "label": "Screen-space reflections (SSR)",
+       "value": "On"
+      },
+      {
+       "label": "Contact shadows",
+       "value": "On"
+      },
+      {
+       "label": "Dynamic shadows",
+       "value": "On"
+      },
+      {
+       "label": "Shadow quality",
+       "value": "Highest"
+      },
+      {
+       "label": "Shadow cache",
+       "value": "On"
+      },
+      {
+       "label": "Ambient occlusion (AO) quality",
+       "value": "High"
+      },
+      {
+       "label": "Volumetric fog quality",
+       "value": "Highest"
+      },
+      {
+       "label": "Particle lighting",
+       "value": "On"
+      }
+     ]
+    },
+    {
+     "name": "Image quality",
+     "settings": [
+      {
+       "label": "Overall draw-quality preset",
+       "value": "Custom"
+      },
+      {
+       "label": "Visual quality level",
+       "value": "High"
+      },
+      {
+       "label": "Texture quality",
+       "value": "High"
+      },
+      {
+       "label": "Texture filtering",
+       "value": "Anisotropic 16x"
+      },
+      {
+       "label": "Transparent buffer quality",
+       "value": "Standard"
+      },
+      {
+       "label": "Mesh quality",
+       "value": "High"
+      },
+      {
+       "label": "Effect quality",
+       "value": "High"
+      },
+      {
+       "label": "Subsurface scattering (SSS) quality",
+       "value": "High"
+      },
+      {
+       "label": "Lens flare quality",
+       "value": "High"
+      },
+      {
+       "label": "Hair / strands",
+       "value": "On"
+      },
+      {
+       "label": "Anti-aliasing",
+       "value": "TAA"
+      },
+      {
+       "label": "Depth of field",
+       "value": "On"
+      }
+     ]
+    },
+    {
+     "name": "Turned off for a cleaner stream image",
+     "settings": [
+      {
+       "label": "Film grain",
+       "value": "Off"
+      },
+      {
+       "label": "Motion blur",
+       "value": "Off"
+      },
+      {
+       "label": "Bloom",
+       "value": "Off"
+      },
+      {
+       "label": "Lens distortion",
+       "value": "Off"
+      }
+     ]
+    },
+    {
+     "name": "Engine / render (advanced - the game's render block)",
+     "settings": [
+      {
+       "label": "Graphics API",
+       "value": "DirectX 12"
+      },
+      {
+       "label": "Mesh shaders",
+       "value": "Allowed (force off)"
+      },
+      {
+       "label": "Parallel command-list build",
+       "value": "On (8 worker threads)"
+      },
+      {
+       "label": "Compute queue pairing",
+       "value": "On"
+      },
+      {
+       "label": "Independent render worker",
+       "value": "On"
+      },
+      {
+       "label": "Tight-fit shader cache",
+       "value": "On"
+      },
+      {
+       "label": "Eco shader cache",
+       "value": "On"
+      },
+      {
+       "label": "Render worker thread priority above normal",
+       "value": "Off"
+      }
+     ]
+    }
+   ],
+   "hdrWriteup": {
+    "title": "Why my HDR sliders look like that (and why yours might differ)",
+    "paragraphs": [
+     "Resident Evil Requiem uses IN-GAME HDR - you calibrate it inside the game, not just in Windows. The catch: the in-game calibration image is misleading. The sliders show no numbers, and the picture you adjust against doesn't reflect what the game actually outputs, so it nudges you toward the wrong values on a bright display.",
+     "My monitor is an OLED that peaks around 1000 nits in HDR. Analysis of the game's actual output shows the Max Brightness slider reaches roughly 950 nits when pushed fully right (+20), while the default center (0) only puts out around 700 nits. So on a ~1000-nit screen I slide Max Brightness all the way right to use the full range my panel can show - the calibration image makes that look 'too bright,' but the real output is right where it should be.",
+     "Min Brightness goes fully left (-20) to hold a true black point. On an OLED, black pixels are genuinely off, so keeping the floor down preserves real inky blacks instead of lifting shadows into grey.",
+     "Brightness HDR I leave dead center at the default (0, about 300 nits). That's the mid/paper-white balance for the tone-map - the cleanest, easiest-on-the-eyes middle ground; pushing it just crushes or washes the mid-tones.",
+     "Important: these are tuned to MY 1000-nit OLED. If your monitor peaks lower (say 400-600 nits) you should NOT slam Max Brightness fully right - match it to your own panel's peak. Treat my numbers as the reference for a 1000-nit OLED, not a universal preset."
+    ]
+   },
+   "nvidia": {
+    "title": "NVIDIA App settings",
+    "intro": "These are my actual NVIDIA App settings, read straight off my screen - not defaults. I do most of the tuning at the global level so every game inherits it, and Resident Evil Requiem reads from that same global profile (no separate per-game overrides). Driver: GeForce Game Ready 610.62. The headline ones: Power Management on Prefer maximum performance, Texture Filtering on High quality, V-Sync On with G-SYNC, a 237 FPS frame cap, and the DLSS model-preset override below.",
+    "groups": [
+     {
+      "name": "NVIDIA - Global Settings (Graphics)",
+      "settings": [
+       {
+        "label": "DLSS Override - Model Presets",
+        "value": "Custom - FG: Preset B, SR: Preset K, RR: Recommended"
+       },
+       {
+        "label": "DLSS Override - Frame Generation Mode",
+        "value": "Use 3D app setting"
+       },
+       {
+        "label": "DLSS Override - Super Resolution Mode",
+        "value": "Use 3D app setting"
+       },
+       {
+        "label": "Smooth Motion",
+        "value": "Off"
+       },
+       {
+        "label": "Low Latency Mode",
+        "value": "Off"
+       },
+       {
+        "label": "CUDA - System Fallback Policy",
+        "value": "Driver Default"
+       },
+       {
+        "label": "DSR - Factors",
+        "value": "Off"
+       },
+       {
+        "label": "GPU App Assignment",
+        "value": "my GPU"
+       },
+       {
+        "label": "Image Scaling",
+        "value": "Off"
+       },
+       {
+        "label": "Max Frame Rate",
+        "value": "237 FPS"
+       },
+       {
+        "label": "Monitor Technology",
+        "value": "G-SYNC Compatible"
+       },
+       {
+        "label": "OpenGL GDI Compatibility",
+        "value": "Auto"
+       },
+       {
+        "label": "Power Management Mode",
+        "value": "Prefer maximum performance"
+       },
+       {
+        "label": "RTX Dynamic Vibrance",
+        "value": "Off"
+       },
+       {
+        "label": "RTX HDR",
+        "value": "Off"
+       },
+       {
+        "label": "Shader Cache",
+        "value": "Size: Unlimited, Shader Compiler: Off"
+       },
+       {
+        "label": "Vertical Sync",
+        "value": "On"
+       },
+       {
+        "label": "Virtual Reality - Variable Rate Super Sampling",
+        "value": "Off"
+       },
+       {
+        "label": "Vulkan/OpenGL Present Method",
+        "value": "Auto"
+       },
+       {
+        "label": "Anisotropic Filtering",
+        "value": "Application-controlled"
+       },
+       {
+        "label": "Antialiasing - FXAA",
+        "value": "Off"
+       },
+       {
+        "label": "Antialiasing - Transparency",
+        "value": "Off"
+       },
+       {
+        "label": "Background Application Max Frame Rate",
+        "value": "Off"
+       },
+       {
+        "label": "Multi-Frame Sampled AA (MFAA)",
+        "value": "Off"
+       },
+       {
+        "label": "PhysX",
+        "value": "my GPU"
+       },
+       {
+        "label": "Texture Filtering - Anisotropic Sample Optimization",
+        "value": "Off"
+       },
+       {
+        "label": "Texture Filtering - Negative LOD Bias",
+        "value": "Allow"
+       },
+       {
+        "label": "Texture Filtering - Quality",
+        "value": "High quality"
+       },
+       {
+        "label": "Texture Filtering - Trilinear Optimization",
+        "value": "On"
+       }
+      ]
+     },
+     {
+      "name": "NVIDIA - Display & system (System tab)",
+      "settings": [
+       {
+        "label": "G-SYNC",
+        "value": "On, Full screen (G-SYNC Compatible VRR enabled)"
+       },
+       {
+        "label": "Display",
+        "value": "My main display, DisplayPort, HDCP supported"
+       },
+       {
+        "label": "Resolution",
+        "value": "3840 x 2160 (native)"
+       },
+       {
+        "label": "Refresh rate",
+        "value": "240 Hz"
+       },
+       {
+        "label": "Scaling mode",
+        "value": "No Scaling (scaling device: GPU)"
+       },
+       {
+        "label": "Output Color Format",
+        "value": "RGB"
+       },
+       {
+        "label": "Output Color Depth",
+        "value": "10 bpc"
+       },
+       {
+        "label": "Output Dynamic Range",
+        "value": "Full"
+       },
+       {
+        "label": "Color Accuracy Mode",
+        "value": "Accurate"
+       },
+       {
+        "label": "Digital Vibrance",
+        "value": "50% (default)"
+       },
+       {
+        "label": "RTX Video - Super Resolution",
+        "value": "Off"
+       },
+       {
+        "label": "RTX Video - HDR",
+        "value": "Off"
+       }
+      ]
+     },
+     {
+      "name": "NVIDIA - Resident Evil Requiem (per-game)",
+      "settings": [
+       {
+        "label": "Per-game driver profile",
+        "value": "Inherits the Global settings above - no separate overrides set"
+       },
+       {
+        "label": "DLSS Override - Model Presets",
+        "value": "Global - FG: Preset B, SR: Preset K, RR: Recommended"
+       },
+       {
+        "label": "DLSS Override - Frame Generation Mode",
+        "value": "Global - Use 3D app setting"
+       },
+       {
+        "label": "DLSS Override - Super Resolution Mode",
+        "value": "Global - Use 3D app setting"
+       },
+       {
+        "label": "Max Frame Rate",
+        "value": "Global - 237 FPS"
+       },
+       {
+        "label": "Power Management Mode",
+        "value": "Global - Prefer maximum performance"
+       },
+       {
+        "label": "Vertical Sync",
+        "value": "Global - On"
+       },
+       {
+        "label": "Texture Filtering - Quality",
+        "value": "Global - High quality"
+       },
+       {
+        "label": "Game-optimization recommendation",
+        "value": "Left as-is - I keep my own Custom in-game settings (Display Mode: Borderless, Graphics Quality: Custom, Hair Strands: On)"
+       }
+      ]
+     }
+    ]
+   },
+   "dlss": {
+    "title": "DLSS version swap (via DLSS Swapper)",
+    "intro": "I updated all of Requiem's DLSS DLLs to the latest version using the DLSS Swapper app - upscaling, Ray Reconstruction, and Frame Generation - then set DLSS to Max Quality and Frame Generation to DLSS 4x in-game. The game shipped with the 310.3 DLLs; these are what I run now:",
+    "settings": [
+     {
+      "label": "DLSS Super Resolution (nvngx_dlss.dll)",
+      "value": "v310.7  (game shipped with v310.3)"
+     },
+     {
+      "label": "DLSS Ray Reconstruction (nvngx_dlssd.dll)",
+      "value": "v310.7  (game shipped with v310.3)"
+     },
+     {
+      "label": "DLSS Frame Generation (nvngx_dlssg.dll)",
+      "value": "v310.7  (game shipped with v310.3)"
+     },
+     {
+      "label": "In-game DLSS preset",
+      "value": "Max Quality"
+     },
+     {
+      "label": "In-game Frame Generation",
+      "value": "DLSS 4x"
+     }
+    ],
+    "note": "DLSS Swapper only changes the DLL version - it keeps a backup of the original (.dlsss) so you can revert. The actual quality preset (Max Quality) and frame-gen multiplier (4x) are set in the game's own menu, not in the swapper."
+   },
+   "settingsNote": "Every setting above is read directly from the game's own config (config.ini, GameOption + render blocks), the NVIDIA driver profile database, and the DLSS Swapper database - so it matches exactly what runs on stream. Resident Evil Requiem keeps its audio levels, language, and subtitle settings inside the encrypted Steam Cloud save rather than the readable config file, so those few aren't listed here. Audio for the stream is handled on the mixer side (SM7B + RODECaster), not in-game.",
+   "mods": [
+    {
+     "name": "REFramework",
+     "note": "The modding framework for RE Engine games - required to load the script mods below. Installed here as dinput8.dll in the game folder."
+    },
+    {
+     "name": "No Film Grain (REFramework script)",
+     "note": "Disables the film-grain filter at runtime for a clean, sharp picture on stream - on top of the in-game film grain already being off."
+    },
+    {
+     "name": "Requiem FOV (REFramework script)",
+     "note": "Adds the field-of-view control the game ships without. Set wide but not fish-eye: 100 degrees horizontal for both Leon and Grace; aim-down-sights left at stock so it still zooms in. Per-character Leon/Grace profiles, and the interaction prompts and item markers stay anchored across the camera change."
+    }
+   ],
+   "modsNote": "Single-player, offline only. Every one of these is a PRESENTATION or capture adjustment - film grain, motion blur, lens distortion, vignette, field of view - never content, art, enemies, or difficulty. Same principle as running the game sharper than the hardware of its day could: the game the developers built is untouched; only how it reaches the camera changes. Installed with Vortex plus hand-placed REFramework scripts."
+  },
+  {
+   "id": "serious-sam-xbox",
+   "title": "Serious Sam (Original Xbox)",
+   "status": "Set up, not yet played",
+   "summary": "The Xbox version, which contains both campaigns plus content that exists nowhere else, patched for real anamorphic 16:9.",
+   "groups": [
+    {
+     "name": "Emulation",
+     "settings": [
+      {
+       "label": "Emulator",
+       "value": "xemu"
+      },
+      {
+       "label": "Renderer",
+       "value": "Vulkan"
+      },
+      {
+       "label": "Internal resolution scale",
+       "value": "8x"
+      },
+      {
+       "label": "Aspect ratio",
+       "value": "16:9"
+      },
+      {
+       "label": "Disc image",
+       "value": "Converted to the format the emulator reads directly"
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "Widescreen patch",
+     "note": "Applied to the game executable inside the disc image, in place. This renders a genuinely wider view rather than stretching a 4:3 image - verified by measuring a circular HUD element and confirming it is still round."
+    }
+   ],
+   "modsNote": "This version is not a straight port. It adds a weapon and an item that the PC versions do not have, and a lives system, but has fewer enemies on screen and smaller levels.",
+   "settingsNote": "Read directly from the emulator's own config."
+  },
+  {
+   "id": "serious-sam-palm-os",
+   "title": "Serious Sam (Palm OS)",
+   "status": "Set up, not yet played",
+   "summary": "The handheld version, emulated. Its screen is square, not widescreen or 4:3.",
+   "groups": [
+    {
+     "name": "Emulation",
+     "settings": [
+      {
+       "label": "Emulator",
+       "value": "RetroArch, Mu core"
+      },
+      {
+       "label": "Emulated device",
+       "value": "Palm m515/Palm OS 4.1"
+      },
+      {
+       "label": "Graffiti input area",
+       "value": "enabled - hiding it leaves a true 1:1 square image"
+      },
+      {
+       "label": "CPU speed",
+       "value": "1.0"
+      },
+      {
+       "label": "Joystick as mouse",
+       "value": "enabled"
+      },
+      {
+       "label": "Window mode",
+       "value": "Exclusive fullscreen"
+      }
+     ]
+    }
+   ],
+   "mods": [],
+   "modsNote": "Because the image is square rather than 4:3, it leaves a wide empty band on each side of a 16:9 screen. That is filled on the stream side with a dark, blurred extension of the game's own edge colours, so nothing is stretched or cropped.",
+   "settingsNote": "Read directly from the emulator core's option file."
+  },
+  {
+   "id": "serious-sam-2",
+   "title": "Serious Sam 2",
+   "status": "Set up, not yet played",
+   "summary": "4K with a derived 16:9 field of view and Float16 scRGB HDR through dgVoodoo2. Its config file is deliberately read-only, because the engine deletes any line it does not recognise the moment it saves.",
+   "groups": [
+    {
+     "name": "Display & window",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      },
+      {
+       "label": "Graphics API",
+       "value": "2"
+      },
+      {
+       "label": "Engine HDR rendering",
+       "value": "On"
+      }
+     ]
+    },
+    {
+     "name": "Image quality",
+     "settings": [
+      {
+       "label": "Texture quality",
+       "value": "0 (highest)"
+      },
+      {
+       "label": "Lightmap quality",
+       "value": "0 (highest)"
+      },
+      {
+       "label": "Dynamic shadow quality",
+       "value": "3"
+      },
+      {
+       "label": "Lens flare quality",
+       "value": "3"
+      }
+     ]
+    },
+    {
+     "name": "View",
+     "settings": [
+      {
+       "label": "Field of view",
+       "value": "96.4183 (derived for 16:9)"
+      },
+      {
+       "label": "Weapon FOV fix",
+       "value": "On"
+      },
+      {
+       "label": "Menu safe zone",
+       "value": "544 x 408"
+      }
+     ]
+    },
+    {
+     "name": "dgVoodoo2 (D3D9 to D3D11 wrapper)",
+     "settings": [
+      {
+       "label": "Output API",
+       "value": "d3d11_fl11_0"
+      },
+      {
+       "label": "Colour space",
+       "value": "argb16161616_hdr  (Float16 HDR output)"
+      },
+      {
+       "label": "Presentation model",
+       "value": "flip_discard"
+      },
+      {
+       "label": "Emulated VRAM",
+       "value": "2GB) MB"
+      },
+      {
+       "label": "Filtering",
+       "value": "appdriven"
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "dgVoodoo2",
+     "note": "D3D9.dll in the Bin folder, outputting Float16 scRGB HDR."
+    },
+    {
+     "name": "Large Address Aware patch",
+     "note": "Same 2 GB address-space fix as the HD games."
+    }
+   ],
+   "modsNote": "One quirk worth knowing: because a wrapper changes the reported graphics device, the game shows a 'your graphic card has been changed' notice on every launch unless the stored device name in its config is updated to match.",
+   "settingsNote": "Read directly from Sam2.ini and dgVoodoo.conf. Field of view is derived, never copied between games: hfov(16:9) = 2*atan(tan(hfov(4:3)/2) * 3/4 * 16/9). Every engine has a different 4:3 default, so the same number is a different view in a different game."
+  },
+  {
+   "id": "serious-sam-3-bfe",
+   "title": "Serious Sam 3: BFE",
+   "status": "Set up, not yet played",
+   "summary": "Runs at 4K. HDR comes from the graphics driver's own SDR-to-HDR conversion rather than from the game, which has none of its own.",
+   "groups": [
+    {
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Platform",
+       "value": "PC"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      }
+     ]
+    }
+   ],
+   "mods": [],
+   "settingsNote": "Per-setting detail for this one is not published yet: it writes its config the first time it is played, and nothing here is written from memory. It will be filled in from the game's own file after the first session."
+  },
+  {
+   "id": "serious-sam-4",
+   "title": "Serious Sam 4",
+   "status": "Set up, not yet played",
+   "summary": "Runs at 4K with the game's own native HDR - no wrapper or injector needed. Worth knowing: the GOG build is a version AHEAD of the Steam one.",
+   "groups": [
+    {
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Platform",
+       "value": "PC (GOG)"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      }
+     ]
+    }
+   ],
+   "mods": [],
+   "settingsNote": "Per-setting detail for this one is not published yet: it writes its config the first time it is played, and nothing here is written from memory. It will be filled in from the game's own file after the first session."
+  },
+  {
+   "id": "serious-sam-advance",
+   "title": "Serious Sam Advance",
+   "status": "Set up, not yet played",
+   "summary": "Emulated on a cycle-accurate core, output scaled to 4K.",
+   "groups": [
+    {
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Platform",
+       "value": "Game Boy Advance, emulated"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      }
+     ]
+    }
+   ],
+   "mods": [],
+   "settingsNote": "Per-setting detail for this one is not published yet: it writes its config the first time it is played, and nothing here is written from memory. It will be filled in from the game's own file after the first session."
+  },
+  {
+   "id": "serious-sam-classics-revolution",
+   "title": "Serious Sam Classics: Revolution",
+   "status": "Set up, not yet played",
+   "summary": "The classic 2001 engine running at native 4K with hardware-accurate EAX reverb restored and real scRGB HDR added on top. Every value below is read from the game's own PersistentSymbols.ini.",
+   "groups": [
+    {
+     "name": "Display & window",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Window mode",
+       "value": "Fullscreen"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      },
+      {
+       "label": "Renderer",
+       "value": "OpenGL"
+      },
+      {
+       "label": "Colour depth",
+       "value": "Desktop default"
+      }
+     ]
+    },
+    {
+     "name": "Textures & filtering",
+     "settings": [
+      {
+       "label": "Texture filtering",
+       "value": "Anisotropic, highest quality (21)"
+      },
+      {
+       "label": "Anisotropic filtering",
+       "value": "16x"
+      },
+      {
+       "label": "Texture quality",
+       "value": "Maximum the 32-bit engine allows (3x); 4x is not reachable"
+      }
+     ]
+    },
+    {
+     "name": "Audio",
+     "settings": [
+      {
+       "label": "Sound interface",
+       "value": "DirectSound (wrapped by DSOAL)"
+      },
+      {
+       "label": "Sound format",
+       "value": "3"
+      },
+      {
+       "label": "EAX reverb",
+       "value": "Enabled - confirmed by 'EAX: Enabled' in the game's own log"
+      }
+     ]
+    },
+    {
+     "name": "Input & view",
+     "settings": [
+      {
+       "label": "Field of view",
+       "value": "106.2602 (derived for 16:9, not copied)"
+      },
+      {
+       "label": "Mouse filtering",
+       "value": "Off"
+      },
+      {
+       "label": "Horizontal sensitivity",
+       "value": "1"
+      },
+      {
+       "label": "Vertical sensitivity",
+       "value": "0.75"
+      },
+      {
+       "label": "Invert vertical",
+       "value": "Off"
+      }
+     ]
+    },
+    {
+     "name": "HDR (added by Special K)",
+     "settings": [
+      {
+       "label": "16-bit swap chain",
+       "value": "true"
+      },
+      {
+       "label": "scRGB luminance",
+       "value": "12.5  (= 1000 nits)"
+      },
+      {
+       "label": "scRGB paper white",
+       "value": "2.5  (= 200 nits)"
+      },
+      {
+       "label": "How",
+       "value": "Special K as OpenGL32.dll. On this one it is load-bearing beyond HDR - without it the game renders a black screen under Windows HDR, because it is an OpenGL-only fork with no Direct3D fallback."
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "Special K",
+     "note": "Renamed to OpenGL32.dll in the game's Bin folder. Supplies the 16-bit scRGB swap chain."
+    },
+    {
+     "name": "DSOAL",
+     "note": "dsound.dll + alsoft.ini. Restores the EAX hardware reverb that Windows Vista removed when it deleted hardware audio mixing. Without it these games are dry."
+    }
+   ],
+   "modsNote": "Both are restoration layers, not enhancements - they put back what modern Windows took away. Nothing about the gameplay is altered.",
+   "settingsNote": "Read directly from PersistentSymbols.ini and the Special K profile. Field of view is derived, never copied between games: hfov(16:9) = 2*atan(tan(hfov(4:3)/2) * 3/4 * 16/9). Every engine has a different 4:3 default, so the same number is a different view in a different game."
+  },
+  {
+   "id": "serious-sam-double-d-xxl",
+   "title": "Serious Sam Double D XXL",
+   "status": "Set up, not yet played",
+   "summary": "An XNA game in HDR, which took a third approach entirely: DXVK translates Direct3D 9 to Vulkan and upgrades ONLY the swap chain, so the game itself never sees a change.",
+   "groups": [
+    {
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      }
+     ]
+    },
+    {
+     "name": "DXVK (D3D9 to Vulkan, HDR build)",
+     "settings": [
+      {
+       "label": "Swap chain upgrade",
+       "value": "true"
+      },
+      {
+       "label": "Swap chain format",
+       "value": "rgba16_sfloat"
+      },
+      {
+       "label": "Swap chain colour space",
+       "value": "scRGB"
+      },
+      {
+       "label": "Window mode enforcement",
+       "value": "disabled"
+      }
+     ]
+    }
+   ],
+   "hdrWriteup": {
+    "title": "Why this one needed a different tool",
+    "paragraphs": [
+     "XNA validates its back buffer format strictly. Any HDR method that reformats the buffer makes the .NET runtime throw and the game closes instantly - both 16-bit and 10-bit attempts failed that way. A D3D9-to-D3D11 wrapper failed differently, crashing on a device reset the game cannot handle.",
+     "The DXVK HDR build upgrades only the swap chain - the surface actually handed to the display - and leaves the game's own render targets untouched. The game is none the wiser, and the output is Float16 scRGB.",
+     "One placement detail: XNA loads its Direct3D from a shared framework folder rather than the game folder, so the wrapper has to live where the framework looks, not next to the executable."
+    ]
+   },
+   "mods": [
+    {
+     "name": "DXVK (HDR build)",
+     "note": "Translates D3D9 to Vulkan and upgrades the swap chain to Float16 scRGB."
+    }
+   ],
+   "settingsNote": "Read directly from dxvk.conf."
+  },
+  {
+   "id": "serious-sam-hd-the-first-encounter",
+   "title": "Serious Sam HD: The First Encounter",
+   "status": "Set up, not yet played",
+   "summary": "A DirectX 9 game with no HDR of its own, running 4K HDR anyway: dgVoodoo2 re-implements D3D9 on top of D3D11 and emits a Float16 scRGB swap chain itself.",
+   "groups": [
+    {
+     "name": "Display & window",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Window mode",
+       "value": "Fullscreen"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      },
+      {
+       "label": "Refresh rate",
+       "value": "240 Hz"
+      },
+      {
+       "label": "In-game V-Sync",
+       "value": "Off"
+      },
+      {
+       "label": "Frame cap",
+       "value": "10000 (effectively uncapped in-game)"
+      }
+     ]
+    },
+    {
+     "name": "Image",
+     "settings": [
+      {
+       "label": "Post-processing",
+       "value": "On"
+      },
+      {
+       "label": "Engine HDR rendering",
+       "value": "On"
+      },
+      {
+       "label": "Gamma",
+       "value": "1"
+      },
+      {
+       "label": "Output levels",
+       "value": "256"
+      }
+     ]
+    },
+    {
+     "name": "dgVoodoo2 (D3D9 to D3D11 wrapper)",
+     "settings": [
+      {
+       "label": "Output API",
+       "value": "d3d11_fl11_0"
+      },
+      {
+       "label": "Colour space",
+       "value": "argb16161616_hdr  (Float16 HDR output)"
+      },
+      {
+       "label": "Presentation model",
+       "value": "flip_discard"
+      },
+      {
+       "label": "Forced resolution",
+       "value": "max, refrate:60"
+      },
+      {
+       "label": "Emulated VRAM",
+       "value": "2GB) MB"
+      },
+      {
+       "label": "Filtering",
+       "value": "appdriven"
+      },
+      {
+       "label": "Anti-aliasing",
+       "value": "appdriven"
+      },
+      {
+       "label": "Watermark",
+       "value": "false"
+      }
+     ]
+    }
+   ],
+   "hdrWriteup": {
+    "title": "How a 2009 DirectX 9 game ends up in HDR",
+    "paragraphs": [
+     "Direct3D 9 has no concept of an HDR swap chain, so there is nothing for an HDR injector to attach to. The trick is to change the API underneath the game: dgVoodoo2 re-implements D3D9 on Direct3D 11, and then emits a Float16 scRGB swap chain of its own.",
+     "The important detail is that dgVoodoo does the HDR itself. Layering a second HDR injector on top to override the buffer format is what crashed this engine for weeks - the game cannot survive its back buffer being reformatted under it.",
+     "The other half is memory. A 32-bit game only gets 2 GB of address space, and at 4K with a wrapper holding its own resources the engine runs out and reports 'Direct3D: Out of memory' while tens of gigabytes are still free. The executable is patched Large Address Aware to raise that ceiling."
+    ]
+   },
+   "mods": [
+    {
+     "name": "dgVoodoo2",
+     "note": "D3D9.dll beside the executable. Translates the game to Direct3D 11 and outputs Float16 scRGB HDR."
+    },
+    {
+     "name": "Large Address Aware patch",
+     "note": "A single header flag on the executable, raising the 32-bit address-space ceiling from 2 GB to 4 GB."
+    }
+   ],
+   "settingsNote": "Read directly from the game's own config and from dgVoodoo.conf."
+  },
+  {
+   "id": "serious-sam-hd-the-second-encounter",
+   "title": "Serious Sam HD: The Second Encounter",
+   "status": "Set up, not yet played",
+   "summary": "A DirectX 9 game with no HDR of its own, running 4K HDR anyway: dgVoodoo2 re-implements D3D9 on top of D3D11 and emits a Float16 scRGB swap chain itself.",
+   "groups": [
+    {
+     "name": "Display & window",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Window mode",
+       "value": "Fullscreen"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      },
+      {
+       "label": "Refresh rate",
+       "value": "240 Hz"
+      },
+      {
+       "label": "In-game V-Sync",
+       "value": "Off"
+      },
+      {
+       "label": "Frame cap",
+       "value": "10000 (effectively uncapped in-game)"
+      }
+     ]
+    },
+    {
+     "name": "Image",
+     "settings": [
+      {
+       "label": "Post-processing",
+       "value": "On"
+      },
+      {
+       "label": "Engine HDR rendering",
+       "value": "On"
+      },
+      {
+       "label": "Gamma",
+       "value": "1"
+      },
+      {
+       "label": "Output levels",
+       "value": "256"
+      }
+     ]
+    },
+    {
+     "name": "dgVoodoo2 (D3D9 to D3D11 wrapper)",
+     "settings": [
+      {
+       "label": "Output API",
+       "value": "d3d11_fl11_0"
+      },
+      {
+       "label": "Colour space",
+       "value": "argb16161616_hdr  (Float16 HDR output)"
+      },
+      {
+       "label": "Presentation model",
+       "value": "flip_discard"
+      },
+      {
+       "label": "Forced resolution",
+       "value": "max, refrate:60"
+      },
+      {
+       "label": "Emulated VRAM",
+       "value": "2GB) MB"
+      },
+      {
+       "label": "Filtering",
+       "value": "appdriven"
+      },
+      {
+       "label": "Anti-aliasing",
+       "value": "appdriven"
+      },
+      {
+       "label": "Watermark",
+       "value": "false"
+      }
+     ]
+    }
+   ],
+   "hdrWriteup": {
+    "title": "How a 2009 DirectX 9 game ends up in HDR",
+    "paragraphs": [
+     "Direct3D 9 has no concept of an HDR swap chain, so there is nothing for an HDR injector to attach to. The trick is to change the API underneath the game: dgVoodoo2 re-implements D3D9 on Direct3D 11, and then emits a Float16 scRGB swap chain of its own.",
+     "The important detail is that dgVoodoo does the HDR itself. Layering a second HDR injector on top to override the buffer format is what crashed this engine for weeks - the game cannot survive its back buffer being reformatted under it.",
+     "The other half is memory. A 32-bit game only gets 2 GB of address space, and at 4K with a wrapper holding its own resources the engine runs out and reports 'Direct3D: Out of memory' while tens of gigabytes are still free. The executable is patched Large Address Aware to raise that ceiling."
+    ]
+   },
+   "mods": [
+    {
+     "name": "dgVoodoo2",
+     "note": "D3D9.dll beside the executable. Translates the game to Direct3D 11 and outputs Float16 scRGB HDR."
+    },
+    {
+     "name": "Large Address Aware patch",
+     "note": "A single header flag on the executable, raising the 32-bit address-space ceiling from 2 GB to 4 GB."
+    }
+   ],
+   "settingsNote": "Read directly from the game's own config and from dgVoodoo.conf."
+  },
+  {
+   "id": "serious-sams-bogus-detour",
+   "title": "Serious Sam's Bogus Detour",
+   "status": "Set up, not yet played",
+   "summary": "4K with scRGB HDR. This one ignores any library placed next to it, so the HDR layer has to be injected a different way.",
+   "groups": [
+    {
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      }
+     ]
+    },
+    {
+     "name": "HDR (Special K, global injection)",
+     "settings": [
+      {
+       "label": "Swap chain format",
+       "value": "Float16 (R16G16B16A16_FLOAT)"
+      },
+      {
+       "label": "Colour space",
+       "value": "scRGB (G10_NONE_P709)"
+      },
+      {
+       "label": "scRGB luminance",
+       "value": "12.5  (= 1000 nits)"
+      },
+      {
+       "label": "scRGB paper white",
+       "value": "2.5  (= 200 nits)"
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "Special K (global injection)",
+     "note": "The engine resolves its graphics libraries by absolute system path, so a renamed library in the game folder is never even looked at. A system-wide hook is the only thing that reaches it - armed at launch and removed again when the game exits, so nothing stays resident."
+    }
+   ],
+   "settingsNote": "Confirmed from Special K's own log for this game."
+  },
+  {
+   "id": "serious-sam-kamikaze-attack",
+   "title": "Serious Sam: Kamikaze Attack!",
+   "status": "Set up, not yet played",
+   "summary": "4K with scRGB HDR retrofitted by Special K onto the existing swap chain.",
+   "groups": [
+    {
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Window mode",
+       "value": "Exclusive fullscreen"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      }
+     ]
+    },
+    {
+     "name": "HDR (Special K)",
+     "settings": [
+      {
+       "label": "16-bit swap chain",
+       "value": "true"
+      },
+      {
+       "label": "scRGB luminance",
+       "value": "12.5  (= 1000 nits)"
+      },
+      {
+       "label": "scRGB paper white",
+       "value": "2.5  (= 200 nits)"
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "Special K",
+     "note": "Loaded as dxgi.dll beside the executable."
+    }
+   ],
+   "settingsNote": "Read directly from the Special K profile beside the game."
+  },
+  {
+   "id": "serious-sam-next-encounter",
+   "title": "Serious Sam: Next Encounter (GameCube)",
+   "status": "Set up, not yet played",
+   "summary": "Emulated at six times the original internal resolution, in its true 4:3 shape.",
+   "groups": [
+    {
+     "name": "Emulation",
+     "settings": [
+      {
+       "label": "Emulator",
+       "value": "Dolphin"
+      },
+      {
+       "label": "Graphics backend",
+       "value": "Direct3D 12"
+      },
+      {
+       "label": "Internal resolution",
+       "value": "6x native (about 4K)"
+      },
+      {
+       "label": "Aspect ratio",
+       "value": "Auto - the game is 4:3 and stays 4:3"
+      },
+      {
+       "label": "Widescreen hack",
+       "value": "False - it clips the game's own menu, so it is deliberately off"
+      },
+      {
+       "label": "Anisotropic filtering",
+       "value": "4x"
+      },
+      {
+       "label": "In-emulator V-Sync",
+       "value": "False"
+      },
+      {
+       "label": "Safe texture cache",
+       "value": "128"
+      },
+      {
+       "label": "System BIOS",
+       "value": "Not required to play"
+      }
+     ]
+    }
+   ],
+   "mods": [],
+   "modsNote": "The widescreen hack does render a genuinely wider view rather than stretching, but this game's menus are authored for 4:3 and get pushed off screen, so it is left off. Pillarboxing is handled on the stream side instead.",
+   "settingsNote": "Read directly from the emulator's own graphics config."
+  },
+  {
+   "id": "serious-sam-siberian-mayhem",
+   "title": "Serious Sam: Siberian Mayhem",
+   "status": "Set up, not yet played",
+   "summary": "Runs at 4K with the game's own native HDR.",
+   "groups": [
+    {
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Platform",
+       "value": "PC (GOG)"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      }
+     ]
+    }
+   ],
+   "mods": [],
+   "settingsNote": "Per-setting detail for this one is not published yet: it writes its config the first time it is played, and nothing here is written from memory. It will be filled in from the game's own file after the first session."
+  },
+  {
+   "id": "serious-sam-the-first-encounter",
+   "title": "Serious Sam: The First Encounter (Gold)",
+   "status": "Set up, not yet played",
+   "summary": "The classic 2001 engine running at native 4K with hardware-accurate EAX reverb restored and real scRGB HDR added on top. Every value below is read from the game's own PersistentSymbols.ini.",
+   "groups": [
+    {
+     "name": "Display & window",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Window mode",
+       "value": "Fullscreen"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      },
+      {
+       "label": "Renderer",
+       "value": "OpenGL"
+      },
+      {
+       "label": "Colour depth",
+       "value": "Desktop default"
+      }
+     ]
+    },
+    {
+     "name": "Textures & filtering",
+     "settings": [
+      {
+       "label": "Texture filtering",
+       "value": "Anisotropic, highest quality (22)"
+      },
+      {
+       "label": "Anisotropic filtering",
+       "value": "16x"
+      },
+      {
+       "label": "Texture quality",
+       "value": "Maximum the 32-bit engine allows (3x); 4x is not reachable"
+      }
+     ]
+    },
+    {
+     "name": "Audio",
+     "settings": [
+      {
+       "label": "Sound interface",
+       "value": "DirectSound (wrapped by DSOAL)"
+      },
+      {
+       "label": "Sound format",
+       "value": "3"
+      },
+      {
+       "label": "EAX reverb",
+       "value": "Enabled - confirmed by 'EAX: Enabled' in the game's own log"
+      }
+     ]
+    },
+    {
+     "name": "Input & view",
+     "settings": [
+      {
+       "label": "Field of view",
+       "value": "106.2602 (derived for 16:9, not copied)"
+      },
+      {
+       "label": "Mouse filtering",
+       "value": "Off"
+      }
+     ]
+    },
+    {
+     "name": "HDR (added by Special K)",
+     "settings": [
+      {
+       "label": "16-bit swap chain",
+       "value": "true"
+      },
+      {
+       "label": "scRGB luminance",
+       "value": "12.5  (= 1000 nits)"
+      },
+      {
+       "label": "scRGB paper white",
+       "value": "2.5  (= 200 nits)"
+      },
+      {
+       "label": "How",
+       "value": "Special K loaded as OpenGL32.dll, which replaces the presentation path and gives the classic engine a real HDR swap chain."
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "Special K",
+     "note": "Renamed to OpenGL32.dll in the game's Bin folder. Supplies the 16-bit scRGB swap chain."
+    },
+    {
+     "name": "DSOAL",
+     "note": "dsound.dll + alsoft.ini. Restores the EAX hardware reverb that Windows Vista removed when it deleted hardware audio mixing. Without it these games are dry."
+    }
+   ],
+   "modsNote": "Both are restoration layers, not enhancements - they put back what modern Windows took away. Nothing about the gameplay is altered.",
+   "settingsNote": "Read directly from PersistentSymbols.ini and the Special K profile. Field of view is derived, never copied between games: hfov(16:9) = 2*atan(tan(hfov(4:3)/2) * 3/4 * 16/9). Every engine has a different 4:3 default, so the same number is a different view in a different game."
+  },
+  {
+   "id": "serious-sam-the-random-encounter",
+   "title": "Serious Sam: The Random Encounter",
+   "status": "Set up, not yet played",
+   "summary": "A pixel-art game that draws through plain Windows GDI - no 3D swap chain at all - running in HDR through a two-stage chain.",
+   "groups": [
+    {
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Forced resolution",
+       "value": "max, refrate:60"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      }
+     ]
+    },
+    {
+     "name": "dgVoodoo2 (GDI capture to D3D11)",
+     "settings": [
+      {
+       "label": "Output API",
+       "value": "d3d11_fl11_0"
+      },
+      {
+       "label": "System hook",
+       "value": "gdi  (routes GDI drawing into D3D11)"
+      },
+      {
+       "label": "Filtering",
+       "value": "pointsampled  (keeps the pixel art crisp)"
+      },
+      {
+       "label": "Emulated VRAM",
+       "value": "2GB) MB"
+      }
+     ]
+    },
+    {
+     "name": "HDR (Special K)",
+     "settings": [
+      {
+       "label": "16-bit swap chain",
+       "value": "true"
+      },
+      {
+       "label": "scRGB luminance",
+       "value": "12.5  (= 1000 nits)"
+      },
+      {
+       "label": "scRGB paper white",
+       "value": "2.5  (= 200 nits)"
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "dgVoodoo2",
+     "note": "Hooks GDI drawing and re-presents it through Direct3D 11, which creates the swap chain that did not exist before."
+    },
+    {
+     "name": "Special K",
+     "note": "Retrofits Float16 scRGB HDR onto that swap chain."
+    }
+   ],
+   "modsNote": "Point sampling is deliberate. Any smoothing filter would blur pixel art that is meant to stay hard-edged.",
+   "settingsNote": "Read directly from dgVoodoo.conf and the Special K profile."
+  },
+  {
+   "id": "serious-sam-the-second-encounter",
+   "title": "Serious Sam: The Second Encounter (Gold)",
+   "status": "Set up, not yet played",
+   "summary": "The classic 2001 engine running at native 4K with hardware-accurate EAX reverb restored and real scRGB HDR added on top. Every value below is read from the game's own PersistentSymbols.ini.",
+   "groups": [
+    {
+     "name": "Display & window",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Window mode",
+       "value": "Fullscreen"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      },
+      {
+       "label": "Renderer",
+       "value": "OpenGL"
+      },
+      {
+       "label": "Colour depth",
+       "value": "Desktop default"
+      }
+     ]
+    },
+    {
+     "name": "Textures & filtering",
+     "settings": [
+      {
+       "label": "Texture filtering",
+       "value": "Anisotropic, highest quality (22)"
+      },
+      {
+       "label": "Anisotropic filtering",
+       "value": "16x"
+      },
+      {
+       "label": "Texture quality",
+       "value": "Maximum the 32-bit engine allows (3x); 4x is not reachable"
+      }
+     ]
+    },
+    {
+     "name": "Audio",
+     "settings": [
+      {
+       "label": "Sound interface",
+       "value": "DirectSound (wrapped by DSOAL)"
+      },
+      {
+       "label": "Sound format",
+       "value": "3"
+      },
+      {
+       "label": "EAX reverb",
+       "value": "Enabled - confirmed by 'EAX: Enabled' in the game's own log"
+      }
+     ]
+    },
+    {
+     "name": "Input & view",
+     "settings": [
+      {
+       "label": "Field of view",
+       "value": "106.2602 (derived for 16:9, not copied)"
+      },
+      {
+       "label": "Mouse filtering",
+       "value": "Off"
+      }
+     ]
+    },
+    {
+     "name": "HDR (added by Special K)",
+     "settings": [
+      {
+       "label": "16-bit swap chain",
+       "value": "true"
+      },
+      {
+       "label": "scRGB luminance",
+       "value": "12.5  (= 1000 nits)"
+      },
+      {
+       "label": "scRGB paper white",
+       "value": "2.5  (= 200 nits)"
+      },
+      {
+       "label": "How",
+       "value": "Special K loaded as OpenGL32.dll, same as the First Encounter."
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "Special K",
+     "note": "Renamed to OpenGL32.dll in the game's Bin folder. Supplies the 16-bit scRGB swap chain."
+    },
+    {
+     "name": "DSOAL",
+     "note": "dsound.dll + alsoft.ini. Restores the EAX hardware reverb that Windows Vista removed when it deleted hardware audio mixing. Without it these games are dry."
+    }
+   ],
+   "modsNote": "Both are restoration layers, not enhancements - they put back what modern Windows took away. Nothing about the gameplay is altered.",
+   "settingsNote": "Read directly from PersistentSymbols.ini and the Special K profile. Field of view is derived, never copied between games: hfov(16:9) = 2*atan(tan(hfov(4:3)/2) * 3/4 * 16/9). Every engine has a different 4:3 default, so the same number is a different view in a different game."
+  },
+  {
+   "id": "serious-sam-tormental",
+   "title": "Serious Sam: Tormental",
+   "status": "Set up, not yet played",
+   "summary": "4K with scRGB HDR retrofitted by Special K onto the existing swap chain.",
+   "groups": [
+    {
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Window mode",
+       "value": "Exclusive fullscreen"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      }
+     ]
+    },
+    {
+     "name": "HDR (Special K)",
+     "settings": [
+      {
+       "label": "16-bit swap chain",
+       "value": "true"
+      },
+      {
+       "label": "scRGB luminance",
+       "value": "12.5  (= 1000 nits)"
+      },
+      {
+       "label": "scRGB paper white",
+       "value": "2.5  (= 200 nits)"
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "Special K",
+     "note": "Loaded as dxgi.dll beside the executable."
+    }
+   ],
+   "settingsNote": "Read directly from the Special K profile beside the game."
+  }
+ ]
 }
