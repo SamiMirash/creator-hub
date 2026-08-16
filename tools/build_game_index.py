@@ -158,6 +158,24 @@ def main() -> int:
                 "playtime": play,
             })
 
+        # ⭐ Attach the OTHER versions of the same game. His rule is that one title can require
+        # several releases — a remake that removed content does not replace the original — and the
+        # site previously showed every entry in isolation, hiding that completely.
+        src = {e.get("title"): e for e in (fr.get("entries") or [])}
+        for e in entries:
+            mine = (src.get(e["title"]) or {}).get("version_groups") or []
+            e["version_role"] = (src.get(e["title"]) or {}).get("version_role")
+            sibs = []
+            for other in fr.get("entries") or []:
+                if other.get("title") == e["title"]:
+                    continue
+                if set(other.get("version_groups") or []) & set(mine):
+                    sibs.append({"title": other.get("title"),
+                                 "slug": slugify(other.get("title")),
+                                 "why": other.get("version_role")})
+            e["also_play"] = sibs
+            e["version_groups"] = mine
+
         record = {
             "franchise": fr.get("franchise"),
             "slug": fslug,

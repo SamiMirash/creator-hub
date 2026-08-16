@@ -20,13 +20,12 @@
     ["Live", "live.html"],
     // Game Hub merges the game list, its settings, its guide and its playtime onto ONE page
     // per game (Sami 2026-08-16: "I want everything about that game to be there").
-    // The three source pages stay — their URLs are indexed and still work.
+    // ⛔ Games / 100% Guides / Game Settings are deliberately NOT in the menu any more —
+    // "we don't want the other sections shown in the menu, we combine all the sections".
+    // The PAGES still exist and their URLs still work; they are just not advertised separately.
     ["Game Hub", "game.html"],
-    ["Games", "games.html"],
-    ["100% Guides", "guides.html"],
     ["About", "about.html"],
       ["Marginalia", "marginalia.html"],
-    ["Game Settings", "setup.html"],
     // Themed groups (Sami 2026-07-14: "not many people click on More" -- everything that was
     // buried there now lives in a visible, named group. NOTHING removed except the Sponsors
     // link, dropped per the remove-all-sponsorship-talk order; the page itself still exists.)

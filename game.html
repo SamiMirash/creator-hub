@@ -197,6 +197,21 @@
         }).join("") + "</div>";
       }
 
+      if (e.version_role) {
+        html += '<div class="gh-sect"><h4>Why this version is on the list</h4><p>' +
+          esc(e.version_role) + "</p></div>";
+      }
+
+      if (e.also_play && e.also_play.length) {
+        html += '<div class="gh-sect"><h4>You also have to play these ' +
+          (e.version_groups && e.version_groups.length
+            ? "(" + e.version_groups.map(esc).join(" &amp; ") + ")" : "") + "</h4>";
+        html += "<ul style=\"margin:.2em 0 0;padding-left:18px\">" + e.also_play.map(function (v) {
+          return "<li style=\"margin:.45em 0\"><b>" + esc(v.title) + "</b>" +
+            (v.why ? "<br><span style=\"opacity:.8\">" + esc(v.why) + "</span>" : "") + "</li>";
+        }).join("") + "</ul></div>";
+      }
+
       html += '<div class="gh-sect"><h4>The version to play</h4>' + (kv([
         ["Definitive edition", e.definitive_edition],
         ["Primary", e.primary],
