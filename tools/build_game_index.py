@@ -103,7 +103,14 @@ def load(name, default):
 
 def main() -> int:
     games = load("games.json", [])
-    setups = {s.get("id"): s for s in (load("setups.json", {}).get("games") or [])}
+    setups = {}
+    for s in (load("setups.json", {}).get("games") or []):
+        setups[s.get("id")] = s
+        # ⭐ a setup may name an EDITION ("death-stranding-directors-cut") while the archive lists
+        # the title ("Death Stranding"); applies_to states the target explicitly rather than
+        # relying on fuzzy matching, which could attach settings to the wrong game.
+        if s.get("applies_to"):
+            setups[s["applies_to"]] = s
     playtime = load("playtime_totals.json", {}).get("games") or {}
     packs = {p["id"]: p.get("title", "") for p in
              (json.loads((ROOT / "guide" / "packs" / "index.json").read_text(encoding="utf-8"))

@@ -2,6 +2,90 @@
  "intro": "The exact graphics, display, HDR, driver, and mod setup I run on stream, pulled straight from each game's own settings files, the NVIDIA driver, and DLSS Swapper. Nothing curated or trimmed - this is the full list so you can copy it exactly. Always match the HDR and monitor parts to your own screen, though; mine is the reference. New games get added here as I start playing them.",
  "games": [
   {
+   "id": "death-stranding-directors-cut",
+   "title": "Death Stranding Director's Cut",
+   "applies_to": "death-stranding",
+   "status": "Now playing",
+   "summary": "4K with a slightly widened field of view, using a community fix configured deliberately narrowly - only the parts that help a 16:9 screen are enabled, and the ultrawide-specific fixes are left off.",
+   "groups": [
+    {
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      }
+     ]
+    },
+    {
+     "name": "Community fix (DeathStrandingDCFix)",
+     "settings": [
+      {
+       "label": "Intro Skip",
+       "value": "false"
+      },
+      {
+       "label": "Custom Resolution",
+       "value": "false"
+      },
+      {
+       "label": "Force Entity Updates",
+       "value": "true"
+      },
+      {
+       "label": "Gameplay FOV multiplier",
+       "value": "1.10"
+      },
+      {
+       "label": "Center HUD",
+       "value": "false"
+      },
+      {
+       "label": "Fix Movies",
+       "value": "false"
+      },
+      {
+       "label": "Fix FOV",
+       "value": "false"
+      },
+      {
+       "label": "Fix HUD",
+       "value": "false"
+      }
+     ]
+    },
+    {
+     "name": "ReShade",
+     "settings": [
+      {
+       "label": "Disabled add-ons",
+       "value": "Generic Depth, Effect Runtime Sync"
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "DeathStrandingDCFix",
+     "note": "Community fix. Only the field-of-view multiplier and entity-update fix are enabled; the ultrawide, movie and HUD fixes are deliberately off because they are for aspect ratios this setup does not use."
+    },
+    {
+     "name": "ReShade",
+     "note": "Installed with the add-ons that conflict with capture switched off."
+    },
+    {
+     "name": "Process Lasso",
+     "note": "CPU set pinned to the cache-heavy core cluster."
+    }
+   ],
+   "modsNote": "HDR correction for this one is still outstanding - unlike Returnal, its native HDR needs work, and that has not been done yet. It is listed here rather than left out, so the gap is visible.",
+   "settingsNote": "Read directly from DeathStrandingDCFix.ini and ReShade.ini in the game folder."
+  },
+  {
    "id": "i-hate-running-backwards",
    "title": "I Hate Running Backwards",
    "status": "Set up, not yet played",
@@ -582,6 +666,147 @@
     }
    ],
    "modsNote": "Single-player, offline only. Every one of these is a PRESENTATION or capture adjustment - film grain, motion blur, lens distortion, vignette, field of view - never content, art, enemies, or difficulty. Same principle as running the game sharper than the hardware of its day could: the game the developers built is untouched; only how it reaches the camera changes. Installed with Vortex plus hand-placed REFramework scripts."
+  },
+  {
+   "id": "returnal",
+   "title": "Returnal",
+   "status": "Now playing",
+   "summary": "4K with native HDR and every image-smearing effect disabled through engine overrides rather than by lowering quality. Texture streaming is switched off because it was the actual cause of textures failing to load in long sessions.",
+   "groups": [
+    {
+     "name": "Display & window",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Window mode",
+       "value": "Exclusive fullscreen"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      },
+      {
+       "label": "In-game V-Sync",
+       "value": "False"
+      },
+      {
+       "label": "Frame rate limit",
+       "value": "0.000000 (uncapped in-game; the driver owns the cap)"
+      },
+      {
+       "label": "Dynamic resolution",
+       "value": "False"
+      }
+     ]
+    },
+    {
+     "name": "HDR",
+     "settings": [
+      {
+       "label": "HDR output",
+       "value": "True"
+      },
+      {
+       "label": "HDR peak brightness",
+       "value": "1000 nits"
+      },
+      {
+       "label": "Note",
+       "value": "Native HDR is good here, so nothing is layered on top of it."
+      }
+     ]
+    },
+    {
+     "name": "DLSS",
+     "settings": [
+      {
+       "label": "Mode",
+       "value": "DLSS_Quality"
+      },
+      {
+       "label": "Sharpness",
+       "value": "0.000000"
+      },
+      {
+       "label": "Frame generation",
+       "value": "True"
+      },
+      {
+       "label": "DLL preset",
+       "value": "Preset K, updated with DLSS Swapper"
+      }
+     ]
+    },
+    {
+     "name": "Effects disabled by engine override (Engine.ini)",
+     "settings": [
+      {
+       "label": "Depth of field (default feature)",
+       "value": "0   -  off"
+      },
+      {
+       "label": "Lens flare (default feature)",
+       "value": "0   -  off"
+      },
+      {
+       "label": "Motion blur (default feature)",
+       "value": "0   -  off"
+      },
+      {
+       "label": "Depth of field",
+       "value": "0   -  off"
+      },
+      {
+       "label": "Lens flare",
+       "value": "0   -  off"
+      },
+      {
+       "label": "Motion blur (max)",
+       "value": "0   -  off"
+      },
+      {
+       "label": "Motion blur",
+       "value": "0   -  off"
+      },
+      {
+       "label": "Chromatic aberration (max)",
+       "value": "0   -  off"
+      },
+      {
+       "label": "Chromatic aberration",
+       "value": "0   -  off"
+      },
+      {
+       "label": "Tonemapper extras (grain, vignette)",
+       "value": "0   -  off"
+      }
+     ]
+    },
+    {
+     "name": "Launch options",
+     "settings": [
+      {
+       "label": "-notexturestreaming",
+       "value": "Texture streaming off. This is a FIX, not a quality change: with streaming on, textures stopped loading correctly after several hours of play."
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "DLSS Swapper",
+     "note": "Used to keep the DLSS libraries current and to pin the preset."
+    },
+    {
+     "name": "Process Lasso",
+     "note": "A CPU set pins the game to the cache-heavy core cluster, and its automatic priority balancing is excluded for this game."
+    }
+   ],
+   "modsNote": "Nothing here reduces visual quality. The disabled effects are the ones that blur or dirty the image - motion blur, depth of field, lens flare, chromatic aberration and grain - and everything else stays maxed.",
+   "settingsNote": "Read directly from the game's GameUserSettings.ini and the [SystemSettings] block of its Engine.ini."
   },
   {
    "id": "serious-sam-xbox",
