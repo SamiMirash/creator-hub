@@ -809,87 +809,6 @@
    "settingsNote": "Read directly from the game's GameUserSettings.ini and the [SystemSettings] block of its Engine.ini."
   },
   {
-   "id": "serious-sam-xbox",
-   "title": "Serious Sam (Original Xbox)",
-   "status": "Set up, not yet played",
-   "summary": "The Xbox version, which contains both campaigns plus content that exists nowhere else, patched for real anamorphic 16:9.",
-   "groups": [
-    {
-     "name": "Emulation",
-     "settings": [
-      {
-       "label": "Emulator",
-       "value": "xemu"
-      },
-      {
-       "label": "Renderer",
-       "value": "Vulkan"
-      },
-      {
-       "label": "Internal resolution scale",
-       "value": "8x"
-      },
-      {
-       "label": "Aspect ratio",
-       "value": "16:9"
-      },
-      {
-       "label": "Disc image",
-       "value": "Converted to the format the emulator reads directly"
-      }
-     ]
-    }
-   ],
-   "mods": [
-    {
-     "name": "Widescreen patch",
-     "note": "Applied to the game executable inside the disc image, in place. This renders a genuinely wider view rather than stretching a 4:3 image - verified by measuring a circular HUD element and confirming it is still round."
-    }
-   ],
-   "modsNote": "This version is not a straight port. It adds a weapon and an item that the PC versions do not have, and a lives system, but has fewer enemies on screen and smaller levels.",
-   "settingsNote": "Read directly from the emulator's own config."
-  },
-  {
-   "id": "serious-sam-palm-os",
-   "title": "Serious Sam (Palm OS)",
-   "status": "Set up, not yet played",
-   "summary": "The handheld version, emulated. Its screen is square, not widescreen or 4:3.",
-   "groups": [
-    {
-     "name": "Emulation",
-     "settings": [
-      {
-       "label": "Emulator",
-       "value": "RetroArch, Mu core"
-      },
-      {
-       "label": "Emulated device",
-       "value": "Palm m515/Palm OS 4.1"
-      },
-      {
-       "label": "Graffiti input area",
-       "value": "enabled - hiding it leaves a true 1:1 square image"
-      },
-      {
-       "label": "CPU speed",
-       "value": "1.0"
-      },
-      {
-       "label": "Joystick as mouse",
-       "value": "enabled"
-      },
-      {
-       "label": "Window mode",
-       "value": "Exclusive fullscreen"
-      }
-     ]
-    }
-   ],
-   "mods": [],
-   "modsNote": "Because the image is square rather than 4:3, it leaves a wide empty band on each side of a 16:9 screen. That is filled on the stream side with a dark, blurred extension of the game's own edge colours, so nothing is stretched or cropped.",
-   "settingsNote": "Read directly from the emulator core's option file."
-  },
-  {
    "id": "serious-sam-2",
    "title": "Serious Sam 2",
    "status": "Set up, not yet played",
@@ -1320,6 +1239,60 @@
    "settingsNote": "Read directly from PersistentSymbols.ini and the Special K profile. Field of view is derived, never copied between games: hfov(16:9) = 2*atan(tan(hfov(4:3)/2) * 3/4 * 16/9). Every engine has a different 4:3 default, so the same number is a different view in a different game."
   },
   {
+   "id": "serious-sam-double-d",
+   "applies_to": "serious-sam-double-d",
+   "title": "Serious Sam Double D (2011 original)",
+   "status": "Set up, not yet played",
+   "summary": "The original 2011 release, which has to be played alongside the later expanded version because that one removed things. It is a 2D game built on an old framework, so the work here was getting real HDR out of it and choosing the best aspect-correct mode it will accept.",
+   "groups": [
+    {
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Full Screen",
+       "value": "On"
+      },
+      {
+       "label": "Resolution",
+       "value": "1600 x 900 — the highest 16:9 mode the game offers"
+      },
+      {
+       "label": "Vsync",
+       "value": "Enabled"
+      },
+      {
+       "label": "Draw Shaders",
+       "value": "On — it ships disabled, which quietly drops the game's visual effects"
+      }
+     ]
+    },
+    {
+     "name": "HDR",
+     "settings": [
+      {
+       "label": "Output",
+       "value": "Real scRGB high dynamic range"
+      },
+      {
+       "label": "Swap chain format",
+       "value": "R16G16B16A16_SFLOAT (16-bit float per channel)"
+      },
+      {
+       "label": "Colour space",
+       "value": "Extended sRGB linear"
+      },
+      {
+       "label": "How it is reached",
+       "value": "A translation layer converts the game's old graphics calls to a modern one and upgrades the swap chain to floating point."
+      }
+     ]
+    }
+   ],
+   "settingsNote": "Two things about this game are worth knowing, because neither is obvious.\n\nThe first is where the graphics layer has to live. Games built on this framework do not load their graphics library from their own folder — the framework pulls it from a shared system location instead, so a file dropped next to the game is simply ignored. The layer therefore has to sit in that shared location. But its configuration file is read from the game's own folder, so a game with the layer available but no configuration beside it gets no high dynamic range at all and gives no warning. That was the entire difference between this version and the expanded one: one file.\n\nThe second is the resolution ceiling. The list of resolutions is built into the game itself rather than read from the screen, and it stops at a size that was generous in 2011. The display offers far more, and the game will not show any of it. 1600 x 900 is the largest 16:9 option available, so it is the one that keeps everything the correct shape with nothing stretched, and the graphics card scales it up to fill the screen. The later expanded version has an updated list and does not have this limit.",
+   "mods": [],
+   "modsNote": ""
+  },
+  {
    "id": "serious-sam-double-d-xxl",
    "title": "Serious Sam Double D XXL",
    "status": "Set up, not yet played",
@@ -1666,55 +1639,6 @@
    "settingsNote": "Read directly from the game's own config and from dgVoodoo.conf."
   },
   {
-   "id": "serious-sams-bogus-detour",
-   "title": "Serious Sam's Bogus Detour",
-   "status": "Set up, not yet played",
-   "summary": "4K with scRGB HDR. This one ignores any library placed next to it, so the HDR layer has to be injected a different way.",
-   "groups": [
-    {
-     "name": "Display",
-     "settings": [
-      {
-       "label": "Resolution",
-       "value": "3840 x 2160 (4K)"
-      },
-      {
-       "label": "Display device",
-       "value": "my monitor"
-      }
-     ]
-    },
-    {
-     "name": "HDR (Special K, global injection)",
-     "settings": [
-      {
-       "label": "Swap chain format",
-       "value": "Float16 (R16G16B16A16_FLOAT)"
-      },
-      {
-       "label": "Colour space",
-       "value": "scRGB (G10_NONE_P709)"
-      },
-      {
-       "label": "scRGB luminance",
-       "value": "12.5  (= 1000 nits)"
-      },
-      {
-       "label": "scRGB paper white",
-       "value": "2.5  (= 200 nits)"
-      }
-     ]
-    }
-   ],
-   "mods": [
-    {
-     "name": "Special K (global injection)",
-     "note": "The engine resolves its graphics libraries by absolute system path, so a renamed library in the game folder is never even looked at. A system-wide hook is the only thing that reaches it - armed at launch and removed again when the game exits, so nothing stays resident."
-    }
-   ],
-   "settingsNote": "Confirmed from Special K's own log for this game."
-  },
-  {
    "id": "serious-sam-kamikaze-attack",
    "title": "Serious Sam: Kamikaze Attack!",
    "status": "Set up, not yet played",
@@ -1814,6 +1738,46 @@
    "mods": [],
    "modsNote": "The widescreen hack does render a genuinely wider view rather than stretching, but this game's menus are authored for 4:3 and get pushed off screen, so it is left off. Pillarboxing is handled on the stream side instead.",
    "settingsNote": "Read directly from the emulator's own graphics config."
+  },
+  {
+   "id": "serious-sam-palm-os",
+   "title": "Serious Sam (Palm OS)",
+   "status": "Set up, not yet played",
+   "summary": "The handheld version, emulated. Its screen is square, not widescreen or 4:3.",
+   "groups": [
+    {
+     "name": "Emulation",
+     "settings": [
+      {
+       "label": "Emulator",
+       "value": "RetroArch, Mu core"
+      },
+      {
+       "label": "Emulated device",
+       "value": "Palm m515/Palm OS 4.1"
+      },
+      {
+       "label": "Graffiti input area",
+       "value": "enabled - hiding it leaves a true 1:1 square image"
+      },
+      {
+       "label": "CPU speed",
+       "value": "1.0"
+      },
+      {
+       "label": "Joystick as mouse",
+       "value": "enabled"
+      },
+      {
+       "label": "Window mode",
+       "value": "Exclusive fullscreen"
+      }
+     ]
+    }
+   ],
+   "mods": [],
+   "modsNote": "Because the image is square rather than 4:3, it leaves a wide empty band on each side of a 16:9 screen. That is filled on the stream side with a dark, blurred extension of the game's own edge colours, so nothing is stretched or cropped.",
+   "settingsNote": "Read directly from the emulator core's option file."
   },
   {
    "id": "serious-sam-siberian-mayhem",
@@ -2237,6 +2201,96 @@
     }
    ],
    "settingsNote": "Read directly from the Special K profile beside the game."
+  },
+  {
+   "id": "serious-sam-xbox",
+   "title": "Serious Sam (Original Xbox)",
+   "status": "Set up, not yet played",
+   "summary": "The Xbox version, which contains both campaigns plus content that exists nowhere else, patched for real anamorphic 16:9.",
+   "groups": [
+    {
+     "name": "Emulation",
+     "settings": [
+      {
+       "label": "Emulator",
+       "value": "xemu"
+      },
+      {
+       "label": "Renderer",
+       "value": "Vulkan"
+      },
+      {
+       "label": "Internal resolution scale",
+       "value": "8x"
+      },
+      {
+       "label": "Aspect ratio",
+       "value": "16:9"
+      },
+      {
+       "label": "Disc image",
+       "value": "Converted to the format the emulator reads directly"
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "Widescreen patch",
+     "note": "Applied to the game executable inside the disc image, in place. This renders a genuinely wider view rather than stretching a 4:3 image - verified by measuring a circular HUD element and confirming it is still round."
+    }
+   ],
+   "modsNote": "This version is not a straight port. It adds a weapon and an item that the PC versions do not have, and a lives system, but has fewer enemies on screen and smaller levels.",
+   "settingsNote": "Read directly from the emulator's own config."
+  },
+  {
+   "id": "serious-sams-bogus-detour",
+   "title": "Serious Sam's Bogus Detour",
+   "status": "Set up, not yet played",
+   "summary": "4K with scRGB HDR. This one ignores any library placed next to it, so the HDR layer has to be injected a different way.",
+   "groups": [
+    {
+     "name": "Display",
+     "settings": [
+      {
+       "label": "Resolution",
+       "value": "3840 x 2160 (4K)"
+      },
+      {
+       "label": "Display device",
+       "value": "my monitor"
+      }
+     ]
+    },
+    {
+     "name": "HDR (Special K, global injection)",
+     "settings": [
+      {
+       "label": "Swap chain format",
+       "value": "Float16 (R16G16B16A16_FLOAT)"
+      },
+      {
+       "label": "Colour space",
+       "value": "scRGB (G10_NONE_P709)"
+      },
+      {
+       "label": "scRGB luminance",
+       "value": "12.5  (= 1000 nits)"
+      },
+      {
+       "label": "scRGB paper white",
+       "value": "2.5  (= 200 nits)"
+      }
+     ]
+    }
+   ],
+   "mods": [
+    {
+     "name": "Special K (global injection)",
+     "note": "The engine resolves its graphics libraries by absolute system path, so a renamed library in the game folder is never even looked at. A system-wide hook is the only thing that reaches it - armed at launch and removed again when the game exits, so nothing stays resident."
+    }
+   ],
+   "settingsNote": "Confirmed from Special K's own log for this game."
   }
  ]
 }
