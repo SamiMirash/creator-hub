@@ -1467,7 +1467,7 @@
    "id": "serious-sam-hd-the-second-encounter",
    "title": "Serious Sam HD: The Second Encounter",
    "status": "Set up, not yet played",
-   "summary": "A DirectX 9 game with no HDR of its own, running 4K HDR anyway: dgVoodoo2 re-implements D3D9 on top of D3D11 and emits a Float16 scRGB swap chain itself.",
+   "summary": "The 2009-era remake of the second campaign, running at native 4K with real high dynamic range and its add-on campaign installed. Every value below is read from the game's own configuration file.",
    "groups": [
     {
      "name": "Display & window",
@@ -1516,43 +1516,6 @@
       {
        "label": "Output levels",
        "value": "256"
-      }
-     ]
-    },
-    {
-     "name": "dgVoodoo2 (D3D9 to D3D11 wrapper)",
-     "settings": [
-      {
-       "label": "Output API",
-       "value": "d3d11_fl11_0"
-      },
-      {
-       "label": "Colour space",
-       "value": "argb16161616_hdr  (Float16 HDR output)"
-      },
-      {
-       "label": "Presentation model",
-       "value": "flip_discard"
-      },
-      {
-       "label": "Forced resolution",
-       "value": "max, refrate:60"
-      },
-      {
-       "label": "Emulated VRAM",
-       "value": "2GB) MB"
-      },
-      {
-       "label": "Filtering",
-       "value": "appdriven"
-      },
-      {
-       "label": "Anti-aliasing",
-       "value": "appdriven"
-      },
-      {
-       "label": "Watermark",
-       "value": "false"
       }
      ]
     },
@@ -1616,6 +1579,48 @@
        "value": "106.2602   -  derived: base 90 -> 16:9"
       }
      ]
+    },
+    {
+     "name": "HDR",
+     "settings": [
+      {
+       "label": "Output",
+       "value": "Real scRGB high dynamic range"
+      },
+      {
+       "label": "How it is reached",
+       "value": "A single compatibility layer beside the game, which upgrades the presentation path — nothing else is needed"
+      },
+      {
+       "label": "Peak luminance",
+       "value": "1000 nits"
+      },
+      {
+       "label": "Paper white",
+       "value": "200 nits"
+      },
+      {
+       "label": "Measured result",
+       "value": "Brightest pixel reaches 3.0 where standard range tops out at 1.0, with roughly 1.4% of the picture above standard white"
+      }
+     ]
+    },
+    {
+     "name": "Content",
+     "settings": [
+      {
+       "label": "Add-on campaign",
+       "value": "Installed — three extra levels plus additional versus and survival maps"
+      },
+      {
+       "label": "First Encounter pack",
+       "value": "Installed — lets the earlier campaign be played inside this game"
+      },
+      {
+       "label": "Verified",
+       "value": "Both confirmed mounted by the engine at startup, marked as official content"
+      }
+     ]
     }
    ],
    "hdrWriteup": {
@@ -1636,7 +1641,7 @@
      "note": "A single header flag on the executable, raising the 32-bit address-space ceiling from 2 GB to 4 GB."
     }
    ],
-   "settingsNote": "Read directly from the game's own config and from dgVoodoo.conf."
+   "settingsNote": "Getting high dynamic range out of this game took three attempts, and the two that failed are worth recording because they look correct on paper.\n\nThe first attempt put a wrapper in front of the game to translate its old graphics calls to a modern interface, and told that wrapper to produce a floating-point output. It ran, and measuring the picture showed the brightest pixel sitting at exactly 1.0 — the ceiling of standard range. So the container was high dynamic range while the contents were not. That is the trap: the pipeline reports success and the image is unchanged.\n\nThe second attempt kept the wrapper but handed the output stage to a second layer, which did produce genuine high dynamic range. It also crashed, repeatedly and with a divide-by-zero inside the wrapper, which no amount of configuration fixed.\n\nThe third attempt removed the wrapper entirely and used the second layer on its own. That is the arrangement in place now: one file beside the game, real floating-point output, and two consecutive clean launches with no crash reports. Fewer moving parts turned out to be both more correct and more stable.\n\nOne practical note that is easy to lose an evening to: this game must be started through the store client rather than by running the executable directly. Launched directly it exits immediately with no window and no error, because the engine unpacks part of itself at startup and needs that context. The failure looks exactly like a crash and is not one."
   },
   {
    "id": "serious-sam-kamikaze-attack",
