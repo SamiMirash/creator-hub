@@ -1,7 +1,140 @@
 {
-  "updated_at": "2026-08-22T21:00:06",
-  "source": "OBS logs + Stream_Archive (parsed offline; zero game-perf cost)",
-  "games": {},
+  "updated_at": "2026-08-23T12:08:14",
+  "source": "OBS logs + Stream_Archive + measured recording telemetry (parsed offline; zero game-perf cost)",
+  "telemetry": {
+    "merged": 5,
+    "replaced_log_days": 0,
+    "lower_bound": 0,
+    "read": true
+  },
+  "games": {
+    "resident evil requiem": {
+      "display": "Resident Evil: Requiem",
+      "total_seconds": 19401,
+      "total_label": "5 hrs 23 min",
+      "first_played": "2026-06-29",
+      "last_played": "2026-07-05",
+      "day_count": 2,
+      "session_count": 2,
+      "days": [
+        {
+          "date": "2026-06-29",
+          "sessions": [
+            {
+              "start": "2026-06-29 03:18:27",
+              "end": "2026-06-29 06:10:01.357333",
+              "start_clock": "03:18:27",
+              "end_clock": "06:10:01",
+              "seconds": 10294,
+              "duration_label": "2h 51m 34.4s",
+              "measured": true,
+              "exact": true,
+              "recording_status": "PRESENT",
+              "parts": 1,
+              "evidence": "F:/Stream_Archive/2026-06-29_RE_Requiem_FirstStream/ names it; archive.json streams[0] records 2026-06-29 as the first stream, RE Requiem"
+            }
+          ],
+          "day_seconds": 10294,
+          "day_label": "2 hrs 51 min"
+        },
+        {
+          "date": "2026-07-05",
+          "sessions": [
+            {
+              "start": "2026-07-05 06:43:54",
+              "end": "2026-07-05 09:15:40.900000",
+              "start_clock": "06:43:54",
+              "end_clock": "09:15:40",
+              "seconds": 9107,
+              "duration_label": "2h 31m 46.9s",
+              "measured": true,
+              "exact": true,
+              "recording_status": "DELETED",
+              "parts": 1,
+              "evidence": "after_stream/build_ocr_blur_plans.py SOURCES maps 2026-07-05 -> 'D:/2026-07-05 06-43-54.mp4'; F:/Stream_Archive/Stream_02_2026-07-05_RE_Requiem/ is the (now empty) archive folder"
+            }
+          ],
+          "day_seconds": 9107,
+          "day_label": "2 hrs 31 min"
+        }
+      ],
+      "review": "",
+      "score": ""
+    },
+    "returnal": {
+      "display": "Returnal",
+      "total_seconds": 37726,
+      "total_label": "10 hrs 28 min",
+      "first_played": "2026-07-26",
+      "last_played": "2026-08-02",
+      "day_count": 3,
+      "session_count": 3,
+      "days": [
+        {
+          "date": "2026-07-26",
+          "sessions": [
+            {
+              "start": "2026-07-26 16:29:53",
+              "end": "2026-07-26 20:57:13.165",
+              "start_clock": "16:29:53",
+              "end_clock": "20:57:13",
+              "seconds": 15974,
+              "duration_label": "4h 26m 14.2s",
+              "measured": true,
+              "exact": true,
+              "recording_status": "PRESENT",
+              "parts": 4,
+              "evidence": "after_stream/returnal_day1_prep.py lists the four OBS parts of this stream in order"
+            }
+          ],
+          "day_seconds": 15974,
+          "day_label": "4 hrs 26 min"
+        },
+        {
+          "date": "2026-07-31",
+          "sessions": [
+            {
+              "start": "2026-07-31 22:10:25",
+              "end": "2026-08-01 00:03:10.892000",
+              "start_clock": "22:10:25",
+              "end_clock": "00:03:10 (+1d)",
+              "seconds": 6766,
+              "duration_label": "1h 52m 45.9s",
+              "measured": true,
+              "exact": true,
+              "recording_status": "PRESENT",
+              "parts": 1,
+              "evidence": "archived as F:/Stream_Archive/2026-07-31_returnal/"
+            }
+          ],
+          "day_seconds": 6766,
+          "day_label": "1 hr 52 min"
+        },
+        {
+          "date": "2026-08-02",
+          "sessions": [
+            {
+              "start": "2026-08-02 19:48:10",
+              "end": "2026-08-02 23:57:55.706688",
+              "start_clock": "19:48:10",
+              "end_clock": "23:57:55",
+              "seconds": 14986,
+              "duration_label": "4h 09m 45.7s",
+              "measured": true,
+              "exact": true,
+              "recording_status": "DELETED",
+              "parts": 1,
+              "evidence": "after_stream/chatclear_sweep.py documents its path as E:/_streams/2026-08-02/'2026-08-02 19-48-10.mp4'; E:/_streams no longer exists"
+            }
+          ],
+          "day_seconds": 14986,
+          "day_label": "4 hrs 9 min"
+        }
+      ],
+      "review": "",
+      "score": ""
+    }
+  },
   "public_automation": false,
   "obs_control": false,
   "chat_send": false,
