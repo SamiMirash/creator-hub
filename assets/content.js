@@ -428,13 +428,34 @@
     const episodes = cfg.features.vod_archive ? (archive.episodes || []) : [];
     mount("[data-vod-archive]", episodes.length ? episodes.map((item) => `<article class="feature-card"><span class="pill">${esc(item.platform)}</span><h2>${esc(item.title)}</h2><p>${esc(item.date || "")}</p></article>`).join("") : `<article class="card empty-state"><h2>${esc(text("No VODs yet."))}</h2><p>${esc(text("The archive is ready for the first real stream."))}</p></article>`);
     if (clips.intro) mount("[data-clips-intro]", esc(clips.intro));
-    mount("[data-clip-gallery]", cfg.features.clips && (clips.items || []).length ? clips.items.map((item) => {
-      const tag = item.placeholder ? `<span class="pill">${esc(text("Example"))}</span>` : "";
-      const desc = item.description ? `<p>${esc(item.description)}</p>` : "";
-      // Placeholder seeds have no real URL yet, so they show no broken "Open clip" link.
-      const action = item.url ? button(item.url, text("Open clip"), "primary") : "";
-      return `<article class="feature-card">${tag}<h2>${esc(item.title)}</h2>${desc}${action}</article>`;
-    }).join("") : `<article class="card empty-state"><h2>${esc(clips.empty.title)}</h2><p>${esc(clips.empty.body)}</p></article>`);
+
+    // ---- Per-VIDEO archive (2026-08-23) --------------------------------------
+    // ⭐ ONE ENTRY PER VIDEO, NOT PER PLATFORM. the creator: "since every video is uploaded
+    //   everywhere you just [need] one entry per video ... you provide the links to all of
+    //   the platforms that it has been uploaded to, the exact link to that exact video."
+    //   The Clips gallery it replaces is gone from the nav too - he does not make clips.
+    // ⛔ A platform with no url renders as a NON-CLICKABLE pill, never a dead button. The
+    //   same rule as streamLinkChip: a visitor must never land on a missing page, and a
+    //   platform we have not published to yet should be visibly absent rather than silently
+    //   missing from the row.
+    // ⚠️ NOTE ON THE LINKS RULE: no-cross-platform-links governs VIDEO DESCRIPTIONS on each
+    //   platform. Sami's OWN site is the hub that is meant to list every platform he is on.
+    const videos = archive.videos || [];
+    mount("[data-video-archive]", videos.length ? videos.map((v) => {
+      const live = (v.links || []).filter((l) => l.url && l.pending !== true);
+      const soon = (v.links || []).filter((l) => !l.url || l.pending === true);
+      const chips = live.map((l) =>
+        `<a class="button" href="${esc(l.url)}" rel="noopener noreferrer">${esc(l.platform)}</a>`).join("")
+        + soon.map((l) =>
+        `<span class="pill" title="${esc(text("Link will be added when published"))}">${esc(l.platform)} \u00b7 ${esc(text("Coming soon"))}</span>`).join("");
+      const meta = [v.kind, v.duration, v.date_label].filter(Boolean).join(" \u00b7 ");
+      return `<article class="feature-card">`
+        + `<p class="eyebrow">${esc(meta)}</p>`
+        + `<h2>${esc(v.title)}</h2>`
+        + (v.description ? `<p>${esc(v.description)}</p>` : "")
+        + `<div class="hero-actions">${chips}</div>`
+        + `</article>`;
+    }).join("") : `<article class="card empty-state"><h2>${esc(text("No videos published yet."))}</h2><p>${esc(text("Every video will appear here once, with links to every platform it went to."))}</p></article>`);
   }
 
   // Gaming News & Rumors (combines the old News idea #252 + Rumors idea #251 into

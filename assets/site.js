@@ -29,9 +29,10 @@
     // Themed groups (Sami 2026-07-14: "not many people click on More" -- everything that was
     // buried there now lives in a visible, named group. NOTHING removed except the Sponsors
     // link, dropped per the remove-all-sponsorship-talk order; the page itself still exists.)
-    { group: "Videos", items: [
-      ["Clips", "clips.html"],
-      ["Archive", "archive.html"],
+    { group: "Video archive", items: [
+      ["Videos & streams", "archive.html"]
+    ] },
+    { group: "Music", items: [
       ["Music", "music.html"]
     ] },
     { group: "News & Takes", items: [
@@ -68,7 +69,6 @@
     ["Music", "music.html"],
     ["Schedule", "schedule.html"],
     ["Archive", "archive.html"],
-    ["Clips", "clips.html"],
     ["My Take", "opinions.html"],
     ["Gaming News & Rumors", "news.html"],
     ["FAQ", "faq.html"],
@@ -245,7 +245,6 @@
       ["Music", "Sami's playlists and music taste", "music.html", "songs tracks audio playlists spotify"],
       ["Schedule", "Next stream and calendar file", "schedule.html", "calendar ics"],
       ["Archive", "Future VOD and episode archive", "archive.html", "vod episodes"],
-      ["Clips", "Future approved clips", "clips.html", "clips gallery"],
       ["Gaming News & Rumors", "Game news plus tracked rumors, each rumor rated for how likely it is true", "news.html", "game news rumors rumours leaks odds updates"],
       ["My Take", "Sami's personal opinions and takes", "opinions.html", "opinion opinions blog my take views articles"],
       ["Leaderboard", "Follower counts across platforms and a thank-you board for supporters", "leaderboard.html", "leaderboard followers supporters top donors rank stats"],
