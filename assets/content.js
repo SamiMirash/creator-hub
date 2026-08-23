@@ -312,6 +312,11 @@
     mount("[data-discord-widget]", `<article class="card"><span class="pill">Discord</span><h2>${esc(text("Join the Discord"))}</h2>${online}${button(cfg.channels.discord_invite, text("Join Discord"), "primary")}</article>`);
   }
 
+  // A real newline, built from its code point. Written this way on purpose: the previous
+  // version used a backslash-n inside a generated string and the escape collapsed into an
+  // ACTUAL line break, splitting the JS literal in half and breaking the file.
+  const NL = String.fromCharCode(10);
+
   async function renderSchedule() {
     const [cfg, schedule] = await Promise.all([config(), data("schedule")]);
     if (!cfg.features.schedule) {
@@ -319,6 +324,30 @@
       return;
     }
     const items = schedule.upcoming || [];
+
+    // ⭐ A STANDING WEEKLY WINDOW IS NOT A LIST OF EVENTS. the creator streams daily in a fixed slot,
+    //   so rendering seven identical one-off rows would be both noisy and wrong the moment a week
+    //   passes. It renders as one band, and exports as ONE VEVENT with RRULE:FREQ=DAILY.
+    //   ⛔ The old .ics path emitted DTSTART:${item.utc || ""} — an EMPTY DTSTART, which is an
+    //   invalid calendar entry. Seven dateless rows would have shipped a broken download.
+    const rec = schedule.recurring;
+    if (rec && rec.enabled) {
+      mount("[data-schedule-list]",
+        `<article class="schedule-card"><div class="time-block"><strong>${esc(rec.days)}</strong>` +
+        `<span>${esc(rec.label)}</span><span>${esc(schedule.timezone)}</span></div>` +
+        `<div><h2>${esc(rec.title)}</h2><p>${esc(rec.description || "")}</p></div></article>` +
+        items.map((item) => `<article class="schedule-card"><div class="time-block"><strong>${esc(item.date)}</strong><span>${esc(item.time || schedule.timezone)}</span></div><div><h2>${esc(item.title)}</h2><p>${esc(item.description || "")}</p></div></article>`).join(""));
+      const dtstart = rec.start_local.replace(":", "") + "00";
+      const dtend = rec.end_local.replace(":", "") + "00";
+      const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Sami Mirash//Schedule//EN",
+        "BEGIN:VEVENT", `SUMMARY:${rec.title}`, `DESCRIPTION:${rec.description || ""}`,
+        `DTSTART;TZID=${schedule.timezone}:20260101T${dtstart}`,
+        `DTEND;TZID=${schedule.timezone}:20260101T${dtend}`,
+        "RRULE:FREQ=DAILY", "END:VEVENT", "END:VCALENDAR"].join(NL);
+      mount("[data-ics-link]", `<a class="button" download="SamiMirash-schedule.ics" href="data:text/calendar;charset=utf-8,${encodeURIComponent(ics)}">${esc(text("Download .ics"))}</a>`);
+      return;
+    }
+
     if (!items.length) {
       mount("[data-schedule-list]", `<article class="schedule-standby"><span class="pill">${esc(schedule.timezone)}</span><h2>${esc(schedule.empty.title)}</h2><p>${esc(schedule.empty.body)}</p>${button("newsletter.html", text("Notify me"), "primary")}</article>`);
       mount("[data-ics-link]", "");

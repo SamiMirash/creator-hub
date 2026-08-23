@@ -365,25 +365,51 @@
     // picker. The Google widget itself exposes the full ~130-language list once it
     // loads (the small "Select Language" control it injects), so this only needs to
     // cover the common cases that set the cookie.
+    // Every language Google Translate supports, named uniformly in plain ASCII.
+    // ⭐ 2026-08-23, the creator: "add every single language that exists in the world ... it
+    //   doesn't cost us anything". This REPLACES the curated 30-entry list.
+    // ⛔ AND IT RESOLVES THE DOX PROBLEM THAT REMOVED FARSI ON 2026-07-12 RATHER THAN
+    //   REOPENING IT. The risk then was never Farsi's presence: it was that Farsi was the
+    //   ONLY name written in its native script while all 29 others were ASCII. One
+    //   hand-written alphabet is a tell. A COMPLETE list, every entry named the same way,
+    //   has no selection signal at all - nothing stands out because nothing was chosen.
+    //   Persian appears here as "Persian", exactly like Polish and Portuguese.
+    //   See doctrine/reversal_registry.json -> farsi_may_return_inside_a_complete_list
     const LANGUAGES = [
-      ["en", "English"], ["es", "Espanol"], ["fr", "Francais"], ["de", "Deutsch"],
-      ["pt", "Portugues"], ["it", "Italiano"], ["nl", "Nederlands"], ["pl", "Polski"],
-      ["ru", "Russkiy"], ["uk", "Ukrainska"], ["tr", "Turkce"], ["ar", "Arabic"],
-      // ⛔ 2026-07-12: ["fa", "فارسی / Persian"] was REMOVED and must never come back.
-      // Two reasons, and the second is the load-bearing one:
-      //  1. Memory rule "No Farsi — dropped project-wide, never re-add" said this was already gone.
-      //     It was not. It was LIVE at samimirash.com/assets/site.js and had been the whole time.
-      //  2. It was the ONLY entry in the entire 30-language list written in its native script —
-      //     every other language here is plain ASCII ("Arabic", "Hindi", "Japanese"). Nobody
-      //     hand-writes exactly one alphabet they can read. That asymmetry is a tell, and it feeds
-      //     the same mosaic as the bio line: it invites a reader to parse "SamiMirash" as a Persian
-      //     name, and that parse resolves. See memory: project_dox_boundary.
-      // Nobody loses anything: Google's own widget still exposes all ~130 languages once it loads.
-      ["hi", "Hindi"], ["bn", "Bangla"], ["ja", "Japanese"], ["ko", "Korean"],
+      ["en", "English"], ["af", "Afrikaans"], ["sq", "Albanian"], ["am", "Amharic"],
+      ["ar", "Arabic"], ["hy", "Armenian"], ["as", "Assamese"], ["ay", "Aymara"],
+      ["az", "Azerbaijani"], ["bm", "Bambara"], ["eu", "Basque"], ["be", "Belarusian"],
+      ["bn", "Bengali"], ["bho", "Bhojpuri"], ["bs", "Bosnian"], ["bg", "Bulgarian"],
+      ["ca", "Catalan"], ["ceb", "Cebuano"], ["ny", "Chichewa"],
       ["zh-CN", "Chinese (Simplified)"], ["zh-TW", "Chinese (Traditional)"],
-      ["vi", "Tieng Viet"], ["th", "Thai"], ["id", "Bahasa Indonesia"],
-      ["fil", "Filipino"], ["ms", "Bahasa Melayu"], ["sw", "Kiswahili"],
-      ["he", "Hebrew"], ["el", "Ellinika"], ["sv", "Svenska"], ["ro", "Romana"]
+      ["co", "Corsican"], ["hr", "Croatian"], ["cs", "Czech"], ["da", "Danish"],
+      ["dv", "Dhivehi"], ["doi", "Dogri"], ["nl", "Dutch"], ["eo", "Esperanto"],
+      ["et", "Estonian"], ["ee", "Ewe"], ["fil", "Filipino"], ["fi", "Finnish"],
+      ["fr", "French"], ["fy", "Frisian"], ["gl", "Galician"], ["ka", "Georgian"],
+      ["de", "German"], ["el", "Greek"], ["gn", "Guarani"], ["gu", "Gujarati"],
+      ["ht", "Haitian Creole"], ["ha", "Hausa"], ["haw", "Hawaiian"], ["he", "Hebrew"],
+      ["hi", "Hindi"], ["hmn", "Hmong"], ["hu", "Hungarian"], ["is", "Icelandic"],
+      ["ig", "Igbo"], ["ilo", "Ilocano"], ["id", "Indonesian"], ["ga", "Irish"],
+      ["it", "Italian"], ["ja", "Japanese"], ["jv", "Javanese"], ["kn", "Kannada"],
+      ["kk", "Kazakh"], ["km", "Khmer"], ["rw", "Kinyarwanda"], ["gom", "Konkani"],
+      ["ko", "Korean"], ["kri", "Krio"], ["ku", "Kurdish (Kurmanji)"],
+      ["ckb", "Kurdish (Sorani)"], ["ky", "Kyrgyz"], ["lo", "Lao"], ["la", "Latin"],
+      ["lv", "Latvian"], ["ln", "Lingala"], ["lt", "Lithuanian"], ["lg", "Luganda"],
+      ["lb", "Luxembourgish"], ["mk", "Macedonian"], ["mai", "Maithili"], ["mg", "Malagasy"],
+      ["ms", "Malay"], ["ml", "Malayalam"], ["mt", "Maltese"], ["mi", "Maori"],
+      ["mr", "Marathi"], ["mni-Mtei", "Meiteilon (Manipuri)"], ["lus", "Mizo"],
+      ["mn", "Mongolian"], ["my", "Myanmar (Burmese)"], ["ne", "Nepali"], ["no", "Norwegian"],
+      ["or", "Odia (Oriya)"], ["om", "Oromo"], ["ps", "Pashto"], ["fa", "Persian"],
+      ["pl", "Polish"], ["pt", "Portuguese"], ["pa", "Punjabi"], ["qu", "Quechua"],
+      ["ro", "Romanian"], ["ru", "Russian"], ["sm", "Samoan"], ["sa", "Sanskrit"],
+      ["gd", "Scots Gaelic"], ["nso", "Sepedi"], ["sr", "Serbian"], ["st", "Sesotho"],
+      ["sn", "Shona"], ["sd", "Sindhi"], ["si", "Sinhala"], ["sk", "Slovak"],
+      ["sl", "Slovenian"], ["so", "Somali"], ["es", "Spanish"], ["su", "Sundanese"],
+      ["sw", "Swahili"], ["sv", "Swedish"], ["tg", "Tajik"], ["ta", "Tamil"], ["tt", "Tatar"],
+      ["te", "Telugu"], ["th", "Thai"], ["ti", "Tigrinya"], ["ts", "Tsonga"],
+      ["tr", "Turkish"], ["tk", "Turkmen"], ["ak", "Twi"], ["uk", "Ukrainian"], ["ur", "Urdu"],
+      ["ug", "Uyghur"], ["uz", "Uzbek"], ["vi", "Vietnamese"], ["cy", "Welsh"],
+      ["xh", "Xhosa"], ["yi", "Yiddish"], ["yo", "Yoruba"], ["zu", "Zulu"]
     ];
 
     const PREF = "site_lang";
