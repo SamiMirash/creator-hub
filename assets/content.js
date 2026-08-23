@@ -377,8 +377,10 @@
     if (item.url && item.pending !== true) {
       return `<a class="button" href="${esc(item.url)}"${/^https?:\/\//i.test(item.url) ? ' rel="noopener noreferrer"' : ""}>${esc(label)}</a>`;
     }
-    const state = item.pending ? text("Coming soon") : text("Not posted");
-    return `<span class="pill" title="${esc(text("URL will be added when published"))}">${esc(label)} · ${esc(state)}</span>`;
+    // ⛔ Nothing renders for a link that does not exist (2026-08-23). This used to emit a
+    //   "Coming soon" / "Not posted" pill, so a stream published two months earlier showed a
+    //   wall of ~25 of them and read as though nothing had ever shipped.
+    return "";
   }
 
   function streamLinkGroup(title, items, kindLabel) {
@@ -442,12 +444,12 @@
     //   platform. Sami's OWN site is the hub that is meant to list every platform he is on.
     const videos = archive.videos || [];
     mount("[data-video-archive]", videos.length ? videos.map((v) => {
+      // ⛔ NO PLACEHOLDERS ANYWHERE. the creator, 2026-08-23: "we don't want any placeholders,
+      //   remove all placeholder things." A platform we have not published to simply does not
+      //   appear - an absent row is honest, a "Coming soon" row is a promise.
       const live = (v.links || []).filter((l) => l.url && l.pending !== true);
-      const soon = (v.links || []).filter((l) => !l.url || l.pending === true);
       const chips = live.map((l) =>
-        `<a class="button" href="${esc(l.url)}" rel="noopener noreferrer">${esc(l.platform)}</a>`).join("")
-        + soon.map((l) =>
-        `<span class="pill" title="${esc(text("Link will be added when published"))}">${esc(l.platform)} \u00b7 ${esc(text("Coming soon"))}</span>`).join("");
+        `<a class="button" href="${esc(l.url)}" rel="noopener noreferrer">${esc(l.platform)}</a>`).join("");
       const meta = [v.kind, v.duration, v.date_label].filter(Boolean).join(" \u00b7 ");
       return `<article class="feature-card">`
         + `<p class="eyebrow">${esc(meta)}</p>`
