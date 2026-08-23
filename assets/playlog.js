@@ -66,11 +66,22 @@
 
   function gameCard(game) {
     const facts = [];
-    facts.push(["Total time", game.total_label || ""]);
-    if (game.first_played) facts.push(["First played", prettyDate(game.first_played)]);
-    if (game.last_played && game.last_played !== game.first_played) facts.push(["Last played", prettyDate(game.last_played)]);
-    if (game.day_count) facts.push(["Days played", String(game.day_count)]);
-    if (game.session_count) facts.push(["Sessions", String(game.session_count)]);
+    // TWO DIFFERENT FACTS. "Played" is the game's own counter; "on stream" is measured off the
+    // recordings. They are never equal - Returnal was 15h03m played against 10h29m streamed -
+    // and showing only one under the other's name is how the page told a visitor something false.
+    if (game.ingame_label) {
+      facts.push(["Time played", game.ingame_label + (game.ingame_as_of ? " (to " + game.ingame_as_of + ")" : "")]);
+    }
+    facts.push([game.ingame_label ? "Of that, on stream" : "Time on stream", game.total_label || ""]);
+    // Every fact below is derived from the STREAMS. Once the game's own counter is present they
+    // must say so: "Last played Aug 2" was wrong the moment he played on the 14th off-stream.
+    const s = game.ingame_label ? " streamed" : " played";
+    if (game.first_played) facts.push(["First" + s, prettyDate(game.first_played)]);
+    const lastStream = game.last_played || "";
+    if (lastStream && lastStream !== game.first_played) facts.push(["Last" + s, prettyDate(lastStream)]);
+    if (game.ingame_as_of && game.ingame_as_of > lastStream) facts.push(["Last played", prettyDate(game.ingame_as_of)]);
+    if (game.day_count) facts.push([game.ingame_label ? "Days streamed" : "Days played", String(game.day_count)]);
+    if (game.session_count) facts.push([game.ingame_label ? "Streams" : "Sessions", String(game.session_count)]);
     const factGrid = `<div class="settings-grid">${facts.map(([label, value]) => `<p><strong>${esc(label)}</strong><span>${esc(value)}</span></p>`).join("")}</div>`;
     const days = (game.days || []).slice().reverse().map(dayBlock).join("");
     return `
@@ -80,10 +91,10 @@
             <small>Play log${game.score ? " · scored " + esc(game.score) : ""}</small>
             <strong>${esc(game.display || "")}</strong>
           </span>
-          <span class="playlog-total-badge">${esc(game.total_label || "")}</span>
+          <span class="playlog-total-badge">${esc(game.ingame_label || game.total_label || "")}</span>
         </summary>
         <div class="game-entry-body">
-          <section class="settings-played"><span class="pill">Time on stream</span>${factGrid}</section>
+          <section class="settings-played"><span class="pill">${esc(game.ingame_label ? "How long I have played it" : "Time on stream")}</span>${factGrid}</section>
           ${reviewBlock(game)}
           <section class="playlog-days"><h3>Session by session</h3>${days || '<p class="sub">No sessions logged yet.</p>'}</section>
         </div>

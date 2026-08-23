@@ -199,12 +199,24 @@
   function playtimeBlock(entry) {
     const rec = playtimeRecord(entry);
     if (!rec) return ""; // absent -> render nothing, gracefully
-    const label = rec.total_label || "";
-    if (!label) return "";
-    const sessions = Number(rec.sessions) > 0
-      ? `<p><strong>${esc(t("Sessions"))}</strong><span>${esc(rec.sessions)}</span></p>`
-      : "";
-    return `<section class="settings-played"><span class="pill">${esc(t("Total playtime"))}</span><div class="settings-grid"><p><strong>${esc(t("Hours played"))}</strong><span>${esc(label)}</span></p>${sessions}</div></section>`;
+    // "Hours played" printed the STREAM total for weeks. Returnal was 15h03m played against
+    // 10h29m streamed, so the label was the thing that was wrong, not the number. Prefer the
+    // game's own counter; when there is none, say "on stream", which is then true.
+    const streamLabel = rec.total_label || "";
+    const playedLabel = rec.ingame_label || "";
+    if (!playedLabel && !streamLabel) return "";
+    const rows = [];
+    if (playedLabel) {
+      const asOf = rec.ingame_as_of ? ` (${esc(t("to"))} ${esc(rec.ingame_as_of)})` : "";
+      rows.push(`<p><strong>${esc(t("Time played"))}</strong><span>${esc(playedLabel)}${asOf}</span></p>`);
+    }
+    if (streamLabel) {
+      rows.push(`<p><strong>${esc(t(playedLabel ? "Of that, on stream" : "Time on stream"))}</strong><span>${esc(streamLabel)}</span></p>`);
+    }
+    if (Number(rec.sessions) > 0) {
+      rows.push(`<p><strong>${esc(t(playedLabel ? "Streams" : "Sessions"))}</strong><span>${esc(rec.sessions)}</span></p>`);
+    }
+    return `<section class="settings-played"><span class="pill">${esc(t(playedLabel ? "How long I have played it" : "Time on stream"))}</span><div class="settings-grid">${rows.join("")}</div></section>`;
   }
 
   function settingsBlock(entry) {
