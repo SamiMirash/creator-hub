@@ -1,12 +1,10 @@
 r"""Merge everything the site knows about a game into ONE record per franchise.
 
-THE PROBLEM (the creator, 2026-08-16): "I want the guide and the game list and the game settings — all
-these game-related things — under one page. Right now they're separated. When we search a game and
-click on it I want the settings to be there, I want the guide to be there, like everything about
-that game, that version of the game that we have chosen, and also how long we've played it."
+THE PROBLEM (site consolidation decision, 2026-08-16): the guide, game list, game settings,
+selected version, and time played must live under one page.
 
 Today those live in four unrelated places and three separate pages:
-    data/games.json           1239 franchises - which edition he chose, rating, notes   (8.5 MB)
+    data/games.json           franchise catalog - which edition he chose, rating, notes
     data/setups.json          per-game SETTINGS, keyed by slug
     data/playtime_totals.json hours + sessions, keyed by lowercase display name
     guide/packs/index.json    159 spoiler-free guides, keyed by slug
@@ -81,6 +79,16 @@ def pack_candidates(title: str, year) -> list[str]:
 STOP = {"the", "a", "of", "hd", "remaster", "remastered", "redux", "edition",
         "definitive", "gold", "classic", "complete"}
 
+# A handful of guide titles deliberately use a public-facing product name that cannot be
+# recovered safely through fuzzy matching. Keep those exceptions explicit: an exact declared
+# title is auditable, while a broader heuristic risks attaching a guide to the wrong game.
+PACK_TITLE_ALIASES = {
+    "hitman-world-of-assassination": "Hitman 3",
+    "resident-evil-reverse": "Resident Evil Re:Verse",
+    "resident-evil-umbrella-corps": "Umbrella Corps",
+    "shin-megami-tensei-nocturne": "Shin Megami Tensei III: Nocturne",
+}
+
 
 def canon(slug: str) -> str:
     """Order-insensitive canonical form, so wording differences still match.
@@ -124,16 +132,26 @@ def main() -> int:
     written = 0
     linked_guides = linked_setups = linked_play = 0
     used_packs: set[str] = set()   # a pack belongs to exactly one entry
+    expected_files: set[Path] = set()
+    seen_slugs: set[str] = set()
 
     for fr in games:
         fslug = fr.get("franchise_slug") or slugify(fr.get("franchise"))
         if not fslug:
             continue
+        if fslug in seen_slugs:
+            raise SystemExit(f"duplicate franchise slug in games.json: {fslug}")
+        seen_slugs.add(fslug)
         entries = []
         for e in fr.get("entries") or []:
             eslug = slugify(e.get("title"))
             cands = pack_candidates(e.get("title"), e.get("release_year"))
             guide = next((c for c in cands if c in packs and c not in used_packs), None)
+            if guide is None:
+                title_key = str(e.get("title") or "").casefold()
+                guide = next((pid for pid, target in PACK_TITLE_ALIASES.items()
+                              if pid in packs and pid not in used_packs
+                              and target.casefold() == title_key), None)
             if guide is None:
                 want = canon(eslug)
                 guide = next((pid for pid in packs
@@ -158,7 +176,11 @@ def main() -> int:
                 "status": e.get("status"),
                 "primary": e.get("primary"),
                 "secondary": e.get("secondary"),
+                "all_releases": e.get("all_releases"),
+                "fidelity_vs_completeness_conflict": e.get("fidelity_vs_completeness_conflict"),
                 "remaster_caveats": e.get("remaster_caveats"),
+                "confidence": e.get("confidence"),
+                "curation": e.get("curation") or fr.get("curation"),
                 # the three things that were previously on other pages entirely
                 "guide": {"slug": guide, "url": f"/guide/{guide}/"} if guide else None,
                 "settings": setups.get(setup) if setup else None,
@@ -188,11 +210,14 @@ def main() -> int:
             "slug": fslug,
             "era": fr.get("era"),
             "summary": fr.get("summary"),
+            "curation": fr.get("curation"),
             "entries": entries,
         }
-        (OUT_DIR / f"{fslug}.json").write_text(
+        out_file = OUT_DIR / f"{fslug}.json"
+        out_file.write_text(
             json.dumps(record, ensure_ascii=False, separators=(",", ":")),
             encoding="utf-8", newline="\n")
+        expected_files.add(out_file)
         written += 1
 
         index.append({
@@ -204,7 +229,15 @@ def main() -> int:
             "has_guide": any(e["guide"] for e in entries),
             "has_settings": any(e["settings"] for e in entries),
             "has_playtime": any(e["playtime"] for e in entries),
+            "curation": fr.get("curation"),
         })
+
+    # Outputs are generated from games.json.  Keeping an old shard after its source franchise was
+    # superseded creates a second, ghost catalogue that can disagree with browse/search.  Remove
+    # only JSON files in this generated directory that were not produced by this run.
+    stale = sorted(path for path in OUT_DIR.glob("*.json") if path not in expected_files)
+    for path in stale:
+        path.unlink()
 
     (DATA / "game_index.json").write_text(
         json.dumps({"count": len(index), "games": index}, ensure_ascii=False,
@@ -213,6 +246,7 @@ def main() -> int:
 
     idx_kb = (DATA / "game_index.json").stat().st_size // 1024
     print(f"  wrote {written} merged franchise records -> data/games/<slug>.json")
+    print(f"  removed {len(stale)} stale generated franchise record(s)")
     print(f"  wrote data/game_index.json ({idx_kb} KB, {len(index)} franchises)")
     print(f"  linked: {linked_guides} guides, {linked_setups} settings, {linked_play} playtime")
     orphans = sorted(set(packs) - used_packs)
