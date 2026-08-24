@@ -246,7 +246,7 @@
     if (!items) { return ""; }
     if (typeof items === "string") { return items ? kv([["Secondary", items]]) : ""; }
     if (!items.length) { return ""; }
-    return '<div class="gh-sect"><h4>Secondary exclusive-content passes</h4><ul>' +
+    return '<div class="gh-sect"><h4>Secondary routes and exclusive-content passes</h4><ul>' +
       items.map(function (item) {
         return "<li><b>" + esc(item.platform || "Alternate release") + "</b> &mdash; " +
           esc(item.exclusive_content || item.what_to_play || item.why || "") +
