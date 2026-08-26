@@ -110,8 +110,18 @@ def render(pack: dict, slug: str) -> str:
             if sk.get("src"):
                 # sk["src"] is pack-relative ("sketches/foo.webp"); this page lives at
                 # /guide/<slug>/, so the asset is ../packs/<slug>/sketches/foo.webp
+                # ⭐ UNLESS IT IS ABSOLUTE — guide images are moving to Cloudflare Pages because
+                # the finished set needs ~30 GB at 4K and GitHub Pages caps a published site at
+                # 1 GB. ⛔ The same backward-compatible test as viewer.js, and it must STAY the
+                # same: two places deciding this differently is how the interactive page and the
+                # crawlable page end up disagreeing about where an image lives.
+                _src = sk["src"]
+                if _src.lower().startswith(("http://", "https://")):
+                    _url = esc(_src)
+                else:
+                    _url = f'../packs/{esc(slug)}/{esc(_src)}'
                 body.append(
-                    f'<img class="sk" loading="lazy" src="../packs/{esc(slug)}/{esc(sk["src"])}" '
+                    f'<img class="sk" loading="lazy" src="{_url}" '
                     f'alt="Location sketch for {label} in {esc(game)}">')
 
     tail = f"""

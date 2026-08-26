@@ -473,8 +473,19 @@
         if (fig.hidden) {
           // Lazy-load the visual only on first reveal. Path is relative to the
           // current pack folder; the sketch lives at packs/<id>/<src>.
+          // ⭐ UNLESS IT IS ALREADY ABSOLUTE. Guide images are moving to Cloudflare Pages,
+          // because GitHub Pages caps a published site at 1 GB and the finished guide set needs
+          // roughly 30 GB at 4K — it cannot fit at ANY image quality, so the images have to live
+          // off-site while the HTML and JSON stay here and the routing never changes.
+          // ⛔ Backward-compatible ON PURPOSE: all 185 packs already on the site carry a relative
+          // `src` and must keep working untouched. Only a pack whose src starts with http(s) is
+          // treated as external, so this can be rolled out one pack at a time instead of as a
+          // flag-day migration.
           if (!img.getAttribute("src")) {
-            img.setAttribute("src", "packs/" + self.packId + "/" + sketch.src);
+            var _s = sketch.src || "";
+            img.setAttribute("src", /^https?:\/\//i.test(_s)
+              ? _s
+              : "packs/" + self.packId + "/" + _s);
           }
           fig.hidden = false;
           btn.textContent = "Hide sketch";

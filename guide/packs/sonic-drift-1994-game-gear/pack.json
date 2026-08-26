@@ -1,0 +1,897 @@
+{
+ "id": "sonic-drift-1994-game-gear",
+ "game": "Sonic Drift",
+ "target": "Original Japanese Game Gear retail cartridge with English interface text",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-26T17:18:25.587462+00:00",
+ "areas": [
+  {
+   "id": "drift-before-starting",
+   "name": "Before Starting",
+   "location_cue": "the cartridge title, main menu, driver selector, road display, and Options screen",
+   "note": "Confirm the original handheld route and practise the shared systems before beginning a six-race cup.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "drift-verify-cartridge",
+     "type": "optional",
+     "safe_type": "Version check",
+     "label": "Original Game Gear Cartridge",
+     "missable": false,
+     "levels": {
+      "1": "Begin with the preserved handheld build.",
+      "2": "Use the Japanese Game Gear cartridge carrying English interface text.",
+      "3": "Verify the extracted 524,288-byte image has SHA-1 FEF5D69093DF2D774ED274A4079790F8778577FC. Do not substitute either promotional demo: this selected product G-3415 cartridge contains the complete retail modes and has no update or add-on content."
+     }
+    },
+    {
+     "id": "drift-mode-audit",
+     "type": "optional",
+     "safe_type": "Mode set",
+     "label": "Three Play Modes",
+     "missable": false,
+     "levels": {
+      "1": "The main menu supports more than cups.",
+      "2": "Confirm Chaos GP, Free Run, and Versus appear on the retail menu.",
+      "3": "Open each menu once without beginning permanent record work. Chaos GP is the four-driver championship, Free Run stores solo times, and Versus needs a genuine or emulated Gear-to-Gear connection between two cartridge instances."
+     }
+    },
+    {
+     "id": "drift-race-scoring",
+     "type": "interaction",
+     "safe_type": "Race rule",
+     "label": "Cup Scoring",
+     "missable": false,
+     "levels": {
+      "1": "A clean series matters more than one lap.",
+      "2": "Complete three laps, then check the 3-2-1-0 placement points.",
+      "3": "Each cup contains six races. First place earns three points, second two, third one, and fourth none. If totals tie after race six, the driver with more race victories ranks higher; only first overall receives that cup's emerald."
+     }
+    },
+    {
+     "id": "drift-cornering-technique",
+     "type": "interaction",
+     "safe_type": "Driving technique",
+     "label": "Brake Drift",
+     "missable": false,
+     "levels": {
+      "1": "Tight bends reward a measured second input.",
+      "2": "Turn toward a bend while tapping Button 1 to begin sliding.",
+      "3": "Brake before the apex while steering, then release Button 1 and accelerate through the exit. Holding brake and steering together for too long produces a spin, so use brief corrections instead of one continuous slide."
+     }
+    },
+    {
+     "id": "drift-road-discipline",
+     "type": "interaction",
+     "safe_type": "Driving technique",
+     "label": "Road Discipline",
+     "missable": false,
+     "levels": {
+      "1": "The painted roadway protects your momentum.",
+      "2": "Keep all four wheels on the road and avoid roadside barriers.",
+      "3": "Rough shoulders reduce acceleration, while a solid obstacle can stop the vehicle. Enter narrow sections from the centre, brake before the boundary rather than after crossing it, and rebuild speed only once the car points down the next straight."
+     }
+    },
+    {
+     "id": "drift-ring-power",
+     "type": "interaction",
+     "safe_type": "Resource mechanic",
+     "label": "Two-Ring Special Power",
+     "missable": false,
+     "levels": {
+      "1": "A small reserve activates each driver's signature move.",
+      "2": "Collect at least two rings, then press Up during a race.",
+      "3": "Two held rings pay for Sonic's Dash or Tails's Jump. A crash or spin removes one ring, so keep a spare pair before a difficult sequence. Eggman and Amy reserve their offensive specials for the two-player mode."
+     }
+    },
+    {
+     "id": "drift-spring-item",
+     "type": "collectible",
+     "safe_type": "Track item",
+     "label": "Spring",
+     "missable": false,
+     "levels": {
+      "1": "A yellow road device bypasses low trouble.",
+      "2": "Drive over a yellow spring before an obstacle or broken road.",
+      "3": "Approach it squarely rather than from the shoulder. The launch carries the vehicle over nearby opponents, obstacles, or a road gap; steer toward the road centre while airborne so the landing preserves acceleration."
+     }
+    },
+    {
+     "id": "drift-red-monitor",
+     "type": "collectible",
+     "safe_type": "Track item",
+     "label": "Dash Monitor",
+     "missable": false,
+     "levels": {
+      "1": "The red box is strongest on open pavement.",
+      "2": "Break a red monitor shortly before a straight section.",
+      "3": "Line up centrally, collect the red box, and let its speed burst run on asphalt. Avoid taking it directly into a sharp corner: braking away the effect or leaving the road wastes both the increased speed and its acceleration benefit."
+     }
+    },
+    {
+     "id": "drift-blue-monitor",
+     "type": "collectible",
+     "safe_type": "Track item",
+     "label": "Invincibility Monitor",
+     "missable": false,
+     "levels": {
+      "1": "The blue box protects an aggressive route briefly.",
+      "2": "Break a blue monitor before a dense obstacle sequence.",
+      "3": "Use the short protected interval to cross ordinary collision hazards or an opponent's active special without losing speed. It does not correct poor steering, so stay aligned with the roadway instead of treating the effect as permission to drive outside it."
+     }
+    },
+    {
+     "id": "drift-sonic-basics",
+     "type": "optional",
+     "safe_type": "Driver route",
+     "label": "Sonic and the Cyclone",
+     "missable": false,
+     "levels": {
+      "1": "One driver trades cornering for rapid pace.",
+      "2": "Choose Sonic to combine quick acceleration with a high maximum speed.",
+      "3": "Brake earlier than the handling-focused drivers and use short drifts to protect the Cyclone's line. Hold two rings for Dash, trigger it after the car is straight, and avoid spending the burst immediately before a tight bend."
+     }
+    },
+    {
+     "id": "drift-tails-basics",
+     "type": "optional",
+     "safe_type": "Driver route",
+     "label": "Tails and the MTP-01 Whirlwind",
+     "missable": false,
+     "levels": {
+      "1": "The balanced machine forgives unfamiliar turns.",
+      "2": "Choose Tails for steady cornering and moderate speed.",
+      "3": "Carry speed through gentle bends and save two rings for Jump. Activate it before a road hazard or while centrifugal force would otherwise push the car outward; correct toward the centre before landing."
+     }
+    },
+    {
+     "id": "drift-eggman-basics",
+     "type": "optional",
+     "safe_type": "Driver route",
+     "label": "Eggman and the Egg Typhoon",
+     "missable": false,
+     "levels": {
+      "1": "The heaviest machine needs room to recover.",
+      "2": "Choose Eggman for high maximum speed but slow acceleration.",
+      "3": "Protect momentum by braking before, not inside, each corner. In solo cups the rings are mainly collision insurance because Mine Drop is unavailable there; in Versus, spend two rings where the following driver cannot avoid the mine."
+     }
+    },
+    {
+     "id": "drift-amy-basics",
+     "type": "optional",
+     "safe_type": "Driver route",
+     "label": "Amy and the Breeze",
+     "missable": false,
+     "levels": {
+      "1": "Stable cornering offsets a lower speed ceiling.",
+      "2": "Choose Amy for strong acceleration and predictable handling.",
+      "3": "Take a smooth inside line and rely on quick recovery after unavoidable contact. Heart Toss is unavailable in solo cups, so preserve rings there; in Versus, launch it with a rival ahead and enough road left to capitalize."
+     }
+    }
+   ]
+  },
+  {
+   "id": "drift-green-gp",
+   "name": "Green Chaos GP",
+   "location_cue": "the green-emblem circuit set, using the gentlest version of each zone",
+   "note": "The opening championship teaches the six-zone order with the widest margins.",
+   "save_backup": {
+    "title": "Preserve the green-cup starting state",
+    "why": "Losing the six-race standings restarts the current championship.",
+    "detail": "Keep a clean state at the driver-and-cup setup screen. Use race retries only for practice; preserve one uninterrupted winning series as the completion record."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "drift-green-green-hill",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Green Hill — Green Layout",
+     "missable": false,
+     "levels": {
+      "1": "Use the early course to establish clean steering before spending items.",
+      "2": "Race Green Hill as round 1 of the Green Chaos GP and finish all three laps.",
+      "3": "This is the gentlest Green Hill layout. Centre the car for the broad turns, avoid the slowing grass, and use a red monitor only after the road opens. A two-ring ability is safer after a bend than while the roadway is still curving. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-green-green-hill.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-green-marble",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Marble — Green Layout",
+     "missable": false,
+     "levels": {
+      "1": "Stone boundaries make early braking more valuable than late correction.",
+      "2": "Race Marble as round 2 of the Green Chaos GP and finish all three laps.",
+      "3": "This is the gentlest Marble layout. Approach confined bends from mid-road, tap brake while turning, and release it as soon as the nose faces the exit. A wall impact costs far more time than surrendering a little entry speed. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-green-marble.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-green-spring-yard",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Spring Yard — Green Layout",
+     "missable": false,
+     "levels": {
+      "1": "Let the track devices solve hazards without disrupting your line.",
+      "2": "Race Spring Yard as round 3 of the Green Chaos GP and finish all three laps.",
+      "3": "This is the gentlest Spring Yard layout. Meet springs and monitors from the road centre, steer gently during any launch, and land pointing down the following lane. Bank two rings so one spin does not remove immediate access to a special move. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-green-spring-yard.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-green-labyrinth",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Labyrinth — Green Layout",
+     "missable": false,
+     "levels": {
+      "1": "Narrow scenery rewards patience and a visible exit line.",
+      "2": "Race Labyrinth as round 4 of the Green Chaos GP and finish all three laps.",
+      "3": "This is the gentlest Labyrinth layout. Slow before the most confined corners and postpone acceleration until the next straight is visible. Use blue protection for crowded hazard sequences, but continue steering normally because boundary contact still destroys momentum. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-green-labyrinth.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-green-star-light",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Star Light — Green Layout",
+     "missable": false,
+     "levels": {
+      "1": "Longer flowing turns favour controlled speed over repeated braking.",
+      "2": "Race Star Light as round 5 of the Green Chaos GP and finish all three laps.",
+      "3": "This is the gentlest Star Light layout. Set the steering angle early, make one brief brake correction, and unwind toward the centre. Save Dash or a red monitor for the clearer straights, where the higher speed can run without forcing an off-road exit. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-green-star-light.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-green-scrap-brain",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Scrap Brain — Green Layout",
+     "missable": false,
+     "levels": {
+      "1": "The closing course punishes any hurried approach to machinery.",
+      "2": "Race Scrap Brain as round 6 of the Green Chaos GP and finish all three laps.",
+      "3": "This is the gentlest Scrap Brain layout. Enter mechanical sections centrally, clear road devices squarely, and brake before the scenery narrows. Protect two rings or a blue monitor for the final hazards; restarting momentum here can decide the cup total. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-green-scrap-brain.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-green-overall-win",
+     "type": "collectible",
+     "safe_type": "Cup reward",
+     "label": "Green Chaos Emerald",
+     "missable": false,
+     "levels": {
+      "1": "Consistency across six races earns the cup's reward.",
+      "2": "Finish first in the overall Green Chaos GP standings after Scrap Brain.",
+      "3": "Accumulate the highest total under the 3-2-1-0 scoring system. A tie is decided by race-win count. If another driver takes the cup, restart this six-race series; first overall receives the green emerald."
+     }
+    }
+   ]
+  },
+  {
+   "id": "drift-yellow-gp",
+   "name": "Yellow Chaos GP",
+   "location_cue": "the yellow-emblem circuit set, where every zone uses its middle layout",
+   "note": "The middle championship adds tighter geometry without changing the race order.",
+   "save_backup": {
+    "title": "Preserve the yellow-cup starting state",
+    "why": "Losing the six-race standings restarts the current championship.",
+    "detail": "Keep a clean state at the driver-and-cup setup screen. Use race retries only for practice; preserve one uninterrupted winning series as the completion record."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "drift-yellow-green-hill",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Green Hill — Yellow Layout",
+     "missable": false,
+     "levels": {
+      "1": "Use the early course to establish clean steering before spending items.",
+      "2": "Race Green Hill as round 1 of the Yellow Chaos GP and finish all three laps.",
+      "3": "This is the middle Green Hill layout. Centre the car for the broad turns, avoid the slowing grass, and use a red monitor only after the road opens. A two-ring ability is safer after a bend than while the roadway is still curving. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-yellow-green-hill.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-yellow-marble",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Marble — Yellow Layout",
+     "missable": false,
+     "levels": {
+      "1": "Stone boundaries make early braking more valuable than late correction.",
+      "2": "Race Marble as round 2 of the Yellow Chaos GP and finish all three laps.",
+      "3": "This is the middle Marble layout. Approach confined bends from mid-road, tap brake while turning, and release it as soon as the nose faces the exit. A wall impact costs far more time than surrendering a little entry speed. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-yellow-marble.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-yellow-spring-yard",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Spring Yard — Yellow Layout",
+     "missable": false,
+     "levels": {
+      "1": "Let the track devices solve hazards without disrupting your line.",
+      "2": "Race Spring Yard as round 3 of the Yellow Chaos GP and finish all three laps.",
+      "3": "This is the middle Spring Yard layout. Meet springs and monitors from the road centre, steer gently during any launch, and land pointing down the following lane. Bank two rings so one spin does not remove immediate access to a special move. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-yellow-spring-yard.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-yellow-labyrinth",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Labyrinth — Yellow Layout",
+     "missable": false,
+     "levels": {
+      "1": "Narrow scenery rewards patience and a visible exit line.",
+      "2": "Race Labyrinth as round 4 of the Yellow Chaos GP and finish all three laps.",
+      "3": "This is the middle Labyrinth layout. Slow before the most confined corners and postpone acceleration until the next straight is visible. Use blue protection for crowded hazard sequences, but continue steering normally because boundary contact still destroys momentum. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-yellow-labyrinth.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-yellow-star-light",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Star Light — Yellow Layout",
+     "missable": false,
+     "levels": {
+      "1": "Longer flowing turns favour controlled speed over repeated braking.",
+      "2": "Race Star Light as round 5 of the Yellow Chaos GP and finish all three laps.",
+      "3": "This is the middle Star Light layout. Set the steering angle early, make one brief brake correction, and unwind toward the centre. Save Dash or a red monitor for the clearer straights, where the higher speed can run without forcing an off-road exit. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-yellow-star-light.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-yellow-scrap-brain",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Scrap Brain — Yellow Layout",
+     "missable": false,
+     "levels": {
+      "1": "The closing course punishes any hurried approach to machinery.",
+      "2": "Race Scrap Brain as round 6 of the Yellow Chaos GP and finish all three laps.",
+      "3": "This is the middle Scrap Brain layout. Enter mechanical sections centrally, clear road devices squarely, and brake before the scenery narrows. Protect two rings or a blue monitor for the final hazards; restarting momentum here can decide the cup total. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-yellow-scrap-brain.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-yellow-overall-win",
+     "type": "collectible",
+     "safe_type": "Cup reward",
+     "label": "Yellow Chaos Emerald",
+     "missable": false,
+     "levels": {
+      "1": "Consistency across six races earns the cup's reward.",
+      "2": "Finish first in the overall Yellow Chaos GP standings after Scrap Brain.",
+      "3": "Accumulate the highest total under the 3-2-1-0 scoring system. A tie is decided by race-win count. If another driver takes the cup, restart this six-race series; first overall receives the yellow emerald."
+     }
+    }
+   ]
+  },
+  {
+   "id": "drift-red-gp",
+   "name": "Red Chaos GP",
+   "location_cue": "the red-emblem circuit set, using the hardest version of every zone",
+   "note": "The final championship demands reliable lines across all six courses.",
+   "save_backup": {
+    "title": "Preserve the red-cup starting state",
+    "why": "Losing the six-race standings restarts the current championship.",
+    "detail": "Keep a clean state at the driver-and-cup setup screen. Use race retries only for practice; preserve one uninterrupted winning series as the completion record."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "drift-red-green-hill",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Green Hill — Red Layout",
+     "missable": false,
+     "levels": {
+      "1": "Use the early course to establish clean steering before spending items.",
+      "2": "Race Green Hill as round 1 of the Red Chaos GP and finish all three laps.",
+      "3": "This is the hardest Green Hill layout. Centre the car for the broad turns, avoid the slowing grass, and use a red monitor only after the road opens. A two-ring ability is safer after a bend than while the roadway is still curving. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-red-green-hill.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-red-marble",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Marble — Red Layout",
+     "missable": false,
+     "levels": {
+      "1": "Stone boundaries make early braking more valuable than late correction.",
+      "2": "Race Marble as round 2 of the Red Chaos GP and finish all three laps.",
+      "3": "This is the hardest Marble layout. Approach confined bends from mid-road, tap brake while turning, and release it as soon as the nose faces the exit. A wall impact costs far more time than surrendering a little entry speed. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-red-marble.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-red-spring-yard",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Spring Yard — Red Layout",
+     "missable": false,
+     "levels": {
+      "1": "Let the track devices solve hazards without disrupting your line.",
+      "2": "Race Spring Yard as round 3 of the Red Chaos GP and finish all three laps.",
+      "3": "This is the hardest Spring Yard layout. Meet springs and monitors from the road centre, steer gently during any launch, and land pointing down the following lane. Bank two rings so one spin does not remove immediate access to a special move. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-red-spring-yard.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-red-labyrinth",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Labyrinth — Red Layout",
+     "missable": false,
+     "levels": {
+      "1": "Narrow scenery rewards patience and a visible exit line.",
+      "2": "Race Labyrinth as round 4 of the Red Chaos GP and finish all three laps.",
+      "3": "This is the hardest Labyrinth layout. Slow before the most confined corners and postpone acceleration until the next straight is visible. Use blue protection for crowded hazard sequences, but continue steering normally because boundary contact still destroys momentum. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-red-labyrinth.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-red-star-light",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Star Light — Red Layout",
+     "missable": false,
+     "levels": {
+      "1": "Longer flowing turns favour controlled speed over repeated braking.",
+      "2": "Race Star Light as round 5 of the Red Chaos GP and finish all three laps.",
+      "3": "This is the hardest Star Light layout. Set the steering angle early, make one brief brake correction, and unwind toward the centre. Save Dash or a red monitor for the clearer straights, where the higher speed can run without forcing an off-road exit. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-red-star-light.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-red-scrap-brain",
+     "type": "optional",
+     "safe_type": "Cup race",
+     "label": "Scrap Brain — Red Layout",
+     "missable": false,
+     "levels": {
+      "1": "The closing course punishes any hurried approach to machinery.",
+      "2": "Race Scrap Brain as round 6 of the Red Chaos GP and finish all three laps.",
+      "3": "This is the hardest Scrap Brain layout. Enter mechanical sections centrally, clear road devices squarely, and brake before the scenery narrows. Protect two rings or a blue monitor for the final hazards; restarting momentum here can decide the cup total. First place gives three cup points, but protect the overall lead rather than forcing a collision for one position."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-drift-1994-game-gear/drift-red-scrap-brain.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "drift-red-overall-win",
+     "type": "collectible",
+     "safe_type": "Cup reward",
+     "label": "Red Chaos Emerald",
+     "missable": false,
+     "levels": {
+      "1": "Consistency across six races earns the cup's reward.",
+      "2": "Finish first in the overall Red Chaos GP standings after Scrap Brain.",
+      "3": "Accumulate the highest total under the 3-2-1-0 scoring system. A tie is decided by race-win count. If another driver takes the cup, restart this six-race series; first overall receives the red emerald."
+     }
+    }
+   ]
+  },
+  {
+   "id": "drift-driver-completion",
+   "name": "Four Driver Routes",
+   "location_cue": "the driver selector followed by the complete green, yellow, and red championship sequence",
+   "note": "Each machine changes handling and has its own non-story completion presentation.",
+   "save_backup": {
+    "title": "Keep one clean state per driver",
+    "why": "The cartridge does not preserve an unfinished multi-cup route as a modern campaign save.",
+    "detail": "Store each driver at a championship boundary and label the state clearly. Do not overwrite another driver's only route evidence while recording the four completion presentations."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "drift-sonic-full-route",
+     "type": "ending",
+     "safe_type": "Driver completion",
+     "label": "Sonic Full Route",
+     "missable": false,
+     "levels": {
+      "1": "Carry the speed-focused machine through every cup.",
+      "2": "Win Green, Yellow, and Red Chaos GP as Sonic.",
+      "3": "Begin a clean Sonic route and take first overall in all three championships. Use Dash on straights, preserve the Cyclone through tight corners, and continue through the red-cup results until Sonic's unique completion presentation and credits finish."
+     }
+    },
+    {
+     "id": "drift-tails-full-route",
+     "type": "ending",
+     "safe_type": "Driver completion",
+     "label": "Tails Full Route",
+     "missable": false,
+     "levels": {
+      "1": "Balanced handling makes the unfamiliar layouts easier to learn.",
+      "2": "Win Green, Yellow, and Red Chaos GP as Tails.",
+      "3": "Complete all eighteen cup races on one Tails route, using Jump to cross disruptive road sections without wasting momentum. Win the red standings and allow Tails's distinct completion presentation and credits to finish."
+     }
+    },
+    {
+     "id": "drift-eggman-full-route",
+     "type": "ending",
+     "safe_type": "Driver completion",
+     "label": "Eggman Full Route",
+     "missable": false,
+     "levels": {
+      "1": "Protect the slow-starting machine's hard-earned momentum.",
+      "2": "Win Green, Yellow, and Red Chaos GP as Eggman.",
+      "3": "Take first overall in every cup without relying on Mine Drop, which is disabled in solo racing. Brake early, avoid full stops, and finish the red championship to record Eggman's separate completion presentation and credits."
+     }
+    },
+    {
+     "id": "drift-amy-full-route",
+     "type": "ending",
+     "safe_type": "Driver completion",
+     "label": "Amy Full Route",
+     "missable": false,
+     "levels": {
+      "1": "A stable machine can win without the highest ceiling.",
+      "2": "Win Green, Yellow, and Red Chaos GP as Amy.",
+      "3": "Use Breeze's acceleration and cornering to hold clean inside lines through all eighteen races. Heart Toss is unavailable against the solo field; win through driving and monitor use, then record Amy's unique completion presentation and credits."
+     }
+    }
+   ]
+  },
+  {
+   "id": "drift-free-run",
+   "name": "Free Run Records",
+   "location_cue": "the solo course selector, all eighteen colour-and-zone maps, and the Results tables",
+   "note": "A recorded three-lap finish on every distinct layout completes the cartridge's solo time-attack catalogue.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "drift-free-run-start",
+     "type": "optional",
+     "safe_type": "Solo mode",
+     "label": "Start Free Run",
+     "missable": false,
+     "levels": {
+      "1": "Practise layouts without championship pressure.",
+      "2": "Open Free Run, choose any driver, then select a cup colour and zone.",
+      "3": "Use Run to enter the chosen layout with no opponents. Complete three laps so the cartridge can compare the circuit and lap times; resetting before the finish does not create a valid course record."
+     }
+    },
+    {
+     "id": "drift-free-green-hill-records",
+     "type": "optional",
+     "safe_type": "Time records",
+     "label": "Green Hill — Three Free Run Records",
+     "missable": false,
+     "levels": {
+      "1": "The three Green Hill maps deserve separate clean laps.",
+      "2": "Set a finished Free Run time on the Green, Yellow, and Red Green Hill layouts.",
+      "3": "Select each colour in turn, complete all three laps, and return to Results after the finish. Confirm the circuit time appears for every Green Hill variant and that a best-lap value was retained; one colour never substitutes for another."
+     }
+    },
+    {
+     "id": "drift-free-marble-records",
+     "type": "optional",
+     "safe_type": "Time records",
+     "label": "Marble — Three Free Run Records",
+     "missable": false,
+     "levels": {
+      "1": "The three Marble maps deserve separate clean laps.",
+      "2": "Set a finished Free Run time on the Green, Yellow, and Red Marble layouts.",
+      "3": "Select each colour in turn, complete all three laps, and return to Results after the finish. Confirm the circuit time appears for every Marble variant and that a best-lap value was retained; one colour never substitutes for another."
+     }
+    },
+    {
+     "id": "drift-free-spring-yard-records",
+     "type": "optional",
+     "safe_type": "Time records",
+     "label": "Spring Yard — Three Free Run Records",
+     "missable": false,
+     "levels": {
+      "1": "The three Spring Yard maps deserve separate clean laps.",
+      "2": "Set a finished Free Run time on the Green, Yellow, and Red Spring Yard layouts.",
+      "3": "Select each colour in turn, complete all three laps, and return to Results after the finish. Confirm the circuit time appears for every Spring Yard variant and that a best-lap value was retained; one colour never substitutes for another."
+     }
+    },
+    {
+     "id": "drift-free-labyrinth-records",
+     "type": "optional",
+     "safe_type": "Time records",
+     "label": "Labyrinth — Three Free Run Records",
+     "missable": false,
+     "levels": {
+      "1": "The three Labyrinth maps deserve separate clean laps.",
+      "2": "Set a finished Free Run time on the Green, Yellow, and Red Labyrinth layouts.",
+      "3": "Select each colour in turn, complete all three laps, and return to Results after the finish. Confirm the circuit time appears for every Labyrinth variant and that a best-lap value was retained; one colour never substitutes for another."
+     }
+    },
+    {
+     "id": "drift-free-star-light-records",
+     "type": "optional",
+     "safe_type": "Time records",
+     "label": "Star Light — Three Free Run Records",
+     "missable": false,
+     "levels": {
+      "1": "The three Star Light maps deserve separate clean laps.",
+      "2": "Set a finished Free Run time on the Green, Yellow, and Red Star Light layouts.",
+      "3": "Select each colour in turn, complete all three laps, and return to Results after the finish. Confirm the circuit time appears for every Star Light variant and that a best-lap value was retained; one colour never substitutes for another."
+     }
+    },
+    {
+     "id": "drift-free-scrap-brain-records",
+     "type": "optional",
+     "safe_type": "Time records",
+     "label": "Scrap Brain — Three Free Run Records",
+     "missable": false,
+     "levels": {
+      "1": "The three Scrap Brain maps deserve separate clean laps.",
+      "2": "Set a finished Free Run time on the Green, Yellow, and Red Scrap Brain layouts.",
+      "3": "Select each colour in turn, complete all three laps, and return to Results after the finish. Confirm the circuit time appears for every Scrap Brain variant and that a best-lap value was retained; one colour never substitutes for another."
+     }
+    },
+    {
+     "id": "drift-free-results-audit",
+     "type": "optional",
+     "safe_type": "Record audit",
+     "label": "Free Run Results Audit",
+     "missable": false,
+     "levels": {
+      "1": "The records page proves that every layout was finished.",
+      "2": "Open Results and inspect all eighteen colour-and-zone combinations.",
+      "3": "For each layout, confirm a three-lap circuit result and a best lap. The table can retain three circuit times plus one fastest lap, but one valid entry per layout is the completion requirement; capture the pages before replacing records."
+     }
+    },
+    {
+     "id": "drift-free-run-exit",
+     "type": "secret",
+     "safe_type": "Menu command",
+     "label": "Free Run Quick Exit",
+     "missable": false,
+     "levels": {
+      "1": "Practice has a controller-only return command.",
+      "2": "Pause during Free Run, then hold Button 1 and Button 2 together.",
+      "3": "Press Start to pause, hold both action buttons for roughly one second, and wait for the main menu. This shortcut is documented for Free Run; do not assume it aborts Chaos GP without resetting that cup."
+     }
+    }
+   ]
+  },
+  {
+   "id": "drift-versus",
+   "name": "Versus Mode",
+   "location_cue": "two synchronized Game Gear views connected through the cartridge link interface",
+   "note": "Treat the link route as real completion work; a grayed menu or disconnected second controller is not a pass.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "drift-versus-link-setup",
+     "type": "optional",
+     "safe_type": "Link setup",
+     "label": "Gear-to-Gear Connection",
+     "missable": false,
+     "levels": {
+      "1": "The multiplayer menu needs two synchronized cartridge instances.",
+      "2": "Connect two Game Gears, two Sonic Drift cartridges, and a Gear-to-Gear cable.",
+      "3": "Power both systems off before connecting the cable, insert one matching cartridge in each, then start both and enter Versus. On PC, use an emulator configuration that genuinely emulates the serial link; two local controllers alone do not prove this route."
+     }
+    },
+    {
+     "id": "drift-versus-human-race",
+     "type": "optional",
+     "safe_type": "Two-player race",
+     "label": "Complete a Versus Race",
+     "missable": false,
+     "levels": {
+      "1": "A second human changes which abilities function.",
+      "2": "Choose two different drivers and finish one three-lap Versus race.",
+      "3": "Confirm both instances advance from the same start, complete all laps without a communication timeout, and reach the result screen. Repeat with the opposite host order if the emulator exposes asymmetric link behavior."
+     }
+    },
+    {
+     "id": "drift-versus-green-hill-set",
+     "type": "optional",
+     "safe_type": "Link course set",
+     "label": "Green Hill — Three Versus Layouts",
+     "missable": false,
+     "levels": {
+      "1": "The link menu exposes every Green Hill variation.",
+      "2": "Finish a Versus race on the Green, Yellow, and Red Green Hill layouts.",
+      "3": "Select each colour-specific Green Hill map, keep both linked instances synchronized through all three laps, and reach a result on each. Swap which player wins at least once while testing; an aborted link session does not count as a finished layout."
+     }
+    },
+    {
+     "id": "drift-versus-marble-set",
+     "type": "optional",
+     "safe_type": "Link course set",
+     "label": "Marble — Three Versus Layouts",
+     "missable": false,
+     "levels": {
+      "1": "The link menu exposes every Marble variation.",
+      "2": "Finish a Versus race on the Green, Yellow, and Red Marble layouts.",
+      "3": "Select each colour-specific Marble map, keep both linked instances synchronized through all three laps, and reach a result on each. Swap which player wins at least once while testing; an aborted link session does not count as a finished layout."
+     }
+    },
+    {
+     "id": "drift-versus-spring-yard-set",
+     "type": "optional",
+     "safe_type": "Link course set",
+     "label": "Spring Yard — Three Versus Layouts",
+     "missable": false,
+     "levels": {
+      "1": "The link menu exposes every Spring Yard variation.",
+      "2": "Finish a Versus race on the Green, Yellow, and Red Spring Yard layouts.",
+      "3": "Select each colour-specific Spring Yard map, keep both linked instances synchronized through all three laps, and reach a result on each. Swap which player wins at least once while testing; an aborted link session does not count as a finished layout."
+     }
+    },
+    {
+     "id": "drift-versus-labyrinth-set",
+     "type": "optional",
+     "safe_type": "Link course set",
+     "label": "Labyrinth — Three Versus Layouts",
+     "missable": false,
+     "levels": {
+      "1": "The link menu exposes every Labyrinth variation.",
+      "2": "Finish a Versus race on the Green, Yellow, and Red Labyrinth layouts.",
+      "3": "Select each colour-specific Labyrinth map, keep both linked instances synchronized through all three laps, and reach a result on each. Swap which player wins at least once while testing; an aborted link session does not count as a finished layout."
+     }
+    },
+    {
+     "id": "drift-versus-star-light-set",
+     "type": "optional",
+     "safe_type": "Link course set",
+     "label": "Star Light — Three Versus Layouts",
+     "missable": false,
+     "levels": {
+      "1": "The link menu exposes every Star Light variation.",
+      "2": "Finish a Versus race on the Green, Yellow, and Red Star Light layouts.",
+      "3": "Select each colour-specific Star Light map, keep both linked instances synchronized through all three laps, and reach a result on each. Swap which player wins at least once while testing; an aborted link session does not count as a finished layout."
+     }
+    },
+    {
+     "id": "drift-versus-scrap-brain-set",
+     "type": "optional",
+     "safe_type": "Link course set",
+     "label": "Scrap Brain — Three Versus Layouts",
+     "missable": false,
+     "levels": {
+      "1": "The link menu exposes every Scrap Brain variation.",
+      "2": "Finish a Versus race on the Green, Yellow, and Red Scrap Brain layouts.",
+      "3": "Select each colour-specific Scrap Brain map, keep both linked instances synchronized through all three laps, and reach a result on each. Swap which player wins at least once while testing; an aborted link session does not count as a finished layout."
+     }
+    },
+    {
+     "id": "drift-versus-mine",
+     "type": "interaction",
+     "safe_type": "Versus ability",
+     "label": "Eggman Mine Drop",
+     "missable": false,
+     "levels": {
+      "1": "One offensive special exists only with another player.",
+      "2": "Collect two rings as Eggman in Versus, move ahead, and press Up.",
+      "3": "Drop the mine on the racing line after a blind bend or narrow approach. Have the trailing player contact it once, confirm the disruption and ring loss, then repeat with an avoidance line so both the effect and counterplay are documented."
+     }
+    },
+    {
+     "id": "drift-versus-heart",
+     "type": "interaction",
+     "safe_type": "Versus ability",
+     "label": "Amy Heart Toss",
+     "missable": false,
+     "levels": {
+      "1": "The other offensive special also requires link play.",
+      "2": "Collect two rings as Amy in Versus, line up behind the rival, and press Up.",
+      "3": "Launch the heart while the other car remains in front and visible, then use Breeze's acceleration to capitalize on the slowdown. Confirm the ability consumes the required rings; it cannot be demonstrated against solo cup opponents."
+     }
+    }
+   ]
+  },
+  {
+   "id": "drift-options",
+   "name": "Options and Difficulty",
+   "location_cue": "the Options screen containing Sound and the Normal or Hard difficulty selector",
+   "note": "Finish one championship under the higher opponent setting and exercise the full built-in audio menu.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "drift-hard-setting",
+     "type": "optional",
+     "safe_type": "Difficulty setting",
+     "label": "Hard Difficulty",
+     "missable": false,
+     "levels": {
+      "1": "The second setting strengthens the rival launch pace.",
+      "2": "Open Options and change Difficulty from Normal to Hard.",
+      "3": "Confirm Hard remains selected before returning to Chaos GP. Rival acceleration increases; your own vehicle statistics and the cup layouts do not change, so defend the opening line and avoid any full stop that gives the field a free recovery gap."
+     }
+    },
+    {
+     "id": "drift-hard-red-clear",
+     "type": "optional",
+     "safe_type": "Difficulty clear",
+     "label": "Hard Red Chaos GP Win",
+     "missable": false,
+     "levels": {
+      "1": "Use the hardest setting on the tightest championship.",
+      "2": "Take first overall in Red Chaos GP while Difficulty is set to Hard.",
+      "3": "Choose the driver whose handling you control best, verify Hard before entry, and preserve an uninterrupted six-race result. Manage the 3-2-1-0 standings rather than restarting every non-win; first overall after Scrap Brain completes this difficulty route."
+     }
+    },
+    {
+     "id": "drift-sound-menu",
+     "type": "optional",
+     "safe_type": "Audio catalogue",
+     "label": "Sound Menu Audit",
+     "missable": false,
+     "levels": {
+      "1": "The built-in audio list is available immediately.",
+      "2": "Open Options, enter Sound, and play every selectable entry once.",
+      "3": "Advance through the complete numeric range without skipping a value, start each entry long enough to distinguish music from an effect, and capture the selector at both ends of the range. Stop playback before returning to the main menu."
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2894 @@
+{
+ "id": "sonic-and-knuckles-1994-genesis",
+ "game": "Sonic & Knuckles",
+ "target": "100% completion on the original 1994 Mega Drive / Genesis cartridge and all archived lock-on outcomes",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-26T16:24:09.974508+00:00",
+ "areas": [
+  {
+   "id": "sk-before-starting",
+   "name": "Before Starting",
+   "location_cue": "the cartridge title and character-choice screen",
+   "note": "Keep the standalone and three lock-on outcomes in separate emulator states.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sk-original-route",
+     "type": "optional",
+     "safe_type": "Version check",
+     "label": "Original Cartridge Route",
+     "missable": false,
+     "levels": {
+      "1": "The correct build exposes a physical lock-on family.",
+      "2": "Use the 1994 Mega Drive or Genesis cartridge image from the chosen archive.",
+      "3": "Boot the standalone image until the Sonic & Knuckles title appears. Keep its evidence separate from the three pre-combined lock-on images; later compilations are outside this route."
+     }
+    },
+    {
+     "id": "sk-four-image-audit",
+     "type": "optional",
+     "safe_type": "Version check",
+     "label": "Four-Outcome Boot Audit",
+     "missable": false,
+     "levels": {
+      "1": "The archive contains more than the base journey.",
+      "2": "Boot standalone, Sonic 1 lock-on, Sonic 2 lock-on, and Sonic 3 lock-on once each.",
+      "3": "Confirm the standalone title, the Sonic 1 lock-on warning screen, the Knuckles-in-Sonic-2 title path, and the combined Sonic 3 & Knuckles title. Do not treat one image as a substitute for another."
+     }
+    },
+    {
+     "id": "sk-power-off-lock-on",
+     "type": "interaction",
+     "safe_type": "Hardware safety",
+     "label": "Power-Off Lock-On Rule",
+     "missable": false,
+     "levels": {
+      "1": "Cartridge changes belong between powered sessions.",
+      "2": "Shut the emulated console down before changing any lock-on image.",
+      "3": "Close the running core, wait for save-file writes to finish, then load the next verified combination. Never reproduce the original powered cartridge-swap trick; it can corrupt state and adds no completion credit."
+     }
+    },
+    {
+     "id": "sk-sonic-route-plan",
+     "type": "optional",
+     "safe_type": "Character route",
+     "label": "Standalone Sonic Route",
+     "missable": false,
+     "levels": {
+      "1": "The faster character reaches the longer closing route.",
+      "2": "Complete the standalone cartridge once as Sonic and preserve its emerald state before the finish.",
+      "3": "Choose Sonic at the title. Clear every accessible act, gather his route-specific Giant Rings, and keep a state before both the seventh emerald and the closing sequence so both completion states can be documented."
+     }
+    },
+    {
+     "id": "sk-knuckles-route-plan",
+     "type": "optional",
+     "safe_type": "Character route",
+     "label": "Standalone Knuckles Route",
+     "missable": false,
+     "levels": {
+      "1": "Gliding opens several passages that the faster route never sees.",
+      "2": "Complete the standalone cartridge once as Knuckles and inspect every breakable route split.",
+      "3": "Choose Knuckles at the title. Use gliding, wall climbing, and barrier breaking to cover his exclusive paths and Giant Rings. His lower jump changes several hazards, and his route concludes before Sonic's last mechanical area."
+     }
+    },
+    {
+     "id": "sk-insta-shield",
+     "type": "interaction",
+     "safe_type": "Movement technique",
+     "label": "Sonic Insta-Shield",
+     "missable": false,
+     "levels": {
+      "1": "A second aerial input briefly widens Sonic's attack.",
+      "2": "Jump as Sonic, then tap a jump button again before contact.",
+      "3": "Use the brief flash to strike small or guarded targets while Sonic's body remains farther away. It does not work while an elemental shield is equipped, because that second input activates the shield ability instead."
+     }
+    },
+    {
+     "id": "sk-knuckles-glide-climb",
+     "type": "interaction",
+     "safe_type": "Movement technique",
+     "label": "Knuckles Glide and Climb",
+     "missable": false,
+     "levels": {
+      "1": "Horizontal air travel can become vertical exploration.",
+      "2": "Jump, press again to glide, then meet a climbable wall while facing it.",
+      "3": "Hold the jump button to keep gliding and steer into the wall. Use Up or Down after Knuckles grips it, then jump away. Solid barriers with his route marking break when glided or spun into."
+     }
+    },
+    {
+     "id": "sk-shield-audit",
+     "type": "upgrade",
+     "safe_type": "Shield set",
+     "label": "Three Elemental Shields",
+     "missable": false,
+     "levels": {
+      "1": "Each coloured shield changes one environmental rule.",
+      "2": "Collect Flame, Water, and Lightning Shields during the standalone routes.",
+      "3": "Use Flame against fire, Water to remove the breathing timer, and Lightning to attract nearby rings. Sonic gains a directional ability from each; Knuckles retains protection but not Sonic's shield-specific second-jump moves."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sk-mushroom-hill",
+   "name": "Mushroom Hill Zone",
+   "location_cue": "the giant-mushroom forest with seasonal colour changes",
+   "note": "",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sk-mushroom-act1-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 1",
+     "missable": false,
+     "levels": {
+      "1": "The floating cutter is safer directly underneath.",
+      "2": "Stay in the lower-right pocket and attack only while the machine faces away from its exhaust.",
+      "3": "Let the thrown logs pass overhead from the right edge. Jump into the body while its front is exposed, retreat whenever the rear jet turns toward you, and total six hits. A Flame Shield forgives exhaust contact."
+     }
+    },
+    {
+     "id": "sk-mushroom-a1-combined-sonic-ring",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Combined Sonic Opening Ring",
+     "missable": false,
+     "levels": {
+      "1": "The combined opening leaves a suspicious floor control.",
+      "2": "At Sonic's combined-game start, reopen the sealed tunnel beneath the first ledge.",
+      "3": "Wait until control returns, press the ground switch, and enter the reopened tunnel. Follow it to the flashing Giant Ring before joining the ordinary standalone map. Availability: combined game, Sonic-led routes only."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-mushroom-a1-combined-sonic-ring.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-mushroom-a1-combined-knuckles-ring",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Combined Knuckles Opening Ring",
+     "missable": false,
+     "levels": {
+      "1": "Knuckles begins beside an extra low passage.",
+      "2": "At Knuckles' combined-game start, take the early lower tunnel before the routes converge.",
+      "3": "Drop into the opening beside the starting path and follow its short corridor to the flashing ring. Collect it before advancing far enough to join the regular stage layout. Availability: combined game, Knuckles route only."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-mushroom-a1-combined-knuckles-ring.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-mushroom-a1-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "An isolated checkpoint above the forest leads downward.",
+      "2": "After the high checkpoint, step off the curled stem and use the horizontal grey pole below.",
+      "3": "Leave the small checkpoint platform to the right, fall as the stem ends, and catch the grey pole. Let it flip you onto the lower ledge, then enter the room on the right. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-mushroom-a1-ring-1.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-mushroom-a1-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "The second checkpoint hides a pump below its slope.",
+      "2": "Past the second checkpoint, descend the hill and drop into the small pump room.",
+      "3": "Continue down through the short corridor, fall into the pump chamber, and ride the handle upward. Jump into the concealed upper-right wall path to reach the ring. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-mushroom-a1-ring-2.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-mushroom-a1-ring-3",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #3",
+     "missable": false,
+     "levels": {
+      "1": "The last curling vine should be abandoned mid-turn.",
+      "2": "Before the late red spring, jump off as the vine bends back left and fall right.",
+      "3": "Approach the upward vine slowly, leave it when it reverses left, and walk off its edge toward the right. The lowest path shortly afterward enters the ring chamber. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-mushroom-a1-ring-3.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-mushroom-act2-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 2",
+     "missable": false,
+     "levels": {
+      "1": "The final pursuit mixes attack windows with alternating heights.",
+      "2": "Run with the retreating machine and read each spike chain before jumping.",
+      "3": "Strike the blue craft whenever its front jets are quiet, then immediately align with the next post pair. Leap low chains, run beneath high ones, and thread Knuckles between paired rows. Eight hits clear the pursuit."
+     }
+    },
+    {
+     "id": "sk-mushroom-a2-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "An early curved pit turns speed into height.",
+      "2": "Enter the curved pit from its left side and swing from the centre pole toward the upper-right loop.",
+      "3": "Build speed down the left curve, catch the vertical pole, and release toward the right. Carry the launch into the vertical loop; its upper corridor ends at the ring. Availability: Sonic route in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-mushroom-a2-ring-1.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-mushroom-a2-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "A seesaw sits beside a wall that is not solid.",
+      "2": "Shortly before the middle route split, use the seesaw beside the curved wall.",
+      "3": "Reach the seesaw from the upper route's drop or the middle route's red spring. Launch toward the curved surface and continue through the false wall into the ring room. Availability: both characters in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-mushroom-a2-ring-2.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-mushroom-a2-ring-3",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #3",
+     "missable": false,
+     "levels": {
+      "1": "The opening breakable wall conceals a choice below several poles.",
+      "2": "As Knuckles, break the early wall, descend the horizontal poles, then ignore the right-facing spring.",
+      "3": "Drop through every pole to the floor. Do not take the yellow spring; jump into the wall directly above it on the left to enter the ring corridor. Availability: Knuckles route in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-mushroom-a2-ring-3.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-mushroom-a2-ring-4",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #4",
+     "missable": false,
+     "levels": {
+      "1": "The highest transition corridor contains more than a shortcut.",
+      "2": "Stay on the highest path after the second ring until a checkpoint and pump lead into winter.",
+      "3": "Keep the upper route through its loop and diagonal spring. Enter the highest of the three seasonal transition corridors; the Giant Ring sits inside before the winter section begins. Availability: both characters in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-mushroom-a2-ring-4.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-mushroom-a2-ring-5",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #5",
+     "missable": false,
+     "levels": {
+      "1": "A mushroom beside the only open abyss marks a dangerous entrance.",
+      "2": "Beyond the spiked room, leave the uncurling stem and land on the mushroom attached to the left wall.",
+      "3": "Stop before the red spring and loop, then glide down-left onto the wall mushroom. Enter the adjacent corridor, collect the ring, and glide across the bottomless gap when leaving. Availability: Knuckles route in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-mushroom-a2-ring-5.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-mushroom-a2-ring-6",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #6",
+     "missable": false,
+     "levels": {
+      "1": "The final pump is guarded by persistent wind.",
+      "2": "Near the end, pass the Cluckoid beside the pump and enter the corridor behind it.",
+      "3": "Use the pump handle to hold position against the wind, destroy the Cluckoid during a calm opening, and walk into the exposed side passage. The ring is immediately inside. Availability: both characters in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-mushroom-a2-ring-6.avif",
+      "min_level": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "sk-flying-battery",
+   "name": "Flying Battery Zone",
+   "location_cue": "the metal airship with exterior platforms and rotating cylinders",
+   "note": "",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sk-flying-act1-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 1",
+     "missable": false,
+     "levels": {
+      "1": "The apparent exit capsule supplies its own damage.",
+      "2": "Stand on the top button until an arm commits, then step aside.",
+      "3": "Bait one spiked arm into striking the central button. Move to the opposite side only after its eye flash fixes your position, then return and repeat. Six self-inflicted hits open the capsule."
+     }
+    },
+    {
+     "id": "sk-flying-a1-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "One ordinary spike set can be pushed sideways.",
+      "2": "In the large upper room, push the solitary floor spikes right at the bottom of the slope.",
+      "3": "Press continuously against the single spike set until it slides aside. Drop through the revealed floor opening into the ring room; the right corridor returns to the route. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-flying-a1-ring-1.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-flying-a1-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "A second movable hazard sits among mines.",
+      "2": "After the first ring, ride the magnetic blocks upward and push the next isolated spikes near the mines.",
+      "3": "Use the suspended blocks to reach the next ledge, approach the individual spike set from its left, and force it right. Drop into the opening and exit through the side corridor afterward. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-flying-a1-ring-2.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-flying-act2-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 2",
+     "missable": false,
+     "levels": {
+      "1": "The shrinking laser room is a survival check, not an attack race.",
+      "2": "Wait through seven laser cycles, moving only after each charge fixes its aim.",
+      "3": "Hold the left side while the ceiling gun tracks you, then dash away as its colour changes and the beam fires. After seven contractions, climb ahead of the rising crusher. In the final arena, stand beneath the hanging spikeballs so the floor beam reflects them into the overhead target three times."
+     }
+    },
+    {
+     "id": "sk-flying-a2-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "The fast alternate route throws you above its checkpoint.",
+      "2": "Keep momentum on the alternate route and land on the high-left ledge instead of the checkpoint below.",
+      "3": "Use the nearby switch to extend gates from the opposite wall, cross them to the spiral elevator, and ride to its top. Enter the corridor on the left before the spiral can crush you. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-flying-a2-ring-1.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-flying-a2-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "The last magnetic blocks face an unreachable-looking corridor.",
+      "2": "Before the laser room, stand under the left raised block and charge a spin-dash toward the left opening.",
+      "3": "Wait until both chained blocks are lifted, release the dash left, and tap jump only briefly at the ledge. Land inside the opposite wall corridor; Knuckles may climb there directly. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-flying-a2-ring-2.avif",
+      "min_level": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "sk-sandopolis",
+   "name": "Sandopolis Zone",
+   "location_cue": "the desert ruins, sand slides, and dark pyramid interior",
+   "note": "",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sk-sand-act1-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 1",
+     "missable": false,
+     "levels": {
+      "1": "The stone guardian cannot be defeated by ordinary hits.",
+      "2": "Draw it toward the quicksand pocket at the far left.",
+      "3": "Stand beside the left pit until the guardian jumps toward you, then cross to its other side or knock its head backward. Once its landing enters the quicksand, keep clear while it sinks."
+     }
+    },
+    {
+     "id": "sk-sand-a1-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "The upper slide path leaves a quiet corner behind.",
+      "2": "Take the high route from the first slides, pass the spikes, drop, then walk left.",
+      "3": "Carry the upper path across its uneven ledges. At the safe lower landing after the spike section, reverse direction and search the left corner for the ring room. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-sand-a1-ring-1.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-sand-a1-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "The first pit in the sand maze has a floor.",
+      "2": "Beside the checkpoint and swinging arm, drop into the first sand pit and move left beyond the crusher.",
+      "3": "Fall through the first pit rather than crossing it, wait until the crusher rises, and pass underneath toward the left. The concealed room beyond contains the ring. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-sand-a1-ring-2.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-sand-a1-ring-3",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #3",
+     "missable": false,
+     "levels": {
+      "1": "A wheeled block passes beneath a useful swinging arm.",
+      "2": "On the bottom route, jump from the wheeled-block track to the arm on its right.",
+      "3": "Ride the pushable block until the first row of small wheels ends, then leap to the swinging arm before it falls away. Its upswing reaches the short ring sub-route. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-sand-a1-ring-3.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-sand-a1-ring-4",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #4",
+     "missable": false,
+     "levels": {
+      "1": "The highest path continues above a turquoise pillar.",
+      "2": "Fly right from the tall turquoise pillar, then rise past the moving crushers into the left room.",
+      "3": "Remain above the sand-pit maze, use Tails to cross beyond the pillar, and ascend the concealed vertical route. Pass each moving block only while it withdraws; the ring waits in the small upper-left chamber. Availability: combined game with Tails assistance."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-sand-a1-ring-4.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-sand-a1-ring-5",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #5",
+     "missable": false,
+     "levels": {
+      "1": "A high road ends at a gap worth dropping through.",
+      "2": "From the turquoise pillar, follow the pushable-block route until the bumpy road breaks, then fall left.",
+      "3": "Take the upper main path rather than the flight-only chamber. After the pushable block and uneven road, descend through the first clear gap and turn left into the hidden ring room. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-sand-a1-ring-5.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-sand-a1-ring-6",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #6",
+     "missable": false,
+     "levels": {
+      "1": "The long lower sand pit has an overhead transfer.",
+      "2": "While riding its pushable block, catch the horizontal arm before the wheel track ends.",
+      "3": "Approach the end of the small-wheel line from atop the block, jump to the arm overhead, and let it lift you. Continue right along the upper passage into the tall internal ring chamber. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-sand-a1-ring-6.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-sand-a1-ring-7",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #7",
+     "missable": false,
+     "levels": {
+      "1": "The final twin pillars conceal a landing above normal flight height.",
+      "2": "Climb the second-last turquoise pillar, glide to the right pillar, rise, then glide back left.",
+      "3": "Because the first pillar's lip blocks a direct climb, transfer to its neighbour, gain extra height, and return left onto the top shelf. The ring sits above the final checkpoint. Availability: Knuckles route; Tails can reach with momentum in the combined game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-sand-a1-ring-7.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-sand-act2-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 2",
+     "missable": false,
+     "levels": {
+      "1": "The final machine exposes its centre only after losing its shell.",
+      "2": "Use the extending left arm as a platform and strike the head armour first.",
+      "3": "Avoid the arm-tip spikes, jump from the arm onto the shell, and attack the cockpit while the armour is displaced. Interrupting it also cancels a charging beam. Land eight cockpit hits before the machine reaches the crushing wall."
+     }
+    },
+    {
+     "id": "sk-sand-a2-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "The opening wall leads above two moving spike platforms.",
+      "2": "Turn on the light, return to the start, and climb the far-left wall.",
+      "3": "Wait until both spike platforms shift right, climb past them quickly, then follow the upper passage. Break the walls after the next lever, spring left, and glide right into the ring corridor. Availability: Knuckles route in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-sand-a2-ring-1.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-sand-a2-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "One repeating slide can be climbed against its flow.",
+      "2": "At the alternating slides, climb the lower slide rather than taking the one with the swinging arm.",
+      "3": "Jump or glide repeatedly against the sand until you crest the lower diagonal slide. Lightning or Flame Shield movement can assist Sonic; Tails may fly. The ring is at its upper end. Availability: Knuckles route; Tails and shield movement can also reach."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-sand-a2-ring-2.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-sand-a2-ring-3",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #3",
+     "missable": false,
+     "levels": {
+      "1": "A breakable barrier follows the long pillar descent.",
+      "2": "After descending the turquoise pillar, break the right barrier above the moving block and sand pit.",
+      "3": "Take the optional Knuckles corridor, climb past its spikes and shifting blocks, then stop at the long drop beyond the crusher. Glide to the far wall and climb upward into the ring room. Availability: Knuckles route in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-sand-a2-ring-3.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-sand-a2-ring-4",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #4",
+     "missable": false,
+     "levels": {
+      "1": "The final switch opens a second door above the arena approach.",
+      "2": "After operating the last timed switch, continue past its first door and jump to the high-right ledge.",
+      "3": "Push the switch fully, clear the timed doorway and remaining hazards without delay, then leap onto the ledge above the final drop. Enter before the hidden door closes; the inside switch releases you. Availability: Sonic route in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-sand-a2-ring-4.avif",
+      "min_level": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "sk-lava-reef",
+   "name": "Lava Reef Zone",
+   "location_cue": "the volcanic caverns that cool into blue crystal tunnels",
+   "note": "",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sk-lava-act1-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 1",
+     "missable": false,
+     "levels": {
+      "1": "Only the tracking hand controls the gate's completion.",
+      "2": "Dodge the hand's delayed ground slam, then strike its upper surface.",
+      "3": "Ignore or separately disable the two projectile orbs. Follow the hand until it pauses, move outside its landing point, then jump onto it during the short grounded window. Six hand hits clear the arena."
+     }
+    },
+    {
+     "id": "sk-lava-a1-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "A wheeled elevator rises after the second drilling encounter.",
+      "2": "Ride that elevator and enter the wall opposite the flame jet at the shaft top.",
+      "3": "Stay on the ring-bearing main route, pass the second driller, and take the chain-driven lift upward. At its summit, face away from the flame shooter and walk through the opposite wall opening. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-lava-a1-ring-1.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-lava-a1-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "The next lava shaft uses a crusher as transportation.",
+      "2": "Stand on the broad spiked crusher and jump into the right wall at its highest point.",
+      "3": "Enter the shaft immediately after Ring #1, board the crusher only while it descends safely, and ride on top. At its absolute peak, jump right through the opening into the second chamber. Availability: standalone and combined games."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-lava-a1-ring-2.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-lava-a1-ring-3",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #3",
+     "missable": false,
+     "levels": {
+      "1": "Loose rings rise above a checkpoint and stepped springs.",
+      "2": "Fly above that checkpoint, avoiding the flame jet, and continue through the concealed ceiling.",
+      "3": "From the first two ring rooms, continue upward into the cavern and pass the next crusher. In the room with airborne rings over a checkpoint, use Tails to rise through the unmarked ceiling into the isolated chamber. Availability: combined game with Tails only."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-lava-a1-ring-3.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-lava-act2-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 2",
+     "missable": false,
+     "levels": {
+      "1": "Sonic's closing route demands steady movement rather than maximum speed.",
+      "2": "Stay near screen centre, moving when target markers appear on the platforms.",
+      "3": "Cross each ledge before its marked missile lands, but never hug the scrolling edge. Preserve the last checkpoint. In the final chamber, stand beneath the falling spiked projectiles so they rebound into the machine until it breaks itself. Knuckles bypasses this arena."
+     }
+    },
+    {
+     "id": "sk-lava-a2-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "The last Knuckles gateway lies beside a four-platform chain.",
+      "2": "Just after the first checkpoint, inspect the left wall beside the chained spiked platforms.",
+      "3": "Reach the large room where four spiked platforms circle over a spike pit. Before crossing them, enter the concealed corridor in the wall on the left; the ring is at its end. Availability: Knuckles route in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-lava-a2-ring-1.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-lava-a2-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "A red spring opens a tall room under circling hazards.",
+      "2": "Stay on Sonic's main right-hand route and jump from the moving block into the left wall.",
+      "3": "Ignore the early left shortcut, use the corner spring to enter the tall chamber, and land on its horizontally moving block. Jump left from the block while the ceiling spikeballs are safely away. Availability: Sonic-led routes in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-lava-a2-ring-2.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-lava-a2-ring-3",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #3",
+     "missable": false,
+     "levels": {
+      "1": "A tall moving chain follows the previous hidden room.",
+      "2": "Ride the long circuit of platforms upward and jump left at its highest point.",
+      "3": "Drop from Ring #2 and remain on the main path until platforms circulate through a vertical shaft. Stay aboard to the summit, then jump into the high opening in the left wall. Availability: Sonic-led routes in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-lava-a2-ring-3.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-lava-a2-ring-4",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #4",
+     "missable": false,
+     "levels": {
+      "1": "Two rotating ladders fling the route through a ceiling.",
+      "2": "After the shorter chain circuit, use both ladder drums, then jump from the right moving block into the wall.",
+      "3": "Swing upward from low on each rotating ladder to gain the upper room. Bounce from the yellow spring onto the two central blocks and enter the wall from the right block's highest alignment. Availability: Sonic-led routes in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-lava-a2-ring-4.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "sk-lava-a2-ring-5",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #5",
+     "missable": false,
+     "levels": {
+      "1": "The final curved runway hides entrances on both sides.",
+      "2": "After Sonic lands from the dark curve, descend the left steps and enter the floor opening on the right.",
+      "3": "Walk back down from the landing point and pass through the hidden floor edge. Collect the ring, then use its switch to open the right exit. From outside, a separate switch also opens that same door. Availability: Sonic-led routes in either game."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-and-knuckles-1994-genesis/sk-lava-a2-ring-5.avif",
+      "min_level": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "sk-late-routes",
+   "name": "Late Character Routes",
+   "location_cue": "the crystal chamber, floating ruins, and mechanical interior",
+   "note": "The available areas differ by selected character; follow only the matching route.",
+   "save_backup": {
+    "title": "Back up before the late route split",
+    "why": "Sonic and Knuckles proceed through different remaining areas and completion gates."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sk-hidden-sonic-clear",
+     "type": "interaction",
+     "safe_type": "Route completion",
+     "label": "Hidden Palace — Sonic Route",
+     "missable": false,
+     "levels": {
+      "1": "The compact chamber tests familiar movement rather than exploration.",
+      "2": "Follow the only open corridor and preserve rings for the enclosed duel.",
+      "3": "Use the teleport pads to reach the central room, then answer each rolling or gliding approach with a single safe jump. Attack only when the opposing movement finishes; the route continues after eight clean contacts."
+     }
+    },
+    {
+     "id": "sk-hidden-knuckles-clear",
+     "type": "interaction",
+     "safe_type": "Route completion",
+     "label": "Hidden Palace — Knuckles Route",
+     "missable": false,
+     "levels": {
+      "1": "Knuckles' path through the crystal chamber is deliberately short.",
+      "2": "Move right through the available chamber and use the floor transporter.",
+      "3": "Collect the nearby shields or monitors first, then take the short rightward path. Step onto the circular floor device to leave; no hidden Giant Ring or mandatory combat belongs to this version."
+     }
+    },
+    {
+     "id": "sk-sky-sonic-clear",
+     "type": "interaction",
+     "safe_type": "Route completion",
+     "label": "Sky Sanctuary — Sonic Route",
+     "missable": false,
+     "levels": {
+      "1": "Moving ruins punish haste near their open edges.",
+      "2": "Use pillar springs and wait for bobbing platforms before crossing their pinch points.",
+      "3": "Keep one ring, avoid the lowest edges, and clear the three mechanical encounters in sequence. Reused machinery follows familiar patterns, while the last duel rewards striking after each landing rather than chasing it over collapsing ground."
+     }
+    },
+    {
+     "id": "sk-sky-knuckles-clear",
+     "type": "interaction",
+     "safe_type": "Route completion",
+     "label": "Sky Sanctuary — Knuckles Route",
+     "missable": false,
+     "levels": {
+      "1": "The shorter aerial route still contains two consecutive gates.",
+      "2": "Glide between stable platforms and keep clear while the target is charged.",
+      "3": "Use wall grips to recover from low glides, then defeat the first gate through ordinary landing windows. During the final powered phase, wait off-centre until the charge ends, strike once, and retreat before the next burst."
+     }
+    },
+    {
+     "id": "sk-death-act1-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Death Egg Act 1 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "The core becomes vulnerable only between its orbiting defences.",
+      "2": "Wait in a far corner until the spheres descend around the base.",
+      "3": "Jump over the low orbit and strike the red centre, then return to the corner before the released spikes spread. Remove all eight spheres this way. In phase two, use the rotating floor and attack during each safe opening for eight more hits."
+     }
+    },
+    {
+     "id": "sk-death-act2-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Death Egg Act 2 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Gravity changes turn the gate's ammunition against it.",
+      "2": "Enter a side tube when a floor shell aligns beneath the floating target.",
+      "3": "Time the tube's rotation so gravity reverses while a wheeled shell is directly below the machine. Only upward contact from the floor counts. Repeat until the target breaks, preserving every ring because the next arena begins immediately."
+     }
+    },
+    {
+     "id": "sk-sonic-final-mechanical-gate",
+     "type": "interaction",
+     "safe_type": "Route completion",
+     "label": "Sonic Final Mechanical Gate",
+     "missable": false,
+     "levels": {
+      "1": "The last regular arena alternates pursuit and exposed hands.",
+      "2": "Keep ahead of the screen edge and attack the hands only after their sweep.",
+      "3": "Cross the scrolling platforms without outrunning the camera. In the arena, avoid the tracking hand strike, hit each exposed hand when it rests, then attack the central face during the short opening. Maintain at least one ring throughout."
+     }
+    },
+    {
+     "id": "sk-extra-route-clear",
+     "type": "interaction",
+     "safe_type": "Route completion",
+     "label": "Emerald-Gated Extra Route",
+     "missable": true,
+     "levels": {
+      "1": "One Sonic route opens only with the complete standalone set.",
+      "2": "Enter Sonic's closing sequence with all seven Chaos Emeralds recorded.",
+      "3": "Preserve a ring supply across the preceding arena. In the continuous flight section, collect ring clusters before the counter drains, use missiles to break armour, then boost into the exposed target during each opening. Falling behind or reaching zero rings ends the attempt."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sk-special-stages",
+   "name": "Standalone Special Stages",
+   "location_cue": "the checkerboard sphere filled with coloured balls",
+   "note": "",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sk-special-entry",
+     "type": "interaction",
+     "safe_type": "Special-stage access",
+     "label": "Giant Ring Entry",
+     "missable": false,
+     "levels": {
+      "1": "Hidden golden gateways ignore your current ring count.",
+      "2": "Enter any unused Giant Ring to start the next rotating sphere trial.",
+      "3": "Each gateway advances the seven-stage sequence even after failure. The order wraps after Stage 7, so later rings return every uncleared layout. Once the full set is complete, remaining gateways award fifty rings instead."
+     }
+    },
+    {
+     "id": "sk-special-1-clear",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Special Stage 1 Clear",
+     "missable": false,
+     "levels": {
+      "1": "This sphere layout adds another pattern to learn.",
+      "2": "Reach Special Stage 1 in the rotation and collect every blue sphere.",
+      "3": "Trace the outside edge of complete blue rectangles to convert their interiors into rings. Never touch a red sphere, use star spheres only for deliberate reversals, and leave one isolated blue sphere until all optional rings have been gathered."
+     }
+    },
+    {
+     "id": "sk-special-1-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Special Stage 1 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The emerald clear leaves an optional ring objective.",
+      "2": "Repeat Special Stage 1 and collect every available ring before the last blue sphere.",
+      "3": "Complete each valid perimeter, sweep every loose and converted ring, and keep one safe blue sphere untouched. Take that sphere only after the remaining-ring counter reaches zero; the Perfect award adds a life and completes this trial's full collection state."
+     }
+    },
+    {
+     "id": "sk-special-2-clear",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Special Stage 2 Clear",
+     "missable": false,
+     "levels": {
+      "1": "This sphere layout adds another pattern to learn.",
+      "2": "Reach Special Stage 2 in the rotation and collect every blue sphere.",
+      "3": "Trace the outside edge of complete blue rectangles to convert their interiors into rings. Never touch a red sphere, use star spheres only for deliberate reversals, and leave one isolated blue sphere until all optional rings have been gathered."
+     }
+    },
+    {
+     "id": "sk-special-2-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Special Stage 2 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The emerald clear leaves an optional ring objective.",
+      "2": "Repeat Special Stage 2 and collect every available ring before the last blue sphere.",
+      "3": "Complete each valid perimeter, sweep every loose and converted ring, and keep one safe blue sphere untouched. Take that sphere only after the remaining-ring counter reaches zero; the Perfect award adds a life and completes this trial's full collection state."
+     }
+    },
+    {
+     "id": "sk-special-3-clear",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Special Stage 3 Clear",
+     "missable": false,
+     "levels": {
+      "1": "This sphere layout adds another pattern to learn.",
+      "2": "Reach Special Stage 3 in the rotation and collect every blue sphere.",
+      "3": "Trace the outside edge of complete blue rectangles to convert their interiors into rings. Never touch a red sphere, use star spheres only for deliberate reversals, and leave one isolated blue sphere until all optional rings have been gathered."
+     }
+    },
+    {
+     "id": "sk-special-3-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Special Stage 3 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The emerald clear leaves an optional ring objective.",
+      "2": "Repeat Special Stage 3 and collect every available ring before the last blue sphere.",
+      "3": "Complete each valid perimeter, sweep every loose and converted ring, and keep one safe blue sphere untouched. Take that sphere only after the remaining-ring counter reaches zero; the Perfect award adds a life and completes this trial's full collection state."
+     }
+    },
+    {
+     "id": "sk-special-4-clear",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Special Stage 4 Clear",
+     "missable": false,
+     "levels": {
+      "1": "This sphere layout adds another pattern to learn.",
+      "2": "Reach Special Stage 4 in the rotation and collect every blue sphere.",
+      "3": "Trace the outside edge of complete blue rectangles to convert their interiors into rings. Never touch a red sphere, use star spheres only for deliberate reversals, and leave one isolated blue sphere until all optional rings have been gathered."
+     }
+    },
+    {
+     "id": "sk-special-4-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Special Stage 4 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The emerald clear leaves an optional ring objective.",
+      "2": "Repeat Special Stage 4 and collect every available ring before the last blue sphere.",
+      "3": "Complete each valid perimeter, sweep every loose and converted ring, and keep one safe blue sphere untouched. Take that sphere only after the remaining-ring counter reaches zero; the Perfect award adds a life and completes this trial's full collection state."
+     }
+    },
+    {
+     "id": "sk-special-5-clear",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Special Stage 5 Clear",
+     "missable": false,
+     "levels": {
+      "1": "This sphere layout adds another pattern to learn.",
+      "2": "Reach Special Stage 5 in the rotation and collect every blue sphere.",
+      "3": "Trace the outside edge of complete blue rectangles to convert their interiors into rings. Never touch a red sphere, use star spheres only for deliberate reversals, and leave one isolated blue sphere until all optional rings have been gathered."
+     }
+    },
+    {
+     "id": "sk-special-5-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Special Stage 5 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The emerald clear leaves an optional ring objective.",
+      "2": "Repeat Special Stage 5 and collect every available ring before the last blue sphere.",
+      "3": "Complete each valid perimeter, sweep every loose and converted ring, and keep one safe blue sphere untouched. Take that sphere only after the remaining-ring counter reaches zero; the Perfect award adds a life and completes this trial's full collection state."
+     }
+    },
+    {
+     "id": "sk-special-6-clear",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Special Stage 6 Clear",
+     "missable": false,
+     "levels": {
+      "1": "This sphere layout adds another pattern to learn.",
+      "2": "Reach Special Stage 6 in the rotation and collect every blue sphere.",
+      "3": "Trace the outside edge of complete blue rectangles to convert their interiors into rings. Never touch a red sphere, use star spheres only for deliberate reversals, and leave one isolated blue sphere until all optional rings have been gathered."
+     }
+    },
+    {
+     "id": "sk-special-6-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Special Stage 6 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The emerald clear leaves an optional ring objective.",
+      "2": "Repeat Special Stage 6 and collect every available ring before the last blue sphere.",
+      "3": "Complete each valid perimeter, sweep every loose and converted ring, and keep one safe blue sphere untouched. Take that sphere only after the remaining-ring counter reaches zero; the Perfect award adds a life and completes this trial's full collection state."
+     }
+    },
+    {
+     "id": "sk-special-7-clear",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Special Stage 7 Clear",
+     "missable": false,
+     "levels": {
+      "1": "This sphere layout adds another pattern to learn.",
+      "2": "Reach Special Stage 7 in the rotation and collect every blue sphere.",
+      "3": "Trace the outside edge of complete blue rectangles to convert their interiors into rings. Never touch a red sphere, use star spheres only for deliberate reversals, and leave one isolated blue sphere until all optional rings have been gathered."
+     }
+    },
+    {
+     "id": "sk-special-7-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Special Stage 7 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The emerald clear leaves an optional ring objective.",
+      "2": "Repeat Special Stage 7 and collect every available ring before the last blue sphere.",
+      "3": "Complete each valid perimeter, sweep every loose and converted ring, and keep one safe blue sphere untouched. Take that sphere only after the remaining-ring counter reaches zero; the Perfect award adds a life and completes this trial's full collection state."
+     }
+    },
+    {
+     "id": "sk-seven-emerald-set",
+     "type": "collectible",
+     "safe_type": "Completion set",
+     "label": "Seven Chaos Emeralds",
+     "missable": false,
+     "levels": {
+      "1": "Every successful sphere trial fills one position in the set.",
+      "2": "Clear all seven rotating Special Stages on the same standalone route.",
+      "3": "Use the abundant early Giant Rings first, then revisit later gateways for any failed layout. Confirm all seven emeralds before entering the route ending; Sonic and Knuckles each need their own complete-set evidence."
+     }
+    },
+    {
+     "id": "sk-super-sonic",
+     "type": "upgrade",
+     "safe_type": "Transformation",
+     "label": "Super Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Sonic's completed set changes a second jump after fifty rings.",
+      "2": "Collect fifty rings with all seven emeralds, jump, then press jump again.",
+      "3": "Transform only after reaching 50 rings. The state drains one ring each second and ignores ordinary damage, but pits, crushing, drowning, and forced-grab mechanics still defeat or cancel it."
+     }
+    },
+    {
+     "id": "sk-super-knuckles",
+     "type": "upgrade",
+     "safe_type": "Transformation",
+     "label": "Super Knuckles",
+     "missable": false,
+     "levels": {
+      "1": "Knuckles' completed set strengthens his normal movement package.",
+      "2": "Collect fifty rings with all seven emeralds, jump, then press jump again.",
+      "3": "Activate the form in open space, use its faster glide and climb to audit exclusive routes, and watch the draining counter. Retain a ring for hazards that bypass ordinary invulnerability."
+     }
+    },
+    {
+     "id": "sk-hidden-eighth-stage",
+     "type": "secret",
+     "safe_type": "Hidden trial",
+     "label": "Hidden Eighth Special Stage",
+     "missable": false,
+     "levels": {
+      "1": "The level menu contains one sphere layout outside the emerald rotation.",
+      "2": "Use the secret stage selector and choose the second special-stage slot while holding A.",
+      "3": "Enable Level Select, highlight the Special Stage 2 entry, hold A, and press Start. Clear the gold-emerald layout as a separate cartridge secret; it does not replace any of the seven normal emerald trials."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sk-bonus-stages",
+   "name": "Standalone Bonus Stages",
+   "location_cue": "the star halo above a twenty-ring checkpoint",
+   "note": "",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sk-bonus-entry",
+     "type": "interaction",
+     "safe_type": "Bonus access",
+     "label": "Checkpoint Bonus Entry",
+     "missable": false,
+     "levels": {
+      "1": "A smaller carried-ring threshold adds stars above checkpoints.",
+      "2": "Touch an unused checkpoint with at least twenty rings, then jump into its stars.",
+      "3": "Keep 20 or more rings until a checkpoint spins. Jump into the star halo before leaving the screen; the standalone cartridge alternates between its slot and glowing-sphere bonus systems."
+     }
+    },
+    {
+     "id": "sk-slot-bonus",
+     "type": "optional",
+     "safe_type": "Bonus stage",
+     "label": "Slot Bonus Audit",
+     "missable": false,
+     "levels": {
+      "1": "Matching symbols changes the reward or penalty.",
+      "2": "Enter the slot chamber and complete every reel outcome category at least once.",
+      "3": "Use the rotating arena to pass through the centre slot. Record ring wins, the large three-symbol match, and a penalty result on a disposable attempt. Exit before the carried total is exhausted."
+     }
+    },
+    {
+     "id": "sk-glowing-sphere-bonus",
+     "type": "optional",
+     "safe_type": "Bonus stage",
+     "label": "Glowing Sphere Bonus Audit",
+     "missable": false,
+     "levels": {
+      "1": "Coloured spheres hide shields and resources.",
+      "2": "Enter the sphere chamber and open every reward category across repeated visits.",
+      "3": "Use the magnetic orbit to touch glowing spheres, collecting ring boxes, all three elemental shields, and a life result. Avoid spending the last safe platform before the preferred reward is secured."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sk-standalone-branches",
+   "name": "Standalone Completion Branches",
+   "location_cue": "the final mechanical sequence for each character route",
+   "note": "Back up before changing either character's emerald state.",
+   "save_backup": {
+    "title": "Back up both character states",
+    "why": "The seventh emerald permanently changes the completion branch available on that state."
+   },
+   "point_of_no_return": {
+    "title": "Closing route commitment",
+    "why": "Entering the final mechanical sequence commits the current emerald-state presentation until replay or restore."
+   },
+   "items": [
+    {
+     "id": "sk-sonic-standard-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Sonic Standard Branch",
+     "missable": true,
+     "levels": {
+      "1": "One completion state appears before the emerald set is full.",
+      "2": "Finish the standalone Sonic route with fewer than seven emeralds.",
+      "3": "Restore the pre-set Sonic backup, clear the route's final mechanical sequence, and let the complete credits presentation finish. Keep this state separate before collecting the remaining emeralds."
+     }
+    },
+    {
+     "id": "sk-sonic-emerald-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Sonic Complete-Set Branch",
+     "missable": true,
+     "levels": {
+      "1": "The full emerald set changes the route's completion state.",
+      "2": "Collect all seven emeralds as Sonic, then clear that route again.",
+      "3": "Confirm the complete set before crossing the final checkpoint, finish every remaining arena, and watch the entire credits presentation. Preserve the resulting evidence independently from the standard branch."
+     }
+    },
+    {
+     "id": "sk-knuckles-standard-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Knuckles Standard Branch",
+     "missable": true,
+     "levels": {
+      "1": "One completion state appears before the emerald set is full.",
+      "2": "Finish the standalone Knuckles route with fewer than seven emeralds.",
+      "3": "Restore the pre-set Knuckles backup, clear the route's final mechanical sequence, and let the complete credits presentation finish. Keep this state separate before collecting the remaining emeralds."
+     }
+    },
+    {
+     "id": "sk-knuckles-emerald-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Knuckles Complete-Set Branch",
+     "missable": true,
+     "levels": {
+      "1": "The full emerald set changes the route's completion state.",
+      "2": "Collect all seven emeralds as Knuckles, then clear that route again.",
+      "3": "Confirm the complete set before crossing the final checkpoint, finish every remaining arena, and watch the entire credits presentation. Preserve the resulting evidence independently from the standard branch."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sk-blue-sphere",
+   "name": "Sonic 1 Lock-On — Blue Sphere",
+   "location_cue": "the dark warning screen leading to a generated sphere board",
+   "note": "",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sk-blue-sphere-boot",
+     "type": "interaction",
+     "safe_type": "Lock-on outcome",
+     "label": "Blue Sphere Boot",
+     "missable": false,
+     "levels": {
+      "1": "The Sonic 1 combination begins with a warning screen.",
+      "2": "Load the verified Sonic 1 lock-on image and wait for the NO WAY screen.",
+      "3": "Confirm the four-character warning display, then press A, B, and C together. The generated Blue Sphere layout should replace it; a normal Sonic & Knuckles title indicates the combination was not mapped correctly."
+     }
+    },
+    {
+     "id": "sk-blue-sphere-first-clear",
+     "type": "optional",
+     "safe_type": "Generated trial",
+     "label": "Generated Stage Clear",
+     "missable": false,
+     "levels": {
+      "1": "The attached cartridge selects a deterministic sphere board.",
+      "2": "Record the displayed stage identifier, then clear its blue-sphere objective once.",
+      "3": "Turn blue spheres red, avoid every red sphere, and use full perimeter loops for ring conversions. Save the identifier with the result so the same generated layout can be revisited and distinguished from another cartridge's board."
+     }
+    },
+    {
+     "id": "sk-blue-sphere-password",
+     "type": "secret",
+     "safe_type": "Generated-stage access",
+     "label": "Blue Sphere Password Entry",
+     "missable": false,
+     "levels": {
+      "1": "The title accepts codes for generated layouts.",
+      "2": "Open the stage-code screen and re-enter the identifier from the cleared board.",
+      "3": "Use the displayed digits to select the same board without changing cartridge data. Confirm the opening pattern matches the recorded layout, then keep one additional code as a reproducibility check."
+     }
+    },
+    {
+     "id": "sk-blue-sphere-scope",
+     "type": "optional",
+     "safe_type": "Completion boundary",
+     "label": "Generated Library Boundary",
+     "missable": false,
+     "levels": {
+      "1": "This mode is algorithmic rather than a finite authored campaign.",
+      "2": "Treat the verified Sonic 1-derived board as the archive completion target.",
+      "3": "The generator exposes 134,217,728 numbered layouts, so clearing every permutation is not a practical finite save requirement. Completion here means correct boot, one recorded clear, and successful password reproduction—not a false claim that the entire generated space was exhausted."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sk-knuckles-sonic2",
+   "name": "Sonic 2 Lock-On — Knuckles Route",
+   "location_cue": "the original Sonic 2 zones played with glide and wall climbing",
+   "note": "This is a full alternate campaign, not a one-screen lock-on demonstration.",
+   "save_backup": {
+    "title": "Back up before the final emerald and area",
+    "why": "The complete-set and incomplete-set route outcomes require separate preserved states."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sk-knux2-boot",
+     "type": "interaction",
+     "safe_type": "Lock-on outcome",
+     "label": "Knuckles in Sonic 2 Boot",
+     "missable": false,
+     "levels": {
+      "1": "The second lock-on image should replace the original playable pair.",
+      "2": "Load the verified Sonic 2 combination and start a new game as Knuckles.",
+      "3": "Confirm gliding, climbing, barrier breaking, and Knuckles' lower jump are active in the Sonic 2 stage set. If Sonic or Tails appears, the ordinary Sonic 2 image was loaded instead."
+     }
+    },
+    {
+     "id": "sk-knux2-emerald-hill-clear",
+     "type": "interaction",
+     "safe_type": "Zone completion",
+     "label": "Clear Emerald Hill",
+     "missable": false,
+     "levels": {
+      "1": "The imported movement set changes this familiar route.",
+      "2": "Complete Emerald Hill as Knuckles and inspect every climbable route split.",
+      "3": "Use glide recovery after loops and clear the open machine arena. Finish both acts where present and record the zone clear before moving on."
+     }
+    },
+    {
+     "id": "sk-knux2-chemical-plant-clear",
+     "type": "interaction",
+     "safe_type": "Zone completion",
+     "label": "Clear Chemical Plant",
+     "missable": false,
+     "levels": {
+      "1": "The imported movement set changes this familiar route.",
+      "2": "Complete Chemical Plant as Knuckles and inspect every climbable route split.",
+      "3": "Climb flooded shafts early and keep bubbles available before the rising-water room. Finish both acts where present and record the zone clear before moving on."
+     }
+    },
+    {
+     "id": "sk-knux2-aquatic-ruin-clear",
+     "type": "interaction",
+     "safe_type": "Zone completion",
+     "label": "Clear Aquatic Ruin",
+     "missable": false,
+     "levels": {
+      "1": "The imported movement set changes this familiar route.",
+      "2": "Complete Aquatic Ruin as Knuckles and inspect every climbable route split.",
+      "3": "Break upper columns and use wall climbing to avoid the slower underwater route. Finish both acts where present and record the zone clear before moving on."
+     }
+    },
+    {
+     "id": "sk-knux2-casino-night-clear",
+     "type": "interaction",
+     "safe_type": "Zone completion",
+     "label": "Clear Casino Night",
+     "missable": false,
+     "levels": {
+      "1": "The imported movement set changes this familiar route.",
+      "2": "Complete Casino Night as Knuckles and inspect every climbable route split.",
+      "3": "Use flippers and bumpers deliberately; glide back to platforms after missed launches. Finish both acts where present and record the zone clear before moving on."
+     }
+    },
+    {
+     "id": "sk-knux2-hill-top-clear",
+     "type": "interaction",
+     "safe_type": "Zone completion",
+     "label": "Clear Hill Top",
+     "missable": false,
+     "levels": {
+      "1": "The imported movement set changes this familiar route.",
+      "2": "Complete Hill Top as Knuckles and inspect every climbable route split.",
+      "3": "Wait out lava rises on high ground and climb walls beside unstable lifts. Finish both acts where present and record the zone clear before moving on."
+     }
+    },
+    {
+     "id": "sk-knux2-mystic-cave-clear",
+     "type": "interaction",
+     "safe_type": "Zone completion",
+     "label": "Clear Mystic Cave",
+     "missable": false,
+     "levels": {
+      "1": "The imported movement set changes this familiar route.",
+      "2": "Complete Mystic Cave as Knuckles and inspect every climbable route split.",
+      "3": "Pull hanging switches before moving crushers and avoid the irreversible open pit. Finish both acts where present and record the zone clear before moving on."
+     }
+    },
+    {
+     "id": "sk-knux2-oil-ocean-clear",
+     "type": "interaction",
+     "safe_type": "Zone completion",
+     "label": "Clear Oil Ocean",
+     "missable": false,
+     "levels": {
+      "1": "The imported movement set changes this familiar route.",
+      "2": "Complete Oil Ocean as Knuckles and inspect every climbable route split.",
+      "3": "Jump repeatedly when sinking in oil and use fans to regain upper routes. Finish both acts where present and record the zone clear before moving on."
+     }
+    },
+    {
+     "id": "sk-knux2-metropolis-clear",
+     "type": "interaction",
+     "safe_type": "Zone completion",
+     "label": "Clear Metropolis",
+     "missable": false,
+     "levels": {
+      "1": "The imported movement set changes this familiar route.",
+      "2": "Complete Metropolis as Knuckles and inspect every climbable route split.",
+      "3": "Climb screw lifts carefully and attack star enemies only after their points retract. Finish both acts where present and record the zone clear before moving on."
+     }
+    },
+    {
+     "id": "sk-knux2-sky-chase-clear",
+     "type": "interaction",
+     "safe_type": "Zone completion",
+     "label": "Clear Sky Chase",
+     "missable": false,
+     "levels": {
+      "1": "The imported movement set changes this familiar route.",
+      "2": "Complete Sky Chase as Knuckles and inspect every climbable route split.",
+      "3": "Remain over the moving wing and glide only when a safe landing remains beneath. Finish both acts where present and record the zone clear before moving on."
+     }
+    },
+    {
+     "id": "sk-knux2-wing-fortress-clear",
+     "type": "interaction",
+     "safe_type": "Zone completion",
+     "label": "Clear Wing Fortress",
+     "missable": false,
+     "levels": {
+      "1": "The imported movement set changes this familiar route.",
+      "2": "Complete Wing Fortress as Knuckles and inspect every climbable route split.",
+      "3": "Use climbing to recover from exterior jumps and preserve rings for the laser chamber. Finish both acts where present and record the zone clear before moving on."
+     }
+    },
+    {
+     "id": "sk-knux2-death-egg-clear",
+     "type": "interaction",
+     "safe_type": "Zone completion",
+     "label": "Clear Death Egg",
+     "missable": false,
+     "levels": {
+      "1": "The imported movement set changes this familiar route.",
+      "2": "Complete Death Egg as Knuckles and inspect every climbable route split.",
+      "3": "Enter without rings, clear the patterned walker, then strike the final machine only during safe landings. Finish both acts where present and record the zone clear before moving on."
+     }
+    },
+    {
+     "id": "sk-knux2-special-entry",
+     "type": "interaction",
+     "safe_type": "Special access",
+     "label": "Sonic 2 Checkpoint Entry",
+     "missable": false,
+     "levels": {
+      "1": "The original checkpoint threshold still governs emerald access.",
+      "2": "Touch an unused checkpoint with fifty rings and jump into its star circle.",
+      "3": "Carry at least 50 rings to a checkpoint, activate it, and enter the rotating stars. The lock-on character changes movement in stages but does not replace Sonic 2's seven split-screen emerald trials."
+     }
+    },
+    {
+     "id": "sk-knux2-special-1",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Sonic 2 Special Stage 1 Clear",
+     "missable": false,
+     "levels": {
+      "1": "Each checkpoint trial raises its ring requirement.",
+      "2": "Reach Sonic 2 Special Stage 1 as Knuckles and satisfy all three ring gates.",
+      "3": "Follow the densest ring lines, change lanes before bomb clusters, and enter each checkpoint with a surplus rather than the exact quota. The seventh successful trial completes this lock-on route's emerald set."
+     }
+    },
+    {
+     "id": "sk-knux2-special-2",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Sonic 2 Special Stage 2 Clear",
+     "missable": false,
+     "levels": {
+      "1": "Each checkpoint trial raises its ring requirement.",
+      "2": "Reach Sonic 2 Special Stage 2 as Knuckles and satisfy all three ring gates.",
+      "3": "Follow the densest ring lines, change lanes before bomb clusters, and enter each checkpoint with a surplus rather than the exact quota. The seventh successful trial completes this lock-on route's emerald set."
+     }
+    },
+    {
+     "id": "sk-knux2-special-3",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Sonic 2 Special Stage 3 Clear",
+     "missable": false,
+     "levels": {
+      "1": "Each checkpoint trial raises its ring requirement.",
+      "2": "Reach Sonic 2 Special Stage 3 as Knuckles and satisfy all three ring gates.",
+      "3": "Follow the densest ring lines, change lanes before bomb clusters, and enter each checkpoint with a surplus rather than the exact quota. The seventh successful trial completes this lock-on route's emerald set."
+     }
+    },
+    {
+     "id": "sk-knux2-special-4",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Sonic 2 Special Stage 4 Clear",
+     "missable": false,
+     "levels": {
+      "1": "Each checkpoint trial raises its ring requirement.",
+      "2": "Reach Sonic 2 Special Stage 4 as Knuckles and satisfy all three ring gates.",
+      "3": "Follow the densest ring lines, change lanes before bomb clusters, and enter each checkpoint with a surplus rather than the exact quota. The seventh successful trial completes this lock-on route's emerald set."
+     }
+    },
+    {
+     "id": "sk-knux2-special-5",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Sonic 2 Special Stage 5 Clear",
+     "missable": false,
+     "levels": {
+      "1": "Each checkpoint trial raises its ring requirement.",
+      "2": "Reach Sonic 2 Special Stage 5 as Knuckles and satisfy all three ring gates.",
+      "3": "Follow the densest ring lines, change lanes before bomb clusters, and enter each checkpoint with a surplus rather than the exact quota. The seventh successful trial completes this lock-on route's emerald set."
+     }
+    },
+    {
+     "id": "sk-knux2-special-6",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Sonic 2 Special Stage 6 Clear",
+     "missable": false,
+     "levels": {
+      "1": "Each checkpoint trial raises its ring requirement.",
+      "2": "Reach Sonic 2 Special Stage 6 as Knuckles and satisfy all three ring gates.",
+      "3": "Follow the densest ring lines, change lanes before bomb clusters, and enter each checkpoint with a surplus rather than the exact quota. The seventh successful trial completes this lock-on route's emerald set."
+     }
+    },
+    {
+     "id": "sk-knux2-special-7",
+     "type": "collectible",
+     "safe_type": "Emerald trial",
+     "label": "Sonic 2 Special Stage 7 Clear",
+     "missable": false,
+     "levels": {
+      "1": "Each checkpoint trial raises its ring requirement.",
+      "2": "Reach Sonic 2 Special Stage 7 as Knuckles and satisfy all three ring gates.",
+      "3": "Follow the densest ring lines, change lanes before bomb clusters, and enter each checkpoint with a surplus rather than the exact quota. The seventh successful trial completes this lock-on route's emerald set."
+     }
+    },
+    {
+     "id": "sk-knux2-seven-emeralds",
+     "type": "collectible",
+     "safe_type": "Completion set",
+     "label": "Knuckles in Sonic 2 Emerald Set",
+     "missable": false,
+     "levels": {
+      "1": "All seven checkpoint trials belong on one run state.",
+      "2": "Collect every Sonic 2 Chaos Emerald before the final ringless area.",
+      "3": "Use early zones to bank successful trials, revisiting later checkpoints after failures. Confirm seven emeralds, then collect 50 rings in a normal act and jump twice to demonstrate the lock-on transformation."
+     }
+    },
+    {
+     "id": "sk-knux2-complete",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Knuckles in Sonic 2 Complete Route",
+     "missable": true,
+     "levels": {
+      "1": "The lock-on campaign deserves both emerald states.",
+      "2": "Finish once below seven emeralds and once with the complete set.",
+      "3": "Back up before the final emerald and before the last ringless area. Clear the full zone list in both states, watch each complete credits presentation, and keep the two outcomes as separate evidence."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3k-before-starting",
+   "name": "Sonic 3 & Knuckles — Before Starting",
+   "location_cue": "the combined title and eight-slot data screen",
+   "note": "",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "s3k-boot",
+     "type": "interaction",
+     "safe_type": "Lock-on outcome",
+     "label": "Sonic 3 & Knuckles Boot",
+     "missable": false,
+     "levels": {
+      "1": "The largest lock-on image has its own title and save layout.",
+      "2": "Load the verified Sonic 3 combination and confirm eight save slots.",
+      "3": "Reach the combined title, open Data Select, and verify eight persistent slots with four character choices. Keep this SRAM separate from the standalone Sonic 3 and Sonic & Knuckles sessions."
+     }
+    },
+    {
+     "id": "s3k-sonic-tails-save",
+     "type": "optional",
+     "safe_type": "Character route",
+     "label": "Sonic & Tails Combined Save",
+     "missable": false,
+     "levels": {
+      "1": "Each selection changes reachable paths or mechanics.",
+      "2": "Create a dedicated Sonic 3 & Knuckles save for Sonic & Tails.",
+      "3": "Keep Sonic & Tails's emeralds, lives, continues, and completion branches isolated. Clear every stage available to this selection and use the completed-file selector only after its first full route clear."
+     }
+    },
+    {
+     "id": "s3k-sonic-save",
+     "type": "optional",
+     "safe_type": "Character route",
+     "label": "Sonic Alone Combined Save",
+     "missable": false,
+     "levels": {
+      "1": "Each selection changes reachable paths or mechanics.",
+      "2": "Create a dedicated Sonic 3 & Knuckles save for Sonic Alone.",
+      "3": "Keep Sonic Alone's emeralds, lives, continues, and completion branches isolated. Clear every stage available to this selection and use the completed-file selector only after its first full route clear."
+     }
+    },
+    {
+     "id": "s3k-tails-save",
+     "type": "optional",
+     "safe_type": "Character route",
+     "label": "Tails Alone Combined Save",
+     "missable": false,
+     "levels": {
+      "1": "Each selection changes reachable paths or mechanics.",
+      "2": "Create a dedicated Sonic 3 & Knuckles save for Tails Alone.",
+      "3": "Keep Tails Alone's emeralds, lives, continues, and completion branches isolated. Clear every stage available to this selection and use the completed-file selector only after its first full route clear."
+     }
+    },
+    {
+     "id": "s3k-knuckles-save",
+     "type": "optional",
+     "safe_type": "Character route",
+     "label": "Knuckles Alone Combined Save",
+     "missable": false,
+     "levels": {
+      "1": "Each selection changes reachable paths or mechanics.",
+      "2": "Create a dedicated Sonic 3 & Knuckles save for Knuckles Alone.",
+      "3": "Keep Knuckles Alone's emeralds, lives, continues, and completion branches isolated. Clear every stage available to this selection and use the completed-file selector only after its first full route clear."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3k-angel-island",
+   "name": "Combined — Angel Island Zone",
+   "location_cue": "the tropical shoreline and palm-covered jungle",
+   "note": "These locations are the combined-cartridge first half; movement and route access vary by the selected character.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "s3k-angel-island-act-1-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 1",
+     "missable": false,
+     "levels": {
+      "1": "Carry protection into the first mechanical gate.",
+      "2": "Take the Flame Shield from the ledge immediately before the gate.",
+      "3": "Enter with the Flame Shield, stay above the flamethrower, and strike the machine's upper body whenever it settles. Six clean hits open the route; never attack from underneath."
+     }
+    },
+    {
+     "id": "s3k-angel-island-a1-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "Explore below the early swinging-rope route.",
+      "2": "Near the beginning, drop to the lower path and check left of the large rock.",
+      "3": "After the first hill, let the weak floor drop you beside the swinging ropes. Face left and spin-dash through the grey boulder; the concealed room immediately behind it holds the Giant Ring."
+     }
+    },
+    {
+     "id": "s3k-angel-island-a1-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "A later cave hides a route beneath its obvious floor.",
+      "2": "After the environment changes, enter the cave, break through the lower floor, and work left.",
+      "3": "Continue past the cave's first barriers, then drop through the breakable floor to the lowest passage. Spin through the rocks on the left and use the vertical spring, steering aside so you land beside the ring instead of overshooting its chamber."
+     }
+    },
+    {
+     "id": "s3k-angel-island-act-2-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 2",
+     "missable": false,
+     "levels": {
+      "1": "The final platform has unsafe open edges.",
+      "2": "Leave the wooden bridge as soon as the encounter starts and fight from the solid centre.",
+      "3": "Move off the bridge before it collapses. Read which side of the waterfall opens, dodge the two cannon shots, then jump into the craft as its volley ends. Repeat for eight hits and never chase it over either edge."
+     }
+    },
+    {
+     "id": "s3k-angel-island-a2-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "The first fast tunnel passes a breakable room entrance.",
+      "2": "Roll through the winding tunnel, break the boulder at its exit, then turn back left.",
+      "3": "Stay curled through the opening tunnel so momentum breaks the boulder on the right. Stop immediately, reverse direction, and enter the room you just exposed; the Giant Ring is waiting to the left."
+     }
+    },
+    {
+     "id": "s3k-angel-island-a2-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "Search the bottom of the broad waterfall climb.",
+      "2": "At the wide waterfall with protruding blocks, enter the small pool at bottom right.",
+      "3": "Before climbing the waterfall, sink into its lower-right pool. Charge a spin-dash facing right and release into the curved wall; hold right through the rise to break into the hidden Giant Ring room."
+     }
+    },
+    {
+     "id": "s3k-angel-island-character-route-audit",
+     "type": "optional",
+     "safe_type": "Route audit",
+     "label": "Angel Island Character Routes",
+     "missable": false,
+     "levels": {
+      "1": "A second movement set opens passages the faster route can miss.",
+      "2": "Revisit both acts as Tails alone, then with Sonic and a controller-two helper.",
+      "3": "Use Tails' flight, swimming, and carrying in every vertical split; then repeat as Sonic alone for grounded-only paths. A cleared save permits act selection, so no new story run is required."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3k-hydrocity",
+   "name": "Combined — Hydrocity Zone",
+   "location_cue": "the submerged stone channels with rushing blue water",
+   "note": "These locations are the combined-cartridge first half; movement and route access vary by the selected character.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "s3k-hydrocity-act-1-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 1",
+     "missable": false,
+     "levels": {
+      "1": "The round chamber rewards patience between fast passes.",
+      "2": "Jump over the rolling mechanism, then attack when it rests on the centre column.",
+      "3": "Stay out of the water where possible. Clear each wall-to-wall sweep with one jump, then strike only after the four orbiting missiles stop at the centre column. Six hits finish the mechanism before drowning becomes a concern."
+     }
+    },
+    {
+     "id": "s3k-hydrocity-a1-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "A fragile upper path conceals a left-side landing.",
+      "2": "Take the high alternate route through the loop and stand on the left edge of the thin road.",
+      "3": "After the fan-and-belt route launches you through a loop, slow down on the narrow collapsing floor. Let its left edge give way and hold left throughout the fall to enter the Giant Ring alcove."
+     }
+    },
+    {
+     "id": "s3k-hydrocity-a1-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "Near the exit, inspect the last left-facing alcove before climbing.",
+      "2": "At the final ascent, walk left into the recess above the horizontal wall spring.",
+      "3": "Approach the wall spring slowly so it does not launch you past the opening. Step into the left alcove, jump above the spring, and enter the Giant Ring before allowing the spring to carry you upward."
+     }
+    },
+    {
+     "id": "s3k-hydrocity-act-2-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 2",
+     "missable": false,
+     "levels": {
+      "1": "Water movement creates the only safe attack height.",
+      "2": "Run away from the rising whirlpool, then use its collapse or bomb bursts as platforms.",
+      "3": "Keep moving while the propeller pulls water upward. When it stops, jump from the shrinking water column, or time a jump just before a dropped bomb bursts, to reach the cockpit. Land eight total hits without standing over an exploding bomb."
+     }
+    },
+    {
+     "id": "s3k-hydrocity-a2-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "The moving black platforms pass a concealed side opening.",
+      "2": "In the snaking-platform chamber, ride the highest platform to the left wall above the water.",
+      "3": "Remain on the uppermost segment while the linked black platforms snake around the chamber. At its highest leftward pass, jump into the wall alcove just above the waterline to reach the Giant Ring."
+     }
+    },
+    {
+     "id": "s3k-hydrocity-a2-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "Inspect the twin-column shaft shortly before the final route.",
+      "2": "Ride the right blue column to its highest point and jump into the wall.",
+      "3": "Where two vertical columns move against opposite walls, board the right one. Wait for its absolute peak, then jump right at full height; the hidden alcove above the ordinary corridor contains the ring."
+     }
+    },
+    {
+     "id": "s3k-hydrocity-character-route-audit",
+     "type": "optional",
+     "safe_type": "Route audit",
+     "label": "Hydrocity Character Routes",
+     "missable": false,
+     "levels": {
+      "1": "A second movement set opens passages the faster route can miss.",
+      "2": "Revisit both acts as Tails alone, then with Sonic and a controller-two helper.",
+      "3": "Use Tails' flight, swimming, and carrying in every vertical split; then repeat as Sonic alone for grounded-only paths. A cleared save permits act selection, so no new story run is required."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3k-marble-garden",
+   "name": "Combined — Marble Garden Zone",
+   "location_cue": "the grassy ruins with stone pillars and spinning tops",
+   "note": "These locations are the combined-cartridge first half; movement and route access vary by the selected character.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "s3k-marble-garden-act-1-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 1",
+     "missable": false,
+     "levels": {
+      "1": "The drill tips are dangerous; its centre is not.",
+      "2": "Dodge the ceiling drop and falling spikes, then strike while the drills rotate upward.",
+      "3": "Attack the thin centre only when the drill points face away. During the ceiling phase, ignore harmless rubble, avoid pointed debris, and sidestep the downward plunge. Six centre hits clear the gate."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-a1-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "The upper route hides an opening opposite its turn.",
+      "2": "On the alternate route's first spin-dash curve, stop before travelling left and face right.",
+      "3": "At the curve beside a Spiker and an invincibility monitor, charge toward the right-hand wall instead of continuing left. The wall is false and opens directly into the first ring room."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-a1-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "A ceiling passage links two separated corridors.",
+      "2": "From the first ring, fly through the hidden ceiling, cross the ring corridor, then rise again.",
+      "3": "With Tails, ascend through the unmarked ceiling above Ring #1, travel past the loose rings and monitors, and fly through the second opening. Sonic can instead enter later from the hidden wall beside the speed monitor."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-a1-ring-3",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #3",
+     "missable": false,
+     "levels": {
+      "1": "A high ledge overlooks the crusher route.",
+      "2": "Beyond the drill machine and paired crushers, look to the upper-left ledge opposite a Flame Shield.",
+      "3": "Climb to the Flame Shield ledge, take a running jump onto the chained rotating platforms, then leap left at their high point. The Giant Ring sits on the isolated upper-left shelf."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-a1-ring-4",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #4",
+     "missable": false,
+     "levels": {
+      "1": "A spinning top can carry you beyond a tempting ledge.",
+      "2": "Below the Flame Shield ledge, ride the grounded top toward the room's upper-right corner.",
+      "3": "Mount the spinning top and steer it back around the Flame Shield area. Keep rising toward the upper-right opening; a narrow corridor containing a life monitor ends at the Giant Ring chamber."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-a1-ring-5",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #5",
+     "missable": false,
+     "levels": {
+      "1": "One spinning-top climb has a hidden destination on its starting side.",
+      "2": "After the loop and tall blue pillar, use the next top but remain against the upper-left wall.",
+      "3": "Ride the top up the left wall. Do not redirect toward the normal right-hand ledge; continue pressing into the upper-left corner until the false wall admits you to the ring room."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-a1-ring-6",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #6",
+     "missable": false,
+     "levels": {
+      "1": "The second top crosses above a hazardous floor worth inspecting.",
+      "2": "Instead of hovering right from the second spinning top, drop into the long sludge pit.",
+      "3": "Dismount at the bottom before the top carries you to the next ledge. Land safely in the sludge section and move all the way left; the corner wall hides the Giant Ring."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-a1-ring-7",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #7",
+     "missable": false,
+     "levels": {
+      "1": "The first checkpoint split rewards its lower branch.",
+      "2": "Take the descending path, then use the horizontal red spring at the later curve.",
+      "3": "From the checkpoint beside the steep fork, descend through the loop and blue pillar. Hit the red spring facing the curve; maintain speed through the launch and land on the upper-right shelf beyond the spikes."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-a1-ring-8",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #8",
+     "missable": false,
+     "levels": {
+      "1": "The upper fork crosses a spike pit with one extra landing.",
+      "2": "At the checkpoint split, climb the upper road and continue past the stone face.",
+      "3": "After the path bends left, cross the long spike pit using the moving platforms. Do not drop at the far end; use the trio of rotating platforms to enter the hidden left wall."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-act-2-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 2",
+     "missable": false,
+     "levels": {
+      "1": "The moving arena requires controlling both flight and attack height.",
+      "2": "Tap Up to lift the carrier, then jump from it only when the drill approach is clear.",
+      "3": "With Sonic, steer Tails using the directional pad and jump off to strike above or behind the drill. Tails alone must attack with his spinning tails from underneath. Track the four approach directions and total eight hits."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-a2-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "The highest shortcut has a concealed exit from its long pillar.",
+      "2": "Take Tails' upper route; after the loop, leave the blue pillar to the left.",
+      "3": "Fly to the top route, pass through the loop, and begin descending the long blue pillar. Jump left before it ejects you right, then drop into the small opening and walk through the right wall."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-a2-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "The main path hides a room below a rising platform.",
+      "2": "After the first indoor section, search beneath the lift beside a Spiker and crusher.",
+      "3": "Ignore the faster branch and drop under the rising platform. Pass the crusher, destroy the Spiker, and enter the room to its right. The enemy was covering the spring needed to leave."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-a2-ring-3",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #3",
+     "missable": false,
+     "levels": {
+      "1": "The lowest spinning-top shaft has a side exit at floor level.",
+      "2": "Stay on the full loop-and-pillar route until a grounded top enters a tall dark shaft.",
+      "3": "Dismount before the top climbs. At the bottom of the shaft, walk left into the low corridor rather than rising; its end wall conceals the final ring room."
+     }
+    },
+    {
+     "id": "s3k-marble-garden-character-route-audit",
+     "type": "optional",
+     "safe_type": "Route audit",
+     "label": "Marble Garden Character Routes",
+     "missable": false,
+     "levels": {
+      "1": "A second movement set opens passages the faster route can miss.",
+      "2": "Revisit both acts as Tails alone, then with Sonic and a controller-two helper.",
+      "3": "Use Tails' flight, swimming, and carrying in every vertical split; then repeat as Sonic alone for grounded-only paths. A cleared save permits act selection, so no new story run is required."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3k-carnival-night",
+   "name": "Combined — Carnival Night Zone",
+   "location_cue": "the neon carnival interior with balloons and striped drums",
+   "note": "These locations are the combined-cartridge first half; movement and route access vary by the selected character.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "s3k-carnival-night-act-1-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 1",
+     "missable": false,
+     "levels": {
+      "1": "Protect the descending floor before it develops too many gaps.",
+      "2": "Open the upper machine so its own bouncing spinner can strike it.",
+      "3": "Stand left when the spinner drops right. Jump into the moving upper machine to open it, then let the spinner rebound into the exposed centre. Repeat four times while staying off the spinner's underside and preserving floor blocks."
+     }
+    },
+    {
+     "id": "s3k-carnival-night-a1-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "Check beneath an early striped pole instead of riding it onward.",
+      "2": "Use the earliest diagonal striped pole: fall underneath, then climb the curved wall on the left.",
+      "3": "Ride that pole downward only far enough to jump beneath it. Carry momentum around the lower bend and up the left side, where the hidden route feeds directly into the ring room."
+     }
+    },
+    {
+     "id": "s3k-carnival-night-a1-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "A hidden corridor joins the aerial shortcut to the normal route.",
+      "2": "With Tails, pass the spikes on the upper shortcut and enter the right wall.",
+      "3": "Fly through the early shortcut beyond the spike line and continue into the false right wall. Sonic alone can enter the opposite end just left of the descending platform and large wheel before the first checkpoint."
+     }
+    },
+    {
+     "id": "s3k-carnival-night-a1-ring-3",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #3",
+     "missable": false,
+     "levels": {
+      "1": "A curved return to the main route is itself hollow.",
+      "2": "On Sonic's early high shortcut, spin-dash into the right wall immediately below the checkpoint.",
+      "3": "Use the large wheel to reach the upper-right ledge, then spin-dash up its curve. Hold right through the apparent wall instead of exiting upward; the ring chamber is embedded inside it."
+     }
+    },
+    {
+     "id": "s3k-carnival-night-a1-ring-4",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #4",
+     "missable": false,
+     "levels": {
+      "1": "Stay high when the route reaches its first tall black cylinders.",
+      "2": "Before entering the yellow tubes, check the right wall beneath the wall spikes.",
+      "3": "After the first checkpoint, cross the narrow upright platforms leading to the tall cylinders. Enter the false right wall below the spikes; dropping into the yellow tube network closes this approach."
+     }
+    },
+    {
+     "id": "s3k-carnival-night-a1-ring-5",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #5",
+     "missable": false,
+     "levels": {
+      "1": "The lowest three-cylinder room has a shield guarding a passage.",
+      "2": "Descend to the large room with three tall cylinders and inspect its right ledge.",
+      "3": "From Ring #4, continue downward whenever the path allows. In the three-cylinder chamber, reach the ledge on the right and pass through the wall directly behind the Water Shield monitor."
+     }
+    },
+    {
+     "id": "s3k-carnival-night-act-2-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 2",
+     "missable": false,
+     "levels": {
+      "1": "The lower orb is a hazard until it reconnects.",
+      "2": "Keep away during the magnetic pull, then attack as the craft descends to retrieve its orb.",
+      "3": "Jump repeatedly while the electrical field drags you across the floor. Once it ends, cross over the detached orb and strike the descending cockpit above its arms. Repeat that recovery window for eight hits."
+     }
+    },
+    {
+     "id": "s3k-carnival-night-a2-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "The first pole shortcut has a lower companion corridor.",
+      "2": "Jump from the long striped pole to the ledge below the shortcut entrance.",
+      "3": "Leap from the striped pole into the lower corridor. Alternatively, reach the first cannon, enter the left wall, open the twenty-ring and Water Shield monitors, then drop through that room's floor."
+     }
+    },
+    {
+     "id": "s3k-carnival-night-a2-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "The required rotating drums lift you beside a false wall.",
+      "2": "In the tall drum room, reach the platform holding a Flame Shield and ten rings.",
+      "3": "Control the two vertical drums by alternately pressing down and up. When you reach the Flame Shield platform, walk into the left wall; the Giant Ring chamber is on the same level."
+     }
+    },
+    {
+     "id": "s3k-carnival-night-a2-ring-3",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #3",
+     "missable": false,
+     "levels": {
+      "1": "A moving drum masks an opening during the next elevator climb.",
+      "2": "Above the previous ring, enter the left wall of the long elevator shaft.",
+      "3": "Ascend the shaft until the crushing drum passes the left-side opening. Move through only while the drum is rising away; being pinned between it and the floor is fatal."
+     }
+    },
+    {
+     "id": "s3k-carnival-night-a2-ring-4",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #4",
+     "missable": false,
+     "levels": {
+      "1": "Late balloons lead higher than the ordinary exit.",
+      "2": "Before the final checkpoint, climb every balloon in the tall chamber and aim top right.",
+      "3": "Bounce upward without missing a balloon, because this room may not reset them conveniently. From the highest balloon, steer into the concealed corridor at the upper-right ceiling."
+     }
+    },
+    {
+     "id": "s3k-carnival-night-character-route-audit",
+     "type": "optional",
+     "safe_type": "Route audit",
+     "label": "Carnival Night Character Routes",
+     "missable": false,
+     "levels": {
+      "1": "A second movement set opens passages the faster route can miss.",
+      "2": "Revisit both acts as Tails alone, then with Sonic and a controller-two helper.",
+      "3": "Use Tails' flight, swimming, and carrying in every vertical split; then repeat as Sonic alone for grounded-only paths. A cleared save permits act selection, so no new story run is required."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3k-icecap",
+   "name": "Combined — IceCap Zone",
+   "location_cue": "the snowy mountain and blue ice caverns",
+   "note": "These locations are the combined-cartridge first half; movement and route access vary by the selected character.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "s3k-icecap-act-1-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 1",
+     "missable": false,
+     "levels": {
+      "1": "Wait out the protective orbit before attacking.",
+      "2": "Stay in a corner during the snowball sweep, then strike after the second pass.",
+      "3": "Do not challenge the eight orbiting snowballs. Let the machine cross twice, move under it when the balls launch upward, and land one or two hits before they fall. Six hits clear the gate; Lightning Shield extends reach."
+     }
+    },
+    {
+     "id": "s3k-icecap-a1-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "An early collapsible floor distracts from the wall beside it.",
+      "2": "After the checkpoint and four breakable blocks, ignore the button and enter the right wall.",
+      "3": "Approach the thin floor beneath the small pointer mechanism, but do not activate its collapse. Continue directly into the ice wall on the right to find the ring room."
+     }
+    },
+    {
+     "id": "s3k-icecap-a1-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "One wall in the repeating tumble is an opening, not an obstacle.",
+      "2": "During the endless slope loop, jump from a left-hand slope toward the right wall.",
+      "3": "Watch for the transfer where the right wall contains a small blue recess rather than the true exit platform. Jump as you enter that left slope and hold right; the loop repeats until you succeed."
+     }
+    },
+    {
+     "id": "s3k-icecap-act-2-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 2",
+     "missable": false,
+     "levels": {
+      "1": "The safest attack window is opposite an active side nozzle.",
+      "2": "Use the hanging platform, then jump upward while a side freeze blast is firing.",
+      "3": "Board the platform and wait for either side nozzle to fire. Jump past the quiet centre nozzle and hit the cockpit, retreating before the centre activates. After six hits the platform falls away; attack the exposed front twice more."
+     }
+    },
+    {
+     "id": "s3k-icecap-a2-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "A sinking ice ledge reveals a doorway below the waterline.",
+      "2": "After the two penguins, remain on the small ice ledge until it submerges.",
+      "3": "Follow the mid-act route through three loops to the penguin platform. Step onto the sinking ledge beside it, wait until the right wall aligns, then jump through. A red spring directly below returns you afterward."
+     }
+    },
+    {
+     "id": "s3k-icecap-a2-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "The final catapult can reach a second landing above the route.",
+      "2": "After the late loops and short ramp, use the catapult toward the upper-right platform.",
+      "3": "Carry speed through the final loops into the catapult, then steer right at its release. Land above the normal path and walk into the nearby wall opening to reach the last Giant Ring."
+     }
+    },
+    {
+     "id": "s3k-icecap-character-route-audit",
+     "type": "optional",
+     "safe_type": "Route audit",
+     "label": "IceCap Character Routes",
+     "missable": false,
+     "levels": {
+      "1": "A second movement set opens passages the faster route can miss.",
+      "2": "Revisit both acts as Tails alone, then with Sonic and a controller-two helper.",
+      "3": "Use Tails' flight, swimming, and carrying in every vertical split; then repeat as Sonic alone for grounded-only paths. A cleared save permits act selection, so no new story run is required."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3k-launch-base",
+   "name": "Combined — Launch Base Zone",
+   "location_cue": "the yellow-and-purple machinery spread across a lake",
+   "note": "These locations are the combined-cartridge first half; movement and route access vary by the selected character.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "s3k-launch-base-act-1-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 1",
+     "missable": false,
+     "levels": {
+      "1": "Wait until the swinging weapons fold inward.",
+      "2": "Attack the centre only after both spike arms retract.",
+      "3": "Keep the mechanism following you until its two spikeballs return to the body. Jump into the upper centre without touching the lower tip. Three hits remove one arm; three more clear the gate."
+     }
+    },
+    {
+     "id": "s3k-launch-base-a1-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "The first rotating cylinder has a useful space beneath it.",
+      "2": "Drop below the cylinder, move left, and stand on the rising guillotine.",
+      "3": "At the first large cylinder, descend rather than crossing over it. Walk left to the purple wall tunnel and ride the adjacent guillotine upward until you can jump into the ring corridor."
+     }
+    },
+    {
+     "id": "s3k-launch-base-a1-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "Tails' first elevator route continues behind its apparent exit.",
+      "2": "As Tails, ride the first elevator upward, take the spinning cup, then fly left.",
+      "3": "Exit the elevator's upper room and use the corkscrew cup. At its peak, ignore the indicated rightward path; fly left across the collapsing ledge and enter the purple corridor. Other characters can backtrack here after routes rejoin."
+     }
+    },
+    {
+     "id": "s3k-launch-base-a1-ring-3",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 1 Giant Ring #3",
+     "missable": false,
+     "levels": {
+      "1": "A red spring above a flamethrower begins the hidden route.",
+      "2": "After the long slopes, use that spring and ride the falling platforms left.",
+      "3": "Find a low wall-mounted flame jet whose top supports a red spring. Bounce up, cross both descending platforms toward the left, pass the remaining fire jets, and leap into the purple opening beyond them."
+     }
+    },
+    {
+     "id": "s3k-launch-base-act-2-clear",
+     "type": "interaction",
+     "safe_type": "Act completion",
+     "label": "Clear Act 2",
+     "missable": false,
+     "levels": {
+      "1": "Conserve time and rings for several consecutive mechanical gates.",
+      "2": "The act timer continues through all three arenas; enter the first with several minutes available.",
+      "3": "First, use the hinged hatch as a platform and hit the cockpit eight times while avoiding alternating black shots. Next, jump above paired lasers: four hits remove each column and a ninth ends it. Finally, stand opposite each charge, jump above the hands but below the roof spikes, and land eight precise cockpit hits. A grab-and-slam strips even the transformed state."
+     }
+    },
+    {
+     "id": "s3k-launch-base-a2-ring-1",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #1",
+     "missable": false,
+     "levels": {
+      "1": "The first open water hides a doorway behind your entry point.",
+      "2": "After the opening cup, drop between the two platforms, swim right, then turn left underwater.",
+      "3": "Leave the starting cup, fall through the platform gap, and enter the water on the right. Immediately reverse into the submerged left wall; the hidden room begins almost beneath the place where you landed."
+     }
+    },
+    {
+     "id": "s3k-launch-base-a2-ring-2",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #2",
+     "missable": false,
+     "levels": {
+      "1": "A lower route beneath a long cylinder ends at a wall opening.",
+      "2": "When the main path turns left along the rotating cylinder, drop below it and follow the lower branch.",
+      "3": "Stay on the lower route until a corkscrew cup lifts you. At the top, face the ring tunnel in the left wall; Sonic should spin-dash from the right ledge and add only a tiny jump to enter cleanly."
+     }
+    },
+    {
+     "id": "s3k-launch-base-a2-ring-3",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #3",
+     "missable": false,
+     "levels": {
+      "1": "The upper late branch contains two stacked cylinders with space between them.",
+      "2": "Take the high curve and two cups, then aim between the cylinders at the far-right wall.",
+      "3": "Maintain speed up the high branch, ride both corkscrew cups, and stop before the paired rotating cylinders. Cross through their middle gap and continue into the false wall on the far right."
+     }
+    },
+    {
+     "id": "s3k-launch-base-a2-ring-4",
+     "type": "collectible",
+     "safe_type": "Hidden gateway",
+     "label": "Act 2 Giant Ring #4",
+     "missable": false,
+     "levels": {
+      "1": "A long purple wall tunnel appears only briefly beside a speed strip.",
+      "2": "On the late main route, jump into the protruding purple tunnel before the floor zipper launches you away.",
+      "3": "Approach the visible purple passage from the main path, or shortly after Tails' shortcut rejoins it. Jump early and hold toward the wall; touching the speed strip first removes the opportunity on that pass."
+     }
+    },
+    {
+     "id": "s3k-launch-base-life-loop",
+     "type": "secret",
+     "safe_type": "Resource technique",
+     "label": "Alarm-Bird Life Loop",
+     "missable": false,
+     "levels": {
+      "1": "Two early alarm lights can sustain a score chain.",
+      "2": "Stand between the alarm posts near Act 1's start and hold a charged spin-dash.",
+      "3": "Trigger the flying enemies, position just right of centre between the alarms, and keep Down plus a jump button held without releasing the dash. Repeated collisions build the score chain into extra lives; stop before the act timer becomes unsafe."
+     }
+    },
+    {
+     "id": "s3k-launch-base-character-route-audit",
+     "type": "optional",
+     "safe_type": "Route audit",
+     "label": "Launch Base Character Routes",
+     "missable": false,
+     "levels": {
+      "1": "A second movement set opens passages the faster route can miss.",
+      "2": "Revisit both acts as Tails alone, then with Sonic and a controller-two helper.",
+      "3": "Use Tails' flight, swimming, and carrying in every vertical split; then repeat as Sonic alone for grounded-only paths. A cleared save permits act selection, so no new story run is required."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3k-second-half-rings",
+   "name": "Sonic 3 & Knuckles — Second Half",
+   "location_cue": "the forest-to-mechanical route beginning after the first six combined zones",
+   "note": "",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "s3k-second-half-audit",
+     "type": "optional",
+     "safe_type": "Route audit",
+     "label": "Second-Half Character Audit",
+     "missable": false,
+     "levels": {
+      "1": "Every combined character changes at least one path or ability.",
+      "2": "Replay the second-half areas as Sonic & Tails, Sonic, Tails, and Knuckles.",
+      "3": "Use the Giant Ring cards in the standalone zone areas above, including both combined-only Mushroom openings and the Tails-only Lava chamber. Clear every act available to each character and record route-exclusive barriers, climbs, flights, and endings."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3k-super-emeralds",
+   "name": "Sonic 3 & Knuckles — Super Emeralds",
+   "location_cue": "the seven-stone altar reached through flashing Giant Rings",
+   "note": "Back up before the first altar conversion.",
+   "save_backup": {
+    "title": "Back up before altar conversion",
+    "why": "Conversion changes the save's emerald state and temporarily removes incomplete first-tier forms."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "s3k-altar-conversion",
+     "type": "interaction",
+     "safe_type": "Emerald conversion",
+     "label": "Super-Emerald Altar Conversion",
+     "missable": true,
+     "levels": {
+      "1": "The first flashing gateway changes the saved emerald state.",
+      "2": "At combined Mushroom Hill's opening, enter the flashing Giant Ring after collecting Chaos Emeralds.",
+      "3": "Back up the save first. Enter the flashing ring to reach the altar; every collected Chaos Emerald becomes a dormant Super Emerald. Leaving with an incomplete conversion temporarily removes the corresponding first-tier transformation until the second set is awakened."
+     }
+    },
+    {
+     "id": "s3k-super-stage-1",
+     "type": "collectible",
+     "safe_type": "Super-Emerald trial",
+     "label": "Super Emerald Trial 1 Clear",
+     "missable": false,
+     "levels": {
+      "1": "One dormant altar stone opens a harder sphere layout.",
+      "2": "Select the matching altar stone and clear Sonic & Knuckles Special Stage 1.",
+      "3": "Collect every blue sphere without touching red. Build rings from complete blue perimeters, use bumpers only when their exit line is safe, and return to the altar with this stone visibly coloured."
+     }
+    },
+    {
+     "id": "s3k-super-stage-1-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Super Emerald Trial 1 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The awakened stone does not prove every ring was collected.",
+      "2": "Repeat Super Emerald Trial 1 and take every ring before its last blue sphere.",
+      "3": "Plan the ring sweep first, convert all valid blocks, and reserve one accessible blue sphere. Finish only after the ring counter confirms none remain; preserve the Perfect result beside the ordinary clear."
+     }
+    },
+    {
+     "id": "s3k-super-stage-2",
+     "type": "collectible",
+     "safe_type": "Super-Emerald trial",
+     "label": "Super Emerald Trial 2 Clear",
+     "missable": false,
+     "levels": {
+      "1": "One dormant altar stone opens a harder sphere layout.",
+      "2": "Select the matching altar stone and clear Sonic & Knuckles Special Stage 2.",
+      "3": "Collect every blue sphere without touching red. Build rings from complete blue perimeters, use bumpers only when their exit line is safe, and return to the altar with this stone visibly coloured."
+     }
+    },
+    {
+     "id": "s3k-super-stage-2-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Super Emerald Trial 2 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The awakened stone does not prove every ring was collected.",
+      "2": "Repeat Super Emerald Trial 2 and take every ring before its last blue sphere.",
+      "3": "Plan the ring sweep first, convert all valid blocks, and reserve one accessible blue sphere. Finish only after the ring counter confirms none remain; preserve the Perfect result beside the ordinary clear."
+     }
+    },
+    {
+     "id": "s3k-super-stage-3",
+     "type": "collectible",
+     "safe_type": "Super-Emerald trial",
+     "label": "Super Emerald Trial 3 Clear",
+     "missable": false,
+     "levels": {
+      "1": "One dormant altar stone opens a harder sphere layout.",
+      "2": "Select the matching altar stone and clear Sonic & Knuckles Special Stage 3.",
+      "3": "Collect every blue sphere without touching red. Build rings from complete blue perimeters, use bumpers only when their exit line is safe, and return to the altar with this stone visibly coloured."
+     }
+    },
+    {
+     "id": "s3k-super-stage-3-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Super Emerald Trial 3 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The awakened stone does not prove every ring was collected.",
+      "2": "Repeat Super Emerald Trial 3 and take every ring before its last blue sphere.",
+      "3": "Plan the ring sweep first, convert all valid blocks, and reserve one accessible blue sphere. Finish only after the ring counter confirms none remain; preserve the Perfect result beside the ordinary clear."
+     }
+    },
+    {
+     "id": "s3k-super-stage-4",
+     "type": "collectible",
+     "safe_type": "Super-Emerald trial",
+     "label": "Super Emerald Trial 4 Clear",
+     "missable": false,
+     "levels": {
+      "1": "One dormant altar stone opens a harder sphere layout.",
+      "2": "Select the matching altar stone and clear Sonic & Knuckles Special Stage 4.",
+      "3": "Collect every blue sphere without touching red. Build rings from complete blue perimeters, use bumpers only when their exit line is safe, and return to the altar with this stone visibly coloured."
+     }
+    },
+    {
+     "id": "s3k-super-stage-4-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Super Emerald Trial 4 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The awakened stone does not prove every ring was collected.",
+      "2": "Repeat Super Emerald Trial 4 and take every ring before its last blue sphere.",
+      "3": "Plan the ring sweep first, convert all valid blocks, and reserve one accessible blue sphere. Finish only after the ring counter confirms none remain; preserve the Perfect result beside the ordinary clear."
+     }
+    },
+    {
+     "id": "s3k-super-stage-5",
+     "type": "collectible",
+     "safe_type": "Super-Emerald trial",
+     "label": "Super Emerald Trial 5 Clear",
+     "missable": false,
+     "levels": {
+      "1": "One dormant altar stone opens a harder sphere layout.",
+      "2": "Select the matching altar stone and clear Sonic & Knuckles Special Stage 5.",
+      "3": "Collect every blue sphere without touching red. Build rings from complete blue perimeters, use bumpers only when their exit line is safe, and return to the altar with this stone visibly coloured."
+     }
+    },
+    {
+     "id": "s3k-super-stage-5-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Super Emerald Trial 5 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The awakened stone does not prove every ring was collected.",
+      "2": "Repeat Super Emerald Trial 5 and take every ring before its last blue sphere.",
+      "3": "Plan the ring sweep first, convert all valid blocks, and reserve one accessible blue sphere. Finish only after the ring counter confirms none remain; preserve the Perfect result beside the ordinary clear."
+     }
+    },
+    {
+     "id": "s3k-super-stage-6",
+     "type": "collectible",
+     "safe_type": "Super-Emerald trial",
+     "label": "Super Emerald Trial 6 Clear",
+     "missable": false,
+     "levels": {
+      "1": "One dormant altar stone opens a harder sphere layout.",
+      "2": "Select the matching altar stone and clear Sonic & Knuckles Special Stage 6.",
+      "3": "Collect every blue sphere without touching red. Build rings from complete blue perimeters, use bumpers only when their exit line is safe, and return to the altar with this stone visibly coloured."
+     }
+    },
+    {
+     "id": "s3k-super-stage-6-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Super Emerald Trial 6 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The awakened stone does not prove every ring was collected.",
+      "2": "Repeat Super Emerald Trial 6 and take every ring before its last blue sphere.",
+      "3": "Plan the ring sweep first, convert all valid blocks, and reserve one accessible blue sphere. Finish only after the ring counter confirms none remain; preserve the Perfect result beside the ordinary clear."
+     }
+    },
+    {
+     "id": "s3k-super-stage-7",
+     "type": "collectible",
+     "safe_type": "Super-Emerald trial",
+     "label": "Super Emerald Trial 7 Clear",
+     "missable": false,
+     "levels": {
+      "1": "One dormant altar stone opens a harder sphere layout.",
+      "2": "Select the matching altar stone and clear Sonic & Knuckles Special Stage 7.",
+      "3": "Collect every blue sphere without touching red. Build rings from complete blue perimeters, use bumpers only when their exit line is safe, and return to the altar with this stone visibly coloured."
+     }
+    },
+    {
+     "id": "s3k-super-stage-7-perfect",
+     "type": "optional",
+     "safe_type": "Perfect trial",
+     "label": "Super Emerald Trial 7 Perfect",
+     "missable": false,
+     "levels": {
+      "1": "The awakened stone does not prove every ring was collected.",
+      "2": "Repeat Super Emerald Trial 7 and take every ring before its last blue sphere.",
+      "3": "Plan the ring sweep first, convert all valid blocks, and reserve one accessible blue sphere. Finish only after the ring counter confirms none remain; preserve the Perfect result beside the ordinary clear."
+     }
+    },
+    {
+     "id": "s3k-seven-super-emeralds",
+     "type": "collectible",
+     "safe_type": "Completion set",
+     "label": "Seven Super Emeralds",
+     "missable": false,
+     "levels": {
+      "1": "All seven dormant stones must be awakened on one save.",
+      "2": "Clear the complete second set of sphere trials after altar conversion.",
+      "3": "Re-enter later Giant Rings to return to the altar, choose every remaining grey stone, and clear its trial. Confirm all seven stones are coloured and the central emerald responds before attempting the final branches."
+     }
+    },
+    {
+     "id": "s3k-hyper-sonic",
+     "type": "upgrade",
+     "safe_type": "Transformation",
+     "label": "Hyper Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Sonic's complete second set upgrades his airborne input.",
+      "2": "With seven Super Emeralds and fifty rings, jump twice as Sonic.",
+      "3": "Activate the state in open space. A further aerial input performs the flash movement and destroys nearby ordinary enemies, while the ring counter drains continuously. Crushing, pits, and scripted grabs remain unsafe."
+     }
+    },
+    {
+     "id": "s3k-hyper-knuckles",
+     "type": "upgrade",
+     "safe_type": "Transformation",
+     "label": "Hyper Knuckles",
+     "missable": false,
+     "levels": {
+      "1": "Knuckles' second set strengthens glide impacts.",
+      "2": "With seven Super Emeralds and fifty rings, jump twice as Knuckles.",
+      "3": "Transform before a broad climb, glide into a wall at speed, and verify the screen-shake attack. Use the faster movement to audit route splits, but retain rings because the form ends when the counter reaches zero."
+     }
+    },
+    {
+     "id": "s3k-super-tails",
+     "type": "upgrade",
+     "safe_type": "Transformation",
+     "label": "Super Tails",
+     "missable": false,
+     "levels": {
+      "1": "Tails receives his transformation only from the second set.",
+      "2": "With seven Super Emeralds and fifty rings, jump twice as Tails.",
+      "3": "Activate after reaching 50 rings and confirm the empowered companion birds appear. Keep moving while the counter drains; ordinary Chaos Emeralds alone do not unlock this form in the combined cartridge."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3k-completion-branches",
+   "name": "Sonic 3 & Knuckles — Completion Branches",
+   "location_cue": "the closing mechanical route available to the selected character",
+   "note": "Preserve three emerald-state branches for every character selection.",
+   "save_backup": {
+    "title": "Back up every character save",
+    "why": "Altar conversion and final emerald collection permanently alter the branch state."
+   },
+   "point_of_no_return": {
+    "title": "Character closing-route commitment",
+    "why": "The final sequence uses the save's current emerald state for its completion presentation."
+   },
+   "items": [
+    {
+     "id": "s3k-sonic-tails-standard-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Sonic & Tails — Standard Branch",
+     "missable": true,
+     "levels": {
+      "1": "Saved emerald state changes this route's completion presentation.",
+      "2": "Finish the Sonic & Tails route with fewer than seven Chaos Emeralds.",
+      "3": "Restore the matching pre-branch backup, complete every remaining mechanical arena available to this character, and watch the full credits presentation. Store this result separately before changing the save's emerald state."
+     }
+    },
+    {
+     "id": "s3k-sonic-tails-chaos-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Sonic & Tails — Chaos-Set Branch",
+     "missable": true,
+     "levels": {
+      "1": "Saved emerald state changes this route's completion presentation.",
+      "2": "Finish the Sonic & Tails route with all seven Chaos Emeralds before altar completion.",
+      "3": "Restore the matching pre-branch backup, complete every remaining mechanical arena available to this character, and watch the full credits presentation. Store this result separately before changing the save's emerald state."
+     }
+    },
+    {
+     "id": "s3k-sonic-tails-super-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Sonic & Tails — Super-Set Branch",
+     "missable": true,
+     "levels": {
+      "1": "Saved emerald state changes this route's completion presentation.",
+      "2": "Finish the Sonic & Tails route with all seven Super Emeralds awakened.",
+      "3": "Restore the matching pre-branch backup, complete every remaining mechanical arena available to this character, and watch the full credits presentation. Store this result separately before changing the save's emerald state."
+     }
+    },
+    {
+     "id": "s3k-sonic-standard-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Sonic Alone — Standard Branch",
+     "missable": true,
+     "levels": {
+      "1": "Saved emerald state changes this route's completion presentation.",
+      "2": "Finish the Sonic Alone route with fewer than seven Chaos Emeralds.",
+      "3": "Restore the matching pre-branch backup, complete every remaining mechanical arena available to this character, and watch the full credits presentation. Store this result separately before changing the save's emerald state."
+     }
+    },
+    {
+     "id": "s3k-sonic-chaos-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Sonic Alone — Chaos-Set Branch",
+     "missable": true,
+     "levels": {
+      "1": "Saved emerald state changes this route's completion presentation.",
+      "2": "Finish the Sonic Alone route with all seven Chaos Emeralds before altar completion.",
+      "3": "Restore the matching pre-branch backup, complete every remaining mechanical arena available to this character, and watch the full credits presentation. Store this result separately before changing the save's emerald state."
+     }
+    },
+    {
+     "id": "s3k-sonic-super-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Sonic Alone — Super-Set Branch",
+     "missable": true,
+     "levels": {
+      "1": "Saved emerald state changes this route's completion presentation.",
+      "2": "Finish the Sonic Alone route with all seven Super Emeralds awakened.",
+      "3": "Restore the matching pre-branch backup, complete every remaining mechanical arena available to this character, and watch the full credits presentation. Store this result separately before changing the save's emerald state."
+     }
+    },
+    {
+     "id": "s3k-tails-standard-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Tails Alone — Standard Branch",
+     "missable": true,
+     "levels": {
+      "1": "Saved emerald state changes this route's completion presentation.",
+      "2": "Finish the Tails Alone route with fewer than seven Chaos Emeralds.",
+      "3": "Restore the matching pre-branch backup, complete every remaining mechanical arena available to this character, and watch the full credits presentation. Store this result separately before changing the save's emerald state."
+     }
+    },
+    {
+     "id": "s3k-tails-chaos-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Tails Alone — Chaos-Set Branch",
+     "missable": true,
+     "levels": {
+      "1": "Saved emerald state changes this route's completion presentation.",
+      "2": "Finish the Tails Alone route with all seven Chaos Emeralds before altar completion.",
+      "3": "Restore the matching pre-branch backup, complete every remaining mechanical arena available to this character, and watch the full credits presentation. Store this result separately before changing the save's emerald state."
+     }
+    },
+    {
+     "id": "s3k-tails-super-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Tails Alone — Super-Set Branch",
+     "missable": true,
+     "levels": {
+      "1": "Saved emerald state changes this route's completion presentation.",
+      "2": "Finish the Tails Alone route with all seven Super Emeralds awakened.",
+      "3": "Restore the matching pre-branch backup, complete every remaining mechanical arena available to this character, and watch the full credits presentation. Store this result separately before changing the save's emerald state."
+     }
+    },
+    {
+     "id": "s3k-knuckles-standard-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Knuckles Alone — Standard Branch",
+     "missable": true,
+     "levels": {
+      "1": "Saved emerald state changes this route's completion presentation.",
+      "2": "Finish the Knuckles Alone route with fewer than seven Chaos Emeralds.",
+      "3": "Restore the matching pre-branch backup, complete every remaining mechanical arena available to this character, and watch the full credits presentation. Store this result separately before changing the save's emerald state."
+     }
+    },
+    {
+     "id": "s3k-knuckles-chaos-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Knuckles Alone — Chaos-Set Branch",
+     "missable": true,
+     "levels": {
+      "1": "Saved emerald state changes this route's completion presentation.",
+      "2": "Finish the Knuckles Alone route with all seven Chaos Emeralds before altar completion.",
+      "3": "Restore the matching pre-branch backup, complete every remaining mechanical arena available to this character, and watch the full credits presentation. Store this result separately before changing the save's emerald state."
+     }
+    },
+    {
+     "id": "s3k-knuckles-super-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Knuckles Alone — Super-Set Branch",
+     "missable": true,
+     "levels": {
+      "1": "Saved emerald state changes this route's completion presentation.",
+      "2": "Finish the Knuckles Alone route with all seven Super Emeralds awakened.",
+      "3": "Restore the matching pre-branch backup, complete every remaining mechanical arena available to this character, and watch the full credits presentation. Store this result separately before changing the save's emerald state."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sk-cartridge-secrets",
+   "name": "Cartridge Secrets",
+   "location_cue": "the title, sound test, and hidden stage selectors",
+   "note": "Use disposable states for codes and debug demonstrations.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sk-level-select",
+     "type": "secret",
+     "safe_type": "Cartridge code",
+     "label": "Standalone Level Select",
+     "missable": false,
+     "levels": {
+      "1": "A forest pump accepts a directional pattern.",
+      "2": "Hang from a Mushroom Hill pump and enter Left three times, Right three times, then Up three times.",
+      "3": "After the ring sound, pause and use A to exit to the opening screen. Choose a character, hold A, and press Start. Use the menu only on disposable evidence; Sonic 3 entries shown there redirect to Mushroom Hill."
+     }
+    },
+    {
+     "id": "sk-level-select-character",
+     "type": "secret",
+     "safe_type": "Hidden control",
+     "label": "Standalone Hidden Character Selector",
+     "missable": false,
+     "levels": {
+      "1": "The level menu contains a small character value.",
+      "2": "On standalone Level Select, press C to change the value beneath the first listed zone.",
+      "3": "Cycle until the value matches the intended Sonic or Knuckles selection, then launch a stage. Record one clean boot per character and reset afterward rather than treating code-started progress as a normal route clear."
+     }
+    },
+    {
+     "id": "sk-knux2-level-select",
+     "type": "secret",
+     "safe_type": "Lock-on code",
+     "label": "Knuckles in Sonic 2 Level Select",
+     "missable": false,
+     "levels": {
+      "1": "Its title retains a dedicated directional sequence.",
+      "2": "At the title, enter Up three times, Down three times, Left, Right, Left, Right.",
+      "3": "After the ring chime, hold A and press Start. The ordinary Sonic 2 selector opens with Knuckles active; use it to audit zones, not to replace the required full-route clear."
+     }
+    },
+    {
+     "id": "sk-knux2-debug",
+     "type": "secret",
+     "safe_type": "Lock-on code",
+     "label": "Knuckles in Sonic 2 Debug Mode",
+     "missable": false,
+     "levels": {
+      "1": "A release-date sound sequence expands the hidden selector.",
+      "2": "On its sound test, enter release-date value 19941018 one digit per selection.",
+      "3": "First enable Level Select, play the eight values in order, and wait for the confirmation chime. Choose a stage, hold A, and press Start; demonstrate object placement only on a disposable state."
+     }
+    }
+   ]
+  }
+ ]
+}

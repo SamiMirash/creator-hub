@@ -1,0 +1,1173 @@
+{
+ "id": "sonic-chaos-1993-master-system",
+ "game": "Sonic Chaos (1993, Master System)",
+ "target": "Europe/Brazil English Master System cartridge through verified PC emulation",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-25T20:43:12.213508+00:00",
+ "areas": [
+  {
+   "id": "chaos-sms-cartridge-rules",
+   "name": "Cartridge Rules and Character Routes",
+   "location_cue": "The title screen, character selector, act entrances, item monitors, and ring counter.",
+   "note": "Confirm the selected cartridge, then establish both character routes and every reusable system before committing to an act.",
+   "save_backup": {
+    "title": "Keep a clean title-screen state",
+    "why": "The cartridge has no native save system.",
+    "detail": "Preserve one untouched title state and a separate rolling entrance state for each character; never overwrite the only state while testing a code or reward."
+   },
+   "point_of_no_return": {
+    "title": "Character selection fixes the active route",
+    "why": "The two runners have different starting resources, abilities, pickups, and completion conditions.",
+    "detail": "Finish or preserve the current branch before returning to Player Select; do not use one character's completion as proof of the other's."
+   },
+   "items": [
+    {
+     "id": "chaos-sms-verify-rom",
+     "type": "optional",
+     "safe_type": "Setup check",
+     "label": "Verify the Master System Cartridge",
+     "missable": false,
+     "levels": {
+      "1": "Start by confirming the exact preserved build.",
+      "2": "Use the Europe/Brazil English Master System ROM, not the Game Gear cartridge.",
+      "3": "Verify the extracted 524,288-byte ROM has SHA-1 F64C8EEA26A103582F09831C3E02C6045A6AFF94. Keep the Game Gear build separate because several later layouts and encounters differ."
+     }
+    },
+    {
+     "id": "chaos-sms-preserve-version-layouts",
+     "type": "optional",
+     "safe_type": "Version-specific task",
+     "label": "Preserve the Master System Layouts",
+     "missable": true,
+     "levels": {
+      "1": "Several late physical routes belong only to this screen format.",
+      "2": "Record the Master System versions of the three late Act 3 routes and their arenas.",
+      "3": "Capture Mecha Green Hill Act 3, Aqua Planet Act 3, and Electric Egg Act 3 on this cartridge. Do not substitute Game Gear footage or its altered framing, music, geometry, or encounter behavior."
+     }
+    },
+    {
+     "id": "chaos-sms-select-sonic",
+     "type": "optional",
+     "safe_type": "Character route",
+     "label": "Start Sonic's Route",
+     "missable": true,
+     "levels": {
+      "1": "One runner carries the emerald-completion branch.",
+      "2": "Choose Sonic at Player Select and confirm three lives with no Continues.",
+      "3": "Select Sonic and record the starting counters before moving. This is the only route that enters Special Stages, obtains the first five emeralds, and reaches both Sonic completion results."
+     }
+    },
+    {
+     "id": "chaos-sms-select-tails",
+     "type": "optional",
+     "safe_type": "Character route",
+     "label": "Start Tails's Route",
+     "missable": true,
+     "levels": {
+      "1": "The alternate runner trades emerald access for mobility and insurance.",
+      "2": "Choose Tails and confirm five lives with three Continues.",
+      "3": "Select Tails and record the starting counters. His flight, Rocket-Shoes replacements, ring reward, and separate completion make this a full second route rather than a shortcut through Sonic's run."
+     }
+    },
+    {
+     "id": "chaos-sms-use-spin-dash",
+     "type": "optional",
+     "safe_type": "Movement technique",
+     "label": "Perform the Spin Dash",
+     "missable": false,
+     "levels": {
+      "1": "Breakable walls respond to a charged ground move.",
+      "2": "Duck while stationary, press either action button, then release Down.",
+      "3": "Face the intended direction, hold Down, tap Button 1 or 2 to charge, and release Down. Use the rolling launch to open cracked or false walls without spending a running approach."
+     }
+    },
+    {
+     "id": "chaos-sms-use-strike-dash",
+     "type": "optional",
+     "safe_type": "Character technique",
+     "label": "Perform Sonic's Strike Dash",
+     "missable": true,
+     "levels": {
+      "1": "Sonic has a brief protected burst from a standing pose.",
+      "2": "Stand still, hold Up, then press Button 1 or 2 as Sonic.",
+      "3": "From a complete stop, hold Up until Sonic looks upward, then press either action button. The short forward burst protects him only during the dash; stop treating it as invincibility once the animation ends."
+     }
+    },
+    {
+     "id": "chaos-sms-use-tails-flight",
+     "type": "optional",
+     "safe_type": "Character technique",
+     "label": "Perform Tails's Flight",
+     "missable": true,
+     "levels": {
+      "1": "Tails can reach overhead ledges without a monitor.",
+      "2": "Stand still, hold Up, then press Button 1 or 2 as Tails.",
+      "3": "Activate flight from the upward-looking pose, steer with the directional pad, and land before the limited flight period expires. Use it to verify Tails-only approaches without skipping act completion."
+     }
+    },
+    {
+     "id": "chaos-sms-recover-lost-rings",
+     "type": "optional",
+     "safe_type": "Survival mechanic",
+     "label": "Recover Rings After Damage",
+     "missable": true,
+     "levels": {
+      "1": "A hit does not erase every chance immediately.",
+      "2": "Take a non-fatal hit while carrying rings, then reclaim at least one dropped ring.",
+      "3": "Use a safe flat section, take one ordinary hit, and move through a bouncing dropped ring before it disappears. Rings block damage only while held; pits, crushing, drowning, and other instant hazards ignore them."
+     }
+    },
+    {
+     "id": "chaos-sms-sonic-hundred-rings",
+     "type": "secret",
+     "safe_type": "Special access",
+     "label": "Trigger Sonic's 100-Ring Transfer",
+     "missable": true,
+     "levels": {
+      "1": "A full ring counter changes Sonic's destination.",
+      "2": "Reach 100 rings as Sonic during Act 1 or Act 2 before obtaining all five special emeralds.",
+      "3": "Protect the ring total until the counter reaches 100 in a qualifying act. The transfer happens immediately and counts the current act as cleared, so collect its hidden life and other local checks first."
+     }
+    },
+    {
+     "id": "chaos-sms-tails-hundred-rings",
+     "type": "secret",
+     "safe_type": "Ring reward",
+     "label": "Earn Tails's 100-Ring Life",
+     "missable": true,
+     "levels": {
+      "1": "The same threshold pays Tails differently.",
+      "2": "Reach 100 rings during Tails's route.",
+      "3": "Gather the hundredth ring without taking damage. Tails receives one life and remains in the act because his route cannot enter Special Stages; confirm the life counter before continuing."
+     }
+    },
+    {
+     "id": "chaos-sms-sonic-score-continue",
+     "type": "secret",
+     "safe_type": "Score reward",
+     "label": "Earn Sonic's Score Continue",
+     "missable": true,
+     "levels": {
+      "1": "Sonic's score supplies replacement insurance at a fixed interval.",
+      "2": "Raise Sonic's score through 50,000 points.",
+      "3": "Accumulate enemy, act, ring, time, and encounter bonuses until the score crosses 50,000. Confirm the Continue counter increases; each emerald can also supply a separate Continue."
+     }
+    },
+    {
+     "id": "chaos-sms-tails-score-continue",
+     "type": "secret",
+     "safe_type": "Score reward",
+     "label": "Earn Tails's Score Continue",
+     "missable": true,
+     "levels": {
+      "1": "Tails reaches his score insurance sooner.",
+      "2": "Raise Tails's score through 30,000 points.",
+      "3": "Keep the same Tails credit alive until the score passes 30,000 and confirm an added Continue. Do not apply Sonic's 50,000-point threshold to this route."
+     }
+    },
+    {
+     "id": "chaos-sms-use-continue",
+     "type": "optional",
+     "safe_type": "Recovery mechanic",
+     "label": "Use a Continue",
+     "missable": true,
+     "levels": {
+      "1": "Stored insurance resumes closer than a fresh cartridge start.",
+      "2": "Lose the final life with at least one Continue available.",
+      "3": "At Game Over, accept the Continue before its prompt expires. The game restarts the current act with that character's default life count and subtracts one Continue."
+     }
+    },
+    {
+     "id": "chaos-sms-break-super-ring",
+     "type": "collectible",
+     "safe_type": "Item monitor",
+     "label": "Break a Super Ring Monitor",
+     "missable": true,
+     "levels": {
+      "1": "A ring-marked monitor carries a compact bundle.",
+      "2": "Find a monitor displaying a ring and break it in ball form.",
+      "3": "Jump or roll into the monitor and confirm ten rings are added. Tails may find these where Sonic's route places Rocket Shoes, so record one on each character branch."
+     }
+    },
+    {
+     "id": "chaos-sms-break-invincibility",
+     "type": "collectible",
+     "safe_type": "Item monitor",
+     "label": "Break an Invincibility Monitor",
+     "missable": true,
+     "levels": {
+      "1": "A star-marked monitor briefly neutralizes ordinary contact.",
+      "2": "Open a sparkling monitor before a dense enemy or spike passage.",
+      "3": "Break it with a jump or roll, then cross ordinary enemies and attack hazards while the effect remains. Do not test it against pits, crushing, or drowning because those remain lethal."
+     }
+    },
+    {
+     "id": "chaos-sms-break-speed-shoes",
+     "type": "collectible",
+     "safe_type": "Item monitor",
+     "label": "Break a Power Sneakers Monitor",
+     "missable": true,
+     "levels": {
+      "1": "One shoe-marked monitor changes ground speed temporarily.",
+      "2": "Open a Power Sneakers monitor and run through a clear section.",
+      "3": "Break the monitor, let the temporary music and speed change begin, and record controlled movement before it expires. Tails also receives some of these as Rocket-Shoes replacements."
+     }
+    },
+    {
+     "id": "chaos-sms-break-rocket-shoes",
+     "type": "collectible",
+     "safe_type": "Sonic-only monitor",
+     "label": "Use Sonic's Rocket Shoes",
+     "missable": true,
+     "levels": {
+      "1": "A split-shoe symbol gives Sonic short aerial propulsion.",
+      "2": "Open a Rocket Shoes monitor as Sonic and steer through its intended aerial lane.",
+      "3": "Break the monitor, rise or turn as needed, and reach the next safe surface before the effect expires. Ordinary damage cancels the flight immediately; Tails cannot obtain this item."
+     }
+    },
+    {
+     "id": "chaos-sms-break-clock",
+     "type": "collectible",
+     "safe_type": "Special-stage monitor",
+     "label": "Break a Clock Monitor",
+     "missable": true,
+     "levels": {
+      "1": "The timed routes contain a monitor that pauses pressure.",
+      "2": "Find a Clock inside a Special Stage and break it before passing.",
+      "3": "Strike the clock monitor in ball form and use the frozen interval to reposition toward the emerald. The item appears only in Sonic's Special Stages and does not replace the need to finish before the overall timer expires."
+     }
+    }
+   ]
+  },
+  {
+   "id": "chaos-sms-signs-and-secrets",
+   "name": "Goal Signs and Cartridge Secrets",
+   "location_cue": "The spinning signs at Act 1 and Act 2 exits, plus the blue hidden-menu screens.",
+   "note": "Preserve separate entrance states for deterministic ring totals; menu codes begin from an untouched title screen.",
+   "save_backup": {
+    "title": "Keep one state before every goal sign",
+    "why": "Crossing the sign closes the act and fixes the current reward test.",
+    "detail": "Arrange the required ring total before the last checkpoint, then keep a second state immediately before the sign so each face and backwards result can be recorded independently."
+   },
+   "point_of_no_return": {
+    "title": "Entering a menu code leaves ordinary play",
+    "why": "The title sequence becomes a hidden selection screen as soon as the final input is accepted.",
+    "detail": "Record the clean title first, then enter one code per reload; do not use Level Select as proof of a continuous completion run."
+   },
+   "items": [
+    {
+     "id": "chaos-sms-record-regular-sign-faces",
+     "type": "secret",
+     "safe_type": "Goal-sign set",
+     "label": "Record the Four Regular Sign Faces",
+     "missable": true,
+     "levels": {
+      "1": "The common sign images distribute four different results.",
+      "2": "Record the bird, ring, current-character, and opposite-character faces.",
+      "3": "Use ordinary Act 1 or Act 2 exits. The bird gives nothing, the ring adds ten rings, your current character adds one life, and the other character adds one Continue. If the sign stops blank, strike it again."
+     }
+    },
+    {
+     "id": "chaos-sms-group-a-super-ring",
+     "type": "secret",
+     "safe_type": "Goal-sign reward",
+     "label": "Trigger the Group-A Super Ring",
+     "missable": true,
+     "levels": {
+      "1": "Three zones reward ring totals sharing one final digit.",
+      "2": "In Turquoise Hill, Sleeping Egg, or Aqua Planet, finish with a ring total ending in 9.",
+      "3": "Cross a qualifying sign with 9, 19, 29, or any other total whose last digit is 9. Let it settle and confirm the Super Ring result adds ten rings."
+     }
+    },
+    {
+     "id": "chaos-sms-group-a-continue",
+     "type": "secret",
+     "safe_type": "Goal-sign reward",
+     "label": "Trigger the Group-A Continue",
+     "missable": true,
+     "levels": {
+      "1": "Four exact totals provide insurance in the first sign table.",
+      "2": "Finish a Group-A act with 15, 30, 40, or 60 rings.",
+      "3": "Use Turquoise Hill, Sleeping Egg, or Aqua Planet Act 1/2, protect one listed total to the sign, and confirm the Continue result before the tally clears."
+     }
+    },
+    {
+     "id": "chaos-sms-group-a-backwards",
+     "type": "secret",
+     "safe_type": "Goal-sign oddity",
+     "label": "Trigger the Group-A Backwards Sign",
+     "missable": true,
+     "levels": {
+      "1": "Several non-round totals reverse the sign artwork.",
+      "2": "Use 16, 28, or 32 rings in a Group-A act. Counts of 44 and 58 also work.",
+      "3": "Carry one listed total through a Turquoise Hill, Sleeping Egg, or Aqua Planet sign. Record the backwards plate after it stops; this is a visual secret, not a routine prize."
+     }
+    },
+    {
+     "id": "chaos-sms-group-a-life",
+     "type": "secret",
+     "safe_type": "Goal-sign reward",
+     "label": "Trigger the Group-A 1-Up",
+     "missable": true,
+     "levels": {
+      "1": "The first sign table hides seven life-paying totals.",
+      "2": "Use 55, 65, or 77 rings in Group A. The remaining life totals are 88, 95, 97, and 99.",
+      "3": "Enter a Turquoise Hill, Sleeping Egg, or Aqua Planet sign with one exact total and confirm the life counter increases. Avoid reaching 100 as Sonic because that transfers away before the sign."
+     }
+    },
+    {
+     "id": "chaos-sms-group-b-super-ring",
+     "type": "secret",
+     "safe_type": "Goal-sign reward",
+     "label": "Trigger the Group-B Super Ring",
+     "missable": true,
+     "levels": {
+      "1": "The alternating zones prefer clean tens.",
+      "2": "In Gigalopolis, Mecha Green Hill, or Electric Egg, finish with a positive multiple of ten.",
+      "3": "Carry 10, 20, 30, or another positive multiple of ten into a qualifying sign and confirm ten rings are added by the Super Ring result."
+     }
+    },
+    {
+     "id": "chaos-sms-group-b-continue",
+     "type": "secret",
+     "safe_type": "Goal-sign reward",
+     "label": "Trigger the Group-B Continue",
+     "missable": true,
+     "levels": {
+      "1": "The second sign table has four insurance totals.",
+      "2": "Finish a Group-B act with 0, 24, 48, or 72 rings.",
+      "3": "Use a Gigalopolis, Mecha Green Hill, or Electric Egg sign, preserve one listed total, and confirm the Continue counter changes before leaving the tally."
+     }
+    },
+    {
+     "id": "chaos-sms-group-b-backwards",
+     "type": "secret",
+     "safe_type": "Goal-sign oddity",
+     "label": "Trigger the Group-B Backwards Sign",
+     "missable": true,
+     "levels": {
+      "1": "Five totals reverse the alternating-zone sign.",
+      "2": "Use 18, 36, or 45 rings in Group B. Counts of 81 and 89 also reverse it.",
+      "3": "Carry one listed total into a Gigalopolis, Mecha Green Hill, or Electric Egg sign and record the reversed plate after the spin ends."
+     }
+    },
+    {
+     "id": "chaos-sms-group-b-life",
+     "type": "secret",
+     "safe_type": "Goal-sign reward",
+     "label": "Trigger the Group-B 1-Up",
+     "missable": true,
+     "levels": {
+      "1": "Seven totals pay a life in the second table.",
+      "2": "Use 11, 33, or 77 rings in Group B. The remaining life totals are 87, 94, 96, and 98.",
+      "3": "Use a qualifying Group-B sign and stop collecting at one listed total. Cross without damage, then confirm the life counter increases before the next act."
+     }
+    },
+    {
+     "id": "chaos-sms-level-select",
+     "type": "secret",
+     "safe_type": "Hidden menu",
+     "label": "Open Level Select",
+     "missable": false,
+     "levels": {
+      "1": "A familiar directional pattern changes the title screen.",
+      "2": "At PRESS START BUTTON, tap Up twice and Down twice. Follow with Right, Left, Right, Left, then Button 1.",
+      "3": "Use a clean Master System title state and tap the sequence briskly, finishing with Button 1 or Button 2. The blue Zone Select screen lists all eighteen acts; treat it as navigation and testing, not continuous-run completion."
+     }
+    },
+    {
+     "id": "chaos-sms-sound-test",
+     "type": "secret",
+     "safe_type": "Hidden menu",
+     "label": "Open Sound Test",
+     "missable": false,
+     "levels": {
+      "1": "A reversed title pattern opens the audio catalogue.",
+      "2": "At PRESS START BUTTON, tap Down twice and Up twice. Continue with Left, Right, Left, Right, Button 1, then Button 2.",
+      "3": "Enter the ten inputs without an extra Start press. The blue Sound Test opens immediately after Button 2; use Left/Right to change the hexadecimal sound code, Button 2 to play it, and EXIT to leave."
+     }
+    },
+    {
+     "id": "chaos-sms-sound-test-fireball",
+     "type": "secret",
+     "safe_type": "Easter egg",
+     "label": "Perform the Sound-Test Fireball",
+     "missable": false,
+     "levels": {
+      "1": "The character sprite reportedly recognizes a fighting-game motion.",
+      "2": "On Sound Test, roll from Down through Down-Right to Right plus either action button.",
+      "3": "NEEDS_VERIFICATION"
+     }
+    }
+   ]
+  },
+  {
+   "id": "chaos-sms-turquoise-hill",
+   "name": "Turquoise Hill",
+   "location_cue": "Open turquoise slopes, flowered platforms, loops, red springs, and spring-backed ground machines.",
+   "note": "Secure both hidden lives before their signs, then use side attacks in the compact third-act arena.",
+   "save_backup": {
+    "title": "Keep an entrance state for Turquoise Hill",
+    "why": "The cartridge cannot save and each act closes its local detours.",
+    "detail": "Retain one state at every act entrance, then create a rolling state only after the hidden life and route-specific checks are secure."
+   },
+   "point_of_no_return": {
+    "title": "The goal sign or completed arena closes the act",
+    "why": "There is no return to an earlier branch within the same credit.",
+    "detail": "Finish the hidden-life detour and physical route record before touching the sign or landing the final arena hit."
+   },
+   "items": [
+    {
+     "id": "chaos-sms-th-act1-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Turquoise Hill Act 1",
+     "missable": true,
+     "levels": {
+      "1": "The first act teaches this zone's safest route language.",
+      "2": "Follow the upper Rocket-Shoes lane, then drop to the lower route leading to the sign.",
+      "3": "Use the first Rocket Shoes to cross the raised ring lane, avoid contact that cancels them, and rejoin the ground route. Roll beneath the last flying obstacle, drop to the lower tier, and touch the sign after the hidden-life detour."
+     }
+    },
+    {
+     "id": "chaos-sms-th-act1-life",
+     "type": "collectible",
+     "safe_type": "Hidden life",
+     "label": "Collect Turquoise Hill Act 1's 1-Up",
+     "missable": true,
+     "levels": {
+      "1": "The first act conceals one life away from the direct exit.",
+      "2": "Late in Act 1, use the red spring beneath overhead rings to reach the low-roof tunnel.",
+      "3": "Approach the red spring from its left for enough speed, hold right, and let the low ceiling drop you onto the tunnel ledge. Walk through slowly, jump the floor gap onto the monitor, and break it before falling through."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-th-act1-life.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-th-act2-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Turquoise Hill Act 2",
+     "missable": true,
+     "levels": {
+      "1": "The second act expands the same route with a deeper detour.",
+      "2": "After the first major drop, explore left before returning right through the loops.",
+      "3": "Land from the opening drop, complete the left hidden-life branch, then return right. Use Spin Dash through the loop chain, jump after the third loop to avoid being sent backward, clear the spike bed, and descend to the sign."
+     }
+    },
+    {
+     "id": "chaos-sms-th-act2-life",
+     "type": "collectible",
+     "safe_type": "Hidden life",
+     "label": "Collect Turquoise Hill Act 2's 1-Up",
+     "missable": true,
+     "levels": {
+      "1": "One life sits beyond the obvious forward route.",
+      "2": "From the first Act 2 drop, backtrack left past the spikes to the dead end.",
+      "3": "After landing from the opening ledge, face left and jump the spike bed. Continue to the solid-looking dead end, Spin Dash through its wall, and break the life monitor inside before resuming the main route."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-th-act2-life.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-th-act3-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Turquoise Hill Act 3",
+     "missable": true,
+     "levels": {
+      "1": "The third act compresses the zone into one final mechanical test.",
+      "2": "Reach the arena with the hidden ring monitor, then attack the machine from either side.",
+      "3": "Before the arena, drop beside the unused spring, break the concealed Super Ring monitor, and bounce out. In the arena, avoid the spring-covered back, roll into the exposed side five times, and cross over early whenever it closes against a wall."
+     }
+    }
+   ]
+  },
+  {
+   "id": "chaos-sms-gigalopolis",
+   "name": "Gigalopolis",
+   "location_cue": "Dim city platforms, ramps, loops, blue tunnels, breakable brick walls, and a segmented tower arena.",
+   "note": "This Master System zone retains the Gigalopolis name; finish each hidden wall before the sign closes it.",
+   "save_backup": {
+    "title": "Keep an entrance state for Gigalopolis",
+    "why": "The cartridge cannot save and each act closes its local detours.",
+    "detail": "Retain one state at every act entrance, then create a rolling state only after the hidden life and route-specific checks are secure."
+   },
+   "point_of_no_return": {
+    "title": "The goal sign or completed arena closes the act",
+    "why": "There is no return to an earlier branch within the same credit.",
+    "detail": "Finish the hidden-life detour and physical route record before touching the sign or landing the final arena hit."
+   },
+   "items": [
+    {
+     "id": "chaos-sms-gp-act1-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Gigalopolis Act 1",
+     "missable": true,
+     "levels": {
+      "1": "The first act teaches this zone's safest route language.",
+      "2": "Use the spring-and-ramp route, checking the late ledge and breakable city walls.",
+      "3": "Follow the spring ramps and tunnel lanes without rushing past the late ledge. Complete the hidden-life branch below it, then use the remaining springs and raised platforms to reach the Act 1 sign."
+     }
+    },
+    {
+     "id": "chaos-sms-gp-act1-life",
+     "type": "collectible",
+     "safe_type": "Hidden life",
+     "label": "Collect Gigalopolis Act 1's 1-Up",
+     "missable": true,
+     "levels": {
+      "1": "The first act conceals one life away from the direct exit.",
+      "2": "Near Act 1's end, drop from the ledge after the ringed ramp and face left.",
+      "3": "Pass the spring beside the ground machine and climb the ramp with rings above it. Step off the following ledge, turn left at the lower wall, Spin Dash through it, and follow the secret tunnel to the life monitor."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-gp-act1-life.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-gp-act2-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Gigalopolis Act 2",
+     "missable": true,
+     "levels": {
+      "1": "The second act expands the same route with a deeper detour.",
+      "2": "Take the spring into the dense ring room, then leave by the upper loop route.",
+      "3": "Enter the spring-fed ring chamber and regulate Sonic's total so 100 does not transfer him before the local life. Break the Super Ring monitor, bounce above the loop, finish the tunnel-roof detour, then return through the elevated exit route to the sign."
+     }
+    },
+    {
+     "id": "chaos-sms-gp-act2-life",
+     "type": "collectible",
+     "safe_type": "Hidden life",
+     "label": "Collect Gigalopolis Act 2's 1-Up",
+     "missable": true,
+     "levels": {
+      "1": "One life sits beyond the obvious forward route.",
+      "2": "From the Act 2 ring room, bounce above the loop and walk left along the tunnel roof.",
+      "3": "Break the chamber's Super Ring monitor, use its spring to cross left over the loop, and stay on top of the blue tunnel. Walk left past the Power Sneakers monitor to the far end and break the life monitor before collecting a hundredth ring."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-gp-act2-life.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-gp-act3-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Gigalopolis Act 3",
+     "missable": true,
+     "levels": {
+      "1": "The third act compresses the zone into one final mechanical test.",
+      "2": "Choose any of the three entry tunnels, then strike the top of the segmented tower.",
+      "3": "Ride the near-vertical spring ramp into one of the three tunnels. In the arena, wait for the segments to extend, then land squarely on the head three times; glancing hits may require a fourth. Keep moving after the clear because this Master System build launches a final segment."
+     }
+    }
+   ]
+  },
+  {
+   "id": "chaos-sms-sleeping-egg",
+   "name": "Sleeping Egg",
+   "location_cue": "Pale block columns, concealed springs, pogo devices, short ramps, and a hopping-machine arena.",
+   "note": "Break only the columns and walls needed for each detour; premature forward movement can strand the hidden life behind the sign.",
+   "save_backup": {
+    "title": "Keep an entrance state for Sleeping Egg",
+    "why": "The cartridge cannot save and each act closes its local detours.",
+    "detail": "Retain one state at every act entrance, then create a rolling state only after the hidden life and route-specific checks are secure."
+   },
+   "point_of_no_return": {
+    "title": "The goal sign or completed arena closes the act",
+    "why": "There is no return to an earlier branch within the same credit.",
+    "detail": "Finish the hidden-life detour and physical route record before touching the sign or landing the final arena hit."
+   },
+   "items": [
+    {
+     "id": "chaos-sms-se-act1-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Sleeping Egg Act 1",
+     "missable": true,
+     "levels": {
+      "1": "The first act teaches this zone's safest route language.",
+      "2": "Use the breakable opening columns and their concealed springs to reach the upper route.",
+      "3": "Break the left side of the opening columns, climb the hidden-life platform chain, then return to the forward route. Cross the small blocks and spring lanes carefully so the pogo devices do not redirect you away from the sign."
+     }
+    },
+    {
+     "id": "chaos-sms-se-act1-life",
+     "type": "collectible",
+     "safe_type": "Hidden life",
+     "label": "Collect Sleeping Egg Act 1's 1-Up",
+     "missable": true,
+     "levels": {
+      "1": "The first act conceals one life away from the direct exit.",
+      "2": "Near the Act 1 start, break the leftmost block columns and climb back left.",
+      "3": "Open the leftmost columns until you can land on the platform to their left. Jump left across the next ledges, use the nearby spring to rise onto the upper shelf, and break the life monitor on its floor."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-se-act1-life.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-se-act2-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Sleeping Egg Act 2",
+     "missable": true,
+     "levels": {
+      "1": "The second act expands the same route with a deeper detour.",
+      "2": "Ignore the first hopping spring and test the wall immediately beyond it.",
+      "3": "Pass over the opening pogo device, use the wall route to secure the hidden life, and then resume right. Use controlled Spin Dashes through the breakable blocks, take the safer upper lanes, and continue to the Act 2 sign."
+     }
+    },
+    {
+     "id": "chaos-sms-se-act2-life",
+     "type": "collectible",
+     "safe_type": "Hidden life",
+     "label": "Collect Sleeping Egg Act 2's 1-Up",
+     "missable": true,
+     "levels": {
+      "1": "One life sits beyond the obvious forward route.",
+      "2": "Just after Act 2 begins, skip the hopping spring and Spin Dash into the wall.",
+      "3": "Run past the first pogo spring, face the wall beyond it, and Spin Dash into the concealed passage. Stop roughly midway under the visible overhead monitor, jump into it, and confirm the added life before exiting the route."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-se-act2-life.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-se-act3-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Sleeping Egg Act 3",
+     "missable": true,
+     "levels": {
+      "1": "The third act compresses the zone into one final mechanical test.",
+      "2": "Break through the column above the Invincibility monitor, then hit the hopping machine above its guns.",
+      "3": "Cross the opening gap, roll through the breakable column, and collect the Invincibility monitor below it before entering the arena. Let each hop expose the side above the gun line, jump into that surface six times, and recover one ring during post-hit protection if struck."
+     }
+    }
+   ]
+  },
+  {
+   "id": "chaos-sms-mecha-green-hill",
+   "name": "Mecha Green Hill",
+   "location_cue": "Metal palms, oily channels, slanted gray bridges, elevators, breakable floors, and a central trunk arena.",
+   "note": "The gray bridges punish hesitation; preserve states before the second-act life and the Master System-specific third act.",
+   "save_backup": {
+    "title": "Keep an entrance state for Mecha Green Hill",
+    "why": "The cartridge cannot save and each act closes its local detours.",
+    "detail": "Retain one state at every act entrance, then create a rolling state only after the hidden life and route-specific checks are secure."
+   },
+   "point_of_no_return": {
+    "title": "The goal sign or completed arena closes the act",
+    "why": "There is no return to an earlier branch within the same credit.",
+    "detail": "Finish the hidden-life detour and physical route record before touching the sign or landing the final arena hit."
+   },
+   "items": [
+    {
+     "id": "chaos-sms-mgh-act1-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Mecha Green Hill Act 1",
+     "missable": true,
+     "levels": {
+      "1": "The first act teaches this zone's safest route language.",
+      "2": "Test the breakable floor directly above the opening space, then follow the bridge route right.",
+      "3": "Jump into the opening blocks to secure the compartment life, Spin Dash out through the far wall, and rejoin the route. Keep speed across the slanted bridges, roll through the spring-backed ground machines, and maintain rightward momentum to the sign."
+     }
+    },
+    {
+     "id": "chaos-sms-mgh-act1-life",
+     "type": "collectible",
+     "safe_type": "Hidden life",
+     "label": "Collect Mecha Green Hill Act 1's 1-Up",
+     "missable": true,
+     "levels": {
+      "1": "The first act conceals one life away from the direct exit.",
+      "2": "At the Act 1 start, jump upward into the blocks over the opening pocket.",
+      "3": "Strike the blocks immediately above the starting space and fall through the opening you create. Break the life monitor inside the large compartment, avoid the ground machine, then Spin Dash through the rightmost wall to escape."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-mgh-act1-life.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-mgh-act2-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Mecha Green Hill Act 2",
+     "missable": true,
+     "levels": {
+      "1": "The second act expands the same route with a deeper detour.",
+      "2": "Before the indoor section, wait for the elevator and take the upper route toward the final bridge.",
+      "3": "Stop before the background becomes enclosed, ride the descending elevator upward, and use the high route over the hazards. At the final gray bridge, secure the overhead life, then cross to the nearby sign without dropping into the oil lanes."
+     }
+    },
+    {
+     "id": "chaos-sms-mgh-act2-life",
+     "type": "collectible",
+     "safe_type": "Hidden life",
+     "label": "Collect Mecha Green Hill Act 2's 1-Up",
+     "missable": true,
+     "levels": {
+      "1": "One life sits beyond the obvious forward route.",
+      "2": "Immediately before the Act 2 sign, look above the gray bridge for a small platform.",
+      "3": "Reach the final gray bridge and locate the floating platform above it. As Tails, fly directly up; as Sonic, use the bouncing spring beyond the bridge and jump off at its peak. Land on the platform and break the life monitor."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-mgh-act2-life.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-mgh-act3-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Mecha Green Hill Act 3",
+     "missable": true,
+     "levels": {
+      "1": "The third act compresses the zone into one final mechanical test.",
+      "2": "Carry speed over both gray bridges, collect the raised ring monitor, then attack the trunk-mounted machine's head.",
+      "3": "Sprint across the first bridge and jump from the second onto the floating Super Ring platform. Continue into the arena, avoid the large and three-way shots whenever the shell opens, and bounce repeatedly on the exposed head for nine total hits."
+     }
+    }
+   ]
+  },
+  {
+   "id": "chaos-sms-aqua-planet",
+   "name": "Aqua Planet",
+   "location_cue": "Shallow blue channels, crumbling platforms, tridents, current doors, loops, and a spring-lined arena approach.",
+   "note": "The high route avoids most water, while both hidden lives deliberately use lower branches that must be finished before the sign.",
+   "save_backup": {
+    "title": "Keep an entrance state for every water act",
+    "why": "A drowning loss or closed sign can erase a prepared lower-route attempt.",
+    "detail": "Keep states at all three entrances and another only after the local life is secured; surface whenever the air countdown appears."
+   },
+   "point_of_no_return": {
+    "title": "The signs and arena cannot be backtracked",
+    "why": "Both life monitors sit before their act exits, and the final encounter has two phases.",
+    "detail": "Finish each lower detour before its sign and preserve a state before the seventeenth large-target hit in Act 3."
+   },
+   "items": [
+    {
+     "id": "chaos-sms-ap-act1-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Aqua Planet Act 1",
+     "missable": true,
+     "levels": {
+      "1": "The stable route stays mostly above the channel.",
+      "2": "Cross the high crumbling platforms and use the Rocket-Shoes loop route to the sign.",
+      "3": "Jump quickly across the upper crumbling blocks, clear the spike gap, and use the rolling launcher through the ring monitors. After any lower detour, return to the Rocket-Shoes and loop route, then follow the final platforms to the sign."
+     }
+    },
+    {
+     "id": "chaos-sms-ap-act1-life",
+     "type": "collectible",
+     "safe_type": "Hidden life",
+     "label": "Collect Aqua Planet Act 1's 1-Up",
+     "missable": true,
+     "levels": {
+      "1": "The early collapsing floor conceals a current-fed pocket.",
+      "2": "Fall into the water and travel left to the blue current door.",
+      "3": "Let the collapsing floor open, drop into the channel, and move left into the blue door. Allow its current to carry you to the dead end, then Spin Dash through the wall and break the life monitor inside."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-ap-act1-life.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-ap-act2-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Aqua Planet Act 2",
+     "missable": true,
+     "levels": {
+      "1": "The upper loop chain holds enough rings to change Sonic's route.",
+      "2": "Use the opening springs and raised loops, checking the lower branch before taking 100 rings.",
+      "3": "Climb by the opening springs, roll through the small machines, and sweep the Super Ring monitors across the upper loops. If collecting the hidden life, finish its lower branch first; then jump from the last loop top directly to the sign."
+     }
+    },
+    {
+     "id": "chaos-sms-ap-act2-life",
+     "type": "collectible",
+     "safe_type": "Hidden life",
+     "label": "Collect Aqua Planet Act 2's 1-Up",
+     "missable": true,
+     "levels": {
+      "1": "The lower channel continues beyond two trident hazards.",
+      "2": "Pass both tridents, brake at the angled spring, and climb to the brown moving platform.",
+      "3": "Travel right underwater past the two tridents. Resist the angled spring so you stop before the horizontal one, climb the ledges above it, step onto the brown platform, break the blocking tile while crossing the spikes, and ride to the life monitor."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-ap-act2-life.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-ap-act3-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Aqua Planet Act 3",
+     "missable": true,
+     "levels": {
+      "1": "The spring hall leads to a multi-part arena test.",
+      "2": "Take the Invincibility route, clear six small targets, then work from the large target's right side.",
+      "3": "Stop at the Invincibility monitor in the spring hall and break through to the arena. Hit each of the six small targets twice, stay right of the large target, land seventeen head hits, dodge the split shell's missiles, then strike its lowered base once."
+     }
+    }
+   ]
+  },
+  {
+   "id": "chaos-sms-electric-egg",
+   "name": "Electric Egg",
+   "location_cue": "Dark conveyor corridors, tracking lasers, exploding floor machines, mine carts, tubes, and narrow platforms over open shafts.",
+   "note": "This final zone has no hidden life monitor; its completion checks are the left cache, concealed corridor, tube routing, and both arena phases.",
+   "save_backup": {
+    "title": "Keep three separate Electric Egg entrances",
+    "why": "Lasers, open shafts, and the final two-phase test can consume an entire credit quickly.",
+    "detail": "Preserve each act entrance plus a state before the last Act 3 hallway; do not rely on unsupported cartridge saving during the closing sequence."
+   },
+   "point_of_no_return": {
+    "title": "The final hit commits the completion result",
+    "why": "Sonic's result depends on the five earlier emeralds, while Tails has a separate branch.",
+    "detail": "Before the final hit, confirm the active character and emerald row. Keep different full-credit branches for Sonic with fewer than five, Sonic with five, and Tails."
+   },
+   "items": [
+    {
+     "id": "chaos-sms-ee-act1-left-cache",
+     "type": "secret",
+     "safe_type": "Hidden cache",
+     "label": "Collect the Act 1 Left Cache",
+     "missable": true,
+     "levels": {
+      "1": "The final zone begins with useful resources behind you.",
+      "2": "Move left immediately from the Act 1 start to find two Super Ring monitors.",
+      "3": "Before approaching the first laser, walk left from the entrance and break both Super Ring monitors. Return right with the extra rings; leaving the opening corridor closes this easy preparation opportunity."
+     }
+    },
+    {
+     "id": "chaos-sms-ee-act1-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Electric Egg Act 1",
+     "missable": true,
+     "levels": {
+      "1": "Tracking lasers and conveyors punish a single-speed approach.",
+      "2": "Use Strike Dash past the first laser, resist the conveyor, then hold Up in the final tube.",
+      "3": "After taking the left cache, cross the first laser with a protected burst and break the wall beyond it. Jump above later laser lines, trigger exploding machines from a safe distance, board the moving platform to the upper tube, and hold Up as you enter so it ejects you beside the sign."
+     }
+    },
+    {
+     "id": "chaos-sms-ee-act2-hidden-corridor",
+     "type": "secret",
+     "safe_type": "Hidden route",
+     "label": "Open the Act 2 Wall Corridor",
+     "missable": true,
+     "levels": {
+      "1": "A hollow wall is detectable before the first cart route.",
+      "2": "At the rightmost opening wall, test upward movement against its surface.",
+      "3": "Move to the far-right wall near the Act 2 start and rise along it—using Tails's flight or the available route—until the hollow section admits you. Run through the concealed hallway and exit into the mine-cart lane."
+     }
+    },
+    {
+     "id": "chaos-sms-ee-act2-clear",
+     "type": "optional",
+     "safe_type": "Act completion",
+     "label": "Clear Electric Egg Act 2",
+     "missable": true,
+     "levels": {
+      "1": "Mine carts and rising platforms replace a direct floor route.",
+      "2": "Use the hidden corridor, jump from each cart before its track ends, and climb the platform chain.",
+      "3": "Take the concealed wall corridor into the first cart, jump right as its track ends, and cross the crumbling bridge carefully. Repeat the cart exit, ride the next platform upward, cross the final bridge and lift, then dash through the last hallway to the sign."
+     }
+    },
+    {
+     "id": "chaos-sms-ee-act3-clear",
+     "type": "ending",
+     "safe_type": "Final mechanical completion",
+     "label": "Clear Electric Egg Act 3",
+     "missable": true,
+     "levels": {
+      "1": "The last arena rewards a small safe pocket and patient timing.",
+      "2": "Take the cart and Right-hand tube route, then attack from the small space left of the head.",
+      "3": "Jump from the opening cart before it falls, enter the tube while holding Right, and ride the lift to the arena. Work just left of the head, use the upper-left corner against ricochets, land fourteen head hits, avoid both screen edges during the transition, then time one final head hit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "chaos-sms-special-stages",
+   "name": "Five Timed Special Stages",
+   "location_cue": "One-minute side routes containing Rocket Shoes, pogo devices, Clock monitors, chutes, springs, and one emerald apiece.",
+   "note": "Only Sonic enters these stages. They occur in fixed order and a failure repeats the same stage on the next qualifying 100-ring transfer.",
+   "save_backup": {
+    "title": "Keep an entrance state before each hundredth ring",
+    "why": "Entering the stage closes the regular act, and a timeout or fall consumes that attempt.",
+    "detail": "Stop at 99 rings after all local act checks, save, then collect the hundredth. Preserve each successful emerald state separately before preparing the next transfer."
+   },
+   "point_of_no_return": {
+    "title": "Claiming an emerald advances the sequence",
+    "why": "The next 100-ring transfer opens the following stage rather than the one just cleared.",
+    "detail": "Do not overwrite the pre-stage state until the emerald and added Continue appear on the tally. A failed stage must be retried before the sequence can advance."
+   },
+   "items": [
+    {
+     "id": "chaos-sms-special-entry",
+     "type": "secret",
+     "safe_type": "Special-stage access",
+     "label": "Enter the First Special Stage",
+     "missable": true,
+     "levels": {
+      "1": "Sonic's hundredth ring opens a timed route.",
+      "2": "Reach 100 rings as Sonic in Act 1 or Act 2 with fewer than five special emeralds.",
+      "3": "Complete the act's hidden-life and sign preparations first, stop at 99, then take one safe ring. The transfer immediately closes the regular act and starts a sixty-second stage; Tails and Act 3 cannot trigger it."
+     }
+    },
+    {
+     "id": "chaos-sms-emerald-one",
+     "type": "collectible",
+     "safe_type": "Chaos Emerald",
+     "label": "Collect Special Emerald 1",
+     "missable": true,
+     "levels": {
+      "1": "The first gem sits inside a giant-ring formation along an aerial lane.",
+      "2": "Activate the starting Rocket Shoes and fly right to the oval of giant rings.",
+      "3": "Jump onto the starting Rocket-Shoes monitor immediately, then keep flying right without lingering. When the oval of giant rings appears, align with its centre and pass through the blue emerald before the one-minute timer expires."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-emerald-one.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-emerald-two",
+     "type": "collectible",
+     "safe_type": "Chaos Emerald",
+     "label": "Collect Special Emerald 2",
+     "missable": true,
+     "levels": {
+      "1": "Two Clock monitors lead to a two-pogo ascent.",
+      "2": "Climb the platforms, break both Clocks, then bounce right and back left with the pogo devices.",
+      "3": "Ascend the platform chain and break each Clock. Use the first pogo to reach the platform on the right, keep the second pogo, bounce from it onto the platform to the left, then dismount onto the upper ledge holding the yellow emerald."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-emerald-two.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-emerald-three",
+     "type": "collectible",
+     "safe_type": "Chaos Emerald",
+     "label": "Collect Special Emerald 3",
+     "missable": true,
+     "levels": {
+      "1": "A single held direction selects the correct frozen chute branch.",
+      "2": "Break the opening Invincibility monitor, enter the chutes, and hold Up continuously.",
+      "3": "Take the opening monitor, step into the first chute, and keep Up held throughout the repeated transfers. At the relevant fork the upper branch is selected automatically, carrying Sonic to the green emerald."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-emerald-three.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-emerald-four",
+     "type": "collectible",
+     "safe_type": "Chaos Emerald",
+     "label": "Collect Special Emerald 4",
+     "missable": true,
+     "levels": {
+      "1": "The long grass-and-spring route needs two carefully chosen Rocket Shoes.",
+      "2": "Rush through the rock wall and Clock, climb the spring staircase, then use the later upper rocket.",
+      "3": "Run right past the first spring, cross the pillars, roll through the rock wall, break the Clock, and Spin Dash through the dead end. Use the first Rocket Shoes to reach the next ground, climb the staircase without striking its springs, ignore the first upper rocket, and take the next one high and right to the silver emerald's ledge."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-emerald-four.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-emerald-five",
+     "type": "collectible",
+     "safe_type": "Chaos Emerald",
+     "label": "Collect Special Emerald 5",
+     "missable": true,
+     "levels": {
+      "1": "The final tube maze turns on one rapid branch change.",
+      "2": "Break the Clock to the left, ignore the first left branch, then choose the second left and immediate down branch.",
+      "3": "Take the Clock behind the start and enter the tube. Coast past the first left branch, hold Left for the second, immediately switch to Down for the nearby descending tube, then release directions. Jump before the exit spring sends Sonic back and move left to the pink emerald."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-chaos-1993-master-system/chaos-sms-emerald-five.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "chaos-sms-special-retry",
+     "type": "optional",
+     "safe_type": "Failure recovery",
+     "label": "Retry a Failed Special Stage",
+     "missable": true,
+     "levels": {
+      "1": "A missed gem does not advance the hidden sequence.",
+      "2": "After a timeout or fall, collect another 100 rings in a later qualifying act.",
+      "3": "Continue into the next regular act, rebuild Sonic's counter to 100 before its sign, and re-enter. The same unfinished Special Stage returns; clear it before expecting the following emerald route."
+     }
+    },
+    {
+     "id": "chaos-sms-special-hundred-life",
+     "type": "secret",
+     "safe_type": "Ring reward",
+     "label": "Earn 100 Rings Inside a Special Stage",
+     "missable": true,
+     "levels": {
+      "1": "A second full counter pays a life instead of nesting another stage.",
+      "2": "Collect 100 ordinary-equivalent rings during one Special Stage.",
+      "3": "Sweep normal rings and giant rings—the latter count as ten—until the counter reaches 100. Confirm one added life; remain focused on the emerald because this reward does not pause or restart the sixty-second timer."
+     }
+    },
+    {
+     "id": "chaos-sms-five-emerald-gate",
+     "type": "optional",
+     "safe_type": "Completion gate",
+     "label": "Secure All Five Special Emeralds",
+     "missable": true,
+     "levels": {
+      "1": "Five successful timers change Sonic's final completion branch.",
+      "2": "Clear all five Special Stages in order and verify the five-gem row before the final zone ends.",
+      "3": "After every emerald, confirm both the gem and awarded Continue on the tally. Once all five are present, another 100 rings gives a life instead of a transfer; preserve this full-gem state before Electric Egg Act 3."
+     }
+    },
+    {
+     "id": "chaos-sms-sixth-emerald",
+     "type": "collectible",
+     "safe_type": "Final Chaos Emerald",
+     "label": "Collect the Sixth Chaos Emerald",
+     "missable": true,
+     "levels": {
+      "1": "The last gem is gated by the complete five-stage route.",
+      "2": "Enter the final Act 3 as Sonic with all five special emeralds and complete both arena phases.",
+      "3": "Confirm five emeralds before the arena, land the fourteen first-phase hits and one final timed hit, then continue right through the mechanical resolution and collect the sixth emerald before the full-emblem completion proceeds."
+     }
+    }
+   ]
+  },
+  {
+   "id": "chaos-sms-completion-routes",
+   "name": "Completion Routes and Final Audit",
+   "location_cue": "The five-gem counter before the final arena, the character-specific completion sequences, credits, and cartridge restart.",
+   "note": "Record three separate full-credit completions without describing their story imagery: Sonic below five gems, Sonic with five, and Tails.",
+   "save_backup": {
+    "title": "Preserve three labelled final-act branches",
+    "why": "The final hit commits the active character and emerald condition, and the cartridge later restarts.",
+    "detail": "Keep independent states labelled SONIC STANDARD, SONIC FIVE, and TAILS. Capture the counters before the arena and the full credits after each result."
+   },
+   "point_of_no_return": {
+    "title": "Credits end the recorded branch",
+    "why": "The cartridge eventually returns to its opening sequence and does not retain completion data.",
+    "detail": "Capture the completion confirmation and entire staff roll before the restart; do not assume the later title screen proves which route was cleared."
+   },
+   "items": [
+    {
+     "id": "chaos-sms-sonic-standard-completion",
+     "type": "ending",
+     "safe_type": "Completion result",
+     "label": "Record Sonic's Standard Completion",
+     "missable": true,
+     "levels": {
+      "1": "Sonic has a distinct result when the special-stage set remains incomplete.",
+      "2": "Clear Electric Egg Act 3 as Sonic while holding zero to four special emeralds.",
+      "3": "Keep a labelled full-credit branch with fewer than five emeralds, complete both mechanical phases, and record the resulting completion confirmation plus the full credits. Do not describe or preview its story imagery in the guide."
+     }
+    },
+    {
+     "id": "chaos-sms-sonic-full-completion",
+     "type": "ending",
+     "safe_type": "Completion result",
+     "label": "Record Sonic's Full-Emerald Completion",
+     "missable": true,
+     "levels": {
+      "1": "The complete special-stage set changes Sonic's mechanical result.",
+      "2": "Clear Electric Egg Act 3 as Sonic after securing all five timed-stage emeralds.",
+      "3": "Load the labelled five-emerald branch, verify the gem row before the arena, complete both phases, collect the sixth emerald when control permits, and record the full completion confirmation and credits without exposing their story content."
+     }
+    },
+    {
+     "id": "chaos-sms-tails-completion",
+     "type": "ending",
+     "safe_type": "Completion result",
+     "label": "Record Tails's Completion",
+     "missable": true,
+     "levels": {
+      "1": "The second character has one independent finish.",
+      "2": "Clear all eighteen acts and Electric Egg's final mechanical test as Tails.",
+      "3": "Use the Tails branch from Player Select through every act, relying on flight without mixing Sonic's emerald conditions. Complete both final phases, then record Tails's completion confirmation and full credits without describing their imagery."
+     }
+    },
+    {
+     "id": "chaos-sms-all-ten-hidden-lives",
+     "type": "optional",
+     "safe_type": "Collectible set",
+     "label": "Collect All Ten Hidden 1-Ups",
+     "missable": true,
+     "levels": {
+      "1": "Every non-final zone hides one life in each of its first two acts.",
+      "2": "Collect both life monitors in Turquoise Hill, Gigalopolis, Sleeping Egg, Mecha Green Hill, and Aqua Planet.",
+      "3": "Use the ten act-specific entries in this pack and mark each monitor only after its life counter changes. Electric Egg and every Act 3 contain no matching hidden life, so the complete set totals ten."
+     }
+    },
+    {
+     "id": "chaos-sms-all-sign-results",
+     "type": "optional",
+     "safe_type": "Secret set",
+     "label": "Record Every Goal-Sign Result",
+     "missable": true,
+     "levels": {
+      "1": "The two sign tables contain rewards and visual oddities beyond ordinary faces.",
+      "2": "Capture all four regular faces plus Super Ring, Continue, backwards, and 1-Up results from both zone groups.",
+      "3": "Use separate pre-sign states to record the four common faces, then one valid ring total for each of the eight Group-A and Group-B special outcomes. Confirm reward counters rather than relying only on the sign artwork."
+     }
+    },
+    {
+     "id": "chaos-sms-all-sonic-acts",
+     "type": "optional",
+     "safe_type": "Route completion",
+     "label": "Clear All Eighteen Acts as Sonic",
+     "missable": true,
+     "levels": {
+      "1": "The emerald route still needs every physical act completed.",
+      "2": "Clear Acts 1, 2, and 3 in all six zones on one labelled Sonic route.",
+      "3": "Record each entrance and completion in order. A 100-ring transfer counts its current Act 1/2 as cleared, but complete every hidden-life detour first and retain the Act 3 arena records for all six zones."
+     }
+    },
+    {
+     "id": "chaos-sms-all-tails-acts",
+     "type": "optional",
+     "safe_type": "Route completion",
+     "label": "Clear All Eighteen Acts as Tails",
+     "missable": true,
+     "levels": {
+      "1": "Flight changes routes but does not remove any act from completion.",
+      "2": "Clear Acts 1, 2, and 3 in all six zones on one labelled Tails route.",
+      "3": "Start from Tails's Player Select branch, confirm his replacement monitors where Sonic has Rocket Shoes, clear every sign and arena, and finish the complete eighteen-act sequence without substituting Level Select."
+     }
+    }
+   ]
+  }
+ ]
+}

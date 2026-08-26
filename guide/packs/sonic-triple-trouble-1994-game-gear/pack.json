@@ -1,0 +1,1225 @@
+{
+ "id": "sonic-triple-trouble-1994-game-gear",
+ "game": "Sonic Triple Trouble",
+ "target": "Original international Game Gear retail cartridge, product 02530 version 0",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-26T18:06:16.080275+00:00",
+ "areas": [
+  {
+   "id": "stt-before-starting",
+   "name": "Before Starting",
+   "location_cue": "the cartridge boot, title screen, character selector, and opening practice terrain",
+   "note": "Confirm the selected handheld build and learn every shared or character-specific tool before preserving route states.",
+   "save_backup": {
+    "title": "Create separate Sonic and Tails states",
+    "why": "The cartridge has no modern campaign save and the two routes must remain independently reproducible.",
+    "detail": "Save at the character selector and again at clean act boundaries. Label character, zone, act, and emerald count; never overwrite the only state before a one-use box."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "stt-verify-cartridge",
+     "type": "optional",
+     "safe_type": "Version check",
+     "label": "Original International Cartridge",
+     "missable": false,
+     "levels": {
+      "1": "Begin with the preserved handheld release.",
+      "2": "Use the international Game Gear cartridge labelled Sonic Triple Trouble.",
+      "3": "Verify a 524,288-byte ROM with SHA-1 4965AF7FFE60382FFA805710B7C8006419CC4AC4. This is product 02530, version 0; exclude beta images and the Japanese-title duplicate from this selected route."
+     }
+    },
+    {
+     "id": "stt-sonic-route",
+     "type": "optional",
+     "safe_type": "Character route",
+     "label": "Sonic Route",
+     "missable": false,
+     "levels": {
+      "1": "One character favours direct speed and rolling attacks.",
+      "2": "Choose Sonic at the character screen and begin a clean route.",
+      "3": "Keep this state separate from Tails. Use Spin Dash for breakable floors and curves, Air Roll for airborne contact, and Super Peel Out when the forward lane is already safe."
+     }
+    },
+    {
+     "id": "stt-tails-route",
+     "type": "optional",
+     "safe_type": "Character route",
+     "label": "Tails Route",
+     "missable": false,
+     "levels": {
+      "1": "The second character can bypass selected vertical obstacles.",
+      "2": "Choose Tails at the character screen and begin a separate route.",
+      "3": "Use the shared Spin Dash and Air Roll normally, but reserve limited flight for high ledges, tiny-platform crossings, and recovery from awkward launches. Land before the flight timer expires."
+     }
+    },
+    {
+     "id": "stt-spin-dash",
+     "type": "interaction",
+     "safe_type": "Core move",
+     "label": "Spin Dash",
+     "missable": false,
+     "levels": {
+      "1": "Breakable terrain often yields to a charged start.",
+      "2": "Hold Down, tap an action button, then release Down.",
+      "3": "Charge while stationary, release toward open ground, and jump only after momentum is established. Use it for weak blocks and curved walls; never launch blindly toward pits or retracting spikes."
+     }
+    },
+    {
+     "id": "stt-air-roll",
+     "type": "interaction",
+     "safe_type": "Core move",
+     "label": "Air Roll",
+     "missable": false,
+     "levels": {
+      "1": "A second airborne input changes vulnerable contact.",
+      "2": "Jump, then press an action button again while airborne.",
+      "3": "The brief rolling window lets you strike enemies or extend a rebound. Time the second press shortly before contact; it works once per bounce and ends quickly, so repeated button mashing is unreliable."
+     }
+    },
+    {
+     "id": "stt-super-peel-out",
+     "type": "interaction",
+     "safe_type": "Character move",
+     "label": "Super Peel Out",
+     "missable": false,
+     "levels": {
+      "1": "Sonic has a standing acceleration option.",
+      "2": "Hold Up, charge with an action button, then release Up.",
+      "3": "Use it only on a visible straight. It produces immediate ground speed without Spin Dash protection, so cancel the idea when an enemy, wall, water edge, or blind drop sits ahead."
+     }
+    },
+    {
+     "id": "stt-tailicopter",
+     "type": "interaction",
+     "safe_type": "Character move",
+     "label": "Tails Flight",
+     "missable": false,
+     "levels": {
+      "1": "Short vertical freedom opens safer alternate lines.",
+      "2": "Jump as Tails, then press an action button repeatedly.",
+      "3": "Gain height with measured presses, steer toward the landing, and touch ground before trying again. Use flight to bypass tiny ledges or preserve fragile platforms, not to hover indefinitely."
+     }
+    },
+    {
+     "id": "stt-rocket-shoes",
+     "type": "collectible",
+     "safe_type": "Gadget",
+     "label": "Rocket Shoes",
+     "missable": false,
+     "levels": {
+      "1": "A fast temporary gadget rewards a clear launch lane.",
+      "2": "Break the Sonic-only rocket-footwear monitor in open terrain.",
+      "3": "Aim before collecting it because propulsion begins immediately. Steer through the intended high route, avoid fighting the forced momentum, and expect the gadget to end after its timed run or disruptive contact."
+     }
+    },
+    {
+     "id": "stt-propeller-shoes",
+     "type": "collectible",
+     "safe_type": "Gadget",
+     "label": "Propeller Shoes",
+     "missable": false,
+     "levels": {
+      "1": "One underwater tool replaces slow ordinary movement.",
+      "2": "Find Sonic's propeller-footwear monitor inside Tidal Plant.",
+      "3": "Enter the water route first, collect the monitor, then steer through submerged passages while the effect lasts. It improves underwater travel but does not remove the need to watch air and collision hazards."
+     }
+    },
+    {
+     "id": "stt-jet-board",
+     "type": "collectible",
+     "safe_type": "Gadget",
+     "label": "Jet Board",
+     "missable": false,
+     "levels": {
+      "1": "Snowy slopes contain a dedicated travel device.",
+      "2": "Collect Sonic's board monitor near a winter slope.",
+      "3": "Take the board only when the downhill lane is readable, centre it before jumps, and avoid hard obstacle contact. A hit ends the ride, so use ordinary movement for careful emerald-box work when necessary."
+     }
+    },
+    {
+     "id": "stt-pogo-spring",
+     "type": "collectible",
+     "safe_type": "Gadget",
+     "label": "Pogo Spring",
+     "missable": false,
+     "levels": {
+      "1": "A portable bounce tool reaches otherwise isolated ledges.",
+      "2": "Break the Pogo Spring monitor before a high crossing.",
+      "3": "Control horizontal movement during each bounce and land centrally on tiny platforms. Sonic needs this for one emerald-box route; Tails can often fly, but should still demonstrate the gadget once."
+     }
+    },
+    {
+     "id": "stt-sea-fox",
+     "type": "collectible",
+     "safe_type": "Gadget",
+     "label": "Sea Fox",
+     "missable": false,
+     "levels": {
+      "1": "Tails receives a vehicle for submerged combat.",
+      "2": "Collect the Tails-only submarine monitor in Tidal Plant.",
+      "3": "Stay near the upper-left during the submerged encounter and fire forward. Your shots damage the target and can intercept higher projectiles; direct contact can knock Tails out of the vehicle."
+     }
+    },
+    {
+     "id": "stt-ring-rules",
+     "type": "interaction",
+     "safe_type": "Survival rule",
+     "label": "Ring Protection",
+     "missable": false,
+     "levels": {
+      "1": "Damage does not empty the counter uniformly.",
+      "2": "Carry rings and note the thirty- or fifty-ring loss after contact.",
+      "3": "Ordinary damage removes a fixed block rather than every ring, but pits, drowning, crushing, and timeout remain lethal. Preserve at least fifty before an emerald box and one during extended mechanical encounters."
+     }
+    },
+    {
+     "id": "stt-extra-life-ring",
+     "type": "collectible",
+     "safe_type": "Resource milestone",
+     "label": "Hundred-Ring Life",
+     "missable": false,
+     "levels": {
+      "1": "A large ring reserve has a direct reward.",
+      "2": "Raise the counter to 100 during any normal act.",
+      "3": "Collect the hundredth ring without dying or spending the route on a one-use box first. The extra life is awarded immediately; later rings begin building the next hundred normally."
+     }
+    },
+    {
+     "id": "stt-turnstile-bonuses",
+     "type": "secret",
+     "safe_type": "Goal bonus",
+     "label": "Turnstile Bonus Set",
+     "missable": false,
+     "levels": {
+      "1": "The act exit can display several outcomes.",
+      "2": "Cross Act 1 or Act 2 turnstiles and watch the symbol.",
+      "3": "Record the ring award and both character-life awards as they appear across replays. Some symbols give no resource. Do not mistake the randomized panel for an ending requirement or emerald state."
+     }
+    },
+    {
+     "id": "stt-emerald-entry-rule",
+     "type": "interaction",
+     "safe_type": "Special-stage entry",
+     "label": "Emerald Box Rule",
+     "missable": false,
+     "levels": {
+      "1": "The hidden box only works with a prepared ring count.",
+      "2": "Reach an emerald box with at least fifty rings.",
+      "3": "Do not break the box below fifty: each placement works once and becomes a Super Ring afterward. With fifty or more, break it and touch the star circle above it to enter the current uncleared Special Stage."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-great-turquoise",
+   "name": "Great Turquoise Zone",
+   "location_cue": "bright tropical ruins, tree springs, and shallow pools",
+   "note": "Use tree springs for the high line and treat the water route as an optional detour.",
+   "save_backup": {
+    "title": "Preserve both Great Turquoise Zone emerald windows",
+    "why": "Each emerald box becomes spent after it is broken, even when the ring requirement was not met.",
+    "detail": "Save at each act start and again with fifty rings before approaching the box. Keep separate Sonic and Tails route states."
+   },
+   "point_of_no_return": {
+    "title": "Do not cross the Act 2 turnstile yet",
+    "why": "Leaving the act closes both emerald-box opportunities in this area for the current route.",
+    "detail": "Confirm both box locations are documented and the intended Special Stage is complete before ending Act 2; otherwise restore or replay."
+   },
+   "items": [
+    {
+     "id": "stt-great-turquoise-a1-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 1 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Learn this area's main route with Sonic's own movement.",
+      "2": "Finish Great Turquoise Zone Act 1 as Sonic without using level select.",
+      "3": "Stay high over the trees, then continue right through the open terrain."
+     }
+    },
+    {
+     "id": "stt-great-turquoise-a2-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 2 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "The longer route tests Sonic's recovery and route control.",
+      "2": "Finish Great Turquoise Zone Act 2 as Sonic from its normal start.",
+      "3": "Run down the opening hill, cross the waterfalls, and use the large pool route before returning to the right-hand goal."
+     }
+    },
+    {
+     "id": "stt-great-turquoise-a3-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 3 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Carry a ring reserve into the compact mechanical section.",
+      "2": "Finish Great Turquoise Zone Act 3 as Sonic and continue to the next area.",
+      "3": "Collect the six tree-top rings, break through the apparent dead end, and enter the water. Hit the low pod four times; when it rises, bounce from the incoming spring creatures and Air Roll into it four more times."
+     }
+    },
+    {
+     "id": "stt-great-turquoise-a1-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 1 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "Learn this area's main route with Tails's own movement.",
+      "2": "Finish Great Turquoise Zone Act 1 as Tails without using level select.",
+      "3": "Stay high over the trees, then continue right through the open terrain."
+     }
+    },
+    {
+     "id": "stt-great-turquoise-a2-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 2 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "The longer route tests Tails's recovery and route control.",
+      "2": "Finish Great Turquoise Zone Act 2 as Tails from its normal start.",
+      "3": "Run down the opening hill, cross the waterfalls, and use the large pool route before returning to the right-hand goal."
+     }
+    },
+    {
+     "id": "stt-great-turquoise-a3-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 3 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "Carry a ring reserve into the compact mechanical section.",
+      "2": "Finish Great Turquoise Zone Act 3 as Tails and continue to the next area.",
+      "3": "Collect the six tree-top rings, break through the apparent dead end, and enter the water. Hit the low pod four times; when it rises, bounce from the incoming spring creatures and Air Roll into it four more times."
+     }
+    },
+    {
+     "id": "stt-great-turquoise-emerald-a1",
+     "type": "collectible",
+     "safe_type": "Emerald box",
+     "label": "Act 1 Emerald Box",
+     "missable": true,
+     "levels": {
+      "1": "A concealed route branches away from the ordinary exit.",
+      "2": "Reach the hidden emerald box in Great Turquoise Zone Act 1 with fifty rings.",
+      "3": "Take the high route through the latter trees and use the final tree spring while moving right to reach the isolated ledge."
+     }
+    },
+    {
+     "id": "stt-great-turquoise-emerald-a2",
+     "type": "collectible",
+     "safe_type": "Emerald box",
+     "label": "Act 2 Emerald Box",
+     "missable": true,
+     "levels": {
+      "1": "The second act provides another one-use attempt window.",
+      "2": "Reach the hidden emerald box in Great Turquoise Zone Act 2 with fifty rings.",
+      "3": "Beyond the large pool, stand just right of the small boost ledge and Spin Dash through the wall. Run and side-hit the box below the upper path without landing above it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-sunset-park",
+   "name": "Sunset Park Zone",
+   "location_cue": "industrial ramps, rails, loops, bridges, and moving machinery",
+   "note": "Control momentum around rails and fragile bridges instead of treating every slope as a speed lane.",
+   "save_backup": {
+    "title": "Preserve both Sunset Park Zone emerald windows",
+    "why": "Each emerald box becomes spent after it is broken, even when the ring requirement was not met.",
+    "detail": "Save at each act start and again with fifty rings before approaching the box. Keep separate Sonic and Tails route states."
+   },
+   "point_of_no_return": {
+    "title": "Do not cross the Act 2 turnstile yet",
+    "why": "Leaving the act closes both emerald-box opportunities in this area for the current route.",
+    "detail": "Confirm both box locations are documented and the intended Special Stage is complete before ending Act 2; otherwise restore or replay."
+   },
+   "items": [
+    {
+     "id": "stt-sunset-park-a1-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 1 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Learn this area's main route with Sonic's own movement.",
+      "2": "Finish Sunset Park Zone Act 1 as Sonic without using level select.",
+      "3": "Follow the upper industrial route, use the ceiling spring near the exit, and inspect the final loop before crossing the goal."
+     }
+    },
+    {
+     "id": "stt-sunset-park-a2-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 2 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "The longer route tests Sonic's recovery and route control.",
+      "2": "Finish Sunset Park Zone Act 2 as Sonic from its normal start.",
+      "3": "Let the opening railcar settle, climb left for rings and the flight gadget, then continue through the bridge-and-hill sequence to the far-right ledge."
+     }
+    },
+    {
+     "id": "stt-sunset-park-a3-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 3 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Carry a ring reserve into the compact mechanical section.",
+      "2": "Finish Sunset Park Zone Act 3 as Sonic and continue to the next area.",
+      "3": "Continue when the flat running section begins and clear its track hazards without stopping. In the scrolling chamber, jump incoming shots and strike the tank's forward cannon three times."
+     }
+    },
+    {
+     "id": "stt-sunset-park-a1-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 1 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "Learn this area's main route with Tails's own movement.",
+      "2": "Finish Sunset Park Zone Act 1 as Tails without using level select.",
+      "3": "Follow the upper industrial route, use the ceiling spring near the exit, and inspect the final loop before crossing the goal."
+     }
+    },
+    {
+     "id": "stt-sunset-park-a2-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 2 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "The longer route tests Tails's recovery and route control.",
+      "2": "Finish Sunset Park Zone Act 2 as Tails from its normal start.",
+      "3": "Let the opening railcar settle, climb left for rings and the flight gadget, then continue through the bridge-and-hill sequence to the far-right ledge."
+     }
+    },
+    {
+     "id": "stt-sunset-park-a3-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 3 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "Carry a ring reserve into the compact mechanical section.",
+      "2": "Finish Sunset Park Zone Act 3 as Tails and continue to the next area.",
+      "3": "Continue when the flat running section begins and clear its track hazards without stopping. In the scrolling chamber, jump incoming shots and strike the tank's forward cannon three times."
+     }
+    },
+    {
+     "id": "stt-sunset-park-emerald-a1",
+     "type": "collectible",
+     "safe_type": "Emerald box",
+     "label": "Act 1 Emerald Box",
+     "missable": true,
+     "levels": {
+      "1": "A concealed route branches away from the ordinary exit.",
+      "2": "Reach the hidden emerald box in Sunset Park Zone Act 1 with fifty rings.",
+      "3": "Near the goal, use the spring left of the final loop and land on the loop's top where the box sits."
+     }
+    },
+    {
+     "id": "stt-sunset-park-emerald-a2",
+     "type": "collectible",
+     "safe_type": "Emerald box",
+     "label": "Act 2 Emerald Box",
+     "missable": true,
+     "levels": {
+      "1": "The second act provides another one-use attempt window.",
+      "2": "Reach the hidden emerald box in Sunset Park Zone Act 2 with fifty rings.",
+      "3": "After the railcar and broken bridge, cross two small hills, hit the spring, and land on the far-right upper ledge."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-meta-junglira",
+   "name": "Meta Junglira Zone",
+   "location_cue": "dense jungle machinery above a hazardous brown channel",
+   "note": "The safer routes stay above the polluted floor and use barrels or bumpers deliberately.",
+   "save_backup": {
+    "title": "Preserve both Meta Junglira Zone emerald windows",
+    "why": "Each emerald box becomes spent after it is broken, even when the ring requirement was not met.",
+    "detail": "Save at each act start and again with fifty rings before approaching the box. Keep separate Sonic and Tails route states."
+   },
+   "point_of_no_return": {
+    "title": "Do not cross the Act 2 turnstile yet",
+    "why": "Leaving the act closes both emerald-box opportunities in this area for the current route.",
+    "detail": "Confirm both box locations are documented and the intended Special Stage is complete before ending Act 2; otherwise restore or replay."
+   },
+   "items": [
+    {
+     "id": "stt-meta-junglira-a1-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 1 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Learn this area's main route with Sonic's own movement.",
+      "2": "Finish Meta Junglira Zone Act 1 as Sonic without using level select.",
+      "3": "After the opening descent, use the moving platform and barrel room to build rings, then return to the high route."
+     }
+    },
+    {
+     "id": "stt-meta-junglira-a2-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 2 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "The longer route tests Sonic's recovery and route control.",
+      "2": "Finish Meta Junglira Zone Act 2 as Sonic from its normal start.",
+      "3": "Keep to upper ledges; Sonic should preserve the Pogo Spring for the late tiny-platform crossing while Tails can fly across."
+     }
+    },
+    {
+     "id": "stt-meta-junglira-a3-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 3 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Carry a ring reserve into the compact mechanical section.",
+      "2": "Finish Meta Junglira Zone Act 3 as Sonic and continue to the next area.",
+      "3": "Enter with rings, attack the mechanical worm's head during its extensions for roughly eight hits, then hold a far corner during the falling debris so a released ring returns within reach."
+     }
+    },
+    {
+     "id": "stt-meta-junglira-a1-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 1 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "Learn this area's main route with Tails's own movement.",
+      "2": "Finish Meta Junglira Zone Act 1 as Tails without using level select.",
+      "3": "After the opening descent, use the moving platform and barrel room to build rings, then return to the high route."
+     }
+    },
+    {
+     "id": "stt-meta-junglira-a2-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 2 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "The longer route tests Tails's recovery and route control.",
+      "2": "Finish Meta Junglira Zone Act 2 as Tails from its normal start.",
+      "3": "Keep to upper ledges; Sonic should preserve the Pogo Spring for the late tiny-platform crossing while Tails can fly across."
+     }
+    },
+    {
+     "id": "stt-meta-junglira-a3-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 3 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "Carry a ring reserve into the compact mechanical section.",
+      "2": "Finish Meta Junglira Zone Act 3 as Tails and continue to the next area.",
+      "3": "Enter with rings, attack the mechanical worm's head during its extensions for roughly eight hits, then hold a far corner during the falling debris so a released ring returns within reach."
+     }
+    },
+    {
+     "id": "stt-meta-junglira-emerald-a1",
+     "type": "collectible",
+     "safe_type": "Emerald box",
+     "label": "Act 1 Emerald Box",
+     "missable": true,
+     "levels": {
+      "1": "A concealed route branches away from the ordinary exit.",
+      "2": "Reach the hidden emerald box in Meta Junglira Zone Act 1 with fifty rings.",
+      "3": "Near the opening, descend left to the moving platform above the brown pool. Gather fifty rings from the barrel room, then enter the short tunnel left of the platform."
+     }
+    },
+    {
+     "id": "stt-meta-junglira-emerald-a2",
+     "type": "collectible",
+     "safe_type": "Emerald box",
+     "label": "Act 2 Emerald Box",
+     "missable": true,
+     "levels": {
+      "1": "The second act provides another one-use attempt window.",
+      "2": "Reach the hidden emerald box in Meta Junglira Zone Act 2 with fifty rings.",
+      "3": "Near the exit, Sonic must carry the Pogo Spring across two tiny ledges to the crumbling lip and tunnel; Tails can fly directly into that tunnel."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-robotnik-winter",
+   "name": "Robotnik Winter Zone",
+   "location_cue": "snowy slopes, sinking drifts, ice walls, and suspended platforms",
+   "note": "Slow exploration reveals safe ground beneath snow and prevents gadget momentum from wasting an emerald attempt.",
+   "save_backup": {
+    "title": "Preserve both Robotnik Winter Zone emerald windows",
+    "why": "Each emerald box becomes spent after it is broken, even when the ring requirement was not met.",
+    "detail": "Save at each act start and again with fifty rings before approaching the box. Keep separate Sonic and Tails route states."
+   },
+   "point_of_no_return": {
+    "title": "Do not cross the Act 2 turnstile yet",
+    "why": "Leaving the act closes both emerald-box opportunities in this area for the current route.",
+    "detail": "Confirm both box locations are documented and the intended Special Stage is complete before ending Act 2; otherwise restore or replay."
+   },
+   "items": [
+    {
+     "id": "stt-robotnik-winter-a1-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 1 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Learn this area's main route with Sonic's own movement.",
+      "2": "Finish Robotnik Winter Zone Act 1 as Sonic without using level select.",
+      "3": "Descend through the snow route, cross the suspended platforms, and continue right after the enemy-topped vertical platform."
+     }
+    },
+    {
+     "id": "stt-robotnik-winter-a2-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 2 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "The longer route tests Sonic's recovery and route control.",
+      "2": "Finish Robotnik Winter Zone Act 2 as Sonic from its normal start.",
+      "3": "Cross the fragile bridges, ride the vertical platform into the left tunnel, and time a roll through the retracting spikes."
+     }
+    },
+    {
+     "id": "stt-robotnik-winter-a3-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 3 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Carry a ring reserve into the compact mechanical section.",
+      "2": "Finish Robotnik Winter Zone Act 3 as Sonic and continue to the next area.",
+      "3": "Attack the floating machine from its side, away from the lower thrusters. Seven hits progressively open safer space; when it moves over the pit, wait for it to stop and deliver the final hit without falling early."
+     }
+    },
+    {
+     "id": "stt-robotnik-winter-a1-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 1 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "Learn this area's main route with Tails's own movement.",
+      "2": "Finish Robotnik Winter Zone Act 1 as Tails without using level select.",
+      "3": "Descend through the snow route, cross the suspended platforms, and continue right after the enemy-topped vertical platform."
+     }
+    },
+    {
+     "id": "stt-robotnik-winter-a2-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 2 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "The longer route tests Tails's recovery and route control.",
+      "2": "Finish Robotnik Winter Zone Act 2 as Tails from its normal start.",
+      "3": "Cross the fragile bridges, ride the vertical platform into the left tunnel, and time a roll through the retracting spikes."
+     }
+    },
+    {
+     "id": "stt-robotnik-winter-a3-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 3 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "Carry a ring reserve into the compact mechanical section.",
+      "2": "Finish Robotnik Winter Zone Act 3 as Tails and continue to the next area.",
+      "3": "Attack the floating machine from its side, away from the lower thrusters. Seven hits progressively open safer space; when it moves over the pit, wait for it to stop and deliver the final hit without falling early."
+     }
+    },
+    {
+     "id": "stt-robotnik-winter-emerald-a1",
+     "type": "collectible",
+     "safe_type": "Emerald box",
+     "label": "Act 1 Emerald Box",
+     "missable": true,
+     "levels": {
+      "1": "A concealed route branches away from the ordinary exit.",
+      "2": "Reach the hidden emerald box in Robotnik Winter Zone Act 1 with fifty rings.",
+      "3": "Follow the moving-platform crossing over the abyss and land on the enemy-topped vertical platform. Continue right to the box before entering the ice tunnel."
+     }
+    },
+    {
+     "id": "stt-robotnik-winter-emerald-a2",
+     "type": "collectible",
+     "safe_type": "Emerald box",
+     "label": "Act 2 Emerald Box",
+     "missable": true,
+     "levels": {
+      "1": "The second act provides another one-use attempt window.",
+      "2": "Reach the hidden emerald box in Robotnik Winter Zone Act 2 with fifty rings.",
+      "3": "After the second fragile bridge, ride the moving platform upward and enter the tunnel on the left. Roll through the retracting spikes without taking a hit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-tidal-plant",
+   "name": "Tidal Plant Zone",
+   "location_cue": "teal underwater machinery, pipes, bubble switches, and lift platforms",
+   "note": "Air management and one-way pipes matter more than raw speed in the submerged passages.",
+   "save_backup": {
+    "title": "Preserve both Tidal Plant Zone emerald windows",
+    "why": "Each emerald box becomes spent after it is broken, even when the ring requirement was not met.",
+    "detail": "Save at each act start and again with fifty rings before approaching the box. Keep separate Sonic and Tails route states."
+   },
+   "point_of_no_return": {
+    "title": "Do not cross the Act 2 turnstile yet",
+    "why": "Leaving the act closes both emerald-box opportunities in this area for the current route.",
+    "detail": "Confirm both box locations are documented and the intended Special Stage is complete before ending Act 2; otherwise restore or replay."
+   },
+   "items": [
+    {
+     "id": "stt-tidal-plant-a1-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 1 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Learn this area's main route with Sonic's own movement.",
+      "2": "Finish Tidal Plant Zone Act 1 as Sonic without using level select.",
+      "3": "Use bubble switches and moving platforms to climb the late shaft, then descend into the small spike-lined machinery alcove before continuing."
+     }
+    },
+    {
+     "id": "stt-tidal-plant-a2-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 2 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "The longer route tests Sonic's recovery and route control.",
+      "2": "Finish Tidal Plant Zone Act 2 as Sonic from its normal start.",
+      "3": "Build rings in the vertical shaft, preserve the upper pipe route near the late air pocket, and avoid the weak floor above spikes."
+     }
+    },
+    {
+     "id": "stt-tidal-plant-a3-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 3 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Carry a ring reserve into the compact mechanical section.",
+      "2": "Finish Tidal Plant Zone Act 3 as Sonic and continue to the next area.",
+      "3": "As Sonic, stay below the hovering machine, jump its low torpedoes, and strike upward; collect the air bubble between cycles. As Tails, keep the Sea Fox high-left, fire forward, and intercept the higher projectiles."
+     }
+    },
+    {
+     "id": "stt-tidal-plant-a1-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 1 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "Learn this area's main route with Tails's own movement.",
+      "2": "Finish Tidal Plant Zone Act 1 as Tails without using level select.",
+      "3": "Use bubble switches and moving platforms to climb the late shaft, then descend into the small spike-lined machinery alcove before continuing."
+     }
+    },
+    {
+     "id": "stt-tidal-plant-a2-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 2 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "The longer route tests Tails's recovery and route control.",
+      "2": "Finish Tidal Plant Zone Act 2 as Tails from its normal start.",
+      "3": "Build rings in the vertical shaft, preserve the upper pipe route near the late air pocket, and avoid the weak floor above spikes."
+     }
+    },
+    {
+     "id": "stt-tidal-plant-a3-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 3 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "Carry a ring reserve into the compact mechanical section.",
+      "2": "Finish Tidal Plant Zone Act 3 as Tails and continue to the next area.",
+      "3": "As Sonic, stay below the hovering machine, jump its low torpedoes, and strike upward; collect the air bubble between cycles. As Tails, keep the Sea Fox high-left, fire forward, and intercept the higher projectiles."
+     }
+    },
+    {
+     "id": "stt-tidal-plant-emerald-a1",
+     "type": "collectible",
+     "safe_type": "Emerald box",
+     "label": "Act 1 Emerald Box",
+     "missable": true,
+     "levels": {
+      "1": "A concealed route branches away from the ordinary exit.",
+      "2": "Reach the hidden emerald box in Tidal Plant Zone Act 1 with fifty rings.",
+      "3": "Late in the act, climb the moving-platform shaft, then drop into the compact teal alcove. The box stands on a narrow floor between spikes above and below."
+     }
+    },
+    {
+     "id": "stt-tidal-plant-emerald-a2",
+     "type": "collectible",
+     "safe_type": "Emerald box",
+     "label": "Act 2 Emerald Box",
+     "missable": true,
+     "levels": {
+      "1": "The second act provides another one-use attempt window.",
+      "2": "Reach the hidden emerald box in Tidal Plant Zone Act 2 with fifty rings.",
+      "3": "Near the late air pocket, take the upper pipe, clear its enemy, step over the weak floor, enter the left pocket, and swim upward to the block-enclosed box."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-atomic-destroyer",
+   "name": "Atomic Destroyer Zone",
+   "location_cue": "dark transport tubes, junction chambers, switches, and laser machinery",
+   "note": "Read every junction before committing because several transports prevent an immediate return.",
+   "save_backup": {
+    "title": "Preserve both Atomic Destroyer Zone emerald windows",
+    "why": "Each emerald box becomes spent after it is broken, even when the ring requirement was not met.",
+    "detail": "Save at each act start and again with fifty rings before approaching the box. Keep separate Sonic and Tails route states."
+   },
+   "point_of_no_return": {
+    "title": "Do not cross the Act 2 turnstile yet",
+    "why": "Leaving the act closes both emerald-box opportunities in this area for the current route.",
+    "detail": "Confirm both box locations are documented and the intended Special Stage is complete before ending Act 2; otherwise restore or replay."
+   },
+   "items": [
+    {
+     "id": "stt-atomic-destroyer-a1-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 1 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Learn this area's main route with Sonic's own movement.",
+      "2": "Finish Atomic Destroyer Zone Act 1 as Sonic without using level select.",
+      "3": "At the late pit, climb to the high left ledge before taking the blue transport onward."
+     }
+    },
+    {
+     "id": "stt-atomic-destroyer-a2-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 2 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "The longer route tests Sonic's recovery and route control.",
+      "2": "Finish Atomic Destroyer Zone Act 2 as Sonic from its normal start.",
+      "3": "At the four-way junction, collect the two lower ring boxes, return, go left, pass through the transport, then head left past three more ring boxes."
+     }
+    },
+    {
+     "id": "stt-atomic-destroyer-a3-sonic",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 3 — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Carry a ring reserve into the compact mechanical section.",
+      "2": "Finish Atomic Destroyer Zone Act 3 as Sonic and continue to the next area.",
+      "3": "Preserve rings across the sequence: hit the blue flyer during vulnerable passes, avoid its gold passes, clear the piston and flame machines, strike the unshielded electric craft once, then use the side alcove whenever the central chamber charges."
+     }
+    },
+    {
+     "id": "stt-atomic-destroyer-a1-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 1 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "Learn this area's main route with Tails's own movement.",
+      "2": "Finish Atomic Destroyer Zone Act 1 as Tails without using level select.",
+      "3": "At the late pit, climb to the high left ledge before taking the blue transport onward."
+     }
+    },
+    {
+     "id": "stt-atomic-destroyer-a2-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 2 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "The longer route tests Tails's recovery and route control.",
+      "2": "Finish Atomic Destroyer Zone Act 2 as Tails from its normal start.",
+      "3": "At the four-way junction, collect the two lower ring boxes, return, go left, pass through the transport, then head left past three more ring boxes."
+     }
+    },
+    {
+     "id": "stt-atomic-destroyer-a3-tails",
+     "type": "optional",
+     "safe_type": "Character act",
+     "label": "Act 3 — Tails",
+     "missable": false,
+     "levels": {
+      "1": "Carry a ring reserve into the compact mechanical section.",
+      "2": "Finish Atomic Destroyer Zone Act 3 as Tails and continue to the next area.",
+      "3": "Preserve rings across the sequence: hit the blue flyer during vulnerable passes, avoid its gold passes, clear the piston and flame machines, strike the unshielded electric craft once, then use the side alcove whenever the central chamber charges."
+     }
+    },
+    {
+     "id": "stt-atomic-destroyer-emerald-a1",
+     "type": "collectible",
+     "safe_type": "Emerald box",
+     "label": "Act 1 Emerald Box",
+     "missable": true,
+     "levels": {
+      "1": "A concealed route branches away from the ordinary exit.",
+      "2": "Reach the hidden emerald box in Atomic Destroyer Zone Act 1 with fifty rings.",
+      "3": "Near the late pit, stand on its right side and jump back to the high ledge on the left. Tails can fly; Sonic must jump from the floor's highest point."
+     }
+    },
+    {
+     "id": "stt-atomic-destroyer-emerald-a2",
+     "type": "collectible",
+     "safe_type": "Emerald box",
+     "label": "Act 2 Emerald Box",
+     "missable": true,
+     "levels": {
+      "1": "The second act provides another one-use attempt window.",
+      "2": "Reach the hidden emerald box in Atomic Destroyer Zone Act 2 with fifty rings.",
+      "3": "From the four-way junction, go left, move right through the transporter, then walk left past three Super Ring boxes to the emerald box."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-special-stage-1",
+   "name": "Special Stage 1",
+   "location_cue": "a pale temple maze with curved walls, pillars, clocks, and opposing springs",
+   "note": "A failed attempt repeats this same stage at the next unused emerald box; success advances the sequence.",
+   "save_backup": {
+    "title": "Back up before Special Stage 1",
+    "why": "Failure spends the current act's emerald box even though the same stage remains uncleared.",
+    "detail": "Save with fifty rings before breaking the box. On failure, restore for another attempt or deliberately continue to a later unused box."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "stt-special-1-entry",
+     "type": "collectible",
+     "safe_type": "Stage entry",
+     "label": "Enter Special Stage 1",
+     "missable": false,
+     "levels": {
+      "1": "Use a prepared emerald-box window rather than opening it early.",
+      "2": "Carry fifty rings to any unused emerald box and touch its star circle.",
+      "3": "The cartridge always opens the earliest uncleared Special Stage. If this number does not appear, an earlier stage remains incomplete; restore that box state or use a later unused placement."
+     }
+    },
+    {
+     "id": "stt-special-1-clear",
+     "type": "collectible",
+     "safe_type": "Chaos Emerald",
+     "label": "Chaos Emerald 1",
+     "missable": true,
+     "levels": {
+      "1": "Reach the end before time expires, using clocks to restore the full allowance.",
+      "2": "Complete Special Stage 1 and collect its emerald.",
+      "3": "Go right to the curved wall, use the high spring beneath a ring box, and take the first clock. Climb the marked spring pillar, roll along the floor through the circular blocks to keep the recessed clock, collect the next room's rings before its clock, leave by the ground tunnel, cross the sideways springs slowly, then Air Roll right from the final diagonal spring."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-special-stage-2",
+   "name": "Special Stage 2",
+   "location_cue": "a bright rear-view aircraft course followed by a stone chamber",
+   "note": "A failed attempt repeats this same stage at the next unused emerald box; success advances the sequence.",
+   "save_backup": {
+    "title": "Back up before Special Stage 2",
+    "why": "Failure spends the current act's emerald box even though the same stage remains uncleared.",
+    "detail": "Save with fifty rings before breaking the box. On failure, restore for another attempt or deliberately continue to a later unused box."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "stt-special-2-entry",
+     "type": "collectible",
+     "safe_type": "Stage entry",
+     "label": "Enter Special Stage 2",
+     "missable": false,
+     "levels": {
+      "1": "Use a prepared emerald-box window rather than opening it early.",
+      "2": "Carry fifty rings to any unused emerald box and touch its star circle.",
+      "3": "The cartridge always opens the earliest uncleared Special Stage. If this number does not appear, an earlier stage remains incomplete; restore that box state or use a later unused placement."
+     }
+    },
+    {
+     "id": "stt-special-2-clear",
+     "type": "collectible",
+     "safe_type": "Chaos Emerald",
+     "label": "Chaos Emerald 2",
+     "missable": true,
+     "levels": {
+      "1": "Read ring formations early and avoid losing control to paired bombs.",
+      "2": "Complete Special Stage 2 and collect its emerald.",
+      "3": "Steer through the formations until the counter reaches eighty; the patterns cycle twice, so prioritize the two spirals and accept that split Y-shapes cannot be fully collected. Black bombs pause movement but do not remove rings. In the chamber, jump onto the spring-equipped vehicle repeatedly for sixteen hits."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-special-stage-3",
+   "name": "Special Stage 3",
+   "location_cue": "a clockless temple maze with tiny invisible platforms and curved walls",
+   "note": "A failed attempt repeats this same stage at the next unused emerald box; success advances the sequence.",
+   "save_backup": {
+    "title": "Back up before Special Stage 3",
+    "why": "Failure spends the current act's emerald box even though the same stage remains uncleared.",
+    "detail": "Save with fifty rings before breaking the box. On failure, restore for another attempt or deliberately continue to a later unused box."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "stt-special-3-entry",
+     "type": "collectible",
+     "safe_type": "Stage entry",
+     "label": "Enter Special Stage 3",
+     "missable": false,
+     "levels": {
+      "1": "Use a prepared emerald-box window rather than opening it early.",
+      "2": "Carry fifty rings to any unused emerald box and touch its star circle.",
+      "3": "The cartridge always opens the earliest uncleared Special Stage. If this number does not appear, an earlier stage remains incomplete; restore that box state or use a later unused placement."
+     }
+    },
+    {
+     "id": "stt-special-3-clear",
+     "type": "collectible",
+     "safe_type": "Chaos Emerald",
+     "label": "Chaos Emerald 3",
+     "missable": true,
+     "levels": {
+      "1": "Clean execution matters because no clock can restore the timer.",
+      "2": "Complete Special Stage 3 and collect its emerald.",
+      "3": "Roll through three opening blocks and jump before the backward spring; Tails may fly over the wall. Climb the alternating ledges, use the left Pogo if needed, launch from the curves while holding toward each landing, cross four tiny invisible platforms, break the centre of the T-shaped block formation, and finish the remaining curved-wall climbs. Hit the passing vehicle three times."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-special-stage-4",
+   "name": "Special Stage 4",
+   "location_cue": "a dark rear-view aircraft course followed by a stone chamber",
+   "note": "A failed attempt repeats this same stage at the next unused emerald box; success advances the sequence.",
+   "save_backup": {
+    "title": "Back up before Special Stage 4",
+    "why": "Failure spends the current act's emerald box even though the same stage remains uncleared.",
+    "detail": "Save with fifty rings before breaking the box. On failure, restore for another attempt or deliberately continue to a later unused box."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "stt-special-4-entry",
+     "type": "collectible",
+     "safe_type": "Stage entry",
+     "label": "Enter Special Stage 4",
+     "missable": false,
+     "levels": {
+      "1": "Use a prepared emerald-box window rather than opening it early.",
+      "2": "Carry fifty rings to any unused emerald box and touch its star circle.",
+      "3": "The cartridge always opens the earliest uncleared Special Stage. If this number does not appear, an earlier stage remains incomplete; restore that box state or use a later unused placement."
+     }
+    },
+    {
+     "id": "stt-special-4-clear",
+     "type": "collectible",
+     "safe_type": "Chaos Emerald",
+     "label": "Chaos Emerald 4",
+     "missable": true,
+     "levels": {
+      "1": "A second flying route rewards anticipation rather than last-second steering.",
+      "2": "Complete Special Stage 4 and collect its emerald.",
+      "3": "Collect eighty rings over the two pattern cycles and avoid red bombs that freeze movement briefly. After transport to the chamber, do not chase the airborne vehicle. Jump the returning missile each pass and keep it moving until its own path collides with the vehicle."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-special-stage-5",
+   "name": "Special Stage 5",
+   "location_cue": "a red temple maze with invisible platforms, fragile blocks, and fatal pits",
+   "note": "A failed attempt repeats this same stage at the next unused emerald box; success advances the sequence.",
+   "save_backup": {
+    "title": "Back up before Special Stage 5",
+    "why": "Failure spends the current act's emerald box even though the same stage remains uncleared.",
+    "detail": "Save with fifty rings before breaking the box. On failure, restore for another attempt or deliberately continue to a later unused box."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "stt-special-5-entry",
+     "type": "collectible",
+     "safe_type": "Stage entry",
+     "label": "Enter Special Stage 5",
+     "missable": false,
+     "levels": {
+      "1": "Use a prepared emerald-box window rather than opening it early.",
+      "2": "Carry fifty rings to any unused emerald box and touch its star circle.",
+      "3": "The cartridge always opens the earliest uncleared Special Stage. If this number does not appear, an earlier stage remains incomplete; restore that box state or use a later unused placement."
+     }
+    },
+    {
+     "id": "stt-special-5-clear",
+     "type": "collectible",
+     "safe_type": "Chaos Emerald",
+     "label": "Chaos Emerald 5",
+     "missable": true,
+     "levels": {
+      "1": "Every fragile surface has a purpose; preserve it until its route is clear.",
+      "2": "Complete Special Stage 5 and collect its emerald.",
+      "3": "Climb the invisible sequence centre-right-centre-left-centre-right-centre, jump left, ride up, and take the clock. At the bumper field, drop through the hole under the tall red waterfall without spinning and land on the fragile block. Jump immediately after launching a Spin Dash through the three walls, climb the shaft without breaking its stepping blocks, cross the single-use bumpers, and enter the right corridor. Dodge the drill, strike exactly as it meets the floor, then land roughly six follow-up hits."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-completion-branches",
+   "name": "Completion Branches",
+   "location_cue": "the late transport complex, its compact mechanical sequence, and the route-completion presentation",
+   "note": "Record both emerald-state outcomes for both playable characters without describing their story imagery in the guide.",
+   "save_backup": {
+    "title": "Keep four labelled completion states",
+    "why": "Character and emerald state jointly determine which completion presentation is recorded.",
+    "detail": "Preserve Sonic-standard, Sonic-complete, Tails-standard, and Tails-complete states before the late mechanical act."
+   },
+   "point_of_no_return": {
+    "title": "Stop before the Atomic Destroyer Act 2 turnstile",
+    "why": "No emerald boxes remain after this act, so the full-set branch cannot be repaired within the same route.",
+    "detail": "Confirm all five Special Stage emeralds before crossing for a complete-set run. Restore an earlier box state if any is missing."
+   },
+   "items": [
+    {
+     "id": "stt-sonic-standard-clear",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Sonic Standard Completion",
+     "missable": true,
+     "levels": {
+      "1": "One Sonic state should preserve an incomplete emerald set.",
+      "2": "Finish the route as Sonic without all five Special Stage emeralds.",
+      "3": "Use a dedicated Sonic state, leave at least one Special Stage uncleared, finish the late mechanical sequence, and record the standard completion presentation. Do not overwrite the complete-set state."
+     }
+    },
+    {
+     "id": "stt-sonic-complete-clear",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Sonic Complete-Set Completion",
+     "missable": true,
+     "levels": {
+      "1": "A second Sonic state needs every optional emerald first.",
+      "2": "Finish the route as Sonic after clearing all five Special Stages.",
+      "3": "Confirm five emeralds before ending Atomic Destroyer Act 2. Complete Act 3; the sixth emerald is then awarded mechanically, and the distinct complete-set presentation and credits must be allowed to finish."
+     }
+    },
+    {
+     "id": "stt-tails-standard-clear",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Tails Standard Completion",
+     "missable": true,
+     "levels": {
+      "1": "Keep one Tails route below the full emerald threshold.",
+      "2": "Finish the route as Tails without all five Special Stage emeralds.",
+      "3": "Use a separate Tails state, deliberately leave at least one stage uncleared, complete the mechanical route, and record the standard presentation before restoring the full-set branch."
+     }
+    },
+    {
+     "id": "stt-tails-complete-clear",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Tails Complete-Set Completion",
+     "missable": true,
+     "levels": {
+      "1": "The alternate character can earn the full set too.",
+      "2": "Finish the route as Tails after clearing all five Special Stages.",
+      "3": "Verify five emeralds before the last normal-act turnstile, finish the following mechanical sequence, receive the sixth emerald, and let Tails's complete-set presentation and credits run to completion."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stt-hidden-modes",
+   "name": "Hidden Cartridge Modes",
+   "location_cue": "the title screen, its alternate prompts, the dedicated practice course, and the character selector",
+   "note": "Demonstrate the cartridge's built-in secrets after the four legitimate completion routes are safely preserved.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "stt-sound-test",
+     "type": "secret",
+     "safe_type": "Hidden mode",
+     "label": "Sound Test",
+     "missable": false,
+     "levels": {
+      "1": "The title prompt has an alternate audio menu.",
+      "2": "At the title screen, use the directional input until Sound Test appears.",
+      "3": "Enter the menu and play every selectable number long enough to distinguish it, recording both ends of the range. Return with Start; do not treat compilation-specific controls as cartridge controls."
+     }
+    },
+    {
+     "id": "stt-time-attack-sonic",
+     "type": "secret",
+     "safe_type": "Hidden mode",
+     "label": "Time Attack — Sonic",
+     "missable": false,
+     "levels": {
+      "1": "A standalone course is hidden beside the audio menu.",
+      "2": "Select Time Attack from the alternate title prompt, then choose Sonic.",
+      "3": "Finish the unique mixed-theme course from its normal start and allow the result to return to the title. Record the completed time; level select does not substitute for this dedicated mode."
+     }
+    },
+    {
+     "id": "stt-time-attack-tails",
+     "type": "secret",
+     "safe_type": "Hidden mode",
+     "label": "Time Attack — Tails",
+     "missable": false,
+     "levels": {
+      "1": "The hidden course supports the other character separately.",
+      "2": "Select Time Attack again and choose Tails.",
+      "3": "Clear the same dedicated course using Tails's own movement and record the time through its normal result. Keep this separate from Sonic's demonstration."
+     }
+    },
+    {
+     "id": "stt-level-select",
+     "type": "secret",
+     "safe_type": "Boot code",
+     "label": "Level Select",
+     "missable": false,
+     "levels": {
+      "1": "A power-on input changes the post-intro character route.",
+      "2": "Hold Up while powering on, then press Start as the third emerald is collected in the intro.",
+      "3": "Keep Up held from boot, time Start to the third intro pickup, and choose a character. Confirm the zone selector appears and load one early act only as a code demonstration; legitimate route clears remain separate."
+     }
+    },
+    {
+     "id": "stt-attract-sequence",
+     "type": "secret",
+     "safe_type": "Idle sequence",
+     "label": "Attract Demonstration",
+     "missable": false,
+     "levels": {
+      "1": "The untouched title screen contains a self-running sample.",
+      "2": "Leave the title screen idle until the demonstration begins.",
+      "3": "Record one complete attract cycle from title to its automatic return without controller input. This is presentation content, not evidence of a player-cleared act."
+     }
+    }
+   ]
+  }
+ ]
+}

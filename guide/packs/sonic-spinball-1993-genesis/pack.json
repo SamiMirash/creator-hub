@@ -1,0 +1,1219 @@
+{
+ "id": "sonic-spinball-1993-genesis",
+ "game": "Sonic the Hedgehog Spinball (1993, Mega Drive/Genesis)",
+ "target": "Original USA Mega Drive/Genesis cartridge through verified PC emulation",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-26T11:17:52.176164+00:00",
+ "areas": [
+  {
+   "id": "spinball-genesis-setup",
+   "name": "Cartridge Setup and Controls",
+   "location_cue": "The animated title logo and the pipe-framed Options panel before a new game begins.",
+   "note": "Confirm the original cartridge route, establish controls, and preserve a clean starting state.",
+   "save_backup": {
+    "title": "Keep an untouched title-screen state",
+    "why": "This cartridge does not save progress internally.",
+    "detail": "Keep one clean title state plus a rolling state at each table entrance; never overwrite the only usable state while testing codes."
+   },
+   "point_of_no_return": {
+    "title": "Starting a game commits the selected options",
+    "why": "Player count, speed, music, and flipper mapping apply to the new run.",
+    "detail": "Return to Options before play if any setting is wrong; changing the route later means restarting or loading an earlier state."
+   },
+   "items": [
+    {
+     "id": "spinball-genesis-verify-rom",
+     "type": "optional",
+     "safe_type": "Setup check",
+     "label": "Verify the Original USA Cartridge",
+     "missable": false,
+     "levels": {
+      "1": "Confirm the preserved build before recording progress.",
+      "2": "Use the original USA Mega Drive/Genesis ROM selected in the archive.",
+      "3": "Verify the extracted ROM is 1,048,576 bytes with SHA-1 24BF6342B98C09775089C9F39CFB2F6FBE7806F7. Do not substitute the separate eight-bit games or later compilation wrappers."
+     }
+    },
+    {
+     "id": "spinball-genesis-preserve-clean-state",
+     "type": "optional",
+     "safe_type": "Save safeguard",
+     "label": "Preserve a Clean Starting State",
+     "missable": true,
+     "levels": {
+      "1": "Create recovery before any table progress begins.",
+      "2": "Make a save state at the title screen and another after entering each new table.",
+      "3": "Keep the title state untouched. Rotate at least two table-entry states so a corrupt save, failed code, or lost-ball reset cannot erase your only clean route."
+     }
+    },
+    {
+     "id": "spinball-genesis-options-players",
+     "type": "optional",
+     "safe_type": "Menu option",
+     "label": "Try the Alternating Multiplayer Modes",
+     "missable": true,
+     "levels": {
+      "1": "The first Options row changes turn sharing.",
+      "2": "Set Mode to each value from one through four players.",
+      "3": "Use Left or Right on Mode to inspect 1P, 2P, 3P, and 4P. Multiplayer uses Controller 1 and rotates turns; one-player completion remains the canonical solo run."
+     }
+    },
+    {
+     "id": "spinball-genesis-options-speed",
+     "type": "optional",
+     "safe_type": "Menu option",
+     "label": "Try Normal and Fast Speed",
+     "missable": true,
+     "levels": {
+      "1": "One setting changes the table pace globally.",
+      "2": "Switch Speed between Normal and Fast in Options.",
+      "3": "Play a short clean sample on Normal, then repeat from the same entrance on Fast. Choose Normal for the completion run unless the accelerated physics remain comfortable."
+     }
+    },
+    {
+     "id": "spinball-genesis-options-music",
+     "type": "optional",
+     "safe_type": "Menu option",
+     "label": "Toggle the Music Setting",
+     "missable": true,
+     "levels": {
+      "1": "The audio menu has a simple binary choice.",
+      "2": "Change Music between On and Off in Options.",
+      "3": "Confirm both states from Options, then restore On before the main run. This setting changes presentation only and does not unlock content."
+     }
+    },
+    {
+     "id": "spinball-genesis-options-flippers",
+     "type": "optional",
+     "safe_type": "Control option",
+     "label": "Configure the Three Flipper Buttons",
+     "missable": true,
+     "levels": {
+      "1": "The final rows remap the table controls.",
+      "2": "Inspect the A-left, B-right, and C-all assignments in Options.",
+      "3": "Set A to the left flipper, B to the right, and C to both unless you deliberately prefer another mapping. Test each input before leaving the menu."
+     }
+    },
+    {
+     "id": "spinball-genesis-control-air",
+     "type": "optional",
+     "safe_type": "Movement technique",
+     "label": "Influence Sonic in Flight",
+     "missable": false,
+     "levels": {
+      "1": "The directional pad still matters between surfaces.",
+      "2": "Press Left or Right while Sonic is airborne on the opening board.",
+      "3": "Use brief directional taps to alter Sonic's drift toward lanes, bumpers, and safe flippers. Holding too long can turn a centered shot into a drain."
+     }
+    },
+    {
+     "id": "spinball-genesis-control-catch",
+     "type": "optional",
+     "safe_type": "Flipper technique",
+     "label": "Catch and Aim from a Flipper",
+     "missable": false,
+     "levels": {
+      "1": "A held flipper can turn chaos into an aimed shot.",
+      "2": "Hold the matching flipper as Sonic rolls down an alley ramp.",
+      "3": "Keep the flipper raised to cradle Sonic, then release and strike again. Fire near the hinge for a straighter launch or nearer the tip for a wider angle."
+     }
+    },
+    {
+     "id": "spinball-genesis-control-ground",
+     "type": "optional",
+     "safe_type": "Movement technique",
+     "label": "Use Ground Movement and Spin Dash",
+     "missable": false,
+     "levels": {
+      "1": "Standing sections retain familiar movement.",
+      "2": "Walk with the directional pad, jump with an action button, then crouch and charge a Spin Dash.",
+      "3": "On stable ground, move normally and jump with A, B, or C. For a Spin Dash, hold Down, press an action button, build the charge, then release Down."
+     }
+    },
+    {
+     "id": "spinball-genesis-earn-extra-life",
+     "type": "optional",
+     "safe_type": "Score reward",
+     "label": "Earn a Score-Based Extra Life",
+     "missable": true,
+     "levels": {
+      "1": "A large cumulative score grants another ball.",
+      "2": "Raise the score counter to 20,000,000 points during one game.",
+      "3": "Combine emerald awards, ring totals, table loops, and bonus rounds until the score crosses twenty million. Confirm the life counter increases when the threshold is reached."
+     }
+    }
+   ]
+  },
+  {
+   "id": "spinball-genesis-completion-standard",
+   "name": "Full-Completion Standard",
+   "location_cue": "The upper status strip, ring lanes, star-ring bonus gates, and end-of-ball tally screens shared by every table.",
+   "note": "Use these checks throughout the run; none is replaced by simply reaching the closing sequence.",
+   "save_backup": {
+    "title": "Keep a state before leaving every table",
+    "why": "Several table-specific checks disappear after the clear mechanism is completed.",
+    "detail": "Do not enter a completed table's final route until its emeralds, rings, bonus gate, and scoring checks are recorded."
+   },
+   "point_of_no_return": {
+    "title": "A table clear closes its current board",
+    "why": "The next table begins without a normal stage-select return path.",
+    "detail": "Finish the local checklist first, then preserve a state before the final route so optional bonus attempts can be retried safely."
+   },
+   "items": [
+    {
+     "id": "spinball-genesis-all-emeralds",
+     "type": "collectible",
+     "safe_type": "Required collectible set",
+     "label": "Collect Every Emerald",
+     "missable": true,
+     "levels": {
+      "1": "Every main table hides its own required set.",
+      "2": "Fill the local emerald counter before leaving each table.",
+      "3": "Treat every table counter independently and collect each required emerald before using that table's final route. Emeralds persist after a lost ball, but they do not excuse ring, bonus, or scoring checks."
+     }
+    },
+    {
+     "id": "spinball-genesis-all-rings",
+     "type": "collectible",
+     "safe_type": "Optional collectible set",
+     "label": "Collect Every Ring on Every Table",
+     "missable": true,
+     "levels": {
+      "1": "A perfect sweep changes the table's hidden access.",
+      "2": "Clear every ring from the current table before completing it.",
+      "3": "Revisit side drains, upper lanes, guarded passages, and one-way loops until the status strip confirms the current table is empty. Repeat this standard whenever a new table appears."
+     }
+    },
+    {
+     "id": "spinball-genesis-all-multiball",
+     "type": "secret",
+     "safe_type": "Hidden bonus set",
+     "label": "Clear Every Table's Multiball Bonus",
+     "missable": true,
+     "levels": {
+      "1": "Each ring sweep reveals a star-shaped gate.",
+      "2": "After each all-rings message, enter a newly active Bonus Gate on that same table.",
+      "3": "Use one gate on every table to enter Clucker's Defense, release the extra balls, remove both guards, and destroy the central target. Keep a separate success record for each table."
+     }
+    },
+    {
+     "id": "spinball-genesis-three-regular-bonuses",
+     "type": "optional",
+     "safe_type": "Bonus-round set",
+     "label": "Clear the Three Regular Bonus Rounds",
+     "missable": true,
+     "levels": {
+      "1": "The early table exits lead to separate cabinets.",
+      "2": "Complete every regular bonus round reached after an eligible table clear.",
+      "3": "Finish each cabinet before losing its three balls. A failed cabinet does not cost a main-game life, but it does reduce the final jackpot."
+     }
+    },
+    {
+     "id": "spinball-genesis-all-scoring-awards",
+     "type": "optional",
+     "safe_type": "Scoring checklist",
+     "label": "Trigger Every Named Table Bonus",
+     "missable": true,
+     "levels": {
+      "1": "Repeated lanes and targets carry more than navigation value.",
+      "2": "Complete every listed loop, multiplier, target-window, cage, and chamber award before leaving its table.",
+      "3": "Use the per-table checklist below and watch the status strip after each repetition. A route clear alone does not prove these independent scoring awards were activated."
+     }
+    },
+    {
+     "id": "spinball-genesis-one-ball-time-runs",
+     "type": "optional",
+     "safe_type": "Perfect-run challenge",
+     "label": "Record a One-Ball Time Bonus",
+     "missable": true,
+     "levels": {
+      "1": "Clean table play earns a separate end tally.",
+      "2": "Clear a table quickly without losing the current ball, including any earned extra ball.",
+      "3": "Load the table-entry state, avoid every drain, collect its required emeralds, and finish promptly. The time award counts down with delay and is forfeited by losing any ball."
+     }
+    }
+   ]
+  },
+  {
+   "id": "spinball-genesis-toxic-caves",
+   "name": "Toxic Caves",
+   "location_cue": "The first cavern table with green liquid, paired upper wings, capped sewers, and a minecart room.",
+   "note": "Finish the emerald route, full ring sweep, local score awards, hidden cabinet, and clear mechanism before leaving.",
+   "save_backup": {
+    "title": "Back up at the cavern entrance",
+    "why": "A lost ball preserves emeralds but resets other table work.",
+    "detail": "Keep an entrance state and a second state before the final minecart trip; reload rather than sacrificing ring and bonus progress."
+   },
+   "point_of_no_return": {
+    "title": "The final minecart route closes the cavern",
+    "why": "Entering it with the required emeralds commits to the table clear.",
+    "detail": "Complete the all-rings gate and every local scoring check before returning to the minecart entrance for the last time."
+   },
+   "items": [
+    {
+     "id": "spinball-toxic-open-sewers",
+     "type": "interaction",
+     "safe_type": "Route mechanism",
+     "label": "Drain the Starting Reservoir",
+     "missable": true,
+     "levels": {
+      "1": "The capped center routes respond to two high targets.",
+      "2": "Hit the upper target in each wing of the starting board.",
+      "3": "Launch into both far-side pipes or reach the worm areas directly, strike both drain targets, then enter either sewer after the central caps retract."
+     }
+    },
+    {
+     "id": "spinball-toxic-emerald-left",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - First Wing Route",
+     "missable": true,
+     "levels": {
+      "1": "One wing switch prepares a minecart destination.",
+      "2": "Pull the inner switch, reach that wing's upper pipe, then steer opposite the side you entered.",
+      "3": "Use the outer sewer or complete three worm-loop passes to reach the upper flipper. Enter its pipe, board the cart, and steer toward the opposite wing to reach the emerald."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-toxic-emerald-left.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-toxic-emerald-right",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Second Wing Route",
+     "missable": true,
+     "levels": {
+      "1": "The unused wing repeats the preparation with a new destination.",
+      "2": "Activate the other wing switch and take the minecart in the direction not used previously.",
+      "3": "Cross to the opposite wing, pull its switch, climb to its upper pipe, and enter the cart again. Choose the remaining direction so the cart reaches the second emerald chamber."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-toxic-emerald-right.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-toxic-emerald-center",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Center Reservoir",
+     "missable": true,
+     "levels": {
+      "1": "The cart eventually leaves a direct drop behind.",
+      "2": "Return to the minecart room a third time and avoid steering as Sonic enters.",
+      "3": "If the center emerald was not taken early from a wing barrel, the cart is absent on the third visit. Keep the directional pad neutral and fall directly into its chamber."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-toxic-emerald-center.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-toxic-all-rings",
+     "type": "collectible",
+     "safe_type": "Optional collectible set",
+     "label": "All Rings - Toxic Caves",
+     "missable": true,
+     "levels": {
+      "1": "Several rings sit in routes that look dangerous or incorrect.",
+      "2": "Check both safety-plug channels, both cart directions, and the upper corner of the right wing.",
+      "3": "Open each plug and pass its ring channel while avoiding the active warp, ride the minecart both ways, and take the deliberately mistimed upper-right shot for the final hidden pair."
+     }
+    },
+    {
+     "id": "spinball-toxic-pipe-bonus",
+     "type": "optional",
+     "safe_type": "Scoring task",
+     "label": "Starting-Board Pipe Bonus",
+     "missable": true,
+     "levels": {
+      "1": "The drained outer routes reward repeated travel.",
+      "2": "After lowering the liquid, cycle through the far pipes three times.",
+      "3": "Keep using either extreme pipe after both drain targets are solved. Complete three full cycles and confirm the 200,000-point award on the status strip."
+     }
+    },
+    {
+     "id": "spinball-toxic-switch-loops",
+     "type": "optional",
+     "safe_type": "Scoring task",
+     "label": "Switch Loops",
+     "missable": true,
+     "levels": {
+      "1": "A bridge control also counts repeated passes.",
+      "2": "Pass either wing's bridge switch five times.",
+      "3": "Use controlled flipper shots to cross the same switch lane five times. Watch the status strip for the 200,000-point completion rather than counting a glancing contact."
+     }
+    },
+    {
+     "id": "spinball-toxic-worm-loops",
+     "type": "optional",
+     "safe_type": "Scoring task",
+     "label": "Worm Loops",
+     "missable": true,
+     "levels": {
+      "1": "The creature-lined ascent tracks complete circuits.",
+      "2": "Travel through either wing's worm loop three times.",
+      "3": "Enter the loop cleanly, complete all three circuits, and wait for the 100,000-point confirmation. The same repetitions can also open the upper route."
+     }
+    },
+    {
+     "id": "spinball-toxic-great-escape",
+     "type": "secret",
+     "safe_type": "Hidden scoring event",
+     "label": "Great Escape",
+     "missable": true,
+     "levels": {
+      "1": "A failed flipper save can become a controlled secret.",
+      "2": "Drop beneath the starting flippers, wait for the water creature, then struggle free.",
+      "3": "Use a backup first. Let the creature grab Sonic on the lower pad, rapidly press the controls, and escape its jaws to trigger the small secret score award."
+     }
+    },
+    {
+     "id": "spinball-toxic-multiball",
+     "type": "secret",
+     "safe_type": "Hidden bonus round",
+     "label": "Clucker's Defense - Toxic Caves",
+     "missable": true,
+     "levels": {
+      "1": "The complete ring sweep activates three possible entrances.",
+      "2": "After collecting every ring, use the center gate or either upper-wing gate.",
+      "3": "Wait for the all-rings notice, enter one of the three star-ring gates, and clear Clucker's Defense before using the minecart route that ends the table."
+     }
+    },
+    {
+     "id": "spinball-toxic-clear",
+     "type": "interaction",
+     "safe_type": "Table clear",
+     "label": "Clear the Toxic Caves Mechanism",
+     "missable": true,
+     "levels": {
+      "1": "The minecart entrance changes after all three emeralds.",
+      "2": "Return to the minecart room, reach an upper platform, and enter beneath the mechanical tail.",
+      "3": "Use the center return or either side launch to reach an upper platform. Drop under the tail, wait until it breaks, then strike the body four times; lower drains safely relaunch Sonic here."
+     }
+    }
+   ]
+  },
+  {
+   "id": "spinball-genesis-trapped-alive",
+   "name": "Trapped Alive Bonus Round",
+   "location_cue": "The separate glass-fronted pinball cabinet reached immediately after the first table clear.",
+   "note": "This optional cabinet contributes to the maximum final jackpot and cannot be revisited in the normal run.",
+   "save_backup": {
+    "title": "Back up before the table clear",
+    "why": "The bonus cabinet allows only three balls.",
+    "detail": "Reload the state before the preceding clear mechanism if all three bonus balls are lost before completion."
+   },
+   "point_of_no_return": {
+    "title": "Leaving the cabinet ends this attempt",
+    "why": "Success or three lost balls returns the run to the next main table.",
+    "detail": "Finish every required target before the last ball drains; there is no normal replay selector."
+   },
+   "items": [
+    {
+     "id": "spinball-trapped-alive-capsules",
+     "type": "optional",
+     "safe_type": "Bonus objective",
+     "label": "Open All Seven Capsules",
+     "missable": true,
+     "levels": {
+      "1": "The rear row must be cleared before the moving target matters.",
+      "2": "Strike each of the seven purple capsules until every one opens.",
+      "3": "Keep the ball high and work across the capsule bank; each takes several impacts. Ignore premature shots into the moving craft because it returns the ball without advancing the objective."
+     }
+    },
+    {
+     "id": "spinball-trapped-alive-finish",
+     "type": "optional",
+     "safe_type": "Bonus clear",
+     "label": "Complete Trapped Alive",
+     "missable": true,
+     "levels": {
+      "1": "One final target becomes vulnerable after the bank is empty.",
+      "2": "After all seven capsules open, hit the moving craft once more.",
+      "3": "Confirm every capsule is visibly open, then send a controlled shot into the craft. The cabinet ends immediately on success and adds one step to the final rising jackpot."
+     }
+    }
+   ]
+  },
+  {
+   "id": "spinball-genesis-lava-powerhouse",
+   "name": "Lava Powerhouse",
+   "location_cue": "The steam-driven table with paired lower boards, upper piston rooms, pressure shafts, and central overhead pipes.",
+   "note": "Complete both piston branches, every ring pocket, all scoring tracks, the hidden cabinet, and the clear mechanism.",
+   "save_backup": {
+    "title": "Back up before entering the steam tables",
+    "why": "Most central and side drains consume a ball here.",
+    "detail": "Keep a table-entry state and refresh a second state only after verifying that the all-rings sweep remains recoverable."
+   },
+   "point_of_no_return": {
+    "title": "The active upper pipes lead away",
+    "why": "They become the final route after the emerald counter is complete.",
+    "detail": "Do not enter an upper steam-room pipe after obtaining all three emeralds until the bonus gate and local score checklist are complete."
+   },
+   "items": [
+    {
+     "id": "spinball-lava-open-door",
+     "type": "interaction",
+     "safe_type": "Route mechanism",
+     "label": "Open the Lower Steam Route",
+     "missable": true,
+     "levels": {
+      "1": "The upper-center barrier requires repeated force.",
+      "2": "Strike the central door three times or cycle through the outer piston.",
+      "3": "Use controlled upward shots to break the center barrier with three impacts. The outer-edge piston or an active side plug can also deliver Sonic into the lower steam room."
+     }
+    },
+    {
+     "id": "spinball-lava-emerald-center",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Lower Steam Room",
+     "missable": true,
+     "levels": {
+      "1": "Steam and a moving bumper align the central pipe.",
+      "2": "Ride a steam burst into a flying enemy, then enter the overhead center pipe.",
+      "3": "Tap the action control to regulate the lower steam column, rebound from a passing flyer, and guide Sonic into the pipe above. Walk both side ledges before leaving if collecting rings."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-lava-emerald-center.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-lava-emerald-left",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Upper Left Shaft",
+     "missable": true,
+     "levels": {
+      "1": "One inner piston conceals a vertical chamber.",
+      "2": "Cross the upper-left inner piston three times, then ride steam to its platform.",
+      "3": "Break the cork with three complete piston passes. Inside the shaft, pulse the steam while pressing outward, settle onto the side platform, and jump into the emerald."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-lava-emerald-left.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-lava-emerald-right",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Upper Right Shaft",
+     "missable": true,
+     "levels": {
+      "1": "The opposite upper board hides a matching chamber.",
+      "2": "Cross the upper-right inner piston three times, then ride steam to its platform.",
+      "3": "Repeat the cork-breaking route on the right. In the opened shaft, regulate the steam, lean toward the outside wall, land on the platform, and jump for the emerald."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-lava-emerald-right.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-lava-all-rings",
+     "type": "collectible",
+     "safe_type": "Optional collectible set",
+     "label": "All Rings - Lava Powerhouse",
+     "missable": true,
+     "levels": {
+      "1": "The hardest rings require awkward door and loop shots.",
+      "2": "Check above the left lower door, both steam-room ledges, upper bumpers, and guarded inner paths.",
+      "3": "Land on the opened left door and jump around its four rings, walk both lower steam ledges, clear the upper-left bumper pocket, traverse both guarded inner lanes, and soften the right cool-loop shot."
+     }
+    },
+    {
+     "id": "spinball-lava-pressure-bonus",
+     "type": "optional",
+     "safe_type": "Scoring task",
+     "label": "Pressure Bonus",
+     "missable": true,
+     "levels": {
+      "1": "Only illuminated piston tracks count this repetition.",
+      "2": "Pass through a piston with five tracking lights five times.",
+      "3": "Choose a piston displaying the five-step lamp row and complete five full passages. Unlit piston launchers do not award this 200,000-point bonus."
+     }
+    },
+    {
+     "id": "spinball-lava-cool-loops",
+     "type": "optional",
+     "safe_type": "Scoring task",
+     "label": "Cool Loops",
+     "missable": true,
+     "levels": {
+      "1": "A non-piston lane carries its own five-light counter.",
+      "2": "Complete five passes through a lit cool-loop path.",
+      "3": "Use either upper board's lighted non-piston loop and make five complete circuits. Confirm the 100,000-point award rather than assuming partial travel counted."
+     }
+    },
+    {
+     "id": "spinball-lava-x2",
+     "type": "optional",
+     "safe_type": "Score multiplier",
+     "label": "Lower-Board Multiplier",
+     "missable": true,
+     "levels": {
+      "1": "Three upper lanes combine into a value boost.",
+      "2": "Light all three gates above either lower board.",
+      "3": "Send Sonic through each of the three distinct overhead lanes on one lower board. Once all lamps are lit, the table doubles immediate bonus awards."
+     }
+    },
+    {
+     "id": "spinball-lava-multiball",
+     "type": "secret",
+     "safe_type": "Hidden bonus round",
+     "label": "Clucker's Defense - Lava Powerhouse",
+     "missable": true,
+     "levels": {
+      "1": "A full ring sweep activates the steam-room centers.",
+      "2": "Collect every ring, then enter the Bonus Gate in either steam room.",
+      "3": "Wait for the all-rings status message, guide Sonic into a star-ring gate at a steam-room center, and clear the hidden multiball cabinet before taking the final pipe."
+     }
+    },
+    {
+     "id": "spinball-lava-clear",
+     "type": "interaction",
+     "safe_type": "Table clear",
+     "label": "Clear the Lava Powerhouse Mechanism",
+     "missable": true,
+     "levels": {
+      "1": "The upper steam route becomes active after three emeralds.",
+      "2": "Enter an upper steam-room pipe, activate both safety targets, then attack the rotating components.",
+      "3": "Turn on both lower safety plugs first; they remain active for this encounter. Launch into an outer channel, wait on its platform for the steam pause, enter, and destroy all four rotating heads one per visit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "spinball-genesis-robo-smile",
+   "name": "Robo Smile Bonus Round",
+   "location_cue": "The separate pinball cabinet dominated by a large mechanical face and a row of rear targets.",
+   "note": "The teeth are the completion targets; the upper bank is score-only.",
+   "save_backup": {
+    "title": "Back up before the preceding table clear",
+    "why": "This cabinet also ends after three drained balls.",
+    "detail": "Reload before the preceding clear mechanism if the tooth bank remains incomplete when the final bonus ball drains."
+   },
+   "point_of_no_return": {
+    "title": "The final tooth ends the cabinet",
+    "why": "There is no chance to finish optional scoring targets afterward.",
+    "detail": "Hit any desired rear scoring targets before removing the last tooth."
+   },
+   "items": [
+    {
+     "id": "spinball-robo-smile-rear-targets",
+     "type": "optional",
+     "safe_type": "Bonus scoring task",
+     "label": "Clear the Rear Target Bank",
+     "missable": true,
+     "levels": {
+      "1": "A separate row sits behind the main objective.",
+      "2": "Strike all three rear targets before removing the final tooth.",
+      "3": "Use high angled shots to clear the rear bank while enough teeth remain to keep the cabinet active. These targets add score but do not damage the main face."
+     }
+    },
+    {
+     "id": "spinball-robo-smile-finish",
+     "type": "optional",
+     "safe_type": "Bonus clear",
+     "label": "Complete Robo Smile",
+     "missable": true,
+     "levels": {
+      "1": "The visible gaps do not count as fresh targets.",
+      "2": "Knock out every remaining tooth without repeatedly striking empty spaces.",
+      "3": "Aim at intact teeth from below and track which gaps are already empty. A shot into an empty gap merely redirects the ball; removing the last tooth completes the round."
+     }
+    }
+   ]
+  },
+  {
+   "id": "spinball-genesis-machine",
+   "name": "The Machine",
+   "location_cue": "The tall mechanical table with a moving center platform, paired piston shafts, wheels, and a cage-filled central room.",
+   "note": "Five emerald paths interlock here; finish the cage, wheel, shaft, ring, scoring, and hidden-bonus checks before the upper exit.",
+   "save_backup": {
+    "title": "Back up at the moving center platform",
+    "why": "Power-chamber cycles and one-way drops can change available routes.",
+    "detail": "Keep a clean entrance state and a second state before disabling either wheel; do not rely on a single state after a one-way drop."
+   },
+   "point_of_no_return": {
+    "title": "The upper entrance commits to the clear mechanism",
+    "why": "It becomes usable after all five emeralds are collected.",
+    "detail": "Verify every cage, ring pocket, multiball gate, and score counter before destroying the upper guarding flyer."
+   },
+   "items": [
+    {
+     "id": "spinball-machine-stop-platform",
+     "type": "secret",
+     "safe_type": "Movement trick",
+     "label": "Stop the Center Platform",
+     "missable": true,
+     "levels": {
+      "1": "The moving carrier has a hidden pause control.",
+      "2": "Stand on the center platform and press Up or Down.",
+      "3": "Board the platform on the lower central table, wait until Sonic is stable, then tap Up or Down. Use the stationary carrier to inspect routes and plan either shaft jump."
+     }
+    },
+    {
+     "id": "spinball-machine-emerald-left-shaft",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Left Shaft Passage",
+     "missable": true,
+     "levels": {
+      "1": "A rising flipper aligns with several right-wall openings.",
+      "2": "Enter the left shaft, hold the lone flipper during ascent, and take the fourth right passage.",
+      "3": "Ride the center platform left and jump into the chute. Use the pistons to reach the movable flipper, hold it raised as it climbs, then enter the fourth opening past its guard."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-machine-emerald-left-shaft.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-machine-emerald-center-cage",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Center Cage",
+     "missable": true,
+     "levels": {
+      "1": "The central locked enclosure hides one required pickup.",
+      "2": "In the cage room, break the middle padlock and drop between the two center pistons.",
+      "3": "Repeatedly strike the center enclosure until its lock opens. Enter the gap between the central pistons and fall into the exposed emerald without leaving through a side slide."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-machine-emerald-center-cage.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-machine-emerald-left-wheel",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Left Wheel Exit",
+     "missable": true,
+     "levels": {
+      "1": "One cage-room departure passes through a loaded wheel.",
+      "2": "Leave the cage room through the far-left slide and hold Right during the wheel drop.",
+      "3": "After taking the center-cage emerald, use the far-left exit. Keep Right held while Sonic falls through the wheel so he collects its emerald and returns toward the center board."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-machine-emerald-left-wheel.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-machine-emerald-right-wheel",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Right Wheel",
+     "missable": true,
+     "levels": {
+      "1": "A power chamber can halt the guarded wheel.",
+      "2": "Enter the right power chamber three times, remove the wheel guard, then enter before reactivation.",
+      "3": "Cycle the right power chamber exactly three times to stop the wheel. Destroy the nearby flyer, enter the wheel, and take its emerald before three further chamber entries restart it."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-machine-emerald-right-wheel.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-machine-emerald-right-shaft",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Right Shaft Top",
+     "missable": true,
+     "levels": {
+      "1": "The final shaft route begins from a moving flipper.",
+      "2": "Ride the right flipper upward, land on the top-right platform, then enter the far-left upper tube.",
+      "3": "Use the bottom pistons to reach the rising flipper, catch and release toward the top-right ledge, board the overhead platform, and jump into the tube at its far-left stop."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-machine-emerald-right-shaft.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-machine-all-cages",
+     "type": "optional",
+     "safe_type": "Scoring task",
+     "label": "Open Every Cage",
+     "missable": true,
+     "levels": {
+      "1": "The central room rewards a complete release sweep.",
+      "2": "Strike every padlock in the cage room until all enclosures open.",
+      "3": "Work across the entire cage wall and hit each lock roughly four times. Confirm no closed enclosure remains before exiting; the complete set awards 500,000 points."
+     }
+    },
+    {
+     "id": "spinball-machine-all-rings",
+     "type": "collectible",
+     "safe_type": "Optional collectible set",
+     "label": "All Rings - The Machine",
+     "missable": true,
+     "levels": {
+      "1": "Several ring groups demand deliberate rebounds and isolated jumps.",
+      "2": "Clear the three center skill shots, the upper-left lone ring, the right second slide, and Going Down tube.",
+      "3": "Make both mid-side shots plus the central Mega Loop, remove the flyer before jumping for the lone upper-left ring, rebound from the right-shaft flyer into its second slide, and traverse Going Down."
+     }
+    },
+    {
+     "id": "spinball-machine-piston-lights",
+     "type": "optional",
+     "safe_type": "Scoring task",
+     "label": "Piston Lights",
+     "missable": true,
+     "levels": {
+      "1": "Each shaft launcher belongs to one complete set.",
+      "2": "Enter every piston launcher in either the left or right shaft.",
+      "3": "Choose one shaft and deliberately pass through each of its three bottom piston launchers. Confirm the 200,000-point Piston Lights award after the set is complete."
+     }
+    },
+    {
+     "id": "spinball-machine-power-chambers",
+     "type": "optional",
+     "safe_type": "Scoring task",
+     "label": "Power Chamber Bonus",
+     "missable": true,
+     "levels": {
+      "1": "The center chambers count three visits apiece.",
+      "2": "Enter either center-board power chamber three times.",
+      "3": "Use controlled rebounds to cycle through one power chamber three complete times. Watch wheel state while doing this and confirm the 100,000-point award before further entries reverse the mechanism."
+     }
+    },
+    {
+     "id": "spinball-machine-mega-loop",
+     "type": "optional",
+     "safe_type": "Score multiplier",
+     "label": "Mega Loop Multiplier",
+     "missable": true,
+     "levels": {
+      "1": "The top-center circuit tracks complete passages.",
+      "2": "Travel through the center board's Mega Loop three times.",
+      "3": "Make three uninterrupted passages through the tall central loop. The third completion activates the table's immediate-bonus multiplier; partial climbs do not advance it."
+     }
+    },
+    {
+     "id": "spinball-machine-multiball",
+     "type": "secret",
+     "safe_type": "Hidden bonus round",
+     "label": "Clucker's Defense - The Machine",
+     "missable": true,
+     "levels": {
+      "1": "The complete ring sweep activates gates in three regions.",
+      "2": "After collecting every ring, use the cage-room gate or a gate near either shaft's top piston.",
+      "3": "Wait for the all-rings notice, enter any active star-ring gate, and clear Clucker's Defense before taking the upper route into the table's final mechanism."
+     }
+    },
+    {
+     "id": "spinball-machine-clear",
+     "type": "interaction",
+     "safe_type": "Table clear",
+     "label": "Clear the Machine Mechanism",
+     "missable": true,
+     "levels": {
+      "1": "The upper room becomes productive after all five emeralds.",
+      "2": "Destroy the first upper flyer, break both side feed tubes, then attack the flashing core.",
+      "3": "Use either shaft's highest platform to reach the room and remove the first guard. Strike both outer feed tubes eight times each, then enter the flashing center and hold Left or Right to remain inside longer."
+     }
+    }
+   ]
+  },
+  {
+   "id": "spinball-genesis-the-march",
+   "name": "The March Bonus Round",
+   "location_cue": "The separate cabinet with a central enclosure surrounded by six moving mechanical guards.",
+   "note": "Remove the moving barrier before concentrating on the enclosure.",
+   "save_backup": {
+    "title": "Back up before the preceding table clear",
+    "why": "Only three bonus balls are available here.",
+    "detail": "Reload before the preceding clear mechanism if the central enclosure remains intact when the last bonus ball drains."
+   },
+   "point_of_no_return": {
+    "title": "Opening the enclosure ends the cabinet",
+    "why": "Any remaining optional guard hits disappear with the clear.",
+    "detail": "Remove the complete moving ring first, then finish the center target."
+   },
+   "items": [
+    {
+     "id": "spinball-the-march-guards",
+     "type": "optional",
+     "safe_type": "Bonus objective",
+     "label": "Destroy All Six Moving Guards",
+     "missable": true,
+     "levels": {
+      "1": "A rotating barrier protects the central target.",
+      "2": "Strike each of the six circling robots until none remains.",
+      "3": "Keep the ball in the upper half and pick off the moving guards one by one. Track all six; hitting the center too early is less efficient while the barrier remains."
+     }
+    },
+    {
+     "id": "spinball-the-march-finish",
+     "type": "optional",
+     "safe_type": "Bonus clear",
+     "label": "Complete The March",
+     "missable": true,
+     "levels": {
+      "1": "The central enclosure is the final durable target.",
+      "2": "After clearing the guards, repeatedly strike the central capsule.",
+      "3": "With the rotating defense gone, aim sustained shots into the enclosure until it breaks. The cabinet then ends and adds another ten million to the potential final jackpot."
+     }
+    }
+   ]
+  },
+  {
+   "id": "spinball-genesis-showdown",
+   "name": "Showdown",
+   "location_cue": "The large mechanical table divided between an interior center, two side chambers, exterior wings, and a vertical bomb-spring lane.",
+   "note": "This table has the most fragile optional sweep; preserve states before blocker work, exterior jumps, and the final entrance.",
+   "save_backup": {
+    "title": "Back up immediately at the center board",
+    "why": "Lost balls can restore blockers and erase non-emerald progress.",
+    "detail": "Keep separate entrance, all-rings, and pre-clear states. Never overwrite the entrance state after beginning the central blocker sequence."
+   },
+   "point_of_no_return": {
+    "title": "Any final entrance commits to the closing mechanism",
+    "why": "Five routes become usable after the emerald set is complete.",
+    "detail": "Finish the ring sweep, hidden cabinet, multipliers, timed targets, ramps, loops, and windsock count before entering the ship interior."
+   },
+   "items": [
+    {
+     "id": "spinball-showdown-emerald-center",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Center Blockers",
+     "missable": true,
+     "levels": {
+      "1": "Four overhead blocks guard the center pickup.",
+      "2": "Use straight flipper shots to hit either side trigger four times.",
+      "3": "Catch Sonic on a center flipper and fire near its hinge, steering toward the small triggers beside the block bank. Remove all four in one life; a death restores them."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-showdown-emerald-center.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-showdown-emerald-left",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Left Interior Windsock",
+     "missable": true,
+     "levels": {
+      "1": "A far trigger opens a hidden side route.",
+      "2": "On the left interior board, strike the far-right trigger three times and enter the new path.",
+      "3": "Let Sonic reach the left interior chamber, time shots from the left flipper into the distant trigger until the blue barrier clears, then follow the opened lane into its windsock."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-showdown-emerald-left.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-showdown-emerald-right",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Right Pull Chain",
+     "missable": true,
+     "levels": {
+      "1": "The extreme-right lane changes after clearing its guard.",
+      "2": "Hit the far-right route twice, then charge left from the revealed chain.",
+      "3": "The first high-right shot removes the flyer and the next catches the chain. Hold a leftward Spin Dash, build power with repeated action presses, and release into the exterior emerald."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-showdown-emerald-right.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-showdown-emerald-outer-left",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Outer Left Wing",
+     "missable": true,
+     "levels": {
+      "1": "The extreme edge hides a small chain platform.",
+      "2": "Climb the far-left exterior edge, pull its chain, and launch inward from the new flipper.",
+      "3": "Reach the thin platform at the absolute outer-left edge, jump into the chain to deploy a flipper, then strike Sonic near the lower third and steer inward into the emerald chamber."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-showdown-emerald-outer-left.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-showdown-emerald-outer-right",
+     "type": "collectible",
+     "safe_type": "Required collectible",
+     "label": "Emerald - Outer Right Wing",
+     "missable": true,
+     "levels": {
+      "1": "The opposite exterior edge mirrors the chain setup.",
+      "2": "Climb the far-right exterior edge, pull its chain, and launch inward from the new flipper.",
+      "3": "Land on the extreme outer-right platform, activate the pull chain, and use the appearing flipper to send Sonic toward the center. A missed shot safely returns for another attempt."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/sonic-spinball-1993-genesis/spinball-showdown-emerald-outer-right.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "spinball-showdown-all-rings",
+     "type": "collectible",
+     "safe_type": "Optional collectible set",
+     "label": "All Rings - Showdown",
+     "missable": true,
+     "levels": {
+      "1": "The last sweep reaches loops, lanes, and exposed outer ledges.",
+      "2": "Clear both slide shafts, the right rumbling loop, exterior routes, and lone inward-jump rings.",
+      "3": "Traverse every branch of both three-lane slide shafts, sweep the full right-side loop, inspect each exterior wing, and jump inward from both thin outer platforms for the isolated rings."
+     }
+    },
+    {
+     "id": "spinball-showdown-x2",
+     "type": "optional",
+     "safe_type": "Score multiplier",
+     "label": "Slide-Shaft Multiplier",
+     "missable": true,
+     "levels": {
+      "1": "Each three-way shaft tracks a complete lane set.",
+      "2": "Light all three gates in either left or right slide shaft.",
+      "3": "Use the lane steering rule to visit the inside, middle, and outside gates of one shaft. Confirm all three lamps before expecting the immediate-bonus multiplier."
+     }
+    },
+    {
+     "id": "spinball-showdown-eruption",
+     "type": "optional",
+     "safe_type": "Timed scoring task",
+     "label": "Eruption Bonus",
+     "missable": true,
+     "levels": {
+      "1": "A paired target bank has a short completion window.",
+      "2": "Hit all three targets in each side chamber within ten seconds.",
+      "3": "Enter one interior side chamber with a stable ball, strike its three-target bank rapidly, then repeat on the other side. Each timed set must finish inside its own ten-second window."
+     }
+    },
+    {
+     "id": "spinball-showdown-trigger-bonus",
+     "type": "optional",
+     "safe_type": "Hidden scoring event",
+     "label": "Blocker Trigger Bonus",
+     "missable": true,
+     "levels": {
+      "1": "A solved blocker switch remains valuable once more.",
+      "2": "After clearing the center or left block bank, strike its trigger again.",
+      "3": "Do not leave immediately when the final blocker retracts. Re-aim at the same trigger and land one additional confirmed hit to collect the 50,000-point hidden award."
+     }
+    },
+    {
+     "id": "spinball-showdown-chimney",
+     "type": "optional",
+     "safe_type": "Scoring task",
+     "label": "Chimney Ramps",
+     "missable": true,
+     "levels": {
+      "1": "The center board's two upper exits count repeats.",
+      "2": "Pass through either upper-center exit three times.",
+      "3": "Use the same upper-left or upper-right chimney route for three complete passages. Confirm the 200,000-point award before moving to a side chamber."
+     }
+    },
+    {
+     "id": "spinball-showdown-rumbling",
+     "type": "optional",
+     "safe_type": "Scoring task",
+     "label": "Rumbling Loops",
+     "missable": true,
+     "levels": {
+      "1": "One lighted side path counts five circuits.",
+      "2": "Complete five passes through a five-light rumbling loop.",
+      "3": "Choose the illuminated loop in either interior side chamber and repeat it until all five progress lights are filled, producing the 100,000-point award."
+     }
+    },
+    {
+     "id": "spinball-showdown-windsocks",
+     "type": "optional",
+     "safe_type": "Scoring task",
+     "label": "Windsock Counter",
+     "missable": true,
+     "levels": {
+      "1": "Certain side routes build a final tally.",
+      "2": "Enter the windsock routes repeatedly and confirm each counter message.",
+      "3": "Use the available windsocks in the interior side boards, watching the status strip after every entry. Each registered pass adds one million to the closing windsock-based bonus."
+     }
+    },
+    {
+     "id": "spinball-showdown-multiball",
+     "type": "secret",
+     "safe_type": "Hidden bonus round",
+     "label": "Clucker's Defense - Showdown",
+     "missable": true,
+     "levels": {
+      "1": "The final all-rings message activates an unmarked gate.",
+      "2": "After the complete ring sweep, search the current table for the active star-ring gate.",
+      "3": "Preserve the all-rings state before searching. Enter the star-ring gate when found and clear Clucker's Defense; the available corpus does not establish a dependable fixed gate coordinate."
+     }
+    },
+    {
+     "id": "spinball-showdown-enter-final",
+     "type": "interaction",
+     "safe_type": "Final access",
+     "label": "Enter the Final Mechanism",
+     "missable": true,
+     "levels": {
+      "1": "Five routes can reach the interior after the emerald set.",
+      "2": "Use the center bomb chain, an underside wing chain, or an upper wing window.",
+      "3": "With all five emeralds secured, bounce between bomb lines to the central chain, use either underside pull chain, or reach an upper wing and Spin Dash into its window three times."
+     }
+    },
+    {
+     "id": "spinball-showdown-clear",
+     "type": "ending",
+     "safe_type": "Completion result",
+     "label": "Complete the Final Mechanism",
+     "missable": true,
+     "levels": {
+      "1": "The center switch and side channels alternate roles.",
+      "2": "Hit the central switch five times, launch through a side, then repeat when prompted.",
+      "3": "Count five center-switch hits, then use either side channel for a cockpit impact. When the sock warning appears, repeat the five-hit switch cycle; ten successful cockpit impacts complete the route."
+     }
+    }
+   ]
+  },
+  {
+   "id": "spinball-genesis-cluckers-defense",
+   "name": "Clucker's Defense Multiball Cabinet",
+   "location_cue": "The hidden physical pinball cabinet entered through a star-ring gate after a complete table ring sweep.",
+   "note": "The same cabinet must be reached and cleared from every main table for the maximum bonus record.",
+   "save_backup": {
+    "title": "Back up immediately after each all-rings message",
+    "why": "A missed gate or failed three-ball attempt disappears when the table is cleared.",
+    "detail": "Keep the all-rings state for the current table until its multiball cabinet is successfully completed and recorded."
+   },
+   "point_of_no_return": {
+    "title": "Three drained balls end the attempt",
+    "why": "The cabinet returns to the same table without preserving a successful clear.",
+    "detail": "Reload the all-rings state if necessary; do not leave the main table until this cabinet has been completed once there."
+   },
+   "items": [
+    {
+     "id": "spinball-cluckers-release-balls",
+     "type": "secret",
+     "safe_type": "Multiball technique",
+     "label": "Release All Three Balls",
+     "missable": true,
+     "levels": {
+      "1": "The hidden cabinet can place several balls in motion.",
+      "2": "Use the launch controls until all available balls are active together.",
+      "3": "Serve the first ball normally, then hit the release routes that introduce the remaining two. Track every ball and favor safe simultaneous returns over one risky power shot."
+     }
+    },
+    {
+     "id": "spinball-cluckers-remove-guards",
+     "type": "optional",
+     "safe_type": "Bonus objective",
+     "label": "Remove Both Guards",
+     "missable": true,
+     "levels": {
+      "1": "Two moving protectors block the central target.",
+      "2": "Strike each guarding bird until both are destroyed.",
+      "3": "Use the extra balls to attack both sides of the defense. Keep at least one ball alive while clearing the two guards, then redirect surviving balls toward the exposed center."
+     }
+    },
+    {
+     "id": "spinball-cluckers-finish",
+     "type": "optional",
+     "safe_type": "Bonus clear",
+     "label": "Complete Clucker's Defense",
+     "missable": true,
+     "levels": {
+      "1": "The central crawler becomes the final target.",
+      "2": "After removing both guards, destroy the central crawler before all balls drain.",
+      "3": "With the side protection gone, concentrate repeated impacts on the center. Completion adds ten million to the potential jackpot; failure leaves that table's hidden round uncleared."
+     }
+    },
+    {
+     "id": "spinball-cluckers-four-tables",
+     "type": "optional",
+     "safe_type": "Completion record",
+     "label": "Record Every Table-Specific Clear",
+     "missable": true,
+     "levels": {
+      "1": "One success does not cover every hidden entrance.",
+      "2": "Complete this cabinet once from each main table.",
+      "3": "Maintain a separate completion record whenever an all-rings gate opens. Combine those victories with every regular cabinet clear to maximize the closing jackpot."
+     }
+    }
+   ]
+  },
+  {
+   "id": "spinball-genesis-codes-secrets",
+   "name": "Codes and Cartridge Secrets",
+   "location_cue": "The title screen, Options panel, center platform trick, and lock-on cartridge startup screen.",
+   "note": "These optional discoveries sit outside the clean completion route and should be tested from disposable states.",
+   "save_backup": {
+    "title": "Use a disposable title-screen state",
+    "why": "Codes can start elsewhere or leave menu settings changed.",
+    "detail": "Preserve the clean run separately, test each sequence from a copied title state, and discard the experimental state afterward."
+   },
+   "point_of_no_return": {
+    "title": "Starting from a code bypasses normal progress",
+    "why": "A code-selected table does not prove earlier requirements were completed.",
+    "detail": "Treat codes as secrets only; keep the unassisted full run as the completion record."
+   },
+   "items": [
+    {
+     "id": "spinball-genesis-level-select",
+     "type": "secret",
+     "safe_type": "Input code",
+     "label": "Level Select Code",
+     "missable": true,
+     "levels": {
+      "1": "A long Options sequence changes title-screen shortcuts.",
+      "2": "In Options, let D mean Down and U mean Up; enter A-D / B-D / C-D / A-B-U / A-C-U / B-C-U.",
+      "3": "Use the six groups in order, return to the title, then hold A plus Start for Lava Powerhouse, B plus Start for The Machine, or C plus Start for Showdown. Keep this code separate from completion evidence."
+     }
+    },
+    {
+     "id": "spinball-genesis-credits-code",
+     "type": "secret",
+     "safe_type": "Input code",
+     "label": "Staff Credits Code",
+     "missable": true,
+     "levels": {
+      "1": "The reverse-style Options sequence opens a non-gameplay screen.",
+      "2": "In Options, let U mean Up and D mean Down; enter C-U / B-U / A-U / C-B-D / C-A-D / B-A-D.",
+      "3": "Use the six groups in order. A correct sequence opens the staff credits directly; reload the disposable title state afterward and do not confuse this shortcut with the normal completion roll."
+     }
+    },
+    {
+     "id": "spinball-genesis-lock-on-secret",
+     "type": "secret",
+     "safe_type": "Hardware easter egg",
+     "label": "Sonic & Knuckles Lock-On Secret",
+     "missable": true,
+     "levels": {
+      "1": "The physical cartridge can trigger another cartridge's fallback game.",
+      "2": "Mount Sonic Spinball above an original Sonic & Knuckles lock-on cartridge and power on.",
+      "3": "At the resulting No Way screen, hold A, B, and C together to open the generated Blue Sphere game. This is an optional hardware interaction, not required for the normal Spinball ending."
+     }
+    },
+    {
+     "id": "spinball-genesis-confirm-closing-sequence",
+     "type": "ending",
+     "safe_type": "Completion result",
+     "label": "Confirm the Normal Closing Sequence",
+     "missable": true,
+     "levels": {
+      "1": "The full unassisted route has one closing presentation.",
+      "2": "Complete the final mechanism from the clean normal run and let the sequence finish.",
+      "3": "Do not use the credits shortcut as a substitute. Finish the normal route, allow the entire closing presentation and staff roll to play, then preserve the final result state."
+     }
+    }
+   ]
+  }
+ ]
+}
