@@ -1,0 +1,611 @@
+{
+ "id": "segasonic-popcorn-shop",
+ "game": "SegaSonic Popcorn Shop (1993)",
+ "target": "Rev B arcade software through MAME 0.289 on PC; original vending hardware documented separately",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-24T11:20:53.478801+00:00",
+ "areas": [
+  {
+   "id": "sonicpop-cabinet-setup",
+   "name": "Cabinet Setup and Inputs",
+   "location_cue": "The emulator launch window, machine-specific input list, and service controls before a customer cycle begins.",
+   "note": "Use the preserved Rev B set. MAME reproduces the screen and sound, but not the vending machinery.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sonicpop-verify-revb-build",
+     "type": "optional",
+     "safe_type": "System task",
+     "label": "Verify the Rev B Build",
+     "missable": false,
+     "levels": {
+      "1": "Confirm the archived machine set before remapping inputs.",
+      "2": "Run MAME's ROM check against shortname sonicpop.",
+      "3": "Use the 375,267-byte sonicpop.zip archive. Its SHA-1 is bb4af9a31745b8bf44dd582b5c45e3fa315b3a89 and SHA-256 is d9a1512157db4af1f06da3a7895bfd23aba0f082b8a452a823b73c9604a000be; MAME 0.289 must report the set as good."
+     }
+    },
+    {
+     "id": "sonicpop-confirm-emulation-boundary",
+     "type": "optional",
+     "safe_type": "System task",
+     "label": "Confirm the Mechanical Boundary",
+     "missable": false,
+     "levels": {
+      "1": "Separate the video program from the food hardware.",
+      "2": "Check MAME's machine status before starting a transaction.",
+      "3": "Confirm that video and audio are marked good while the driver remains preliminary and mechanical. The emulator can finish the animated sequence, but it cannot heat, season, drop, or present real popcorn; never treat an on-screen completion as a physical dispense test."
+     }
+    },
+    {
+     "id": "sonicpop-map-coin",
+     "type": "interaction",
+     "safe_type": "Cabinet input",
+     "label": "Map Coin 1",
+     "missable": false,
+     "levels": {
+      "1": "Give the customer credit input its own binding.",
+      "2": "Bind Coin 1 in the machine input list.",
+      "3": "Assign Coin 1 to a separate key or controller button, return to attract mode, and press it once. The screen should leave its idle sequence and open the three-choice panel without requiring a Start input."
+     }
+    },
+    {
+     "id": "sonicpop-map-cup-select-1",
+     "type": "interaction",
+     "safe_type": "Cabinet input",
+     "label": "Map Cup Select 1",
+     "missable": false,
+     "levels": {
+      "1": "The first flavour line uses one dedicated switch.",
+      "2": "Bind Cup Select 1 under this machine's inputs.",
+      "3": "Assign Cup Select 1 to an individual button and test it only after inserting a credit. It must choose the left/green panel option by itself; release it before the animated preparation begins."
+     }
+    },
+    {
+     "id": "sonicpop-map-cup-select-2",
+     "type": "interaction",
+     "safe_type": "Cabinet input",
+     "label": "Map Cup Select 2",
+     "missable": false,
+     "levels": {
+      "1": "A second flavour line needs another switch.",
+      "2": "Bind Cup Select 2 separately from Cup Select 1.",
+      "3": "Assign Cup Select 2 to a different button, start a fresh transaction, and confirm it chooses the middle/yellow option without the first switch being held."
+     }
+    },
+    {
+     "id": "sonicpop-map-third-cup-combination",
+     "type": "interaction",
+     "safe_type": "Cabinet input",
+     "label": "Map the Third Cup Combination",
+     "missable": false,
+     "levels": {
+      "1": "The final flavour shares both selection lines.",
+      "2": "Prepare a binding that can assert both Cup Select inputs together.",
+      "3": "Insert a new credit, press Cup Select 1 and Cup Select 2 at the same time, then release both. The simultaneous pair selects the right/red option; pressing the switches sequentially can commit an earlier choice instead."
+     }
+    },
+    {
+     "id": "sonicpop-map-crank-phases",
+     "type": "interaction",
+     "safe_type": "Cabinet input",
+     "label": "Map Both Crank Phases",
+     "missable": false,
+     "levels": {
+      "1": "The wheel is represented by two alternating signals.",
+      "2": "Bind Handle A and Handle B to two reachable controls.",
+      "3": "Assign both handle phases and test them by alternating A-B-A-B during a help prompt. Do not hold both continuously: the original wheel produces changing phase signals, so repeated alternation is what the software reads as rotation."
+     }
+    },
+    {
+     "id": "sonicpop-map-relay",
+     "type": "interaction",
+     "safe_type": "Cabinet input",
+     "label": "Map the Relay",
+     "missable": false,
+     "levels": {
+      "1": "One hidden cabinet signal confirms mechanical progress.",
+      "2": "Bind the machine input named Relay and note that it toggles.",
+      "3": "Assign Relay to its own key, engage it before the credit, then change its state only when the animation waits for the absent vending mechanism. A permanently inactive line faults immediately, while a fixed state can stall later and open the assistance screen."
+     }
+    },
+    {
+     "id": "sonicpop-map-service-controls",
+     "type": "optional",
+     "safe_type": "Operator input",
+     "label": "Map the Service Controls",
+     "missable": false,
+     "levels": {
+      "1": "Keep diagnostics away from customer buttons.",
+      "2": "Locate Service Mode, Service 1, and Service 2 in the input list.",
+      "3": "Give all three service lines distinct operator-only bindings. Enter diagnostics from attract mode, record which control moves or confirms each page, then leave without inserting a customer credit; do not mix the reset/service line with Cup Select 2."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonicpop-operator-attract",
+   "name": "Operator Settings and Attract Display",
+   "location_cue": "The switch-bank menu and the looping idle presentation shown before any coin is accepted.",
+   "note": "Record each presentation option, then restore the intended everyday configuration before a customer cycle.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sonicpop-review-coin-a",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Review Coin A Schedules",
+     "missable": false,
+     "levels": {
+      "1": "The first pricing channel has several ratios.",
+      "2": "Open Coin A in Machine Configuration.",
+      "3": "Cycle through every Coin A value, note the credit conversion shown by MAME, and restore the desired setting. This changes payment accounting only; it does not create a different animated route."
+     }
+    },
+    {
+     "id": "sonicpop-review-coin-b",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Review Coin B Schedules",
+     "missable": false,
+     "levels": {
+      "1": "The second pricing channel is configured independently.",
+      "2": "Open Coin B beside the first pricing option.",
+      "3": "Inspect every Coin B schedule and restore the chosen value. Keep both pricing records together so an operator can identify which coin line supplied a credit without replaying the transaction."
+     }
+    },
+    {
+     "id": "sonicpop-toggle-demo-sounds",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Check Demo Sounds",
+     "missable": false,
+     "levels": {
+      "1": "The idle loop can run quietly.",
+      "2": "Toggle Demo Sounds and return to attract mode.",
+      "3": "Observe one complete attract loop with Demo Sounds enabled and another with it disabled. Restore the preferred state afterward; this switch affects idle audio rather than the paid preparation sequence."
+     }
+    },
+    {
+     "id": "sonicpop-toggle-trouble-bgm",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Check Assistance Music",
+     "missable": false,
+     "levels": {
+      "1": "The fault display has its own music switch.",
+      "2": "Toggle Trouble BGM before reproducing an assistance state.",
+      "3": "Run the assistance screen once with Trouble BGM enabled and once with it disabled, using the relay or unavailable-choice fault. Confirm the visual warning remains in both cases, then restore the normal audio setting."
+     }
+    },
+    {
+     "id": "sonicpop-region-usa",
+     "type": "optional",
+     "safe_type": "Presentation variant",
+     "label": "Record the USA Region",
+     "missable": false,
+     "levels": {
+      "1": "One region adds two public-service cards.",
+      "2": "Set Region to USA and wait through attract mode.",
+      "3": "Choose USA, reset the machine, and record the English presentation plus both civic notice cards before the title loop repeats. The gameplay transaction itself remains the same."
+     }
+    },
+    {
+     "id": "sonicpop-region-export",
+     "type": "optional",
+     "safe_type": "Presentation variant",
+     "label": "Record the Export Region",
+     "missable": false,
+     "levels": {
+      "1": "The overseas presentation changes text without replacing every voice.",
+      "2": "Set Region to Export and begin from a clean reset.",
+      "3": "Select Export, restart the machine, and record its English screen text and Japanese spoken lines through one transaction. Confirm the USA-only notice cards are absent before returning to configuration."
+     }
+    },
+    {
+     "id": "sonicpop-region-japan",
+     "type": "optional",
+     "safe_type": "Presentation variant",
+     "label": "Record the Japan Region",
+     "missable": false,
+     "levels": {
+      "1": "The home-region presentation uses its original language.",
+      "2": "Set Region to Japan and restart the attract loop.",
+      "3": "Choose Japan, reset, then capture the Japanese idle, choice, help, completion, and assistance presentations. This is a language variant of the same transaction, not an additional game route."
+     }
+    },
+    {
+     "id": "sonicpop-record-first-usa-notice",
+     "type": "optional",
+     "safe_type": "Attract display",
+     "label": "Record the First USA Notice",
+     "missable": false,
+     "levels": {
+      "1": "Stay in the USA loop before inserting a coin.",
+      "2": "Wait for the grey card with the federal seal.",
+      "3": "With Region set to USA, leave the machine idle until the anti-drug card appears. Capture it before touching Coin 1; a credit interrupts the attract loop and postpones the card until the transaction ends."
+     }
+    },
+    {
+     "id": "sonicpop-record-second-usa-notice",
+     "type": "optional",
+     "safe_type": "Attract display",
+     "label": "Record the Second USA Notice",
+     "missable": false,
+     "levels": {
+      "1": "A second message appears elsewhere in the same loop.",
+      "2": "Continue idling until the white recycling card appears.",
+      "3": "Remain in USA attract mode after the first card and title sequence until the environmental notice is shown. Record the whole card, then allow the loop to return to the title so both additions are confirmed."
+     }
+    },
+    {
+     "id": "sonicpop-toggle-sensor-advertise",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Check Sensor Advertise",
+     "missable": false,
+     "levels": {
+      "1": "A cabinet sensor can add another idle reaction.",
+      "2": "Toggle Sensor Advertise in Machine Configuration.",
+      "3": "Run one attract loop with Sensor Advertise off, then enable it and restart the loop. The switch permits the sensor-triggered extra animation; it does not alter flavour selection or completion."
+     }
+    },
+    {
+     "id": "sonicpop-trigger-attract-sensor",
+     "type": "interaction",
+     "safe_type": "Attract interaction",
+     "label": "Trigger the Attract Sensor",
+     "missable": false,
+     "levels": {
+      "1": "Test the cabinet detector while no credit is active.",
+      "2": "With Sensor Advertise enabled, press the Sensor input during attract mode.",
+      "3": "Wait for an ordinary idle scene, assert Sensor once, and release it. Record the added reaction before inserting a coin; repeat only if the first press lands during a title or notice card that cannot respond."
+     }
+    },
+    {
+     "id": "sonicpop-confirm-unused-dips",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Confirm the Unused Switches",
+     "missable": false,
+     "levels": {
+      "1": "The final switch positions have no defined function.",
+      "2": "Inspect the last three entries in the DSW bank.",
+      "3": "Verify that the final three switches are labelled unused by the pinned driver. Leave them at default and do not assign hidden difficulty, serving size, or gameplay effects to positions that expose none."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonicpop-flavour-panel",
+   "name": "Three-Choice Panel",
+   "location_cue": "The bright panel with green, yellow, and red buttons that appears immediately after a coin is accepted.",
+   "note": "The screen identifies choices by position and colour. Complete each one on a separate customer cycle.",
+   "save_backup": {
+    "title": "Prepare three fresh transactions",
+    "why": "One button commits the current order, and MAME save states are unsupported for this machine.",
+    "detail": "Record the cabinet settings first. Use a new credit for green, yellow, and red so each choice begins from attract mode and no combined-input mistake overwrites the evidence."
+   },
+   "point_of_no_return": {
+    "title": "The selected colour commits the cycle",
+    "why": "The panel closes as soon as a valid cup signal is accepted.",
+    "detail": "Choose the intended colour once, then release every cup input. If the wrong picture advances, finish only if that colour still needs recording; otherwise wait for attract mode and start again."
+   },
+   "items": [
+    {
+     "id": "sonicpop-start-transaction",
+     "type": "interaction",
+     "safe_type": "Customer action",
+     "label": "Start a Customer Transaction",
+     "missable": true,
+     "levels": {
+      "1": "Begin from the normal idle presentation.",
+      "2": "Insert one Coin 1 credit while the relay is engaged.",
+      "3": "From attract mode, confirm no sold-out line is asserted, engage the Relay, and press Coin 1 once. Wait for the green-yellow-red panel; do not press a cup input while the opening transition is still playing."
+     }
+    },
+    {
+     "id": "sonicpop-select-green",
+     "type": "optional",
+     "safe_type": "Flavour choice",
+     "label": "Record the Green Choice",
+     "missable": true,
+     "levels": {
+      "1": "Use the leftmost colour on one dedicated cycle.",
+      "2": "Press Cup Select 1 at the three-choice panel.",
+      "3": "Insert a fresh credit, wait until all three coloured buttons are visible, tap Cup Select 1 alone, and release it. Record the chosen picture and the prepared cup before starting another flavour cycle."
+     }
+    },
+    {
+     "id": "sonicpop-select-yellow",
+     "type": "optional",
+     "safe_type": "Flavour choice",
+     "label": "Record the Yellow Choice",
+     "missable": true,
+     "levels": {
+      "1": "The middle colour needs a separate transaction.",
+      "2": "Press Cup Select 2 without Cup Select 1.",
+      "3": "Start again from attract mode, insert one credit, and tap only Cup Select 2 at the panel. Confirm the yellow/middle selection advances, then keep both cup inputs released for the rest of the cycle."
+     }
+    },
+    {
+     "id": "sonicpop-select-red",
+     "type": "optional",
+     "safe_type": "Flavour choice",
+     "label": "Record the Red Choice",
+     "missable": true,
+     "levels": {
+      "1": "The rightmost colour uses a combined signal.",
+      "2": "Press both Cup Select inputs simultaneously.",
+      "3": "Begin a third fresh transaction and assert Cup Select 1 plus Cup Select 2 together at the panel. Release them together once the red/right choice is accepted; if green or yellow advances, retry with tighter simultaneous timing."
+     }
+    },
+    {
+     "id": "sonicpop-record-all-flavours",
+     "type": "optional",
+     "safe_type": "Full selection",
+     "label": "Record All Three Flavours",
+     "missable": true,
+     "levels": {
+      "1": "The complete set requires every panel colour.",
+      "2": "Finish separate green, yellow, and red customer cycles.",
+      "3": "Complete one transaction from each coloured button and retain evidence of the selected panel picture plus its prepared cup. The cabinet offers salt, butter, and curry, but the emulated screen does not provide reliable English labels, so colour and position are the fail-safe identifiers."
+     }
+    },
+    {
+     "id": "sonicpop-test-soldout-one",
+     "type": "optional",
+     "safe_type": "Cabinet fault",
+     "label": "Test Sold Out Switch 1",
+     "missable": true,
+     "levels": {
+      "1": "One stock sensor removes a single choice.",
+      "2": "Assert Sold Out SW1 before inserting a coin.",
+      "3": "From attract mode, hold only Sold Out SW1, insert one credit, and record which colour becomes unavailable. Release the switch before the next test; identify the disabled choice from the panel instead of assuming physical wiring order."
+     }
+    },
+    {
+     "id": "sonicpop-test-soldout-two",
+     "type": "optional",
+     "safe_type": "Cabinet fault",
+     "label": "Test Sold Out Switch 2",
+     "missable": true,
+     "levels": {
+      "1": "Repeat the stock check with the second line alone.",
+      "2": "Assert only Sold Out SW2 before the credit.",
+      "3": "Return to a clean attract loop, hold Sold Out SW2 by itself, insert Coin 1, and record the unavailable panel choice. Release both coin and stock inputs before moving to the third line."
+     }
+    },
+    {
+     "id": "sonicpop-test-soldout-three",
+     "type": "optional",
+     "safe_type": "Cabinet fault",
+     "label": "Test Sold Out Switch 3",
+     "missable": true,
+     "levels": {
+      "1": "The final stock line should be isolated too.",
+      "2": "Assert only Sold Out SW3 for a fresh panel.",
+      "3": "Start from attract mode, hold Sold Out SW3 alone, and insert one credit. Capture the resulting unavailable colour, then clear the line so the next normal transaction restores all three choices."
+     }
+    },
+    {
+     "id": "sonicpop-test-all-soldout",
+     "type": "optional",
+     "safe_type": "Cabinet fault",
+     "label": "Test the All-Sold-Out State",
+     "missable": true,
+     "levels": {
+      "1": "No available cup path sends the machine to assistance.",
+      "2": "Assert all three Sold Out switches before inserting a credit.",
+      "3": "Hold Sold Out SW1, SW2, and SW3 together, then press Coin 1 once. Confirm that the ordinary flavour panel cannot proceed and the assistance presentation appears; clear every stock line before returning to customer use."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonicpop-conveyor-station",
+   "name": "Conveyor and Crank Station",
+   "location_cue": "The side-view belt where a prepared cup travels from the small control pedestal toward the sloped machinery.",
+   "note": "The animated route continues even with weak input, but active alternating crank signals shorten the help phase.",
+   "save_backup": {
+    "title": "Choose active or idle input before the belt",
+    "why": "The same customer cycle cannot demonstrate both crank behaviours cleanly.",
+    "detail": "Use one transaction for continuous Handle A/B alternation and another for no handle input. Save states are unavailable, so preserve each route from its own flavour selection onward."
+   },
+   "point_of_no_return": {
+    "title": "The belt carries the cup onward",
+    "why": "Once the sloped machinery appears, the first help window has ended for that transaction.",
+    "detail": "Begin the intended handle pattern as soon as the red wheel prompt appears. If you need the idle comparison, leave both phases untouched until the route reaches the next station."
+   },
+   "items": [
+    {
+     "id": "sonicpop-enter-conveyor",
+     "type": "interaction",
+     "safe_type": "Route task",
+     "label": "Reach the Conveyor",
+     "missable": true,
+     "levels": {
+      "1": "Release the selection buttons after the choice registers.",
+      "2": "Wait for the prepared cup to enter the striped belt.",
+      "3": "After choosing a colour, keep Cup Select 1 and 2 released. Allow the preparation handoff to finish until the side-view conveyor fills the screen and the cup begins moving away from the pedestal."
+     }
+    },
+    {
+     "id": "sonicpop-crank-conveyor",
+     "type": "interaction",
+     "safe_type": "Crank action",
+     "label": "Crank Through the Conveyor Help",
+     "missable": true,
+     "levels": {
+      "1": "Respond when the red wheel prompt appears.",
+      "2": "Alternate Handle A and Handle B continuously along the belt.",
+      "3": "Start a steady A-B-A-B pattern as soon as the help prompt appears and maintain it while the cup is carried across the moving belt. Either rotation direction is acceptable; consistent phase changes matter more than pressing both lines together."
+     }
+    },
+    {
+     "id": "sonicpop-record-idle-conveyor",
+     "type": "optional",
+     "safe_type": "Input variant",
+     "label": "Record the Idle Conveyor Variant",
+     "missable": true,
+     "levels": {
+      "1": "One comparison cycle should receive no wheel input.",
+      "2": "Leave Handle A and Handle B untouched during the first help prompt.",
+      "3": "Begin a separate customer transaction and provide no crank signals after selection. Record the extended help presentation and its automatic evasive animation; the sequence continues rather than cancelling the purchased order."
+     }
+    },
+    {
+     "id": "sonicpop-advance-first-relay",
+     "type": "interaction",
+     "safe_type": "Mechanical handshake",
+     "label": "Advance the First Relay Stage",
+     "missable": true,
+     "levels": {
+      "1": "A stalled belt may be waiting for cabinet hardware.",
+      "2": "Change the Relay state when the animation stops progressing.",
+      "3": "If the sequence remains on the belt after the crank demonstration, tap the bound Relay once and release it. Wait several seconds before changing it again; rapid toggling can produce an assistance fault instead of the next preparation stage."
+     }
+    },
+    {
+     "id": "sonicpop-reach-stir-station",
+     "type": "interaction",
+     "safe_type": "Route task",
+     "label": "Reach the Stir Station",
+     "missable": true,
+     "levels": {
+      "1": "Let the belt handoff finish without resetting.",
+      "2": "Remain through the sloped-machine transition until the second red wheel appears.",
+      "3": "After the cup exits the belt, leave all selection buttons released and allow the automatic transition to complete. Stop changing Relay once the large covered kettle and second crank prompt occupy the screen."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonicpop-stir-and-dispense",
+   "name": "Stir Station and Cup Return",
+   "location_cue": "The covered kettle beside the large red wheel, followed by the clear floor where the completed cup is carried off-screen.",
+   "note": "MAME can show the ending presentation but cannot reproduce the cabinet's cooking or dispensing hardware.",
+   "save_backup": {
+    "title": "Preserve the chosen stir behaviour",
+    "why": "The final help window closes before the cup-return animation begins.",
+    "detail": "Use separate cycles for active and idle crank evidence. If the software faults before completion, restore the Relay and sold-out lines, return to attract mode, and begin again."
+   },
+   "point_of_no_return": {
+    "title": "The cup-return animation ends interaction",
+    "why": "No crank or flavour input is accepted once the finished cup leaves the station.",
+    "detail": "Complete the intended second-stage input before the kettle clears. Then release the handle phases and watch through the final presentation without resetting."
+   },
+   "items": [
+    {
+     "id": "sonicpop-crank-stir-station",
+     "type": "interaction",
+     "safe_type": "Crank action",
+     "label": "Crank Through the Stir Help",
+     "missable": true,
+     "levels": {
+      "1": "Use the same phase rhythm at the second wheel.",
+      "2": "Alternate Handle A and Handle B while the covered kettle is present.",
+      "3": "Resume a steady A-B-A-B sequence when the second red wheel prompt appears. Continue until the intervention animation clears and the cup-return scene begins; release both phases afterward so they cannot affect the next attract loop."
+     }
+    },
+    {
+     "id": "sonicpop-record-idle-stir",
+     "type": "optional",
+     "safe_type": "Input variant",
+     "label": "Record the Idle Stir Variant",
+     "missable": true,
+     "levels": {
+      "1": "A separate cycle can show the unattended outcome.",
+      "2": "Do not touch either Handle input at the second station.",
+      "3": "Reach the covered kettle on a fresh transaction and leave Handle A and Handle B idle throughout the help prompt. Record the longer interference sequence and confirm that it still advances toward the same customer completion."
+     }
+    },
+    {
+     "id": "sonicpop-advance-second-relay",
+     "type": "interaction",
+     "safe_type": "Mechanical handshake",
+     "label": "Advance the Second Relay Stage",
+     "missable": true,
+     "levels": {
+      "1": "The final wait may need another hardware confirmation.",
+      "2": "Toggle Relay once if the second station stops progressing.",
+      "3": "After the crank evidence is complete, change Relay to its opposite state one time and wait. If nothing moves, return it once after several seconds; do not pulse it continuously, because the software interprets an invalid mechanism state as a service problem."
+     }
+    },
+    {
+     "id": "sonicpop-complete-animation",
+     "type": "optional",
+     "safe_type": "Route task",
+     "label": "Complete the Animated Transaction",
+     "missable": true,
+     "levels": {
+      "1": "Keep watching after the final wheel disappears.",
+      "2": "Remain until the prepared cup is carried beyond the screen edge.",
+      "3": "Release the crank, cup, coin, and sensor inputs when the kettle sequence ends. Let the cup-return presentation play without resetting, then wait for the title or attract scene to confirm that the software transaction completed."
+     }
+    },
+    {
+     "id": "sonicpop-confirm-outcome-independence",
+     "type": "optional",
+     "safe_type": "Outcome check",
+     "label": "Confirm Both Crank Outcomes",
+     "missable": true,
+     "levels": {
+      "1": "Performance changes the waiting animation, not the purchase.",
+      "2": "Finish one active-crank cycle and one idle-crank cycle.",
+      "3": "Record complete transactions with continuous crank input and with none. Compare their help duration and intervention animation, then confirm both reach the cup-return presentation; neither route exposes a score, rank, failure ending, or reduced software reward."
+     }
+    },
+    {
+     "id": "sonicpop-collect-physical-cup",
+     "type": "optional",
+     "safe_type": "Original-cabinet action",
+     "label": "Collect the Physical Popcorn Cup",
+     "missable": true,
+     "levels": {
+      "1": "The real machine finishes outside the video screen.",
+      "2": "On original hardware, wait for the dispense bay after the animation.",
+      "3": "Use only a maintained physical cabinet with an operator present. After the on-screen cup return, wait until the machine finishes cooking and releases the purchased cup, then remove it from the marked bay; this step is impossible under ordinary MAME emulation."
+     }
+    },
+    {
+     "id": "sonicpop-confirm-mame-no-dispense",
+     "type": "optional",
+     "safe_type": "Emulation boundary",
+     "label": "Confirm MAME Ends Without Dispensing",
+     "missable": true,
+     "levels": {
+      "1": "The emulator stops at the software boundary.",
+      "2": "Finish a complete animated cycle and observe the host PC.",
+      "3": "Allow the final presentation to return to attract mode, then verify that MAME produced no physical-food or hopper event. Mark the software route complete and leave the original-cabinet dispense requirement explicitly unfulfilled unless real maintained hardware was used."
+     }
+    },
+    {
+     "id": "sonicpop-reproduce-relay-assistance",
+     "type": "optional",
+     "safe_type": "Cabinet fault",
+     "label": "Reproduce the Relay Assistance State",
+     "missable": true,
+     "levels": {
+      "1": "A missing mechanism confirmation has its own presentation.",
+      "2": "Start a controlled transaction with Relay inactive or fixed.",
+      "3": "From a clean configuration, disengage Relay before the credit for the immediate fault, or keep one state through later waits for a delayed fault. Record the assistance screen, then restore a valid alternating stage state before any normal customer cycle."
+     }
+    },
+    {
+     "id": "sonicpop-return-to-attract",
+     "type": "interaction",
+     "safe_type": "Route task",
+     "label": "Return to Attract Mode",
+     "missable": true,
+     "levels": {
+      "1": "Do not reset as soon as the cup leaves.",
+      "2": "Wait until the title and idle presentation resume.",
+      "3": "After the cup-return scene, keep every customer input released and allow the closing animation to finish. Confirm that the machine re-enters its title/attract loop and accepts a new Coin 1 input; this closes the transaction cleanly."
+     }
+    }
+   ]
+  }
+ ]
+}

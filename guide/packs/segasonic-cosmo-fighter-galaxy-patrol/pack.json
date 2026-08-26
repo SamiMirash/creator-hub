@@ -1,0 +1,553 @@
+{
+ "id": "segasonic-cosmo-fighter-galaxy-patrol",
+ "game": "SegaSonic Cosmo Fighter Galaxy Patrol (1993)",
+ "target": "World arcade ROM set through MAME 0.289 on PC",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-24T09:38:38.920512+00:00",
+ "areas": [
+  {
+   "id": "sonicfgt-cabinet-setup",
+   "name": "Cabinet Setup and Controls",
+   "location_cue": "The emulator launch screen, machine-input assignments, and cabinet-switch menus before a credit is inserted.",
+   "note": "Use the preserved World arcade set. MAME marks its emulation good, but this driver does not support save states.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sonicfgt-verify-world-build",
+     "type": "optional",
+     "safe_type": "System task",
+     "label": "Verify the World Arcade Build",
+     "missable": false,
+     "levels": {
+      "1": "Confirm the archive before changing any cabinet controls.",
+      "2": "Run MAME's ROM check against shortname sonicfgt from sonicfgt.zip.",
+      "3": "Use the 405,880-byte World archive. Its ZIP SHA-1 is 8d651ad792235f43a55dc518851e0ed65648a483 and SHA-256 is 6aa04b517c0f4411d0149c50f35d2fb573d37e8154509424b9da82c87d71062a; MAME 0.289 must report the set as good."
+     }
+    },
+    {
+     "id": "sonicfgt-map-steering",
+     "type": "interaction",
+     "safe_type": "Control function",
+     "label": "Map Horizontal Steering",
+     "missable": false,
+     "levels": {
+      "1": "The craft needs only one movement axis.",
+      "2": "Bind P1 Left and P1 Right to comfortable directions.",
+      "3": "Open this machine's Input Assignments, bind both horizontal directions, begin a cycle, and confirm the craft reaches each side without any vertical input. The cabinet route restricts movement to this single axis."
+     }
+    },
+    {
+     "id": "sonicfgt-map-cannon",
+     "type": "interaction",
+     "safe_type": "Control function",
+     "label": "Map the Cannon",
+     "missable": false,
+     "levels": {
+      "1": "Keep the ordinary weapon on its own button.",
+      "2": "Bind P1 Button 1 to the shooting control.",
+      "3": "Assign P1 Button 1, then hold it once the craft is active. Confirm two straight projectile streams leave the nose; use autofire only if your controller permits it without modifying game speed."
+     }
+    },
+    {
+     "id": "sonicfgt-map-transform",
+     "type": "interaction",
+     "safe_type": "Control function",
+     "label": "Map Transformation",
+     "missable": false,
+     "levels": {
+      "1": "A second action changes the craft's attack pattern.",
+      "2": "Bind P1 Button 2 to transformation.",
+      "3": "Assign P1 Button 2 and tap it during open space. The craft must change into the broader rocket-firing form; tap again later to confirm the normal cannon form remains selectable."
+     }
+    },
+    {
+     "id": "sonicfgt-map-boost",
+     "type": "interaction",
+     "safe_type": "Control function",
+     "label": "Map Speed Boost",
+     "missable": false,
+     "levels": {
+      "1": "Reserve a separate input for the cabinet lever.",
+      "2": "Bind P1 Button 3 to the speed-up lever.",
+      "3": "Assign P1 Button 3 and hold it briefly after launch. Look for the stronger exhaust and faster approach rate, then release it before a pickup row so you can verify the lever independently from steering and shooting."
+     }
+    },
+    {
+     "id": "sonicfgt-check-credit-mode",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Check Both Credit Modes",
+     "missable": false,
+     "levels": {
+      "1": "One operator switch changes how credits are accepted.",
+      "2": "Inspect Credit Mode under Machine Configuration.",
+      "3": "Toggle Credit Mode Off and On, return to attract mode after each change, and confirm the payment behavior. Restore the setting you intend to archive before beginning performance runs; it does not add another flight route."
+     }
+    },
+    {
+     "id": "sonicfgt-check-coin-schedules",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Check Coin A and Coin B",
+     "missable": false,
+     "levels": {
+      "1": "The first switch bank contains the pricing schedules.",
+      "2": "Inspect both coin channels under Machine Configuration.",
+      "3": "Review every available Coin A and Coin B schedule, then restore the cabinet's existing values. These affect credit conversion only, so one documented pass through the menu completes them without replaying the route."
+     }
+    },
+    {
+     "id": "sonicfgt-confirm-unused-switches",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Confirm the Unused Switches",
+     "missable": false,
+     "levels": {
+      "1": "Most of the second switch bank has no function here.",
+      "2": "Inspect SW2 after locating Credit Mode.",
+      "3": "Verify that only SW2:1 exposes Credit Mode and the remaining SW2 positions are marked unused. Do not invent difficulty, lives, or bonus settings for those positions; the verified driver defines none."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonicfgt-launch-space",
+   "name": "Launch Corridor and Open Space",
+   "location_cue": "The bright launch structure followed by the clear starfield where the craft first accepts combat input.",
+   "note": "The route advances automatically. Prepare every binding before inserting the credit.",
+   "save_backup": {
+    "title": "Prepare a clean restart before inserting a credit",
+    "why": "A missed action scrolls away, and this MAME driver cannot restore save states.",
+    "detail": "Record the input map and switch values first. If a cycle objective fails, allow the short ride to return to attract mode and begin a fresh credit rather than relying on a state file."
+   },
+   "point_of_no_return": {
+    "title": "The launch sequence commits the cycle",
+    "why": "Once the craft leaves the structure, earlier targets cannot be revisited during that credit.",
+    "detail": "Choose whether the run is for control demonstrations, a low result, or a clean maximum attempt before inserting the coin. Perform the opening target condition as soon as the round craft appears."
+   },
+   "items": [
+    {
+     "id": "sonicfgt-start-paid-cycle",
+     "type": "optional",
+     "safe_type": "Route task",
+     "label": "Start a Paid Cycle",
+     "missable": true,
+     "levels": {
+      "1": "Begin only after every input responds in the menu.",
+      "2": "Insert one Coin 1 credit and wait for combat control.",
+      "3": "From attract mode, insert Coin 1 once and leave all other service inputs untouched. Let the launch presentation finish; begin firing only when the craft reaches open space and responds to horizontal steering."
+     }
+    },
+    {
+     "id": "sonicfgt-fire-normal-cannon",
+     "type": "interaction",
+     "safe_type": "Combat action",
+     "label": "Fire the Normal Cannon",
+     "missable": true,
+     "levels": {
+      "1": "Test the narrow firing pattern before changing forms.",
+      "2": "Hold Button 1 while the craft retains its compact shape.",
+      "3": "Keep the craft near the middle, hold Button 1, and confirm both straight streams cross the screen. Destroy at least one incoming object with this form before using transformation, so both weapon states are documented."
+     }
+    },
+    {
+     "id": "sonicfgt-transform-to-rocket-form",
+     "type": "interaction",
+     "safe_type": "Combat action",
+     "label": "Transform into Rocket Form",
+     "missable": true,
+     "levels": {
+      "1": "Change forms while the starfield is still uncluttered.",
+      "2": "Tap Button 2 and confirm the wider craft appears.",
+      "3": "During a clear gap, tap Button 2 once, keep Button 1 held, and verify the broad rocket spread replaces the twin straight streams. Do not mash transformation; remain in this form for the dense wave groups."
+     }
+    },
+    {
+     "id": "sonicfgt-use-speed-boost",
+     "type": "interaction",
+     "safe_type": "Movement action",
+     "label": "Use Speed Boost",
+     "missable": true,
+     "levels": {
+      "1": "Try the lever before pickups demand precise alignment.",
+      "2": "Hold Button 3 briefly during an empty stretch.",
+      "3": "Press and hold Button 3 until the exhaust lengthens, then release before the next dropped stars. For a maximum-result attempt, pulse or hold boost through safe gaps instead of abandoning it after this demonstration."
+     }
+    },
+    {
+     "id": "sonicfgt-hit-round-craft-five",
+     "type": "interaction",
+     "safe_type": "Combat challenge",
+     "label": "Hit the Round Craft Five Times",
+     "missable": true,
+     "levels": {
+      "1": "The first moving target remains vulnerable only briefly.",
+      "2": "Track the small round craft and land five shots before it leaves.",
+      "3": "Stay close to its horizontal line without touching incoming fire, hold the cannon continuously, and follow it left or right long enough to register at least five impacts. Missing this window removes an important maximum-result factor until the next credit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonicfgt-obstacle-waves",
+   "name": "Obstacle Waves",
+   "location_cue": "The open starfield filled by alternating rows of round pods, red craft, orange diamonds, and low grey obstacles.",
+   "note": "Destroyed objects release gold stars. Collect each drop before the automatic scroll carries it behind the craft.",
+   "save_backup": {
+    "title": "Restart immediately after a clean-run hit",
+    "why": "The no-hit milestones share one uninterrupted damage counter.",
+    "detail": "If any projectile or obstacle makes contact before the required clean-star milestone, finish only if you still need a lower result; otherwise restart from attract mode and preserve the next credit for the no-hit route."
+   },
+   "point_of_no_return": {
+    "title": "Every pickup row has one pass",
+    "why": "Gold stars disappear behind the craft when the fixed scroll advances.",
+    "detail": "Destroy each formation early, read the horizontal positions of its drops, and steer through them before committing to the following group. Do not hold boost blindly across a star row."
+   },
+   "items": [
+    {
+     "id": "sonicfgt-clear-round-pod-wave",
+     "type": "interaction",
+     "safe_type": "Wave task",
+     "label": "Clear a Round-Pod Wave",
+     "missable": true,
+     "levels": {
+      "1": "Stay central until the grey row shows its gaps.",
+      "2": "Use rocket spread against one complete row of round pods.",
+      "3": "Enter the wave in rocket form near the middle, hold fire before the pods settle, and make only the smallest horizontal correction needed to catch the full row. Sweep through every released star after the last pod breaks."
+     }
+    },
+    {
+     "id": "sonicfgt-clear-red-craft-wave",
+     "type": "interaction",
+     "safe_type": "Wave task",
+     "label": "Clear a Red-Craft Wave",
+     "missable": true,
+     "levels": {
+      "1": "The pointed group is easier before it spreads apart.",
+      "2": "Fire into the red formation while it remains clustered.",
+      "3": "Keep rocket fire active as the red craft enter, align under the centre member, and move with the group rather than chasing one edge target. Collect the resulting stars in a single controlled sweep."
+     }
+    },
+    {
+     "id": "sonicfgt-clear-orange-diamonds",
+     "type": "interaction",
+     "safe_type": "Obstacle task",
+     "label": "Clear an Orange-Diamond Formation",
+     "missable": true,
+     "levels": {
+      "1": "The bright geometric group offers a readable pickup pattern.",
+      "2": "Destroy the orange diamonds before they cross the craft's line.",
+      "3": "Meet the formation near screen centre with continuous rocket fire. Break the centre objects first, shift toward the surviving side, then reverse once through the gold-star row; do not boost past the last pickup."
+     }
+    },
+    {
+     "id": "sonicfgt-clear-low-grey-group",
+     "type": "interaction",
+     "safe_type": "Obstacle task",
+     "label": "Clear a Low Grey Formation",
+     "missable": true,
+     "levels": {
+      "1": "Watch the bottom edge when the upper field looks empty.",
+      "2": "Move toward the low grey objects and fire before they pass.",
+      "3": "Remain high enough to see the formation enter, then slide horizontally into its lane while firing. Destroy the objects before they reach the craft and return toward centre immediately after collecting their drops."
+     }
+    },
+    {
+     "id": "sonicfgt-five-clean-stars",
+     "type": "collectible",
+     "safe_type": "Collection milestone",
+     "label": "Collect Five Stars Without Damage",
+     "missable": true,
+     "levels": {
+      "1": "Treat the opening pickups as one clean chain.",
+      "2": "Gather five gold stars before taking any hit.",
+      "3": "Use rocket form, fire ahead of every early formation, and collect only along clear lanes. If contact occurs before the fifth pickup registers, restart; damage taken afterward does not retroactively complete this clean milestone."
+     }
+    },
+    {
+     "id": "sonicfgt-ten-clean-stars",
+     "type": "collectible",
+     "safe_type": "Collection milestone",
+     "label": "Collect Ten Stars Without Damage",
+     "missable": true,
+     "levels": {
+      "1": "Keep the same clean chain through the next formations.",
+      "2": "Reach ten collected stars while the damage count remains zero.",
+      "3": "Continue from the five-star clean route without relaxing fire. Centre between waves, steer only for visible drops, and release boost whenever a projectile and pickup share a lane; restart after any contact before number ten."
+     }
+    },
+    {
+     "id": "sonicfgt-twenty-clean-stars",
+     "type": "collectible",
+     "safe_type": "Collection milestone",
+     "label": "Collect Twenty Stars Without Damage",
+     "missable": true,
+     "levels": {
+      "1": "Consistency matters more than forcing an unsafe pickup.",
+      "2": "Extend the untouched collection chain to twenty gold stars.",
+      "3": "Maintain rocket spread and early wave destruction through the open-space groups. Read danger first and stars second: move away from incoming fire, then collect the safe portion of the row. Any hit before twenty requires another credit."
+     }
+    },
+    {
+     "id": "sonicfgt-collect-all-thirty-six",
+     "type": "collectible",
+     "safe_type": "Full collection",
+     "label": "Collect All Thirty-Six Stars",
+     "missable": true,
+     "levels": {
+      "1": "Every destroyed formation contributes to the complete total.",
+      "2": "Finish the fixed route with all thirty-six gold stars collected.",
+      "3": "Destroy each wave as soon as it enters so its drops remain ahead of you. Release boost for pickup rows, sweep across every visible gold star, and return toward centre before the next attack. A star that scrolls behind you is lost for that credit."
+     }
+    },
+    {
+     "id": "sonicfgt-clear-every-wave",
+     "type": "optional",
+     "safe_type": "Combat challenge",
+     "label": "Clear Every Obstacle Wave",
+     "missable": true,
+     "levels": {
+      "1": "A missed object can also cost its pickup.",
+      "2": "Leave no round pod, red craft, diamond, or low obstacle intact.",
+      "3": "Hold rocket fire continuously, meet each group near its middle, and finish one side before crossing to the other. Confirm no intact object exits behind the craft; combine this with the full-star run because surviving objects cannot release their drops."
+     }
+    },
+    {
+     "id": "sonicfgt-boost-through-safe-gaps",
+     "type": "interaction",
+     "safe_type": "Performance task",
+     "label": "Boost Through Every Safe Gap",
+     "missable": true,
+     "levels": {
+      "1": "Maximum performance rewards speed without careless misses.",
+      "2": "Use the boost between formations, releasing it for pickups and dodges.",
+      "3": "Hold Button 3 whenever the lane ahead is empty, but let go before each drop row or crossing projectile. Resume immediately after collecting and centring. A single boost demonstration is insufficient for the strongest result."
+     }
+    },
+    {
+     "id": "sonicfgt-clear-space-without-hit",
+     "type": "optional",
+     "safe_type": "No-damage challenge",
+     "label": "Clear the Waves Without Damage",
+     "missable": true,
+     "levels": {
+      "1": "Use the broad weapon pattern and restrained steering.",
+      "2": "Reach the metal structure without touching an obstacle or projectile.",
+      "3": "Stay near centre during ordinary waves, destroy threats before chasing drops, and never dive toward an unsafe bottom-edge object. Move only after identifying a clear horizontal lane; restart immediately if the craft flashes from contact."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonicfgt-station-approach",
+   "name": "Metal Station Approach",
+   "location_cue": "The tall blue-grey mechanical wall where the clear starfield gives way to a confined vertical backdrop.",
+   "note": "The centre line is not always safe here; preserve room to move horizontally before each close pass.",
+   "save_backup": {
+    "title": "Keep the clean run alive before the wall",
+    "why": "A collision here invalidates the whole-cycle no-hit condition after most of the route has passed.",
+    "detail": "Enter near centre but ready to move. If contact occurs, preserve the run only for missing result grades; otherwise restart rather than assuming the earlier clean-star milestones guarantee a complete no-hit cycle."
+   },
+   "point_of_no_return": {
+    "title": "The close pass cannot be retried",
+    "why": "The fixed camera carries the craft directly onward once the moving target crosses.",
+    "detail": "Watch the target's alignment rather than the wall texture. Leave the centre lane before its straight vertical pass, then return only after it clears your level."
+   },
+   "items": [
+    {
+     "id": "sonicfgt-avoid-vertical-dash",
+     "type": "interaction",
+     "safe_type": "Avoidance task",
+     "label": "Avoid the Vertical Dash",
+     "missable": true,
+     "levels": {
+      "1": "The central lane becomes dangerous during the close pass.",
+      "2": "Move away from centre before the round target crosses vertically.",
+      "3": "Keep firing while watching its horizontal alignment. When it settles above your line, slide decisively to either side, hold position until the downward pass clears, then return toward centre without crossing back through it."
+     }
+    },
+    {
+     "id": "sonicfgt-maintain-rocket-form",
+     "type": "interaction",
+     "safe_type": "Combat action",
+     "label": "Keep Rocket Form Through the Approach",
+     "missable": true,
+     "levels": {
+      "1": "The wider spread reduces late target chasing.",
+      "2": "Remain transformed while the mechanical wall fills the background.",
+      "3": "Do not toggle back when the scene changes. Keep Button 1 held in rocket form so the spread continues damaging anything entering from either side while your steering remains reserved for the dash and pickups."
+     }
+    },
+    {
+     "id": "sonicfgt-clear-approach-cleanly",
+     "type": "optional",
+     "safe_type": "No-damage challenge",
+     "label": "Clear the Station Approach Without Damage",
+     "missable": true,
+     "levels": {
+      "1": "Preserve side space instead of hugging the boundary.",
+      "2": "Cross the mechanical-wall section without a collision.",
+      "3": "Enter near centre, make one committed move for the vertical dash, and avoid oscillating against the edge. Continue firing throughout; after the close pass, re-centre gradually so the next large target does not trap you beside a boundary."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonicfgt-large-target",
+   "name": "Large Target Arena",
+   "location_cue": "The mechanical-wall backdrop occupied by a large green target with two long arms and a central body.",
+   "note": "Damage opportunities end when the fixed ride moves on, regardless of the remaining target pieces.",
+   "save_backup": {
+    "title": "Commit to the high-damage route before engaging",
+    "why": "The target-hit count cannot be recovered after the arena scrolls away.",
+    "detail": "Arrive in rocket form with fire already held. If the target leaves before the required hit count or the craft takes damage during a no-hit attempt, complete a needed low grade or restart from attract mode."
+   },
+   "point_of_no_return": {
+    "title": "The arena closes on a fixed timer",
+    "why": "The target departs and the craft transitions onward even if your damage was low.",
+    "detail": "Prioritise repeated central-body hits while moving only to avoid the arms. Do not stop firing to chase the outside edge; the result presentation begins soon after the target leaves."
+   },
+   "items": [
+    {
+     "id": "sonicfgt-hit-large-target-fifteen",
+     "type": "interaction",
+     "safe_type": "Combat challenge",
+     "label": "Hit the Large Target Fifteen Times",
+     "missable": true,
+     "levels": {
+      "1": "Begin firing before the whole body settles into view.",
+      "2": "Register at least fifteen impacts before the arena ends.",
+      "3": "Enter in rocket form with Button 1 already held, align the spread through the central body, and track it horizontally. Keep firing during every dodge; fifteen registered hits is the minimum, so continue well beyond the first visible damage reactions."
+     }
+    },
+    {
+     "id": "sonicfgt-break-large-target",
+     "type": "optional",
+     "safe_type": "Combat challenge",
+     "label": "Break Apart the Large Target",
+     "missable": true,
+     "levels": {
+      "1": "Sustained central fire matters more than chasing each arm.",
+      "2": "Keep the rocket spread on the body until the structure breaks apart.",
+      "3": "Hold fire continuously through the central mass, following its horizontal movement while staying clear of arm sweeps. Resume alignment immediately after every dodge and continue until the large green assembly visibly fails before the ride carries you onward."
+     }
+    },
+    {
+     "id": "sonicfgt-avoid-arm-sweeps",
+     "type": "interaction",
+     "safe_type": "Avoidance task",
+     "label": "Avoid Every Arm Sweep",
+     "missable": true,
+     "levels": {
+      "1": "Do not let sustained fire pin you beneath one side.",
+      "2": "Watch the surviving arm and move perpendicular to its attack line.",
+      "3": "Maintain a side gap from the extended hand, wait for its direction to become clear, then cross horizontally away from the sweep while still firing. Reverse only after the hand retracts; premature crossing can trap the craft against the opposite boundary."
+     }
+    },
+    {
+     "id": "sonicfgt-complete-no-hit-cycle",
+     "type": "optional",
+     "safe_type": "No-damage challenge",
+     "label": "Complete the Entire Cycle Without Damage",
+     "missable": true,
+     "levels": {
+      "1": "Carry the clean wave route through the large target.",
+      "2": "Reach the result transition without the craft flashing from any hit.",
+      "3": "Combine early destruction, rocket spread, centre positioning, the off-centre dash dodge, and deliberate arm avoidance in one credit. Never trade damage for a gold star; if any contact occurs anywhere after launch, restart for this condition."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonicfgt-results",
+   "name": "Result Screen",
+   "location_cue": "The starfield presentation showing the red craft beside a planet and a row of one to five gold rating stars.",
+   "note": "The game does not display numeric scoring thresholds. Each paid cycle records only one result grade.",
+   "save_backup": {
+    "title": "Capture each grade before another credit",
+    "why": "A new cycle replaces the visible result, and save states are unsupported.",
+    "detail": "Record the complete result screen or note its star count before attract mode resumes. Use separate credits for the deliberately low grades and the clean maximum attempt."
+   },
+   "point_of_no_return": {
+    "title": "The rating is fixed when the result appears",
+    "why": "No input on this screen can alter the completed cycle's grade.",
+    "detail": "If the intended star count is missed, retain it if another grade still needs documenting. Otherwise begin again and change only one performance factor so the next result remains diagnosable."
+   },
+   "items": [
+    {
+     "id": "sonicfgt-complete-cycle",
+     "type": "optional",
+     "safe_type": "Route task",
+     "label": "Complete the Ride Cycle",
+     "missable": true,
+     "levels": {
+      "1": "Do not reset when combat input ends.",
+      "2": "Remain through the automatic transition until rating stars appear.",
+      "3": "After the large target leaves, release the controls and let every automatic craft transition finish. Wait until the planet backdrop and gold rating stars are fully visible; reaching that presentation records one complete paid cycle."
+     }
+    },
+    {
+     "id": "sonicfgt-one-star-result",
+     "type": "optional",
+     "safe_type": "Result grade",
+     "label": "Record a One-Star Result",
+     "missable": true,
+     "levels": {
+      "1": "Use a dedicated cycle with no performance inputs.",
+      "2": "Insert a credit, then leave steering and all three action buttons untouched.",
+      "3": "Begin from attract mode with one coin, then provide no gameplay input after launch: do not steer, shoot, transform, or boost. The verified World set awards one star at the result screen for this idle route."
+     }
+    },
+    {
+     "id": "sonicfgt-two-star-result",
+     "type": "optional",
+     "safe_type": "Result grade",
+     "label": "Record a Two-Star Result",
+     "missable": true,
+     "levels": {
+      "1": "Add activity without collecting a strong share of drops.",
+      "2": "Fire and transform, but deliberately miss most gold stars.",
+      "3": "Use rocket fire and demonstrate boost, then spend the obstacle waves away from their pickup columns. Continue firing against the large target but do not optimise collection. A locally reproduced route of this kind produced two stars; reduce activity if it rises."
+     }
+    },
+    {
+     "id": "sonicfgt-three-star-result",
+     "type": "optional",
+     "safe_type": "Result grade",
+     "label": "Record a Three-Star Result",
+     "missable": true,
+     "levels": {
+      "1": "Aim for a mixed run rather than a clean maximum attempt.",
+      "2": "Destroy several waves, sweep between sides, and accept missed pickups or contact.",
+      "3": "Fire continuously, transform at least once, use brief boosts, and make broad horizontal sweeps through the route. Collect whichever stars fall into the sweep without restarting after damage. This reproduced three stars locally; add misses if it rises or collect more if it falls."
+     }
+    },
+    {
+     "id": "sonicfgt-four-star-result",
+     "type": "optional",
+     "safe_type": "Result grade",
+     "label": "Record a Four-Star Result",
+     "missable": true,
+     "levels": {
+      "1": "Build a strong run while withholding one major scoring factor.",
+      "2": "Stay clean and destroy most waves, but limit boost or leave several stars.",
+      "3": "Follow the no-hit rocket route and land both target-hit conditions, then deliberately weaken only one factor: either use boost sparingly or leave a small set of pickups. Because no threshold is shown, preserve a five if it appears; otherwise adjust only that same factor next credit."
+     }
+    },
+    {
+     "id": "sonicfgt-five-star-result",
+     "type": "optional",
+     "safe_type": "Maximum result",
+     "label": "Record a Five-Star Result",
+     "missable": true,
+     "levels": {
+      "1": "The highest grade combines speed, destruction, collection, and safety.",
+      "2": "Use frequent boost, clear the waves, collect every possible star, and avoid damage.",
+      "3": "In one credit, transform to rocket form, fire continuously, hit the opening round craft at least five times, destroy every obstacle wave, collect all thirty-six gold stars, boost through every safe gap, land fifteen-plus hits on the large target, and finish without contact."
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,949 @@
+{
+ "id": "sonic-the-hedgehog-1991-master-system",
+ "game": "Sonic the Hedgehog (1991, Master System)",
+ "target": "Original USA/Europe/Brazil Master System cartridge build, played through PC emulation",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-22T20:25:00.350316+00:00",
+ "areas": [
+  {
+   "id": "sms1-green-hill-zone",
+   "name": "Green Hill Zone",
+   "location_cue": "Bright grass, palms, waterfalls, and low checker-patterned cliffs.",
+   "note": "Learn the fixed life and goal-panel rules before moving onward.",
+   "save_backup": {
+    "title": "Create a save state before each goal",
+    "why": "The cartridge has no native save file, and an act exit closes every uncollected local reward.",
+    "detail": "Keep one state at the act entrance and another before the goal until its life monitor, emerald, panel reward, and clear are reconciled."
+   },
+   "point_of_no_return": {
+    "title": "The goal closes the current act",
+    "why": "Normal play cannot walk backward into a completed act.",
+    "detail": "Finish the local checklist before touching the goal panel or completing the third act's final obstacle sequence."
+   },
+   "items": [
+    {
+     "id": "sms1-green-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "Keep a clean ring reserve while you examine the safer branches ahead.",
+      "2": "Reach the Act 1 goal; finish with 50–99 rings if the next Special Stage is still needed.",
+      "3": "Follow the upper grass route, keep enough rings for the planned reward, and touch the goal panel. There is no emerald in this act; reconcile the hidden life and the act-specific panel total before exiting."
+     }
+    },
+    {
+     "id": "sms1-green-act1-palm-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Sparkling-Palm Life",
+     "missable": true,
+     "levels": {
+      "1": "An early palm tree briefly advertises that it is unusual.",
+      "2": "After the first spike pit, jump into the sparkling palm from below.",
+      "3": "Move beyond the opening spike pit and watch the nearby palms. One tree flashes; stand beneath its trunk and jump upward through the canopy to release the concealed extra life, then collect it before advancing."
+     }
+    },
+    {
+     "id": "sms1-green-act1-sonic-panel-life",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Act 1 Goal-Panel Life",
+     "missable": true,
+     "levels": {
+      "1": "The goal panel notices a narrow ring-count window.",
+      "2": "Touch the Act 1 goal while carrying 11–19 rings.",
+      "3": "Protect a final total between 11 and 19 rings, inclusive, then touch the goal panel. Let its result settle before leaving; this act-specific band awards an extra life. Make a state shortly beforehand so a stray hit cannot erase the required total."
+     }
+    },
+    {
+     "id": "sms1-green-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "Keep a clean ring reserve while you examine the safer branches ahead.",
+      "2": "Reach the Act 2 goal; finish with 50–99 rings if the next Special Stage is still needed.",
+      "3": "Reach the second act's panel after resolving the first upward-spring branch. Carry 50–99 rings only if you want a Special Stage; otherwise preserve the separate panel-life band and finish deliberately."
+     }
+    },
+    {
+     "id": "sms1-green-act2-water-wall-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Water-Wall Life",
+     "missable": true,
+     "levels": {
+      "1": "The first pool conceals more width than the screen suggests.",
+      "2": "At the first water section, walk left through the solid-looking wall.",
+      "3": "Enter the first shallow water area, turn back, and press into its left boundary. The wall is passable; continue through it, break the hidden life monitor, and return the same way before taking the main route."
+     }
+    },
+    {
+     "id": "sms1-green-act2-emerald",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 1",
+     "missable": true,
+     "levels": {
+      "1": "A spring route can be abandoned in the direction progress normally rejects.",
+      "2": "After the checkpoint, use the first upward spring, ignore the second, and travel left across the water.",
+      "3": "Pass the checkpoint and take the first spring that sends you upward. Do not use the next spring. Move left instead, cross the water, continue to its far edge, then descend beside the waterfall to reach the emerald below."
+     }
+    },
+    {
+     "id": "sms1-green-act2-sonic-panel-life",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Act 2 Goal-Panel Life",
+     "missable": true,
+     "levels": {
+      "1": "The goal panel notices a narrow ring-count window.",
+      "2": "Touch the Act 2 goal while carrying 21–29 rings.",
+      "3": "Protect a final total between 21 and 29 rings, inclusive, then touch the goal panel. Let its result settle before leaving; this act-specific band awards an extra life. Make a state shortly beforehand so a stray hit cannot erase the required total."
+     }
+    },
+    {
+     "id": "sms1-green-act3-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 3",
+     "missable": true,
+     "levels": {
+      "1": "Complete every nearby fixed check before committing to this act's exit.",
+      "2": "Reach and complete the final obstacle sequence in Act 3, then cross its outgoing boundary.",
+      "3": "Stay near the far-left safe ground while the moving craft approaches. Jump into it during each low pass, avoid being caught beneath it, and repeat until eight clean hits end the act; collect the fixed life first."
+     }
+    },
+    {
+     "id": "sms1-green-act3-lower-shelf-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 3 Lower-Shelf Life",
+     "missable": true,
+     "levels": {
+      "1": "One safe-looking gap hides a lower shelf instead of a fall.",
+      "2": "Before the steep hill, drop through the hole without spikes and inspect the shelf beside the spring.",
+      "3": "Approach the steep uphill section and choose the preceding opening that has no spikes. Drop into it under control, land on the lower shelf, move to the right of the spring, and break the life monitor before returning upward."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms1-bridge-zone",
+   "name": "Bridge Zone",
+   "location_cue": "Long open bridges crossing broad water with sparse platforms.",
+   "note": "One act scrolls automatically; keep a state before its low river pickup.",
+   "save_backup": {
+    "title": "Create a save state before each goal",
+    "why": "The cartridge has no native save file, and an act exit closes every uncollected local reward.",
+    "detail": "Keep one state at the act entrance and another before the goal until its life monitor, emerald, panel reward, and clear are reconciled."
+   },
+   "point_of_no_return": {
+    "title": "The goal closes the current act",
+    "why": "Normal play cannot walk backward into a completed act.",
+    "detail": "Finish the local checklist before touching the goal panel or completing the third act's final obstacle sequence."
+   },
+   "items": [
+    {
+     "id": "sms1-bridge-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "Keep a clean ring reserve while you examine the safer branches ahead.",
+      "2": "Reach the Act 1 goal; finish with 50–99 rings if the next Special Stage is still needed.",
+      "3": "Cross the open spans without losing the ring total chosen for your goal reward. Resolve the second counterweight, collapsing-bridge emerald route, and panel band before touching the finish."
+     }
+    },
+    {
+     "id": "sms1-bridge-act1-seesaw-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Counterweight Life",
+     "missable": true,
+     "levels": {
+      "1": "A second counterweight can launch you higher than its first bounce suggests.",
+      "2": "Use the second seesaw twice, then hold right during the high launch.",
+      "3": "Stand on the second counterweight seesaw and let its weight launch you. Land back on it for a stronger second bounce, hold right in the air, and steer onto the high ledge containing the life monitor."
+     }
+    },
+    {
+     "id": "sms1-bridge-act1-emerald",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 2",
+     "missable": true,
+     "levels": {
+      "1": "A collapsing bridge can become an elevator if you leave it late.",
+      "2": "Near the end, ride the first collapsing bridge section downward and jump left to the lower platform.",
+      "3": "At the long collapsing bridge near the goal, remain on its first falling segment instead of racing across. Descend with it briefly, then jump left before it drops off-screen. Land on the concealed lower platform and collect the emerald."
+     }
+    },
+    {
+     "id": "sms1-bridge-act1-sonic-panel-life",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Act 1 Goal-Panel Life",
+     "missable": true,
+     "levels": {
+      "1": "The goal panel notices a narrow ring-count window.",
+      "2": "Touch the Act 1 goal while carrying 41–49 rings.",
+      "3": "Protect a final total between 41 and 49 rings, inclusive, then touch the goal panel. Let its result settle before leaving; this act-specific band awards an extra life. Make a state shortly beforehand so a stray hit cannot erase the required total."
+     }
+    },
+    {
+     "id": "sms1-bridge-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "Keep a clean ring reserve while you examine the safer branches ahead.",
+      "2": "Reach the Act 2 goal; finish with 50–99 rings if the next Special Stage is still needed.",
+      "3": "The screen advances on its own, so stay near the middle and read the river before committing to each platform. Secure the low floating life and chosen goal total, then reach the panel without being pushed off-screen."
+     }
+    },
+    {
+     "id": "sms1-bridge-act2-river-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 River Life",
+     "missable": true,
+     "levels": {
+      "1": "The automatic camera briefly hides a reward close to the waterline.",
+      "2": "Around the middle of the act, duck to inspect the low river and prepare to land on the floating life.",
+      "3": "During the mid-to-late auto-scrolling section, keep enough space from the right edge to react. Duck when the river opens below; the life appears low over the water. Drop onto its small safe platform, collect it, and immediately recover to the advancing route."
+     }
+    },
+    {
+     "id": "sms1-bridge-act2-sonic-panel-life",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Act 2 Goal-Panel Life",
+     "missable": true,
+     "levels": {
+      "1": "The goal panel notices a narrow ring-count window.",
+      "2": "Touch the Act 2 goal while carrying 11–19 rings.",
+      "3": "Protect a final total between 11 and 19 rings, inclusive, then touch the goal panel. Let its result settle before leaving; this act-specific band awards an extra life. Make a state shortly beforehand so a stray hit cannot erase the required total."
+     }
+    },
+    {
+     "id": "sms1-bridge-act3-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 3",
+     "missable": true,
+     "levels": {
+      "1": "Complete every nearby fixed check before committing to this act's exit.",
+      "2": "Reach and complete the final obstacle sequence in Act 3, then cross its outgoing boundary.",
+      "3": "Use the centre platform as your reference while the craft alternates between the two water gaps. Duck under its shots, strike during each rise, and repeat until eight hits clear the act."
+     }
+    },
+    {
+     "id": "sms1-bridge-act3-start-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 3 Start-Behind Life",
+     "missable": true,
+     "levels": {
+      "1": "The third act rewards checking the direction opposite progress immediately.",
+      "2": "Walk left from the Act 3 starting position.",
+      "3": "Do not move right when the act loads. Turn around at once, walk left behind the starting point, and break the life monitor in the small off-screen pocket before beginning the normal route."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms1-jungle-zone",
+   "name": "Jungle Zone",
+   "location_cue": "Dense greenery, waterfalls, rivers, and a tall upward climb.",
+   "note": "The Master System vertical camera cannot return to abandoned lower ground.",
+   "save_backup": {
+    "title": "Create a save state before each goal",
+    "why": "The cartridge has no native save file, and an act exit closes every uncollected local reward.",
+    "detail": "Keep one state at the act entrance and another before the goal until its life monitor, emerald, panel reward, and clear are reconciled."
+   },
+   "point_of_no_return": {
+    "title": "The goal closes the current act",
+    "why": "Normal play cannot walk backward into a completed act.",
+    "detail": "Finish the local checklist before touching the goal panel or completing the third act's final obstacle sequence."
+   },
+   "items": [
+    {
+     "id": "sms1-jungle-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "Keep a clean ring reserve while you examine the safer branches ahead.",
+      "2": "Reach the Act 1 goal; finish with 50–99 rings if the next Special Stage is still needed.",
+      "3": "Use the waterfall platforms patiently and keep the ring total required for your chosen goal outcome. Finish only after both the first-waterfall life and third-waterfall emerald routes are complete."
+     }
+    },
+    {
+     "id": "sms1-jungle-act1-first-waterfall-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 First-Waterfall Life",
+     "missable": true,
+     "levels": {
+      "1": "The first cascade has a climbable stepped edge.",
+      "2": "At the first waterfall, climb the small platforms beside the falling water.",
+      "3": "Stop at the first waterfall rather than running beneath it. Use the staggered platforms along its side as steps, climb above the ordinary path, and break the life monitor on the upper shelf before descending safely."
+     }
+    },
+    {
+     "id": "sms1-jungle-act1-emerald",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 3",
+     "missable": true,
+     "levels": {
+      "1": "A falling log is useful if you ride it instead of escaping upward.",
+      "2": "At the third waterfall, descend on the first falling log, jump left, then ride the river log left.",
+      "3": "Reach the third waterfall and stand on its first falling log. Let it carry you downward, jump left before it disappears, and land on the floating river log. Ride that log against the expected direction until it reaches the emerald platform."
+     }
+    },
+    {
+     "id": "sms1-jungle-act1-sonic-panel-life",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Act 1 Goal-Panel Life",
+     "missable": true,
+     "levels": {
+      "1": "The goal panel notices a narrow ring-count window.",
+      "2": "Touch the Act 1 goal while carrying 31–39 rings.",
+      "3": "Protect a final total between 31 and 39 rings, inclusive, then touch the goal panel. Let its result settle before leaving; this act-specific band awards an extra life. Make a state shortly beforehand so a stray hit cannot erase the required total."
+     }
+    },
+    {
+     "id": "sms1-jungle-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "Keep a clean ring reserve while you examine the safer branches ahead.",
+      "2": "Reach the Act 2 goal; finish with 50–99 rings if the next Special Stage is still needed.",
+      "3": "Climb continuously because the Master System camera never returns downward. Resolve the left-edge life before it falls below the screen, protect the intended ring count, and touch the goal panel at the top."
+     }
+    },
+    {
+     "id": "sms1-jungle-act2-left-ascent-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Left-Ascent Life",
+     "missable": true,
+     "levels": {
+      "1": "The rising camera leaves one reward behind unless you favour its left edge.",
+      "2": "During the vertical ascent, remain far left and watch the spring platform for the life.",
+      "3": "Keep to the far-left route throughout the upward climb. When the life appears beside a spring, collect it and move off that spot immediately. The Master System screen does not scroll back down; touching its lower boundary after the camera rises costs a life."
+     }
+    },
+    {
+     "id": "sms1-jungle-act2-sonic-panel-life",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Act 2 Goal-Panel Life",
+     "missable": true,
+     "levels": {
+      "1": "The goal panel notices a narrow ring-count window.",
+      "2": "Touch the Act 2 goal while carrying 41–49 rings.",
+      "3": "Protect a final total between 41 and 49 rings, inclusive, then touch the goal panel. Let its result settle before leaving; this act-specific band awards an extra life. Make a state shortly beforehand so a stray hit cannot erase the required total."
+     }
+    },
+    {
+     "id": "sms1-jungle-act3-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 3",
+     "missable": true,
+     "levels": {
+      "1": "Complete every nearby fixed check before committing to this act's exit.",
+      "2": "Reach and complete the final obstacle sequence in Act 3, then cross its outgoing boundary.",
+      "3": "Read the curved vine before jumping. Avoid each rolling bomb, strike the craft only during the opening after it releases one, and repeat until eight hits complete the act."
+     }
+    },
+    {
+     "id": "sms1-jungle-act3-river-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 3 Opening-River Life",
+     "missable": true,
+     "levels": {
+      "1": "The water beside the start is a route rather than scenery.",
+      "2": "Enter the river at the beginning and move right to its second low platform.",
+      "3": "From the starting ledge, step into the river instead of taking the upper route. Travel right through the water, pass the first small platform, and climb onto the second lower platform to break its life monitor."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms1-labyrinth-zone",
+   "name": "Labyrinth Zone",
+   "location_cue": "Flooded stone corridors, switches, spikes, and air pockets.",
+   "note": "Refresh air before every optional underwater detour.",
+   "save_backup": {
+    "title": "Create a save state before each goal",
+    "why": "The cartridge has no native save file, and an act exit closes every uncollected local reward.",
+    "detail": "Keep one state at the act entrance and another before the goal until its life monitor, emerald, panel reward, and clear are reconciled."
+   },
+   "point_of_no_return": {
+    "title": "The goal closes the current act",
+    "why": "Normal play cannot walk backward into a completed act.",
+    "detail": "Finish the local checklist before touching the goal panel or completing the third act's final obstacle sequence."
+   },
+   "items": [
+    {
+     "id": "sms1-labyrinth-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "Keep a clean ring reserve while you examine the safer branches ahead.",
+      "2": "Reach the Act 1 goal; finish with 50–99 rings if the next Special Stage is still needed.",
+      "3": "Manage air before exploring the lower passages, then keep the ring band needed at the goal. The late switch-and-monitor secret must be resolved before you leave."
+     }
+    },
+    {
+     "id": "sms1-labyrinth-act1-switch-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Transforming-Monitor Life",
+     "missable": true,
+     "levels": {
+      "1": "A late ordinary monitor changes when a nearby switch is pressed first.",
+      "2": "Near the lone ten-ring monitor, activate the switch on its left before breaking it.",
+      "3": "Late in the act, locate the isolated ten-ring monitor but do not strike it. Move left and press the nearby floor switch; return after the change, then break the monitor in its transformed state to receive the extra life."
+     }
+    },
+    {
+     "id": "sms1-labyrinth-act1-sonic-panel-life",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Act 1 Goal-Panel Life",
+     "missable": true,
+     "levels": {
+      "1": "The goal panel notices a narrow ring-count window.",
+      "2": "Touch the Act 1 goal while carrying 21–29 rings.",
+      "3": "Protect a final total between 21 and 29 rings, inclusive, then touch the goal panel. Let its result settle before leaving; this act-specific band awards an extra life. Make a state shortly beforehand so a stray hit cannot erase the required total."
+     }
+    },
+    {
+     "id": "sms1-labyrinth-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "Keep a clean ring reserve while you examine the safer branches ahead.",
+      "2": "Reach the Act 2 goal; finish with 50–99 rings if the next Special Stage is still needed.",
+      "3": "Keep an air source within reach while checking the lower fork and the temporary-invincibility branch. Reconcile both fixed prizes before carrying the selected ring total to the goal."
+     }
+    },
+    {
+     "id": "sms1-labyrinth-act2-lower-fork-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Lower-Fork Life",
+     "missable": true,
+     "levels": {
+      "1": "The first fork's lower branch continues beneath a dangerous ceiling.",
+      "2": "At the first wall-mounted fork, take the lower-left route, collect air, then continue to the far left.",
+      "3": "Choose the lower-left passage at the first fork. Refresh your air, descend, and travel left beneath the ceiling spikes without jumping into them. Break the life monitor at the far end, then use the spring route to escape."
+     }
+    },
+    {
+     "id": "sms1-labyrinth-act2-emerald",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 4",
+     "missable": true,
+     "levels": {
+      "1": "One spike pit becomes a doorway only while temporary protection remains active.",
+      "2": "Take the late invincibility monitor, sprint through the next water, climb the far-right shaft, then go left into the spikes.",
+      "3": "Break the invincibility monitor just after leaving the water and move immediately right into the next pool. Climb the shaft at the far-right edge, turn left at the top, and enter the spike pit before the effect expires; the protected drop leads to the emerald."
+     }
+    },
+    {
+     "id": "sms1-labyrinth-act2-sonic-panel-life",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Act 2 Goal-Panel Life",
+     "missable": true,
+     "levels": {
+      "1": "The goal panel notices a narrow ring-count window.",
+      "2": "Touch the Act 2 goal while carrying 31–39 rings.",
+      "3": "Protect a final total between 31 and 39 rings, inclusive, then touch the goal panel. Let its result settle before leaving; this act-specific band awards an extra life. Make a state shortly beforehand so a stray hit cannot erase the required total."
+     }
+    },
+    {
+     "id": "sms1-labyrinth-act3-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 3",
+     "missable": true,
+     "levels": {
+      "1": "Complete every nearby fixed check before committing to this act's exit.",
+      "2": "Reach and complete the final obstacle sequence in Act 3, then cross its outgoing boundary.",
+      "3": "Stay clear of the centre chute and watch the two side drops. Attack during a low side pass, evade the following projectile, and repeat until eight hits open the exit."
+     }
+    },
+    {
+     "id": "sms1-labyrinth-act3-left-spike-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 3 Left Spike-Corridor Life",
+     "missable": true,
+     "levels": {
+      "1": "The starting spring reaches a prize only if you steer against the expected direction.",
+      "2": "Use the opening spring while holding left and cross the spike corridor to its far end.",
+      "3": "At the start, enter the spring while holding left and land in the spike-lined corridor. Move to its far-left end for the life monitor. Escaping is harder than entering: carry a shield if possible so one spike contact can drop you clear, then return carefully to the spring route."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms1-scrap-brain-city-zone",
+   "name": "Scrap Brain City Zone",
+   "location_cue": "Industrial streets and interiors linked by conveyors, doors, and transporters.",
+   "note": "Use a fork save so the upper-switch and lower-teleporter routes can be reconciled.",
+   "save_backup": {
+    "title": "Create a save state before each goal",
+    "why": "The cartridge has no native save file, and an act exit closes every uncollected local reward.",
+    "detail": "Keep one state at the act entrance and another before the goal until its life monitor, emerald, panel reward, and clear are reconciled."
+   },
+   "point_of_no_return": {
+    "title": "The goal closes the current act",
+    "why": "Normal play cannot walk backward into a completed act.",
+    "detail": "Finish the local checklist before touching the goal panel or completing the third act's final obstacle sequence."
+   },
+   "items": [
+    {
+     "id": "sms1-scrap-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "Complete every nearby fixed check before committing to this act's exit.",
+      "2": "Reach and complete the final obstacle sequence in Act 1, then cross its outgoing boundary.",
+      "3": "Moving machinery can carry a fixed reward off the safe floor. Collect it before the second conveyor ends, then choose the exact panel total you want at the goal."
+     }
+    },
+    {
+     "id": "sms1-scrap-act1-conveyor-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Conveyor Life",
+     "missable": true,
+     "levels": {
+      "1": "The second outdoor belt carries a prize toward its edge.",
+      "2": "On the second exterior conveyor, intercept the moving life before it reaches the end.",
+      "3": "Advance to the second conveyor in the outdoor machinery section and look ahead before stepping onto it. The life monitor travels with the belt; meet it early, break it on stable footing, and do not let the conveyor carry either of you over the edge."
+     }
+    },
+    {
+     "id": "sms1-scrap-act1-sonic-panel-life",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Act 1 Goal-Panel Life",
+     "missable": true,
+     "levels": {
+      "1": "The goal panel notices a narrow ring-count window.",
+      "2": "Touch the Act 1 goal while carrying 10–19 rings.",
+      "3": "Protect a final total between 10 and 19 rings, inclusive, then touch the goal panel. Let its result settle before leaving; this act-specific band awards an extra life. Make a state shortly beforehand so a stray hit cannot erase the required total."
+     }
+    },
+    {
+     "id": "sms1-scrap-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "Complete every nearby fixed check before committing to this act's exit.",
+      "2": "Reach and complete the final obstacle sequence in Act 2, then cross its outgoing boundary.",
+      "3": "The first route split controls both fixed rewards. Use a state before the fork, complete the upper-switch detour and teleporter paths, then approach the goal with the required panel band."
+     }
+    },
+    {
+     "id": "sms1-scrap-act2-emerald",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 5",
+     "missable": true,
+     "levels": {
+      "1": "At the main fork, the upper route contains a deliberately numbered drop.",
+      "2": "Take the upper fork, jump over the first two drops, then fall through the third and use the door on the right.",
+      "3": "At the large fork, choose the upper passage. Clear the first two openings without falling, drop through the third, and move right through the door or teleporter. The emerald waits immediately to the right in the destination room."
+     }
+    },
+    {
+     "id": "sms1-scrap-act2-oneway-door-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 One-Way-Door Life",
+     "missable": true,
+     "levels": {
+      "1": "A visible reward behind a one-way door is reached through the upper route's switch.",
+      "2": "Hit the upper-route switch once, return to the lower fork, descend, and enter the teleporter on the left.",
+      "3": "From the main fork, take the upper route and activate its switch a single time. Return to the lower branch, descend the vertical shaft, and move left into the teleporter. It places you inside the sealed room with the life monitor; collect it before leaving."
+     }
+    },
+    {
+     "id": "sms1-scrap-act2-sonic-panel-life",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Act 2 Goal-Panel Life",
+     "missable": true,
+     "levels": {
+      "1": "The goal panel notices a narrow ring-count window.",
+      "2": "Touch the Act 2 goal while carrying 20–29 rings.",
+      "3": "Protect a final total between 20 and 29 rings, inclusive, then touch the goal panel. Let its result settle before leaving; this act-specific band awards an extra life. Make a state shortly beforehand so a stray hit cannot erase the required total."
+     }
+    },
+    {
+     "id": "sms1-scrap-act3-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 3",
+     "missable": true,
+     "levels": {
+      "1": "Complete every nearby fixed check before committing to this act's exit.",
+      "2": "Reach and complete the final obstacle sequence in Act 3, then cross its outgoing boundary.",
+      "3": "Treat the door-and-spring network as a route puzzle rather than a fight. Track each transition, choose right at the second directional decision, drop, and continue through the exit door after collecting the nearby life."
+     }
+    },
+    {
+     "id": "sms1-scrap-act3-exit-door-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 3 Exit-Door Life",
+     "missable": true,
+     "levels": {
+      "1": "The door maze hides its fixed reward beside the route's second directional choice.",
+      "2": "At the second route choice, go right and drop; inspect the space beside the exit door.",
+      "3": "Work through the linked doors and springs until the route presents its second clear left-or-right decision. Choose right, allow the next drop, and look beside the nearby exit door. Break the life monitor before using that door to continue."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms1-sky-base-zone",
+   "name": "Sky Base Zone",
+   "location_cue": "Open airborne platforms, lightning chains, ladders, and metal decks.",
+   "note": "Act 2 has no ordinary ring protection; preserve a state before its lower platform chain.",
+   "save_backup": {
+    "title": "Create a save state before each goal",
+    "why": "The cartridge has no native save file, and an act exit closes every uncollected local reward.",
+    "detail": "Keep one state at the act entrance and another before the goal until its life monitor, emerald, panel reward, and clear are reconciled."
+   },
+   "point_of_no_return": {
+    "title": "The goal closes the current act",
+    "why": "Normal play cannot walk backward into a completed act.",
+    "detail": "Finish the local checklist before touching the goal panel or completing the third act's final obstacle sequence."
+   },
+   "items": [
+    {
+     "id": "sms1-sky-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "Complete every nearby fixed check before committing to this act's exit.",
+      "2": "Reach and complete the final obstacle sequence in Act 1, then cross its outgoing boundary.",
+      "3": "Read each lightning chain from its diamond markers, avoid the cannons, and remember that jumping pauses a moving platform. Stay low long enough to recover the fixed life, then finish with the chosen panel count."
+     }
+    },
+    {
+     "id": "sms1-sky-act1-low-route-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Low-Route Life",
+     "missable": true,
+     "levels": {
+      "1": "The final ordinary life sits on a low branch that rewards checking behind moving platforms.",
+      "2": "Stay on the lower route from the beginning and inspect the late flying-platform openings before climbing to the finish.",
+      "3": "Choose the lowest available route from the opening section and avoid springs that commit you upward. During the later flying-platform sequence, use each platform to inspect openings behind and to the left. Enter the low side pocket containing the life monitor, then return to the normal finish route."
+     }
+    },
+    {
+     "id": "sms1-sky-act1-sonic-panel-life",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Act 1 Goal-Panel Life",
+     "missable": true,
+     "levels": {
+      "1": "The goal panel notices a narrow ring-count window.",
+      "2": "Touch the Act 1 goal while carrying 40–49 rings.",
+      "3": "Protect a final total between 40 and 49 rings, inclusive, then touch the goal panel. Let its result settle before leaving; this act-specific band awards an extra life. Make a state shortly beforehand so a stray hit cannot erase the required total."
+     }
+    },
+    {
+     "id": "sms1-sky-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "Complete every nearby fixed check before committing to this act's exit.",
+      "2": "Reach and complete the final obstacle sequence in Act 2, then cross its outgoing boundary.",
+      "3": "No ordinary rings protect this crossing. Wait for the first lower platform, follow the underside chain, and reconcile both the ladder life and emerald deck before taking the route onward."
+     }
+    },
+    {
+     "id": "sms1-sky-act2-ladder-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Lower-Platform Life",
+     "missable": true,
+     "levels": {
+      "1": "Waiting at the start reveals a platform route beneath the obvious path.",
+      "2": "Ride the first low platform from the start; when the next platform passes beneath a ladder, climb it.",
+      "3": "Do not rush forward when the act begins. Wait for the first lower flying platform and ride the underside sequence. The second useful platform travels beneath a ladder; jump to the ladder, climb it, and break the life monitor above."
+     }
+    },
+    {
+     "id": "sms1-sky-act2-emerald",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 6",
+     "missable": true,
+     "levels": {
+      "1": "The lower platform chain continues past the life route to a deck behind a diagonal barrier.",
+      "2": "Follow the lower platforms to the vertical platform beside the diagonal chain, then jump left behind it.",
+      "3": "Continue along the lower flying-platform sequence until a vertical platform rises beside a diagonal chain. Jump left behind that chain onto the hidden deck and travel to its far-right end for the emerald. To leave, move left through the chain, avoid the cannon fire, and run through the wraparound wall."
+     }
+    },
+    {
+     "id": "sms1-sky-act3-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 3",
+     "missable": true,
+     "levels": {
+      "1": "Complete every nearby fixed check before committing to this act's exit.",
+      "2": "Reach and complete the final obstacle sequence in Act 3, then cross its outgoing boundary.",
+      "3": "Watch the two moving conductors inside the glass chamber and strike only during their safe spacing. After six hits the timing changes; avoid the homing orb that follows the spring movement and reach ten total hits."
+     }
+    },
+    {
+     "id": "sms1-sky-act3-all-lives-reward",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 3 Complete-Life-Route Reward",
+     "missable": true,
+     "levels": {
+      "1": "The last fixed life appears only when every earlier act life has been secured.",
+      "2": "Collect all seventeen earlier act lives; the eighteenth appears at the Act 3 starting point.",
+      "3": "Before leaving Act 2, reconcile every prior fixed life monitor in the audit. If all seventeen were collected, Act 3 begins with the final extra life directly beside the starting position. If it is absent, reload an earlier state and find the missing act reward; it cannot be repaired inside this act."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms1-special-stages",
+   "name": "Special Stages",
+   "location_cue": "Eight abstract spring-and-bumper courses entered from eligible early goals.",
+   "note": "Enter sequentially with 50–99 rings from Zones 1–4 Acts 1 or 2; record each continue, fixed life, ring total, and clear.",
+   "save_backup": {
+    "title": "Save before the eligible goal panel",
+    "why": "A failed or skipped bonus attempt consumes that entry opportunity.",
+    "detail": "Keep the state from before the goal, then refine the ring total and bonus route without replaying the entire cartridge."
+   },
+   "point_of_no_return": {
+    "title": "The bonus exit ends the attempt",
+    "why": "Touching the exit or losing control leaves the current course.",
+    "detail": "Collect its fixed rewards and chosen ring total before entering the exit; reload the pre-goal state after a failed audit."
+   },
+   "items": [
+    {
+     "id": "sms1-special-stage-01",
+     "type": "optional",
+     "safe_type": "Bonus challenge",
+     "label": "Complete Special Stage 1",
+     "missable": true,
+     "levels": {
+      "1": "Use the weak, medium, and strong spring colours to control height rather than bouncing blindly.",
+      "2": "Pass the first large coil, use the green springs toward the upper-right route, and collect the continue before the exit.",
+      "3": "Enter from an eligible goal with 50–99 rings. Purple springs give the smallest lift, orange a middle lift, and green the strongest. Pass the first large coil and use the green springs toward the upper right. Collect the fixed continue and finish without hunting a life monitor—this first stage has none, and it cannot supply 100 rings."
+     }
+    },
+    {
+     "id": "sms1-special-stage-02",
+     "type": "optional",
+     "safe_type": "Bonus challenge",
+     "label": "Complete Special Stage 2",
+     "missable": true,
+     "levels": {
+      "1": "One monitor is easier to collect after knocking it downward from below.",
+      "2": "Move left around the bumpers, hit the continue monitor from beneath, then collect the nearby life on the right.",
+      "3": "Drop into the opening spring chain and work left around the bumpers. Strike the continue monitor from underneath so it falls into reach, then move right for the fixed life monitor. Gather up to 99 rings before entering the exit; reaching 100 resets the stage counter and awards another life."
+     }
+    },
+    {
+     "id": "sms1-special-stage-03",
+     "type": "optional",
+     "safe_type": "Bonus challenge",
+     "label": "Complete Special Stage 3",
+     "missable": true,
+     "levels": {
+      "1": "The safe route keeps moving right and refuses the weak springs that send you backward.",
+      "2": "Travel right, avoid the backward purple springs, and take the unavoidable continue and life monitors.",
+      "3": "Commit to the rightward course and use stronger springs whenever the purple alternatives point backward. The continue and life monitors lie directly on the successful route, so collect both while steering away from the exits. Stop at 99 rings unless you deliberately want the 100-ring life and counter reset."
+     }
+    },
+    {
+     "id": "sms1-special-stage-04",
+     "type": "optional",
+     "safe_type": "Bonus challenge",
+     "label": "Complete Special Stage 4",
+     "missable": true,
+     "levels": {
+      "1": "Stay central during the vertical pinball descent so the important monitors remain reachable.",
+      "2": "Drop through the centre for the continue and life, using the flippers to recover upward if needed.",
+      "3": "Keep near the centre as the stage drops vertically. Collect the fixed continue and life monitors on the central line; use the flippers to return upward after a miss. Enter the last drop with roughly 80 rings so the remaining route can approach 99 without accidentally resetting the count at 100."
+     }
+    },
+    {
+     "id": "sms1-special-stage-05",
+     "type": "optional",
+     "safe_type": "Bonus challenge",
+     "label": "Complete Special Stage 5",
+     "missable": true,
+     "levels": {
+      "1": "The first layout returns with small moving red bumpers that disturb familiar landings.",
+      "2": "Repeat the first stage's upper-right route while accounting for the added red bumpers.",
+      "3": "Use the same basic path as Special Stage 1: pass the large coil and work toward the upper right with the stronger springs. Added small red bumpers alter the timing, so pause between launches. Collect the fixed continue and life monitor, then exit with the ring total recorded; rings are worth 500 points here."
+     }
+    },
+    {
+     "id": "sms1-special-stage-06",
+     "type": "optional",
+     "safe_type": "Bonus challenge",
+     "label": "Complete Special Stage 6",
+     "missable": true,
+     "levels": {
+      "1": "The second layout returns, but added moving bumpers make the monitor drop less predictable.",
+      "2": "Repeat the left-side route from Stage 2 and knock the continue monitor down before taking the life.",
+      "3": "Follow the Stage 2 pattern around the left bumpers, but wait for the added red bumpers to clear before each jump. Hit the continue monitor from below, collect it after it falls, then secure the life monitor on the right. Rings are worth 600 points apiece in this version."
+     }
+    },
+    {
+     "id": "sms1-special-stage-07",
+     "type": "optional",
+     "safe_type": "Bonus challenge",
+     "label": "Complete Special Stage 7",
+     "missable": true,
+     "levels": {
+      "1": "The third layout's new bumpers punish any backward purple-spring launch more severely.",
+      "2": "Maintain the rightward Stage 3 route, avoiding both the backward springs and added red bumpers.",
+      "3": "Repeat the rightward Stage 3 route with shorter corrective movements. Refuse purple springs that reverse progress and wait for the small red bumpers before crossing their lanes. Collect the fixed continue and life monitors, preserve the chosen ring total, and note that each ring scores 700 points."
+     }
+    },
+    {
+     "id": "sms1-special-stage-08",
+     "type": "optional",
+     "safe_type": "Bonus challenge",
+     "label": "Complete Special Stage 8",
+     "missable": true,
+     "levels": {
+      "1": "The last vertical layout rewards a controlled central descent rather than speed.",
+      "2": "Repeat Stage 4's centre line, using the flippers to recover while avoiding the extra red bumpers.",
+      "3": "Descend through the middle as in Stage 4, time your movement around the added red bumpers, and use the flippers whenever a monitor is missed. Collect the fixed continue and life, then leave with the intended ring total. Each ring contributes 800 points in this final stage."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms1-cartridge-completion-audit",
+   "name": "Cartridge Completion Audit",
+   "location_cue": "A non-geographic checklist reconciled from retained emulator states and result screens.",
+   "note": "This original cartridge has no persistent unlock menu; the audit records its finite branches and reward systems without inventing external cheat-device content.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "sms1-incomplete-emerald-branch",
+     "type": "optional",
+     "safe_type": "Completion branch",
+     "label": "Complete the Incomplete-Emerald Branch",
+     "missable": false,
+     "levels": {
+      "1": "Keep one late save state before your emerald set becomes complete.",
+      "2": "Preserve a state before the sixth emerald, then finish the cartridge with five or fewer.",
+      "3": "Create an emulator state before collecting the Sky Base Act 2 emerald. Leave that emerald untouched on this branch, complete the remaining acts, and retain the result screen as proof. Reload the branch state afterward; no full replay is required."
+     }
+    },
+    {
+     "id": "sms1-complete-emerald-branch",
+     "type": "optional",
+     "safe_type": "Completion branch",
+     "label": "Complete the Six-Emerald Branch",
+     "missable": false,
+     "levels": {
+      "1": "Use the preserved branch state and finish the set before proceeding.",
+      "2": "Reload before the Sky Base Act 2 emerald, collect it, confirm six icons, then complete the cartridge.",
+      "3": "Load the state made before the sixth emerald, follow the lower platform route, and collect the Sky Base prize. Confirm that all six emeralds are registered before advancing. Complete the remaining acts and retain this separate result screen for the completion audit."
+     }
+    },
+    {
+     "id": "sms1-normal-stage-hundred-ring-life",
+     "type": "optional",
+     "safe_type": "Reward mechanic",
+     "label": "Earn the Normal-Stage 100-Ring Life",
+     "missable": false,
+     "levels": {
+      "1": "A three-digit ring total has a practical reward beyond score.",
+      "2": "Collect 100 rings during an ordinary act without losing the accumulated total.",
+      "3": "Choose an act with a generous safe route, make a state before the final ring cluster, and raise the counter to 100 without taking damage. Confirm the extra-life sound and life-counter increase; this demonstration is separate from the special-stage 100-ring reset."
+     }
+    },
+    {
+     "id": "sms1-score-fifty-thousand-life",
+     "type": "optional",
+     "safe_type": "Reward mechanic",
+     "label": "Earn a 50,000-Point Life",
+     "missable": false,
+     "levels": {
+      "1": "The score counter pays out at a repeating threshold.",
+      "2": "Cross a multiple of 50,000 points and watch the life counter.",
+      "3": "Accumulate score through act clears, enemies, monitors, and Special Stage rings. When the total crosses 50,000—and each later 50,000-point boundary—the game awards an extra life. Record one clean threshold crossing for the finite mechanic audit."
+     }
+    },
+    {
+     "id": "sms1-goal-panel-outcome-catalogue",
+     "type": "secret",
+     "safe_type": "Hidden system",
+     "label": "Complete the Goal-Panel Outcome Catalogue",
+     "missable": false,
+     "levels": {
+      "1": "Ring totals determine more than one result at ordinary act goals.",
+      "2": "Demonstrate the life panel, a ring panel from an exact lower multiple of ten, and a no-bonus result outside both conditions.",
+      "3": "Use the listed act-specific life bands for the extra-life result. In another eligible act, finish below 50 with an exact multiple of ten to produce the ring reward. Finally, use a total outside that act's life band and outside a lower multiple of ten for the no-bonus face. Save before each goal so all outcomes can be tested safely."
+     }
+    },
+    {
+     "id": "sms1-final-score-ledger",
+     "type": "optional",
+     "safe_type": "Completion audit",
+     "label": "Audit the Final Score Ledger",
+     "missable": false,
+     "levels": {
+      "1": "The final tally values retained lives and emeralds separately.",
+      "2": "At the six-emerald result, verify 5,000 points per remaining life, 20,000 per emerald, and the full-set bonus.",
+      "3": "Preserve the six-emerald completion state and note the life and emerald counts before the final tally. Confirm that each remaining life contributes 5,000 points and each emerald contributes 20,000. A complete set adds a further 50,000-point award; compare the displayed total with your written calculation."
+     }
+    }
+   ]
+  }
+ ]
+}

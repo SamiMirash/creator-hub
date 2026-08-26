@@ -1,0 +1,1089 @@
+{
+ "id": "sonic-the-hedgehog-2-1992-master-system",
+ "game": "Sonic the Hedgehog 2 (1992, Master System)",
+ "target": "Original Europe/Brazil Version 0 Master System cartridge build, played through PC emulation",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-23T11:16:06.319677+00:00",
+ "areas": [
+  {
+   "id": "sms2-cartridge-rules",
+   "name": "Cartridge Completion Rules",
+   "location_cue": "The title screen, act entrances, ring counter, and yellow spinning goal panels.",
+   "note": "Set up the emulator safeguards and record each finite panel reward once during the run.",
+   "save_backup": {
+    "title": "Create a clean title-screen state",
+    "why": "This Version 0 cartridge has no native save system.",
+    "detail": "Keep an untouched title state plus one state at every act entrance; do not overwrite the only state while testing a reward condition."
+   },
+   "point_of_no_return": {
+    "title": "A goal panel immediately closes its act",
+    "why": "Its reward is decided from the current run state when Sonic crosses it.",
+    "detail": "Make a state before the panel whenever you are arranging a ring total, life-loss condition, or alternate reward."
+   },
+   "items": [
+    {
+     "id": "sms2-rule-100-rings-life",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Earn the 100-Ring Life",
+     "missable": true,
+     "levels": {
+      "1": "A full ring counter carries a permanent reward.",
+      "2": "Collect 100 rings within one life before an act ends.",
+      "3": "Use a ring-rich Act 1 or Act 2, avoid damage, and collect the hundredth ring. The counter rolls over and immediately adds one life; confirm the life total before continuing."
+     }
+    },
+    {
+     "id": "sms2-panel-ring-reward",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Trigger the Ring Goal Panel",
+     "missable": true,
+     "levels": {
+      "1": "The panel notices tidy ring totals.",
+      "2": "Cross an Act 1 or Act 2 panel with zero rings or a multiple of ten.",
+      "3": "Approach the panel carrying 0, 10, 20, 30, or another exact multiple of ten, without satisfying a higher-priority condition. Cross it once and let the panel settle; the ring face adds ten rings."
+     }
+    },
+    {
+     "id": "sms2-panel-life-reward",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Trigger the Sonic Goal Panel",
+     "missable": true,
+     "levels": {
+      "1": "A rough act can return one lost chance.",
+      "2": "Lose two lives, then finish an Act 1 or Act 2.",
+      "3": "Start from a disposable entrance state, deliberately lose two lives, and clear the act on the next attempt. Cross the panel with a non-special ring total; the Sonic face restores one life. Reload afterward if conserving lives."
+     }
+    },
+    {
+     "id": "sms2-panel-continue-reward",
+     "type": "secret",
+     "safe_type": "Hidden reward",
+     "label": "Trigger the Tails Goal Panel",
+     "missable": true,
+     "levels": {
+      "1": "One exact ring total earns insurance.",
+      "2": "Reach an Act 1 or Act 2 panel carrying exactly 77 rings.",
+      "3": "Count carefully and stop collecting at 77. Protect that total to the panel, cross it, and wait for the Tails face; it awards a Continue that can rescue the run after the final life is lost."
+     }
+    },
+    {
+     "id": "sms2-panel-default-result",
+     "type": "secret",
+     "safe_type": "Hidden result",
+     "label": "Record the Default Goal Panel",
+     "missable": true,
+     "levels": {
+      "1": "The ordinary result appears when no reward rule applies.",
+      "2": "Finish an Act 1 or Act 2 with a ring total outside every listed condition.",
+      "3": "Use a safe total such as 31 while avoiding the two-life-loss rule, then cross the panel. Let the default face appear and confirm that no bonus is added; this completes the four-result panel record."
+     }
+    },
+    {
+     "id": "sms2-use-continue",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Use a Continue",
+     "missable": true,
+     "levels": {
+      "1": "Test the run insurance after earning it.",
+      "2": "After obtaining a Continue, exhaust the current life stock once.",
+      "3": "Preserve a state, earn the Tails panel reward, then intentionally use every remaining life. Choose to continue when prompted and verify that play resumes; reload the preservation state afterward."
+     }
+    },
+    {
+     "id": "sms2-level-select",
+     "type": "secret",
+     "safe_type": "Hidden mode",
+     "label": "Open the Level Select",
+     "missable": false,
+     "levels": {
+      "1": "A second controller changes the boot sequence.",
+      "2": "Hold upper-left plus both action buttons on controller two during startup.",
+      "3": "Power on or hard-reset while controller two holds upper-left and buttons 1 and 2. Release after the background turns blue and the intro begins, then start with controller one to open the hidden stage menu."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms2-under-ground-zone",
+   "name": "Under Ground Zone",
+   "location_cue": "Ochre mine passages, lava trenches, ceiling spikes, springs, and rail carts.",
+   "note": "The upper route hides the finite rewards; the lower route demonstrates every cart sequence.",
+   "save_backup": {
+    "title": "Keep an entrance state for Under Ground Zone",
+    "why": "The cartridge cannot save, and a lost life can erase a carefully prepared route.",
+    "detail": "Retain one state before each act, then make a second rolling state only after its local lives and emerald check are secure."
+   },
+   "point_of_no_return": {
+    "title": "Finish local checks before advancing",
+    "why": "A goal panel or completed encounter closes the current act.",
+    "detail": "Reconcile both act-one lives, the act-two life, and the emerald before their panels; finish the encounter only after the zone checklist is complete."
+   },
+   "items": [
+    {
+     "id": "sms2-ug-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "Compare the high path with the rails below.",
+      "2": "Reach the goal panel after exploring both branches around the opening gap.",
+      "3": "State at the entrance, inspect the cart route first, then reload and stay above the opening gap for both lives. After recording the breakable lower-left ring wall, follow the upper springs to the panel."
+     }
+    },
+    {
+     "id": "sms2-ug-act1-first-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 First Upper Life",
+     "missable": true,
+     "levels": {
+      "1": "The first upper spring points away from progress.",
+      "2": "Beyond the opening chasm, take the upward spring and steer into the false boundary.",
+      "3": "Stay on the upper route, land on the first upward spring, and steer left while rising. Pass through the false wall, remove the guard, break the life monitor, then drop back while holding slightly right to avoid rebounding into spikes."
+     }
+    },
+    {
+     "id": "sms2-ug-act1-second-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Late Upper Life",
+     "missable": true,
+     "levels": {
+      "1": "A second reward follows the crowded spring cluster.",
+      "2": "Remain above the carts and jump right beyond the three adjacent springs.",
+      "3": "Cross the upper gaps until three springs sit together. Build a long rightward jump from that cluster and land on the next shelf; break the life monitor before dropping toward the final springs."
+     }
+    },
+    {
+     "id": "sms2-ug-act1-lower-ring-wall",
+     "type": "secret",
+     "safe_type": "Hidden passage",
+     "label": "Act 1 Lower Ring Wall",
+     "missable": true,
+     "levels": {
+      "1": "The lower branch begins with a wall that yields.",
+      "2": "After dropping through the opening gap, roll left into the nearby wall.",
+      "3": "Take the lower fork, immediately turn around, crouch into a roll, and drive through the left wall. Collect the concealed rings, return right, and board the first cart to continue the lower-route record."
+     }
+    },
+    {
+     "id": "sms2-ug-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "Keep height whenever the mine offers a choice.",
+      "2": "Use the upper route and finish at the panel below the emerald return path.",
+      "3": "Stay high through the opening drops, collect the wall life, then use the slope and carts for the emerald. After collecting it, travel back left and descend onto the approach leading to the goal panel."
+     }
+    },
+    {
+     "id": "sms2-ug-act2-wall-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Breakable-Wall Life",
+     "missable": true,
+     "levels": {
+      "1": "Three springs indicate a brittle boundary.",
+      "2": "At the T-shaped spring cluster, move right through the wall.",
+      "3": "Bounce from the upper spring of the T-shaped group, land against the wall to the right, and break through it. Take the rings and life, then move left immediately so the collapsing edge does not drop you to the lower branch."
+     }
+    },
+    {
+     "id": "sms2-ug-emerald",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 1",
+     "missable": true,
+     "levels": {
+      "1": "The last cart can launch farther than expected.",
+      "2": "Use the upper slope and final cart near the act's far side.",
+      "3": "Roll down the upper slope, leap right into the cart, and remain aboard until it reaches the broken rail. Jump hard to the right as it leaves the track; land on the isolated high ledge and touch the emerald before returning left."
+     }
+    },
+    {
+     "id": "sms2-ug-act3-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 3",
+     "missable": true,
+     "levels": {
+      "1": "The incoming projectiles are also the solution.",
+      "2": "Reach the sloped arena and redirect every bouncing shot toward the machine on the right.",
+      "3": "Ride the opening cart through the spikes, break the wall after it crashes, and spring to the upper rail. In the arena, jump over each bouncing shot so it continues into the right-side machine; evade the final charge and let that strike land too."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms2-sky-high-zone",
+   "name": "Sky High Zone",
+   "location_cue": "Windy grass shelves above clouds, spike gaps, gliders, and storm-darkened platforms.",
+   "note": "This selected Version 0 build retains two obstacle sections removed by the later revision.",
+   "save_backup": {
+    "title": "Keep an entrance state for Sky High Zone",
+    "why": "The cartridge cannot save, and a lost life can erase a carefully prepared route.",
+    "detail": "Retain one state before each act, then make a second rolling state only after its local lives and emerald check are secure."
+   },
+   "point_of_no_return": {
+    "title": "Finish local checks before advancing",
+    "why": "A goal panel or completed encounter closes the current act.",
+    "detail": "Collect both act-one lives, the act-two ledge life, the emerald, and both Version 0 obstacle records before crossing their respective exits."
+   },
+   "items": [
+    {
+     "id": "sms2-sh-act1-version0-bridge",
+     "type": "secret",
+     "safe_type": "Version-specific discovery",
+     "label": "Original Falling Bridge",
+     "missable": true,
+     "levels": {
+      "1": "The first crossing reacts to footsteps.",
+      "2": "Inspect the long bridge near the beginning of Act 1.",
+      "3": "Walk onto the bridge and watch its sections fall behind Sonic, then reload. For the safe clear, jump across without landing on the surface. This moving obstacle is present in Version 0 and absent from Revision 1."
+     }
+    },
+    {
+     "id": "sms2-sh-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "The final gap tests a new kind of lift.",
+      "2": "Reach the glider beyond the upper invincibility monitor and cross the cloudless gap.",
+      "3": "Resolve both lives, climb the concealed spring grove, and break the invincibility monitor at the top. Take the glider with its nose raised, pulse the lift control rather than holding a dive, and land beside the goal panel."
+     }
+    },
+    {
+     "id": "sms2-sh-act1-right-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Spike-Ledge Life",
+     "missable": true,
+     "levels": {
+      "1": "A reward waits beyond the first optional spike jump.",
+      "2": "From the spring platform after the opening spike pits, jump farther right.",
+      "3": "Collect the nearby ten-ring monitor, take a full run-up, and clear the next spike pit to the right. Break the life monitor on the far ledge, then return left to use the spring that enters the upper route."
+     }
+    },
+    {
+     "id": "sms2-sh-act1-grove-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Hidden-Grove Life",
+     "missable": true,
+     "levels": {
+      "1": "The spring network extends past its apparent summit.",
+      "2": "Enter the left wall from the lower spring and climb to the highest spring.",
+      "3": "Use the main spring while holding left, pass through the wall, and follow the alternating springs upward. At the top, launch left with maximum momentum to reach the isolated ledge and break the second life monitor."
+     }
+    },
+    {
+     "id": "sms2-sh-act1-glider",
+     "type": "optional",
+     "safe_type": "Traversal task",
+     "label": "Master the Hang Glider",
+     "missable": true,
+     "levels": {
+      "1": "Small corrections work better than a held direction.",
+      "2": "Practice on the glider immediately after the upper invincibility monitor.",
+      "3": "Run down the approach, take the glider, and raise its nose as it leaves ground. Release, then add brief lift inputs roughly once per second. Avoid sustained downward pressure; reach the far wall high enough to drop safely by the panel."
+     }
+    },
+    {
+     "id": "sms2-sh-act2-version0-spikes",
+     "type": "secret",
+     "safe_type": "Version-specific discovery",
+     "label": "Original Ceiling-Spike Passage",
+     "missable": true,
+     "levels": {
+      "1": "One early tunnel is tighter in this build.",
+      "2": "Record the first ceiling-spike section in Act 2 before taking the high cloud route.",
+      "3": "Enter the early narrow passage and clear its original ceiling spikes without touching them. State beforehand because Revision 1 deletes this first spike section and opens the tunnel; Version 0 is the selected complete-content build."
+     }
+    },
+    {
+     "id": "sms2-sh-act2-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Lower-Ledge Life",
+     "missable": true,
+     "levels": {
+      "1": "The first apparent fall has a landing.",
+      "2": "Near the beginning, step from the first right edge and steer back left while descending.",
+      "3": "Ignore the opening glider, make a short step off the right side, and immediately hold left to settle on the lower shelf. Jump across its spring and spikes, break the life monitor, then return to the plus-shaped cloud route."
+     }
+    },
+    {
+     "id": "sms2-sh-emerald",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 2",
+     "missable": true,
+     "levels": {
+      "1": "Some plus-shaped clouds are disguised launchers.",
+      "2": "Follow the rising ring lines across the hidden cloud-spring chain in Act 2.",
+      "3": "Bounce from the first plus cloud, follow each vertical ring trail, then make two long rightward leaps between distant spring clouds. From the last hidden launcher, jump hard right onto the emerald shelf. A sustained high glider approach can also reach it."
+     }
+    },
+    {
+     "id": "sms2-sh-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "The route continues below the emerald shelf.",
+      "2": "Descend right from the emerald, then use two spring clouds and the final platform spring.",
+      "3": "After taking the emerald, drop down and right twice, land on the next plus-shaped cloud, and repeat once more. Use the spring on the solid cloud platform, keep moving right, and cross the goal panel."
+     }
+    },
+    {
+     "id": "sms2-sh-act3-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 3",
+     "missable": true,
+     "levels": {
+      "1": "Clear the smaller threats before the larger target arrives.",
+      "2": "At the cloud arena, defeat two groups of four small birds, then destroy four nests.",
+      "3": "Reach the central cloud, defeat eight small birds, and drop with the floor. Break all four nests, starting with the quieter pair. Attack the larger target nine times; rebound left after each hit because its projectiles cannot reverse toward that side."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms2-aqua-lake-zone",
+   "name": "Aqua Lake Zone",
+   "location_cue": "Turquoise water, brick-lined caverns, air bubbles, arrow traps, and breakable columns.",
+   "note": "Large bubbles are vehicles as well as air; slow them deliberately near spikes and arrows.",
+   "save_backup": {
+    "title": "Keep an entrance state for Aqua Lake Zone",
+    "why": "The cartridge cannot save, and a lost life can erase a carefully prepared route.",
+    "detail": "Retain one state before each act, then make a second rolling state only after its local lives and emerald check are secure."
+   },
+   "point_of_no_return": {
+    "title": "Finish local checks before advancing",
+    "why": "A goal panel or completed encounter closes the current act.",
+    "detail": "Secure all three act-one lives and the act-two sneakers, emerald, and adjacent life before leaving their acts."
+   },
+   "items": [
+    {
+     "id": "sms2-al-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "Compare the dry upper line with the flooded passage.",
+      "2": "Record both routes, then reach the panel beyond the final angled spring.",
+      "3": "Use a state to collect the three lives across both branches. On the finishing run, either spin-jump repeatedly across the surface or breathe through the submerged route, then use the angled spring to clear the last spikes and arrows."
+     }
+    },
+    {
+     "id": "sms2-al-act1-high-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 High-Ledge Life",
+     "missable": true,
+     "levels": {
+      "1": "The upper route continues past an angled spring.",
+      "2": "From the spring mounted on the breakable wall, jump right across the upper shelves.",
+      "3": "Stay dry, climb onto the wall carrying the diagonal spring, and jump right through the ring shelves. Continue to the next high lip, break the life monitor, and only then descend toward the water."
+     }
+    },
+    {
+     "id": "sms2-al-act1-column-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Water-Column Life",
+     "missable": true,
+     "levels": {
+      "1": "A column beside the surface route is hollow.",
+      "2": "After skimming the water, inspect the column before the finishing spring.",
+      "3": "Maintain rolling speed and bounce across the surface. Stop at the solid-looking column near the route's far side, enter its concealed opening, and break the life monitor before returning to the visible path."
+     }
+    },
+    {
+     "id": "sms2-al-act1-underwater-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Submerged-Wall Life",
+     "missable": true,
+     "levels": {
+      "1": "The opening pool has false boundaries.",
+      "2": "Drop into the water near the start, take air, then descend left through two walls.",
+      "3": "Use the first air bubble, sink down and left, and push through both false walls. Break the life monitor in the pocket, wait for fresh air before leaving, and retrace the passage without rushing the spike jump."
+     }
+    },
+    {
+     "id": "sms2-al-surface-skip",
+     "type": "secret",
+     "safe_type": "Traversal discovery",
+     "label": "Act 1 Water-Skimming Route",
+     "missable": true,
+     "levels": {
+      "1": "Speed can turn the lake into a temporary floor.",
+      "2": "Approach the first open water from dry ground while rolling quickly.",
+      "3": "Build speed on land, crouch into a ball at the edge, and tap jump whenever Sonic touches the surface. Preserve forward momentum through the loop and across the lake to record the route without sinking."
+     }
+    },
+    {
+     "id": "sms2-al-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "Treat each large bubble like a slow elevator.",
+      "2": "Navigate the underwater maze and remain inside the final bubble through three corners.",
+      "3": "Drop through the false floor, take invincibility across the first spikes, and use the large bubbles for the upper passages. After the emerald branch, ride the final bubble past arrows and swimmers, continue around all three corners, then exit beside the panel."
+     }
+    },
+    {
+     "id": "sms2-al-speed-shoes",
+     "type": "collectible",
+     "safe_type": "Unique power-up",
+     "label": "Master System Speed Shoes",
+     "missable": true,
+     "levels": {
+      "1": "One side chamber holds this version's unique boost.",
+      "2": "In Act 2, steer a rising large bubble into the left wall near its upper route.",
+      "3": "Ride the later large bubble upward, slow before the ceiling spikes, and press left into the concealed chamber. Pop out safely and break the Speed Shoes monitor; this monitor is present only in the Master System build."
+     }
+    },
+    {
+     "id": "sms2-al-emerald",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 3",
+     "missable": true,
+     "levels": {
+      "1": "A leftward tube maze rewards commitment.",
+      "2": "After the Speed Shoes branch, drop into the next maze and keep choosing left.",
+      "3": "Proceed right from the hidden shoes, enter the next descending maze, and hold left through its turns. The tube deposits Sonic beside the emerald; collect it before entering the return tube."
+     }
+    },
+    {
+     "id": "sms2-al-act2-maze-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Tube-Maze Life",
+     "missable": true,
+     "levels": {
+      "1": "The emerald's tube has another destination.",
+      "2": "Reenter the maze immediately after collecting the emerald and continue holding left.",
+      "3": "Turn back into the same tube network, maintain left through every fork, and let it carry Sonic into the neighboring life pocket. Break the monitor, then return right for an air bubble before the final ascent."
+     }
+    },
+    {
+     "id": "sms2-al-act3-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 3",
+     "missable": true,
+     "levels": {
+      "1": "The carried object can be turned against its owner.",
+      "2": "Reach the dry arena and attack the target only while it balances the ball.",
+      "3": "Take the upper route where possible; if submerged, use the large bubble to escape. In the arena, jump onto the target's head while the ball is present, then retreat so the returning ball causes damage. Repeat for eight cycles."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms2-green-hills-zone",
+   "name": "Green Hills Zone",
+   "location_cue": "Open grassland, loops, checker-patterned slopes, tall columns, springs, and spike beds.",
+   "note": "This is the best life reserve in the cartridge, but several rewards demand committed jumps.",
+   "save_backup": {
+    "title": "Keep an entrance state for Green Hills Zone",
+    "why": "The cartridge cannot save, and a lost life can erase a carefully prepared route.",
+    "detail": "Retain one state before each act, then make a second rolling state only after its local lives and emerald check are secure."
+   },
+   "point_of_no_return": {
+    "title": "Finish local checks before advancing",
+    "why": "A goal panel or completed encounter closes the current act.",
+    "detail": "Act 1 contains four lives; verify all four before its panel, then secure the three act-two lives and emerald before that exit."
+   },
+   "items": [
+    {
+     "id": "sms2-gh-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "The broad landscape rewards deliberate backtracking.",
+      "2": "Collect four lives across the loop, spring, branch, and final-gap sections before the panel.",
+      "3": "State at the entrance and resolve the four life jumps in order. Use the lower breakable wall once for its invincibility branch, then finish on the upper route and cross the panel only after the final twin-gap life is collected."
+     }
+    },
+    {
+     "id": "sms2-gh-act1-loop-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Loop-Top Life",
+     "missable": true,
+     "levels": {
+      "1": "A long downhill stores enough speed for a high reward.",
+      "2": "Spin down the first sharp slope and jump from its bottom toward the loop.",
+      "3": "Approach the long descent at full speed, roll down it, and jump hard to the right at the lowest point. Land on top of the loop, break the life monitor, then drop through the loop to continue."
+     }
+    },
+    {
+     "id": "sms2-gh-act1-spring-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Diagonal-Spring Life",
+     "missable": true,
+     "levels": {
+      "1": "One spring is more useful when approached from beyond it.",
+      "2": "After the first loop, use the nearby spring and launch back left.",
+      "3": "Move just beyond the spring, turn around with room to accelerate, and hit it while carrying leftward momentum. Aim onto the high shelf to the left and break the second life monitor."
+     }
+    },
+    {
+     "id": "sms2-gh-act1-branch-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Branch-Rejoin Life",
+     "missable": true,
+     "levels": {
+      "1": "Both routes can reach the same elevated reward.",
+      "2": "Near the late spike crossing, use either the lower wall route or the upper running jump.",
+      "3": "On the lower branch, ride the platform across the spikes, break the right wall, and climb the diagonal springs. Alternatively, clear the upper gap with a running jump. Both approaches meet at the third life monitor."
+     }
+    },
+    {
+     "id": "sms2-gh-act1-final-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Twin-Gap Life",
+     "missable": true,
+     "levels": {
+      "1": "The last reward requires two jumps without hesitation.",
+      "2": "From the third life area, continue right and clear two consecutive gaps.",
+      "3": "Take a long run-up, jump the first gap, and immediately jump again on landing. Carry speed across the second opening, break the fourth life monitor, then drop right toward the goal."
+     }
+    },
+    {
+     "id": "sms2-gh-act1-invincibility-route",
+     "type": "secret",
+     "safe_type": "Hidden passage",
+     "label": "Act 1 Lower Invincibility Route",
+     "missable": true,
+     "levels": {
+      "1": "A moving platform points toward a false wall.",
+      "2": "Ride the late lower platform across spikes and break the wall on the right.",
+      "3": "Stay low at the branch, use the floating platform to cross the spike bed, and roll into the right boundary. Break the invincibility monitor inside, then use the diagonal springs to rejoin the upper life route."
+     }
+    },
+    {
+     "id": "sms2-gh-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "Every important reward sits above ordinary progress.",
+      "2": "Use the spring chain for the emerald, then reverse over the final spikes for the last life.",
+      "3": "Collect the hidden-wall and loop lives, preserve momentum through the double-spring sets, and land on the emerald ledge. After taking it, continue right, climb the short platform, jump back left over the spike pit for the final life, then return to the panel."
+     }
+    },
+    {
+     "id": "sms2-gh-act2-wall-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Early Wall Life",
+     "missable": true,
+     "levels": {
+      "1": "The first moving platform faces a passable boundary.",
+      "2": "After the first angled spring, ride the platform above spikes and enter the right wall.",
+      "3": "Let the angled spring place Sonic on the moving platform, use the next spring for height, then walk into the right wall. Jump within the concealed pocket and break the life monitor before returning to the spring."
+     }
+    },
+    {
+     "id": "sms2-gh-act2-loop-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Loop-Top Life",
+     "missable": true,
+     "levels": {
+      "1": "The familiar downhill trick works once more.",
+      "2": "At the next sharp slope, roll down and jump onto the loop's crown.",
+      "3": "Build speed before the descent, remain curled through the slope, and launch at its base. Land above the loop, break the life monitor, then drop to the right while watching the nearby enemy."
+     }
+    },
+    {
+     "id": "sms2-gh-act2-lower-passage",
+     "type": "secret",
+     "safe_type": "Hidden passage",
+     "label": "Act 2 Lower Passage",
+     "missable": true,
+     "levels": {
+      "1": "Missing the upper ledge does not end the route.",
+      "2": "Below the mid-act ledge, continue right through the enemy-lined lower corridor.",
+      "3": "Drop from the high route before the paired springs, travel right through the concealed lower corridor, and clear its two guards. Use the spring at the far end to rejoin the main emerald approach."
+     }
+    },
+    {
+     "id": "sms2-gh-emerald",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 4",
+     "missable": true,
+     "levels": {
+      "1": "Repeated spring sets build one long final leap.",
+      "2": "Use the paired springs around the spike beds and keep moving right to the high ledge.",
+      "3": "Bounce across the first paired springs with a flat rightward angle, preserve speed through the next set, and launch hard from the final springs. Land on the isolated upper-right shelf and touch the emerald."
+     }
+    },
+    {
+     "id": "sms2-gh-act2-final-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Post-Emerald Life",
+     "missable": true,
+     "levels": {
+      "1": "The last reward lies behind the direction of travel.",
+      "2": "After the emerald, climb the short right platform and jump back left across the spikes.",
+      "3": "Drop right from the emerald, pass the guards, and climb the short platform beside the visible life. Jump slightly right to gain height, reverse left over the spike pit, and break the monitor before returning to the exit."
+     }
+    },
+    {
+     "id": "sms2-gh-act3-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 3",
+     "missable": true,
+     "levels": {
+      "1": "One bounce per spring preserves the required speed.",
+      "2": "Follow the continuous rightward spring chain to the far arena.",
+      "3": "Steer right from the first spring, land once on each following set, and never pause between bounces. Roll down the final slope and launch from the triple spring. In the arena, attack only when the target's glow disappears; land eight hits."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms2-gimmick-mountain-zone",
+   "name": "Gimmick Mountain Zone",
+   "location_cue": "Steel-lined caverns with flywheels, conveyors, carts, moving platforms, and ceiling spikes.",
+   "note": "Several walls are false, and one early life is reached only by returning from a later cart.",
+   "save_backup": {
+    "title": "Keep an entrance state for Gimmick Mountain Zone",
+    "why": "The cartridge cannot save, and a lost life can erase a carefully prepared route.",
+    "detail": "Retain one state before each act, then make a second rolling state only after its local lives and emerald check are secure."
+   },
+   "point_of_no_return": {
+    "title": "Finish local checks before advancing",
+    "why": "A goal panel or completed encounter closes the current act.",
+    "detail": "The second act-one life requires a deliberate cart backtrack; collect it before exiting left, then finish the full act-two hidden tunnel before its panel."
+   },
+   "items": [
+    {
+     "id": "sms2-gm-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "The route eventually turns back toward its own beginning.",
+      "2": "Collect both wall lives, then use invincibility and the final cart to exit left.",
+      "3": "Climb the flywheels, take the first false-wall life, and continue upward to the later cart. Use that cart to backtrack for the second life, return, take invincibility, then ride the last cart left across the spikes to the goal panel."
+     }
+    },
+    {
+     "id": "sms2-gm-act1-wall-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 First False-Wall Life",
+     "missable": true,
+     "levels": {
+      "1": "A solid wall beside a spinning disk is not solid.",
+      "2": "After crossing three conveyors, land on the spinning disk and walk right through the wall.",
+      "3": "Clear the conveyor group, jump onto the rotating disk, collect its rings, and press into the right wall. Drop through the hidden passage, break the life monitor, and jump back out. Remember the second monitor visible farther right."
+     }
+    },
+    {
+     "id": "sms2-gm-act1-cart-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Cart-Backtrack Life",
+     "missable": true,
+     "levels": {
+      "1": "A later vehicle reaches the reward seen earlier.",
+      "2": "Skip the later invincibility, board the nearby cart, and ride it left.",
+      "3": "When you reach the upper cart, leave the invincibility untouched, board, and travel left. Jump off exactly as the cart begins to fall; land in the concealed passage beside the previously visible life, collect it, then return using the spring."
+     }
+    },
+    {
+     "id": "sms2-gm-act1-spike-return",
+     "type": "secret",
+     "safe_type": "Traversal discovery",
+     "label": "Act 1 Invincible Spike Return",
+     "missable": true,
+     "levels": {
+      "1": "The delayed power-up opens a direct route back.",
+      "2": "After collecting the cart-backtrack life, return to the upper invincibility monitor.",
+      "3": "Use the spring to regain the upper level, break the invincibility monitor you saved, and run left along the cart rail. While the effect lasts, cross the spike tops and reconnect with the finishing route."
+     }
+    },
+    {
+     "id": "sms2-gm-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "The essential route begins inside a left wall.",
+      "2": "Enter the hidden tunnel near the first large slope, complete it, then finish along the lower right route.",
+      "3": "Cross the opening conveyors, climb to the top of the first broad slope, and jump into its left wall. Resolve both hidden lives and the emerald, return through the entrance, then use the right-side flywheels and conveyors to reach the panel."
+     }
+    },
+    {
+     "id": "sms2-gm-act2-hidden-tunnel",
+     "type": "secret",
+     "safe_type": "Hidden passage",
+     "label": "Act 2 Emerald Tunnel",
+     "missable": true,
+     "levels": {
+      "1": "The first major climb has depth behind it.",
+      "2": "At the top of the first large slope, jump left through the wall where spikes are absent.",
+      "3": "Climb the opening route until the first broad slope tops out. Face left and jump through the unspiked wall, continue through the second false layer, then follow the conveyors and flywheels leftward into the concealed complex."
+     }
+    },
+    {
+     "id": "sms2-gm-act2-lower-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Lower Tunnel Life",
+     "missable": true,
+     "levels": {
+      "1": "The lowest left boundary continues beyond the screen.",
+      "2": "Inside the hidden tunnel, cross the first conveyors and push through the far-left wall.",
+      "3": "Travel left across the lower conveyors, jump over the spring, and continue to the extreme boundary. Enter the false wall, break the life monitor, and return to the skipped spring."
+     }
+    },
+    {
+     "id": "sms2-gm-act2-upper-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Upper Flywheel Life",
+     "missable": true,
+     "levels": {
+      "1": "A second false wall mirrors the first from above.",
+      "2": "Use the skipped spring to reach two flywheels, then jump left from the upper disk.",
+      "3": "Let the spring launch Sonic onto the first flywheel, climb to the disk above it, and jump left into the wall. Break the second life monitor, return to the flywheel, and continue climbing."
+     }
+    },
+    {
+     "id": "sms2-gm-emerald",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 5",
+     "missable": true,
+     "levels": {
+      "1": "The hidden complex ends far from its entrance.",
+      "2": "Climb to the top of the concealed flywheel route and travel as far right as possible.",
+      "3": "After both tunnel lives, continue upward through the rotating disks until no higher path remains. Move fully right across the top shelf and touch the emerald at its sealed end, then retrace the tunnel to the entrance."
+     }
+    },
+    {
+     "id": "sms2-gm-act2-ring-wall",
+     "type": "secret",
+     "safe_type": "Hidden passage",
+     "label": "Act 2 Late Ring Wall",
+     "missable": true,
+     "levels": {
+      "1": "The descent near the exit briefly enters stone.",
+      "2": "Late in Act 2, hold right while dropping beside the final enemy group.",
+      "3": "After the three guards, step into the drop while pressing right. Sonic passes through the wall into a ten-ring pocket; exit, fall left toward the lower rings, and resume the finishing route."
+     }
+    },
+    {
+     "id": "sms2-gm-act3-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 3",
+     "missable": true,
+     "levels": {
+      "1": "Let the moving platforms reverse before the spikes.",
+      "2": "Ride the platform chain beneath the ceiling hazards to the arena.",
+      "3": "Wait on each moving platform until it changes direction below the spikes; do not jump early. In the arena, clear each charge, let the target hit a wall, then attack while its back spikes retract. Repeat eight times."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms2-scrambled-egg-zone",
+   "name": "Scrambled Egg Zone",
+   "location_cue": "Dark mechanical caves threaded with directional pipes, tiny platforms, springs, and spike pits.",
+   "note": "Direction inputs steer the pipes; the final emerald must be caught after the encounter rather than found in Act 2.",
+   "save_backup": {
+    "title": "Keep an entrance state for Scrambled Egg Zone",
+    "why": "The cartridge cannot save, and a lost life can erase a carefully prepared route.",
+    "detail": "Retain one state before each act, then make a second rolling state only after its local lives and emerald check are secure."
+   },
+   "point_of_no_return": {
+    "title": "Finish local checks before advancing",
+    "why": "A goal panel or completed encounter closes the current act.",
+    "detail": "Keep a state before the final encounter's eighth hit. Use it to record the omitted-emerald outcome, then reload and collect the released emerald for the complete route."
+   },
+   "items": [
+    {
+     "id": "sms2-se-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "Memorise each pipe decision before entering.",
+      "2": "Use the directional tube sequence and finish with down, right, down, left.",
+      "3": "Take the first tube right, reenter and choose left then up, and work through both life branches. At the final multi-fork tube, hold down, then right, then down, then left; exit beside the panel."
+     }
+    },
+    {
+     "id": "sms2-se-act1-first-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Mid-Pipe Life",
+     "missable": true,
+     "levels": {
+      "1": "One detour carries Sonic through a reward before returning.",
+      "2": "After the upward pipe and small platform, drop into the lower tube route.",
+      "3": "Use the first directed tubes to reach the small platform, fall into the pipe beneath it, and let the route carry Sonic through the ring line. Break the life monitor at its end, then follow the return tube left."
+     }
+    },
+    {
+     "id": "sms2-se-act1-second-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Moving-Platform Life",
+     "missable": true,
+     "levels": {
+      "1": "A moving platform passes beneath an upper tube.",
+      "2": "Near the later platform section, jump into the overhead pipe that sits above the route.",
+      "3": "Land on the moving platform, transfer to the stationary shelf, and enter the upper pipe. Break the life monitor at the top, return through the same tube, then ride onward and take the third useful overhead opening."
+     }
+    },
+    {
+     "id": "sms2-se-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "The last moving platform must be entered repeatedly.",
+      "2": "After both lives, use the overhead-pipe chain and finish at the far-left tube.",
+      "3": "Collect both right-side lives, board the long moving platform, and use its first two overhead tubes to loop back onto it. Reenter the second immediately while holding left, traverse the upper shelves, and take the far-left tube to the panel."
+     }
+    },
+    {
+     "id": "sms2-se-act2-first-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Slope-Jump Life",
+     "missable": true,
+     "levels": {
+      "1": "A long roll crosses more space than the pipe detour.",
+      "2": "Beyond the opening robots, roll down the right slope and jump across the large gap.",
+      "3": "Leave the first tube route, jump from the small left edge to the next shelf, clear its guard, and roll down the slope. Launch hard right before the lip and break the life monitor on the distant ledge."
+     }
+    },
+    {
+     "id": "sms2-se-act2-second-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Lower Life",
+     "missable": true,
+     "levels": {
+      "1": "The first reward has another shelf beneath it.",
+      "2": "After the slope-jump life, drop down on its right side.",
+      "3": "Collect the first life, step from the right edge, and hold right while falling. Land beside the second monitor, break it, gather the optional rings to the left, then return using the spring."
+     }
+    },
+    {
+     "id": "sms2-se-act2-platform-chain",
+     "type": "secret",
+     "safe_type": "Traversal discovery",
+     "label": "Act 2 Platform-Pipe Chain",
+     "missable": true,
+     "levels": {
+      "1": "The same platform is both departure and landing point.",
+      "2": "Ride the late small platform beneath two overhead pipes and enter each in sequence.",
+      "3": "Take the first overhead pipe and land back on the moving platform. At the next pipe, enter, choose down at the corner, land on the platform, then jump straight back in while holding left. Continue to the far-left exit tube."
+     }
+    },
+    {
+     "id": "sms2-se-act3-safe-route",
+     "type": "secret",
+     "safe_type": "Traversal discovery",
+     "label": "Act 3 Safe Pipe Fork",
+     "missable": true,
+     "levels": {
+      "1": "The first split has one lethal answer.",
+      "2": "Enter the opening tube and choose the right fork before the spring climb.",
+      "3": "Jump from the first spring into the tube, hold right at its initial fork, and avoid the alternate branch leading into spikes. Use the following springs one bounce at a time and take the overhead tube into the arena."
+     }
+    },
+    {
+     "id": "sms2-se-act3-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 3 Encounter",
+     "missable": true,
+     "levels": {
+      "1": "Match the target's movement, but wait for an open form.",
+      "2": "Attack only while the moving target is not curled into a ball.",
+      "3": "Keep moving, stay curled during collisions, and jump onto the target only when its open form exposes a safe hit. Count seven confirmed flashes, then pause with a state before delivering the eighth."
+     }
+    },
+    {
+     "id": "sms2-se-emerald",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 6",
+     "missable": true,
+     "levels": {
+      "1": "Winning the encounter is not enough; watch above it.",
+      "2": "After the eighth hit, jump upward immediately and intercept the released emerald.",
+      "3": "Verify that the first five emeralds are already held, make a state before hit eight, then attack. Follow the target upward and touch the released emerald before it leaves reach. If missed, allow the timer to expire and retry from the encounter."
+     }
+    },
+    {
+     "id": "sms2-se-alternate-result",
+     "type": "ending",
+     "safe_type": "Completion result",
+     "label": "Alternate Completion Result",
+     "missable": true,
+     "levels": {
+      "1": "Record what occurs when the final collectible is omitted.",
+      "2": "Clear the Act 3 encounter without collecting the released emerald.",
+      "3": "From the pre-eighth-hit state, finish the encounter and deliberately stay below the released emerald. Let it go uncollected and allow the resulting completion sequence to finish. Record it, then reload the state for the full route."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sms2-crystal-egg-zone",
+   "name": "Crystal Egg Zone",
+   "location_cue": "Pastel crystal corridors, pink springs, floating disks, spike floors, and a looping outer pipe.",
+   "note": "This zone appears only after all six emeralds are secured in the same run.",
+   "save_backup": {
+    "title": "Keep an entrance state for Crystal Egg Zone",
+    "why": "The cartridge cannot save, and a lost life can erase a carefully prepared route.",
+    "detail": "Retain one state before each act, then make a second rolling state only after its local lives and emerald check are secure."
+   },
+   "point_of_no_return": {
+    "title": "Finish local checks before advancing",
+    "why": "A goal panel or completed encounter closes the current act.",
+    "detail": "The final hit closes the cartridge. Resolve every act-two life and keep a state before the last arena cycle so the complete result can be replayed safely."
+   },
+   "items": [
+    {
+     "id": "sms2-ce-unlock",
+     "type": "secret",
+     "safe_type": "Unlockable content",
+     "label": "Unlock Crystal Egg Zone",
+     "missable": true,
+     "levels": {
+      "1": "The complete emerald set changes the route after the previous zone.",
+      "2": "Hold all six Chaos Emeralds when Scrambled Egg Zone ends.",
+      "3": "Collect emeralds one through five in their Act 2 locations, catch the sixth after the preceding Act 3 encounter, and finish that zone. Do not use the omitted-emerald branch; the route continues here automatically."
+     }
+    },
+    {
+     "id": "sms2-ce-act1-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 1",
+     "missable": true,
+     "levels": {
+      "1": "The upper and lower openings eventually reconnect.",
+      "2": "Travel right to the long spike pit and use its floating platform.",
+      "3": "Explore both opening branches from an entrance state, then proceed beyond the three guards. Drop onto the invincibility monitor, descend again, board the floating platform across the long spike floor, and jump right when it stops to reach the panel."
+     }
+    },
+    {
+     "id": "sms2-ce-act1-invincibility",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Lower Invincibility",
+     "missable": true,
+     "levels": {
+      "1": "The safe-looking upper shelf hides a useful drop.",
+      "2": "After the three nearby enemies, step from the platform's end onto the lower monitor.",
+      "3": "Clear the enemy group, walk to the far edge, and drop under control onto the invincibility monitor below. Break it before descending to the long spike-pit platform so the crossing remains protected."
+     }
+    },
+    {
+     "id": "sms2-ce-act2-clear",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Act 2",
+     "missable": true,
+     "levels": {
+      "1": "The vertical route loops around its own springs.",
+      "2": "Collect the three lives around the spring and disk sections, then follow the last spring right to the panel.",
+      "3": "Take the upper spring-chain life, cross the central gravity disks, and resolve the two later life pockets before breaking through the right wall. Continue through the remaining spring turns and descend beside the final panel."
+     }
+    },
+    {
+     "id": "sms2-ce-act2-upper-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Upper Spring Life",
+     "missable": true,
+     "levels": {
+      "1": "The first tall spring sequence has a reward beyond its crest.",
+      "2": "Climb the opening angled springs and steer right from the last bounce.",
+      "3": "Clear the early spikes, use the pink angled springs to gain height, and angle right from the final launch. Land beside the first life monitor, break it, then return left across the gap."
+     }
+    },
+    {
+     "id": "sms2-ce-act2-left-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Left-Spring Life",
+     "missable": true,
+     "levels": {
+      "1": "A later spring points opposite the route.",
+      "2": "After crossing the gravity disks and wall, use the next spring to jump left.",
+      "3": "Reach the spring beyond the central disk section, bounce while holding left, and land in the side pocket. Break the second life monitor, then return right and resume the vertical spring route."
+     }
+    },
+    {
+     "id": "sms2-ce-act2-lower-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Lower Crystal Life",
+     "missable": true,
+     "levels": {
+      "1": "One final reward sits below the obvious spring line.",
+      "2": "Near the late crystal section, descend into the lower recess before breaking the right wall.",
+      "3": "Pass the rotating hazard only when its path is clear, drop beneath the lower spring, and enter the crystal recess. Collect the life there, climb back to the spring, then break through the wall on the right."
+     }
+    },
+    {
+     "id": "sms2-ce-act3-clear",
+     "type": "ending",
+     "safe_type": "Completion result",
+     "label": "Complete the Full Route",
+     "missable": true,
+     "levels": {
+      "1": "The outer pipe is shelter; the centre is safe only briefly.",
+      "2": "Remain in the looping outer tube until the central electrical field has flashed twice.",
+      "3": "Enter the outer pipe and keep a direction held so Sonic stays inside. Count two complete central flashes, exit into the middle, land one hit, and return to the tube immediately. Repeat until eight hits complete the full route and let the final sequence finish."
+     }
+    }
+   ]
+  }
+ ]
+}

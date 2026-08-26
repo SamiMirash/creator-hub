@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SegaSonic the Hedgehog (1993 arcade) — 100% collectible guide | Sami Mirash</title>
+<meta name="description" content="Complete SegaSonic the Hedgehog (1993 arcade) guide: 81 collectibles and objectives across 10 areas, with exact locations. Written while playing, no spoilers in the interactive version.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.samimirash.com/guide/segasonic-the-hedgehog/">
+<link rel="stylesheet" href="../guide.css">
+<style>
+  .static-wrap{max-width:760px;margin:0 auto;padding:20px 16px 64px}
+  @media(min-width:1200px){.static-wrap{max-width:920px}}
+  .static-wrap h1{font-size:26px;margin:.2em 0}
+  .static-wrap h2{font-size:20px;margin:1.6em 0 .4em;color:var(--gold)}
+  .static-wrap h3{font-size:16px;margin:1.1em 0 .3em}
+  .static-wrap .lvl{margin:.15em 0 .15em 0;padding-left:12px;border-left:2px solid var(--line)}
+  .static-wrap .lvl b{color:var(--muted);font-weight:600;font-size:12px;
+     text-transform:uppercase;letter-spacing:.6px;display:block}
+  .spoiler-note{border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0}
+  .cta{display:inline-block;margin:8px 0 4px;padding:12px 18px;border-radius:10px;
+     background:var(--gold);color:#151109;font-weight:800;text-decoration:none}
+  .static-wrap img.sk{display:block;width:100%;max-width:560px;margin:8px 0;
+     border:1px solid var(--line);border-radius:8px}
+</style>
+</head>
+<body>
+<div class="static-wrap">
+<a class="homelink" href="/">&#8592; <span>samimirash.com</span></a>
+<h1>SegaSonic the Hedgehog (1993 arcade)</h1>
+<p class="muted">Japan revision C arcade release through MAME 0.289 on PC &middot; 10 areas &middot; 81 tracked items</p>
+
+<div class="spoiler-note">
+  <strong>This page shows everything, including exact locations.</strong>
+  It exists so you can search for one specific collectible and find it.
+  If you are playing blind, use the
+  <a href="../?pack=segasonic-the-hedgehog">interactive spoiler-free version</a> instead — it hides
+  locations until you ask for them, one item at a time.
+</div>
+
+<p><a class="cta" href="../?pack=segasonic-the-hedgehog">Open the spoiler-free interactive guide</a></p>
+<h2>Arcade Cabinet Setup</h2>
+<p class="muted"><em>You are here when:</em> The MAME launch, service assignments, attract loop, and participant-start controls before play begins.</p>
+<p>Configure the original trackball behavior before judging movement or beginning a completion run.</p>
+<h3>Verify Japan Revision C</h3>
+<p class="muted small">System task</p>
+<div class="lvl"><b>Hint</b>Confirm the preserved cabinet program before changing controls.</div>
+<div class="lvl"><b>Where</b>Point MAME 0.289 at the `sonic` ROM set and run its verifier.</div>
+<div class="lvl"><b>Full detail</b>Use the 5,147,908-byte `sonic.zip` with SHA-256 ee8e7ca54b0261d6a53e46fb04a32179a9b8a4fe86e7c811e80f3a83cc58c377. Launch driver `sonic`; `-verifyroms sonic` must report the Japan revision C set as good.</div>
+<h3>Record the Emulation Limits</h3>
+<p class="muted small">System task</p>
+<div class="lvl"><b>Hint</b>One driver warning affects how the long route must be planned.</div>
+<div class="lvl"><b>Where</b>Read MAME&#x27;s status and save-state support before inserting a credit.</div>
+<div class="lvl"><b>Full detail</b>Record 416×224 at 60 Hz, driver status `imperfect`, game emulation `good`, and save-state support `unsupported`. Do not plan a mid-stage reload route; a failed collectible run must be replayed from its beginning.</div>
+<h3>Map Player 1 Trackball</h3>
+<p class="muted small">Cabinet setup</p>
+<div class="lvl"><b>Hint</b>The first control is relative motion, not a held direction.</div>
+<div class="lvl"><b>Where</b>Assign both axes of Trackball 1 and test diagonal travel.</div>
+<div class="lvl"><b>Full detail</b>Map Trackball X/Y for Player 1 to a mouse, trackball, or relative-motion device. If using digital increments, tune the speed value; if using an absolute stick, tune sensitivity instead and confirm steady diagonal movement.</div>
+<h3>Map Player 2 Trackball</h3>
+<p class="muted small">Cabinet setup</p>
+<div class="lvl"><b>Hint</b>A cooperative cabinet needs a second independent motion pair.</div>
+<div class="lvl"><b>Where</b>Assign Trackball X/Y 2 and Player 2&#x27;s jump button.</div>
+<div class="lvl"><b>Full detail</b>Map the second relative-motion pair, Button 1 for Player 2, Coin 2, and the two-participant Start input. In the input test, move both axes separately and ensure Player 1 does not respond.</div>
+<h3>Map Player 3 Trackball</h3>
+<p class="muted small">Cabinet setup</p>
+<div class="lvl"><b>Hint</b>The complete cabinet route uses one more independent station.</div>
+<div class="lvl"><b>Where</b>Assign Trackball X/Y 3, Player 3&#x27;s button, Coin 3, and three-participant Start.</div>
+<div class="lvl"><b>Full detail</b>Map the third relative-motion pair and its jump input, then switch Cabinet Type to 3P in Game Assignments. Return to Input Test and confirm all three counters and buttons change independently.</div>
+<h3>Check All Difficulty Grades</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>The operator menu carries four pressure settings.</div>
+<div class="lvl"><b>Where</b>Open Game Assignments and inspect Game Difficulty 1/4 through 4/4.</div>
+<div class="lvl"><b>Full detail</b>Use the service button to highlight Game Difficulty and the test button to cycle 1/4, 2/4, 3/4, and 4/4. Record each setting; restore 2/4 for the ordinary route and reserve 4/4 for mastery.</div>
+<h3>Check All Vitality Grades</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>Starting health has its own four-step operator setting.</div>
+<div class="lvl"><b>Where</b>Inspect Initial Vitality 1/4 through 4/4 in Game Assignments.</div>
+<div class="lvl"><b>Full detail</b>Cycle Initial Vitality through all four positions and photograph the gauge range. Restore 2/4 for the first clear; use 1/4 only for the separate minimum-vitality mastery branch.</div>
+<h3>Enable Attract Sound</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>The idle loop contains presentation worth preserving.</div>
+<div class="lvl"><b>Where</b>Set Advertise Sound to On before watching the cabinet demonstration.</div>
+<div class="lvl"><b>Full detail</b>In Game Assignments, toggle Advertise Sound to On, exit service mode, and let the title, movement demonstration, rankings, and return to title complete once with audible cues.</div>
+<h3>Confirm Normal Monitor Orientation</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>One operator toggle can reverse the entire picture.</div>
+<div class="lvl"><b>Where</b>Keep Monitor Flip on Normal for the guide route.</div>
+<div class="lvl"><b>Full detail</b>Open Game Assignments, verify Monitor Flip reads Normal, and exit without changing it. Use the reverse option only as a cabinet test; it adds no separate game content.</div>
+<h3>Configure the 2P Cabinet</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>The default local profile exposes the smaller cabinet layout.</div>
+<div class="lvl"><b>Where</b>Set Cabinet Type to 2P and test the one- and two-participant starts.</div>
+<div class="lvl"><b>Full detail</b>Choose Cabinet Type 2P, exit service mode, insert the needed credits, and verify both the 1 Player Start and 2 Players Start inputs reach character selection. Save the input configuration outside MAME before changing cabinet type.</div>
+<h3>Configure the 3P Cabinet</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>The third station remains unavailable until the cabinet profile changes.</div>
+<div class="lvl"><b>Where</b>Set Cabinet Type to 3P and test the three-participant Start input.</div>
+<div class="lvl"><b>Full detail</b>Select Cabinet Type 3P, confirm three coin and trackball stations in Input Test, then insert sufficient credits and use 3 Players Start. All three character panels must become active before the route begins.</div>
+<h3>Watch the Complete Attract Loop</h3>
+<p class="muted small">Presentation</p>
+<div class="lvl"><b>Hint</b>The idle cabinet explains movement and displays local records.</div>
+<div class="lvl"><b>Where</b>Wait through the title, play demonstration, and Top 15 board without starting.</div>
+<div class="lvl"><b>Full detail</b>With Advertise Sound enabled, leave the cabinet idle until it shows the title, three-character artwork, demonstration prompts, several ranking pages, the complete Top 15, and a return to the title.</div>
+<h3>Preserve the Cabinet Profile</h3>
+<p class="muted small">System task</p>
+<div class="lvl"><b>Hint</b>MAME cannot preserve the active course with a normal save state.</div>
+<div class="lvl"><b>Where</b>Export the verified input and service values before the first serious credit.</div>
+<div class="lvl"><b>Full detail</b>Keep a written profile containing ROM hash, cabinet type, difficulty, vitality, trackball sensitivity, and every mapped input. Because the driver rejects save states, this configuration record is the only reliable pre-run backup.</div>
+<h2>Opening Course and Core Rules</h2>
+<p class="muted"><em>You are here when:</em> The character panel, movement tutorial, barred platform, and the first uninterrupted running sections.</p>
+<p>Learn health, jumping, and continue behavior before attempting ring-perfect stages.</p>
+<h3>Select Sonic</h3>
+<p class="muted small">Character route</p>
+<div class="lvl"><b>Hint</b>Begin with the center character shown by default.</div>
+<div class="lvl"><b>Where</b>Use the trackball on Player Select until Sonic&#x27;s card is active.</div>
+<div class="lvl"><b>Full detail</b>At Player Select, move the first trackball until Sonic appears alone on the active card, then confirm with the jump button before the timer expires. Keep this credit as the primary learning route.</div>
+<h3>Select Ray</h3>
+<p class="muted small">Character route</p>
+<div class="lvl"><b>Hint</b>A second selectable runner belongs in the completion set.</div>
+<div class="lvl"><b>Where</b>Move away from the default card and confirm Ray on a fresh credit.</div>
+<div class="lvl"><b>Full detail</b>Begin another one-participant credit, cycle Player Select to Ray, and confirm. The controls remain trackball plus spin jump; complete the full course later on this separate character branch.</div>
+<h3>Select Mighty</h3>
+<p class="muted small">Character route</p>
+<div class="lvl"><b>Hint</b>The third runner completes the selectable roster.</div>
+<div class="lvl"><b>Where</b>Cycle Player Select to Mighty and confirm on another credit.</div>
+<div class="lvl"><b>Full detail</b>Use a new one-participant credit, highlight Mighty, and confirm before the selection timer closes. Preserve this as the third solo completion branch rather than changing characters after a failure.</div>
+<h3>Watch the Movement Tutorial</h3>
+<p class="muted small">Tutorial</p>
+<div class="lvl"><b>Hint</b>The first instructional panel shows what the trackball expects.</div>
+<div class="lvl"><b>Where</b>Let the demonstration finish once without pressing Player 1&#x27;s jump button.</div>
+<div class="lvl"><b>Full detail</b>After character selection, do not skip. Watch the complete movement, jumping, box-breaking, and wall-breaking demonstration, then repeat the motions in the opening platform.</div>
+<h3>Skip the Tutorial Once</h3>
+<p class="muted small">Tutorial</p>
+<div class="lvl"><b>Hint</b>The cabinet also supports an immediate repeat-run start.</div>
+<div class="lvl"><b>Where</b>Press Player 1&#x27;s jump button while the instruction sequence is playing.</div>
+<div class="lvl"><b>Full detail</b>On a later credit, tap Player 1 Button 1 as the tutorial begins. Confirm it advances directly to the opening sequence; buttons from the other stations do not replace the Player 1 skip input.</div>
+<h3>Break the Opening Bars</h3>
+<p class="muted small">Course action</p>
+<div class="lvl"><b>Hint</b>The first barrier yields to repeated jumping impact.</div>
+<div class="lvl"><b>Where</b>Run squarely into one bent bar and spin-jump against it more than once.</div>
+<div class="lvl"><b>Full detail</b>Face the barred opening, build a short run-up, and press jump into the same weakened bar repeatedly. Move through the gap as soon as it bends clear; lingering allows the advancing hazard to consume health.</div>
+<h3>Use the Spin Jump</h3>
+<p class="muted small">Core skill</p>
+<div class="lvl"><b>Hint</b>The only button handles attacks and obstacle interactions.</div>
+<div class="lvl"><b>Where</b>Press Button 1 while running toward a breakable object.</div>
+<div class="lvl"><b>Full detail</b>Aim with the trackball first, then press Button 1 to spin-jump. Use it on marked blocks, weakened walls, and limited enemy targets; jumping without forward alignment often costs speed or misses the object.</div>
+<h3>Refill Health with Rings</h3>
+<p class="muted small">Core skill</p>
+<div class="lvl"><b>Hint</b>Rings protect the health gauge directly in this cabinet.</div>
+<div class="lvl"><b>Where</b>Collect a visible ring after taking a small, controlled hit.</div>
+<div class="lvl"><b>Full detail</b>Compare the vitality gauge before and after a ring pickup. Damage removes gauge segments instead of scattering held rings, while each collected ring restores health and also contributes to the stage tally and score.</div>
+<h3>Use a Continue and Reselect</h3>
+<p class="muted small">Recovery</p>
+<div class="lvl"><b>Hint</b>Ordinary health loss offers a credit-based recovery before the final timed run.</div>
+<div class="lvl"><b>Where</b>Let the gauge empty outside the last countdown, then accept Continue.</div>
+<div class="lvl"><b>Full detail</b>On a practice credit, take damage until vitality empties, insert the required credit, and accept the continue prompt. Use the returning Player Select to confirm that a different runner can be chosen for the resumed practice route.</div>
+<h3>Earn a Stage Ring Bonus</h3>
+<p class="muted small">Scoring rule</p>
+<div class="lvl"><b>Hint</b>The result screen rewards collecting more than half of a course&#x27;s rings.</div>
+<div class="lvl"><b>Where</b>Finish a non-final stage above its listed ring threshold.</div>
+<div class="lvl"><b>Full detail</b>Collect at least the stage-specific minimum, reach the stage clear, and wait through the ring tally. Confirm the bonus is added before the next map screen; the final tower has no equivalent tally.</div>
+<h2>Volcanic Vault</h2>
+<p class="muted"><em>You are here when:</em> A hot stone course with grates, a damaged bridge, pursuing boulders, and floor vents.</p>
+<p>Forward motion matters, but the ring-perfect route still requires deliberate side interactions.</p>
+<h3>Outrun the Opening Boulders</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The first slope rewards immediate trackball momentum.</div>
+<div class="lvl"><b>Where</b>Accelerate down the central slope as the rocks begin moving behind you.</div>
+<div class="lvl"><b>Full detail</b>Roll continuously toward the open lane, make only small lateral corrections, and jump over low interruptions without releasing forward motion. Do not stop for a missed ring while a boulder occupies the same lane.</div>
+<h3>Open the Metal Grates</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The next barrier needs direct jumping contact.</div>
+<div class="lvl"><b>Where</b>Line up squarely with each grate and spin-jump into its center.</div>
+<div class="lvl"><b>Full detail</b>Approach the grate front-on, press jump just before contact, and keep the trackball aimed through the opening as it moves. Correct sideways only after the barrier is fully clear.</div>
+<h3>Cross the Damaged Bridge</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The narrow crossing leaves little room for a diagonal drift.</div>
+<div class="lvl"><b>Where</b>Center yourself before entering the broken bridge span.</div>
+<div class="lvl"><b>Full detail</b>Approach along the bridge axis, maintain a straight roll, and jump only when a broken section reaches the character&#x27;s feet. Over-correcting a trackball near the edge is more dangerous than a slightly slower crossing.</div>
+<h3>Avoid the Lava Geysers</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The floor telegraphs the safest lanes before each burst.</div>
+<div class="lvl"><b>Where</b>Watch the vent pattern and move through immediately after a column subsides.</div>
+<div class="lvl"><b>Full detail</b>Stay off an active vent, wait on solid stone for the nearest burst to fall, then roll across its cell before the next cycle. Use a short jump only when the following landing tile is visible.</div>
+<h3>Break the Shining Ring Walls</h3>
+<p class="muted small">Ring route</p>
+<div class="lvl"><b>Hint</b>Some side surfaces repay a brief detour with health and score.</div>
+<div class="lvl"><b>Where</b>Spin-jump into the sparkling wall sections along the later passage.</div>
+<div class="lvl"><b>Full detail</b>Approach each shining section perpendicular to its face and jump into its center until it opens. Sweep up the released rings before resuming the chase, but abandon the detour if the pursuing hazard reaches the same screen.</div>
+<h3>Earn the Volcanic Ring Bonus <span class="muted">(missable)</span></h3>
+<p class="muted small">Ring threshold</p>
+<div class="lvl"><b>Hint</b>Roughly half the stage&#x27;s collection is enough for its reward.</div>
+<div class="lvl"><b>Where</b>Reach the clear with at least 32 of the 63 rings.</div>
+<div class="lvl"><b>Full detail</b>Collect 32 or more rings before leaving Volcanic Vault, then wait for the result tally to award the ring bonus. Missing the threshold cannot be repaired after the stage-clear transition.</div>
+<h3>Collect All 63 Volcanic Rings <span class="muted">(missable)</span></h3>
+<p class="muted small">Collectible sweep</p>
+<div class="lvl"><b>Hint</b>The perfect route includes every main lane and breakable detour.</div>
+<div class="lvl"><b>Where</b>Sweep all visible trails and open every shining ring surface before the exit.</div>
+<div class="lvl"><b>Full detail</b>Finish with the result counter showing 63 gathered rings. If it shows less, do not continue the 424-ring branch; MAME cannot restore this stage, so restart the full run and revisit the missed wall or ramp line.</div>
+<h2>Icy Isle</h2>
+<p class="muted"><em>You are here when:</em> A pale frozen route with low traction, falling icicles, hanging bars, spike rows, and arrows.</p>
+<p>Use small trackball corrections; sustained sideways input becomes a slide here.</p>
+<h3>Manage the Slippery Floor</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The surface preserves momentum after the trackball changes direction.</div>
+<div class="lvl"><b>Where</b>Brake early and use short counter-rolls before narrow turns.</div>
+<div class="lvl"><b>Full detail</b>Enter each bend below maximum speed, roll briefly opposite the current slide, then aim into the next straight. Avoid full sideways corrections near an edge; the character continues drifting after the input stops.</div>
+<h3>Pass the Falling Icicles</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The overhead hazard marks its lane before striking.</div>
+<div class="lvl"><b>Where</b>Keep moving and cross each marked lane before the next icicle lands.</div>
+<div class="lvl"><b>Full detail</b>Follow the open strip between fresh impacts, changing lanes only when the next landing point is clear. If an icicle blocks the direct line, go around its base rather than colliding through it.</div>
+<h3>Cross the Hanging Bars</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The horizontal grip section punishes late alignment.</div>
+<div class="lvl"><b>Where</b>Enter the bar line centrally and maintain motion toward the far platform.</div>
+<div class="lvl"><b>Full detail</b>Aim at the first handle before leaving the ice, then roll steadily along the bar direction. If the character drops, use the recovery route instead of repeatedly forcing the same misaligned entry.</div>
+<h3>Cross the Rising Spike Rows</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The safe floor appears between synchronized lifts.</div>
+<div class="lvl"><b>Where</b>Wait beside a row, then cross as soon as its spikes retract.</div>
+<div class="lvl"><b>Full detail</b>Stop on the last solid tile, watch one full rise-and-fall cycle, and roll across immediately after retraction. Do not jump blindly into the following row; confirm both landing and exit cells are down.</div>
+<h3>Dodge the Arrow Passage</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The later projectiles travel in readable straight lines.</div>
+<div class="lvl"><b>Where</b>Stay between firing lanes and cross after a volley passes.</div>
+<div class="lvl"><b>Full detail</b>Approach the firing line slowly, let one arrow clear the character&#x27;s lane, then roll perpendicular across it. Use the ice counter-roll before entering the next line so momentum does not carry you into a projectile.</div>
+<h3>Earn the Icy Ring Bonus <span class="muted">(missable)</span></h3>
+<p class="muted small">Ring threshold</p>
+<div class="lvl"><b>Hint</b>Half the frozen course&#x27;s rings secures its stage reward.</div>
+<div class="lvl"><b>Where</b>Reach the clear with at least 32 of the 64 rings.</div>
+<div class="lvl"><b>Full detail</b>Collect 32 or more rings before the stage transition and confirm the tally awards the bonus. Treat a 31-or-lower result as a failed bonus branch and restart rather than carrying the miss forward.</div>
+<h3>Collect All 64 Icy Rings <span class="muted">(missable)</span></h3>
+<p class="muted small">Collectible sweep</p>
+<div class="lvl"><b>Hint</b>The perfect pass needs both safe lines and optional side pickups.</div>
+<div class="lvl"><b>Where</b>Follow every ring trail around the icicles, bars, spikes, and arrows.</div>
+<div class="lvl"><b>Full detail</b>Finish Icy Isle with exactly 64 gathered rings on the result screen. If the counter is lower, end the all-rings attempt here; no supported mid-run save can return to the missed frozen section.</div>
+<h2>Desert Dodge</h2>
+<p class="muted"><em>You are here when:</em> An unstable sand route with pursuing twisters, sinkholes, quicksand, moving cubes, and crossing stone shapes.</p>
+<p>The safest line changes as the surface opens and retracts.</p>
+<h3>Outpace the Twisters</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The chasing hazard also slows when the ground slows you.</div>
+<div class="lvl"><b>Where</b>Keep forward momentum and avoid unnecessary lateral loops.</div>
+<div class="lvl"><b>Full detail</b>Roll along the widest firm lane and jump only to clear a visible obstruction. In quicksand, hold the shortest forward line; the pursuing twisters slow there too, so frantic side movement loses more distance than it gains.</div>
+<h3>Skirt the Sandpits</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>A narrow rim remains usable beside several collapsing holes.</div>
+<div class="lvl"><b>Where</b>Aim along the solid outer edge instead of crossing the center.</div>
+<div class="lvl"><b>Full detail</b>Approach below full speed, place the character on the thin firm lip, and maintain a straight line until past the pit. Do not jump across the slowing sand; it pulls airborne movement into the hazard.</div>
+<h3>Avoid the Cactus Blocks</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>Large obstacles narrow the useful lane before later sand hazards.</div>
+<div class="lvl"><b>Where</b>Choose the wider side before reaching each cactus cluster.</div>
+<div class="lvl"><b>Full detail</b>Read the next opening early, roll to that side while the ground is firm, and pass without scraping the obstacle. Correct back toward center only after the entire cactus shape leaves the screen.</div>
+<h3>Cross the Retracting Cubes</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The rocky tiles withdraw from their exposed edges.</div>
+<div class="lvl"><b>Where</b>Stay near each cube&#x27;s inner face and move as soon as the next tile is present.</div>
+<div class="lvl"><b>Full detail</b>Enter every cube close to its stable inner edge, cross before the outer side retracts, and avoid circling for a missed pickup after movement begins. Wait only on a fully visible tile.</div>
+<h3>Pass the Moving Stone Shapes</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The last solid passage is crossed by large moving forms.</div>
+<div class="lvl"><b>Where</b>Pause outside their path and move through the gap after one passes.</div>
+<div class="lvl"><b>Full detail</b>Watch the full width of one crossing cycle, choose the gap behind a stone shape, and roll through without changing lanes. Entering alongside the moving object leaves too little room for trackball correction.</div>
+<h3>Earn the Desert Ring Bonus <span class="muted">(missable)</span></h3>
+<p class="muted small">Ring threshold</p>
+<div class="lvl"><b>Hint</b>This long course needs a larger pickup total for its reward.</div>
+<div class="lvl"><b>Where</b>Reach the clear with at least 43 of the 85 rings.</div>
+<div class="lvl"><b>Full detail</b>Collect 43 or more rings before leaving Desert Dodge and verify the result tally awards the bonus. The threshold is strict; a 42-ring result does not qualify and cannot be repaired afterward.</div>
+<h3>Collect All 85 Desert Rings <span class="muted">(missable)</span></h3>
+<p class="muted small">Collectible sweep</p>
+<div class="lvl"><b>Hint</b>The largest stage total spans both safe edges and hazardous detours.</div>
+<div class="lvl"><b>Where</b>Sweep every ring line before each collapsing surface removes access.</div>
+<div class="lvl"><b>Full detail</b>Reach the result screen with 85 gathered rings. If any are missing, restart the complete collectible branch; the shrinking sand and cube sections cannot be revisited and MAME offers no supported course reload.</div>
+<h2>Trap Tower</h2>
+<p class="muted"><em>You are here when:</em> A narrow mechanical climb with rolling cylinders, electrical posts, spiked crushers, side blocks, and mined ladders.</p>
+<p>Commit to each safe opening; hesitation lets the pursuing machinery close it.</p>
+<h3>Outrun the Rolling Cylinders</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>Large chasing rollers turn each straight into a timed lane.</div>
+<div class="lvl"><b>Where</b>Accelerate when the route prompt appears and stay ahead of the roller&#x27;s face.</div>
+<div class="lvl"><b>Full detail</b>Begin rolling immediately, center on the straight, and jump only over fixed floor hazards. At the next turn, aim before releasing forward pressure so the trackball does not stall beside the cylinder.</div>
+<h3>Pass the Electrical Emitters</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The floor posts leave one brief lateral opening.</div>
+<div class="lvl"><b>Where</b>Move inward around each active post, then return to the outer lane.</div>
+<div class="lvl"><b>Full detail</b>Approach on the safer edge, cut around the extended electrical post after its pulse, and rejoin the original line before the next crusher. Do not remain centered where the following machinery closes.</div>
+<h3>Cross the Six Crushers</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>Each spiked block exposes a short ground-level gap when raised.</div>
+<div class="lvl"><b>Where</b>Wait for a crusher to lift, then pass beneath before it descends.</div>
+<div class="lvl"><b>Full detail</b>Stop outside the first shadow, observe one complete cycle, and roll under as the block reaches its highest point. Reassess every later crusher independently; do not assume all six share identical timing.</div>
+<h3>Break the Shining Side Blocks</h3>
+<p class="muted small">Ring route</p>
+<div class="lvl"><b>Hint</b>Optional wall pieces hide rings beside the main chase line.</div>
+<div class="lvl"><b>Where</b>Spin-jump into a sparkling block only when the roller is still distant.</div>
+<div class="lvl"><b>Full detail</b>Turn square to the block face, jump through its center, collect the released rings in one sweep, and return to the forward lane. Skip the detour on a survival run if the pursuing cylinder has entered the same segment.</div>
+<h3>Climb the Mined Ladders</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The vertical section requires switching between adjacent rails.</div>
+<div class="lvl"><b>Where</b>Start on the clearest ladder and move sideways before reaching each mine.</div>
+<div class="lvl"><b>Full detail</b>Align with the first ladder, roll upward, and transfer horizontally to the neighboring rail when a mine blocks the next section. Finish each transfer before resuming upward input; diagonal trackball motion can leave the character between ladders.</div>
+<h3>Earn the Tower Ring Bonus <span class="muted">(missable)</span></h3>
+<p class="muted small">Ring threshold</p>
+<div class="lvl"><b>Hint</b>The shortest ring set still requires more than half.</div>
+<div class="lvl"><b>Where</b>Reach the clear with at least 20 of the 39 rings.</div>
+<div class="lvl"><b>Full detail</b>Collect 20 or more rings before the stage ends and confirm the tally awards its bonus. A 19-ring result misses the requirement even if the health gauge is full.</div>
+<h3>Collect All 39 Tower Rings <span class="muted">(missable)</span></h3>
+<p class="muted small">Collectible sweep</p>
+<div class="lvl"><b>Hint</b>The complete sweep includes pickups beside moving machinery.</div>
+<div class="lvl"><b>Where</b>Open every shining side block and follow each ladder and crusher ring line.</div>
+<div class="lvl"><b>Full detail</b>Finish with 39 gathered rings on the result screen. If the tally is lower, restart the 424-ring route; a missed side block cannot be recovered after its cylinder or lift section passes.</div>
+<h2>Landslide Limbo</h2>
+<p class="muted"><em>You are here when:</em> A collapsing high route with shifting ground, fiery boulders, launchers, an electrical perimeter, and a central machine.</p>
+<p>Preserve vitality before the machine platform; the approach itself can consume the margin needed there.</p>
+<h3>Outrun the Collapsing Floor</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The path disappears in sequence directly behind the runner.</div>
+<div class="lvl"><b>Where</b>Stay centered and keep continuous forward trackball motion.</div>
+<div class="lvl"><b>Full detail</b>Roll along the broadest visible strip, commit to ramps before their rear tiles fall, and avoid reversing for missed pickups. If the floor reaches the character, accept the damage recovery and immediately resume forward travel.</div>
+<h3>Cross the Shifting Slope</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The angled sand redirects motion before the next chase segment.</div>
+<div class="lvl"><b>Where</b>Aim into the slope&#x27;s upper line and correct gradually as it moves.</div>
+<div class="lvl"><b>Full detail</b>Enter near the stable upper edge, maintain forward pressure, and counter the sideways slide with short trackball rolls. Do not stop at the center seam; the route continues collapsing behind it.</div>
+<h3>Pass the Fiery Boulders</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The rolling rocks leave temporary gaps across the lane.</div>
+<div class="lvl"><b>Where</b>Move behind one boulder rather than trying to outrun it sideways.</div>
+<div class="lvl"><b>Full detail</b>Wait just outside the crossing line, let a fiery boulder pass, then roll through its wake. Recenter before the next gap so the trackball does not carry the character toward the exposed edge.</div>
+<h3>Use the Arena Launchers</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The final approach uses fixed launch points rather than a normal ramp.</div>
+<div class="lvl"><b>Where</b>Align with the launcher center and enter it with forward momentum.</div>
+<div class="lvl"><b>Full detail</b>Aim squarely at the launcher, keep the trackball pointed through its center, and let it carry the character to the raised platform. Avoid correcting in mid-launch; adjust only after landing.</div>
+<h3>Strike the Center Core</h3>
+<p class="muted small">Mechanical encounter</p>
+<div class="lvl"><b>Hint</b>The machine only accepts jump contact on its central target.</div>
+<div class="lvl"><b>Where</b>Avoid the moving arms and spin-jump into the illuminated middle.</div>
+<div class="lvl"><b>Full detail</b>Circle outside the arm sweep, approach the broad central bulb after it passes, and jump through the target. Repeat until the machine stops; touching the electrical perimeter wastes vitality without damaging the core.</div>
+<h3>Earn the Landslide Ring Bonus <span class="muted">(missable)</span></h3>
+<p class="muted small">Ring threshold</p>
+<div class="lvl"><b>Hint</b>The stage shares the preceding tower&#x27;s bonus threshold.</div>
+<div class="lvl"><b>Where</b>Reach the clear with at least 20 of the 39 rings.</div>
+<div class="lvl"><b>Full detail</b>Collect 20 or more rings before the machine encounter resolves, then wait for the result tally. Any lower count loses this stage&#x27;s bonus and cannot be supplemented afterward.</div>
+<h3>Collect All 39 Landslide Rings <span class="muted">(missable)</span></h3>
+<p class="muted small">Collectible sweep</p>
+<div class="lvl"><b>Hint</b>The perfect route must take every collapsing-path and arena pickup.</div>
+<div class="lvl"><b>Where</b>Follow each ring line before its platform or boulder gap closes.</div>
+<div class="lvl"><b>Full detail</b>Complete the stage with 39 gathered rings. If the result differs, terminate the all-rings branch; neither the collapsing route nor unsupported MAME save states allow a return to the missing pickup.</div>
+<h2>Wild Water Way</h2>
+<p class="muted"><em>You are here when:</em> A low channel with gray blocks, water, climbable ledges, and rafts moving against the route.</p>
+<p>Break useful blocks deliberately and jump the raft gaps instead of fighting their movement.</p>
+<h3>Break the Gray Blocks</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>Some channel blocks hold rings while others release a moving hazard.</div>
+<div class="lvl"><b>Where</b>Jump into a block from its open side, then read what emerges before advancing.</div>
+<div class="lvl"><b>Full detail</b>Approach a gray block squarely and spin-jump through its face. Collect rings immediately when they appear; if an enemy emerges, sidestep its line before returning to the forward route.</div>
+<h3>Cross the Water Channel</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>Submerged movement is slower than the dry ledges above it.</div>
+<div class="lvl"><b>Where</b>Use the shortest channel line and climb out at the first clear ledge.</div>
+<div class="lvl"><b>Full detail</b>Hold a direct forward path through the water, avoid wide corrections around blocks, and aim toward the nearest climbable lip before reaching it. Resume full trackball speed only after the character stands on dry ground.</div>
+<h3>Climb the Channel Ledges</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The exits from the low water need a centered upward approach.</div>
+<div class="lvl"><b>Where</b>Roll into the center of the raised edge and jump as the character reaches it.</div>
+<div class="lvl"><b>Full detail</b>Align perpendicular to the ledge face, build a short forward run, and press jump at contact. If the character slides sideways, back away and recenter instead of repeating from the corner.</div>
+<h3>Jump Across the Opposing Rafts</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>Walking on the moving platforms gives away forward distance.</div>
+<div class="lvl"><b>Where</b>Jump from one raft to the next as each aligns with the route.</div>
+<div class="lvl"><b>Full detail</b>Wait on solid ground for the first usable alignment, then jump onto and immediately off each raft while holding forward momentum. Walking across a raft lets its reverse motion carry the character backward.</div>
+<h3>Earn the Waterway Ring Bonus <span class="muted">(missable)</span></h3>
+<p class="muted small">Ring threshold</p>
+<div class="lvl"><b>Hint</b>The channel uses the same half-total threshold as the frozen route.</div>
+<div class="lvl"><b>Where</b>Reach the clear with at least 32 of the 64 rings.</div>
+<div class="lvl"><b>Full detail</b>Collect 32 or more rings across the blocks, ledges, and rafts, then verify the stage tally grants its bonus. The next area cannot repair a missed threshold.</div>
+<h3>Collect All 64 Waterway Rings <span class="muted">(missable)</span></h3>
+<p class="muted small">Collectible sweep</p>
+<div class="lvl"><b>Hint</b>The perfect line includes every block release and raft pickup.</div>
+<div class="lvl"><b>Where</b>Break all ring-bearing gray blocks and sweep both unavoidable route rings.</div>
+<div class="lvl"><b>Full detail</b>Finish Wild Water Way with 64 gathered rings. If the tally is lower, restart the 424-ring branch; the low channel and moving raft sequences are one-way and cannot be restored by MAME.</div>
+<h2>Upper Tower and Timed Exit</h2>
+<p class="muted"><em>You are here when:</em> A direct mechanical climb followed by a short descending route to one final doorway.</p>
+<p>Prepare separate credits for the success and timeout outcomes; the countdown disables joining and continues.</p>
+<h3>Complete the Upper Climb</h3>
+<p class="muted small">Stage route</p>
+<div class="lvl"><b>Hint</b>The approach is direct but still drains the health carried from earlier stages.</div>
+<div class="lvl"><b>Where</b>Stay on the central route and preserve vitality for the timed descent.</div>
+<div class="lvl"><b>Full detail</b>Follow the open platforms upward, jump only when a visible barrier requires it, and collect available rings without circling back. Arrive at the final trigger with enough vitality to survive one accidental contact during the exit.</div>
+<h3>Collect All 70 Tower Rings <span class="muted">(missable)</span></h3>
+<p class="muted small">Collectible sweep</p>
+<div class="lvl"><b>Hint</b>The last stage has collectibles but no result-screen ring bonus.</div>
+<div class="lvl"><b>Where</b>Sweep every visible trail during both the climb and timed descent.</div>
+<div class="lvl"><b>Full detail</b>Collect all 70 tower rings before crossing the final doorway. There is no final tally bonus, so keep a manual counter or capture the HUD; the complete game route totals 424 rings.</div>
+<h3>Start the Twenty-Second Exit <span class="muted">(missable)</span></h3>
+<p class="muted small">Final route</p>
+<div class="lvl"><b>Hint</b>A short timer replaces ordinary recovery at the top of the route.</div>
+<div class="lvl"><b>Where</b>Trigger the descent only when all active players are ready and aligned.</div>
+<div class="lvl"><b>Full detail</b>Before entering the trigger, place every participant on the forward lane and confirm no one is collecting a side ring. The exit timer begins at 20 seconds; new participants and continues are disabled until the route ends.</div>
+<h3>Complete the Timed Exit <span class="muted">(missable)</span></h3>
+<p class="muted small">Ending branch</p>
+<div class="lvl"><b>Hint</b>The primary outcome requires reaching the doorway before the counter expires.</div>
+<div class="lvl"><b>Where</b>Run directly down the marked route and cross the open door above zero.</div>
+<div class="lvl"><b>Full detail</b>Hold continuous forward trackball motion, take the shortest safe lane around each obstacle, and cross the final doorway before the timer reaches zero. Do not stop for score once the countdown begins; wait through the complete credits afterward.</div>
+<h3>Record the Timeout Outcome <span class="muted">(missable)</span></h3>
+<p class="muted small">Ending branch</p>
+<div class="lvl"><b>Hint</b>A second mechanical result occurs when the same countdown expires.</div>
+<div class="lvl"><b>Where</b>On a separate credit, stop short of the doorway and let the timer reach zero.</div>
+<div class="lvl"><b>Full detail</b>Replay the course on a dedicated branch, begin the 20-second exit, and remain safely away from the doorway until zero. Capture the resulting end state; no continue or late join can recover this branch once the timer has started.</div>
+<h3>Watch the Complete Staff Roll <span class="muted">(missable)</span></h3>
+<p class="muted small">Presentation</p>
+<div class="lvl"><b>Hint</b>The successful timed branch continues beyond the exit itself.</div>
+<div class="lvl"><b>Where</b>Do not insert another credit after crossing the doorway.</div>
+<div class="lvl"><b>Full detail</b>Leave all controls untouched after the successful exit and watch every staff-roll page until the cabinet returns to its normal post-run state. Capture the final page before any new credit replaces it.</div>
+<h2>Multiplayer and Mastery</h2>
+<p class="muted"><em>You are here when:</em> Fresh cabinet profiles, new credits, and the Top 15 board after the ordinary solo route is understood.</p>
+<p>These branches close the selectable roster, cabinet layouts, operator challenge, and collectible maximum.</p>
+<h3>Complete a Sonic Solo Route</h3>
+<p class="muted small">Character completion</p>
+<div class="lvl"><b>Hint</b>One full credit should belong entirely to the default runner.</div>
+<div class="lvl"><b>Where</b>Select Sonic and complete the timed exit without changing character after a continue.</div>
+<div class="lvl"><b>Full detail</b>Use the 1P cabinet branch, confirm Sonic, and complete every course plus the successful timed exit. If vitality empties, restart rather than reselecting; the recorded completion must remain a single-character Sonic route.</div>
+<h3>Complete a Ray Solo Route</h3>
+<p class="muted small">Character completion</p>
+<div class="lvl"><b>Hint</b>The second selectable runner needs an independent full clear.</div>
+<div class="lvl"><b>Where</b>Select Ray on a fresh 1P credit and reach the successful timed exit.</div>
+<div class="lvl"><b>Full detail</b>Start a new solo route as Ray and complete every stage without changing character at a continue. Preserve the character card and final doorway capture as proof of the distinct branch.</div>
+<h3>Complete a Mighty Solo Route</h3>
+<p class="muted small">Character completion</p>
+<div class="lvl"><b>Hint</b>The third selectable runner closes the solo roster.</div>
+<div class="lvl"><b>Where</b>Select Mighty on another 1P credit and finish the successful timed exit.</div>
+<div class="lvl"><b>Full detail</b>Begin a clean solo credit as Mighty and complete the full route without character reselection. Capture the initial card and final timed doorway on the same continuous recording.</div>
+<h3>Complete the 2P Cabinet Route</h3>
+<p class="muted small">Cooperative completion</p>
+<div class="lvl"><b>Hint</b>The smaller multiplayer cabinet has its own participant flow.</div>
+<div class="lvl"><b>Where</b>Set Cabinet Type 2P, use the two-participant Start, and finish together.</div>
+<div class="lvl"><b>Full detail</b>Map two independent trackballs, insert the required credits, select different characters, and complete the successful timed exit with both active players. All participants must cross before zero; joining is unavailable during the countdown.</div>
+<h3>Complete the 3P Cabinet Route</h3>
+<p class="muted small">Cooperative completion</p>
+<div class="lvl"><b>Hint</b>The original maximal cabinet uses every control station at once.</div>
+<div class="lvl"><b>Where</b>Set Cabinet Type 3P, use 3 Players Start, and assign all three characters.</div>
+<div class="lvl"><b>Full detail</b>Verify three independent trackballs and credits, select Sonic, Ray, and Mighty without duplication, then complete the full course and successful timed exit with all three participants active.</div>
+<h3>Clear on Difficulty 4/4</h3>
+<p class="muted small">Maximum challenge</p>
+<div class="lvl"><b>Hint</b>The strongest operator setting deserves a complete recorded run.</div>
+<div class="lvl"><b>Where</b>Set Game Difficulty to 4/4 before leaving service mode.</div>
+<div class="lvl"><b>Full detail</b>Photograph Game Difficulty 4/4, keep Initial Vitality at the normal 2/4, and complete the successful timed route without changing the service value. Restore the ordinary profile only after the credits finish.</div>
+<h3>Clear on Vitality 1/4</h3>
+<p class="muted small">Maximum challenge</p>
+<div class="lvl"><b>Hint</b>The smallest starting gauge forms a separate survival branch.</div>
+<div class="lvl"><b>Where</b>Set Initial Vitality to 1/4 and retain the ordinary difficulty first.</div>
+<div class="lvl"><b>Full detail</b>Record Initial Vitality 1/4 in Game Assignments, use Game Difficulty 2/4, and complete the successful timed route. Do not combine this with the 4/4 difficulty clear unless that harder double-condition run is deliberate.</div>
+<h3>Earn All Six Ring Bonuses <span class="muted">(missable)</span></h3>
+<p class="muted small">Scoring mastery</p>
+<div class="lvl"><b>Hint</b>Every non-final result screen has a collection threshold.</div>
+<div class="lvl"><b>Where</b>Meet 32, 32, 43, 20, 20, and 32 rings in course order.</div>
+<div class="lvl"><b>Full detail</b>On one continuous successful route, clear the six bonus-bearing stages with at least 32, 32, 43, 20, 20, and 32 rings respectively. Photograph every awarded result before continuing; the final tower offers no seventh bonus.</div>
+<h3>Collect All 424 Rings <span class="muted">(missable)</span></h3>
+<p class="muted small">Collectible mastery</p>
+<div class="lvl"><b>Hint</b>The complete collectible branch combines every stage-perfect tally.</div>
+<div class="lvl"><b>Where</b>Carry perfect totals of 63, 64, 85, 39, 39, 64, and 70.</div>
+<div class="lvl"><b>Full detail</b>Complete one continuous route with stage totals 63, 64, 85, 39, 39, 64, and 70, for 424 collected rings. Because save states are unsupported, any short stage tally invalidates this branch and requires a full restart.</div>
+<h3>Fill the Top 15 Board</h3>
+<p class="muted small">Scoreboard mastery</p>
+<div class="lvl"><b>Hint</b>The attract loop preserves fifteen local performance entries.</div>
+<div class="lvl"><b>Where</b>Post fifteen qualifying credits with distinct three-character initials.</div>
+<div class="lvl"><b>Full detail</b>Complete or end fifteen scoring attempts, enter a unique three-character name for each qualifying result, and let the attract loop display every ranking page. Confirm all fifteen slots belong to the recorded set before clearing cabinet data.</div>
+<h3>Confirm the Final-Build Boundary</h3>
+<p class="muted small">Archive note</p>
+<div class="lvl"><b>Hint</b>The earlier prototype is not a hidden route inside this revision.</div>
+<div class="lvl"><b>Where</b>Keep the checklist tied to Japan revision C and exclude `sonicp`.</div>
+<div class="lvl"><b>Full detail</b>Record that this pack covers the released seven-stage revision C set only. The earlier prototype has different content and order; do not patch, merge, or count its inaccessible material as an unlockable in this route.</div>
+<hr>
+<p><a class="cta" href="../?pack=segasonic-the-hedgehog">Open the spoiler-free interactive guide</a></p>
+<p class="muted small">Part of the 100% guide collection at
+<a href="/guides.html">samimirash.com/guides</a>.</p>
+</div>
+</body>
+</html>

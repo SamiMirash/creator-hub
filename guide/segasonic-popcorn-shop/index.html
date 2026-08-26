@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SegaSonic Popcorn Shop (1993) — 100% collectible guide | Sami Mirash</title>
+<meta name="description" content="Complete SegaSonic Popcorn Shop (1993) guide: 44 collectibles and objectives across 5 areas, with exact locations. Written while playing, no spoilers in the interactive version.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.samimirash.com/guide/segasonic-popcorn-shop/">
+<link rel="stylesheet" href="../guide.css">
+<style>
+  .static-wrap{max-width:760px;margin:0 auto;padding:20px 16px 64px}
+  @media(min-width:1200px){.static-wrap{max-width:920px}}
+  .static-wrap h1{font-size:26px;margin:.2em 0}
+  .static-wrap h2{font-size:20px;margin:1.6em 0 .4em;color:var(--gold)}
+  .static-wrap h3{font-size:16px;margin:1.1em 0 .3em}
+  .static-wrap .lvl{margin:.15em 0 .15em 0;padding-left:12px;border-left:2px solid var(--line)}
+  .static-wrap .lvl b{color:var(--muted);font-weight:600;font-size:12px;
+     text-transform:uppercase;letter-spacing:.6px;display:block}
+  .spoiler-note{border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0}
+  .cta{display:inline-block;margin:8px 0 4px;padding:12px 18px;border-radius:10px;
+     background:var(--gold);color:#151109;font-weight:800;text-decoration:none}
+  .static-wrap img.sk{display:block;width:100%;max-width:560px;margin:8px 0;
+     border:1px solid var(--line);border-radius:8px}
+</style>
+</head>
+<body>
+<div class="static-wrap">
+<a class="homelink" href="/">&#8592; <span>samimirash.com</span></a>
+<h1>SegaSonic Popcorn Shop (1993)</h1>
+<p class="muted">Rev B arcade software through MAME 0.289 on PC; original vending hardware documented separately &middot; 5 areas &middot; 44 tracked items</p>
+
+<div class="spoiler-note">
+  <strong>This page shows everything, including exact locations.</strong>
+  It exists so you can search for one specific collectible and find it.
+  If you are playing blind, use the
+  <a href="../?pack=segasonic-popcorn-shop">interactive spoiler-free version</a> instead — it hides
+  locations until you ask for them, one item at a time.
+</div>
+
+<p><a class="cta" href="../?pack=segasonic-popcorn-shop">Open the spoiler-free interactive guide</a></p>
+<h2>Cabinet Setup and Inputs</h2>
+<p class="muted"><em>You are here when:</em> The emulator launch window, machine-specific input list, and service controls before a customer cycle begins.</p>
+<p>Use the preserved Rev B set. MAME reproduces the screen and sound, but not the vending machinery.</p>
+<h3>Verify the Rev B Build</h3>
+<p class="muted small">System task</p>
+<div class="lvl"><b>Hint</b>Confirm the archived machine set before remapping inputs.</div>
+<div class="lvl"><b>Where</b>Run MAME&#x27;s ROM check against shortname sonicpop.</div>
+<div class="lvl"><b>Full detail</b>Use the 375,267-byte sonicpop.zip archive. Its SHA-1 is bb4af9a31745b8bf44dd582b5c45e3fa315b3a89 and SHA-256 is d9a1512157db4af1f06da3a7895bfd23aba0f082b8a452a823b73c9604a000be; MAME 0.289 must report the set as good.</div>
+<h3>Confirm the Mechanical Boundary</h3>
+<p class="muted small">System task</p>
+<div class="lvl"><b>Hint</b>Separate the video program from the food hardware.</div>
+<div class="lvl"><b>Where</b>Check MAME&#x27;s machine status before starting a transaction.</div>
+<div class="lvl"><b>Full detail</b>Confirm that video and audio are marked good while the driver remains preliminary and mechanical. The emulator can finish the animated sequence, but it cannot heat, season, drop, or present real popcorn; never treat an on-screen completion as a physical dispense test.</div>
+<h3>Map Coin 1</h3>
+<p class="muted small">Cabinet input</p>
+<div class="lvl"><b>Hint</b>Give the customer credit input its own binding.</div>
+<div class="lvl"><b>Where</b>Bind Coin 1 in the machine input list.</div>
+<div class="lvl"><b>Full detail</b>Assign Coin 1 to a separate key or controller button, return to attract mode, and press it once. The screen should leave its idle sequence and open the three-choice panel without requiring a Start input.</div>
+<h3>Map Cup Select 1</h3>
+<p class="muted small">Cabinet input</p>
+<div class="lvl"><b>Hint</b>The first flavour line uses one dedicated switch.</div>
+<div class="lvl"><b>Where</b>Bind Cup Select 1 under this machine&#x27;s inputs.</div>
+<div class="lvl"><b>Full detail</b>Assign Cup Select 1 to an individual button and test it only after inserting a credit. It must choose the left/green panel option by itself; release it before the animated preparation begins.</div>
+<h3>Map Cup Select 2</h3>
+<p class="muted small">Cabinet input</p>
+<div class="lvl"><b>Hint</b>A second flavour line needs another switch.</div>
+<div class="lvl"><b>Where</b>Bind Cup Select 2 separately from Cup Select 1.</div>
+<div class="lvl"><b>Full detail</b>Assign Cup Select 2 to a different button, start a fresh transaction, and confirm it chooses the middle/yellow option without the first switch being held.</div>
+<h3>Map the Third Cup Combination</h3>
+<p class="muted small">Cabinet input</p>
+<div class="lvl"><b>Hint</b>The final flavour shares both selection lines.</div>
+<div class="lvl"><b>Where</b>Prepare a binding that can assert both Cup Select inputs together.</div>
+<div class="lvl"><b>Full detail</b>Insert a new credit, press Cup Select 1 and Cup Select 2 at the same time, then release both. The simultaneous pair selects the right/red option; pressing the switches sequentially can commit an earlier choice instead.</div>
+<h3>Map Both Crank Phases</h3>
+<p class="muted small">Cabinet input</p>
+<div class="lvl"><b>Hint</b>The wheel is represented by two alternating signals.</div>
+<div class="lvl"><b>Where</b>Bind Handle A and Handle B to two reachable controls.</div>
+<div class="lvl"><b>Full detail</b>Assign both handle phases and test them by alternating A-B-A-B during a help prompt. Do not hold both continuously: the original wheel produces changing phase signals, so repeated alternation is what the software reads as rotation.</div>
+<h3>Map the Relay</h3>
+<p class="muted small">Cabinet input</p>
+<div class="lvl"><b>Hint</b>One hidden cabinet signal confirms mechanical progress.</div>
+<div class="lvl"><b>Where</b>Bind the machine input named Relay and note that it toggles.</div>
+<div class="lvl"><b>Full detail</b>Assign Relay to its own key, engage it before the credit, then change its state only when the animation waits for the absent vending mechanism. A permanently inactive line faults immediately, while a fixed state can stall later and open the assistance screen.</div>
+<h3>Map the Service Controls</h3>
+<p class="muted small">Operator input</p>
+<div class="lvl"><b>Hint</b>Keep diagnostics away from customer buttons.</div>
+<div class="lvl"><b>Where</b>Locate Service Mode, Service 1, and Service 2 in the input list.</div>
+<div class="lvl"><b>Full detail</b>Give all three service lines distinct operator-only bindings. Enter diagnostics from attract mode, record which control moves or confirms each page, then leave without inserting a customer credit; do not mix the reset/service line with Cup Select 2.</div>
+<h2>Operator Settings and Attract Display</h2>
+<p class="muted"><em>You are here when:</em> The switch-bank menu and the looping idle presentation shown before any coin is accepted.</p>
+<p>Record each presentation option, then restore the intended everyday configuration before a customer cycle.</p>
+<h3>Review Coin A Schedules</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>The first pricing channel has several ratios.</div>
+<div class="lvl"><b>Where</b>Open Coin A in Machine Configuration.</div>
+<div class="lvl"><b>Full detail</b>Cycle through every Coin A value, note the credit conversion shown by MAME, and restore the desired setting. This changes payment accounting only; it does not create a different animated route.</div>
+<h3>Review Coin B Schedules</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>The second pricing channel is configured independently.</div>
+<div class="lvl"><b>Where</b>Open Coin B beside the first pricing option.</div>
+<div class="lvl"><b>Full detail</b>Inspect every Coin B schedule and restore the chosen value. Keep both pricing records together so an operator can identify which coin line supplied a credit without replaying the transaction.</div>
+<h3>Check Demo Sounds</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>The idle loop can run quietly.</div>
+<div class="lvl"><b>Where</b>Toggle Demo Sounds and return to attract mode.</div>
+<div class="lvl"><b>Full detail</b>Observe one complete attract loop with Demo Sounds enabled and another with it disabled. Restore the preferred state afterward; this switch affects idle audio rather than the paid preparation sequence.</div>
+<h3>Check Assistance Music</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>The fault display has its own music switch.</div>
+<div class="lvl"><b>Where</b>Toggle Trouble BGM before reproducing an assistance state.</div>
+<div class="lvl"><b>Full detail</b>Run the assistance screen once with Trouble BGM enabled and once with it disabled, using the relay or unavailable-choice fault. Confirm the visual warning remains in both cases, then restore the normal audio setting.</div>
+<h3>Record the USA Region</h3>
+<p class="muted small">Presentation variant</p>
+<div class="lvl"><b>Hint</b>One region adds two public-service cards.</div>
+<div class="lvl"><b>Where</b>Set Region to USA and wait through attract mode.</div>
+<div class="lvl"><b>Full detail</b>Choose USA, reset the machine, and record the English presentation plus both civic notice cards before the title loop repeats. The gameplay transaction itself remains the same.</div>
+<h3>Record the Export Region</h3>
+<p class="muted small">Presentation variant</p>
+<div class="lvl"><b>Hint</b>The overseas presentation changes text without replacing every voice.</div>
+<div class="lvl"><b>Where</b>Set Region to Export and begin from a clean reset.</div>
+<div class="lvl"><b>Full detail</b>Select Export, restart the machine, and record its English screen text and Japanese spoken lines through one transaction. Confirm the USA-only notice cards are absent before returning to configuration.</div>
+<h3>Record the Japan Region</h3>
+<p class="muted small">Presentation variant</p>
+<div class="lvl"><b>Hint</b>The home-region presentation uses its original language.</div>
+<div class="lvl"><b>Where</b>Set Region to Japan and restart the attract loop.</div>
+<div class="lvl"><b>Full detail</b>Choose Japan, reset, then capture the Japanese idle, choice, help, completion, and assistance presentations. This is a language variant of the same transaction, not an additional game route.</div>
+<h3>Record the First USA Notice</h3>
+<p class="muted small">Attract display</p>
+<div class="lvl"><b>Hint</b>Stay in the USA loop before inserting a coin.</div>
+<div class="lvl"><b>Where</b>Wait for the grey card with the federal seal.</div>
+<div class="lvl"><b>Full detail</b>With Region set to USA, leave the machine idle until the anti-drug card appears. Capture it before touching Coin 1; a credit interrupts the attract loop and postpones the card until the transaction ends.</div>
+<h3>Record the Second USA Notice</h3>
+<p class="muted small">Attract display</p>
+<div class="lvl"><b>Hint</b>A second message appears elsewhere in the same loop.</div>
+<div class="lvl"><b>Where</b>Continue idling until the white recycling card appears.</div>
+<div class="lvl"><b>Full detail</b>Remain in USA attract mode after the first card and title sequence until the environmental notice is shown. Record the whole card, then allow the loop to return to the title so both additions are confirmed.</div>
+<h3>Check Sensor Advertise</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>A cabinet sensor can add another idle reaction.</div>
+<div class="lvl"><b>Where</b>Toggle Sensor Advertise in Machine Configuration.</div>
+<div class="lvl"><b>Full detail</b>Run one attract loop with Sensor Advertise off, then enable it and restart the loop. The switch permits the sensor-triggered extra animation; it does not alter flavour selection or completion.</div>
+<h3>Trigger the Attract Sensor</h3>
+<p class="muted small">Attract interaction</p>
+<div class="lvl"><b>Hint</b>Test the cabinet detector while no credit is active.</div>
+<div class="lvl"><b>Where</b>With Sensor Advertise enabled, press the Sensor input during attract mode.</div>
+<div class="lvl"><b>Full detail</b>Wait for an ordinary idle scene, assert Sensor once, and release it. Record the added reaction before inserting a coin; repeat only if the first press lands during a title or notice card that cannot respond.</div>
+<h3>Confirm the Unused Switches</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>The final switch positions have no defined function.</div>
+<div class="lvl"><b>Where</b>Inspect the last three entries in the DSW bank.</div>
+<div class="lvl"><b>Full detail</b>Verify that the final three switches are labelled unused by the pinned driver. Leave them at default and do not assign hidden difficulty, serving size, or gameplay effects to positions that expose none.</div>
+<h2>Three-Choice Panel</h2>
+<p class="muted"><em>You are here when:</em> The bright panel with green, yellow, and red buttons that appears immediately after a coin is accepted.</p>
+<p>The screen identifies choices by position and colour. Complete each one on a separate customer cycle.</p>
+<h3>Start a Customer Transaction <span class="muted">(missable)</span></h3>
+<p class="muted small">Customer action</p>
+<div class="lvl"><b>Hint</b>Begin from the normal idle presentation.</div>
+<div class="lvl"><b>Where</b>Insert one Coin 1 credit while the relay is engaged.</div>
+<div class="lvl"><b>Full detail</b>From attract mode, confirm no sold-out line is asserted, engage the Relay, and press Coin 1 once. Wait for the green-yellow-red panel; do not press a cup input while the opening transition is still playing.</div>
+<h3>Record the Green Choice <span class="muted">(missable)</span></h3>
+<p class="muted small">Flavour choice</p>
+<div class="lvl"><b>Hint</b>Use the leftmost colour on one dedicated cycle.</div>
+<div class="lvl"><b>Where</b>Press Cup Select 1 at the three-choice panel.</div>
+<div class="lvl"><b>Full detail</b>Insert a fresh credit, wait until all three coloured buttons are visible, tap Cup Select 1 alone, and release it. Record the chosen picture and the prepared cup before starting another flavour cycle.</div>
+<h3>Record the Yellow Choice <span class="muted">(missable)</span></h3>
+<p class="muted small">Flavour choice</p>
+<div class="lvl"><b>Hint</b>The middle colour needs a separate transaction.</div>
+<div class="lvl"><b>Where</b>Press Cup Select 2 without Cup Select 1.</div>
+<div class="lvl"><b>Full detail</b>Start again from attract mode, insert one credit, and tap only Cup Select 2 at the panel. Confirm the yellow/middle selection advances, then keep both cup inputs released for the rest of the cycle.</div>
+<h3>Record the Red Choice <span class="muted">(missable)</span></h3>
+<p class="muted small">Flavour choice</p>
+<div class="lvl"><b>Hint</b>The rightmost colour uses a combined signal.</div>
+<div class="lvl"><b>Where</b>Press both Cup Select inputs simultaneously.</div>
+<div class="lvl"><b>Full detail</b>Begin a third fresh transaction and assert Cup Select 1 plus Cup Select 2 together at the panel. Release them together once the red/right choice is accepted; if green or yellow advances, retry with tighter simultaneous timing.</div>
+<h3>Record All Three Flavours <span class="muted">(missable)</span></h3>
+<p class="muted small">Full selection</p>
+<div class="lvl"><b>Hint</b>The complete set requires every panel colour.</div>
+<div class="lvl"><b>Where</b>Finish separate green, yellow, and red customer cycles.</div>
+<div class="lvl"><b>Full detail</b>Complete one transaction from each coloured button and retain evidence of the selected panel picture plus its prepared cup. The cabinet offers salt, butter, and curry, but the emulated screen does not provide reliable English labels, so colour and position are the fail-safe identifiers.</div>
+<h3>Test Sold Out Switch 1 <span class="muted">(missable)</span></h3>
+<p class="muted small">Cabinet fault</p>
+<div class="lvl"><b>Hint</b>One stock sensor removes a single choice.</div>
+<div class="lvl"><b>Where</b>Assert Sold Out SW1 before inserting a coin.</div>
+<div class="lvl"><b>Full detail</b>From attract mode, hold only Sold Out SW1, insert one credit, and record which colour becomes unavailable. Release the switch before the next test; identify the disabled choice from the panel instead of assuming physical wiring order.</div>
+<h3>Test Sold Out Switch 2 <span class="muted">(missable)</span></h3>
+<p class="muted small">Cabinet fault</p>
+<div class="lvl"><b>Hint</b>Repeat the stock check with the second line alone.</div>
+<div class="lvl"><b>Where</b>Assert only Sold Out SW2 before the credit.</div>
+<div class="lvl"><b>Full detail</b>Return to a clean attract loop, hold Sold Out SW2 by itself, insert Coin 1, and record the unavailable panel choice. Release both coin and stock inputs before moving to the third line.</div>
+<h3>Test Sold Out Switch 3 <span class="muted">(missable)</span></h3>
+<p class="muted small">Cabinet fault</p>
+<div class="lvl"><b>Hint</b>The final stock line should be isolated too.</div>
+<div class="lvl"><b>Where</b>Assert only Sold Out SW3 for a fresh panel.</div>
+<div class="lvl"><b>Full detail</b>Start from attract mode, hold Sold Out SW3 alone, and insert one credit. Capture the resulting unavailable colour, then clear the line so the next normal transaction restores all three choices.</div>
+<h3>Test the All-Sold-Out State <span class="muted">(missable)</span></h3>
+<p class="muted small">Cabinet fault</p>
+<div class="lvl"><b>Hint</b>No available cup path sends the machine to assistance.</div>
+<div class="lvl"><b>Where</b>Assert all three Sold Out switches before inserting a credit.</div>
+<div class="lvl"><b>Full detail</b>Hold Sold Out SW1, SW2, and SW3 together, then press Coin 1 once. Confirm that the ordinary flavour panel cannot proceed and the assistance presentation appears; clear every stock line before returning to customer use.</div>
+<h2>Conveyor and Crank Station</h2>
+<p class="muted"><em>You are here when:</em> The side-view belt where a prepared cup travels from the small control pedestal toward the sloped machinery.</p>
+<p>The animated route continues even with weak input, but active alternating crank signals shorten the help phase.</p>
+<h3>Reach the Conveyor <span class="muted">(missable)</span></h3>
+<p class="muted small">Route task</p>
+<div class="lvl"><b>Hint</b>Release the selection buttons after the choice registers.</div>
+<div class="lvl"><b>Where</b>Wait for the prepared cup to enter the striped belt.</div>
+<div class="lvl"><b>Full detail</b>After choosing a colour, keep Cup Select 1 and 2 released. Allow the preparation handoff to finish until the side-view conveyor fills the screen and the cup begins moving away from the pedestal.</div>
+<h3>Crank Through the Conveyor Help <span class="muted">(missable)</span></h3>
+<p class="muted small">Crank action</p>
+<div class="lvl"><b>Hint</b>Respond when the red wheel prompt appears.</div>
+<div class="lvl"><b>Where</b>Alternate Handle A and Handle B continuously along the belt.</div>
+<div class="lvl"><b>Full detail</b>Start a steady A-B-A-B pattern as soon as the help prompt appears and maintain it while the cup is carried across the moving belt. Either rotation direction is acceptable; consistent phase changes matter more than pressing both lines together.</div>
+<h3>Record the Idle Conveyor Variant <span class="muted">(missable)</span></h3>
+<p class="muted small">Input variant</p>
+<div class="lvl"><b>Hint</b>One comparison cycle should receive no wheel input.</div>
+<div class="lvl"><b>Where</b>Leave Handle A and Handle B untouched during the first help prompt.</div>
+<div class="lvl"><b>Full detail</b>Begin a separate customer transaction and provide no crank signals after selection. Record the extended help presentation and its automatic evasive animation; the sequence continues rather than cancelling the purchased order.</div>
+<h3>Advance the First Relay Stage <span class="muted">(missable)</span></h3>
+<p class="muted small">Mechanical handshake</p>
+<div class="lvl"><b>Hint</b>A stalled belt may be waiting for cabinet hardware.</div>
+<div class="lvl"><b>Where</b>Change the Relay state when the animation stops progressing.</div>
+<div class="lvl"><b>Full detail</b>If the sequence remains on the belt after the crank demonstration, tap the bound Relay once and release it. Wait several seconds before changing it again; rapid toggling can produce an assistance fault instead of the next preparation stage.</div>
+<h3>Reach the Stir Station <span class="muted">(missable)</span></h3>
+<p class="muted small">Route task</p>
+<div class="lvl"><b>Hint</b>Let the belt handoff finish without resetting.</div>
+<div class="lvl"><b>Where</b>Remain through the sloped-machine transition until the second red wheel appears.</div>
+<div class="lvl"><b>Full detail</b>After the cup exits the belt, leave all selection buttons released and allow the automatic transition to complete. Stop changing Relay once the large covered kettle and second crank prompt occupy the screen.</div>
+<h2>Stir Station and Cup Return</h2>
+<p class="muted"><em>You are here when:</em> The covered kettle beside the large red wheel, followed by the clear floor where the completed cup is carried off-screen.</p>
+<p>MAME can show the ending presentation but cannot reproduce the cabinet&#x27;s cooking or dispensing hardware.</p>
+<h3>Crank Through the Stir Help <span class="muted">(missable)</span></h3>
+<p class="muted small">Crank action</p>
+<div class="lvl"><b>Hint</b>Use the same phase rhythm at the second wheel.</div>
+<div class="lvl"><b>Where</b>Alternate Handle A and Handle B while the covered kettle is present.</div>
+<div class="lvl"><b>Full detail</b>Resume a steady A-B-A-B sequence when the second red wheel prompt appears. Continue until the intervention animation clears and the cup-return scene begins; release both phases afterward so they cannot affect the next attract loop.</div>
+<h3>Record the Idle Stir Variant <span class="muted">(missable)</span></h3>
+<p class="muted small">Input variant</p>
+<div class="lvl"><b>Hint</b>A separate cycle can show the unattended outcome.</div>
+<div class="lvl"><b>Where</b>Do not touch either Handle input at the second station.</div>
+<div class="lvl"><b>Full detail</b>Reach the covered kettle on a fresh transaction and leave Handle A and Handle B idle throughout the help prompt. Record the longer interference sequence and confirm that it still advances toward the same customer completion.</div>
+<h3>Advance the Second Relay Stage <span class="muted">(missable)</span></h3>
+<p class="muted small">Mechanical handshake</p>
+<div class="lvl"><b>Hint</b>The final wait may need another hardware confirmation.</div>
+<div class="lvl"><b>Where</b>Toggle Relay once if the second station stops progressing.</div>
+<div class="lvl"><b>Full detail</b>After the crank evidence is complete, change Relay to its opposite state one time and wait. If nothing moves, return it once after several seconds; do not pulse it continuously, because the software interprets an invalid mechanism state as a service problem.</div>
+<h3>Complete the Animated Transaction <span class="muted">(missable)</span></h3>
+<p class="muted small">Route task</p>
+<div class="lvl"><b>Hint</b>Keep watching after the final wheel disappears.</div>
+<div class="lvl"><b>Where</b>Remain until the prepared cup is carried beyond the screen edge.</div>
+<div class="lvl"><b>Full detail</b>Release the crank, cup, coin, and sensor inputs when the kettle sequence ends. Let the cup-return presentation play without resetting, then wait for the title or attract scene to confirm that the software transaction completed.</div>
+<h3>Confirm Both Crank Outcomes <span class="muted">(missable)</span></h3>
+<p class="muted small">Outcome check</p>
+<div class="lvl"><b>Hint</b>Performance changes the waiting animation, not the purchase.</div>
+<div class="lvl"><b>Where</b>Finish one active-crank cycle and one idle-crank cycle.</div>
+<div class="lvl"><b>Full detail</b>Record complete transactions with continuous crank input and with none. Compare their help duration and intervention animation, then confirm both reach the cup-return presentation; neither route exposes a score, rank, failure ending, or reduced software reward.</div>
+<h3>Collect the Physical Popcorn Cup <span class="muted">(missable)</span></h3>
+<p class="muted small">Original-cabinet action</p>
+<div class="lvl"><b>Hint</b>The real machine finishes outside the video screen.</div>
+<div class="lvl"><b>Where</b>On original hardware, wait for the dispense bay after the animation.</div>
+<div class="lvl"><b>Full detail</b>Use only a maintained physical cabinet with an operator present. After the on-screen cup return, wait until the machine finishes cooking and releases the purchased cup, then remove it from the marked bay; this step is impossible under ordinary MAME emulation.</div>
+<h3>Confirm MAME Ends Without Dispensing <span class="muted">(missable)</span></h3>
+<p class="muted small">Emulation boundary</p>
+<div class="lvl"><b>Hint</b>The emulator stops at the software boundary.</div>
+<div class="lvl"><b>Where</b>Finish a complete animated cycle and observe the host PC.</div>
+<div class="lvl"><b>Full detail</b>Allow the final presentation to return to attract mode, then verify that MAME produced no physical-food or hopper event. Mark the software route complete and leave the original-cabinet dispense requirement explicitly unfulfilled unless real maintained hardware was used.</div>
+<h3>Reproduce the Relay Assistance State <span class="muted">(missable)</span></h3>
+<p class="muted small">Cabinet fault</p>
+<div class="lvl"><b>Hint</b>A missing mechanism confirmation has its own presentation.</div>
+<div class="lvl"><b>Where</b>Start a controlled transaction with Relay inactive or fixed.</div>
+<div class="lvl"><b>Full detail</b>From a clean configuration, disengage Relay before the credit for the immediate fault, or keep one state through later waits for a delayed fault. Record the assistance screen, then restore a valid alternating stage state before any normal customer cycle.</div>
+<h3>Return to Attract Mode <span class="muted">(missable)</span></h3>
+<p class="muted small">Route task</p>
+<div class="lvl"><b>Hint</b>Do not reset as soon as the cup leaves.</div>
+<div class="lvl"><b>Where</b>Wait until the title and idle presentation resume.</div>
+<div class="lvl"><b>Full detail</b>After the cup-return scene, keep every customer input released and allow the closing animation to finish. Confirm that the machine re-enters its title/attract loop and accepts a new Coin 1 input; this closes the transaction cleanly.</div>
+<hr>
+<p><a class="cta" href="../?pack=segasonic-popcorn-shop">Open the spoiler-free interactive guide</a></p>
+<p class="muted small">Part of the 100% guide collection at
+<a href="/guides.html">samimirash.com/guides</a>.</p>
+</div>
+</body>
+</html>

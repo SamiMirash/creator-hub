@@ -1,0 +1,1317 @@
+{
+ "id": "sonic-the-hedgehog-2-1992-genesis",
+ "game": "Sonic the Hedgehog 2 (Mega Drive, World Rev B)",
+ "target": "100% of the original World Rev B Mega Drive cartridge: every playable configuration, emerald, fixed secret, alternate route, competitive mode, code, completion branch, and verifiable cartridge oddity.",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-23T09:49:17Z",
+ "areas": [
+  {
+   "id": "sonic2-setup",
+   "name": "Cartridge Setup and Routes",
+   "location_cue": "The title screen, player selection, and opening controls.",
+   "note": "Lock the original World Rev B cartridge route before creating character-specific completion states.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-revb-build-audit",
+     "type": "optional",
+     "safe_type": "Build check",
+     "label": "World Rev B Cartridge Check",
+     "missable": false,
+     "levels": {
+      "1": "Confirm the cartridge revision before relying on route behaviour.",
+      "2": "Use the World Rev B ROM and verify its SHA-1 before starting.",
+      "3": "Load the 1,048,576-byte World Rev B image whose SHA-1 is 2af1003247aec262089c8df22d05e80d04a1b5e4. This is the highest original cartridge revision; it corrects three faults without adding or removing playable content."
+     }
+    },
+    {
+     "id": "sonic2-sonic-tails-route",
+     "type": "optional",
+     "safe_type": "Playable route",
+     "label": "Sonic and Tails Route",
+     "missable": true,
+     "levels": {
+      "1": "Begin with the paired arrangement shown on the menu.",
+      "2": "Choose Sonic and Tails under Player Select, then complete the cartridge.",
+      "3": "Select the paired option and finish the full route. A second controller may direct Tails during difficult split-path ring collections; otherwise the companion follows automatically."
+     }
+    },
+    {
+     "id": "sonic2-sonic-solo-route",
+     "type": "optional",
+     "safe_type": "Playable route",
+     "label": "Sonic Alone Route",
+     "missable": true,
+     "levels": {
+      "1": "One menu choice removes the companion without changing the stages.",
+      "2": "Choose Sonic Alone under Player Select and complete the cartridge.",
+      "3": "Select Sonic Alone, complete every zone, collect the full emerald set, demonstrate the powered transformation, and clear the final uninterrupted encounters on this configuration."
+     }
+    },
+    {
+     "id": "sonic2-tails-solo-route",
+     "type": "optional",
+     "safe_type": "Playable route",
+     "label": "Tails Alone Route",
+     "missable": true,
+     "levels": {
+      "1": "The third configuration has its own completion record.",
+      "2": "Choose Tails Alone under Player Select and complete the cartridge.",
+      "3": "Select Tails Alone and finish the complete route. The seven emeralds remain collectible, but this character cannot trigger the ring-powered transformation, so record the emerald set and route clear separately."
+     }
+    },
+    {
+     "id": "sonic2-spin-dash",
+     "type": "interaction",
+     "safe_type": "Technique",
+     "label": "Spin Dash",
+     "missable": false,
+     "levels": {
+      "1": "A stationary start can store speed before release.",
+      "2": "Crouch, tap Jump repeatedly, then release Down to launch.",
+      "3": "Hold Down while standing, press Jump one or more times to charge, and release Down. Use the move for low tunnels and controlled launches, but avoid charging on a moving platform or near an exposed edge."
+     }
+    },
+    {
+     "id": "sonic2-ring-lives",
+     "type": "interaction",
+     "safe_type": "Completion check",
+     "label": "Ring Life Awards",
+     "missable": true,
+     "levels": {
+      "1": "Two carried-ring milestones grant more attempts.",
+      "2": "Reach 100 rings, then 200 rings, without losing the carried total.",
+      "3": "Build the counter to 100 for the first extra life and continue to 200 for the second during the same act. Taking damage drops the carried total, so use a safe ring-rich route and a state before the milestone."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-emerald-hill",
+   "name": "Emerald Hill Zone",
+   "location_cue": "Bright grassland with loops, waterfalls, and palm-lined cliffs.",
+   "note": "Inspect the fixed side routes before leaving; the cartridge cannot reopen an earlier zone during normal play.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-emerald-hill-complete",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Emerald Hill Zone",
+     "missable": true,
+     "levels": {
+      "1": "Learn how this place moves before committing to its faster routes.",
+      "2": "Traverse every act of Emerald Hill Zone, using checkpoints before risky side paths.",
+      "3": "Clear the zone in one cartridge run. Use the open upper paths to avoid losing rings in the lower channels. Preserve rings for mistakes, activate every checkpoint you pass, and finish all physical exit encounters before the outgoing transition."
+     }
+    },
+    {
+     "id": "sonic2-eh-act1-upper-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Upper-Tunnel Life",
+     "missable": true,
+     "levels": {
+      "1": "A fast launch beyond consecutive loops reaches more than open sky.",
+      "2": "After the second loop, take the ramp into the concealed upper tunnel.",
+      "3": "Maintain speed through the opening loops and meet the ramp squarely. Let its arc carry you into the tunnel above the normal route, then break the extra-life box before dropping back down."
+     }
+    },
+    {
+     "id": "sonic2-eh-act2-waterfall-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Waterfall-Chamber Life",
+     "missable": true,
+     "levels": {
+      "1": "One small platform is also a concealed elevator.",
+      "2": "Stand on the falling platform beside the small waterfall in Act 2.",
+      "3": "Ride the platform down instead of jumping away. It lowers into a hidden chamber containing an extra-life box; collect it, then leave through either passable side wall."
+     }
+    },
+    {
+     "id": "sonic2-eh-act2-floating-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Floating-Ledge Life",
+     "missable": true,
+     "levels": {
+      "1": "A distant prize depends on letting a spring aim for you.",
+      "2": "Use the strong red diagonal spring before the isolated late ledge.",
+      "3": "Hit the red diagonal spring at full strength and release the directional controls during flight so the arc stays true. Land on the yellow spring, then let it send you onto the floating extra-life ledge."
+     }
+    },
+    {
+     "id": "sonic2-eh-checkpoint-emerald-sweep",
+     "type": "collectible",
+     "safe_type": "Emerald opportunity",
+     "label": "Emerald Hill Checkpoint Sweep",
+     "missable": true,
+     "levels": {
+      "1": "The opening landscape contains enough gates for several early attempts.",
+      "2": "Rebuild 50 rings between its eight checkpoints and use each untouched star gate.",
+      "3": "Carry at least 50 rings into a checkpoint, then jump into the stars that appear above it before they fade. After returning with zero carried rings, rebuild the total before the next unused checkpoint; the zone contains eight opportunities across both acts."
+     }
+    },
+    {
+     "id": "sonic2-eh-perfect-bonus",
+     "type": "optional",
+     "safe_type": "Completion challenge",
+     "label": "Emerald Hill Perfect Bonus",
+     "missable": true,
+     "levels": {
+      "1": "A clean route can reward collecting the stage itself, not its containers.",
+      "2": "Collect every free-standing ring in either act before its finish.",
+      "3": "Choose one act, scout every upper and lower branch with save states, then perform a clean sweep before touching the end marker. Only free-standing rings count; ignore ring boxes and other generated rings. The results tally awards 50,000 points when none were missed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-chemical-plant",
+   "name": "Chemical Plant Zone",
+   "location_cue": "Industrial tubes, moving blocks, and rising coloured liquid.",
+   "note": "Inspect the fixed side routes before leaving; the cartridge cannot reopen an earlier zone during normal play.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-chemical-plant-complete",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Chemical Plant Zone",
+     "missable": true,
+     "levels": {
+      "1": "Learn how this place moves before committing to its faster routes.",
+      "2": "Traverse every act of Chemical Plant Zone, using checkpoints before risky side paths.",
+      "3": "Clear the zone in one cartridge run. Keep the upper route whenever the liquid chambers begin to close. Preserve rings for mistakes, activate every checkpoint you pass, and finish all physical exit encounters before the outgoing transition."
+     }
+    },
+    {
+     "id": "sonic2-cp-act2-side-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Early Side Life",
+     "missable": true,
+     "levels": {
+      "1": "An early wall opening rewards a brief detour.",
+      "2": "Check the side entrance near the beginning of Act 2.",
+      "3": "Move slowly through the opening section and enter the shallow side passage instead of following the main slope. Break the extra-life box, then return before committing to the next tube."
+     }
+    },
+    {
+     "id": "sonic2-cp-act2-submerged-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Submerged-Spike Life",
+     "missable": true,
+     "levels": {
+      "1": "A dangerous lower pocket hides a life beyond its first lifts.",
+      "2": "Pass the first pair of yellow water platforms and continue right through the submerged spike pits.",
+      "3": "Activate the nearby checkpoint first. Ride the first two yellow platforms, enter the water to their right, and cross each spike pocket with short controlled jumps. The extra-life box waits at the far-right end; leave before the air countdown expires."
+     }
+    },
+    {
+     "id": "sonic2-cp-act2-upper-bypass",
+     "type": "secret",
+     "safe_type": "Alternate route",
+     "label": "Act 2 Upper Liquid-Chamber Bypass",
+     "missable": true,
+     "levels": {
+      "1": "The highest landing after the slopes avoids the famous lower trap.",
+      "2": "After the loops and slopes, land on the moving-block ledge and remain above the main route.",
+      "3": "Carry momentum onto the moving blocks, wait for a safe ledge alignment, then follow the winding upper platforms and tubes. This rejoins beyond the rising-liquid chamber, avoiding its timed climb entirely."
+     }
+    },
+    {
+     "id": "sonic2-cp-unused-tube",
+     "type": "secret",
+     "safe_type": "Inaccessible discovery",
+     "label": "Unused Tube Entrance",
+     "missable": false,
+     "levels": {
+      "1": "One visible tube was never given a normal doorway.",
+      "2": "Inspect the sealed tube route without using debug mode.",
+      "3": "Use the level map or the debug viewer only to document the unused tube, then reload your clean state. The finished cartridge supplies no intended entrance, so it is not a normal route requirement."
+     }
+    },
+    {
+     "id": "sonic2-cp-perfect-bonus",
+     "type": "optional",
+     "safe_type": "Completion challenge",
+     "label": "Chemical Plant Perfect Bonus",
+     "missable": true,
+     "levels": {
+      "1": "A clean route can reward collecting the stage itself, not its containers.",
+      "2": "Collect every free-standing ring in one Chemical Plant act.",
+      "3": "Use states to chart mutually branching tubes first, then combine the reachable branches into one uninterrupted ring sweep before finishing. Only free-standing rings count; ignore ring boxes and other generated rings. The results tally awards 50,000 points when none were missed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-aquatic-ruin",
+   "name": "Aquatic Ruin Zone",
+   "location_cue": "Partly submerged stone ruins with pillars, springs, and spears.",
+   "note": "Inspect the fixed side routes before leaving; the cartridge cannot reopen an earlier zone during normal play.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-aquatic-ruin-complete",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Aquatic Ruin Zone",
+     "missable": true,
+     "levels": {
+      "1": "Learn how this place moves before committing to its faster routes.",
+      "2": "Traverse every act of Aquatic Ruin Zone, using checkpoints before risky side paths.",
+      "3": "Clear the zone in one cartridge run. Use the dry upper architecture when possible and surface before the air warning accelerates. Preserve rings for mistakes, activate every checkpoint you pass, and finish all physical exit encounters before the outgoing transition."
+     }
+    },
+    {
+     "id": "sonic2-ar-act1-bridge-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Log-Bridge Life",
+     "missable": true,
+     "levels": {
+      "1": "A hollow bridge can be entered instead of crossed.",
+      "2": "Roll through the small log bridge between two vertical platforms in Act 1.",
+      "3": "Approach in a roll or launch a short Spin Dash through the bridge wall. Break the extra-life box inside, then leave quickly so the nearby moving platforms cannot pin the character against the structure."
+     }
+    },
+    {
+     "id": "sonic2-ar-act2-high-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 High-Ledge Life",
+     "missable": true,
+     "levels": {
+      "1": "A powerful spring points toward a prize beyond a narrow pillar.",
+      "2": "Take the high red spring, stop on the grey pillar, then jump right.",
+      "3": "Let the red spring launch you upward, brake as soon as you land on the slim grey pillar, and make a controlled rightward jump to the separate ledge holding the extra-life box and ring boxes."
+     }
+    },
+    {
+     "id": "sonic2-ar-act2-exit-wall-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Exit-Wall Life",
+     "missable": true,
+     "levels": {
+      "1": "The last return to air has a passable boundary.",
+      "2": "After the final water exit, test the wall on the left.",
+      "3": "Surface at the late water exit, turn around before continuing right, and jump or roll into the left wall. Enter the concealed pocket, break the extra-life box, and return to the exit path."
+     }
+    },
+    {
+     "id": "sonic2-ar-act2-breakaway-platform",
+     "type": "secret",
+     "safe_type": "Alternate route",
+     "label": "Act 2 Breakaway Pendulum Route",
+     "missable": true,
+     "levels": {
+      "1": "A swinging platform changes purpose at the edge of its arc.",
+      "2": "Ride the second pendulum platform to its far-right swing.",
+      "3": "Remain aboard until the platform reaches its rightmost point. It detaches from the chain and carries you onward as a floating platform; stay centred, then jump to the upper route when it aligns."
+     }
+    },
+    {
+     "id": "sonic2-ar-act1-perfect",
+     "type": "optional",
+     "safe_type": "Completion challenge",
+     "label": "Aquatic Ruin Act 1 Perfect Bonus",
+     "missable": true,
+     "levels": {
+      "1": "A clean route can reward collecting the stage itself, not its containers.",
+      "2": "Sweep every free-standing ring in Act 1; Act 2 cannot be completed normally.",
+      "3": "Chart both dry and submerged branches before the run, then collect their loose rings in one route. Do not treat Act 2's inaccessible ring cluster as a required perfect result. Only free-standing rings count; ignore ring boxes and other generated rings. The results tally awards 50,000 points when none were missed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-casino-night",
+   "name": "Casino Night Zone",
+   "location_cue": "Neon pinball chambers filled with flippers, bumpers, and slots.",
+   "note": "Inspect the fixed side routes before leaving; the cartridge cannot reopen an earlier zone during normal play.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-casino-night-complete",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Casino Night Zone",
+     "missable": true,
+     "levels": {
+      "1": "Learn how this place moves before committing to its faster routes.",
+      "2": "Traverse every act of Casino Night Zone, using checkpoints before risky side paths.",
+      "3": "Clear the zone in one cartridge run. Use deliberate flipper inputs and avoid being carried past side openings by bumpers. Preserve rings for mistakes, activate every checkpoint you pass, and finish all physical exit encounters before the outgoing transition."
+     }
+    },
+    {
+     "id": "sonic2-cn-act1-wall-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Pinball-Wall Life",
+     "missable": true,
+     "levels": {
+      "1": "A tall table has a usable boundary on its right.",
+      "2": "Enter the right wall of the tall pinball table in Act 1.",
+      "3": "Climb the tall pinball chamber, steer into its right boundary rather than bouncing back to the centre, and follow the concealed passage to the extra-life box before returning to the table."
+     }
+    },
+    {
+     "id": "sonic2-cn-act2-block-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Moving-Block Life",
+     "missable": true,
+     "levels": {
+      "1": "The safe opening appears after the obstruction travels away.",
+      "2": "In the moving-block corridor, wait for the block to pass left, then drop into the right opening.",
+      "3": "Stop before entering the corridor and watch one complete cycle. When the block moves fully left, step into the hole on the right, descend to the extra-life box, and leave before the block can close the route."
+     }
+    },
+    {
+     "id": "sonic2-cn-lower-bumper-route",
+     "type": "secret",
+     "safe_type": "Alternate route",
+     "label": "Lower Bumper Route",
+     "missable": true,
+     "levels": {
+      "1": "Falling below the main tables can reveal a separate path.",
+      "2": "Allow a controlled drop into the lower bumper corridor, then follow its springs.",
+      "3": "Create a state before the descent, drop between the table edges without touching the side launcher, and use each lower bumper and spring in sequence until the route rejoins the main floor."
+     }
+    },
+    {
+     "id": "sonic2-cn-jackpot",
+     "type": "interaction",
+     "safe_type": "Completion check",
+     "label": "Slot-Machine Jackpot",
+     "missable": true,
+     "levels": {
+      "1": "Matching the rarest three symbols gives the table's largest ring payout.",
+      "2": "Enter a slot machine and stop three Jackpot symbols.",
+      "3": "Enter with room below the ring cap, hold the Jump button while the reels spin to favour a match, and stop three Jackpot symbols. Confirm the 150-ring payout and the extra life when the total crosses 100."
+     }
+    },
+    {
+     "id": "sonic2-cn-negative-spin",
+     "type": "interaction",
+     "safe_type": "Completion check",
+     "label": "Slot-Machine Ring Loss",
+     "missable": true,
+     "levels": {
+      "1": "One three-symbol result removes rings instead of awarding them.",
+      "2": "Stop three villain-face symbols in a slot machine.",
+      "3": "Bank an emulator state, carry some rings into a slot, and deliberately stop the three matching negative symbols. The machine removes up to 100 rings without killing the character; reload afterward so the demonstration does not damage the completion run."
+     }
+    },
+    {
+     "id": "sonic2-cn-act1-perfect",
+     "type": "optional",
+     "safe_type": "Completion challenge",
+     "label": "Casino Night Act 1 Perfect Bonus",
+     "missable": true,
+     "levels": {
+      "1": "A clean route can reward collecting the stage itself, not its containers.",
+      "2": "Sweep Act 1's free-standing rings; generated slot winnings are irrelevant.",
+      "3": "Map every pinball branch with states, then gather all loose stage rings before finishing. Act 2 contains an inaccessible loose-ring group and is excluded from normal perfect completion. Only free-standing rings count; ignore ring boxes and other generated rings. The results tally awards 50,000 points when none were missed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-hill-top",
+   "name": "Hill Top Zone",
+   "location_cue": "High grass platforms above caves, lifts, and lava.",
+   "note": "Inspect the fixed side routes before leaving; the cartridge cannot reopen an earlier zone during normal play.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-hill-top-complete",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Hill Top Zone",
+     "missable": true,
+     "levels": {
+      "1": "Learn how this place moves before committing to its faster routes.",
+      "2": "Traverse every act of Hill Top Zone, using checkpoints before risky side paths.",
+      "3": "Clear the zone in one cartridge run. Wait for lava cycles and moving lifts rather than jumping into an unseen lower chamber. Preserve rings for mistakes, activate every checkpoint you pass, and finish all physical exit encounters before the outgoing transition."
+     }
+    },
+    {
+     "id": "sonic2-ht-act1-vine-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Vine-Lift Life",
+     "missable": true,
+     "levels": {
+      "1": "The middle lift in a large cave rises beside a hidden prize.",
+      "2": "In the three-lift lava cave, descend with the middle vine lift near the left wall.",
+      "3": "Enter the broad lower cave and identify its three hanging lifts. Ride the middle one while staying close to the left wall, then jump into the upper recess and break the extra-life box without dropping into the lava."
+     }
+    },
+    {
+     "id": "sonic2-ht-act2-fall-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Wall-Fall Life",
+     "missable": true,
+     "levels": {
+      "1": "A careful fall from the high route reaches a short side tunnel.",
+      "2": "Walk off the high-path edge and hold against the right wall while falling.",
+      "3": "Save before leaving the upper path. Step off without jumping, press right during the descent, and enter the short tunnel cut into the wall. Collect the extra life, then use the adjoining route to recover safely."
+     }
+    },
+    {
+     "id": "sonic2-ht-act2-upper-route",
+     "type": "secret",
+     "safe_type": "Alternate route",
+     "label": "Act 2 Upper Invincibility Route",
+     "missable": true,
+     "levels": {
+      "1": "The highest branch conceals a protected passage.",
+      "2": "Remain on the upper Act 2 route and inspect the passage around its invincibility box.",
+      "3": "Use the rising platforms and springs to keep the top branch, enter the recessed passage containing the invincibility box, then move through the hazardous section while the effect remains active."
+     }
+    },
+    {
+     "id": "sonic2-ht-act2-dual-perfect",
+     "type": "optional",
+     "safe_type": "Completion challenge",
+     "label": "Hill Top Act 2 Dual-Route Perfect Bonus",
+     "missable": true,
+     "levels": {
+      "1": "A clean route can reward collecting the stage itself, not its containers.",
+      "2": "Use both controllers to divide Sonic and Tails between incompatible ring branches.",
+      "3": "Place one character on each route before the split closes, collect both groups with separate controllers, then reunite them and sweep the remaining free-standing rings before the finish. Only free-standing rings count; ignore ring boxes and other generated rings. The results tally awards 50,000 points when none were missed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-mystic-cave",
+   "name": "Mystic Cave Zone",
+   "location_cue": "Enclosed mine passages with vines, crates, crushers, and spike pits.",
+   "note": "Inspect the fixed side routes before leaving; the cartridge cannot reopen an earlier zone during normal play.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-mystic-cave-complete",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Mystic Cave Zone",
+     "missable": true,
+     "levels": {
+      "1": "Learn how this place moves before committing to its faster routes.",
+      "2": "Traverse every act of Mystic Cave Zone, using checkpoints before risky side paths.",
+      "3": "Clear the zone in one cartridge run. Observe crushers and crate cycles before entering their narrow spaces. Preserve rings for mistakes, activate every checkpoint you pass, and finish all physical exit encounters before the outgoing transition."
+     }
+    },
+    {
+     "id": "sonic2-mc-act2-pit-warning",
+     "type": "optional",
+     "safe_type": "Missable warning",
+     "label": "Act 2 First Late Pit",
+     "missable": true,
+     "levels": {
+      "1": "Three similar late openings do not offer equal recovery.",
+      "2": "Treat the first of the three late spike pits as fatal in this cartridge.",
+      "3": "Create a state before the late pit sequence and stay on the upper platforms over the first opening. Unlike later releases, World Rev B has no escape route there; falling in forces a lost life and restarts from the last checkpoint."
+     }
+    },
+    {
+     "id": "sonic2-mc-act2-pit-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Second-Pit Life",
+     "missable": true,
+     "levels": {
+      "1": "The next similar opening is deliberately recoverable.",
+      "2": "Drop into the second late pit, collect its extra life, then use the spring.",
+      "3": "After safely passing the first fatal opening, enter the second pit from its centre. Land on the internal ledges, break the extra-life box, and use the spring at the bottom to return to the route."
+     }
+    },
+    {
+     "id": "sonic2-mc-act2-left-shortcut",
+     "type": "secret",
+     "safe_type": "Alternate route",
+     "label": "Act 2 Leftward Shortcut",
+     "missable": true,
+     "levels": {
+      "1": "A gap between opposing springs continues in the unexpected direction.",
+      "2": "Drop between the paired springboards and travel left at the lower level.",
+      "3": "Stop bouncing between the horizontal springs, fall through the central opening, and immediately turn left. Follow the lower corridor until its spring carries you back to a later section of the main route."
+     }
+    },
+    {
+     "id": "sonic2-mc-act1-perfect",
+     "type": "optional",
+     "safe_type": "Completion challenge",
+     "label": "Mystic Cave Act 1 Perfect Bonus",
+     "missable": true,
+     "levels": {
+      "1": "A clean route can reward collecting the stage itself, not its containers.",
+      "2": "Collect every loose ring in Act 1; Act 2's sealed rings make its result impossible normally.",
+      "3": "Plan a route through the lever-controlled bridges and lower corridors, then sweep every reachable branch before the exit. Do not use debug or collision glitches to force an Act 2 bonus. Only free-standing rings count; ignore ring boxes and other generated rings. The results tally awards 50,000 points when none were missed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-oil-ocean",
+   "name": "Oil Ocean Zone",
+   "location_cue": "Pipework, furnaces, fans, and platforms above a dark liquid surface.",
+   "note": "Inspect the fixed side routes before leaving; the cartridge cannot reopen an earlier zone during normal play.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-oil-ocean-complete",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Oil Ocean Zone",
+     "missable": true,
+     "levels": {
+      "1": "Learn how this place moves before committing to its faster routes.",
+      "2": "Traverse every act of Oil Ocean Zone, using checkpoints before risky side paths.",
+      "3": "Clear the zone in one cartridge run. Use fans and transport spheres carefully; prolonged contact with the oil eventually pulls the character under. Preserve rings for mistakes, activate every checkpoint you pass, and finish all physical exit encounters before the outgoing transition."
+     }
+    },
+    {
+     "id": "sonic2-oo-act1-slide-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Upper-Slide Life",
+     "missable": true,
+     "levels": {
+      "1": "A second leftward oil slide can feed a high return path.",
+      "2": "Near the transport spheres, climb the second leftward oil slide, then drop from its top to the right.",
+      "3": "Approach the second slide with enough speed to climb against its flow, reach the upper lip, and step off to the right. Fall onto the hidden ledge, break the extra-life box, then rejoin the nearby sphere route."
+     }
+    },
+    {
+     "id": "sonic2-oo-hidden-spring",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Concealed Golden-Pipe Spring",
+     "missable": true,
+     "levels": {
+      "1": "Decorative piping above two moving hazards hides a vertical launcher.",
+      "2": "Jump into the golden pipework above the paired floor hazards.",
+      "3": "Pass the first furnace route's transport spheres and stop beside the two moving floor hazards. Jump into the gold piping at the far right to find the hidden spring; use repeated angled bounces to reach the purple ledges above."
+     }
+    },
+    {
+     "id": "sonic2-oo-act2-ledge-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Invincibility-and-Life Ledge",
+     "missable": true,
+     "levels": {
+      "1": "The prize lies below a sphere, after a protected step.",
+      "2": "From the raised platform, walk under the transport sphere and drop right past the invincibility box.",
+      "3": "Use the concealed spring route to reach the high ledge, collect the invincibility box on the first step, then walk off its right edge. Land on the lower extra-life box before entering the blocked furnace route."
+     }
+    },
+    {
+     "id": "sonic2-oo-breakaway-pendulum",
+     "type": "secret",
+     "safe_type": "Alternate route",
+     "label": "Breakaway Oil Pendulum",
+     "missable": true,
+     "levels": {
+      "1": "One swinging platform becomes a raft at maximum extension.",
+      "2": "Ride the Act 2 pendulum platform through its far-right swing.",
+      "3": "Stand near the platform's centre and remain aboard until the chain reaches its rightmost angle. The platform breaks free and floats on the oil; ride it until a safe jump to the next fixed ledge appears."
+     }
+    },
+    {
+     "id": "sonic2-oo-secret-end-route",
+     "type": "secret",
+     "safe_type": "Alternate route",
+     "label": "Secret Upper End Route",
+     "missable": true,
+     "levels": {
+      "1": "The upward oil slide near the convergence can be climbed backward.",
+      "2": "Climb the right-hand oil slide, re-enter it for speed, and launch onto the upper platform.",
+      "3": "At the route convergence, jump repeatedly up the rightward rising slide and squeeze below the tank. Drop back into the slide to build momentum, steer onto the platform above, then follow the hidden route for 30 rings and invincibility."
+     }
+    },
+    {
+     "id": "sonic2-oo-mega-sonic",
+     "type": "secret",
+     "safe_type": "Cartridge glitch",
+     "label": "Mega Sonic Movement Glitch",
+     "missable": true,
+     "levels": {
+      "1": "A furnace-and-sphere misroute can leave temporary movement values active.",
+      "2": "At the fourth furnace, hold right into the tank, miss the first sphere, and rebound from the spikes into it.",
+      "3": "Make a safety state and carry at least one ring. Trigger the fourth furnace while holding right, pass beside the sphere, touch the wall spikes, and rebound into that sphere. Escape the tank gap to test the increased speed and jump; entering another transport sphere may cancel it, so reload after documenting the effect."
+     }
+    },
+    {
+     "id": "sonic2-oo-act1-perfect",
+     "type": "optional",
+     "safe_type": "Completion challenge",
+     "label": "Oil Ocean Act 1 Perfect Bonus",
+     "missable": true,
+     "levels": {
+      "1": "A clean route can reward collecting the stage itself, not its containers.",
+      "2": "Sweep every loose ring in Act 1 across its transport-sphere routes.",
+      "3": "Use states to identify every branch first, then combine the reachable groups into one ring sweep. Act 2 contains an inaccessible loose-ring group and is excluded from normal perfect completion. Only free-standing rings count; ignore ring boxes and other generated rings. The results tally awards 50,000 points when none were missed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-metropolis",
+   "name": "Metropolis Zone",
+   "location_cue": "Dense machinery with screws, gears, conveyors, and narrow shafts.",
+   "note": "Inspect the fixed side routes before leaving; the cartridge cannot reopen an earlier zone during normal play.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-metropolis-complete",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Metropolis Zone",
+     "missable": true,
+     "levels": {
+      "1": "Learn how this place moves before committing to its faster routes.",
+      "2": "Traverse every act of Metropolis Zone, using checkpoints before risky side paths.",
+      "3": "Clear the zone in one cartridge run. Wait out rotating gears, crushers, and star traps before committing to narrow shafts. Preserve rings for mistakes, activate every checkpoint you pass, and finish all physical exit encounters before the outgoing transition."
+     }
+    },
+    {
+     "id": "sonic2-mt-act1-mesh-secret",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 1 Mesh-Wall Cache",
+     "missable": true,
+     "levels": {
+      "1": "A horizontal pipe continues through a transparent boundary.",
+      "2": "Enter the right wall beside the horizontal pipe in the vertical screw section.",
+      "3": "Ride the screw platforms into the vertical section, stop where a horizontal pipe meets the transparent mesh on the right, and walk through it. Collect the rings and extra life, activate the checkpoint, then use the spring to exit."
+     }
+    },
+    {
+     "id": "sonic2-mt-act1-shaft-wrap",
+     "type": "secret",
+     "safe_type": "Cartridge oddity",
+     "label": "Act 1 Wrapping Shaft",
+     "missable": true,
+     "levels": {
+      "1": "One vertical passage connects its top edge to its bottom.",
+      "2": "Test the screen boundary in the tall Act 1 shaft.",
+      "3": "Create a state inside the tall vertical shaft, travel through its upper screen boundary, and observe the character re-enter at the bottom. Use the wrap to reconcile both sides, then reload if it disrupts your route."
+     }
+    },
+    {
+     "id": "sonic2-mt-act2-belt-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Act 2 Belt-Platform Life",
+     "missable": true,
+     "levels": {
+      "1": "A prize sits beneath the first conveyors of the final ascent.",
+      "2": "Drop below the first belt platforms on the long late climb.",
+      "3": "At the beginning of the tall final ascent, step from the first conveyor set into the pocket below. Break the extra-life box, then use the spring in the recess to return without repeating the climb."
+     }
+    },
+    {
+     "id": "sonic2-mt-dual-perfect",
+     "type": "optional",
+     "safe_type": "Completion challenge",
+     "label": "Metropolis Dual-Route Perfect Bonuses",
+     "missable": true,
+     "levels": {
+      "1": "A clean route can reward collecting the stage itself, not its containers.",
+      "2": "Use separate controllers for the incompatible ring branches in Acts 1 and 3.",
+      "3": "Scout each split, position Sonic and Tails on opposite routes before it closes, and collect both ring groups independently. Reunite before the finish; Act 2's sealed group prevents a normal perfect result. Only free-standing rings count; ignore ring boxes and other generated rings. The results tally awards 50,000 points when none were missed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-sky-chase",
+   "name": "Sky Chase Zone",
+   "location_cue": "A continuously moving airborne platform among clouds.",
+   "note": "Inspect the fixed side routes before leaving; the cartridge cannot reopen an earlier zone during normal play.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-sky-chase-complete",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Sky Chase Zone",
+     "missable": true,
+     "levels": {
+      "1": "Learn how this place moves before committing to its faster routes.",
+      "2": "Traverse every act of Sky Chase Zone, using checkpoints before risky side paths.",
+      "3": "Clear the zone in one cartridge run. Match the moving plane rather than treating the screen as fixed ground. Preserve rings for mistakes, activate every checkpoint you pass, and finish all physical exit encounters before the outgoing transition."
+     }
+    },
+    {
+     "id": "sonic2-sc-cloud-rings",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "High-Cloud Ring Cache",
+     "missable": true,
+     "levels": {
+      "1": "An early cloud above the normal flight line is not empty.",
+      "2": "Around 43 seconds into the flight, jump through the high cloud near the top of the screen.",
+      "3": "Stay centred on the plane through the opening formations. Near the 43-second mark, move toward its upper edge and jump through the high cloud to collect the three concealed rings, then land back aboard before the screen advances."
+     }
+    },
+    {
+     "id": "sonic2-sc-plane-discipline",
+     "type": "optional",
+     "safe_type": "Technique",
+     "label": "No-Fall Flight",
+     "missable": true,
+     "levels": {
+      "1": "The moving platform is safer when you avoid stored horizontal speed.",
+      "2": "Complete the automatic flight without leaving the plane's recoverable space.",
+      "3": "Stay over the broad centre of the plane, make small jumps for enemies, and never charge a Spin Dash near either edge. If momentum carries you away, steer back immediately; a fall below the screen ends the attempt."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-wing-fortress",
+   "name": "Wing Fortress Zone",
+   "location_cue": "An exposed flying structure with fans, lasers, cranes, and open air.",
+   "note": "Inspect the fixed side routes before leaving; the cartridge cannot reopen an earlier zone during normal play.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-wing-fortress-complete",
+     "type": "optional",
+     "safe_type": "Completion task",
+     "label": "Complete Wing Fortress Zone",
+     "missable": true,
+     "levels": {
+      "1": "Learn how this place moves before committing to its faster routes.",
+      "2": "Traverse every act of Wing Fortress Zone, using checkpoints before risky side paths.",
+      "3": "Clear the zone in one cartridge run. Use the air currents and moving platforms deliberately; the open lower edge is immediately fatal. Preserve rings for mistakes, activate every checkpoint you pass, and finish all physical exit encounters before the outgoing transition."
+     }
+    },
+    {
+     "id": "sonic2-wf-fan-shortcut",
+     "type": "secret",
+     "safe_type": "Alternate route",
+     "label": "Early Fan Shortcut",
+     "missable": true,
+     "levels": {
+      "1": "The first turret stump has a useful route above it.",
+      "2": "Jump onto the high ledge above the first turret stump and enter the fan current.",
+      "3": "Reach the first stationary turret base, use it to gain the ledge overhead, and step into the upward fan stream. Ride the current onto the top route, which bypasses the exposed underside traversal."
+     }
+    },
+    {
+     "id": "sonic2-wf-rear-fin-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Rear-Fin Conveyor Life",
+     "missable": true,
+     "levels": {
+      "1": "A vertical conveyor reaches the top of the rear fin.",
+      "2": "Ride the rear-fin platform conveyor upward to the isolated life.",
+      "3": "Move to the craft's rear fin, wait for the vertical conveyor platform, and ride it without jumping until it aligns with the top ledge. Step across, break the extra-life box, and return on the next safe platform cycle."
+     }
+    },
+    {
+     "id": "sonic2-wf-crane-wall-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Crane-Wall Life Corridor",
+     "missable": true,
+     "levels": {
+      "1": "The wall beside the crane conceals a safe interior passage.",
+      "2": "Enter the hidden wall opening near the crane section.",
+      "3": "Stop at the crane assembly and test the adjoining wall from its platform. Follow the concealed corridor to the extra-life box, then take its downward exit; the airflow below carries you into a safe alcove."
+     }
+    },
+    {
+     "id": "sonic2-wf-laser-wall-life",
+     "type": "secret",
+     "safe_type": "Hidden discovery",
+     "label": "Final-Laser Wall Life",
+     "missable": true,
+     "levels": {
+      "1": "A wall past the last flashing beam hides one final reserve.",
+      "2": "After the final flashing laser platform, break the far-right wall before dropping.",
+      "3": "Wait for the final laser to switch off, cross its platform, and continue into the wall at the far right. Break through to the extra-life box, collect it, then return and take the required downward route."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-death-egg",
+   "name": "Final Mechanical Interior",
+   "location_cue": "A bare metallic interior with no loose rings or checkpoints.",
+   "note": "Inspect the fixed side routes before leaving; the cartridge cannot reopen an earlier zone during normal play.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The last two encounters run without recovery",
+    "why": "There are no rings or checkpoints after this zone begins.",
+    "detail": "Create a state before entering, then practise each mechanism separately before attempting the uninterrupted pair."
+   },
+   "items": [
+    {
+     "id": "sonic2-de-no-ring-warning",
+     "type": "optional",
+     "safe_type": "Critical warning",
+     "label": "No-Ring Final Sequence",
+     "missable": true,
+     "levels": {
+      "1": "The last area removes the usual damage buffer.",
+      "2": "Enter with a save state; the area supplies no rings and no checkpoint.",
+      "3": "Make a permanent state before entering and a disposable practice state at each mechanism. Any damaging contact costs a life, and failure during the second encounter restarts the complete two-part sequence."
+     }
+    },
+    {
+     "id": "sonic2-de-first-mechanism",
+     "type": "optional",
+     "safe_type": "Final encounter",
+     "label": "First Final Mechanism",
+     "missable": true,
+     "levels": {
+      "1": "Its exposed front is safe only between armoured movements.",
+      "2": "Land eight hits on the exposed face while avoiding the spiked body and rolling charge.",
+      "3": "Wait for the mechanism to land at one side, then jump onto its exposed face four times. Move across the room as it curls into a ball, jump over the horizontal charge, and repeat four face hits after it uncurls. Never touch the spikes."
+     }
+    },
+    {
+     "id": "sonic2-de-second-mechanism",
+     "type": "optional",
+     "safe_type": "Final encounter",
+     "label": "Second Final Mechanism",
+     "missable": true,
+     "levels": {
+      "1": "Patience matters more than pursuing the armoured target.",
+      "2": "Damage the chest twelve times during landing recovery; avoid every limb and the rear thruster.",
+      "3": "Retreat while it walks four steps forward and one back. When it launches, move beneath the target area, wait for the lock indicator, then step aside. As it lands and bends, strike the chest once and escape toward the opposite side before the arms fire. Repeat until twelve hits register."
+     }
+    },
+    {
+     "id": "sonic2-de-standard-emerald-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Standard-Emerald Route Clear",
+     "missable": true,
+     "levels": {
+      "1": "One completion record uses an incomplete emerald set.",
+      "2": "Clear the final sequence with fewer than seven emeralds.",
+      "3": "Create a separate run or pre-emerald state, deliberately finish with zero through six emeralds, and clear both ringless mechanisms. Record the resulting completion presentation without describing it in the guide, then preserve the state for audit."
+     }
+    },
+    {
+     "id": "sonic2-de-complete-emerald-branch",
+     "type": "ending",
+     "safe_type": "Completion branch",
+     "label": "Complete-Emerald Route Clear",
+     "missable": true,
+     "levels": {
+      "1": "The other completion record requires every emerald beforehand.",
+      "2": "Collect all seven emeralds, then clear the final sequence.",
+      "3": "Secure all seven emeralds before the last zone and keep a state proving the completed set. Clear both ringless mechanisms; the powered presentation occurs after the clear and does not require carrying 50 rings into this zone."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-special-stages",
+   "name": "Special Stages",
+   "location_cue": "Curving half-pipes with ring lanes, bomb patterns, and three checkpoints.",
+   "note": "Each failed attempt leaves the same uncollected emerald pending; use a normal-stage state before spending the checkpoint gate.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-special-access",
+     "type": "interaction",
+     "safe_type": "Emerald access",
+     "label": "Checkpoint Star Gate",
+     "missable": true,
+     "levels": {
+      "1": "A checkpoint changes when the carried ring count is high enough.",
+      "2": "Touch an unused checkpoint with at least 50 rings, then jump into its stars.",
+      "3": "Carry 50 or more rings into an untouched checkpoint. When a star circle appears above it, jump into the circle before it fades. Returning from the challenge leaves the normal-stage ring counter at zero, so rebuild before the next gate."
+     }
+    },
+    {
+     "id": "sonic2-chaos-emerald-1",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 1",
+     "missable": true,
+     "levels": {
+      "1": "The next half-pipe rewards reading the lane ahead rather than reacting at the bombs.",
+      "2": "Meet the three solo thresholds in Special Stage 1: 30 / 70 / 130 rings.",
+      "3": "Enter the current uncompleted Special Stage through a checkpoint star gate. For this course, begin with broad centre lines, then change sides near the final upper bombs. Reach the three checkpoints with at least 30 / 70 / 130 rings respectively; each bomb collision removes ten. A failure leaves this same emerald pending, so repeat it rather than expecting the next course."
+     }
+    },
+    {
+     "id": "sonic2-chaos-emerald-2",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 2",
+     "missable": true,
+     "levels": {
+      "1": "The next half-pipe rewards reading the lane ahead rather than reacting at the bombs.",
+      "2": "Meet the three solo thresholds in Special Stage 2: 50 / 100 / 140 rings.",
+      "3": "Enter the current uncompleted Special Stage through a checkpoint star gate. For this course, jump the central bomb cover, then hold left and finish on the right. Reach the three checkpoints with at least 50 / 100 / 140 rings respectively; each bomb collision removes ten. A failure leaves this same emerald pending, so repeat it rather than expecting the next course."
+     }
+    },
+    {
+     "id": "sonic2-chaos-emerald-3",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 3",
+     "missable": true,
+     "levels": {
+      "1": "The next half-pipe rewards reading the lane ahead rather than reacting at the bombs.",
+      "2": "Meet the three solo thresholds in Special Stage 3: 50 / 110 / 160 rings.",
+      "3": "Enter the current uncompleted Special Stage through a checkpoint star gate. For this course, jump the curved bomb line and follow the ring lane through each hoop. Reach the three checkpoints with at least 50 / 110 / 160 rings respectively; each bomb collision removes ten. A failure leaves this same emerald pending, so repeat it rather than expecting the next course."
+     }
+    },
+    {
+     "id": "sonic2-chaos-emerald-4",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 4",
+     "missable": true,
+     "levels": {
+      "1": "The next half-pipe rewards reading the lane ahead rather than reacting at the bombs.",
+      "2": "Meet the three solo thresholds in Special Stage 4: 40 / 110 / 150 rings.",
+      "3": "Enter the current uncompleted Special Stage through a checkpoint star gate. For this course, use the gaps in incomplete hoops, then finish right, centre, and lower-left. Reach the three checkpoints with at least 40 / 110 / 150 rings respectively; each bomb collision removes ten. A failure leaves this same emerald pending, so repeat it rather than expecting the next course."
+     }
+    },
+    {
+     "id": "sonic2-chaos-emerald-5",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 5",
+     "missable": true,
+     "levels": {
+      "1": "The next half-pipe rewards reading the lane ahead rather than reacting at the bombs.",
+      "2": "Meet the three solo thresholds in Special Stage 5: 50 / 90 / 160 rings.",
+      "3": "Enter the current uncompleted Special Stage through a checkpoint star gate. For this course, climb the sidewalls for high rings, then alternate between walls and ceiling. Reach the three checkpoints with at least 50 / 90 / 160 rings respectively; each bomb collision removes ten. A failure leaves this same emerald pending, so repeat it rather than expecting the next course."
+     }
+    },
+    {
+     "id": "sonic2-chaos-emerald-6",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 6",
+     "missable": true,
+     "levels": {
+      "1": "The next half-pipe rewards reading the lane ahead rather than reacting at the bombs.",
+      "2": "Meet the three solo thresholds in Special Stage 6: 80 / 140 / 210 rings.",
+      "3": "Enter the current uncompleted Special Stage through a checkpoint star gate. For this course, make early side jumps through full hoops, especially the close final sequence. Reach the three checkpoints with at least 80 / 140 / 210 rings respectively; each bomb collision removes ten. A failure leaves this same emerald pending, so repeat it rather than expecting the next course."
+     }
+    },
+    {
+     "id": "sonic2-chaos-emerald-7",
+     "type": "collectible",
+     "safe_type": "Collectible",
+     "label": "Chaos Emerald 7",
+     "missable": true,
+     "levels": {
+      "1": "The next half-pipe rewards reading the lane ahead rather than reacting at the bombs.",
+      "2": "Meet the three solo thresholds in Special Stage 7: 100 / 150 / 190 rings.",
+      "3": "Enter the current uncompleted Special Stage through a checkpoint star gate. For this course, alternate beside the central bomb stream, then weave through scattered final clusters. Reach the three checkpoints with at least 100 / 150 / 190 rings respectively; each bomb collision removes ten. A failure leaves this same emerald pending, so repeat it rather than expecting the next course."
+     }
+    },
+    {
+     "id": "sonic2-super-sonic",
+     "type": "upgrade",
+     "safe_type": "Transformation",
+     "label": "Super Sonic Transformation",
+     "missable": true,
+     "levels": {
+      "1": "The complete emerald set changes what a ring-rich jump can do.",
+      "2": "With all seven emeralds and at least 50 rings, jump during a normal act.",
+      "3": "Collect the seven emeralds, build the carried counter to 50 or more, and press Jump while clear of hazards. The transformation drains roughly one ring each second and ends at zero or at the act transition; crushing, drowning, and bottomless falls remain fatal."
+     }
+    },
+    {
+     "id": "sonic2-tails-emerald-set",
+     "type": "optional",
+     "safe_type": "Completion check",
+     "label": "Tails Emerald Set",
+     "missable": true,
+     "levels": {
+      "1": "The solo companion can finish every half-pipe even without the resulting form.",
+      "2": "On a Tails Alone file, collect all seven emeralds through checkpoint gates.",
+      "3": "Select Tails Alone, use 50-ring checkpoints to enter each course, and meet all three solo quotas for all seven emeralds. Confirm the complete set, then continue normally; this configuration has no powered transformation to trigger."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sonic2-modes-secrets",
+   "name": "Two-Player Modes and Cartridge Secrets",
+   "location_cue": "The Options screen, split-screen course menu, and sound test.",
+   "note": "Keep code demonstrations and competitive results on separate emulator states from the clean solo route.",
+   "save_backup": {
+    "title": "Create an emulator save state before the outgoing transition",
+    "why": "This cartridge has no native save file, and ordinary play cannot return to a completed zone.",
+    "detail": "Keep one named state at the zone entrance and another before its last irreversible transition until every local entry is checked."
+   },
+   "point_of_no_return": {
+    "title": "The outgoing transition closes this zone",
+    "why": "Crossing the exit prevents normal backtracking.",
+    "detail": "Reconcile the area's discoveries before crossing its final boundary."
+   },
+   "items": [
+    {
+     "id": "sonic2-versus-emerald-hill",
+     "type": "optional",
+     "safe_type": "Two-player contest",
+     "label": "Emerald Hill Contest",
+     "missable": true,
+     "levels": {
+      "1": "The first split-screen course compares more than finishing first.",
+      "2": "Win two of the three possible rounds in the Emerald Hill contest.",
+      "3": "Play both acts with two controllers. Each round compares time, score, finishing rings, total collected rings, and opened item boxes. If each player wins one act, win the half-pipe tiebreak; once someone finishes an act, the other has only 60 seconds."
+     }
+    },
+    {
+     "id": "sonic2-versus-casino-night",
+     "type": "optional",
+     "safe_type": "Two-player contest",
+     "label": "Casino Night Contest",
+     "missable": true,
+     "levels": {
+      "1": "Pinball detours can swing several scoring categories at once.",
+      "2": "Win the Casino Night contest across its two acts and any required tiebreak.",
+      "3": "Use both controllers, complete the two acts, and target all five result categories rather than raw speed alone. A split act result invokes the Special Stage decider; finish before the post-finish 60-second clock expires."
+     }
+    },
+    {
+     "id": "sonic2-versus-mystic-cave",
+     "type": "optional",
+     "safe_type": "Two-player contest",
+     "label": "Mystic Cave Contest",
+     "missable": true,
+     "levels": {
+      "1": "Careful item-box collection matters as much as surviving the trap corridors.",
+      "2": "Win the Mystic Cave contest across its acts and tiebreak when needed.",
+      "3": "Play both acts with separate controllers, avoiding crushing while collecting rings and boxes. Secure a majority of the five comparison categories in each act; if the acts split, decide the contest in the half-pipe round."
+     }
+    },
+    {
+     "id": "sonic2-versus-special-stage",
+     "type": "optional",
+     "safe_type": "Two-player contest",
+     "label": "Dedicated Special Stage Contest",
+     "missable": true,
+     "levels": {
+      "1": "The separate half-pipe mode uses its own short match.",
+      "2": "Win two rounds in the dedicated two-player Special Stage contest.",
+      "3": "Choose the Special Stage contest directly and collect more rings than the opponent in each round. Win the first two to end immediately, or take the third round when the first two split."
+     }
+    },
+    {
+     "id": "sonic2-versus-random-items",
+     "type": "interaction",
+     "safe_type": "Two-player option",
+     "label": "All-Kinds Item Boxes",
+     "missable": true,
+     "levels": {
+      "1": "The default contest boxes include effects absent from solo play.",
+      "2": "Set the two-player items option to All Kinds and trigger each unique contest effect.",
+      "3": "Under Options, leave two-player items on All Kinds. Open boxes until you demonstrate the ordinary rewards, character-marked life boxes, the position-swapping teleporter, and the harmful opponent box; use a state to avoid repeating entire rounds."
+     }
+    },
+    {
+     "id": "sonic2-versus-teleport-only",
+     "type": "optional",
+     "safe_type": "Two-player option",
+     "label": "Teleport-Only Item Mode",
+     "missable": true,
+     "levels": {
+      "1": "One option replaces the contest's entire box pool.",
+      "2": "Set the two-player items option to Teleport Only and finish a contest round.",
+      "3": "Open Options, change the two-player item setting to Teleport Only, then enter any split-screen course. Open at least one box to confirm a position swap, and complete the round under this ruleset."
+     }
+    },
+    {
+     "id": "sonic2-level-select",
+     "type": "secret",
+     "safe_type": "Cartridge code",
+     "label": "Level Select",
+     "missable": false,
+     "levels": {
+      "1": "A four-part sound-test sequence unlocks direct stage access.",
+      "2": "In Options, play 19, 65, 09, 17; hear the chime, return, then hold A while starting.",
+      "3": "Open the Options sound test and play tracks 19, 65, 09, and 17 in order. After the confirmation chime, return to the title, highlight 1 Player, hold A, and press Start. Release A only when the stage list appears."
+     }
+    },
+    {
+     "id": "sonic2-all-emerald-code",
+     "type": "secret",
+     "safe_type": "Cartridge code",
+     "label": "All-Emerald Code",
+     "missable": false,
+     "levels": {
+      "1": "A second short sequence works inside the hidden stage menu.",
+      "2": "On Level Select's sound test, play 04, 01, 02, 06.",
+      "3": "Unlock Level Select first, then use its sound test to play 04, 01, 02, and 06 in that order. Wait for the chime; the next normal stage begins with the complete emerald flag, allowing transformation testing without replacing the legitimate collection record."
+     }
+    },
+    {
+     "id": "sonic2-debug-mode",
+     "type": "secret",
+     "safe_type": "Cartridge code",
+     "label": "Debug Mode",
+     "missable": false,
+     "levels": {
+      "1": "A longer sound sequence adds an object viewer to the stage menu.",
+      "2": "On Level Select, play 01,09,09,02; pause; then play 01,01,02,04 and hold A while choosing a stage.",
+      "3": "Enter the first sound group as 01,09,09,02, pause briefly, then enter 01,01,02,04. After the chime, hold A while starting a stage. Press B to switch between the character and object cursor, A to cycle objects, and C to place one. Keep this on a separate state so debug objects never contaminate the clean completion record."
+     }
+    },
+    {
+     "id": "sonic2-pause-controls",
+     "type": "secret",
+     "safe_type": "Debug control",
+     "label": "Debug Pause Controls",
+     "missable": false,
+     "levels": {
+      "1": "Debug mode changes what the face buttons do while paused.",
+      "2": "Pause during debug play and test A, B, and C separately.",
+      "3": "With debug active, pause the game. A returns to the title, B advances in slow motion, and C advances one frame per press. Demonstrate each from a disposable state, then reload the clean route."
+     }
+    },
+    {
+     "id": "sonic2-name-toggle",
+     "type": "secret",
+     "safe_type": "Title-screen code",
+     "label": "Miles/Tails Name Toggle",
+     "missable": false,
+     "levels": {
+      "1": "A title-screen direction pattern changes one displayed name.",
+      "2": "At the title, press Up three times, Down three times, then Up.",
+      "3": "Enter Up, Up, Up, Down, Down, Down, Up on the title screen. Confirm the audio cue or changed name display for the current region, then repeat the sequence if you want to restore the original label."
+     }
+    }
+   ]
+  }
+ ]
+}

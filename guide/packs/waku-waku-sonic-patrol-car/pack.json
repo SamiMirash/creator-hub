@@ -1,0 +1,407 @@
+{
+ "id": "waku-waku-sonic-patrol-car",
+ "game": "Waku Waku Sonic Patrol Car (1991)",
+ "target": "Original Japanese arcade ROM set through MAME 0.289 on PC",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-23T08:57:46.341247+00:00",
+ "areas": [
+  {
+   "id": "soniccar-cabinet-setup",
+   "name": "Cabinet Setup and Controls",
+   "location_cue": "The MAME launch screen and the cabinet-input assignment menu before a paid cycle begins.",
+   "note": "Use the preserved arcade ROM set; this driver is fully playable but does not support emulator save states.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "soniccar-verify-build",
+     "type": "optional",
+     "safe_type": "System task",
+     "label": "Verify the Arcade Build",
+     "missable": false,
+     "levels": {
+      "1": "Confirm the archive before changing controls or cabinet switches.",
+      "2": "Launch MAME shortname soniccar from soniccar.zip and run the emulator's ROM verification.",
+      "3": "Use the installed 359,312-byte archive. Its ZIP SHA-1 is c1914d2a849cae10f8d195986fe14bb89f098264, and MAME 0.289 must report the soniccar ROM set as good before play."
+     }
+    },
+    {
+     "id": "soniccar-map-steering",
+     "type": "interaction",
+     "safe_type": "Control function",
+     "label": "Map Steering Left and Right",
+     "missable": false,
+     "levels": {
+      "1": "Separate road steering from the other left-right control pair.",
+      "2": "Map P1 Right Stick Left and Right to the wheel directions.",
+      "3": "Open Input Assignments for this machine. Bind P1 Right Stick/Left and P1 Right Stick/Right to comfortable directions, enter a cycle, and confirm the patrol car crosses the lane in both directions."
+     }
+    },
+    {
+     "id": "soniccar-map-winker",
+     "type": "interaction",
+     "safe_type": "Control function",
+     "label": "Map Both Winker Directions",
+     "missable": false,
+     "levels": {
+      "1": "The cabinet has a second two-way lever that does not steer.",
+      "2": "Map P1 Left Stick Left and Right to the two indicator directions.",
+      "3": "Bind both P1 Left Stick directions separately from steering. During the road section, tap each once and confirm its corresponding indicator response; this function is cosmetic and should not move the car."
+     }
+    },
+    {
+     "id": "soniccar-map-siren",
+     "type": "interaction",
+     "safe_type": "Control function",
+     "label": "Map the Siren and Lights",
+     "missable": false,
+     "levels": {
+      "1": "One dashboard control operates the emergency-light response.",
+      "2": "Map P1 Button 1 to the siren control.",
+      "3": "Bind P1 Button 1, begin a cycle, and press it after the vehicle is active. Confirm both the siren response and the cabinet-light animation; it does not replace steering or acceleration."
+     }
+    },
+    {
+     "id": "soniccar-map-jump",
+     "type": "interaction",
+     "safe_type": "Control function",
+     "label": "Map Spin Jump",
+     "missable": false,
+     "levels": {
+      "1": "The action button becomes important only late in the route.",
+      "2": "Map P1 Button 2 to Spin Jump.",
+      "3": "Bind P1 Button 2 and test it during the road section. The vehicle continues forward while the rider leaves it briefly; retain this binding for the close-range pursuit interaction."
+     }
+    },
+    {
+     "id": "soniccar-map-accelerate",
+     "type": "interaction",
+     "safe_type": "Control function",
+     "label": "Map Acceleration",
+     "missable": false,
+     "levels": {
+      "1": "Keep ordinary forward speed on its own input.",
+      "2": "Map P1 Button 3 to acceleration.",
+      "3": "Bind P1 Button 3 and hold it on a clear straight. Confirm the forward pace rises without activating the separate turbo effect, then release it before testing the stronger speed input."
+     }
+    },
+    {
+     "id": "soniccar-map-turbo",
+     "type": "interaction",
+     "safe_type": "Control function",
+     "label": "Map Turbo",
+     "missable": false,
+     "levels": {
+      "1": "Reserve one control for the stronger overtaking burst.",
+      "2": "Map P1 Button 4 to turbo.",
+      "3": "Bind P1 Button 4. On an unobstructed lane, hold acceleration, add turbo briefly, and verify the stronger exhaust and closing speed before releasing it near traffic."
+     }
+    }
+   ]
+  },
+  {
+   "id": "soniccar-operator-options",
+   "name": "Operator Options",
+   "location_cue": "The Machine Configuration menu containing the SW2 cabinet switches.",
+   "note": "These switches reproduce cabinet presentation options; they do not add a second gameplay route.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "soniccar-demo-sound-options",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Check Every Demo-Sound Interval",
+     "missable": false,
+     "levels": {
+      "1": "The attract sequence can announce itself at several intervals.",
+      "2": "Under Machine Configuration, inspect Demo Sound Interval.",
+      "3": "Cycle through Off, Every 4 Minutes, Every 2 Minutes, and On. Return it to On for ordinary archival capture so each attract cycle retains its expected sound."
+     }
+    },
+    {
+     "id": "soniccar-lighting-time-options",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Check Both Lighting-Time Modes",
+     "missable": false,
+     "levels": {
+      "1": "Cabinet lights can operate during different portions of the cycle.",
+      "2": "Inspect Lighting Time under Machine Configuration.",
+      "3": "Test Advertise & Playtime and Playtime Only. The setting governs when the external cabinet-light output is active; use Advertise & Playtime when documenting the complete attraction behavior."
+     }
+    },
+    {
+     "id": "soniccar-cabinet-light-toggle",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Check the Cabinet-Light Toggle",
+     "missable": false,
+     "levels": {
+      "1": "One switch globally enables the external lighting output.",
+      "2": "Inspect the Light switch under Machine Configuration.",
+      "3": "Toggle Light Off and On while observing the emulated output state. Leave it On for the completion run, because Off suppresses a real cabinet function rather than changing the road sequence."
+     }
+    },
+    {
+     "id": "soniccar-payment-wording",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Check Both Payment Messages",
+     "missable": false,
+     "levels": {
+      "1": "The payment prompt has a region-neutral wording alternative.",
+      "2": "Inspect Screen Display under Machine Configuration.",
+      "3": "Switch between Insert 100–400 Yen and Insert Money, confirm both attract-screen messages, then retain the original yen wording for the Japanese cabinet route."
+     }
+    }
+   ]
+  },
+  {
+   "id": "soniccar-city-road",
+   "name": "City Road",
+   "location_cue": "The vertically scrolling three-lane street bordered by bright pavements and planted verges.",
+   "note": "Traffic advances automatically; the route cannot be reversed after an obstacle scrolls away.",
+   "save_backup": {
+    "title": "Prepare a clean restart before inserting a coin",
+    "why": "The road scrolls forward and the MAME driver cannot restore save states.",
+    "detail": "Record the input map and cabinet switches before starting. If a required interaction or rank condition is missed, let the short cycle end and restart from attract mode."
+   },
+   "point_of_no_return": {
+    "title": "Passing traffic leaves the active route",
+    "why": "A vehicle or intersection cannot be revisited during the same paid cycle.",
+    "detail": "Perform each control demonstration when the road is clear, and decide whether this run is for collisions or a clean result before the dense traffic arrives."
+   },
+   "items": [
+    {
+     "id": "soniccar-start-cycle",
+     "type": "optional",
+     "safe_type": "Route task",
+     "label": "Start a Paid Cycle",
+     "missable": true,
+     "levels": {
+      "1": "Begin from the quiet attract display with every control already mapped.",
+      "2": "Insert one coin and wait for the vehicle-departure sequence.",
+      "3": "With the original payment wording selected, insert Coin 1 once. Do not add further credits or reset; let the departure and control prompt finish until the vertically scrolling road accepts steering."
+     }
+    },
+    {
+     "id": "soniccar-complete-control-prompt",
+     "type": "optional",
+     "safe_type": "Route task",
+     "label": "Complete the Road-Control Prompt",
+     "missable": true,
+     "levels": {
+      "1": "Use the opening clear street to test movement safely.",
+      "2": "At the first steering prompt, move left and right without touching the roadside.",
+      "3": "Centre the vehicle, steer once toward each side, then return to the middle lane before traffic reaches the screen. Demonstrate siren, both winker directions, acceleration, turbo, and one jump while space remains."
+     }
+    },
+    {
+     "id": "soniccar-clean-overtake",
+     "type": "interaction",
+     "safe_type": "Driving action",
+     "label": "Perform a Clean Overtake",
+     "missable": true,
+     "levels": {
+      "1": "Wait for a straight gap before using the strongest speed control.",
+      "2": "Move into an empty lane, hold acceleration, and add turbo to pass one civilian vehicle without contact.",
+      "3": "Read the lane ahead before moving. Shift fully into the open lane, straighten the wheel, hold acceleration, tap turbo until the slower vehicle falls behind, and release turbo before the next traffic group."
+     }
+    },
+    {
+     "id": "soniccar-observe-collision-spin",
+     "type": "interaction",
+     "safe_type": "Driving action",
+     "label": "Record One Collision Spin",
+     "missable": true,
+     "levels": {
+      "1": "A separate low-rank run should document the road's penalty response.",
+      "2": "Touch a civilian vehicle or the roadside once and observe the forced spin.",
+      "3": "Use a run reserved for the lower result grades. Steer into one traffic car at low relative speed, release turbo during the spin, regain the centre lane, and note that every repeated impact lowers the eventual star result."
+     }
+    },
+    {
+     "id": "soniccar-clear-traffic-cleanly",
+     "type": "optional",
+     "safe_type": "Driving challenge",
+     "label": "Clear Traffic Without a Collision",
+     "missable": true,
+     "levels": {
+      "1": "Prioritise open road over constant maximum speed.",
+      "2": "From the control prompt to the pursuit transition, avoid every vehicle, kerb, and roadside boundary.",
+      "3": "Stay with left-side traffic flow, scan one screen ahead, and change lanes early. Use ordinary acceleration through mixed traffic; reserve turbo for fully visible gaps and release it before intersections or side-by-side cars."
+     }
+    },
+    {
+     "id": "soniccar-reach-pursuit-clean",
+     "type": "optional",
+     "safe_type": "Route task",
+     "label": "Reach the Pursuit Cleanly",
+     "missable": true,
+     "levels": {
+      "1": "Keep the final road approach centred and leave room ahead.",
+      "2": "Enter the final straight without colliding during the last traffic group.",
+      "3": "After the dense road group, return to the centre lane and hold ordinary acceleration. Do not chase a disappearing civilian car into the verge; the red target vehicle arrives automatically when the pursuit begins."
+     }
+    }
+   ]
+  },
+  {
+   "id": "soniccar-final-pursuit",
+   "name": "Final Pursuit",
+   "location_cue": "The long straight road with a single red vehicle travelling ahead of the patrol car.",
+   "note": "The route finishes even if the target vehicle remains intact; its destruction is a separate completion action.",
+   "save_backup": {
+    "title": "Commit this cycle to one pursuit outcome",
+    "why": "The pursuit is brief, cannot be rewound, and save states are unsupported.",
+    "detail": "Use one complete cycle to finish without destroying the target, then replay and perform the full attack sequence. Keep video markers for both outcomes."
+   },
+   "point_of_no_return": {
+    "title": "The final straight ends automatically",
+    "why": "The result sequence begins when the pursuit timer closes.",
+    "detail": "Complete the chosen pursuit action before the road clears. Once the return drive starts, no further attack or traffic input changes the recorded result."
+   },
+   "items": [
+    {
+     "id": "soniccar-close-pursuit-gap",
+     "type": "interaction",
+     "safe_type": "Pursuit action",
+     "label": "Close the Pursuit Gap",
+     "missable": true,
+     "levels": {
+      "1": "Use speed in short bursts while preserving lateral control.",
+      "2": "Hold acceleration and apply turbo on the clear straight until the red vehicle is within jump range.",
+      "3": "Approach from directly behind but leave roughly one vehicle length. Release turbo before steering around an incoming hazard, re-centre, then rebuild the gap rather than colliding with the target's rear bumper."
+     }
+    },
+    {
+     "id": "soniccar-land-jump-attack",
+     "type": "interaction",
+     "safe_type": "Pursuit action",
+     "label": "Land a Spin-Jump Attack",
+     "missable": true,
+     "levels": {
+      "1": "Wait until the target fills the space immediately ahead.",
+      "2": "At close range behind the red vehicle, press the mapped jump button and make contact from above.",
+      "3": "Align the patrol car with the target's centre, close to about one car length, release turbo, and press Jump. A successful hit shows the airborne rider contacting the red vehicle instead of landing on empty road."
+     }
+    },
+    {
+     "id": "soniccar-destroy-target-vehicle",
+     "type": "optional",
+     "safe_type": "Pursuit challenge",
+     "label": "Destroy the Red Target Vehicle",
+     "missable": true,
+     "levels": {
+      "1": "Repeat accurate jumps without sacrificing lane control.",
+      "2": "Continue landing close-range jump attacks until the red vehicle breaks apart before the pursuit ends.",
+      "3": "After each confirmed hit, re-enter the patrol car, re-centre, and rebuild a safe one-car gap. Dodge lateral hazards with steering, then repeat the square approach and jump until the destruction animation appears."
+     }
+    },
+    {
+     "id": "soniccar-finish-target-intact",
+     "type": "choice",
+     "safe_type": "Outcome variant",
+     "label": "Finish with the Target Vehicle Intact",
+     "missable": true,
+     "levels": {
+      "1": "One replay should preserve the pursuit's optional non-destruction outcome.",
+      "2": "Reach the pursuit, avoid all jump attacks, and let the final straight end with the red vehicle intact.",
+      "3": "Use a dedicated cycle. Follow at a safe distance, steer around hazards, and never press Jump near the red vehicle. The ride still advances to its return and result sequence, proving destruction is optional."
+     }
+    },
+    {
+     "id": "soniccar-complete-route",
+     "type": "optional",
+     "safe_type": "Route task",
+     "label": "Complete the Full Route",
+     "missable": true,
+     "levels": {
+      "1": "Stay with the automatic return sequence after the pursuit closes.",
+      "2": "Finish the pursuit and remain through the return drive until the result emblem appears.",
+      "3": "Do not reset when the straight road clears. Let the automatic return to the starting building finish, wait through the transition, and record the complete star emblem before attract mode resumes."
+     }
+    }
+   ]
+  },
+  {
+   "id": "soniccar-result-ranks",
+   "name": "Result Ranks",
+   "location_cue": "The blue patterned result screen with a large badge and one to five visible stars.",
+   "note": "The star screen is the cycle's performance result. The five-star animation contains rapid flashing.",
+   "save_backup": {
+    "title": "Archive each result before starting again",
+    "why": "Only one star rank appears per cycle, and the driver cannot restore states.",
+    "detail": "Capture the badge before it disappears, label the recording with its collision plan, then return to attract mode and begin the next full cycle."
+   },
+   "point_of_no_return": {
+    "title": "The result fixes this cycle's rank",
+    "why": "Road inputs cannot change the grade after the badge appears.",
+    "detail": "If the wrong grade appears, preserve it if still needed; otherwise restart from attract mode and adjust the next run's collision count."
+   },
+   "items": [
+    {
+     "id": "soniccar-one-star-result",
+     "type": "ending",
+     "safe_type": "Result variant",
+     "label": "Record the One-Star Result",
+     "missable": true,
+     "levels": {
+      "1": "Use one deliberately poor driving cycle for the lowest badge.",
+      "2": "Accumulate more than forty collision spins before completing the route.",
+      "3": "Choose a low-rank replay, repeatedly steer into traffic or the boundary, and allow every spin to resolve before the next impact. More than forty crashes is the verified practical target; finish the route and capture the one-star badge."
+     }
+    },
+    {
+     "id": "soniccar-two-star-result",
+     "type": "ending",
+     "safe_type": "Result variant",
+     "label": "Record the Two-Star Result",
+     "missable": true,
+     "levels": {
+      "1": "Plan a heavily penalised run, but stop well before the lowest-rank total.",
+      "2": "Complete the route after roughly twenty to twenty-five collision spins.",
+      "3": "Count resolved spins rather than brief scrapes. Aim for 20–25 deliberate collisions, then drive normally through the remaining road and pursuit. Record the two-star badge; if it drops to one, reduce the next run's impacts."
+     }
+    },
+    {
+     "id": "soniccar-three-star-result",
+     "type": "ending",
+     "safe_type": "Result variant",
+     "label": "Record the Three-Star Result",
+     "missable": true,
+     "levels": {
+      "1": "Use a middling run between heavy crashing and careful driving.",
+      "2": "Complete the route with intermittent collisions until the result settles at three stars.",
+      "3": "The game does not display an exact threshold. A locally verified neutral autoplay with no steering and repeated road contact earned three stars. If you receive two, reduce impacts; if you receive four, add several controlled spins next cycle."
+     }
+    },
+    {
+     "id": "soniccar-four-star-result",
+     "type": "ending",
+     "safe_type": "Result variant",
+     "label": "Record the Four-Star Result",
+     "missable": true,
+     "levels": {
+      "1": "Drive cleanly overall while retaining a small, deliberate penalty.",
+      "2": "Allow only a few controlled collisions, then finish the pursuit successfully.",
+      "3": "Start from a clean-run plan, permit one resolved collision, and finish without further contact. If the result remains five stars, add one collision next cycle; if it falls to three, remove impacts until the four-star badge appears."
+     }
+    },
+    {
+     "id": "soniccar-five-star-result",
+     "type": "ending",
+     "safe_type": "Result variant",
+     "label": "Record the Five-Star Result",
+     "missable": true,
+     "levels": {
+      "1": "Treat every road contact as a restart condition.",
+      "2": "Complete the route without a collision and destroy the red target vehicle before the pursuit closes.",
+      "3": "Drive each traffic group at controllable speed, use turbo only through empty lanes, and restart after any forced spin. In the pursuit, align directly behind the target and land repeated jumps until it breaks apart. Capture the five-star badge; expect rapid flashing."
+     }
+    }
+   ]
+  }
+ ]
+}

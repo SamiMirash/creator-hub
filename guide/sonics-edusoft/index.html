@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sonic&#x27;s Edusoft (1991 prototype) — 100% collectible guide | Sami Mirash</title>
+<meta name="description" content="Complete Sonic&#x27;s Edusoft (1991 prototype) guide: 70 collectibles and objectives across 7 areas, with exact locations. Written while playing, no spoilers in the interactive version.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.samimirash.com/guide/sonics-edusoft/">
+<link rel="stylesheet" href="../guide.css">
+<style>
+  .static-wrap{max-width:760px;margin:0 auto;padding:20px 16px 64px}
+  @media(min-width:1200px){.static-wrap{max-width:920px}}
+  .static-wrap h1{font-size:26px;margin:.2em 0}
+  .static-wrap h2{font-size:20px;margin:1.6em 0 .4em;color:var(--gold)}
+  .static-wrap h3{font-size:16px;margin:1.1em 0 .3em}
+  .static-wrap .lvl{margin:.15em 0 .15em 0;padding-left:12px;border-left:2px solid var(--line)}
+  .static-wrap .lvl b{color:var(--muted);font-weight:600;font-size:12px;
+     text-transform:uppercase;letter-spacing:.6px;display:block}
+  .spoiler-note{border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0}
+  .cta{display:inline-block;margin:8px 0 4px;padding:12px 18px;border-radius:10px;
+     background:var(--gold);color:#151109;font-weight:800;text-decoration:none}
+  .static-wrap img.sk{display:block;width:100%;max-width:560px;margin:8px 0;
+     border:1px solid var(--line);border-radius:8px}
+</style>
+</head>
+<body>
+<div class="static-wrap">
+<a class="homelink" href="/">&#8592; <span>samimirash.com</span></a>
+<h1>Sonic&#x27;s Edusoft (1991 prototype)</h1>
+<p class="muted">European Sega Master System prototype on PC; preserved original ROM with per-game Export-region emulation &middot; 7 areas &middot; 70 tracked items</p>
+
+<div class="spoiler-note">
+  <strong>This page shows everything, including exact locations.</strong>
+  It exists so you can search for one specific collectible and find it.
+  If you are playing blind, use the
+  <a href="../?pack=sonics-edusoft">interactive spoiler-free version</a> instead — it hides
+  locations until you ask for them, one item at a time.
+</div>
+
+<p><a class="cta" href="../?pack=sonics-edusoft">Open the spoiler-free interactive guide</a></p>
+<h2>Prototype Setup</h2>
+<p class="muted"><em>You are here when:</em> The emulator launch, firmware manager, and first visible hub before any lesson begins.</p>
+<p>Use the unmodified European prototype and a per-game Export configuration.</p>
+<h3>Verify the European Prototype</h3>
+<p class="muted small">System task</p>
+<div class="lvl"><b>Hint</b>Confirm the preserved build before changing emulator settings.</div>
+<div class="lvl"><b>Where</b>Hash the extracted Master System ROM and compare it with the known prototype.</div>
+<div class="lvl"><b>Full detail</b>Use the 262,144-byte European prototype. Its SHA-1 must be f1357505cbcebfab52327a5fc9c3437f54d8da40 and its MD5 must be 5919b101624d4710a10825c34e753ba2; do not patch the ROM to solve a boot problem.</div>
+<h3>Supply the Export Master System BIOS</h3>
+<p class="muted small">System task</p>
+<div class="lvl"><b>Hint</b>A black screen can mean missing firmware.</div>
+<div class="lvl"><b>Where</b>Point the emulator at a valid USA/Europe Master System BIOS dump.</div>
+<div class="lvl"><b>Full detail</b>For SMSHawk, select the 8,192-byte Export BIOS whose SHA-1 is c315672807d8ddb8d91443729405c766dd95cae7. Keep the firmware outside the game archive and let the emulator identify it as SMS+Export.</div>
+<h3>Use an Export Region Override</h3>
+<p class="muted small">System task</p>
+<div class="lvl"><b>Hint</b>The prototype&#x27;s automatic region result is unreliable.</div>
+<div class="lvl"><b>Where</b>Create a per-game Master System region override set to Export.</div>
+<div class="lvl"><b>Full detail</b>In SMSHawk&#x27;s sync settings, choose Console Region: Export for this game only. Its database entry requires a BIOS but leaves the region blank, so Auto can choose Japan and produce black video even with valid firmware.</div>
+<h3>Confirm a Visible Hub</h3>
+<p class="muted small">System task</p>
+<div class="lvl"><b>Hint</b>Do not accept a successful content load alone.</div>
+<div class="lvl"><b>Where</b>Wait through the BIOS and title, then enter the isometric outdoor map.</div>
+<div class="lvl"><b>Full detail</b>A correct boot shows the Sega BIOS, the Edusoft title, and then the playable green-island hub after pressing Button 1 at the title. If the frame stays black, stop and correct the core, region, or firmware before playing.</div>
+<h3>Keep PicoDrive as the Alternate Core</h3>
+<p class="muted small">System task</p>
+<div class="lvl"><b>Hint</b>There is a second proven route for this build.</div>
+<div class="lvl"><b>Where</b>Use PicoDrive if the configured SMSHawk route is unavailable.</div>
+<div class="lvl"><b>Full detail</b>PicoDrive boots the unchanged prototype without the black-frame behavior observed locally in Genesis Plus GX. Preserve the same ROM hash, use native 4:3 output, and test audio and controls before beginning a completion session.</div>
+<h3>Create a Clean Hub Save State</h3>
+<p class="muted small">Safety task</p>
+<div class="lvl"><b>Hint</b>This unfinished build can misread valid input.</div>
+<div class="lvl"><b>Where</b>Make a state after the hub becomes controllable and before clearing a marker.</div>
+<div class="lvl"><b>Full detail</b>Save once on the untouched hub, then use separate rolling states during difficult races. Never replace the clean state with a failed reaction prompt or a two-player test; several prototype bugs can make an otherwise valid attempt unwinnable.</div>
+<h2>Question-Mark Options</h2>
+<p class="muted"><em>You are here when:</em> The yellow question mark in the opening green clearing.</p>
+<p>Inspect every setting before committing to the one-session route.</p>
+<h3>Learn the Map Controls</h3>
+<p class="muted small">Control task</p>
+<div class="lvl"><b>Hint</b>Test movement before entering a lesson.</div>
+<div class="lvl"><b>Where</b>Use the D-pad on the hub and Button 1 while standing on a landmark.</div>
+<div class="lvl"><b>Full detail</b>Move with the D-pad, press Button 1 to enter a map marker, use Button 2 to confirm menu selections, and press both buttons together when a menu refuses to advance with either button alone.</div>
+<h3>Review Both Player Counts</h3>
+<p class="muted small">Option task</p>
+<div class="lvl"><b>Hint</b>One menu choice changes who takes turns.</div>
+<div class="lvl"><b>Where</b>Open the yellow question-mark menu and cycle Players through 1 and 2.</div>
+<div class="lvl"><b>Full detail</b>Record both settings, then return to Players: 1 before any single-session clear. Two-player mode alternates participants and can invalidate tracking for a one-player all-marker run.</div>
+<h3>Set Both Initial Fields</h3>
+<p class="muted small">Option task</p>
+<div class="lvl"><b>Hint</b>Personalize the two three-character slots.</div>
+<div class="lvl"><b>Where</b>Visit Player 1 and Player 2 in the question-mark menu.</div>
+<div class="lvl"><b>Full detail</b>Enter three initials in each field and confirm them. Player 2 remains configurable even when the current run uses one player, so inspect both fields before leaving the menu.</div>
+<h3>Find the Hidden Initials Response</h3>
+<p class="muted small">Secret</p>
+<div class="lvl"><b>Hint</b>One three-letter entry has an extra reaction.</div>
+<div class="lvl"><b>Where</b>Experiment in the Player 1 initials field.</div>
+<div class="lvl"><b>Full detail</b>Set Player 1 to DAM and confirm it. This deliberately incomplete spelling triggers the prototype&#x27;s hidden initials response; restore your preferred initials afterward.</div>
+<h3>Review Every Learning Level</h3>
+<p class="muted small">Option task</p>
+<div class="lvl"><b>Hint</b>The challenge menu has five steps.</div>
+<div class="lvl"><b>Where</b>Cycle Level through Simple, Easy, Medium, Hard, and Complex.</div>
+<div class="lvl"><b>Full detail</b>Confirm that all five values appear. Difficulty changes word length and the star requirements for transport, so finish the menu audit before choosing the setting for a full run.</div>
+<h3>Review Every Guess Allowance</h3>
+<p class="muted small">Option task</p>
+<div class="lvl"><b>Hint</b>Mistake tolerance is separately adjustable.</div>
+<div class="lvl"><b>Where</b>Cycle Guesses through Ten, Seven, Five, Three, and One.</div>
+<div class="lvl"><b>Full detail</b>Inspect all five allowances, then select the value wanted for the run. This option governs the permitted selection attempts and is independent of the race speed and learning level.</div>
+<h3>Review Every Race Speed</h3>
+<p class="muted small">Option task</p>
+<div class="lvl"><b>Hint</b>The timer has five named settings.</div>
+<div class="lvl"><b>Where</b>Cycle Speed through Snail, Tortoise, Hare, Leopard, and Sonic.</div>
+<div class="lvl"><b>Full detail</b>Check all five values. Snail provides the widest response window; Sonic provides the shortest. Use Snail while mapping content, then return for the dedicated Sonic-speed clear.</div>
+<h3>Test Standard Letter Control</h3>
+<p class="muted small">Option task</p>
+<div class="lvl"><b>Hint</b>One input style accepts diagonals directly.</div>
+<div class="lvl"><b>Where</b>Choose Control: Standard and open a word lesson.</div>
+<div class="lvl"><b>Full detail</b>Move the selection cursor to each of the eight surrounding letter positions with direct D-pad directions, including diagonals. Confirm one harmless answer, then leave or reload before testing the other style.</div>
+<h3>Test 4-Way Letter Control</h3>
+<p class="muted small">Option task</p>
+<div class="lvl"><b>Hint</b>The alternate style avoids diagonal presses.</div>
+<div class="lvl"><b>Where</b>Choose Control: 4-Way and open a word lesson.</div>
+<div class="lvl"><b>Full detail</b>Reach corner letters by pressing cardinal directions in sequence instead of attempting a diagonal. This is usually the more dependable choice for long words at Sonic speed.</div>
+<h3>Lock the Completion Settings <span class="muted">(missable)</span></h3>
+<p class="muted small">Preparation task</p>
+<div class="lvl"><b>Hint</b>Set the demanding run before earning progress.</div>
+<div class="lvl"><b>Where</b>Return to the question mark immediately before the all-marker attempt.</div>
+<div class="lvl"><b>Full detail</b>For the maximal route, select Players: 1, Level: Complex, Speed: Sonic, Control: 4-Way, and the guess allowance you can manage. Leave these values unchanged until every educational marker has been cleared.</div>
+<h2>Educational Markers</h2>
+<p class="muted"><em>You are here when:</em> Chalkboards and themed object icons distributed across the green islands.</p>
+<p>Each of the eight lesson types appears twice, for sixteen markers total.</p>
+<h3>Understand the Seven-Answer Race</h3>
+<p class="muted small">Lesson rule</p>
+<div class="lvl"><b>Hint</b>Watch both racers after the first prompt.</div>
+<div class="lvl"><b>Where</b>Correct responses move your runner; mistakes or timeouts move the opponent.</div>
+<div class="lvl"><b>Full detail</b>Earn seven correct responses before the opponent receives seven advances. A timeout behaves like a wrong answer, and losing the race restarts that marker without removing previously banked stars.</div>
+<h3>Clear Both Addition Boards</h3>
+<p class="muted small">Educational stage</p>
+<div class="lvl"><b>Hint</b>Revisit this symbol whenever another island opens.</div>
+<div class="lvl"><b>Where</b>Enter both reachable plus-sign chalkboards across the hub.</div>
+<div class="lvl"><b>Full detail</b>Clear the first plus-sign chalkboards when it becomes available, then clear its later twin after transport opens the remote islands; solve each displayed sum until Sonic reaches seven correct advances at each marker.</div>
+<h3>Clear Both Subtraction Boards</h3>
+<p class="muted small">Educational stage</p>
+<div class="lvl"><b>Hint</b>Revisit this symbol whenever another island opens.</div>
+<div class="lvl"><b>Where</b>Enter both reachable minus-sign chalkboards across the hub.</div>
+<div class="lvl"><b>Full detail</b>Clear the first minus-sign chalkboards when it becomes available, then clear its later twin after transport opens the remote islands; solve each displayed difference until Sonic reaches seven correct advances at each marker.</div>
+<h3>Clear Both Multiplication Boards</h3>
+<p class="muted small">Educational stage</p>
+<div class="lvl"><b>Hint</b>Revisit this symbol whenever another island opens.</div>
+<div class="lvl"><b>Where</b>Enter both reachable multiplication-sign chalkboards across the hub.</div>
+<div class="lvl"><b>Full detail</b>Clear the first multiplication-sign chalkboards when it becomes available, then clear its later twin after transport opens the remote islands; solve each displayed product until Sonic reaches seven correct advances at each marker.</div>
+<h3>Clear Both Division Boards</h3>
+<p class="muted small">Educational stage</p>
+<div class="lvl"><b>Hint</b>Revisit this symbol whenever another island opens.</div>
+<div class="lvl"><b>Where</b>Enter both reachable division-sign chalkboards across the hub.</div>
+<div class="lvl"><b>Full detail</b>Clear the first division-sign chalkboards when it becomes available, then clear its later twin after transport opens the remote islands; solve each displayed quotient until Sonic reaches seven correct advances at each marker.</div>
+<h3>Clear Both Travel Word Markers</h3>
+<p class="muted small">Educational stage</p>
+<div class="lvl"><b>Hint</b>Revisit this symbol whenever another island opens.</div>
+<div class="lvl"><b>Where</b>Enter both reachable boat icons across the hub.</div>
+<div class="lvl"><b>Full detail</b>Clear the first boat icons when it becomes available, then clear its later twin after transport opens the remote islands; spell transport and travel words until Sonic reaches seven correct advances at each marker.</div>
+<h3>Clear Both Animal Word Markers</h3>
+<p class="muted small">Educational stage</p>
+<div class="lvl"><b>Hint</b>Revisit this symbol whenever another island opens.</div>
+<div class="lvl"><b>Where</b>Enter both reachable animal-face icons across the hub.</div>
+<div class="lvl"><b>Full detail</b>Clear the first animal-face icons when it becomes available, then clear its later twin after transport opens the remote islands; spell animal names until Sonic reaches seven correct advances at each marker.</div>
+<h3>Clear Both Sports Word Markers</h3>
+<p class="muted small">Educational stage</p>
+<div class="lvl"><b>Hint</b>Revisit this symbol whenever another island opens.</div>
+<div class="lvl"><b>Where</b>Enter both reachable ball icons across the hub.</div>
+<div class="lvl"><b>Full detail</b>Clear the first ball icons when it becomes available, then clear its later twin after transport opens the remote islands; spell sport and activity words until Sonic reaches seven correct advances at each marker.</div>
+<h3>Clear Both Food Word Markers</h3>
+<p class="muted small">Educational stage</p>
+<div class="lvl"><b>Hint</b>Revisit this symbol whenever another island opens.</div>
+<div class="lvl"><b>Where</b>Enter both reachable picnic icons across the hub.</div>
+<div class="lvl"><b>Full detail</b>Clear the first picnic icons when it becomes available, then clear its later twin after transport opens the remote islands; spell food and kitchen words until Sonic reaches seven correct advances at each marker.</div>
+<h3>Handle Matching-Letter Reactions</h3>
+<p class="muted small">Lesson rule</p>
+<div class="lvl"><b>Hint</b>Some word races briefly interrupt the spelling board.</div>
+<div class="lvl"><b>Where</b>Watch for a rapidly changing letter set and its matching instruction.</div>
+<div class="lvl"><b>Full detail</b>Press the confirm button only when the current set contains the requested matching pair. If the needed pattern never appears, treat the prompt as a prototype failure and reload the rolling state rather than guessing repeatedly.</div>
+<h3>Handle Number-Multiple Reactions</h3>
+<p class="muted small">Lesson rule</p>
+<div class="lvl"><b>Hint</b>Math races also contain a rapid recognition check.</div>
+<div class="lvl"><b>Where</b>Read the requested factor before the number groups begin cycling.</div>
+<div class="lvl"><b>Full detail</b>Press confirm only on a displayed group whose values satisfy the requested multiple rule. If a correct set is rejected or no valid set cycles in, reload the pre-lesson state and repeat the marker.</div>
+<h2>Island and Transport Route</h2>
+<p class="muted"><em>You are here when:</em> The connected islands, gates, two helicopters, and striped hot-air balloon.</p>
+<p>Visit each newly reachable lesson cluster before testing the next barrier.</p>
+<h3>Visit the Opening Three Markers</h3>
+<p class="muted small">Route task</p>
+<div class="lvl"><b>Hint</b>Begin around the question-mark clearing.</div>
+<div class="lvl"><b>Where</b>Enter every educational icon reachable before using transport.</div>
+<div class="lvl"><b>Full detail</b>Play all three starting markers at least once and repeat comfortable ones until the first helicopter&#x27;s threshold is met. On Simple this means four stars; higher levels require 8, 12, 16, or 20.</div>
+<h3>Ride the First Helicopter</h3>
+<p class="muted small">Route task</p>
+<div class="lvl"><b>Hint</b>A nearby aircraft opens the first detached island.</div>
+<div class="lvl"><b>Where</b>Return to the first helicopter after visiting all three opening markers.</div>
+<div class="lvl"><b>Full detail</b>Board it with the required stars: 4 on Simple, 8 on Easy, 12 on Medium, 16 on Hard, or 20 on Complex. Clear both educational icons on the island it reaches.</div>
+<h3>Open the First Gate</h3>
+<p class="muted small">Route task</p>
+<div class="lvl"><b>Hint</b>The next bridge checks visited lessons.</div>
+<div class="lvl"><b>Where</b>Play both markers beyond the first helicopter, then return to the blocked path.</div>
+<div class="lvl"><b>Full detail</b>The gate opens after every currently exposed educational location in that branch has been visited. Cross it and play the three new markers, bringing the reachable total from five to eight.</div>
+<h3>Open the Second Gate</h3>
+<p class="muted small">Route task</p>
+<div class="lvl"><b>Hint</b>Another barrier yields to broader exploration.</div>
+<div class="lvl"><b>Where</b>Visit all three markers beyond the first gate, then backtrack to the lower route.</div>
+<div class="lvl"><b>Full detail</b>Once the eight-marker wave has been visited, pass the newly opened lower gate and play all four educational markers in the next section. The reachable total is now twelve.</div>
+<h3>Ride the Hot-Air Balloon</h3>
+<p class="muted small">Route task</p>
+<div class="lvl"><b>Hint</b>The striped balloon needs both exploration and stars.</div>
+<div class="lvl"><b>Where</b>After the twelve-marker wave, build the required star total and return to the balloon.</div>
+<div class="lvl"><b>Full detail</b>Board with 14 stars on Simple, 28 on Easy, 42 on Medium, 56 on Hard, or 70 on Complex. Play the two markers at its destination, raising the visited total to fourteen.</div>
+<h3>Ride the Second Helicopter</h3>
+<p class="muted small">Route task</p>
+<div class="lvl"><b>Hint</b>One aircraft passed earlier becomes useful late.</div>
+<div class="lvl"><b>Where</b>After both balloon-side markers, backtrack to the remaining helicopter.</div>
+<div class="lvl"><b>Full detail</b>Board with 17 stars on Simple, 34 on Easy, 51 on Medium, 68 on Hard, or 85 on Complex. Its destination contains the final two educational markers, for sixteen total.</div>
+<h3>Clear the Final Two Markers <span class="muted">(missable)</span></h3>
+<p class="muted small">Route task</p>
+<div class="lvl"><b>Hint</b>Finish the isolated pair reached by the late helicopter.</div>
+<div class="lvl"><b>Where</b>Enter both educational icons at the aircraft&#x27;s destination.</div>
+<div class="lvl"><b>Full detail</b>Win both races and confirm that every earlier marker has also been cleared during this session. If the completion screen does not appear, repeat a quick known marker to build the remaining stars.</div>
+<h3>Reach the Completion Star Total <span class="muted">(missable)</span></h3>
+<p class="muted small">Completion task</p>
+<div class="lvl"><b>Hint</b>Clearing all locations and filling the counter are separate checks.</div>
+<div class="lvl"><b>Where</b>Repeat any reliable lesson after all sixteen markers have been visited.</div>
+<div class="lvl"><b>Full detail</b>Reach 27 stars on Simple, 54 on Easy, 81 on Medium, 108 on Hard, or 135 on Complex. With every educational marker visited, the prototype then displays its completion message.</div>
+<h2>Coffee-Break Games</h2>
+<p class="muted"><em>You are here when:</em> The three balloon-cluster landmarks away from the chalkboards.</p>
+<p>These one-minute skill games are separate from star progression.</p>
+<h3>Complete Balloon Pop</h3>
+<p class="muted small">Skill game</p>
+<div class="lvl"><b>Hint</b>Look for one of the balloon-cluster markers.</div>
+<div class="lvl"><b>Where</b>Enter the half-pipe game and target coloured balloons.</div>
+<div class="lvl"><b>Full detail</b>Send Sonic across when a red or blue balloon is aligned; each is worth 100 points. Avoid grey balloons because touching one ends the attempt. Reach at least 300 points and, for a full survival, continue until the one-minute timer expires.</div>
+<h3>Complete Trampoline</h3>
+<p class="muted small">Skill game</p>
+<div class="lvl"><b>Hint</b>A second balloon marker uses a movable catcher.</div>
+<div class="lvl"><b>Where</b>Keep the trampoline beneath Sonic as he crosses the screen.</div>
+<div class="lvl"><b>Full detail</b>Hold near the centre until the jump direction is clear, then slide under the landing point. Each successful bounce scores 100; touching the floor ends the run. Survive the full one-minute timer.</div>
+<h3>Complete the Running Game</h3>
+<p class="muted small">Skill game</p>
+<div class="lvl"><b>Hint</b>The remaining balloon marker starts an automatic run.</div>
+<div class="lvl"><b>Where</b>Use both action buttons to test the short and long jumps.</div>
+<div class="lvl"><b>Full detail</b>Jump over every ground obstacle and collect at least one red or blue balloon for a positive score. Use the smaller hop for close debris and the longer leap for broad gaps; any collision ends the attempt, so survive to the one-minute limit for a clean clear.</div>
+<h3>Visit Every Coffee-Break Marker</h3>
+<p class="muted small">Skill-game set</p>
+<div class="lvl"><b>Hint</b>The skill games do not open transport.</div>
+<div class="lvl"><b>Where</b>Find all three balloon clusters while traversing the hub.</div>
+<div class="lvl"><b>Full detail</b>Record a completed Balloon Pop, Trampoline, and running-game attempt. They award no progression stars, so do them separately from the educational route and reload if a prototype bug ends a run without your input.</div>
+<h2>Word Answer Bank</h2>
+<p class="muted"><em>You are here when:</em> The boat, animal-face, ball, and picnic spelling boards.</p>
+<p>Banks are alphabetized so the location facts remain useful without reproducing another guide&#x27;s ordering.</p>
+<h3>Travel Words — 3 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the boat lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 3-letter scramble against the travel bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 3-letter travel bank is: ASK, CAR, FAR, FLY, JET, MAP, OAR, OIL, ROW, SAT, SAW, SEA, SEE, SIT, TOW, VAN.</div>
+<h3>Travel Words — 4 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the boat lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 4-letter scramble against the travel bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 4-letter travel bank is: AWAY, BIKE, BOAT, CART, DATE, DOCK, FUEL, HOME, QUAY, RAIL, ROAD, SEAT, SHIP, SIGN, STOP, TAXI, TOLL, VISA, WALK, WING.</div>
+<h3>Travel Words — 5 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the boat lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 5-letter scramble against the travel bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 5-letter travel bank is: CANOE, COACH, CYCLE, DRIVE, FERRY, HOTEL, LORRY, MOTOR, PEDAL, PILOT, PLANE, SPEED, STEAM, TRAIN, TRUCK, WHEEL.</div>
+<h3>Travel Words — 6 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the boat lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 6-letter scramble against the travel bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 6-letter travel bank is: AIRBUS, BRAKES, BRIDGE, CLUTCH, DINGHY, DRIVER, ENGINE, FLIGHT, RUNWAY, SIGNAL, TICKET, TUNNEL.</div>
+<h3>Travel Words — 7 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the boat lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 7-letter scramble against the travel bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 7-letter travel bank is: AIRPORT, CAPTAIN, EXHAUST, FREEWAY, HIGHWAY, HOLIDAY, JOURNEY, RAILWAY, RUNNING, SHUTTLE, STATION, STEAMER, TRACTOR, TRAFFIC, WALKING.</div>
+<h3>Travel Words — 8 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the boat lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 8-letter scramble against the travel bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 8-letter travel bank is: JUNCTION, LIFEBOAT, MOTORWAY, PASSPORT, ROADWORK, TERMINAL.</div>
+<h3>Animal Words — 3 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the animal-face lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 3-letter scramble against the animal bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 3-letter animal bank is: APE, BEE, CAT, COW, EEL, EMU, FLY, FOX, HEN, PIG.</div>
+<h3>Animal Words — 4 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the animal-face lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 4-letter scramble against the animal bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 4-letter animal bank is: BIRD, BOAR, BULL, CRAB, DEER, DUCK, FISH, FROG, GOAT, LION, MOLE, MOTH, WASP.</div>
+<h3>Animal Words — 5 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the animal-face lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 5-letter scramble against the animal bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 5-letter animal bank is: CAMEL, EAGLE, HORSE, KOALA, MOUSE, OTTER, PANDA, RHINO, SHARK, SHEEP, SKUNK, SNAIL, SNAKE, STOAT, TIGER, WHALE, ZEBRA.</div>
+<h3>Animal Words — 6 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the animal-face lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 6-letter scramble against the animal bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 6-letter animal bank is: BADGER, BEETLE, DONKEY, GERBIL, LIZARD, MONKEY, RABBIT, RACOON, SPIDER, TURKEY, TURTLE, WEASEL.</div>
+<h3>Animal Words — 7 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the animal-face lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 7-letter scramble against the animal bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 7-letter animal bank is: CATFISH, CHEETAH, CRICKET, DOGFISH, DOLPHIN, GAZELLE, GIRAFFE, GORILLA, HAMSTER, OCTOPUS, OSTRICH, PEACOCK, PENGUIN, SEAGULL, VULTURE.</div>
+<h3>Animal Words — 8 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the animal-face lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 8-letter scramble against the animal bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 8-letter animal bank is: ANTEATER, COCKATOO, ELEPHANT, HEDGEHOG, KANGAROO, REINDEER, SCORPION, SEAHORSE, SQUIRREL, STARFISH, TORTOISE.</div>
+<h3>Sports Words — 3 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the ball lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 3-letter scramble against the sports bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 3-letter sports bank is: BAG, CUE, OAR, OUT, RAN, ROW, RUN, SKI, TEE.</div>
+<h3>Sports Words — 4 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the ball lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 4-letter scramble against the sports bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 4-letter sports bank is: BALL, CLUB, FAST, FELL, FLAG, GAME, GOAL, GOLF, HOLE, JUDO, JUMP, KICK, OVER, PLAY, POLE, PUCK, RACE, READ, RING, SING.</div>
+<h3>Sports Words — 5 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the ball lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 5-letter scramble against the sports bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 5-letter sports bank is: BINGO, BOOTS, BOWLS, CARDS, DARTS, FIRST, GLOVE, GREEN, GREEN, ROUND, RUGBY, SCRUM, STICK.</div>
+<h3>Sports Words — 6 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the ball lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 6-letter scramble against the sports bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 6-letter sports bank is: BOXING, DIVING, HOCKEY, KARATE, RACING, RACKET, RIDING, ROWING, SEWING, SKATES, SOCCER, SQUASH, TENNIS, WICKET.</div>
+<h3>Sports Words — 7 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the ball lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 7-letter scramble against the sports bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 7-letter sports bank is: ARCHERY, ATHLETE, BOWLING, COOKING, CRICKET, CYCLING, FENCING, FISHING, JAVELIN, NETBALL, OFFSIDE, RUNNING, SAILING, SKATING, SNOOKER, SURFING.</div>
+<h3>Sports Words — 8 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the ball lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 8-letter scramble against the sports bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 8-letter sports bank is: BASEBALL, CANOEING, FOOTBALL, KNITTING, PAINTING, SWIMMING, YACHTING.</div>
+<h3>Food Words — 3 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the picnic lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 3-letter scramble against the food bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 3-letter food bank is: BUN, CAN, COD, CUP, DAY, EAT, EEL, EGG, FRY, HAM, ICE, JAM, JUG, OIL, PIE, TEA.</div>
+<h3>Food Words — 4 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the picnic lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 4-letter scramble against the food bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 4-letter food bank is: BEEF, BLUE, BOWL, BRAN, CAKE, CALM, CARP, COLA, CRAB, DATE, FISH, FORK, HERB, LAMB, LEEK, LIME, MEAT, MILK, MINT, OVEN, PEAR, PEAS, PLUM, PORK, RICE, ROLL, SALT, SODA, SOUP, STEW, TUNA.</div>
+<h3>Food Words — 5 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the picnic lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 5-letter scramble against the food bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 5-letter food bank is: APPLE, BACON, BEANS, BREAD, BRING, CHIPS, CREAM, CURRY, FLOUR, FRUIT, GLASS, GRILL, HONEY, JELLY, JUICE, KNIFE, LEMON, MANGO, MELON, ONION, PASTA, PEACH, PIZZA, PLATE, PRAWN, ROAST, SALAD, SAUCE, SPOON, SQUID, SUGAR, TOAST, WAFER.</div>
+<h3>Food Words — 6 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the picnic lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 6-letter scramble against the food bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 6-letter food bank is: BANANA, BUTTER, CARROT, CELERY, CEREAL, CHEESE, GRAPES, NOODLE, ORANGE, PEANUT, PEPPER, POTATO, SPONGE, SPREAD, TOMATO, TRIFLE.</div>
+<h3>Food Words — 7 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the picnic lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 7-letter scramble against the food bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 7-letter food bank is: APRICOT, BISCUIT, CHICKEN, CRACKER, LETTUCE, MUSTARD, PANCAKE, PUDDING, PUMPKIN, SAUSAGE, SPINACH, YOGHURT.</div>
+<h3>Food Words — 8 Letters</h3>
+<p class="muted small">Answer bank</p>
+<div class="lvl"><b>Hint</b>Use the picnic lesson&#x27;s theme to narrow the scramble.</div>
+<div class="lvl"><b>Where</b>Match the current 8-letter scramble against the food bank.</div>
+<div class="lvl"><b>Full detail</b>Select letters in the required order. The complete alphabetized 8-letter food bank is: BEETROOT, CHERRIES, CUCUMBER, LEMONADE, MUSHROOM, OMELETTE, SANDWICH.</div>
+<h2>Completion and Mastery</h2>
+<p class="muted"><em>You are here when:</em> The fully opened hub after all vehicles and gates are usable.</p>
+<p>Keep maximal difficulty, counter, and two-player work on deliberately separated states.</p>
+<h3>Clear All Sixteen in One Session <span class="muted">(missable)</span></h3>
+<p class="muted small">Mastery task</p>
+<div class="lvl"><b>Hint</b>Do not switch player mode midway.</div>
+<div class="lvl"><b>Where</b>Start from the opening hub and win every educational marker without resetting progress.</div>
+<div class="lvl"><b>Full detail</b>Keep Players set to 1, clear both copies of every math operation and every word theme, and use all three transports as they unlock. Maintain a rolling save state, but do not load a state from another option set.</div>
+<h3>Clear Everything on Complex at Sonic Speed <span class="muted">(missable)</span></h3>
+<p class="muted small">Mastery task</p>
+<div class="lvl"><b>Hint</b>Reserve the hardest option pair for a dedicated run.</div>
+<div class="lvl"><b>Where</b>Set Level to Complex and Speed to Sonic before clearing any marker.</div>
+<div class="lvl"><b>Full detail</b>Use 4-Way control, keep Players at 1, and clear all sixteen educational markers without changing either difficulty setting. Build to 135 stars if the completion screen has not appeared after the final marker.</div>
+<h3>Win Without Rival Progress <span class="muted">(missable)</span></h3>
+<p class="muted small">Mastery task</p>
+<div class="lvl"><b>Hint</b>Choose a lesson whose answers you know instantly.</div>
+<div class="lvl"><b>Where</b>At Sonic speed, finish one race before the opponent advances.</div>
+<div class="lvl"><b>Full detail</b>Use a short math lesson or a memorized word group, answer seven prompts correctly, and avoid every timeout or wrong selection. Reload immediately if the opponent moves even once.</div>
+<h3>Win Before the Countdown Cue <span class="muted">(missable)</span></h3>
+<p class="muted small">Mastery task</p>
+<div class="lvl"><b>Hint</b>Fast recognition can end a race unusually early.</div>
+<div class="lvl"><b>Where</b>Select Sonic speed and choose a familiar marker.</div>
+<div class="lvl"><b>Full detail</b>Answer each prompt as soon as it settles and earn the seventh correct response before the urgent countdown music begins. A Simple math board is the safest rehearsal; repeat on Complex for the maximal version.</div>
+<h3>Collect 100 Stars</h3>
+<p class="muted small">Counter task</p>
+<div class="lvl"><b>Hint</b>The counter continues beyond the ending threshold.</div>
+<div class="lvl"><b>Where</b>Repeat a reliable educational marker after transport is fully open.</div>
+<div class="lvl"><b>Full detail</b>Keep winning the fastest comfortable lesson until the total reaches 100. Coffee-break games do not add stars, so use a short math board or a memorized three-letter word bank for the repeat cycle.</div>
+<h3>Fill the Star Counter</h3>
+<p class="muted small">Counter task</p>
+<div class="lvl"><b>Hint</b>The prototype stores more than completion requires.</div>
+<div class="lvl"><b>Where</b>Continue repeating educational wins after reaching 100.</div>
+<div class="lvl"><b>Full detail</b>Raise the counter to its 255 maximum by farming the quickest dependable marker. Make a separate save state first: this is a counter-cap exercise, not a requirement for the normal completion screen.</div>
+<h3>Complete a Two-Player Lesson <span class="muted">(missable)</span></h3>
+<p class="muted small">Mode task</p>
+<div class="lvl"><b>Hint</b>The second participant setting deserves its own test.</div>
+<div class="lvl"><b>Where</b>Set Players to 2 only after finishing the one-player mastery run.</div>
+<div class="lvl"><b>Full detail</b>Give both participants initials, enter an opening marker, and complete enough turns to observe the handoff. Save this as a separate branch, because enabling two-player mode breaks continuity with the single-session one-player clear.</div>
+<hr>
+<p><a class="cta" href="../?pack=sonics-edusoft">Open the spoiler-free interactive guide</a></p>
+<p class="muted small">Part of the 100% guide collection at
+<a href="/guides.html">samimirash.com/guides</a>.</p>
+</div>
+</body>
+</html>

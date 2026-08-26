@@ -138,6 +138,42 @@
     el(this.node, "[data-prev]").addEventListener("click", function () { self.go(self.areaIdx - 1); });
     el(this.node, "[data-next]").addEventListener("click", function () { self.go(self.areaIdx + 1); });
 
+    // ⭐⭐ THE TWO OTHER WAYS A PERSON SAYS "GO LEFT". the creator reported that "the moving left
+    // and right thing" did not work, and three separate looks at this file found nothing, because
+    // go() is correct and the buttons are wired. The defect was never in the handler - it was that
+    // the handler had exactly ONE way in. On a phone or an iPad you swipe; at a desk you press the
+    // arrow keys; neither existed, so both did nothing at all while the on-screen arrows worked.
+    // ⛔ Checking the button handler is the SAMPLE. The population is every way a user can
+    // express the intent.
+
+    // keyboard: ignore it while a form control has focus, or typing in the area select would move
+    document.addEventListener("keydown", function (e) {
+      if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey) return;
+      var t = e.target || {};
+      var tag = (t.tagName || "").toLowerCase();
+      if (tag === "input" || tag === "select" || tag === "textarea" || t.isContentEditable) return;
+      if (e.key === "ArrowLeft") { e.preventDefault(); self.go(self.areaIdx - 1); }
+      else if (e.key === "ArrowRight") { e.preventDefault(); self.go(self.areaIdx + 1); }
+    });
+
+    // swipe: horizontal only, and only a decisive one, so it can never fight vertical scrolling
+    var sx = 0, sy = 0, tracking = false;
+    this.node.addEventListener("touchstart", function (e) {
+      if (e.touches.length !== 1) { tracking = false; return; }
+      sx = e.touches[0].clientX; sy = e.touches[0].clientY; tracking = true;
+    }, { passive: true });
+    this.node.addEventListener("touchend", function (e) {
+      if (!tracking) return;
+      tracking = false;
+      var tt = (e.changedTouches && e.changedTouches[0]) || null;
+      if (!tt) return;
+      var dx = tt.clientX - sx, dy = tt.clientY - sy;
+      // ⭐ a swipe counts only if it is long enough AND clearly more sideways than vertical
+      if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.7) return;
+      if (dx < 0) self.go(self.areaIdx + 1);   // swipe LEFT  -> forward, like turning a page
+      else self.go(self.areaIdx - 1);          // swipe RIGHT -> back
+    }, { passive: true });
+
     el(this.node, "[data-check]").addEventListener("click", function () {
       self.checkOpen = true; self.renderArea();
     });

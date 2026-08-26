@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SegaSonic Bros. (1992 arcade prototype) — 100% collectible guide | Sami Mirash</title>
+<meta name="description" content="Complete SegaSonic Bros. (1992 arcade prototype) guide: 48 collectibles and objectives across 6 areas, with exact locations. Written while playing, no spoilers in the interactive version.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.samimirash.com/guide/segasonic-bros/">
+<link rel="stylesheet" href="../guide.css">
+<style>
+  .static-wrap{max-width:760px;margin:0 auto;padding:20px 16px 64px}
+  @media(min-width:1200px){.static-wrap{max-width:920px}}
+  .static-wrap h1{font-size:26px;margin:.2em 0}
+  .static-wrap h2{font-size:20px;margin:1.6em 0 .4em;color:var(--gold)}
+  .static-wrap h3{font-size:16px;margin:1.1em 0 .3em}
+  .static-wrap .lvl{margin:.15em 0 .15em 0;padding-left:12px;border-left:2px solid var(--line)}
+  .static-wrap .lvl b{color:var(--muted);font-weight:600;font-size:12px;
+     text-transform:uppercase;letter-spacing:.6px;display:block}
+  .spoiler-note{border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0}
+  .cta{display:inline-block;margin:8px 0 4px;padding:12px 18px;border-radius:10px;
+     background:var(--gold);color:#151109;font-weight:800;text-decoration:none}
+  .static-wrap img.sk{display:block;width:100%;max-width:560px;margin:8px 0;
+     border:1px solid var(--line);border-radius:8px}
+</style>
+</head>
+<body>
+<div class="static-wrap">
+<a class="homelink" href="/">&#8592; <span>samimirash.com</span></a>
+<h1>SegaSonic Bros. (1992 arcade prototype)</h1>
+<p class="muted">Preserved Sega System C2 arcade prototype through MAME 0.289 on PC &middot; 6 areas &middot; 48 tracked items</p>
+
+<div class="spoiler-note">
+  <strong>This page shows everything, including exact locations.</strong>
+  It exists so you can search for one specific collectible and find it.
+  If you are playing blind, use the
+  <a href="../?pack=segasonic-bros">interactive spoiler-free version</a> instead — it hides
+  locations until you ask for them, one item at a time.
+</div>
+
+<p><a class="cta" href="../?pack=segasonic-bros">Open the spoiler-free interactive guide</a></p>
+<h2>Prototype Cabinet Setup</h2>
+<p class="muted"><em>You are here when:</em> The MAME launch, cabinet assignments, and attract loop before a credit begins.</p>
+<p>Use the preserved arcade set and configure both control sides before attempting a long run.</p>
+<h3>Verify the Preserved Arcade Set</h3>
+<p class="muted small">System task</p>
+<div class="lvl"><b>Hint</b>Confirm the archived build before changing emulator options.</div>
+<div class="lvl"><b>Where</b>Run MAME&#x27;s ROM verification against the `ssonicbr` set.</div>
+<div class="lvl"><b>Full detail</b>Use MAME 0.289 with driver `ssonicbr`. The ZIP is 229,039 bytes with SHA-256 0e2166adaf44011692879868aede01844db3673a5ff16eb1d3d0f6d66cb76141; `-verifyroms ssonicbr` must report the set as good.</div>
+<h3>Map the Left Controls</h3>
+<p class="muted small">Cabinet setup</p>
+<div class="lvl"><b>Hint</b>The first playfield uses a very small input set.</div>
+<div class="lvl"><b>Where</b>Assign Player 1&#x27;s eight-way joystick, action button, coin, and start inputs.</div>
+<div class="lvl"><b>Full detail</b>Map Player 1 Left, Right, Up, Down, Button 1, Coin 1, and Player 1 Start. Leave opposite directions distinct; the driver exposes an eight-way joystick and one action button.</div>
+<h3>Map the Right Controls</h3>
+<p class="muted small">Cabinet setup</p>
+<div class="lvl"><b>Hint</b>The second playfield is independently usable.</div>
+<div class="lvl"><b>Where</b>Assign the matching Player 2 controls, coin input, and start input.</div>
+<div class="lvl"><b>Full detail</b>Map Player 2 Left, Right, Up, Down, Button 1, Coin 2, and Player 2 Start. Test the second start from the title screen; it should place the rank prompt on the right-hand board.</div>
+<h3>Enable Demo Sounds</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>Let the idle loop demonstrate both presentation and rules.</div>
+<div class="lvl"><b>Where</b>Open the cabinet DIP switches and keep Demo Sounds set to On.</div>
+<div class="lvl"><b>Full detail</b>Set Demo Sounds to On, return to the title screen, and allow one full attract cycle to play. This preserves the intended tutorial presentation and makes the sound check observable.</div>
+<h3>Sample Every Cabinet Difficulty</h3>
+<p class="muted small">Cabinet option</p>
+<div class="lvl"><b>Hint</b>The operator menu has a separate speed-pressure setting.</div>
+<div class="lvl"><b>Where</b>Start a short credit on Easy, Medium, Hard, and Hardest.</div>
+<div class="lvl"><b>Full detail</b>Cycle the Difficulty DIP through Easy, Medium, Hard, and Hardest, fully restart the emulated machine after each change, and play until several groups have landed. Use a separate save state for every setting so NVRAM and session state do not cross-contaminate the comparison.</div>
+<h3>Watch the Complete Attract Tutorial</h3>
+<p class="muted small">Tutorial</p>
+<div class="lvl"><b>Hint</b>The idle cabinet teaches rules the playfield does not spell out later.</div>
+<div class="lvl"><b>Where</b>Wait at the title screen until every instructional panel and demo sequence has appeared.</div>
+<div class="lvl"><b>Full detail</b>Do not insert a credit immediately. Let the title, rule diagrams, sample enclosure, competitive demonstration, and return to the title complete once with Demo Sounds enabled.</div>
+<h3>Confirm Both Playfield Sides</h3>
+<p class="muted small">Cabinet check</p>
+<div class="lvl"><b>Hint</b>Either cabinet side can host a solo attempt.</div>
+<div class="lvl"><b>Where</b>Begin one credit from each start input and compare the rank prompt position.</div>
+<div class="lvl"><b>Full detail</b>Insert a credit and use Player 1 Start, then restart and use Player 2 Start. The first rank prompt belongs on the left board and the second on the right; both sides must accept their own joystick and button.</div>
+<h2>Loop-Clearing Rules</h2>
+<p class="muted"><em>You are here when:</em> Either puzzle grid during the first groups of a fresh solo credit.</p>
+<p>Learn the enclosure system before committing to the Level 99 run.</p>
+<h3>Read the Next Group</h3>
+<p class="muted small">Puzzle skill</p>
+<div class="lvl"><b>Hint</b>Plan one arrival ahead instead of reacting at the floor.</div>
+<div class="lvl"><b>Where</b>Use the center preview to inspect the next two-by-two color group.</div>
+<div class="lvl"><b>Full detail</b>Before the active group settles, read all four preview colors in the center column. Choose a landing that helps one color close an enclosure while leaving the other colors reachable.</div>
+<h3>Steer a Falling Group</h3>
+<p class="muted small">Puzzle skill</p>
+<div class="lvl"><b>Hint</b>Place the whole formation before worrying about a clear.</div>
+<div class="lvl"><b>Where</b>Use left and right to align the two-by-two group over the chosen columns.</div>
+<div class="lvl"><b>Full detail</b>Move the falling group horizontally while it still has clearance. Avoid parking against a wall until its orientation is correct, because a two-column piece has little recovery room near a tall stack.</div>
+<h3>Rotate a Falling Group</h3>
+<p class="muted small">Puzzle skill</p>
+<div class="lvl"><b>Hint</b>The four colors can be rearranged before landing.</div>
+<div class="lvl"><b>Where</b>Press Button 1 while the two-by-two group is falling.</div>
+<div class="lvl"><b>Full detail</b>Tap Button 1 to rotate the four Sonic pieces, then recheck which two colors will touch the floor or stack. Rotate high on the board; late turns beside a wall may have no valid space.</div>
+<h3>Accelerate a Safe Drop</h3>
+<p class="muted small">Puzzle skill</p>
+<div class="lvl"><b>Hint</b>Bank time only after the landing is settled in your head.</div>
+<div class="lvl"><b>Where</b>Hold Down after the group is aligned and oriented.</div>
+<div class="lvl"><b>Full detail</b>Move and rotate first, then hold Down to speed the descent. Release it if the landing preview exposes an unwanted isolated color; speed-dropping an unplanned group is the quickest way to seal a useful channel.</div>
+<h3>Close a First Enclosure</h3>
+<p class="muted small">Puzzle skill</p>
+<div class="lvl"><b>Hint</b>Matching here is about surrounding space, not making a straight row.</div>
+<div class="lvl"><b>Where</b>Connect one color around a pocket of pieces until its outline closes.</div>
+<div class="lvl"><b>Full detail</b>Build a continuous boundary from one color around any enclosed pieces. When the final same-colored connection lands, the boundary and everything inside it disappear; a glowing outline signals a closure the game will accept.</div>
+<h3>Use the Floor as a Boundary</h3>
+<p class="muted small">Puzzle skill</p>
+<div class="lvl"><b>Hint</b>A loop does not need four handmade sides.</div>
+<div class="lvl"><b>Where</b>Build a same-colored arch whose open edge touches the bottom of the grid.</div>
+<div class="lvl"><b>Full detail</b>Run one color down both sides of a pocket and reconnect it above while the pocket rests on the floor. The bottom boundary completes the enclosure, clearing the arch and its contents without a matching row beneath it.</div>
+<h3>Use a Side Wall as a Boundary</h3>
+<p class="muted small">Puzzle skill</p>
+<div class="lvl"><b>Hint</b>The outer columns can close a shape for you.</div>
+<div class="lvl"><b>Where</b>Build a same-colored hook against either vertical edge.</div>
+<div class="lvl"><b>Full detail</b>Touch one side wall with both ends of a same-colored enclosure and connect the remaining path inside the grid. The wall counts as the missing boundary, letting a half-loop clear safely along the edge.</div>
+<h3>Clear a Large Enclosure</h3>
+<p class="muted small">Scoring skill</p>
+<div class="lvl"><b>Hint</b>The space inside a loop matters as much as its border.</div>
+<div class="lvl"><b>Where</b>Keep extending a safe boundary until it surrounds several mixed pieces.</div>
+<div class="lvl"><b>Full detail</b>Prepare a broad floor- or wall-assisted enclosure, confirm the glowing path, and close it only when several pieces sit inside. The entire captured region disappears together and produces a much larger score gain than a tiny pocket.</div>
+<h3>Preserve a Low Emerald Channel</h3>
+<p class="muted small">Puzzle skill</p>
+<div class="lvl"><b>Hint</b>A narrow path to the floor becomes valuable at each decade.</div>
+<div class="lvl"><b>Where</b>Keep at least one column low as the level counter approaches a multiple of ten.</div>
+<div class="lvl"><b>Full detail</b>Route ordinary groups away from one open column before Levels 10, 20, and every later tenth level. The incoming emerald removes its landing row and everything above it, so a floor-level landing can empty the whole board.</div>
+<h3>Avoid a Blocked Entry</h3>
+<p class="muted small">Failure warning</p>
+<div class="lvl"><b>Hint</b>The attempt ends when a new group cannot descend.</div>
+<div class="lvl"><b>Where</b>Watch the highest occupied cells beneath the spawn area.</div>
+<div class="lvl"><b>Full detail</b>Do not build directly under the entry columns unless the next move clears space. If an arriving group has no legal descent, the run ends and the continue countdown begins; reload the last clean decade state for a mastery attempt.</div>
+<h2>Solo Rank Starts</h2>
+<p class="muted"><em>You are here when:</em> The play-type card followed by the rank panel on either puzzle board.</p>
+<p>Record all three starting ranks before the full Level 1 route.</p>
+<h3>Select 1P Play</h3>
+<p class="muted small">Mode</p>
+<div class="lvl"><b>Hint</b>Begin with the branch that uses one active grid.</div>
+<div class="lvl"><b>Where</b>Choose the left 1P PLAY card on the play-type screen.</div>
+<div class="lvl"><b>Full detail</b>Insert one credit, press either player&#x27;s Start, leave the arrow under 1P PLAY, and confirm before its timer expires. The chosen side then displays SELECT RANK while the opposite board remains available for another participant.</div>
+<h3>Start Easy Rank</h3>
+<p class="muted small">Rank start</p>
+<div class="lvl"><b>Hint</b>Use the only rank that preserves the whole progression curve.</div>
+<div class="lvl"><b>Where</b>Choose EASY on the rank panel to begin at Level 1.</div>
+<div class="lvl"><b>Full detail</b>Select EASY (LEVEL 1~). It grants no starting score, but it is the correct branch for seeing every speed band, every decade transition, and the formal Level 99 clear in one continuous route.</div>
+<h3>Start Normal Rank</h3>
+<p class="muted small">Rank start</p>
+<div class="lvl"><b>Hint</b>A middle start demonstrates the first skip bonus.</div>
+<div class="lvl"><b>Where</b>Choose NORMAL on a separate credit to begin at Level 10.</div>
+<div class="lvl"><b>Full detail</b>Select NORMAL (LEVEL 10~) and confirm that the run begins with a 30,000-point award. Treat this as a branch demonstration only; it skips the first decade and cannot replace the full Easy-rank route.</div>
+<h3>Start Hard Rank</h3>
+<p class="muted small">Rank start</p>
+<div class="lvl"><b>Hint</b>The highest rank start trades early progression for a larger score.</div>
+<div class="lvl"><b>Where</b>Choose HARD on a separate credit to begin at Level 20.</div>
+<div class="lvl"><b>Full detail</b>Select HARD (LEVEL 20~) and confirm the 100,000-point opening award. Use it to practise the faster bands and the approach to the fourth color, then return to an Easy-rank state for the complete run.</div>
+<h3>Use a Continue Once</h3>
+<p class="muted small">Recovery</p>
+<div class="lvl"><b>Hint</b>The first failed credit has a short recovery window.</div>
+<div class="lvl"><b>Where</b>After a blocked entry, accept the CONTINUE prompt before its timer reaches zero.</div>
+<div class="lvl"><b>Full detail</b>Lose a non-mastery attempt, insert the required credit if necessary, and confirm during the continue countdown. Record how the resumed state behaves, but restart from a clean save for Level 99 so the final route remains auditable.</div>
+<h3>Enter a Three-Character Name</h3>
+<p class="muted small">Score record</p>
+<div class="lvl"><b>Hint</b>Let one finished attempt reach the cabinet record screen.</div>
+<div class="lvl"><b>Where</b>Decline or miss the continue, then use the joystick and button on the initials panel.</div>
+<div class="lvl"><b>Full detail</b>Allow the continue timer to expire after a qualifying score. Choose each of the three characters with the joystick, confirm with Button 1, and wait for the five-place daily ranking to appear before resetting.</div>
+<h2>Level 1–99 Route</h2>
+<p class="muted"><em>You are here when:</em> The active solo grid, center preview, level counter, and changing background bands.</p>
+<p>Keep one low channel and make a save state immediately after each decade transition.</p>
+<h3>Reach Level 10</h3>
+<p class="muted small">Progress milestone</p>
+<div class="lvl"><b>Hint</b>The first decade introduces the route&#x27;s repeating rescue tool.</div>
+<div class="lvl"><b>Where</b>Advance from Easy rank until the counter first reaches 10.</div>
+<div class="lvl"><b>Full detail</b>Keep one column open, cross into Level 10, and identify the Chaos Emerald group. Guide the emerald into the lowest safe column so it removes that row and every occupied cell above it.</div>
+<h3>Reach Level 20</h3>
+<p class="muted small">Progress milestone</p>
+<div class="lvl"><b>Hint</b>The second decade offers another board reset before the rules expand.</div>
+<div class="lvl"><b>Where</b>Continue through the next speed band and prepare a low channel before 20.</div>
+<div class="lvl"><b>Full detail</b>Use ordinary enclosures to control stack height, enter Level 20, and land the second emerald near the floor. Save immediately after its clear so the Level 20 practice branch remains reusable.</div>
+<h3>Reach Level 30</h3>
+<p class="muted small">Progress milestone</p>
+<div class="lvl"><b>Hint</b>A new piece color permanently changes the planning load.</div>
+<div class="lvl"><b>Where</b>Cross into Level 30 and inspect the next-group preview.</div>
+<div class="lvl"><b>Full detail</b>Land the third decade emerald, then confirm that white Sonic pieces now join blue, red, and yellow. From this point, avoid isolating single colors; build smaller wall-assisted enclosures to keep all four reachable.</div>
+<h3>Reach Level 40</h3>
+<p class="muted small">Progress milestone</p>
+<div class="lvl"><b>Hint</b>One later audio band is especially distinctive.</div>
+<div class="lvl"><b>Where</b>Enter Level 40 with music enabled and pause after the transition.</div>
+<div class="lvl"><b>Full detail</b>Use the fourth emerald at the decade boundary, then let the new background and music play without fast-forwarding. This Level 40–49 track is a unique part of the prototype&#x27;s complete presentation.</div>
+<h3>Reach Level 50</h3>
+<p class="muted small">Progress milestone</p>
+<div class="lvl"><b>Hint</b>The second half begins another presentation cycle at higher pressure.</div>
+<div class="lvl"><b>Where</b>Preserve the emerald lane through the late forties and cross 50.</div>
+<div class="lvl"><b>Full detail</b>Land the fifth emerald low, verify the next background band, and save after the board settles. The music families now begin cycling again while speed and four-color pressure continue rising.</div>
+<h3>Reach Level 60</h3>
+<p class="muted small">Progress milestone</p>
+<div class="lvl"><b>Hint</b>Keep the decade rhythm instead of chasing one huge stack.</div>
+<div class="lvl"><b>Where</b>Clear back toward the floor before the Level 60 emerald appears.</div>
+<div class="lvl"><b>Full detail</b>Use compact boundary-assisted loops through the fifties, then send the sixth emerald down the reserved channel at 60. Save only after confirming the transition and a stable next preview.</div>
+<h3>Reach Level 70</h3>
+<p class="muted small">Progress milestone</p>
+<div class="lvl"><b>Hint</b>Late groups leave little room for corrective movement.</div>
+<div class="lvl"><b>Where</b>Approach 70 with both central spawn columns clear.</div>
+<div class="lvl"><b>Full detail</b>Rotate each group high, favour small enclosures, and avoid building beneath the entry. Land the seventh emerald as low as the board permits, then branch a save for repeated late-speed practice.</div>
+<h3>Reach Level 80</h3>
+<p class="muted small">Progress milestone</p>
+<div class="lvl"><b>Hint</b>The fourth color and high speed now punish sealed pockets immediately.</div>
+<div class="lvl"><b>Where</b>Keep every color connected to an edge-assisted clearing route before 80.</div>
+<div class="lvl"><b>Full detail</b>Do not bury isolated white pieces. Close one safe loop at a time, cross 80, and use the eighth emerald through the lowest surviving channel before recording the new presentation band.</div>
+<h3>Reach Level 90</h3>
+<p class="muted small">Progress milestone</p>
+<div class="lvl"><b>Hint</b>The final decade starts with the last scheduled emerald rescue.</div>
+<div class="lvl"><b>Where</b>Enter 90 with a floor path and space under the spawn.</div>
+<div class="lvl"><b>Full detail</b>Drop the ninth emerald to clear as much height as possible, confirm the final music/background band, and save after the next ordinary group appears. Preserve this state for the Level 99 finishing attempts.</div>
+<h3>Clear Level 99 <span class="muted">(missable)</span></h3>
+<p class="muted small">Completion</p>
+<div class="lvl"><b>Hint</b>The prototype has a formal endpoint beyond mere survival.</div>
+<div class="lvl"><b>Where</b>Continue the final band until the level counter completes 99.</div>
+<div class="lvl"><b>Full detail</b>Keep the entry columns open through the last groups and finish Level 99. The game displays its Super Player congratulations and proceeds to the staff roll; capture the clear before entering another credit.</div>
+<h3>Trigger the Score-Cap Clear <span class="muted">(missable)</span></h3>
+<p class="muted small">Alternate completion</p>
+<div class="lvl"><b>Hint</b>A second numerical condition can invoke the formal ending.</div>
+<div class="lvl"><b>Where</b>Build the score to 9,999,990 before Level 99 finishes.</div>
+<div class="lvl"><b>Full detail</b>Use broad enclosures, full-board emerald clears, and the fastest rank you can control until the displayed score reaches 9,999,990. The prototype then invokes the same formal completion path even if the level counter has not completed 99.</div>
+<h3>Use All Nine Decade Emeralds <span class="muted">(missable)</span></h3>
+<p class="muted small">Collection route</p>
+<div class="lvl"><b>Hint</b>Each ten-level boundary supplies one scheduled board-clearing piece.</div>
+<div class="lvl"><b>Where</b>Track the emeralds at Levels 10 through 90 without skipping a decade.</div>
+<div class="lvl"><b>Full detail</b>On the Easy-rank route, land one Chaos Emerald at each of Levels 10, 20, 30, 40, 50, 60, 70, 80, and 90. Keep a written tally and reload the preceding decade state if any emerald is lost to a blocked entry.</div>
+<h3>Record Every Music Family</h3>
+<p class="muted small">Presentation</p>
+<div class="lvl"><b>Hint</b>The soundtrack is arranged in repeating ten-level families.</div>
+<div class="lvl"><b>Where</b>Listen during 0–9, 10–19, 20–29, 30–39, and 40–49.</div>
+<div class="lvl"><b>Full detail</b>Keep Demo Sounds and game audio enabled, then record a clean segment from each of the five level families. The same families return across 50–99, so the full Easy-rank clear naturally confirms both cycles.</div>
+<h2>V.S. and Second-Side Play</h2>
+<p class="muted"><em>You are here when:</em> The play-type selection and twin puzzle grids after a second credit is available.</p>
+<p>Document both win conditions and both physical control sides on separate branches.</p>
+<h3>Select V.S. Play</h3>
+<p class="muted small">Mode</p>
+<div class="lvl"><b>Hint</b>The second play-type card activates the twin-grid contest.</div>
+<div class="lvl"><b>Where</b>Move the arrow to V.S. PLAY and confirm it before the timer expires.</div>
+<div class="lvl"><b>Full detail</b>Insert a credit, choose V.S. PLAY on the right-hand card, and confirm. Verify that both grids become part of the contest and that the center panel tracks the match rather than a solo rank route.</div>
+<h3>Win by Blocking the Opponent</h3>
+<p class="muted small">Versus win</p>
+<div class="lvl"><b>Hint</b>One victory condition follows the ordinary failure rule.</div>
+<div class="lvl"><b>Where</b>Keep your entry clear until the opposing board can no longer accept a group.</div>
+<div class="lvl"><b>Full detail</b>Build small, reliable enclosures on your side and survive until the opponent&#x27;s spawn is blocked. Let the winner cue finish and record the match result before continuing or resetting.</div>
+<h3>Win by Reaching 300,000</h3>
+<p class="muted small">Versus win</p>
+<div class="lvl"><b>Hint</b>The contest also has a score-based finish.</div>
+<div class="lvl"><b>Where</b>Prioritize broad loops and race your score to 300,000.</div>
+<div class="lvl"><b>Full detail</b>Keep both boards alive while your side reaches 300,000 points first. Large enclosures and low emerald clears are safer than letting either entry clog; capture the distinct winner/champion result after the threshold is accepted.</div>
+<h3>Complete a Right-Side Solo Credit</h3>
+<p class="muted small">Mode branch</p>
+<div class="lvl"><b>Hint</b>The second cabinet side can run the same solo structure independently.</div>
+<div class="lvl"><b>Where</b>Insert Coin 2, use Player 2 Start, and keep 1P PLAY selected.</div>
+<div class="lvl"><b>Full detail</b>Begin from Player 2 Start, choose 1P PLAY, select any rank on the right board, and complete at least one level using only Player 2 controls. Confirm the left side remains ready for a separate join.</div>
+<h3>Join from the Other Side</h3>
+<p class="muted small">Multiplayer</p>
+<div class="lvl"><b>Hint</b>The inactive board can accept its own credit and start.</div>
+<div class="lvl"><b>Where</b>During a safe branch, add the other side with its matching coin and start input.</div>
+<div class="lvl"><b>Full detail</b>Start one side, then insert the opposite coin and press the opposite Start while the cabinet permits joining. Complete its timed selection using that player&#x27;s joystick and confirm both control sets respond independently.</div>
+<h3>Finish a Two-Person V.S. Match</h3>
+<p class="muted small">Multiplayer</p>
+<div class="lvl"><b>Hint</b>The complete cabinet route includes a contest controlled from both sides.</div>
+<div class="lvl"><b>Where</b>Enter V.S. PLAY with both control sets assigned and both participants ready.</div>
+<div class="lvl"><b>Full detail</b>Use a separate local participant or control both mapped devices, then finish one human-controlled match. Accept either legitimate win condition, record which side won, and wait for the complete winner cue before leaving the mode.</div>
+<h2>Mastery and Prototype Archive</h2>
+<p class="muted"><em>You are here when:</em> The completed solo states, result board, service configuration, and preserved ROM inventory.</p>
+<p>These checks close the maximal route without treating inaccessible data as ordinary gameplay.</p>
+<h3>Clear Level 99 on Hardest from Level 1 <span class="muted">(missable)</span></h3>
+<p class="muted small">Maximum challenge</p>
+<div class="lvl"><b>Hint</b>Combine the complete route with the strongest operator setting.</div>
+<div class="lvl"><b>Where</b>Set cabinet Difficulty to Hardest, then choose Easy rank for a Level 1 start.</div>
+<div class="lvl"><b>Full detail</b>Cold-start the Hardest cabinet profile, select 1P PLAY and EASY rank, and complete Levels 1 through 99 without changing DIP switches or ranks. Rolling save states are allowed, but every loaded state must belong to this exact profile and route.</div>
+<h3>Complete All Three Rank Starts</h3>
+<p class="muted small">Mastery</p>
+<div class="lvl"><b>Hint</b>Each starting rank should produce a documented playable branch.</div>
+<div class="lvl"><b>Where</b>Finish at least one full level from Easy, Normal, and Hard rank.</div>
+<div class="lvl"><b>Full detail</b>On separate credits, complete one level after starting at Level 1 with zero bonus, Level 10 with 30,000 points, and Level 20 with 100,000 points. Preserve screenshots of each initial counter and score.</div>
+<h3>Earn a Double-Point Full Clear</h3>
+<p class="muted small">Scoring mastery</p>
+<div class="lvl"><b>Hint</b>The strongest emerald use rewards an empty floor.</div>
+<div class="lvl"><b>Where</b>Prepare a floor-level emerald landing that removes every occupied row.</div>
+<div class="lvl"><b>Full detail</b>Before a decade boundary, keep one column open to the floor and avoid pieces below the planned emerald row. Land the emerald at floor level so the entire board vanishes, then confirm the doubled clear award before the next group descends.</div>
+<h3>Fill the Daily Top Five</h3>
+<p class="muted small">Scoreboard mastery</p>
+<div class="lvl"><b>Hint</b>The local cabinet keeps five score-and-level records.</div>
+<div class="lvl"><b>Where</b>Complete five qualifying attempts and enter distinct three-character names.</div>
+<div class="lvl"><b>Full detail</b>Use five separate completed or failed credits with scores high enough to register, enter a different three-character name for each, and return to the ranking display. Confirm all five daily slots contain your own recorded attempts.</div>
+<h3>Review the Unused Band Artwork</h3>
+<p class="muted small">Prototype archive</p>
+<div class="lvl"><b>Hint</b>The preserved data contains art that ordinary play never exposes.</div>
+<div class="lvl"><b>Where</b>Inspect the archived sprite inventory after finishing every playable branch.</div>
+<div class="lvl"><b>Full detail</b>Use a read-only graphics viewer or the preserved public sprite inventory to examine the unused band-member artwork. Do not patch the ROM or present these sprites as unlockable; record them as inaccessible prototype data only.</div>
+<h3>Record the Prototype Route Boundary</h3>
+<p class="muted small">Archive note</p>
+<div class="lvl"><b>Hint</b>One later conversion is separate from the chosen arcade archive.</div>
+<div class="lvl"><b>Where</b>Keep the guide tied to the System C2 build stored in the E-folder.</div>
+<div class="lvl"><b>Full detail</b>Document that this pack covers the preserved arcade prototype only. A later Mega Drive conversion is a separate derivative route and is not substituted for the MAME set, its controls, twin playfields, or cabinet options.</div>
+<hr>
+<p><a class="cta" href="../?pack=segasonic-bros">Open the spoiler-free interactive guide</a></p>
+<p class="muted small">Part of the 100% guide collection at
+<a href="/guides.html">samimirash.com/guides</a>.</p>
+</div>
+</body>
+</html>

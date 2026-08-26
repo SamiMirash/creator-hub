@@ -1,0 +1,677 @@
+{
+ "id": "segasonic-bros",
+ "game": "SegaSonic Bros. (1992 arcade prototype)",
+ "target": "Preserved Sega System C2 arcade prototype through MAME 0.289 on PC",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-25T17:14:21.864072+00:00",
+ "areas": [
+  {
+   "id": "ssbros-cabinet-setup",
+   "name": "Prototype Cabinet Setup",
+   "location_cue": "The MAME launch, cabinet assignments, and attract loop before a credit begins.",
+   "note": "Use the preserved arcade set and configure both control sides before attempting a long run.",
+   "save_backup": {
+    "title": "Preserve the verified cabinet profile",
+    "why": "Input or DIP changes during a run make the result ambiguous.",
+    "detail": "Save a clean MAME configuration after verifying both sides, then fork one profile per cabinet difficulty."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "ssbros-verify-romset",
+     "type": "interaction",
+     "safe_type": "System task",
+     "label": "Verify the Preserved Arcade Set",
+     "missable": false,
+     "levels": {
+      "1": "Confirm the archived build before changing emulator options.",
+      "2": "Run MAME's ROM verification against the `ssonicbr` set.",
+      "3": "Use MAME 0.289 with driver `ssonicbr`. The ZIP is 229,039 bytes with SHA-256 0e2166adaf44011692879868aede01844db3673a5ff16eb1d3d0f6d66cb76141; `-verifyroms ssonicbr` must report the set as good."
+     }
+    },
+    {
+     "id": "ssbros-map-left-controls",
+     "type": "interaction",
+     "safe_type": "Cabinet setup",
+     "label": "Map the Left Controls",
+     "missable": false,
+     "levels": {
+      "1": "The first playfield uses a very small input set.",
+      "2": "Assign Player 1's eight-way joystick, action button, coin, and start inputs.",
+      "3": "Map Player 1 Left, Right, Up, Down, Button 1, Coin 1, and Player 1 Start. Leave opposite directions distinct; the driver exposes an eight-way joystick and one action button."
+     }
+    },
+    {
+     "id": "ssbros-map-right-controls",
+     "type": "interaction",
+     "safe_type": "Cabinet setup",
+     "label": "Map the Right Controls",
+     "missable": false,
+     "levels": {
+      "1": "The second playfield is independently usable.",
+      "2": "Assign the matching Player 2 controls, coin input, and start input.",
+      "3": "Map Player 2 Left, Right, Up, Down, Button 1, Coin 2, and Player 2 Start. Test the second start from the title screen; it should place the rank prompt on the right-hand board."
+     }
+    },
+    {
+     "id": "ssbros-enable-demo-sounds",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Enable Demo Sounds",
+     "missable": false,
+     "levels": {
+      "1": "Let the idle loop demonstrate both presentation and rules.",
+      "2": "Open the cabinet DIP switches and keep Demo Sounds set to On.",
+      "3": "Set Demo Sounds to On, return to the title screen, and allow one full attract cycle to play. This preserves the intended tutorial presentation and makes the sound check observable."
+     }
+    },
+    {
+     "id": "ssbros-sample-cabinet-difficulties",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Sample Every Cabinet Difficulty",
+     "missable": false,
+     "levels": {
+      "1": "The operator menu has a separate speed-pressure setting.",
+      "2": "Start a short credit on Easy, Medium, Hard, and Hardest.",
+      "3": "Cycle the Difficulty DIP through Easy, Medium, Hard, and Hardest, fully restart the emulated machine after each change, and play until several groups have landed. Use a separate save state for every setting so NVRAM and session state do not cross-contaminate the comparison."
+     }
+    },
+    {
+     "id": "ssbros-watch-attract-tutorial",
+     "type": "optional",
+     "safe_type": "Tutorial",
+     "label": "Watch the Complete Attract Tutorial",
+     "missable": false,
+     "levels": {
+      "1": "The idle cabinet teaches rules the playfield does not spell out later.",
+      "2": "Wait at the title screen until every instructional panel and demo sequence has appeared.",
+      "3": "Do not insert a credit immediately. Let the title, rule diagrams, sample enclosure, competitive demonstration, and return to the title complete once with Demo Sounds enabled."
+     }
+    },
+    {
+     "id": "ssbros-confirm-both-playfields",
+     "type": "optional",
+     "safe_type": "Cabinet check",
+     "label": "Confirm Both Playfield Sides",
+     "missable": false,
+     "levels": {
+      "1": "Either cabinet side can host a solo attempt.",
+      "2": "Begin one credit from each start input and compare the rank prompt position.",
+      "3": "Insert a credit and use Player 1 Start, then restart and use Player 2 Start. The first rank prompt belongs on the left board and the second on the right; both sides must accept their own joystick and button."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssbros-core-rules",
+   "name": "Loop-Clearing Rules",
+   "location_cue": "Either puzzle grid during the first groups of a fresh solo credit.",
+   "note": "Learn the enclosure system before committing to the Level 99 run.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "ssbros-read-next-group",
+     "type": "optional",
+     "safe_type": "Puzzle skill",
+     "label": "Read the Next Group",
+     "missable": false,
+     "levels": {
+      "1": "Plan one arrival ahead instead of reacting at the floor.",
+      "2": "Use the center preview to inspect the next two-by-two color group.",
+      "3": "Before the active group settles, read all four preview colors in the center column. Choose a landing that helps one color close an enclosure while leaving the other colors reachable."
+     }
+    },
+    {
+     "id": "ssbros-steer-group",
+     "type": "optional",
+     "safe_type": "Puzzle skill",
+     "label": "Steer a Falling Group",
+     "missable": false,
+     "levels": {
+      "1": "Place the whole formation before worrying about a clear.",
+      "2": "Use left and right to align the two-by-two group over the chosen columns.",
+      "3": "Move the falling group horizontally while it still has clearance. Avoid parking against a wall until its orientation is correct, because a two-column piece has little recovery room near a tall stack."
+     }
+    },
+    {
+     "id": "ssbros-rotate-group",
+     "type": "optional",
+     "safe_type": "Puzzle skill",
+     "label": "Rotate a Falling Group",
+     "missable": false,
+     "levels": {
+      "1": "The four colors can be rearranged before landing.",
+      "2": "Press Button 1 while the two-by-two group is falling.",
+      "3": "Tap Button 1 to rotate the four Sonic pieces, then recheck which two colors will touch the floor or stack. Rotate high on the board; late turns beside a wall may have no valid space."
+     }
+    },
+    {
+     "id": "ssbros-fast-drop-group",
+     "type": "optional",
+     "safe_type": "Puzzle skill",
+     "label": "Accelerate a Safe Drop",
+     "missable": false,
+     "levels": {
+      "1": "Bank time only after the landing is settled in your head.",
+      "2": "Hold Down after the group is aligned and oriented.",
+      "3": "Move and rotate first, then hold Down to speed the descent. Release it if the landing preview exposes an unwanted isolated color; speed-dropping an unplanned group is the quickest way to seal a useful channel."
+     }
+    },
+    {
+     "id": "ssbros-close-first-loop",
+     "type": "optional",
+     "safe_type": "Puzzle skill",
+     "label": "Close a First Enclosure",
+     "missable": false,
+     "levels": {
+      "1": "Matching here is about surrounding space, not making a straight row.",
+      "2": "Connect one color around a pocket of pieces until its outline closes.",
+      "3": "Build a continuous boundary from one color around any enclosed pieces. When the final same-colored connection lands, the boundary and everything inside it disappear; a glowing outline signals a closure the game will accept."
+     }
+    },
+    {
+     "id": "ssbros-use-floor-boundary",
+     "type": "optional",
+     "safe_type": "Puzzle skill",
+     "label": "Use the Floor as a Boundary",
+     "missable": false,
+     "levels": {
+      "1": "A loop does not need four handmade sides.",
+      "2": "Build a same-colored arch whose open edge touches the bottom of the grid.",
+      "3": "Run one color down both sides of a pocket and reconnect it above while the pocket rests on the floor. The bottom boundary completes the enclosure, clearing the arch and its contents without a matching row beneath it."
+     }
+    },
+    {
+     "id": "ssbros-use-wall-boundary",
+     "type": "optional",
+     "safe_type": "Puzzle skill",
+     "label": "Use a Side Wall as a Boundary",
+     "missable": false,
+     "levels": {
+      "1": "The outer columns can close a shape for you.",
+      "2": "Build a same-colored hook against either vertical edge.",
+      "3": "Touch one side wall with both ends of a same-colored enclosure and connect the remaining path inside the grid. The wall counts as the missing boundary, letting a half-loop clear safely along the edge."
+     }
+    },
+    {
+     "id": "ssbros-score-large-enclosure",
+     "type": "optional",
+     "safe_type": "Scoring skill",
+     "label": "Clear a Large Enclosure",
+     "missable": false,
+     "levels": {
+      "1": "The space inside a loop matters as much as its border.",
+      "2": "Keep extending a safe boundary until it surrounds several mixed pieces.",
+      "3": "Prepare a broad floor- or wall-assisted enclosure, confirm the glowing path, and close it only when several pieces sit inside. The entire captured region disappears together and produces a much larger score gain than a tiny pocket."
+     }
+    },
+    {
+     "id": "ssbros-preserve-emerald-channel",
+     "type": "optional",
+     "safe_type": "Puzzle skill",
+     "label": "Preserve a Low Emerald Channel",
+     "missable": false,
+     "levels": {
+      "1": "A narrow path to the floor becomes valuable at each decade.",
+      "2": "Keep at least one column low as the level counter approaches a multiple of ten.",
+      "3": "Route ordinary groups away from one open column before Levels 10, 20, and every later tenth level. The incoming emerald removes its landing row and everything above it, so a floor-level landing can empty the whole board."
+     }
+    },
+    {
+     "id": "ssbros-avoid-top-blockage",
+     "type": "optional",
+     "safe_type": "Failure warning",
+     "label": "Avoid a Blocked Entry",
+     "missable": false,
+     "levels": {
+      "1": "The attempt ends when a new group cannot descend.",
+      "2": "Watch the highest occupied cells beneath the spawn area.",
+      "3": "Do not build directly under the entry columns unless the next move clears space. If an arriving group has no legal descent, the run ends and the continue countdown begins; reload the last clean decade state for a mastery attempt."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssbros-solo-ranks",
+   "name": "Solo Rank Starts",
+   "location_cue": "The play-type card followed by the rank panel on either puzzle board.",
+   "note": "Record all three starting ranks before the full Level 1 route.",
+   "save_backup": {
+    "title": "Fork each rank start",
+    "why": "Normal and Hard deliberately skip early level bands.",
+    "detail": "Keep separate Easy, Normal, and Hard states; only Easy can document the complete Level 1-to-99 route."
+   },
+   "point_of_no_return": {
+    "title": "The rank choice starts the tracked credit",
+    "why": "Changing rank requires another credit and a fresh session.",
+    "detail": "Confirm the intended rank and cabinet difficulty before accepting the timed selection."
+   },
+   "items": [
+    {
+     "id": "ssbros-select-one-player",
+     "type": "interaction",
+     "safe_type": "Mode",
+     "label": "Select 1P Play",
+     "missable": false,
+     "levels": {
+      "1": "Begin with the branch that uses one active grid.",
+      "2": "Choose the left 1P PLAY card on the play-type screen.",
+      "3": "Insert one credit, press either player's Start, leave the arrow under 1P PLAY, and confirm before its timer expires. The chosen side then displays SELECT RANK while the opposite board remains available for another participant."
+     }
+    },
+    {
+     "id": "ssbros-start-easy-rank",
+     "type": "interaction",
+     "safe_type": "Rank start",
+     "label": "Start Easy Rank",
+     "missable": false,
+     "levels": {
+      "1": "Use the only rank that preserves the whole progression curve.",
+      "2": "Choose EASY on the rank panel to begin at Level 1.",
+      "3": "Select EASY (LEVEL 1~). It grants no starting score, but it is the correct branch for seeing every speed band, every decade transition, and the formal Level 99 clear in one continuous route."
+     }
+    },
+    {
+     "id": "ssbros-start-normal-rank",
+     "type": "optional",
+     "safe_type": "Rank start",
+     "label": "Start Normal Rank",
+     "missable": false,
+     "levels": {
+      "1": "A middle start demonstrates the first skip bonus.",
+      "2": "Choose NORMAL on a separate credit to begin at Level 10.",
+      "3": "Select NORMAL (LEVEL 10~) and confirm that the run begins with a 30,000-point award. Treat this as a branch demonstration only; it skips the first decade and cannot replace the full Easy-rank route."
+     }
+    },
+    {
+     "id": "ssbros-start-hard-rank",
+     "type": "optional",
+     "safe_type": "Rank start",
+     "label": "Start Hard Rank",
+     "missable": false,
+     "levels": {
+      "1": "The highest rank start trades early progression for a larger score.",
+      "2": "Choose HARD on a separate credit to begin at Level 20.",
+      "3": "Select HARD (LEVEL 20~) and confirm the 100,000-point opening award. Use it to practise the faster bands and the approach to the fourth color, then return to an Easy-rank state for the complete run."
+     }
+    },
+    {
+     "id": "ssbros-use-continue",
+     "type": "optional",
+     "safe_type": "Recovery",
+     "label": "Use a Continue Once",
+     "missable": false,
+     "levels": {
+      "1": "The first failed credit has a short recovery window.",
+      "2": "After a blocked entry, accept the CONTINUE prompt before its timer reaches zero.",
+      "3": "Lose a non-mastery attempt, insert the required credit if necessary, and confirm during the continue countdown. Record how the resumed state behaves, but restart from a clean save for Level 99 so the final route remains auditable."
+     }
+    },
+    {
+     "id": "ssbros-enter-score-name",
+     "type": "optional",
+     "safe_type": "Score record",
+     "label": "Enter a Three-Character Name",
+     "missable": false,
+     "levels": {
+      "1": "Let one finished attempt reach the cabinet record screen.",
+      "2": "Decline or miss the continue, then use the joystick and button on the initials panel.",
+      "3": "Allow the continue timer to expire after a qualifying score. Choose each of the three characters with the joystick, confirm with Button 1, and wait for the five-place daily ranking to appear before resetting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssbros-decade-route",
+   "name": "Level 1–99 Route",
+   "location_cue": "The active solo grid, center preview, level counter, and changing background bands.",
+   "note": "Keep one low channel and make a save state immediately after each decade transition.",
+   "save_backup": {
+    "title": "Save after every decade transition",
+    "why": "A blocked spawn can erase a long single-credit route.",
+    "detail": "Maintain rolling states at 10-level boundaries and keep the Level 90 state separate from the final-clear capture."
+   },
+   "point_of_no_return": {
+    "title": "The formal clear ends the active route",
+    "why": "Level 99 or the score cap leaves the playfield for the completion sequence.",
+    "detail": "Capture the final board and counters before the last required clear resolves."
+   },
+   "items": [
+    {
+     "id": "ssbros-reach-level-10",
+     "type": "interaction",
+     "safe_type": "Progress milestone",
+     "label": "Reach Level 10",
+     "missable": false,
+     "levels": {
+      "1": "The first decade introduces the route's repeating rescue tool.",
+      "2": "Advance from Easy rank until the counter first reaches 10.",
+      "3": "Keep one column open, cross into Level 10, and identify the Chaos Emerald group. Guide the emerald into the lowest safe column so it removes that row and every occupied cell above it."
+     }
+    },
+    {
+     "id": "ssbros-reach-level-20",
+     "type": "interaction",
+     "safe_type": "Progress milestone",
+     "label": "Reach Level 20",
+     "missable": false,
+     "levels": {
+      "1": "The second decade offers another board reset before the rules expand.",
+      "2": "Continue through the next speed band and prepare a low channel before 20.",
+      "3": "Use ordinary enclosures to control stack height, enter Level 20, and land the second emerald near the floor. Save immediately after its clear so the Level 20 practice branch remains reusable."
+     }
+    },
+    {
+     "id": "ssbros-reach-level-30",
+     "type": "interaction",
+     "safe_type": "Progress milestone",
+     "label": "Reach Level 30",
+     "missable": false,
+     "levels": {
+      "1": "A new piece color permanently changes the planning load.",
+      "2": "Cross into Level 30 and inspect the next-group preview.",
+      "3": "Land the third decade emerald, then confirm that white Sonic pieces now join blue, red, and yellow. From this point, avoid isolating single colors; build smaller wall-assisted enclosures to keep all four reachable."
+     }
+    },
+    {
+     "id": "ssbros-reach-level-40",
+     "type": "interaction",
+     "safe_type": "Progress milestone",
+     "label": "Reach Level 40",
+     "missable": false,
+     "levels": {
+      "1": "One later audio band is especially distinctive.",
+      "2": "Enter Level 40 with music enabled and pause after the transition.",
+      "3": "Use the fourth emerald at the decade boundary, then let the new background and music play without fast-forwarding. This Level 40–49 track is a unique part of the prototype's complete presentation."
+     }
+    },
+    {
+     "id": "ssbros-reach-level-50",
+     "type": "interaction",
+     "safe_type": "Progress milestone",
+     "label": "Reach Level 50",
+     "missable": false,
+     "levels": {
+      "1": "The second half begins another presentation cycle at higher pressure.",
+      "2": "Preserve the emerald lane through the late forties and cross 50.",
+      "3": "Land the fifth emerald low, verify the next background band, and save after the board settles. The music families now begin cycling again while speed and four-color pressure continue rising."
+     }
+    },
+    {
+     "id": "ssbros-reach-level-60",
+     "type": "interaction",
+     "safe_type": "Progress milestone",
+     "label": "Reach Level 60",
+     "missable": false,
+     "levels": {
+      "1": "Keep the decade rhythm instead of chasing one huge stack.",
+      "2": "Clear back toward the floor before the Level 60 emerald appears.",
+      "3": "Use compact boundary-assisted loops through the fifties, then send the sixth emerald down the reserved channel at 60. Save only after confirming the transition and a stable next preview."
+     }
+    },
+    {
+     "id": "ssbros-reach-level-70",
+     "type": "interaction",
+     "safe_type": "Progress milestone",
+     "label": "Reach Level 70",
+     "missable": false,
+     "levels": {
+      "1": "Late groups leave little room for corrective movement.",
+      "2": "Approach 70 with both central spawn columns clear.",
+      "3": "Rotate each group high, favour small enclosures, and avoid building beneath the entry. Land the seventh emerald as low as the board permits, then branch a save for repeated late-speed practice."
+     }
+    },
+    {
+     "id": "ssbros-reach-level-80",
+     "type": "interaction",
+     "safe_type": "Progress milestone",
+     "label": "Reach Level 80",
+     "missable": false,
+     "levels": {
+      "1": "The fourth color and high speed now punish sealed pockets immediately.",
+      "2": "Keep every color connected to an edge-assisted clearing route before 80.",
+      "3": "Do not bury isolated white pieces. Close one safe loop at a time, cross 80, and use the eighth emerald through the lowest surviving channel before recording the new presentation band."
+     }
+    },
+    {
+     "id": "ssbros-reach-level-90",
+     "type": "interaction",
+     "safe_type": "Progress milestone",
+     "label": "Reach Level 90",
+     "missable": false,
+     "levels": {
+      "1": "The final decade starts with the last scheduled emerald rescue.",
+      "2": "Enter 90 with a floor path and space under the spawn.",
+      "3": "Drop the ninth emerald to clear as much height as possible, confirm the final music/background band, and save after the next ordinary group appears. Preserve this state for the Level 99 finishing attempts."
+     }
+    },
+    {
+     "id": "ssbros-clear-level-99",
+     "type": "interaction",
+     "safe_type": "Completion",
+     "label": "Clear Level 99",
+     "missable": true,
+     "levels": {
+      "1": "The prototype has a formal endpoint beyond mere survival.",
+      "2": "Continue the final band until the level counter completes 99.",
+      "3": "Keep the entry columns open through the last groups and finish Level 99. The game displays its Super Player congratulations and proceeds to the staff roll; capture the clear before entering another credit."
+     }
+    },
+    {
+     "id": "ssbros-trigger-score-cap-clear",
+     "type": "interaction",
+     "safe_type": "Alternate completion",
+     "label": "Trigger the Score-Cap Clear",
+     "missable": true,
+     "levels": {
+      "1": "A second numerical condition can invoke the formal ending.",
+      "2": "Build the score to 9,999,990 before Level 99 finishes.",
+      "3": "Use broad enclosures, full-board emerald clears, and the fastest rank you can control until the displayed score reaches 9,999,990. The prototype then invokes the same formal completion path even if the level counter has not completed 99."
+     }
+    },
+    {
+     "id": "ssbros-use-nine-emeralds",
+     "type": "interaction",
+     "safe_type": "Collection route",
+     "label": "Use All Nine Decade Emeralds",
+     "missable": true,
+     "levels": {
+      "1": "Each ten-level boundary supplies one scheduled board-clearing piece.",
+      "2": "Track the emeralds at Levels 10 through 90 without skipping a decade.",
+      "3": "On the Easy-rank route, land one Chaos Emerald at each of Levels 10, 20, 30, 40, 50, 60, 70, 80, and 90. Keep a written tally and reload the preceding decade state if any emerald is lost to a blocked entry."
+     }
+    },
+    {
+     "id": "ssbros-record-five-presentation-bands",
+     "type": "optional",
+     "safe_type": "Presentation",
+     "label": "Record Every Music Family",
+     "missable": false,
+     "levels": {
+      "1": "The soundtrack is arranged in repeating ten-level families.",
+      "2": "Listen during 0–9, 10–19, 20–29, 30–39, and 40–49.",
+      "3": "Keep Demo Sounds and game audio enabled, then record a clean segment from each of the five level families. The same families return across 50–99, so the full Easy-rank clear naturally confirms both cycles."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssbros-versus-route",
+   "name": "V.S. and Second-Side Play",
+   "location_cue": "The play-type selection and twin puzzle grids after a second credit is available.",
+   "note": "Document both win conditions and both physical control sides on separate branches.",
+   "save_backup": {
+    "title": "Fork solo and versus states",
+    "why": "Joining another side changes the active cabinet session.",
+    "detail": "Keep the Level 99 solo route isolated from CPU-versus and human-versus experiments."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "ssbros-select-versus-play",
+     "type": "interaction",
+     "safe_type": "Mode",
+     "label": "Select V.S. Play",
+     "missable": false,
+     "levels": {
+      "1": "The second play-type card activates the twin-grid contest.",
+      "2": "Move the arrow to V.S. PLAY and confirm it before the timer expires.",
+      "3": "Insert a credit, choose V.S. PLAY on the right-hand card, and confirm. Verify that both grids become part of the contest and that the center panel tracks the match rather than a solo rank route."
+     }
+    },
+    {
+     "id": "ssbros-win-versus-topout",
+     "type": "interaction",
+     "safe_type": "Versus win",
+     "label": "Win by Blocking the Opponent",
+     "missable": false,
+     "levels": {
+      "1": "One victory condition follows the ordinary failure rule.",
+      "2": "Keep your entry clear until the opposing board can no longer accept a group.",
+      "3": "Build small, reliable enclosures on your side and survive until the opponent's spawn is blocked. Let the winner cue finish and record the match result before continuing or resetting."
+     }
+    },
+    {
+     "id": "ssbros-win-versus-score",
+     "type": "interaction",
+     "safe_type": "Versus win",
+     "label": "Win by Reaching 300,000",
+     "missable": false,
+     "levels": {
+      "1": "The contest also has a score-based finish.",
+      "2": "Prioritize broad loops and race your score to 300,000.",
+      "3": "Keep both boards alive while your side reaches 300,000 points first. Large enclosures and low emerald clears are safer than letting either entry clog; capture the distinct winner/champion result after the threshold is accepted."
+     }
+    },
+    {
+     "id": "ssbros-start-right-side-solo",
+     "type": "optional",
+     "safe_type": "Mode branch",
+     "label": "Complete a Right-Side Solo Credit",
+     "missable": false,
+     "levels": {
+      "1": "The second cabinet side can run the same solo structure independently.",
+      "2": "Insert Coin 2, use Player 2 Start, and keep 1P PLAY selected.",
+      "3": "Begin from Player 2 Start, choose 1P PLAY, select any rank on the right board, and complete at least one level using only Player 2 controls. Confirm the left side remains ready for a separate join."
+     }
+    },
+    {
+     "id": "ssbros-join-second-player",
+     "type": "optional",
+     "safe_type": "Multiplayer",
+     "label": "Join from the Other Side",
+     "missable": false,
+     "levels": {
+      "1": "The inactive board can accept its own credit and start.",
+      "2": "During a safe branch, add the other side with its matching coin and start input.",
+      "3": "Start one side, then insert the opposite coin and press the opposite Start while the cabinet permits joining. Complete its timed selection using that player's joystick and confirm both control sets respond independently."
+     }
+    },
+    {
+     "id": "ssbros-finish-human-versus",
+     "type": "interaction",
+     "safe_type": "Multiplayer",
+     "label": "Finish a Two-Person V.S. Match",
+     "missable": false,
+     "levels": {
+      "1": "The complete cabinet route includes a contest controlled from both sides.",
+      "2": "Enter V.S. PLAY with both control sets assigned and both participants ready.",
+      "3": "Use a separate local participant or control both mapped devices, then finish one human-controlled match. Accept either legitimate win condition, record which side won, and wait for the complete winner cue before leaving the mode."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssbros-mastery-archive",
+   "name": "Mastery and Prototype Archive",
+   "location_cue": "The completed solo states, result board, service configuration, and preserved ROM inventory.",
+   "note": "These checks close the maximal route without treating inaccessible data as ordinary gameplay.",
+   "save_backup": {
+    "title": "Protect the Level 90 and Hardest states",
+    "why": "They are the most expensive branches to reconstruct after a top-out.",
+    "detail": "Keep multiple rotating copies and label them with cabinet difficulty, starting rank, level, and score."
+   },
+   "point_of_no_return": {
+    "title": "A final-clear capture must precede reset",
+    "why": "Resetting or starting another credit replaces the completion and ranking screens.",
+    "detail": "Capture the congratulations, staff roll, initials, and daily ranking before changing cabinet state."
+   },
+   "items": [
+    {
+     "id": "ssbros-clear-hardest-from-one",
+     "type": "interaction",
+     "safe_type": "Maximum challenge",
+     "label": "Clear Level 99 on Hardest from Level 1",
+     "missable": true,
+     "levels": {
+      "1": "Combine the complete route with the strongest operator setting.",
+      "2": "Set cabinet Difficulty to Hardest, then choose Easy rank for a Level 1 start.",
+      "3": "Cold-start the Hardest cabinet profile, select 1P PLAY and EASY rank, and complete Levels 1 through 99 without changing DIP switches or ranks. Rolling save states are allowed, but every loaded state must belong to this exact profile and route."
+     }
+    },
+    {
+     "id": "ssbros-complete-all-rank-starts",
+     "type": "optional",
+     "safe_type": "Mastery",
+     "label": "Complete All Three Rank Starts",
+     "missable": false,
+     "levels": {
+      "1": "Each starting rank should produce a documented playable branch.",
+      "2": "Finish at least one full level from Easy, Normal, and Hard rank.",
+      "3": "On separate credits, complete one level after starting at Level 1 with zero bonus, Level 10 with 30,000 points, and Level 20 with 100,000 points. Preserve screenshots of each initial counter and score."
+     }
+    },
+    {
+     "id": "ssbros-earn-double-full-clear",
+     "type": "optional",
+     "safe_type": "Scoring mastery",
+     "label": "Earn a Double-Point Full Clear",
+     "missable": false,
+     "levels": {
+      "1": "The strongest emerald use rewards an empty floor.",
+      "2": "Prepare a floor-level emerald landing that removes every occupied row.",
+      "3": "Before a decade boundary, keep one column open to the floor and avoid pieces below the planned emerald row. Land the emerald at floor level so the entire board vanishes, then confirm the doubled clear award before the next group descends."
+     }
+    },
+    {
+     "id": "ssbros-fill-daily-top-five",
+     "type": "optional",
+     "safe_type": "Scoreboard mastery",
+     "label": "Fill the Daily Top Five",
+     "missable": false,
+     "levels": {
+      "1": "The local cabinet keeps five score-and-level records.",
+      "2": "Complete five qualifying attempts and enter distinct three-character names.",
+      "3": "Use five separate completed or failed credits with scores high enough to register, enter a different three-character name for each, and return to the ranking display. Confirm all five daily slots contain your own recorded attempts."
+     }
+    },
+    {
+     "id": "ssbros-review-unused-band-art",
+     "type": "optional",
+     "safe_type": "Prototype archive",
+     "label": "Review the Unused Band Artwork",
+     "missable": false,
+     "levels": {
+      "1": "The preserved data contains art that ordinary play never exposes.",
+      "2": "Inspect the archived sprite inventory after finishing every playable branch.",
+      "3": "Use a read-only graphics viewer or the preserved public sprite inventory to examine the unused band-member artwork. Do not patch the ROM or present these sprites as unlockable; record them as inaccessible prototype data only."
+     }
+    },
+    {
+     "id": "ssbros-record-prototype-boundary",
+     "type": "optional",
+     "safe_type": "Archive note",
+     "label": "Record the Prototype Route Boundary",
+     "missable": false,
+     "levels": {
+      "1": "One later conversion is separate from the chosen arcade archive.",
+      "2": "Keep the guide tied to the System C2 build stored in the E-folder.",
+      "3": "Document that this pack covers the preserved arcade prototype only. A later Mega Drive conversion is a separate derivative route and is not substituted for the MAME set, its controls, twin playfields, or cabinet options."
+     }
+    }
+   ]
+  }
+ ]
+}

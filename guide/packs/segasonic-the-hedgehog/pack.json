@@ -1,0 +1,1133 @@
+{
+ "id": "segasonic-the-hedgehog",
+ "game": "SegaSonic the Hedgehog (1993 arcade)",
+ "target": "Japan revision C arcade release through MAME 0.289 on PC",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-25T18:11:19.811121+00:00",
+ "areas": [
+  {
+   "id": "ssth-cabinet-setup",
+   "name": "Arcade Cabinet Setup",
+   "location_cue": "The MAME launch, service assignments, attract loop, and participant-start controls before play begins.",
+   "note": "Configure the original trackball behavior before judging movement or beginning a completion run.",
+   "save_backup": {
+    "title": "Back up configuration, not game state",
+    "why": "MAME reports save states unsupported for this driver.",
+    "detail": "Export the input map and photograph Game Assignments before a long credit; failed progress must be replayed."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "ssth-verify-revision-c",
+     "type": "interaction",
+     "safe_type": "System task",
+     "label": "Verify Japan Revision C",
+     "missable": false,
+     "levels": {
+      "1": "Confirm the preserved cabinet program before changing controls.",
+      "2": "Point MAME 0.289 at the `sonic` ROM set and run its verifier.",
+      "3": "Use the 5,147,908-byte `sonic.zip` with SHA-256 ee8e7ca54b0261d6a53e46fb04a32179a9b8a4fe86e7c811e80f3a83cc58c377. Launch driver `sonic`; `-verifyroms sonic` must report the Japan revision C set as good."
+     }
+    },
+    {
+     "id": "ssth-record-emulation-limits",
+     "type": "interaction",
+     "safe_type": "System task",
+     "label": "Record the Emulation Limits",
+     "missable": false,
+     "levels": {
+      "1": "One driver warning affects how the long route must be planned.",
+      "2": "Read MAME's status and save-state support before inserting a credit.",
+      "3": "Record 416×224 at 60 Hz, driver status `imperfect`, game emulation `good`, and save-state support `unsupported`. Do not plan a mid-stage reload route; a failed collectible run must be replayed from its beginning."
+     }
+    },
+    {
+     "id": "ssth-map-player-one-trackball",
+     "type": "interaction",
+     "safe_type": "Cabinet setup",
+     "label": "Map Player 1 Trackball",
+     "missable": false,
+     "levels": {
+      "1": "The first control is relative motion, not a held direction.",
+      "2": "Assign both axes of Trackball 1 and test diagonal travel.",
+      "3": "Map Trackball X/Y for Player 1 to a mouse, trackball, or relative-motion device. If using digital increments, tune the speed value; if using an absolute stick, tune sensitivity instead and confirm steady diagonal movement."
+     }
+    },
+    {
+     "id": "ssth-map-player-two-trackball",
+     "type": "optional",
+     "safe_type": "Cabinet setup",
+     "label": "Map Player 2 Trackball",
+     "missable": false,
+     "levels": {
+      "1": "A cooperative cabinet needs a second independent motion pair.",
+      "2": "Assign Trackball X/Y 2 and Player 2's jump button.",
+      "3": "Map the second relative-motion pair, Button 1 for Player 2, Coin 2, and the two-participant Start input. In the input test, move both axes separately and ensure Player 1 does not respond."
+     }
+    },
+    {
+     "id": "ssth-map-player-three-trackball",
+     "type": "optional",
+     "safe_type": "Cabinet setup",
+     "label": "Map Player 3 Trackball",
+     "missable": false,
+     "levels": {
+      "1": "The complete cabinet route uses one more independent station.",
+      "2": "Assign Trackball X/Y 3, Player 3's button, Coin 3, and three-participant Start.",
+      "3": "Map the third relative-motion pair and its jump input, then switch Cabinet Type to 3P in Game Assignments. Return to Input Test and confirm all three counters and buttons change independently."
+     }
+    },
+    {
+     "id": "ssth-check-game-difficulty",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Check All Difficulty Grades",
+     "missable": false,
+     "levels": {
+      "1": "The operator menu carries four pressure settings.",
+      "2": "Open Game Assignments and inspect Game Difficulty 1/4 through 4/4.",
+      "3": "Use the service button to highlight Game Difficulty and the test button to cycle 1/4, 2/4, 3/4, and 4/4. Record each setting; restore 2/4 for the ordinary route and reserve 4/4 for mastery."
+     }
+    },
+    {
+     "id": "ssth-check-initial-vitality",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Check All Vitality Grades",
+     "missable": false,
+     "levels": {
+      "1": "Starting health has its own four-step operator setting.",
+      "2": "Inspect Initial Vitality 1/4 through 4/4 in Game Assignments.",
+      "3": "Cycle Initial Vitality through all four positions and photograph the gauge range. Restore 2/4 for the first clear; use 1/4 only for the separate minimum-vitality mastery branch."
+     }
+    },
+    {
+     "id": "ssth-enable-attract-sound",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Enable Attract Sound",
+     "missable": false,
+     "levels": {
+      "1": "The idle loop contains presentation worth preserving.",
+      "2": "Set Advertise Sound to On before watching the cabinet demonstration.",
+      "3": "In Game Assignments, toggle Advertise Sound to On, exit service mode, and let the title, movement demonstration, rankings, and return to title complete once with audible cues."
+     }
+    },
+    {
+     "id": "ssth-confirm-monitor-orientation",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Confirm Normal Monitor Orientation",
+     "missable": false,
+     "levels": {
+      "1": "One operator toggle can reverse the entire picture.",
+      "2": "Keep Monitor Flip on Normal for the guide route.",
+      "3": "Open Game Assignments, verify Monitor Flip reads Normal, and exit without changing it. Use the reverse option only as a cabinet test; it adds no separate game content."
+     }
+    },
+    {
+     "id": "ssth-configure-two-player-cabinet",
+     "type": "optional",
+     "safe_type": "Cabinet option",
+     "label": "Configure the 2P Cabinet",
+     "missable": false,
+     "levels": {
+      "1": "The default local profile exposes the smaller cabinet layout.",
+      "2": "Set Cabinet Type to 2P and test the one- and two-participant starts.",
+      "3": "Choose Cabinet Type 2P, exit service mode, insert the needed credits, and verify both the 1 Player Start and 2 Players Start inputs reach character selection. Save the input configuration outside MAME before changing cabinet type."
+     }
+    },
+    {
+     "id": "ssth-configure-three-player-cabinet",
+     "type": "interaction",
+     "safe_type": "Cabinet option",
+     "label": "Configure the 3P Cabinet",
+     "missable": false,
+     "levels": {
+      "1": "The third station remains unavailable until the cabinet profile changes.",
+      "2": "Set Cabinet Type to 3P and test the three-participant Start input.",
+      "3": "Select Cabinet Type 3P, confirm three coin and trackball stations in Input Test, then insert sufficient credits and use 3 Players Start. All three character panels must become active before the route begins."
+     }
+    },
+    {
+     "id": "ssth-watch-complete-attract-loop",
+     "type": "optional",
+     "safe_type": "Presentation",
+     "label": "Watch the Complete Attract Loop",
+     "missable": false,
+     "levels": {
+      "1": "The idle cabinet explains movement and displays local records.",
+      "2": "Wait through the title, play demonstration, and Top 15 board without starting.",
+      "3": "With Advertise Sound enabled, leave the cabinet idle until it shows the title, three-character artwork, demonstration prompts, several ranking pages, the complete Top 15, and a return to the title."
+     }
+    },
+    {
+     "id": "ssth-preserve-service-profile",
+     "type": "interaction",
+     "safe_type": "System task",
+     "label": "Preserve the Cabinet Profile",
+     "missable": false,
+     "levels": {
+      "1": "MAME cannot preserve the active course with a normal save state.",
+      "2": "Export the verified input and service values before the first serious credit.",
+      "3": "Keep a written profile containing ROM hash, cabinet type, difficulty, vitality, trackball sensitivity, and every mapped input. Because the driver rejects save states, this configuration record is the only reliable pre-run backup."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssth-opening-and-rules",
+   "name": "Opening Course and Core Rules",
+   "location_cue": "The character panel, movement tutorial, barred platform, and the first uninterrupted running sections.",
+   "note": "Learn health, jumping, and continue behavior before attempting ring-perfect stages.",
+   "save_backup": {
+    "title": "Record the selected branch before play",
+    "why": "The active runner and participant count are not recoverable from an unsupported save state.",
+    "detail": "Capture Player Select and the cabinet profile before confirming the character."
+   },
+   "point_of_no_return": {
+    "title": "Character confirmation consumes this branch",
+    "why": "Changing the selected runner requires another credit or an ordinary continue.",
+    "detail": "Confirm the intended solo character before leaving Player Select; do not mix character-clear records."
+   },
+   "items": [
+    {
+     "id": "ssth-select-sonic",
+     "type": "interaction",
+     "safe_type": "Character route",
+     "label": "Select Sonic",
+     "missable": false,
+     "levels": {
+      "1": "Begin with the center character shown by default.",
+      "2": "Use the trackball on Player Select until Sonic's card is active.",
+      "3": "At Player Select, move the first trackball until Sonic appears alone on the active card, then confirm with the jump button before the timer expires. Keep this credit as the primary learning route."
+     }
+    },
+    {
+     "id": "ssth-select-ray",
+     "type": "interaction",
+     "safe_type": "Character route",
+     "label": "Select Ray",
+     "missable": false,
+     "levels": {
+      "1": "A second selectable runner belongs in the completion set.",
+      "2": "Move away from the default card and confirm Ray on a fresh credit.",
+      "3": "Begin another one-participant credit, cycle Player Select to Ray, and confirm. The controls remain trackball plus spin jump; complete the full course later on this separate character branch."
+     }
+    },
+    {
+     "id": "ssth-select-mighty",
+     "type": "interaction",
+     "safe_type": "Character route",
+     "label": "Select Mighty",
+     "missable": false,
+     "levels": {
+      "1": "The third runner completes the selectable roster.",
+      "2": "Cycle Player Select to Mighty and confirm on another credit.",
+      "3": "Use a new one-participant credit, highlight Mighty, and confirm before the selection timer closes. Preserve this as the third solo completion branch rather than changing characters after a failure."
+     }
+    },
+    {
+     "id": "ssth-watch-movement-tutorial",
+     "type": "optional",
+     "safe_type": "Tutorial",
+     "label": "Watch the Movement Tutorial",
+     "missable": false,
+     "levels": {
+      "1": "The first instructional panel shows what the trackball expects.",
+      "2": "Let the demonstration finish once without pressing Player 1's jump button.",
+      "3": "After character selection, do not skip. Watch the complete movement, jumping, box-breaking, and wall-breaking demonstration, then repeat the motions in the opening platform."
+     }
+    },
+    {
+     "id": "ssth-skip-tutorial-once",
+     "type": "optional",
+     "safe_type": "Tutorial",
+     "label": "Skip the Tutorial Once",
+     "missable": false,
+     "levels": {
+      "1": "The cabinet also supports an immediate repeat-run start.",
+      "2": "Press Player 1's jump button while the instruction sequence is playing.",
+      "3": "On a later credit, tap Player 1 Button 1 as the tutorial begins. Confirm it advances directly to the opening sequence; buttons from the other stations do not replace the Player 1 skip input."
+     }
+    },
+    {
+     "id": "ssth-break-opening-bars",
+     "type": "interaction",
+     "safe_type": "Course action",
+     "label": "Break the Opening Bars",
+     "missable": false,
+     "levels": {
+      "1": "The first barrier yields to repeated jumping impact.",
+      "2": "Run squarely into one bent bar and spin-jump against it more than once.",
+      "3": "Face the barred opening, build a short run-up, and press jump into the same weakened bar repeatedly. Move through the gap as soon as it bends clear; lingering allows the advancing hazard to consume health."
+     }
+    },
+    {
+     "id": "ssth-use-spin-jump",
+     "type": "interaction",
+     "safe_type": "Core skill",
+     "label": "Use the Spin Jump",
+     "missable": false,
+     "levels": {
+      "1": "The only button handles attacks and obstacle interactions.",
+      "2": "Press Button 1 while running toward a breakable object.",
+      "3": "Aim with the trackball first, then press Button 1 to spin-jump. Use it on marked blocks, weakened walls, and limited enemy targets; jumping without forward alignment often costs speed or misses the object."
+     }
+    },
+    {
+     "id": "ssth-refill-health-with-rings",
+     "type": "interaction",
+     "safe_type": "Core skill",
+     "label": "Refill Health with Rings",
+     "missable": false,
+     "levels": {
+      "1": "Rings protect the health gauge directly in this cabinet.",
+      "2": "Collect a visible ring after taking a small, controlled hit.",
+      "3": "Compare the vitality gauge before and after a ring pickup. Damage removes gauge segments instead of scattering held rings, while each collected ring restores health and also contributes to the stage tally and score."
+     }
+    },
+    {
+     "id": "ssth-use-continue-and-reselect",
+     "type": "optional",
+     "safe_type": "Recovery",
+     "label": "Use a Continue and Reselect",
+     "missable": false,
+     "levels": {
+      "1": "Ordinary health loss offers a credit-based recovery before the final timed run.",
+      "2": "Let the gauge empty outside the last countdown, then accept Continue.",
+      "3": "On a practice credit, take damage until vitality empties, insert the required credit, and accept the continue prompt. Use the returning Player Select to confirm that a different runner can be chosen for the resumed practice route."
+     }
+    },
+    {
+     "id": "ssth-earn-stage-ring-bonus",
+     "type": "interaction",
+     "safe_type": "Scoring rule",
+     "label": "Earn a Stage Ring Bonus",
+     "missable": false,
+     "levels": {
+      "1": "The result screen rewards collecting more than half of a course's rings.",
+      "2": "Finish a non-final stage above its listed ring threshold.",
+      "3": "Collect at least the stage-specific minimum, reach the stage clear, and wait through the ring tally. Confirm the bonus is added before the next map screen; the final tower has no equivalent tally."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssth-volcanic-vault",
+   "name": "Volcanic Vault",
+   "location_cue": "A hot stone course with grates, a damaged bridge, pursuing boulders, and floor vents.",
+   "note": "Forward motion matters, but the ring-perfect route still requires deliberate side interactions.",
+   "save_backup": {
+    "title": "A missed ring cannot be reloaded",
+    "why": "This MAME driver does not support save states and the course does not allow backtracking.",
+    "detail": "Record the 63-ring result before advancing; otherwise restart the all-rings branch immediately."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "ssth-volcanic-outrun-boulders",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Outrun the Opening Boulders",
+     "missable": false,
+     "levels": {
+      "1": "The first slope rewards immediate trackball momentum.",
+      "2": "Accelerate down the central slope as the rocks begin moving behind you.",
+      "3": "Roll continuously toward the open lane, make only small lateral corrections, and jump over low interruptions without releasing forward motion. Do not stop for a missed ring while a boulder occupies the same lane."
+     }
+    },
+    {
+     "id": "ssth-volcanic-open-grates",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Open the Metal Grates",
+     "missable": false,
+     "levels": {
+      "1": "The next barrier needs direct jumping contact.",
+      "2": "Line up squarely with each grate and spin-jump into its center.",
+      "3": "Approach the grate front-on, press jump just before contact, and keep the trackball aimed through the opening as it moves. Correct sideways only after the barrier is fully clear."
+     }
+    },
+    {
+     "id": "ssth-volcanic-cross-bridge",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Cross the Damaged Bridge",
+     "missable": false,
+     "levels": {
+      "1": "The narrow crossing leaves little room for a diagonal drift.",
+      "2": "Center yourself before entering the broken bridge span.",
+      "3": "Approach along the bridge axis, maintain a straight roll, and jump only when a broken section reaches the character's feet. Over-correcting a trackball near the edge is more dangerous than a slightly slower crossing."
+     }
+    },
+    {
+     "id": "ssth-volcanic-avoid-geysers",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Avoid the Lava Geysers",
+     "missable": false,
+     "levels": {
+      "1": "The floor telegraphs the safest lanes before each burst.",
+      "2": "Watch the vent pattern and move through immediately after a column subsides.",
+      "3": "Stay off an active vent, wait on solid stone for the nearest burst to fall, then roll across its cell before the next cycle. Use a short jump only when the following landing tile is visible."
+     }
+    },
+    {
+     "id": "ssth-volcanic-break-ring-walls",
+     "type": "interaction",
+     "safe_type": "Ring route",
+     "label": "Break the Shining Ring Walls",
+     "missable": false,
+     "levels": {
+      "1": "Some side surfaces repay a brief detour with health and score.",
+      "2": "Spin-jump into the sparkling wall sections along the later passage.",
+      "3": "Approach each shining section perpendicular to its face and jump into its center until it opens. Sweep up the released rings before resuming the chase, but abandon the detour if the pursuing hazard reaches the same screen."
+     }
+    },
+    {
+     "id": "ssth-volcanic-ring-bonus",
+     "type": "interaction",
+     "safe_type": "Ring threshold",
+     "label": "Earn the Volcanic Ring Bonus",
+     "missable": true,
+     "levels": {
+      "1": "Roughly half the stage's collection is enough for its reward.",
+      "2": "Reach the clear with at least 32 of the 63 rings.",
+      "3": "Collect 32 or more rings before leaving Volcanic Vault, then wait for the result tally to award the ring bonus. Missing the threshold cannot be repaired after the stage-clear transition."
+     }
+    },
+    {
+     "id": "ssth-volcanic-all-rings",
+     "type": "interaction",
+     "safe_type": "Collectible sweep",
+     "label": "Collect All 63 Volcanic Rings",
+     "missable": true,
+     "levels": {
+      "1": "The perfect route includes every main lane and breakable detour.",
+      "2": "Sweep all visible trails and open every shining ring surface before the exit.",
+      "3": "Finish with the result counter showing 63 gathered rings. If it shows less, do not continue the 424-ring branch; MAME cannot restore this stage, so restart the full run and revisit the missed wall or ramp line."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssth-icy-isle",
+   "name": "Icy Isle",
+   "location_cue": "A pale frozen route with low traction, falling icicles, hanging bars, spike rows, and arrows.",
+   "note": "Use small trackball corrections; sustained sideways input becomes a slide here.",
+   "save_backup": {
+    "title": "Confirm 64 before the map transition",
+    "why": "The course is linear and MAME cannot reload it from a save state.",
+    "detail": "Photograph the result tally; restart the 424-ring route if any frozen-course ring is absent."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "ssth-icy-manage-traction",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Manage the Slippery Floor",
+     "missable": false,
+     "levels": {
+      "1": "The surface preserves momentum after the trackball changes direction.",
+      "2": "Brake early and use short counter-rolls before narrow turns.",
+      "3": "Enter each bend below maximum speed, roll briefly opposite the current slide, then aim into the next straight. Avoid full sideways corrections near an edge; the character continues drifting after the input stops."
+     }
+    },
+    {
+     "id": "ssth-icy-pass-icicles",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Pass the Falling Icicles",
+     "missable": false,
+     "levels": {
+      "1": "The overhead hazard marks its lane before striking.",
+      "2": "Keep moving and cross each marked lane before the next icicle lands.",
+      "3": "Follow the open strip between fresh impacts, changing lanes only when the next landing point is clear. If an icicle blocks the direct line, go around its base rather than colliding through it."
+     }
+    },
+    {
+     "id": "ssth-icy-cross-monkey-bars",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Cross the Hanging Bars",
+     "missable": false,
+     "levels": {
+      "1": "The horizontal grip section punishes late alignment.",
+      "2": "Enter the bar line centrally and maintain motion toward the far platform.",
+      "3": "Aim at the first handle before leaving the ice, then roll steadily along the bar direction. If the character drops, use the recovery route instead of repeatedly forcing the same misaligned entry."
+     }
+    },
+    {
+     "id": "ssth-icy-cross-spike-rows",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Cross the Rising Spike Rows",
+     "missable": false,
+     "levels": {
+      "1": "The safe floor appears between synchronized lifts.",
+      "2": "Wait beside a row, then cross as soon as its spikes retract.",
+      "3": "Stop on the last solid tile, watch one full rise-and-fall cycle, and roll across immediately after retraction. Do not jump blindly into the following row; confirm both landing and exit cells are down."
+     }
+    },
+    {
+     "id": "ssth-icy-dodge-arrows",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Dodge the Arrow Passage",
+     "missable": false,
+     "levels": {
+      "1": "The later projectiles travel in readable straight lines.",
+      "2": "Stay between firing lanes and cross after a volley passes.",
+      "3": "Approach the firing line slowly, let one arrow clear the character's lane, then roll perpendicular across it. Use the ice counter-roll before entering the next line so momentum does not carry you into a projectile."
+     }
+    },
+    {
+     "id": "ssth-icy-ring-bonus",
+     "type": "interaction",
+     "safe_type": "Ring threshold",
+     "label": "Earn the Icy Ring Bonus",
+     "missable": true,
+     "levels": {
+      "1": "Half the frozen course's rings secures its stage reward.",
+      "2": "Reach the clear with at least 32 of the 64 rings.",
+      "3": "Collect 32 or more rings before the stage transition and confirm the tally awards the bonus. Treat a 31-or-lower result as a failed bonus branch and restart rather than carrying the miss forward."
+     }
+    },
+    {
+     "id": "ssth-icy-all-rings",
+     "type": "interaction",
+     "safe_type": "Collectible sweep",
+     "label": "Collect All 64 Icy Rings",
+     "missable": true,
+     "levels": {
+      "1": "The perfect pass needs both safe lines and optional side pickups.",
+      "2": "Follow every ring trail around the icicles, bars, spikes, and arrows.",
+      "3": "Finish Icy Isle with exactly 64 gathered rings on the result screen. If the counter is lower, end the all-rings attempt here; no supported mid-run save can return to the missed frozen section."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssth-desert-dodge",
+   "name": "Desert Dodge",
+   "location_cue": "An unstable sand route with pursuing twisters, sinkholes, quicksand, moving cubes, and crossing stone shapes.",
+   "note": "The safest line changes as the surface opens and retracts.",
+   "save_backup": {
+    "title": "The desert sweep is one-way",
+    "why": "Sinkholes and retracting surfaces close missed routes permanently during the credit.",
+    "detail": "Verify all 85 at the result screen before treating the all-rings branch as alive."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "ssth-desert-outpace-twisters",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Outpace the Twisters",
+     "missable": false,
+     "levels": {
+      "1": "The chasing hazard also slows when the ground slows you.",
+      "2": "Keep forward momentum and avoid unnecessary lateral loops.",
+      "3": "Roll along the widest firm lane and jump only to clear a visible obstruction. In quicksand, hold the shortest forward line; the pursuing twisters slow there too, so frantic side movement loses more distance than it gains."
+     }
+    },
+    {
+     "id": "ssth-desert-skirt-sandpits",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Skirt the Sandpits",
+     "missable": false,
+     "levels": {
+      "1": "A narrow rim remains usable beside several collapsing holes.",
+      "2": "Aim along the solid outer edge instead of crossing the center.",
+      "3": "Approach below full speed, place the character on the thin firm lip, and maintain a straight line until past the pit. Do not jump across the slowing sand; it pulls airborne movement into the hazard."
+     }
+    },
+    {
+     "id": "ssth-desert-avoid-cacti",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Avoid the Cactus Blocks",
+     "missable": false,
+     "levels": {
+      "1": "Large obstacles narrow the useful lane before later sand hazards.",
+      "2": "Choose the wider side before reaching each cactus cluster.",
+      "3": "Read the next opening early, roll to that side while the ground is firm, and pass without scraping the obstacle. Correct back toward center only after the entire cactus shape leaves the screen."
+     }
+    },
+    {
+     "id": "ssth-desert-cross-retracting-cubes",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Cross the Retracting Cubes",
+     "missable": false,
+     "levels": {
+      "1": "The rocky tiles withdraw from their exposed edges.",
+      "2": "Stay near each cube's inner face and move as soon as the next tile is present.",
+      "3": "Enter every cube close to its stable inner edge, cross before the outer side retracts, and avoid circling for a missed pickup after movement begins. Wait only on a fully visible tile."
+     }
+    },
+    {
+     "id": "ssth-desert-pass-stone-crossing",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Pass the Moving Stone Shapes",
+     "missable": false,
+     "levels": {
+      "1": "The last solid passage is crossed by large moving forms.",
+      "2": "Pause outside their path and move through the gap after one passes.",
+      "3": "Watch the full width of one crossing cycle, choose the gap behind a stone shape, and roll through without changing lanes. Entering alongside the moving object leaves too little room for trackball correction."
+     }
+    },
+    {
+     "id": "ssth-desert-ring-bonus",
+     "type": "interaction",
+     "safe_type": "Ring threshold",
+     "label": "Earn the Desert Ring Bonus",
+     "missable": true,
+     "levels": {
+      "1": "This long course needs a larger pickup total for its reward.",
+      "2": "Reach the clear with at least 43 of the 85 rings.",
+      "3": "Collect 43 or more rings before leaving Desert Dodge and verify the result tally awards the bonus. The threshold is strict; a 42-ring result does not qualify and cannot be repaired afterward."
+     }
+    },
+    {
+     "id": "ssth-desert-all-rings",
+     "type": "interaction",
+     "safe_type": "Collectible sweep",
+     "label": "Collect All 85 Desert Rings",
+     "missable": true,
+     "levels": {
+      "1": "The largest stage total spans both safe edges and hazardous detours.",
+      "2": "Sweep every ring line before each collapsing surface removes access.",
+      "3": "Reach the result screen with 85 gathered rings. If any are missing, restart the complete collectible branch; the shrinking sand and cube sections cannot be revisited and MAME offers no supported course reload."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssth-trap-tower",
+   "name": "Trap Tower",
+   "location_cue": "A narrow mechanical climb with rolling cylinders, electrical posts, spiked crushers, side blocks, and mined ladders.",
+   "note": "Commit to each safe opening; hesitation lets the pursuing machinery close it.",
+   "save_backup": {
+    "title": "Confirm every side-block pickup",
+    "why": "The mechanical chase closes those detours and save states are unsupported.",
+    "detail": "A perfect branch continues only after the result screen shows all 39 rings."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "ssth-trap-outrun-cylinders",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Outrun the Rolling Cylinders",
+     "missable": false,
+     "levels": {
+      "1": "Large chasing rollers turn each straight into a timed lane.",
+      "2": "Accelerate when the route prompt appears and stay ahead of the roller's face.",
+      "3": "Begin rolling immediately, center on the straight, and jump only over fixed floor hazards. At the next turn, aim before releasing forward pressure so the trackball does not stall beside the cylinder."
+     }
+    },
+    {
+     "id": "ssth-trap-pass-emitters",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Pass the Electrical Emitters",
+     "missable": false,
+     "levels": {
+      "1": "The floor posts leave one brief lateral opening.",
+      "2": "Move inward around each active post, then return to the outer lane.",
+      "3": "Approach on the safer edge, cut around the extended electrical post after its pulse, and rejoin the original line before the next crusher. Do not remain centered where the following machinery closes."
+     }
+    },
+    {
+     "id": "ssth-trap-cross-crushers",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Cross the Six Crushers",
+     "missable": false,
+     "levels": {
+      "1": "Each spiked block exposes a short ground-level gap when raised.",
+      "2": "Wait for a crusher to lift, then pass beneath before it descends.",
+      "3": "Stop outside the first shadow, observe one complete cycle, and roll under as the block reaches its highest point. Reassess every later crusher independently; do not assume all six share identical timing."
+     }
+    },
+    {
+     "id": "ssth-trap-break-side-blocks",
+     "type": "interaction",
+     "safe_type": "Ring route",
+     "label": "Break the Shining Side Blocks",
+     "missable": false,
+     "levels": {
+      "1": "Optional wall pieces hide rings beside the main chase line.",
+      "2": "Spin-jump into a sparkling block only when the roller is still distant.",
+      "3": "Turn square to the block face, jump through its center, collect the released rings in one sweep, and return to the forward lane. Skip the detour on a survival run if the pursuing cylinder has entered the same segment."
+     }
+    },
+    {
+     "id": "ssth-trap-climb-mined-ladders",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Climb the Mined Ladders",
+     "missable": false,
+     "levels": {
+      "1": "The vertical section requires switching between adjacent rails.",
+      "2": "Start on the clearest ladder and move sideways before reaching each mine.",
+      "3": "Align with the first ladder, roll upward, and transfer horizontally to the neighboring rail when a mine blocks the next section. Finish each transfer before resuming upward input; diagonal trackball motion can leave the character between ladders."
+     }
+    },
+    {
+     "id": "ssth-trap-ring-bonus",
+     "type": "interaction",
+     "safe_type": "Ring threshold",
+     "label": "Earn the Tower Ring Bonus",
+     "missable": true,
+     "levels": {
+      "1": "The shortest ring set still requires more than half.",
+      "2": "Reach the clear with at least 20 of the 39 rings.",
+      "3": "Collect 20 or more rings before the stage ends and confirm the tally awards its bonus. A 19-ring result misses the requirement even if the health gauge is full."
+     }
+    },
+    {
+     "id": "ssth-trap-all-rings",
+     "type": "interaction",
+     "safe_type": "Collectible sweep",
+     "label": "Collect All 39 Tower Rings",
+     "missable": true,
+     "levels": {
+      "1": "The complete sweep includes pickups beside moving machinery.",
+      "2": "Open every shining side block and follow each ladder and crusher ring line.",
+      "3": "Finish with 39 gathered rings on the result screen. If the tally is lower, restart the 424-ring route; a missed side block cannot be recovered after its cylinder or lift section passes."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssth-landslide-limbo",
+   "name": "Landslide Limbo",
+   "location_cue": "A collapsing high route with shifting ground, fiery boulders, launchers, an electrical perimeter, and a central machine.",
+   "note": "Preserve vitality before the machine platform; the approach itself can consume the margin needed there.",
+   "save_backup": {
+    "title": "Protect vitality before the platform",
+    "why": "The electrical perimeter and central machine share the health remaining from the collapsing approach.",
+    "detail": "A ring-perfect mastery run should arrive healthy; otherwise replay before committing to the encounter."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "ssth-landslide-outrun-collapse",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Outrun the Collapsing Floor",
+     "missable": false,
+     "levels": {
+      "1": "The path disappears in sequence directly behind the runner.",
+      "2": "Stay centered and keep continuous forward trackball motion.",
+      "3": "Roll along the broadest visible strip, commit to ramps before their rear tiles fall, and avoid reversing for missed pickups. If the floor reaches the character, accept the damage recovery and immediately resume forward travel."
+     }
+    },
+    {
+     "id": "ssth-landslide-cross-shifting-slope",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Cross the Shifting Slope",
+     "missable": false,
+     "levels": {
+      "1": "The angled sand redirects motion before the next chase segment.",
+      "2": "Aim into the slope's upper line and correct gradually as it moves.",
+      "3": "Enter near the stable upper edge, maintain forward pressure, and counter the sideways slide with short trackball rolls. Do not stop at the center seam; the route continues collapsing behind it."
+     }
+    },
+    {
+     "id": "ssth-landslide-pass-fiery-boulders",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Pass the Fiery Boulders",
+     "missable": false,
+     "levels": {
+      "1": "The rolling rocks leave temporary gaps across the lane.",
+      "2": "Move behind one boulder rather than trying to outrun it sideways.",
+      "3": "Wait just outside the crossing line, let a fiery boulder pass, then roll through its wake. Recenter before the next gap so the trackball does not carry the character toward the exposed edge."
+     }
+    },
+    {
+     "id": "ssth-landslide-use-launchers",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Use the Arena Launchers",
+     "missable": false,
+     "levels": {
+      "1": "The final approach uses fixed launch points rather than a normal ramp.",
+      "2": "Align with the launcher center and enter it with forward momentum.",
+      "3": "Aim squarely at the launcher, keep the trackball pointed through its center, and let it carry the character to the raised platform. Avoid correcting in mid-launch; adjust only after landing."
+     }
+    },
+    {
+     "id": "ssth-landslide-hit-center-core",
+     "type": "interaction",
+     "safe_type": "Mechanical encounter",
+     "label": "Strike the Center Core",
+     "missable": false,
+     "levels": {
+      "1": "The machine only accepts jump contact on its central target.",
+      "2": "Avoid the moving arms and spin-jump into the illuminated middle.",
+      "3": "Circle outside the arm sweep, approach the broad central bulb after it passes, and jump through the target. Repeat until the machine stops; touching the electrical perimeter wastes vitality without damaging the core."
+     }
+    },
+    {
+     "id": "ssth-landslide-ring-bonus",
+     "type": "interaction",
+     "safe_type": "Ring threshold",
+     "label": "Earn the Landslide Ring Bonus",
+     "missable": true,
+     "levels": {
+      "1": "The stage shares the preceding tower's bonus threshold.",
+      "2": "Reach the clear with at least 20 of the 39 rings.",
+      "3": "Collect 20 or more rings before the machine encounter resolves, then wait for the result tally. Any lower count loses this stage's bonus and cannot be supplemented afterward."
+     }
+    },
+    {
+     "id": "ssth-landslide-all-rings",
+     "type": "interaction",
+     "safe_type": "Collectible sweep",
+     "label": "Collect All 39 Landslide Rings",
+     "missable": true,
+     "levels": {
+      "1": "The perfect route must take every collapsing-path and arena pickup.",
+      "2": "Follow each ring line before its platform or boulder gap closes.",
+      "3": "Complete the stage with 39 gathered rings. If the result differs, terminate the all-rings branch; neither the collapsing route nor unsupported MAME save states allow a return to the missing pickup."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssth-wild-water-way",
+   "name": "Wild Water Way",
+   "location_cue": "A low channel with gray blocks, water, climbable ledges, and rafts moving against the route.",
+   "note": "Break useful blocks deliberately and jump the raft gaps instead of fighting their movement.",
+   "save_backup": {
+    "title": "Count block releases before climbing out",
+    "why": "Leaving the low channel closes access to earlier gray blocks.",
+    "detail": "Continue the perfect branch only when the stage result confirms all 64 rings."
+   },
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "ssth-water-break-gray-blocks",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Break the Gray Blocks",
+     "missable": false,
+     "levels": {
+      "1": "Some channel blocks hold rings while others release a moving hazard.",
+      "2": "Jump into a block from its open side, then read what emerges before advancing.",
+      "3": "Approach a gray block squarely and spin-jump through its face. Collect rings immediately when they appear; if an enemy emerges, sidestep its line before returning to the forward route."
+     }
+    },
+    {
+     "id": "ssth-water-cross-channel",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Cross the Water Channel",
+     "missable": false,
+     "levels": {
+      "1": "Submerged movement is slower than the dry ledges above it.",
+      "2": "Use the shortest channel line and climb out at the first clear ledge.",
+      "3": "Hold a direct forward path through the water, avoid wide corrections around blocks, and aim toward the nearest climbable lip before reaching it. Resume full trackball speed only after the character stands on dry ground."
+     }
+    },
+    {
+     "id": "ssth-water-climb-ledges",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Climb the Channel Ledges",
+     "missable": false,
+     "levels": {
+      "1": "The exits from the low water need a centered upward approach.",
+      "2": "Roll into the center of the raised edge and jump as the character reaches it.",
+      "3": "Align perpendicular to the ledge face, build a short forward run, and press jump at contact. If the character slides sideways, back away and recenter instead of repeating from the corner."
+     }
+    },
+    {
+     "id": "ssth-water-jump-rafts",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Jump Across the Opposing Rafts",
+     "missable": false,
+     "levels": {
+      "1": "Walking on the moving platforms gives away forward distance.",
+      "2": "Jump from one raft to the next as each aligns with the route.",
+      "3": "Wait on solid ground for the first usable alignment, then jump onto and immediately off each raft while holding forward momentum. Walking across a raft lets its reverse motion carry the character backward."
+     }
+    },
+    {
+     "id": "ssth-water-ring-bonus",
+     "type": "interaction",
+     "safe_type": "Ring threshold",
+     "label": "Earn the Waterway Ring Bonus",
+     "missable": true,
+     "levels": {
+      "1": "The channel uses the same half-total threshold as the frozen route.",
+      "2": "Reach the clear with at least 32 of the 64 rings.",
+      "3": "Collect 32 or more rings across the blocks, ledges, and rafts, then verify the stage tally grants its bonus. The next area cannot repair a missed threshold."
+     }
+    },
+    {
+     "id": "ssth-water-all-rings",
+     "type": "interaction",
+     "safe_type": "Collectible sweep",
+     "label": "Collect All 64 Waterway Rings",
+     "missable": true,
+     "levels": {
+      "1": "The perfect line includes every block release and raft pickup.",
+      "2": "Break all ring-bearing gray blocks and sweep both unavoidable route rings.",
+      "3": "Finish Wild Water Way with 64 gathered rings. If the tally is lower, restart the 424-ring branch; the low channel and moving raft sequences are one-way and cannot be restored by MAME."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssth-final-tower",
+   "name": "Upper Tower and Timed Exit",
+   "location_cue": "A direct mechanical climb followed by a short descending route to one final doorway.",
+   "note": "Prepare separate credits for the success and timeout outcomes; the countdown disables joining and continues.",
+   "save_backup": {
+    "title": "Use separate full-credit branches",
+    "why": "Save states are unsupported, and the two countdown outcomes cannot coexist in one active credit.",
+    "detail": "Complete the successful route first, then replay from the beginning for the timeout record."
+   },
+   "point_of_no_return": {
+    "title": "The countdown removes recovery",
+    "why": "Joining and continues are disabled after the final timed exit begins.",
+    "detail": "Confirm participants, ring count, and intended outcome before triggering the 20-second route."
+   },
+   "items": [
+    {
+     "id": "ssth-final-climb",
+     "type": "interaction",
+     "safe_type": "Stage route",
+     "label": "Complete the Upper Climb",
+     "missable": false,
+     "levels": {
+      "1": "The approach is direct but still drains the health carried from earlier stages.",
+      "2": "Stay on the central route and preserve vitality for the timed descent.",
+      "3": "Follow the open platforms upward, jump only when a visible barrier requires it, and collect available rings without circling back. Arrive at the final trigger with enough vitality to survive one accidental contact during the exit."
+     }
+    },
+    {
+     "id": "ssth-final-all-rings",
+     "type": "interaction",
+     "safe_type": "Collectible sweep",
+     "label": "Collect All 70 Tower Rings",
+     "missable": true,
+     "levels": {
+      "1": "The last stage has collectibles but no result-screen ring bonus.",
+      "2": "Sweep every visible trail during both the climb and timed descent.",
+      "3": "Collect all 70 tower rings before crossing the final doorway. There is no final tally bonus, so keep a manual counter or capture the HUD; the complete game route totals 424 rings."
+     }
+    },
+    {
+     "id": "ssth-final-start-countdown",
+     "type": "interaction",
+     "safe_type": "Final route",
+     "label": "Start the Twenty-Second Exit",
+     "missable": true,
+     "levels": {
+      "1": "A short timer replaces ordinary recovery at the top of the route.",
+      "2": "Trigger the descent only when all active players are ready and aligned.",
+      "3": "Before entering the trigger, place every participant on the forward lane and confirm no one is collecting a side ring. The exit timer begins at 20 seconds; new participants and continues are disabled until the route ends."
+     }
+    },
+    {
+     "id": "ssth-final-success-outcome",
+     "type": "interaction",
+     "safe_type": "Ending branch",
+     "label": "Complete the Timed Exit",
+     "missable": true,
+     "levels": {
+      "1": "The primary outcome requires reaching the doorway before the counter expires.",
+      "2": "Run directly down the marked route and cross the open door above zero.",
+      "3": "Hold continuous forward trackball motion, take the shortest safe lane around each obstacle, and cross the final doorway before the timer reaches zero. Do not stop for score once the countdown begins; wait through the complete credits afterward."
+     }
+    },
+    {
+     "id": "ssth-final-timeout-outcome",
+     "type": "interaction",
+     "safe_type": "Ending branch",
+     "label": "Record the Timeout Outcome",
+     "missable": true,
+     "levels": {
+      "1": "A second mechanical result occurs when the same countdown expires.",
+      "2": "On a separate credit, stop short of the doorway and let the timer reach zero.",
+      "3": "Replay the course on a dedicated branch, begin the 20-second exit, and remain safely away from the doorway until zero. Capture the resulting end state; no continue or late join can recover this branch once the timer has started."
+     }
+    },
+    {
+     "id": "ssth-watch-staff-roll",
+     "type": "interaction",
+     "safe_type": "Presentation",
+     "label": "Watch the Complete Staff Roll",
+     "missable": true,
+     "levels": {
+      "1": "The successful timed branch continues beyond the exit itself.",
+      "2": "Do not insert another credit after crossing the doorway.",
+      "3": "Leave all controls untouched after the successful exit and watch every staff-roll page until the cabinet returns to its normal post-run state. Capture the final page before any new credit replaces it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ssth-multiplayer-mastery",
+   "name": "Multiplayer and Mastery",
+   "location_cue": "Fresh cabinet profiles, new credits, and the Top 15 board after the ordinary solo route is understood.",
+   "note": "These branches close the selectable roster, cabinet layouts, operator challenge, and collectible maximum.",
+   "save_backup": {
+    "title": "Label every full-credit branch",
+    "why": "Character, cabinet, difficulty, vitality, and ring-perfect clears cannot be reconstructed from one result screen.",
+    "detail": "Record the service profile and character selection at the start of each continuous run."
+   },
+   "point_of_no_return": {
+    "title": "Do not clear cabinet data yet",
+    "why": "Backup Data Clear removes the local ranking evidence.",
+    "detail": "Capture all Top 15 pages before testing any service-menu data-clear command."
+   },
+   "items": [
+    {
+     "id": "ssth-clear-as-sonic",
+     "type": "interaction",
+     "safe_type": "Character completion",
+     "label": "Complete a Sonic Solo Route",
+     "missable": false,
+     "levels": {
+      "1": "One full credit should belong entirely to the default runner.",
+      "2": "Select Sonic and complete the timed exit without changing character after a continue.",
+      "3": "Use the 1P cabinet branch, confirm Sonic, and complete every course plus the successful timed exit. If vitality empties, restart rather than reselecting; the recorded completion must remain a single-character Sonic route."
+     }
+    },
+    {
+     "id": "ssth-clear-as-ray",
+     "type": "interaction",
+     "safe_type": "Character completion",
+     "label": "Complete a Ray Solo Route",
+     "missable": false,
+     "levels": {
+      "1": "The second selectable runner needs an independent full clear.",
+      "2": "Select Ray on a fresh 1P credit and reach the successful timed exit.",
+      "3": "Start a new solo route as Ray and complete every stage without changing character at a continue. Preserve the character card and final doorway capture as proof of the distinct branch."
+     }
+    },
+    {
+     "id": "ssth-clear-as-mighty",
+     "type": "interaction",
+     "safe_type": "Character completion",
+     "label": "Complete a Mighty Solo Route",
+     "missable": false,
+     "levels": {
+      "1": "The third selectable runner closes the solo roster.",
+      "2": "Select Mighty on another 1P credit and finish the successful timed exit.",
+      "3": "Begin a clean solo credit as Mighty and complete the full route without character reselection. Capture the initial card and final timed doorway on the same continuous recording."
+     }
+    },
+    {
+     "id": "ssth-clear-two-player",
+     "type": "interaction",
+     "safe_type": "Cooperative completion",
+     "label": "Complete the 2P Cabinet Route",
+     "missable": false,
+     "levels": {
+      "1": "The smaller multiplayer cabinet has its own participant flow.",
+      "2": "Set Cabinet Type 2P, use the two-participant Start, and finish together.",
+      "3": "Map two independent trackballs, insert the required credits, select different characters, and complete the successful timed exit with both active players. All participants must cross before zero; joining is unavailable during the countdown."
+     }
+    },
+    {
+     "id": "ssth-clear-three-player",
+     "type": "interaction",
+     "safe_type": "Cooperative completion",
+     "label": "Complete the 3P Cabinet Route",
+     "missable": false,
+     "levels": {
+      "1": "The original maximal cabinet uses every control station at once.",
+      "2": "Set Cabinet Type 3P, use 3 Players Start, and assign all three characters.",
+      "3": "Verify three independent trackballs and credits, select Sonic, Ray, and Mighty without duplication, then complete the full course and successful timed exit with all three participants active."
+     }
+    },
+    {
+     "id": "ssth-clear-hard-difficulty",
+     "type": "interaction",
+     "safe_type": "Maximum challenge",
+     "label": "Clear on Difficulty 4/4",
+     "missable": false,
+     "levels": {
+      "1": "The strongest operator setting deserves a complete recorded run.",
+      "2": "Set Game Difficulty to 4/4 before leaving service mode.",
+      "3": "Photograph Game Difficulty 4/4, keep Initial Vitality at the normal 2/4, and complete the successful timed route without changing the service value. Restore the ordinary profile only after the credits finish."
+     }
+    },
+    {
+     "id": "ssth-clear-minimum-vitality",
+     "type": "interaction",
+     "safe_type": "Maximum challenge",
+     "label": "Clear on Vitality 1/4",
+     "missable": false,
+     "levels": {
+      "1": "The smallest starting gauge forms a separate survival branch.",
+      "2": "Set Initial Vitality to 1/4 and retain the ordinary difficulty first.",
+      "3": "Record Initial Vitality 1/4 in Game Assignments, use Game Difficulty 2/4, and complete the successful timed route. Do not combine this with the 4/4 difficulty clear unless that harder double-condition run is deliberate."
+     }
+    },
+    {
+     "id": "ssth-earn-all-six-ring-bonuses",
+     "type": "interaction",
+     "safe_type": "Scoring mastery",
+     "label": "Earn All Six Ring Bonuses",
+     "missable": true,
+     "levels": {
+      "1": "Every non-final result screen has a collection threshold.",
+      "2": "Meet 32, 32, 43, 20, 20, and 32 rings in course order.",
+      "3": "On one continuous successful route, clear the six bonus-bearing stages with at least 32, 32, 43, 20, 20, and 32 rings respectively. Photograph every awarded result before continuing; the final tower offers no seventh bonus."
+     }
+    },
+    {
+     "id": "ssth-collect-all-424-rings",
+     "type": "interaction",
+     "safe_type": "Collectible mastery",
+     "label": "Collect All 424 Rings",
+     "missable": true,
+     "levels": {
+      "1": "The complete collectible branch combines every stage-perfect tally.",
+      "2": "Carry perfect totals of 63, 64, 85, 39, 39, 64, and 70.",
+      "3": "Complete one continuous route with stage totals 63, 64, 85, 39, 39, 64, and 70, for 424 collected rings. Because save states are unsupported, any short stage tally invalidates this branch and requires a full restart."
+     }
+    },
+    {
+     "id": "ssth-fill-top-fifteen",
+     "type": "interaction",
+     "safe_type": "Scoreboard mastery",
+     "label": "Fill the Top 15 Board",
+     "missable": false,
+     "levels": {
+      "1": "The attract loop preserves fifteen local performance entries.",
+      "2": "Post fifteen qualifying credits with distinct three-character initials.",
+      "3": "Complete or end fifteen scoring attempts, enter a unique three-character name for each qualifying result, and let the attract loop display every ranking page. Confirm all fifteen slots belong to the recorded set before clearing cabinet data."
+     }
+    },
+    {
+     "id": "ssth-confirm-final-build-boundary",
+     "type": "interaction",
+     "safe_type": "Archive note",
+     "label": "Confirm the Final-Build Boundary",
+     "missable": false,
+     "levels": {
+      "1": "The earlier prototype is not a hidden route inside this revision.",
+      "2": "Keep the checklist tied to Japan revision C and exclude `sonicp`.",
+      "3": "Record that this pack covers the released seven-stage revision C set only. The earlier prototype has different content and order; do not patch, merge, or count its inaccessible material as an unlockable in this route."
+     }
+    }
+   ]
+  }
+ ]
+}

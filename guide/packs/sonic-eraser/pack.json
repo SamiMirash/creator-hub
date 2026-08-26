@@ -1,0 +1,901 @@
+{
+ "id": "sonic-eraser",
+ "game": "Sonic Eraser (1991)",
+ "target": "Original Japanese SegaNet Mega Drive build, played through Genesis Plus GX or MiSTer on PC",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-23T08:19:42.070336+00:00",
+ "areas": [
+  {
+   "id": "eraser-setup",
+   "name": "Setup and Core Rules",
+   "location_cue": "The black playfield with a seven-column grid and a falling four-piece cluster.",
+   "note": "Use the preserved Mega Drive build through the selected Genesis-compatible emulator route.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "eraser-controls",
+     "type": "optional",
+     "safe_type": "System task",
+     "label": "Learn the Falling-Cluster Controls",
+     "missable": false,
+     "levels": {
+      "1": "Use the opening drops to learn movement before the board becomes crowded.",
+      "2": "Move a falling cluster with Left or Right, accelerate it with Down, and rotate it counterclockwise with B or C.",
+      "3": "A cluster contains four linked pieces. Shift it before contact, rotate with B or C to change their order around the cluster, and use Down only after its landing column and orientation are safe."
+     }
+    },
+    {
+     "id": "eraser-clear-and-collapse",
+     "type": "optional",
+     "safe_type": "System task",
+     "label": "Trigger a Clear and Collapse",
+     "missable": false,
+     "levels": {
+      "1": "Arrange matching pieces so gravity can improve the next match.",
+      "2": "Place at least two identical pieces edge-to-edge; they vanish and any unsupported pieces above them descend.",
+      "3": "Make one adjacent pair beneath a different matching pair. When the lower pair disappears, the unsupported upper pieces fall; if they touch their match, the board resolves another clear as a chain."
+     }
+    },
+    {
+     "id": "eraser-seven-shapes",
+     "type": "collectible",
+     "safe_type": "Ruleset entry",
+     "label": "Identify All Seven Ordinary Shapes",
+     "missable": false,
+     "levels": {
+      "1": "Watch several clusters before assuming the colour set is complete.",
+      "2": "Confirm the ordinary set: white square, green square, blue circle, yellow upright triangle, red inverted triangle, orange diamond, and purple cross.",
+      "3": "Record each of the seven shape-and-colour combinations once. Matching uses identity, not approximate colour; the two triangles point in opposite directions and count as different pieces."
+     }
+    }
+   ]
+  },
+  {
+   "id": "eraser-rounds-00-09",
+   "name": "Round Boards 00–09",
+   "location_cue": "The Round Mode board whose opening counter shows 00 through 09.",
+   "note": "Spiral placement is fixed, but the incoming colour clusters vary between attempts.",
+   "save_backup": {
+    "title": "Preserve a state before each new board",
+    "why": "This build has no native save, and leaving the session can erase Round Mode progress.",
+    "detail": "Keep one emulator state at the round-number screen and a second at the live opening grid. Replace them only after the next board begins safely."
+   },
+   "point_of_no_return": {
+    "title": "The active board closes when it resolves",
+    "why": "A success, timeout, or manual restart replaces the current arrangement.",
+    "detail": "Reconcile the spiral count before the final pair disappears. If the board becomes unwinnable, use A+C rather than spending the remaining timer."
+   },
+   "items": [
+    {
+     "id": "eraser-round-00",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 00",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean right; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 00, count columns left-to-right and heights upward from the floor. The 5 spiral targets begin at: C6 B3, C2 B2, C7 B2, C1 B1, C6 B1.",
+      "3": "Start by exposing the support line beneath C6 B3; then use C3, C4 as working space while collapses draw the right-side targets together. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-01",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 01",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 01, count columns left-to-right and heights upward from the floor. The 5 spiral targets begin at: C3 B3, C5 B3, C4 B2, C3 B1, C5 B1.",
+      "3": "Keep C1, C2 available for unwanted colours and work upward toward C3 B3. Pair spirals through controlled support clears instead of covering their faces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-02",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 02",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean left; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 02, count columns left-to-right and heights upward from the floor. The 3 spiral targets begin at: C1 B4, C2 B3, C1 B1.",
+      "3": "Treat C1 B4 as the anchor. Build ordinary matches below neighbouring targets, let gravity close the gaps, and reserve C3, C4 for pieces that do not advance that collapse. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-03",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 03",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 03, count columns left-to-right and heights upward from the floor. The 4 spiral targets begin at: C4 B5, C3 B2, C5 B2, C4 B1.",
+      "3": "Open a route from C1, C2 toward C4 B5, clearing supports from low to high. Avoid sealing the centre cluster beneath unmatched pieces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-04",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 04",
+     "missable": true,
+     "levels": {
+      "1": "The opening structure is tall; preserve a clear lane beside its highest targets.",
+      "2": "At the opening of Round 04, count columns left-to-right and heights upward from the floor. The 16 spiral targets begin at: C2 B11, C6 B11, C1 B10, C7 B10, C2 B9, C6 B9, C2 B7, C1 B6, C7 B6, C6 B5, C2 B3, C6 B3, C1 B2, C7 B2, C2 B1, C6 B1.",
+      "3": "Start by exposing the support line beneath C2 B11; then use C3, C4 as working space while collapses draw the left-side targets together. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-05",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 05",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 05, count columns left-to-right and heights upward from the floor. The 16 spiral targets begin at: C1 B7, C3 B7, C5 B7, C7 B7, C1 B5, C3 B5, C5 B5, C7 B5, C1 B3, C3 B3, C5 B3, C7 B3, C1 B1, C3 B1, C5 B1, C7 B1.",
+      "3": "Keep C2, C4 available for unwanted colours and work upward toward C1 B7. Pair spirals through controlled support clears instead of covering their faces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-06",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 06",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 06, count columns left-to-right and heights upward from the floor. The 3 spiral targets begin at: C3 B5, C5 B5, C4 B2.",
+      "3": "Treat C3 B5 as the anchor. Build ordinary matches below neighbouring targets, let gravity close the gaps, and reserve C1, C2 for pieces that do not advance that collapse. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-07",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 07",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean left; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 07, count columns left-to-right and heights upward from the floor. The 2 spiral targets begin at: C1 B3, C1 B1.",
+      "3": "Open a route from C2, C3 toward C1 B3, clearing supports from low to high. Avoid sealing the left cluster beneath unmatched pieces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-08",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 08",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean right; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 08, count columns left-to-right and heights upward from the floor. The 3 spiral targets begin at: C2 B2, C6 B2, C7 B1.",
+      "3": "Start by exposing the support line beneath C2 B2; then use C1, C3 as working space while collapses draw the right-side targets together. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-09",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 09",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean left; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 09, count columns left-to-right and heights upward from the floor. The 4 spiral targets begin at: C2 B4, C4 B4, C6 B4, C3 B1.",
+      "3": "Keep C1, C5 available for unwanted colours and work upward toward C2 B4. Pair spirals through controlled support clears instead of covering their faces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    }
+   ]
+  },
+  {
+   "id": "eraser-rounds-10-19",
+   "name": "Round Boards 10–19",
+   "location_cue": "The Round Mode board whose opening counter shows 10 through 19.",
+   "note": "Spiral placement is fixed, but the incoming colour clusters vary between attempts.",
+   "save_backup": {
+    "title": "Preserve a state before each new board",
+    "why": "This build has no native save, and leaving the session can erase Round Mode progress.",
+    "detail": "Keep one emulator state at the round-number screen and a second at the live opening grid. Replace them only after the next board begins safely."
+   },
+   "point_of_no_return": {
+    "title": "The active board closes when it resolves",
+    "why": "A success, timeout, or manual restart replaces the current arrangement.",
+    "detail": "Reconcile the spiral count before the final pair disappears. If the board becomes unwinnable, use A+C rather than spending the remaining timer."
+   },
+   "items": [
+    {
+     "id": "eraser-round-10",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 10",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 10, count columns left-to-right and heights upward from the floor. The 8 spiral targets begin at: C4 B8, C1 B5, C4 B5, C7 B5, C2 B2, C6 B2, C1 B1, C7 B1.",
+      "3": "Treat C4 B8 as the anchor. Build ordinary matches below neighbouring targets, let gravity close the gaps, and reserve C3, C5 for pieces that do not advance that collapse. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-11",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 11",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean left; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 11, count columns left-to-right and heights upward from the floor. The 21 spiral targets begin at: C1 B8, C3 B8, C6 B8, C2 B7, C5 B7, C7 B7, C1 B6, C3 B6, C6 B6, C2 B5, C5 B5, C7 B5, C1 B4, C3 B4, C6 B4, C2 B3, C5 B3, C7 B3, C1 B2, C3 B2, C6 B2.",
+      "3": "Open a route from C4 toward C1 B8, clearing supports from low to high. Avoid sealing the left cluster beneath unmatched pieces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-12",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 12",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean left; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 12, count columns left-to-right and heights upward from the floor. The 7 spiral targets begin at: C1 B7, C7 B7, C2 B6, C2 B2, C6 B2, C1 B1, C7 B1.",
+      "3": "Start by exposing the support line beneath C1 B7; then use C3, C4 as working space while collapses draw the left-side targets together. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-13",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 13",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean right; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 13, count columns left-to-right and heights upward from the floor. The 9 spiral targets begin at: C2 B5, C6 B5, C1 B4, C7 B4, C2 B3, C6 B3, C7 B2, C2 B1, C6 B1.",
+      "3": "Keep C3, C4 available for unwanted colours and work upward toward C2 B5. Pair spirals through controlled support clears instead of covering their faces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-14",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 14",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 14, count columns left-to-right and heights upward from the floor. The 12 spiral targets begin at: C2 B6, C6 B6, C1 B5, C7 B5, C2 B4, C6 B4, C1 B3, C7 B3, C2 B2, C6 B2, C1 B1, C7 B1.",
+      "3": "Treat C2 B6 as the anchor. Build ordinary matches below neighbouring targets, let gravity close the gaps, and reserve C3, C4 for pieces that do not advance that collapse. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-15",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 15",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 15, count columns left-to-right and heights upward from the floor. The 5 spiral targets begin at: C2 B3, C6 B3, C3 B2, C5 B2, C4 B1.",
+      "3": "Open a route from C1, C7 toward C2 B3, clearing supports from low to high. Avoid sealing the left cluster beneath unmatched pieces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-16",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 16",
+     "missable": true,
+     "levels": {
+      "1": "The opening structure is tall; preserve a clear lane beside its highest targets.",
+      "2": "At the opening of Round 16, count columns left-to-right and heights upward from the floor. The 8 spiral targets begin at: C3 B9, C5 B9, C1 B8, C7 B8, C2 B6, C6 B6, C1 B1, C7 B1.",
+      "3": "Start by exposing the support line beneath C3 B9; then use C4 as working space while collapses draw the left-side targets together. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-17",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 17",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 17, count columns left-to-right and heights upward from the floor. The 8 spiral targets begin at: C1 B5, C7 B5, C3 B3, C5 B3, C2 B2, C6 B2, C1 B1, C7 B1.",
+      "3": "Keep C4 available for unwanted colours and work upward toward C1 B5. Pair spirals through controlled support clears instead of covering their faces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-18",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 18",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 18, count columns left-to-right and heights upward from the floor. The 6 spiral targets begin at: C4 B7, C4 B4, C3 B3, C5 B3, C3 B1, C5 B1.",
+      "3": "Treat C4 B7 as the anchor. Build ordinary matches below neighbouring targets, let gravity close the gaps, and reserve C1, C2 for pieces that do not advance that collapse. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-19",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 19",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean right; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 19, count columns left-to-right and heights upward from the floor. The 11 spiral targets begin at: C7 B7, C2 B6, C6 B6, C3 B5, C5 B5, C3 B3, C5 B3, C2 B2, C6 B2, C1 B1, C7 B1.",
+      "3": "Open a route from C4 toward C7 B7, clearing supports from low to high. Avoid sealing the right cluster beneath unmatched pieces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    }
+   ]
+  },
+  {
+   "id": "eraser-rounds-20-29",
+   "name": "Round Boards 20–29",
+   "location_cue": "The Round Mode board whose opening counter shows 20 through 29.",
+   "note": "Spiral placement is fixed, but the incoming colour clusters vary between attempts.",
+   "save_backup": {
+    "title": "Preserve a state before each new board",
+    "why": "This build has no native save, and leaving the session can erase Round Mode progress.",
+    "detail": "Keep one emulator state at the round-number screen and a second at the live opening grid. Replace them only after the next board begins safely."
+   },
+   "point_of_no_return": {
+    "title": "The active board closes when it resolves",
+    "why": "A success, timeout, or manual restart replaces the current arrangement.",
+    "detail": "Reconcile the spiral count before the final pair disappears. If the board becomes unwinnable, use A+C rather than spending the remaining timer."
+   },
+   "items": [
+    {
+     "id": "eraser-round-20",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 20",
+     "missable": true,
+     "levels": {
+      "1": "The opening structure is tall; preserve a clear lane beside its highest targets.",
+      "2": "At the opening of Round 20, count columns left-to-right and heights upward from the floor. The 11 spiral targets begin at: C4 B9, C2 B6, C7 B6, C1 B5, C6 B5, C7 B4, C2 B3, C6 B2, C2 B1, C4 B1, C7 B1.",
+      "3": "Start by exposing the support line beneath C4 B9; then use C3, C5 as working space while collapses draw the right-side targets together. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-21",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 21",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 21, count columns left-to-right and heights upward from the floor. The 6 spiral targets begin at: C2 B4, C6 B4, C1 B3, C7 B3, C1 B1, C7 B1.",
+      "3": "Keep C3, C4 available for unwanted colours and work upward toward C2 B4. Pair spirals through controlled support clears instead of covering their faces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-22",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 22",
+     "missable": true,
+     "levels": {
+      "1": "The opening structure is tall; preserve a clear lane beside its highest targets.",
+      "2": "At the opening of Round 22, count columns left-to-right and heights upward from the floor. The 12 spiral targets begin at: C1 B11, C7 B11, C1 B9, C7 B9, C1 B7, C7 B7, C1 B5, C7 B5, C1 B3, C7 B3, C1 B1, C7 B1.",
+      "3": "Treat C1 B11 as the anchor. Build ordinary matches below neighbouring targets, let gravity close the gaps, and reserve C2, C3 for pieces that do not advance that collapse. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-23",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 23",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 23, count columns left-to-right and heights upward from the floor. The 6 spiral targets begin at: C2 B4, C4 B3, C6 B3, C1 B1, C4 B1, C7 B1.",
+      "3": "Open a route from C3, C5 toward C2 B4, clearing supports from low to high. Avoid sealing the centre cluster beneath unmatched pieces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-24",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 24",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 24, count columns left-to-right and heights upward from the floor. The 6 spiral targets begin at: C2 B8, C4 B8, C6 B8, C4 B5, C3 B4, C5 B4.",
+      "3": "Start by exposing the support line beneath C2 B8; then use C1, C7 as working space while collapses draw the centre-side targets together. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-25",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 25",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 25, count columns left-to-right and heights upward from the floor. The 8 spiral targets begin at: C1 B3, C3 B3, C5 B3, C7 B3, C2 B2, C6 B2, C1 B1, C7 B1.",
+      "3": "Keep C4 available for unwanted colours and work upward toward C1 B3. Pair spirals through controlled support clears instead of covering their faces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-26",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 26",
+     "missable": true,
+     "levels": {
+      "1": "The opening structure is tall; preserve a clear lane beside its highest targets.",
+      "2": "At the opening of Round 26, count columns left-to-right and heights upward from the floor. The 6 spiral targets begin at: C2 B9, C6 B9, C2 B7, C6 B7, C4 B4, C4 B2.",
+      "3": "Treat C2 B9 as the anchor. Build ordinary matches below neighbouring targets, let gravity close the gaps, and reserve C1, C3 for pieces that do not advance that collapse. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-27",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 27",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean left; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 27, count columns left-to-right and heights upward from the floor. The 3 spiral targets begin at: C1 B3, C1 B2, C7 B1.",
+      "3": "Open a route from C2, C3 toward C1 B3, clearing supports from low to high. Avoid sealing the left cluster beneath unmatched pieces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-28",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 28",
+     "missable": true,
+     "levels": {
+      "1": "The opening structure is tall; preserve a clear lane beside its highest targets.",
+      "2": "At the opening of Round 28, count columns left-to-right and heights upward from the floor. The 8 spiral targets begin at: C3 B9, C5 B9, C1 B3, C7 B3, C1 B1, C3 B1, C5 B1, C7 B1.",
+      "3": "Start by exposing the support line beneath C3 B9; then use C2, C4 as working space while collapses draw the left-side targets together. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-29",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 29",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean left; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 29, count columns left-to-right and heights upward from the floor. The 10 spiral targets begin at: C1 B5, C3 B5, C2 B4, C4 B4, C1 B3, C3 B3, C5 B3, C2 B2, C4 B2, C1 B1.",
+      "3": "Keep C6, C7 available for unwanted colours and work upward toward C1 B5. Pair spirals through controlled support clears instead of covering their faces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    }
+   ]
+  },
+  {
+   "id": "eraser-rounds-30-40",
+   "name": "Round Boards 30–40",
+   "location_cue": "The Round Mode board whose opening counter shows 30 through 40.",
+   "note": "Spiral placement is fixed, but the incoming colour clusters vary between attempts.",
+   "save_backup": {
+    "title": "Preserve a state before each new board",
+    "why": "This build has no native save, and leaving the session can erase Round Mode progress.",
+    "detail": "Keep one emulator state at the round-number screen and a second at the live opening grid. Replace them only after the next board begins safely."
+   },
+   "point_of_no_return": {
+    "title": "The active board closes when it resolves",
+    "why": "A success, timeout, or manual restart replaces the current arrangement.",
+    "detail": "Reconcile the spiral count before the final pair disappears. If the board becomes unwinnable, use A+C rather than spending the remaining timer."
+   },
+   "items": [
+    {
+     "id": "eraser-round-30",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 30",
+     "missable": true,
+     "levels": {
+      "1": "The opening structure is tall; preserve a clear lane beside its highest targets.",
+      "2": "At the opening of Round 30, count columns left-to-right and heights upward from the floor. The 1 spiral targets begin at: C5 B2.",
+      "3": "Treat C5 B2 as the anchor. Build ordinary matches below neighbouring targets, let gravity close the gaps, and reserve C1, C2 for pieces that do not advance that collapse. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-31",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 31",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean left; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 31, count columns left-to-right and heights upward from the floor. The 3 spiral targets begin at: C2 B2, C4 B2, C3 B1.",
+      "3": "Open a route from C1, C5 toward C2 B2, clearing supports from low to high. Avoid sealing the left cluster beneath unmatched pieces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-32",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 32",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean right; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 32, count columns left-to-right and heights upward from the floor. The 9 spiral targets begin at: C3 B5, C5 B5, C7 B5, C2 B4, C4 B4, C6 B4, C3 B3, C5 B3, C7 B3.",
+      "3": "Start by exposing the support line beneath C3 B5; then use C1 as working space while collapses draw the right-side targets together. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-33",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 33",
+     "missable": true,
+     "levels": {
+      "1": "The opening structure is tall; preserve a clear lane beside its highest targets.",
+      "2": "At the opening of Round 33, count columns left-to-right and heights upward from the floor. The 3 spiral targets begin at: C2 B10, C1 B4, C3 B4.",
+      "3": "Keep C4, C5 available for unwanted colours and work upward toward C2 B10. Pair spirals through controlled support clears instead of covering their faces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-34",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 34",
+     "missable": true,
+     "levels": {
+      "1": "The opening structure is tall; preserve a clear lane beside its highest targets.",
+      "2": "At the opening of Round 34, count columns left-to-right and heights upward from the floor. The 5 spiral targets begin at: C4 B10, C3 B5, C5 B5, C3 B2, C5 B2.",
+      "3": "Treat C4 B10 as the anchor. Build ordinary matches below neighbouring targets, let gravity close the gaps, and reserve C1, C2 for pieces that do not advance that collapse. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-35",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 35",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean left; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 35, count columns left-to-right and heights upward from the floor. The 5 spiral targets begin at: C5 B8, C3 B7, C1 B6, C2 B3, C6 B2.",
+      "3": "Open a route from C4, C7 toward C5 B8, clearing supports from low to high. Avoid sealing the left cluster beneath unmatched pieces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-36",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 36",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean right; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 36, count columns left-to-right and heights upward from the floor. The 8 spiral targets begin at: C2 B5, C6 B5, C3 B4, C5 B4, C7 B2, C2 B1, C4 B1, C6 B1.",
+      "3": "Start by exposing the support line beneath C2 B5; then use C1 as working space while collapses draw the right-side targets together. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-37",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 37",
+     "missable": true,
+     "levels": {
+      "1": "Most targets lean left; keep the opposite side open for sorting incoming colours.",
+      "2": "At the opening of Round 37, count columns left-to-right and heights upward from the floor. The 3 spiral targets begin at: C3 B6, C4 B5, C2 B2.",
+      "3": "Keep C1, C5 available for unwanted colours and work upward toward C3 B6. Pair spirals through controlled support clears instead of covering their faces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-38",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 38",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 38, count columns left-to-right and heights upward from the floor. The 7 spiral targets begin at: C2 B5, C6 B5, C3 B4, C5 B4, C2 B1, C4 B1, C6 B1.",
+      "3": "Treat C2 B5 as the anchor. Build ordinary matches below neighbouring targets, let gravity close the gaps, and reserve C1, C7 for pieces that do not advance that collapse. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-39",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 39",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 39, count columns left-to-right and heights upward from the floor. The 3 spiral targets begin at: C3 B8, C5 B7, C4 B4.",
+      "3": "Open a route from C1, C2 toward C3 B8, clearing supports from low to high. Avoid sealing the centre cluster beneath unmatched pieces. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    },
+    {
+     "id": "eraser-round-40",
+     "type": "optional",
+     "safe_type": "Puzzle board",
+     "label": "Clear Round 40",
+     "missable": true,
+     "levels": {
+      "1": "The targets are balanced across the field; plan paired collapses before dropping quickly.",
+      "2": "At the opening of Round 40, count columns left-to-right and heights upward from the floor. The 3 spiral targets begin at: C3 B2, C5 B2, C4 B1.",
+      "3": "Start by exposing the support line beneath C3 B2; then use C1, C2 as working space while collapses draw the centre-side targets together. Incoming clusters vary, so adapt the colour order; use A+C immediately if one spiral becomes isolated. The three-minute clock continues during pause."
+     }
+    }
+   ]
+  },
+  {
+   "id": "eraser-solo-modes",
+   "name": "Solo Endless Modes",
+   "location_cue": "The mode menu listing Normal, Doubt, and Block beside Round Mode.",
+   "note": "These score-driven rulesets have no authored final board, so completion records their distinct mechanics and the established Normal benchmark.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "eraser-normal-level-10",
+     "type": "optional",
+     "safe_type": "Mode task",
+     "label": "Reach Normal Mode Level 10",
+     "missable": false,
+     "levels": {
+      "1": "Build steady chains while leaving one recovery column open.",
+      "2": "Choose Normal Mode and continue until its level display reaches 10.",
+      "3": "Normal has no finite board list, so Level 10 is the documented completion benchmark. Clear low and wide, reserve one column for awkward clusters, and reduce fast drops as the automatic speed increases."
+     }
+    },
+    {
+     "id": "eraser-doubt-white-conversion",
+     "type": "interaction",
+     "safe_type": "Mode mechanic",
+     "label": "Trigger Doubt Mode's White Conversion",
+     "missable": false,
+     "levels": {
+      "1": "Expect a landed cluster to change after it settles.",
+      "2": "Choose Doubt Mode and watch a non-white piece turn into a white square on landing.",
+      "3": "White squares do not arrive as ordinary falling pieces here. Leave potential white partners accessible, land several clusters until a conversion occurs, then erase the converted square by placing it beside another white square."
+     }
+    },
+    {
+     "id": "eraser-block-rigid-collapse",
+     "type": "interaction",
+     "safe_type": "Mode mechanic",
+     "label": "Release a Block Mode Tower",
+     "missable": false,
+     "levels": {
+      "1": "Build one rigid formation, then look for the match that frees it.",
+      "2": "Choose Block Mode, land a cluster so it remains supported as one unit, then create a matching pair beneath it.",
+      "3": "Unlike the ordinary rules, landed clusters can stay rigid instead of separating immediately. Stack a small tower, complete one pair at its support, and confirm that the released formation collapses and resolves any new contacts."
+     }
+    }
+   ]
+  },
+  {
+   "id": "eraser-computer-versus",
+   "name": "Computer Versus",
+   "location_cue": "The 1P VS COMP menu with a single-digit difficulty selector.",
+   "note": "The selector exposes ten distinct settings, numbered 0 through 9.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "eraser-cpu-difficulty-0",
+     "type": "optional",
+     "safe_type": "Versus task",
+     "label": "Defeat Computer Difficulty 0",
+     "missable": false,
+     "levels": {
+      "1": "Use the slower opening pace to practise clean, low stacks.",
+      "2": "Choose 1P VS COMP, set the computer difficulty to 0, and finish with the winning field.",
+      "3": "Difficulty 0 changes the opposing fall pace. Keep your own stack below mid-field, favour two-step chains over speculative towers, and convert any attack window into safe board reduction before pursuing more pressure."
+     }
+    },
+    {
+     "id": "eraser-cpu-difficulty-1",
+     "type": "optional",
+     "safe_type": "Versus task",
+     "label": "Defeat Computer Difficulty 1",
+     "missable": false,
+     "levels": {
+      "1": "Use the slower opening pace to practise clean, low stacks.",
+      "2": "Choose 1P VS COMP, set the computer difficulty to 1, and finish with the winning field.",
+      "3": "Difficulty 1 changes the opposing fall pace. Keep your own stack below mid-field, favour two-step chains over speculative towers, and convert any attack window into safe board reduction before pursuing more pressure."
+     }
+    },
+    {
+     "id": "eraser-cpu-difficulty-2",
+     "type": "optional",
+     "safe_type": "Versus task",
+     "label": "Defeat Computer Difficulty 2",
+     "missable": false,
+     "levels": {
+      "1": "Use the slower opening pace to practise clean, low stacks.",
+      "2": "Choose 1P VS COMP, set the computer difficulty to 2, and finish with the winning field.",
+      "3": "Difficulty 2 changes the opposing fall pace. Keep your own stack below mid-field, favour two-step chains over speculative towers, and convert any attack window into safe board reduction before pursuing more pressure."
+     }
+    },
+    {
+     "id": "eraser-cpu-difficulty-3",
+     "type": "optional",
+     "safe_type": "Versus task",
+     "label": "Defeat Computer Difficulty 3",
+     "missable": false,
+     "levels": {
+      "1": "Prepare small chains before the opposing field begins to accelerate.",
+      "2": "Choose 1P VS COMP, set the computer difficulty to 3, and finish with the winning field.",
+      "3": "Difficulty 3 changes the opposing fall pace. Keep your own stack below mid-field, favour two-step chains over speculative towers, and convert any attack window into safe board reduction before pursuing more pressure."
+     }
+    },
+    {
+     "id": "eraser-cpu-difficulty-4",
+     "type": "optional",
+     "safe_type": "Versus task",
+     "label": "Defeat Computer Difficulty 4",
+     "missable": false,
+     "levels": {
+      "1": "Prepare small chains before the opposing field begins to accelerate.",
+      "2": "Choose 1P VS COMP, set the computer difficulty to 4, and finish with the winning field.",
+      "3": "Difficulty 4 changes the opposing fall pace. Keep your own stack below mid-field, favour two-step chains over speculative towers, and convert any attack window into safe board reduction before pursuing more pressure."
+     }
+    },
+    {
+     "id": "eraser-cpu-difficulty-5",
+     "type": "optional",
+     "safe_type": "Versus task",
+     "label": "Defeat Computer Difficulty 5",
+     "missable": false,
+     "levels": {
+      "1": "Prepare small chains before the opposing field begins to accelerate.",
+      "2": "Choose 1P VS COMP, set the computer difficulty to 5, and finish with the winning field.",
+      "3": "Difficulty 5 changes the opposing fall pace. Keep your own stack below mid-field, favour two-step chains over speculative towers, and convert any attack window into safe board reduction before pursuing more pressure."
+     }
+    },
+    {
+     "id": "eraser-cpu-difficulty-6",
+     "type": "optional",
+     "safe_type": "Versus task",
+     "label": "Defeat Computer Difficulty 6",
+     "missable": false,
+     "levels": {
+      "1": "Prepare small chains before the opposing field begins to accelerate.",
+      "2": "Choose 1P VS COMP, set the computer difficulty to 6, and finish with the winning field.",
+      "3": "Difficulty 6 changes the opposing fall pace. Keep your own stack below mid-field, favour two-step chains over speculative towers, and convert any attack window into safe board reduction before pursuing more pressure."
+     }
+    },
+    {
+     "id": "eraser-cpu-difficulty-7",
+     "type": "optional",
+     "safe_type": "Versus task",
+     "label": "Defeat Computer Difficulty 7",
+     "missable": false,
+     "levels": {
+      "1": "Keep decisions compact; the upper settings punish tall recovery stacks.",
+      "2": "Choose 1P VS COMP, set the computer difficulty to 7, and finish with the winning field.",
+      "3": "Difficulty 7 changes the opposing fall pace. Keep your own stack below mid-field, favour two-step chains over speculative towers, and convert any attack window into safe board reduction before pursuing more pressure."
+     }
+    },
+    {
+     "id": "eraser-cpu-difficulty-8",
+     "type": "optional",
+     "safe_type": "Versus task",
+     "label": "Defeat Computer Difficulty 8",
+     "missable": false,
+     "levels": {
+      "1": "Keep decisions compact; the upper settings punish tall recovery stacks.",
+      "2": "Choose 1P VS COMP, set the computer difficulty to 8, and finish with the winning field.",
+      "3": "Difficulty 8 changes the opposing fall pace. Keep your own stack below mid-field, favour two-step chains over speculative towers, and convert any attack window into safe board reduction before pursuing more pressure."
+     }
+    },
+    {
+     "id": "eraser-cpu-difficulty-9",
+     "type": "optional",
+     "safe_type": "Versus task",
+     "label": "Defeat Computer Difficulty 9",
+     "missable": false,
+     "levels": {
+      "1": "Keep decisions compact; the upper settings punish tall recovery stacks.",
+      "2": "Choose 1P VS COMP, set the computer difficulty to 9, and finish with the winning field.",
+      "3": "Difficulty 9 changes the opposing fall pace. Keep your own stack below mid-field, favour two-step chains over speculative towers, and convert any attack window into safe board reduction before pursuing more pressure."
+     }
+    },
+    {
+     "id": "eraser-staff-roll",
+     "type": "optional",
+     "safe_type": "Completion scene",
+     "label": "View the Staff Roll",
+     "missable": false,
+     "levels": {
+      "1": "A successful computer match opens the game's formal completion display.",
+      "2": "Win any 1P VS COMP match and remain through the book-style staff pages.",
+      "3": "After the victory screen, do not reset or load a state. Let the closing transition finish, page through the complete staff display, and wait for its final page before returning to the title."
+     }
+    }
+   ]
+  },
+  {
+   "id": "eraser-two-player",
+   "name": "Two-Player Modes",
+   "location_cue": "The title menu entries labelled 1P AND 2P and 1P VS 2P.",
+   "note": "Side-by-side play allows different rulesets on the two fields; direct versus uses the competitive rules.",
+   "save_backup": null,
+   "point_of_no_return": null,
+   "items": [
+    {
+     "id": "eraser-dual-round",
+     "type": "optional",
+     "safe_type": "Two-field task",
+     "label": "Play Side-by-Side Round Mode",
+     "missable": false,
+     "levels": {
+      "1": "Open both playfields and verify the mode can run independently on each side.",
+      "2": "Choose 1P AND 2P, assign Round Mode, and clear the spiral targets on at least one side.",
+      "3": "Activate the second controller if two players are present; otherwise leave it idle and use the first field. Each side can choose its own ruleset, so confirm the Round behaviour on the active field before leaving the match."
+     }
+    },
+    {
+     "id": "eraser-dual-normal",
+     "type": "optional",
+     "safe_type": "Two-field task",
+     "label": "Play Side-by-Side Normal Mode",
+     "missable": false,
+     "levels": {
+      "1": "Open both playfields and verify the mode can run independently on each side.",
+      "2": "Choose 1P AND 2P, assign Normal Mode, and finish with the higher recorded score.",
+      "3": "Activate the second controller if two players are present; otherwise leave it idle and use the first field. Each side can choose its own ruleset, so confirm the Normal behaviour on the active field before leaving the match."
+     }
+    },
+    {
+     "id": "eraser-dual-doubt",
+     "type": "optional",
+     "safe_type": "Two-field task",
+     "label": "Play Side-by-Side Doubt Mode",
+     "missable": false,
+     "levels": {
+      "1": "Open both playfields and verify the mode can run independently on each side.",
+      "2": "Choose 1P AND 2P, assign Doubt Mode, and observe a white conversion on either field.",
+      "3": "Activate the second controller if two players are present; otherwise leave it idle and use the first field. Each side can choose its own ruleset, so confirm the Doubt behaviour on the active field before leaving the match."
+     }
+    },
+    {
+     "id": "eraser-dual-block",
+     "type": "optional",
+     "safe_type": "Two-field task",
+     "label": "Play Side-by-Side Block Mode",
+     "missable": false,
+     "levels": {
+      "1": "Open both playfields and verify the mode can run independently on each side.",
+      "2": "Choose 1P AND 2P, assign Block Mode, and release one rigid tower on either field.",
+      "3": "Activate the second controller if two players are present; otherwise leave it idle and use the first field. Each side can choose its own ruleset, so confirm the Block behaviour on the active field before leaving the match."
+     }
+    },
+    {
+     "id": "eraser-human-versus-match",
+     "type": "optional",
+     "safe_type": "Versus task",
+     "label": "Complete a Human Versus Match",
+     "missable": false,
+     "levels": {
+      "1": "Keep both fields visible and compare safe stack height before attacking.",
+      "2": "Choose 1P VS 2P and play until the ten-minute clock expires or one field fills.",
+      "3": "Competitive play cannot be paused. Win by holding the higher score at time expiry or by forcing the opposing field to overflow; keep a clean lane available whenever the middle display signals interference."
+     }
+    },
+    {
+     "id": "eraser-five-clear-mystery",
+     "type": "interaction",
+     "safe_type": "Versus mechanic",
+     "label": "Send a Mystery Cluster",
+     "missable": false,
+     "levels": {
+      "1": "Build a larger simultaneous clear during a versus match.",
+      "2": "In a versus match, erase at least five pieces in one resolution to send a concealed cluster.",
+      "3": "Prepare a connected group of five or more matching pieces, complete the last contact, and watch the opposing preview receive an unidentified cluster whose contents remain hidden until landing."
+     }
+    },
+    {
+     "id": "eraser-seven-clear-disruption",
+     "type": "interaction",
+     "safe_type": "Versus mechanic",
+     "label": "Trigger Rival-Control Disruption",
+     "missable": false,
+     "levels": {
+      "1": "Reserve a very large clear for the competitive field.",
+      "2": "In a versus match, erase at least seven pieces in one resolution to trigger the stronger attack.",
+      "3": "Join seven or more identical pieces before completing their contact. The resulting attack briefly interferes with the rival's falling-cluster control, so verify the effect while both fields remain active."
+     }
+    }
+   ]
+  }
+ ]
+}
