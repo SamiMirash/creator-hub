@@ -1,0 +1,33 @@
+# Cloudflare Pages custom headers.
+#
+# ⛔⛔ WHY THIS FILE EXISTS — 2026-08-27.
+# The YouTube grid on the home page was fixed, deployed and verified, and the creator still saw the old
+# broken message on his screen. The heading had updated but the box under it had not.
+# THE CAUSE: index.html revalidates, but `assets/content.js` was served with
+#     Cache-Control: public, max-age=14400
+# and no version marker in its URL. So a visitor got the NEW html and the OLD javascript, for up to
+# four hours. Every future JS fix would have failed to arrive the same silent way.
+#
+# ⭐ THE FIX IS TWO HALVES AND BOTH ARE REQUIRED:
+#   1. Every asset URL now carries ?v=<content hash>, stamped by `stamp_asset_versions.py`.
+#      A changed file changes its URL, so a browser cannot serve a stale copy of new code.
+#   2. This file: HTML must revalidate every time (it is what carries the new asset URLs), while
+#      the versioned assets themselves may be cached hard, because their URL changes when they do.
+#
+# ⚠️ RUN `python stamp_asset_versions.py` AFTER EDITING ANY FILE IN assets/. If the hash in the
+# HTML does not match the file, visitors keep the old one and the deploy looks like it did nothing.
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/data/*
+  Cache-Control: public, max-age=300, must-revalidate
+
+/api/*
+  Cache-Control: public, max-age=900, stale-while-revalidate=86400
