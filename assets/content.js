@@ -149,25 +149,24 @@
   }
 
   async function youtubeLatest(channelId) {
-    if (!channelId) return [];
-    try {
-      const res = await fetchWithTimeout(`https://www.youtube.com/feeds/videos.xml?channel_id=${encodeURIComponent(channelId)}`, { cache: "no-store" });
-      if (!res.ok) return [];
-      const xml = await res.text();
-      const doc = new DOMParser().parseFromString(xml, "application/xml");
-      return Array.from(doc.querySelectorAll("entry")).slice(0, 6).map((entry) => {
-        const videoId = entry.querySelector("videoId")?.textContent || entry.querySelector("yt\\:videoId")?.textContent || "";
-        return {
-          title: entry.querySelector("title")?.textContent || "YouTube video",
-          url: entry.querySelector("link")?.getAttribute("href") || (videoId ? `https://www.youtube.com/watch?v=${videoId}` : ""),
-          videoId,
-          published: entry.querySelector("published")?.textContent || ""
-        };
-      });
-    } catch (_) {
-      return [];
+      // ⛔ 2026-08-27 — THIS USED TO FETCH YOUTUBE DIRECTLY AND COULD NEVER WORK.
+      //   YouTube serves /feeds/videos.xml with NO Access-Control-Allow-Origin header, so the
+      //   browser blocked every request on CORS, the catch swallowed it, and the page rendered
+      //   "No YouTube videos found" while the channel had public videos the whole time.
+      //   MEASURED: the feed returns HTTP 200 and both videos to curl, and no CORS header at all.
+      //   ⇒ It now goes through /api/youtube, a Cloudflare Pages Function that reads the feed
+      //   server-side (functions/api/youtube.js). Same origin, so CORS never applies.
+      if (!channelId) return [];
+      try {
+        const res = await fetchWithTimeout(`/api/youtube?channel_id=${encodeURIComponent(channelId)}&limit=6`, { cache: "no-store" });
+        if (!res.ok) return [];
+        const payload = await res.json();
+        if (!payload || !payload.ok || !Array.isArray(payload.videos)) return [];
+        return payload.videos;
+      } catch (_) {
+        return [];
+      }
     }
-  }
 
   async function renderLiveBadge(cfg, site) {
     if (!cfg.features.live_badge) {
@@ -256,17 +255,17 @@
       return;
     }
     if (!cfg.channels.youtube_channel_id) {
-      mount("[data-latest-videos]", `<article class="card empty-state"><h2>${esc(text("YouTube videos coming later."))}</h2><p>${esc(text("Add a UC channel ID in config.json and this grid will fill from YouTube RSS."))}</p></article>`);
+      mount("[data-latest-videos]", `<article class="card empty-state"><h2>${esc(text("Videos are on the way."))}</h2><p>${esc(text("This grid fills automatically from the channel."))}</p></article>`);
       return;
     }
     const videos = await youtubeLatest(cfg.channels.youtube_channel_id);
     mount("[data-latest-videos]", videos.length ? videos.map((video) => `
       <article class="feature-card">
-        <img class="video-thumb" loading="lazy" alt="" src="https://i.ytimg.com/vi/${esc(video.videoId)}/hqdefault.jpg">
+        <img class="video-thumb" loading="lazy" alt="" src="${esc(video.thumb || ("https://i.ytimg.com/vi/" + video.videoId + "/hqdefault.jpg"))}">
         <h2>${esc(video.title)}</h2>
         ${button(video.url, text("Watch on YouTube"), "primary")}
       </article>
-    `).join("") : `<article class="card empty-state"><h2>${esc(text("No YouTube videos found."))}</h2><p>${esc(text("The feed is ready, but the channel has no public videos here yet."))}</p></article>`);
+    `).join("") : `<article class="card empty-state"><h2>${esc(text("Videos couldn’t be loaded right now."))}</h2><p>${esc(text("The channel is live — this grid just couldn’t reach it. Try again shortly."))}</p>${button("https://www.youtube.com/channel/" + cfg.channels.youtube_channel_id, text("Open the channel"), "primary")}</article>`);
   }
 
   async function renderHome() {
