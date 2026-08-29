@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DLSS 5 Neural Rendering in Returnal — measured, not eyeballed | Sami Mirash</title>
+<meta name="description" content="Every DLSS 5 Neural Rendering control tested on Returnal at 4K on an RTX 5090, measured in ICtCp from floating-point captures. What each slider does, where it stops helping, and the settings that came out of it.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.samimirash.com/articles/dlss5-returnal/">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  .wrap{max-width:860px;margin:0 auto;padding:28px 18px 96px}
+  .wrap h1{font-size:2.1rem;line-height:1.15;margin:.1em 0 .35em}
+  .standfirst{font-size:1.12rem;color:var(--muted);line-height:1.6;margin:0 0 1.6em}
+  .wrap h2{font-size:1.45rem;margin:2.2em 0 .5em;color:var(--accent-3)}
+  .wrap h3{font-size:1.1rem;margin:1.6em 0 .4em}
+  .wrap p{line-height:1.68;margin:0 0 1em}
+  .kicker{text-transform:uppercase;letter-spacing:1.4px;font-size:.76rem;color:var(--accent);margin:0 0 .6em}
+  table{width:100%;border-collapse:collapse;margin:1.2em 0;font-size:.94rem;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+  th{color:var(--muted);font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.6px}
+  td.num{font-variant-numeric:tabular-nums}
+  .win{color:var(--accent);font-weight:600}
+  .bad{color:var(--danger)}
+  figure{margin:1.8em 0}
+  figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:var(--radius);display:block}
+  figcaption{color:var(--muted);font-size:.88rem;margin-top:.6em;line-height:1.5}
+  .box{border:1px solid var(--line);border-left:3px solid var(--accent-3);border-radius:var(--radius);
+       padding:14px 18px;margin:1.6em 0;background:var(--surface)}
+  .box.warn{border-left-color:var(--danger)}
+  .box p:last-child{margin-bottom:0}
+  code{background:var(--surface-2);padding:2px 6px;border-radius:4px;font-size:.9em}
+  pre{background:var(--surface-2);padding:14px 16px;border-radius:var(--radius);overflow-x:auto;
+      font-size:.88rem;line-height:1.5}
+  .home{display:inline-block;color:var(--muted);text-decoration:none;font-size:.82rem;
+        letter-spacing:.6px;text-transform:uppercase;margin-bottom:1.4em}
+  .home:hover{color:var(--accent)}
+  .meta{color:var(--muted);font-size:.86rem;margin:0 0 2em}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="home" href="/">&#8592; samimirash.com</a>
+<p class="kicker">Measurement write-up</p>
+<h1>DLSS 5 Neural Rendering in Returnal</h1>
+<p class="standfirst">DLSS 5 is not out yet. Its runtime leaked early, the modding community wired it
+into a few dozen games, and the internet filled with before-and-after screenshots. This is what
+happened when I stopped looking at screenshots and measured it instead &mdash; every control, every
+value, on one game, at 4K, in floating point.</p>
+<p class="meta">Tested 29 August 2026. Every number below was measured on the machine described in the
+rig section. None are quoted from anywhere else.</p>
+
+<h2>The short version</h2>
+<p>Switching DLSS 5 Neural Rendering on is a large, real change: <strong>about +50% micro-detail</strong>
+on the character and <strong>+29% on the environment</strong>, with a modest lift in brightness and
+saturation. Almost everything else is smaller than you would assume. Of the eleven controls the mod
+exposes, exactly two changed the picture in a way that survived a properly measured noise floor:
+<strong>NR Style</strong> and <strong>NR Intensity</strong>. Three controls did nothing at all. One
+actively made the image worse at its top setting &mdash; in a way that the obvious quality metric
+<em>rewards</em>.</p>
+
+<h2>The rig</h2>
+<table>
+<tr><th>Part</th><th>Detail</th></tr>
+<tr><td>GPU</td><td>GeForce RTX 5090, 32 GB</td></tr>
+<tr><td>Display</td><td>ASUS ROG Swift PG32UCDM3 &mdash; 4K, 240 Hz, QD-OLED, HDR</td></tr>
+<tr><td>Game</td><td>Returnal, Steam build, 3840&times;2160</td></tr>
+<tr><td>Preset</td><td>Epic &mdash; ray-traced shadows and ray-traced reflections both Epic</td></tr>
+<tr><td>Upscaling</td><td>DLSS Super Resolution Quality; Frame Generation on; Reflex On + Boost</td></tr>
+<tr><td>Post</td><td>Depth of field off, film grain 0%, motion blur and chromatic aberration disabled at engine level</td></tr>
+<tr><td>Observed load</td><td>95&ndash;97% GPU, 56&ndash;66&nbsp;&deg;C, 2497&ndash;2625 MHz, 14.5&ndash;21.7 GB VRAM</td></tr>
+</table>
+<p>The neural renderer itself is <code>nvngx_dlssnr.dll</code> version 310.8.0.0 &mdash; the runtime
+that shipped inside an early-access build of a basketball game and was lifted out of it. It is driven
+through a ReShade add-on that inserts the neural pass immediately after the game's own upscaler
+output, leaving the HUD downstream and untouched. The add-on reports its own state, which is worth
+quoting because it explains several results further down:</p>
+<pre>DLSSNR v310.8.0: ACTIVE
+Backend: NGX core | one-pass-per-output: enabled
+Successful NR frames: 14449 | Guides: 3840x2160 | Output: 3840x2160
+Upscaling: requested OFF | active OFF
+Insertion: immediately after the game's NGX DLSS output; UI remains downstream.
+Codec: FP16 working surface; HDR soft-clip/sRGB only when NGX marks HDR.</pre>
+
+<h2>How this was measured, and why the obvious way is wrong</h2>
+<p>The tempting method is to screenshot the game, run a sharpness metric, and compare. That method
+produced three wrong answers here before it produced a right one, and each failure turned out to be
+worth more than the result it replaced.</p>
+
+<h3>An 8-bit capture cannot measure an HDR game</h3>
+<p>With the display in HDR the desktop is composited in scRGB &mdash; linear light, floating point,
+values running well above 1.0. Capturing that into an 8-bit buffer clips every highlight and crushes
+the ramp. It does not merely add error: it <em>inverted</em> the detail result, making the neural pass
+look destructive when it was not. Every number here comes from a floating-point capture instead.</p>
+
+<h3>Sharpness is the wrong axis; ICtCp is the right one</h3>
+<p>Perceptual intensity and colour need to stay independent across a 10,000-nit range, which is what
+ICtCp was defined for. Captures are converted from scRGB to BT.2020, then to LMS, then PQ-encoded,
+giving intensity <em>I</em>, chroma from Ct/Cp, and detail as the mean absolute Laplacian of <em>I</em>.
+Detail is computed on perceptual intensity rather than on linear light, because in linear light a
+single specular highlight outweighs a whole face.</p>
+<p>The metric was validated against known answers before being trusted: a grey patch must return zero
+chroma, a saturated red must not, a tenfold increase in light must move <em>I</em> substantially, and
+a patch built to sit at 100 nits must read 100 nits. All four passed exactly.</p>
+
+<h3>Two boxes, not one</h3>
+<p>Every reading measures two crops from the <em>same</em> frame: the character, and a patch of rock
+and foliage beside her. A change that moves both by the same proportion is exposure or tone mapping,
+not character work. A single crop cannot tell those apart.</p>
+
+<h3>The noise floor is measured, not assumed</h3>
+<p>Vanilla is measured at the start and the end of every run, and the gap between those two readings
+is the floor any result must clear. This mattered more than expected: in the final comparison the true
+floor turned out to be <strong>larger than every difference between the candidate
+configurations</strong>, which turned an apparent winner into a four-way tie.</p>
+
+<div class="box warn">
+<p><strong>The failure worth copying.</strong> An early matrix was run in the game's Photo Mode,
+because a frozen frame has almost no noise. It gave a clean, repeatable, entirely false answer:
+Intensity 1.0 produced output pixel-identical to vanilla, implying the control was inverted. In live
+gameplay the same setting changes the character by 40%. A frozen frame has no motion vectors, and the
+model is fed motion vectors by design &mdash; with none, the pass degenerates to passthrough. The
+quietest measurement in the whole project was the wrong one.</p>
+</div>
+
+<h2>Does it do anything?</h2>
+<p>Yes, and it is not subtle. Measured in live gameplay, standing still, with the game in SDR:</p>
+<table>
+<tr><th></th><th>Detail</th><th>Intensity</th><th>Chroma</th></tr>
+<tr><td>Vanilla</td><td class="num">0.03840</td><td class="num">0.1655</td><td class="num">0.0440</td></tr>
+<tr><td>DLSS 5 on</td><td class="num win">+50%</td><td class="num">+7.0%</td><td class="num">+3.8%</td></tr>
+</table>
+<p>The environment gains too &mdash; about +29% &mdash; which settles a question that came up
+repeatedly during testing. The community runtime is widely described as a character model, and it is
+strongest there, but it is not confined to the character. The ratio between the two boxes sits around
+1.8&times; in favour of the character, not at infinity.</p>
+
+<figure>
+<img src="fig_zoom_offon.avif" alt="Side-by-side crop of the protagonist's harness and tubing, DLSS 5 off on the left and on at the right, magnified three times">
+<figcaption>Off (left) and on (right), three-times magnification, nearest-neighbour so nothing is
+invented by the resampler. The tube coils gain ridges, the harness gains definition, the fabric stops
+reading as a flat surface. That is the whole effect, in one crop.</figcaption>
+</figure>
+
+<h2>Every control, measured</h2>
+
+<h3>NR Style is the one that matters</h3>
+<p>Three options, and they are not stylistic variations of equal standing. One is simply better; the
+other two cost you light and colour.</p>
+<table>
+<tr><th>Style</th><th>Detail</th><th>Intensity</th><th>Chroma</th></tr>
+<tr><td>Natural</td><td class="num win">+51.9%</td><td class="num win">+6.9%</td><td class="num win">+3.7%</td></tr>
+<tr><td>Default</td><td class="num">+37.3%</td><td class="num bad">&minus;11.3%</td><td class="num bad">&minus;11.8%</td></tr>
+<tr><td>Cinematic</td><td class="num">+15.3%</td><td class="num bad">&minus;3.7%</td><td class="num bad">&minus;4.2%</td></tr>
+</table>
+<p>Default and Cinematic both darken the image and drain colour from it while delivering less detail.
+There was no scene in this game where either was preferable.</p>
+<figure>
+<img src="fig_styles.avif" alt="Three magnified crops of the same armour showing NR Style set to Default, Cinematic and Natural">
+<figcaption>Default, Cinematic, Natural &mdash; same crop, same magnification.</figcaption>
+</figure>
+
+<h3>NR Intensity saturates at 1.0</h3>
+<p>Below 1.0 it behaves as a strength blend and scales roughly linearly. Above 1.0 it does nothing at
+all: 1.25 through 3.0 are indistinguishable from each other and from 1.0.</p>
+<table>
+<tr><th>Intensity</th><th>0.0</th><th>0.25</th><th>0.5</th><th>0.75</th><th>1.0</th><th>1.25</th><th>1.5</th><th>2.0</th></tr>
+<tr><td>Detail</td><td class="num">off</td><td class="num">+7%</td><td class="num">+15%</td><td class="num">+39%</td><td class="num win">+49%</td><td class="num">+51%</td><td class="num">+48%</td><td class="num">+48%</td></tr>
+</table>
+<p>Anyone raising this above 1.0 expecting more is paying nothing and receiving nothing.</p>
+
+<h3>Local Structure is the detail, and it has a ceiling you can see</h3>
+<p>At 0.0 the effect vanishes entirely even with everything else enabled &mdash; this control, not
+Intensity, is what actually produces the micro-detail. It rises to 1.0 and then flattens. At 2.0 the
+metric keeps climbing while the picture gets worse.</p>
+<figure>
+<img src="fig_oversharpen.avif" alt="Two magnified crops showing background foliage clean at Local Structure 1.0 and visibly speckled at 2.0">
+<figcaption>Local Structure 1.0 (left) and 2.0 (right). The background foliage on the right is
+speckling. That is over-sharpening producing noise &mdash; and because noise is high-frequency, an
+edge-energy metric scores it as <em>more</em> detail. The number says 2.0 is best. The picture says
+otherwise, and the picture is right.</figcaption>
+</figure>
+<div class="box">
+<p>This is the single most useful thing in the whole exercise. A detail metric cannot distinguish
+detail from grain. Any tuning done purely on a sharpness score will walk straight into this, confident
+and wrong. Look at the frames.</p>
+</div>
+
+<h3>What does nothing</h3>
+<table>
+<tr><th>Control</th><th>Result</th></tr>
+<tr><td>NR Preset #1 / #2 / #3</td><td>Identical to Default to four decimal places. Selectable, inert.</td></tr>
+<tr><td>Skin Structure Strength</td><td>No trend across its full &minus;1 &rarr; +1 range. See below.</td></tr>
+<tr><td>Automatic Mask</td><td>Apparent gain sat inside the noise floor.</td></tr>
+<tr><td>Colour Strength</td><td>Raising it <em>reduces</em> chroma. At 1.0 it lands at &minus;1.9% against vanilla.</td></tr>
+<tr><td>Local Tone vs Local Structure</td><td>A four-way tie once measured properly. See below.</td></tr>
+</table>
+
+<h3>Why the skin control is inert here, and why that is not a fault</h3>
+<p>The most striking published comparisons of this technology are all faces &mdash; weathered skin,
+pores, subsurface scattering under a light. The model's strongest work is on human features.
+Returnal's protagonist wears a sealed helmet essentially all the time. There is no skin on screen for
+the skin control to act on, so it measures as nothing across its entire range, and the gains that
+<em>do</em> appear arrive as fabric, metal and tubing instead. The technology is behaving correctly;
+the game simply rarely shows it a face.</p>
+
+<h2>The result that changed the conclusion</h2>
+<p>Sweeping one control at a time produced an apparent winner: Local Tone at 2.0, with +71.7% detail,
+comfortably ahead of everything else. It was not real.</p>
+<p>A one-at-a-time sweep cannot separate a setting's effect from the scene changing underneath it, and
+this scene contains an intermittent particle effect and an idling character. Re-running the top four
+candidates <em>interleaved</em> &mdash; each measured three times in rotation, so drift lands on all of
+them equally &mdash; collapsed the result:</p>
+<table>
+<tr><th>Configuration</th><th>Detail</th><th>Intensity</th><th>Own spread</th></tr>
+<tr><td>Intensity 1.0 / Tone 1.0 / Structure 1.0</td><td class="num">0.05986</td><td class="num">0.1753</td><td class="num">0.00138</td></tr>
+<tr><td>Intensity 1.0 / Tone 1.5 / Structure 1.0</td><td class="num">0.06039</td><td class="num win">0.1801</td><td class="num">0.00040</td></tr>
+<tr><td>Intensity 1.0 / Tone 1.5 / Structure 1.5</td><td class="num">0.05901</td><td class="num">0.1770</td><td class="num">0.00528</td></tr>
+<tr><td>Intensity 1.0 / Tone 2.0 / Structure 1.5</td><td class="num">0.06165</td><td class="num">0.1782</td><td class="num">0.00135</td></tr>
+</table>
+<p>The largest within-configuration spread is <strong>0.00528</strong>. The largest difference
+<em>between</em> configurations is 0.0026 &mdash; half the noise. On detail, all four are the same
+configuration wearing different numbers. The +71.7% was the scene, not the slider.</p>
+<p>One thing did survive: Local Tone at 1.5 is consistently brighter across all three rounds with a
+spread of 0.0004, and carries slightly more colour, at no cost in detail. That is a real if modest
+effect, and it is the only reason the final settings differ from the defaults at all.</p>
+
+<h2>SDR against HDR</h2>
+<p>The neural model takes SDR input. Running the game in SDR and measuring the same scene and the same
+crop gives a larger effect than running it in the game's native HDR:</p>
+<table>
+<tr><th>Game output</th><th>Detail gain from DLSS 5</th></tr>
+<tr><td>SDR</td><td class="num win">+49.3%</td></tr>
+<tr><td>Native HDR</td><td class="num">+38.7%</td></tr>
+</table>
+<p>Both are large. The gap is consistent with feeding the model the signal it was trained on, and it
+is why the settings below assume an SDR pipeline with the conversion to HDR done afterwards.</p>
+
+<h2>Two practical traps in this game</h2>
+<h3>Returnal re-enables its own HDR at every launch</h3>
+<p>The HDR switch is not in the Video menu where you would look for it &mdash; it is the last item
+under Graphics &rarr; Post Processing. Turning it off works, and then does not survive: the game
+rewrites its user-settings file at every startup and puts HDR back on whenever the desktop is in HDR.
+It does the same to the Frame Generation and fullscreen-mode entries. Editing that file is wasted
+effort.</p>
+<p>What does hold is the engine configuration file, whose <code>[SystemSettings]</code> block is
+applied at startup and cannot be overridden by the game:</p>
+<pre>[SystemSettings]
+r.HDR.EnableHDROutput=0
+r.HDR.UI.CompositeMode=0
+r.HDR.Display.OutputDevice=0
+r.HDR.Display.ColorGamut=0
+r.AllowHDR=0</pre>
+<p>With those in place the game's own settings file now <em>writes</em> HDR off by itself on every
+launch, verified across three restarts. Mark the file read-only afterwards.</p>
+
+<h3>Fullscreen mode</h3>
+<p>Exclusive fullscreen remains the lowest-latency option. Borderless routes the frame through the
+desktop compositor, costing one to three frames, and changes how raw mouse input reaches the game. On
+a 240 Hz panel that is not a rounding error.</p>
+
+<h2>The settings</h2>
+<table>
+<tr><th>Control</th><th>Value</th><th>Why</th></tr>
+<tr><td>Enable Neural Rendering</td><td>On</td><td>+50% detail; the only large effect available</td></tr>
+<tr><td>Enable Upscaling</td><td>Off</td><td>The game's own Super Resolution already handles this</td></tr>
+<tr><td>NR Preset</td><td>Default</td><td>All four presets measured identical</td></tr>
+<tr><td>NR Style</td><td class="win">Natural</td><td>The one real choice; the others cost light and colour</td></tr>
+<tr><td>NR Intensity</td><td class="win">1.00</td><td>Saturates here; above it is free and worthless</td></tr>
+<tr><td>Local Tone Strength</td><td>1.50</td><td>Consistently brighter with slightly more colour, no detail cost</td></tr>
+<tr><td>Local Structure Strength</td><td>1.00</td><td>1.5 is a tie; 2.0 visibly speckles foliage</td></tr>
+<tr><td>Skin Structure Strength</td><td>&minus;1.00</td><td>No measurable effect &mdash; no skin on screen in this game</td></tr>
+<tr><td>Automatic Mask</td><td>Off</td><td>Gain inside the noise floor</td></tr>
+<tr><td>Colour Strength</td><td>0.00</td><td>Raising it desaturates</td></tr>
+</table>
+<p>Verified to survive a full suspend-and-relaunch cycle, so nothing needs re-applying at launch.</p>
+
+<figure>
+<img src="fig_off_4k.avif" alt="Full 4K frame of the overgrown ruin with DLSS 5 disabled">
+<figcaption>DLSS 5 off &mdash; full frame, 4K.</figcaption>
+</figure>
+<figure>
+<img src="fig_on_4k.avif" alt="The same 4K frame with DLSS 5 Neural Rendering enabled at the final settings">
+<figcaption>DLSS 5 on at the settings above &mdash; the same frame, same position, same scene.</figcaption>
+</figure>
+
+<h2>What is not in this article</h2>
+<p>The performance cost. Figures were taken, and then struck: another workload was using the same GPU
+throughout the afternoon, and a game benchmark and a 4K video encode are each other's worst
+neighbour. Frame timings taken under contention measure the contention. The image-quality numbers
+survive that &mdash; contention changes when a frame arrives, not what is in it, and repeat readings
+here match to five decimal places &mdash; but the cost figures do not, and they will be re-taken on a
+quiet machine rather than published dirty.</p>
+
+<h2>What this exercise was actually about</h2>
+<p>Five separate results in this project were wrong at some point, and every one was caught by a
+control rather than by intuition: an 8-bit capture that inverted a conclusion, a frozen-frame rig that
+inverted a curve, a coordinate bug that silently voided twenty measurements while returning perfectly
+plausible numbers, a metric that rewarded noise, and a winner that dissolved when measured against its
+own repeats.</p>
+<p>None of those were caught by looking harder at the picture, and none by trusting the number. They
+were caught by measuring the same thing twice in different ways and noticing when the two disagreed.
+That is most of what this write-up is: not a settings list, but the argument for why these particular
+numbers are worth anything at all.</p>
+</div>
+</body>
+</html>

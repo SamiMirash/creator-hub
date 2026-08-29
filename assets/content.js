@@ -431,7 +431,7 @@
     if (clips.intro) mount("[data-clips-intro]", esc(clips.intro));
 
     // ---- Per-VIDEO archive (2026-08-23) --------------------------------------
-    // ⭐ ONE ENTRY PER VIDEO, NOT PER PLATFORM. the creator: "since every video is uploaded
+    // ⭐ ONE ENTRY PER VIDEO, NOT PER PLATFORM. The creator: "since every video is uploaded
     //   everywhere you just [need] one entry per video ... you provide the links to all of
     //   the platforms that it has been uploaded to, the exact link to that exact video."
     //   The Clips gallery it replaces is gone from the nav too - he does not make clips.
@@ -583,6 +583,12 @@
         + `<h2>${esc(item.title)}</h2>`
         + figureHtml
         + `<div class="article-body">${paraHtml}</div>`
+        // Optional link out to a full write-up living at its own URL. Long pieces with
+        // tables and figures cannot live in `body`, which is escaped plain text.
+        + (item.link
+            ? `<p class="article-more"><a class="button primary" href="${esc(item.link)}">`
+              + `${esc(item.linkLabel || "Read the full write-up")}</a></p>`
+            : "")
         + `</article>`;
     }).join(""));
   }

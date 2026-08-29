@@ -365,7 +365,7 @@
     // loads (the small "Select Language" control it injects), so this only needs to
     // cover the common cases that set the cookie.
     // Every language Google Translate supports, named uniformly in plain ASCII.
-    // ⭐ 2026-08-23, the creator: "add every single language that exists in the world ... it
+    // ⭐ 2026-08-23, The creator: "add every single language that exists in the world ... it
     //   doesn't cost us anything". This REPLACES the curated 30-entry list.
     // ⛔ AND IT RESOLVES THE DOX PROBLEM THAT REMOVED FARSI ON 2026-07-12 RATHER THAN
     //   REOPENING IT. The risk then was never Farsi's presence: it was that Farsi was the
