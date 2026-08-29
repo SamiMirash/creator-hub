@@ -284,13 +284,34 @@ a 240 Hz panel that is not a rounding error.</p>
 <figcaption>DLSS 5 on at the settings above &mdash; the same frame, same position, same scene.</figcaption>
 </figure>
 
-<h2>What is not in this article</h2>
-<p>The performance cost. Figures were taken, and then struck: another workload was using the same GPU
-throughout the afternoon, and a game benchmark and a 4K video encode are each other's worst
-neighbour. Frame timings taken under contention measure the contention. The image-quality numbers
-survive that &mdash; contention changes when a frame arrives, not what is in it, and repeat readings
-here match to five decimal places &mdash; but the cost figures do not, and they will be re-taken on a
-quiet machine rather than published dirty.</p>
+<h2>What it costs</h2>
+<p>Measured last, on a machine with nothing else running on the GPU, standing in the same spot, with
+the frame rate and latency read off the on-screen overlay. Six samples per state, and the whole thing
+bracketed ON / OFF / ON so that the drift between the two ON readings becomes the noise floor.</p>
+<table>
+<tr><th></th><th>Frame rate</th><th>1% low</th><th>Latency</th></tr>
+<tr><td>DLSS 5 off</td><td class="num win">225.2 fps</td><td class="num">~152</td><td class="num win">20.2 ms</td></tr>
+<tr><td>DLSS 5 on</td><td class="num">120.5 fps</td><td class="num">~72</td><td class="num">36.8 ms</td></tr>
+<tr><td>DLSS 5 on (repeat)</td><td class="num">119.2 fps</td><td class="num">~77</td><td class="num">36.6 ms</td></tr>
+<tr><td><strong>Cost</strong></td><td class="num bad">&minus;46.8%</td><td class="num bad">&minus;52%</td><td class="num bad">+81.7%</td></tr>
+</table>
+<p>The two ON brackets differ by 1.3 fps and 0.2 ms, so the gap to the OFF state is roughly eighty
+times the noise. <strong>Neural rendering costs a little under half the frame rate and adds about
+sixteen milliseconds of latency.</strong> At 4K with ray-traced shadows and reflections on Epic, that
+is 225 fps down to 120 &mdash; still comfortably above the refresh rate this was played at, which is
+the only reason it is usable at all.</p>
+<div class="box">
+<p>Worth stating plainly: this is a pre-release runtime lifted out of another game and injected
+through a generic post-pass. It is not optimised, nothing here is what the shipping version will
+cost, and a roughly 2&times; frame-time increase for a post-process is exactly what you would expect
+from something running without any of the scheduling work a real integration would get.</p>
+</div>
+<p>One earlier attempt at these numbers was thrown away rather than published. It was taken while
+another workload was using the same GPU, and a game benchmark and a 4K video encode are each other's
+worst neighbour &mdash; frame timings taken under contention measure the contention. The figures
+above replace them and were taken on a card with nothing else on it. The image-quality numbers were
+never affected either way: contention changes when a frame arrives, not what is in it, and the
+repeat readings there match to five decimal places.</p>
 
 <h2>What this exercise was actually about</h2>
 <p>Five separate results in this project were wrong at some point, and every one was caught by a
