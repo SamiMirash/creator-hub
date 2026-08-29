@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>DLSS 5 Neural Rendering in Returnal — measured, not eyeballed | Sami Mirash</title>
-<meta name="description" content="Every DLSS 5 Neural Rendering control tested on Returnal at 4K, measured in ICtCp from floating-point captures. What each slider does, where it stops helping, and the settings that came out of it.">
+<meta name="description" content="Every DLSS 5 Neural Rendering control tested on Returnal at 4K on an RTX 5090, measured in ICtCp from floating-point captures. What each slider does, where it stops helping, and the settings that came out of it.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.samimirash.com/articles/dlss5-returnal/">
 <link rel="stylesheet" href="/assets/site.css">
@@ -62,13 +62,13 @@ actively made the image worse at its top setting &mdash; in a way that the obvio
 <h2>The rig</h2>
 <table>
 <tr><th>Part</th><th>Detail</th></tr>
-<tr><td>GPU</td><td>An RTX 50-series card &mdash; the neural runtime will not load on anything older</td></tr>
-<tr><td>Display</td><td>4K 240 Hz QD-OLED, running in HDR, roughly 1000-nit peak</td></tr>
+<tr><td>GPU</td><td>GeForce RTX 5090, 32 GB &mdash; the neural runtime will not load on anything below the 50 series</td></tr>
+<tr><td>Display</td><td>ASUS ROG Swift PG32UCDM3 &mdash; 4K, 240 Hz, QD-OLED, HDR, roughly 1000-nit peak</td></tr>
 <tr><td>Game</td><td>Returnal, Steam build, 3840&times;2160</td></tr>
 <tr><td>Preset</td><td>Epic &mdash; ray-traced shadows and ray-traced reflections both Epic</td></tr>
 <tr><td>Upscaling</td><td>DLSS Super Resolution Quality; Frame Generation on; Reflex On + Boost</td></tr>
 <tr><td>Post</td><td>Depth of field off, film grain 0%, motion blur and chromatic aberration disabled at engine level</td></tr>
-<tr><td>Observed load</td><td>95&ndash;97% GPU utilisation throughout; VRAM well above 16 GB at these settings</td></tr>
+<tr><td>Observed load</td><td>95&ndash;97% GPU, 56&ndash;66&nbsp;&deg;C, 2497&ndash;2625 MHz, 14.5&ndash;21.7 GB VRAM</td></tr>
 </table>
 <p>The neural renderer itself is <code>nvngx_dlssnr.dll</code> version 310.8.0.0 &mdash; the runtime
 that shipped inside an early-access build of a basketball game and was lifted out of it. It is driven
