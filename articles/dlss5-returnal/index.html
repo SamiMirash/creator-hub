@@ -43,10 +43,9 @@
 <a class="home" href="/">&#8592; samimirash.com</a>
 <p class="kicker">Measurement write-up</p>
 <h1>DLSS 5 Neural Rendering in Returnal</h1>
-<p class="standfirst">DLSS 5 is not out yet. Its runtime leaked early, the modding community wired it
-into a few dozen games, and the internet filled with before-and-after screenshots. This is what
-happened when I stopped looking at screenshots and measured it instead &mdash; every control, every
-value, on one game, at 4K, in floating point.</p>
+<p class="standfirst">DLSS 5 Neural Rendering produces dramatic before-and-after screenshots. This
+is what happened when I stopped looking at screenshots and measured it instead &mdash; every control,
+every value, on one game, at 4K, in floating point.</p>
 <p class="meta">Tested 29 August 2026. Every number below was measured on the machine described in the
 rig section. None are quoted from anywhere else.</p>
 
@@ -70,9 +69,8 @@ actively made the image worse at its top setting &mdash; in a way that the obvio
 <tr><td>Post</td><td>Depth of field off, film grain 0%, motion blur and chromatic aberration disabled at engine level</td></tr>
 <tr><td>Observed load</td><td>95&ndash;97% GPU, 56&ndash;66&nbsp;&deg;C, 2497&ndash;2625 MHz, 14.5&ndash;21.7 GB VRAM</td></tr>
 </table>
-<p>The neural renderer itself is <code>nvngx_dlssnr.dll</code> version 310.8.0.0 &mdash; the runtime
-that shipped inside an early-access build of a basketball game and was lifted out of it. It is driven
-through a ReShade add-on that inserts the neural pass immediately after the game's own upscaler
+<p>The neural renderer itself is <code>nvngx_dlssnr.dll</code> version 310.8.0.0. It is driven through
+a ReShade add-on that inserts the neural pass immediately after the game's own upscaler
 output, leaving the HUD downstream and untouched. The add-on reports its own state, which is worth
 quoting because it explains several results further down:</p>
 <pre>DLSSNR v310.8.0: ACTIVE
@@ -301,10 +299,9 @@ sixteen milliseconds of latency.</strong> At 4K with ray-traced shadows and refl
 is 225 fps down to 120 &mdash; still comfortably above the refresh rate this was played at, which is
 the only reason it is usable at all.</p>
 <div class="box">
-<p>Worth stating plainly: this is a pre-release runtime lifted out of another game and injected
-through a generic post-pass. It is not optimised, nothing here is what the shipping version will
-cost, and a roughly 2&times; frame-time increase for a post-process is exactly what you would expect
-from something running without any of the scheduling work a real integration would get.</p>
+<p>Worth stating plainly: this implementation adds the neural renderer through a generic post-pass
+rather than a native game integration. A roughly 2&times; frame-time increase is what this exact setup
+measured, and it should not be treated as a universal performance cost for DLSS 5.</p>
 </div>
 <p>One earlier attempt at these numbers was thrown away rather than published. It was taken while
 another workload was using the same GPU, and a game benchmark and a 4K video encode are each other's
