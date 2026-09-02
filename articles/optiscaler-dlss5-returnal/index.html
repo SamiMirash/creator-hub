@@ -11,7 +11,9 @@
 <meta property="og:title" content="OptiScaler and DLSS 5 in Returnal">
 <meta property="og:description" content="Native HDR works, the frame rate doubles, and three of the controls do the opposite of what their names suggest.">
 <meta property="og:url" content="https://www.samimirash.com/articles/optiscaler-dlss5-returnal/">
+<meta property="og:image" content="https://www.samimirash.com/articles/optiscaler-dlss5-returnal/cover-social.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.samimirash.com/articles/optiscaler-dlss5-returnal/cover-social.jpg">
 <meta name="twitter:title" content="OptiScaler and DLSS 5 in Returnal">
 <meta name="twitter:description" content="Native HDR works, the frame rate doubles, and three of the controls do the opposite of what their names suggest.">
 <link rel="stylesheet" href="/assets/site.css">
@@ -55,6 +57,11 @@
 <h1>OptiScaler and DLSS 5 in Returnal</h1>
 <p class="standfirst">The second attempt at this was better than the first in every way that matters: the frame rate roughly doubled, the game's own HDR started working, and three of the controls turned out to do the opposite of what their names suggest. This is everything that survived measurement, including the parts where the measurement was wrong and my eyes were right.</p>
 <p class="meta">Tested in Returnal at 3840&#215;2160 on 1 September 2026, on a single machine, using a community implementation. Returnal has no official DLSS 5 integration, so none of this is a universal score for the technology &mdash; it is what one game did on one PC, measured carefully enough to be worth writing down.</p>
+
+<figure class="article-cover">
+<img src="cover-4k.png" width="3840" height="1536" alt="Returnal at 4K with DLSS 5 Neural Rendering running" fetchpriority="high">
+<figcaption>Returnal at 3840&#215;2160 with the neural pass active, the game's own HDR on, and DLSS Quality reconstructing from 1440p.</figcaption>
+</figure>
 
 <div class="box">
 <h3>If you are new to any of this</h3>
@@ -153,6 +160,11 @@ DLSS-NR running at 3840x2160, guides 2560x1440</pre>
 
 <p>The ratio column is structure gained per unit of colour shifted &mdash; how much realism you get per unit of departure from the artist's palette.</p>
 
+<figure>
+<img src="fig_dials.svg" width="900" height="340" alt="Bar chart of detail lost when each control is halved">
+<figcaption>Detail lost when each control is halved from 2.0 to 1.0, normalised for brightness. Intensity barely moves.</figcaption>
+</figure>
+
 <h3>Local structure is the realism dial</h3>
 
 <p>It produces nearly as much detail as the strongest control while moving colour by 1.1%, which is barely distinguishable from nothing. It corresponds to the physical properties that make a surface read as real: material definition, the darkening in crevices where light cannot reach, the soft translucency of skin and leaves, and reflections. If you only touch one control, touch this one.</p>
@@ -168,6 +180,11 @@ DLSS-NR running at 3840x2160, guides 2560x1440</pre>
 <div class="box">
 <p><b>Photorealism is not &ldquo;the model's opinion, at maximum&rdquo;.</b> It is real material, light and micro-detail applied to the artist's actual world. Keep the model's detail; keep the game's colour. Set this to zero.</p>
 </div>
+
+<figure>
+<img src="fig_colour.svg" width="900" height="340" alt="Bar chart of colour departure by control">
+<figcaption>How far each control moves the frame's hue off Returnal's palette. Colour strength moves it 20% while adding no detail at all.</figcaption>
+</figure>
 
 <h3>Intensity, despite its name, does nothing measurable</h3>
 
@@ -185,15 +202,35 @@ DLSS-NR running at 3840x2160, guides 2560x1440</pre>
 <tr><td>2.0 &rarr; 4.0</td><td class="num bad">falls 17.2%</td><td class="num bad">shifts 10% further</td></tr>
 </table>
 
+<figure>
+<img src="fig_curve.svg" width="900" height="420" alt="Local structure detail rising to 2.0 then falling at 4.0">
+<figcaption>Past the interface's 2.0 cap the model over-drives and flattens its own output.</figcaption>
+</figure>
+
 <p>The curve is a hump, not a ramp. At 4.0 the setting is <i>worse on both measures at once</i> &mdash; less detail and more colour distortion. Over-driving the model does not produce exaggerated realism; it pushes it into a regime where it flattens and washes its own output. The interface cap turns out to be well chosen rather than arbitrary.</p>
 
 <h3>2. A detail metric cannot tell detail from damage</h3>
 
 <p>One style setting measured <b>+50% structure</b> &mdash; by a wide margin the largest number of the entire session, and with no colour cost. On the numbers it was the clear winner.</p>
 
+<figure>
+<img src="fig_rock_pattern.png" width="1760" height="800" alt="A repeating dimpled grid pattern tiled across natural stone">
+<figcaption>Magnified with nearest-neighbour scaling so nothing is invented by the enlargement. A repeating dimpled grid, tiled across stone that has no such structure. This is what scored +50%.</figcaption>
+</figure>
+
+<figure>
+<img src="fig_suit_crush.png" width="760" height="940" alt="The character suit crushed to black, losing material detail">
+<figcaption>The same setting crushes the suit. Only the yellow accents survive; the material is gone.</figcaption>
+</figure>
+
 <p>Looking at it, it was the clear loser. Flat stone had grown a repeating woven pattern that does not exist in the game. The character's suit had crushed to black, losing all its material. Surfaces shimmered in motion.</p>
 
 <p>All three are classic symptoms of the model being pushed past its intended tolerance: harsh artifacts around character outlines, lighting pushed out of balance, and invented structure where the source surface had none for the model to work from. And every one of them raises local contrast, which is exactly what the metric was counting. <b>Invented pattern noise and genuine material detail are the same thing to an edge detector, and completely different things to a person.</b></p>
+
+<figure>
+<img src="fig_styles.svg" width="900" height="250" alt="Average frame brightness by style">
+<figcaption>Average frame brightness across the three styles. Standard is 25% brighter overall while making the darks darker &mdash; that is contrast, not detail.</figcaption>
+</figure>
 
 <h3>3. That style was not adding detail &mdash; it was adding contrast</h3>
 
@@ -214,6 +251,11 @@ DLSS-NR running at 3840x2160, guides 2560x1440</pre>
 </div>
 
 <h2>The final configuration</h2>
+
+<figure>
+<img src="fig_settings.png" width="1280" height="1120" alt="The DLSS Neural Rendering settings panel with the final values">
+<figcaption>The panel as it ends up. Colour strength at zero is the important one; Intensity is at 2.0 only because it makes no measurable difference either way.</figcaption>
+</figure>
 
 <pre>Neural Rendering    On            Style              Natural
 Detail strength     2.0           Model preset       Default
