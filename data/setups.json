@@ -1254,7 +1254,7 @@
       },
       {
        "label": "Resolution",
-       "value": "1600 x 900 — the highest 16:9 mode the game offers"
+       "value": "1600 x 900, the highest 16:9 mode the game offers"
       },
       {
        "label": "Vsync",
@@ -1262,7 +1262,7 @@
       },
       {
        "label": "Draw Shaders",
-       "value": "On — it ships disabled, which quietly drops the game's visual effects"
+       "value": "On, it ships disabled, which quietly drops the game's visual effects"
       }
      ]
     },
@@ -1288,7 +1288,7 @@
      ]
     }
    ],
-   "settingsNote": "Two things about this game are worth knowing, because neither is obvious.\n\nThe first is where the graphics layer has to live. Games built on this framework do not load their graphics library from their own folder — the framework pulls it from a shared system location instead, so a file dropped next to the game is simply ignored. The layer therefore has to sit in that shared location. But its configuration file is read from the game's own folder, so a game with the layer available but no configuration beside it gets no high dynamic range at all and gives no warning. That was the entire difference between this version and the expanded one: one file.\n\nThe second is the resolution ceiling. The list of resolutions is built into the game itself rather than read from the screen, and it stops at a size that was generous in 2011. The display offers far more, and the game will not show any of it. 1600 x 900 is the largest 16:9 option available, so it is the one that keeps everything the correct shape with nothing stretched, and the graphics card scales it up to fill the screen. The later expanded version has an updated list and does not have this limit.",
+   "settingsNote": "Two things about this game are worth knowing, because neither is obvious.\n\nThe first is where the graphics layer has to live. Games built on this framework do not load their graphics library from their own folder, the framework pulls it from a shared system location instead, so a file dropped next to the game is simply ignored. The layer therefore has to sit in that shared location. But its configuration file is read from the game's own folder, so a game with the layer available but no configuration beside it gets no high dynamic range at all and gives no warning. That was the entire difference between this version and the expanded one: one file.\n\nThe second is the resolution ceiling. The list of resolutions is built into the game itself rather than read from the screen, and it stops at a size that was generous in 2011. The display offers far more, and the game will not show any of it. 1600 x 900 is the largest 16:9 option available, so it is the one that keeps everything the correct shape with nothing stretched, and the graphics card scales it up to fill the screen. The later expanded version has an updated list and does not have this limit.",
    "mods": [],
    "modsNote": ""
   },
@@ -1589,7 +1589,7 @@
       },
       {
        "label": "How it is reached",
-       "value": "A single compatibility layer beside the game, which upgrades the presentation path — nothing else is needed"
+       "value": "A single compatibility layer beside the game, which upgrades the presentation path, nothing else is needed"
       },
       {
        "label": "Peak luminance",
@@ -1610,11 +1610,11 @@
      "settings": [
       {
        "label": "Add-on campaign",
-       "value": "Installed — three extra levels plus additional versus and survival maps"
+       "value": "Installed, three extra levels plus additional versus and survival maps"
       },
       {
        "label": "First Encounter pack",
-       "value": "Installed — lets the earlier campaign be played inside this game"
+       "value": "Installed, lets the earlier campaign be played inside this game"
       },
       {
        "label": "Verified",
@@ -1641,7 +1641,7 @@
      "note": "A single header flag on the executable, raising the 32-bit address-space ceiling from 2 GB to 4 GB."
     }
    ],
-   "settingsNote": "Getting high dynamic range out of this game took three attempts, and the two that failed are worth recording because they look correct on paper.\n\nThe first attempt put a wrapper in front of the game to translate its old graphics calls to a modern interface, and told that wrapper to produce a floating-point output. It ran, and measuring the picture showed the brightest pixel sitting at exactly 1.0 — the ceiling of standard range. So the container was high dynamic range while the contents were not. That is the trap: the pipeline reports success and the image is unchanged.\n\nThe second attempt kept the wrapper but handed the output stage to a second layer, which did produce genuine high dynamic range. It also crashed, repeatedly and with a divide-by-zero inside the wrapper, which no amount of configuration fixed.\n\nThe third attempt removed the wrapper entirely and used the second layer on its own. That is the arrangement in place now: one file beside the game, real floating-point output, and two consecutive clean launches with no crash reports. Fewer moving parts turned out to be both more correct and more stable.\n\nOne practical note that is easy to lose an evening to: this game must be started through the store client rather than by running the executable directly. Launched directly it exits immediately with no window and no error, because the engine unpacks part of itself at startup and needs that context. The failure looks exactly like a crash and is not one."
+   "settingsNote": "Getting high dynamic range out of this game took three attempts, and the two that failed are worth recording because they look correct on paper.\n\nThe first attempt put a wrapper in front of the game to translate its old graphics calls to a modern interface, and told that wrapper to produce a floating-point output. It ran, and measuring the picture showed the brightest pixel sitting at exactly 1.0, the ceiling of standard range. So the container was high dynamic range while the contents were not. That is the trap: the pipeline reports success and the image is unchanged.\n\nThe second attempt kept the wrapper but handed the output stage to a second layer, which did produce genuine high dynamic range. It also crashed, repeatedly and with a divide-by-zero inside the wrapper, which no amount of configuration fixed.\n\nThe third attempt removed the wrapper entirely and used the second layer on its own. That is the arrangement in place now: one file beside the game, real floating-point output, and two consecutive clean launches with no crash reports. Fewer moving parts turned out to be both more correct and more stable.\n\nOne practical note that is easy to lose an evening to: this game must be started through the store client rather than by running the executable directly. Launched directly it exits immediately with no window and no error, because the engine unpacks part of itself at startup and needs that context. The failure looks exactly like a crash and is not one."
   },
   {
    "id": "serious-sam-kamikaze-attack",

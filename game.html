@@ -58,7 +58,7 @@
       <div class="wrap">
         <p class="eyebrow">Game Hub</p>
         <h1>One game. Everything about it.</h1>
-        <p class="lede">Search a game and get the whole picture in one place &mdash; which edition is
+        <p class="lede">Search a game and get the whole picture in one place, which edition is
           worth playing, the exact settings used, the spoiler-free 100% guide, and how long it took.
           No more hopping between three pages.</p>
         <div class="gh-search">
@@ -73,7 +73,7 @@
     <section class="wrap" id="philosophy">
       <h2>How a game gets picked</h2>
       <p class="lede">Every game here is chosen the same way, and the rules are worth stating
-        plainly because they explain the odd-looking answers &mdash; like why a remaster sometimes
+        plainly because they explain the odd-looking answers, like why a remaster sometimes
         does <em>not</em> replace the original.</p>
 
       <div class="gh-entry">
@@ -86,8 +86,8 @@
 
       <div class="gh-entry">
         <h3>&hellip;unless something was cut. Then it has to be two.</h3>
-        <p>If the best-looking version <b>censored or removed even one thing</b> &mdash; a scene, an
-          item, a level, an altered boss &mdash; it stops being the complete version. At that point
+        <p>If the best-looking version <b>censored or removed even one thing</b>, a scene, an
+          item, a level, an altered boss, it stops being the complete version. At that point
           there is no single release that has everything, so it becomes two playthroughs: the
           <b>original</b> for the content that was taken out, and the <b>remake</b> for the
           presentation.</p>
@@ -98,9 +98,9 @@
         <h3>Anything unique makes a release mandatory</h3>
         <p>The test for whether a release belongs on the list is simple: <b>does it contain anything
           that exists nowhere else?</b> A game, a level, a story beat, an item, a mode. If yes, it is
-          required &mdash; even if it is a tool rather than a game, and even if it is a version most
+          required, even if it is a tool rather than a game, and even if it is a version most
           people would skip.</p>
-        <p>If it contains nothing exclusive, it is skipped &mdash; no matter how it is
+        <p>If it contains nothing exclusive, it is skipped, no matter how it is
           marketed. A collection of three games already on the list does not become a fourth entry
           just because it is sold in one box.</p>
       </div>
@@ -117,8 +117,8 @@
       <div class="gh-entry">
         <h3>A drastically different port is its own game</h3>
         <p>A port that merely runs the same game elsewhere is not a separate entry. A port that
-          changes what the game <em>is</em> &mdash; different levels, different content, different
-          balance &mdash; is, and gets played on its own terms.</p>
+          changes what the game <em>is</em>, different levels, different content, different
+          balance, is, and gets played on its own terms.</p>
       </div>
     </section>
   </main>
@@ -178,7 +178,7 @@
       if (g.has_playtime) { flags.push("playtime"); }
       if (g.curation === "deep-franchise-audit") { flags.push("deep audit"); }
       var yrs = (g.years && g.years.length)
-        ? g.years[0] + (g.years.length > 1 ? "&ndash;" + g.years[g.years.length - 1] : "")
+        ? g.years[0] + (g.years.length > 1 ? ", " + g.years[g.years.length - 1] : "")
         : "";
       return '<li><button type="button" data-slug="' + esc(g.slug) + '">' +
         esc(g.franchise) + ' <span class="gh-flags">' + yrs +
@@ -248,7 +248,7 @@
     if (!items.length) { return ""; }
     return '<div class="gh-sect"><h4>Secondary routes and exclusive-content passes</h4><ul>' +
       items.map(function (item) {
-        return "<li><b>" + esc(item.platform || "Alternate release") + "</b> &mdash; " +
+        return "<li><b>" + esc(item.platform || "Alternate release") + "</b>, " +
           esc(item.exclusive_content || item.what_to_play || item.why || "") +
           (item.what_to_play && item.exclusive_content
             ? "<br><span style=\"opacity:.8\">" + esc(item.what_to_play) + "</span>" : "") +

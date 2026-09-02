@@ -47,7 +47,7 @@
 
   function sessionRow(session) {
     const span = (session.start_clock && session.end_clock)
-      ? `${esc(session.start_clock)} &ndash; ${esc(session.end_clock)}`
+      ? `${esc(session.start_clock)} to ${esc(session.end_clock)}`
       : "";
     return `<li><span class="playlog-span">${span}</span><span class="playlog-dur">${esc(session.duration_label || "")}</span></li>`;
   }

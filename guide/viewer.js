@@ -373,7 +373,7 @@
         '<p>' + escapeHtml(w.why || "") + '</p>' +
         (w.detail ? '<p class="muted small">' + escapeHtml(w.detail) + '</p>' : "") +
         (cls === "backup" ? BACKUP_HOWTO : "") +
-        '<button class="ack">Got it &mdash; I handled this</button>';
+        '<button class="ack">Got it, I handled this</button>';
       el(div, ".ack").addEventListener("click", function () {
         self.prog.ack(wid); div.classList.add("acked");
       });
@@ -458,7 +458,7 @@
         '<button class="mark">' + (collected ? "✓ Collected" : "Mark collected") + '</button>' +
         (showSketch ? '<button class="sketchbtn" type="button">Show sketch</button>' : '') +
       '</div>' +
-      (showSketch ? '<figure class="sketchwrap" hidden><img class="sketchimg" alt="Spoiler-safe location sketch for this collectible"><figcaption class="muted small">Line sketch of this exact spot &mdash; location guide, not a screenshot.</figcaption></figure>' : '');
+      (showSketch ? '<figure class="sketchwrap" hidden><img class="sketchimg" alt="Spoiler-safe location sketch for this collectible"><figcaption class="muted small">Line sketch of this exact spot, a location guide rather than a screenshot.</figcaption></figure>' : '');
 
     el(li, ".mark").addEventListener("click", function () {
       self.prog.toggle(it.id);
