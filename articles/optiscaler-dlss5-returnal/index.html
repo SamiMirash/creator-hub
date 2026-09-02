@@ -18,6 +18,12 @@
 <meta name="twitter:description" content="Native HDR works, the frame rate doubles, and three of the controls do the opposite of what their names suggest.">
 <link rel="stylesheet" href="/assets/site.css">
 <style>
+figure{margin:1.45em 0}
+/* ⛔ WITHOUT height:auto THE IMAGES STRETCH. Each <img> carries width/height attributes;
+   the column squeezes the width to ~744px while the height attribute stays put, so the
+   cover rendered 744x1536 against a natural 3840x1536 -- an 81% distortion. */
+figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:var(--radius)}
+
   .wrap{max-width:860px;margin:0 auto;padding:28px 18px 96px}
   .wrap h1{font-size:2.1rem;line-height:1.15;margin:.1em 0 .35em}
   .standfirst{font-size:1.12rem;color:var(--muted);line-height:1.58;margin:0 0 .8em}
