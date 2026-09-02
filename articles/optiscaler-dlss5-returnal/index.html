@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OptiScaler and DLSS 5 in Returnal: the settings that actually work | Sami Mirash</title>
+<meta name="description" content="A second DLSS 5 audit in Returnal, this time through OptiScaler: native HDR works, the frame rate doubles, and three of the controls do the opposite of what their names suggest.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.samimirash.com/articles/optiscaler-dlss5-returnal/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OptiScaler and DLSS 5 in Returnal">
+<meta property="og:description" content="Native HDR works, the frame rate doubles, and three of the controls do the opposite of what their names suggest.">
+<meta property="og:url" content="https://www.samimirash.com/articles/optiscaler-dlss5-returnal/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OptiScaler and DLSS 5 in Returnal">
+<meta name="twitter:description" content="Native HDR works, the frame rate doubles, and three of the controls do the opposite of what their names suggest.">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  .wrap{max-width:860px;margin:0 auto;padding:28px 18px 96px}
+  .wrap h1{font-size:2.1rem;line-height:1.15;margin:.1em 0 .35em}
+  .standfirst{font-size:1.12rem;color:var(--muted);line-height:1.58;margin:0 0 .8em}
+  .wrap h2{font-size:1.45rem;margin:1.75em 0 .45em;color:var(--accent-3)}
+  .wrap h3{font-size:1.1rem;margin:1.25em 0 .35em}
+  .wrap p{line-height:1.65;margin:0 0 .82em}
+  .kicker{text-transform:uppercase;letter-spacing:1.4px;font-size:.76rem;color:var(--accent);margin:0 0 .6em}
+  .home{display:inline-block;color:var(--muted);text-decoration:none;font-size:.82rem;letter-spacing:.6px;text-transform:uppercase;margin-bottom:1.4em}
+  .home:hover{color:var(--accent)}
+  .meta{color:var(--muted);font-size:.86rem;margin:0 0 1.4em}
+  .facts{display:grid;grid-template-columns:minmax(150px,210px) 1fr;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:.85em 0 1.15em;background:var(--surface)}
+  .facts dt,.facts dd{padding:9px 12px;margin:0;border-bottom:1px solid var(--line);line-height:1.5}
+  .facts dt{font-weight:700;color:var(--accent-3)}
+  .facts dt:last-of-type,.facts dd:last-of-type{border-bottom:0}
+  .metric{font-variant-numeric:tabular-nums}
+  .win{color:var(--accent);font-weight:700}
+  .bad{color:var(--danger)}
+  .box{border:1px solid var(--line);border-left:3px solid var(--accent-3);border-radius:var(--radius);padding:12px 16px;margin:1.1em 0;background:var(--surface)}
+  .box.warn{border-left-color:var(--danger)}
+  .box p:last-child{margin-bottom:0}
+  .box h3{margin-top:0}
+  code{background:var(--surface-2);padding:2px 6px;border-radius:4px;font-size:.9em}
+  pre{background:var(--surface-2);padding:14px 16px;border-radius:var(--radius);overflow-x:auto;font-size:.88rem;line-height:1.5}
+  table{width:100%;border-collapse:collapse;margin:1em 0;font-size:.94rem}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--accent-3);font-size:.86rem;text-transform:uppercase;letter-spacing:.6px}
+  td.num{text-align:right;font-variant-numeric:tabular-nums}
+  .jargon{border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px;margin:.9em 0;background:var(--surface-2);font-size:.95rem}
+  .jargon b{color:var(--accent-3)}
+  @media(max-width:620px){.facts{grid-template-columns:1fr}.facts dt{padding-bottom:2px;border-bottom:0}.facts dd{padding-top:2px}.facts dt:last-of-type{border-bottom:0}table{font-size:.86rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="home" href="/">&#8592; samimirash.com</a>
+<p class="kicker">Measurement write-up</p>
+<h1>OptiScaler and DLSS 5 in Returnal</h1>
+<p class="standfirst">The second attempt at this was better than the first in every way that matters: the frame rate roughly doubled, the game's own HDR started working, and three of the controls turned out to do the opposite of what their names suggest. This is everything that survived measurement, including the parts where the measurement was wrong and my eyes were right.</p>
+<p class="meta">Tested in Returnal at 3840&#215;2160 on 1 September 2026, on a single machine, using a community implementation. Returnal has no official DLSS 5 integration, so none of this is a universal score for the technology &mdash; it is what one game did on one PC, measured carefully enough to be worth writing down.</p>
+
+<div class="box">
+<h3>If you are new to any of this</h3>
+<p>There is a short plain-English glossary in the next section. Nothing below assumes you already know what an upscaler or a depth buffer is. If you do know, skip it &mdash; the results start at &ldquo;What changed&rdquo;.</p>
+</div>
+
+<h2>The words you need first</h2>
+
+<div class="jargon"><b>Upscaling</b> &mdash; the game renders at a lower resolution than your screen, and software enlarges the result. Done well it costs far less performance than rendering at full size, because most of the work scales with pixel count. <b>DLSS</b> is NVIDIA's version, which uses a neural network and information about how objects moved between frames rather than simply stretching the image.</div>
+
+<div class="jargon"><b>DLSS Quality</b> &mdash; one of DLSS's presets. At a 4K output it renders the game internally at 2560&#215;1440 and reconstructs to 3840&#215;2160. That internal figure is not a guess: the implementation logs it, and it is the number quoted throughout this article.</div>
+
+<div class="jargon"><b>Neural Rendering</b> (the &ldquo;5&rdquo; in DLSS 5) &mdash; a separate step that runs <i>after</i> upscaling. It passes the finished frame through a generative model trained on photographs, which invents plausible surface detail that the game never drew: pores in stone, grain in metal, fibres in fabric. It is not sharpening. It is closer to asking an artist to repaint the frame in more detail, which is also the source of its failure modes.</div>
+
+<div class="jargon"><b>HDR</b> (high dynamic range) &mdash; a display and signal format that carries much brighter highlights than the older <b>SDR</b> standard, measured in <b>nits</b> (candelas per square metre). An SDR white is around 80&ndash;100 nits. The scenes measured here peak above 1,500.</div>
+
+<div class="jargon"><b>Frame generation</b> &mdash; the graphics card invents extra frames between the ones the game actually renders, raising the displayed frame rate. It does not reduce input latency, because the inserted frames contain no new information about what you did.</div>
+
+<div class="jargon"><b>Hooking</b> and <b>proxy DLL</b> &mdash; how mods insert themselves into a game. A file is placed next to the game's executable using the name of a system library the game already loads (<code>dxgi.dll</code>, <code>d3d12.dll</code>). Windows loads the mod instead, and the mod passes calls through. Two mods wanting the same slot, or the same intercepted function, is where conflicts come from.</div>
+
+<div class="jargon"><b>Motion vectors</b> and <b>depth buffer</b> &mdash; two things a game already computes each frame: how far each pixel moved since the last frame, and how far each pixel is from the camera. Neural Rendering uses both to keep invented detail stuck to surfaces as they move. Without them, detail crawls and shimmers.</div>
+
+<div class="jargon"><b>Noise floor</b> &mdash; how much a measurement wanders when nothing has changed. A living game scene has water, foliage and an idling character, so repeated measurements of the <i>same</i> setting differ slightly. Any claimed improvement smaller than that wander is not a result. Every number in this article was checked against one.</div>
+
+<h2>What changed since the first attempt</h2>
+
+<p>An earlier write-up tested DLSS 5 in Returnal through a ReShade-based implementation, and reached a conclusion that has now been superseded: it ran the game in SDR and converted to HDR afterwards using a driver-level feature, because the game's own HDR produced a broken picture.</p>
+
+<p>That workaround is no longer necessary, and the reason is worth understanding, because it explains a lot of confusing advice circulating about this technology.</p>
+
+<div class="box">
+<p><b>The model only understands SDR.</b> It was trained on finished, ordinary-brightness photographs. A game's internal frame is not that &mdash; it is linear and open-ended, with sunlight values thousands of times brighter than paper white. Feed that to the model raw and everything above SDR is simply chopped off, which wrecks the colour.</p>
+<p>The fix is to map the HDR frame down to something the model recognises, run it, then <i>rescale the answer back</i> so its brightness lands where the original said it should, with the hue held in place. An implementation that does this works with HDR. One that does not, does not.</p>
+</div>
+
+<p>The implementation used here does it, and says so in its own log while running:</p>
+
+<pre>DLSS-NR: the game's DLSS buffer is linear HDR so the colour transform is on
+IFeature::SetInitParameters   Init Flag IsHdr: true
+DLSS-NR running at 3840x2160, guides 2560x1440</pre>
+
+<p>Measured off the resulting frame rather than taken on trust: peak <span class="metric">1,527 nits</span>, with 2.3% of pixels above SDR range. That is genuine HDR output, not an SDR image stretched afterwards.</p>
+
+<p><b>So the practical advice inverts.</b> Turn the game's HDR <i>on</i>, and leave driver-level HDR conversion off. The whole SDR chain, and the engine settings that forced HDR off, can go.</p>
+
+<h2>The headline result</h2>
+
+<dl class="facts">
+<dt>Frame rate</dt><dd>Approximately <span class="win">133 fps</span> at 4K, against roughly 60&ndash;100 and stuttering on the previous implementation.</dd>
+<dt>Latency</dt><dd>About 32 ms reported.</dd>
+<dt>Neural pass cost</dt><dd>7.8&ndash;7.9 ms per <i>rendered</i> frame.</dd>
+<dt>Output</dt><dd>True 4K, DLSS Quality (1440p internal), the game's own HDR.</dd>
+</dl>
+
+<p>The previous implementation cost close to half the frame rate. This one costs far less for a comparable effect, and the reason is architectural rather than a matter of tuning.</p>
+
+<h3>Where the neural pass runs is the whole ballgame</h3>
+
+<p>The ReShade route inserts itself at the end of the frame, at the moment the finished image is handed to the display. That position has two consequences, and both are expensive.</p>
+
+<p>First, at that point the interface has already been drawn, so the model sees your health bar and your text and tries to invent detail in them. Second &mdash; and this is the costly one &mdash; frame generation has already happened. If the card is generating three extra frames for every one the game renders, a pass at the end of the chain runs <i>four times</i> instead of once.</p>
+
+<p>The implementation used here runs the pass immediately after upscaling and <i>before</i> the interface is drawn. It therefore never sees the HUD at all &mdash; no masking required, because the HUD is not there yet &mdash; and it costs one run per rendered frame regardless of how many frames are generated afterwards. Generated frames inherit the result for free.</p>
+
+<div class="box">
+<p>This is why a 7.8 ms pass can coexist with a 133 fps frame rate. It is not a faster model. It is the same model in a better place.</p>
+</div>
+
+<h3>A side effect worth knowing if you record or stream</h3>
+
+<p>Screen-capture software that uses &ldquo;game capture&rdquo; injects itself into the game to intercept the same final-image step that ReShade hooks. Two things wanting that one moment is a genuine conflict, and it shows up as stutter in the recording while the game itself looks perfectly smooth on screen. The relevant bug report upstream has been closed as not planned, and the one setting that used to help has been removed from the software, so this is not going to be fixed.</p>
+
+<p>The implementation used here does not hook that step. It intercepts the upscaler instead. Game capture was tested against it and recorded a complete stream &mdash; 3,597 frames against 3,596 expected, no container-level drops. <b>So the rule is not &ldquo;DLSS 5 breaks recording&rdquo;. It is &ldquo;ReShade breaks recording&rdquo;</b>, and which implementation you choose decides whether you have the problem at all.</p>
+
+<h2>What each control actually does</h2>
+
+<p>Every reading below is 14&ndash;18 frames in live gameplay, in one fixed spot, with the character parked and not moving. Two numbers are reported together:</p>
+
+<ul>
+<li><b>Structure</b> &mdash; how much fine detail is present in the frame, measured as average local contrast. This is the photorealism proxy.</li>
+<li><b>Colour departure</b> &mdash; how far the frame's hue has moved away from the game's own palette.</li>
+</ul>
+
+<p>Both matter, because the goal was more realism, not a different-looking game. A control that raises structure while leaving colour alone is buying you something. A control that only moves colour is repainting the game.</p>
+
+<p>Each control was halved from 2.0 to 1.0 in isolation and measured against the same baseline. Structure is normalised for brightness, because a brighter frame raises local contrast mechanically and would otherwise flatter the result.</p>
+
+<table>
+<tr><th>Control (2.0 &rarr; 1.0)</th><th class="num">Structure</th><th class="num">Colour</th><th class="num">Ratio</th><th>Verdict</th></tr>
+<tr><td><b>Detail strength</b></td><td class="num">&minus;12.3%</td><td class="num">+4.5%</td><td class="num">2.8</td><td>Strongest effect</td></tr>
+<tr><td><b>Local structure</b></td><td class="num">&minus;10.1%</td><td class="num">&minus;1.1%</td><td class="num">9.2</td><td class="win">Cleanest</td></tr>
+<tr><td><b>Local tone</b></td><td class="num">&minus;5.7%</td><td class="num">+1.0%</td><td class="num">5.8</td><td>Small, positive</td></tr>
+<tr><td><b>Intensity</b></td><td class="num">&minus;3.8%</td><td class="num">&minus;0.0%</td><td class="num">&mdash;</td><td class="bad">Below noise floor</td></tr>
+<tr><td><b>Colour strength</b> (0 &rarr; 1)</td><td class="num">&minus;2.0%</td><td class="num">&minus;20.1%</td><td class="num">&mdash;</td><td class="bad">Colour only</td></tr>
+</table>
+
+<p>The ratio column is structure gained per unit of colour shifted &mdash; how much realism you get per unit of departure from the artist's palette.</p>
+
+<h3>Local structure is the realism dial</h3>
+
+<p>It produces nearly as much detail as the strongest control while moving colour by 1.1%, which is barely distinguishable from nothing. It corresponds to the physical properties that make a surface read as real: material definition, the darkening in crevices where light cannot reach, the soft translucency of skin and leaves, and reflections. If you only touch one control, touch this one.</p>
+
+<h3>Colour strength is a repaint, not a realism control</h3>
+
+<p>This is the finding that most contradicts the obvious instinct. Raising it from 0 to 1 moved the frame's colour by <span class="metric">20%</span> and added <b>no structure at all</b>.</p>
+
+<p>What it does is let the model supply its own idea of what colour each object should be. The model has never seen Returnal and does not know what it is looking at &mdash; it sees something metallic and lit and decides, from photographs of the real world, that it should be a different colour. In testing, objects that are deliberately blue turned yellow.</p>
+
+<p>Worth noting which direction the colour moved: <i>down</i>. The model's palette is less saturated than the game's, because photographs of the real world are less saturated than a hostile alien world designed by artists. For a game whose entire visual identity is aggressive biological colour, that is exactly the wrong direction.</p>
+
+<div class="box">
+<p><b>Photorealism is not &ldquo;the model's opinion, at maximum&rdquo;.</b> It is real material, light and micro-detail applied to the artist's actual world. Keep the model's detail; keep the game's colour. Set this to zero.</p>
+</div>
+
+<h3>Intensity, despite its name, does nothing measurable</h3>
+
+<p>Halving the control described as the overall strength of the effect moved structure by 3.8% &mdash; underneath the noise floor. It is not the master dial its name implies. Either the runtime has it largely inert, or it scales something this scene does not exercise.</p>
+
+<h2>Three things that are the opposite of what you would guess</h2>
+
+<h3>1. Maximum is not the same as best</h3>
+
+<p>The in-game interface caps these controls at 2.0. It is tempting to assume that is an arbitrary limit and that the configuration file will let you go further. It will &mdash; the runtime accepts 4.0 and confirms it. But:</p>
+
+<table>
+<tr><th>Local structure</th><th class="num">Structure</th><th class="num">Colour</th></tr>
+<tr><td>1.0 &rarr; 2.0</td><td class="num win">rises 11.3%</td><td class="num">&mdash;</td></tr>
+<tr><td>2.0 &rarr; 4.0</td><td class="num bad">falls 17.2%</td><td class="num bad">shifts 10% further</td></tr>
+</table>
+
+<p>The curve is a hump, not a ramp. At 4.0 the setting is <i>worse on both measures at once</i> &mdash; less detail and more colour distortion. Over-driving the model does not produce exaggerated realism; it pushes it into a regime where it flattens and washes its own output. The interface cap turns out to be well chosen rather than arbitrary.</p>
+
+<h3>2. A detail metric cannot tell detail from damage</h3>
+
+<p>One style setting measured <b>+50% structure</b> &mdash; by a wide margin the largest number of the entire session, and with no colour cost. On the numbers it was the clear winner.</p>
+
+<p>Looking at it, it was the clear loser. Flat stone had grown a repeating woven pattern that does not exist in the game. The character's suit had crushed to black, losing all its material. Surfaces shimmered in motion.</p>
+
+<p>All three are classic symptoms of the model being pushed past its intended tolerance: harsh artifacts around character outlines, lighting pushed out of balance, and invented structure where the source surface had none for the model to work from. And every one of them raises local contrast, which is exactly what the metric was counting. <b>Invented pattern noise and genuine material detail are the same thing to an edge detector, and completely different things to a person.</b></p>
+
+<h3>3. That style was not adding detail &mdash; it was adding contrast</h3>
+
+<p>The clue was in a number nobody was looking at. Across the three styles, average frame brightness rose steadily: <span class="metric">0.0767 &rarr; 0.0823 &rarr; 0.0958</span>. The style with the artifacts was 25% brighter overall &mdash; while simultaneously crushing the suit <i>darker</i>.</p>
+
+<p>Brighter overall with darker darks is not brightness. It is contrast. And that single property explains every symptom at once: raised contrast reads as +50% &ldquo;structure&rdquo; to the metric, crushes the suit to black, and amplifies the model's faint invented pattern into something plainly visible. Three complaints, one cause.</p>
+
+<h2>Where the measurements failed</h2>
+
+<p>Two purpose-built instruments could not detect a problem that was obvious on sight. Both are reported here because the failures are more useful than the successes.</p>
+
+<p>After the artifact discovery, a second instrument was built specifically to catch what the first had missed: frame-to-frame flicker to catch shimmer, spectral analysis to catch repeating patterns, and a shadow measure to catch the crushed suit. Across all three styles it returned flicker of 0.0133, 0.0141 and 0.0143 &mdash; against a spread of &plusmn;0.001. Indistinguishable. The instrument built to see the artifact could not see the artifact either.</p>
+
+<p>Separately, an automated sweep was found sitting on the game's pause menu, and the measurement tools would happily have recorded that screen as if it were the scene. That is now impossible: they refuse to measure unless three consecutive frames agree the game is rendering the world, with the thresholds calibrated against an actual menu and an actual scene rather than guessed. Every reading taken before that guard existed was discarded rather than kept, because there is no way to prove afterwards what those frames were looking at.</p>
+
+<div class="box warn">
+<p>The honest summary: measurement was decisive for the controls that scale one thing &mdash; it settled colour strength, intensity, and the shape of the over-driving curve, all of which are invisible to the eye. It was <b>useless</b> for judging whether the result looked right. Those are different questions and they need different instruments, and one of the instruments is a person.</p>
+</div>
+
+<h2>The final configuration</h2>
+
+<pre>Neural Rendering    On            Style              Natural
+Detail strength     2.0           Model preset       Default
+Local structure     2.0           Intensity          2.0
+Local tone          2.0           Skin structure     2.0
+Colour strength     0.0           Model resolution   100%
+Highlight guard     2.0           Paper white        1.00x</pre>
+
+<dl class="facts">
+<dt>Game HDR</dt><dd>On. Driver-level HDR conversion off &mdash; it is no longer needed and would stack two conversions.</dd>
+<dt>Display mode</dt><dd>Exclusive fullscreen.</dd>
+<dt>Upscaling</dt><dd>DLSS Quality: 2560&#215;1440 internal, 3840&#215;2160 output.</dd>
+<dt>Everything else</dt><dd>No sharpening, no output scaling, no ratio overrides, nothing from a competing vendor's feature set in the path.</dd>
+</dl>
+
+<p>Style is a genuine taste decision rather than a measured one. The three options were indistinguishable on every artifact measure; the choice was made by looking. Natural keeps the game's own colour and lighting intact. The cinematic option is a deliberate filmic grade &mdash; a legitimate look, but a stylistic one rather than a realistic one. The standard option is the contrast-heavy setting described above, and it is the one to avoid.</p>
+
+<p>Model preset was tested across all three of its values and produced differences of 0.2% and 0.8% &mdash; both inside the noise floor. If they differ, they differ in <i>where</i> they place detail rather than how much, and no measurement here could resolve it.</p>
+
+<h2>Method</h2>
+
+<p>Frames were captured from the desktop in 16-bit floating point. This matters: an 8-bit capture cannot represent an HDR signal and clips everything above SDR range, which in earlier work was enough to reverse the conclusion entirely. Structure is average local contrast; colour is the magnitude of the chromatic components after converting to a perceptual colour space, so that a single bright highlight cannot dominate the score.</p>
+
+<p>Each reading is 14&ndash;18 frames with the character stationary, and reports its own spread. The noise floor is twice the larger spread of the two readings being compared, and any difference smaller than that is reported as noise rather than as a result. One control was changed at a time; where two changed between readings, the comparison was recomputed against the correct baseline rather than the previous reading.</p>
+
+<p>The settings that require the game to restart were tested by suspending the run first, so the game reloaded to the same position and readings stayed comparable across restarts. What the runtime actually accepted was read back from its own log every time, because a value written to a configuration file and a value the model was built with are not the same thing, and on more than one occasion they were not.</p>
+
+<h2>What I would tell someone starting from scratch</h2>
+
+<p>Turn Neural Rendering on. Use a native HDR game with an implementation that runs the pass before the interface is drawn &mdash; that decision buys you more performance than any setting. Set colour strength to zero and leave it there. Put local structure and detail strength at the interface maximum and do not go past it through the configuration file. Choose the style by looking, not by measuring.</p>
+
+<p>And then look at the picture. Every genuinely wrong turn in two of these write-ups was a number that looked convincing: an 8-bit capture that reversed an HDR result, a frozen frame that removed an input the model needs, a sharpness score that rewarded visible speckle, a sweep that promoted scene drift into a 71.7% &ldquo;winner&rdquo;, and a +50% result that was a tiled pattern on a rock. The measurements are worth building &mdash; they settled several questions the eye cannot &mdash; but not one of them caught the failure that mattered most.</p>
+
+</div>
+</body>
+</html>

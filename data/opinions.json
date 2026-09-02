@@ -1,29 +1,42 @@
 {
-  "updated": "2026-08-30",
-  "intro": "My personal takes — unfiltered opinions on games, tech, movies, and whatever else is on my mind. These are mine, not anyone else's.",
-  "items": [
-    {
-      "slug": "dlss5-returnal",
-      "title": "DLSS 5 Neural Rendering in Returnal: measured, not eyeballed",
-      "date": "2026-08-29",
-      "topic": "Game settings",
-      "link": "/articles/dlss5-returnal/",
-      "linkLabel": "Read the full measurement write-up",
-      "body": [
-        "DLSS 5 Neural Rendering can produce a dramatic before-and-after image. I tested it in Returnal at 4K to find out how much of the difference survives measurement, which controls genuinely matter, and what the effect costs in motion.",
-        "Switching it on increased measured edge detail by about 50% on the character crop and 29% on the environment crop. Natural at Intensity 1.0 was the important choice, while Local Structure 2.0 scored higher but made foliage visibly speckled.",
-        "The full write-up includes the floating-point method, the corrected performance figures, lower-generation GPU evidence, final settings, and every conclusion that changed after a second test."
-      ]
-    },
-    {
-      "slug": "welcome",
-      "title": "Why I started writing my opinions here",
-      "date": "2026-06-23",
-      "topic": "Meta",
-      "body": [
-        "This is where I'll drop my honest take on things — games, tech, movies, the internet, whatever's got my attention that week.",
-        "No corporate filter, no pretending to like something I don't. If you came for my opinion, this is the page. More coming soon."
-      ]
-    }
-  ]
+ "updated": "2026-09-01",
+ "intro": "My personal takes — unfiltered opinions on games, tech, movies, and whatever else is on my mind. These are mine, not anyone else's.",
+ "items": [
+  {
+   "slug": "optiscaler-dlss5-returnal",
+   "title": "OptiScaler and DLSS 5 in Returnal: the settings that actually work",
+   "date": "2026-09-01",
+   "topic": "Game settings",
+   "link": "/articles/optiscaler-dlss5-returnal/",
+   "linkLabel": "Read the full measurement write-up",
+   "body": [
+    "A second run at DLSS 5 in Returnal, through a different implementation. The frame rate roughly doubled to about 133 fps at 4K, the game's own HDR started working correctly, and the driver-level HDR workaround the first write-up recommended is no longer needed.",
+    "Three of the controls do the opposite of what their names suggest. Colour strength moved the picture's colour by 20% while adding no detail at all. Intensity, despite being described as the overall strength, measured below the noise floor. And pushing a control past the interface's cap made it measurably worse on both counts, not better.",
+    "It also documents where the measurements failed. One setting scored +50% detail and turned out to be a repeating pattern invented on flat stone, with the character's suit crushed to black. Two purpose-built instruments could not see it. A person could, instantly."
+   ]
+  },
+  {
+   "slug": "dlss5-returnal",
+   "title": "DLSS 5 Neural Rendering in Returnal: measured, not eyeballed",
+   "date": "2026-08-29",
+   "topic": "Game settings",
+   "link": "/articles/dlss5-returnal/",
+   "linkLabel": "Read the full measurement write-up",
+   "body": [
+    "DLSS 5 Neural Rendering can produce a dramatic before-and-after image. I tested it in Returnal at 4K to find out how much of the difference survives measurement, which controls genuinely matter, and what the effect costs in motion.",
+    "Switching it on increased measured edge detail by about 50% on the character crop and 29% on the environment crop. Natural at Intensity 1.0 was the important choice, while Local Structure 2.0 scored higher but made foliage visibly speckled.",
+    "The full write-up includes the floating-point method, the corrected performance figures, lower-generation GPU evidence, final settings, and every conclusion that changed after a second test."
+   ]
+  },
+  {
+   "slug": "welcome",
+   "title": "Why I started writing my opinions here",
+   "date": "2026-06-23",
+   "topic": "Meta",
+   "body": [
+    "This is where I'll drop my honest take on things — games, tech, movies, the internet, whatever's got my attention that week.",
+    "No corporate filter, no pretending to like something I don't. If you came for my opinion, this is the page. More coming soon."
+   ]
+  }
+ ]
 }
