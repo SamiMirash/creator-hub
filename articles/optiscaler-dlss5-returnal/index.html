@@ -133,7 +133,7 @@ DLSS-NR running at 3840x2160, guides 2560x1440</pre>
 <p>The implementation used here runs the pass immediately after upscaling and <i>before</i> the interface is drawn. It therefore never sees the HUD at all, no masking required, because the HUD is not there yet, and it costs one run per rendered frame regardless of how many frames are generated afterwards. Generated frames inherit the result for free.</p>
 
 <div class="box">
-<p>This is why a 7.8 ms pass can coexist with a 133 fps frame rate. It is not a faster model. It is the same model in a better place.</p>
+<p>This is why a 7.8 ms pass can coexist with a 133 fps frame rate. It is not a faster model. It is the same model in a better place. NVIDIA's own figure for the model is about 8 ms per 3840x2160 frame on this class of GPU, with roughly 731 MB of peak memory, while sharing the card with the running game. The 7.8 ms measured here lands on that number, which is a useful check: the cost is the model, and where the pass runs decides what that cost does to the frame rate.</p>
 </div>
 
 <h3>A side effect worth knowing if you record or stream</h3>
@@ -242,7 +242,7 @@ DLSS-NR running at 3840x2160, guides 2560x1440</pre>
 
 <p>The clue was in a number nobody was looking at. Across the three styles, average frame brightness rose steadily: <span class="metric">0.0767 &rarr; 0.0823 &rarr; 0.0958</span>. The style with the artifacts was 25% brighter overall; while simultaneously crushing the suit <i>darker</i>.</p>
 
-<p>Brighter overall with darker darks is not brightness. It is contrast. And that single property explains every symptom at once: raised contrast reads as +50% &ldquo;structure&rdquo; to the metric, crushes the suit to black, and amplifies the model's faint invented pattern into something plainly visible. Three complaints, one cause.</p>
+<p>Brighter overall with darker darks is not brightness. It is contrast. And that single property explains every symptom at once: raised contrast reads as +50% &ldquo;structure&rdquo; to the metric, crushes the suit to black, and amplifies the model's faint invented pattern into something plainly visible. Three complaints, one cause. There is a documented reason this direction exists at all: the model produces an RGB image and cannot recover scene information that is missing or degraded in its input, so weak or corrupted evidence may be preserved or amplified rather than repaired. Pushing a control past the point where the input supports it is asking for exactly that.</p>
 
 <h2>Where the measurements failed</h2>
 

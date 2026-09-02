@@ -80,7 +80,7 @@
 <dt>Post-processing</dt><dd>Depth of field off, film grain at 0%, motion blur and chromatic aberration disabled at engine level.</dd>
 <dt>Observed load</dt><dd>95 to 97% GPU load, 56 to 66 C, 2497 to 2625 MHz, and 14.5 to 21.7 GB of VRAM.</dd>
 </dl>
-<p>NVIDIA's public DLSS 5 material does not provide a complete generation-by-generation compatibility table. Community experiments have since shown a patched Ada path on RTX 40 cards, and an RTX 3080 clip also exists, so I do not claim that Neural Rendering is impossible below RTX 50. Those are unofficial experiments, not supported compatibility, and the public lower-generation examples I found do not include the same feature-creation log and advancing neural-frame counter verified here.</p>
+<p>NVIDIA now states the target hardware directly: DLSS 5 runs as a rendering stage on GeForce RTX 50 Series GPUs, and the implementation is optimised for Blackwell using its TMA instructions. Community experiments have since shown a patched Ada path on RTX 40 cards, and an RTX 3080 clip also exists, so I do not claim that Neural Rendering is impossible below RTX 50. Those are unofficial experiments, not supported compatibility, and the public lower-generation examples I found do not include the same feature-creation log and advancing neural-frame counter verified here.</p>
 <p>The neural runtime was NVIDIA DLSSNR 310.8.0.0. The installed DLL has a valid NVIDIA signature. A ReShade add-on inserted the neural pass after the game's DLSS output and before the HUD. The run log recorded feature 18 being created at 3840x2160 and its evaluation succeeding.</p>
 
 <h2>How I measured it</h2>
