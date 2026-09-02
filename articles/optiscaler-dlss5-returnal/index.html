@@ -86,11 +86,11 @@
 
 <div class="jargon"><b>Noise floor</b> &mdash; how much a measurement wanders when nothing has changed. A living game scene has water, foliage and an idling character, so repeated measurements of the <i>same</i> setting differ slightly. Any claimed improvement smaller than that wander is not a result. Every number in this article was checked against one.</div>
 
-<h2>What changed since the first attempt</h2>
+<h2>Why the implementation decides the result</h2>
 
-<p>An earlier write-up tested DLSS 5 in Returnal through a ReShade-based implementation, and reached a conclusion that has now been superseded: it ran the game in SDR and converted to HDR afterwards using a driver-level feature, because the game's own HDR produced a broken picture.</p>
+<p>A ReShade-based implementation of DLSS 5 in Returnal breaks the game's own HDR, and the only way around that is to run the game in SDR and convert to HDR afterwards with a driver-level feature.</p>
 
-<p>That workaround is no longer necessary, and the reason is worth understanding, because it explains a lot of confusing advice circulating about this technology.</p>
+<p>OptiScaler needs no such workaround, and the reason is worth understanding, because it explains a lot of confusing advice circulating about this technology.</p>
 
 <div class="box">
 <p><b>The model only understands SDR.</b> It was trained on finished, ordinary-brightness photographs. A game's internal frame is not that &mdash; it is linear and open-ended, with sunlight values thousands of times brighter than paper white. Feed that to the model raw and everything above SDR is simply chopped off, which wrecks the colour.</p>

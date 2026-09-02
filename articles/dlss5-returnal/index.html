@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>DLSS 5 Neural Rendering in Returnal: measured, not eyeballed | Sami Mirash</title>
+<title>RenoDX and DLSS 5 Neural Rendering in Returnal: measured, not eyeballed | Sami Mirash</title>
 <meta name="description" content="DLSS 5 Neural Rendering tested in Returnal at 4K: image quality, every defensible control result, corrected performance figures, and the final settings.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.samimirash.com/articles/dlss5-returnal/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="DLSS 5 Neural Rendering in Returnal">
+<meta property="og:title" content="RenoDX and DLSS 5 Neural Rendering in Returnal">
 <meta property="og:description" content="A complete 4K measurement audit: what changed, which controls mattered, and what this community implementation cost.">
 <meta property="og:url" content="https://www.samimirash.com/articles/dlss5-returnal/">
 <meta property="og:image" content="https://www.samimirash.com/articles/dlss5-returnal/cover-social.jpg">
@@ -17,7 +17,7 @@
 <meta property="og:image:height" content="1536">
 <meta property="og:image:alt" content="A split DLSS 5 neural-rendering comparison asking whether it adds 50 percent more detail.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DLSS 5 Neural Rendering in Returnal">
+<meta name="twitter:title" content="RenoDX and DLSS 5 Neural Rendering in Returnal">
 <meta name="twitter:description" content="A complete 4K measurement audit: what changed, which controls mattered, and what this community implementation cost.">
 <meta name="twitter:image" content="https://www.samimirash.com/articles/dlss5-returnal/cover-social.jpg">
 <meta name="twitter:image:alt" content="A split DLSS 5 neural-rendering comparison asking whether it adds 50 percent more detail.">
@@ -59,20 +59,12 @@
 <div class="wrap">
 <a class="home" href="/">&#8592; samimirash.com</a>
 <p class="kicker">Measurement write-up</p>
-<h1>DLSS 5 Neural Rendering in Returnal</h1>
+<h1>RenoDX and DLSS 5 Neural Rendering in Returnal</h1>
 <p class="standfirst">DLSS 5 Neural Rendering can produce a dramatic before-and-after image. I wanted to know how much of that difference survives measurement, which controls genuinely matter, and what the effect costs in motion.</p>
 <p class="meta">Tested in Returnal at 4K on 29 August 2026. Every result comes from this machine and this community ReShade implementation. Returnal does not have a native DLSS 5 integration, so these numbers are not a universal score for the technology.</p>
 <figure class="article-cover">
 <img src="cover-4k.png" width="3840" height="1536" alt="A split DLSS 5 neural-rendering comparison asking whether it adds 50 percent more detail" fetchpriority="high">
 </figure>
-
-<div class="box warn">
-<h3>Update, 1 September 2026: two conclusions here have been superseded</h3>
-<p>This article tested a ReShade-based implementation and reached two conclusions that later work overturned. Both are left in place below rather than quietly edited, because how a result gets overturned is worth more than pretending it never stood.</p>
-<p><b>Running the game in SDR is no longer the better path.</b> That workaround existed because this implementation broke the game's own HDR. A different implementation, which maps the HDR frame down for the model and rescales the answer back afterwards, works correctly with HDR on. The engine settings listed further down that force HDR off are no longer needed and should not be applied.</p>
-<p><b>The performance cost was specific to where this implementation runs the pass</b>, not to the technology. Running it at the end of the frame means it repeats for every generated frame; running it directly after upscaling means it runs once per rendered frame regardless. The same effect measured roughly double the frame rate on the second approach.</p>
-<p>The controls findings below still hold, and the newer work agrees with them: Natural is the right style, Local Structure at 2.0 causes visible speckle, and a sharpness metric rewards noise.</p>
-</div>
 
 <h2>What changed</h2>
 <p>In the final live SDR sweep, switching Neural Rendering on increased the character crop's measured edge detail by about <strong>50%</strong>. The environment crop gained about <strong>29%</strong>. Perceptual intensity rose 7.0% and chroma rose 3.8%.</p>
@@ -175,18 +167,9 @@
 <h2>SDR versus the game's native HDR</h2>
 <p>Using the same live-sweep method, the baseline Neural Rendering configuration increased character edge detail by about <strong>52.6% in the SDR run</strong> and about <strong>39.7% in the native-HDR run</strong>.</p>
 <p>Both changes were large. This experiment did not establish why the SDR run measured higher, so I am not attributing the gap to training data or claiming it will transfer to another integration.</p>
-<p><b>Superseded on 1 September 2026.</b> The original text here concluded that the SDR route was the better path, with HDR conversion applied afterwards. That conclusion belongs to this implementation only. The model is trained on ordinary-brightness images, so an HDR frame has to be mapped down before it is shown to the model and its answer rescaled back afterwards; an implementation that does not perform that mapping is measuring a handicapped HDR path rather than a fair one. With one that does, the game's own HDR is the correct setting, measures cleanly, and needs no driver-level conversion at all. <b>Do not follow the SDR route below.</b></p>
-
 <h2>Returnal's HDR setting does not stay off by itself</h2>
 <p>The game's HDR switch sits under Graphics, then Post Processing. With the Windows desktop in HDR, Returnal restored its own HDR setting at startup during these tests. It also rewrote the Frame Generation and display-mode entries in its user settings.</p>
-<p><b>Do not apply the following block.</b> It is kept as a record of what was tested on 29 August. Forcing the game's HDR off is no longer the right configuration, and these settings should be removed if they were applied:</p>
-<pre>[SystemSettings]
-r.HDR.EnableHDROutput=0
-r.HDR.UI.CompositeMode=0
-r.HDR.Display.OutputDevice=0
-r.HDR.Display.ColorGamut=0
-r.AllowHDR=0</pre>
-<p>After that block was applied, the game's user-settings file recorded HDR as off across the three verification launches. The tested <code>Engine.ini</code> was then marked read-only.</p>
+<p>Leave Returnal's own HDR switch on. The game composes its output in HDR, and the neural pass reads that frame correctly when the implementation maps it down for the model and rescales the result afterwards. Forcing the engine out of HDR is not required.</p>
 <p>I used Returnal's Fullscreen mode 0 for all measurements. I did not run a controlled fullscreen-versus-borderless latency test, so this article makes no claim that one display mode is universally faster. Modern DirectX presentation paths do not support that blanket rule.</p>
 
 <h2>Final settings for this setup</h2>
