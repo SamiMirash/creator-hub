@@ -167,7 +167,7 @@ body{
    hard-capped at 560px with NO @media queries at all, so on an iPad or a 4K
    desktop it rendered as a narrow phone-width column with huge empty margins.
    These breakpoints widen the reading column and let the location sketches grow
-   with it. Type size is left alone — only the measure and the sketch scale up.
+   with it. Type size is left alone , only the measure and the sketch scale up.
    ───────────────────────────────────────────────────────────────────────────── */
 
 /* Tablet / small laptop (iPad portrait ≈768, landscape ≈1024) */
@@ -185,7 +185,7 @@ body{
   .item .sketchimg { max-width: 720px; }
 }
 
-/* Large desktop / 4K — cap the measure so prose never becomes unreadably wide,
+/* Large desktop / 4K , cap the measure so prose never becomes unreadably wide,
    but let the sketch keep growing since it is a diagram, not text. */
 @media (min-width: 1800px) {
   #app { max-width: 1040px; }

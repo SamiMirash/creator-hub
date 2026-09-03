@@ -20,7 +20,7 @@
     ["Live", "live.html"],
     // Game Hub merges the game list, its settings, its guide and its playtime onto ONE page
     // per game (Sami 2026-08-16: "I want everything about that game to be there").
-    // ⛔ Games / 100% Guides / Game Settings are deliberately NOT in the menu any more —
+    // ⛔ Games / 100% Guides / Game Settings are deliberately NOT in the menu any more,
     // "we don't want the other sections shown in the menu, we combine all the sections".
     // The PAGES still exist and their URLs still work; they are just not advertised separately.
     ["Game Hub", "game.html"],
@@ -377,7 +377,7 @@
     //   hand-written alphabet is a tell. A COMPLETE list, every entry named the same way,
     //   has no selection signal at all - nothing stands out because nothing was chosen.
     //   Persian appears here as "Persian", exactly like Polish and Portuguese.
-    //   See doctrine/reversal_registry.json -> farsi_may_return_inside_a_complete_list
+    //   See the project's own decision log.
     const LANGUAGES = [
       ["en", "English"], ["af", "Afrikaans"], ["sq", "Albanian"], ["am", "Amharic"],
       ["ar", "Arabic"], ["hy", "Armenian"], ["as", "Assamese"], ["ay", "Aymara"],

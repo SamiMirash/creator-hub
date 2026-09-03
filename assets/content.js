@@ -149,7 +149,7 @@
   }
 
   async function youtubeLatest(channelId) {
-      // ⛔ 2026-08-27 — THIS USED TO FETCH YOUTUBE DIRECTLY AND COULD NEVER WORK.
+      // ⛔ 2026-08-27 , THIS USED TO FETCH YOUTUBE DIRECTLY AND COULD NEVER WORK.
       //   YouTube serves /feeds/videos.xml with NO Access-Control-Allow-Origin header, so the
       //   browser blocked every request on CORS, the catch swallowed it, and the page rendered
       //   "No YouTube videos found" while the channel had public videos the whole time.
@@ -265,7 +265,7 @@
         <h2>${esc(video.title)}</h2>
         ${button(video.url, text("Watch on YouTube"), "primary")}
       </article>
-    `).join("") : `<article class="card empty-state"><h2>${esc(text("Videos couldn’t be loaded right now."))}</h2><p>${esc(text("The channel is live — this grid just couldn’t reach it. Try again shortly."))}</p>${button("https://www.youtube.com/channel/" + cfg.channels.youtube_channel_id, text("Open the channel"), "primary")}</article>`);
+    `).join("") : `<article class="card empty-state"><h2>${esc(text("Videos couldn’t be loaded right now."))}</h2><p>${esc(text("The channel is live , this grid just couldn’t reach it. Try again shortly."))}</p>${button("https://www.youtube.com/channel/" + cfg.channels.youtube_channel_id, text("Open the channel"), "primary")}</article>`);
   }
 
   async function renderHome() {
@@ -327,7 +327,7 @@
     // ⭐ A STANDING WEEKLY WINDOW IS NOT A LIST OF EVENTS. the creator streams daily in a fixed slot,
     //   so rendering seven identical one-off rows would be both noisy and wrong the moment a week
     //   passes. It renders as one band, and exports as ONE VEVENT with RRULE:FREQ=DAILY.
-    //   ⛔ The old .ics path emitted DTSTART:${item.utc || ""} — an EMPTY DTSTART, which is an
+    //   ⛔ The old .ics path emitted DTSTART:${item.utc || ""} , an EMPTY DTSTART, which is an
     //   invalid calendar entry. Seven dateless rows would have shipped a broken download.
     const rec = schedule.recurring;
     if (rec && rec.enabled) {
@@ -604,7 +604,7 @@
   // odds-bar pattern), so no new CSS is needed.
   function fmtCount(n) {
     const v = Number(n);
-    if (!Number.isFinite(v) || v < 0) return "—";
+    if (!Number.isFinite(v) || v < 0) return ", ";
     if (v >= 1000000) return (v / 1000000).toFixed(v % 1000000 === 0 ? 0 : 1) + "M";
     if (v >= 1000) return (v / 1000).toFixed(v % 1000 === 0 ? 0 : 1) + "K";
     return String(Math.round(v));
@@ -680,13 +680,13 @@
         `<div class="grid two" style="margin-bottom:18px"><article class="metric-card">`
         + `<span class="pill">${esc(text("Followers, all time"))}</span>`
         + `<strong>${esc(fmtCount(rollTotal))}</strong>`
-        + `<p>${esc(roll.note || text("Every follower gets a permanent number — #1 is the very first follower, ever."))}</p>`
+        + `<p>${esc(roll.note || text("Every follower gets a permanent number , #1 is the very first follower, ever."))}</p>`
         + `</article></div>`);
     } else {
       mount("[data-leaderboard-followerroll-total]", "");
     }
     if (!rollRecent.length) {
-      mount("[data-leaderboard-followerroll]", `<article class="card empty-state"><h2>${esc(text("The follower roll starts soon."))}</h2><p>${esc(text("Once the channel is live, every new follower gets a permanent number here — the very first follower is #1."))}</p></article>`);
+      mount("[data-leaderboard-followerroll]", `<article class="card empty-state"><h2>${esc(text("The follower roll starts soon."))}</h2><p>${esc(text("Once the channel is live, every new follower gets a permanent number here , the very first follower is #1."))}</p></article>`);
     } else {
       mount("[data-leaderboard-followerroll]", rollRecent.map((f) => {
         const when = [f.date, f.time].filter(Boolean).join(" ");
@@ -716,7 +716,7 @@
       .filter((s) => s && s.name)
       .sort((a, b) => (Number(b.amount) || 0) - (Number(a.amount) || 0));
     if (!supporters.length) {
-      mount("[data-leaderboard-supporters]", `<article class="card empty-state"><h2>${esc(text("No supporters listed yet."))}</h2><p>${esc(text("Tips are always welcome but never required. Anyone who chips in (and is happy to be named) will get a thank-you here — and every tip, named or not, means a lot."))}</p></article>`);
+      mount("[data-leaderboard-supporters]", `<article class="card empty-state"><h2>${esc(text("No supporters listed yet."))}</h2><p>${esc(text("Tips are always welcome but never required. Anyone who chips in (and is happy to be named) will get a thank-you here , and every tip, named or not, means a lot."))}</p></article>`);
       return;
     }
     mount("[data-leaderboard-supporters]", supporters.map((s, i) => {
@@ -890,8 +890,8 @@
         <article class="feature-card tip-card">
           <span class="pill">${esc(text("Steam"))}</span>
           <h2>${esc(text("Gift a Game (Steam)"))}</h2>
-          <p>${esc(text("Tips are always welcome — or, if you'd rather, gift me a game on Steam. Both mean a lot."))}</p>
-          <p class="tip-note">${esc(text("Easiest: send a Steam gift card / wallet code to"))} <strong>${esc(steamGiftEmail)}</strong> ${esc(text("— it arrives instantly, no friend request needed."))}</p>
+          <p>${esc(text("Tips are always welcome , or, if you'd rather, gift me a game on Steam. Both mean a lot."))}</p>
+          <p class="tip-note">${esc(text("Easiest: send a Steam gift card / wallet code to"))} <strong>${esc(steamGiftEmail)}</strong> ${esc(text(", it arrives instantly, no friend request needed."))}</p>
           <p class="tip-note">${esc(text("Or gift directly: add me on Steam (use the profile link below, or friend code"))} <strong>${esc(steamFriendCode)}</strong>${esc(text("), then send any title from my wishlist. Direct gifting needs a Steam friendship for about 3 days first, so the gift card above is the instant option."))}</p>
           ${button(steamProfile, text("Add me on Steam"), "primary")}
           ${button(steamWishlist, text("See my wishlist"))}

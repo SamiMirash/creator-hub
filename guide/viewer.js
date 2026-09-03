@@ -475,7 +475,7 @@
           // current pack folder; the sketch lives at packs/<id>/<src>.
           // ⭐ UNLESS IT IS ALREADY ABSOLUTE. Guide images are moving to Cloudflare Pages,
           // because GitHub Pages caps a published site at 1 GB and the finished guide set needs
-          // roughly 30 GB at 4K — it cannot fit at ANY image quality, so the images have to live
+          // roughly 30 GB at 4K , it cannot fit at ANY image quality, so the images have to live
           // off-site while the HTML and JSON stay here and the routing never changes.
           // ⛔ Backward-compatible ON PURPOSE: all 185 packs already on the site carry a relative
           // `src` and must keep working untouched. Only a pack whose src starts with http(s) is

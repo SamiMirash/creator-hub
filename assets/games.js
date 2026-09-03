@@ -100,7 +100,7 @@
     // NORMALISED PHRASE match. Both sides go through playtimeKey, so punctuation the reader types
     // (or omits) is irrelevant: "Resident Evil: Requiem", "resident evil requiem" and
     // "Resident  Evil   Requiem" all hit the same entry.
-    // ⚠️ Deliberately NOT "every term matches anywhere" — measured 2026-07-25 on the real 4,569-entry
+    // ⚠️ Deliberately NOT "every term matches anywhere" , measured 2026-07-25 on the real 4,569-entry
     // data, that pulled Silent Hill 3 / Origins / Shattered Memories into a "silent hill 2" search
     // (the bare "2" matches a year or "PlayStation 2" deep in the blob), and "the" matched 4,446 of
     // 4,569 rows. Loosening recall that far makes the search WORSE, not smarter.
@@ -159,7 +159,7 @@
 
   // sourceLinks()/releaseSourceLinks() REMOVED 2026-07-17. They rendered `<a href>Source N</a>`
   // strips from entry.sources / release.sources, hydrating a de-facto sources page over the
-  // prerendered HTML. We never cite, credit, or link anyone — the archive links nothing outward.
+  // prerendered HTML. We never cite, credit, or link anyone , the archive links nothing outward.
   // Provenance no longer ships either (see website_games_publish.py).
 
   function confidence(entry) {
