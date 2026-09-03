@@ -2,7 +2,7 @@ r"""Stamp every asset URL in the site's HTML with its file's content hash.
 
 ⛔⛔ RUN THIS AFTER EDITING ANYTHING IN assets/. 2026-08-27.
 
-WHY. The YouTube grid was fixed, deployed and verified — and the creator still saw the broken message.
+WHY. The YouTube grid was fixed, deployed and verified — and The creator still saw the broken message.
 The heading had changed but the box under it had not, because `index.html` revalidates while
 `assets/content.js` was served with `Cache-Control: max-age=14400` and NO version in its URL.
 A visitor got the NEW html and the OLD javascript for up to four hours.

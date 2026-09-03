@@ -1,6 +1,6 @@
 r"""Tag each game entry with the VERSION GROUP it belongs to, and why that version is played.
 
-the creator, 2026-08-16: "For Serious Sam: The First Encounter there is the Gold, there's the Classic
+The creator, 2026-08-16: "For Serious Sam: The First Encounter there is the Gold, there's the Classic
 Revolution... for that particular entry there are many versions that we have to play, so you gotta
 mention it, and you gotta mention the reason as well. For all of the franchises that we do."
 

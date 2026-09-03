@@ -1,6 +1,6 @@
 r"""Publish settings for the non-Serious-Sam games we have tuned: Returnal and Death Stranding DC.
 
-the creator, 2026-08-16: "So far we've done the Serious Sam and also the Resident Evil and a bunch of
+The creator, 2026-08-16: "So far we've done the Serious Sam and also the Resident Evil and a bunch of
 games that you and I worked on together - update them on the website."
 
 Resident Evil Requiem already has a full entry, so this adds the two that had none.
@@ -13,6 +13,7 @@ Run: build_other_setups.py [--apply]
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -20,7 +21,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SETUPS = ROOT / "data" / "setups.json"
 
-RET_CFG = Path(r"C:\Users\the creator\AppData\Local\Returnal\Steam\Saved\Config\WindowsNoEditor")
+RET_CFG = (Path(os.environ["LOCALAPPDATA"]) / "Returnal" / "Steam" / "Saved"
+           / "Config" / "WindowsNoEditor")
 DSDC = Path(r"C:\XboxGames\DSDC\Content")
 
 FX_LABEL = {

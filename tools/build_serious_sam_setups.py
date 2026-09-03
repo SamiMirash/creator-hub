@@ -1,6 +1,6 @@
 r"""Publish the real, detailed settings for every Serious Sam entry into data/setups.json.
 
-the creator, 2026-08-16: "We want people to know the detailed settings that we are tuning in here, and
+The creator, 2026-08-16: "We want people to know the detailed settings that we are tuning in here, and
 all the tools and mods and whatever, for all of our games… the absolute most detail. We want to
 include everything except our hardware."
 
