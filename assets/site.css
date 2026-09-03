@@ -1337,7 +1337,11 @@ p {
 
 .article-image {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  /* 5 / 2, because that is the shape every article cover on this site is composed in.
+     It was 16 / 9 with object-fit: cover, which side-cropped a 2.5:1 cover by roughly 14%
+     per edge and cut the first letter off the headline. The type is composed to sit inside
+     a 1.91:1 safe zone, so cropping to a TALLER box removes exactly the words. */
+  aspect-ratio: 5 / 2;
   object-fit: cover;
   border: 1px solid var(--line);
   border-radius: 10px;
