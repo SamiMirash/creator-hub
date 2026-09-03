@@ -11,12 +11,12 @@
 <meta property="og:title" content="Returnal caps frame generation at 2X. The ceiling was one return value.">
 <meta property="og:description" content="The ceiling was not really in the game. It was in one byte.">
 <meta property="og:url" content="https://www.samimirash.com/articles/returnal-multi-frame-generation/">
-<meta property="og:image" content="https://www.samimirash.com/articles/returnal-multi-frame-generation/cover-social.jpg">
+<meta property="og:image" content="https://www.samimirash.com/articles/returnal-multi-frame-generation/cover-social.bb8a7236c1.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="640">
 <meta property="og:image:alt" content="A dark Returnal forest with the headline 4X in a 2X game">
-<meta name="twitter:image" content="https://www.samimirash.com/articles/returnal-multi-frame-generation/cover-social.jpg">
+<meta name="twitter:image" content="https://www.samimirash.com/articles/returnal-multi-frame-generation/cover-social.bb8a7236c1.jpg">
 <meta name="twitter:image:alt" content="A dark Returnal forest with the headline 4X in a 2X game">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Returnal caps frame generation at 2X. The ceiling was one return value.">
@@ -64,7 +64,7 @@
 <p class="meta">Built and measured on 3 September 2026, in Returnal at 4K. Every number below comes from this machine. The tool works on Returnal and nothing else, deliberately.</p>
 
 <figure class="article-cover">
-<img src="cover-social.jpg" width="1600" height="640" alt="A dark Returnal forest with the headline 3X to 6X in a 2X game" fetchpriority="high">
+<img src="cover-social.bb8a7236c1.jpg" width="1600" height="640" alt="A dark Returnal forest with the headline 3X to 6X in a 2X game" fetchpriority="high">
 </figure>
 
 <h2>The short version</h2>
@@ -137,7 +137,7 @@
 <p><strong>Also running.</strong> DLSS 5 Neural Rendering, and the game native HDR. No ReShade and no RenoDX are involved in any of the frame generation work.</p>
 
 <h2>Where to get it</h2>
-<p><strong><a href="/tools.html">Download it here</a></strong>, from this site. It is free and MIT licensed. The source is public at <a href="https://github.com/SamiMirash/returnal-mfg">github.com/SamiMirash/returnal-mfg</a>, and everything else I build is at <a href="https://github.com/SamiMirash">github.com/SamiMirash</a>.</p>
+<p><strong><a href="/tools.html">Download it here</a></strong>, from this site. It is free, MIT licensed, and the complete source comes with it.</p>
 <p>You supply the modern SDK yourself, downloaded from NVIDIA. That is partly the correct thing to do with someone else runtime, and partly necessary: the game verifies the signature on those files and silently refuses anything that is not NVIDIA own signed build.</p>
 <p>One honest limit. This works on Returnal, and it will not work on your other games. It hardcodes offsets into Returnal own binaries, the specific names its build exports, and the particular way this game routes its latency markers. Another title does all three differently. A tool that is honest about working on one game is more useful than one that quietly breaks on twenty.</p>
 </div>
