@@ -3,3 +3,13 @@ data/*.bak_prescrub
 # 4K source frames handed to the thumbnail lane. Working files, not deliverables:
 # 13 MB each, and publishing them would bloat a Pages repo for no reader benefit.
 articles/*/cover-source-*.png
+
+# ⛔⛔ BUILD SCRIPTS ARE NOT PUBLISHED (2026-09-03).
+# They are never served: the only references to them anywhere on the site are HTML COMMENTS naming
+# the generator. They were in the public repo only because someone committed them, and by their
+# nature they carry private absolute paths, a regex listing his hardware models, and notes written
+# in a private voice. One of them had his Windows home directory hardcoded, live, for weeks.
+# ⭐ Removing them from the repo removes an entire class of exposure and costs the site nothing.
+# The files stay on disk and still run.
+tools/*.py
+stamp_asset_versions.py
