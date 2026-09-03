@@ -24,6 +24,9 @@
     // "we don't want the other sections shown in the menu, we combine all the sections".
     // The PAGES still exist and their URLs still work; they are just not advertised separately.
     ["Game Hub", "game.html"],
+    // Tools: free software built while taking games apart. Added 2026-09-03 with the
+    // first release, so the download lives on his own site and not only on GitHub.
+    ["Tools", "tools.html"],
     ["About", "about.html"],
       ["Marginalia", "marginalia.html"],
     // Themed groups (Sami 2026-07-14: "not many people click on More" -- everything that was
@@ -63,6 +66,7 @@
     ["Marginalia", "marginalia.html"],
     ["Live", "live.html"],
     ["Game Hub", "game.html"],
+    ["Tools", "tools.html"],
     ["Games", "games.html"],
     ["100% Guides", "guides.html"],
     ["Game Settings", "setup.html"],
