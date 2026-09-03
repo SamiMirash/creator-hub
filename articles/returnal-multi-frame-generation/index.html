@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Returnal caps frame generation at 2X. The ceiling was one return value.">
 <meta name="twitter:description" content="The ceiling was not really in the game. It was in one byte.">
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.97537af8ff.css">
 <style>
   .wrap{max-width:860px;margin:0 auto;padding:28px 18px 96px}
   .wrap h1{font-size:2.1rem;line-height:1.15;margin:.1em 0 .35em}
@@ -62,6 +62,10 @@
 <h1>Returnal caps frame generation at 2X. The ceiling was one return value.</h1>
 <p class="standfirst">Returnal was built against an NVIDIA SDK old enough that multi-frame generation did not exist yet, and the game hardcodes a request for exactly one generated frame. It turns out the ceiling is not really in the game. It is in one byte.</p>
 <p class="meta">Built and measured on 3 September 2026, in Returnal at 4K. Every number below comes from this machine. The tool works on Returnal and nothing else, deliberately.</p>
+
+<figure class="article-cover">
+<img src="cover-social.jpg" width="1600" height="640" alt="A dark Returnal forest with the headline 3X to 6X in a 2X game" fetchpriority="high">
+</figure>
 
 <h2>The short version</h2>
 <p>Returnal ships with NVIDIA Streamline 1.3.3. Multi-frame generation needs 2.11 or newer. I wrote a small proxy that sits beside the game and translates the old SDK calls into the new ones while the game runs, so the game keeps speaking the language it was built for and the modern runtime hears something it understands.</p>
