@@ -93,6 +93,21 @@
           <p>Above 4X buys nothing on this setup, because the display ceiling is already saturated at 225, and it costs smoothness. 4X has the best frame consistency of the five. Your numbers will differ.</p>
         </div>
 
+        <div class="note">
+          <p><strong>What is in the download, and what is not.</strong> The only binary in the zip is
+          <code>winmm.dll</code>, which is our own compiled code, released under the MIT licence.
+          <a href="https://github.com/TsudaKageyu/minhook">MinHook</a> is compiled into it under the
+          BSD-2-Clause licence and its notice travels with it.</p>
+          <p>Nothing else in the package belongs to anyone else. NVIDIA Streamline is
+          <strong>not</strong> included: you download it from
+          <a href="https://github.com/NVIDIA-RTX/Streamline/releases">NVIDIA's own releases</a>, which
+          is also the only way it works, because Returnal verifies the signature on those files and
+          refuses anything that is not NVIDIA's signed build. Windows' own <code>winmm.dll</code> is
+          not included either. <code>setup.cmd</code> makes that copy from your own machine. No
+          Returnal code or assets are included or redistributed.</p>
+          <p>Unofficial and unaffiliated with NVIDIA, Housemarque or Sony. Use at your own risk.</p>
+        </div>
+
         <p>The interesting part is not the frame counter. At 4X the engine renders 56 real frames to fill the same display that 2X needs 112 for, and the GPU time that frees is what pays for neural rendering. The full account, including three bugs that each looked like something else, is in <a href="articles/returnal-multi-frame-generation/">the article</a>.</p>
       </div>
 
