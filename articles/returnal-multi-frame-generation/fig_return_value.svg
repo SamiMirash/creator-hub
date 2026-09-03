@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="512" viewBox="0 0 980 512">
+<rect width="980" height="512" fill="#0f1216"/>
+<text x="28" y="44" fill="#e8eaed" font-family="system-ui,sans-serif" font-size="23" font-weight="700">The whole feature was gated on one inverted return value</text>
+<text x="28" y="74" fill="#98a2ad" font-family="system-ui,sans-serif" font-size="14">The same call. Two conventions. Opposite readings.</text>
+<rect x="28.0" y="112.0" width="430.0" height="148.0" rx="8" fill="none" stroke="#2a3038" stroke-width="1.5"/>
+<text x="50.0" y="148.0" fill="#e8eaed" font-family="system-ui,sans-serif" font-size="18" font-weight="700" text-anchor="start">Streamline 1.3.3</text>
+<text x="50.0" y="178.0" fill="#98a2ad" font-family="ui-monospace,Consolas,monospace" font-size="15" font-weight="400" text-anchor="start">slInit() returns bool</text>
+<text x="50.0" y="212.0" fill="#7fd1a8" font-family="ui-monospace,Consolas,monospace" font-size="16" font-weight="700" text-anchor="start">true = success</text>
+<text x="50.0" y="240.0" fill="#e2727d" font-family="ui-monospace,Consolas,monospace" font-size="16" font-weight="700" text-anchor="start">0 = FAILURE</text>
+<rect x="522.0" y="112.0" width="430.0" height="148.0" rx="8" fill="none" stroke="#2a3038" stroke-width="1.5"/>
+<text x="544.0" y="148.0" fill="#e8eaed" font-family="system-ui,sans-serif" font-size="18" font-weight="700" text-anchor="start">Streamline 2.13</text>
+<text x="544.0" y="178.0" fill="#98a2ad" font-family="ui-monospace,Consolas,monospace" font-size="15" font-weight="400" text-anchor="start">slInit() returns Result</text>
+<text x="544.0" y="212.0" fill="#7fd1a8" font-family="ui-monospace,Consolas,monospace" font-size="16" font-weight="700" text-anchor="start">0 = eOk = SUCCESS</text>
+<text x="544.0" y="240.0" fill="#e2727d" font-family="ui-monospace,Consolas,monospace" font-size="16" font-weight="700" text-anchor="start">nonzero = failure</text>
+<line x1="468.0" y1="186.0" x2="505.0" y2="186.0" stroke="#98a2ad" stroke-width="2"/><polygon points="514.0,186.0 503.0,180.0 503.0,192.0" fill="#98a2ad"/>
+<rect x="28.0" y="294.0" width="924.0" height="52.0" rx="6" fill="none" stroke="#e2727d" stroke-width="1.5"/>
+<text x="490.0" y="326.0" fill="#e8eaed" font-family="system-ui,sans-serif" font-size="17" font-weight="700" text-anchor="middle">The runtime answered 0, meaning fine. The game read 0 as no.</text>
+<text x="28.0" y="394.0" fill="#98a2ad" font-family="system-ui,sans-serif" font-size="14" font-weight="400" text-anchor="start">The game stores that answer straight into a byte. With it false:</text>
+<text x="46.0" y="422.0" fill="#e8eaed" font-family="system-ui,sans-serif" font-size="15" font-weight="400" text-anchor="start">•  the renderer never registers its view extension</text>
+<text x="46.0" y="448.0" fill="#e8eaed" font-family="system-ui,sans-serif" font-size="15" font-weight="400" text-anchor="start">•  not a single resource is ever tagged</text>
+<text x="46.0" y="474.0" fill="#e8eaed" font-family="system-ui,sans-serif" font-size="15" font-weight="400" text-anchor="start">•  frame generation sits fully configured and completely idle</text>
+</svg>
