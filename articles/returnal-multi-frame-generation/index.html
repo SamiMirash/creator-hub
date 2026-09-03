@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>4X frame generation in Returnal, a game that ships a 2X ceiling | Sami Mirash</title>
+<meta name="description" content="Returnal was built on an NVIDIA SDK old enough that multi-frame generation did not exist. A small proxy bridges it to a modern one and unlocks 4X and 6X. What it took, what it measures, and why the frame counter lies.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.samimirash.com/articles/returnal-multi-frame-generation/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="4X frame generation in a game that ships a 2X ceiling">
+<meta property="og:description" content="The ceiling was not really in the game. It was in one byte.">
+<meta property="og:url" content="https://www.samimirash.com/articles/returnal-multi-frame-generation/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="4X frame generation in a game that ships a 2X ceiling">
+<meta name="twitter:description" content="The ceiling was not really in the game. It was in one byte.">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  .wrap{max-width:860px;margin:0 auto;padding:28px 18px 96px}
+  .wrap h1{font-size:2.1rem;line-height:1.15;margin:.1em 0 .35em}
+  .standfirst{font-size:1.12rem;color:var(--muted);line-height:1.58;margin:0 0 .8em}
+  .wrap h2{font-size:1.45rem;margin:1.75em 0 .45em;color:var(--accent-3)}
+  .wrap h3{font-size:1.1rem;margin:1.25em 0 .35em}
+  .wrap p{line-height:1.65;margin:0 0 .82em}
+  .kicker{text-transform:uppercase;letter-spacing:1.4px;font-size:.76rem;color:var(--accent);margin:0 0 .6em}
+  .home{display:inline-block;color:var(--muted);text-decoration:none;font-size:.82rem;letter-spacing:.6px;text-transform:uppercase;margin-bottom:1.4em}
+  .home:hover{color:var(--accent)}
+  .meta{color:var(--muted);font-size:.86rem;margin:0 0 1.4em}
+  figure{margin:1.45em 0}
+  figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:var(--radius);display:block}
+  figcaption{color:var(--muted);font-size:.88rem;margin-top:.55em;line-height:1.48}
+  .article-cover{margin:0 0 1.65em}
+  .article-cover img{aspect-ratio:5/2;object-fit:cover}
+  .facts{display:grid;grid-template-columns:minmax(150px,210px) 1fr;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:.85em 0 1.15em;background:var(--surface)}
+  .facts dt,.facts dd{padding:9px 12px;margin:0;border-bottom:1px solid var(--line);line-height:1.5}
+  .facts dt{font-weight:700;color:var(--accent-3)}
+  .facts dt:last-of-type,.facts dd:last-of-type{border-bottom:0}
+  .metric{font-variant-numeric:tabular-nums}
+  .win{color:var(--accent);font-weight:700}
+  .bad{color:var(--danger)}
+  .box{border:1px solid var(--line);border-left:3px solid var(--accent-3);border-radius:var(--radius);padding:12px 16px;margin:1.1em 0;background:var(--surface)}
+  .box.warn{border-left-color:var(--danger)}
+  .box p:last-child{margin-bottom:0}
+  code{background:var(--surface-2);padding:2px 6px;border-radius:4px;font-size:.9em}
+  pre{background:var(--surface-2);padding:14px 16px;border-radius:var(--radius);overflow-x:auto;font-size:.88rem;line-height:1.5}
+  .refs{padding-left:1.2em;margin:.65em 0}
+  .refs li{margin:.45em 0;line-height:1.45}
+  @media(max-width:620px){.facts{grid-template-columns:1fr}.facts dt{padding-bottom:2px;border-bottom:0}.facts dd{padding-top:2px}.facts dt:last-of-type{border-bottom:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="home" href="/">&#8592; samimirash.com</a>
+<p class="kicker">Build write-up</p>
+<h1>4X frame generation in a game that ships a 2X ceiling</h1>
+<p class="standfirst">Returnal was built against an NVIDIA SDK old enough that multi-frame generation did not exist yet, and the game hardcodes a request for exactly one generated frame. It turns out the ceiling is not really in the game. It is in one byte.</p>
+<p class="meta">Built and measured on 3 September 2026, in Returnal at 4K. Every number below comes from this machine. The tool works on Returnal and nothing else, deliberately.</p>
+
+<h2>The short version</h2>
+<p>Returnal ships with NVIDIA Streamline 1.3.3. Multi-frame generation needs 2.11 or newer. I wrote a small proxy that sits beside the game and translates the old SDK calls into the new ones while the game runs, so the game keeps speaking the language it was built for and the modern runtime hears something it understands.</p>
+<p>The result is <strong>4X</strong>, with the runtime reporting its own ceiling as five generated frames, so <strong>6X is reachable too</strong>. Nothing on disk is patched. Deleting two files undoes all of it.</p>
+
+<h2>What it actually buys you</h2>
+<p>Not what you would expect, and this is the part worth reading.</p>
+<p>On screen, the frame counter read <strong>225 at 2X and 225 at 4X</strong>. Identical. It looks like the whole exercise achieved nothing, and I very nearly wrote it up that way.</p>
+<p>The output was pinned by the display ceiling. Both settings saturate it, so at the ceiling they are indistinguishable. The change was upstream, in how many frames the engine actually had to draw:</p>
+<pre><code>4X   base render  56.2 fps  x4 = 224.8   ->  225 on screen
+2X   base render 112.4 fps  x2 = 224.8   ->  225 on screen</code></pre>
+<p>Same picture, half the real rendering work. That is the whole point of multi-frame generation, and it is invisible on the frame counter. What you gain is not a bigger number. It is a GPU with time to spare.</p>
+<p>Which is exactly where it goes. At 4X, switching DLSS 5 Neural Rendering on left the base render rate essentially unchanged at around 56 fps. The neural rendering cost nothing in real frames, because at 4X the engine only needs to produce 56 of them and there is enough of the GPU sitting idle to absorb the work. At 2X it must produce 112, and that headroom is gone.</p>
+
+<h2>Three things went wrong, and each looked like something else</h2>
+
+<h3>The whole feature was gated on one inverted return value</h3>
+<p>The old SDK initialisation function returns a boolean, where true means it worked. The new one returns a result code, where <strong>zero</strong> means it worked. Passing that value straight through turns every success into a failure.</p>
+<p>The game stores the answer directly into a byte, and that byte is one of three the engine consults before deciding whether the framework is available at all. With it false, the renderer never registers its extension, never tags a single resource, and frame generation sits there fully configured and completely idle, because nothing is feeding it.</p>
+<p>It also explains something that had already cost hours. Forcing the support check to answer yes <em>crashes the game</em>, because the function then says yes while the globals it is built from still say no, and the module disagrees with itself. The fix was not making the game say yes. It was stopping myself from saying no.</p>
+
+<h3>Reflex was being dropped on the floor</h3>
+<p>Frame generation will not produce a single frame without low-latency mode active. The old SDK submits its latency markers by smuggling the marker into an argument meant for something else entirely, and the values alternate between two numbers forever, which no legitimate use of that argument ever would. The modern runtime rejects the call outright. Those markers have to be translated into the newer mechanism before anything is generated at all.</p>
+
+<h3>I hooked a function, then called it myself</h3>
+<p>To intercept the SDK I hook the system call that resolves function addresses. Then my own code used that same call to find the real functions, and was handed my own interceptors back. Every one of them called itself.</p>
+<p>It surfaces as a stack overflow rather than an access violation, so a debugger set to stop on access violations sees nothing at all and the process simply disappears. I spent a genuine amount of time convinced the game was quitting on purpose.</p>
+
+<h2>What it costs</h2>
+<p>Frame generation is interpolation. More generated frames means more of them invented between the same two real ones. Look at fast camera movement, thin geometry against a bright background, and HUD text before deciding that six is better than four.</p>
+<p>There is one behaviour that will make you think it is broken when it is not: <strong>frame generation switches itself off when the game window is not focused.</strong> That is normal. If you alt-tab out to read a number, the number you come back to is wrong. I diagnosed my own working build as unstable because of this, and said so out loud, before realising I had been measuring a backgrounded game.</p>
+
+<h2>The test system</h2>
+<p><strong>GPU.</strong> GeForce RTX 5090, 32 GB. This is the only GPU this was built and verified on.</p>
+<p><strong>Display.</strong> 3840x2160 at 240 Hz. The 225 fps ceiling in the numbers above is deliberate: with low-latency mode active and VSync on, the frame rate is capped a little under the refresh rate on purpose, to keep the present queue off the VSync wall. Those twelve invisible frames buy real input latency, and I would not trade them.</p>
+<p><strong>Also running.</strong> DLSS 5 Neural Rendering, and the game native HDR. No ReShade and no RenoDX are involved in any of the frame generation work.</p>
+
+<h2>Where to get it</h2>
+<p>It is free, MIT licensed, and the source is public: <a href="https://github.com/SamiMirash/returnal-mfg">github.com/SamiMirash/returnal-mfg</a>.</p>
+<p>You supply the modern SDK yourself, downloaded from NVIDIA. That is partly the correct thing to do with someone else runtime, and partly necessary: the game verifies the signature on those files and silently refuses anything that is not NVIDIA own signed build.</p>
+<p>One honest limit. This works on Returnal, and it will not work on your other games. It hardcodes offsets into Returnal own binaries, the specific names its build exports, and the particular way this game routes its latency markers. Another title does all three differently. A tool that is honest about working on one game is more useful than one that quietly breaks on twenty.</p>
+</div>
+</body>
+</html>

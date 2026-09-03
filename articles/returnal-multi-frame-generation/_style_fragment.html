@@ -1,0 +1,32 @@
+<style>
+  .wrap{max-width:860px;margin:0 auto;padding:28px 18px 96px}
+  .wrap h1{font-size:2.1rem;line-height:1.15;margin:.1em 0 .35em}
+  .standfirst{font-size:1.12rem;color:var(--muted);line-height:1.58;margin:0 0 .8em}
+  .wrap h2{font-size:1.45rem;margin:1.75em 0 .45em;color:var(--accent-3)}
+  .wrap h3{font-size:1.1rem;margin:1.25em 0 .35em}
+  .wrap p{line-height:1.65;margin:0 0 .82em}
+  .kicker{text-transform:uppercase;letter-spacing:1.4px;font-size:.76rem;color:var(--accent);margin:0 0 .6em}
+  .home{display:inline-block;color:var(--muted);text-decoration:none;font-size:.82rem;letter-spacing:.6px;text-transform:uppercase;margin-bottom:1.4em}
+  .home:hover{color:var(--accent)}
+  .meta{color:var(--muted);font-size:.86rem;margin:0 0 1.4em}
+  figure{margin:1.45em 0}
+  figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:var(--radius);display:block}
+  figcaption{color:var(--muted);font-size:.88rem;margin-top:.55em;line-height:1.48}
+  .article-cover{margin:0 0 1.65em}
+  .article-cover img{aspect-ratio:5/2;object-fit:cover}
+  .facts{display:grid;grid-template-columns:minmax(150px,210px) 1fr;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:.85em 0 1.15em;background:var(--surface)}
+  .facts dt,.facts dd{padding:9px 12px;margin:0;border-bottom:1px solid var(--line);line-height:1.5}
+  .facts dt{font-weight:700;color:var(--accent-3)}
+  .facts dt:last-of-type,.facts dd:last-of-type{border-bottom:0}
+  .metric{font-variant-numeric:tabular-nums}
+  .win{color:var(--accent);font-weight:700}
+  .bad{color:var(--danger)}
+  .box{border:1px solid var(--line);border-left:3px solid var(--accent-3);border-radius:var(--radius);padding:12px 16px;margin:1.1em 0;background:var(--surface)}
+  .box.warn{border-left-color:var(--danger)}
+  .box p:last-child{margin-bottom:0}
+  code{background:var(--surface-2);padding:2px 6px;border-radius:4px;font-size:.9em}
+  pre{background:var(--surface-2);padding:14px 16px;border-radius:var(--radius);overflow-x:auto;font-size:.88rem;line-height:1.5}
+  .refs{padding-left:1.2em;margin:.65em 0}
+  .refs li{margin:.45em 0;line-height:1.45}
+  @media(max-width:620px){.facts{grid-template-columns:1fr}.facts dt{padding-bottom:2px;border-bottom:0}.facts dd{padding-top:2px}.facts dt:last-of-type{border-bottom:0}}
+</style>
