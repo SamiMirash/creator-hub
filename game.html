@@ -64,6 +64,27 @@
       font-size:.68rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
       vertical-align:middle;
     }
+  
+    /* The Game Hub rendered every entry fully expanded: eight sections each, 216 of them on a
+       27-entry franchise. Collapsed rows, with the chosen version on the closed line, turn that
+       into something a person can actually scan. */
+    details.gh-entry > summary{
+      display:flex; align-items:center; gap:.2rem; cursor:pointer; list-style:none;
+      padding:2px 0; margin:-2px 0;
+    }
+    details.gh-entry > summary::-webkit-details-marker{display:none}
+    details.gh-entry > summary::after{
+      content:"+"; margin-left:auto; padding-left:14px; opacity:.5; font-weight:700;
+    }
+    details.gh-entry[open] > summary::after{content:"-"}  /* a plain hyphen, not a CSS escape: writing a CSS unicode escape through a heredoc
+       turned it into an octal escape plus a stray digit, and the open marker rendered as
+       a control character followed by 2. An escape that can collapse has no place in a
+       string written by a script. */
+    .gh-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.15rem .85rem;min-width:0}
+    .gh-title{font-size:19px;font-weight:700}
+    .gh-pick{font-size:13px;opacity:.72}
+    .gh-body{margin-top:.25rem}
+    details.gh-entry[open] > summary{margin-bottom:.4rem}
   </style>
 </head>
 <body data-page="game">
@@ -305,12 +326,22 @@
     //    project settled on; the page simply never said so.
     (d.entries || []).forEach(function (e, i) {
       var s = e.sami || {};
-      html += '<article class="gh-entry"><h3>' +
+      // ⛔⛔ COLLAPSED BY DEFAULT, AND THE ANSWER IS IN THE SUMMARY LINE.
+      //    Every entry renders EIGHT sections: why it is on the list, also-play, the version to
+      //    play, every recorded release, fidelity versus completeness, settings, guide, time
+      //    played. Twenty-seven entries meant 216 open sections on one page, for every franchise,
+      //    which is why it was unreadable no matter which game you searched.
+      //    The one thing a reader actually wants, WHICH VERSION TO PLAY, is now on the closed row,
+      //    so the whole franchise can be scanned without opening anything.
+      var pick = (e.primary && (e.primary.version || e.primary.platform)) ||
+                 s.chosen_platform || "";
+      html += '<details class="gh-entry"' + (i === 0 ? " open" : "") + "><summary>" +
         '<b class="gh-order"' + (i === 0 ? ' data-first="1"' : "") + ">" + (i + 1) + "</b>" +
-        esc(e.title) +
-        (e.release_year ? " <span class=\"gh-flags\">" + esc(e.release_year) + "</span>" : "") +
-        (i === 0 ? ' <span class="gh-start">start here</span>' : "") +
-        "</h3>";
+        '<span class="gh-head"><span class="gh-title">' + esc(e.title) +
+        (e.release_year ? ' <span class="gh-flags">' + esc(e.release_year) + "</span>" : "") +
+        (i === 0 ? ' <span class="gh-start">start here</span>' : "") + "</span>" +
+        (pick ? '<span class="gh-pick">Play: ' + esc(pick) + "</span>" : "") +
+        "</span></summary><div class=\"gh-body\">";
 
       var tags = [];
       if (s.chosen_platform) { tags.push("Played on " + s.chosen_platform); }
@@ -392,7 +423,7 @@
       if (s.notes) {
         html += '<div class="gh-sect"><h4>Notes</h4><p>' + esc(s.notes) + "</p></div>";
       }
-      html += "</article>";
+      html += "</div></details>";
     });
     detail.innerHTML = html;
     history.replaceState(null, "", "game.html?slug=" + encodeURIComponent(d.slug));
