@@ -58,6 +58,7 @@
       font-size:.9rem; font-weight:700; font-variant-numeric:tabular-nums; vertical-align:middle;
     }
     .gh-entry h3 .gh-order[data-first]{background:var(--accent,#39e2ad);color:#08110d;border-color:var(--accent,#39e2ad);opacity:1}
+    .gh-shape{margin:.2rem 0 1rem;opacity:.72;font-size:13px;letter-spacing:.02em}
     .gh-entry h3 .gh-start{
       margin-left:.55rem; padding:.1em .55em; border-radius:999px;
       background:var(--accent,#39e2ad); color:#08110d;
@@ -320,11 +321,73 @@
     var roleSeen = {};
     var html = "<h2>" + esc(d.franchise) + "</h2>";
     if (d.summary) { html += '<p class="lede">' + esc(d.summary) + "</p>"; }
+    // ⭐ SAY THE SHAPE BEFORE THE LIST. A 149-row franchise gives no sense of how big it is
+    //    or what span it covers until you scroll it all. One line fixes that.
+    var shapeYs = (d.entries || []).map(function (e) { return parseInt(e.release_year, 10); })
+      .filter(function (y) { return isFinite(y); });
+    var shapeG = {}; (d.entries || []).forEach(function (e) {
+      shapeG[((e.version_groups || [])[0]) || e.title || "?"] = 1; });
+    var nG = Object.keys(shapeG).length, nE = (d.entries || []).length;
+    html += '<p class="gh-shape">' + nG + (nG === 1 ? " game" : " games")
+      + (nE !== nG ? " across " + nE + " releases" : "")
+      + (shapeYs.length ? " &middot; " + Math.min.apply(null, shapeYs) + "-" + Math.max.apply(null, shapeYs) : "")
+      + " &middot; in release order</p>";
     // ⛔ SHOW THE ORDER. the owner searched Serious Sam and could not work out which game to play
     //    first: twenty-seven entries, every one looking like the last, with no number and no
     //    entry point. The list is ALREADY in release order, which is the franchise rule this
     //    project settled on; the page simply never said so.
-    (d.entries || []).forEach(function (e, i) {
+    // ⛔⛔ ORDER THE ENTRIES HERE. DO NOT TRUST THE FILE ORDER.
+    //    The page numbered entries by their position in the JSON and stamped "start here" on
+    //    whichever came first. For 104 of 1,248 franchises that array is NOT in release order --
+    //    Mario's 149 entries are ALPHABETICAL, so the live site told the reader to start the
+    //    Mario franchise on "Captain Toad: Treasure Tracker" (2014). Sonic, Assassin's Creed and
+    //    Ape Escape were all making the same kind of claim. That is exactly the complaint:
+    //    "I couldn't figure out which game I have to play first."
+    //    Release order is this project's franchise rule, so sort by it and derive the number from
+    //    the sort, never from the file.
+    var ordered = (d.entries || []).slice();
+    // ⭐ Releases of the SAME game share a version_groups name. Sort them together so a group
+    //    reads as one game with several releases instead of scattered look-alike rows.
+    var firstOf = {};
+    ordered.forEach(function (e) {
+      var g = ((e.version_groups || [])[0]) || e.title || "?";
+      var y = parseInt(e.release_year, 10);
+      if (!isFinite(y)) { return; }
+      if (!(g in firstOf) || y < firstOf[g]) { firstOf[g] = y; }
+    });
+    ordered.forEach(function (e, i) { e.__i = i; });
+    ordered.sort(function (a, b) {
+      var ga = ((a.version_groups || [])[0]) || a.title || "?";
+      var gb = ((b.version_groups || [])[0]) || b.title || "?";
+      // ⛔ An entry with NO year sorts LAST, never first. 103 entries carry no year, and
+      //    putting them on top is how an undated Satellaview broadcast becomes "start here".
+      var ya = (ga in firstOf) ? firstOf[ga] : 99999;
+      var yb = (gb in firstOf) ? firstOf[gb] : 99999;
+      if (ya !== yb) { return ya - yb; }
+      if (ga !== gb) { return ga < gb ? -1 : 1; }
+      var ea = parseInt(a.release_year, 10); if (!isFinite(ea)) { ea = 99999; }
+      var eb = parseInt(b.release_year, 10); if (!isFinite(eb)) { eb = 99999; }
+      if (ea !== eb) { return ea - eb; }
+      return a.__i - b.__i;
+    });
+    // ⛔ A CHECK THAT CANNOT SEE MUST NOT CLAIM. "start here" is honest only when the first
+    //    entry actually carries a release year; otherwise the page says nothing rather than guess.
+    var canStart = ordered.length > 0 && isFinite(parseInt(ordered[0].release_year, 10));
+    // ⛔ "START HERE" IS A RULING, AND ONLY THREE FRANCHISES HAVE ONE.
+    //    Release order is a FACT the data supports. Where to begin is a JUDGEMENT, and it was
+    //    only ever made for the three deep audits. On Mario the earliest release is a Game &
+    //    Watch LCD handheld from 1983 -- true, and not advice. So the badge states what it
+    //    can prove: 'earliest' everywhere, 'start here' only where the order was actually ruled on.
+    // ⛔⛔ "START HERE" IS A RULING AND MUST BE WRITTEN DOWN, NEVER DERIVED.
+    //    Deriving it from 'deep audit + earliest year' put SONIC ERASER at number one on
+    //    the Sonic page, badged 'start here'. It is a 1991 Meganet puzzle game; Sonic the
+    //    Hedgehog is also 1991, so an alphabetical tiebreak decided the franchise's entry
+    //    point. Only an explicit start_here in the data may carry the badge now. Everything
+    //    else says "earliest", which is a fact the release year proves.
+    var startKey = String(d.start_here || "");
+    var startShown = false;
+    var groupNo = {}, nextNo = 0;
+    ordered.forEach(function (e, i) {
       var s = e.sami || {};
       // ⛔ AND DO NOT SAY THE SAME THING TWICE INSIDE ONE ENTRY EITHER. The audit stores the same
       //    paragraph in several fields at once: version_role, primary.why, the fidelity note and
@@ -347,11 +410,23 @@
       //    so the whole franchise can be scanned without opening anything.
       var pick = (e.primary && (e.primary.version || e.primary.platform)) ||
                  s.chosen_platform || "";
+      // ⭐ NUMBER THE GAME, NOT THE ROW. Three releases of The First Encounter are one
+      //    game and share the number 1, so the count on screen counts things to PLAY.
+      var gkey = ((e.version_groups || [])[0]) || e.title || "?";
+      if (!(gkey in groupNo)) { groupNo[gkey] = ++nextNo; }
+      var no = groupNo[gkey];
+      // the ruling may name either the version group or the exact title
+      // ⛔ ONCE PER GAME, NOT ONCE PER RELEASE. The First Encounter has three releases and
+      //    the badge appeared on all three, which reads as three different starting points.
+      var isStart = !startShown && startKey &&
+        (gkey === startKey || e.title === startKey);
+      if (isStart) { startShown = true; }
       html += '<details class="gh-entry"' + (i === 0 ? " open" : "") + "><summary>" +
-        '<b class="gh-order"' + (i === 0 ? ' data-first="1"' : "") + ">" + (i + 1) + "</b>" +
+        '<b class="gh-order"' + (no === 1 ? ' data-first="1"' : "") + ">" + no + "</b>" +
         '<span class="gh-head"><span class="gh-title">' + esc(e.title) +
         (e.release_year ? ' <span class="gh-flags">' + esc(e.release_year) + "</span>" : "") +
-        (i === 0 ? ' <span class="gh-start">start here</span>' : "") + "</span>" +
+        (isStart ? ' <span class="gh-start">start here</span>'
+          : (no === 1 && canStart ? ' <span class="gh-start gh-earliest">earliest</span>' : "")) + "</span>" +
         (pick ? '<span class="gh-pick">Play: ' + esc(pick) + "</span>" : "") +
         "</span></summary><div class=\"gh-body\">";
 
