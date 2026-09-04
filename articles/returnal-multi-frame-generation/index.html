@@ -60,40 +60,39 @@
 <a class="home" href="/">&#8592; samimirash.com</a>
 <p class="kicker">Build write-up</p>
 <h1>Returnal caps frame generation at 2X. The ceiling was one return value.</h1>
-<p class="standfirst">Returnal was built against an NVIDIA SDK old enough that multi-frame generation did not exist yet, and the game hardcodes a request for exactly one generated frame. It turns out the ceiling is not really in the game. It is in one byte.</p>
-<p class="meta">Built and measured on 3 September 2026, in Returnal at 4K. Every number below comes from this machine. The tool works on Returnal and nothing else, deliberately.</p>
+<p class="standfirst">Returnal was built against an NVIDIA SDK that predates multi-frame generation, and the game requests exactly one generated frame. The limit is not enforced by the renderer. It comes from a single value the game reads at startup.</p>
+<p class="meta">Built and measured on 3 September 2026, in Returnal at 4K. Every number below is from this machine. The tool works on Returnal only.</p>
 
 <figure class="article-cover">
 <img src="cover-social.df37544f12.jpg" width="1600" height="640" alt="A dark Returnal forest with the headline 3X to 6X in a 2X game" fetchpriority="high">
 </figure>
 
 <h2>The short version</h2>
-<p>Returnal ships with NVIDIA Streamline 1.3.3. Multi-frame generation needs 2.11 or newer. I wrote a small proxy that sits beside the game and translates the old SDK calls into the new ones while the game runs, so the game keeps speaking the language it was built for and the modern runtime hears something it understands.</p>
+<p>Returnal ships with NVIDIA Streamline 1.3.3. Multi-frame generation needs 2.11 or newer. The proxy sits beside the game and translates the old SDK calls into the new ones while the game runs.</p>
 <p>The result is <strong>3X, 4X, 5X or 6X</strong>, whichever you set, against a game that shipped 2X as its hard ceiling. The runtime reports its own maximum as five generated frames, which is 6X. Nothing on disk is patched. Deleting two files undoes all of it.</p>
 <figure>
 <img src="fig_proxy_chain.svg" width="980" height="330" alt="Diagram: Returnal, then our winmm.dll proxy, then NVIDIA Streamline 2.13">
 <figcaption>The proxy takes the winmm slot, so it is loaded first and sees every request the game makes. 261 exports are forwarded straight through; only the Streamline calls are rewritten.</figcaption>
 </figure>
 
+<h2>What it changes</h2>
 
-<h2>What it actually buys you</h2>
-<p>Not what you would expect, and this is the part worth reading.</p>
-<p>On screen, the frame counter read <strong>225 at 2X and 225 at 4X</strong>. Identical. It looks like the whole exercise achieved nothing, and I very nearly wrote it up that way.</p>
-<p>The output was pinned by the display ceiling. Both settings saturate it, so at the ceiling they are indistinguishable. The change was upstream, in how many frames the engine actually had to draw:</p>
+<p>On screen the frame counter reads <strong>225 at 2X and 225 at 4X</strong>. Both settings saturate the display ceiling, so at the ceiling they are indistinguishable.</p>
+<p>The difference is upstream, in how many frames the engine has to draw:</p>
 <pre><code>with neural rendering OFF
   4X   base render  56.2 fps  x4 = 224.8   ->  225 on screen
   2X   base render 112.4 fps  x2 = 224.8   ->  225 on screen</code></pre>
-<p>Same picture, half the real rendering work. That is the whole point of multi-frame generation, and it is invisible on the frame counter. What you gain is not a bigger number. It is a GPU with time to spare.</p>
-<p>Turn the expensive thing back on and the gain stops being theoretical. With DLSS 5 Neural Rendering running in both cases:</p>
+<p>Same output, half the rendering work. The frame counter cannot show this, because both settings reach the same ceiling.</p>
+<p>With DLSS 5 Neural Rendering running in both cases:</p>
 <pre><code>with neural rendering ON
   4X   base render  56.2 fps   ->  225 on screen
   2X   base render  63.0 fps   ->  130 on screen</code></pre>
-<p><strong>The engine renders fewer real frames and delivers 73 percent more of them.</strong> That is the whole result in one line.</p>
-<p>The asymmetry is the proof, not either number on its own. At 2X, switching neural rendering on costs 49 fps of real rendering, from 112 down to 63. At 4X it costs nothing at all: 56 either way. Because at 4X the engine only needs to produce 56 real frames to fill the display, and there is enough of the GPU left idle to absorb the neural rendering inside that slack. At 2X it must produce 112, the slack is gone, and the cost comes straight off the frame rate.</p>
-<p>A limit that binds at 2X and not at 4X is a GPU-time limit, which is the thing the proxy changed. A CPU or engine bottleneck would have pinned both.</p>
+<p><strong>The engine renders fewer real frames and delivers 73 percent more of them.</strong></p>
+<p>At 2X, enabling neural rendering costs 49 fps of real rendering, from 112 down to 63. At 4X it costs nothing: 56.2 either way. At 4X the engine needs 56 real frames to fill the display, so there is idle GPU time to absorb the neural pass. At 2X it needs 112, and the cost comes off the frame rate.</p>
+<p>A limit that binds at 2X and not at 4X is a GPU-time limit. A CPU or engine bottleneck would have affected both equally.</p>
 <figure>
 <img src="fig_asymmetry.svg" width="980" height="596" alt="Bar chart of base render rate at 2X and 4X with neural rendering off and on">
-<figcaption>Base render rate, which is the real frames the engine draws. Neural rendering costs 49 fps at 2X and nothing at all at 4X. On the frame counter both settings read 225, so the counter cannot show this at all.</figcaption>
+<figcaption>Base render rate: the real frames the engine draws. Neural rendering costs 49 fps at 2X and nothing at 4X. Both settings read 225 on the frame counter.</figcaption>
 </figure>
 
 <figure>
@@ -101,46 +100,43 @@
 <figcaption>Every multiplier works. Above 4X the display ceiling is already saturated, and 4X holds the steadiest frame times of the five.</figcaption>
 </figure>
 
+<h2>The three bugs</h2>
 
-<h2>Three things went wrong, and each looked like something else</h2>
-
-<h3>The whole feature was gated on one inverted return value</h3>
-<p>The old SDK initialisation function returns a boolean, where true means it worked. The new one returns a result code, where <strong>zero</strong> means it worked. Passing that value straight through turns every success into a failure.</p>
-<p>The game stores the answer directly into a byte, and that byte is one of three the engine consults before deciding whether the framework is available at all. With it false, the renderer never registers its extension, never tags a single resource, and frame generation sits there fully configured and completely idle, because nothing is feeding it.</p>
-<p>It also explains something that had already cost hours. Forcing the support check to answer yes <em>crashes the game</em>, because the function then says yes while the globals it is built from still say no, and the module disagrees with itself. The fix was not making the game say yes. It was stopping myself from saying no.</p>
+<h3>An inverted return value</h3>
+<p>The old SDK's initialisation function returns a boolean where true means success. The new one returns a result code where <strong>zero</strong> means success. Passed through unchanged, every success reads as a failure.</p>
+<p>The game stores that answer in a byte, one of three the engine checks before deciding whether the framework is available. With it false the renderer does not register its view extension and does not tag any resources, so frame generation is configured but receives nothing.</p>
+<p>This also explains why forcing the support check to return true crashes the game: the function reports success while the globals behind it still hold false, and the module acts on both. The correct fix is at the return value, not at the check.</p>
 <figure>
 <img src="fig_return_value.svg" width="980" height="512" alt="Diagram comparing the old boolean return with the new result code">
-<figcaption>The same call under two conventions. The runtime answered zero, meaning success; the game read zero as failure and switched the whole framework off.</figcaption>
+<figcaption>The same call under two conventions. The runtime returned zero for success; the game read zero as failure and disabled the framework.</figcaption>
 </figure>
 
+<h3>Reflex markers were not translated</h3>
+<p>Frame generation requires low-latency mode. The old SDK submits its latency markers through an argument intended for something else, and the values alternate between two constants. Streamline 2.13 rejects the call. The markers have to be translated to the newer mechanism before any frames are generated.</p>
 
-<h3>Reflex was being dropped on the floor</h3>
-<p>Frame generation will not produce a single frame without low-latency mode active. The old SDK submits its latency markers by smuggling the marker into an argument meant for something else entirely, and the values alternate between two numbers forever, which no legitimate use of that argument ever would. The modern runtime rejects the call outright. Those markers have to be translated into the newer mechanism before anything is generated at all.</p>
-
-<h3>I hooked a function, then called it myself</h3>
-<p>To intercept the SDK I hook the system call that resolves function addresses. Then my own code used that same call to find the real functions, and was handed my own interceptors back. Every one of them called itself.</p>
-<p>It surfaces as a stack overflow rather than an access violation, so a debugger set to stop on access violations sees nothing at all and the process simply disappears. I spent a genuine amount of time convinced the game was quitting on purpose.</p>
-
+<h3>The hook resolved to itself</h3>
+<p>The proxy intercepts the SDK by hooking the system call that resolves function addresses. Its own code then used that call to find the real functions and received the interceptors instead, so each one called itself.</p>
+<p>This surfaces as a stack overflow rather than an access violation, so a debugger set to break on access violations reports nothing and the process exits without a diagnostic.</p>
 
 <figure>
 <img src="fig_three_bugs.svg" width="980" height="360" alt="Table of what each bug looked like against what it actually was">
-<figcaption>Each bug disguised itself as something with a much simpler explanation. The middle column is where the time actually went.</figcaption>
+<figcaption>What each fault appeared to be, against its actual cause.</figcaption>
 </figure>
 
 <h2>What it costs</h2>
-<p>Frame generation is interpolation. More generated frames means more of them invented between the same two real ones. Look at fast camera movement, thin geometry against a bright background, and HUD text before deciding that six is better than four.</p>
-<p>There is one behaviour that will make you think it is broken when it is not: <strong>frame generation switches itself off when the game window is not focused.</strong> That is normal. If you alt-tab out to read a number, the number you come back to is wrong. I diagnosed my own working build as unstable because of this, and said so out loud, before realising I had been measuring a backgrounded game.</p>
+<p>Frame generation is interpolation, so more generated frames means more frames invented between the same two real ones. Check fast camera movement, thin geometry against a bright background, and HUD text before choosing six over four.</p>
+<p><strong>Frame generation switches off when the game window loses focus.</strong> That is normal behaviour and not a fault. Any reading taken while the game is in the background is wrong.</p>
 
 <h2>The test system</h2>
 <p><strong>GPU.</strong> GeForce RTX 5090, 32 GB. This is the only GPU this was built and verified on.</p>
-<p><strong>Display.</strong> 3840x2160 at 240 Hz. The 225 fps ceiling in the numbers above is deliberate: with low-latency mode active and VSync on, the frame rate is capped a little under the refresh rate on purpose, to keep the present queue off the VSync wall. Those twelve invisible frames buy real input latency, and I would not trade them.</p>
+<p><strong>Display.</strong> 3840x2160 at 240 Hz. The 225 fps ceiling above is deliberate: with low-latency mode active and VSync on, the frame rate is capped a little under the refresh rate to keep the present queue off the VSync wall.</p>
 <p><strong>Also running.</strong> DLSS 5 Neural Rendering, and the game native HDR. No ReShade and no RenoDX are involved in any of the frame generation work.</p>
 
 <h2>Where to get it</h2>
 <p><strong>Download it here: <a href="https://www.samimirash.com/tools.html">https://www.samimirash.com/tools.html</a></strong></p>
 <p>It is free, MIT licensed, and the complete source comes with it.</p>
-<p>You supply the modern SDK yourself, downloaded from NVIDIA. That is partly the correct thing to do with someone else runtime, and partly necessary: the game verifies the signature on those files and silently refuses anything that is not NVIDIA own signed build.</p>
-<p>One honest limit. This works on Returnal, and it will not work on your other games. It hardcodes offsets into Returnal own binaries, the specific names its build exports, and the particular way this game routes its latency markers. Another title does all three differently. A tool that is honest about working on one game is more useful than one that quietly breaks on twenty.</p>
+<p>You supply Streamline 2.13 yourself, from NVIDIA. The game verifies the signature on those files and refuses anything that is not NVIDIA's own signed build.</p>
+<p>It works on Returnal and not on other games. It hardcodes offsets into Returnal's own binaries, the specific names its build exports, and the way this game routes its latency markers. Another title differs in all three.</p>
 </div>
 </body>
 </html>
