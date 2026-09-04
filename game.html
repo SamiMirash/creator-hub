@@ -294,6 +294,9 @@
   }
 
   function render(d) {
+    // One ruling can cover many versions. This remembers where each was first stated, so the
+    // rest point back at it instead of reprinting the whole paragraph.
+    var roleSeen = {};
     var html = "<h2>" + esc(d.franchise) + "</h2>";
     if (d.summary) { html += '<p class="lede">' + esc(d.summary) + "</p>"; }
     // ⛔ SHOW THE ORDER. the owner searched Serious Sam and could not work out which game to play
@@ -322,9 +325,23 @@
         }).join("") + "</div>";
       }
 
+      // ⛔ PRINT A RULING ONCE PER GROUP, NOT ONCE PER ENTRY. Every version in a group carries
+      //    the SAME version_role string, so a twenty-seven entry franchise printed one paragraph
+      //    twenty times. The reader cannot tell the entries apart, which is exactly the complaint:
+      //    "I couldn't figure out which game I have to play first."
+      //    Later members point back at the entry that stated it, which also makes the grouping
+      //    visible instead of implied.
       if (e.version_role) {
-        html += '<div class="gh-sect"><h4>Why this version is on the list</h4><p>' +
-          esc(e.version_role) + "</p></div>";
+        var seenAt = roleSeen[e.version_role];
+        if (seenAt) {
+          html += '<div class="gh-sect"><h4>Why this version is on the list</h4>' +
+            '<p class="gh-none">Same ruling as ' + esc(seenAt.n) + ", " + esc(seenAt.title) +
+            ".</p></div>";
+        } else {
+          roleSeen[e.version_role] = { n: i + 1, title: e.title };
+          html += '<div class="gh-sect"><h4>Why this version is on the list</h4><p>' +
+            esc(e.version_role) + "</p></div>";
+        }
       }
 
       if (e.also_play && e.also_play.length) {
