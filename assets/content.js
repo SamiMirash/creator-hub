@@ -269,10 +269,13 @@
   }
 
   async function renderHome() {
-    const [cfg, site] = await Promise.all([config(), data("site")]);
+    // ⛔ The home grid used to build itself from config.channels, a hand-kept list that
+    //   was never filled in: it showed 9 destinations while the links page showed 13, and the
+    //   two disagreed about which. Both now read data/platforms.json, so they cannot drift.
+    const [cfg, site, platforms] = await Promise.all([config(), data("site"), data("platforms")]);
     mount("[data-home-bio]", esc(text(site.bio.en, site.bio.fa)));
     mount("[data-home-topics]", (site.topics || []).map((topic) => `<span class="pill">${esc(topic)}</span>`).join(""));
-    mount("[data-home-channels]", channelCards(cfg));
+    mount("[data-home-channels]", platformCards(platforms, cfg) + podcastCards(platforms));
     await Promise.allSettled([
       renderLiveBadge(cfg, site),
       renderLatestVideos(cfg)
