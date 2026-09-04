@@ -28,6 +28,7 @@
     // first release, so the download lives on his own site and not only on GitHub.
     ["Tools", "tools.html"],
     ["About", "about.html"],
+    ["Links", "links.html"],
       ["Marginalia", "marginalia.html"],
     // Themed groups (Sami 2026-07-14: "not many people click on More" -- everything that was
     // buried there now lives in a visible, named group. NOTHING removed except the Sponsors
@@ -63,6 +64,7 @@
 
   const footerItems = [
     ["About", "about.html"],
+    ["Links", "links.html"],
     ["Marginalia", "marginalia.html"],
     ["Live", "live.html"],
     ["Game Hub", "game.html"],
@@ -178,9 +180,12 @@
           <strong>${site.name}</strong>
           <p class="sub">${site.tagline} Static GitHub Pages site, free member accounts through Supabase, and no service keys in the browser.</p>
           <div class="platforms" aria-label="Public platforms">
-            <a href="https://kick.com/SamiMirash" rel="me noopener noreferrer">Kick</a>
+            <a href="https://www.youtube.com/@SamiMirash" rel="me noopener noreferrer">YouTube</a>
+            <a href="https://www.twitch.tv/sami_mirash" rel="me noopener noreferrer">Twitch</a>
+            <a href="https://kick.com/samimirash" rel="me noopener noreferrer">Kick</a>
             <a href="https://x.com/SamiMirash" rel="me noopener noreferrer">X</a>
             <a href="https://t.me/sami_mirash" rel="me noopener noreferrer">Telegram</a>
+            <a href="links.html">All links</a>
           </div>
           <p class="sub footer-contact">Contact: <a href="mailto:contact@samimirash.com">contact@samimirash.com</a></p>
         </div>

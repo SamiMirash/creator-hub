@@ -1,78 +1,114 @@
 {
-  "items": [
-    {
-      "name": "YouTube",
-      "kind": "Video / live archive",
-      "handle": "SamiMirash",
-      "url": "https://www.youtube.com/@SamiMirash",
-      "status": "Configured public video channel",
-      "notes": "Latest videos load from the configured public channel feed when available."
-    },
-    {
-      "name": "Rumble",
-      "kind": "Video mirror",
-      "handle": "SamiMirash",
-      "url": "https://rumble.com/user/SamiMirash",
-      "status": "Configured public video channel",
-      "notes": "No VOD history is claimed before public uploads exist."
-    },
-    {
-      "name": "Kick",
-      "kind": "Live",
-      "handle": "SamiMirash",
-      "url": "https://kick.com/SamiMirash",
-      "status": "Configured public live channel",
-      "notes": "Live status is checked publicly when the page loads; exact stream times remain TBA."
-    },
-    {
-      "name": "Twitch",
-      "kind": "Live mirror",
-      "handle": "sami_mirash",
-      "url": "https://www.twitch.tv/sami_mirash",
-      "status": "Configured public live channel",
-      "notes": "Embed loading stays click-to-load; no schedule is claimed here."
-    },
-    {
-      "name": "X",
-      "kind": "Updates",
-      "handle": "SamiMirash",
-      "url": "https://x.com/SamiMirash",
-      "status": "Configured public updates channel",
-      "notes": "Used for launch and stream updates, not as a stream host."
-    },
-    {
-      "name": "TikTok",
-      "kind": "Clips",
-      "handle": "samimirash",
-      "url": "https://www.tiktok.com/@samimirash",
-      "status": "Configured public short-form channel",
-      "notes": "Clips are listed only after real public clips exist."
-    },
-    {
-      "name": "Instagram",
-      "kind": "Photos",
-      "handle": "sami_mirash",
-      "url": "https://instagram.com/sami_mirash",
-      "status": "Configured public photo channel",
-      "notes": "Used for posts and updates; no private community claims are made."
-    },
-    {
-      "name": "Telegram",
-      "kind": "Announcements",
-      "handle": "sami_mirash",
-      "url": "https://t.me/sami_mirash",
-      "status": "Configured public announcement channel",
-      "notes": "Used for notifications; no private community claims are made."
-    }
-  ],
-  "rules": [
-    "Only owner-approved public links are listed.",
-    "No stream schedule is posted until Sami confirms one.",
-    "No clips, VODs, metrics, sponsors, products, or testimonials are claimed before they exist."
-  ],
-  "pending": [
-    "Recurring stream schedule requires Sami's confirmation.",
-    "Platform priority/order can be changed when Sami chooses a primary home.",
-    "Clip and VOD lists remain empty until real public streams exist."
-  ]
+ "items": [
+  {
+   "name": "YouTube",
+   "kind": "Video",
+   "handle": "SamiMirash",
+   "url": "https://www.youtube.com/@SamiMirash",
+   "status": "Public channel",
+   "notes": "Films, game videos, archive episodes and the live streams."
+  },
+  {
+   "name": "Twitch",
+   "kind": "Live",
+   "handle": "sami_mirash",
+   "url": "https://www.twitch.tv/sami_mirash",
+   "status": "Public channel",
+   "notes": "Live streams."
+  },
+  {
+   "name": "Kick",
+   "kind": "Live",
+   "handle": "samimirash",
+   "url": "https://kick.com/samimirash",
+   "status": "Public channel",
+   "notes": "Live streams."
+  },
+  {
+   "name": "Rumble",
+   "kind": "Video",
+   "handle": "SamiMirash",
+   "url": "https://rumble.com/c/SamiMirash",
+   "status": "Public channel",
+   "notes": "The same videos, mirrored."
+  },
+  {
+   "name": "Odysee",
+   "kind": "Video",
+   "handle": "SamiMirash",
+   "url": "https://odysee.com/@SamiMirash",
+   "status": "Public channel",
+   "notes": "The same videos, mirrored."
+  },
+  {
+   "name": "BitChute",
+   "kind": "Video",
+   "handle": "samimirash",
+   "url": "https://www.bitchute.com/channel/samimirash/",
+   "status": "Public channel",
+   "notes": "The same videos, mirrored."
+  },
+  {
+   "name": "X",
+   "kind": "Updates",
+   "handle": "SamiMirash",
+   "url": "https://x.com/SamiMirash",
+   "status": "Public channel",
+   "notes": "Posts, articles and update notes."
+  },
+  {
+   "name": "Instagram",
+   "kind": "Photos",
+   "handle": "sami_mirash",
+   "url": "https://www.instagram.com/sami_mirash/",
+   "status": "Public channel",
+   "notes": "Posts and vertical clips."
+  },
+  {
+   "name": "TikTok",
+   "kind": "Clips",
+   "handle": "samimirash",
+   "url": "https://www.tiktok.com/@samimirash",
+   "status": "Public channel",
+   "notes": "Vertical clips."
+  },
+  {
+   "name": "Telegram",
+   "kind": "Updates",
+   "handle": "sami_mirash",
+   "url": "https://t.me/sami_mirash",
+   "status": "Public channel",
+   "notes": "Update notes."
+  }
+ ],
+ "podcasts": [
+  {
+   "name": "Apple Podcasts",
+   "kind": "Podcast",
+   "url": "https://podcasts.apple.com/us/podcast/sami-mirash/id6807501101",
+   "notes": "The podcast on Apple Podcasts."
+  },
+  {
+   "name": "Spotify",
+   "kind": "Podcast",
+   "url": "https://open.spotify.com/show/0AoTbAE9FVD9pmaBdnXgzx",
+   "notes": "The podcast on Spotify."
+  },
+  {
+   "name": "RSS feed",
+   "kind": "Podcast",
+   "url": "https://anchor.fm/s/1169c9b38/podcast/rss",
+   "notes": "The raw feed, for any podcast app that takes a URL."
+  }
+ ],
+ "rules": [
+  "Only owner-approved public links are listed.",
+  "No stream schedule is posted until Sami confirms one.",
+  "No clips, VODs, metrics, sponsors, products, or testimonials are claimed before they exist."
+ ],
+ "pending": [
+  "Recurring stream schedule requires Sami's confirmation.",
+  "Platform priority/order can be changed when Sami chooses a primary home.",
+  "Clip and VOD lists remain empty until real public streams exist."
+ ]
 }

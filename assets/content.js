@@ -1100,6 +1100,28 @@
     mount("[data-member-guidelines]", (posts.guidelines || []).map((item) => `<li>${esc(item)}</li>`).join(""));
   }
 
+
+  // Links page: one place that lists every public destination. The platform grid reuses
+  // platformCards so live.html and links.html can never disagree; podcasts come from the
+  // separate "podcasts" array in data/platforms.json.
+  function podcastCards(platforms) {
+    const items = Array.isArray(platforms.podcasts) ? platforms.podcasts : [];
+    return items.map((item, index) => `
+      <article class="feature-card official-card">
+        <span class="pill">${esc(item.kind || text("Podcast"))}</span>
+        <h2>${esc(item.name)}</h2>
+        <p>${esc(item.notes || "")}</p>
+        ${item.url ? button(item.url, text(`Open ${item.name}`), index === 0 ? "primary" : "") : ""}
+      </article>
+    `).join("");
+  }
+
+  async function renderLinks() {
+    const [cfg, platforms] = await Promise.all([config(), data("platforms")]);
+    mount("[data-links-platforms]", platformCards(platforms, cfg));
+    mount("[data-links-podcasts]", podcastCards(platforms));
+  }
+
   const page = document.body ? document.body.dataset.page : "";
   const renderers = {
     home: renderHome,
@@ -1115,6 +1137,7 @@
     sponsors: renderSponsors,
     mediaKit: renderMediaKit,
     contact: renderContact,
+    links: renderLinks,
     faq: renderFaq,
     members: renderMembers
   };
