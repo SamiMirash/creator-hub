@@ -284,7 +284,7 @@
 
   async function renderLive() {
     const [cfg, site, platforms] = await Promise.all([config(), data("site"), data("platforms")]);
-    mount("[data-live-channels]", platformCards(platforms, cfg));
+    mount("[data-live-channels]", platformCards(platforms, cfg) + podcastCards(platforms));
     mount("[data-live-rules]", (platforms.rules || []).map((item) => `<li>${esc(item)}</li>`).join(""));
     renderFacades(cfg);
     wireFacades();
