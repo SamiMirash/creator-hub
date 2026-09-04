@@ -326,6 +326,18 @@
     //    project settled on; the page simply never said so.
     (d.entries || []).forEach(function (e, i) {
       var s = e.sami || {};
+      // ⛔ AND DO NOT SAY THE SAME THING TWICE INSIDE ONE ENTRY EITHER. The audit stores the same
+      //    paragraph in several fields at once: version_role, primary.why, the fidelity note and
+      //    the caveats. Deduping only ACROSS entries still left one entry stating its ruling four
+      //    times. `said` remembers what this entry has already printed, whichever field it came
+      //    from, so each fact appears once.
+      var said = {};
+      var once = function (text) {
+        if (!text) { return ""; }
+        if (said[text]) { return ""; }
+        said[text] = 1;
+        return text;
+      };
       // ⛔⛔ COLLAPSED BY DEFAULT, AND THE ANSWER IS IN THE SUMMARY LINE.
       //    Every entry renders EIGHT sections: why it is on the list, also-play, the version to
       //    play, every recorded release, fidelity versus completeness, settings, guide, time
@@ -370,8 +382,10 @@
             ".</p></div>";
         } else {
           roleSeen[e.version_role] = { n: i + 1, title: e.title };
+          // ⛔ Register it in `said` as well, or the later fields that hold the SAME paragraph
+          //    (the caveats, the fidelity note) have nothing to dedupe against and print it again.
           html += '<div class="gh-sect"><h4>Why this version is on the list</h4><p>' +
-            esc(e.version_role) + "</p></div>";
+            esc(once(e.version_role)) + "</p></div>";
         }
       }
 
@@ -393,16 +407,18 @@
 
       html += '<div class="gh-sect"><h4>The version to play</h4>' +
         primaryBlock(e.primary, e.version_role) +
-        kv([["Definitive edition", e.definitive_edition], ["Caveats", e.remaster_caveats]]) +
+        kv([["Definitive edition", once(e.definitive_edition)],
+            ["Caveats", once(e.remaster_caveats)]]) +
         emulationBlock(e.emulation) + "</div>";
 
       html += secondaryBlock(e.secondary);
       html += releaseBlock(e.all_releases);
 
       var conflict = e.fidelity_vs_completeness_conflict || {};
-      if (conflict.exists && conflict.note) {
+      var conflictNote = once(conflict.note);
+      if (conflict.exists && conflictNote) {
         html += '<div class="gh-sect"><h4>Fidelity versus completeness</h4><p>' +
-          esc(conflict.note) + "</p></div>";
+          esc(conflictNote) + "</p></div>";
       }
 
       html += '<div class="gh-sect"><h4>Settings</h4>' + settingsBlock(e.settings) + "</div>";
