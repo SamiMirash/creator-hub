@@ -74,7 +74,7 @@ figure img{width:100%;height:auto;display:block;border:1px solid var(--line);bor
 <p>There is a short plain-English glossary in the next section. Nothing below assumes you already know what an upscaler or a depth buffer is. If you do know, skip it; the results start at &ldquo;What changed&rdquo;.</p>
 </div>
 
-<h2>The words you need first</h2>
+<h2>Terms used here</h2>
 
 <div class="jargon"><b>Upscaling</b>: the game renders at a lower resolution than your screen, and software enlarges the result. Done well it costs far less performance than rendering at full size, because most of the work scales with pixel count. <b>DLSS</b> is NVIDIA's version, which uses a neural network and information about how objects moved between frames rather than simply stretching the image.</div>
 
@@ -124,7 +124,7 @@ DLSS-NR running at 3840x2160, guides 2560x1440</pre>
 
 <p>The previous implementation cost close to half the frame rate. This one costs far less for a comparable effect, and the reason is architectural rather than a matter of tuning.</p>
 
-<h3>Where the neural pass runs is the whole ballgame</h3>
+<h3>Where the neural pass runs</h3>
 
 <p>The ReShade route inserts itself at the end of the frame, at the moment the finished image is handed to the display. That position has two consequences, and both are expensive.</p>
 
@@ -133,10 +133,10 @@ DLSS-NR running at 3840x2160, guides 2560x1440</pre>
 <p>The implementation used here runs the pass immediately after upscaling and <i>before</i> the interface is drawn. It therefore never sees the HUD at all, no masking required, because the HUD is not there yet, and it costs one run per rendered frame regardless of how many frames are generated afterwards. Generated frames inherit the result for free.</p>
 
 <div class="box">
-<p>This is why a 7.8 ms pass can coexist with a 133 fps frame rate. It is not a faster model. It is the same model in a better place. NVIDIA's own figure for the model is about 8 ms per 3840x2160 frame on this class of GPU, with roughly 731 MB of peak memory, while sharing the card with the running game. The 7.8 ms measured here lands on that number, which is a useful check: the cost is the model, and where the pass runs decides what that cost does to the frame rate.</p>
+<p>This is why a 7.8 ms pass can coexist with a 133 fps frame rate. The model is not faster; it runs at a point in the frame where its cost overlaps other work. NVIDIA's own figure for the model is about 8 ms per 3840x2160 frame on this class of GPU, with roughly 731 MB of peak memory, while sharing the card with the running game. The 7.8 ms measured here lands on that number, which is a useful check: the cost is the model, and where the pass runs decides what that cost does to the frame rate.</p>
 </div>
 
-<h3>A side effect worth knowing if you record or stream</h3>
+<h3>A side effect when recording or streaming</h3>
 
 <p>Screen-capture software that uses &ldquo;game capture&rdquo; injects itself into the game to intercept the same final-image step that ReShade hooks. Two things wanting that one moment is a genuine conflict, and it shows up as stutter in the recording while the game itself looks perfectly smooth on screen. The relevant bug report upstream has been closed as not planned, and the one setting that used to help has been removed from the software, so this is not going to be fixed.</p>
 
@@ -171,11 +171,11 @@ DLSS-NR running at 3840x2160, guides 2560x1440</pre>
 <figcaption>Detail lost when each control is halved from 2.0 to 1.0, normalised for brightness. Intensity barely moves.</figcaption>
 </figure>
 
-<h3>Local structure is the realism dial</h3>
+<h3>Local structure</h3>
 
 <p>It produces nearly as much detail as the strongest control while moving colour by 1.1%, which is barely distinguishable from nothing. It corresponds to the physical properties that make a surface read as real: material definition, the darkening in crevices where light cannot reach, the soft translucency of skin and leaves, and reflections. If you only touch one control, touch this one.</p>
 
-<h3>Colour strength is a repaint, not a realism control</h3>
+<h3>Colour strength</h3>
 
 <p>This is the finding that most contradicts the obvious instinct. Raising it from 0 to 1 moved the frame's colour by <span class="metric">20%</span> and added <b>no structure at all</b>.</p>
 
@@ -192,13 +192,13 @@ DLSS-NR running at 3840x2160, guides 2560x1440</pre>
 <figcaption>How far each control moves the frame's hue off Returnal's palette. Colour strength moves it 20% while adding no detail at all.</figcaption>
 </figure>
 
-<h3>Intensity, despite its name, does nothing measurable</h3>
+<h3>Intensity</h3>
 
 <p>Halving the control described as the overall strength of the effect moved structure by 3.8%; underneath the noise floor. It is not the master dial its name implies. Either the runtime has it largely inert, or it scales something this scene does not exercise.</p>
 
-<h2>Three things that are the opposite of what you would guess</h2>
+<h2>Three results that contradict the control names</h2>
 
-<h3>1. Maximum is not the same as best</h3>
+<h3>1. The maximum setting scored worse than 2.0</h3>
 
 <p>The in-game interface caps these controls at 2.0. It is tempting to assume that is an arbitrary limit and that the configuration file will let you go further. It will; the runtime accepts 4.0 and confirms it. But:</p>
 
@@ -215,7 +215,7 @@ DLSS-NR running at 3840x2160, guides 2560x1440</pre>
 
 <p>The curve is a hump, not a ramp. At 4.0 the setting is <i>worse on both measures at once</i>: less detail and more colour distortion. Over-driving the model does not produce exaggerated realism; it pushes it into a regime where it flattens and washes its own output. The interface cap turns out to be well chosen rather than arbitrary.</p>
 
-<h3>2. A detail metric cannot tell detail from damage</h3>
+<h3>2. The detail metric scored artifacts as detail</h3>
 
 <p>One style setting measured <b>+50% structure</b>: by a wide margin the largest number of the entire session, and with no colour cost. On the numbers it was the clear winner.</p>
 
@@ -238,7 +238,7 @@ DLSS-NR running at 3840x2160, guides 2560x1440</pre>
 <figcaption>Average frame brightness across the three styles. Standard is 25% brighter overall while making the darks darker; that is contrast, not detail.</figcaption>
 </figure>
 
-<h3>3. That style was not adding detail; it was adding contrast</h3>
+<h3>3. The style added contrast rather than detail</h3>
 
 <p>The clue was in a number nobody was looking at. Across the three styles, average frame brightness rose steadily: <span class="metric">0.0767 &rarr; 0.0823 &rarr; 0.0958</span>. The style with the artifacts was 25% brighter overall; while simultaneously crushing the suit <i>darker</i>.</p>
 
@@ -289,11 +289,11 @@ Highlight guard     2.0           Paper white        1.00x</pre>
 
 <p>The settings that require the game to restart were tested by suspending the run first, so the game reloaded to the same position and readings stayed comparable across restarts. What the runtime actually accepted was read back from its own log every time, because a value written to a configuration file and a value the model was built with are not the same thing, and on more than one occasion they were not.</p>
 
-<h2>What I would tell someone starting from scratch</h2>
+<h2>Starting from scratch</h2>
 
 <p>Turn Neural Rendering on. Use a native HDR game with an implementation that runs the pass before the interface is drawn; that decision buys you more performance than any setting. Set colour strength to zero and leave it there. Put local structure and detail strength at the interface maximum and do not go past it through the configuration file. Choose the style by looking, not by measuring.</p>
 
-<p>And then look at the picture. Every genuinely wrong turn in two of these write-ups was a number that looked convincing: an 8-bit capture that reversed an HDR result, a frozen frame that removed an input the model needs, a sharpness score that rewarded visible speckle, a sweep that promoted scene drift into a 71.7% &ldquo;winner&rdquo;, and a +50% result that was a tiled pattern on a rock. The measurements are worth building, they settled several questions the eye cannot, but not one of them caught the failure that mattered most.</p>
+<p>And then look at the picture. Every wrong turn in two of these write-ups was a number that looked convincing: an 8-bit capture that reversed an HDR result, a frozen frame that removed an input the model needs, a sharpness score that rewarded visible speckle, a sweep that promoted scene drift into a 71.7% &ldquo;winner&rdquo;, and a +50% result that was a tiled pattern on a rock. The measurements are worth building, they settled several questions the eye cannot, but not one of them caught the failure that mattered most.</p>
 
 </div>
 </body>

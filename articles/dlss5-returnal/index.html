@@ -60,7 +60,7 @@
 <a class="home" href="/">&#8592; samimirash.com</a>
 <p class="kicker">Measurement write-up</p>
 <h1>RenoDX and DLSS 5 Neural Rendering in Returnal</h1>
-<p class="standfirst">DLSS 5 Neural Rendering can produce a dramatic before-and-after image. I wanted to know how much of that difference survives measurement, which controls genuinely matter, and what the effect costs in motion.</p>
+<p class="standfirst">DLSS 5 Neural Rendering can produce a dramatic before-and-after image. I wanted to know how much of that difference survives measurement, which controls matter, and what the effect costs in motion.</p>
 <p class="meta">Tested in Returnal at 4K on 29 August 2026. Every result comes from this machine and this community ReShade implementation. Returnal does not have a native DLSS 5 integration, so these numbers are not a universal score for the technology.</p>
 <figure class="article-cover">
 <img src="cover-social.96f4b236e1.jpg" width="1600" height="640" alt="Cover reading DLSS 5 plus RenoDX over a Returnal scene" fetchpriority="high">
@@ -96,7 +96,7 @@
 <p>One crop follows the character. A second crop covers nearby rock and foliage. If both move together, the change may be global tone mapping rather than character-specific detail.</p>
 <p>Vanilla was measured at the beginning and end of each sweep. The difference between those brackets became the noise floor. A setting had to clear that floor before I treated it as a result.</p>
 
-<h3>Photo Mode gave the cleanest wrong answer</h3>
+<h3>Photo Mode readings did not match gameplay</h3>
 <div class="box warn">
 <p>An early matrix used Photo Mode because the frozen frame was quiet. At Intensity 1.0 it produced output that was effectively identical to vanilla. Live gameplay showed a large change at the same setting.</p>
 <p>NVIDIA says DLSS 5 consumes color and motion vectors. The frozen test therefore removed an input the model expects. I discarded the entire Photo Mode matrix and repeated the work in live gameplay.</p>
@@ -152,7 +152,7 @@
 <dt>Color Strength</dt><dd>Raising it reduced chroma monotonically in this sweep. At 1.0, chroma finished 1.9% below vanilla.</dd>
 </dl>
 
-<h2>The sweep that changed the conclusion</h2>
+<h2>The extended sweep</h2>
 <p>A one-control-at-a-time sweep initially made Local Tone 2.0 look like a winner at +71.7% detail. The scene contains an intermittent particle effect and an idling character, so a changing frame can masquerade as a slider improvement.</p>
 <p>I retested the four leading configurations three times each in rotation:</p>
 <dl class="facts">
@@ -208,8 +208,8 @@
 <p>This implementation adds Neural Rendering as a generic post-pass rather than a native Returnal integration. Its roughly two-times frame-time increase belongs to this exact setup and must not be presented as a universal DLSS 5 cost.</p>
 </div>
 
-<h2>What I learned</h2>
-<p>The strongest result is not a slider value. It is the number of plausible conclusions that failed a second test.</p>
+<h2>Conclusions</h2>
+<p>The useful output of this was not a set of slider values. It was the number of plausible conclusions that did not survive a second measurement.</p>
 <p>An 8-bit capture reversed the HDR result. Photo Mode removed an input the model expects. A sharpness metric rewarded visible noise. A one-at-a-time sweep promoted scene drift into a 71.7% "winner." Even the published performance table had to be recalculated from all eighteen captured overlay samples.</p>
 <p>The final picture is simpler. Neural Rendering made a large visible difference in Returnal on this machine. Natural at Intensity 1.0 was the important choice. Local Tone 1.5 was a small refinement. Local Structure 2.0 was a measurable but visible mistake. And the cost of this community implementation was nearly half the average frame rate.</p>
 
