@@ -14,9 +14,9 @@
   <meta name="theme-color" content="#080705">
   <link rel="canonical" href="https://www.samimirash.com/game.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.97537af8ff.css">
+  <link rel="stylesheet" href="assets/site.2bd763b8a4.css">
   <title>Game Hub | Sami Mirash</title>
-  <script defer src="assets/site.ed7522e9e1.js"></script>
+  <script defer src="assets/site.ed7522e9e1.js?v=59580da064"></script>
   <script defer src="assets/seo.js?v=a5ec08188b"></script>
   <style>
     .gh-search{position:relative;max-width:620px}
@@ -48,6 +48,22 @@
     .gh-settings-group td{padding:3px 8px 3px 0;vertical-align:top}
     .gh-settings-group td:first-child{opacity:.7;white-space:nowrap}
     @media(max-width:640px){.gh-kv{grid-template-columns:1fr}}
+  
+    /* Play order. The list was already chronological; it just never showed it, so 27 entries
+       read as an undifferentiated wall and there was no way to see where to begin. */
+    .gh-entry h3 .gh-order{
+      display:inline-grid; place-items:center; min-width:1.9rem; height:1.9rem;
+      margin-right:.6rem; border:1px solid var(--line,#333); border-radius:999px;
+      background:rgba(255,255,255,.06); color:inherit; opacity:.85;
+      font-size:.9rem; font-weight:700; font-variant-numeric:tabular-nums; vertical-align:middle;
+    }
+    .gh-entry h3 .gh-order[data-first]{background:var(--accent,#39e2ad);color:#08110d;border-color:var(--accent,#39e2ad);opacity:1}
+    .gh-entry h3 .gh-start{
+      margin-left:.55rem; padding:.1em .55em; border-radius:999px;
+      background:var(--accent,#39e2ad); color:#08110d;
+      font-size:.68rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
+      vertical-align:middle;
+    }
   </style>
 </head>
 <body data-page="game">
@@ -280,10 +296,17 @@
   function render(d) {
     var html = "<h2>" + esc(d.franchise) + "</h2>";
     if (d.summary) { html += '<p class="lede">' + esc(d.summary) + "</p>"; }
-    (d.entries || []).forEach(function (e) {
+    // ⛔ SHOW THE ORDER. the owner searched Serious Sam and could not work out which game to play
+    //    first: twenty-seven entries, every one looking like the last, with no number and no
+    //    entry point. The list is ALREADY in release order, which is the franchise rule this
+    //    project settled on; the page simply never said so.
+    (d.entries || []).forEach(function (e, i) {
       var s = e.sami || {};
-      html += '<article class="gh-entry"><h3>' + esc(e.title) +
+      html += '<article class="gh-entry"><h3>' +
+        '<b class="gh-order"' + (i === 0 ? ' data-first="1"' : "") + ">" + (i + 1) + "</b>" +
+        esc(e.title) +
         (e.release_year ? " <span class=\"gh-flags\">" + esc(e.release_year) + "</span>" : "") +
+        (i === 0 ? ' <span class="gh-start">start here</span>' : "") +
         "</h3>";
 
       var tags = [];
@@ -308,9 +331,15 @@
         html += '<div class="gh-sect"><h4>You also have to play these ' +
           (e.version_groups && e.version_groups.length
             ? "(" + e.version_groups.map(esc).join(" &amp; ") + ")" : "") + "</h4>";
+        // ⛔ DO NOT REPRINT THE RULING UNDER EVERY VERSION. Each also_play item carries the SAME
+        //    `why` as the entry's version_role, so a five-version group printed one paragraph six
+        //    times, and then every other entry in the group did it again. Twenty-seven entries of
+        //    identical prose is why the owner could not tell the games apart. `primaryBlock` already
+        //    guards against this; the list did not.
         html += "<ul style=\"margin:.2em 0 0;padding-left:18px\">" + e.also_play.map(function (v) {
+          var extra = (v.why && v.why !== e.version_role) ? v.why : "";
           return "<li style=\"margin:.45em 0\"><b>" + esc(v.title) + "</b>" +
-            (v.why ? "<br><span style=\"opacity:.8\">" + esc(v.why) + "</span>" : "") + "</li>";
+            (extra ? "<br><span style=\"opacity:.8\">" + esc(extra) + "</span>" : "") + "</li>";
         }).join("") + "</ul></div>";
       }
 

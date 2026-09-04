@@ -4358,3 +4358,26 @@ body[data-page="guides"] .games-list {
   .setup-grid { grid-template-columns: 1fr; }
   .setup-row { gap: 10px; }
 }
+
+/* Play order on a franchise page. the owner searched Serious Sam and could not tell which game to
+   play first: 27 entries, no order shown, no entry point. The list was already chronological;
+   the page simply never said so. The number is only rendered when one franchise is selected. */
+.game-entry > summary > .play-order{
+  flex:0 0 auto; display:inline-grid; place-items:center;
+  min-width:2rem; height:2rem; margin-right:.85rem;
+  border:1px solid var(--line); border-radius:999px;
+  font-variant-numeric:tabular-nums; font-weight:700; font-size:.95rem;
+  color:var(--muted); background:var(--surface-2);
+}
+.game-entry > summary > .play-order[data-first]{
+  color:#08110d; background:var(--accent); border-color:var(--accent);
+}
+.start-here{
+  margin-left:.6rem; padding:.08em .5em; border-radius:999px;
+  background:var(--accent); color:#08110d;
+  font-style:normal; font-weight:700; font-size:.72rem;
+  letter-spacing:.04em; text-transform:uppercase;
+}
+@media(max-width:620px){
+  .game-entry > summary > .play-order{min-width:1.7rem;height:1.7rem;margin-right:.55rem;font-size:.85rem}
+}

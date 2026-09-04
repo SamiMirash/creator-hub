@@ -318,11 +318,24 @@
   }
 
   function entryShell(entry, index) {
+    // ⛔ WHY THE NUMBER IS HERE. the owner searched Serious Sam and could not work out which game to
+    //   play first: twenty-seven entries, no order shown and no entry point. The list was ALREADY
+    //   in release order, the page just never said so, and every entry looked like every other.
+    //   The order is only meaningful when one franchise is on screen, so it is only shown then.
+    const ordered = Boolean(state.franchise);
+    const n = index + 1;
+    const badge = ordered
+      ? `<b class="play-order"${n === 1 ? ' data-first="1"' : ""}>${n}</b>`
+      : "";
+    const start = ordered && n === 1
+      ? `<em class="start-here">${esc(t("start here"))}</em>`
+      : "";
     return `
       <details class="game-entry" data-i="${index}" ${index === 0 ? "open" : ""}>
         <summary>
+          ${badge}
           <span>
-            <small>${esc(entry.franchise)}${entry.release_year ? " · " + esc(entry.release_year) : ""}</small>
+            <small>${esc(entry.franchise)}${entry.release_year ? " · " + esc(entry.release_year) : ""}${start}</small>
             <strong>${esc(entry.title)}</strong>
           </span>
           ${confidence(entry)}
