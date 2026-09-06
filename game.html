@@ -363,14 +363,34 @@
     if (shapeYs.length > 1) {
       var tMin = Math.min.apply(null, shapeYs), tMax = Math.max.apply(null, shapeYs);
       if (tMax > tMin) {
+        // ⛔⛔ FAN SAME-YEAR TICKS APART, OR THE STRIP LIES ABOUT THE SHAPE IT EXISTS TO SHOW.
+        //    The first version placed a tick purely by YEAR, so releases sharing a year were
+        //    drawn on top of one another. On Serious Sam that is 27 releases rendered as 16
+        //    marks: 2017 hides five, 2011 hides four, and ELEVEN of twenty-seven are invisible.
+        //    ⭐ The strip was therefore QUIETEST WHERE THE FRANCHISE IS BUSIEST, which is the
+        //    exact opposite of the thing it is for, while the strap beside it said "27 releases".
+        //    A graphic whose own pixels contradict its caption is the same defect as the
+        //    "in release order" strap, one line lower. Found by Wren counting DISTINCT x
+        //    positions on the served page rather than counting elements.
+        //    [[feedback_a_count_is_not_a_shape]]
+        var perYear = {};
+        (d.entries || []).forEach(function (e) {
+          var y = parseInt(e.release_year, 10);
+          if (isFinite(y)) { perYear[y] = (perYear[y] || 0) + 1; }
+        });
+        var seenYear = {};
         var tGroups = {}, tN = 0, ticks = "";
         (d.entries || []).forEach(function (e) {
           var y = parseInt(e.release_year, 10);
           if (!isFinite(y)) { return; }
           var g = ((e.version_groups || [])[0]) || e.title || "?";
           if (!(g in tGroups)) { tGroups[g] = ++tN; }
+          var n = perYear[y], k = (seenYear[y] = (seenYear[y] || 0) + 1) - 1;
+          // centre the cluster on the year: 5 releases fan to -8,-4,0,+4,+8 px
+          var off = -1 + (n > 1 ? (k - (n - 1) / 2) * 4 : 0);
           var pct = ((y - tMin) / (tMax - tMin)) * 100;
-          ticks += '<i class="gh-time-tick" style="left:' + pct.toFixed(2) + '%"' +
+          ticks += '<i class="gh-time-tick" style="left:' + pct.toFixed(2) +
+            "%;transform:translateX(" + off.toFixed(1) + 'px)"' +
             (tGroups[g] === 1 ? ' data-g="1"' : "") +
             ' title="' + esc(e.title) + " " + y + '"></i>';
         });
