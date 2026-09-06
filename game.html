@@ -81,6 +81,27 @@
        turned it into an octal escape plus a stray digit, and the open marker rendered as
        a control character followed by 2. An escape that can collapse has no place in a
        string written by a script. */
+    /* A group's second and later releases are the SAME game. Indent them under the number,
+       and replace the repeated digit with a quiet vertical tick, so "1 1 1 1 1 2" becomes one
+       numbered block with four continuation rows. The number is still there, once. */
+    .gh-entry.gh-sub{margin-left:2.1rem;border-left-width:2px;border-top-left-radius:4px;
+      border-bottom-left-radius:4px;opacity:.94}
+    .gh-order-cont{
+      display:inline-grid;place-items:center;min-width:1.9rem;height:1.9rem;margin-right:.6rem;
+      border:0;background:none;vertical-align:middle;
+    }
+    .gh-order-cont::before{content:"";display:block;width:2px;height:1.05rem;border-radius:2px;
+      background:var(--line,#333);opacity:.85}
+    /* The timeline strip: his "graphics". One tick per release across the franchise's span,
+       ticks of the same game tinted together, so 27 releases are legible at a glance. */
+    .gh-time{margin:.1rem 0 1.1rem;padding:.55rem .7rem;border:1px solid var(--line,#333);
+      border-radius:10px;background:rgba(255,255,255,.03)}
+    .gh-time-bar{position:relative;height:26px}
+    .gh-time-tick{position:absolute;top:4px;width:3px;height:14px;border-radius:2px;
+      background:var(--accent,#39e2ad);opacity:.55;transform:translateX(-1px)}
+    .gh-time-tick[data-g="1"]{opacity:1;height:18px;top:2px}
+    .gh-time-ends{display:flex;justify-content:space-between;font-size:11px;opacity:.6;
+      font-variant-numeric:tabular-nums;margin-top:2px}
     .gh-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.15rem .85rem;min-width:0}
     .gh-title{font-size:19px;font-weight:700}
     .gh-pick{font-size:13px;opacity:.72}
@@ -331,7 +352,33 @@
     html += '<p class="gh-shape">' + nG + (nG === 1 ? " game" : " games")
       + (nE !== nG ? " across " + nE + " releases" : "")
       + (shapeYs.length ? " &middot; " + Math.min.apply(null, shapeYs) + "-" + Math.max.apply(null, shapeYs) : "")
-      + " &middot; in release order</p>";
+      + " &middot; in release order, versions of one game kept together</p>";
+    // ⭐ THE TIMELINE STRIP. Arash asked for "a table or graphics or whatever, make things
+    //    easier on the eyes", and the specific problem is that 27 releases take five screens
+    //    to scroll so their SHAPE is never visible. One tick per release across the franchise's
+    //    span shows the whole history in 26 pixels of height: where the clusters are, how long
+    //    the gaps run, and which ticks belong to the same game.
+    // ⛔ Built only when there are at least two distinct years. A single-year franchise would
+    //    render every tick on top of the others and say nothing.
+    if (shapeYs.length > 1) {
+      var tMin = Math.min.apply(null, shapeYs), tMax = Math.max.apply(null, shapeYs);
+      if (tMax > tMin) {
+        var tGroups = {}, tN = 0, ticks = "";
+        (d.entries || []).forEach(function (e) {
+          var y = parseInt(e.release_year, 10);
+          if (!isFinite(y)) { return; }
+          var g = ((e.version_groups || [])[0]) || e.title || "?";
+          if (!(g in tGroups)) { tGroups[g] = ++tN; }
+          var pct = ((y - tMin) / (tMax - tMin)) * 100;
+          ticks += '<i class="gh-time-tick" style="left:' + pct.toFixed(2) + '%"' +
+            (tGroups[g] === 1 ? ' data-g="1"' : "") +
+            ' title="' + esc(e.title) + " " + y + '"></i>';
+        });
+        html += '<div class="gh-time" aria-hidden="true"><div class="gh-time-bar">' + ticks +
+          '</div><div class="gh-time-ends"><span>' + tMin + "</span><span>" + tMax +
+          "</span></div></div>";
+      }
+    }
     // ⛔ SHOW THE ORDER. the owner searched Serious Sam and could not work out which game to play
     //    first: twenty-seven entries, every one looking like the last, with no number and no
     //    entry point. The list is ALREADY in release order, which is the franchise rule this
@@ -386,7 +433,7 @@
     //    else says "earliest", which is a fact the release year proves.
     var startKey = String(d.start_here || "");
     var startShown = false;
-    var groupNo = {}, nextNo = 0;
+    var groupNo = {}, nextNo = 0, shownNo = {};
     ordered.forEach(function (e, i) {
       var s = e.sami || {};
       // ⛔ AND DO NOT SAY THE SAME THING TWICE INSIDE ONE ENTRY EITHER. The audit stores the same
@@ -408,26 +455,61 @@
       //    which is why it was unreadable no matter which game you searched.
       //    The one thing a reader actually wants, WHICH VERSION TO PLAY, is now on the closed row,
       //    so the whole franchise can be scanned without opening anything.
-      var pick = (e.primary && (e.primary.version || e.primary.platform)) ||
-                 s.chosen_platform || "";
+      // ⛔⛔ "Play:" WAS REPEATING THE TITLE VERBATIM ON EVERY ROW OF EVERY DEEP AUDIT.
+      //    `primary.version` names the version to play, and for a franchise that has been
+      //    deeply audited that version IS the release the row is about, so the row read
+      //    "Serious Sam (Palm OS) 2001 - Play: Serious Sam (Palm OS)". It doubled the length of
+      //    every row and added nothing.
+      // ⚠️ THE GLOBAL RATE HID IT COMPLETELY: 267 of 4,714 rows is 5.7% and reads as noise.
+      //    Split by franchise it is 126/126 FromSoftware, 96/96 Sonic, 27/27 Serious Sam and
+      //    18/4,465 everywhere else. The three deep audits are 100%, and they are the only pages
+      //    with the full treatment, so they are the pages anyone is ever shown.
+      //    ⭐ AN AVERAGE OVER A POPULATION THAT IS NOT UNIFORM MEASURES NOTHING. Split it.
+      // ⇒ When the version restates the title, fall through to the PLATFORM, which ADDS
+      //    information rather than removing any: those rows previously carried no platform at all
+      //    on the closed line. Arash: "we don't want to remove any information, we want to even
+      //    add information if we require".
+      var pv = (e.primary && e.primary.version) || "";
+      var pp = (e.primary && e.primary.platform) || s.chosen_platform || "";
+      var pick = "";
+      if (pv && pv.trim() !== String(e.title || "").trim()) {
+        pick = "Play: " + pv;
+      } else if (pp) {
+        pick = "Play on " + pp;
+      } else if (pv) {
+        pick = "Play: " + pv;
+      }
       // ⭐ NUMBER THE GAME, NOT THE ROW. Three releases of The First Encounter are one
       //    game and share the number 1, so the count on screen counts things to PLAY.
       var gkey = ((e.version_groups || [])[0]) || e.title || "?";
       if (!(gkey in groupNo)) { groupNo[gkey] = ++nextNo; }
       var no = groupNo[gkey];
+      // ⛔⛔ "1 1 1 1 1 2" READ AS BROKEN NUMBERING, NOT AS GROUPING.
+      //    Five identically weighted cards each stamped 1, no indent, no bracket, nothing on
+      //    screen saying they are one game's five releases. The grouping was correct and
+      //    completely invisible, so the owner read the column and concluded the ORDER was wrong.
+      //    78 groups across 43 franchises hold more than one release.
+      // ⇒ Print the number ONCE per group and indent the rest under it, so the repeat is
+      //    visibly a continuation rather than a second game numbered the same.
+      var isRepeat = !!shownNo[no];
+      shownNo[no] = 1;
       // the ruling may name either the version group or the exact title
       // ⛔ ONCE PER GAME, NOT ONCE PER RELEASE. The First Encounter has three releases and
       //    the badge appeared on all three, which reads as three different starting points.
       var isStart = !startShown && startKey &&
         (gkey === startKey || e.title === startKey);
       if (isStart) { startShown = true; }
-      html += '<details class="gh-entry"' + (i === 0 ? " open" : "") + "><summary>" +
-        '<b class="gh-order"' + (no === 1 ? ' data-first="1"' : "") + ">" + no + "</b>" +
+      // ⛔ DO NOT AUTO-OPEN ENTRY 1. It pushed a full settings table above the list, so the
+      //    reader met a wall of detail before seeing a single other game. At his screen size six
+      //    rows fill the viewport; the list has to be the first thing under the strap.
+      html += '<details class="gh-entry' + (isRepeat ? " gh-sub" : "") + '"><summary>' +
+        (isRepeat
+          ? '<b class="gh-order gh-order-cont" aria-hidden="true"></b>'
+          : '<b class="gh-order"' + (no === 1 ? ' data-first="1"' : "") + ">" + no + "</b>") +
         '<span class="gh-head"><span class="gh-title">' + esc(e.title) +
         (e.release_year ? ' <span class="gh-flags">' + esc(e.release_year) + "</span>" : "") +
-        (isStart ? ' <span class="gh-start">start here</span>'
-          : (no === 1 && canStart ? ' <span class="gh-start gh-earliest">earliest</span>' : "")) + "</span>" +
-        (pick ? '<span class="gh-pick">Play: ' + esc(pick) + "</span>" : "") +
+        (isStart ? ' <span class="gh-start">start here</span>' : "") + "</span>" +
+        (pick ? '<span class="gh-pick">' + esc(pick) + "</span>" : "") +
         "</span></summary><div class=\"gh-body\">";
 
       var tags = [];
