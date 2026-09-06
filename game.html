@@ -100,8 +100,10 @@
     .gh-time-tick{position:absolute;top:4px;width:3px;height:14px;border-radius:2px;
       background:var(--accent,#39e2ad);opacity:.55;transform:translateX(-1px)}
     .gh-time-tick[data-g="1"]{opacity:1;height:18px;top:2px}
-    .gh-time-ends{display:flex;justify-content:space-between;font-size:11px;opacity:.6;
-      font-variant-numeric:tabular-nums;margin-top:2px}
+    .gh-time-ends{position:relative;display:flex;justify-content:space-between;font-size:11px;
+      opacity:.6;font-variant-numeric:tabular-nums;margin-top:2px;height:1.1em}
+    /* interior year labels sit ON the axis, not in the flex flow, so they line up with a tick */
+    .gh-time-mark{position:absolute;top:0;transform:translateX(-50%);white-space:nowrap;opacity:.8}
     .gh-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.15rem .85rem;min-width:0}
     .gh-title{font-size:19px;font-weight:700}
     .gh-pick{font-size:13px;opacity:.72}
@@ -394,9 +396,33 @@
             (tGroups[g] === 1 ? ' data-g="1"' : "") +
             ' title="' + esc(e.title) + " " + y + '"></i>';
         });
+        // ⭐ INTERIOR YEAR LABELS. The strip labelled only its two endpoints, so a reader could
+        //    see there was a busy patch and not which year it was. Each tick already carries a
+        //    `title` for hover, but hover is not available on a phone and is invisible until
+        //    tried. Two sparse interior labels, snapped to years that actually have releases,
+        //    cost almost no clutter and answer the question at a glance.
+        // ⛔ Only when the span is wide enough to place them without crowding the ends.
+        var marks = "";
+        var yrsWith = Object.keys(perYear).map(Number).sort(function (a, b) { return a - b; });
+        if (tMax - tMin >= 8 && yrsWith.length > 3) {
+          [0.34, 0.67].forEach(function (frac) {
+            var want = tMin + (tMax - tMin) * frac, best = yrsWith[0];
+            yrsWith.forEach(function (y) {
+              if (Math.abs(y - want) < Math.abs(best - want)) { best = y; }
+            });
+            if (best === tMin || best === tMax) { return; }
+            var p = ((best - tMin) / (tMax - tMin)) * 100;
+            marks += '<span class="gh-time-mark" style="left:' + p.toFixed(2) + '%">' +
+              best + "</span>";
+          });
+        }
+        // ⛔ aria-hidden STAYS. I dropped it while adding the labels and that was wrong: the
+        //    list underneath carries every release and its year in reading order, so the strip
+        //    is a decorative restatement. Exposing 27 unlabelled ticks to a screen reader adds
+        //    noise and no information.
         html += '<div class="gh-time" aria-hidden="true"><div class="gh-time-bar">' + ticks +
-          '</div><div class="gh-time-ends"><span>' + tMin + "</span><span>" + tMax +
-          "</span></div></div>";
+          '</div><div class="gh-time-ends"><span>' + tMin + "</span>" + marks +
+          "<span>" + tMax + "</span></div></div>";
       }
     }
     // ⛔ SHOW THE ORDER. the owner searched Serious Sam and could not work out which game to play

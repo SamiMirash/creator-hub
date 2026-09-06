@@ -76,6 +76,14 @@ const checks = [
   checks.push(['H. every tick has its own position (' + pos.size + ' of ' + ticks + ')',
     pos.size === ticks]);
 }
+// interior year labels: present, inside the span, and aligned to years that have releases
+{
+  const marks = [...H.matchAll(/gh-time-mark" style="left:([\d.]+)%">(\d{4})</g)];
+  checks.push(['I. interior year labels drawn (' + marks.length + ')', marks.length >= 1]);
+  const years = new Set([...H.matchAll(/gh-time-tick[^>]*title="[^"]*?(\d{4})"/g)].map(m => m[1]));
+  checks.push(['I2. every label is a year that HAS releases',
+    marks.every(m => years.has(m[2]))]);
+}
 let bad = 0;
 for (const [label, ok] of checks) { if (!ok) bad++; console.log((ok ? '  PASS  ' : '  FAIL  ') + label); }
 console.log('');
