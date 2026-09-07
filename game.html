@@ -104,8 +104,23 @@
       opacity:.6;font-variant-numeric:tabular-nums;margin-top:2px;height:1.1em}
     /* interior year labels sit ON the axis, not in the flex flow, so they line up with a tick */
     .gh-time-mark{position:absolute;top:0;transform:translateX(-50%);white-space:nowrap;opacity:.8}
+    /* ⛔⛔ THE NUMBER MUST SIT ON THE FIRST LINE, NOT IN THE MIDDLE OF A WRAPPED TITLE.
+       At phone width the title wraps to two lines and `align-items:center` on the summary row
+       centred the number against the WHOLE wrapped block, so on "Serious Sam: The First
+       Encounter" the 1 rendered beside the word "Encounter". It read as a label for that line
+       rather than for the entry. Measured by Wren: +27px below the first line at 390px, and
+       exactly 0 at 768 and 1920, which is why every check either of us ran missed it.
+       ⭐ DESKTOP-ONLY VERIFICATION IS HALF A VERIFICATION. The bug lived only where neither of
+       us was looking.
+       ⇒ `align-self:start` pins the badge to the top of the row; the negative margin then
+       re-centres it on the FIRST LINE. The line box is 19px * 1.3 = 24.7px and the badge is
+       1.9rem = 30.4px, so the badge overhangs by (30.4 - 24.7) / 2 = 2.85px at each end.
+       line-height is stated explicitly here so that arithmetic is not at the mercy of a
+       browser default. */
+    details.gh-entry > summary .gh-order,
+    details.gh-entry > summary .gh-order-cont{align-self:start;margin-top:-2.85px}
     .gh-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.15rem .85rem;min-width:0}
-    .gh-title{font-size:19px;font-weight:700}
+    .gh-title{font-size:19px;line-height:1.3;font-weight:700}
     .gh-pick{font-size:13px;opacity:.72}
     .gh-body{margin-top:.25rem}
     details.gh-entry[open] > summary{margin-bottom:.4rem}
