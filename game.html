@@ -51,15 +51,26 @@
   
     /* Play order. The list was already chronological; it just never showed it, so 27 entries
        read as an undifferentiated wall and there was no way to see where to begin. */
-    .gh-entry h3 .gh-order{
+    /* ⛔⛔ THESE THREE RULES WERE SCOPED `.gh-entry h3 .gh-order` AND THE MARKUP HAS NO h3.
+       The badges render inside `<details class="gh-entry"><summary>`, so NONE of this applied:
+       no circle, no border, no tabular numerals, no accent on entry 1, and the same for the
+       "start here" pill. The number has been a bare bold digit since the rows became
+       collapsible, which is part of why "1 1 1 1 1 2" read as broken numbering rather than as
+       an order column.
+       ⭐ FOUND BY WREN MEASURING TWO DIFFERENT BADGE HEIGHTS, 30.4px and 25.59px, and asking
+       why one constant did not fit both. 25.59px is exactly a DEFAULT 16px line box: the tell
+       that an element is unstyled is that its size is a browser default, not a wrong value.
+       ⇒ Unscoped. Both badges are now 1.9rem, so the single first-line offset below is correct
+       for both instead of right for one sibling and wrong for the other. */
+    .gh-order{
       display:inline-grid; place-items:center; min-width:1.9rem; height:1.9rem;
       margin-right:.6rem; border:1px solid var(--line,#333); border-radius:999px;
       background:rgba(255,255,255,.06); color:inherit; opacity:.85;
       font-size:.9rem; font-weight:700; font-variant-numeric:tabular-nums; vertical-align:middle;
     }
-    .gh-entry h3 .gh-order[data-first]{background:var(--accent,#39e2ad);color:#08110d;border-color:var(--accent,#39e2ad);opacity:1}
+    .gh-order[data-first]{background:var(--accent,#39e2ad);color:#08110d;border-color:var(--accent,#39e2ad);opacity:1}
     .gh-shape{margin:.2rem 0 1rem;opacity:.72;font-size:13px;letter-spacing:.02em}
-    .gh-entry h3 .gh-start{
+    .gh-start{
       margin-left:.55rem; padding:.1em .55em; border-radius:999px;
       background:var(--accent,#39e2ad); color:#08110d;
       font-size:.68rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
