@@ -1,0 +1,1833 @@
+{
+  "id": "god-of-war-2",
+  "game": "God of War II",
+  "target": "100% completion on the chosen PS3 HD remaster route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "route-and-save-setup",
+      "name": "Route and Save Setup",
+      "location_cue": "The PS3 collection menu, difficulty selector, clear-data prompt, and Bonus Play menu.",
+      "note": "Chosen route: PS3 HD remaster through original hardware or RPCS3; no secondary content route.",
+      "save_backup": {
+        "title": "Create a rotating save set",
+        "why": "No chapter select exists, and fixed urn or gift locations can require another cycle."
+      },
+      "items": [
+        {
+          "id": "route-ps3-remaster",
+          "type": "interaction",
+          "safe_type": "Platform Route",
+          "label": "Use the PS3 HD Remaster",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the collection version before creating completion data.",
+            "2": "Play God of War II through God of War Collection or God of War Saga on PS3 or RPCS3.",
+            "3": "Launch the PS3 remaster, select the second game, and create its save data separately from the first game. The remaster retains the original bonus content, so no PS2 or Vita branch is required."
+          }
+        },
+        {
+          "id": "route-rotating-saves",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Maintain Rotating Saves",
+          "missable": false,
+          "levels": {
+            "1": "The campaign lacks chapter-select cleanup.",
+            "2": "Keep several manual saves and preserve one before every major palace transition.",
+            "3": "Rotate at least four slots and retain a clean file before entering each new large region. Campaign urns can be recovered in Bonus Play, but a backup prevents an entire repeat for missed gifts or chest-ledger work."
+          }
+        },
+        {
+          "id": "route-first-clear",
+          "type": "interaction",
+          "safe_type": "Campaign",
+          "label": "Complete the First Campaign",
+          "missable": false,
+          "levels": {
+            "1": "The first clear opens Bonus Play, challenge mode, and the hardest setting.",
+            "2": "Finish one campaign and save the clear data.",
+            "3": "Complete the final encounter, create clear data, and return to the menu. Confirm that Bonus Play, Titan difficulty, Challenge of the Titans, two first-clear costumes, and both movie viewers are available."
+          }
+        },
+        {
+          "id": "route-god-clear",
+          "type": "interaction",
+          "safe_type": "Difficulty",
+          "label": "Complete God Difficulty",
+          "missable": false,
+          "levels": {
+            "1": "One costume has a separate hard-preset condition.",
+            "2": "Finish a complete campaign on God difficulty.",
+            "3": "Start God difficulty from a fresh or permitted clear-data route, keep the setting unchanged, and finish through the results. Save the clear data and confirm the dedicated costume unlock appears."
+          }
+        },
+        {
+          "id": "route-titan-clear",
+          "type": "interaction",
+          "safe_type": "Difficulty",
+          "label": "Complete Titan Difficulty",
+          "missable": false,
+          "levels": {
+            "1": "The hardest unlocked preset supplies the remaining difficulty costumes.",
+            "2": "Finish a complete campaign on Titan difficulty.",
+            "3": "After the first clear unlocks Titan, begin that preset and finish the entire campaign without lowering it. Save the result and confirm the three Titan-clear costumes are available."
+          }
+        },
+        {
+          "id": "route-bonus-play",
+          "type": "interaction",
+          "safe_type": "New Game Plus",
+          "label": "Complete a Bonus Play Cycle",
+          "missable": false,
+          "levels": {
+            "1": "Clear data carries upgrades and enables the urn powers.",
+            "2": "Start Bonus Play on the same difficulty as the clear file and finish one cycle.",
+            "3": "Choose Bonus Play from the cleared difficulty, carry forward weapons, powers, health, magic, and collected urns, then activate each urn from the status menu. Finish the cycle so all carried unlocks and missed grey-chest replacements are verified."
+          }
+        },
+        {
+          "id": "route-collectible-ledger",
+          "type": "optional",
+          "safe_type": "Completion Ledger",
+          "label": "Track Every Persistent Pickup",
+          "missable": false,
+          "levels": {
+            "1": "Rare grey chests can replace missed health and magic pieces later.",
+            "2": "Record 18 eyes, 18 feathers, six urns, three gifts, and 20 extracted cyclops eyes.",
+            "3": "Mark each counter only after the status screen changes. Missing eyes and feathers continue spawning in later grey chests and Bonus Play; campaign urns return only at their fixed locations, while two urns come from challenge rankings."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bathhouse",
+      "name": "Bathhouse",
+      "location_cue": "A tiled bathing hall with breakable walls and an upper climbing route.",
+      "note": "SAVE-BACKUP: record 2 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Bathhouse",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "bathhouse-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 2 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 2 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Rhodes Bathhouse. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 2."
+          }
+        }
+      ]
+    },
+    {
+      "id": "palace-corridors",
+      "name": "Palace Corridors",
+      "location_cue": "Gated palace hallways with pressure plates, a movable block, and a lift.",
+      "note": "SAVE-BACKUP: record 4 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Palace Corridors",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "palace-corridors-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 4 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 4 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Rhodes Palace. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 4."
+          }
+        },
+        {
+          "id": "urn-of-gaia",
+          "type": "treasure",
+          "safe_type": "Bonus-Play Urn",
+          "label": "Urn Of Gaia",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "In the palace pressure-plate hall, use the movable block to reach the high three-chest ledge.",
+            "3": "Roll the block through the first timed gate, push it along the upper hallway, and break the bird ornament attached to it. Place the block beneath the far ledge, climb up, and open the middle chest for the first campaign urn. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "eastern-ramparts",
+      "name": "Eastern Ramparts",
+      "location_cue": "Exterior walls, machinery, nets, and the departure platform beyond the palace.",
+      "note": "SAVE-BACKUP: record 5 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Eastern Ramparts",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "eastern-ramparts-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 5 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 5 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Eastern Ramparts. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 5."
+          }
+        },
+        {
+          "id": "eye-01",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #1",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Inside the large moving structure on the ramparts, climb the net above its third damaged joint.",
+            "3": "After breaking the third internal joint, remain inside and climb the nearby net instead of leaving immediately. Open the unlit chest on the upper platform and confirm the first health piece registers. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "eye-02",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #2",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Below the flying-mount landing, descend the front wall to the lower-left platform.",
+            "3": "After landing in the hand-shaped cavern, climb or jump down the wall directly ahead, then steer to the lower platform on the left. Open both chests before returning to the main hand route. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "hand-cavern",
+      "name": "Hand Cavern",
+      "location_cue": "A vast stone cavern entered from the flying approach, with climbable walls below the landing.",
+      "note": "SAVE-BACKUP: record 2 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Hand Cavern",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "hand-cavern-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 2 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 2 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Hand Cavern. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 2."
+          }
+        }
+      ]
+    },
+    {
+      "id": "fire-cavern",
+      "name": "Fire Cavern",
+      "location_cue": "A warm cavern of broken bridges, wall climbs, and a central fire pit.",
+      "note": "SAVE-BACKUP: record 4 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Fire Cavern",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "fire-cavern-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 4 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 4 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Fire of Olympus. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 4."
+          }
+        },
+        {
+          "id": "eye-03",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #3",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Past the fire-cavern save point, check the bend beside the next climbable wall.",
+            "3": "Leave the save light, follow the tunnel around its first bend, and stop before starting the next wall climb. Open the unlit chest tucked beside that wall. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "feather-01",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #1",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "At the fire-cavern grapple gap, use the return rope to launch into the wall recess.",
+            "3": "Swing across, move right, and slide back on the overhead rope. Before reaching its end, grapple again to be thrown back across the gap; land at the recessed wall opening and open the chest. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ice-cavern",
+      "name": "Ice Cavern",
+      "location_cue": "An ice-filled cavern with grapple gaps, suspended ropes, and frozen reward alcoves.",
+      "note": "SAVE-BACKUP: record 5 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Ice Cavern",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "ice-cavern-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 5 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 5 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Typhon's Cavernous Prison. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 5."
+          }
+        },
+        {
+          "id": "feather-02",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #2",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "After obtaining the ice-cavern ranged tool, inspect the torch-lined path behind the acquisition point.",
+            "3": "Clear the tutorial enemies, turn away from the normal grapple exit, and follow the path between two torches to the pyre. Throw five enemies into the fire so the ice melts, then open all four revealed chests. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "fire-cavern-return",
+      "name": "Fire Cavern Return",
+      "location_cue": "The earlier fire cavern revisited with a ranged tool and newly reachable walls.",
+      "note": "SAVE-BACKUP: record 10 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Fire Cavern Return",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "fire-cavern-return-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 10 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 10 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Fire of Olympus (return). Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 10."
+          }
+        },
+        {
+          "id": "eye-04",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #4",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "On returning to the fire cavern, climb the wall beside the tunnel exit instead of grappling away.",
+            "3": "Leave the tunnel, ignore the immediate grapple route, and scale the adjacent wall. Use the new ranged attack to expose the grapple point across the broken bridge, then swing to the two-chest ledge. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "eye-05",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #5",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Near the fire pit, lower the rope and climb to the small chamber above the broken bridge.",
+            "3": "Clear the enemies by the pit, climb the ledge, and shoot the distant post to release the rope. Reach the upper ledge, jump to the vertical chain, slide into the chamber, and open its unlit chest. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "feather-03",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #3",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Near the broken bridge, inspect the climbable surface on the far wall.",
+            "3": "Approach the damaged bridge, climb the marked wall beyond it, and follow the surface around the corner rather than dropping immediately. Open the unlit chest on the concealed ledge. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "feather-04",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #4",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "During the temple-cliff climb, check the paired chests set into the wall.",
+            "3": "Follow the narrow cliff ledge toward the temple until two chests appear together in a shallow wall recess. Open both before kicking down or crossing the nearby bridge. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "temple-cliffs",
+      "name": "Temple Cliffs",
+      "location_cue": "Narrow cliff ledges, a kicked-down bridge, and the outer approach to a temple.",
+      "note": "SAVE-BACKUP: record 4 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Temple Cliffs",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "temple-cliffs-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 4 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 4 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Cliffs of Lahkesis. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 4."
+          }
+        },
+        {
+          "id": "eye-06",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #6",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "After lowering the bridge on the temple cliffs, follow the short side ledge.",
+            "3": "Kick the bridge into place, then turn onto the short ledge beside it before moving through the temple entrance. Open the unlit chest at the ledge's end. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "chain-garden",
+      "name": "Chain Garden",
+      "location_cue": "A circular garden chamber dominated by a hanging chain and ceiling traversal.",
+      "note": "SAVE-BACKUP: record 3 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Chain Garden",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "chain-garden-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 3 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 3 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Garden of Lahkesis. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 3."
+          }
+        },
+        {
+          "id": "eye-07",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #7",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "In the circular chain garden, climb the hanging chain to the ceiling route.",
+            "3": "Jump from the small wall shelf onto the lower part of the hanging chain, run upward, and leap to the climbable ceiling. Traverse to the distant ledge, break the small obstacles, and open both chests. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-causeway",
+      "name": "Open Causeway",
+      "location_cue": "An exposed route of walls and ledges leading toward a large outdoor mechanism.",
+      "note": "SAVE-BACKUP: record 5 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Open Causeway",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "open-causeway-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 5 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 5 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Pathway to the Steeds. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 5."
+          }
+        },
+        {
+          "id": "eye-08",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #8",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "After clearing the causeway guardian, climb the outside wall before entering the opened chamber.",
+            "3": "Remain outside when the large doorway becomes available, jump onto the adjacent climbable wall, and follow it to the concealed upper shelf. Open the unlit chest before entering. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "four-steed-mechanism",
+      "name": "Four-Steed Mechanism",
+      "location_cue": "Four large stone figures, coloured controls, and narrow exterior walkways.",
+      "note": "SAVE-BACKUP: record 3 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Four-Steed Mechanism",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "four-steed-mechanism-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 3 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 3 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Steeds of Time. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 3."
+          }
+        },
+        {
+          "id": "feather-05",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #5",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "After gaining the four-steed area's magic power, follow the narrow path to its far end.",
+            "3": "Leave the acquisition chamber, climb to the exterior walkway, and continue to the extreme end of the narrow path instead of turning toward the controls. Open the unlit chest there. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "eye-09",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #9",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Inspect the head of the first stone steed beside the green control.",
+            "3": "Stand before the row of coloured controls facing the four figures, move toward the first figure on the left, and descend the few steps near the green switch. Open the unlit chest on its nose. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pool-complex",
+      "name": "Pool Complex",
+      "location_cue": "Reflective pools, climbable walls, raised pillars, and a tall interior statue.",
+      "note": "SAVE-BACKUP: record 16 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Pool Complex",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "pool-complex-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 16 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 16 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Divine Pools. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 16."
+          }
+        },
+        {
+          "id": "eye-10",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #10",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "In the pool complex, continue around the corner from the nearby paired chests.",
+            "3": "Reach the upper ledge containing two visible reward chests, follow that same ledge around its left corner, and open the additional unlit chest hidden beyond the camera's initial view. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "feather-06",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #6",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "From the pool complex's climbable wall, descend to the lower wall and cross its ceiling.",
+            "3": "Drop from the first wall to the lower ledge, transfer onto the wall to the right, and traverse down, left, then across the ceiling. Break the end wall and open the chest in the hidden section. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "feather-07",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #7",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "At the tall-statue chamber, step off toward the screen and search the lower alcove.",
+            "3": "From the chamber entrance, drop to either side of the statue and walk toward the near edge of the room. Open both unlit chests placed together in the small lower recess. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "eye-11",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #11",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "The tall-statue chamber's lower alcove contains a second unlit chest.",
+            "3": "Drop beside the statue, walk toward the screen into the small recess, and open both chests. One supplies this health piece and the other supplies a magic piece. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "eye-12",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #12",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Use the four rising pillars to reach the breakable orange-and-black panel.",
+            "3": "Stand on the floor switch until all pillars rise, climb the first, and jump to the second. Smash the coloured wall panel on the right, enter the concealed nook, and open the chest. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "feather-08",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #8",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "After moving the tall statue's head, inspect the newly exposed space.",
+            "3": "Complete the statue mechanism until its head is dislodged, then search the opening and ledges revealed around the base. Open the unlit chest before leaving the pool complex. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "eye-13",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #13",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "On the balcony beyond the broken statue head, move right from the green chest.",
+            "3": "Step onto the exterior balcony, face the green recovery chest, and move right, then slightly downward along the edge. Open the unlit chest before crossing into the ruins. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "eye-14",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #14",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Immediately after using the ruins key, inspect the corner on the right.",
+            "3": "Open the keyed gate, enter only a few steps, and turn into the first right-hand corner. Open the unlit chest before engaging the tilting-platform route. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "forgotten-ruins",
+      "name": "Forgotten Ruins",
+      "location_cue": "Broken stone halls, tilting platforms, grapple points, and a toppled pillar.",
+      "note": "SAVE-BACKUP: record 9 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Forgotten Ruins",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "forgotten-ruins-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 9 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 9 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Ruins of the Forgotten. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 9."
+          }
+        },
+        {
+          "id": "feather-09",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #9",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Near the tilting platform, use the hanging crate to break the crate on the ground.",
+            "3": "Pull the nearby block into position, climb it, and hit the suspended crate with two bursts of the electrical area power. Let it fall through the lower crate, then open the unlit chest revealed underneath. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "eye-15",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #15",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "After the three-grapple crossing, climb the small ledge and use the overhead rope.",
+            "3": "Complete all three swings, locate the short ladder on the side shelf, and climb it. Jump to the rope, shimmy across while avoiding attackers, and open the chest at the far landing. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "eye-16",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #16",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "After toppling the large pillar, expose the distant grapple point before jumping to the circular platform.",
+            "3": "Climb the fallen pillar, stop at the edge near the blue chest, and fire the ranged tool at the far wall around the one-o'clock direction. Use the revealed grapple to reach the hidden chest route. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "swamp-and-conveyor",
+      "name": "Swamp and Conveyor",
+      "location_cue": "A shallow swamp, a collapsed building, conveyor machinery, and a stopped stone wheel.",
+      "note": "SAVE-BACKUP: record 5 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Swamp and Conveyor",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "swamp-and-conveyor-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 5 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 5 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in River of the Forgotten. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 5."
+          }
+        },
+        {
+          "id": "feather-10",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #10",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Beyond the collapsed swamp building, stop near the conveyor's spiked wheel and check the next corner.",
+            "3": "Cross the fallen roof, pass through the tunnel, and disable the spiked conveyor wheel after completing its required interaction. Turn the next corner and open both nearby reward chests. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "eye-17",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #17",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "After receiving the reflective defence, return through the tunnel and break the stopped stone wheel.",
+            "3": "Backtrack from the acquisition chamber, locate the large wheel that has stopped turning, and destroy it. Enter the narrow passage behind it and open the unlit chest at the end. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "feather-11",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #11",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "The stopped-wheel passage also contains the campaign's second urn route.",
+            "3": "Break the stationary stone wheel after obtaining the reflective defence and enter the passage. Open every unlit chest in the route; one supplies this feather while the urn is found in the later reflected-beam wall. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "eye-18",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #18",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Return to the beam conveyor and reflect its three attacks into the wall recesses.",
+            "3": "Stand on the conveyor and parry each petrifying beam so it strikes one of the three sealed wall panels. Open all three exposed chests; the final health piece is in the group and the centre recess contains an urn. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "stone-temple",
+      "name": "Stone Temple",
+      "location_cue": "A sealed stone interior with an elevator shaft and narrow upper passages.",
+      "note": "SAVE-BACKUP: record 3 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Stone Temple",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "stone-temple-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 3 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 3 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Temple of Euryale. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 3."
+          }
+        },
+        {
+          "id": "feather-12",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #12",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "At the stone temple elevator shaft, break the seal at its base.",
+            "3": "Before riding the elevator upward, inspect the wall at the bottom of the shaft, destroy the marked seal, and open the unlit chest hidden behind it. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "flooded-temple-exit",
+      "name": "Flooded Temple Exit",
+      "location_cue": "Water-filled shafts, rising pillars, balance beams, and a crushing ceiling passage.",
+      "note": "SAVE-BACKUP: record 7 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Flooded Temple Exit",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "flooded-temple-exit-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 7 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 7 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Euryale's Defeat. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 7."
+          }
+        },
+        {
+          "id": "feather-13",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #13",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "In the flooded pillar room, jump right from the fifth raised pillar.",
+            "3": "Raise the pillars, slow time, and grapple across them in sequence. From the fifth pillar, turn away from the forward exit and launch yourself toward the side shelf; open both chests there. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "feather-14",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #14",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Beyond the crushing ceiling, cross the floorless tunnel and inspect the rope landing.",
+            "3": "Survive the ceiling chamber, balance across the tunnel beams, and shimmy along the wall to the opposite side. Use the hanging rope near the landing to reach the unlit chest before advancing. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "central-atrium",
+      "name": "Central Atrium",
+      "location_cue": "A broad circular junction reached by a spiral stairway from the swamp.",
+      "note": "SAVE-BACKUP: record 4 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Central Atrium",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "central-atrium-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 4 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 4 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Destiny's Atrium. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 4."
+          }
+        },
+        {
+          "id": "gift-of-experience",
+          "type": "upgrade",
+          "safe_type": "Permanent Gift",
+          "label": "Gift Of Experience",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "At the central atrium reached by spiral stairs, open the larger chest overlooking the swamp route.",
+            "3": "Climb the spiral staircase back into the broad atrium and search the side facing the earlier swamp approach. Open the oversized chest to claim the one-time red-orb gift. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "beam-courtyard",
+      "name": "Beam Courtyard",
+      "location_cue": "An outdoor court beneath a large stone face with upper balconies and beams.",
+      "note": "SAVE-BACKUP: record 3 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Beam Courtyard",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "beam-courtyard-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 3 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 3 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Courtyard of Atropos. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 3."
+          }
+        },
+        {
+          "id": "feather-15",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #15",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "In the beam courtyard, climb the balcony and cross in front of the giant stone face.",
+            "3": "Reach the upper balcony, balance across the beam directly before the stone face, and turn left when the green chest comes into view. Open the nearby unlit chest. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "rooted-cliffs",
+      "name": "Rooted Cliffs",
+      "location_cue": "Cliffside grapple points, extendable roots, water, and time-sensitive crossings.",
+      "note": "SAVE-BACKUP: record 4 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Rooted Cliffs",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "rooted-cliffs-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 4 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 4 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Edge of Creation. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 4."
+          }
+        },
+        {
+          "id": "feather-16",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #16",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Use the root-extension switch, slow time, and drop between the two central trees.",
+            "3": "Grapple along the building, stand on the switch to extend the roots, and freeze the mechanism. Run onto the central landmass and descend to the small ledge between the paired trees. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "feather-17",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #17",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Carry the time-control statue to the water crossing and use it to extend the grapple window.",
+            "3": "After obtaining the spear, push the time statue along the hallway to the water's edge. Cross, climb out, slow time, and grapple back across the gap; continue around the sword-holding statue to the hidden chest. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        },
+        {
+          "id": "urn-of-olympus",
+          "type": "treasure",
+          "safe_type": "Bonus-Play Urn",
+          "label": "Urn Of Olympus",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "The time-controlled water crossing hides an urn beside the seventeenth feather.",
+            "3": "Move the time statue to the water, cross to the opposite bank, climb out, and freeze time. Grapple through the closing route and search around the sword-holding statue; open both unlit chests before the mechanism resets. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "stone-exterior",
+      "name": "Giant Stone Exterior",
+      "location_cue": "A monumental stone exterior reached by gliding between separated platforms.",
+      "note": "SAVE-BACKUP: record 4 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Giant Stone Exterior",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "stone-exterior-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 4 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 4 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Face of Atlas. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 4."
+          }
+        },
+        {
+          "id": "feather-18",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #18",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "On the giant stone exterior, free the movable block and use it against the left wall.",
+            "3": "Clear the chamber after the opening glide, cut every tendril holding the large block, and pull it free. Push it against the left wall, climb onto it, and jump to the upper ledge for the final feather chest. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "stone-interior",
+      "name": "Giant Stone Interior",
+      "location_cue": "Organic tunnels, insect nests, ceiling climbs, and breakable overhead formations.",
+      "note": "SAVE-BACKUP: record 3 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Giant Stone Interior",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "stone-interior-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 3 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 3 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Inside the Mighty Titan. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 3."
+          }
+        },
+        {
+          "id": "urn-of-prometheus",
+          "type": "treasure",
+          "safe_type": "Bonus-Play Urn",
+          "label": "Urn Of Prometheus",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "Inside the giant stone interior, destroy the overhead formation during the second ceiling climb.",
+            "3": "Clear the insect nests, traverse the first wall-and-ceiling route, and begin the next exposed ceiling section. Break the hanging formation to reveal an opening, climb inside, and open the urn chest. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "vertical-interior",
+      "name": "Vertical Interior",
+      "location_cue": "A steep internal climb of walls, platforms, and narrow exits.",
+      "note": "SAVE-BACKUP: record 2 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Vertical Interior",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "vertical-interior-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 2 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 2 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Ascension of Atlas. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 2."
+          }
+        }
+      ]
+    },
+    {
+      "id": "great-chasm",
+      "name": "Great Chasm",
+      "location_cue": "A long open gap crossed through gliding, grappling, and isolated platforms.",
+      "note": "SAVE-BACKUP: record 8 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Great Chasm",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "great-chasm-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 8 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 8 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Great Chasm. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 8."
+          }
+        }
+      ]
+    },
+    {
+      "id": "statue-garden",
+      "name": "Statue Garden",
+      "location_cue": "A formal palace garden containing large statues and several side passages.",
+      "note": "SAVE-BACKUP: record 4 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Statue Garden",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "statue-garden-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 4 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 4 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Garden of the Gods. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 4."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sacrifice-hall",
+      "name": "Sacrifice Hall",
+      "location_cue": "A ritual chamber with gated side rooms, switches, and movable objects.",
+      "note": "SAVE-BACKUP: record 6 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Sacrifice Hall",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "sacrifice-hall-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 6 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 6 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Sacrifice to the Fates. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 6."
+          }
+        }
+      ]
+    },
+    {
+      "id": "west-auditorium",
+      "name": "West Auditorium",
+      "location_cue": "A large west-side hall with balconies, gates, and a time-control statue.",
+      "note": "SAVE-BACKUP: record 5 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving West Auditorium",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "west-auditorium-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 5 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 5 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The West Auditorium. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 5."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mirror-auditorium",
+      "name": "Mirror Auditorium",
+      "location_cue": "A mirrored hall with a closing gate and a movable time-control statue.",
+      "note": "SAVE-BACKUP: record 2 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Mirror Auditorium",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "mirror-auditorium-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 2 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 2 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Auditorium of Atropos. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 2."
+          }
+        },
+        {
+          "id": "gift-of-health",
+          "type": "upgrade",
+          "safe_type": "Permanent Gift",
+          "label": "Gift Of Health",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "In the mirror auditorium, wedge the time-control statue beneath the closing gate.",
+            "3": "Push the statue to the gate, pull the lever, and immediately slide the statue underneath so the gate cannot shut. Enter the mirror, freeze time from the far side, and return to the statue's former recess for the permanent health gift. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "underground-entrance",
+      "name": "Underground Entrance",
+      "location_cue": "A descending route with steam vents, glowing wall discs, and ceiling mechanisms.",
+      "note": "SAVE-BACKUP: record 6 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Underground Entrance",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "underground-entrance-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 6 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 6 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in Entrance to the Underground. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 6."
+          }
+        },
+        {
+          "id": "gift-of-magic",
+          "type": "upgrade",
+          "safe_type": "Permanent Gift",
+          "label": "Gift Of Magic",
+          "missable": true,
+          "levels": {
+            "1": "Search grey chests and high side routes before crossing the next one-way obstacle.",
+            "2": "At the underground entrance, shoot the glowing disc above the steam with the ranged tool.",
+            "3": "After descending past the ceiling mechanism, clear the enemies and find the steam vent around the corner. Shoot the glowing wall disc until the panel breaks, glide into the opening, and claim the permanent magic gift. Confirm the corresponding status-menu entry or meter change before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "fire-chamber",
+      "name": "Fire Chamber",
+      "location_cue": "A large fire-lit puzzle complex with spikes, vents, lifts, and many side alcoves.",
+      "note": "SAVE-BACKUP: record 24 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Fire Chamber",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "fire-chamber-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 24 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 24 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Phoenix Chamber. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 24."
+          }
+        }
+      ]
+    },
+    {
+      "id": "inner-sanctum",
+      "name": "Inner Sanctum",
+      "location_cue": "The final palace interior of sealed doors, upper ledges, and combat rooms.",
+      "note": "SAVE-BACKUP: record 6 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Inner Sanctum",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "inner-sanctum-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 6 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 6 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Inner Sanctum. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 6."
+          }
+        }
+      ]
+    },
+    {
+      "id": "loom-hall",
+      "name": "Loom Hall",
+      "location_cue": "A tall mechanical hall surrounding a central loom-like structure.",
+      "note": "SAVE-BACKUP: record 1 tracked reward chests before leaving this save-labelled section.",
+      "save_backup": {
+        "title": "Save before leaving Loom Hall",
+        "why": "The campaign has no chapter select; keep a slot before the next one-way traversal."
+      },
+      "items": [
+        {
+          "id": "loom-hall-tracked-chest-sweep",
+          "type": "optional",
+          "safe_type": "Chest Sweep",
+          "label": "Open All 1 Tracked Reward Chests",
+          "missable": true,
+          "levels": {
+            "1": "Check breakable panels, return paths, and ledges outside the camera's first angle.",
+            "2": "Open all 1 tracked red, grey, urn, or gift chests in this section.",
+            "3": "Use the save-file location name to confirm you are in The Loom Chamber. Sweep every optional branch before the next save label, counting only red-orb, grey collectible, urn, and permanent-gift chests; mark the section at 1."
+          }
+        }
+      ]
+    },
+    {
+      "id": "arsenal-relics-and-upgrades",
+      "name": "Arsenal, Relics, and Upgrades",
+      "location_cue": "The pause-menu power-up screen and the status page showing weapons, magic, relics, and Rage.",
+      "note": "Maximize every red-orb tool and verify all three traversal relics plus Rage.",
+      "items": [
+        {
+          "id": "max-starting-blades",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Starting Blades",
+          "missable": false,
+          "levels": {
+            "1": "Use red orbs on one unfinished tool at a time.",
+            "2": "Acquire Starting Blades from the opening weapon and raise it to its final menu tier.",
+            "3": "Open the power-up screen whenever enough red orbs are held, select Starting Blades, and purchase every displayed tier. Do not mark it complete until no further tier or move purchase remains for that tool."
+          }
+        },
+        {
+          "id": "max-ice-ranged-power",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Ice-Cavern Ranged Power",
+          "missable": false,
+          "levels": {
+            "1": "Use red orbs on one unfinished tool at a time.",
+            "2": "Acquire Ice-Cavern Ranged Power from the ice cavern and raise it to its final menu tier.",
+            "3": "Open the power-up screen whenever enough red orbs are held, select Ice-Cavern Ranged Power, and purchase every displayed tier. Do not mark it complete until no further tier or move purchase remains for that tool."
+          }
+        },
+        {
+          "id": "max-electrical-area-power",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Electrical Area Power",
+          "missable": false,
+          "levels": {
+            "1": "Use red orbs on one unfinished tool at a time.",
+            "2": "Acquire Electrical Area Power from the four-steed route and raise it to its final menu tier.",
+            "3": "Open the power-up screen whenever enough red orbs are held, select Electrical Area Power, and purchase every displayed tier. Do not mark it complete until no further tier or move purchase remains for that tool."
+          }
+        },
+        {
+          "id": "max-petrification-power",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Petrification Power",
+          "missable": false,
+          "levels": {
+            "1": "Use red orbs on one unfinished tool at a time.",
+            "2": "Acquire Petrification Power from the stone temple and raise it to its final menu tier.",
+            "3": "Open the power-up screen whenever enough red orbs are held, select Petrification Power, and purchase every displayed tier. Do not mark it complete until no further tier or move purchase remains for that tool."
+          }
+        },
+        {
+          "id": "max-earth-area-power",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Earth Area Power",
+          "missable": false,
+          "levels": {
+            "1": "Use red orbs on one unfinished tool at a time.",
+            "2": "Acquire Earth Area Power from the giant stone interior and raise it to its final menu tier.",
+            "3": "Open the power-up screen whenever enough red orbs are held, select Earth Area Power, and purchase every displayed tier. Do not mark it complete until no further tier or move purchase remains for that tool."
+          }
+        },
+        {
+          "id": "max-barbarian-hammer",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Heavy Hammer",
+          "missable": false,
+          "levels": {
+            "1": "Use red orbs on one unfinished tool at a time.",
+            "2": "Acquire Heavy Hammer from the swamp route and raise it to its final menu tier.",
+            "3": "Open the power-up screen whenever enough red orbs are held, select Heavy Hammer, and purchase every displayed tier. Do not mark it complete until no further tier or move purchase remains for that tool."
+          }
+        },
+        {
+          "id": "max-spear-of-destiny",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Long Spear",
+          "missable": false,
+          "levels": {
+            "1": "Use red orbs on one unfinished tool at a time.",
+            "2": "Acquire Long Spear from the rooted-cliff route and raise it to its final menu tier.",
+            "3": "Open the power-up screen whenever enough red orbs are held, select Long Spear, and purchase every displayed tier. Do not mark it complete until no further tier or move purchase remains for that tool."
+          }
+        },
+        {
+          "id": "max-bonus-blade",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Bonus-Play Blade",
+          "missable": false,
+          "levels": {
+            "1": "Use red orbs on one unfinished tool at a time.",
+            "2": "Acquire Bonus-Play Blade from clear data and raise it to its final menu tier.",
+            "3": "Open the power-up screen whenever enough red orbs are held, select Bonus-Play Blade, and purchase every displayed tier in Bonus Play. Do not mark it complete until no further tier or move purchase remains for that tool."
+          }
+        },
+        {
+          "id": "relic-time-amulet",
+          "type": "key",
+          "safe_type": "Traversal Relic",
+          "label": "Acquire the Time-Control Relic",
+          "missable": false,
+          "levels": {
+            "1": "A pool-complex mechanism introduces time-sensitive puzzles.",
+            "2": "Take the relic from its pedestal in the raised-pillar chamber.",
+            "3": "Complete the four-pillar mechanism, interact with the pedestal, and test the relic beside a green time statue. Confirm the dedicated meter drains during use and refills afterward."
+          }
+        },
+        {
+          "id": "relic-reflective-fleece",
+          "type": "key",
+          "safe_type": "Traversal Relic",
+          "label": "Acquire the Reflective Defence",
+          "missable": false,
+          "levels": {
+            "1": "A swamp-route encounter grants a timed parry tool.",
+            "2": "Complete the required swamp encounter and retain the reflective defence.",
+            "3": "Finish the encounter that introduces the parry, then press block at the flash during the tutorial projectile. Confirm reflected attacks can break the three sealed panels on the nearby conveyor."
+          }
+        },
+        {
+          "id": "relic-glide-wings",
+          "type": "key",
+          "safe_type": "Traversal Relic",
+          "label": "Acquire the Glide Relic",
+          "missable": false,
+          "levels": {
+            "1": "A later vertical route changes long-gap traversal.",
+            "2": "Complete the mandatory acquisition before the great chasm.",
+            "3": "Finish the vertical-route encounter, retain the wings, and test a full glide by holding jump after a double-jump. Confirm the glide reaches the first required platform before continuing."
+          }
+        },
+        {
+          "id": "rage-of-the-titans",
+          "type": "upgrade",
+          "safe_type": "Rage Mode",
+          "label": "Acquire and Test Rage Mode",
+          "missable": false,
+          "levels": {
+            "1": "The fire cavern introduces a toggleable full-power state.",
+            "2": "Fill the yellow meter and activate Rage once.",
+            "3": "Complete the mandatory fire-cavern acquisition, build yellow energy through combat or chests, and activate the mode with both stick-click inputs. Toggle it off before the meter empties to confirm partial energy is retained."
+          }
+        }
+      ]
+    },
+    {
+      "id": "challenge-of-the-titans",
+      "name": "Challenge of the Titans",
+      "location_cue": "The post-clear Treasures menu and seven isolated ranked trial arenas.",
+      "note": "Complete every trial and raise the overall result through Mortal, Spartan, God, and Titan reward thresholds.",
+      "items": [
+        {
+          "id": "unlock-challenge-of-the-titans",
+          "type": "interaction",
+          "safe_type": "Challenge Mode",
+          "label": "Unlock Challenge of the Titans",
+          "missable": false,
+          "levels": {
+            "1": "The seven ranked trials appear after the first campaign clear.",
+            "2": "Finish the campaign once and open Challenge of the Titans from Treasures.",
+            "3": "Save the first clear, return to Treasures, and enter the seven-trial mode. Each challenge can be retried for a better rank; the overall result controls two urns, one costume, and Arena of the Fates."
+          }
+        },
+        {
+          "id": "challenge-of-the-titans-01",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Titans #1",
+          "missable": false,
+          "levels": {
+            "1": "Focus on the required eye-removal finisher before the timer expires.",
+            "2": "Remove the large enemy's eye within 40 seconds.",
+            "3": "Damage the required target until its grab prompt appears, perform the full eye-removal sequence, and finish before 40 seconds. For stronger ranking points, freeze and shatter two smaller enemies and keep the protected figure above half health."
+          }
+        },
+        {
+          "id": "challenge-of-the-titans-02",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Titans #2",
+          "missable": false,
+          "levels": {
+            "1": "Launch enemies before finishing them.",
+            "2": "Earn 200 points from airborne eliminations.",
+            "3": "Use launchers to lift each target, follow into the air, and deliver the killing hit before landing. Ground eliminations reduce the score, so restart if too many targets die on the floor."
+          }
+        },
+        {
+          "id": "challenge-of-the-titans-03",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Titans #3",
+          "missable": false,
+          "levels": {
+            "1": "Petrify groups and shatter the largest targets first.",
+            "2": "Earn 35 points through petrify-and-shatter eliminations.",
+            "3": "Use the petrification power on clustered targets, immediately break the statues, and prioritize larger enemies because they award more points. Continue until the counter reaches 35."
+          }
+        },
+        {
+          "id": "challenge-of-the-titans-04",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Titans #4",
+          "missable": false,
+          "levels": {
+            "1": "The time-control field pauses the protected figure's health loss.",
+            "2": "Keep the protected figure alive until the challenge ends.",
+            "3": "Move the time statue into useful range, freeze time whenever the protective ring disappears, and eliminate attackers quickly. Keep the figure above half health for the ranking bonus."
+          }
+        },
+        {
+          "id": "challenge-of-the-titans-05",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Titans #5",
+          "missable": false,
+          "levels": {
+            "1": "Use high-orb attacks and avoid wasting defeated enemies.",
+            "2": "Collect at least 500 red orbs within 180 seconds.",
+            "3": "Build long combos and use attacks that force large orb releases, collecting every drop before it fades. Reach 600 orbs for the stronger ranking threshold."
+          }
+        },
+        {
+          "id": "challenge-of-the-titans-06",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Titans #6",
+          "missable": false,
+          "levels": {
+            "1": "Health drains continuously, so offence is the only recovery plan.",
+            "2": "Eliminate every enemy before the health meter empties.",
+            "3": "Use the strongest area attacks on each wave, grab weak targets for quick finishes, and spend Rage if survival requires it. Complete without Rage for the ranking bonus."
+          }
+        },
+        {
+          "id": "challenge-of-the-titans-07",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of the Titans #7",
+          "missable": false,
+          "levels": {
+            "1": "Wake dangerous targets only after the smaller group is controlled.",
+            "2": "Defeat every enemy without taking a hit.",
+            "3": "Clear mobile enemies from range, prevent summoners from creating reinforcements, and leave the largest dormant target until last. Any damage fails the trial; avoiding magic improves the ranking."
+          }
+        },
+        {
+          "id": "challenge-overall-mortal",
+          "type": "optional",
+          "safe_type": "Challenge Rank",
+          "label": "Earn Mortal Overall Rank",
+          "missable": false,
+          "levels": {
+            "1": "Any complete ranked set begins the urn reward ladder.",
+            "2": "Finish all seven trials with at least Mortal overall.",
+            "3": "Complete every challenge, accepting or improving individual scores until the summary reaches Mortal. Return to the bonus menu and confirm the first challenge-only urn is unlocked."
+          }
+        },
+        {
+          "id": "challenge-overall-spartan",
+          "type": "optional",
+          "safe_type": "Challenge Rank",
+          "label": "Earn Spartan Overall Rank",
+          "missable": false,
+          "levels": {
+            "1": "Improve the lowest individual trial scores first.",
+            "2": "Raise the seven-trial summary to Spartan or better.",
+            "3": "Replay challenges with the weakest ranks, complete their bonus conditions where practical, and continue until the overall summary displays Spartan. Confirm the second challenge-only urn appears."
+          }
+        },
+        {
+          "id": "challenge-overall-god",
+          "type": "optional",
+          "safe_type": "Challenge Rank",
+          "label": "Earn God Overall Rank",
+          "missable": false,
+          "levels": {
+            "1": "Bonus conditions become important at the upper ranks.",
+            "2": "Raise the challenge summary to God or better.",
+            "3": "Replay each low-scoring trial and satisfy its optional objective while reducing time and damage. When the overall result reaches God, return to the costume menu and verify the ranking costume is available."
+          }
+        },
+        {
+          "id": "challenge-overall-titan",
+          "type": "optional",
+          "safe_type": "Challenge Rank",
+          "label": "Earn Titan Overall Rank",
+          "missable": false,
+          "levels": {
+            "1": "Every trial needs a strong result for the top summary rank.",
+            "2": "Raise the challenge summary to Titan.",
+            "3": "Optimize all seven trials until their combined score produces Titan overall. Exit to Treasures and verify Arena of the Fates is now selectable."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bonus-play-and-unlocks",
+      "name": "Bonus Play and Unlocks",
+      "location_cue": "The clear-data menu, Treasures screen, costume selector, status page, and custom Arena menu.",
+      "note": "Verify all six urns, seven costumes, both movie viewers, the 20-eye counter, and the custom arena.",
+      "items": [
+        {
+          "id": "cyclops-eyes-20",
+          "type": "collectible",
+          "safe_type": "Combat Collectible",
+          "label": "Extract 20 Cyclops Eyes",
+          "missable": false,
+          "levels": {
+            "1": "Only the grab-finisher version of the takedown advances this counter.",
+            "2": "Perform the eye-removal finisher on 20 eligible cyclopes.",
+            "3": "Damage an eligible cyclops until the grab prompt appears, complete the rotating-stick finisher, and verify an eye is awarded. Use the repeatable first challenge for cleanup after campaign opportunities, then confirm the status counter reaches 20."
+          }
+        },
+        {
+          "id": "arena-of-the-fates",
+          "type": "interaction",
+          "safe_type": "Custom Arena",
+          "label": "Unlock and Test Arena of the Fates",
+          "missable": false,
+          "levels": {
+            "1": "The custom arena is the top challenge-ranking reward.",
+            "2": "Earn Titan overall in Challenge of the Titans and open Arena of the Fates.",
+            "3": "After the Titan summary appears, enter the Arena menu, create at least one custom fight, alter difficulty, enemy selection, health, magic, and Rage settings, then finish or safely exit the match to verify the mode."
+          }
+        },
+        {
+          "id": "urn-of-the-fates",
+          "type": "treasure",
+          "safe_type": "Bonus-Play Urn",
+          "label": "Urn of the Fates",
+          "missable": false,
+          "levels": {
+            "1": "The first challenge rank threshold grants an urn.",
+            "2": "Earn Mortal overall in Challenge of the Titans.",
+            "3": "Finish all seven challenges with at least Mortal overall, start Bonus Play, open the status screen, and enable the newly listed urn once. Verify its time-related modifier is active before disabling it."
+          }
+        },
+        {
+          "id": "urn-of-poseidon",
+          "type": "treasure",
+          "safe_type": "Bonus-Play Urn",
+          "label": "Urn of Poseidon",
+          "missable": false,
+          "levels": {
+            "1": "A stronger overall challenge rank grants the sixth urn.",
+            "2": "Earn Spartan overall in Challenge of the Titans.",
+            "3": "Raise the seven-trial summary to Spartan or better, start Bonus Play, and toggle the second challenge urn from the status screen. Confirm its magic-related modifier takes effect."
+          }
+        },
+        {
+          "id": "costume-cod-of-war",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Cod of War",
+          "missable": false,
+          "levels": {
+            "1": "Bonus costumes appear in the New Game or Bonus Play setup after their condition is met.",
+            "2": "Unlock Cod of War: complete the campaign once.",
+            "3": "Meet the condition to complete the campaign once, return to the new-game setup, and select Cod of War. Begin a controllable section and confirm the model and its gameplay modifiers load correctly before marking it complete."
+          }
+        },
+        {
+          "id": "costume-hydra-armor",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Hydra Armor",
+          "missable": false,
+          "levels": {
+            "1": "Bonus costumes appear in the New Game or Bonus Play setup after their condition is met.",
+            "2": "Unlock Hydra Armor: complete the campaign once.",
+            "3": "Meet the condition to complete the campaign once, return to the new-game setup, and select Hydra Armor. Begin a controllable section and confirm the model and its gameplay modifiers load correctly before marking it complete."
+          }
+        },
+        {
+          "id": "costume-dark-odyssey",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Dark Odyssey",
+          "missable": false,
+          "levels": {
+            "1": "Bonus costumes appear in the New Game or Bonus Play setup after their condition is met.",
+            "2": "Unlock Dark Odyssey: complete God difficulty.",
+            "3": "Meet the condition to complete God difficulty, return to the new-game setup, and select Dark Odyssey. Begin a controllable section and confirm the model and its gameplay modifiers load correctly before marking it complete."
+          }
+        },
+        {
+          "id": "costume-athena",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Athena",
+          "missable": false,
+          "levels": {
+            "1": "Bonus costumes appear in the New Game or Bonus Play setup after their condition is met.",
+            "2": "Unlock Athena: complete Titan difficulty.",
+            "3": "Meet the condition to complete Titan difficulty, return to the new-game setup, and select Athena. Begin a controllable section and confirm the model and its gameplay modifiers load correctly before marking it complete."
+          }
+        },
+        {
+          "id": "costume-hercules",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Hercules",
+          "missable": false,
+          "levels": {
+            "1": "Bonus costumes appear in the New Game or Bonus Play setup after their condition is met.",
+            "2": "Unlock Hercules: complete Titan difficulty.",
+            "3": "Meet the condition to complete Titan difficulty, return to the new-game setup, and select Hercules. Begin a controllable section and confirm the model and its gameplay modifiers load correctly before marking it complete."
+          }
+        },
+        {
+          "id": "costume-general-kratos",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "General Kratos",
+          "missable": false,
+          "levels": {
+            "1": "Bonus costumes appear in the New Game or Bonus Play setup after their condition is met.",
+            "2": "Unlock General Kratos: extract 20 cyclops eyes.",
+            "3": "Meet the condition to extract 20 cyclops eyes, return to the new-game setup, and select General Kratos. Begin a controllable section and confirm the model and its gameplay modifiers load correctly before marking it complete."
+          }
+        },
+        {
+          "id": "costume-god-of-war-armor",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "God of War Armor",
+          "missable": false,
+          "levels": {
+            "1": "Bonus costumes appear in the New Game or Bonus Play setup after their condition is met.",
+            "2": "Unlock God of War Armor: earn God overall in the challenges.",
+            "3": "Meet the condition to earn God overall in the challenges, return to the new-game setup, and select God of War Armor. Begin a controllable section and confirm the model and its gameplay modifiers load correctly before marking it complete."
+          }
+        },
+        {
+          "id": "movies-high-resolution",
+          "type": "optional",
+          "safe_type": "Bonus Menu",
+          "label": "Unlock the High-Resolution Movie Viewer",
+          "missable": false,
+          "levels": {
+            "1": "One movie viewer opens with the first clear.",
+            "2": "Complete the campaign and open the high-resolution movie viewer in Treasures.",
+            "3": "Save the first clear, return to Treasures, and open the high-resolution movie viewer once. Do not use this guide to preview its narrative contents before finishing the campaign."
+          }
+        },
+        {
+          "id": "movies-story-format",
+          "type": "optional",
+          "safe_type": "Bonus Menu",
+          "label": "Unlock the Story-Format Movie Viewer",
+          "missable": false,
+          "levels": {
+            "1": "The second viewer is also a first-clear reward.",
+            "2": "Complete the campaign and open the story-format movie viewer in Treasures.",
+            "3": "After creating clear data, enter Treasures and open the story-format movie viewer once. Its contents are intentionally withheld here to preserve the spoiler-free contract."
+          }
+        },
+        {
+          "id": "activate-all-six-urns",
+          "type": "optional",
+          "safe_type": "Bonus Play",
+          "label": "Activate All Six Urn Powers",
+          "missable": false,
+          "levels": {
+            "1": "Urn effects work only during Bonus Play.",
+            "2": "Collect all four campaign urns and both challenge urns, then start Bonus Play.",
+            "3": "Open the status screen during Bonus Play and toggle each of the six urns on individually. Perform a short combat or traversal test for every effect, then disable it before testing the next so the ledger remains unambiguous."
+          }
+        }
+      ]
+    }
+  ]
+}

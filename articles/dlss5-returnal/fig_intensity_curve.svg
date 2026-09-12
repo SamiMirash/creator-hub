@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="2160" viewBox="0 0 3840 2160" role="img" aria-labelledby="title desc">
+  <title id="title">NR Intensity versus measured character-detail gain</title>
+  <desc id="desc">A line chart rises from zero percent at intensity zero to forty-nine percent at intensity one, then plateaus near fifty percent through intensity two.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080b11"/>
+      <stop offset="1" stop-color="#111722"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#56f39a" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#56f39a" stop-opacity="0.02"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="3840" height="2160" rx="84" fill="url(#bg)"/>
+  <rect x="1960" y="300" width="1540" height="1440" fill="#56f39a" opacity="0.035"/>
+  <line x1="1960" y1="300" x2="1960" y2="1740" stroke="#56f39a" stroke-width="5" stroke-dasharray="24 24" opacity="0.6"/>
+
+  <text x="260" y="190" fill="#f4f7fb" font-family="Segoe UI, Arial, sans-serif" font-size="92" font-weight="700">NR Intensity reaches its useful plateau at 1.0</text>
+  <text x="260" y="275" fill="#9eabba" font-family="Segoe UI, Arial, sans-serif" font-size="48">Measured character edge-detail gain relative to Neural Rendering off</text>
+
+  <g stroke="#ffffff" stroke-opacity="0.10" stroke-width="3">
+    <line x1="420" y1="1740" x2="3500" y2="1740"/>
+    <line x1="420" y1="1500" x2="3500" y2="1500"/>
+    <line x1="420" y1="1260" x2="3500" y2="1260"/>
+    <line x1="420" y1="1020" x2="3500" y2="1020"/>
+    <line x1="420" y1="780" x2="3500" y2="780"/>
+    <line x1="420" y1="540" x2="3500" y2="540"/>
+    <line x1="420" y1="300" x2="3500" y2="300"/>
+  </g>
+
+  <g fill="#91a0b1" font-family="Segoe UI, Arial, sans-serif" font-size="42" text-anchor="end">
+    <text x="365" y="1755">0%</text>
+    <text x="365" y="1515">10%</text>
+    <text x="365" y="1275">20%</text>
+    <text x="365" y="1035">30%</text>
+    <text x="365" y="795">40%</text>
+    <text x="365" y="555">50%</text>
+    <text x="365" y="315">60%</text>
+  </g>
+
+  <path d="M420 1740 L805 1572 L1190 1380 L1575 804 L1960 564 L2345 516 L2730 588 L3500 588 L3500 1740 Z" fill="url(#area)"/>
+  <path d="M420 1740 L805 1572 L1190 1380 L1575 804 L1960 564 L2345 516 L2730 588 L3500 588" fill="none" stroke="#56f39a" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <g fill="#0b1017" stroke="#7affb1" stroke-width="12">
+    <circle cx="420" cy="1740" r="25"/>
+    <circle cx="805" cy="1572" r="25"/>
+    <circle cx="1190" cy="1380" r="25"/>
+    <circle cx="1575" cy="804" r="25"/>
+    <circle cx="1960" cy="564" r="34" fill="#56f39a"/>
+    <circle cx="2345" cy="516" r="25"/>
+    <circle cx="2730" cy="588" r="25"/>
+    <circle cx="3500" cy="588" r="25"/>
+  </g>
+
+  <g fill="#f4f7fb" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="650" text-anchor="middle">
+    <text x="420" y="1665">0%</text>
+    <text x="805" y="1497">+7%</text>
+    <text x="1190" y="1305">+15%</text>
+    <text x="1575" y="729">+39%</text>
+    <text x="1960" y="489" fill="#7affb1">+49%</text>
+    <text x="2345" y="441">+51%</text>
+    <text x="2730" y="698">+48%</text>
+    <text x="3500" y="698">+48%</text>
+  </g>
+
+  <g fill="#91a0b1" font-family="Segoe UI, Arial, sans-serif" font-size="42" text-anchor="middle">
+    <text x="420" y="1825">0.0</text>
+    <text x="805" y="1825">0.25</text>
+    <text x="1190" y="1825">0.5</text>
+    <text x="1575" y="1825">0.75</text>
+    <text x="1960" y="1825" fill="#7affb1" font-weight="700">1.0</text>
+    <text x="2345" y="1825">1.25</text>
+    <text x="2730" y="1825">1.5</text>
+    <text x="3500" y="1825">2.0</text>
+  </g>
+
+  <text x="1960" y="1955" fill="#f4f7fb" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="600" text-anchor="middle">NR Intensity</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="2520" y="335" width="820" height="118" rx="59" fill="#0f1820" stroke="#56f39a" stroke-opacity="0.35" stroke-width="3"/>
+    <text x="2930" y="410" fill="#b9c7d6" font-size="42" text-anchor="middle">Beyond 1.0: inside scene noise</text>
+  </g>
+</svg>

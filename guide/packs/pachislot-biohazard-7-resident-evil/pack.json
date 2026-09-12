@@ -1,0 +1,1156 @@
+{
+  "id": "pachislot-biohazard-7-resident-evil",
+  "game": "Pachislot BIOHAZARD 7 Resident Evil",
+  "target": "Spoiler-free maximum verifiable completion of the original Japanese pachislot cabinet",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "route",
+      "name": "Archival Route",
+      "location_cue": "The Adelion cabinet, model plate, reels, controls, main display, side lighting, speakers, and service record.",
+      "note": "Lawful private non-wager free play only.",
+      "save_backup": {
+        "title": "Preserve the machine state first",
+        "why": "Rare random sequences and settings may not recur.",
+        "detail": "Record configuration, counters, hardware, and synchronized video before testing this section."
+      },
+      "items": [
+        {
+          "id": "route-original",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Original Japanese Cabinet",
+          "missable": true,
+          "levels": {
+            "1": "The selected route is the original amusement-machine release.",
+            "2": "Use an authentic Adelion cabinet distributed for the 2021 launch.",
+            "3": "Verify model plate, cabinet shell, reels, controls, display, side lighting, firmware, and service record before capture."
+          }
+        },
+        {
+          "id": "route-date",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Release-Date Reconciliation",
+          "missable": false,
+          "levels": {
+            "1": "Some archival lists use the announcement year.",
+            "2": "Record both the catalog year and the public cabinet-launch date.",
+            "3": "Keep the catalog's 2020 label in research metadata while identifying the verified hall introduction as February 2021. Do not split them into two machines."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "route-free-play",
+          "type": "interaction",
+          "safe_type": "Safety",
+          "label": "Private Free-Play Setup",
+          "missable": false,
+          "levels": {
+            "1": "Completion never requires wagering.",
+            "2": "Use a lawfully owned cabinet configured for non-wager free play.",
+            "3": "Have an authorized owner follow operator documentation. Do not deposit money, seek payouts, bypass safety systems, or use public gambling to trigger content."
+          }
+        },
+        {
+          "id": "route-capture",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Synchronized Cabinet Capture",
+          "missable": true,
+          "levels": {
+            "1": "Reels, controls, display, lighting, and audio act together.",
+            "2": "Record the whole cabinet continuously.",
+            "3": "Begin before power-on and preserve every lever pull, reel stop, button press, display transition, lamp, speaker cue, counter, result, and reset in one uncut master."
+          }
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "name": "Cabinet Hardware",
+      "location_cue": "The reels, lever, stop and chance controls, main display, colored side bands, and speakers.",
+      "note": "Every physical component is recorded in context.",
+      "save_backup": {
+        "title": "Preserve the machine state first",
+        "why": "Rare random sequences and settings may not recur.",
+        "detail": "Record configuration, counters, hardware, and synchronized video before testing this section."
+      },
+      "items": [
+        {
+          "id": "hardware-three-reels",
+          "type": "secret",
+          "safe_type": "Cabinet Element",
+          "label": "Three Reels",
+          "missable": true,
+          "levels": {
+            "1": "A cabinet element has distinct behaviour.",
+            "2": "Watch for three reels.",
+            "3": "Capture the lead-in, exact input, full three reels response, all reels, display, lighting, audio, result, reset, and next playable state. Stop if hardware behaves unsafely."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hardware-lever",
+          "type": "secret",
+          "safe_type": "Cabinet Element",
+          "label": "Lever",
+          "missable": true,
+          "levels": {
+            "1": "A cabinet element has distinct behaviour.",
+            "2": "Watch for lever.",
+            "3": "Capture the lead-in, exact input, full lever response, all reels, display, lighting, audio, result, reset, and next playable state. Stop if hardware behaves unsafely."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hardware-stop-buttons",
+          "type": "secret",
+          "safe_type": "Cabinet Element",
+          "label": "Stop Buttons",
+          "missable": true,
+          "levels": {
+            "1": "A cabinet element has distinct behaviour.",
+            "2": "Watch for stop buttons.",
+            "3": "Capture the lead-in, exact input, full stop buttons response, all reels, display, lighting, audio, result, reset, and next playable state. Stop if hardware behaves unsafely."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hardware-chance-button",
+          "type": "secret",
+          "safe_type": "Cabinet Element",
+          "label": "Chance Button",
+          "missable": true,
+          "levels": {
+            "1": "A cabinet element has distinct behaviour.",
+            "2": "Watch for chance button.",
+            "3": "Capture the lead-in, exact input, full chance button response, all reels, display, lighting, audio, result, reset, and next playable state. Stop if hardware behaves unsafely."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hardware-main-display",
+          "type": "secret",
+          "safe_type": "Cabinet Element",
+          "label": "Main Display",
+          "missable": true,
+          "levels": {
+            "1": "A cabinet element has distinct behaviour.",
+            "2": "Watch for main display.",
+            "3": "Capture the lead-in, exact input, full main display response, all reels, display, lighting, audio, result, reset, and next playable state. Stop if hardware behaves unsafely."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hardware-side-band-lighting",
+          "type": "secret",
+          "safe_type": "Cabinet Element",
+          "label": "Side-Band Lighting",
+          "missable": true,
+          "levels": {
+            "1": "A cabinet element has distinct behaviour.",
+            "2": "Watch for side-band lighting.",
+            "3": "Capture the lead-in, exact input, full side-band lighting response, all reels, display, lighting, audio, result, reset, and next playable state. Stop if hardware behaves unsafely."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hardware-speakers",
+          "type": "secret",
+          "safe_type": "Cabinet Element",
+          "label": "Speakers",
+          "missable": true,
+          "levels": {
+            "1": "A cabinet element has distinct behaviour.",
+            "2": "Watch for speakers.",
+            "3": "Capture the lead-in, exact input, full speakers response, all reels, display, lighting, audio, result, reset, and next playable state. Stop if hardware behaves unsafely."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "normal-modes",
+      "name": "Normal Modes",
+      "location_cue": "The ordinary reel display, game counter, physical backdrops, item icons, points, hints, and service or data logs.",
+      "note": "Hidden modes require direct evidence.",
+      "save_backup": {
+        "title": "Preserve the machine state first",
+        "why": "Rare random sequences and settings may not recur.",
+        "detail": "Record configuration, counters, hardware, and synchronized video before testing this section."
+      },
+      "items": [
+        {
+          "id": "mode-normal-a",
+          "type": "optional",
+          "safe_type": "Internal Mode",
+          "label": "Internal Mode #1",
+          "missable": true,
+          "levels": {
+            "1": "Ordinary play can occupy a hidden progression mode.",
+            "2": "Use direct logs or service evidence to identify mode 1.",
+            "3": "Record starting configuration, prior result, game counter, reel sequence, visible hints, Climax trigger, and following state for internal mode 1. Do not infer the mode from a single cue."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-normal-b",
+          "type": "optional",
+          "safe_type": "Internal Mode",
+          "label": "Internal Mode #2",
+          "missable": true,
+          "levels": {
+            "1": "Ordinary play can occupy a hidden progression mode.",
+            "2": "Use direct logs or service evidence to identify mode 2.",
+            "3": "Record starting configuration, prior result, game counter, reel sequence, visible hints, Climax trigger, and following state for internal mode 2. Do not infer the mode from a single cue."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-normal-c",
+          "type": "optional",
+          "safe_type": "Internal Mode",
+          "label": "Internal Mode #3",
+          "missable": true,
+          "levels": {
+            "1": "Ordinary play can occupy a hidden progression mode.",
+            "2": "Use direct logs or service evidence to identify mode 3.",
+            "3": "Record starting configuration, prior result, game counter, reel sequence, visible hints, Climax trigger, and following state for internal mode 3. Do not infer the mode from a single cue."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-heaven-mode",
+          "type": "optional",
+          "safe_type": "Internal Mode",
+          "label": "Internal Mode #4",
+          "missable": true,
+          "levels": {
+            "1": "Ordinary play can occupy a hidden progression mode.",
+            "2": "Use direct logs or service evidence to identify mode 4.",
+            "3": "Record starting configuration, prior result, game counter, reel sequence, visible hints, Climax trigger, and following state for internal mode 4. Do not infer the mode from a single cue."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "normal-systems",
+      "name": "Normal-Play Systems",
+      "location_cue": "The item display, mode cues, point meter, bullets, exterior reset backdrop, and interval lamp.",
+      "note": "Systems are described mechanically and reveal no plot.",
+      "save_backup": {
+        "title": "Preserve the machine state first",
+        "why": "Rare random sequences and settings may not recur.",
+        "detail": "Record configuration, counters, hardware, and synchronized video before testing this section."
+      },
+      "items": [
+        {
+          "id": "normal-item-acquisition",
+          "type": "optional",
+          "safe_type": "Normal System",
+          "label": "Item Acquisition",
+          "missable": true,
+          "levels": {
+            "1": "Ordinary play contains this distinct progression system.",
+            "2": "Watch the normal screen for item acquisition.",
+            "3": "Capture its trigger, starting counter and inventory, reel result, full item acquisition effect, any conversion or reward, Climax transition, and following state."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-mode-hints",
+          "type": "optional",
+          "safe_type": "Normal System",
+          "label": "Mode Hints",
+          "missable": true,
+          "levels": {
+            "1": "Ordinary play contains this distinct progression system.",
+            "2": "Watch the normal screen for mode hints.",
+            "3": "Capture its trigger, starting counter and inventory, reel result, full mode hints effect, any conversion or reward, Climax transition, and following state."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-point-accumulation",
+          "type": "optional",
+          "safe_type": "Normal System",
+          "label": "Point Accumulation",
+          "missable": true,
+          "levels": {
+            "1": "Ordinary play contains this distinct progression system.",
+            "2": "Watch the normal screen for point accumulation.",
+            "3": "Capture its trigger, starting counter and inventory, reel result, full point accumulation effect, any conversion or reward, Climax transition, and following state."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-bullet-conversion",
+          "type": "optional",
+          "safe_type": "Normal System",
+          "label": "Bullet Conversion",
+          "missable": true,
+          "levels": {
+            "1": "Ordinary play contains this distinct progression system.",
+            "2": "Watch the normal screen for bullet conversion.",
+            "3": "Capture its trigger, starting counter and inventory, reel result, full bullet conversion effect, any conversion or reward, Climax transition, and following state."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-outside-reset-state",
+          "type": "optional",
+          "safe_type": "Normal System",
+          "label": "Outside Reset State",
+          "missable": true,
+          "levels": {
+            "1": "Ordinary play contains this distinct progression system.",
+            "2": "Watch the normal screen for outside reset state.",
+            "3": "Capture its trigger, starting counter and inventory, reel result, full outside reset state effect, any conversion or reward, Climax transition, and following state."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-continuous-interval",
+          "type": "optional",
+          "safe_type": "Normal System",
+          "label": "Continuous Interval",
+          "missable": true,
+          "levels": {
+            "1": "Ordinary play contains this distinct progression system.",
+            "2": "Watch the normal screen for continuous interval.",
+            "3": "Capture its trigger, starting counter and inventory, reel result, full continuous interval effect, any conversion or reward, Climax transition, and following state."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "climax",
+      "name": "Climax Battle",
+      "location_cue": "The self-contained qualifying sequence, episode screen, seven-step confrontation, two-win tracker, and result.",
+      "note": "All opponent identities are withheld.",
+      "save_backup": {
+        "title": "Preserve the machine state first",
+        "why": "Rare random sequences and settings may not recur.",
+        "detail": "Record configuration, counters, hardware, and synchronized video before testing this section."
+      },
+      "items": [
+        {
+          "id": "climax-climax-battle",
+          "type": "optional",
+          "safe_type": "Climax System",
+          "label": "Climax Battle",
+          "missable": true,
+          "levels": {
+            "1": "The main qualifying sequence contains this phase.",
+            "2": "Capture entry into Climax Battle.",
+            "3": "Record the trigger, selected physical scenario, starting resources, reels, controls, every round, success or failure, retained progress, AT transition when earned, and return state for Climax Battle."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "climax-first-battle",
+          "type": "optional",
+          "safe_type": "Climax System",
+          "label": "First Battle",
+          "missable": true,
+          "levels": {
+            "1": "The main qualifying sequence contains this phase.",
+            "2": "Capture entry into first battle.",
+            "3": "Record the trigger, selected physical scenario, starting resources, reels, controls, every round, success or failure, retained progress, AT transition when earned, and return state for first battle."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "climax-second-battle",
+          "type": "optional",
+          "safe_type": "Climax System",
+          "label": "Second Battle",
+          "missable": true,
+          "levels": {
+            "1": "The main qualifying sequence contains this phase.",
+            "2": "Capture entry into second battle.",
+            "3": "Record the trigger, selected physical scenario, starting resources, reels, controls, every round, success or failure, retained progress, AT transition when earned, and return state for second battle."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "climax-episode-phase",
+          "type": "optional",
+          "safe_type": "Climax System",
+          "label": "Episode Phase",
+          "missable": true,
+          "levels": {
+            "1": "The main qualifying sequence contains this phase.",
+            "2": "Capture entry into episode phase.",
+            "3": "Record the trigger, selected physical scenario, starting resources, reels, controls, every round, success or failure, retained progress, AT transition when earned, and return state for episode phase."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "climax-climax-7-phase",
+          "type": "optional",
+          "safe_type": "Climax System",
+          "label": "Climax 7 Phase",
+          "missable": true,
+          "levels": {
+            "1": "The main qualifying sequence contains this phase.",
+            "2": "Capture entry into Climax 7 phase.",
+            "3": "Record the trigger, selected physical scenario, starting resources, reels, controls, every round, success or failure, retained progress, AT transition when earned, and return state for Climax 7 phase."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "climax-two-win-completion",
+          "type": "optional",
+          "safe_type": "Climax System",
+          "label": "Two-Win Completion",
+          "missable": true,
+          "levels": {
+            "1": "The main qualifying sequence contains this phase.",
+            "2": "Capture entry into two-win completion.",
+            "3": "Record the trigger, selected physical scenario, starting resources, reels, controls, every round, success or failure, retained progress, AT transition when earned, and return state for two-win completion."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "hazard-rush",
+      "name": "Hazard Rush",
+      "location_cue": "The assisted-play counter, starting feature, multiplying values, colored stage bands, Wild Fire transition, and ending screen.",
+      "note": "Rare AT features are archival records, not wagering targets.",
+      "save_backup": {
+        "title": "Preserve the machine state first",
+        "why": "Rare random sequences and settings may not recur.",
+        "detail": "Record configuration, counters, hardware, and synchronized video before testing this section."
+      },
+      "items": [
+        {
+          "id": "at-hazard-rush",
+          "type": "optional",
+          "safe_type": "AT System",
+          "label": "Hazard Rush",
+          "missable": true,
+          "levels": {
+            "1": "The assisted state contains this mode or feature.",
+            "2": "Capture entry into Hazard Rush.",
+            "3": "Record trigger, starting counter, side-band color, reels, controls, every added value or split, Wild Fire transition, terminal result, revival when present, and next state for Hazard Rush."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "at-shooting-attack",
+          "type": "optional",
+          "safe_type": "AT System",
+          "label": "Shooting Attack",
+          "missable": true,
+          "levels": {
+            "1": "The assisted state contains this mode or feature.",
+            "2": "Capture entry into Shooting Attack.",
+            "3": "Record trigger, starting counter, side-band color, reels, controls, every added value or split, Wild Fire transition, terminal result, revival when present, and next state for Shooting Attack."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "at-eveline-impact",
+          "type": "optional",
+          "safe_type": "AT System",
+          "label": "Eveline Impact",
+          "missable": true,
+          "levels": {
+            "1": "The assisted state contains this mode or feature.",
+            "2": "Capture entry into Eveline Impact.",
+            "3": "Record trigger, starting counter, side-band color, reels, controls, every added value or split, Wild Fire transition, terminal result, revival when present, and next state for Eveline Impact."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "at-multiplication-extension",
+          "type": "optional",
+          "safe_type": "AT System",
+          "label": "multiplication extension",
+          "missable": true,
+          "levels": {
+            "1": "The assisted state contains this mode or feature.",
+            "2": "Capture entry into multiplication extension.",
+            "3": "Record trigger, starting counter, side-band color, reels, controls, every added value or split, Wild Fire transition, terminal result, revival when present, and next state for multiplication extension."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "at-wild-fire",
+          "type": "optional",
+          "safe_type": "AT System",
+          "label": "Wild Fire",
+          "missable": true,
+          "levels": {
+            "1": "The assisted state contains this mode or feature.",
+            "2": "Capture entry into Wild Fire.",
+            "3": "Record trigger, starting counter, side-band color, reels, controls, every added value or split, Wild Fire transition, terminal result, revival when present, and next state for Wild Fire."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "at-three-stage-band-colors",
+          "type": "optional",
+          "safe_type": "AT System",
+          "label": "three stage-band colors",
+          "missable": true,
+          "levels": {
+            "1": "The assisted state contains this mode or feature.",
+            "2": "Capture entry into three stage-band colors.",
+            "3": "Record trigger, starting counter, side-band color, reels, controls, every added value or split, Wild Fire transition, terminal result, revival when present, and next state for three stage-band colors."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "at-at-direct-entry",
+          "type": "optional",
+          "safe_type": "AT System",
+          "label": "AT direct entry",
+          "missable": true,
+          "levels": {
+            "1": "The assisted state contains this mode or feature.",
+            "2": "Capture entry into AT direct entry.",
+            "3": "Record trigger, starting counter, side-band color, reels, controls, every added value or split, Wild Fire transition, terminal result, revival when present, and next state for AT direct entry."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "at-ending-presentation",
+          "type": "optional",
+          "safe_type": "AT System",
+          "label": "ending presentation",
+          "missable": true,
+          "levels": {
+            "1": "The assisted state contains this mode or feature.",
+            "2": "Capture entry into ending presentation.",
+            "3": "Record trigger, starting counter, side-band color, reels, controls, every added value or split, Wild Fire transition, terminal result, revival when present, and next state for ending presentation."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "attack-details",
+      "name": "Attack and Extension Details",
+      "location_cue": "The attack animation, value display, splitting effect, END marker, and revival result.",
+      "note": "Physical attack descriptions avoid character identities.",
+      "save_backup": {
+        "title": "Preserve the machine state first",
+        "why": "Rare random sequences and settings may not recur.",
+        "detail": "Record configuration, counters, hardware, and synchronized video before testing this section."
+      },
+      "items": [
+        {
+          "id": "attack-ordinary-attack",
+          "type": "secret",
+          "safe_type": "Attack Detail",
+          "label": "Ordinary Attack",
+          "missable": true,
+          "levels": {
+            "1": "An assisted feature contains this distinct attack or terminal pattern.",
+            "2": "Watch the starting or extension feature for ordinary attack.",
+            "3": "Capture the initiating reel result, exact input, full ordinary attack animation, added value, multiplication, END marker, revival when present, and return to assisted play."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "attack-rare-role-attack",
+          "type": "secret",
+          "safe_type": "Attack Detail",
+          "label": "Rare-Role Attack",
+          "missable": true,
+          "levels": {
+            "1": "An assisted feature contains this distinct attack or terminal pattern.",
+            "2": "Watch the starting or extension feature for rare-role attack.",
+            "3": "Capture the initiating reel result, exact input, full rare-role attack animation, added value, multiplication, END marker, revival when present, and return to assisted play."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "attack-maximum-split",
+          "type": "secret",
+          "safe_type": "Attack Detail",
+          "label": "Maximum Split",
+          "missable": true,
+          "levels": {
+            "1": "An assisted feature contains this distinct attack or terminal pattern.",
+            "2": "Watch the starting or extension feature for maximum split.",
+            "3": "Capture the initiating reel result, exact input, full maximum split animation, added value, multiplication, END marker, revival when present, and return to assisted play."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "attack-end-revival",
+          "type": "secret",
+          "safe_type": "Attack Detail",
+          "label": "End Revival",
+          "missable": true,
+          "levels": {
+            "1": "An assisted feature contains this distinct attack or terminal pattern.",
+            "2": "Watch the starting or extension feature for END revival.",
+            "3": "Capture the initiating reel result, exact input, full END revival animation, added value, multiplication, END marker, revival when present, and return to assisted play."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "name": "Music Catalogue",
+      "location_cue": "The assisted-mode music selector, cabinet speakers, feature transitions, and ending presentation.",
+      "note": "All 11 documented tracks are represented.",
+      "save_backup": {
+        "title": "Preserve the machine state first",
+        "why": "Rare random sequences and settings may not recur.",
+        "detail": "Record configuration, counters, hardware, and synchronized video before testing this section."
+      },
+      "items": [
+        {
+          "id": "music-bullet-waiting",
+          "type": "secret",
+          "safe_type": "Music Track",
+          "label": "Bullet Waiting",
+          "missable": true,
+          "levels": {
+            "1": "A selectable or state-specific track belongs in the audio catalogue.",
+            "2": "During assisted play, select or listen for Bullet Waiting.",
+            "3": "Capture the menu selection or trigger, uninterrupted audible section, screen context, reels, result, and following state for Bullet Waiting. Confirm the title from reliable soundtrack metadata."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "music-fallen-friends",
+          "type": "secret",
+          "safe_type": "Music Track",
+          "label": "Fallen Friends",
+          "missable": true,
+          "levels": {
+            "1": "A selectable or state-specific track belongs in the audio catalogue.",
+            "2": "During assisted play, select or listen for Fallen Friends.",
+            "3": "Capture the menu selection or trigger, uninterrupted audible section, screen context, reels, result, and following state for Fallen Friends. Confirm the title from reliable soundtrack metadata."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "music-the-spaces-in-between",
+          "type": "secret",
+          "safe_type": "Music Track",
+          "label": "The spaces in between",
+          "missable": true,
+          "levels": {
+            "1": "A selectable or state-specific track belongs in the audio catalogue.",
+            "2": "During assisted play, select or listen for The spaces in between.",
+            "3": "Capture the menu selection or trigger, uninterrupted audible section, screen context, reels, result, and following state for The spaces in between. Confirm the title from reliable soundtrack metadata."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "music-storm-the-gates",
+          "type": "secret",
+          "safe_type": "Music Track",
+          "label": "Storm the Gates",
+          "missable": true,
+          "levels": {
+            "1": "A selectable or state-specific track belongs in the audio catalogue.",
+            "2": "During assisted play, select or listen for Storm the Gates.",
+            "3": "Capture the menu selection or trigger, uninterrupted audible section, screen context, reels, result, and following state for Storm the Gates. Confirm the title from reliable soundtrack metadata."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "music-still-alive",
+          "type": "secret",
+          "safe_type": "Music Track",
+          "label": "Still Alive",
+          "missable": true,
+          "levels": {
+            "1": "A selectable or state-specific track belongs in the audio catalogue.",
+            "2": "During assisted play, select or listen for Still Alive.",
+            "3": "Capture the menu selection or trigger, uninterrupted audible section, screen context, reels, result, and following state for Still Alive. Confirm the title from reliable soundtrack metadata."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "music-cause-never-lost",
+          "type": "secret",
+          "safe_type": "Music Track",
+          "label": "Cause Never Lost",
+          "missable": true,
+          "levels": {
+            "1": "A selectable or state-specific track belongs in the audio catalogue.",
+            "2": "During assisted play, select or listen for Cause Never Lost.",
+            "3": "Capture the menu selection or trigger, uninterrupted audible section, screen context, reels, result, and following state for Cause Never Lost. Confirm the title from reliable soundtrack metadata."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "music-test-of-time",
+          "type": "secret",
+          "safe_type": "Music Track",
+          "label": "Test Of Time",
+          "missable": true,
+          "levels": {
+            "1": "A selectable or state-specific track belongs in the audio catalogue.",
+            "2": "During assisted play, select or listen for Test Of Time.",
+            "3": "Capture the menu selection or trigger, uninterrupted audible section, screen context, reels, result, and following state for Test Of Time. Confirm the title from reliable soundtrack metadata."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "music-fireproof",
+          "type": "secret",
+          "safe_type": "Music Track",
+          "label": "Fireproof",
+          "missable": true,
+          "levels": {
+            "1": "A selectable or state-specific track belongs in the audio catalogue.",
+            "2": "During assisted play, select or listen for Fireproof.",
+            "3": "Capture the menu selection or trigger, uninterrupted audible section, screen context, reels, result, and following state for Fireproof. Confirm the title from reliable soundtrack metadata."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "music-phoenix",
+          "type": "secret",
+          "safe_type": "Music Track",
+          "label": "Phoenix",
+          "missable": true,
+          "levels": {
+            "1": "A selectable or state-specific track belongs in the audio catalogue.",
+            "2": "During assisted play, select or listen for Phoenix.",
+            "3": "Capture the menu selection or trigger, uninterrupted audible section, screen context, reels, result, and following state for Phoenix. Confirm the title from reliable soundtrack metadata."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "music-fear-comes-home",
+          "type": "secret",
+          "safe_type": "Music Track",
+          "label": "Fear Comes Home",
+          "missable": true,
+          "levels": {
+            "1": "A selectable or state-specific track belongs in the audio catalogue.",
+            "2": "During assisted play, select or listen for Fear Comes Home.",
+            "3": "Capture the menu selection or trigger, uninterrupted audible section, screen context, reels, result, and following state for Fear Comes Home. Confirm the title from reliable soundtrack metadata."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "music-unbowed",
+          "type": "secret",
+          "safe_type": "Music Track",
+          "label": "UNBOWED",
+          "missable": true,
+          "levels": {
+            "1": "A selectable or state-specific track belongs in the audio catalogue.",
+            "2": "During assisted play, select or listen for UNBOWED.",
+            "3": "Capture the menu selection or trigger, uninterrupted audible section, screen context, reels, result, and following state for UNBOWED. Confirm the title from reliable soundtrack metadata."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "verification-holds",
+      "name": "Unverified Boundaries",
+      "location_cue": "Any undocumented symbol, item, hint, battle, AT branch, reward, setting, audio condition, counter, firmware, or free-play state.",
+      "note": "Unknown data remains explicit rather than invented.",
+      "save_backup": {
+        "title": "Preserve the machine state first",
+        "why": "Rare random sequences and settings may not recur.",
+        "detail": "Record configuration, counters, hardware, and synchronized video before testing this section."
+      },
+      "items": [
+        {
+          "id": "hold-01",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #1",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: complete operator manual. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-02",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #2",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: complete reel table. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-03",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #3",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: all normal presentations. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-04",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #4",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: all item effects. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-05",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #5",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: all mode hints. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-06",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #6",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: point reward table. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-07",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #7",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: bullet rules. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-08",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #8",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: Climax opponent census. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-09",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #9",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: Climax presentation laws. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-10",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #10",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: AT direct-entry routes. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-11",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #11",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: Shooting Attack values. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-12",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #12",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: Eveline Impact values. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-13",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #13",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: multiplication table. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-14",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #14",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: Wild Fire rules. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-15",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #15",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: AT stage transition table. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-16",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #16",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: ending trigger. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-17",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #17",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: complete reel patterns. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-18",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #18",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: service settings. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-19",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #19",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: persistent counters. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-20",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #20",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: firmware revisions. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-21",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #21",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: free-play conversion. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hold-22",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #22",
+          "missable": false,
+          "levels": {
+            "1": "Surviving documentation does not establish this detail completely.",
+            "2": "Resolve it only from operator documentation and synchronized original-cabinet evidence.",
+            "3": "NEEDS VERIFICATION: current lawful cabinet access. Preserve model, firmware, settings, counters, exact reel inputs, display, lighting, audio, result, and a repeat example before replacing this hold."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "final-audit",
+      "name": "Final Archival Audit",
+      "location_cue": "The provenance record, synchronized masters, mode log, Climax ledger, AT timeline, music archive, and unresolved holds.",
+      "note": "Completion is the maximum evidence-supported record of the original cabinet.",
+      "save_backup": {
+        "title": "Preserve the machine state first",
+        "why": "Rare random sequences and settings may not recur.",
+        "detail": "Record configuration, counters, hardware, and synchronized video before testing this section."
+      },
+      "items": [
+        {
+          "id": "audit-route",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Route Audit",
+          "missable": false,
+          "levels": {
+            "1": "The archive needs a final consistency check.",
+            "2": "Confirm cabinet provenance, launch-date reconciliation, lawful free play, and two backups.",
+            "3": "Reconcile model, firmware, settings, service record, synchronized capture, and checksums."
+          }
+        },
+        {
+          "id": "audit-hardware",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Hardware Audit",
+          "missable": false,
+          "levels": {
+            "1": "The archive needs a final consistency check.",
+            "2": "Confirm every reel, control, display, side light, and speaker record.",
+            "3": "Review lead-in, input, response, result, reset, and following state."
+          }
+        },
+        {
+          "id": "audit-normal",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Normal-System Audit",
+          "missable": false,
+          "levels": {
+            "1": "The archive needs a final consistency check.",
+            "2": "Confirm every internal mode, item, point, bullet, hint, reset state, and interval record.",
+            "3": "Check logs, counters, reels, cues, conversions, triggers, and following states."
+          }
+        },
+        {
+          "id": "audit-climax",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Climax Audit",
+          "missable": false,
+          "levels": {
+            "1": "The archive needs a final consistency check.",
+            "2": "Confirm every qualifying phase and both success and failure routes.",
+            "3": "Review trigger, resources, reels, controls, rounds, retained progress, AT transition, and return."
+          }
+        },
+        {
+          "id": "audit-at",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "AT Audit",
+          "missable": false,
+          "levels": {
+            "1": "The archive needs a final consistency check.",
+            "2": "Confirm starting features, multiplication, side-band stages, Wild Fire, revival, direct entry, and ending presentation.",
+            "3": "Use a state timeline to reconcile counters, reels, inputs, added values, transitions, and exit."
+          }
+        },
+        {
+          "id": "audit-music",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Music Audit",
+          "missable": false,
+          "levels": {
+            "1": "The archive needs a final consistency check.",
+            "2": "Confirm all 11 tracks from direct cabinet evidence.",
+            "3": "Match selector or trigger, audible section, screen context, reels, result, and following state."
+          }
+        },
+        {
+          "id": "audit-holds",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Verification-Hold Audit",
+          "missable": false,
+          "levels": {
+            "1": "The archive needs a final consistency check.",
+            "2": "Review every unresolved machine boundary.",
+            "3": "Replace a hold only with repeatable primary evidence; retain uncertainty otherwise."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1465 @@
+{
+  "id": "the-sims-castaway-stories",
+  "game": "The Sims Castaway Stories",
+  "target": "Spoiler-free completion of directed survival goals, outcome branches, rewards, careers, survival ledgers, wildlife, and Wanmami free play",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "original-pc-mac-route",
+      "name": "Original PC or Mac Route",
+      "location_cue": "The original launcher, directed-story selector, Wanmami Island selector, profile list, and user-data folder.",
+      "note": "Chosen route: the standalone Windows or Mac release; the similarly named console game is a different product and is excluded.",
+      "save_backup": {
+        "title": "Create a clean profile backup first",
+        "why": "Story rewards, buried-object unlocks, maps, relationships, and the outcome branch are stored in profile data.",
+        "detail": "Copy the complete user-data folder before directed play and keep a separate checkpoint before entering the final temple."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "install-original-release",
+          "type": "interaction",
+          "safe_type": "Platform Route",
+          "label": "Use the Original Standalone Release",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the PC or Mac Stories title rather than the console Castaway game.",
+            "2": "Install the original release and open its profile selector.",
+            "3": "Launch the game, create a disposable profile, verify directed Story Mode and Wanmami Island appear, then preserve the untouched user-data folder."
+          }
+        },
+        {
+          "id": "verify-profile-slots",
+          "type": "interaction",
+          "safe_type": "Profile Audit",
+          "label": "Verify Multiple Profile Slots",
+          "missable": false,
+          "levels": {
+            "1": "Separate profiles allow clean reruns without deleting the completion route.",
+            "2": "Create and load more than one test profile.",
+            "3": "Create a second disposable profile, confirm each retains independent story and reward progress, then reserve one slot for the permanent completion run."
+          }
+        },
+        {
+          "id": "keep-route-unmodified",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Keep Directed Play Unmodified",
+          "missable": false,
+          "levels": {
+            "1": "Scripted portals, lots, rewards, and prompts depend on original neighborhood data.",
+            "2": "Remove gameplay-changing mods before starting the story.",
+            "3": "Use a clean user folder, retain only non-gameplay compatibility settings, verify the opening goal appears, and keep the untouched backup separate."
+          }
+        }
+      ]
+    },
+    {
+      "id": "castaway-beach-and-lagoon",
+      "name": "Castaway Beach and Shady Lagoon",
+      "location_cue": "Castaway Beach, Broken Wings, Simian City, Shady Lagoon, the shrine, and the raft-building shore.",
+      "note": "The entries describe survival controls, routes, inventory requirements, and choice labels while withholding story identities and events.",
+      "save_backup": {
+        "title": "Back up before binding the raft",
+        "why": "A known progression bug can leave the next relocation goal inactive.",
+        "detail": "Wait for Bind Raft to become the active objective before clicking the raft."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "story-segment-01",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Beach Camp Setup",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Castaway Beach.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: collect the highlighted hatchet; chop wood; dig up and place the steamer trunk; climb a coconut tree and harvest food; store spare food in the trunk; build campfire; barter for the requested shelter; sleep. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-02",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Beach Cleanup and Raft Base",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Castaway Beach.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: barter for a trash pit; clean every highlighted piece of debris; light the trash-pit fire; swim until Hygiene recovers; use Spear Fish in shallow water; cook Poached Cod at the campfire; examine the marked beach debris; add bamboo. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-03",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Jungle Tools and First Map",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the beach and Broken Wings.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: dig and search the marked shoreline; collect the buried machete; use the machete on the blocked jungle path; search the plane cockpit; unlock map; visit Simian City; give one banana to each orangutan; play and socialize until the idol prompt appears; take the idol only after the prompt; return home. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-04",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Idol, Career, and Orangutan",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Castaway Beach.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: place the idol on the beach pedestal; examine idol; select a career from the controlled Sim; befriend visiting orangutan; use the adoption interaction when offered; choose a career for the adopted orangutan. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-05",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Plane Wreck and Lagoon Cure",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Broken Wings and Shady Lagoon.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: search the wreckage for the jewel and cords; collect idol jewel; replace the jewel in the idol; wait for the scripted illness prompt; return Broken Wings; enter the path opened beside the struck tree; inspect the medicine on the hut porch; wait cure. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-06",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Raft Binding and Relocation",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Shady Lagoon route.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: collect the cords behind the hut door; return beach; wait until Bind Raft becomes the active goal; use Bind Raft only after that prompt; select Move Out toward Shady Lagoon; carry idol. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-07",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Lagoon Furnishing and Shrine",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Shady Lagoon and shrine.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: barter for three newly purchased furnishings; use new jungle portal; cut the bushes blocking the shrine altar; place the idol on the altar; use opened passage. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        }
+      ]
+    },
+    {
+      "id": "castaways-and-village-entry",
+      "name": "Castaways and Village Entry",
+      "location_cue": "Barren Banks, Bone Yard, Crossroads, Scavenger Fields, Village Market, Village Harbor, and Hot Springs.",
+      "note": "The entries describe survival controls, routes, inventory requirements, and choice labels while withholding story identities and events.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "story-segment-08",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Castaway Beach and Bone Yard",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Barren Banks and Bone Yard.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: talk to every marked castaway; take the swamp portal marked by bones; meet marked researcher; collect the large bone beneath the marked tree; travel Crossroads; collect the goat-headed mast staff; do not interact with the guarding jaguar yet; attach the staff to the raft as its mast; invite researcher dinner. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-09",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Lagoon Guests and Grass Route",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Shady Lagoon and Scavenger Fields.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: serve the requested group meal; raise every displayed castaway friendship meter; talk returning researcher; travel Crossroads; enter Scavenger Fields. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-10",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Scavenger Field Rescue",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Scavenger Fields and village gate.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: cut at least three tall-grass plants; throw the large bone to one hyena; clear hyena group; talk rescued villager; enter Village Market. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-11",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Village Market Friendships",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Village Market and harbor.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: fill all four displayed friendship meters; repair the broken workout bench; play chess; play the singing stones ten consecutive times; light the trash-pit fire; wait for and greet the marked visitors; follow harbor portal. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-12",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Harbor Friendships",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Village Harbor and Hot Springs.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: fill all four displayed friendship meters; complete the requested swing interaction; bring the requested firefly jar; catch a fish while the marked villager watches; perform on the dockside drums; dig the marked crate beside the harbor steps; follow chief Hot Springs. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-13",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Hot Springs Visit",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Hot Springs.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: accept the conch communication reward; contact a chosen companion through its Call menu; complete only the highlighted affection interactions; accept residence offer; receive hot tub; return home. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        }
+      ]
+    },
+    {
+      "id": "village-residence-and-forbidden-route",
+      "name": "Village Residence and Forbidden Route",
+      "location_cue": "Shady Lagoon, Village Residence, Jungle, Creepy Hollow, Simian City, Crossroads, Forbidden Village, and the Luau.",
+      "note": "The entries describe survival controls, routes, inventory requirements, and choice labels while withholding story identities and events.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "story-segment-14",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Lagoon Relocation",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Shady Lagoon.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: use the highlighted confrontation; tell marked researcher; sell or pack furnishings; select Move Out at the opened portal. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-15",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Village Residence and Drum Route",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Village Residence route.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: accept the delivered grass sail; attach the sail to the raft; accept drum errand; travel Village Harbor; enter Jungle; enter Creepy Hollow. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-16",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Shaman and Idol Route",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Creepy Hollow and Simian City.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: talk to the shaman at Creepy Hollow; travel Simian City; befriend orangutans; take the idol after calming the orangutans; return idol; cut the marked nepeta plant. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-17",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Guarded Crossroads",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Crossroads.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: use Tame on the jaguar with the leaf available; pass guarded route; enter Forbidden Village. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-18",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Forbidden Village Urns",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Forbidden Village.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: search baskets; meet marked spirit; collect all three urns from the huts; place every urn in the graveyard; search the basket in the chief’s abandoned hut; collect ceremonial drum; return drum harbor; enter luau portal. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-19",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Luau Tasks and Raft Completion",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Luau and Village Residence.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: attempt the currently marked kiss; drink from the red festival cauldron; complete the high limbo interaction; repeat the fire walk until it succeeds; repeat marked kiss; receive rudder; attach raft rudder; dig the buried crate beside the Village Residence shore; sleep. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        }
+      ]
+    },
+    {
+      "id": "volcano-and-temple-route",
+      "name": "Volcano and Temple Route",
+      "location_cue": "The jungle fountain, Abandoned Research Base, Volcano Shores, Lava Pools, Petrified Forest, Dead Man’s Cove, House of Tuzu, and Village Harbor.",
+      "note": "The entries describe survival controls, routes, inventory requirements, and choice labels while withholding story identities and events.",
+      "save_backup": {
+        "title": "Back up before entering the temple",
+        "why": "The staff prompt creates mutually exclusive outcome states.",
+        "detail": "Keep a save from before the sealed door until Banish and Reward have both been recorded."
+      },
+      "point_of_no_return": {
+        "title": "Outcome branch ahead",
+        "why": "Confirming a staff option commits that branch and concludes directed play.",
+        "detail": "Do not overwrite the pre-door checkpoint."
+      },
+      "items": [
+        {
+          "id": "story-segment-20",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Village Cure Objective",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the village and jungle fountain.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: ask the marked harbor contact for the destination; travel Jungle; approach marked fountain group; complete the highlighted relationship interaction; accept cure objective; receive volcano cauldron; return Village Residence. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-21",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Research Base and Sail Repair",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Hot Springs and research base.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: survive falling debris; travel Hot Springs; enter the newly opened path near the Hot Springs; collect one parachute beside the runway; dig the shoreline crate at the research base; return residence; repair sail. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-22",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Volcano Island Expedition",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the Volcano Island.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: sail to island; follow beach trail; cross Lava Pools; enter Petrified Forest; collect the staff from the hollow petrified tree; use the newly opened escape path; enter Dead Man's Cove; dig the buried crate at Dead Man’s Cove; continue Volcano Shores; return harbor. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-23",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Temple Door and Outcome Prompt",
+          "missable": false,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the House of Tuzu route.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: talk marked harbor contact; enter Jungle new path; reach House of Tuzu; use the highlighted confrontation at the temple; use the Staff of Tuzu on the sealed door; wait chamber prompt; receive fate choice. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "story-segment-24",
+          "type": "interaction",
+          "safe_type": "Directed Story Goal Set",
+          "label": "Outcome Branches and Completion",
+          "missable": true,
+          "levels": {
+            "1": "Gather spare food and resources before beginning the next marked travel chain.",
+            "2": "Complete every current goal around the temple and Village Harbor.",
+            "3": "Stabilize motives and resources, then follow the active prompts in this order: save to a new slot before choosing; choose Banish on the first branch; record reward; restore backup; restore the checkpoint and choose Reward; record alternate state; return harbor; use the highlighted cure interaction at the harbor; receive weather machine; finish summary. Wait for each new objective before using a scripted raft, portal, altar, or choice interaction."
+          }
+        },
+        {
+          "id": "outcome-banish",
+          "type": "choice",
+          "safe_type": "Outcome Branch",
+          "label": "Record the Banish Outcome",
+          "missable": true,
+          "levels": {
+            "1": "Use the protected pre-door checkpoint for every branch.",
+            "2": "Choose Banish at the staff prompt.",
+            "3": "Load the checkpoint, open the sealed door with the staff, choose Banish when the choice appears, finish the summary, and retain the resulting post-story save."
+          }
+        },
+        {
+          "id": "outcome-reward",
+          "type": "choice",
+          "safe_type": "Outcome Branch",
+          "label": "Record the Reward Outcome",
+          "missable": true,
+          "levels": {
+            "1": "Restore the untouched checkpoint after preserving the other branch.",
+            "2": "Choose Reward at the staff prompt.",
+            "3": "Reload the pre-door save, repeat the temple interaction, choose Reward, finish the summary, and retain this distinct post-story state separately."
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-rewards-and-buried-crates",
+      "name": "Story Rewards and Buried Crates",
+      "location_cue": "Story Rewards panel, Castaway Beach sand, Village Harbor steps, Village Residence shore, Abandoned Research Base runway, Dead Man’s Cove shore, and delivered-object prompts.",
+      "note": "Complete all 20 reward slots, including every object that requires a shoreline dig.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "story-reward-01-hatchet",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Hatchet",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Castaway Beach wood.",
+            "3": "Keep inventory space available, reach Castaway Beach wood, then collect opening hatchet. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-02-steamer-trunk",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Steamer Trunk",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Castaway Beach sand.",
+            "3": "Keep inventory space available, reach Castaway Beach sand, then dig washed-up trunk. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-03-machete",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Machete",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Castaway Beach sand.",
+            "3": "Keep inventory space available, reach Castaway Beach sand, then dig shoreline repeatedly. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-04-the-lost-pilot-s-drink-and-sink-enabler",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "The Lost Pilot's Drink and Sink Enabler",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Shady Lagoon.",
+            "3": "Keep inventory space available, reach Shady Lagoon, then enter lagoon residence. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-05-i-can-t-believe-it-s-not-calcified",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "I Can't Believe It's Not Calcified",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Bone Yard tree.",
+            "3": "Keep inventory space available, reach Bone Yard tree, then collect marked large bone. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-06-ceremonial-pahu-drum",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Ceremonial Pahu Drum",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Forbidden Village chief hut.",
+            "3": "Keep inventory space available, reach Forbidden Village chief hut, then restore three urns then search. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-07-farstar-ex-treme-telescope",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Farstar eX-treme Telescope",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Village Harbor sand.",
+            "3": "Keep inventory space available, reach Village Harbor sand, then dig marked crate. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-08-phonogoa-shell-phone",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Phonogoa Shell Phone",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Hot Springs.",
+            "3": "Keep inventory space available, reach Hot Springs, then receive before festival date. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-09-the-rock-ripper-pickaxe",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "The Rock Ripper Pickaxe",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Shady Lagoon move.",
+            "3": "Keep inventory space available, reach Shady Lagoon move, then receive during relocation. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-10-the-current-creator-wind-powered-electric-generator",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "The Current Creator Wind Powered Electric Generator",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Village Residence shore.",
+            "3": "Keep inventory space available, reach Village Residence shore, then dig buried crate. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-11-mystical-bubbler",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Mystical Bubbler",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Creepy Hollow.",
+            "3": "Keep inventory space available, reach Creepy Hollow, then return idol to shaman. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-12-nepeta-leaf",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Nepeta Leaf",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Creepy Hollow plant.",
+            "3": "Keep inventory space available, reach Creepy Hollow plant, then cut marked plant. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-13-ev-r-scrub-r-newfangled-dishwasher",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Ev-R-Scrub-R Newfangled Dishwasher",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around story reward panel.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "story-reward-14-welcome-to-the-tribe-limbo-pole",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Welcome to the Tribe Limbo Pole",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Luau.",
+            "3": "Keep inventory space available, reach Luau, then complete three date tasks. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-15-volcano-juice-cauldron",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Volcano Juice Cauldron",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around jungle fountain route.",
+            "3": "Keep inventory space available, reach jungle fountain route, then receive with cure objective. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-16-stuck-tuna-grand-piano",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Stuck Tuna Grand Piano",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Abandoned Research Base shore.",
+            "3": "Keep inventory space available, reach Abandoned Research Base shore, then dig buried crate. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-17-swingin-big-band-jukebox",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Swingin' Big Band Jukebox",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Dead Man's Cove shore.",
+            "3": "Keep inventory space available, reach Dead Man's Cove shore, then dig buried crate. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-18-tiki-power-hot-walk",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Tiki Power Hot-Walk",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around outcome choice.",
+            "3": "Keep inventory space available, reach outcome choice, then complete either fate branch. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-19-staff-of-tuzu",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Staff of Tuzu",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around Petrified Forest tree.",
+            "3": "Keep inventory space available, reach Petrified Forest tree, then collect from hollow tree. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "story-reward-20-ignis-ex-machina",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Ignis Ex Machina",
+          "missable": false,
+          "levels": {
+            "1": "Check every newly opened lot, delivery, and shoreline dig spot before moving on.",
+            "2": "Obtain this reward around story completion.",
+            "3": "Keep inventory space available, reach story completion, then receive after outcome and cure. Open Story Rewards afterward and verify the object is permanently available."
+          }
+        },
+        {
+          "id": "audit-all-story-reward-slots",
+          "type": "collectible",
+          "safe_type": "Story Reward",
+          "label": "Audit Every Story Reward Slot",
+          "missable": false,
+          "levels": {
+            "1": "Several rewards must be dug from sand rather than delivered automatically.",
+            "2": "Verify all reward-panel slots after directed play and post-story digging.",
+            "3": "Revisit Castaway Beach, Village Harbor, Village Residence, Abandoned Research Base, and Dead Man’s Cove; collect every buried crate, then compare the Story Rewards panel against the complete 20-object ledger."
+          }
+        }
+      ]
+    },
+    {
+      "id": "careers-skills-and-aspirations",
+      "name": "Careers, Skills, and Aspirations",
+      "location_cue": "Career selector, daily work prompts, skill panel, aspiration panel, friendship requirements, career rewards, and orangutan household portrait.",
+      "note": "Top every career with a Sim and an orangutan, maximize all core skills and aspirations, and use each reward.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "career-gatherer",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Gatherer",
+          "missable": false,
+          "levels": {
+            "1": "Build the listed skills and outside friendships before the work prompt.",
+            "2": "Reach the highest rank of the Gatherer career.",
+            "3": "Choose Gatherer from the controlled Sim, attend the daily work departure with strong motives, satisfy every skill and friendship requirement, reach the top rank, and verify its career reward: Concoction Junction."
+          }
+        },
+        {
+          "id": "orangutan-career-gatherer",
+          "type": "interaction",
+          "safe_type": "Orangutan Career",
+          "label": "Top Gatherer with an Orangutan",
+          "missable": false,
+          "levels": {
+            "1": "Adopt an orangutan and keep its motives stable before work.",
+            "2": "Reach the highest Gatherer rank with a playable orangutan.",
+            "3": "Adopt an orangutan, assign the Gatherer career, build the required skills and relationships through controllable interactions, accept daily work departures, and continue until the top rank registers."
+          }
+        },
+        {
+          "id": "career-hunter",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Hunter",
+          "missable": false,
+          "levels": {
+            "1": "Build the listed skills and outside friendships before the work prompt.",
+            "2": "Reach the highest rank of the Hunter career.",
+            "3": "Choose Hunter from the controlled Sim, attend the daily work departure with strong motives, satisfy every skill and friendship requirement, reach the top rank, and verify its career reward: Hyena obstacle reward."
+          }
+        },
+        {
+          "id": "orangutan-career-hunter",
+          "type": "interaction",
+          "safe_type": "Orangutan Career",
+          "label": "Top Hunter with an Orangutan",
+          "missable": false,
+          "levels": {
+            "1": "Adopt an orangutan and keep its motives stable before work.",
+            "2": "Reach the highest Hunter rank with a playable orangutan.",
+            "3": "Adopt an orangutan, assign the Hunter career, build the required skills and relationships through controllable interactions, accept daily work departures, and continue until the top rank registers."
+          }
+        },
+        {
+          "id": "career-crafter",
+          "type": "interaction",
+          "safe_type": "Career Track",
+          "label": "Reach the Top of Crafter",
+          "missable": false,
+          "levels": {
+            "1": "Build the listed skills and outside friendships before the work prompt.",
+            "2": "Reach the highest rank of the Crafter career.",
+            "3": "Choose Crafter from the controlled Sim, attend the daily work departure with strong motives, satisfy every skill and friendship requirement, reach the top rank, and verify its career reward: Crafter's Bench."
+          }
+        },
+        {
+          "id": "orangutan-career-crafter",
+          "type": "interaction",
+          "safe_type": "Orangutan Career",
+          "label": "Top Crafter with an Orangutan",
+          "missable": false,
+          "levels": {
+            "1": "Adopt an orangutan and keep its motives stable before work.",
+            "2": "Reach the highest Crafter rank with a playable orangutan.",
+            "3": "Adopt an orangutan, assign the Crafter career, build the required skills and relationships through controllable interactions, accept daily work departures, and continue until the top rank registers."
+          }
+        },
+        {
+          "id": "skill-cooking",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Cooking",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary objects or career rewards whenever motives are stable.",
+            "2": "Raise Cooking to level ten.",
+            "3": "Use the matching cooking, repair, mirror, exercise, game, art, or cleaning interaction repeatedly until the skill panel shows level ten for Cooking."
+          }
+        },
+        {
+          "id": "skill-mechanical",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Mechanical",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary objects or career rewards whenever motives are stable.",
+            "2": "Raise Mechanical to level ten.",
+            "3": "Use the matching cooking, repair, mirror, exercise, game, art, or cleaning interaction repeatedly until the skill panel shows level ten for Mechanical."
+          }
+        },
+        {
+          "id": "skill-charisma",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Charisma",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary objects or career rewards whenever motives are stable.",
+            "2": "Raise Charisma to level ten.",
+            "3": "Use the matching cooking, repair, mirror, exercise, game, art, or cleaning interaction repeatedly until the skill panel shows level ten for Charisma."
+          }
+        },
+        {
+          "id": "skill-body",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Body",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary objects or career rewards whenever motives are stable.",
+            "2": "Raise Body to level ten.",
+            "3": "Use the matching cooking, repair, mirror, exercise, game, art, or cleaning interaction repeatedly until the skill panel shows level ten for Body."
+          }
+        },
+        {
+          "id": "skill-logic",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Logic",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary objects or career rewards whenever motives are stable.",
+            "2": "Raise Logic to level ten.",
+            "3": "Use the matching cooking, repair, mirror, exercise, game, art, or cleaning interaction repeatedly until the skill panel shows level ten for Logic."
+          }
+        },
+        {
+          "id": "skill-creativity",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Creativity",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary objects or career rewards whenever motives are stable.",
+            "2": "Raise Creativity to level ten.",
+            "3": "Use the matching cooking, repair, mirror, exercise, game, art, or cleaning interaction repeatedly until the skill panel shows level ten for Creativity."
+          }
+        },
+        {
+          "id": "skill-cleaning",
+          "type": "upgrade",
+          "safe_type": "Skill",
+          "label": "Maximize Cleaning",
+          "missable": false,
+          "levels": {
+            "1": "Use ordinary objects or career rewards whenever motives are stable.",
+            "2": "Raise Cleaning to level ten.",
+            "3": "Use the matching cooking, repair, mirror, exercise, game, art, or cleaning interaction repeatedly until the skill panel shows level ten for Cleaning."
+          }
+        },
+        {
+          "id": "aspiration-family",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Family Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Follow one dedicated Sim’s wants consistently.",
+            "2": "Reach permanent platinum with a Family Sim.",
+            "3": "Create or select a Sim with the Family aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the permanent platinum state."
+          }
+        },
+        {
+          "id": "aspiration-fortune",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Fortune Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Follow one dedicated Sim’s wants consistently.",
+            "2": "Reach permanent platinum with a Fortune Sim.",
+            "3": "Create or select a Sim with the Fortune aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the permanent platinum state."
+          }
+        },
+        {
+          "id": "aspiration-knowledge",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Knowledge Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Follow one dedicated Sim’s wants consistently.",
+            "2": "Reach permanent platinum with a Knowledge Sim.",
+            "3": "Create or select a Sim with the Knowledge aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the permanent platinum state."
+          }
+        },
+        {
+          "id": "aspiration-popularity",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Popularity Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Follow one dedicated Sim’s wants consistently.",
+            "2": "Reach permanent platinum with a Popularity Sim.",
+            "3": "Create or select a Sim with the Popularity aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the permanent platinum state."
+          }
+        },
+        {
+          "id": "aspiration-romance",
+          "type": "interaction",
+          "safe_type": "Aspiration",
+          "label": "Complete the Romance Aspiration",
+          "missable": false,
+          "levels": {
+            "1": "Follow one dedicated Sim’s wants consistently.",
+            "2": "Reach permanent platinum with a Romance Sim.",
+            "3": "Create or select a Sim with the Romance aspiration, fulfill its wants, avoid major fears, complete a matching Lifetime Want, and retain the permanent platinum state."
+          }
+        },
+        {
+          "id": "use-gatherer-reward",
+          "type": "interaction",
+          "safe_type": "Career Reward",
+          "label": "Use Concoction Junction",
+          "missable": false,
+          "levels": {
+            "1": "The Gatherer path unlocks a unique preparation object.",
+            "2": "Place and successfully use Concoction Junction.",
+            "3": "Reach the required Gatherer rank, claim the reward, place it on a powered or suitable lot, and complete every available preparation interaction once."
+          }
+        },
+        {
+          "id": "use-hunter-reward",
+          "type": "interaction",
+          "safe_type": "Career Reward",
+          "label": "Use the Hunter Career Reward",
+          "missable": false,
+          "levels": {
+            "1": "The Hunter path unlocks a wildlife-training object.",
+            "2": "Place and successfully use the Hunter reward.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "use-crafter-bench",
+          "type": "interaction",
+          "safe_type": "Career Reward",
+          "label": "Use the Crafter’s Bench",
+          "missable": false,
+          "levels": {
+            "1": "The Crafter path opens a unique object-making station.",
+            "2": "Place the bench and craft every available product.",
+            "3": "Reach the required Crafter rank, claim the bench, stock enough resources, open every craft category, and produce each distinct listed object once."
+          }
+        }
+      ]
+    },
+    {
+      "id": "survival-utilities-wildlife-and-crafting",
+      "name": "Survival, Utilities, Wildlife, and Crafting",
+      "location_cue": "Food and resource meters, Barter Mode, Crafter’s Bench, water tower, wind generator, weather machine, travel map, wildlife lots, and House of Tuzu.",
+      "note": "Complete every finite survival ledger, utility dependency, craft, wildlife interaction, and post-story secret.",
+      "save_backup": {
+        "title": "Back up before weather or wildlife tests",
+        "why": "Weather changes and some wildlife interactions can disrupt a household or lot.",
+        "detail": "Use restored branches for hazardous outcomes and preserve the completed utility setup."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "audit-food-ledger",
+          "type": "collectible",
+          "safe_type": "Food Ledger",
+          "label": "Collect Every Food Source",
+          "missable": false,
+          "levels": {
+            "1": "Fruit, fish, harvested plants, and career returns feed the household pool.",
+            "2": "Record every distinct food source and raise the stored-food total with each.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "cook-every-recipe",
+          "type": "collectible",
+          "safe_type": "Recipe Ledger",
+          "label": "Cook Every Recipe",
+          "missable": false,
+          "levels": {
+            "1": "Cooking skill and available ingredients expand the meal list.",
+            "2": "Prepare every distinct meal in the Castaway recipe menu.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "audit-resource-ledger",
+          "type": "collectible",
+          "safe_type": "Resource Ledger",
+          "label": "Collect Every Resource Source",
+          "missable": false,
+          "levels": {
+            "1": "Wood, bamboo, grass, debris, mining, careers, and market trades feed the resource pool.",
+            "2": "Gain resources from every distinct gathering method.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "craft-every-object",
+          "type": "collectible",
+          "safe_type": "Craft Ledger",
+          "label": "Craft Every Bench Object",
+          "missable": false,
+          "levels": {
+            "1": "The Crafter reward turns stored resources into a finite product list.",
+            "2": "Produce every object available at the Crafter’s Bench.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "water-dependency",
+          "type": "interaction",
+          "safe_type": "Utility System",
+          "label": "Power Every Water-Dependent Object",
+          "missable": false,
+          "levels": {
+            "1": "Plumbing fixtures require a water source on the residential lot.",
+            "2": "Install the water tower and test every dependent fixture.",
+            "3": "Place the water tower, then use each sink, toilet, shower, bathtub, and water-dependent cooking object to confirm the utility network is active."
+          }
+        },
+        {
+          "id": "electricity-dependency",
+          "type": "interaction",
+          "safe_type": "Utility System",
+          "label": "Power Every Electric Object",
+          "missable": false,
+          "levels": {
+            "1": "Electric appliances remain inactive until a generator is present.",
+            "2": "Install the wind generator and test every electric object.",
+            "3": "Dig up the generator reward, place it on the home lot, then use every available light, refrigerator, appliance, music object, and other powered device."
+          }
+        },
+        {
+          "id": "weather-machine",
+          "type": "interaction",
+          "safe_type": "Weather System",
+          "label": "Use Every Weather-Machine Setting",
+          "missable": false,
+          "levels": {
+            "1": "The completion reward can change tropical weather on demand.",
+            "2": "Test every selectable setting on Ignis Ex Machina.",
+            "3": "Back up first, place the machine outdoors with clear space, choose each weather option on restored branches, record the result, and retain a safe normal-weather save."
+          }
+        },
+        {
+          "id": "chalice-of-youth",
+          "type": "secret",
+          "safe_type": "Post-Story Secret",
+          "label": "Use the Chalice of Youth",
+          "missable": false,
+          "levels": {
+            "1": "A temple object becomes usable after directed play ends.",
+            "2": "Travel with an elder to the temple lot and activate its age-changing relic.",
+            "3": "After story completion, take an elder through the temple portal, select the interaction on the central relic, and verify the Sim returns to the beginning of the adult life stage."
+          }
+        },
+        {
+          "id": "adopt-orangutan",
+          "type": "secret",
+          "safe_type": "Wildlife",
+          "label": "Adopt an Orangutan",
+          "missable": false,
+          "levels": {
+            "1": "Friendship opens household and career control for this island animal.",
+            "2": "Add one orangutan to a playable household.",
+            "3": "Build friendship through food, grooming, and play, accept the adoption interaction when it appears, then verify the orangutan portrait and career options."
+          }
+        },
+        {
+          "id": "befriend-hyena",
+          "type": "secret",
+          "safe_type": "Wildlife",
+          "label": "Befriend a Hyena",
+          "missable": false,
+          "levels": {
+            "1": "Calm, repeated positive interactions work better than approaching with low motives.",
+            "2": "Reach maximum friendship with one hyena.",
+            "3": "Use food and cautious positive socials, avoid hostile approaches, invite the hyena onto a safe lot when available, and fill both relationship bars."
+          }
+        },
+        {
+          "id": "tame-jaguar-route",
+          "type": "secret",
+          "safe_type": "Wildlife",
+          "label": "Complete the Jaguar Interaction",
+          "missable": false,
+          "levels": {
+            "1": "A specific leaf enables the guarded interaction.",
+            "2": "Use nepeta on the jaguar at the Crossroads.",
+            "3": "Return the idol to the shaman, cut the marked nepeta leaf, carry it to the Crossroads, select Tame on the jaguar, and pass after the interaction completes."
+          }
+        },
+        {
+          "id": "care-for-parrot",
+          "type": "interaction",
+          "safe_type": "Wildlife",
+          "label": "Care for a Parrot",
+          "missable": false,
+          "levels": {
+            "1": "The bird needs a suitable object and regular social care.",
+            "2": "Keep one parrot healthy on a residential lot.",
+            "3": "Place the appropriate parrot object, stock its food, clean it when needed, use its available socials, and maintain the bird through a full household day."
+          }
+        },
+        {
+          "id": "encounter-penguin",
+          "type": "secret",
+          "safe_type": "Wildlife",
+          "label": "Record the Penguin Encounter",
+          "missable": false,
+          "levels": {
+            "1": "Weather and lot conditions can bring a minor animal visitor.",
+            "2": "Interact with a visiting penguin when it appears.",
+            "3": "Keep an outdoor residential lot accessible during suitable weather, watch for the visitor, complete every available non-hostile interaction, and record the encounter."
+          }
+        },
+        {
+          "id": "encounter-skunk",
+          "type": "secret",
+          "safe_type": "Wildlife",
+          "label": "Record the Skunk Encounter",
+          "missable": false,
+          "levels": {
+            "1": "An accessible outdoor lot can attract this minor animal.",
+            "2": "Interact with a visiting skunk on a backed-up branch.",
+            "3": "Back up, keep the outdoor route clear, wait for the skunk, test its available interaction without endangering the completion household, then restore if the result is harmful."
+          }
+        },
+        {
+          "id": "audit-barter-catalog",
+          "type": "interaction",
+          "safe_type": "Barter Catalog",
+          "label": "Audit All Twelve Barter Categories",
+          "missable": false,
+          "levels": {
+            "1": "Survival equipment and household objects are grouped by function rather than by currency.",
+            "2": "Place and test every distinct interactive object across all categories.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "complete-portal-map",
+          "type": "interaction",
+          "safe_type": "Travel Map",
+          "label": "Unlock Every Travel Portal",
+          "missable": false,
+          "levels": {
+            "1": "New routes appear through exploration and remain on the island map.",
+            "2": "Open every directed and Wanmami community destination.",
+            "3": "Traverse every highlighted portal during the story, revisit the map after completion, then enter every listed destination once and confirm no reachable route remains undiscovered."
+          }
+        }
+      ]
+    },
+    {
+      "id": "wanmami-community-lots",
+      "name": "Wanmami Community Lots",
+      "location_cue": "The Wanmami map and its seven fixed public destinations.",
+      "note": "Visit every fixed community lot and exhaust its unique interactions and exits.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "wanmami-community-buccaneer-cove",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Buccaneer Cove Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot contains a distinct mix of barter, social, skill, or entertainment objects.",
+            "2": "Visit Buccaneer Cove and use every unique public interaction.",
+            "3": "Open the Wanmami map, travel to Buccaneer Cove, inspect every portal and object cluster, use each venue-specific interaction successfully, and return with no unexplored exit."
+          }
+        },
+        {
+          "id": "wanmami-community-division-six",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Division Six Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot contains a distinct mix of barter, social, skill, or entertainment objects.",
+            "2": "Visit Division Six and use every unique public interaction.",
+            "3": "Open the Wanmami map, travel to Division Six, inspect every portal and object cluster, use each venue-specific interaction successfully, and return with no unexplored exit."
+          }
+        },
+        {
+          "id": "wanmami-community-from-the-ground-up-market",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the From the Ground Up Market Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot contains a distinct mix of barter, social, skill, or entertainment objects.",
+            "2": "Visit From the Ground Up Market and use every unique public interaction.",
+            "3": "Open the Wanmami map, travel to From the Ground Up Market, inspect every portal and object cluster, use each venue-specific interaction successfully, and return with no unexplored exit."
+          }
+        },
+        {
+          "id": "wanmami-community-lazy-afternoon-park",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Lazy Afternoon Park Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot contains a distinct mix of barter, social, skill, or entertainment objects.",
+            "2": "Visit Lazy Afternoon Park and use every unique public interaction.",
+            "3": "Open the Wanmami map, travel to Lazy Afternoon Park, inspect every portal and object cluster, use each venue-specific interaction successfully, and return with no unexplored exit."
+          }
+        },
+        {
+          "id": "wanmami-community-lost-city-of-sometribe",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Lost City of SomeTribe Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot contains a distinct mix of barter, social, skill, or entertainment objects.",
+            "2": "Visit Lost City of SomeTribe and use every unique public interaction.",
+            "3": "Open the Wanmami map, travel to Lost City of SomeTribe, inspect every portal and object cluster, use each venue-specific interaction successfully, and return with no unexplored exit."
+          }
+        },
+        {
+          "id": "wanmami-community-swaying-palms-nightclub",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Swaying Palms Nightclub Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot contains a distinct mix of barter, social, skill, or entertainment objects.",
+            "2": "Visit Swaying Palms Nightclub and use every unique public interaction.",
+            "3": "Open the Wanmami map, travel to Swaying Palms Nightclub, inspect every portal and object cluster, use each venue-specific interaction successfully, and return with no unexplored exit."
+          }
+        },
+        {
+          "id": "wanmami-community-valley-village",
+          "type": "interaction",
+          "safe_type": "Community Lot",
+          "label": "Complete the Valley Village Activity Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each public lot contains a distinct mix of barter, social, skill, or entertainment objects.",
+            "2": "Visit Valley Village and use every unique public interaction.",
+            "3": "Open the Wanmami map, travel to Valley Village, inspect every portal and object cluster, use each venue-specific interaction successfully, and return with no unexplored exit."
+          }
+        }
+      ]
+    },
+    {
+      "id": "wanmami-residential-lots-and-final-audit",
+      "name": "Wanmami Residential Lots and Final Audit",
+      "location_cue": "The Wanmami neighborhood map, inhabited homes, empty residential templates, family trees, and user-data folder.",
+      "note": "Play every fixed residential lot, complete a household lifecycle, and preserve the final profile.",
+      "save_backup": {
+        "title": "Archive before editing fixed lots",
+        "why": "Wanmami does not normally allow new lot placement, so its original templates should be preserved.",
+        "detail": "Keep untouched neighborhood data and a separate writable completion copy."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "wanmami-residential-big-house",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Big House",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Big House and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Big House, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-lerner-s-bluff",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Lerner's Bluff",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Lerner's Bluff and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Lerner's Bluff, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-solitary-shack",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Solitary Shack",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Solitary Shack and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Solitary Shack, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-wreck-of-the-redsnout",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Wreck of the Redsnout",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Wreck of the Redsnout and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Wreck of the Redsnout, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-spear-point",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Spear Point",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Spear Point and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Spear Point, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-bare-bones-basin",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Bare Bones Basin",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Bare Bones Basin and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Bare Bones Basin, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-beginner-s-landing",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Beginner's Landing",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Beginner's Landing and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Beginner's Landing, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-boiling-meadows",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Boiling Meadows",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Boiling Meadows and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Boiling Meadows, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-flora-bora",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Flora Bora",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Flora Bora and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Flora Bora, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-green-lagoon",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Green Lagoon",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Green Lagoon and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Green Lagoon, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-highland-station",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Highland Station",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Highland Station and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Highland Station, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-hot-property",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Hot Property",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Hot Property and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Hot Property, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-machete-glade",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Machete Glade",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Machete Glade and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Machete Glade, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-mystery-shack",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Mystery Shack",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Mystery Shack and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Mystery Shack, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-residential-stillwater-marsh",
+          "type": "interaction",
+          "safe_type": "Residential Lot",
+          "label": "Play and Audit Stillwater Marsh",
+          "missable": false,
+          "levels": {
+            "1": "Wanmami’s fixed residential templates cannot be replaced by newly placed lots.",
+            "2": "Load or move a household into Stillwater Marsh and test its unique layout.",
+            "3": "Preserve the original template, load or move in a household at Stillwater Marsh, inspect every structure and utility dependency, complete one full household day, then retain either the untouched backup or a documented played copy."
+          }
+        },
+        {
+          "id": "wanmami-complete-household",
+          "type": "interaction",
+          "safe_type": "Free-Play Household",
+          "label": "Complete a Wanmami Household Lifecycle",
+          "missable": false,
+          "levels": {
+            "1": "Open-ended play supports ordinary relationships, careers, aspirations, and age progression.",
+            "2": "Raise one Wanmami household through every available life stage.",
+            "3": "Create or choose a household, preserve its family tree, satisfy age-specific needs and milestones, use safe birthdays, and continue until every available life stage has been played."
+          }
+        },
+        {
+          "id": "archive-completed-profile",
+          "type": "interaction",
+          "safe_type": "Completion Archive",
+          "label": "Archive the Completed Profile",
+          "missable": false,
+          "levels": {
+            "1": "The final state spans directed play, outcome branches, rewards, Felicity Island, and Wanmami Island.",
+            "2": "Create a dated read-only copy after every ledger is verified.",
+            "3": "Exit the game, copy the complete user-data folder, then verify the story summary, both outcome saves, all 20 rewards, careers, skills, aspirations, survival ledgers, utilities, wildlife, portals, and every Wanmami lot before resuming ordinary play."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+name: Supabase keep-alive
+
+# Free-tier Supabase projects auto-pause after ~7 days of no activity, which
+# would silently break member login / signup on the site. This workflow makes a
+# tiny read-only REST request every few days to keep the project warm.
+#
+# It uses only the PUBLIC publishable (anon) key, which is already shipped to
+# every visitor's browser in js/config.js. There is no secret here.
+#
+# The request hits the `profiles` table with select=id&limit=1. Row-Level
+# Security returns an empty list to the anon role, but the query still executes
+# against the database, which is what keeps the project from idling.
+
+on:
+  schedule:
+    # Every 3 days at 09:13 UTC (offset minute to avoid the top-of-hour rush).
+    - cron: "13 9 */3 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: supabase-keepalive
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      SUPABASE_URL: "https://ghxgrlcagdebtaeqcjvl.supabase.co"
+      # Public publishable/anon key (already public in js/config.js). NOT a secret.
+      SUPABASE_ANON_KEY: "sb_publishable_kkUAlk7Gm9MHOV8rMefEFw_cXFY7VVs"
+    steps:
+      - name: Ping Supabase REST (read-only)
+        run: |
+          set -euo pipefail
+          url="${SUPABASE_URL}/rest/v1/profiles?select=id&limit=1"
+          echo "Pinging: ${url}"
+          # Retry a few times in case of a transient network/cold-start blip.
+          attempt=1
+          max=5
+          while [ "${attempt}" -le "${max}" ]; do
+            code=$(curl -sS -o /tmp/body.txt -w "%{http_code}" \
+              -H "apikey: ${SUPABASE_ANON_KEY}" \
+              -H "Authorization: Bearer ${SUPABASE_ANON_KEY}" \
+              --max-time 30 \
+              "${url}" || echo "000")
+            echo "Attempt ${attempt}: HTTP ${code}"
+            echo "Body: $(cat /tmp/body.txt)"
+            # 200 = healthy read. 401/403/404/4xx still prove the project is
+            # awake and answering (which is the whole point); only a 000
+            # (no response / network failure) or 5xx warrants a retry.
+            case "${code}" in
+              2*|4*)
+                echo "Supabase responded (HTTP ${code}) - project is awake."
+                exit 0
+                ;;
+              *)
+                echo "No healthy response yet (HTTP ${code}); retrying..."
+                ;;
+            esac
+            attempt=$((attempt + 1))
+            sleep 10
+          done
+          echo "Supabase did not respond after ${max} attempts."
+          exit 1

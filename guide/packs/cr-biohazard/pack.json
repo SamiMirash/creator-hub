@@ -1,0 +1,986 @@
+{
+  "id": "cr-biohazard",
+  "game": "CR Biohazard (2013)",
+  "target": "Spoiler-free maximum verifiable completion of the original Japanese pachinko cabinet",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "archival-route",
+      "name": "Archival Pachinko Route",
+      "location_cue": "The original Daiichi cabinet, model plate, playfield, Touch Vision panel, mechanisms, controls, and service record.",
+      "note": "Private lawful non-wager free play only; later specification variants are outside the chosen route.",
+      "save_backup": {
+        "title": "Preserve the cabinet state first",
+        "why": "Rare mechanical sequences and service settings may not reproduce.",
+        "detail": "Record settings, counters, hardware, and synchronized video before testing this area."
+      },
+      "items": [
+        {
+          "id": "route-original",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Original 2013 Cabinet",
+          "missable": true,
+          "levels": {
+            "1": "The selected route is the first Japanese amusement-machine release.",
+            "2": "Use an authentic 2013 Daiichi CR Biohazard cabinet.",
+            "3": "Verify model plate, manufacturer, cabinet art, playfield, mechanisms, firmware, and original control panel before capture. Do not substitute the later Growth or Infection specification variants."
+          }
+        },
+        {
+          "id": "route-variant-exclusion",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Later Variant Exclusion",
+          "missable": false,
+          "levels": {
+            "1": "Two later specifications share the presentation.",
+            "2": "Keep Growth Version and Infection Version evidence separate.",
+            "3": "Complete only the original 2013 specification for this pack. Record variant model plates independently and never merge their probabilities or award distributions."
+          }
+        },
+        {
+          "id": "route-free-play",
+          "type": "interaction",
+          "safe_type": "Safety",
+          "label": "Private Free-Play Setup",
+          "missable": false,
+          "levels": {
+            "1": "Archival completion does not require wagering.",
+            "2": "Use a lawfully owned cabinet configured for non-wager free play.",
+            "3": "Have an authorized owner follow the original operator documentation. Do not deposit money, seek payouts, bypass certified hardware, or use public gambling to trigger content."
+          }
+        },
+        {
+          "id": "route-sync-capture",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Synchronized Cabinet Capture",
+          "missable": true,
+          "levels": {
+            "1": "The screen, panel, mechanisms, lamps, and audio act together.",
+            "2": "Frame every presentation surface in one synchronized recording.",
+            "3": "Begin before power-on and retain an uncut master showing controls, playfield, ball path, Touch Vision, shutter, moving mechanisms, speakers, counters, and result transitions."
+          }
+        },
+        {
+          "id": "route-settings",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Starting Configuration Record",
+          "missable": true,
+          "levels": {
+            "1": "Internal settings can change observed frequency.",
+            "2": "Photograph all authorized settings and counters before play.",
+            "3": "Record model, firmware, free-play hardware, configuration, visible counters, date, and power-cycle state. Restore the original setup after testing."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "touch-and-hardware",
+      "name": "Touch Vision and Cabinet Hardware",
+      "location_cue": "The transparent touch panel, central face, diagonal claw, lower hands, shutter, lamps, and main display.",
+      "note": "Mechanical effects are captured as hardware behavior without enemy or character identities.",
+      "save_backup": {
+        "title": "Preserve the cabinet state first",
+        "why": "Rare mechanical sequences and service settings may not reproduce.",
+        "detail": "Record settings, counters, hardware, and synchronized video before testing this area."
+      },
+      "items": [
+        {
+          "id": "touch-touch-panel",
+          "type": "interaction",
+          "safe_type": "Touch Vision",
+          "label": "Touch Panel",
+          "missable": true,
+          "levels": {
+            "1": "The transparent panel supports a direct gesture.",
+            "2": "Wait for a prompt that requests the touch panel action.",
+            "3": "Keep the prompt and panel visible, perform only the displayed touch panel gesture, and capture its full response, success or failure, and following state. Do not force the panel without a prompt."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "touch-slash-panel",
+          "type": "interaction",
+          "safe_type": "Touch Vision",
+          "label": "Slash Panel",
+          "missable": true,
+          "levels": {
+            "1": "The transparent panel supports a direct gesture.",
+            "2": "Wait for a prompt that requests the slash panel action.",
+            "3": "Keep the prompt and panel visible, perform only the displayed slash panel gesture, and capture its full response, success or failure, and following state. Do not force the panel without a prompt."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "touch-rub-panel",
+          "type": "interaction",
+          "safe_type": "Touch Vision",
+          "label": "Rub Panel",
+          "missable": true,
+          "levels": {
+            "1": "The transparent panel supports a direct gesture.",
+            "2": "Wait for a prompt that requests the rub panel action.",
+            "3": "Keep the prompt and panel visible, perform only the displayed rub panel gesture, and capture its full response, success or failure, and following state. Do not force the panel without a prompt."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hardware-touch-vision",
+          "type": "secret",
+          "safe_type": "Cabinet Mechanism",
+          "label": "Touch Vision",
+          "missable": true,
+          "levels": {
+            "1": "A physical cabinet element has a distinct activation.",
+            "2": "Capture the mechanism during a compatible presentation.",
+            "3": "Record the complete lead-in, activation, lighting, sound, screen result, reset position, and next playable state for Touch Vision. Stop testing if motion is unsafe or incomplete."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hardware-bio-shutter",
+          "type": "secret",
+          "safe_type": "Cabinet Mechanism",
+          "label": "Bio Shutter",
+          "missable": true,
+          "levels": {
+            "1": "A physical cabinet element has a distinct activation.",
+            "2": "Capture the mechanism during a compatible presentation.",
+            "3": "Record the complete lead-in, activation, lighting, sound, screen result, reset position, and next playable state for Bio Shutter. Stop testing if motion is unsafe or incomplete."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hardware-center-face-mechanism",
+          "type": "secret",
+          "safe_type": "Cabinet Mechanism",
+          "label": "center face mechanism",
+          "missable": true,
+          "levels": {
+            "1": "A physical cabinet element has a distinct activation.",
+            "2": "Capture the mechanism during a compatible presentation.",
+            "3": "Record the complete lead-in, activation, lighting, sound, screen result, reset position, and next playable state for center face mechanism. Stop testing if motion is unsafe or incomplete."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hardware-diagonal-claw-mechanism",
+          "type": "secret",
+          "safe_type": "Cabinet Mechanism",
+          "label": "diagonal claw mechanism",
+          "missable": true,
+          "levels": {
+            "1": "A physical cabinet element has a distinct activation.",
+            "2": "Capture the mechanism during a compatible presentation.",
+            "3": "Record the complete lead-in, activation, lighting, sound, screen result, reset position, and next playable state for diagonal claw mechanism. Stop testing if motion is unsafe or incomplete."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "hardware-three-lower-hand-mechanisms",
+          "type": "secret",
+          "safe_type": "Cabinet Mechanism",
+          "label": "three lower hand mechanisms",
+          "missable": true,
+          "levels": {
+            "1": "A physical cabinet element has a distinct activation.",
+            "2": "Capture the mechanism during a compatible presentation.",
+            "3": "Record the complete lead-in, activation, lighting, sound, screen result, reset position, and next playable state for three lower hand mechanisms. Stop testing if motion is unsafe or incomplete."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "normal-cues",
+      "name": "Normal-Play Cues",
+      "location_cue": "The ordinary symbol screen, hold display, heart monitor, titles, weather effects, movie windows, and Touch Vision.",
+      "note": "Every publicly documented high-interest cue is represented neutrally.",
+      "save_backup": {
+        "title": "Preserve the cabinet state first",
+        "why": "Rare mechanical sequences and service settings may not reproduce.",
+        "detail": "Record settings, counters, hardware, and synchronized video before testing this area."
+      },
+      "items": [
+        {
+          "id": "normal-cue-01-hold-change",
+          "type": "secret",
+          "safe_type": "Normal Cue",
+          "label": "Hold Change",
+          "missable": true,
+          "levels": {
+            "1": "An ordinary spin can carry an unusual visual signal.",
+            "2": "Watch the normal screen for hold change.",
+            "3": "Capture the full spin before hold change, the cue itself, stopped result, any Touch Vision prompt, reach transition, award or miss, and return to normal play. Treat it as a presentation record, not a guaranteed outcome."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-cue-02-heart-monitor-cue",
+          "type": "secret",
+          "safe_type": "Normal Cue",
+          "label": "Heart-Monitor Cue",
+          "missable": true,
+          "levels": {
+            "1": "An ordinary spin can carry an unusual visual signal.",
+            "2": "Watch the normal screen for heart-monitor cue.",
+            "3": "Capture the full spin before heart-monitor cue, the cue itself, stopped result, any Touch Vision prompt, reach transition, award or miss, and return to normal play. Treat it as a presentation record, not a guaranteed outcome."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-cue-03-touch-vision-chain",
+          "type": "secret",
+          "safe_type": "Normal Cue",
+          "label": "Touch Vision Chain",
+          "missable": true,
+          "levels": {
+            "1": "An ordinary spin can carry an unusual visual signal.",
+            "2": "Watch the normal screen for Touch Vision chain.",
+            "3": "Capture the full spin before Touch Vision chain, the cue itself, stopped result, any Touch Vision prompt, reach transition, award or miss, and return to normal play. Treat it as a presentation record, not a guaranteed outcome."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-cue-04-sliding-step-up",
+          "type": "secret",
+          "safe_type": "Normal Cue",
+          "label": "Sliding Step-Up",
+          "missable": true,
+          "levels": {
+            "1": "An ordinary spin can carry an unusual visual signal.",
+            "2": "Watch the normal screen for sliding step-up.",
+            "3": "Capture the full spin before sliding step-up, the cue itself, stopped result, any Touch Vision prompt, reach transition, award or miss, and return to normal play. Treat it as a presentation record, not a guaranteed outcome."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-cue-05-title-cue",
+          "type": "secret",
+          "safe_type": "Normal Cue",
+          "label": "Title Cue",
+          "missable": true,
+          "levels": {
+            "1": "An ordinary spin can carry an unusual visual signal.",
+            "2": "Watch the normal screen for title cue.",
+            "3": "Capture the full spin before title cue, the cue itself, stopped result, any Touch Vision prompt, reach transition, award or miss, and return to normal play. Treat it as a presentation record, not a guaranteed outcome."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-cue-06-flashback-cue",
+          "type": "secret",
+          "safe_type": "Normal Cue",
+          "label": "Flashback Cue",
+          "missable": true,
+          "levels": {
+            "1": "An ordinary spin can carry an unusual visual signal.",
+            "2": "Watch the normal screen for flashback cue.",
+            "3": "Capture the full spin before flashback cue, the cue itself, stopped result, any Touch Vision prompt, reach transition, award or miss, and return to normal play. Treat it as a presentation record, not a guaranteed outcome."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-cue-07-lightning-cue",
+          "type": "secret",
+          "safe_type": "Normal Cue",
+          "label": "Lightning Cue",
+          "missable": true,
+          "levels": {
+            "1": "An ordinary spin can carry an unusual visual signal.",
+            "2": "Watch the normal screen for lightning cue.",
+            "3": "Capture the full spin before lightning cue, the cue itself, stopped result, any Touch Vision prompt, reach transition, award or miss, and return to normal play. Treat it as a presentation record, not a guaranteed outcome."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-cue-08-opening-movie",
+          "type": "secret",
+          "safe_type": "Normal Cue",
+          "label": "Opening Movie",
+          "missable": true,
+          "levels": {
+            "1": "An ordinary spin can carry an unusual visual signal.",
+            "2": "Watch the normal screen for opening movie.",
+            "3": "Capture the full spin before opening movie, the cue itself, stopped result, any Touch Vision prompt, reach transition, award or miss, and return to normal play. Treat it as a presentation record, not a guaranteed outcome."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-cue-09-ladybug-pattern",
+          "type": "secret",
+          "safe_type": "Normal Cue",
+          "label": "Ladybug Pattern",
+          "missable": true,
+          "levels": {
+            "1": "An ordinary spin can carry an unusual visual signal.",
+            "2": "Watch the normal screen for ladybug pattern.",
+            "3": "Capture the full spin before ladybug pattern, the cue itself, stopped result, any Touch Vision prompt, reach transition, award or miss, and return to normal play. Treat it as a presentation record, not a guaranteed outcome."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-cue-10-storm-cloud-mode",
+          "type": "secret",
+          "safe_type": "Normal Cue",
+          "label": "Storm-Cloud Mode",
+          "missable": true,
+          "levels": {
+            "1": "An ordinary spin can carry an unusual visual signal.",
+            "2": "Watch the normal screen for storm-cloud mode.",
+            "3": "Capture the full spin before storm-cloud mode, the cue itself, stopped result, any Touch Vision prompt, reach transition, award or miss, and return to normal play. Treat it as a presentation record, not a guaranteed outcome."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "normal-cue-11-d-d-s-pre-read",
+          "type": "secret",
+          "safe_type": "Normal Cue",
+          "label": "D.D.S Pre-Read",
+          "missable": true,
+          "levels": {
+            "1": "An ordinary spin can carry an unusual visual signal.",
+            "2": "Watch the normal screen for D.D.S pre-read.",
+            "3": "Capture the full spin before D.D.S pre-read, the cue itself, stopped result, any Touch Vision prompt, reach transition, award or miss, and return to normal play. Treat it as a presentation record, not a guaranteed outcome."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "reach-families",
+      "name": "Reach and Challenge Families",
+      "location_cue": "The developed animation after a near-match, including traps, missions, shooting, battles, and large physical threats.",
+      "note": "Challenge families use physical descriptions only.",
+      "save_backup": {
+        "title": "Preserve the cabinet state first",
+        "why": "Rare mechanical sequences and service settings may not reproduce.",
+        "detail": "Record settings, counters, hardware, and synchronized video before testing this area."
+      },
+      "items": [
+        {
+          "id": "reach-01-creature-reach",
+          "type": "optional",
+          "safe_type": "Reach Family",
+          "label": "Creature Reach",
+          "missable": true,
+          "levels": {
+            "1": "A stopped-symbol sequence can develop into this physical challenge.",
+            "2": "Allow normal play to enter the compatible reach family.",
+            "3": "Record the initiating symbols, title and color, panel gesture, mechanisms, complete challenge, success and failure outcomes, award transition, and return state for creature reach. Keep opponent identities outside player-facing text."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "reach-02-death-trap-reach",
+          "type": "optional",
+          "safe_type": "Reach Family",
+          "label": "Death-Trap Reach",
+          "missable": true,
+          "levels": {
+            "1": "A stopped-symbol sequence can develop into this physical challenge.",
+            "2": "Allow normal play to enter the compatible reach family.",
+            "3": "Record the initiating symbols, title and color, panel gesture, mechanisms, complete challenge, success and failure outcomes, award transition, and return state for death-trap reach. Keep opponent identities outside player-facing text."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "reach-03-mission-reach",
+          "type": "optional",
+          "safe_type": "Reach Family",
+          "label": "Mission Reach",
+          "missable": true,
+          "levels": {
+            "1": "A stopped-symbol sequence can develop into this physical challenge.",
+            "2": "Allow normal play to enter the compatible reach family.",
+            "3": "Record the initiating symbols, title and color, panel gesture, mechanisms, complete challenge, success and failure outcomes, award transition, and return state for mission reach. Keep opponent identities outside player-facing text."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "reach-04-gun-shooting-reach",
+          "type": "optional",
+          "safe_type": "Reach Family",
+          "label": "Gun-Shooting Reach",
+          "missable": true,
+          "levels": {
+            "1": "A stopped-symbol sequence can develop into this physical challenge.",
+            "2": "Allow normal play to enter the compatible reach family.",
+            "3": "Record the initiating symbols, title and color, panel gesture, mechanisms, complete challenge, success and failure outcomes, award transition, and return state for gun-shooting reach. Keep opponent identities outside player-facing text."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "reach-05-battle-reach",
+          "type": "optional",
+          "safe_type": "Reach Family",
+          "label": "Battle Reach",
+          "missable": true,
+          "levels": {
+            "1": "A stopped-symbol sequence can develop into this physical challenge.",
+            "2": "Allow normal play to enter the compatible reach family.",
+            "3": "Record the initiating symbols, title and color, panel gesture, mechanisms, complete challenge, success and failure outcomes, award transition, and return state for battle reach. Keep opponent identities outside player-facing text."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "reach-06-large-humanoid-reach",
+          "type": "optional",
+          "safe_type": "Reach Family",
+          "label": "Large-Humanoid Reach",
+          "missable": true,
+          "levels": {
+            "1": "A stopped-symbol sequence can develop into this physical challenge.",
+            "2": "Allow normal play to enter the compatible reach family.",
+            "3": "Record the initiating symbols, title and color, panel gesture, mechanisms, complete challenge, success and failure outcomes, award transition, and return state for large-humanoid reach. Keep opponent identities outside player-facing text."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "mode-flow",
+      "name": "Mode Flow and Continuation",
+      "location_cue": "The main shooting state, survival state, escape state, chance transition, right-side path, and result screens.",
+      "note": "Mode names are retained only when they do not expose identities or plot.",
+      "save_backup": {
+        "title": "Preserve the cabinet state first",
+        "why": "Rare mechanical sequences and service settings may not reproduce.",
+        "detail": "Record settings, counters, hardware, and synchronized video before testing this area."
+      },
+      "items": [
+        {
+          "id": "mode-01-gun-shooting-mode",
+          "type": "optional",
+          "safe_type": "Cabinet Mode",
+          "label": "Gun-Shooting Mode",
+          "missable": true,
+          "levels": {
+            "1": "A result can move the cabinet into a distinct play state.",
+            "2": "Capture entry into Gun-Shooting Mode and its first supported spin.",
+            "3": "Record the triggering award, right-side instruction when displayed, controls, counter or support state, every battle or escape transition, terminal result, and next mode. Do not expose story identities."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-02-survival-mode",
+          "type": "optional",
+          "safe_type": "Cabinet Mode",
+          "label": "Survival Mode",
+          "missable": true,
+          "levels": {
+            "1": "A result can move the cabinet into a distinct play state.",
+            "2": "Capture entry into Survival Mode and its first supported spin.",
+            "3": "Record the triggering award, right-side instruction when displayed, controls, counter or support state, every battle or escape transition, terminal result, and next mode. Do not expose story identities."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-03-escape-mode",
+          "type": "optional",
+          "safe_type": "Cabinet Mode",
+          "label": "Escape Mode",
+          "missable": true,
+          "levels": {
+            "1": "A result can move the cabinet into a distinct play state.",
+            "2": "Capture entry into Escape Mode and its first supported spin.",
+            "3": "Record the triggering award, right-side instruction when displayed, controls, counter or support state, every battle or escape transition, terminal result, and next mode. Do not expose story identities."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-04-survival-chance",
+          "type": "optional",
+          "safe_type": "Cabinet Mode",
+          "label": "Survival Chance",
+          "missable": true,
+          "levels": {
+            "1": "A result can move the cabinet into a distinct play state.",
+            "2": "Capture entry into Survival Chance and its first supported spin.",
+            "3": "Record the triggering award, right-side instruction when displayed, controls, counter or support state, every battle or escape transition, terminal result, and next mode. Do not expose story identities."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-rule-01",
+          "type": "optional",
+          "safe_type": "Mode Rule",
+          "label": "Verified Mode Rule #1",
+          "missable": true,
+          "levels": {
+            "1": "One documented rule changes how the active state behaves.",
+            "2": "Locate direct cabinet evidence for rule #1.",
+            "3": "Record a complete reproducible example of this mechanical fact: probability changes after hit. Preserve starting mode, inputs, symbols, award state, counter, and following screen; leave probabilities beyond the documented specification uncertain."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-rule-02",
+          "type": "optional",
+          "safe_type": "Mode Rule",
+          "label": "Verified Mode Rule #2",
+          "missable": true,
+          "levels": {
+            "1": "One documented rule changes how the active state behaves.",
+            "2": "Locate direct cabinet evidence for rule #2.",
+            "3": "Record a complete reproducible example of this mechanical fact: eighty-one percent continuation. Preserve starting mode, inputs, symbols, award state, counter, and following screen; leave probabilities beyond the documented specification uncertain."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-rule-03",
+          "type": "optional",
+          "safe_type": "Mode Rule",
+          "label": "Verified Mode Rule #3",
+          "missable": true,
+          "levels": {
+            "1": "One documented rule changes how the active state behaves.",
+            "2": "Locate direct cabinet evidence for rule #3.",
+            "3": "Record a complete reproducible example of this mechanical fact: right-side play during supported mode. Preserve starting mode, inputs, symbols, award state, counter, and following screen; leave probabilities beyond the documented specification uncertain."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-rule-04",
+          "type": "optional",
+          "safe_type": "Mode Rule",
+          "label": "Verified Mode Rule #4",
+          "missable": true,
+          "levels": {
+            "1": "One documented rule changes how the active state behaves.",
+            "2": "Locate direct cabinet evidence for rule #4.",
+            "3": "Record a complete reproducible example of this mechanical fact: symbol hit can enter main mode. Preserve starting mode, inputs, symbols, award state, counter, and following screen; leave probabilities beyond the documented specification uncertain."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-rule-05",
+          "type": "optional",
+          "safe_type": "Mode Rule",
+          "label": "Verified Mode Rule #5",
+          "missable": true,
+          "levels": {
+            "1": "One documented rule changes how the active state behaves.",
+            "2": "Locate direct cabinet evidence for rule #5.",
+            "3": "Record a complete reproducible example of this mechanical fact: Survival Bonus may enter main mode. Preserve starting mode, inputs, symbols, award state, counter, and following screen; leave probabilities beyond the documented specification uncertain."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-rule-06",
+          "type": "optional",
+          "safe_type": "Mode Rule",
+          "label": "Verified Mode Rule #6",
+          "missable": true,
+          "levels": {
+            "1": "One documented rule changes how the active state behaves.",
+            "2": "Locate direct cabinet evidence for rule #6.",
+            "3": "Record a complete reproducible example of this mechanical fact: Escape Mode follows no-output hit. Preserve starting mode, inputs, symbols, award state, counter, and following screen; leave probabilities beyond the documented specification uncertain."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-rule-07",
+          "type": "optional",
+          "safe_type": "Mode Rule",
+          "label": "Verified Mode Rule #7",
+          "missable": true,
+          "levels": {
+            "1": "One documented rule changes how the active state behaves.",
+            "2": "Locate direct cabinet evidence for rule #7.",
+            "3": "Record a complete reproducible example of this mechanical fact: Escape beyond sixteen raises expectation. Preserve starting mode, inputs, symbols, award state, counter, and following screen; leave probabilities beyond the documented specification uncertain."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-rule-08",
+          "type": "optional",
+          "safe_type": "Mode Rule",
+          "label": "Verified Mode Rule #8",
+          "missable": true,
+          "levels": {
+            "1": "One documented rule changes how the active state behaves.",
+            "2": "Locate direct cabinet evidence for rule #8.",
+            "3": "Record a complete reproducible example of this mechanical fact: Round Attack uses gate. Preserve starting mode, inputs, symbols, award state, counter, and following screen; leave probabilities beyond the documented specification uncertain."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "mode-rule-09",
+          "type": "optional",
+          "safe_type": "Mode Rule",
+          "label": "Verified Mode Rule #9",
+          "missable": true,
+          "levels": {
+            "1": "One documented rule changes how the active state behaves.",
+            "2": "Locate direct cabinet evidence for rule #9.",
+            "3": "Record a complete reproducible example of this mechanical fact: main-mode loss only specific battle. Preserve starting mode, inputs, symbols, award state, counter, and following screen; leave probabilities beyond the documented specification uncertain."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "award-types",
+      "name": "Award Types",
+      "location_cue": "The winning-symbol screen, round counter, right-side path, gate, shutter, and post-award mode transition.",
+      "note": "Output figures are archived machine behavior, never a wagering promise.",
+      "save_backup": {
+        "title": "Preserve the cabinet state first",
+        "why": "Rare mechanical sequences and service settings may not reproduce.",
+        "detail": "Record settings, counters, hardware, and synchronized video before testing this area."
+      },
+      "items": [
+        {
+          "id": "award-01-super-big-bonus",
+          "type": "optional",
+          "safe_type": "Award Type",
+          "label": "Super Big Bonus",
+          "missable": true,
+          "levels": {
+            "1": "This cabinet award has a distinct presentation or control flow.",
+            "2": "Capture a lawful free-play result that enters Super Big Bonus.",
+            "3": "Record the winning symbols or chance route, round display, right-side instruction, gate or shutter behavior, every rank change, final output counter, next mode, and complete exit from Super Big Bonus."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "award-02-round-attack",
+          "type": "optional",
+          "safe_type": "Award Type",
+          "label": "Round Attack",
+          "missable": true,
+          "levels": {
+            "1": "This cabinet award has a distinct presentation or control flow.",
+            "2": "Capture a lawful free-play result that enters Round Attack.",
+            "3": "Record the winning symbols or chance route, round display, right-side instruction, gate or shutter behavior, every rank change, final output counter, next mode, and complete exit from Round Attack."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "award-03-survival-bonus",
+          "type": "optional",
+          "safe_type": "Award Type",
+          "label": "Survival Bonus",
+          "missable": true,
+          "levels": {
+            "1": "This cabinet award has a distinct presentation or control flow.",
+            "2": "Capture a lawful free-play result that enters Survival Bonus.",
+            "3": "Record the winning symbols or chance route, round display, right-side instruction, gate or shutter behavior, every rank change, final output counter, next mode, and complete exit from Survival Bonus."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "verification-holds",
+      "name": "Unverified Cabinet Boundaries",
+      "location_cue": "Any undocumented control, symbol, reach, cue, transition, award, audio, counter, firmware, or free-play screen.",
+      "note": "Unknown amusement-machine data remains withheld rather than invented.",
+      "save_backup": {
+        "title": "Preserve the cabinet state first",
+        "why": "Rare mechanical sequences and service settings may not reproduce.",
+        "detail": "Record settings, counters, hardware, and synchronized video before testing this area."
+      },
+      "items": [
+        {
+          "id": "verification-hold-01",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #1",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: complete control manual. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-02",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #2",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: complete symbol table. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-03",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #3",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: complete reach catalogue. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-04",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #4",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: complete cue catalogue. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-05",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #5",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: all touch gestures by scene. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-06",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #6",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: all mode transition odds. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-07",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #7",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: complete award distribution. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-08",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #8",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: exact Escape Mode state rules. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-09",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #9",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: complete Round Attack levels. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-10",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #10",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: complete music and voice catalogue. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-11",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #11",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: service-menu backup procedure. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-12",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #12",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: persistent cabinet counters. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-13",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #13",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: firmware variations. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-14",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #14",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: complete free-play configuration. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-15",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #15",
+          "missable": false,
+          "levels": {
+            "1": "Surviving sources do not establish this cabinet detail completely.",
+            "2": "Resolve it only from original documentation and synchronized lawful hardware capture.",
+            "3": "NEEDS VERIFICATION: current lawful cabinet availability. Record model, firmware, settings, counters, exact controls, ball path, symbols, every display surface, audio, and repeat result before replacing this hold."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "final-audit",
+      "name": "Final Archival Audit",
+      "location_cue": "The cabinet record, synchronized footage, hardware index, cue ledger, reach catalogue, mode timeline, award log, and verification holds.",
+      "note": "Completion is the maximum evidence-supported record of the original specification.",
+      "save_backup": {
+        "title": "Preserve the cabinet state first",
+        "why": "Rare mechanical sequences and service settings may not reproduce.",
+        "detail": "Record settings, counters, hardware, and synchronized video before testing this area."
+      },
+      "items": [
+        {
+          "id": "audit-route",
+          "type": "interaction",
+          "safe_type": "Final Audit",
+          "label": "Cabinet Provenance Audit",
+          "missable": false,
+          "levels": {
+            "1": "The archive must prove the chosen original route.",
+            "2": "Confirm model, specification, firmware, settings, free-play setup, and two backups.",
+            "3": "Compare model plate, cabinet photographs, synchronized power-on capture, service record, and checksums. Reject later-variant or unidentified evidence."
+          }
+        },
+        {
+          "id": "audit-touch",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Hardware Audit",
+          "missable": false,
+          "levels": {
+            "1": "Every physical mechanism needs a full activation record.",
+            "2": "Confirm all Touch Vision gestures and cabinet mechanisms.",
+            "3": "Review prompt, input, activation, audio, result, reset, and following state for each hardware entry."
+          }
+        },
+        {
+          "id": "audit-cues",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Cue Audit",
+          "missable": false,
+          "levels": {
+            "1": "Normal-play secrets need indexed first occurrences.",
+            "2": "Confirm every represented hold, monitor, chain, title, movie, weather, pattern, and pre-read cue.",
+            "3": "Verify each capture includes the preceding spin, stopped result, development, outcome, and return to ordinary play."
+          }
+        },
+        {
+          "id": "audit-reaches",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Reach Audit",
+          "missable": false,
+          "levels": {
+            "1": "Every physical challenge family needs both flow and outcome evidence.",
+            "2": "Confirm all reach families and safely reproducible success or failure variants.",
+            "3": "Review initiating symbols, title, gesture, mechanisms, challenge, terminal result, and award transition without identity labels."
+          }
+        },
+        {
+          "id": "audit-modes",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Mode Audit",
+          "missable": false,
+          "levels": {
+            "1": "All supported states and transitions must reconcile.",
+            "2": "Confirm each mode, verified rule, right-side instruction, continuation, and exit.",
+            "3": "Use the state timeline to check triggers, counters, battles, escape transitions, awards, and final return."
+          }
+        },
+        {
+          "id": "audit-awards",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Award Audit",
+          "missable": false,
+          "levels": {
+            "1": "Every award family needs a complete round record.",
+            "2": "Confirm all award types, rank changes, gate or shutter actions, and post-award states.",
+            "3": "Reconcile winning route, round counter, output record, controls, and following mode without framing figures as expected winnings."
+          }
+        },
+        {
+          "id": "audit-holds",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Verification-Hold Audit",
+          "missable": false,
+          "levels": {
+            "1": "Maximum completion must retain its unknown boundaries.",
+            "2": "Review all holds and attach repeatable original-cabinet evidence to resolved entries.",
+            "3": "Leave unsupported holds uncertain; replace one only when direct documentation or hardware proves the exact detail."
+          }
+        }
+      ]
+    }
+  ]
+}

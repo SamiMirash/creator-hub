@@ -1,0 +1,2566 @@
+{
+  "id": "biohazard-5",
+  "game": "Biohazard 5 (2012 pachislot)",
+  "target": "Spoiler-free maximum verifiable completion of the original Japanese Biohazard 5Z cabinet",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "archival-cabinet-route",
+      "name": "Archival Cabinet Route",
+      "location_cue": "The Biohazard 5Z model plate, reel window, main screen, movable subdisplay, buttons, lamps, and operator panel.",
+      "note": "All guidance assumes a lawfully owned private cabinet in non-wager free play.",
+      "save_backup": {
+        "title": "Back up the starting cabinet state",
+        "why": "Service changes and persistent counters can alter the only reproducible setup.",
+        "detail": "Photograph every accessible setting and counter, preserve firmware information, and record a full power-on test before play."
+      },
+      "items": [
+        {
+          "id": "route-original-cabinet",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Original 2012 Cabinet Route",
+          "missable": true,
+          "levels": {
+            "1": "The selected catalog entry is an amusement machine, not the campaign game.",
+            "2": "Use an authentic Japanese Biohazard 5Z pachislot cabinet.",
+            "3": "Verify the model plate, Enterrise branding, 2012 machine record, original reels, main screen, movable subdisplay, control panel, and cabinet firmware before recording any completion evidence."
+          }
+        },
+        {
+          "id": "route-pandemic-cabinet",
+          "type": "interaction",
+          "safe_type": "Hardware",
+          "label": "Pandemic Cabinet Presentation",
+          "missable": true,
+          "levels": {
+            "1": "The moving secondary display is part of the original presentation.",
+            "2": "Confirm the movable subdisplay operates with the main screen and reels.",
+            "3": "Record a synchronized test showing reel spin, button lamps, main display, subdisplay movement, cabinet lighting, speakers, and control response. Do not substitute a static video capture for cabinet-specific effects."
+          }
+        },
+        {
+          "id": "route-private-free-play",
+          "type": "interaction",
+          "safe_type": "Safety",
+          "label": "Private Free-Play Only",
+          "missable": false,
+          "levels": {
+            "1": "Archival completion does not require gambling.",
+            "2": "Configure the lawfully owned cabinet for private, non-wager free play.",
+            "3": "Use only an authorized owner or technician and the original operator documentation. Do not deposit money, seek payouts, evade local law, or alter certified hardware merely to trigger a checklist entry."
+          }
+        },
+        {
+          "id": "route-service-access",
+          "type": "interaction",
+          "safe_type": "Safety",
+          "label": "Authorized Service Access",
+          "missable": true,
+          "levels": {
+            "1": "Configuration changes belong to the cabinet owner.",
+            "2": "Use the service controls only with owner authorization.",
+            "3": "Power down when the operator manual requires it, photograph the original setting before changes, log every service adjustment, and restore the starting configuration after the archival session. Unsupported button sequences remain withheld."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "route-synchronized-capture",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Synchronized Cabinet Capture",
+          "missable": true,
+          "levels": {
+            "1": "Important cues can appear on several surfaces at once.",
+            "2": "Frame the reels, buttons, main screen, subdisplay, lamps, and audio together.",
+            "3": "Begin recording before power-on and retain an uncut native-audio master. Add a separate close view only when it remains time-synchronized, so a reel result cannot be paired accidentally with the wrong display effect."
+          }
+        },
+        {
+          "id": "route-starting-state",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Starting-State Record",
+          "missable": true,
+          "levels": {
+            "1": "Counters and service settings may affect a long session.",
+            "2": "Photograph all legally accessible counters and configuration screens before play.",
+            "3": "Record cabinet model, firmware, configuration, credit state, visible counters, free-play hardware, date, and power-cycle status. Preserve the images before any reset or test because persistent-memory behavior is not fully documented."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "route-home-port-exclusion",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Later Application Exclusion",
+          "missable": false,
+          "levels": {
+            "1": "A later software reproduction exists outside the chosen catalog route.",
+            "2": "Keep mobile-application footage separate from cabinet completion.",
+            "3": "Use the application only as clearly labeled historical comparison if it is lawfully preserved. Its practice features, automation, timing, and presentation do not replace evidence captured from the original cabinet."
+          }
+        }
+      ]
+    },
+    {
+      "id": "reel-controls-and-roles",
+      "name": "Reel Controls and Visible Roles",
+      "location_cue": "The lever, three stop buttons, reel window, navigation lamps, credit display, and symbol-result response.",
+      "note": "The pack records safe cabinet operation and observable roles without supplying wagering strategy.",
+      "save_backup": {
+        "title": "Preserve a clean control baseline",
+        "why": "A wrong stop order may cause an undocumented penalty.",
+        "detail": "Record several permitted free-play spins and confirm all buttons, lamps, reels, and navigation cues before attempting rare states."
+      },
+      "items": [
+        {
+          "id": "reel-left-cherry",
+          "type": "interaction",
+          "safe_type": "Reel Procedure",
+          "label": "Left-Reel Cherry Aim",
+          "missable": false,
+          "levels": {
+            "1": "Normal play begins by watching one symbol on the left reel.",
+            "2": "Aim for the cherry symbol on the left reel first.",
+            "3": "Start each ordinary spin with the left reel, stop near the cherry symbol, then inspect its final position before choosing the remaining reel procedure. Use a cabinet-level close capture to verify the stop pattern."
+          }
+        },
+        {
+          "id": "reel-corner-cherry",
+          "type": "interaction",
+          "safe_type": "Reel Procedure",
+          "label": "Corner-Cherry Follow-Up",
+          "missable": false,
+          "levels": {
+            "1": "A corner stop changes what to watch next.",
+            "2": "When a cherry stops at the corner, aim for cherries on the middle and right reels.",
+            "3": "Keep the permitted normal stop order, target the matching symbols on both remaining reels, and record the completed line. Do not assign a role strength unless the final combination is visible."
+          }
+        },
+        {
+          "id": "reel-middle-cherry",
+          "type": "interaction",
+          "safe_type": "Reel Procedure",
+          "label": "Middle-Cherry Follow-Up",
+          "missable": false,
+          "levels": {
+            "1": "A centered cherry uses the simpler remaining procedure.",
+            "2": "When the cherry stops in the middle, stop the other reels without a special target.",
+            "3": "Complete the spin in an allowed order, capture all three final reel positions, and log the accompanying screen and lamp response. Preserve the result before interpreting it as a chance role."
+          }
+        },
+        {
+          "id": "reel-watermelon-follow-up",
+          "type": "interaction",
+          "safe_type": "Reel Procedure",
+          "label": "Watermelon Follow-Up",
+          "missable": false,
+          "levels": {
+            "1": "Another left-reel stop requires matching symbols.",
+            "2": "When the watermelon symbol appears in its target position, aim for watermelons on both remaining reels.",
+            "3": "Hold the camera on the entire reel window, stop the middle and right reels on the matching symbol, and record the final alignment plus any display response. Missed visual timing must not be counted as the role."
+          }
+        },
+        {
+          "id": "reel-normal-order",
+          "type": "interaction",
+          "safe_type": "Reel Procedure",
+          "label": "Permitted Normal Stop Orders",
+          "missable": false,
+          "levels": {
+            "1": "Ordinary play restricts reel order.",
+            "2": "Use left-to-right stopping or the documented sandwich order during normal play.",
+            "3": "Begin with the left reel, then use either middle followed by right or right followed by middle. Follow a displayed navigation order instead whenever the cabinet supplies one."
+          }
+        },
+        {
+          "id": "reel-order-penalty",
+          "type": "interaction",
+          "safe_type": "Safety",
+          "label": "Stop-Order Penalty Avoidance",
+          "missable": true,
+          "levels": {
+            "1": "An unsupported reel order can change the machine state.",
+            "2": "Do not begin normal spins from the middle or right reel.",
+            "3": "Use only the two documented normal orders unless an on-screen navigation cue overrides them. If an accidental order occurs, record it and stop the session until the original manual establishes the consequence."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "reel-navigation",
+          "type": "interaction",
+          "safe_type": "Reel Procedure",
+          "label": "ART Navigation",
+          "missable": false,
+          "levels": {
+            "1": "The cabinet sometimes supplies a specific stop sequence.",
+            "2": "During Hazard Rush, obey the illuminated or displayed reel order.",
+            "3": "Read the complete navigation cue before pressing a stop button, follow its sequence exactly, and capture both the cue and final symbols. Return to the ordinary procedure only after navigation disappears."
+          }
+        },
+        {
+          "id": "visible-role-01-red-7",
+          "type": "collectible",
+          "safe_type": "Visible Reel Role",
+          "label": "Red 7",
+          "missable": false,
+          "levels": {
+            "1": "This symbol result belongs in the cabinet role ledger.",
+            "2": "Capture a complete reel stop showing Red 7.",
+            "3": "Record the spin from lever input through final reel positions, payout or replay response, and every simultaneous display cue. Catalogue Red 7 as replay plus ART, while leaving unverified probability and hidden-state effects out of the player-facing instructions."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "visible-role-02-bar",
+          "type": "collectible",
+          "safe_type": "Visible Reel Role",
+          "label": "BAR",
+          "missable": false,
+          "levels": {
+            "1": "This symbol result belongs in the cabinet role ledger.",
+            "2": "Capture a complete reel stop showing BAR.",
+            "3": "Record the spin from lever input through final reel positions, payout or replay response, and every simultaneous display cue. Catalogue BAR as Shooting Burst replay, while leaving unverified probability and hidden-state effects out of the player-facing instructions."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "visible-role-03-bell",
+          "type": "collectible",
+          "safe_type": "Visible Reel Role",
+          "label": "Bell",
+          "missable": false,
+          "levels": {
+            "1": "This symbol result belongs in the cabinet role ledger.",
+            "2": "Capture a complete reel stop showing Bell.",
+            "3": "Record the spin from lever input through final reel positions, payout or replay response, and every simultaneous display cue. Catalogue Bell as nine-credit role, while leaving unverified probability and hidden-state effects out of the player-facing instructions."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "visible-role-04-watermelon",
+          "type": "collectible",
+          "safe_type": "Visible Reel Role",
+          "label": "Watermelon",
+          "missable": false,
+          "levels": {
+            "1": "This symbol result belongs in the cabinet role ledger.",
+            "2": "Capture a complete reel stop showing Watermelon.",
+            "3": "Record the spin from lever input through final reel positions, payout or replay response, and every simultaneous display cue. Catalogue Watermelon as five-credit role, while leaving unverified probability and hidden-state effects out of the player-facing instructions."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "visible-role-05-cherry",
+          "type": "collectible",
+          "safe_type": "Visible Reel Role",
+          "label": "Cherry",
+          "missable": false,
+          "levels": {
+            "1": "This symbol result belongs in the cabinet role ledger.",
+            "2": "Capture a complete reel stop showing Cherry.",
+            "3": "Record the spin from lever input through final reel positions, payout or replay response, and every simultaneous display cue. Catalogue Cherry as nine-credit role, while leaving unverified probability and hidden-state effects out of the player-facing instructions."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "visible-role-06-chance-replay",
+          "type": "collectible",
+          "safe_type": "Visible Reel Role",
+          "label": "Chance Replay",
+          "missable": false,
+          "levels": {
+            "1": "This symbol result belongs in the cabinet role ledger.",
+            "2": "Capture a complete reel stop showing Chance Replay.",
+            "3": "Record the spin from lever input through final reel positions, payout or replay response, and every simultaneous display cue. Catalogue Chance Replay as chance replay role, while leaving unverified probability and hidden-state effects out of the player-facing instructions."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "visible-role-07-replay",
+          "type": "collectible",
+          "safe_type": "Visible Reel Role",
+          "label": "Replay",
+          "missable": false,
+          "levels": {
+            "1": "This symbol result belongs in the cabinet role ledger.",
+            "2": "Capture a complete reel stop showing Replay.",
+            "3": "Record the spin from lever input through final reel positions, payout or replay response, and every simultaneous display cue. Catalogue Replay as standard replay role, while leaving unverified probability and hidden-state effects out of the player-facing instructions."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "normal-states-and-cues",
+      "name": "Normal States and Physical Cues",
+      "location_cue": "Ordinary-play backgrounds, transition effects, stage captions, payline flashes, and the movable status display.",
+      "note": "Locations are described only by physical appearance; hidden-state claims remain evidence-based.",
+      "save_backup": {
+        "title": "Save the initial state record",
+        "why": "Power cycling or service changes may alter counters and hidden conditions.",
+        "detail": "Preserve the untouched opening sequence and cabinet settings before comparing state cues."
+      },
+      "items": [
+        {
+          "id": "state-level-01",
+          "type": "optional",
+          "safe_type": "Internal State",
+          "label": "Low Internal State",
+          "missable": false,
+          "levels": {
+            "1": "Normal play can use a hidden chance level.",
+            "2": "Log visible cues that are consistent with low internal state.",
+            "3": "Record the physical stage, transition effect, bell-line response, caption position, recent role history, and next chance-zone result. Treat the state as an inference unless a service display or repeated evidence confirms it."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "state-level-02",
+          "type": "optional",
+          "safe_type": "Internal State",
+          "label": "Normal Internal State",
+          "missable": false,
+          "levels": {
+            "1": "Normal play can use a hidden chance level.",
+            "2": "Log visible cues that are consistent with normal internal state.",
+            "3": "Record the physical stage, transition effect, bell-line response, caption position, recent role history, and next chance-zone result. Treat the state as an inference unless a service display or repeated evidence confirms it."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "state-level-03",
+          "type": "optional",
+          "safe_type": "Internal State",
+          "label": "High Internal State",
+          "missable": false,
+          "levels": {
+            "1": "Normal play can use a hidden chance level.",
+            "2": "Log visible cues that are consistent with high internal state.",
+            "3": "Record the physical stage, transition effect, bell-line response, caption position, recent role history, and next chance-zone result. Treat the state as an inference unless a service display or repeated evidence confirms it."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "state-level-04",
+          "type": "optional",
+          "safe_type": "Internal State",
+          "label": "Very High Internal State",
+          "missable": false,
+          "levels": {
+            "1": "Normal play can use a hidden chance level.",
+            "2": "Log visible cues that are consistent with very high internal state.",
+            "3": "Record the physical stage, transition effect, bell-line response, caption position, recent role history, and next chance-zone result. Treat the state as an inference unless a service display or repeated evidence confirms it."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "state-zone-influence",
+          "type": "optional",
+          "safe_type": "Internal Rule",
+          "label": "Chance-Zone Influence",
+          "missable": false,
+          "levels": {
+            "1": "The hidden state changes access likelihood rather than reel controls.",
+            "2": "Compare chance-zone entries across different visible state cues.",
+            "3": "Keep configuration and play procedure fixed, log each qualifying role and subsequent zone entry, and compare only after a large direct-capture sample. Do not present an exact transition rate without verified data."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "state-persistence",
+          "type": "optional",
+          "safe_type": "Internal Rule",
+          "label": "State Persistence",
+          "missable": false,
+          "levels": {
+            "1": "The hidden level does not immediately fall during ordinary play.",
+            "2": "Track the same inferred state until a chance zone or Hazard Rush begins.",
+            "3": "Continue logging cues without declaring a downgrade from one quiet spin. End the state segment when a documented major entry occurs, then begin a new inference record afterward."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "state-red-transition",
+          "type": "optional",
+          "safe_type": "State Cue",
+          "label": "Red Transition Cue",
+          "missable": true,
+          "levels": {
+            "1": "A colored stage change can indicate stronger conditions.",
+            "2": "Capture a stage transition surrounded by red effects.",
+            "3": "Record the screen before, during, and after the transition, then follow the next roles and zone entries. Catalogue it as a high-state cue, not a guaranteed award."
+          }
+        },
+        {
+          "id": "state-bell-flash",
+          "type": "optional",
+          "safe_type": "State Cue",
+          "label": "Flashing Bell Line",
+          "missable": true,
+          "levels": {
+            "1": "A normal payout can carry an extra visual signal.",
+            "2": "Capture a bell result whose winning line flashes.",
+            "3": "Keep the entire reel result and payline visible, record subsequent play without cutting, and catalogue the flash as a high-state cue. Do not confuse it with the ordinary bell animation."
+          }
+        },
+        {
+          "id": "state-reversed-caption",
+          "type": "optional",
+          "safe_type": "Prelude Cue",
+          "label": "Reversed Stage Caption",
+          "missable": true,
+          "levels": {
+            "1": "A location label can appear on the opposite side.",
+            "2": "Capture the stage name displayed at the upper right instead of the usual upper left.",
+            "3": "Record the preceding transition and every following spin until the next zone, Rush entry, or clear return to ordinary play. Treat the reversed placement as a prelude cue rather than a guaranteed result."
+          }
+        },
+        {
+          "id": "physical-cue-01-public-gathering-area",
+          "type": "optional",
+          "safe_type": "Physical Screen Cue",
+          "label": "Public Gathering Area",
+          "missable": true,
+          "levels": {
+            "1": "This geography or transition has its own cabinet presentation.",
+            "2": "Capture a complete visit to the public gathering area.",
+            "3": "Begin with the incoming transition, preserve the main and movable displays, record every ordinary animation or role response encountered there, and keep narrative interpretation out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "physical-cue-02-wetland-area",
+          "type": "optional",
+          "safe_type": "Physical Screen Cue",
+          "label": "Wetland Area",
+          "missable": true,
+          "levels": {
+            "1": "This geography or transition has its own cabinet presentation.",
+            "2": "Capture a complete visit to the wetland area.",
+            "3": "Begin with the incoming transition, preserve the main and movable displays, record every ordinary animation or role response encountered there, and keep narrative interpretation out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "physical-cue-03-ancient-ruin-area",
+          "type": "optional",
+          "safe_type": "Physical Screen Cue",
+          "label": "Ancient Ruin Area",
+          "missable": true,
+          "levels": {
+            "1": "This geography or transition has its own cabinet presentation.",
+            "2": "Capture a complete visit to the ancient ruin area.",
+            "3": "Begin with the incoming transition, preserve the main and movable displays, record every ordinary animation or role response encountered there, and keep narrative interpretation out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "physical-cue-04-laboratory-house-area",
+          "type": "optional",
+          "safe_type": "Physical Screen Cue",
+          "label": "Laboratory-House Area",
+          "missable": true,
+          "levels": {
+            "1": "This geography or transition has its own cabinet presentation.",
+            "2": "Capture a complete visit to the laboratory-house area.",
+            "3": "Begin with the incoming transition, preserve the main and movable displays, record every ordinary animation or role response encountered there, and keep narrative interpretation out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "physical-cue-05-underground-tunnel-prelude",
+          "type": "optional",
+          "safe_type": "Physical Screen Cue",
+          "label": "Underground Tunnel Prelude",
+          "missable": true,
+          "levels": {
+            "1": "This geography or transition has its own cabinet presentation.",
+            "2": "Capture a complete visit to the underground tunnel prelude.",
+            "3": "Begin with the incoming transition, preserve the main and movable displays, record every ordinary animation or role response encountered there, and keep narrative interpretation out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "physical-cue-06-tense-movie-prelude",
+          "type": "optional",
+          "safe_type": "Physical Screen Cue",
+          "label": "Tense-Movie Prelude",
+          "missable": true,
+          "levels": {
+            "1": "This geography or transition has its own cabinet presentation.",
+            "2": "Capture a complete visit to the tense-movie prelude.",
+            "3": "Begin with the incoming transition, preserve the main and movable displays, record every ordinary animation or role response encountered there, and keep narrative interpretation out of the guide."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "hazard-rush-entry-zones",
+      "name": "Hazard Rush Entry Zones",
+      "location_cue": "The dedicated mission or percentage screen reached from ordinary play before the main Rush mode.",
+      "note": "Mode names that expose identities are replaced with neutral mechanical labels.",
+      "save_backup": {
+        "title": "Preserve the normal-play lead-in",
+        "why": "A chance zone may end quickly or return after a hidden delay.",
+        "detail": "Record continuously from the triggering role through the final success, failure, or delayed re-entry."
+      },
+      "items": [
+        {
+          "id": "chance-zone-01-elimination-mission",
+          "type": "optional",
+          "safe_type": "Chance Zone",
+          "label": "Elimination Mission",
+          "missable": true,
+          "levels": {
+            "1": "One normal-play transition offers a separate route into Hazard Rush.",
+            "2": "Enter Elimination Mission and complete its displayed objective.",
+            "3": "Reach it through special elimination replay; it lasts twenty games. Follow the displayed reel navigation and defeat displayed target count. Record every draw, counter change, success or failure screen, and any delayed re-entry; the published success estimate is over fifty percent."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "chance-zone-02-encirclement-zone",
+          "type": "optional",
+          "safe_type": "Chance Zone",
+          "label": "Encirclement Zone",
+          "missable": true,
+          "levels": {
+            "1": "One normal-play transition offers a separate route into Hazard Rush.",
+            "2": "Enter Encirclement Zone and complete its displayed objective.",
+            "3": "Reach it through selected chance roles; it lasts ten twenty thirty or continuing. Follow the displayed reel navigation and clear surrounding targets. Record every draw, counter change, success or failure screen, and any delayed re-entry; the published success estimate is about thirty-five percent."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "chance-zone-03-rank-up-zone",
+          "type": "optional",
+          "safe_type": "Chance Zone",
+          "label": "Rank-Up Zone",
+          "missable": true,
+          "levels": {
+            "1": "One normal-play transition offers a separate route into Hazard Rush.",
+            "2": "Enter Rank-Up Zone and complete its displayed objective.",
+            "3": "Reach it through selected chance roles; it lasts about twenty to thirty. Follow the displayed reel navigation and raise movable-display percentage. Record every draw, counter change, success or failure screen, and any delayed re-entry; the published success estimate is over sixty percent."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "hazard-rush",
+      "name": "Hazard Rush",
+      "location_cue": "The red-symbol entry, Four-Reel Challenge, active game counter, navigation prompts, and addition animations.",
+      "note": "Credit figures are cabinet specifications and observations, never wagering promises.",
+      "save_backup": {
+        "title": "Preserve the complete Rush entry",
+        "why": "Rare additions and transformations can occur without warning.",
+        "detail": "Record continuously from the triggering result until Hazard Rush and any immediate recovery mode have fully ended."
+      },
+      "items": [
+        {
+          "id": "rush-entry-routes",
+          "type": "optional",
+          "safe_type": "Hazard Rush",
+          "label": "Hazard Rush Entry Routes",
+          "missable": true,
+          "levels": {
+            "1": "The main mode can begin through more than one mechanical route.",
+            "2": "Capture one direct or prelude entry and each neutral chance-zone entry.",
+            "3": "Index the triggering role, preceding state cues, zone result when applicable, red-symbol alignment, and first Rush frame. Keep separate evidence for each verified route instead of treating one entry as universal."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rush-starting-range",
+          "type": "optional",
+          "safe_type": "Hazard Rush",
+          "label": "Starting-Game Range",
+          "missable": false,
+          "levels": {
+            "1": "The main counter begins within a documented range.",
+            "2": "Capture a Hazard Rush start between 50 and 300 games.",
+            "3": "Record the complete Four-Reel Challenge, every symbol line, the final awarded counter, and the first decrementing Rush frame. Do not combine values from different starts."
+          }
+        },
+        {
+          "id": "rush-credit-rate",
+          "type": "optional",
+          "safe_type": "Hazard Rush",
+          "label": "Nominal Credit Increase",
+          "missable": false,
+          "levels": {
+            "1": "The mode has a documented average machine rate.",
+            "2": "Log the cabinet's credit change across a clean Hazard Rush sample.",
+            "3": "Record starting credits, games played, visible payouts, navigation accuracy, and ending credits. Compare the direct result with the documented approximate 2.3-credit-per-game specification without presenting it as a guaranteed return."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rush-navigation",
+          "type": "interaction",
+          "safe_type": "Hazard Rush",
+          "label": "Rush Navigation",
+          "missable": false,
+          "levels": {
+            "1": "Reel prompts take priority inside the main mode.",
+            "2": "Follow every displayed reel-order instruction during Hazard Rush.",
+            "3": "Wait for the full cue, press the stop buttons in the shown order, and retain both the navigation and stopped reels in one frame. Log any missed instruction separately instead of counting the affected spin."
+          }
+        },
+        {
+          "id": "rush-four-reel-challenge",
+          "type": "optional",
+          "safe_type": "Hazard Rush",
+          "label": "Four-Reel Challenge",
+          "missable": false,
+          "levels": {
+            "1": "The opening symbol arrangement sets the starting counter.",
+            "2": "Align the red symbols on the main reels and movable display.",
+            "3": "Follow the displayed aiming prompt, capture the main and subdisplay alignments together, and record the resulting counter. A four-symbol single line awards 100 games; a double line awards 200 or 300."
+          }
+        },
+        {
+          "id": "rush-direct-addition",
+          "type": "optional",
+          "safe_type": "Hazard Rush",
+          "label": "Direct Game Addition",
+          "missable": true,
+          "levels": {
+            "1": "Chance roles can extend the active counter.",
+            "2": "Capture a role that adds games during Hazard Rush.",
+            "3": "Record the role, existing counter, raw award, any later transformation, and final total before the counter resumes. Keep the direct award separate from Growth or Mutation."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rush-growth",
+          "type": "optional",
+          "safe_type": "Hazard Rush",
+          "label": "Growth",
+          "missable": true,
+          "levels": {
+            "1": "An awarded number can multiply after appearing.",
+            "2": "Capture an addition that enters the Growth animation.",
+            "3": "Record the original number, each color stage, every multiplication step, and the final counter. Growth can reach a 27-times result; do not stop recording after the first increase."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rush-growth-blue",
+          "type": "optional",
+          "safe_type": "Growth Stage",
+          "label": "Blue Growth Stage",
+          "missable": true,
+          "levels": {
+            "1": "The first multiplication stage has a blue background.",
+            "2": "Capture blue behind an active Growth sequence.",
+            "3": "Keep the initial award and next transformation in the same recording, then mark blue as the first visible stage rather than a final multiplier guarantee."
+          }
+        },
+        {
+          "id": "rush-growth-green",
+          "type": "optional",
+          "safe_type": "Growth Stage",
+          "label": "Green Growth Stage",
+          "missable": true,
+          "levels": {
+            "1": "A later multiplication stage changes the background to green.",
+            "2": "Capture green during the same Growth chain.",
+            "3": "Record the number entering green, any additional multiplication, and the final counter. Catalogue green as the second visible stage without inferring its probability."
+          }
+        },
+        {
+          "id": "rush-growth-red",
+          "type": "optional",
+          "safe_type": "Growth Stage",
+          "label": "Red Growth Stage",
+          "missable": true,
+          "levels": {
+            "1": "The deepest documented color stage uses red.",
+            "2": "Capture red before the Growth result settles.",
+            "3": "Preserve every earlier stage and the final multiplied award in one sequence. Catalogue red as the third visible stage and retain the exact observed multiplier."
+          }
+        },
+        {
+          "id": "rush-mutation",
+          "type": "optional",
+          "safe_type": "Hazard Rush",
+          "label": "Mutation",
+          "missable": true,
+          "levels": {
+            "1": "An award can change form instead of multiplying conventionally.",
+            "2": "Capture a displayed game award that mutates into a larger number.",
+            "3": "Record the original award, the visual distortion, each intermediate display, and the final counter addition. Keep Mutation separate from Growth in the session index."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "special-addition-modes",
+      "name": "Special Addition Modes",
+      "location_cue": "The Burst weapon screen, changing background, infected main display, distorted reels, and nested mode transitions.",
+      "note": "Identity-bearing mode names are reduced to neutral mechanical descriptions.",
+      "save_backup": {
+        "title": "Keep the entire nested sequence",
+        "why": "Infection, Burst, Growth, Mutation, and Interludes can overlap.",
+        "detail": "Record without cuts from the first altered display until every nested mode has returned to ordinary Hazard Rush."
+      },
+      "items": [
+        {
+          "id": "burst-01-burst-entry",
+          "type": "optional",
+          "safe_type": "Shooting Burst",
+          "label": "Burst Entry",
+          "missable": true,
+          "levels": {
+            "1": "This specialized addition mode has a distinct observable pattern.",
+            "2": "Align BAR during the displayed cut-in.",
+            "3": "Capture the cut-in, BAR result, mode title, starting background, and first added value."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "burst-02-every-role-addition",
+          "type": "optional",
+          "safe_type": "Shooting Burst",
+          "label": "Every-Role Addition",
+          "missable": true,
+          "levels": {
+            "1": "This specialized addition mode has a distinct observable pattern.",
+            "2": "Continue free-play spins inside Burst.",
+            "3": "Record each stopped role and its addition until the continuation check ends the mode."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "burst-03-continuation-check",
+          "type": "optional",
+          "safe_type": "Shooting Burst",
+          "label": "Continuation Check",
+          "missable": true,
+          "levels": {
+            "1": "This specialized addition mode has a distinct observable pattern.",
+            "2": "Keep playing until Burst declines continuation.",
+            "3": "Capture every retained round and the exact final transition back to Hazard Rush."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "burst-04-background-ladder",
+          "type": "optional",
+          "safe_type": "Shooting Burst",
+          "label": "Background Ladder",
+          "missable": true,
+          "levels": {
+            "1": "This specialized addition mode has a distinct observable pattern.",
+            "2": "Press the chance button on the Burst entry screen.",
+            "3": "Record the resulting background and catalogue the documented order from white through rainbow."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "burst-05-handgun-pattern",
+          "type": "optional",
+          "safe_type": "Shooting Burst",
+          "label": "Handgun Pattern",
+          "missable": true,
+          "levels": {
+            "1": "This specialized addition mode has a distinct observable pattern.",
+            "2": "Reach Burst with the baseline handgun display.",
+            "3": "Capture its award, continuation result, and any later Growth or Mutation."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "burst-06-shotgun-pattern",
+          "type": "optional",
+          "safe_type": "Shooting Burst",
+          "label": "Shotgun Pattern",
+          "missable": true,
+          "levels": {
+            "1": "This specialized addition mode has a distinct observable pattern.",
+            "2": "Reach Burst with the baseline shotgun display.",
+            "3": "Capture its award, continuation result, and any later Growth or Mutation."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "burst-07-gatling-pattern",
+          "type": "optional",
+          "safe_type": "Shooting Burst",
+          "label": "Gatling Pattern",
+          "missable": true,
+          "levels": {
+            "1": "This specialized addition mode has a distinct observable pattern.",
+            "2": "Reach Burst with the gatling display.",
+            "3": "Record the complete attack and verify an addition of at least 20 games."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "burst-08-helper-attack-pattern",
+          "type": "optional",
+          "safe_type": "Shooting Burst",
+          "label": "Helper-Attack Pattern",
+          "missable": true,
+          "levels": {
+            "1": "This specialized addition mode has a distinct observable pattern.",
+            "2": "Reach Burst with the helper attack.",
+            "3": "Record the full cameo attack and verify an addition of at least 30 games without naming the character."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "burst-09-rocket-pattern",
+          "type": "optional",
+          "safe_type": "Shooting Burst",
+          "label": "Rocket Pattern",
+          "missable": true,
+          "levels": {
+            "1": "This specialized addition mode has a distinct observable pattern.",
+            "2": "Reach Burst with the rocket display.",
+            "3": "Record the launch and verify an addition of at least 50 games."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "burst-10-nonbaseline-continuation-cue",
+          "type": "optional",
+          "safe_type": "Shooting Burst",
+          "label": "Nonbaseline Continuation Cue",
+          "missable": true,
+          "levels": {
+            "1": "This specialized addition mode has a distinct observable pattern.",
+            "2": "Reach Burst with a weapon other than handgun or shotgun.",
+            "3": "Capture the weapon, award, and next continuation result; treat it as a strong continuation cue."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "infection-01-infection-entry",
+          "type": "optional",
+          "safe_type": "Infection Mode",
+          "label": "Infection Entry",
+          "missable": true,
+          "levels": {
+            "1": "The infected display changes addition opportunities.",
+            "2": "Capture the screen becoming visibly infected.",
+            "3": "Record its entry context, main and subdisplay changes, first qualifying role, and later exit."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "infection-02-fivefold-rare-role-state",
+          "type": "optional",
+          "safe_type": "Infection Mode",
+          "label": "Fivefold Rare-Role State",
+          "missable": true,
+          "levels": {
+            "1": "The infected display changes addition opportunities.",
+            "2": "Log roles throughout the infected interval.",
+            "3": "Count direct stopped results and compare them with ordinary footage; retain the documented approximate fivefold rate as a specification."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "infection-03-raised-special-mode-access",
+          "type": "optional",
+          "safe_type": "Infection Mode",
+          "label": "Raised Special-Mode Access",
+          "missable": true,
+          "levels": {
+            "1": "The infected display changes addition opportunities.",
+            "2": "Continue until Burst or an Interlude begins.",
+            "3": "Capture the complete transition and the infected display that immediately preceded it."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "infection-04-doubled-burst-additions",
+          "type": "optional",
+          "safe_type": "Infection Mode",
+          "label": "Doubled Burst Additions",
+          "missable": true,
+          "levels": {
+            "1": "The infected display changes addition opportunities.",
+            "2": "Enter Burst while Infection remains active.",
+            "3": "Record each added value and compare the direct session result with the documented approximate doubling."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "infection-05-twentyfold-interlude-additions",
+          "type": "optional",
+          "safe_type": "Infection Mode",
+          "label": "Twentyfold Interlude Additions",
+          "missable": true,
+          "levels": {
+            "1": "The infected display changes addition opportunities.",
+            "2": "Enter an Interlude while Infection remains active.",
+            "3": "Record chance-role additions and compare the direct session result with the documented approximate twentyfold effect."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "infection-06-protected-infection-state",
+          "type": "optional",
+          "safe_type": "Infection Mode",
+          "label": "Protected Infection State",
+          "missable": true,
+          "levels": {
+            "1": "The infected display changes addition opportunities.",
+            "2": "Remain in Burst or an Interlude until it ends.",
+            "3": "Capture that the infected presentation persists throughout the nested mode and record when it finally clears."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "interludes-premium-and-recovery",
+      "name": "Interludes, Premium Mode, and Recovery",
+      "location_cue": "The paused Rush counter, neutral interlude presentation, premium identifier, door-button sequence, tablet counter, and recovery exit.",
+      "note": "Narrative images are indexed without titles, identities, ordering, or outcomes.",
+      "save_backup": {
+        "title": "Preserve the Rush state before rare transitions",
+        "why": "Interludes and recovery results can alter a long, difficult-to-reproduce session.",
+        "detail": "Keep a synchronized counter log and uninterrupted recording from before entry until ordinary Hazard Rush or normal play resumes."
+      },
+      "items": [
+        {
+          "id": "interlude-entry",
+          "type": "optional",
+          "safe_type": "Story Interlude",
+          "label": "Interlude Entry",
+          "missable": true,
+          "levels": {
+            "1": "A chance role during Hazard Rush can pause the main counter.",
+            "2": "Capture the transition into a story interlude.",
+            "3": "Record the triggering role, remaining Rush games, transition, interlude counter, and first frame. Do not describe the narrative content or identify characters."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "interlude-duration",
+          "type": "optional",
+          "safe_type": "Story Interlude",
+          "label": "Interlude Duration",
+          "missable": true,
+          "levels": {
+            "1": "The internal pseudo-bonus uses one of two documented lengths.",
+            "2": "Capture an interlude lasting 20 or 40 games.",
+            "3": "Count from the first playable interlude game through its exit, record the selected length, and verify that the main Hazard Rush counter remains unchanged."
+          }
+        },
+        {
+          "id": "interlude-counter-pause",
+          "type": "optional",
+          "safe_type": "Story Interlude",
+          "label": "Rush Counter Pause",
+          "missable": false,
+          "levels": {
+            "1": "The main game allowance is protected during the interlude.",
+            "2": "Compare the Hazard Rush counter immediately before and after the interlude.",
+            "3": "Keep both counter values and the complete interlude in one capture. Separate any added games from the unchanged pre-existing counter when reconciling the result."
+          }
+        },
+        {
+          "id": "interlude-additions",
+          "type": "optional",
+          "safe_type": "Story Interlude",
+          "label": "Interlude Game Additions",
+          "missable": true,
+          "levels": {
+            "1": "Chance roles can still extend the main mode here.",
+            "2": "Capture a game addition during an interlude.",
+            "3": "Record the stopped role, raw addition, Infection status, Growth or Mutation, and final Hazard Rush total before the interlude ends."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "interlude-catalogue",
+          "type": "collectible",
+          "safe_type": "Story Interlude",
+          "label": "Complete Interlude Catalogue",
+          "missable": true,
+          "levels": {
+            "1": "The internal sequence contains several separate presentation slots.",
+            "2": "Fill every interlude slot exposed by the cabinet's own sequence or index.",
+            "3": "Capture each distinct slot from its opening frame through its return to play, label it only by neutral capture order, and verify the collection against the cabinet rather than exposing titles, plot order, or narrative outcomes."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "premium-rush-entry",
+          "type": "optional",
+          "safe_type": "Premium Mode",
+          "label": "Premium Rush Entry",
+          "missable": true,
+          "levels": {
+            "1": "A rare main-mode variant protects the counter until an interlude.",
+            "2": "Capture the premium Hazard Rush presentation.",
+            "3": "Record the complete entry, visible premium identifier, active counter, and every spin until the next interlude. Verify that the existing counter does not decrease during this interval."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "premium-rush-return",
+          "type": "optional",
+          "safe_type": "Premium Mode",
+          "label": "Premium Return",
+          "missable": true,
+          "levels": {
+            "1": "The premium state can return after an interlude.",
+            "2": "Complete the displayed button sequence after the interlude.",
+            "3": "Press only when prompted, record the door-destruction animation, and continue through the resulting screen. Count a return only when the cabinet visibly restores the premium state."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "danger-zone-entry",
+          "type": "optional",
+          "safe_type": "Recovery Mode",
+          "label": "Recovery-Zone Entry",
+          "missable": true,
+          "levels": {
+            "1": "Zero remaining Rush games opens one recovery opportunity.",
+            "2": "Let the Hazard Rush counter reach zero and capture the recovery-zone transition.",
+            "3": "Record the final decrement, entry screen, tablet counter, and every stopped role. Preserve a backup or reproducible free-play state before intentionally testing expiration."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "danger-zone-tablets",
+          "type": "optional",
+          "safe_type": "Recovery Mode",
+          "label": "Six-Tablet Recovery",
+          "missable": true,
+          "levels": {
+            "1": "Collectible tablets can restore Hazard Rush.",
+            "2": "Accumulate six tablets before the falling replay ends the opportunity.",
+            "3": "Record every tablet award, its triggering role, the counter reaching six, and the full return to Hazard Rush. Do not combine tablets from separate recovery attempts."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "danger-zone-falling-replay",
+          "type": "optional",
+          "safe_type": "Recovery Mode",
+          "label": "Falling-Replay Exit",
+          "missable": true,
+          "levels": {
+            "1": "One replay result ends an unsuccessful recovery attempt.",
+            "2": "Capture the falling-replay result before six tablets are collected.",
+            "3": "Record the reel result, remaining tablet count, exit animation, and next cabinet state. Use a separate copied setup for this failure capture if the cabinet's counters cannot be restored safely."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "cabinet-configurations",
+      "name": "Cabinet Configurations",
+      "location_cue": "The authorized operator menu, configuration indicator, ordinary reels, and session statistics.",
+      "note": "Configuration data is preserved as machine documentation, not as betting advice.",
+      "save_backup": {
+        "title": "Save the original operator setting",
+        "why": "Changing configuration can invalidate every comparison and may affect persistent counters.",
+        "detail": "Photograph the starting value, use only authorized service access, and restore it after each isolated free-play sample."
+      },
+      "items": [
+        {
+          "id": "configuration-1",
+          "type": "optional",
+          "safe_type": "Cabinet Configuration",
+          "label": "Configuration 1",
+          "missable": true,
+          "levels": {
+            "1": "The original cabinet exposes a distinct operator configuration.",
+            "2": "Have an authorized owner select Configuration 1 for a non-wager test.",
+            "3": "Using the original operator procedure, document Configuration 1, restart in free play, and capture a controlled sample. Its published specification lists theoretical output 97.2 percent, Hazard Rush entry 1 in 273.9, interlude entry 1 in 209.6, and weak-watermelon frequency 1 in 68.26; restore the starting setting afterward."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "configuration-2",
+          "type": "optional",
+          "safe_type": "Cabinet Configuration",
+          "label": "Configuration 2",
+          "missable": true,
+          "levels": {
+            "1": "The original cabinet exposes a distinct operator configuration.",
+            "2": "Have an authorized owner select Configuration 2 for a non-wager test.",
+            "3": "Using the original operator procedure, document Configuration 2, restart in free play, and capture a controlled sample. Its published specification lists theoretical output 98.9 percent, Hazard Rush entry 1 in 247.1, interlude entry 1 in 207.4, and weak-watermelon frequency 1 in 66.19; restore the starting setting afterward."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "configuration-3",
+          "type": "optional",
+          "safe_type": "Cabinet Configuration",
+          "label": "Configuration 3",
+          "missable": true,
+          "levels": {
+            "1": "The original cabinet exposes a distinct operator configuration.",
+            "2": "Have an authorized owner select Configuration 3 for a non-wager test.",
+            "3": "Using the original operator procedure, document Configuration 3, restart in free play, and capture a controlled sample. Its published specification lists theoretical output 100.3 percent, Hazard Rush entry 1 in 263.2, interlude entry 1 in 201.9, and weak-watermelon frequency 1 in 64.25; restore the starting setting afterward."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "configuration-4",
+          "type": "optional",
+          "safe_type": "Cabinet Configuration",
+          "label": "Configuration 4",
+          "missable": true,
+          "levels": {
+            "1": "The original cabinet exposes a distinct operator configuration.",
+            "2": "Have an authorized owner select Configuration 4 for a non-wager test.",
+            "3": "Using the original operator procedure, document Configuration 4, restart in free play, and capture a controlled sample. Its published specification lists theoretical output 104.4 percent, Hazard Rush entry 1 in 229.2, interlude entry 1 in 201.6, and weak-watermelon frequency 1 in 62.41; restore the starting setting afterward."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "configuration-5",
+          "type": "optional",
+          "safe_type": "Cabinet Configuration",
+          "label": "Configuration 5",
+          "missable": true,
+          "levels": {
+            "1": "The original cabinet exposes a distinct operator configuration.",
+            "2": "Have an authorized owner select Configuration 5 for a non-wager test.",
+            "3": "Using the original operator procedure, document Configuration 5, restart in free play, and capture a controlled sample. Its published specification lists theoretical output 110.8 percent, Hazard Rush entry 1 in 202.0, interlude entry 1 in 198.6, and weak-watermelon frequency 1 in 60.68; restore the starting setting afterward."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "configuration-6",
+          "type": "optional",
+          "safe_type": "Cabinet Configuration",
+          "label": "Configuration 6",
+          "missable": true,
+          "levels": {
+            "1": "The original cabinet exposes a distinct operator configuration.",
+            "2": "Have an authorized owner select Configuration 6 for a non-wager test.",
+            "3": "Using the original operator procedure, document Configuration 6, restart in free play, and capture a controlled sample. Its published specification lists theoretical output 119.2 percent, Hazard Rush entry 1 in 152.8, interlude entry 1 in 197.0, and weak-watermelon frequency 1 in 59.04; restore the starting setting afterward."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "configuration-table-audit",
+          "type": "optional",
+          "safe_type": "Cabinet Configuration",
+          "label": "Configuration Table Audit",
+          "missable": true,
+          "levels": {
+            "1": "All operator levels require a preserved reference record.",
+            "2": "Compare the six configuration screens with the documented specification table.",
+            "3": "Photograph each authorized selection, keep its session footage separately named, verify all four published values, and restore the original level. Do not use public wagering to infer or test cabinet configuration."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "rare-effects-and-easter-eggs",
+      "name": "Rare Effects and Easter Eggs",
+      "location_cue": "Unusual text pages, costumes, patterns, cameos, navigation clusters, meter variants, freezes, and special mode screens.",
+      "note": "Every publicly documented rare effect is represented; a separate hold covers the unknown complete cabinet catalogue.",
+      "save_backup": {
+        "title": "Preserve every first occurrence",
+        "why": "Many effects are stochastic and may never repeat on the surviving cabinet.",
+        "detail": "Keep the first uncut capture, note configuration and mode, then duplicate it before continuing the session."
+      },
+      "items": [
+        {
+          "id": "rare-effect-01-long-freeze",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Long Freeze",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Long Freeze in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Long Freeze, the immediate result, and the next playable state; catalogue its verified meaning as opens Premium Rush. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-02-red-burst-background",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Red Burst Background",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Red Burst Background in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Red Burst Background, the immediate result, and the next playable state; catalogue its verified meaning as high continuation cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-03-rainbow-burst-background",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Rainbow Burst Background",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Rainbow Burst Background in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Rainbow Burst Background, the immediate result, and the next playable state; catalogue its verified meaning as highest continuation cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-04-gatling-burst",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Gatling Burst",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Gatling Burst in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Gatling Burst, the immediate result, and the next playable state; catalogue its verified meaning as minimum twenty-game addition. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-05-helper-burst",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Helper Burst",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Helper Burst in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Helper Burst, the immediate result, and the next playable state; catalogue its verified meaning as minimum thirty-game addition. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-06-rocket-burst",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Rocket Burst",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Rocket Burst in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Rocket Burst, the immediate result, and the next playable state; catalogue its verified meaning as minimum fifty-game addition. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-07-guest-burst-portrait",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Guest Burst Portrait",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Guest Burst Portrait in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Guest Burst Portrait, the immediate result, and the next playable state; catalogue its verified meaning as rare presentation variant. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-08-patterned-title",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Patterned Title",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Patterned Title in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Patterned Title, the immediate result, and the next playable state; catalogue its verified meaning as raised success cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-09-red-reverse-cut-in",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Red Reverse Cut-In",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Red Reverse Cut-In in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Red Reverse Cut-In, the immediate result, and the next playable state; catalogue its verified meaning as rare visual cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-10-frozen-rocket-in-encirclement",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Frozen Rocket in Encirclement",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Frozen Rocket in Encirclement in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Frozen Rocket in Encirclement, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-11-two-chance-symbols",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Two Chance Symbols",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Two Chance Symbols in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Two Chance Symbols, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-12-rank-meter-100-percent",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Rank Meter 100 Percent",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Rank Meter 100 Percent in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Rank Meter 100 Percent, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-13-rank-meter-810-percent",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Rank Meter 810 Percent",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Rank Meter 810 Percent in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Rank Meter 810 Percent, the immediate result, and the next playable state; catalogue its verified meaning as confirms Premium Rush. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-14-e-flash-color-mismatch",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "E-Flash Color Mismatch",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for E-Flash Color Mismatch in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, E-Flash Color Mismatch, the immediate result, and the next playable state; catalogue its verified meaning as high-state cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-15-bell-flash-mismatch",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Bell Flash Mismatch",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Bell Flash Mismatch in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Bell Flash Mismatch, the immediate result, and the next playable state; catalogue its verified meaning as high-state cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-16-reversed-stage-caption",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Reversed Stage Caption",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Reversed Stage Caption in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Reversed Stage Caption, the immediate result, and the next playable state; catalogue its verified meaning as prelude cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-17-alternate-heart-portrait",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Alternate Heart Portrait",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Alternate Heart Portrait in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Alternate Heart Portrait, the immediate result, and the next playable state; catalogue its verified meaning as rare meter variant. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-18-red-stage-transition",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Red Stage Transition",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Red Stage Transition in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Red Stage Transition, the immediate result, and the next playable state; catalogue its verified meaning as high-state cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-19-mission-truck-arrival",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Mission Truck Arrival",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Mission Truck Arrival in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Mission Truck Arrival, the immediate result, and the next playable state; catalogue its verified meaning as rare-role cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-20-alternate-subdisplay-portrait",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Alternate Subdisplay Portrait",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Alternate Subdisplay Portrait in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Alternate Subdisplay Portrait, the immediate result, and the next playable state; catalogue its verified meaning as rare screen variant. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-21-frequent-white-navigation",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Frequent White Navigation",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Frequent White Navigation in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Frequent White Navigation, the immediate result, and the next playable state; catalogue its verified meaning as high-state cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-22-chance-symbol",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Chance Symbol",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Chance Symbol in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Chance Symbol, the immediate result, and the next playable state; catalogue its verified meaning as high-state cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-23-flashing-bell-payline",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Flashing Bell Payline",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Flashing Bell Payline in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Flashing Bell Payline, the immediate result, and the next playable state; catalogue its verified meaning as high-state cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-24-stretch-animation",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Stretch Animation",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Stretch Animation in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Stretch Animation, the immediate result, and the next playable state; catalogue its verified meaning as high-state cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-25-overhead-gun-spin",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Overhead Gun Spin",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Overhead Gun Spin in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Overhead Gun Spin, the immediate result, and the next playable state; catalogue its verified meaning as high-state cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-26-weapon-scan-animation",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Weapon Scan Animation",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Weapon Scan Animation in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Weapon Scan Animation, the immediate result, and the next playable state; catalogue its verified meaning as high-state cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-27-red-dialogue",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Red Dialogue",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Red Dialogue in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Red Dialogue, the immediate result, and the next playable state; catalogue its verified meaning as raised success cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-28-large-navigation-cluster",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Large Navigation Cluster",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Large Navigation Cluster in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Large Navigation Cluster, the immediate result, and the next playable state; catalogue its verified meaning as rare ART cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-29-canine-silhouette",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Canine Silhouette",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Canine Silhouette in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Canine Silhouette, the immediate result, and the next playable state; catalogue its verified meaning as rare ART cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-30-five-attack",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Five Attack",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Five Attack in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Five Attack, the immediate result, and the next playable state; catalogue its verified meaning as rare ART cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-31-special-chance",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Special Chance",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Special Chance in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Special Chance, the immediate result, and the next playable state; catalogue its verified meaning as rare ART cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-32-observer-scene",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Observer Scene",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Observer Scene in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Observer Scene, the immediate result, and the next playable state; catalogue its verified meaning as rare ART cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-33-red-shutter-navigation",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Red Shutter Navigation",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Red Shutter Navigation in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Red Shutter Navigation, the immediate result, and the next playable state; catalogue its verified meaning as rare ART cue. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-34-burst-confirmation-message",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Burst Confirmation Message",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Burst Confirmation Message in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Burst Confirmation Message, the immediate result, and the next playable state; catalogue its verified meaning as confirms Shooting Burst. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-35-zebra-outfit",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Zebra Outfit",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Zebra Outfit in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Zebra Outfit, the immediate result, and the next playable state; catalogue its verified meaning as rare costume variant. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-36-alternate-partner-outfit",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Alternate Partner Outfit",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Alternate Partner Outfit in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Alternate Partner Outfit, the immediate result, and the next playable state; catalogue its verified meaning as rare costume variant. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-37-gemstone-briefcase",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Gemstone Briefcase",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Gemstone Briefcase in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Gemstone Briefcase, the immediate result, and the next playable state; catalogue its verified meaning as confirms Interlude prelude. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-38-instant-movement-cue",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Instant-Movement Cue",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Instant-Movement Cue in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Instant-Movement Cue, the immediate result, and the next playable state; catalogue its verified meaning as fifty-plus or Burst. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-39-flashback-cue",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Flashback Cue",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Flashback Cue in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Flashback Cue, the immediate result, and the next playable state; catalogue its verified meaning as hundred-plus or Burst. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-40-group-end-screen",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Group End Screen",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Group End Screen in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Group End Screen, the immediate result, and the next playable state; catalogue its verified meaning as configuration five or six. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-41-costume-change",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Costume Change",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Costume Change in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Costume Change, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-42-mascot-cameo",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Mascot Cameo",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Mascot Cameo in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Mascot Cameo, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-43-ritual-mask-statue",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Ritual Mask Statue",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Ritual Mask Statue in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Ritual Mask Statue, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-44-guide-magazine-document",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Guide Magazine Document",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Guide Magazine Document in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Guide Magazine Document, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-45-journal-player-diary",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Journal: Player Diary",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Journal: Player Diary in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Journal: Player Diary, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-46-journal-manager-diary",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Journal: Manager Diary",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Journal: Manager Diary in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Journal: Manager Diary, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-47-journal-new-opening",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Journal: New Opening",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Journal: New Opening in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Journal: New Opening, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-48-journal-rally-call",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Journal: Rally Call",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Journal: Rally Call in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Journal: Rally Call, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-49-journal-emergency-news",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Journal: Emergency News",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Journal: Emergency News in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Journal: Emergency News, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-50-journal-extra-news",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Journal: Extra News",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Journal: Extra News in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Journal: Extra News, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-51-journal-daily-fortune",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Journal: Daily Fortune",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Journal: Daily Fortune in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Journal: Daily Fortune, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-52-journal-reel-manual",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Journal: Reel Manual",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Journal: Reel Manual in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Journal: Reel Manual, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-53-journal-rush-caution",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Journal: Rush Caution",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Journal: Rush Caution in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Journal: Rush Caution, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-54-journal-el",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Journal: EL",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Journal: EL in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Journal: EL, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-55-journal-developer-friend",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Journal: Developer Friend",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Journal: Developer Friend in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Journal: Developer Friend, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-56-journal-song-lyric-page",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Journal: Song-Lyric Page",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Journal: Song-Lyric Page in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Journal: Song-Lyric Page, the immediate result, and the next playable state; catalogue its verified meaning as confirms ART. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-57-four-consecutive-replays",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Four Consecutive Replays",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Four Consecutive Replays in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Four Consecutive Replays, the immediate result, and the next playable state; catalogue its verified meaning as special trigger. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "rare-effect-58-four-consecutive-bells",
+          "type": "secret",
+          "safe_type": "Rare Cabinet Effect",
+          "label": "Four Consecutive Bells",
+          "missable": true,
+          "levels": {
+            "1": "A rare visual, text, costume, or reel pattern belongs in the presentation archive.",
+            "2": "During private free play, watch for Four Consecutive Bells in its compatible mode.",
+            "3": "Keep synchronized reels, buttons, main screen, subdisplay, lamps, and audio in view. Capture the full lead-in, Four Consecutive Bells, the immediate result, and the next playable state; catalogue its verified meaning as special trigger. Never spend money or alter certified hardware to force the event."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "presentation-scenes",
+      "name": "Physical Presentation Scenes",
+      "location_cue": "The public square, wetland, ruins, laboratory-like room, tunnel, vehicle, puzzle, and battle animations.",
+      "note": "Scenes are described by geography and visible mechanics only.",
+      "save_backup": {
+        "title": "Index scenes before extended testing",
+        "why": "A rare mission variation can be replaced by another presentation on the next trigger.",
+        "detail": "Save the full first capture and its cabinet state before trying to record alternate outcomes."
+      },
+      "items": [
+        {
+          "id": "presentation-scene-01-enemy-encounter",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Enemy Encounter",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Enemy Encounter.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: observe target and outcome. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-02-rifle-case",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Rifle Case",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Rifle Case.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: observe case contents. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-03-document-search",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Document Search",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Document Search.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: observe requested object. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-04-instant-movement-sequence",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Instant-Movement Sequence",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Instant-Movement Sequence.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: break display to advance. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-05-flashback-sequence",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Flashback Sequence",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Flashback Sequence.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: continue repeated movie cue. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-06-movie-chain",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Movie Chain",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Movie Chain.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: record every continuation tier. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-07-runaway-truck-mission",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Runaway Truck Mission",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Runaway Truck Mission.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: stop the vehicle. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-08-motorcycle-mission",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Motorcycle Mission",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Motorcycle Mission.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: defeat mounted attackers. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-09-large-axe-mission",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Large Axe Mission",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Large Axe Mission.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: defeat axe wielder. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-10-crocodile-mission",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Crocodile Mission",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Crocodile Mission.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: escape wetland threat. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-11-airboat-trap-mission",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Airboat Trap Mission",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Airboat Trap Mission.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: escape the trap. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-12-chainsaw-mission",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Chainsaw Mission",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Chainsaw Mission.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: defeat chainsaw wielder. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-13-mirror-puzzle-mission",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Mirror Puzzle Mission",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Mirror Puzzle Mission.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: open door with reflected light. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-14-falling-pillar-mission",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Falling Pillar Mission",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Falling Pillar Mission.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: escape collapsing structure. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-15-giant-mission",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Giant Mission",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Giant Mission.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: defeat oversized attacker. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-16-stealth-creature-mission",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Stealth Creature Mission",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Stealth Creature Mission.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: escape without detection. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-17-gatling-mission",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Gatling Mission",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Gatling Mission.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: defeat heavy-gun attacker. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-18-winged-creature-battle",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Winged Creature Battle",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Winged Creature Battle.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: use mines and concentrated fire. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-19-gas-chamber-battle",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Gas-Chamber Battle",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Gas-Chamber Battle.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: use gas and firearms. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "presentation-scene-20-fast-opponent-battle",
+          "type": "secret",
+          "safe_type": "Presentation Scene",
+          "label": "Fast Opponent Battle",
+          "missable": true,
+          "levels": {
+            "1": "This physical mission or animation has a distinct cabinet sequence.",
+            "2": "Reach the compatible physical backdrop and wait for Fast Opponent Battle.",
+            "3": "Record the entire transition, displayed prompt, reel outcome, button input, success and failure variations when safely reproducible, and the return to play. Complete the visible objective by following the cabinet prompt: win the shared attack sequence. Keep identities and narrative context out of the guide."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "verification-holds",
+      "name": "Unverified Cabinet Boundaries",
+      "location_cue": "Any undocumented operator screen, reel result, probability, effect, audio cue, persistent counter, firmware difference, or free-play procedure.",
+      "note": "Unknown cabinet data remains withheld rather than becoming invented completion guidance.",
+      "save_backup": {
+        "title": "Retain raw evidence before resolving a hold",
+        "why": "A single stochastic result or altered cabinet cannot establish a general rule.",
+        "detail": "Store the untouched synchronized recording, photographs, operator documentation, and repeat test before editing fact notes or guide prose."
+      },
+      "items": [
+        {
+          "id": "verification-hold-01",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #1",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: complete cabinet control manual. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-02",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #2",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: service-menu backup procedure. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-03",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #3",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: complete reel combination table. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-04",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #4",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: all stop-order penalty effects. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-05",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #5",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: all role probabilities. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-06",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #6",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: internal state transition odds. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-07",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #7",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: chance-zone entry probabilities. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-08",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #8",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: complete direct-addition table. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-09",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #9",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: growth and mutation probabilities. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-10",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #10",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: episode slot titles and order. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-11",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #11",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: Premium entry and return odds. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-12",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #12",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: complete presentation catalogue. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-13",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #13",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: complete audio and music catalogue. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-14",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #14",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: configuration effect on presentations. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-15",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #15",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: persistent counters and memory. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-16",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #16",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: current lawful cabinet availability. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-17",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #17",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: cabinet-specific firmware differences. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-hold-18",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Verification Hold #18",
+          "missable": false,
+          "levels": {
+            "1": "The surviving public record does not establish this cabinet detail completely.",
+            "2": "Resolve this entry only from lawful hardware, original documentation, and synchronized capture.",
+            "3": "NEEDS VERIFICATION: complete non-wager free-play setup. Record the model, firmware, configuration, starting counters, exact inputs, reels, every display surface, audio, and repeat result before replacing this hold. Do not infer a control, probability, reward, title, or service procedure from a promotional image."
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "final-archival-audit",
+      "name": "Final Archival Audit",
+      "location_cue": "The cabinet provenance file, synchronized footage, role ledger, mode timeline, configuration records, presentation index, and verification holds.",
+      "note": "Completion means every documented mechanical and presentation element plus an honest record of what surviving evidence cannot establish.",
+      "save_backup": {
+        "title": "Duplicate the completed archive",
+        "why": "The final evidence combines rare stochastic events and irreplaceable cabinet records.",
+        "detail": "Keep two checked copies of raw footage, photographs, operator notes, translations, configuration logs, and the final checklist before reconciliation."
+      },
+      "items": [
+        {
+          "id": "audit-route",
+          "type": "interaction",
+          "safe_type": "Final Audit",
+          "label": "Cabinet Provenance Audit",
+          "missable": false,
+          "levels": {
+            "1": "The final archive must prove the selected machine route.",
+            "2": "Confirm model, manufacturer, cabinet, firmware, free-play setup, and original configuration.",
+            "3": "Compare the model plate, cabinet photographs, synchronized power-on recording, service record, and backup checksums. Reject application-only or unidentified video evidence."
+          }
+        },
+        {
+          "id": "audit-reels",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Reel and Role Audit",
+          "missable": false,
+          "levels": {
+            "1": "Every safe procedure and visible role needs a complete reel capture.",
+            "2": "Confirm the permitted stop orders, navigation, follow-up aiming, and all catalogued symbols.",
+            "3": "Review each recording from lever input through final reels and display response. Mark accidental penalty-risk spins separately and leave unsupported combination meanings unresolved."
+          }
+        },
+        {
+          "id": "audit-entry-zones",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Chance-Zone Audit",
+          "missable": false,
+          "levels": {
+            "1": "Each route into the main mode has a separate objective.",
+            "2": "Confirm complete success and failure evidence for every neutral chance zone.",
+            "3": "Verify the trigger, counter or percentage display, reel inputs, objective, terminal screen, delayed return, and resulting cabinet state for each mode."
+          }
+        },
+        {
+          "id": "audit-rush",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Hazard Rush Audit",
+          "missable": false,
+          "levels": {
+            "1": "The main mode contains several addition systems.",
+            "2": "Confirm entry, Four-Reel Challenge, navigation, direct addition, Growth, and Mutation.",
+            "3": "Reconcile the original counter, each raw award, every multiplication or mutation, and the final counter. Keep nominal credit-rate testing separate from completion evidence."
+          }
+        },
+        {
+          "id": "audit-special-modes",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Special-Mode Audit",
+          "missable": false,
+          "levels": {
+            "1": "Nested modes require synchronized evidence.",
+            "2": "Confirm Burst patterns, Infection effects, interludes, Premium mode, and recovery.",
+            "3": "Use the mode timeline to verify entry, protected counters, additions, nested persistence, return conditions, tablet recovery, and the falling-replay exit without exposing narrative content."
+          }
+        },
+        {
+          "id": "audit-configurations",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Configuration Audit",
+          "missable": false,
+          "levels": {
+            "1": "Operator-level comparisons must remain isolated and reversible.",
+            "2": "Confirm every documented configuration and the restored original setting.",
+            "3": "Review authorization, before-and-after photographs, published specification values, free-play samples, and restoration evidence. Exclude any session involving wagering."
+          }
+        },
+        {
+          "id": "audit-catalogues",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Presentation Catalogue Audit",
+          "missable": false,
+          "levels": {
+            "1": "Rare effects and physical scenes need indexed first-occurrence captures.",
+            "2": "Confirm every represented rare effect, Easter egg, and presentation scene.",
+            "3": "Open the capture index and verify each entry includes lead-in, full event, immediate result, next playable state, configuration, and mode. Keep the complete-catalogue hold unresolved unless original documentation closes it."
+          }
+        },
+        {
+          "id": "audit-holds",
+          "type": "optional",
+          "safe_type": "Final Audit",
+          "label": "Verification-Hold Audit",
+          "missable": false,
+          "levels": {
+            "1": "Maximum verifiable completion must retain its unknown boundaries.",
+            "2": "Review every hold and attach repeatable cabinet evidence to resolved entries.",
+            "3": "Leave unsupported holds uncertain. Replace one only after lawful hardware or original documentation establishes the exact detail, and list all remaining holds in the report."
+          }
+        }
+      ]
+    }
+  ]
+}

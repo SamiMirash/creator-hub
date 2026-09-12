@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Returnal caps frame generation at 2X. The ceiling was one return value. | Sami Mirash</title>
+<meta name="description" content="Returnal was built on an NVIDIA SDK old enough that multi-frame generation did not exist. A small proxy bridges it to a modern one and unlocks 3X, 4X, 5X and 6X. What it took, what it measures, and why the frame counter lies.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.samimirash.com/articles/returnal-multi-frame-generation/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Returnal caps frame generation at 2X. The ceiling was one return value.">
+<meta property="og:description" content="The ceiling was not really in the game. It was in one byte.">
+<meta property="og:url" content="https://www.samimirash.com/articles/returnal-multi-frame-generation/">
+<meta property="og:image" content="https://www.samimirash.com/articles/returnal-multi-frame-generation/cover-social.df37544f12.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="A dark Returnal forest with the headline 4X in a 2X game">
+<meta name="twitter:image" content="https://www.samimirash.com/articles/returnal-multi-frame-generation/cover-social.df37544f12.jpg">
+<meta name="twitter:image:alt" content="A dark Returnal forest with the headline 4X in a 2X game">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Returnal caps frame generation at 2X. The ceiling was one return value.">
+<meta name="twitter:description" content="The ceiling was not really in the game. It was in one byte.">
+<link rel="stylesheet" href="/assets/site.97537af8ff.css">
+<style>
+  .wrap{max-width:860px;margin:0 auto;padding:28px 18px 96px}
+  .wrap h1{font-size:2.1rem;line-height:1.15;margin:.1em 0 .35em}
+  .standfirst{font-size:1.12rem;color:var(--muted);line-height:1.58;margin:0 0 .8em}
+  .wrap h2{font-size:1.45rem;margin:1.75em 0 .45em;color:var(--accent-3)}
+  .wrap h3{font-size:1.1rem;margin:1.25em 0 .35em}
+  .wrap p{line-height:1.65;margin:0 0 .82em}
+  .kicker{text-transform:uppercase;letter-spacing:1.4px;font-size:.76rem;color:var(--accent);margin:0 0 .6em}
+  .home{display:inline-block;color:var(--muted);text-decoration:none;font-size:.82rem;letter-spacing:.6px;text-transform:uppercase;margin-bottom:1.4em}
+  .home:hover{color:var(--accent)}
+  .meta{color:var(--muted);font-size:.86rem;margin:0 0 1.4em}
+  figure{margin:1.45em 0}
+  figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:var(--radius);display:block}
+  figcaption{color:var(--muted);font-size:.88rem;margin-top:.55em;line-height:1.48}
+  .article-cover{margin:0 0 1.65em}
+  .article-cover img{aspect-ratio:5/2;object-fit:cover}
+  .facts{display:grid;grid-template-columns:minmax(150px,210px) 1fr;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:.85em 0 1.15em;background:var(--surface)}
+  .facts dt,.facts dd{padding:9px 12px;margin:0;border-bottom:1px solid var(--line);line-height:1.5}
+  .facts dt{font-weight:700;color:var(--accent-3)}
+  .facts dt:last-of-type,.facts dd:last-of-type{border-bottom:0}
+  .metric{font-variant-numeric:tabular-nums}
+  .win{color:var(--accent);font-weight:700}
+  .bad{color:var(--danger)}
+  .box{border:1px solid var(--line);border-left:3px solid var(--accent-3);border-radius:var(--radius);padding:12px 16px;margin:1.1em 0;background:var(--surface)}
+  .box.warn{border-left-color:var(--danger)}
+  .box p:last-child{margin-bottom:0}
+  code{background:var(--surface-2);padding:2px 6px;border-radius:4px;font-size:.9em}
+  pre{background:var(--surface-2);padding:14px 16px;border-radius:var(--radius);overflow-x:auto;font-size:.88rem;line-height:1.5}
+  .refs{padding-left:1.2em;margin:.65em 0}
+  .refs li{margin:.45em 0;line-height:1.45}
+  @media(max-width:620px){.facts{grid-template-columns:1fr}.facts dt{padding-bottom:2px;border-bottom:0}.facts dd{padding-top:2px}.facts dt:last-of-type{border-bottom:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="home" href="/">&#8592; samimirash.com</a>
+<p class="kicker">Build write-up</p>
+<h1>Returnal caps frame generation at 2X. The ceiling was one return value.</h1>
+<p class="standfirst">Returnal was built against an NVIDIA SDK that predates multi-frame generation, and the game requests exactly one generated frame. The limit is not enforced by the renderer. It comes from a single value the game reads at startup.</p>
+<p class="meta">Built and measured on 3 September 2026, in Returnal at 4K. Every number below is from this machine. The tool works on Returnal only.</p>
+
+<figure class="article-cover">
+<img src="cover-social.df37544f12.jpg" width="1600" height="640" alt="A dark Returnal forest with the headline 3X to 6X in a 2X game" fetchpriority="high">
+</figure>
+
+<h2>The short version</h2>
+<p>Returnal ships with NVIDIA Streamline 1.3.3. Multi-frame generation needs 2.11 or newer. The proxy sits beside the game and translates the old SDK calls into the new ones while the game runs.</p>
+<p>The result is <strong>3X, 4X, 5X or 6X</strong>, whichever you set, against a game that shipped 2X as its hard ceiling. The runtime reports its own maximum as five generated frames, which is 6X. Nothing on disk is patched. Deleting two files undoes all of it.</p>
+<figure>
+<img src="fig_proxy_chain.svg" width="980" height="330" alt="Diagram: Returnal, then our winmm.dll proxy, then NVIDIA Streamline 2.13">
+<figcaption>The proxy takes the winmm slot, so it is loaded first and sees every request the game makes. 261 exports are forwarded straight through; only the Streamline calls are rewritten.</figcaption>
+</figure>
+
+<h2>What it changes</h2>
+
+<p>On screen the frame counter reads <strong>225 at 2X and 225 at 4X</strong>. Both settings saturate the display ceiling, so at the ceiling they are indistinguishable.</p>
+<p>The difference is upstream, in how many frames the engine has to draw:</p>
+<pre><code>with neural rendering OFF
+  4X   base render  56.2 fps  x4 = 224.8   ->  225 on screen
+  2X   base render 112.4 fps  x2 = 224.8   ->  225 on screen</code></pre>
+<p>Same output, half the rendering work. The frame counter cannot show this, because both settings reach the same ceiling.</p>
+<p>With DLSS 5 Neural Rendering running in both cases:</p>
+<pre><code>with neural rendering ON
+  4X   base render  56.2 fps   ->  225 on screen
+  2X   base render  63.0 fps   ->  130 on screen</code></pre>
+<p><strong>The engine renders fewer real frames and delivers 73 percent more of them.</strong></p>
+<p>At 2X, enabling neural rendering costs 49 fps of real rendering, from 112 down to 63. At 4X it costs nothing: 56.2 either way. At 4X the engine needs 56 real frames to fill the display, so there is idle GPU time to absorb the neural pass. At 2X it needs 112, and the cost comes off the frame rate.</p>
+<p>A limit that binds at 2X and not at 4X is a GPU-time limit. A CPU or engine bottleneck would have affected both equally.</p>
+<figure>
+<img src="fig_asymmetry.svg" width="980" height="596" alt="Bar chart of base render rate at 2X and 4X with neural rendering off and on">
+<figcaption>Base render rate: the real frames the engine draws. Neural rendering costs 49 fps at 2X and nothing at 4X. Both settings read 225 on the frame counter.</figcaption>
+</figure>
+
+<figure>
+<img src="fig_multiplier_scaling.svg" width="980" height="626" alt="Chart of frames on screen and 1% low across 2X to 6X">
+<figcaption>Every multiplier works. Above 4X the display ceiling is already saturated, and 4X holds the steadiest frame times of the five.</figcaption>
+</figure>
+
+<h2>The three bugs</h2>
+
+<h3>An inverted return value</h3>
+<p>The old SDK's initialisation function returns a boolean where true means success. The new one returns a result code where <strong>zero</strong> means success. Passed through unchanged, every success reads as a failure.</p>
+<p>The game stores that answer in a byte, one of three the engine checks before deciding whether the framework is available. With it false the renderer does not register its view extension and does not tag any resources, so frame generation is configured but receives nothing.</p>
+<p>This also explains why forcing the support check to return true crashes the game: the function reports success while the globals behind it still hold false, and the module acts on both. The correct fix is at the return value, not at the check.</p>
+<figure>
+<img src="fig_return_value.svg" width="980" height="512" alt="Diagram comparing the old boolean return with the new result code">
+<figcaption>The same call under two conventions. The runtime returned zero for success; the game read zero as failure and disabled the framework.</figcaption>
+</figure>
+
+<h3>Reflex markers were not translated</h3>
+<p>Frame generation requires low-latency mode. The old SDK submits its latency markers through an argument intended for something else, and the values alternate between two constants. Streamline 2.13 rejects the call. The markers have to be translated to the newer mechanism before any frames are generated.</p>
+
+<h3>The hook resolved to itself</h3>
+<p>The proxy intercepts the SDK by hooking the system call that resolves function addresses. Its own code then used that call to find the real functions and received the interceptors instead, so each one called itself.</p>
+<p>This surfaces as a stack overflow rather than an access violation, so a debugger set to break on access violations reports nothing and the process exits without a diagnostic.</p>
+
+<figure>
+<img src="fig_three_bugs.svg" width="980" height="360" alt="Table of what each bug looked like against what it actually was">
+<figcaption>What each fault appeared to be, against its actual cause.</figcaption>
+</figure>
+
+<h2>What it costs</h2>
+<p>Frame generation is interpolation, so more generated frames means more frames invented between the same two real ones. Check fast camera movement, thin geometry against a bright background, and HUD text before choosing six over four.</p>
+<p><strong>Frame generation switches off when the game window loses focus.</strong> That is normal behaviour and not a fault. Any reading taken while the game is in the background is wrong.</p>
+
+<h2>The test system</h2>
+<p><strong>GPU.</strong> GeForce RTX 5090, 32 GB. This is the only GPU this was built and verified on.</p>
+<p><strong>Display.</strong> 3840x2160 at 240 Hz. The 225 fps ceiling above is deliberate: with low-latency mode active and VSync on, the frame rate is capped a little under the refresh rate to keep the present queue off the VSync wall.</p>
+<p><strong>Also running.</strong> DLSS 5 Neural Rendering, and the game native HDR. No ReShade and no RenoDX are involved in any of the frame generation work.</p>
+
+<h2>Where to get it</h2>
+<p><strong>Download it here: <a href="https://www.samimirash.com/tools.html">https://www.samimirash.com/tools.html</a></strong></p>
+<p>It is free, MIT licensed, and the complete source comes with it.</p>
+<p>You supply Streamline 2.13 yourself, from NVIDIA. The game verifies the signature on those files and refuses anything that is not NVIDIA's own signed build.</p>
+<p>It works on Returnal and not on other games. It hardcodes offsets into Returnal's own binaries, the specific names its build exports, and the way this game routes its latency markers. Another title differs in all three.</p>
+</div>
+</body>
+</html>

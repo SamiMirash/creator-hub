@@ -1,0 +1,1017 @@
+{
+  "id": "god-of-war-chains-of-olympus",
+  "game": "God of War: Chains of Olympus",
+  "target": "100% completion on the chosen PS3 Origins remaster route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "route-and-save-setup",
+      "name": "Route and Save Setup",
+      "location_cue": "The PS3 Origins menu, difficulty selector, manual save slots, and bonus menu.",
+      "note": "Chosen route: PS3 Origins Collection remaster through original hardware or RPCS3.",
+      "save_backup": {
+        "title": "Create the rotating save set",
+        "why": "No chapter select is available after crossing one-way campaign transitions."
+      },
+      "items": [
+        {
+          "id": "route-ps3-origins",
+          "type": "interaction",
+          "safe_type": "Platform Route",
+          "label": "Use the PS3 Origins Remaster",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the remastered handheld entry before starting.",
+            "2": "Play Chains of Olympus through God of War: Origins Collection or God of War Saga on PS3 or RPCS3.",
+            "3": "Launch the PS3 Origins remaster, select Chains of Olympus, and create its save data. This version supplies the highest-fidelity official route; no PSP-exclusive gameplay branch is required."
+          }
+        },
+        {
+          "id": "route-rotating-saves",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Keep Rotating Saves",
+          "missable": false,
+          "levels": {
+            "1": "The campaign has no chapter-select cleanup.",
+            "2": "Retain a save at the start of every major physical region.",
+            "3": "Rotate at least three manual slots and keep a permanent save before the deep-prison and final-temple transitions. Extra grey chests can replace missed meter pieces, but a backup avoids a full replay after the final opportunities."
+          }
+        },
+        {
+          "id": "route-first-clear",
+          "type": "interaction",
+          "safe_type": "Campaign",
+          "label": "Complete a First Campaign",
+          "missable": false,
+          "levels": {
+            "1": "The initial clear opens the bonus completion menus.",
+            "2": "Finish the campaign on any available difficulty and save the clear data.",
+            "3": "Complete the final result, accept the clear-data prompt, and return to the menu. Confirm Challenge of Hades, God difficulty, the first costume, both first-clear videos, and the character gallery are available."
+          }
+        },
+        {
+          "id": "route-god-clear",
+          "type": "interaction",
+          "safe_type": "Difficulty",
+          "label": "Complete God Difficulty",
+          "missable": false,
+          "levels": {
+            "1": "The final costume and bonus gallery require the hardest preset.",
+            "2": "Finish a full campaign on the unlocked God difficulty.",
+            "3": "After the first clear, start God difficulty, keep the preset unchanged, and finish the complete campaign. Save the result and confirm the third costume, making-of video, and outtakes gallery unlock."
+          }
+        },
+        {
+          "id": "route-collectible-ledger",
+          "type": "optional",
+          "safe_type": "Completion Ledger",
+          "label": "Collect 15 Eyes and 15 Feathers",
+          "missable": false,
+          "levels": {
+            "1": "Five pieces create each meter increase.",
+            "2": "Follow the earliest stable route for all 30 meter collectibles.",
+            "3": "Use the numbered items in this pack and verify the status counter after every chest. Each group of five expands its meter; later plain chests can substitute earlier misses until all fifteen of that category are collected."
+          }
+        }
+      ]
+    },
+    {
+      "id": "attica-shores",
+      "name": "Coastal Battlefield",
+      "location_cue": "A burning coastal city with a battering ram, ladders, ballistae, ramps, and a dark final corridor.",
+      "note": "SAVE-BACKUP: this linear region has no chapter-select cleanup.",
+      "save_backup": {
+        "title": "Save before leaving Coastal Battlefield",
+        "why": "Preserve a file before the last one-way obstacle in case a plain chest was missed."
+      },
+      "items": [
+        {
+          "id": "complete-attica-shores",
+          "type": "interaction",
+          "safe_type": "Region",
+          "label": "Complete Coastal Battlefield",
+          "missable": false,
+          "levels": {
+            "1": "Sweep side ledges and plain chests before the region's final traversal.",
+            "2": "Finish the full route through Coastal Battlefield.",
+            "3": "Enter the region with a fresh rotating save, solve every mandatory traversal mechanism, and open all visible red, recovery, and plain chests along each branch. Confirm every collectible listed below before crossing the final one-way exit."
+          }
+        },
+        {
+          "id": "orbs-attica-shores",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Clear Coastal Battlefield's Red-Orb Routes",
+          "missable": false,
+          "levels": {
+            "1": "Break scenery and finish optional enemy waves while exploring.",
+            "2": "Open every red chest and clear every finite encounter in Coastal Battlefield.",
+            "3": "Check all side rooms used by the collectible route, break destructible objects, and finish each locked combat wave. Spend red orbs only after the region is fully swept so the upgrade ledger remains easy to audit."
+          }
+        },
+        {
+          "id": "eye-01",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #1",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "At the battering-ram gate, search the ground immediately to its left.",
+            "3": "Push the ram to the sealed gate but pause before breaking through. Walk along the gate's left side and open the plain chest tucked beside the wall. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "eye-02",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #2",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "Halfway up the battlefield ladder, drop onto the side ledge with the plain chest.",
+            "3": "Begin climbing the tall battlefield ladder, watch for the chest level with the middle of the climb, and release onto its ledge. Open it, then return to the ladder. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "feather-01",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #1",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "After firing the ballista at the large target, climb the next room's ladder.",
+            "3": "Leave the ballista platform, enter the following room, and climb its ladder. Open the plain chest waiting at the top before taking the next route. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "eye-03",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #3",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "Beyond the cyclops encounter, check the left side of the archer room.",
+            "3": "Finish the large-enemy arena, proceed into the room occupied by archers, and search along its left wall. Open the plain chest before leaving. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "eye-04",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #4",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "Use the rotating ballista on the buildings, then enter the broken structure beyond the archers.",
+            "3": "Aim the rotating ballista at the accessible buildings before advancing. Past the archer room, climb the wall, cross the ramp into the damaged building, and open its plain chest. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "feather-02",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #2",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "Inside the ballista-opened building, jump the gap on the right.",
+            "3": "After entering the damaged building from the ramp, inspect its right side, double-jump across the interior gap, and open the plain chest on the separated ledge. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "feather-03",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #3",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "At the dark-corridor save point, continue straight toward the colour-blended chest.",
+            "3": "Reach the save light in the dark corridor, face directly forward instead of following the exit, and approach the chest camouflaged by the background colours. Open it before the final coastal encounter. Confirm the collectible counter advances before leaving the region."
+          }
+        }
+      ]
+    },
+    {
+      "id": "marathon-city",
+      "name": "Foggy City",
+      "location_cue": "A smoke-filled street route using a burning box, torches, hay, and a movable trolley.",
+      "note": "SAVE-BACKUP: this linear region has no chapter-select cleanup.",
+      "save_backup": {
+        "title": "Save before leaving Foggy City",
+        "why": "Preserve a file before the last one-way obstacle in case a plain chest was missed."
+      },
+      "items": [
+        {
+          "id": "complete-marathon-city",
+          "type": "interaction",
+          "safe_type": "Region",
+          "label": "Complete Foggy City",
+          "missable": false,
+          "levels": {
+            "1": "Sweep side ledges and plain chests before the region's final traversal.",
+            "2": "Finish the full route through Foggy City.",
+            "3": "Enter the region with a fresh rotating save, solve every mandatory traversal mechanism, and open all visible red, recovery, and plain chests along each branch. Confirm every collectible listed below before crossing the final one-way exit."
+          }
+        },
+        {
+          "id": "orbs-marathon-city",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Clear Foggy City's Red-Orb Routes",
+          "missable": false,
+          "levels": {
+            "1": "Break scenery and finish optional enemy waves while exploring.",
+            "2": "Open every red chest and clear every finite encounter in Foggy City.",
+            "3": "Check all side rooms used by the collectible route, break destructible objects, and finish each locked combat wave. Spend red orbs only after the region is fully swept so the upgrade ledger remains easy to audit."
+          }
+        },
+        {
+          "id": "feather-04",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #4",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "At the start of the foggy city, turn left before moving down the street.",
+            "3": "Once control begins in the new city section, immediately search the left boundary. Open the plain chest there before taking the main smoky route. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "eye-05",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #5",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "Beside the burning box, climb the small steps on its left.",
+            "3": "Reach the movable flaming box used against the smoke, walk to its left side, and climb the short steps. Open the plain chest on the raised shelf. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "eye-06",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #6",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "In the torch room, move forward from the entrance and inspect between the rocks.",
+            "3": "Enter the room containing the torch puzzle, continue straight rather than turning toward the objective, and open the plain chest wedged among the rocks ahead. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "feather-05",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #5",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "While pushing the lit-hay trolley, stop when the camera turns toward the right.",
+            "3": "Ignite the hay and begin moving the trolley through the smoke. When the view swings right, release the trolley, enter the revealed side space, and open the plain chest. Confirm the collectible counter advances before leaving the region."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sun-temple",
+      "name": "Sun Temple",
+      "location_cue": "A water-fronted temple of elevators, wind rooms, pillars, and a central shield chamber.",
+      "note": "SAVE-BACKUP: this linear region has no chapter-select cleanup.",
+      "save_backup": {
+        "title": "Save before leaving Sun Temple",
+        "why": "Preserve a file before the last one-way obstacle in case a plain chest was missed."
+      },
+      "items": [
+        {
+          "id": "complete-sun-temple",
+          "type": "interaction",
+          "safe_type": "Region",
+          "label": "Complete Sun Temple",
+          "missable": false,
+          "levels": {
+            "1": "Sweep side ledges and plain chests before the region's final traversal.",
+            "2": "Finish the full route through Sun Temple.",
+            "3": "Enter the region with a fresh rotating save, solve every mandatory traversal mechanism, and open all visible red, recovery, and plain chests along each branch. Confirm every collectible listed below before crossing the final one-way exit."
+          }
+        },
+        {
+          "id": "orbs-sun-temple",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Clear Sun Temple's Red-Orb Routes",
+          "missable": false,
+          "levels": {
+            "1": "Break scenery and finish optional enemy waves while exploring.",
+            "2": "Open every red chest and clear every finite encounter in Sun Temple.",
+            "3": "Check all side rooms used by the collectible route, break destructible objects, and finish each locked combat wave. Spend red orbs only after the region is fully swept so the upgrade ledger remains easy to audit."
+          }
+        },
+        {
+          "id": "eye-07",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #7",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "At the sun-temple entrance, descend left and cross the shallow water.",
+            "3": "Before entering the main temple doorway, move down and left across the water to the separated bank. Open the plain chest there, then return to the entrance. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "feather-06",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #6",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "At the top of the first temple elevator, walk right and descend the short steps.",
+            "3": "Ride the elevator upward, step off, turn right, and follow the ledge down a few stairs. Open the plain chest before taking the central route. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "feather-07",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #7",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "Past the first fire-guard encounter, continue beyond the save and descend the stairs.",
+            "3": "Finish the first encounter with the flame-armoured enemy, pass the next save light, and walk down the stairs immediately beyond it. Open the plain chest at the bottom. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "eye-08",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #8",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "After the lower elevator, activate the shining floor point, cross the fallen pillar, and go far right.",
+            "3": "Ride down, use the glowing interaction on the floor, and cross the pillar that changes position. Follow the landing all the way right and open the plain chest at its end. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "eye-09",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #9",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "In the shield-acquisition complex, take the stairs to the middle upper room.",
+            "3": "Reach the central chamber where the reflective shield is obtained, climb the nearby stairs, and enter the middle room upstairs. Open the plain chest along its left wall. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "feather-08",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #8",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "Inside the western wind room's far side, walk up and right.",
+            "3": "Complete the wall transition into the far half of the wind chamber, then move diagonally up-right instead of leaving. Open the plain chest in the corner. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "eye-10",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #10",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "The room containing the cave portal has a plain chest directly ahead.",
+            "3": "Enter the chamber with the active portal leading toward the caves, stop before stepping through, and open the visible plain chest in front of the portal. Confirm the collectible counter advances before leaving the region."
+          }
+        }
+      ]
+    },
+    {
+      "id": "olympus-caves",
+      "name": "Flooded Caves",
+      "location_cue": "Underwater caves, small islands, a maze, and a chamber granting a ranged light tool.",
+      "note": "SAVE-BACKUP: this linear region has no chapter-select cleanup.",
+      "save_backup": {
+        "title": "Save before leaving Flooded Caves",
+        "why": "Preserve a file before the last one-way obstacle in case a plain chest was missed."
+      },
+      "items": [
+        {
+          "id": "complete-olympus-caves",
+          "type": "interaction",
+          "safe_type": "Region",
+          "label": "Complete Flooded Caves",
+          "missable": false,
+          "levels": {
+            "1": "Sweep side ledges and plain chests before the region's final traversal.",
+            "2": "Finish the full route through Flooded Caves.",
+            "3": "Enter the region with a fresh rotating save, solve every mandatory traversal mechanism, and open all visible red, recovery, and plain chests along each branch. Confirm every collectible listed below before crossing the final one-way exit."
+          }
+        },
+        {
+          "id": "orbs-olympus-caves",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Clear Flooded Caves's Red-Orb Routes",
+          "missable": false,
+          "levels": {
+            "1": "Break scenery and finish optional enemy waves while exploring.",
+            "2": "Open every red chest and clear every finite encounter in Flooded Caves.",
+            "3": "Check all side rooms used by the collectible route, break destructible objects, and finish each locked combat wave. Spend red orbs only after the region is fully swept so the upgrade ledger remains easy to audit."
+          }
+        },
+        {
+          "id": "eye-11",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #11",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "On entering the flooded caves, dive in and swim to the small island on the right.",
+            "3": "Jump into the first cave pool, swim along the right boundary, and surface beside the isolated patch of land. Climb out and open its plain chest. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "feather-09",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #9",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "In the underwater maze, open the plain chest opposite the red-orb chest.",
+            "3": "Navigate the submerged passages until a red chest comes into view. Turn to the opposite side of that same pocket and open the plain chest before swimming onward. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "eye-12",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #12",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "At the cave's later deep pool, dive before taking the surface exit.",
+            "3": "Reach the deeper water after the cave meeting, enter the pool, and dive straight down. Open the plainly visible chest underwater, then surface and continue. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "feather-10",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #10",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "After acquiring the ranged light power and clearing its enemies, take the left exit.",
+            "3": "Complete the new power's tutorial fight, choose the doorway on the left, and open the plain chest positioned along that exit before returning to the route. Confirm the collectible counter advances before leaving the region."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sun-temple-return",
+      "name": "Sun Temple Return",
+      "location_cue": "The earlier temple revisited through fire ramps, elevators, wind rooms, and statue-lined paths.",
+      "note": "SAVE-BACKUP: this linear region has no chapter-select cleanup.",
+      "save_backup": {
+        "title": "Save before leaving Sun Temple Return",
+        "why": "Preserve a file before the last one-way obstacle in case a plain chest was missed."
+      },
+      "items": [
+        {
+          "id": "complete-sun-temple-return",
+          "type": "interaction",
+          "safe_type": "Region",
+          "label": "Complete Sun Temple Return",
+          "missable": false,
+          "levels": {
+            "1": "Sweep side ledges and plain chests before the region's final traversal.",
+            "2": "Finish the full route through Sun Temple Return.",
+            "3": "Enter the region with a fresh rotating save, solve every mandatory traversal mechanism, and open all visible red, recovery, and plain chests along each branch. Confirm every collectible listed below before crossing the final one-way exit."
+          }
+        },
+        {
+          "id": "orbs-sun-temple-return",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Clear Sun Temple Return's Red-Orb Routes",
+          "missable": false,
+          "levels": {
+            "1": "Break scenery and finish optional enemy waves while exploring.",
+            "2": "Open every red chest and clear every finite encounter in Sun Temple Return.",
+            "3": "Check all side rooms used by the collectible route, break destructible objects, and finish each locked combat wave. Spend red orbs only after the region is fully swept so the upgrade ledger remains easy to audit."
+          }
+        },
+        {
+          "id": "eye-13",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #13",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "On the temple return, descend the fire ramp and continue straight ahead.",
+            "3": "Walk down the first fire-lined ramp, ignore the side turns at its base, and move directly forward. Open the plain chest before starting the next temple mechanism. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "feather-11",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #11",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "After the elevator bird fight, climb to the save room and open its plain chest.",
+            "3": "Finish the airborne encounter on the elevator, take the stairs upward, and enter the room containing the next save light. Open the plain chest in that room. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "eye-14",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #14",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "In the western wind room, check the lower-left corner.",
+            "3": "Enter the wind chamber on the west side, move toward its lower-left boundary while the mechanism is safe, and open the plain chest tucked in that corner. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "feather-12",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #12",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "After the western wind room, descend the elevator and cross the fire path to the left statue.",
+            "3": "Leave the west chamber, ride down, and walk straight across the fiery route. At the statue on the left side, open the plain chest beside its base. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "eye-15",
+          "type": "collectible",
+          "safe_type": "Health Upgrade",
+          "label": "Health Upgrade Collectible #15",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "In the eastern wind room, search the right side before leaving.",
+            "3": "Enter the wind chamber on the east side, complete enough of its mechanism to move safely, and open the plain chest along the room's right boundary. Confirm the collectible counter advances before leaving the region."
+          }
+        }
+      ]
+    },
+    {
+      "id": "underworld",
+      "name": "Underworld",
+      "location_cue": "Dark wall climbs, waterfalls, breakable statues, ledges, and arena-like combat spaces.",
+      "note": "SAVE-BACKUP: this linear region has no chapter-select cleanup.",
+      "save_backup": {
+        "title": "Save before leaving Underworld",
+        "why": "Preserve a file before the last one-way obstacle in case a plain chest was missed."
+      },
+      "items": [
+        {
+          "id": "complete-underworld",
+          "type": "interaction",
+          "safe_type": "Region",
+          "label": "Complete Underworld",
+          "missable": false,
+          "levels": {
+            "1": "Sweep side ledges and plain chests before the region's final traversal.",
+            "2": "Finish the full route through Underworld.",
+            "3": "Enter the region with a fresh rotating save, solve every mandatory traversal mechanism, and open all visible red, recovery, and plain chests along each branch. Confirm every collectible listed below before crossing the final one-way exit."
+          }
+        },
+        {
+          "id": "orbs-underworld",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Clear Underworld's Red-Orb Routes",
+          "missable": false,
+          "levels": {
+            "1": "Break scenery and finish optional enemy waves while exploring.",
+            "2": "Open every red chest and clear every finite encounter in Underworld.",
+            "3": "Check all side rooms used by the collectible route, break destructible objects, and finish each locked combat wave. Spend red orbs only after the region is fully swept so the upgrade ledger remains easy to audit."
+          }
+        },
+        {
+          "id": "feather-13",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #13",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "After the first underworld gorgon fight, descend past the broken statue to the side ledge.",
+            "3": "Leave the arena, break the statue below, scale down the wall, and jump to the nearby ledge. Sidle along its narrow edge and open the plain chest at the far end. Confirm the collectible counter advances before leaving the region."
+          }
+        },
+        {
+          "id": "feather-14",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #14",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "Beyond the waterfall, climb beside the save point and smash the damaged side panel.",
+            "3": "Cross the waterfall, reach the next save light, and jump onto the adjacent ledge. Smash the damaged wall on its left side and open the plain chest hidden behind it. Confirm the collectible counter advances before leaving the region."
+          }
+        }
+      ]
+    },
+    {
+      "id": "tartarus-depths",
+      "name": "Deep Prison",
+      "location_cue": "A chained descent of save points, breakable walls, narrow ledges, and a large optional temple.",
+      "note": "SAVE-BACKUP: this linear region has no chapter-select cleanup.",
+      "save_backup": {
+        "title": "Save before leaving Deep Prison",
+        "why": "Preserve a file before the last one-way obstacle in case a plain chest was missed."
+      },
+      "items": [
+        {
+          "id": "complete-tartarus-depths",
+          "type": "interaction",
+          "safe_type": "Region",
+          "label": "Complete Deep Prison",
+          "missable": false,
+          "levels": {
+            "1": "Sweep side ledges and plain chests before the region's final traversal.",
+            "2": "Finish the full route through Deep Prison.",
+            "3": "Enter the region with a fresh rotating save, solve every mandatory traversal mechanism, and open all visible red, recovery, and plain chests along each branch. Confirm every collectible listed below before crossing the final one-way exit."
+          }
+        },
+        {
+          "id": "orbs-tartarus-depths",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Clear Deep Prison's Red-Orb Routes",
+          "missable": false,
+          "levels": {
+            "1": "Break scenery and finish optional enemy waves while exploring.",
+            "2": "Open every red chest and clear every finite encounter in Deep Prison.",
+            "3": "Check all side rooms used by the collectible route, break destructible objects, and finish each locked combat wave. Spend red orbs only after the region is fully swept so the upgrade ledger remains easy to audit."
+          }
+        },
+        {
+          "id": "feather-15",
+          "type": "collectible",
+          "safe_type": "Magic Upgrade",
+          "label": "Magic Upgrade Collectible #15",
+          "missable": true,
+          "levels": {
+            "1": "Plain chests often sit just outside the camera's main route.",
+            "2": "At the start of the deep prison, descend from the broken chains toward the save point.",
+            "3": "After escaping the opening chains, head downward instead of moving immediately toward the main corridor. Open the plain chest beside the nearby save light for the fifteenth feather. Confirm the collectible counter advances before leaving the region."
+          }
+        }
+      ]
+    },
+    {
+      "id": "final-temple",
+      "name": "Final Temple",
+      "location_cue": "The last stone complex of halls, combat rooms, and one-way approaches.",
+      "note": "SAVE-BACKUP: this linear region has no chapter-select cleanup.",
+      "save_backup": {
+        "title": "Save before leaving Final Temple",
+        "why": "Preserve a file before the last one-way obstacle in case a plain chest was missed."
+      },
+      "items": [
+        {
+          "id": "complete-final-temple",
+          "type": "interaction",
+          "safe_type": "Region",
+          "label": "Complete Final Temple",
+          "missable": false,
+          "levels": {
+            "1": "Sweep side ledges and plain chests before the region's final traversal.",
+            "2": "Finish the full route through Final Temple.",
+            "3": "Enter the region with a fresh rotating save, solve every mandatory traversal mechanism, and open all visible red, recovery, and plain chests along each branch. Confirm every collectible listed below before crossing the final one-way exit."
+          }
+        },
+        {
+          "id": "orbs-final-temple",
+          "type": "optional",
+          "safe_type": "Red-Orb Sweep",
+          "label": "Clear Final Temple's Red-Orb Routes",
+          "missable": false,
+          "levels": {
+            "1": "Break scenery and finish optional enemy waves while exploring.",
+            "2": "Open every red chest and clear every finite encounter in Final Temple.",
+            "3": "Check all side rooms used by the collectible route, break destructible objects, and finish each locked combat wave. Spend red orbs only after the region is fully swept so the upgrade ledger remains easy to audit."
+          }
+        }
+      ]
+    },
+    {
+      "id": "arsenal-and-relics",
+      "name": "Arsenal and Relics",
+      "location_cue": "The pause-menu power-up screen and inventory page showing weapons, magic, shield, key, and lance.",
+      "note": "All six upgradable tools require 75,000 red orbs in total.",
+      "items": [
+        {
+          "id": "max-chained-blades",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Chained Blades",
+          "missable": false,
+          "levels": {
+            "1": "Invest in one unfinished tool at a time.",
+            "2": "Raise Chained Blades to level 5.",
+            "3": "Open the power-up menu and buy every tier in order: 2,650 + 4,850 + 8,750 + 11,250 red orbs, 27,500 total. Confirm the menu displays level 5 with no remaining purchase."
+          }
+        },
+        {
+          "id": "max-fire-magic",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Fire Area Power",
+          "missable": false,
+          "levels": {
+            "1": "Invest in one unfinished tool at a time.",
+            "2": "Raise Fire Area Power to level 3.",
+            "3": "Open the power-up menu and buy every tier in order: 3,500 + 10,000 red orbs, 13,500 total. Confirm the menu displays level 3 with no remaining purchase."
+          }
+        },
+        {
+          "id": "max-sun-shield",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Reflective Shield",
+          "missable": false,
+          "levels": {
+            "1": "Invest in one unfinished tool at a time.",
+            "2": "Raise Reflective Shield to level 2.",
+            "3": "Open the power-up menu and buy every tier in order: 1,500 red orbs, 1,500 total. Confirm the menu displays level 2 with no remaining purchase."
+          }
+        },
+        {
+          "id": "max-light-magic",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Ranged Light Power",
+          "missable": false,
+          "levels": {
+            "1": "Invest in one unfinished tool at a time.",
+            "2": "Raise Ranged Light Power to level 3.",
+            "3": "Open the power-up menu and buy every tier in order: 2,250 + 6,250 red orbs, 8,500 total. Confirm the menu displays level 3 with no remaining purchase."
+          }
+        },
+        {
+          "id": "max-gauntlet",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Heavy Gauntlet",
+          "missable": false,
+          "levels": {
+            "1": "Invest in one unfinished tool at a time.",
+            "2": "Raise Heavy Gauntlet to level 3.",
+            "3": "Open the power-up menu and buy every tier in order: 3,750 + 10,250 red orbs, 14,000 total. Confirm the menu displays level 3 with no remaining purchase."
+          }
+        },
+        {
+          "id": "max-wrath-magic",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Spreading Flame Power",
+          "missable": false,
+          "levels": {
+            "1": "Invest in one unfinished tool at a time.",
+            "2": "Raise Spreading Flame Power to level 3.",
+            "3": "Open the power-up menu and buy every tier in order: 3,000 + 7,000 red orbs, 10,000 total. Confirm the menu displays level 3 with no remaining purchase."
+          }
+        },
+        {
+          "id": "max-entire-arsenal",
+          "type": "upgrade",
+          "safe_type": "Maximum Upgrade",
+          "label": "Maximize Every Tool",
+          "missable": false,
+          "levels": {
+            "1": "A complete exploration route supplies enough red orbs without an exploit.",
+            "2": "Spend 75,000 red orbs across all six upgradable tools.",
+            "3": "Complete the six maximum-upgrade entries in this area. Sweep every red chest, destructible object, and finite enemy wave before the last save; confirm the combined menu has no unfinished tier."
+          }
+        },
+        {
+          "id": "relic-cryptkeeper-key",
+          "type": "key",
+          "safe_type": "Optional Key",
+          "label": "Collect the Cryptkeeper Key",
+          "missable": false,
+          "levels": {
+            "1": "A side route in the underworld holds the key to a large optional temple.",
+            "2": "Take the key before entering the deep-prison temple route.",
+            "3": "Search the underworld side chambers before the deep descent, collect the Cryptkeeper Key, and verify it appears in inventory. Use it at the large optional temple door before leaving the deep prison."
+          }
+        },
+        {
+          "id": "relic-underwater-lance",
+          "type": "key",
+          "safe_type": "Traversal Relic",
+          "label": "Acquire the Underwater Lance",
+          "missable": false,
+          "levels": {
+            "1": "The flooded caves contain the mandatory diving relic.",
+            "2": "Take the lance before entering the underwater maze.",
+            "3": "Reach the relic pedestal in the flooded caves, collect it, and test a sustained dive plus charged underwater dash. Confirm the breathing limit is removed before continuing."
+          }
+        },
+        {
+          "id": "relic-primordial-fire",
+          "type": "key",
+          "safe_type": "Combat Relic",
+          "label": "Acquire Primordial Fire",
+          "missable": false,
+          "levels": {
+            "1": "The reflective shield gains a projectile-return property.",
+            "2": "Complete the shield tutorial that reflects a projectile into its source.",
+            "3": "Acquire the shield in the sun temple, then complete the mandatory timed parry tutorial. Block at the impact flash and verify the incoming projectile is returned rather than merely stopped."
+          }
+        }
+      ]
+    },
+    {
+      "id": "challenge-of-hades",
+      "name": "Challenge of Hades",
+      "location_cue": "The post-clear bonus menu and five isolated trial arenas.",
+      "note": "Complete all five trials to unlock the second costume and challenge-gated bonus material.",
+      "items": [
+        {
+          "id": "unlock-challenge-of-hades",
+          "type": "interaction",
+          "safe_type": "Challenge Mode",
+          "label": "Unlock Challenge of Hades",
+          "missable": false,
+          "levels": {
+            "1": "The five trials appear after the first clear.",
+            "2": "Finish the campaign once and enter Challenge of Hades from the bonus menu.",
+            "3": "Save the first clear, return to the bonus menu, and start the five-trial set. Maximum upgrades are recommended because completion unlocks a costume, removed-level video, and environment gallery."
+          }
+        },
+        {
+          "id": "challenge-01-fiery-fate",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of Hades #1",
+          "missable": false,
+          "levels": {
+            "1": "Read the failure condition before attacking.",
+            "2": "Burn 50 soldiers using only the fire-area power.",
+            "3": "Group the soldiers before casting, and immediately switch to the heavy gauntlet when a large enemy enters. Prevent that enemy from killing a soldier; any soldier defeated by another method fails the trial."
+          }
+        },
+        {
+          "id": "challenge-02-perfection",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of Hades #2",
+          "missable": false,
+          "levels": {
+            "1": "Read the failure condition before attacking.",
+            "2": "Defeat 20 fire guards without taking a hit.",
+            "3": "Use charged gauntlet punches to force each target to flinch, roll as soon as a spinning leap begins, and keep the group in front of the camera. Restart after any damage."
+          }
+        },
+        {
+          "id": "challenge-03-life-is-short",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of Hades #3",
+          "missable": false,
+          "levels": {
+            "1": "Read the failure condition before attacking.",
+            "2": "Defeat every wave before the draining health meter empties.",
+            "3": "Use charged gauntlet attacks on the opening large target, grab the forty flying enemies for immediate kills, and save the civilian health drops until needed. Finish the final three armoured enemies with charged punches."
+          }
+        },
+        {
+          "id": "challenge-04-crunch-time",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of Hades #4",
+          "missable": false,
+          "levels": {
+            "1": "Read the failure condition before attacking.",
+            "2": "Destroy all 40 objects within 60 seconds.",
+            "3": "Open with the fire-area spell to clear the ring around the starting point, then use charged gauntlet punches on stone figures and small objects. Sweep the perimeter once before time expires."
+          }
+        },
+        {
+          "id": "challenge-05-epic-brawl",
+          "type": "interaction",
+          "safe_type": "Challenge",
+          "label": "Challenge of Hades #5",
+          "missable": false,
+          "levels": {
+            "1": "Read the failure condition before attacking.",
+            "2": "Defeat every enemy in the unrestricted final trial.",
+            "3": "Use the supplied health and magic chests only after their meters are meaningfully depleted. Prioritize dangerous ranged targets, use area powers on clusters, and finish every wave."
+          }
+        }
+      ]
+    },
+    {
+      "id": "costumes-and-bonus-content",
+      "name": "Costumes and Bonus Content",
+      "location_cue": "The post-clear bonus menu and the costume selector shown when starting a new campaign.",
+      "note": "Verify all three costumes, five bonus videos or viewers, and three concept-art galleries.",
+      "items": [
+        {
+          "id": "costume-spud-of-war",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Spud of War",
+          "missable": false,
+          "levels": {
+            "1": "Each costume is tied to a distinct completion milestone.",
+            "2": "Unlock Spud of War: finish the campaign once.",
+            "3": "Meet the condition to finish the campaign once, begin a new game on an allowed difficulty, and select Spud of War. Reach the first controllable encounter and confirm its unlimited magic modifier is active."
+          }
+        },
+        {
+          "id": "costume-mckratos",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "McKratos",
+          "missable": false,
+          "levels": {
+            "1": "Each costume is tied to a distinct completion milestone.",
+            "2": "Unlock McKratos: finish all five challenges.",
+            "3": "Meet the condition to finish all five challenges, begin a new game on an allowed difficulty, and select McKratos. Reach the first controllable encounter and confirm its increased attack power modifier is active."
+          }
+        },
+        {
+          "id": "costume-mime-of-war",
+          "type": "optional",
+          "safe_type": "Costume",
+          "label": "Mime of War",
+          "missable": false,
+          "levels": {
+            "1": "Each costume is tied to a distinct completion milestone.",
+            "2": "Unlock Mime of War: finish God difficulty.",
+            "3": "Meet the condition to finish God difficulty, begin a new game on an allowed difficulty, and select Mime of War. Reach the first controllable encounter and confirm its increased red-orb rewards modifier is active."
+          }
+        },
+        {
+          "id": "first-clear-bonus-set",
+          "type": "optional",
+          "safe_type": "Bonus Menu",
+          "label": "First-Clear Bonus Set",
+          "missable": false,
+          "levels": {
+            "1": "Several bonus entries unlock together after a milestone.",
+            "2": "Unlock this set: finish the campaign once.",
+            "3": "Open the in-game movie viewer, studio video, and character gallery once each after saving the clear data."
+          }
+        },
+        {
+          "id": "challenge-bonus-set",
+          "type": "optional",
+          "safe_type": "Bonus Menu",
+          "label": "Challenge-Clear Bonus Set",
+          "missable": false,
+          "levels": {
+            "1": "Several bonus entries unlock together after a milestone.",
+            "2": "Unlock this set: finish all five challenges.",
+            "3": "Return to the bonus menu and open the removed-level video plus environment gallery after the fifth trial is complete."
+          }
+        },
+        {
+          "id": "god-clear-bonus-set",
+          "type": "optional",
+          "safe_type": "Bonus Menu",
+          "label": "God-Clear Bonus Set",
+          "missable": false,
+          "levels": {
+            "1": "Several bonus entries unlock together after a milestone.",
+            "2": "Unlock this set: finish God difficulty.",
+            "3": "After saving the God clear, open the making-of video and outtakes gallery once each; their narrative or development contents are intentionally not summarized here."
+          }
+        }
+      ]
+    }
+  ]
+}

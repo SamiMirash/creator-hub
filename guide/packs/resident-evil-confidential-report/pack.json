@@ -1,0 +1,1721 @@
+{
+  "id": "resident-evil-confidential-report",
+  "game": "Resident Evil Confidential Report (four-file mobile series)",
+  "target": "100% of the selected original four-file mobile route, including documented Japanese features, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "route-and-mechanics",
+      "name": "Selected Four-File Route and Mechanics",
+      "location_cue": "The four mobile applications, character selection, grid movement, inventory, typewriters, and report logs.",
+      "note": "Establish clean independent saves before collecting route-specific evidence.",
+      "save_backup": {
+        "title": "Clone all four clean applications",
+        "why": "Mobile profiles can overwrite saves across resolution variants."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "original-four-file-route",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Use the Original Four-File Mobile Series",
+          "missable": false,
+          "levels": {
+            "1": "Confirm that all four applications belong to the same release family.",
+            "2": "Use the original Japanese mobile Files 1-4 on compatible hardware or a tested preserved environment.",
+            "3": "Record each application version and screen profile, start every File once, and verify grid movement, two selectable routes, and persistent local saving. Later regional builds are comparison-only because no exclusive content is documented."
+          }
+        },
+        {
+          "id": "clean-route-saves",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Create Eight Clean Route Saves",
+          "missable": false,
+          "levels": {
+            "1": "Each File has two independent playable routes.",
+            "2": "Create separate saves for Route A and Route B in Files 1, 2, 3, and 4.",
+            "3": "Name or document the eight saves before play, capture each empty report log, and never overwrite the opposite route. Preserve a pre-exit copy for every File so missed reports can be repaired."
+          }
+        },
+        {
+          "id": "grid-turn-discipline",
+          "type": "optional",
+          "safe_type": "Core Mechanic",
+          "label": "Master Grid-Turn Movement",
+          "missable": false,
+          "levels": {
+            "1": "A harmless-looking turn can give every enemy another action.",
+            "2": "Movement is four-directional; stepping or changing facing advances the room's turn order.",
+            "3": "Plan two moves ahead, face the intended firing lane before a target closes, use doors as reset points, and avoid exploratory spins in occupied rooms. If a fast target reaches the flank, retreat through the previous doorway instead of spending repeated turns rotating."
+          }
+        },
+        {
+          "id": "weapon-range-grid",
+          "type": "optional",
+          "safe_type": "Core Mechanic",
+          "label": "Use the Weapon Range Grid",
+          "missable": false,
+          "levels": {
+            "1": "A target must occupy a valid firing square.",
+            "2": "Raise the weapon and watch for a valid square within the coloured range pattern.",
+            "3": "Face the lane, raise the weapon, and fire only when the target's square changes to the valid colour. Count handgun attacks as three rounds, then lower the weapon and reposition before another enemy action."
+          }
+        },
+        {
+          "id": "container-sweep",
+          "type": "collectible",
+          "safe_type": "Pickup Method",
+          "label": "Break Every Marked Container",
+          "missable": true,
+          "levels": {
+            "1": "Ordinary supplies can be partly visible behind scenery.",
+            "2": "Shoot containers that expose a sliver of an item, then collect the revealed pickup.",
+            "3": "Before leaving each room, inspect crate and box edges for visible item pixels. Stand outside the blast lane, fire once, collect the contents immediately, and record the weapon, ammunition, or healing item before enemies respawn on a later visit."
+          }
+        },
+        {
+          "id": "shining-key-items",
+          "type": "collectible",
+          "safe_type": "Pickup Method",
+          "label": "Collect Every Shining Key Item",
+          "missable": false,
+          "levels": {
+            "1": "Progress objects advertise themselves differently from ordinary supplies.",
+            "2": "Inspect each shining object and keep enough inventory room for the complete File chain.",
+            "3": "Approach every shine from an adjacent grid square, interact, read the item name, and confirm the destination door or fixture accepts it before discarding anything. Save at the nearest typewriter first."
+          }
+        },
+        {
+          "id": "four-typewriters",
+          "type": "optional",
+          "safe_type": "Save Point",
+          "label": "Use All Four Typewriter Locations",
+          "missable": false,
+          "levels": {
+            "1": "Each File contains a safe checkpoint worth preserving.",
+            "2": "Locate and use the typewriter during each of the four Files; no ribbon is required.",
+            "3": "Interact with the typewriter before the closing route, create both Route A and Route B backups in separate slots, reload once to verify the save, then continue without overwriting the pre-exit copy."
+          }
+        }
+      ]
+    },
+    {
+      "id": "eight-route-clears",
+      "name": "Eight Route Clears",
+      "location_cue": "Two selectable character routes inside each of Files 1-4.",
+      "note": "Complete both routes without exposing their narrative outcomes.",
+      "save_backup": {
+        "title": "Keep separate A and B saves",
+        "why": "A route clear must not overwrite the opposite report ledger."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "clear-file-1-route-a",
+          "type": "ending",
+          "safe_type": "Route Clear",
+          "label": "File 1 - Route A Clear",
+          "missable": false,
+          "levels": {
+            "1": "The other selectable route has its own report ledger and closing result.",
+            "2": "Start File 1 with the first character option and reach its physical exit.",
+            "3": "Follow this spoiler-safe physical sequence: storage guard room, underground access, survivor corridor, bullet-marked wall, main hall, upper footprint route, ladder access room, regional police station. Use the typewriter before the final space, verify all eight route reports, then cross the exit and preserve the result screen in its own save slot."
+          }
+        },
+        {
+          "id": "clear-file-1-route-b",
+          "type": "ending",
+          "safe_type": "Route Clear",
+          "label": "File 1 - Route B Clear",
+          "missable": false,
+          "levels": {
+            "1": "The other selectable route has its own report ledger and closing result.",
+            "2": "Start File 1 with the second character option and reach its physical exit.",
+            "3": "Follow this spoiler-safe physical sequence: facility entrance, infected storage floor, rear corridor crossing, bloodied bootprints, gunfire door, four-card box, rear-entrance card clue, rear entrance survivor. Use the typewriter before the final space, verify all eight route reports, then cross the exit and preserve the result screen in its own save slot."
+          }
+        },
+        {
+          "id": "clear-file-2-route-a",
+          "type": "ending",
+          "safe_type": "Route Clear",
+          "label": "File 2 - Route A Clear",
+          "missable": false,
+          "levels": {
+            "1": "The other selectable route has its own report ledger and closing result.",
+            "2": "Start File 2 with the first character option and reach its physical exit.",
+            "3": "Follow this spoiler-safe physical sequence: police hotline, dorm room 102, dorm room 103, dorm room 104, school crossing, underground student, lecture-hall passage, hidden room. Use the typewriter before the final space, verify all eight route reports, then cross the exit and preserve the result screen in its own save slot."
+          }
+        },
+        {
+          "id": "clear-file-2-route-b",
+          "type": "ending",
+          "safe_type": "Route Clear",
+          "label": "File 2 - Route B Clear",
+          "missable": false,
+          "levels": {
+            "1": "The other selectable route has its own report ledger and closing result.",
+            "2": "Start File 2 with the second character option and reach its physical exit.",
+            "3": "Follow this spoiler-safe physical sequence: school entrance, lecture-hall footprints, locked passage door, frightened key holder, school crossing, threatened doorway, floor hatch, underground room. Use the typewriter before the final space, verify all eight route reports, then cross the exit and preserve the result screen in its own save slot."
+          }
+        },
+        {
+          "id": "clear-file-3-route-a",
+          "type": "ending",
+          "safe_type": "Route Clear",
+          "label": "File 3 - Route A Clear",
+          "missable": false,
+          "levels": {
+            "1": "The other selectable route has its own report ledger and closing result.",
+            "2": "Start File 3 with the first character option and reach its physical exit.",
+            "3": "Follow this spoiler-safe physical sequence: second-floor alarm, central exhibit, dropped vial, armed-soldier crossing, museum crossing, side corridor, open vault safe, vault floor. Use the typewriter before the final space, verify all eight route reports, then cross the exit and preserve the result screen in its own save slot."
+          }
+        },
+        {
+          "id": "clear-file-3-route-b",
+          "type": "ending",
+          "safe_type": "Route Clear",
+          "label": "File 3 - Route B Clear",
+          "missable": false,
+          "levels": {
+            "1": "The other selectable route has its own report ledger and closing result.",
+            "2": "Start File 3 with the second character option and reach its physical exit.",
+            "3": "Follow this spoiler-safe physical sequence: museum entrance, soldier-occupied hall, vial crossing, white-coat route, informant room, vault approach, empty vault, vault sample. Use the typewriter before the final space, verify all eight route reports, then cross the exit and preserve the result screen in its own save slot."
+          }
+        },
+        {
+          "id": "clear-file-4-route-a",
+          "type": "ending",
+          "safe_type": "Route Clear",
+          "label": "File 4 - Route A Clear",
+          "missable": false,
+          "levels": {
+            "1": "The other selectable route has its own report ledger and closing result.",
+            "2": "Start File 4 with the first character option and reach its physical exit.",
+            "3": "Follow this spoiler-safe physical sequence: facility entrance, white-coat corridor, elevator hall, facility crossing, tunnel approach, contamination door, dropped research report, evacuation tunnel. Use the typewriter before the final space, verify all eight route reports, then cross the exit and preserve the result screen in its own save slot."
+          }
+        },
+        {
+          "id": "clear-file-4-route-b",
+          "type": "ending",
+          "safe_type": "Route Clear",
+          "label": "File 4 - Route B Clear",
+          "missable": false,
+          "levels": {
+            "1": "The other selectable route has its own report ledger and closing result.",
+            "2": "Start File 4 with the second character option and reach its physical exit.",
+            "3": "Follow this spoiler-safe physical sequence: facility entrance, facility crossing, first researcher diary, second researcher diary, third researcher diary, hidden laboratory, laboratory exit, evacuation tunnel. Use the typewriter before the final space, verify all eight route reports, then cross the exit and preserve the result screen in its own save slot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "file-1-route-a-reports",
+      "name": "File 1 Route A Reports",
+      "location_cue": "The storage guard room, underground access, survivor corridor, bullet-marked wall, main hall, upper footprint route, ladder access room, regional police station route through File 1's physical map.",
+      "note": "Eight neutral report slots track the route without exposing their narrative text.",
+      "save_backup": {
+        "title": "Save at the File typewriter",
+        "why": "The route exit closes the current eight-report sweep."
+      },
+      "point_of_no_return": {
+        "title": "File route exit",
+        "why": "Confirm all eight report slots before crossing it."
+      },
+      "items": [
+        {
+          "id": "file-1-route-a-report-01",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route A - Report 1",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route A, check the storage guard room before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-a-report-02",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route A - Report 2",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route A, check the underground access before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-a-report-03",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route A - Report 3",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route A, check the survivor corridor before advancing to the next major room.",
+            "3": "Reach the person, face them, and complete the interaction or escort before leaving the room. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-a-report-04",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route A - Report 4",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route A, check the bullet-marked wall before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-a-report-05",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route A - Report 5",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route A, check the main hall before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-a-report-06",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route A - Report 6",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route A, check the upper footprint route before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-a-report-07",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route A - Report 7",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route A, check the ladder access room before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-a-report-08",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route A - Report 8",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route A, check the regional police station before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        }
+      ]
+    },
+    {
+      "id": "file-1-route-b-reports",
+      "name": "File 1 Route B Reports",
+      "location_cue": "The facility entrance, infected storage floor, rear corridor crossing, bloodied bootprints, gunfire door, four-card box, rear-entrance card clue, rear entrance survivor route through File 1's physical map.",
+      "note": "Eight neutral report slots track the route without exposing their narrative text.",
+      "save_backup": {
+        "title": "Save at the File typewriter",
+        "why": "The route exit closes the current eight-report sweep."
+      },
+      "point_of_no_return": {
+        "title": "File route exit",
+        "why": "Confirm all eight report slots before crossing it."
+      },
+      "items": [
+        {
+          "id": "file-1-route-b-report-01",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route B - Report 1",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route B, check the facility entrance before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-b-report-02",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route B - Report 2",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route B, check the infected storage floor before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-b-report-03",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route B - Report 3",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route B, check the rear corridor crossing before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-b-report-04",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route B - Report 4",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route B, check the bloodied bootprints before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-b-report-05",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route B - Report 5",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route B, check the gunfire door before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-b-report-06",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route B - Report 6",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route B, check the four-card box before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-b-report-07",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route B - Report 7",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route B, check the rear-entrance card clue before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-1-route-b-report-08",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 1 - Route B - Report 8",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 1 Route B, check the rear entrance survivor before advancing to the next major room.",
+            "3": "Reach the person, face them, and complete the interaction or escort before leaving the room. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        }
+      ]
+    },
+    {
+      "id": "file-2-route-a-reports",
+      "name": "File 2 Route A Reports",
+      "location_cue": "The police hotline, dorm room 102, dorm room 103, dorm room 104, school crossing, underground student, lecture-hall passage, hidden room route through File 2's physical map.",
+      "note": "Eight neutral report slots track the route without exposing their narrative text.",
+      "save_backup": {
+        "title": "Save at the File typewriter",
+        "why": "The route exit closes the current eight-report sweep."
+      },
+      "point_of_no_return": {
+        "title": "File route exit",
+        "why": "Confirm all eight report slots before crossing it."
+      },
+      "items": [
+        {
+          "id": "file-2-route-a-report-01",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route A - Report 1",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route A, check the police hotline before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-a-report-02",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route A - Report 2",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route A, check the dorm room 102 before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-a-report-03",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route A - Report 3",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route A, check the dorm room 103 before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-a-report-04",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route A - Report 4",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route A, check the dorm room 104 before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-a-report-05",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route A - Report 5",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route A, check the school crossing before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-a-report-06",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route A - Report 6",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route A, check the underground student before advancing to the next major room.",
+            "3": "Reach the person, face them, and complete the interaction or escort before leaving the room. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-a-report-07",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route A - Report 7",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route A, check the lecture-hall passage before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-a-report-08",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route A - Report 8",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route A, check the hidden room before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        }
+      ]
+    },
+    {
+      "id": "file-2-route-b-reports",
+      "name": "File 2 Route B Reports",
+      "location_cue": "The school entrance, lecture-hall footprints, locked passage door, frightened key holder, school crossing, threatened doorway, floor hatch, underground room route through File 2's physical map.",
+      "note": "Eight neutral report slots track the route without exposing their narrative text.",
+      "save_backup": {
+        "title": "Save at the File typewriter",
+        "why": "The route exit closes the current eight-report sweep."
+      },
+      "point_of_no_return": {
+        "title": "File route exit",
+        "why": "Confirm all eight report slots before crossing it."
+      },
+      "items": [
+        {
+          "id": "file-2-route-b-report-01",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route B - Report 1",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route B, check the school entrance before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-b-report-02",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route B - Report 2",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route B, check the lecture-hall footprints before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-b-report-03",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route B - Report 3",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route B, check the locked passage door before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-b-report-04",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route B - Report 4",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route B, check the frightened key holder before advancing to the next major room.",
+            "3": "Reach the person, face them, and complete the interaction or escort before leaving the room. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-b-report-05",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route B - Report 5",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route B, check the school crossing before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-b-report-06",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route B - Report 6",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route B, check the threatened doorway before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-b-report-07",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route B - Report 7",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route B, check the floor hatch before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-2-route-b-report-08",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 2 - Route B - Report 8",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 2 Route B, check the underground room before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        }
+      ]
+    },
+    {
+      "id": "file-3-route-a-reports",
+      "name": "File 3 Route A Reports",
+      "location_cue": "The second-floor alarm, central exhibit, dropped vial, armed-soldier crossing, museum crossing, side corridor, open vault safe, vault floor route through File 3's physical map.",
+      "note": "Eight neutral report slots track the route without exposing their narrative text.",
+      "save_backup": {
+        "title": "Save at the File typewriter",
+        "why": "The route exit closes the current eight-report sweep."
+      },
+      "point_of_no_return": {
+        "title": "File route exit",
+        "why": "Confirm all eight report slots before crossing it."
+      },
+      "items": [
+        {
+          "id": "file-3-route-a-report-01",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route A - Report 1",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route A, check the second-floor alarm before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-a-report-02",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route A - Report 2",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route A, check the central exhibit before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-a-report-03",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route A - Report 3",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route A, check the dropped vial before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-a-report-04",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route A - Report 4",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route A, check the armed-soldier crossing before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-a-report-05",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route A - Report 5",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route A, check the museum crossing before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-a-report-06",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route A - Report 6",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route A, check the side corridor before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-a-report-07",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route A - Report 7",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route A, check the open vault safe before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-a-report-08",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route A - Report 8",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route A, check the vault floor before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        }
+      ]
+    },
+    {
+      "id": "file-3-route-b-reports",
+      "name": "File 3 Route B Reports",
+      "location_cue": "The museum entrance, soldier-occupied hall, vial crossing, white-coat route, informant room, vault approach, empty vault, vault sample route through File 3's physical map.",
+      "note": "Eight neutral report slots track the route without exposing their narrative text.",
+      "save_backup": {
+        "title": "Save at the File typewriter",
+        "why": "The route exit closes the current eight-report sweep."
+      },
+      "point_of_no_return": {
+        "title": "File route exit",
+        "why": "Confirm all eight report slots before crossing it."
+      },
+      "items": [
+        {
+          "id": "file-3-route-b-report-01",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route B - Report 1",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route B, check the museum entrance before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-b-report-02",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route B - Report 2",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route B, check the soldier-occupied hall before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-b-report-03",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route B - Report 3",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route B, check the vial crossing before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-b-report-04",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route B - Report 4",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route B, check the white-coat route before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-b-report-05",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route B - Report 5",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route B, check the informant room before advancing to the next major room.",
+            "3": "Reach the person, face them, and complete the interaction or escort before leaving the room. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-b-report-06",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route B - Report 6",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route B, check the vault approach before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-b-report-07",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route B - Report 7",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route B, check the empty vault before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-3-route-b-report-08",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 3 - Route B - Report 8",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 3 Route B, check the vault sample before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        }
+      ]
+    },
+    {
+      "id": "file-4-route-a-reports",
+      "name": "File 4 Route A Reports",
+      "location_cue": "The facility entrance, white-coat corridor, elevator hall, facility crossing, tunnel approach, contamination door, dropped research report, evacuation tunnel route through File 4's physical map.",
+      "note": "Eight neutral report slots track the route without exposing their narrative text.",
+      "save_backup": {
+        "title": "Save at the File typewriter",
+        "why": "The route exit closes the current eight-report sweep."
+      },
+      "point_of_no_return": {
+        "title": "File route exit",
+        "why": "Confirm all eight report slots before crossing it."
+      },
+      "items": [
+        {
+          "id": "file-4-route-a-report-01",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route A - Report 1",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route A, check the facility entrance before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-a-report-02",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route A - Report 2",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route A, check the white-coat corridor before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-a-report-03",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route A - Report 3",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route A, check the elevator hall before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-a-report-04",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route A - Report 4",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route A, check the facility crossing before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-a-report-05",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route A - Report 5",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route A, check the tunnel approach before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-a-report-06",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route A - Report 6",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route A, check the contamination door before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-a-report-07",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route A - Report 7",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route A, check the dropped research report before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-a-report-08",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route A - Report 8",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route A, check the evacuation tunnel before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        }
+      ]
+    },
+    {
+      "id": "file-4-route-b-reports",
+      "name": "File 4 Route B Reports",
+      "location_cue": "The facility entrance, facility crossing, first researcher diary, second researcher diary, third researcher diary, hidden laboratory, laboratory exit, evacuation tunnel route through File 4's physical map.",
+      "note": "Eight neutral report slots track the route without exposing their narrative text.",
+      "save_backup": {
+        "title": "Save at the File typewriter",
+        "why": "The route exit closes the current eight-report sweep."
+      },
+      "point_of_no_return": {
+        "title": "File route exit",
+        "why": "Confirm all eight report slots before crossing it."
+      },
+      "items": [
+        {
+          "id": "file-4-route-b-report-01",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route B - Report 1",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route B, check the facility entrance before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-b-report-02",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route B - Report 2",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route B, check the facility crossing before advancing to the next major room.",
+            "3": "Enter from the connected room and cross the trigger tile before turning toward the next exit. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-b-report-03",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route B - Report 3",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route B, check the first researcher diary before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-b-report-04",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route B - Report 4",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route B, check the second researcher diary before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-b-report-05",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route B - Report 5",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route B, check the third researcher diary before advancing to the next major room.",
+            "3": "Stand on the adjacent grid square and inspect the named physical clue until the report counter advances. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-b-report-06",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route B - Report 6",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route B, check the hidden laboratory before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-b-report-07",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route B - Report 7",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route B, check the laboratory exit before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        },
+        {
+          "id": "file-4-route-b-report-08",
+          "type": "collectible",
+          "safe_type": "Route Report",
+          "label": "File 4 - Route B - Report 8",
+          "missable": true,
+          "levels": {
+            "1": "A nearby physical clue or meeting adds another report entry.",
+            "2": "On File 4 Route B, check the evacuation tunnel before advancing to the next major room.",
+            "3": "Enter the named space, sweep its interactive tiles, and remain until the report log adds the new entry. Open the report log immediately, verify the new numbered slot, and reload the pre-room save if it did not register."
+          }
+        }
+      ]
+    },
+    {
+      "id": "key-item-chains",
+      "name": "Four File Key-Item Chains",
+      "location_cue": "Shining cards, keys, evidence, access items, and contamination equipment along each physical route.",
+      "note": "Finish each chain before its File exit.",
+      "save_backup": {
+        "title": "Save before consuming access items",
+        "why": "A missed chain can block reports or the route exit."
+      },
+      "point_of_no_return": {
+        "title": "File route exit",
+        "why": "Confirm the complete key-item chain before crossing it."
+      },
+      "items": [
+        {
+          "id": "file-1-key-chain",
+          "type": "collectible",
+          "safe_type": "Key-Item Chain",
+          "label": "File 1 Key-Item Chain",
+          "missable": true,
+          "levels": {
+            "1": "Several identity cards point toward the rear portion of the facility.",
+            "2": "Collect all four identity cards and use their rear-entrance clue before either route exits.",
+            "3": "Search the four-card box, inspect each card, keep the rear-entrance clue, and use it on the corresponding facility route. Confirm the last File 1 report before leaving for the regional police station."
+          }
+        },
+        {
+          "id": "file-2-key-chain",
+          "type": "collectible",
+          "safe_type": "Key-Item Chain",
+          "label": "File 2 Key-Item Chain",
+          "missable": true,
+          "levels": {
+            "1": "The locked school passage and its underground room share a two-part chain.",
+            "2": "Obtain the passage key, open the locked route, and recover the data disk.",
+            "3": "Question the frightened key holder, use the passage key near the lecture-hall route, descend through the floor hatch, and collect the data disk in the underground room before accepting the File clear."
+          }
+        },
+        {
+          "id": "file-3-key-chain",
+          "type": "collectible",
+          "safe_type": "Key-Item Chain",
+          "label": "File 3 Key-Item Chain",
+          "missable": true,
+          "levels": {
+            "1": "A dropped object and the vault lead to the evidence pickups.",
+            "2": "Collect the vial, open the second-floor vault, and take the sample inside.",
+            "3": "Inspect the dropped vial, follow the central exhibit route to the second-floor vault, use the vault key, examine the open safe and floor, and confirm the sample in inventory before leaving the museum."
+          }
+        },
+        {
+          "id": "file-4-key-chain",
+          "type": "collectible",
+          "safe_type": "Key-Item Chain",
+          "label": "File 4 Key-Item Chain",
+          "missable": true,
+          "levels": {
+            "1": "The lower facility requires both access and contamination preparation.",
+            "2": "Carry the identity card, vaccine, and research report to the evacuation tunnel.",
+            "3": "Use the identity card on the lower access route, take the vaccine before passing the contamination door, collect the dropped research report, inspect all three researcher diaries on Route B, then reach the tunnel with the evidence retained."
+          }
+        }
+      ]
+    },
+    {
+      "id": "healing-inventory",
+      "name": "Healing Inventory",
+      "location_cue": "Breakable containers and route inventories across the facility, school, museum, and lower laboratory.",
+      "note": "Record all four recovery tiers.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "healing-green-herb-small-recovery",
+          "type": "collectible",
+          "safe_type": "Healing Item",
+          "label": "Green Herb",
+          "missable": false,
+          "levels": {
+            "1": "One healing tier belongs in the full inventory audit.",
+            "2": "Break marked containers and collect Green Herb wherever it appears across the eight routes.",
+            "3": "Use Green Herb only for light damage so stronger healing remains available for occupied rooms. Record at least one pickup and one controlled use on the inventory ledger."
+          }
+        },
+        {
+          "id": "healing-green-herb-plus-medium-recovery",
+          "type": "collectible",
+          "safe_type": "Healing Item",
+          "label": "Green Herb Plus",
+          "missable": false,
+          "levels": {
+            "1": "One healing tier belongs in the full inventory audit.",
+            "2": "Break marked containers and collect Green Herb Plus wherever it appears across the eight routes.",
+            "3": "Use Green Herb Plus after moderate damage, preferably behind a door before re-entering combat. Record at least one pickup and one controlled use on the inventory ledger."
+          }
+        },
+        {
+          "id": "healing-first-aid-spray-large-recovery",
+          "type": "collectible",
+          "safe_type": "Healing Item",
+          "label": "First Aid Spray",
+          "missable": false,
+          "levels": {
+            "1": "One healing tier belongs in the full inventory audit.",
+            "2": "Break marked containers and collect First Aid Spray wherever it appears across the eight routes.",
+            "3": "Reserve the ordinary First Aid Spray for heavy damage that a herb cannot efficiently cover. Record at least one pickup and one controlled use on the inventory ledger."
+          }
+        },
+        {
+          "id": "healing-first-aid-spray-sp-full-recovery",
+          "type": "collectible",
+          "safe_type": "Healing Item",
+          "label": "First Aid Spray SP",
+          "missable": false,
+          "levels": {
+            "1": "One healing tier belongs in the full inventory audit.",
+            "2": "Break marked containers and collect First Aid Spray SP wherever it appears across the eight routes.",
+            "3": "Keep First Aid Spray SP for critical health; it restores the health scale completely. Record at least one pickup and one controlled use on the inventory ledger."
+          }
+        }
+      ]
+    },
+    {
+      "id": "weapon-catalogue",
+      "name": "Weapon Catalogue",
+      "location_cue": "Starting inventories, destructible containers, route pickups, and the retired Japanese dealer.",
+      "note": "The exact printed code list is preserved internally; placements need verification.",
+      "save_backup": {
+        "title": "Preserve the pre-pickup save",
+        "why": "A weapon code may occur only on one route or regional build."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "weapon-handguns-01-9mm-au-10-7",
+          "type": "upgrade",
+          "safe_type": "Handgun",
+          "label": "9mm AU-10+7",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 9mm AU-10+7.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-handguns-02-9mm-ge-2-24",
+          "type": "upgrade",
+          "safe_type": "Handgun",
+          "label": "9mm GE-2/24",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 9mm GE-2/24.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-handguns-03-9mm-it8m",
+          "type": "upgrade",
+          "safe_type": "Handgun",
+          "label": "9mm IT8M",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 9mm IT8M.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-handguns-04-9mm-ge-2-16",
+          "type": "upgrade",
+          "safe_type": "Handgun",
+          "label": "9mm GE-2/16",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 9mm GE-2/16.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-handguns-05-9mm-be-35",
+          "type": "upgrade",
+          "safe_type": "Handgun",
+          "label": "9mm BE-35",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 9mm BE-35.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-handguns-06-9mm-be-35-variant",
+          "type": "upgrade",
+          "safe_type": "Handgun",
+          "label": "9mm BE-35 variant",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 9mm BE-35 variant.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-handguns-07-9mm-ge-m2-18",
+          "type": "upgrade",
+          "safe_type": "Handgun",
+          "label": "9mm GE/M2/18",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 9mm GE/M2/18.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-knives-01-sn-001",
+          "type": "upgrade",
+          "safe_type": "Knife",
+          "label": "SN-001",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for SN-001.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-knives-02-hn-001",
+          "type": "upgrade",
+          "safe_type": "Knife",
+          "label": "HN-001",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for HN-001.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-knives-03-an-001",
+          "type": "upgrade",
+          "safe_type": "Knife",
+          "label": "AN-001",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for AN-001.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-knives-04-an-002",
+          "type": "upgrade",
+          "safe_type": "Knife",
+          "label": "AN-002",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for AN-002.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-assault_rifles-01-5-56mm-us-mosao",
+          "type": "upgrade",
+          "safe_type": "Assault Rifle",
+          "label": "5.56mm US MOSAO",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 5.56mm US MOSAO.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-assault_rifles-02-5-56mm-us-swsf",
+          "type": "upgrade",
+          "safe_type": "Assault Rifle",
+          "label": "5.56mm US-SWSF",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 5.56mm US-SWSF.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-assault_rifles-03-5-56mm-ge-2-106",
+          "type": "upgrade",
+          "safe_type": "Assault Rifle",
+          "label": "5.56mm GE-2/106",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 5.56mm GE-2/106.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-assault_rifles-04-5-56mm-ge-2-66",
+          "type": "upgrade",
+          "safe_type": "Assault Rifle",
+          "label": "5.56mm GE-2/66",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 5.56mm GE-2/66.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-assault_rifles-05-5-56mm-su2-1100",
+          "type": "upgrade",
+          "safe_type": "Assault Rifle",
+          "label": "5.56mm SU2/1100",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 5.56mm SU2/1100.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-assault_rifles-06-5-56mm-is-mar",
+          "type": "upgrade",
+          "safe_type": "Assault Rifle",
+          "label": "5.56mm IS-MAR",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 5.56mm IS-MAR.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-assault_rifles-07-5-56mm-it-m7-9",
+          "type": "upgrade",
+          "safe_type": "Assault Rifle",
+          "label": "5.56mm IT-M7/9",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 5.56mm IT-M7/9.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-shotguns-01-usshot2-12",
+          "type": "upgrade",
+          "safe_type": "Shotgun",
+          "label": "USSHOT2-12",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for USSHOT2-12.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-shotguns-02-12-it-shoi",
+          "type": "upgrade",
+          "safe_type": "Shotgun",
+          "label": "12 IT-SHOI",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 12 IT-SHOI.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-shotguns-03-c-euro-rifle",
+          "type": "upgrade",
+          "safe_type": "Shotgun",
+          "label": "C. Euro Rifle",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for C. Euro Rifle.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-magnums-01-45l-r-gun",
+          "type": "upgrade",
+          "safe_type": "Magnum",
+          "label": "45L R. Gun",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 45L R. Gun.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-magnums-02-us-saa",
+          "type": "upgrade",
+          "safe_type": "Magnum",
+          "label": "US-SAA",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for US-SAA.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-magnums-03-us-44mtn",
+          "type": "upgrade",
+          "safe_type": "Magnum",
+          "label": "US-44MTN",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for US-44MTN.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-magnums-04-357-us-mon",
+          "type": "upgrade",
+          "safe_type": "Magnum",
+          "label": "357 US-MON",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 357 US-MON.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-magnums-05-357-magnum-r-iti5",
+          "type": "upgrade",
+          "safe_type": "Magnum",
+          "label": "357 Magnum R ITI5",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 357 Magnum R ITI5.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-magnums-06-357-us-f",
+          "type": "upgrade",
+          "safe_type": "Magnum",
+          "label": "357 US-F",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 357 US-F.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "weapon-grenade_launchers-01-40mm-us-saa",
+          "type": "upgrade",
+          "safe_type": "Grenade Launcher",
+          "label": "40mm US-SAA",
+          "missable": false,
+          "levels": {
+            "1": "A distinct weapon code appears somewhere in the four-File equipment pool.",
+            "2": "Check destructible containers, route inventories, and the Japanese dealer for 40mm US-SAA.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "retired-japanese-online",
+      "name": "Retired Japanese Online Features",
+      "location_cue": "The i-mode connection menu, multiplayer entry, and networked weapons dealer.",
+      "note": "These features belong to the earliest route but are no longer normally accessible.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "japanese-multiplayer",
+          "type": "optional",
+          "safe_type": "Retired Online Feature",
+          "label": "Japanese i-mode Multiplayer",
+          "missable": false,
+          "levels": {
+            "1": "The earliest regional route included a connected play feature.",
+            "2": "The original Japanese i-mode service exposed multiplayer beyond the offline four-File clears.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        },
+        {
+          "id": "japanese-weapons-dealer",
+          "type": "upgrade",
+          "safe_type": "Retired Online Feature",
+          "label": "Japanese Online Weapons Dealer",
+          "missable": false,
+          "levels": {
+            "1": "The earliest regional route included a networked equipment shop.",
+            "2": "Open the Japanese i-mode dealer and reconcile its inventory against the 28 preserved weapon codes.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true,
+          "internal_unavailable": true
+        }
+      ]
+    },
+    {
+      "id": "completion-archive-audit",
+      "name": "Completion and Archive Audit",
+      "location_cue": "All four applications, eight route saves, 64 report slots, equipment records, and preservation copies.",
+      "note": "Close the offline evidence while keeping retired services explicit.",
+      "save_backup": {
+        "title": "Write-protect two final copies",
+        "why": "The finished four-file archive is the completion artifact."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "eight-route-clears",
+          "type": "optional",
+          "safe_type": "Completion Audit",
+          "label": "Verify All Eight Route Clears",
+          "missable": false,
+          "levels": {
+            "1": "Each of the four applications has two independent routes.",
+            "2": "Keep a result screen and save for Route A and Route B in every File.",
+            "3": "Cold-boot each File, load both route saves, confirm its closing result and eight reports, then retain the eight captures beside the application hashes."
+          }
+        },
+        {
+          "id": "all-sixty-four-reports",
+          "type": "collectible",
+          "safe_type": "Completion Audit",
+          "label": "Verify All 64 Reports",
+          "missable": false,
+          "levels": {
+            "1": "Every route contributes eight neutral report slots.",
+            "2": "Count eight reports across each of eight route logs.",
+            "3": "Open each report screen in order, capture all 64 filled slots without displaying their story text in the spoiler-free guide, and repair any gap from that route's pre-exit save."
+          }
+        },
+        {
+          "id": "all-twenty-eight-weapons",
+          "type": "upgrade",
+          "safe_type": "Completion Audit",
+          "label": "Verify All 28 Weapon Codes",
+          "missable": false,
+          "levels": {
+            "1": "The surviving appendix preserves a large equipment pool.",
+            "2": "Acquire and fire every listed handgun, knife, rifle, shotgun, magnum, and launcher code.",
+            "3": "Because several printed codes are typographically ambiguous, compare the in-game inventory spelling against the internal appendix ledger, retain screenshots privately, and mark discrepancies for source correction rather than renaming the guide entry."
+          }
+        },
+        {
+          "id": "all-four-healing-tiers",
+          "type": "collectible",
+          "safe_type": "Completion Audit",
+          "label": "Verify All Four Healing Tiers",
+          "missable": false,
+          "levels": {
+            "1": "Recovery strength changes across four distinct pickup types.",
+            "2": "Collect and use Green Herb, Green Herb Plus, First Aid Spray, and First Aid Spray SP.",
+            "3": "Use controlled damage on a duplicate save, record the health scale before and after each tier, then reload so the final route inventory remains intact."
+          }
+        },
+        {
+          "id": "preserve-final-mobile-archive",
+          "type": "optional",
+          "safe_type": "Archive",
+          "label": "Preserve the Complete Four-File Archive",
+          "missable": false,
+          "levels": {
+            "1": "Old Java applications and phone saves are vulnerable to profile loss.",
+            "2": "Keep the four applications, eight saves, and all audit captures together.",
+            "3": "Hash every application and save, clone the set twice, record the handset or emulator profile, cold-boot all four Files, and confirm every route and report remains readable without relying on the retired Japanese network."
+          }
+        }
+      ]
+    }
+  ]
+}

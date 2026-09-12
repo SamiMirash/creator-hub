@@ -1,0 +1,153 @@
+{
+  "id": "resident-evil-outbreak-survive",
+  "game": "Resident Evil Outbreak Survive (2011)",
+  "target": "Spoiler-free historical completion record for the discontinued Japanese GREE social game",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "archival-gree-route",
+      "name": "Archival GREE Route",
+      "location_cue": "The discontinued Japanese GREE login and application launch screen.",
+      "note": "Official operation ended in May 2015; this area records provenance rather than pretending the service still works.",
+      "items": [
+        {
+          "id": "route-original-feature-phone",
+          "type": "interaction",
+          "safe_type": "Historical Route",
+          "label": "Original Feature-phone Release",
+          "missable": false,
+          "levels": {
+            "1": "The first version ran inside Japan's GREE mobile service.",
+            "2": "Use the June 2011 feature-phone release only through a lawful preserved account or first-party archive.",
+            "3": "Confirm the application package and account provenance without bypassing authentication. Because the official backend is gone, preserve any owned menus or save data and record the failed service response."
+          }
+        },
+        {
+          "id": "route-smartphone-port",
+          "type": "interaction",
+          "safe_type": "Historical Route",
+          "label": "Later Smartphone Port",
+          "missable": false,
+          "levels": {
+            "1": "A later client added touch controls and profile transfer.",
+            "2": "The December 2011 smartphone release accepted data transferred from the earlier GREE client.",
+            "3": "On a lawfully preserved device, document the client version and any transferred profile that still opens locally. Do not overwrite the feature-phone data; the transfer and login servers are no longer available."
+          }
+        },
+        {
+          "id": "route-service-status",
+          "type": "interaction",
+          "safe_type": "Service Status",
+          "label": "Official Service Shutdown",
+          "missable": false,
+          "levels": {
+            "1": "This completion route depends on infrastructure that no longer exists.",
+            "2": "The Japanese GREE service operated from June 2011 until May 2015.",
+            "3": "Treat every server-backed checklist item as historically unavailable on a normal account today. A menu screenshot, redistributed binary, or fan description does not prove a completable authenticated profile."
+          }
+        }
+      ]
+    },
+    {
+      "id": "documented-game-systems",
+      "name": "Documented Game Systems",
+      "location_cue": "The unavailable mission, team, friend, inventory, and item-shop menus.",
+      "note": "Surviving sources establish these systems but not their exhaustive slot lists or completion thresholds.",
+      "items": [
+        {
+          "id": "system-all-missions",
+          "type": "optional",
+          "safe_type": "Discontinued System",
+          "label": "Complete Every Mission",
+          "missable": false,
+          "levels": {
+            "1": "The central route consisted of numerous social-survival missions.",
+            "2": "A complete profile would clear every mission offered by the live service.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "system-rescued-allies",
+          "type": "collectible",
+          "safe_type": "Discontinued Roster",
+          "label": "Rescue and Assemble Every Ally",
+          "missable": false,
+          "levels": {
+            "1": "Recovered allies formed teams for later missions.",
+            "2": "A complete profile would rescue every available ally and fill every team slot.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "system-friend-cooperation",
+          "type": "optional",
+          "safe_type": "Discontinued Social System",
+          "label": "Complete Friend-assisted Missions",
+          "missable": false,
+          "levels": {
+            "1": "The social layer allowed friends to strengthen difficult attempts.",
+            "2": "A complete profile would use the friend-cooperation system wherever it tracked progress or rewards.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "system-shared-healing",
+          "type": "optional",
+          "safe_type": "Discontinued Social System",
+          "label": "Complete Healing-share Records",
+          "missable": false,
+          "levels": {
+            "1": "Friends could exchange recovery resources through the service.",
+            "2": "A complete profile would satisfy every tracked healing-item sharing milestone.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "system-item-catalog",
+          "type": "collectible",
+          "safe_type": "Discontinued Catalog",
+          "label": "Complete the Item Catalog",
+          "missable": false,
+          "levels": {
+            "1": "The free service also contained a paid item economy.",
+            "2": "A complete historical profile would own every permanent gameplay item that the catalog offered.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "completion-boundary",
+      "name": "Completion Boundary",
+      "location_cue": "The research record beside any lawfully preserved local client data.",
+      "note": "The correct result is an explicit unavailable-content record, not a fabricated 100% claim.",
+      "items": [
+        {
+          "id": "audit-exact-live-catalog",
+          "type": "optional",
+          "safe_type": "Verification Note",
+          "label": "Verify the Exact Live Catalog",
+          "missable": false,
+          "levels": {
+            "1": "Mission, roster, shop, and ending totals remain unproven.",
+            "2": "Do not mark the game complete until an authenticated full catalog or first-party specification is recovered.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        },
+        {
+          "id": "audit-current-achievability",
+          "type": "optional",
+          "safe_type": "Service Audit",
+          "label": "Record Current Achievability",
+          "missable": false,
+          "levels": {
+            "1": "Server loss is an external boundary, not unfinished local play.",
+            "2": "Record the title as not achievable on a normal save under current official service conditions.",
+            "3": "Preserve the eight-source corpus, owned client metadata, and any personal save without attempting unauthorized access. Reopen this checklist only if Capcom or GREE restores authenticated service or releases complete archival data."
+          }
+        }
+      ]
+    }
+  ]
+}

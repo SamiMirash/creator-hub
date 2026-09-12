@@ -1,0 +1,2267 @@
+{
+  "id": "romeo-is-a-dead-man",
+  "game": "Romeo Is a Dead Man",
+  "target": "PC current release, including the June 2026 free update",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-24",
+  "areas": [
+    {
+      "id": "first-deployment",
+      "name": "First Deployment",
+      "location_cue": "The opening combat route before the ship becomes a freely usable hub.",
+      "note": "Use the most demanding standard difficulty now if you want its clear record without another full run.",
+      "save_backup": {
+        "title": "Keep a starting save",
+        "why": "Difficulty selection affects a full-run completion record. Preserve a save before committing if you may want to change it."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "difficulty-orange-chocolate-clear",
+          "type": "optional",
+          "safe_type": "Run condition",
+          "label": "Orange Chocolate Clear",
+          "missable": false,
+          "levels": {
+            "1": "A first run can satisfy the demanding standard setting.",
+            "2": "Choose Orange Chocolate before beginning and leave it selected through the campaign clear.",
+            "3": "Start a fresh campaign on Orange Chocolate and do not lower the setting before the clear data is created. The harder Couverture Chocolate setting is a separate New Game Plus task."
+          }
+        },
+        {
+          "id": "pin-mercury",
+          "type": "collectible",
+          "safe_type": "Pin",
+          "label": "Mercury",
+          "missable": false,
+          "levels": {
+            "1": "This one joins you through normal progress.",
+            "2": "Continue through the required opening route; no side search is needed.",
+            "3": "It is awarded automatically after the opening route's required encounter. Finish the sequence and check the collectible list once control returns."
+          }
+        }
+      ]
+    },
+    {
+      "id": "last-night",
+      "name": "Last Night",
+      "location_cue": "The multi-deck ship hub with a Hangar, Storage room, Training Room, and exterior Balcony.",
+      "note": "Search the hub before departing; its rooms remain recognisable by their door labels.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "pin-venus",
+          "type": "collectible",
+          "safe_type": "Pin",
+          "label": "Venus",
+          "missable": false,
+          "levels": {
+            "1": "Normal progress handles this pin.",
+            "2": "Finish the required briefing aboard the ship.",
+            "3": "No pickup prompt is involved. Complete the ship briefing that opens the new rooms, then verify Venus after normal control returns."
+          }
+        },
+        {
+          "id": "research-note-01",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #1 - The Beginning of an Uncertain World",
+          "missable": false,
+          "levels": {
+            "1": "Begin with the ship's storage spaces.",
+            "2": "Enter Storage and inspect the accessible surfaces inside.",
+            "3": "In the ship hub, open the door marked Storage and collect the note from the room's interior surface before leaving the deck."
+          },
+          "sketch": {
+            "src": "sketches/research-note-01.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-02",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #2 - Fish Don't Notice Water",
+          "missable": false,
+          "levels": {
+            "1": "The Hangar has more than its central floor.",
+            "2": "Walk behind the parked motorcycle in the Hangar.",
+            "3": "Enter the Hangar, pass the motorcycle, and check the rear edge of the room. The note is behind the bike rather than beside the main exit."
+          },
+          "sketch": {
+            "src": "sketches/research-note-02.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-03",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #3 - Violent and Chaotic",
+          "missable": false,
+          "levels": {
+            "1": "Check the passage linking two named ship spaces.",
+            "2": "Use the corridor south of the Hangar that leads toward the Balcony.",
+            "3": "Leave the Hangar through its southern corridor, pass the Balcony door, and continue to the end of the passage. The note is on the floor at the dead end."
+          },
+          "sketch": {
+            "src": "sketches/research-note-03.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-04",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #4 - I Want You to Understand",
+          "missable": false,
+          "levels": {
+            "1": "The outer deck hides a route that looks unsafe.",
+            "2": "At the Balcony's northwest edge, test the empty-looking path.",
+            "3": "Go to the northwest corner of the Balcony and walk onto the invisible bridge. Follow its solid path carefully to the note; stepping outside the hidden span causes a fall and reset."
+          },
+          "sketch": {
+            "src": "sketches/research-note-04.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "deadford-shopping-mall-1983",
+      "name": "Deadford Shopping Mall, 1983",
+      "location_cue": "The abandoned indoor shopping complex with Babylon, Nirvana, Hardware Tools, a food court, and broad stairways.",
+      "note": "Several finds sit beyond counters or at the end of apparently unimportant side paths.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "research-note-05",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #5 - Appear, Invade, and Spread",
+          "missable": false,
+          "levels": {
+            "1": "Start with a named shop counter.",
+            "2": "Inspect the counter inside Babylon.",
+            "3": "Enter Babylon and circle to the service side of its counter. The note rests on the countertop where the interaction prompt appears."
+          },
+          "sketch": {
+            "src": "sketches/research-note-05.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-06",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #6 - Like a Scab",
+          "missable": false,
+          "levels": {
+            "1": "The dining space deserves a slow pass.",
+            "2": "Check the tables in the food court.",
+            "3": "Walk through the food court and inspect its tables rather than the vendor counters. The note lies on one of the dining surfaces."
+          },
+          "sketch": {
+            "src": "sketches/research-note-06.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-myopia",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Myopia",
+          "missable": false,
+          "levels": {
+            "1": "A television route opens an upper corridor.",
+            "2": "After using the storage-area television, climb the stairs ahead, turn left, and take the first door.",
+            "3": "Use the Nirvana television that leads from the storage area, climb the stairs directly ahead, turn left, and enter the first door. Follow that corridor to the purple tesseract."
+          },
+          "sketch": {
+            "src": "sketches/badge-myopia.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-angels-face",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Angel's Face",
+          "missable": false,
+          "levels": {
+            "1": "A raised pallet becomes reachable from nearby stairs.",
+            "2": "In the storage area, climb the stairs and jump to the pallet-top tesseract.",
+            "3": "After arriving in storage through the Nirvana television, locate the purple tesseract on top of a pallet. Use the nearby stairs for height, then jump across to the pallet."
+          },
+          "sketch": {
+            "src": "sketches/badge-angels-face.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-07",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #7 - Space-Time Disturbing Abberation",
+          "missable": false,
+          "levels": {
+            "1": "A northern stair route ends quietly.",
+            "2": "After restoring the storage-area generator, ignore the television and take the northern stairs.",
+            "3": "Once the storage generator is complete, do not enter the Nirvana television. Climb the stairs to the north and follow the upper route to its end, where the note lies on the ground."
+          },
+          "sketch": {
+            "src": "sketches/research-note-07.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-magnetic-fields",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Magnetic Fields",
+          "missable": false,
+          "levels": {
+            "1": "Recheck a hall after its obstruction disappears.",
+            "2": "Back in the main mall, enter the newly open hall and search around its corner.",
+            "3": "Return to the main mall through the Nirvana television. Enter the hall that was previously blocked by the liminal wall and follow it around the corner to the purple tesseract."
+          },
+          "sketch": {
+            "src": "sketches/badge-magnetic-fields.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-08",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #8 - Purification",
+          "missable": false,
+          "levels": {
+            "1": "A second-floor tool shop has a bench.",
+            "2": "Inspect the bench inside Hardware Tools on the second floor.",
+            "3": "Reach the mall's second floor, enter Hardware Tools, and collect the note from the bench inside."
+          },
+          "sketch": {
+            "src": "sketches/research-note-08.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "pin-mars",
+          "type": "collectible",
+          "safe_type": "Pin",
+          "label": "Mars",
+          "missable": false,
+          "levels": {
+            "1": "This pin does not require a mall search.",
+            "2": "Finish the shopping complex's required encounter.",
+            "3": "The pin is granted automatically after the required encounter in this location. Continue until control returns, then verify it in the collection menu."
+          }
+        }
+      ]
+    },
+    {
+      "id": "training-room-and-palace-athene",
+      "name": "Training Room and Palace Athene",
+      "location_cue": "The ship's replay terminal and the separate combat arena selected from the hub.",
+      "note": "Clear the ordinary trial before its Z variant; Palace Athene records four danger settings separately.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "badge-ghost-o-rama",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Ghost O Rama",
+          "missable": false,
+          "levels": {
+            "1": "A replay challenge holds this badge.",
+            "2": "Open Room of Trials and select Everyday Is Like Monday Z.",
+            "3": "First clear the ordinary counterpart if Everyday Is Like Monday Z is locked. Then complete Everyday Is Like Monday Z within its displayed par time; the badge is awarded on the results screen. Boss Rush becomes available only after campaign clear."
+          }
+        },
+        {
+          "id": "badge-guilty-pleasure",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Guilty Pleasure",
+          "missable": false,
+          "levels": {
+            "1": "A replay challenge holds this badge.",
+            "2": "Open Room of Trials and select Enhanced Phantasm Z.",
+            "3": "First clear the ordinary counterpart if Enhanced Phantasm Z is locked. Then complete Enhanced Phantasm Z within its displayed par time; the badge is awarded on the results screen. Boss Rush becomes available only after campaign clear."
+          }
+        },
+        {
+          "id": "badge-one-percenter",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "1%er",
+          "missable": false,
+          "levels": {
+            "1": "A replay challenge holds this badge.",
+            "2": "Open Room of Trials and select Death Changeling Z.",
+            "3": "First clear the ordinary counterpart if Death Changeling Z is locked. Then complete Death Changeling Z within its displayed par time; the badge is awarded on the results screen. Boss Rush becomes available only after campaign clear."
+          }
+        },
+        {
+          "id": "badge-heartbreaker",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Heartbreaker",
+          "missable": false,
+          "levels": {
+            "1": "A replay challenge holds this badge.",
+            "2": "Open Room of Trials and select Fused Reanimated Z.",
+            "3": "First clear the ordinary counterpart if Fused Reanimated Z is locked. Then complete Fused Reanimated Z within its displayed par time; the badge is awarded on the results screen. Boss Rush becomes available only after campaign clear."
+          }
+        },
+        {
+          "id": "badge-finger-on-the-trigger",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Finger On The Trigger",
+          "missable": false,
+          "levels": {
+            "1": "A replay challenge holds this badge.",
+            "2": "Open Room of Trials and select Enhanced Magrus Z.",
+            "3": "First clear the ordinary counterpart if Enhanced Magrus Z is locked. Then complete Enhanced Magrus Z within its displayed par time; the badge is awarded on the results screen. Boss Rush becomes available only after campaign clear."
+          }
+        },
+        {
+          "id": "badge-hdp",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "H(d)P",
+          "missable": false,
+          "levels": {
+            "1": "A replay challenge holds this badge.",
+            "2": "Open Room of Trials and select Death Changeling Parabellum Z.",
+            "3": "First clear the ordinary counterpart if Death Changeling Parabellum Z is locked. Then complete Death Changeling Parabellum Z within its displayed par time; the badge is awarded on the results screen. Boss Rush becomes available only after campaign clear."
+          }
+        },
+        {
+          "id": "badge-tungsten-revolution",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Tungsten Revolution",
+          "missable": false,
+          "levels": {
+            "1": "A replay challenge holds this badge.",
+            "2": "Open Room of Trials and select the final named Z replay.",
+            "3": "First clear the ordinary counterpart if the final named Z replay is locked. Then complete the final named Z replay within its displayed par time; the badge is awarded on the results screen. Boss Rush becomes available only after campaign clear."
+          }
+        },
+        {
+          "id": "badge-people-of-earth",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "People Of Earth",
+          "missable": false,
+          "levels": {
+            "1": "A replay challenge holds this badge.",
+            "2": "Open Room of Trials and select Boss Rush Z.",
+            "3": "First clear the ordinary counterpart if Boss Rush Z is locked. Then complete Boss Rush Z within its displayed par time; the badge is awarded on the results screen. Boss Rush becomes available only after campaign clear."
+          }
+        },
+        {
+          "id": "badge-lost-and-found",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Lost and Found",
+          "missable": false,
+          "levels": {
+            "1": "Palace Athene tracks a separate danger setting.",
+            "2": "Clear Palace Athene on Easy.",
+            "3": "Select Easy at the Palace Athene terminal and finish the entire arena run. The clear record awards this badge; lower-setting clears do not substitute for it."
+          }
+        },
+        {
+          "id": "badge-standing",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Standing",
+          "missable": false,
+          "levels": {
+            "1": "Palace Athene tracks a separate danger setting.",
+            "2": "Clear Palace Athene on Normal.",
+            "3": "Select Normal at the Palace Athene terminal and finish the entire arena run. The clear record awards this badge; lower-setting clears do not substitute for it."
+          }
+        },
+        {
+          "id": "badge-hilltop-castle",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Hilltop Castle",
+          "missable": false,
+          "levels": {
+            "1": "Palace Athene tracks a separate danger setting.",
+            "2": "Clear Palace Athene on Hard.",
+            "3": "Select Hard at the Palace Athene terminal and finish the entire arena run. The clear record awards this badge; lower-setting clears do not substitute for it."
+          }
+        },
+        {
+          "id": "badge-bastardization",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Bastardization",
+          "missable": false,
+          "levels": {
+            "1": "Palace Athene tracks a separate danger setting.",
+            "2": "Clear Palace Athene on Very Hard.",
+            "3": "Select Very Hard at the Palace Athene terminal and finish the entire arena run. The clear record awards this badge; lower-setting clears do not substitute for it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "deadford-city-hall-1968",
+      "name": "Deadford City Hall, 1968",
+      "location_cue": "The civic building facing a fountain, with County Clerk, Child Support Services, pharmacy access, and basement rooms.",
+      "note": "The exterior and underground level count as part of the same search.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "research-note-09",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #9 - Be Silent",
+          "missable": false,
+          "levels": {
+            "1": "Start outside near the water feature.",
+            "2": "Search beside the fountain in front of City Hall.",
+            "3": "Before entering City Hall, circle the fountain and collect the note from its side closest to the building."
+          },
+          "sketch": {
+            "src": "sketches/research-note-09.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-10",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #10 - Like a Backdoor",
+          "missable": false,
+          "levels": {
+            "1": "The rear grounds contain colored geometry.",
+            "2": "Go behind City Hall near the green tesseracts.",
+            "3": "Circle around the exterior to the back of the building. The note is on the ground near the cluster of green tesseracts."
+          },
+          "sketch": {
+            "src": "sketches/research-note-10.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-11",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #11 - \"It\" Has Always Been There",
+          "missable": false,
+          "levels": {
+            "1": "A public-service desk holds one.",
+            "2": "Inspect the desk in Child Support Services.",
+            "3": "Enter Child Support Services and move around to the working side of its desk. The note is on the desktop."
+          },
+          "sketch": {
+            "src": "sketches/research-note-11.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-01",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #1 - Memo: I'll Be Waiting",
+          "missable": false,
+          "levels": {
+            "1": "The mayoral suite has two useful surfaces.",
+            "2": "Check the coffee table in the Mayor's Office.",
+            "3": "After arriving in the Mayor's Office through the second Nirvana television, collect the document from the nearby low coffee table."
+          },
+          "sketch": {
+            "src": "sketches/document-01.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-02",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #2 - Memo: I Always Looked Forward to It",
+          "missable": false,
+          "levels": {
+            "1": "Stay in the mayoral suite.",
+            "2": "Inspect the main desk in the Mayor's Office.",
+            "3": "In the same office, move from the coffee table to the Mayor's main desk and collect the separate document on its work surface."
+          },
+          "sketch": {
+            "src": "sketches/document-02.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-03",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #3 - Memo: You Were So Cute",
+          "missable": false,
+          "levels": {
+            "1": "The lower level has a rear corner.",
+            "2": "Search the back of the underground combat room.",
+            "3": "After the Nirvana television sends you underground, finish the room's required combat and cross to the rear. The document is on the floor behind the main fighting space."
+          },
+          "sketch": {
+            "src": "sketches/document-03.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-12",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #12 - What Do You Know?",
+          "missable": false,
+          "levels": {
+            "1": "A basement key opens the central room.",
+            "2": "Use the basement key on the room in the middle of the underground area.",
+            "3": "Take the basement key from the nearby purple tesseract, unlock the central room, and collect the note from the stacked boxes inside."
+          },
+          "sketch": {
+            "src": "sketches/research-note-12.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-04",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #4 - Memo: I Was Daydreaming",
+          "missable": false,
+          "levels": {
+            "1": "One municipal counter is easy to pass.",
+            "2": "Inspect the County Clerk desk.",
+            "3": "Go to the County Clerk office, step to the interior side of its counter, and collect the document from the desk surface."
+          },
+          "sketch": {
+            "src": "sketches/document-04.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-nurses-mercy",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Nurse's Mercy",
+          "missable": false,
+          "levels": {
+            "1": "A basement doorway has something opposite it.",
+            "2": "Search the basement corridor across from the marked door.",
+            "3": "In the basement corridor, face away from the relevant door and inspect the opposite wall area. Activate the tesseract there to obtain the badge."
+          },
+          "sketch": {
+            "src": "sketches/badge-nurses-mercy.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-hyperopia",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Hyperopia",
+          "missable": false,
+          "levels": {
+            "1": "A side hall near medical supplies hides one.",
+            "2": "Take the left corridor from the Mayor's Office toward the Pharmacy.",
+            "3": "Leave the Mayor's Office through its left-hand corridor and proceed toward the Pharmacy. Break the tesseract along that passage to claim the badge."
+          },
+          "sketch": {
+            "src": "sketches/badge-hyperopia.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "pin-jupiter",
+          "type": "collectible",
+          "safe_type": "Pin",
+          "label": "Jupiter",
+          "missable": false,
+          "levels": {
+            "1": "Normal progress awards this pin.",
+            "2": "Complete the civic building's required encounter.",
+            "3": "Finish the required encounter attached to this visit. The pin is added automatically, so no object or container needs to be searched."
+          }
+        }
+      ]
+    },
+    {
+      "id": "st-impius-asylum-1992",
+      "name": "St. Impius Asylum, 1992",
+      "location_cue": "The institutional North Wing with numbered rooms, Laundry, Group Therapy, Pathology, Assisted Wash, and an advanced laboratory.",
+      "note": "Follow room signs and treat each loop of the North Wing as a separate sweep.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "research-note-13",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #13 - He Who Controls Space-Time",
+          "missable": false,
+          "levels": {
+            "1": "The entrance furniture is worth checking.",
+            "2": "Inspect the coffee table near the entrance Pharmacy.",
+            "3": "From the entrance, move right toward the Pharmacy and collect the note from the nearby coffee table."
+          },
+          "sketch": {
+            "src": "sketches/research-note-13.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-14",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #14 - From the Base of a Black Cherry Tree",
+          "missable": false,
+          "levels": {
+            "1": "A storage room has drawers on one side.",
+            "2": "Check the left chest of drawers in North Wing Storage.",
+            "3": "Enter North Wing Storage and inspect the chest of drawers along its left side. The note rests on top."
+          },
+          "sketch": {
+            "src": "sketches/research-note-14.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-05",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #5 - Night Shift Report",
+          "missable": false,
+          "levels": {
+            "1": "Group Therapy has a useful desk.",
+            "2": "Inspect the desk on the right side of Group Therapy.",
+            "3": "Go upstairs, enter Group Therapy, and collect the report from the desk on the room's right side."
+          },
+          "sketch": {
+            "src": "sketches/document-05.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-06",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #6 - Dennis's Remnant Psyche",
+          "missable": false,
+          "levels": {
+            "1": "The third North Wing loop changes Laundry.",
+            "2": "During the third loop, use the washing machine in Laundry.",
+            "3": "On the third North Wing loop, enter Laundry, interact with the washing machine, then turn around and interact with the figure that appears to receive the document."
+          },
+          "sketch": {
+            "src": "sketches/document-06.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-07",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #7 - Luc's Remnant Psyche",
+          "missable": false,
+          "levels": {
+            "1": "A later loop changes Group Therapy.",
+            "2": "Use the radio in second-floor Group Therapy.",
+            "3": "Continue the North Wing loops until the radio in second-floor Group Therapy becomes interactive. Use it, then interact with the figure that appears near the door."
+          },
+          "sketch": {
+            "src": "sketches/document-07.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-08",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #8 - Teddy's Remnant Psyche",
+          "missable": false,
+          "levels": {
+            "1": "Pathology reacts to a nearby radio.",
+            "2": "Reach Pathology through Assisted Wash and use its radio.",
+            "3": "Pass through Assisted Wash into Pathology, interact with the radio, then approach the exit and interact with the figure that appears there."
+          },
+          "sketch": {
+            "src": "sketches/document-08.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-09",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #9 - Maddison's Remnant Psyche",
+          "missable": false,
+          "levels": {
+            "1": "Another loop changes Assisted Wash.",
+            "2": "Use the newly active radio in Assisted Wash.",
+            "3": "Continue looping until the Assisted Wash radio can be used. Interact with it, then complete the nearby figure interaction to receive the document."
+          },
+          "sketch": {
+            "src": "sketches/document-09.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-10",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #10 - Patrick's Remnant Psyche",
+          "missable": false,
+          "levels": {
+            "1": "A numbered room contains a brain puzzle.",
+            "2": "Enter N304 and solve its brain puzzle.",
+            "3": "On the appropriate North Wing loop, enter room N304, interact with the puzzle, and complete it. Use the resulting figure interaction to register the document."
+          },
+          "sketch": {
+            "src": "sketches/document-10.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-15",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #15 - Then They Woke Up",
+          "missable": false,
+          "levels": {
+            "1": "A nearby numbered room has a table.",
+            "2": "Continue down the hall to N301.",
+            "3": "Enter room N301 farther along the hall and collect the note from the table inside."
+          },
+          "sketch": {
+            "src": "sketches/research-note-15.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-11",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #11 - Rosemary's Remnant Psyche",
+          "missable": false,
+          "levels": {
+            "1": "The stairwell's first side room has a puzzle.",
+            "2": "Go one level lower and use the nearest right-hand side room.",
+            "3": "Take the stairs downward, turn into the closest room on the right, and solve the brain puzzle inside. Complete the resulting interaction to receive the document."
+          },
+          "sketch": {
+            "src": "sketches/document-11.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-12",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #12 - Randall's Remnant Psyche",
+          "missable": false,
+          "levels": {
+            "1": "Storage gains its own puzzle.",
+            "2": "Return to Storage and complete the brain puzzle there.",
+            "3": "Enter the North Wing Storage room during its puzzle loop, solve the brain puzzle, and complete the resulting figure interaction to obtain the document."
+          },
+          "sketch": {
+            "src": "sketches/document-12.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-16",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #16 - On the Rope",
+          "missable": false,
+          "levels": {
+            "1": "The advanced lab's floor holds one.",
+            "2": "Search the right side of the Advanced Research Lab.",
+            "3": "Enter the Advanced Research Lab and move along its right side. The note is on the floor rather than a desk."
+          },
+          "sketch": {
+            "src": "sketches/research-note-16.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-chill-days",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Chill Days",
+          "missable": false,
+          "levels": {
+            "1": "A high stair route leads downward to it.",
+            "2": "From the North Wing's third floor, use the northern stairs down toward the first floor.",
+            "3": "Reach the North Wing third floor, enter the northern stairwell, and descend toward the first floor. Activate the tesseract found on this stair route to obtain the badge."
+          },
+          "sketch": {
+            "src": "sketches/badge-chill-days.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "pin-saturn",
+          "type": "collectible",
+          "safe_type": "Pin",
+          "label": "Saturn",
+          "missable": false,
+          "levels": {
+            "1": "This pin follows the required route.",
+            "2": "Finish the institution's required encounter.",
+            "3": "Complete the required encounter for this visit. Saturn is granted automatically afterward and has no separate pickup prompt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "space-and-me-parish-1978",
+      "name": "Space and Me Parish, 1978",
+      "location_cue": "A rural parish route with picnic furniture, colored orb paths, a white building, headquarters, and a church.",
+      "note": "Optional colored routes and small side buildings hold much of this area's paperwork.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "research-note-17",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #17 - To Put It Bluntly",
+          "missable": false,
+          "levels": {
+            "1": "The opening path has a place to sit.",
+            "2": "Inspect the picnic table along the starting path.",
+            "3": "Follow the opening path until you reach the picnic table. Collect the note from its tabletop before passing deeper into the parish."
+          },
+          "sketch": {
+            "src": "sketches/research-note-17.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-13",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #13 - Follower Malachi's Journal",
+          "missable": false,
+          "levels": {
+            "1": "Look beside the first gate.",
+            "2": "Check the cart to the left of the gate.",
+            "3": "At the gate, turn left before passing through and inspect the nearby cart. The document is resting on it."
+          },
+          "sketch": {
+            "src": "sketches/document-13.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-14",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #14 - Follower Silas's Journal",
+          "missable": false,
+          "levels": {
+            "1": "One colored route has a ground pickup.",
+            "2": "Follow the purple-orb path and watch the ground.",
+            "3": "Take the route marked by purple orbs and inspect the ground along the path. The document is not inside a structure."
+          },
+          "sketch": {
+            "src": "sketches/document-14.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-15",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #15 - Follower Verity's Journal",
+          "missable": false,
+          "levels": {
+            "1": "A white building conceals something outside.",
+            "2": "Walk behind the white building.",
+            "3": "Circle around the white building instead of entering and collect the document from the ground at its rear."
+          },
+          "sketch": {
+            "src": "sketches/document-15.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-16",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #16 - Follower Enoch's Journal",
+          "missable": false,
+          "levels": {
+            "1": "Two orb colors converge near a rock.",
+            "2": "Search the rock beside the red-and-white orb route.",
+            "3": "Follow the path marked by red and white orbs. At the prominent rock along it, inspect the ground for the document."
+          },
+          "sketch": {
+            "src": "sketches/document-16.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-pedro-brothers",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Pedro Brothers",
+          "missable": false,
+          "levels": {
+            "1": "An optional pedestal route rewards exploration.",
+            "2": "Take the side path marked by a green pedestal.",
+            "3": "Leave the main route at the green pedestal and follow that optional path to its tesseract. Activate it to obtain the badge before returning."
+          },
+          "sketch": {
+            "src": "sketches/badge-pedro-brothers.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-testosterone",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Testosterone",
+          "missable": false,
+          "levels": {
+            "1": "A small building has several entrances.",
+            "2": "Enter the four-door building on the orange-and-purple side route.",
+            "3": "Follow the optional path marked by orange and purple cues to the building with four doors. Enter it and activate the tesseract inside for the badge."
+          },
+          "sketch": {
+            "src": "sketches/badge-testosterone.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-17",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #17 - Follower Caleb's Journal",
+          "missable": false,
+          "levels": {
+            "1": "The four-door building holds more than a badge.",
+            "2": "Search the interior of the four-door building.",
+            "3": "Inside the building reached from the orange-and-purple route, inspect the first document surface near the badge tesseract."
+          },
+          "sketch": {
+            "src": "sketches/document-17.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-18",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #18 - Follower Brice's Journal",
+          "missable": false,
+          "levels": {
+            "1": "Keep searching the same small building.",
+            "2": "Inspect the second document surface in the four-door building.",
+            "3": "Do not leave after the badge and first document. Sweep the other interior side of the four-door building for the second paper pickup."
+          },
+          "sketch": {
+            "src": "sketches/document-18.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-19",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #19 - Follower Obadiah's Journal",
+          "missable": false,
+          "levels": {
+            "1": "Headquarters has a downstairs rest area.",
+            "2": "Check the bench beside the television downstairs in headquarters.",
+            "3": "Enter headquarters, go downstairs to the Nirvana television, and collect the document from the bench beside it."
+          },
+          "sketch": {
+            "src": "sketches/document-19.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-18",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #18 - All of Them",
+          "missable": false,
+          "levels": {
+            "1": "A nearby room has low furniture.",
+            "2": "Use the door beside the headquarters bench and inspect its coffee table.",
+            "3": "From the downstairs television bench, enter the directly adjacent door and collect the note from the coffee table inside."
+          },
+          "sketch": {
+            "src": "sketches/research-note-18.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-20",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #20 - Follower Shiloh's Journal",
+          "missable": false,
+          "levels": {
+            "1": "The hall across from the stairs is useful.",
+            "2": "Search the hallway opposite the headquarters stairs.",
+            "3": "At the headquarters stairs, face the opposite hall and follow it to the document. It lies along that passage rather than inside the stairwell."
+          },
+          "sketch": {
+            "src": "sketches/document-20.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-21",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #21 - Follower Thaddeus's Journal",
+          "missable": false,
+          "levels": {
+            "1": "The church entrance has two floor pickups.",
+            "2": "Inspect the floor just inside the church entrance.",
+            "3": "Enter the church and stop near the threshold. The first document is on the floor close to the entrance."
+          },
+          "sketch": {
+            "src": "sketches/document-21.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-22",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #22 - Follower Asher's Journal",
+          "missable": false,
+          "levels": {
+            "1": "Do not leave the threshold after one pickup.",
+            "2": "Search the other side of the church entrance floor.",
+            "3": "After taking the first paper, scan the opposite side of the church's entrance area and collect the second document from the floor."
+          },
+          "sketch": {
+            "src": "sketches/document-22.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "underground-ruins",
+      "name": "Underground Ruins",
+      "location_cue": "The deep ruin route with numbered basement floors, lift machinery, breakable walls, snipers, and a Klista Gate.",
+      "note": "Two badges require deliberate detours; one includes a platform mechanism and a collapsing central floor.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "badge-calamity-star",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Calamity Star",
+          "missable": false,
+          "levels": {
+            "1": "A lift and an enemy's weight form the route.",
+            "2": "On B3F, use the long room beyond the Pharmacy door and revisit the wall behind you near the sniper sightline.",
+            "3": "Beyond the Pharmacy door on B3F, enter the long room. When the distant sniper appears, turn around and break the wall behind you. Lure the Flab onto the lift without killing it, step into the revealed alcove so its weight raises the platform, then climb the ladders. On the upper floor, stay around the perimeter because the middle collapses; the tesseract is beyond that unsafe center."
+          },
+          "sketch": {
+            "src": "sketches/badge-calamity-star.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-vicious-shock",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Vicious Shock",
+          "missable": false,
+          "levels": {
+            "1": "At a huge drop, resist the obvious door.",
+            "2": "In the chamber with the large hole, take the right-hand route and descend.",
+            "3": "Reach the room dominated by a large hole and face the far target. Ignore the nearby door for now, follow the path on the right, and descend along it to the tesseract containing the badge."
+          },
+          "sketch": {
+            "src": "sketches/badge-vicious-shock.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-19",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #19 - Spasm",
+          "missable": false,
+          "levels": {
+            "1": "Return to a door you deliberately passed.",
+            "2": "After the large-hole detour, use the ignored door, clear the sniper section, and climb the spiral stairs.",
+            "3": "Go back to the door skipped while collecting Vicious Shock. Pass through, clear every sniper, and climb the spiral staircase. The note is on the ground beside the shortcut door at the top."
+          },
+          "sketch": {
+            "src": "sketches/research-note-19.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-20",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #20 - Thracian Blood",
+          "missable": false,
+          "levels": {
+            "1": "A gate-side room has an immediate pickup.",
+            "2": "At the Klista Gate area, enter the rear door.",
+            "3": "Reach the Klista Gate area and take the door at its rear. The note is on the desk immediately inside, so collect it before crossing the room."
+          },
+          "sketch": {
+            "src": "sketches/research-note-20.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "pin-uranus",
+          "type": "collectible",
+          "safe_type": "Pin",
+          "label": "Uranus",
+          "missable": false,
+          "levels": {
+            "1": "This pin follows normal completion of the ruin route.",
+            "2": "Finish the underground route's required encounter.",
+            "3": "Complete the required encounter after the ruins and wait for control to return. Uranus is awarded automatically; there is no hidden pickup."
+          }
+        }
+      ]
+    },
+    {
+      "id": "deadford-city-hall-2000",
+      "name": "Deadford City Hall, 2000",
+      "location_cue": "The altered civic building with a western third-floor bathroom, Mayor's Office vault, small library, televisions, resonators, and rooftop access.",
+      "note": "Two badge routes use resonators and televisions; finish each route before moving on.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "document-23",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #23 - Invitation from Juliet",
+          "missable": false,
+          "levels": {
+            "1": "This document arrives without a room search.",
+            "2": "Continue through the required briefing before entering the civic building.",
+            "3": "Invitation is registered automatically during the required briefing that precedes this visit. Check the document menu afterward; there is no physical copy to collect."
+          }
+        },
+        {
+          "id": "research-note-21",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #21 - There Were Three of Them",
+          "missable": false,
+          "levels": {
+            "1": "A bathroom key opens an office secret.",
+            "2": "Take the Vault Key from the western bathroom on City Hall's third floor, then return to the Mayor's Office.",
+            "3": "On the third floor, enter the western bathroom and collect the Vault Key. Use it on the Mayor's Office vault, then rotate clockwise to 9, counter-clockwise to 7, clockwise to 4, and counter-clockwise to 12. Open the vault and take the note."
+          },
+          "sketch": {
+            "src": "sketches/research-note-21.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "document-24",
+          "type": "collectible",
+          "safe_type": "Document",
+          "label": "Document #24 - Memo: Clock Tower",
+          "missable": false,
+          "levels": {
+            "1": "A compact reading room holds the final paper.",
+            "2": "Search the small library near the next television.",
+            "3": "Enter the small library beside the route's next television and inspect its interior surface for the document before using the television."
+          },
+          "sketch": {
+            "src": "sketches/document-24.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-booger-baby",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Booger Baby",
+          "missable": false,
+          "levels": {
+            "1": "A library television begins a two-step resonator route.",
+            "2": "Use the library television, drop to the lower-left platform, and activate the resonator there.",
+            "3": "Enter the television in the small library, then drop left to the lower platform. Damage and activate the durable resonator. Return to the western television on City Hall's fourth floor, use it, drop to the new ledge, and make the final drop-and-jump to the purple tesseract."
+          },
+          "sketch": {
+            "src": "sketches/badge-booger-baby.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-young-old-boy",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Young Old Boy",
+          "missable": false,
+          "levels": {
+            "1": "Another resonator changes a rooftop route.",
+            "2": "From the library television route, activate the resonator opposite the next television.",
+            "3": "Use the library television route and activate the resonator opposite the following television. Take the eastern stairs to the rooftop and pass through the newly created television. Descend to the sword, use it to break the liminal wall, then drop to the tesseract."
+          },
+          "sketch": {
+            "src": "sketches/badge-young-old-boy.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "subspace-hills",
+      "name": "Subspace Hills",
+      "location_cue": "The fragmented landscape of floating paths, ladders, resonator bridges, a Director Office, and a Hyper Klista Gate.",
+      "note": "Scan below ledges after using resonators; several pickups sit off the forward route.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "pin-neptune",
+          "type": "collectible",
+          "safe_type": "Pin",
+          "label": "Neptune",
+          "missable": false,
+          "levels": {
+            "1": "The area begins with this pin already handled.",
+            "2": "Check the collection menu at the start of Subspace Hills.",
+            "3": "Neptune is granted automatically as this location begins. If it is not visible immediately, advance until normal control is restored and check again."
+          }
+        },
+        {
+          "id": "badge-galan-esmeralda",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Galan Esmeralda",
+          "missable": false,
+          "levels": {
+            "1": "The first resonator is a distraction.",
+            "2": "Ignore the first resonator and continue to the far end of the open area.",
+            "3": "At the first resonator, leave it untouched and cross the open area to its far boundary. The badge tesseract is reached from that outer edge, away from the obvious device."
+          },
+          "sketch": {
+            "src": "sketches/badge-galan-esmeralda.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-dr-perversion",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Dr. Perversion",
+          "missable": false,
+          "levels": {
+            "1": "A middle ladder begins a circular climb.",
+            "2": "In Area 3, take the central ladder and follow the wall around.",
+            "3": "Find the ladder near the middle of Area 3, climb it, and continue around the enclosing wall. Use the next climb point to reach the tesseract above."
+          },
+          "sketch": {
+            "src": "sketches/badge-dr-perversion.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-22",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #22 - Be Careful",
+          "missable": false,
+          "levels": {
+            "1": "The first stair climb has an opposite corner.",
+            "2": "After climbing the stairs to the Pharmacy, check the corner across from it.",
+            "3": "Climb the stairs that lead to the Pharmacy, then cross to the opposite corner of the landing. The note lies there away from the forward doorway."
+          },
+          "sketch": {
+            "src": "sketches/research-note-22.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-23",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #23 - What I Don't Want You to Misunderstand",
+          "missable": false,
+          "levels": {
+            "1": "A named office hides a ledge route.",
+            "2": "After the Director Office, follow the corner onto the side ledge.",
+            "3": "Leave the Director Office, round the next corner, and step onto the narrow side ledge. Follow it to the note instead of staying on the central path."
+          },
+          "sketch": {
+            "src": "sketches/research-note-23.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-24",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #24 - Closing Space-Time",
+          "missable": false,
+          "levels": {
+            "1": "A completed resonator bridge has a lower branch.",
+            "2": "After crossing the resonator bridge, take the stairs down to another resonator.",
+            "3": "Cross the bridge created by the resonator, descend the nearby stairs to the second resonator, then jump over the ledge beside it. Land on the separate platform holding the note."
+          },
+          "sketch": {
+            "src": "sketches/research-note-24.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-25",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #25 - Power",
+          "missable": false,
+          "levels": {
+            "1": "The large gate has a pickup before it.",
+            "2": "Search immediately before the Hyper Klista Gate.",
+            "3": "As the Hyper Klista Gate comes into view, stop before crossing its threshold and collect the note from the approach."
+          },
+          "sketch": {
+            "src": "sketches/research-note-25.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "research-note-26",
+          "type": "collectible",
+          "safe_type": "Research note",
+          "label": "Research Note #26 - Two Crucial Elements",
+          "missable": false,
+          "levels": {
+            "1": "The far side of the gate has two rewards.",
+            "2": "Search immediately behind the Hyper Klista Gate.",
+            "3": "Pass through the Hyper Klista Gate and turn to inspect the space directly behind it. The note is beside the SilverEye badge tesseract."
+          },
+          "sketch": {
+            "src": "sketches/research-note-26.webp",
+            "min_level": 2
+          }
+        },
+        {
+          "id": "badge-silvereye",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "SilverEye",
+          "missable": false,
+          "levels": {
+            "1": "Pair this search with the last research note.",
+            "2": "Look directly behind the Hyper Klista Gate.",
+            "3": "After passing through the Hyper Klista Gate, turn around and activate the tesseract immediately behind it. Research Note #26 is in the same small space."
+          },
+          "sketch": {
+            "src": "sketches/badge-silvereye.webp",
+            "min_level": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "shiroyabu-shop",
+      "name": "Shiroyabu Shop",
+      "location_cue": "The recurring shop interface reached from the ship between deployments.",
+      "note": "The stock expands with progress. Recheck it before and after campaign clear.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "badge-katana-karen",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Katana Karen",
+          "missable": false,
+          "levels": {
+            "1": "Save some Emerald Flowsion for the shop's badge stock.",
+            "2": "Buy this badge from Shiroyabu once its midgame stock appears.",
+            "3": "Return to Shiroyabu after the badge section appears and purchase Katana Karen for 1,000 Emerald Flowsion. If it is absent, advance normal progress and check the shop again."
+          }
+        },
+        {
+          "id": "badge-magnum-mike",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Magnum Mike",
+          "missable": false,
+          "levels": {
+            "1": "Save some Emerald Flowsion for the shop's badge stock.",
+            "2": "Buy this badge from Shiroyabu once its midgame stock appears.",
+            "3": "Return to Shiroyabu after the badge section appears and purchase Magnum Mike for 1,000 Emerald Flowsion. If it is absent, advance normal progress and check the shop again."
+          }
+        },
+        {
+          "id": "badge-bomb-betty",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Bomb Betty",
+          "missable": false,
+          "levels": {
+            "1": "Save some Emerald Flowsion for the shop's badge stock.",
+            "2": "Buy this badge from Shiroyabu once its midgame stock appears.",
+            "3": "Return to Shiroyabu after the badge section appears and purchase Bomb Betty for 1,000 Emerald Flowsion. If it is absent, advance normal progress and check the shop again."
+          }
+        },
+        {
+          "id": "badge-shotgun-sharon",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Shotgun Sharon",
+          "missable": false,
+          "levels": {
+            "1": "Save some Emerald Flowsion for the shop's badge stock.",
+            "2": "Buy this badge from Shiroyabu once its midgame stock appears.",
+            "3": "Return to Shiroyabu after the badge section appears and purchase Shotgun Sharon for 1,000 Emerald Flowsion. If it is absent, advance normal progress and check the shop again."
+          }
+        },
+        {
+          "id": "badge-fist-frankie",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Fist Frankie",
+          "missable": false,
+          "levels": {
+            "1": "Save some Emerald Flowsion for the shop's badge stock.",
+            "2": "Buy this badge from Shiroyabu once its midgame stock appears.",
+            "3": "Return to Shiroyabu after the badge section appears and purchase Fist Frankie for 1,000 Emerald Flowsion. If it is absent, advance normal progress and check the shop again."
+          }
+        },
+        {
+          "id": "badge-rifle-rafael",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Rifle Rafael",
+          "missable": false,
+          "levels": {
+            "1": "Save some Emerald Flowsion for the shop's badge stock.",
+            "2": "Buy this badge from Shiroyabu once its midgame stock appears.",
+            "3": "Return to Shiroyabu after the badge section appears and purchase Rifle Rafael for 1,000 Emerald Flowsion. If it is absent, advance normal progress and check the shop again."
+          }
+        },
+        {
+          "id": "badge-spear-spencer",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Spear Spencer",
+          "missable": false,
+          "levels": {
+            "1": "Save some Emerald Flowsion for the shop's badge stock.",
+            "2": "Buy this badge from Shiroyabu once its midgame stock appears.",
+            "3": "Return to Shiroyabu after the badge section appears and purchase Spear Spencer for 1,000 Emerald Flowsion. If it is absent, advance normal progress and check the shop again."
+          }
+        },
+        {
+          "id": "badge-bazooka-barbara",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Bazooka Barbara",
+          "missable": false,
+          "levels": {
+            "1": "Save some Emerald Flowsion for the shop's badge stock.",
+            "2": "Buy this badge from Shiroyabu once its midgame stock appears.",
+            "3": "Return to Shiroyabu after the badge section appears and purchase Bazooka Barbara for 1,000 Emerald Flowsion. If it is absent, advance normal progress and check the shop again."
+          }
+        },
+        {
+          "id": "badge-malignant-dawn",
+          "type": "collectible",
+          "safe_type": "Badge",
+          "label": "Malignant Dawn",
+          "missable": false,
+          "levels": {
+            "1": "The shop keeps one unusually expensive badge.",
+            "2": "Check Shiroyabu's later stock and prepare a large Emerald Flowsion reserve.",
+            "3": "When Malignant Dawn appears in Shiroyabu's later inventory, purchase it for 100,000 Emerald Flowsion. Farm repeatable combat or cleanup routes if the balance is short."
+          }
+        }
+      ]
+    },
+    {
+      "id": "training-room-arsenal",
+      "name": "Training Room Arsenal",
+      "location_cue": "The ship room containing the DeadBall Unlocker, DeadBall Enhancer, and DeadGear Cannonball machines.",
+      "note": "Unlock the full arsenal first, then use the adjacent machines to finish permanent upgrades.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "weapon-spazer",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Spazer",
+          "missable": false,
+          "levels": {
+            "1": "The Training Room machine expands both sides of the arsenal.",
+            "2": "Purchase Spazer from the DeadBall Unlocker.",
+            "3": "At the Training Room's weapon-purchase console, spend 200 Emerald Flowsion on Spazer. It is one of the four melee weapons; confirm that its entry changes to owned."
+          }
+        },
+        {
+          "id": "weapon-star-destroyer",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Star Destroyer",
+          "missable": false,
+          "levels": {
+            "1": "The Training Room machine expands both sides of the arsenal.",
+            "2": "Purchase Star Destroyer from the DeadBall Unlocker.",
+            "3": "At the Training Room's weapon-purchase console, spend 200 Emerald Flowsion on Star Destroyer. It is one of the four melee weapons; confirm that its entry changes to owned."
+          }
+        },
+        {
+          "id": "weapon-juggernaut",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Juggernaut",
+          "missable": false,
+          "levels": {
+            "1": "The Training Room machine expands both sides of the arsenal.",
+            "2": "Purchase Juggernaut from the DeadBall Unlocker.",
+            "3": "At the Training Room's weapon-purchase console, spend 200 Emerald Flowsion on Juggernaut. It is one of the four melee weapons; confirm that its entry changes to owned."
+          }
+        },
+        {
+          "id": "weapon-arcadia",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Arcadia",
+          "missable": false,
+          "levels": {
+            "1": "The Training Room machine expands both sides of the arsenal.",
+            "2": "Purchase Arcadia from the DeadBall Unlocker.",
+            "3": "At the Training Room's weapon-purchase console, spend 200 Emerald Flowsion on Arcadia. It is one of the four melee weapons; confirm that its entry changes to owned."
+          }
+        },
+        {
+          "id": "weapon-discovery",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Discovery",
+          "missable": false,
+          "levels": {
+            "1": "The Training Room machine expands both sides of the arsenal.",
+            "2": "Purchase Discovery from the DeadBall Unlocker.",
+            "3": "At the Training Room's weapon-purchase console, spend 200 Emerald Flowsion on Discovery. It is one of the four ranged weapons; confirm that its entry changes to owned."
+          }
+        },
+        {
+          "id": "weapon-diaspora",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Diaspora",
+          "missable": false,
+          "levels": {
+            "1": "The Training Room machine expands both sides of the arsenal.",
+            "2": "Purchase Diaspora from the DeadBall Unlocker.",
+            "3": "At the Training Room's weapon-purchase console, spend 200 Emerald Flowsion on Diaspora. It is one of the four ranged weapons; confirm that its entry changes to owned."
+          }
+        },
+        {
+          "id": "weapon-nebuchadnezzar",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Nebuchadnezzar",
+          "missable": false,
+          "levels": {
+            "1": "The Training Room machine expands both sides of the arsenal.",
+            "2": "Purchase Nebuchadnezzar from the DeadBall Unlocker.",
+            "3": "At the Training Room's weapon-purchase console, spend 200 Emerald Flowsion on Nebuchadnezzar. It is one of the four ranged weapons; confirm that its entry changes to owned."
+          }
+        },
+        {
+          "id": "weapon-yggdrasil",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Yggdrasil",
+          "missable": false,
+          "levels": {
+            "1": "The Training Room machine expands both sides of the arsenal.",
+            "2": "Purchase Yggdrasil from the DeadBall Unlocker.",
+            "3": "At the Training Room's weapon-purchase console, spend 200 Emerald Flowsion on Yggdrasil. It is one of the four ranged weapons; confirm that its entry changes to owned."
+          }
+        },
+        {
+          "id": "weapon-upgrade-attack-power",
+          "type": "upgrade",
+          "safe_type": "Upgrade track",
+          "label": "All Weapons: Attack Power",
+          "missable": false,
+          "levels": {
+            "1": "The Enhancer tracks this stat separately on each weapon.",
+            "2": "Raise Attack Power through all five levels for every weapon at the DeadBall Enhancer.",
+            "3": "At the DeadBall Enhancer beside the Unlocker, select each of the eight weapons in turn and buy Attack Power levels one through five with Sentrey. Recheck every weapon tab; progress on one does not fill the others."
+          }
+        },
+        {
+          "id": "weapon-upgrade-break-ability",
+          "type": "upgrade",
+          "safe_type": "Upgrade track",
+          "label": "All Weapons: Break Ability",
+          "missable": false,
+          "levels": {
+            "1": "The Enhancer tracks this stat separately on each weapon.",
+            "2": "Raise Break Ability through all five levels for every weapon at the DeadBall Enhancer.",
+            "3": "At the DeadBall Enhancer beside the Unlocker, select each of the eight weapons in turn and buy Break Ability levels one through five with Sentrey. Recheck every weapon tab; progress on one does not fill the others."
+          }
+        },
+        {
+          "id": "weapon-upgrade-bloody-summer",
+          "type": "upgrade",
+          "safe_type": "Upgrade track",
+          "label": "All Weapons: Bloody Summer",
+          "missable": false,
+          "levels": {
+            "1": "The Enhancer tracks this stat separately on each weapon.",
+            "2": "Raise Bloody Summer through all five levels for every weapon at the DeadBall Enhancer.",
+            "3": "At the DeadBall Enhancer beside the Unlocker, select each of the eight weapons in turn and buy Bloody Summer levels one through five with Sentrey. Recheck every weapon tab; progress on one does not fill the others."
+          }
+        },
+        {
+          "id": "weapon-upgrade-blood-amount",
+          "type": "upgrade",
+          "safe_type": "Upgrade track",
+          "label": "All Weapons: Blood Amount",
+          "missable": false,
+          "levels": {
+            "1": "The Enhancer tracks this stat separately on each weapon.",
+            "2": "Raise Blood Amount through all five levels for every weapon at the DeadBall Enhancer.",
+            "3": "At the DeadBall Enhancer beside the Unlocker, select each of the eight weapons in turn and buy Blood Amount levels one through five with Sentrey. Recheck every weapon tab; progress on one does not fill the others."
+          }
+        },
+        {
+          "id": "deadgear-cannonball-all-parameters",
+          "type": "upgrade",
+          "safe_type": "Upgrade set",
+          "label": "All Romeo Parameters",
+          "missable": false,
+          "levels": {
+            "1": "One Training Room machine improves the character rather than a weapon.",
+            "2": "Use the DeadGear Cannonball and fill every available parameter track.",
+            "3": "Spend Emerald Flowsion at the DeadGear Cannonball until every character parameter offered by the machine is at its cap. Reopen the screen and verify that no purchasable level remains."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bastard-cultivation",
+      "name": "Bastard Cultivation",
+      "location_cue": "The ship's cultivation and fusion interface where seeds become equippable abilities.",
+      "note": "Keep one copy of every new seed until the full fusion chain is complete.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "bastard-suicideattack",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "SuicideAttack",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register SuicideAttack.",
+            "3": "Fuse CreepingVenom with any Common Support-type Bastard. Finish the cultivation cycle, collect the result, and confirm SuicideAttack appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-sentrycannon",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "SentryCannon",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register SentryCannon.",
+            "3": "Obtain its seed from an enemy drop, then cultivate it. Finish the cultivation cycle, collect the result, and confirm SentryCannon appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-screamadelica",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "Screamadelica",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register Screamadelica.",
+            "3": "Obtain its seed from an enemy drop, then cultivate it. Finish the cultivation cycle, collect the result, and confirm Screamadelica appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-healingspire",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "HealingSpire",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register HealingSpire.",
+            "3": "Fuse SuicideAttack with any Common Technical-type Bastard. Finish the cultivation cycle, collect the result, and confirm HealingSpire appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-creepingvenom",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "CreepingVenom",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register CreepingVenom.",
+            "3": "Fuse Screamadelica with any Common Attack-type Bastard. Finish the cultivation cycle, collect the result, and confirm CreepingVenom appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-pulsemirror",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "PulseMirror",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register PulseMirror.",
+            "3": "Obtain its seed from an enemy drop, then cultivate it. Finish the cultivation cycle, collect the result, and confirm PulseMirror appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-thunderchain",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "ThunderChain",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register ThunderChain.",
+            "3": "Fuse PulseMirror with Screamadelica. Finish the cultivation cycle, collect the result, and confirm ThunderChain appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-greentornado",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "GreenTornado",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register GreenTornado.",
+            "3": "Obtain its seed from an enemy drop, then cultivate it. Finish the cultivation cycle, collect the result, and confirm GreenTornado appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-manabloom",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "ManaBloom",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register ManaBloom.",
+            "3": "Fuse ThunderChain with PulseMirror. Finish the cultivation cycle, collect the result, and confirm ManaBloom appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-slowballad",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "SlowBallad",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register SlowBallad.",
+            "3": "Obtain its seed from an enemy drop, then cultivate it. Finish the cultivation cycle, collect the result, and confirm SlowBallad appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-nosferatu",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "Nosferatu",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register Nosferatu.",
+            "3": "Fuse ManaBloom with SuicideAttack. Finish the cultivation cycle, collect the result, and confirm Nosferatu appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-stealjobs",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "StealJobs",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register StealJobs.",
+            "3": "Obtain its seed from an enemy drop, then cultivate it. Finish the cultivation cycle, collect the result, and confirm StealJobs appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-multilazer",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "MultiLazer",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register MultiLazer.",
+            "3": "Fuse Nosferatu with FrostBolt. Finish the cultivation cycle, collect the result, and confirm MultiLazer appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-deadlybowler",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "DeadlyBowler",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register DeadlyBowler.",
+            "3": "Fuse WeakenFlower with PurifyingZone. Finish the cultivation cycle, collect the result, and confirm DeadlyBowler appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-frostbolt",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "FrostBolt",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register FrostBolt.",
+            "3": "Fuse GreenTornado with StealJobs. Finish the cultivation cycle, collect the result, and confirm FrostBolt appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-purifyingzone",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "PurifyingZone",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register PurifyingZone.",
+            "3": "Fuse DeadlyBowler with SweeperBeam. Finish the cultivation cycle, collect the result, and confirm PurifyingZone appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-sweeperbeam",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "SweeperBeam",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register SweeperBeam.",
+            "3": "Fuse FrostBolt with MultiLazer. Finish the cultivation cycle, collect the result, and confirm SweeperBeam appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-weakenflower",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "WeakenFlower",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register WeakenFlower.",
+            "3": "Fuse PurifyingZone with DeadlyBowler. Finish the cultivation cycle, collect the result, and confirm WeakenFlower appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-graha-malla",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "Graha Malla",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register Graha Malla.",
+            "3": "Fuse MultiLazer with DeadlyBowler. Finish the cultivation cycle, collect the result, and confirm Graha Malla appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-gozu",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "Gozu",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register Gozu.",
+            "3": "Fuse FrostBolt with PurifyingZone. Finish the cultivation cycle, collect the result, and confirm Gozu appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        },
+        {
+          "id": "bastard-mictlantecuhtli",
+          "type": "upgrade",
+          "safe_type": "Ability",
+          "label": "Mictlantecuhtli",
+          "missable": false,
+          "levels": {
+            "1": "Keep cultivating and combine duplicates instead of discarding them.",
+            "2": "Use the cultivation interface to register Mictlantecuhtli.",
+            "3": "Fuse SweeperBeam with WeakenFlower. Finish the cultivation cycle, collect the result, and confirm Mictlantecuhtli appears in the owned roster. A drop-based seed may require repeat combat farming."
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-clear-cleanup",
+      "name": "Post-Clear Cleanup",
+      "location_cue": "The ship hub after a clear-data save has been created, with replay terminals and New Game Plus available.",
+      "note": "Finish free cleanup on clear data before converting a copy into New Game Plus.",
+      "save_backup": {
+        "title": "Copy your clear data",
+        "why": "Starting New Game Plus changes the active run. Keep one clear-data slot for unrestricted cleanup and another for the harder cycle."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "campaign-clear",
+          "type": "optional",
+          "safe_type": "Completion",
+          "label": "Campaign Clear",
+          "missable": false,
+          "levels": {
+            "1": "Continue the main route until clear data is offered.",
+            "2": "Complete the required campaign route and save the resulting clear data in a fresh slot.",
+            "3": "Finish the campaign on your chosen standard difficulty, then create clear data when prompted. Keep this slot intact: it supports post-clear cleanup, replay challenges, costume access, and New Game Plus preparation."
+          }
+        },
+        {
+          "id": "new-game-plus-couverture-clear",
+          "type": "optional",
+          "safe_type": "Run condition",
+          "label": "Couverture Chocolate Clear",
+          "missable": false,
+          "levels": {
+            "1": "The hardest setting appears only after a completed run.",
+            "2": "Start New Game Plus from copied clear data and choose Couverture Chocolate.",
+            "3": "Duplicate the clear-data save, begin New Game Plus from the copy, select Couverture Chocolate, and complete the campaign without lowering it. Character parameters, equipment progress, and owned combat tools carry into the new cycle."
+          }
+        },
+        {
+          "id": "room-of-trials-all-normal-clears",
+          "type": "optional",
+          "safe_type": "Challenge set",
+          "label": "All Standard Trials",
+          "missable": false,
+          "levels": {
+            "1": "The Z challenges depend on their ordinary counterparts.",
+            "2": "Clear every ordinary Room of Trials entry at least once.",
+            "3": "Open the Room of Trials and work through every non-Z encounter, including Boss Rush after it unlocks. A standard clear opens its Z counterpart; confirm each ordinary entry shows a completion record."
+          }
+        },
+        {
+          "id": "palace-athene-all-danger-clears",
+          "type": "optional",
+          "safe_type": "Challenge set",
+          "label": "All Palace Athene Danger Clears",
+          "missable": false,
+          "levels": {
+            "1": "The arena remembers each danger setting separately.",
+            "2": "Complete Easy, Normal, Hard, and Very Hard at Palace Athene.",
+            "3": "Run Palace Athene four times, selecting Easy, Normal, Hard, and Very Hard. Finish the full sequence on each setting and verify all four clear records rather than assuming the highest substitutes for the lower ones."
+          }
+        }
+      ]
+    },
+    {
+      "id": "current-update-customization",
+      "name": "Clear-Data Customization",
+      "location_cue": "Romeo's room on a clear-data save, where the costume menu becomes available.",
+      "note": "These options belong to the free June 2026 PC update and are tracked as current content.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "costume-change-feature",
+          "type": "interaction",
+          "safe_type": "Feature",
+          "label": "Costume Change",
+          "missable": false,
+          "levels": {
+            "1": "A clear-data room gains a new wardrobe interaction.",
+            "2": "Load clear data and use the costume option in Romeo's room.",
+            "3": "Install the current PC update, load a completed clear-data save, enter Romeo's room, and open the newly available costume-change interface. Cycle through its categories once to register that the feature is working."
+          }
+        },
+        {
+          "id": "outfit-jacket",
+          "type": "collectible",
+          "safe_type": "Costume",
+          "label": "Jacket's Outfit",
+          "missable": false,
+          "levels": {
+            "1": "The clear-data wardrobe includes newly added options.",
+            "2": "Open the costume menu in Romeo's room and locate Jacket's Outfit.",
+            "3": "On updated PC clear data, enter Romeo's room and open Costume Change. Select the outfit category, highlight Jacket's Outfit, and equip it once to confirm it is present."
+          }
+        },
+        {
+          "id": "outfit-biker",
+          "type": "collectible",
+          "safe_type": "Costume",
+          "label": "Biker's Outfit",
+          "missable": false,
+          "levels": {
+            "1": "The clear-data wardrobe includes newly added options.",
+            "2": "Open the costume menu in Romeo's room and locate Biker's Outfit.",
+            "3": "On updated PC clear data, enter Romeo's room and open Costume Change. Select the outfit category, highlight Biker's Outfit, and equip it once to confirm it is present."
+          }
+        },
+        {
+          "id": "mask-collection",
+          "type": "collectible",
+          "safe_type": "Costume",
+          "label": "Three Masks",
+          "missable": false,
+          "levels": {
+            "1": "The clear-data wardrobe includes newly added options.",
+            "2": "Open the costume menu in Romeo's room and locate Three Masks.",
+            "3": "On updated PC clear data, enter Romeo's room and open Costume Change. Select the mask set category, highlight Three Masks, and equip it once to confirm it is present."
+          }
+        },
+        {
+          "id": "jacket-fbi-suit",
+          "type": "collectible",
+          "safe_type": "Costume",
+          "label": "FBI Space-Time Task Force Battle Suit",
+          "missable": false,
+          "levels": {
+            "1": "The clear-data wardrobe includes newly added options.",
+            "2": "Open the costume menu in Romeo's room and locate FBI Space-Time Task Force Battle Suit.",
+            "3": "On updated PC clear data, enter Romeo's room and open Costume Change. Select the jacket category, highlight FBI Space-Time Task Force Battle Suit, and equip it once to confirm it is present."
+          }
+        },
+        {
+          "id": "jacket-fbi-no-jacket",
+          "type": "collectible",
+          "safe_type": "Costume",
+          "label": "FBI Space-Time Task Force Battle Suit, No Jacket",
+          "missable": false,
+          "levels": {
+            "1": "The clear-data wardrobe includes newly added options.",
+            "2": "Open the costume menu in Romeo's room and locate FBI Space-Time Task Force Battle Suit, No Jacket.",
+            "3": "On updated PC clear data, enter Romeo's room and open Costume Change. Select the jacket category, highlight FBI Space-Time Task Force Battle Suit, No Jacket, and equip it once to confirm it is present."
+          }
+        },
+        {
+          "id": "jacket-sheriff-summer",
+          "type": "collectible",
+          "safe_type": "Costume",
+          "label": "Caliban County Sheriff Summer Uniform",
+          "missable": false,
+          "levels": {
+            "1": "The clear-data wardrobe includes newly added options.",
+            "2": "Open the costume menu in Romeo's room and locate Caliban County Sheriff Summer Uniform.",
+            "3": "On updated PC clear data, enter Romeo's room and open Costume Change. Select the jacket category, highlight Caliban County Sheriff Summer Uniform, and equip it once to confirm it is present."
+          }
+        },
+        {
+          "id": "jacket-tiger-i",
+          "type": "collectible",
+          "safe_type": "Costume",
+          "label": "Tiger Jacket I",
+          "missable": false,
+          "levels": {
+            "1": "The clear-data wardrobe includes newly added options.",
+            "2": "Open the costume menu in Romeo's room and locate Tiger Jacket I.",
+            "3": "On updated PC clear data, enter Romeo's room and open Costume Change. Select the jacket category, highlight Tiger Jacket I, and equip it once to confirm it is present."
+          }
+        },
+        {
+          "id": "jacket-tiger-ii",
+          "type": "collectible",
+          "safe_type": "Costume",
+          "label": "Tiger Jacket II",
+          "missable": false,
+          "levels": {
+            "1": "The clear-data wardrobe includes newly added options.",
+            "2": "Open the costume menu in Romeo's room and locate Tiger Jacket II.",
+            "3": "On updated PC clear data, enter Romeo's room and open Costume Change. Select the jacket category, highlight Tiger Jacket II, and equip it once to confirm it is present."
+          }
+        },
+        {
+          "id": "jacket-tiger-iii",
+          "type": "collectible",
+          "safe_type": "Costume",
+          "label": "Tiger Jacket III",
+          "missable": false,
+          "levels": {
+            "1": "The clear-data wardrobe includes newly added options.",
+            "2": "Open the costume menu in Romeo's room and locate Tiger Jacket III.",
+            "3": "On updated PC clear data, enter Romeo's room and open Costume Change. Select the jacket category, highlight Tiger Jacket III, and equip it once to confirm it is present."
+          }
+        },
+        {
+          "id": "jacket-tiger-death-ball",
+          "type": "collectible",
+          "safe_type": "Costume",
+          "label": "Tiger Death Ball Jacket",
+          "missable": false,
+          "levels": {
+            "1": "The clear-data wardrobe includes newly added options.",
+            "2": "Open the costume menu in Romeo's room and locate Tiger Death Ball Jacket.",
+            "3": "On updated PC clear data, enter Romeo's room and open Costume Change. Select the jacket category, highlight Tiger Death Ball Jacket, and equip it once to confirm it is present."
+          }
+        },
+        {
+          "id": "jacket-demon",
+          "type": "collectible",
+          "safe_type": "Costume",
+          "label": "Demon Jacket",
+          "missable": false,
+          "levels": {
+            "1": "The clear-data wardrobe includes newly added options.",
+            "2": "Open the costume menu in Romeo's room and locate Demon Jacket.",
+            "3": "On updated PC clear data, enter Romeo's room and open Costume Change. Select the jacket category, highlight Demon Jacket, and equip it once to confirm it is present."
+          }
+        },
+        {
+          "id": "photo-mode",
+          "type": "interaction",
+          "safe_type": "Feature",
+          "label": "Photo Mode",
+          "missable": false,
+          "levels": {
+            "1": "The current update adds a separate camera tool.",
+            "2": "Open Photo Mode from updated PC gameplay.",
+            "3": "With the current PC update installed, load playable clear data and invoke Photo Mode from its assigned menu or control. Confirm the camera and composition controls open normally; no image needs to be saved for guide completion."
+          }
+        }
+      ]
+    },
+    {
+      "id": "completion-records",
+      "name": "Completion Records",
+      "location_cue": "The statistics, character, and archive menus available from the ship or pause screen.",
+      "note": "Use this as a final audit after all locations and clear-data activities are open.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "space-time-police-conversations",
+          "type": "optional",
+          "safe_type": "Completion record",
+          "label": "All Space-Time Police Conversations",
+          "missable": false,
+          "levels": {
+            "1": "Talk around the ship between deployments.",
+            "2": "Speak with every Space-Time Police member available in the hub.",
+            "3": "Make a full circuit of the ship and speak to all ten Space-Time Police members. Revisit the hub after progress changes if any conversation does not register, then confirm the record reaches its cap."
+          }
+        },
+        {
+          "id": "worstpink-quiz",
+          "type": "optional",
+          "safe_type": "Completion record",
+          "label": "WorstPink Quiz",
+          "missable": false,
+          "levels": {
+            "1": "A long quiz expects complete participation.",
+            "2": "Finish all questions in the WorstPink quiz activity.",
+            "3": "Open WorstPink and answer its full set of ninety-nine questions. Use retries for missed answers and continue until the activity records the entire set as completed."
+          }
+        },
+        {
+          "id": "space-debris",
+          "type": "optional",
+          "safe_type": "Completion record",
+          "label": "Space Debris Collection Record",
+          "missable": false,
+          "levels": {
+            "1": "Keep collecting debris during every deployment.",
+            "2": "Raise the space-debris statistic to 1,000.",
+            "3": "Collect space debris from exploration and repeatable routes until the Records menu shows 1,000. Check the counter periodically so you can stop farming at the exact requirement."
+          }
+        },
+        {
+          "id": "status-ailments",
+          "type": "optional",
+          "safe_type": "Completion record",
+          "label": "Status-Ailment Records",
+          "missable": false,
+          "levels": {
+            "1": "Let the combat archive observe every condition.",
+            "2": "Fill every status-effect entry in the records menu.",
+            "3": "Review the status section, identify every blank entry, and deliberately encounter or apply each missing condition in replayable combat. Verify every row has registered before leaving cleanup."
+          }
+        },
+        {
+          "id": "enemy-weak-spots",
+          "type": "optional",
+          "safe_type": "Completion record",
+          "label": "Weak-Spot Records",
+          "missable": false,
+          "levels": {
+            "1": "Targeted damage feeds its own completion record.",
+            "2": "Register every enemy weak-spot entry.",
+            "3": "Inspect the enemy archive for blank weak-spot records, replay suitable encounters, expose the relevant target, and hit it at least once. Repeat until every enemy entry with a weak spot is filled."
+          }
+        },
+        {
+          "id": "enemy-archive",
+          "type": "optional",
+          "safe_type": "Completion record",
+          "label": "Enemy Archive",
+          "missable": false,
+          "levels": {
+            "1": "Repeatable combat can fill any remaining gaps.",
+            "2": "Complete every enemy entry in the records menu.",
+            "3": "Open the enemy archive after campaign clear and locate any blank silhouettes or incomplete observations. Replay the associated deployment or trial and defeat that enemy until its record is complete."
+          }
+        },
+        {
+          "id": "weapon-combat-records",
+          "type": "optional",
+          "safe_type": "Completion record",
+          "label": "Weapon Combat Records",
+          "missable": false,
+          "levels": {
+            "1": "Use every weapon rather than merely owning it.",
+            "2": "Fill each weapon's usage and finishing records.",
+            "3": "Equip every melee and ranged weapon in turn, perform its ordinary strings and Bloody Summer action, and use it for combat finishes. Recheck the Records menu and repeat any weapon whose rows remain blank."
+          }
+        },
+        {
+          "id": "bastard-combat-records",
+          "type": "optional",
+          "safe_type": "Completion record",
+          "label": "Bastard Combat Records",
+          "missable": false,
+          "levels": {
+            "1": "Owned abilities still need field use.",
+            "2": "Deploy every Bastard at least once in combat.",
+            "3": "Equip each owned Bastard, enter a replayable encounter, activate it successfully, and finish the encounter or reach a checkpoint. Cycle through the roster until every ability has a usage record."
+          }
+        }
+      ]
+    }
+  ]
+}

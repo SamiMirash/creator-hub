@@ -1,0 +1,79 @@
+# Sami Mirash - creator site
+# Open to search engines and to AI search / training crawlers, so the site is
+# discoverable both in classic search AND in AI assistants / AI search.
+# The game guide (/guide/) IS indexed as of 2026-07-25, on Sami's explicit decision:
+# people who have finished a game should be able to search a specific collectible or
+# location and find it here. Spoiler exposure in search results is the accepted trade.
+
+User-agent: *
+Allow: /
+
+# --- AI search & AI training crawlers: explicitly ALLOWED ---
+# Listed by name so the site shows up in AI search results and AI answers.
+# (A blanket "User-agent: *  Allow: /" already permits these; the explicit
+#  entries make the intent unambiguous to crawlers that look for their own name.)
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+Sitemap: https://www.samimirash.com/sitemap.xml

@@ -1,0 +1,160 @@
+{
+  "id": "resident-evil-afterlife-movie-game",
+  "game": "Resident Evil: Afterlife Movie Game (2010)",
+  "target": "Spoiler-free completion of every documented stage in the delisted iOS release",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "archival-ios-route",
+      "name": "Archival iOS Route",
+      "location_cue": "The application icon and title screen on a compatible legacy iOS device.",
+      "note": "The original free release is delisted; use a lawful prior purchase or personal archival copy.",
+      "items": [
+        {
+          "id": "route-original-ios-build",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Launch the Original iOS Build",
+          "missable": false,
+          "levels": {
+            "1": "This discontinued mobile release has no current replacement port.",
+            "2": "Use the 2010 REAfterlife application on compatible iPhone, iPod touch, or iPad hardware.",
+            "3": "Install only a copy tied to your own acquisition, keep the device offline if the old build requires it, launch through the title screen, and confirm touch aiming responds before starting progress."
+          }
+        },
+        {
+          "id": "route-clean-backup",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Preserve the Working Installation",
+          "missable": false,
+          "levels": {
+            "1": "Legacy mobile software can be difficult to restore.",
+            "2": "Back up the functioning application and its local save container before playing.",
+            "3": "Close the application, make an encrypted device backup or equivalent lawful archival copy, reopen the game, and verify its title screen and stage access still work before continuing."
+          }
+        },
+        {
+          "id": "route-touch-control-test",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Test Touch Aiming",
+          "missable": false,
+          "levels": {
+            "1": "The entire game depends on reliable reticle movement and firing.",
+            "2": "Enter the opening stage and test aiming, firing, and each displayed equipment control.",
+            "3": "Move the reticle through all screen corners, fire at a harmless surface, identify the firearm, grenade, and incendiary controls when offered, then restart the stage for the recorded attempt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "stage-01-facility-route",
+      "name": "Stage 1 Clear",
+      "location_cue": "Underground corridors with fixed firing positions and guarded junctions.",
+      "note": "The first gallery rewards steady target priority.",
+      "save_backup": {
+        "title": "Protect the legacy save first",
+        "why": "The delisted application may be difficult to reinstall after corruption.",
+        "detail": "Confirm the archival backup remains available before beginning this stage."
+      },
+      "items": [
+        {
+          "id": "stage-01-facility-route-complete",
+          "type": "optional",
+          "safe_type": "Stage Clear",
+          "label": "Stage 1 Clear",
+          "missable": false,
+          "levels": {
+            "1": "Finish the entire shooting sequence rather than stopping after one encounter.",
+            "2": "Clear the facility-corridor stage and reach its completion screen.",
+            "3": "Sweep each fixed camera view before the game advances, remove armed targets first, use explosives only when several threats share the frame, and continue until the stage-complete result is saved."
+          }
+        }
+      ]
+    },
+    {
+      "id": "stage-02-prison-perimeter",
+      "name": "Stage 2 Clear",
+      "location_cue": "An exterior prison perimeter viewed from defensive firing positions.",
+      "note": "This section tests crowd control rather than exploration.",
+      "save_backup": {
+        "title": "Protect the legacy save first",
+        "why": "The delisted application may be difficult to reinstall after corruption.",
+        "detail": "Confirm the archival backup remains available before beginning this stage."
+      },
+      "items": [
+        {
+          "id": "stage-02-prison-perimeter-complete",
+          "type": "optional",
+          "safe_type": "Stage Clear",
+          "label": "Stage 2 Clear",
+          "missable": false,
+          "levels": {
+            "1": "Finish the entire shooting sequence rather than stopping after one encounter.",
+            "2": "Clear the prison-perimeter defense without allowing the attacking crowd to overrun the position.",
+            "3": "Track the nearest advancing targets, shift fire before any group reaches the defended boundary, reserve grenades or incendiaries for clustered waves, and remain active until the result screen confirms the clear."
+          }
+        }
+      ]
+    },
+    {
+      "id": "stage-03-prison-interior",
+      "name": "Stage 3 Clear",
+      "location_cue": "Enclosed prison rooms leading to a large interior encounter space.",
+      "note": "Save area-control equipment for the densest interior pressure.",
+      "save_backup": {
+        "title": "Protect the legacy save first",
+        "why": "The delisted application may be difficult to reinstall after corruption.",
+        "detail": "Confirm the archival backup remains available before beginning this stage."
+      },
+      "items": [
+        {
+          "id": "stage-03-prison-interior-complete",
+          "type": "optional",
+          "safe_type": "Stage Clear",
+          "label": "Stage 3 Clear",
+          "missable": false,
+          "levels": {
+            "1": "Finish the entire shooting sequence rather than stopping after one encounter.",
+            "2": "Clear the prison-interior stage and complete its closing confrontation.",
+            "3": "Prioritize immediate attackers, keep the reticle centered during transitions, spend remaining area weapons when multiple threats overlap, and sustain accurate fire through the closing encounter until the full-game result appears."
+          }
+        }
+      ]
+    },
+    {
+      "id": "completion-audit",
+      "name": "Completion Audit",
+      "location_cue": "The stage menu and saved result state after the third clear.",
+      "note": "Surviving documentation confirms three stages and no separate collectible or unlock checklist.",
+      "items": [
+        {
+          "id": "audit-all-three-stages",
+          "type": "optional",
+          "safe_type": "Audit",
+          "label": "All Three Stages Cleared",
+          "missable": false,
+          "levels": {
+            "1": "A complete route leaves no stage unfinished.",
+            "2": "Confirm each of the three first-person shooting stages has been completed once.",
+            "3": "Open every available stage entry in turn and verify it reaches its own result state. Replay any entry that returns directly to an unfinished checkpoint or lacks a stored clear indication."
+          }
+        },
+        {
+          "id": "audit-undocumented-systems",
+          "type": "optional",
+          "safe_type": "Verification Note",
+          "label": "No Verified Additional Checklist",
+          "missable": false,
+          "levels": {
+            "1": "Do not chase requirements that surviving evidence never establishes.",
+            "2": "No reliable source confirms collectibles, score ranks, upgrades, alternate endings, or unlockable modes.",
+            "3": "NEEDS_VERIFICATION"
+          }
+        }
+      ]
+    }
+  ]
+}

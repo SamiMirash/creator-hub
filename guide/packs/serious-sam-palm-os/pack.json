@@ -1,0 +1,689 @@
+{
+ "id": "serious-sam-palm-os",
+ "game": "Serious Sam (Palm OS)",
+ "target": "Palm OS colour retail build via emulation - all 15 levels, 35 sublevels, every sublevel enemy tally, six weapons, eight enemy families, and one completed-run score",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-21",
+ "areas": [
+  {
+   "id": "palm-hatshepsut",
+   "name": "Hatshepsut",
+   "location_cue": "The compact, grid-built Palm OS map identified as Hatshepsut in the level display.",
+   "note": "This level contains 3 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-controls-and-netricsa-check",
+     "type": "optional",
+     "safe_type": "Control setup",
+     "label": "Verify the Palm Controls and NETRICSA",
+     "missable": true,
+     "levels": {
+      "1": "Spend a moment learning the hardware-button layout before committing to the maze.",
+      "2": "Test movement, turning, strafing, firing, weapon selection, and the information screen in the opening rooms.",
+      "3": "Use Date Book and Address Book to turn; use the scroll control to move; hold Memo Pad while turning to strafe; fire with To-Do; tap the Graffiti area to cycle weapons; and press Find to open NETRICSA. Confirm each input works before advancing."
+     }
+    },
+    {
+     "id": "palm-hatshepsut-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Hatshepsut",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 3 sublevels shown by the current-sublevel display.",
+      "3": "Clear Hatshepsut from sublevel 1 through sublevel 3. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-hatshepsut-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Hatshepsut Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 3 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-sand-canyon",
+   "name": "Sand Canyon",
+   "location_cue": "The compact, grid-built Palm OS map identified as Sand Canyon in the level display.",
+   "note": "This level contains 3 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-sand-canyon-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Sand Canyon",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 3 sublevels shown by the current-sublevel display.",
+      "3": "Clear Sand Canyon from sublevel 1 through sublevel 3. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-sand-canyon-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Sand Canyon Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 3 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-tomb-of-ramses-iii",
+   "name": "Tomb Of Ramses III",
+   "location_cue": "The compact, grid-built Palm OS map identified as Tomb Of Ramses III in the level display.",
+   "note": "This level contains 3 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-tomb-of-ramses-iii-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Tomb Of Ramses III",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 3 sublevels shown by the current-sublevel display.",
+      "3": "Clear Tomb Of Ramses III from sublevel 1 through sublevel 3. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-tomb-of-ramses-iii-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Tomb Of Ramses III Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 3 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-valley-of-the-kings",
+   "name": "Valley Of The Kings",
+   "location_cue": "The compact, grid-built Palm OS map identified as Valley Of The Kings in the level display.",
+   "note": "This level contains 3 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-valley-of-the-kings-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Valley Of The Kings",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 3 sublevels shown by the current-sublevel display.",
+      "3": "Clear Valley Of The Kings from sublevel 1 through sublevel 3. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-valley-of-the-kings-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Valley Of The Kings Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 3 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-moon-mountains",
+   "name": "Moon Mountains",
+   "location_cue": "The compact, grid-built Palm OS map identified as Moon Mountains in the level display.",
+   "note": "This level contains 4 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-moon-mountains-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Moon Mountains",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 4 sublevels shown by the current-sublevel display.",
+      "3": "Clear Moon Mountains from sublevel 1 through sublevel 4. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-moon-mountains-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Moon Mountains Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 4 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-oasis",
+   "name": "Oasis",
+   "location_cue": "The compact, grid-built Palm OS map identified as Oasis in the level display.",
+   "note": "This level contains 2 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-oasis-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Oasis",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 2 sublevels shown by the current-sublevel display.",
+      "3": "Clear Oasis from sublevel 1 through sublevel 2. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-oasis-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Oasis Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 2 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-dunes",
+   "name": "Dunes",
+   "location_cue": "The compact, grid-built Palm OS map identified as Dunes in the level display.",
+   "note": "This level contains 1 fixed sublevel; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-dunes-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Dunes",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 1 sublevel shown by the current-sublevel display.",
+      "3": "Clear Dunes from sublevel 1 through sublevel 1. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-dunes-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Dunes Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 1 sublevel, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-memphis-suburbs",
+   "name": "Memphis - Suburbs",
+   "location_cue": "The compact, grid-built Palm OS map identified as Memphis - Suburbs in the level display.",
+   "note": "This level contains 2 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-memphis-suburbs-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Memphis - Suburbs",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 2 sublevels shown by the current-sublevel display.",
+      "3": "Clear Memphis - Suburbs from sublevel 1 through sublevel 2. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-memphis-suburbs-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Memphis - Suburbs Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 2 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-memphis-sewers",
+   "name": "Memphis - Sewers",
+   "location_cue": "The compact, grid-built Palm OS map identified as Memphis - Sewers in the level display.",
+   "note": "This level contains 3 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-memphis-sewers-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Memphis - Sewers",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 3 sublevels shown by the current-sublevel display.",
+      "3": "Clear Memphis - Sewers from sublevel 1 through sublevel 3. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-memphis-sewers-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Memphis - Sewers Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 3 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-city-of-memphis",
+   "name": "City of Memphis",
+   "location_cue": "The compact, grid-built Palm OS map identified as City of Memphis in the level display.",
+   "note": "This level contains 1 fixed sublevel; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-city-of-memphis-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete City of Memphis",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 1 sublevel shown by the current-sublevel display.",
+      "3": "Clear City of Memphis from sublevel 1 through sublevel 1. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-city-of-memphis-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every City of Memphis Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 1 sublevel, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-alley-of-the-sphinxes",
+   "name": "Alley Of The Sphinxes",
+   "location_cue": "The compact, grid-built Palm OS map identified as Alley Of The Sphinxes in the level display.",
+   "note": "This level contains 2 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-alley-of-the-sphinxes-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Alley Of The Sphinxes",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 2 sublevels shown by the current-sublevel display.",
+      "3": "Clear Alley Of The Sphinxes from sublevel 1 through sublevel 2. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-alley-of-the-sphinxes-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Alley Of The Sphinxes Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 2 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-thebes-karnak",
+   "name": "Thebes - Karnak",
+   "location_cue": "The compact, grid-built Palm OS map identified as Thebes - Karnak in the level display.",
+   "note": "This level contains 2 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-thebes-karnak-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Thebes - Karnak",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 2 sublevels shown by the current-sublevel display.",
+      "3": "Clear Thebes - Karnak from sublevel 1 through sublevel 2. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-thebes-karnak-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Thebes - Karnak Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 2 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-thebes-luxor",
+   "name": "Thebes - Luxor",
+   "location_cue": "The compact, grid-built Palm OS map identified as Thebes - Luxor in the level display.",
+   "note": "This level contains 2 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-thebes-luxor-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Thebes - Luxor",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 2 sublevels shown by the current-sublevel display.",
+      "3": "Clear Thebes - Luxor from sublevel 1 through sublevel 2. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-thebes-luxor-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Thebes - Luxor Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 2 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-sacred-yards",
+   "name": "Sacred Yards",
+   "location_cue": "The compact, grid-built Palm OS map identified as Sacred Yards in the level display.",
+   "note": "This level contains 2 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-sacred-yards-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete Sacred Yards",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 2 sublevels shown by the current-sublevel display.",
+      "3": "Clear Sacred Yards from sublevel 1 through sublevel 2. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-sacred-yards-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every Sacred Yards Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 2 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "palm-the-great-pyramid",
+   "name": "The Great Pyramid",
+   "location_cue": "The compact, grid-built Palm OS map identified as The Great Pyramid in the level display.",
+   "note": "This level contains 2 fixed sublevels; the enemy tally resets for each one.",
+   "save_backup": {
+    "title": "Keep a state before each sublevel exit",
+    "why": "A transition can close the corridors behind it while the previous enemy counter is still incomplete.",
+    "detail": "Retain the prior state until the current enemy tally is full and the next sublevel loads correctly."
+   },
+   "point_of_no_return": {
+    "title": "The sublevel exit is one-way",
+    "why": "Advancing prevents an immediate sweep of the previous maze section.",
+    "detail": "Check the enemy total and every branch before activating the route forward."
+   },
+   "items": [
+    {
+     "id": "palm-the-great-pyramid-route",
+     "type": "optional",
+     "safe_type": "Level completion",
+     "label": "Complete The Great Pyramid",
+     "missable": true,
+     "levels": {
+      "1": "Keep mapping each junction until the current maze has no untested exit.",
+      "2": "Finish all 2 sublevels shown by the current-sublevel display.",
+      "3": "Clear The Great Pyramid from sublevel 1 through sublevel 2. At every junction, finish side passages before using the route that advances the sublevel; after the final transition, confirm the next named level appears."
+     }
+    },
+    {
+     "id": "palm-the-great-pyramid-enemy-counter",
+     "type": "optional",
+     "safe_type": "Enemy sweep",
+     "label": "Complete Every The Great Pyramid Enemy Counter",
+     "missable": true,
+     "levels": {
+      "1": "Listen for unfinished encounters before leaving each part of the maze.",
+      "2": "Before advancing each of the 2 sublevels, compare the defeated-enemy value with its displayed total.",
+      "3": "Open the status view before every sublevel exit and require “Sublevel enemies killed” to show the full displayed amount. If it is short, retrace all branch corridors and rooms; do not cross the one-way transition until the two values match."
+     }
+    },
+    {
+     "id": "palm-complete-weapon-register",
+     "type": "weapon",
+     "safe_type": "Weapon register",
+     "label": "Complete the Six-Weapon Register",
+     "missable": true,
+     "levels": {
+      "1": "Use every unfamiliar weapon before the last level closes.",
+      "2": "Open NETRICSA and reconcile its weapon records before the final transition.",
+      "3": "Confirm records for all six weapons: Schofield .45, 12 Gauge Pump-Action Shotgun, M1-A2 Thompson Submachine Gun, XM214-A Minigun, XPML21 Rocket Launcher, XL2 Lasergun. If one is absent, return to the latest retained checkpoint before the missing pickup, collect it, and fire it once so its entry is registered."
+     },
+     "notes_internal": "Exact first-pickup placement is not reliably established; no location is invented."
+    },
+    {
+     "id": "palm-complete-enemy-register",
+     "type": "optional",
+     "safe_type": "Enemy register",
+     "label": "Complete the Eight-Enemy Register",
+     "missable": true,
+     "levels": {
+      "1": "Check that every unfamiliar creature has appeared in the information screen.",
+      "2": "Reconcile NETRICSA's enemy list before leaving the final map.",
+      "3": "Reconcile the register in pairs: Arachnoid with Gnaar; Kleer Skeleton with Scythian Witch-Harpy; Minor Bio-mechanoid with Beheaded Firecracker; and Beheaded Kamikaze with Beheaded Rocketeer. For an absent record, restore an earlier checkpoint and keep that creature in view until NETRICSA updates."
+     },
+     "notes_internal": "Exact first-encounter placement is not reliably established; no location is invented."
+    },
+    {
+     "id": "palm-record-completed-run-score",
+     "type": "optional",
+     "safe_type": "Score record",
+     "label": "Record a Completed-Run Score",
+     "missable": false,
+     "levels": {
+      "1": "Keep one result from the fully cleared run.",
+      "2": "After the last level, preserve the score produced by the enemy-complete route.",
+      "3": "Enter a high-score record after completing every level and every sublevel enemy counter, then capture or write down that total. The score system has no finite completion ceiling, so one verified full-run result completes this check without endless grinding."
+     }
+    }
+   ]
+  }
+ ]
+}

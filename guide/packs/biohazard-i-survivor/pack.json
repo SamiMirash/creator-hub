@@ -1,0 +1,417 @@
+{
+  "id": "biohazard-i-survivor",
+  "game": "Biohazard i Survivor (2001)",
+  "target": "100% archival completion of the selected original i-mode route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "archival-setup",
+      "name": "Archived i-mode Setup",
+      "location_cue": "The Japanese handset boot, Capcom Park login, account synchronization, and companion clock.",
+      "note": "Server dependence makes preservation the first completion requirement.",
+      "items": [
+        {
+          "id": "setup-original-service",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Original DoCoMo i-mode Build",
+          "missable": false,
+          "levels": {
+            "1": "The game depended on a Japanese carrier service and specific phones.",
+            "2": "Use a preserved 503i-series handset with an authenticated historical service state.",
+            "3": "Preserve the handset, application storage, firmware, carrier identifiers, account state, and server responses before launching. The original game was network-dependent rather than a self-contained i-application; no current server or verified emulator replacement is documented."
+          }
+        },
+        {
+          "id": "setup-capture",
+          "type": "interaction",
+          "safe_type": "Archive Safety",
+          "label": "Capture Every Network Response",
+          "missable": false,
+          "levels": {
+            "1": "A surviving session may depend on a temporary reconstructed endpoint.",
+            "2": "Record boot, login, synchronization, menus, maps, combat, mail, and results.",
+            "3": "Capture continuously from handset boot through authentication and every server request. Export packet logs where lawful, photograph each Japanese response, and keep two copies of the application and session data before testing any destructive or irreversible command."
+          }
+        },
+        {
+          "id": "setup-clock",
+          "type": "interaction",
+          "safe_type": "Accessory",
+          "label": "Preserve the Companion Status Clock",
+          "missable": false,
+          "levels": {
+            "1": "A linked clock displayed recovery and network information outside play.",
+            "2": "Open the corresponding clock and record health, recovery time, and mail indicators.",
+            "3": "With the same preserved account active, open the companion clock while disconnected from the main game. Capture current HP, time remaining until recovery, and network-mail state, then compare them after one verified battle without altering the device clock."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Clone the account and handset first",
+        "why": "Testing can alter the only surviving server-linked state."
+      }
+    },
+    {
+      "id": "team-and-systems",
+      "name": "Team, Growth, and Inventory Systems",
+      "location_cue": "The team formation, statistics, city-node, battle, event, inventory, and synthesis menus.",
+      "note": "Record each server-backed mechanic before pursuing undocumented caps.",
+      "items": [
+        {
+          "id": "system-starting-choice",
+          "type": "choice",
+          "safe_type": "Team Setup",
+          "label": "Choose Each Starting Candidate",
+          "missable": true,
+          "levels": {
+            "1": "The opening offers three candidates with different strengths.",
+            "2": "Create separate archival profiles and select every available initial candidate.",
+            "3": "From a clean account state, record the complete initial candidate screen, choose one candidate, capture starting stats and equipment, then repeat on cloned profiles for the other two. Do not assume later recruitability replaces the opening choice."
+          }
+        },
+        {
+          "id": "system-team-formation",
+          "type": "interaction",
+          "safe_type": "Team System",
+          "label": "Build and Rearrange the Team",
+          "missable": false,
+          "levels": {
+            "1": "Recruited specialists alter attack, discovery, and recovery performance.",
+            "2": "Add available allies, then test every formation position and role.",
+            "3": "After each recruit joins, record their base statistics and special ability, place them in every selectable position, and compare team Attack, Discovery, and Recovery totals. Preserve a pre-change profile before dismissing or replacing anyone."
+          }
+        },
+        {
+          "id": "system-growth",
+          "type": "upgrade",
+          "safe_type": "Progression",
+          "label": "Raise All Three Team Statistics",
+          "missable": false,
+          "levels": {
+            "1": "Combat and event resolution improve different team capabilities.",
+            "2": "Train Attack, Discovery, and Recovery through observed battles and events.",
+            "3": "Record the three values before an action, complete one battle or event, synchronize, and record the change. Repeat with formations specializing in each stat until the surviving build stops granting growth; treat that observed ceiling as provisional until reproduced."
+          }
+        },
+        {
+          "id": "system-items",
+          "type": "interaction",
+          "safe_type": "Item System",
+          "label": "Collect Guns, Herbs, and Components",
+          "missable": false,
+          "levels": {
+            "1": "Familiar supplies return inside a menu-driven inventory.",
+            "2": "Acquire every item displayed by the surviving server state.",
+            "3": "Search each available city node and event, record the item name and quantity before pickup, then verify it in the inventory. Use a cloned profile to test consumption, equipment, trading, or loss without damaging the archive account."
+          }
+        },
+        {
+          "id": "system-combination",
+          "type": "interaction",
+          "safe_type": "Crafting",
+          "label": "Test Every Visible Item Combination",
+          "missable": false,
+          "levels": {
+            "1": "Some inventory objects can be synthesized into stronger equipment.",
+            "2": "Open the combination menu and test only displayed compatible pairs.",
+            "3": "Record every selectable ingredient pair, clone the profile, combine it, and capture the resulting name and statistics. Restore after failed or consumptive tests; do not infer recipes that the surviving interface never offers."
+          }
+        },
+        {
+          "id": "system-joint-front",
+          "type": "interaction",
+          "safe_type": "Network Feature",
+          "label": "Complete a Joint Front",
+          "missable": true,
+          "levels": {
+            "1": "Teams in the same area can cooperate against a shared event.",
+            "2": "Meet another preserved team in one city node and choose cooperation.",
+            "3": "Using two lawful preserved accounts, place both teams in the same available area, initiate the joint-front command, exchange the displayed information, complete one cooperative enemy or event resolution, and capture rewards for both accounts."
+          }
+        },
+        {
+          "id": "system-mock-battle",
+          "type": "optional",
+          "safe_type": "Network Feature",
+          "label": "Complete a Mock Battle",
+          "missable": true,
+          "levels": {
+            "1": "The network offered optional team-versus-team simulation.",
+            "2": "Meet another team and initiate the mock-battle option.",
+            "3": "Back up both profiles, record formations and stats, issue the mock-battle request, accept it on the second account, and capture every round and result field. Restore afterward if defeat changes resources or standing."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before formation or synthesis changes",
+        "why": "Recruits and ingredients may not be recoverable on a retired service."
+      }
+    },
+    {
+      "id": "verified-roster",
+      "name": "Verified Team Roster",
+      "location_cue": "The initial candidate and later recruitment screens shown during city exploration.",
+      "note": "Only historically documented members are treated as confirmed.",
+      "items": [
+        {
+          "id": "character-01-chris",
+          "type": "collectible",
+          "safe_type": "Team Member",
+          "label": "Chris",
+          "missable": true,
+          "levels": {
+            "1": "Specialists cover different combat, support, and exploration roles.",
+            "2": "Recruit or select Chris; documented specialty: attack and close combat.",
+            "3": "When Chris appears in a lawful surviving session, capture the recruitment or selection screen, record all displayed statistics and abilities, add the character to a team, and complete one activity that uses the documented attack and close combat specialty. Do not expose narrative dialogue in the public hint."
+          }
+        },
+        {
+          "id": "character-02-jill",
+          "type": "collectible",
+          "safe_type": "Team Member",
+          "label": "Jill",
+          "missable": true,
+          "levels": {
+            "1": "Specialists cover different combat, support, and exploration roles.",
+            "2": "Recruit or select Jill; documented specialty: technical and exploration.",
+            "3": "When Jill appears in a lawful surviving session, capture the recruitment or selection screen, record all displayed statistics and abilities, add the character to a team, and complete one activity that uses the documented technical and exploration specialty. Do not expose narrative dialogue in the public hint."
+          }
+        },
+        {
+          "id": "character-03-frank",
+          "type": "collectible",
+          "safe_type": "Team Member",
+          "label": "Frank",
+          "missable": true,
+          "levels": {
+            "1": "Specialists cover different combat, support, and exploration roles.",
+            "2": "Recruit or select Frank; documented specialty: assault and close combat.",
+            "3": "When Frank appears in a lawful surviving session, capture the recruitment or selection screen, record all displayed statistics and abilities, add the character to a team, and complete one activity that uses the documented assault and close combat specialty. Do not expose narrative dialogue in the public hint."
+          }
+        },
+        {
+          "id": "character-04-kay",
+          "type": "collectible",
+          "safe_type": "Team Member",
+          "label": "Kay",
+          "missable": true,
+          "levels": {
+            "1": "Specialists cover different combat, support, and exploration roles.",
+            "2": "Recruit or select Kay; documented specialty: long-range handgun.",
+            "3": "When Kay appears in a lawful surviving session, capture the recruitment or selection screen, record all displayed statistics and abilities, add the character to a team, and complete one activity that uses the documented long-range handgun specialty. Do not expose narrative dialogue in the public hint."
+          }
+        },
+        {
+          "id": "character-05-hikaru",
+          "type": "collectible",
+          "safe_type": "Team Member",
+          "label": "Hikaru",
+          "missable": true,
+          "levels": {
+            "1": "Specialists cover different combat, support, and exploration roles.",
+            "2": "Recruit or select Hikaru; documented specialty: rifle and sniping.",
+            "3": "When Hikaru appears in a lawful surviving session, capture the recruitment or selection screen, record all displayed statistics and abilities, add the character to a team, and complete one activity that uses the documented rifle and sniping specialty. Do not expose narrative dialogue in the public hint."
+          }
+        },
+        {
+          "id": "character-06-anna",
+          "type": "collectible",
+          "safe_type": "Team Member",
+          "label": "Anna",
+          "missable": true,
+          "levels": {
+            "1": "Specialists cover different combat, support, and exploration roles.",
+            "2": "Recruit or select Anna; documented specialty: healing support.",
+            "3": "When Anna appears in a lawful surviving session, capture the recruitment or selection screen, record all displayed statistics and abilities, add the character to a team, and complete one activity that uses the documented healing support specialty. Do not expose narrative dialogue in the public hint."
+          }
+        },
+        {
+          "id": "character-07-kentaro",
+          "type": "collectible",
+          "safe_type": "Team Member",
+          "label": "Kentaro",
+          "missable": true,
+          "levels": {
+            "1": "Specialists cover different combat, support, and exploration roles.",
+            "2": "Recruit or select Kentaro; documented specialty: technical exploration.",
+            "3": "When Kentaro appears in a lawful surviving session, capture the recruitment or selection screen, record all displayed statistics and abilities, add the character to a team, and complete one activity that uses the documented technical exploration specialty. Do not expose narrative dialogue in the public hint."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Clone before accepting or dismissing recruits",
+        "why": "The complete recruitment cycle is not preserved publicly."
+      }
+    },
+    {
+      "id": "verification-holds",
+      "name": "Unverified Service Completion",
+      "location_cue": "Any late city, maximum-level, roster, recipe, ranking, or terminal server response.",
+      "note": "Unknown online boundaries remain withheld rather than guessed.",
+      "items": [
+        {
+          "id": "verification-01",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Maximum Team Level",
+          "missable": false,
+          "levels": {
+            "1": "No complete surviving public table confirms this boundary.",
+            "2": "Resolve it only from a lawful build and directly captured server response.",
+            "3": "NEEDS VERIFICATION: maximum team level. Preserve the raw response, reproduce the trigger on a cloned profile, and add the exact mechanical value to local research before replacing this hold. Do not infer missing content from screenshots, later mobile games, or character familiarity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-02",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Complete Character Roster",
+          "missable": false,
+          "levels": {
+            "1": "No complete surviving public table confirms this boundary.",
+            "2": "Resolve it only from a lawful build and directly captured server response.",
+            "3": "NEEDS VERIFICATION: complete character roster. Preserve the raw response, reproduce the trigger on a cloned profile, and add the exact mechanical value to local research before replacing this hold. Do not infer missing content from screenshots, later mobile games, or character familiarity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-03",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Complete Enemy Roster",
+          "missable": false,
+          "levels": {
+            "1": "No complete surviving public table confirms this boundary.",
+            "2": "Resolve it only from a lawful build and directly captured server response.",
+            "3": "NEEDS VERIFICATION: complete enemy roster. Preserve the raw response, reproduce the trigger on a cloned profile, and add the exact mechanical value to local research before replacing this hold. Do not infer missing content from screenshots, later mobile games, or character familiarity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-04",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Complete City-Area List",
+          "missable": false,
+          "levels": {
+            "1": "No complete surviving public table confirms this boundary.",
+            "2": "Resolve it only from a lawful build and directly captured server response.",
+            "3": "NEEDS VERIFICATION: complete city-area list. Preserve the raw response, reproduce the trigger on a cloned profile, and add the exact mechanical value to local research before replacing this hold. Do not infer missing content from screenshots, later mobile games, or character familiarity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-05",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Complete Event List",
+          "missable": false,
+          "levels": {
+            "1": "No complete surviving public table confirms this boundary.",
+            "2": "Resolve it only from a lawful build and directly captured server response.",
+            "3": "NEEDS VERIFICATION: complete event list. Preserve the raw response, reproduce the trigger on a cloned profile, and add the exact mechanical value to local research before replacing this hold. Do not infer missing content from screenshots, later mobile games, or character familiarity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-06",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Complete Item List",
+          "missable": false,
+          "levels": {
+            "1": "No complete surviving public table confirms this boundary.",
+            "2": "Resolve it only from a lawful build and directly captured server response.",
+            "3": "NEEDS VERIFICATION: complete item list. Preserve the raw response, reproduce the trigger on a cloned profile, and add the exact mechanical value to local research before replacing this hold. Do not infer missing content from screenshots, later mobile games, or character familiarity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-07",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "All Combination Recipes",
+          "missable": false,
+          "levels": {
+            "1": "No complete surviving public table confirms this boundary.",
+            "2": "Resolve it only from a lawful build and directly captured server response.",
+            "3": "NEEDS VERIFICATION: all combination recipes. Preserve the raw response, reproduce the trigger on a cloned profile, and add the exact mechanical value to local research before replacing this hold. Do not infer missing content from screenshots, later mobile games, or character familiarity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-08",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Campaign Endpoint",
+          "missable": false,
+          "levels": {
+            "1": "No complete surviving public table confirms this boundary.",
+            "2": "Resolve it only from a lawful build and directly captured server response.",
+            "3": "NEEDS VERIFICATION: campaign endpoint. Preserve the raw response, reproduce the trigger on a cloned profile, and add the exact mechanical value to local research before replacing this hold. Do not infer missing content from screenshots, later mobile games, or character familiarity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-09",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Ending Count",
+          "missable": false,
+          "levels": {
+            "1": "No complete surviving public table confirms this boundary.",
+            "2": "Resolve it only from a lawful build and directly captured server response.",
+            "3": "NEEDS VERIFICATION: ending count. Preserve the raw response, reproduce the trigger on a cloned profile, and add the exact mechanical value to local research before replacing this hold. Do not infer missing content from screenshots, later mobile games, or character familiarity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-10",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Mock-Battle Ranks",
+          "missable": false,
+          "levels": {
+            "1": "No complete surviving public table confirms this boundary.",
+            "2": "Resolve it only from a lawful build and directly captured server response.",
+            "3": "NEEDS VERIFICATION: mock-battle ranks. Preserve the raw response, reproduce the trigger on a cloned profile, and add the exact mechanical value to local research before replacing this hold. Do not infer missing content from screenshots, later mobile games, or character familiarity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-11",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Server-State Preservation",
+          "missable": false,
+          "levels": {
+            "1": "No complete surviving public table confirms this boundary.",
+            "2": "Resolve it only from a lawful build and directly captured server response.",
+            "3": "NEEDS VERIFICATION: server-state preservation. Preserve the raw response, reproduce the trigger on a cloned profile, and add the exact mechanical value to local research before replacing this hold. Do not infer missing content from screenshots, later mobile games, or character familiarity."
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "verification-12",
+          "type": "optional",
+          "safe_type": "Verification Hold",
+          "label": "Leon Playability",
+          "missable": false,
+          "levels": {
+            "1": "No complete surviving public table confirms this boundary.",
+            "2": "Resolve it only from a lawful build and directly captured server response.",
+            "3": "NEEDS VERIFICATION: Leon playability. Preserve the raw response, reproduce the trigger on a cloned profile, and add the exact mechanical value to local research before replacing this hold. Do not infer missing content from screenshots, later mobile games, or character familiarity."
+          },
+          "internal_uncertain": true
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve every raw response",
+        "why": "A resolved hold needs repeatable direct evidence."
+      }
+    }
+  ]
+}

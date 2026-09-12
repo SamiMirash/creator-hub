@@ -1,0 +1,2597 @@
+{
+  "id": "syphon-filter-logans-shadow",
+  "game": "Syphon Filter: Logan's Shadow",
+  "target": "Original North American PSP release via PPSSPP on PC; PS2 port excluded",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-28",
+  "areas": [
+    {
+      "id": "sfls-run-setup",
+      "name": "Run Setup",
+      "location_cue": "The title screen, PPSSPP profile, and first normal save.",
+      "note": "The original North American PSP release is the content authority; the later PlayStation 2 port is comparison-only.",
+      "items": [
+        {
+          "id": "sfls-original-psp-route",
+          "type": "optional",
+          "safe_type": "Play route",
+          "label": "Original PSP Route",
+          "missable": false,
+          "levels": {
+            "1": "Keep the handheld release as the rules authority.",
+            "2": "Run a verified personal PSP dump through PPSSPP.",
+            "3": "Use the original North American PSP release with a dedicated PPSSPP profile. Controller remapping and resolution scaling are safe; avoid cheats that alter evidence, career totals, timers, damage, or inventory."
+          }
+        },
+        {
+          "id": "sfls-save-safety",
+          "type": "optional",
+          "safe_type": "Setup",
+          "label": "Save and State Safety",
+          "missable": false,
+          "levels": {
+            "1": "Protect the profile before long cleanup sessions.",
+            "2": "Maintain an ordinary PSP save plus rotating backup states.",
+            "3": "Confirm the in-game save reloads, then back up the PPSSPP save directory before emulator changes. Use states only as temporary recovery points; the normal PSP save should remain the completion record."
+          }
+        },
+        {
+          "id": "sfls-port-boundary",
+          "type": "optional",
+          "safe_type": "Version boundary",
+          "label": "PlayStation 2 Port Exclusion",
+          "missable": false,
+          "levels": {
+            "1": "Do not mix data from the later altered port.",
+            "2": "Use PSP mechanics and unlock conditions throughout.",
+            "3": "The 2010 PlayStation 2 edition is outside this route. Its changes do not replace PSP evidence, career, training, bonus, or multiplayer records."
+          }
+        },
+        {
+          "id": "sfls-replay-safety",
+          "type": "optional",
+          "safe_type": "Completion rule",
+          "label": "Replay Safety",
+          "missable": false,
+          "levels": {
+            "1": "A finished operation can be revisited.",
+            "2": "Use Mission Mode for every missed pickup or failed condition.",
+            "3": "Cleared operations become individually replayable. Alert checks, armor restrictions, timed searches, fragile hazards, and automatic awards can all be retried, so no single-player record is permanently missable."
+          }
+        },
+        {
+          "id": "sfls-difficulty-route",
+          "type": "optional",
+          "safe_type": "Completion rule",
+          "label": "Normal and Hard Clears",
+          "missable": false,
+          "levels": {
+            "1": "Both story settings open different bonus content.",
+            "2": "Finish Story Mode once on Normal and once on Hard.",
+            "3": "Complete both difficulty routes. The Normal clear opens Behind the Scenes; the Hard clear opens Shadowed. Use Hard while building the Sharpshooter career meter, because its qualifying precision kills are difficulty-gated."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-training",
+      "name": "Training",
+      "location_cue": "The five practice courses available from the single-player menu.",
+      "note": "Course 5 contains one practice evidence; it does not contribute to a Locked File.",
+      "items": [
+        {
+          "id": "sfls-training-1",
+          "type": "optional",
+          "safe_type": "Training",
+          "label": "Training Course 1",
+          "missable": false,
+          "levels": {
+            "1": "Speed matters in the opening drill.",
+            "2": "Finish the first course in less than 1 minute 30 seconds.",
+            "3": "Run the first course cleanly and stop the clock below 1:30 to unlock the SP-57. Restart immediately after a missed movement or shot cycle."
+          }
+        },
+        {
+          "id": "sfls-training-2",
+          "type": "optional",
+          "safe_type": "Training",
+          "label": "Training Course 2",
+          "missable": false,
+          "levels": {
+            "1": "Keep the second course moving.",
+            "2": "Finish the second course in less than 3 minutes.",
+            "3": "Clear every required station and reach the finish below 3:00 to unlock the FAMAS. Prioritize clean transitions over searching the practice space."
+          }
+        },
+        {
+          "id": "sfls-training-3",
+          "type": "optional",
+          "safe_type": "Training",
+          "label": "Training Course 3",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy is the entire test.",
+            "2": "Complete the third course without wasting a shot.",
+            "3": "Hit every required target with no miss and no unnecessary round fired. A perfect attempt unlocks the UNP .45; restart as soon as a shot fails to count."
+          }
+        },
+        {
+          "id": "sfls-training-4",
+          "type": "optional",
+          "safe_type": "Training",
+          "label": "Training Course 4",
+          "missable": false,
+          "levels": {
+            "1": "Practice the advanced combat controls.",
+            "2": "Complete every station in the fourth course.",
+            "3": "Perform each prompted advanced-combat action and cross the finish trigger. This course has no separate weapon reward, but it counts toward the all-training bonus gate."
+          }
+        },
+        {
+          "id": "sfls-training-5",
+          "type": "optional",
+          "safe_type": "Training",
+          "label": "Training Course 5",
+          "missable": false,
+          "levels": {
+            "1": "Finish the underwater-control course.",
+            "2": "Complete every station in the fifth course.",
+            "3": "Follow the underwater prompts through the entire course and reach its completion trigger. Collect the practice evidence in the first pool during the same visit."
+          }
+        },
+        {
+          "id": "sfls-training-5-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the first pool before leaving it.",
+            "2": "At the foot of the ramp in the first training pool.",
+            "3": "Enter the first pool, swim to the base of its exit ramp, and collect the practice evidence before climbing out."
+          }
+        },
+        {
+          "id": "sfls-training-all",
+          "type": "optional",
+          "safe_type": "Bonus mission",
+          "label": "All Training Complete",
+          "missable": false,
+          "levels": {
+            "1": "Complete the full training menu.",
+            "2": "Finish all five training courses.",
+            "3": "Record a clear on Courses 1 through 5. The full set unlocks Lian's First Time; the three performance weapons remain separate conditions."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e1m1",
+      "name": "Pirates of Somalia",
+      "location_cue": "A storm-battered ship exterior linked to hot machinery spaces and cargo access.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e1m1-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Pirates of Somalia",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e1m1-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "Recheck the first heated interior after descending.",
+            "2": "On a body inside the steam-filled service room below the deck.",
+            "3": "After the ship drops you onto the lower route, take the nearby stairs into the hot service room and inspect the body before leaving."
+          }
+        },
+        {
+          "id": "sfls-e1m1-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "The secured weapon section has a quiet side room.",
+            "2": "On the floor in the corner of the room straight beyond the live-warhead area.",
+            "3": "Make the live warhead safe, enter the room directly ahead, switch on EDSU, and collect the highlighted object from the far corner."
+          }
+        },
+        {
+          "id": "sfls-e1m1-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "Before opening the grate, revisit the ladder approach.",
+            "2": "On a body behind the handled door beside the earlier ladder.",
+            "3": "Stop before prying open the route-ending grate. Backtrack to the ladder, use the adjacent handled door, and search the body inside."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e1m2",
+      "name": "Going Under",
+      "location_cue": "A multi-level ship route with stairwells, a communications tower, and exposed water.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e1m2-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Going Under",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e1m2-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "One stair landing branches away from the obvious ascent.",
+            "2": "In the middle room reached by taking the downward stairs after the first flight.",
+            "3": "Climb the first stairs, ignore the next upward flight, and descend the alternate set. Ride the RTL and search the center room."
+          }
+        },
+        {
+          "id": "sfls-e1m2-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the support structure beneath the communications equipment.",
+            "2": "Directly below the communications tower.",
+            "3": "Circle to the tower's underside before climbing or leaving the section; the evidence is at its base."
+          }
+        },
+        {
+          "id": "sfls-e1m2-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The aircraft itself remains searchable.",
+            "2": "Inside the helicopter cockpit.",
+            "3": "Approach the helicopter, move to the cockpit, and interact with the evidence before advancing past the aircraft area."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e1m3",
+      "name": "Ocean's Five",
+      "location_cue": "Open water around several vessels, with submerged switches and hull openings.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e1m3-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Ocean's Five",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e1m3-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the largest hull before swimming onward.",
+            "2": "Inside the opening in the large ship near the start.",
+            "3": "Swim to the obvious breach in the large vessel, pass through it, and collect the evidence before leaving the hull."
+          }
+        },
+        {
+          "id": "sfls-e1m3-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "A smaller vessel hides something beside its cooking area.",
+            "2": "On the second small ship, in the box beside the stove.",
+            "3": "Board the second small craft, locate its stove, and search the adjacent box before returning to the water."
+          }
+        },
+        {
+          "id": "sfls-e1m3-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The electrical-control route has an underwater pickup.",
+            "2": "Beside the submerged switch that controls the live current.",
+            "3": "Dive to the current-control switch, make the route safe, and collect the nearby evidence before surfacing."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e1m4",
+      "name": "Sea of Darkness",
+      "location_cue": "A cargo-handling interior of lifts, gates, vents, dumpsters, and control terminals.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e1m4-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Sea of Darkness",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e1m4-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The opening section rewards restraint.",
+            "2": "Awarded automatically at the first section break if no alert occurred.",
+            "3": "Reach the first transition without entering an alerted state. If the award does not appear, restart this operation and use silent takedowns, suppressed shots, and patient patrol timing."
+          }
+        },
+        {
+          "id": "sfls-e1m4-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "Search behind the first cargo-lift barrier.",
+            "2": "On a body beyond the gate after the first cargo-elevator descent.",
+            "3": "Ride the first cargo lift down, scan through the nearby gate with EDSU, and inspect the body on the other side before continuing."
+          }
+        },
+        {
+          "id": "sfls-e1m4-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The movable dumpster remains useful after the first gate.",
+            "2": "On the upper ledge reached by pushing the dumpster farther beyond the locked gate.",
+            "3": "After using the dumpster to cross the gate, shoot the gate lock, push the dumpster deeper into the room, and climb from it to the ledge near the armor supply."
+          }
+        },
+        {
+          "id": "sfls-e1m4-evidence-4",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #4",
+          "missable": false,
+          "levels": {
+            "1": "The vent exit opens beside useful electronics.",
+            "2": "Recorded by the computer in the room where you drop from the vent.",
+            "3": "As soon as you land from the ventilation route, locate the computer and hack it before leaving the room."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e2m1",
+      "name": "What Lies Below",
+      "location_cue": "A submerged wreck site of coral, sea grass, mines, and broken hull plates.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e2m1-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "What Lies Below",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e2m1-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The water immediately behind your entry point is worth scanning.",
+            "2": "Among sea grass and rocks behind the starting position.",
+            "3": "Turn around at the start, swim toward the rocks and vegetation, and use EDSU to identify the yellow-highlighted pickup."
+          }
+        },
+        {
+          "id": "sfls-e2m1-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "A tethered hazard near the early wreckage is more than scenery.",
+            "2": "On the anchored mine beside coral along the first patrol route.",
+            "3": "Follow the initial submerged route to the wreckage, keep clear of the explosive radius, and interact with the tethered mine's evidence point."
+          }
+        },
+        {
+          "id": "sfls-e2m1-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "Check beneath the first large wreck rather than only around it.",
+            "2": "Under the hull of the wrecked ship ahead of the starting point.",
+            "3": "From the start, swim toward the large wreck, dive under its hull, and use EDSU to locate the yellow-highlighted evidence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e2m2",
+      "name": "Depths of Darkness",
+      "location_cue": "A flooded industrial chamber with stairs, valves, rising water, bridges, and ceiling recesses.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e2m2-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Depths of Darkness",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e2m2-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "Search the passage before the first upward stairway.",
+            "2": "On the body around the corner to the upper-right of the starting chamber.",
+            "3": "From the starting area, move toward the first stairs but turn around the nearby corner before climbing; inspect the body there."
+          }
+        },
+        {
+          "id": "sfls-e2m2-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "Rising water changes the opening corner.",
+            "2": "Beneath the water beside the grate in the starting corner.",
+            "3": "After the chamber fills, return to the starting corner, turn the valve handle, then dive beside the grate to take the revealed evidence."
+          }
+        },
+        {
+          "id": "sfls-e2m2-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The damaged bridge conceals a reachable recess.",
+            "2": "On a body in the alcove behind the broken bridge after leaving the water.",
+            "3": "Once the warhead route returns you to dry ground, pass behind the broken bridge, climb into the recess, use the RTL, and inspect the body."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e2m3",
+      "name": "Dead Currents",
+      "location_cue": "An electrical facility traversed by ceiling grips, stacked boxes, debris, and shutdown terminals.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e2m3-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Dead Currents",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e2m3-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "Pause during the ceiling route before moving the large screw.",
+            "2": "On the left side of the ceiling path immediately before the debris-clearing screw.",
+            "3": "While hanging from the ceiling, stop before pushing the large screw into the obstruction and traverse left to collect the evidence."
+          }
+        },
+        {
+          "id": "sfls-e2m3-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "The shutdown-terminal room has a route back overhead.",
+            "2": "Above the stacked boxes near the power-control terminals.",
+            "3": "During the terminal shutdown sequence, climb the box stack and pull onto the ceiling route to reach the evidence."
+          }
+        },
+        {
+          "id": "sfls-e2m3-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The final encounter has a precision condition.",
+            "2": "Awarded after the final encounter if the protective armor remains undamaged.",
+            "3": "Complete the last combat sequence without striking the armored plating. Aim only at valid exposed targets; if the award is absent at the results transition, replay the operation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e2m4",
+      "name": "Drowning",
+      "location_cue": "A submerged route linking a submarine, familiar wreckage, and isolated structures.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e2m4-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Drowning",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e2m4-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "Stay close to the submarine when it first appears.",
+            "2": "In the water immediately beside the submarine.",
+            "3": "Once the submarine is located, swim along its hull and collect the evidence within roughly a body length of it before leaving the area."
+          }
+        },
+        {
+          "id": "sfls-e2m4-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "A previously visited underwater corner still holds evidence.",
+            "2": "Among the rocks and sea grass behind the familiar entry point.",
+            "3": "When the route returns to the earlier wreck field, turn toward the same vegetated rock pocket and scan with EDSU for the pickup."
+          }
+        },
+        {
+          "id": "sfls-e2m4-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "One lone building sits away from the wrecked-ship route.",
+            "2": "Inside the single-door structure in the middle of the area opposite the damaged hull.",
+            "3": "At the point where the wreck can be struck, turn around, swim to the isolated central structure, enter its only door, and take the evidence inside."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e3m1",
+      "name": "Missing Friends",
+      "location_cue": "A flooded urban approach rising through grates, tunnels, damaged balconies, and windows.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e3m1-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Missing Friends",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e3m1-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The first submerged grate opens an optional route.",
+            "2": "Beyond the yellow grate ahead and right of the starting point.",
+            "3": "Dive forward and right, open the highlighted grate, surface beyond it, and follow the short tunnel to the body."
+          }
+        },
+        {
+          "id": "sfls-e3m1-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "A damaged balcony carries a recorded clue.",
+            "2": "On the left wall beyond the blasted balcony opening.",
+            "3": "After reaching the broken balcony wall, activate the flashlight, inspect the left wall, and interact with the visible message."
+          }
+        },
+        {
+          "id": "sfls-e3m1-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The final cover position has a lower detour.",
+            "2": "In the upper-left floor corner beyond the window below the last cover-fire area.",
+            "3": "At the final covering-fire section, descend instead of staying on the marked line, leave through the window, and search the upper-left corner."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e3m2",
+      "name": "Found Enemies",
+      "location_cue": "Interior rooms opening onto a rooftop, with cupboards, blocked doors, and a boost point.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e3m2-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Found Enemies",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e3m2-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The starting room changes after you leave it.",
+            "2": "Inside the cupboard in the starting room.",
+            "3": "Return to the opening room once movement is free, open the cupboard in its corner, and collect the evidence."
+          }
+        },
+        {
+          "id": "sfls-e3m2-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "A shifted cupboard opens a formerly blocked room.",
+            "2": "In the corner of the side room beside the assisted boost point.",
+            "3": "Before taking the boost, enter the adjacent room after the cupboard has been moved away from its door and search the far corner."
+          }
+        },
+        {
+          "id": "sfls-e3m2-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "Sweep the rooftop edge closest to its entrance.",
+            "2": "On a body in the rooftop corner beside the entry door.",
+            "3": "Upon reaching the roof, turn along the perimeter toward the door you used and inspect the body in that corner before advancing."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e3m3",
+      "name": "Nowhere to Run",
+      "location_cue": "A canal-side route leading through gates, underwater passages, and a damaged interior.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e3m3-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Nowhere to Run",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e3m3-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The RTL crossing has a lower canal alternative.",
+            "2": "At the canal bottom beside the gate below the RTL route.",
+            "3": "Instead of taking the traversal line, drop into the canal, swim to the gate on the right, then dive to its base for the evidence."
+          }
+        },
+        {
+          "id": "sfls-e3m3-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "Look behind you when control resumes later.",
+            "2": "On the floor directly behind the resumed starting view.",
+            "3": "After the later transition returns control, turn around before moving and collect the evidence from the floor."
+          }
+        },
+        {
+          "id": "sfls-e3m3-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "Search the last room before using its central interaction.",
+            "2": "On the floor in front of the burning statue in the final room.",
+            "3": "Enter the last room, approach the burning statue, and take the evidence at its base before completing the central interaction."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e4m1",
+      "name": "Trinidad",
+      "location_cue": "An interior route of timed controls, stairs, roof access, vents, and locked side rooms.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e4m1-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Trinidad",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e4m1-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The opening timed sequence leaves a pickup near the next stairway.",
+            "2": "At the end of the hall beside the door before the stairs.",
+            "3": "Complete the initial timed button sequence, follow the hall to its end, and collect the evidence near the door before ascending."
+          }
+        },
+        {
+          "id": "sfls-e4m1-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "The roof-and-vent detour ends inside a searchable room.",
+            "2": "In the corner left of the computer after dropping through the roof vent.",
+            "3": "Use the RTL to reach the roof, enter the vent, drop into the room below, and inspect the corner to the computer's left."
+          }
+        },
+        {
+          "id": "sfls-e4m1-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "A locked room becomes reachable after the electrical panel is hit.",
+            "2": "On the body behind the right-hand locked door.",
+            "3": "After shooting the electrical panel, approach the locked door on the right. The body lies immediately beyond it and can be searched from the doorway."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e4m2",
+      "name": "Into the Cold",
+      "location_cue": "Snowbound woods and a vehicle blockade connected by drains, buried containers, and open ground.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e4m2-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Into the Cold",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e4m2-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "Check the drainage edge before leaving the starting area.",
+            "2": "On the body beside the sewer drain directly behind the start.",
+            "3": "Turn around immediately and inspect the body beside the drain before following the snowy route."
+          }
+        },
+        {
+          "id": "sfls-e4m2-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "The forest's outer boundary contains a circular object.",
+            "2": "On the ground along the right edge of the wooded section.",
+            "3": "Keep to the forest's right boundary, scan with EDSU, and inspect the highlighted round object lying on the ground."
+          }
+        },
+        {
+          "id": "sfls-e4m2-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "Search the blockade before destroying its largest vehicle.",
+            "2": "In a half-buried container at the left edge near the truck.",
+            "3": "At the vehicle blockade, hold fire on the truck, follow the left boundary to the partly snow-covered container, and collect the evidence first."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e4m3",
+      "name": "Deadly Cargo",
+      "location_cue": "Cargo holds connected by a long corridor, computer room, hatch, and parked heavy vehicles.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e4m3-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Deadly Cargo",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e4m3-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The corridor outside the first cargo hold extends behind you.",
+            "2": "On the floor at the right-hand dead end of the long hall.",
+            "3": "Leave the first hold, cross the next room, open the door to the long corridor, turn right, and walk to its end."
+          }
+        },
+        {
+          "id": "sfls-e4m3-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "The next work room has a pickup beside its terminal.",
+            "2": "On the floor next to the computer in the room after the corridor.",
+            "3": "Enter the room beyond the hall and inspect the floor beside its computer before operating anything."
+          }
+        },
+        {
+          "id": "sfls-e4m3-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The second hold hides evidence behind its largest vehicle.",
+            "2": "At the rear wheel of the large truck beyond the hatch.",
+            "3": "After entering the second cargo hold through the hatch, circle behind the large truck and search beside its rear wheel."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e5m1",
+      "name": "Operation Canyon Storm",
+      "location_cue": "A rocky vehicle route shaped by armored machinery, minefields, ledges, and wire barriers.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e5m1-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Operation Canyon Storm",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e5m1-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "Climb the right side before the armored vehicle is occupied.",
+            "2": "On a body above the two climb points on the right side of the first tank area.",
+            "3": "Before anyone reaches the tank, move right, complete both climbs, and inspect the body on the upper ledge."
+          }
+        },
+        {
+          "id": "sfls-e5m1-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "The second minefield has a fenced corner opposite the tank.",
+            "2": "At the wood-and-wire barrier across from the armored vehicle.",
+            "3": "Enter the second mined area carefully, cross away from the tank, and search the corner formed by the timber and barbed wire."
+          }
+        },
+        {
+          "id": "sfls-e5m1-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "Careful mine work earns a separate record.",
+            "2": "Awarded automatically after the second mine is safely defused.",
+            "3": "Defuse the second mine rather than destroying or bypassing it. Finish the interaction cleanly and confirm the evidence notification before leaving."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e5m2",
+      "name": "Our Hidden Past",
+      "location_cue": "A canyon cave route with traversal lines, cliff ledges, a turret, and a blocked grate.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e5m2-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Our Hidden Past",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e5m2-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The first traversal line has a deeper cave behind it.",
+            "2": "In the rear cave before the first RTL crossing.",
+            "3": "Before using the first RTL, turn away from it and search the back of the cave for the evidence."
+          }
+        },
+        {
+          "id": "sfls-e5m2-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "Pause on the right before the second vertical descent.",
+            "2": "On the right side of the ledge before the second AZL drop.",
+            "3": "At the second downward traversal line, move along the ledge to the right and collect the evidence before descending."
+          }
+        },
+        {
+          "id": "sfls-e5m2-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The cliff before the cave entrance has an optional rightward route.",
+            "2": "On the ledge reached by climbing and shimming right above the turret area.",
+            "3": "After the large outdoor fight, do not enter the cave. Climb the right cliff, shimmy farther right, and drop to the ledge beside the turret."
+          }
+        },
+        {
+          "id": "sfls-e5m2-evidence-4",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #4",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the blocked grate before it is opened.",
+            "2": "On the body beside the obstructed grate.",
+            "3": "Reach the blocked grate, search the body beside it first, and only then allow the obstruction to be removed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e5m3",
+      "name": "Desert Flames",
+      "location_cue": "A burning interior of carts, suspended cargo, weak ceiling boards, cells, and wall diagrams.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e5m3-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Desert Flames",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e5m3-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "A suspended crate creates a route above the cart.",
+            "2": "On top of the large crate after its supporting pulley is shot.",
+            "3": "Before climbing the cart, shoot the pulley holding the large crate, use the fallen crate to reach the upper room, and collect the evidence from its top."
+          }
+        },
+        {
+          "id": "sfls-e5m3-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "Weak boards hide a ceiling route off the back hall.",
+            "2": "Beside the Over Under supply crate above the corridor.",
+            "3": "Before kicking through the next door, backtrack along the hall, scan the ceiling with EDSU, shoot the weak boards, and climb into the space above."
+          }
+        },
+        {
+          "id": "sfls-e5m3-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "An earlier holding room changes later.",
+            "2": "On the chair inside the cell.",
+            "3": "When free movement returns after the nearby meeting, revisit the cell and inspect the chair before following the main route."
+          }
+        },
+        {
+          "id": "sfls-e5m3-evidence-4",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #4",
+          "missable": false,
+          "levels": {
+            "1": "The explained diagram can be examined directly.",
+            "2": "On the wall diagram in the briefing room.",
+            "3": "After the diagram has been discussed, approach it and interact with the wall itself before leaving the room."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e6m1",
+      "name": "The Long Descent",
+      "location_cue": "A descending water-control plant of valves, a central pool, spillways, and transformers.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e6m1-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "The Long Descent",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e6m1-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The second valve overlooks the pool's central structure.",
+            "2": "At the bottom of the structure in the middle of the pool.",
+            "3": "After operating the second valve, descend to the pool and inspect the base of its central structure."
+          }
+        },
+        {
+          "id": "sfls-e6m1-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "The spillway countdown allows a brief room search.",
+            "2": "On a body inside the room used by the departing guards.",
+            "3": "Once the spillway is disabled, enter the room the guards left and inspect the body before the timer expires. A failed attempt can be replayed."
+          }
+        },
+        {
+          "id": "sfls-e6m1-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The pool changes after the vehicle blast.",
+            "2": "Beside the damaged transformers at the far end of the pool.",
+            "3": "When control resumes after the truck blast, return down to the pool, cross to the ruined transformers, and inspect the vehicle fragment there."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e6m2",
+      "name": "Powerless",
+      "location_cue": "A turbine complex of huge pipes, ladders, elevator controls, deep pools, mines, and machinery.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e6m2-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Powerless",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e6m2-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The second turbine's large pipe has a route on both sides.",
+            "2": "Beside the ammunition box across from the ladder around the huge pipe.",
+            "3": "At the second turbine, climb the ladder around the large pipe, descend its far side, move opposite the next ladder, and search beside the ammo box."
+          }
+        },
+        {
+          "id": "sfls-e6m2-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "A small pipe-filled corner sits before the elevator route.",
+            "2": "Behind the pipework in the corner before the pool jump.",
+            "3": "Before pressing the elevator control and jumping to the pool, enter the cramped pipe corner and collect the evidence hidden behind the pipe."
+          }
+        },
+        {
+          "id": "sfls-e6m2-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "A door at the end of the pool room leads to a deeper search.",
+            "2": "On a body at the bottom of the large pool beyond the end door.",
+            "3": "Before taking the elevator, use the door at the pool room's end, follow the passage, dive into the large pool, and search the body at the bottom."
+          }
+        },
+        {
+          "id": "sfls-e6m2-evidence-4",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #4",
+          "missable": false,
+          "levels": {
+            "1": "The mined grate opens another submerged room.",
+            "2": "Beside the machinery in the pool room beyond the mine-ringed grate.",
+            "3": "Surface for air after the previous pickup, locate the grate with EDSU, shoot its surrounding mines from safety, swim through, and search near the machinery and RPK supply."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e6m3",
+      "name": "Disintegration",
+      "location_cue": "A damaged industrial route with computers, flares, mines, numbered controls, cranes, and pipes.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e6m3-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Disintegration",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e6m3-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The first computer-opened room has a small rear pocket.",
+            "2": "Beside the filing cabinet and machinery in the back corner.",
+            "3": "Use the computer to open the door, enter the small area, and search the rear corner for the pair of glasses."
+          }
+        },
+        {
+          "id": "sfls-e6m3-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "A mine beside the second flare guards a box-top pickup.",
+            "2": "On the boxes beyond the disarmed mine near the second flare.",
+            "3": "Do not shoot the mine. Clear nearby threats, approach outside its beam, disarm it, then climb to the boxes beyond for the evidence."
+          }
+        },
+        {
+          "id": "sfls-e6m3-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The numbered panel accepts a second valid sequence.",
+            "2": "Registered by entering 898 after the required 543 sequence.",
+            "3": "Use 543 when the route first requires it, then return to the same controls and enter 898 to record the hidden evidence."
+          }
+        },
+        {
+          "id": "sfls-e6m3-evidence-4",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #4",
+          "missable": false,
+          "levels": {
+            "1": "The crane controls have a climbable back room.",
+            "2": "In the rear-left room reached by climbing the pipe and shimming right.",
+            "3": "Before unjamming the crane, enter the back-left room, climb onto the pipe, shimmy right, and drop to the evidence ledge."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e6m4",
+      "name": "Leading the Blind",
+      "location_cue": "A machinery interior of valves, computers, devices, armor crates, and guarded side rooms.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e6m4-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Leading the Blind",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-e6m4-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The valve station has an electronic clue nearby.",
+            "2": "Stored on the computer beside the valve route.",
+            "3": "Before turning the valve, locate the nearby computer and hack it to record the evidence."
+          }
+        },
+        {
+          "id": "sfls-e6m4-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "One inactive device remains in the back of its room.",
+            "2": "On the floor in front of the disabled device in the rear corner.",
+            "3": "During the device-removal section, cross to the back corner, find the inactive unit, and collect the evidence lying before it."
+          }
+        },
+        {
+          "id": "sfls-e6m4-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "Recheck the room used by the armored opposition.",
+            "2": "Behind the first stack of boxes on the right inside that side room.",
+            "3": "After the room is safe, enter it, activate EDSU, and search behind the first right-hand box stack."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-e6m5",
+      "name": "With Violent Intent",
+      "location_cue": "A final enclosed combat route with no hidden-evidence pickup.",
+      "note": "Mission Mode keeps this operation available for cleanup after its first clear.",
+      "items": [
+        {
+          "id": "sfls-e6m5-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "With Violent Intent",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-b1",
+      "name": "Killing Time",
+      "location_cue": "An outdoor insertion around cliffs, a helicopter, and a multi-deck ship.",
+      "note": "This optional operation remains replayable after it is unlocked.",
+      "items": [
+        {
+          "id": "sfls-b1-unlock",
+          "type": "optional",
+          "safe_type": "Bonus mission",
+          "label": "Killing Time",
+          "missable": false,
+          "levels": {
+            "1": "A completion milestone opens this operation.",
+            "2": "Reach the fourth Combat Knife Specialist rating.",
+            "3": "Reach the fourth Combat Knife Specialist rating. Then select Killing Time from the bonus-operation list and complete it once."
+          }
+        },
+        {
+          "id": "sfls-b1-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Killing Time Clear",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-b1-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "Inspect the cliff below the helicopter.",
+            "2": "On the flag at the foot of the cliff wall near the helicopter.",
+            "3": "Move from the helicopter to the base of the surrounding cliff and interact with the flag."
+          }
+        },
+        {
+          "id": "sfls-b1-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "The ship's upper surface has several cable rolls.",
+            "2": "Between the second and third cable rolls on the upper deck.",
+            "3": "Climb to the ship's upper deck, count the cable rolls, and inspect the torn map attached between rolls two and three."
+          }
+        },
+        {
+          "id": "sfls-b1-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The operation tracks valuables as a complete set.",
+            "2": "Awarded after all sixteen valuables in the operation are collected.",
+            "3": "Search every side room and deck until the mission counter reaches sixteen valuables; the evidence record appears when the set is complete."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-b2",
+      "name": "Lian's First Time",
+      "location_cue": "A compact interior operation with several separated hostile groups.",
+      "note": "This optional operation remains replayable after it is unlocked.",
+      "items": [
+        {
+          "id": "sfls-b2-unlock",
+          "type": "optional",
+          "safe_type": "Bonus mission",
+          "label": "Lian's First Time",
+          "missable": false,
+          "levels": {
+            "1": "A completion milestone opens this operation.",
+            "2": "Complete all five training courses.",
+            "3": "Complete all five training courses. Then select Lian's First Time from the bonus-operation list and complete it once."
+          }
+        },
+        {
+          "id": "sfls-b2-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Lian's First Time Clear",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-b2-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The first record depends on a complete sweep.",
+            "2": "Awarded for clearing every hostile counted by the operation.",
+            "3": "Sweep each accessible room before crossing a transition. If any hostile remains behind, the automatic record will not appear and the operation must be replayed."
+          }
+        },
+        {
+          "id": "sfls-b2-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "A second record checks the same full-clear condition.",
+            "2": "Awarded alongside the complete hostile-clear result.",
+            "3": "Do not rush the marked route; confirm every combat pocket is empty. Both automatic records depend on the full clear."
+          }
+        },
+        {
+          "id": "sfls-b2-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The last marked action is not the final combat pocket.",
+            "2": "Awarded after neutralizing the two guards outside the room and the additional person who exits the main door.",
+            "3": "Complete the marked action, then remain in the area. Deal with both guards outside and the extra person emerging from the main doorway before finishing."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-b3",
+      "name": "Shadowed",
+      "location_cue": "An escort route where uninterrupted survival matters more than exploration.",
+      "note": "This optional operation remains replayable after it is unlocked.",
+      "items": [
+        {
+          "id": "sfls-b3-unlock",
+          "type": "optional",
+          "safe_type": "Bonus mission",
+          "label": "Shadowed",
+          "missable": false,
+          "levels": {
+            "1": "A completion milestone opens this operation.",
+            "2": "Complete Story Mode on Hard.",
+            "3": "Complete Story Mode on Hard. Then select Shadowed from the bonus-operation list and complete it once."
+          }
+        },
+        {
+          "id": "sfls-b3-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Shadowed Clear",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-b3-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "A clean uninterrupted run earns the hidden record.",
+            "2": "Awarded if the protected companion survives and no checkpoint retry is used.",
+            "3": "Finish the entire operation without the protected companion falling and without selecting checkpoint retry. Restart from the operation menu after any failure."
+          }
+        },
+        {
+          "id": "sfls-b3-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "Completion itself supplies the remaining record.",
+            "2": "Awarded at the operation results screen.",
+            "3": "Reach the end of the operation on any successful attempt; this record is independent of the no-retry condition."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-b4",
+      "name": "Behind the Scenes",
+      "location_cue": "A developer-style obstacle route of markers, caves, bridges, wire, and climbable edges.",
+      "note": "This optional operation remains replayable after it is unlocked.",
+      "items": [
+        {
+          "id": "sfls-b4-unlock",
+          "type": "optional",
+          "safe_type": "Bonus mission",
+          "label": "Behind the Scenes",
+          "missable": false,
+          "levels": {
+            "1": "A completion milestone opens this operation.",
+            "2": "Complete Story Mode on Normal.",
+            "3": "Complete Story Mode on Normal. Then select Behind the Scenes from the bonus-operation list and complete it once."
+          }
+        },
+        {
+          "id": "sfls-b4-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Behind the Scenes Clear",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-b4-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The first smoke lesson is followed by a side cave.",
+            "2": "In the cave to the right of the marker after the smoke tutorial.",
+            "3": "Pass the smoke tutorial, reach the next marker, then enter the cave on its right before continuing."
+          }
+        },
+        {
+          "id": "sfls-b4-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "Climb beside the wire-and-box marker.",
+            "2": "In the upper cave left of the barbed-wire and diamond-box marker.",
+            "3": "At that marker, climb on the left and enter the higher cave near the skybox marker."
+          }
+        },
+        {
+          "id": "sfls-b4-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "One bridge should be crossed intact.",
+            "2": "In the cave beyond the bridge marked for detonation.",
+            "3": "Ignore the detonation instruction, climb onto the bridge, cross it without destroying it, and search the cave on the far side."
+          }
+        },
+        {
+          "id": "sfls-b4-evidence-4",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #4",
+          "missable": false,
+          "levels": {
+            "1": "The impassable wire bridge has a lower bypass.",
+            "2": "In the lower cave reached by dropping right, shimming right, climbing back, then taking the RTL.",
+            "3": "At the blocked bridge, drop from its right edge, shimmy right, climb up, use the RTL on the bridge's right side, and descend to the cave."
+          }
+        },
+        {
+          "id": "sfls-b4-evidence-5",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #5",
+          "missable": false,
+          "levels": {
+            "1": "The previous lower route has a second side.",
+            "2": "On the ground inside the small cave beyond the curved wall opposite the prior pickup.",
+            "3": "Climb out from the fourth evidence, move to the opposite side, pass the short curved wall, and inspect the center of the small cave floor."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-b5",
+      "name": "Left Behind",
+      "location_cue": "A vehicle route lined with repeated stacks of long hollow barrels.",
+      "note": "This optional operation remains replayable after it is unlocked.",
+      "items": [
+        {
+          "id": "sfls-b5-unlock",
+          "type": "optional",
+          "safe_type": "Bonus mission",
+          "label": "Left Behind",
+          "missable": false,
+          "levels": {
+            "1": "A completion milestone opens this operation.",
+            "2": "Reach the fourth Elite Weapons Expert rating.",
+            "3": "Reach the fourth Elite Weapons Expert rating. Then select Left Behind from the bonus-operation list and complete it once."
+          }
+        },
+        {
+          "id": "sfls-b5-clear",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Left Behind Clear",
+          "missable": false,
+          "levels": {
+            "1": "Follow the operation to its results screen.",
+            "2": "Finish the operation once to unlock it for Mission Mode replay.",
+            "3": "Complete the operation from its opening checkpoint through the results screen. Afterward, use Mission Mode for evidence or performance cleanup without restarting the full story."
+          }
+        },
+        {
+          "id": "sfls-b5-evidence-1",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #1",
+          "missable": false,
+          "levels": {
+            "1": "The first long-barrel stack hides a pickup.",
+            "2": "Under the first set of hollow barrels after the third car.",
+            "3": "Pass the third car, shoot apart the first long-barrel stack, and collect the evidence beneath it."
+          }
+        },
+        {
+          "id": "sfls-b5-evidence-2",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #2",
+          "missable": false,
+          "levels": {
+            "1": "Repeat the search at the middle barrel stack.",
+            "2": "Under the second set of hollow barrels.",
+            "3": "Destroy the middle long-barrel group and search the newly exposed ground."
+          }
+        },
+        {
+          "id": "sfls-b5-evidence-3",
+          "type": "optional",
+          "safe_type": "Hidden evidence",
+          "label": "Hidden Evidence #3",
+          "missable": false,
+          "levels": {
+            "1": "The last matching stack holds the final pickup.",
+            "2": "Under the final set of hollow barrels.",
+            "3": "Continue to the last long-barrel group, shoot it apart, and take the evidence underneath."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-career",
+      "name": "Career Awards",
+      "location_cue": "The persistent Career menu and replayable single-player operations.",
+      "note": "All six counters persist on the profile; Sharpshooter credit requires Hard difficulty.",
+      "items": [
+        {
+          "id": "sfls-career-stealth",
+          "type": "optional",
+          "safe_type": "Career rating",
+          "label": "Stealth Combat Specialist",
+          "missable": false,
+          "levels": {
+            "1": "Build this meter through repeatable mission play.",
+            "2": "Accumulate stealth takedowns across Story or Mission Mode.",
+            "3": "Use short replayable operations to accumulate stealth takedowns. Confirm progress in the Career menu after each run; qualifying actions persist across completed attempts."
+          }
+        },
+        {
+          "id": "sfls-career-stealth-15",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "TK-9 Silenced",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Stealth Combat Specialist.",
+            "2": "Reach 15 qualifying stealth takedowns.",
+            "3": "Raise the Stealth Combat Specialist counter to 15 using stealth takedowns. Return to the Career menu after the threshold is recorded to confirm TK-9 Silenced has opened."
+          }
+        },
+        {
+          "id": "sfls-career-stealth-34",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "MDS A4 Silenced",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Stealth Combat Specialist.",
+            "2": "Reach 34 qualifying stealth takedowns.",
+            "3": "Raise the Stealth Combat Specialist counter to 34 using stealth takedowns. Return to the Career menu after the threshold is recorded to confirm MDS A4 Silenced has opened."
+          }
+        },
+        {
+          "id": "sfls-career-stealth-46",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Silenced .44",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Stealth Combat Specialist.",
+            "2": "Reach 46 qualifying stealth takedowns.",
+            "3": "Raise the Stealth Combat Specialist counter to 46 using stealth takedowns. Return to the Career menu after the threshold is recorded to confirm Silenced .44 has opened."
+          }
+        },
+        {
+          "id": "sfls-career-stealth-68",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "EPDD",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Stealth Combat Specialist.",
+            "2": "Reach 68 qualifying stealth takedowns.",
+            "3": "Raise the Stealth Combat Specialist counter to 68 using stealth takedowns. Return to the Career menu after the threshold is recorded to confirm EPDD has opened."
+          }
+        },
+        {
+          "id": "sfls-career-knife",
+          "type": "optional",
+          "safe_type": "Career rating",
+          "label": "Combat Knife Specialist",
+          "missable": false,
+          "levels": {
+            "1": "Build this meter through repeatable mission play.",
+            "2": "Accumulate combat-knife eliminations across Story or Mission Mode.",
+            "3": "Use short replayable operations to accumulate combat-knife eliminations. Confirm progress in the Career menu after each run; qualifying actions persist across completed attempts."
+          }
+        },
+        {
+          "id": "sfls-career-knife-50",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Flashbang Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Combat Knife Specialist.",
+            "2": "Reach 50 qualifying combat-knife eliminations.",
+            "3": "Raise the Combat Knife Specialist counter to 50 using combat-knife eliminations. Return to the Career menu after the threshold is recorded to confirm Flashbang Grenade has opened."
+          }
+        },
+        {
+          "id": "sfls-career-knife-150",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "C11",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Combat Knife Specialist.",
+            "2": "Reach 150 qualifying combat-knife eliminations.",
+            "3": "Raise the Combat Knife Specialist counter to 150 using combat-knife eliminations. Return to the Career menu after the threshold is recorded to confirm C11 has opened."
+          }
+        },
+        {
+          "id": "sfls-career-knife-274",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Chinese Type 56",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Combat Knife Specialist.",
+            "2": "Reach 274 qualifying combat-knife eliminations.",
+            "3": "Raise the Combat Knife Specialist counter to 274 using combat-knife eliminations. Return to the Career menu after the threshold is recorded to confirm Chinese Type 56 has opened."
+          }
+        },
+        {
+          "id": "sfls-career-knife-368",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Killing Time",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Combat Knife Specialist.",
+            "2": "Reach 368 qualifying combat-knife eliminations.",
+            "3": "Raise the Combat Knife Specialist counter to 368 using combat-knife eliminations. Return to the Career menu after the threshold is recorded to confirm Killing Time has opened."
+          }
+        },
+        {
+          "id": "sfls-career-dart",
+          "type": "optional",
+          "safe_type": "Career rating",
+          "label": "Elite Weapons Expert",
+          "missable": false,
+          "levels": {
+            "1": "Build this meter through repeatable mission play.",
+            "2": "Accumulate MB-150 dart eliminations across Story or Mission Mode.",
+            "3": "Use short replayable operations to accumulate MB-150 dart eliminations. Confirm progress in the Career menu after each run; qualifying actions persist across completed attempts."
+          }
+        },
+        {
+          "id": "sfls-career-dart-150",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Maximum Darts ×5",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Elite Weapons Expert.",
+            "2": "Reach 150 qualifying MB-150 dart eliminations.",
+            "3": "Raise the Elite Weapons Expert counter to 150 using MB-150 dart eliminations. Return to the Career menu after the threshold is recorded to confirm Maximum Darts ×5 has opened."
+          }
+        },
+        {
+          "id": "sfls-career-dart-280",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Maximum Darts ×8",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Elite Weapons Expert.",
+            "2": "Reach 280 qualifying MB-150 dart eliminations.",
+            "3": "Raise the Elite Weapons Expert counter to 280 using MB-150 dart eliminations. Return to the Career menu after the threshold is recorded to confirm Maximum Darts ×8 has opened."
+          }
+        },
+        {
+          "id": "sfls-career-dart-430",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Maximum Darts ×10",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Elite Weapons Expert.",
+            "2": "Reach 430 qualifying MB-150 dart eliminations.",
+            "3": "Raise the Elite Weapons Expert counter to 430 using MB-150 dart eliminations. Return to the Career menu after the threshold is recorded to confirm Maximum Darts ×10 has opened."
+          }
+        },
+        {
+          "id": "sfls-career-dart-565",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Left Behind",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Elite Weapons Expert.",
+            "2": "Reach 565 qualifying MB-150 dart eliminations.",
+            "3": "Raise the Elite Weapons Expert counter to 565 using MB-150 dart eliminations. Return to the Career menu after the threshold is recorded to confirm Left Behind has opened."
+          }
+        },
+        {
+          "id": "sfls-career-survival",
+          "type": "optional",
+          "safe_type": "Career rating",
+          "label": "Survival",
+          "missable": false,
+          "levels": {
+            "1": "Build this meter through repeatable mission play.",
+            "2": "Accumulate missions cleared without dying or retrying a checkpoint across Story or Mission Mode.",
+            "3": "Use short replayable operations to accumulate missions cleared without dying or retrying a checkpoint. Confirm progress in the Career menu after each run; qualifying actions persist across completed attempts."
+          }
+        },
+        {
+          "id": "sfls-career-survival-2",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Sawed-Off Pistol",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Survival.",
+            "2": "Reach 2 qualifying missions cleared without dying or retrying a checkpoint.",
+            "3": "Raise the Survival counter to 2 using missions cleared without dying or retrying a checkpoint. Return to the Career menu after the threshold is recorded to confirm Sawed-Off Pistol has opened."
+          }
+        },
+        {
+          "id": "sfls-career-survival-5",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Increased Health",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Survival.",
+            "2": "Reach 5 qualifying missions cleared without dying or retrying a checkpoint.",
+            "3": "Raise the Survival counter to 5 using missions cleared without dying or retrying a checkpoint. Return to the Career menu after the threshold is recorded to confirm Increased Health has opened."
+          }
+        },
+        {
+          "id": "sfls-career-survival-12",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "M4 Silenced",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Survival.",
+            "2": "Reach 12 qualifying missions cleared without dying or retrying a checkpoint.",
+            "3": "Raise the Survival counter to 12 using missions cleared without dying or retrying a checkpoint. Return to the Career menu after the threshold is recorded to confirm M4 Silenced has opened."
+          }
+        },
+        {
+          "id": "sfls-career-survival-22",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Calico HE",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Survival.",
+            "2": "Reach 22 qualifying missions cleared without dying or retrying a checkpoint.",
+            "3": "Raise the Survival counter to 22 using missions cleared without dying or retrying a checkpoint. Return to the Career menu after the threshold is recorded to confirm Calico HE has opened."
+          }
+        },
+        {
+          "id": "sfls-career-tactical",
+          "type": "optional",
+          "safe_type": "Career rating",
+          "label": "Tactical",
+          "missable": false,
+          "levels": {
+            "1": "Build this meter through repeatable mission play.",
+            "2": "Accumulate environment-assisted eliminations across Story or Mission Mode.",
+            "3": "Use short replayable operations to accumulate environment-assisted eliminations. Confirm progress in the Career menu after each run; qualifying actions persist across completed attempts."
+          }
+        },
+        {
+          "id": "sfls-career-tactical-20",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "USAS-12",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Tactical.",
+            "2": "Reach 20 qualifying environment-assisted eliminations.",
+            "3": "Raise the Tactical counter to 20 using environment-assisted eliminations. Return to the Career menu after the threshold is recorded to confirm USAS-12 has opened."
+          }
+        },
+        {
+          "id": "sfls-career-tactical-50",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Jerico-41",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Tactical.",
+            "2": "Reach 50 qualifying environment-assisted eliminations.",
+            "3": "Raise the Tactical counter to 50 using environment-assisted eliminations. Return to the Career menu after the threshold is recorded to confirm Jerico-41 has opened."
+          }
+        },
+        {
+          "id": "sfls-career-tactical-80",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "M67 Grenade",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Tactical.",
+            "2": "Reach 80 qualifying environment-assisted eliminations.",
+            "3": "Raise the Tactical counter to 80 using environment-assisted eliminations. Return to the Career menu after the threshold is recorded to confirm M67 Grenade has opened."
+          }
+        },
+        {
+          "id": "sfls-career-tactical-118",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Jackhammer HE",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Tactical.",
+            "2": "Reach 118 qualifying environment-assisted eliminations.",
+            "3": "Raise the Tactical counter to 118 using environment-assisted eliminations. Return to the Career menu after the threshold is recorded to confirm Jackhammer HE has opened."
+          }
+        },
+        {
+          "id": "sfls-career-sharpshooter",
+          "type": "optional",
+          "safe_type": "Career rating",
+          "label": "Sharpshooter",
+          "missable": false,
+          "levels": {
+            "1": "Build this meter through repeatable mission play.",
+            "2": "Accumulate qualifying precision eliminations on Hard across Story or Mission Mode.",
+            "3": "Use short replayable operations to accumulate qualifying precision eliminations on Hard. Confirm progress in the Career menu after each run; qualifying actions persist across completed attempts."
+          }
+        },
+        {
+          "id": "sfls-career-sharpshooter-122",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "SSP 90",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Sharpshooter.",
+            "2": "Reach 122 qualifying qualifying precision eliminations on Hard.",
+            "3": "Raise the Sharpshooter counter to 122 using qualifying precision eliminations on Hard. Return to the Career menu after the threshold is recorded to confirm SSP 90 has opened."
+          }
+        },
+        {
+          "id": "sfls-career-sharpshooter-244",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Over Under",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Sharpshooter.",
+            "2": "Reach 244 qualifying qualifying precision eliminations on Hard.",
+            "3": "Raise the Sharpshooter counter to 244 using qualifying precision eliminations on Hard. Return to the Career menu after the threshold is recorded to confirm Over Under has opened."
+          }
+        },
+        {
+          "id": "sfls-career-sharpshooter-366",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "Dual Wield",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Sharpshooter.",
+            "2": "Reach 366 qualifying qualifying precision eliminations on Hard.",
+            "3": "Raise the Sharpshooter counter to 366 using qualifying precision eliminations on Hard. Return to the Career menu after the threshold is recorded to confirm Dual Wield has opened."
+          }
+        },
+        {
+          "id": "sfls-career-sharpshooter-488",
+          "type": "optional",
+          "safe_type": "Unlock",
+          "label": "M82 BFG",
+          "missable": false,
+          "levels": {
+            "1": "Continue advancing Sharpshooter.",
+            "2": "Reach 488 qualifying qualifying precision eliminations on Hard.",
+            "3": "Raise the Sharpshooter counter to 488 using qualifying precision eliminations on Hard. Return to the Career menu after the threshold is recorded to confirm M82 BFG has opened."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-locked-files",
+      "name": "Locked Files",
+      "location_cue": "The single-player archive menu populated by hidden-evidence sets.",
+      "note": "The six story groups and one bonus group contain concept art, audio, and bonus movies.",
+      "items": [
+        {
+          "id": "sfls-locked-file-e1",
+          "type": "optional",
+          "safe_type": "Archive unlock",
+          "label": "Episode 1 Locked File",
+          "missable": false,
+          "levels": {
+            "1": "Finish the episode's evidence set.",
+            "2": "Collect all 13 hidden-evidence records across Episode 1.",
+            "3": "Use Mission Mode until every evidence slot for Episode 1 is filled, then open Locked Files to view its concept art, audio, and bonus-movie entries."
+          }
+        },
+        {
+          "id": "sfls-locked-file-e2",
+          "type": "optional",
+          "safe_type": "Archive unlock",
+          "label": "Episode 2 Locked File",
+          "missable": false,
+          "levels": {
+            "1": "Finish the episode's evidence set.",
+            "2": "Collect all 12 hidden-evidence records across Episode 2.",
+            "3": "Use Mission Mode until every evidence slot for Episode 2 is filled, then open Locked Files to view its concept art, audio, and bonus-movie entries."
+          }
+        },
+        {
+          "id": "sfls-locked-file-e3",
+          "type": "optional",
+          "safe_type": "Archive unlock",
+          "label": "Episode 3 Locked File",
+          "missable": false,
+          "levels": {
+            "1": "Finish the episode's evidence set.",
+            "2": "Collect all 9 hidden-evidence records across Episode 3.",
+            "3": "Use Mission Mode until every evidence slot for Episode 3 is filled, then open Locked Files to view its concept art, audio, and bonus-movie entries."
+          }
+        },
+        {
+          "id": "sfls-locked-file-e4",
+          "type": "optional",
+          "safe_type": "Archive unlock",
+          "label": "Episode 4 Locked File",
+          "missable": false,
+          "levels": {
+            "1": "Finish the episode's evidence set.",
+            "2": "Collect all 9 hidden-evidence records across Episode 4.",
+            "3": "Use Mission Mode until every evidence slot for Episode 4 is filled, then open Locked Files to view its concept art, audio, and bonus-movie entries."
+          }
+        },
+        {
+          "id": "sfls-locked-file-e5",
+          "type": "optional",
+          "safe_type": "Archive unlock",
+          "label": "Episode 5 Locked File",
+          "missable": false,
+          "levels": {
+            "1": "Finish the episode's evidence set.",
+            "2": "Collect all 11 hidden-evidence records across Episode 5.",
+            "3": "Use Mission Mode until every evidence slot for Episode 5 is filled, then open Locked Files to view its concept art, audio, and bonus-movie entries."
+          }
+        },
+        {
+          "id": "sfls-locked-file-e6",
+          "type": "optional",
+          "safe_type": "Archive unlock",
+          "label": "Episode 6 Locked File",
+          "missable": false,
+          "levels": {
+            "1": "Finish the episode's evidence set.",
+            "2": "Collect all 14 hidden-evidence records across Episode 6.",
+            "3": "Use Mission Mode until every evidence slot for Episode 6 is filled, then open Locked Files to view its concept art, audio, and bonus-movie entries."
+          }
+        },
+        {
+          "id": "sfls-locked-file-bonus",
+          "type": "optional",
+          "safe_type": "Archive unlock",
+          "label": "Bonus Locked File",
+          "missable": false,
+          "levels": {
+            "1": "The optional operations share one archive group.",
+            "2": "Collect all sixteen hidden-evidence records from the five bonus operations.",
+            "3": "Complete the evidence sets in Killing Time, Lian's First Time, Shadowed, Behind the Scenes, and Left Behind. Open the Bonus Locked File after all sixteen slots are filled."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-multiplayer",
+      "name": "PSP Multiplayer",
+      "location_cue": "The Multiplayer menu, with retired Infrastructure and reachable local Ad Hoc branches.",
+      "note": "Unavailable infrastructure records are preserved honestly and never presented as currently earnable.",
+      "items": [
+        {
+          "id": "sfls-online-retired",
+          "type": "optional",
+          "safe_type": "Network",
+          "label": "Official Infrastructure Retirement",
+          "missable": false,
+          "levels": {
+            "1": "Separate historical online progress from reachable local play.",
+            "2": "The original infrastructure service is no longer operating.",
+            "3": "Official Logan's Shadow infrastructure service ended on 27 June 2012. As of 28 July 2026, the preservation service checked for this project does not list Logan's Shadow, so infrastructure ranks and hosted-community records are unavailable rather than routine completion requirements."
+          }
+        },
+        {
+          "id": "sfls-adhoc-boundary",
+          "type": "optional",
+          "safe_type": "Network",
+          "label": "Ad Hoc Availability",
+          "missable": false,
+          "levels": {
+            "1": "Local wireless play still represents the reachable multiplayer branch.",
+            "2": "Use PPSSPP networking with real partners for Ad Hoc sessions.",
+            "3": "Configure PPSSPP networking consistently for every participant, use legally dumped matching game versions, and test a private Ad Hoc lobby. Ad Hoc supplies immediate top-rank loadouts but does not recreate infrastructure progression, boards, cells, mail, or global matchmaking."
+          }
+        },
+        {
+          "id": "sfls-map-casino",
+          "type": "optional",
+          "safe_type": "Multiplayer map",
+          "label": "Casino",
+          "missable": false,
+          "levels": {
+            "1": "Sample this arena when a local lobby is available.",
+            "2": "Start and finish a supported Ad Hoc match on Casino.",
+            "3": "Create or join an Ad Hoc lobby, select Casino with any rule set the local menu permits, and play through the match-end screen. If the map/mode pairing is absent from Ad Hoc, record it as infrastructure-only and unavailable."
+          }
+        },
+        {
+          "id": "sfls-map-shanty-town",
+          "type": "optional",
+          "safe_type": "Multiplayer map",
+          "label": "Shanty Town",
+          "missable": false,
+          "levels": {
+            "1": "Sample this arena when a local lobby is available.",
+            "2": "Start and finish a supported Ad Hoc match on Shanty Town.",
+            "3": "Create or join an Ad Hoc lobby, select Shanty Town with any rule set the local menu permits, and play through the match-end screen. If the map/mode pairing is absent from Ad Hoc, record it as infrastructure-only and unavailable."
+          }
+        },
+        {
+          "id": "sfls-map-depot",
+          "type": "optional",
+          "safe_type": "Multiplayer map",
+          "label": "Depot",
+          "missable": false,
+          "levels": {
+            "1": "Sample this arena when a local lobby is available.",
+            "2": "Start and finish a supported Ad Hoc match on Depot.",
+            "3": "Create or join an Ad Hoc lobby, select Depot with any rule set the local menu permits, and play through the match-end screen. If the map/mode pairing is absent from Ad Hoc, record it as infrastructure-only and unavailable."
+          }
+        },
+        {
+          "id": "sfls-map-refinery",
+          "type": "optional",
+          "safe_type": "Multiplayer map",
+          "label": "Refinery",
+          "missable": false,
+          "levels": {
+            "1": "Sample this arena when a local lobby is available.",
+            "2": "Start and finish a supported Ad Hoc match on Refinery.",
+            "3": "Create or join an Ad Hoc lobby, select Refinery with any rule set the local menu permits, and play through the match-end screen. If the map/mode pairing is absent from Ad Hoc, record it as infrastructure-only and unavailable."
+          }
+        },
+        {
+          "id": "sfls-map-detroit",
+          "type": "optional",
+          "safe_type": "Multiplayer map",
+          "label": "Detroit",
+          "missable": false,
+          "levels": {
+            "1": "Sample this arena when a local lobby is available.",
+            "2": "Start and finish a supported Ad Hoc match on Detroit.",
+            "3": "Create or join an Ad Hoc lobby, select Detroit with any rule set the local menu permits, and play through the match-end screen. If the map/mode pairing is absent from Ad Hoc, record it as infrastructure-only and unavailable."
+          }
+        },
+        {
+          "id": "sfls-map-canyon",
+          "type": "optional",
+          "safe_type": "Multiplayer map",
+          "label": "Canyon",
+          "missable": false,
+          "levels": {
+            "1": "Sample this arena when a local lobby is available.",
+            "2": "Start and finish a supported Ad Hoc match on Canyon.",
+            "3": "Create or join an Ad Hoc lobby, select Canyon with any rule set the local menu permits, and play through the match-end screen. If the map/mode pairing is absent from Ad Hoc, record it as infrastructure-only and unavailable."
+          }
+        },
+        {
+          "id": "sfls-map-village",
+          "type": "optional",
+          "safe_type": "Multiplayer map",
+          "label": "Village",
+          "missable": false,
+          "levels": {
+            "1": "Sample this arena when a local lobby is available.",
+            "2": "Start and finish a supported Ad Hoc match on Village.",
+            "3": "Create or join an Ad Hoc lobby, select Village with any rule set the local menu permits, and play through the match-end screen. If the map/mode pairing is absent from Ad Hoc, record it as infrastructure-only and unavailable."
+          }
+        },
+        {
+          "id": "sfls-mode-deathmatch",
+          "type": "optional",
+          "safe_type": "Multiplayer mode",
+          "label": "Deathmatch",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct multiplayer rule set.",
+            "2": "Complete one supported Ad Hoc match of Deathmatch.",
+            "3": "With at least one real partner, select Deathmatch, score individually against every other participant, and remain through the final results. If Ad Hoc does not expose this rule set, mark it as historically infrastructure-only."
+          }
+        },
+        {
+          "id": "sfls-mode-team-deathmatch",
+          "type": "optional",
+          "safe_type": "Multiplayer mode",
+          "label": "Team Deathmatch",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct multiplayer rule set.",
+            "2": "Complete one supported Ad Hoc match of Team Deathmatch.",
+            "3": "With at least one real partner, select Team Deathmatch, divide into two sides and finish with the stronger team score, and remain through the final results. If Ad Hoc does not expose this rule set, mark it as historically infrastructure-only."
+          }
+        },
+        {
+          "id": "sfls-mode-retrieval",
+          "type": "optional",
+          "safe_type": "Multiplayer mode",
+          "label": "Retrieval",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct multiplayer rule set.",
+            "2": "Complete one supported Ad Hoc match of Retrieval.",
+            "3": "With at least one real partner, select Retrieval, carry the objective beacon to its scoring point, and remain through the final results. If Ad Hoc does not expose this rule set, mark it as historically infrastructure-only."
+          }
+        },
+        {
+          "id": "sfls-mode-sabotage",
+          "type": "optional",
+          "safe_type": "Multiplayer mode",
+          "label": "Sabotage",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct multiplayer rule set.",
+            "2": "Complete one supported Ad Hoc match of Sabotage.",
+            "3": "With at least one real partner, select Sabotage, obtain the arming code and detonate the opposing warhead, and remain through the final results. If Ad Hoc does not expose this rule set, mark it as historically infrastructure-only."
+          }
+        },
+        {
+          "id": "sfls-mode-rogue-agent",
+          "type": "optional",
+          "safe_type": "Multiplayer mode",
+          "label": "Rogue Agent",
+          "missable": false,
+          "levels": {
+            "1": "Try each distinct multiplayer rule set.",
+            "2": "Complete one supported Ad Hoc match of Rogue Agent.",
+            "3": "With at least one real partner, select Rogue Agent, control the designated role while the rest of the lobby contests it, and remain through the final results. If Ad Hoc does not expose this rule set, mark it as historically infrastructure-only."
+          }
+        },
+        {
+          "id": "sfls-rank-r0",
+          "type": "optional",
+          "safe_type": "Online rank",
+          "label": "R0",
+          "missable": false,
+          "levels": {
+            "1": "This historical rank belongs to the retired service.",
+            "2": "Historical infrastructure threshold: 0 experience.",
+            "3": "This rank belonged to the retired infrastructure profile. Its recorded threshold was 0 experience; it cannot be earned through ordinary Ad Hoc play today."
+          }
+        },
+        {
+          "id": "sfls-rank-r1",
+          "type": "optional",
+          "safe_type": "Online rank",
+          "label": "R1",
+          "missable": false,
+          "levels": {
+            "1": "This historical rank belongs to the retired service.",
+            "2": "Historical infrastructure threshold: 400 experience.",
+            "3": "This rank belonged to the retired infrastructure profile. Its recorded threshold was 400 experience; it cannot be earned through ordinary Ad Hoc play today."
+          }
+        },
+        {
+          "id": "sfls-rank-r2",
+          "type": "optional",
+          "safe_type": "Online rank",
+          "label": "R2",
+          "missable": false,
+          "levels": {
+            "1": "This historical rank belongs to the retired service.",
+            "2": "Historical infrastructure threshold: 1400 experience.",
+            "3": "This rank belonged to the retired infrastructure profile. Its recorded threshold was 1400 experience; it cannot be earned through ordinary Ad Hoc play today."
+          }
+        },
+        {
+          "id": "sfls-rank-r3",
+          "type": "optional",
+          "safe_type": "Online rank",
+          "label": "R3",
+          "missable": false,
+          "levels": {
+            "1": "This historical rank belongs to the retired service.",
+            "2": "Historical infrastructure threshold: 2500 experience.",
+            "3": "This rank belonged to the retired infrastructure profile. Its recorded threshold was 2500 experience; it cannot be earned through ordinary Ad Hoc play today."
+          }
+        },
+        {
+          "id": "sfls-rank-o1",
+          "type": "optional",
+          "safe_type": "Online rank",
+          "label": "O1",
+          "missable": false,
+          "levels": {
+            "1": "This historical rank belongs to the retired service.",
+            "2": "Historical infrastructure threshold: 5000 experience.",
+            "3": "This rank belonged to the retired infrastructure profile. Its recorded threshold was 5000 experience; it cannot be earned through ordinary Ad Hoc play today."
+          }
+        },
+        {
+          "id": "sfls-rank-o2",
+          "type": "optional",
+          "safe_type": "Online rank",
+          "label": "O2",
+          "missable": false,
+          "levels": {
+            "1": "This historical rank belongs to the retired service.",
+            "2": "The surviving corpus confirms the rank step but not a safe numeric threshold.",
+            "3": "This was an infrastructure-only progression step. The original service is retired, Ad Hoc grants the top loadout without rank progression, and no verified threshold is supplied here."
+          }
+        },
+        {
+          "id": "sfls-rank-o3",
+          "type": "optional",
+          "safe_type": "Online rank",
+          "label": "O3",
+          "missable": false,
+          "levels": {
+            "1": "This historical rank belongs to the retired service.",
+            "2": "The surviving corpus confirms the rank step but not a safe numeric threshold.",
+            "3": "This was an infrastructure-only progression step. The original service is retired, Ad Hoc grants the top loadout without rank progression, and no verified threshold is supplied here."
+          }
+        },
+        {
+          "id": "sfls-rank-o4",
+          "type": "optional",
+          "safe_type": "Online rank",
+          "label": "O4",
+          "missable": false,
+          "levels": {
+            "1": "This historical rank belongs to the retired service.",
+            "2": "The surviving corpus confirms the rank step but not a safe numeric threshold.",
+            "3": "This was an infrastructure-only progression step. The original service is retired, Ad Hoc grants the top loadout without rank progression, and no verified threshold is supplied here."
+          }
+        },
+        {
+          "id": "sfls-rank-t1",
+          "type": "optional",
+          "safe_type": "Online rank",
+          "label": "T1",
+          "missable": false,
+          "levels": {
+            "1": "This historical rank belongs to the retired service.",
+            "2": "The surviving corpus confirms the rank step but not a safe numeric threshold.",
+            "3": "This was an infrastructure-only progression step. The original service is retired, Ad Hoc grants the top loadout without rank progression, and no verified threshold is supplied here."
+          }
+        },
+        {
+          "id": "sfls-rank-t2",
+          "type": "optional",
+          "safe_type": "Online rank",
+          "label": "T2",
+          "missable": false,
+          "levels": {
+            "1": "This historical rank belongs to the retired service.",
+            "2": "The surviving corpus confirms the rank step but not a safe numeric threshold.",
+            "3": "This was an infrastructure-only progression step. The original service is retired, Ad Hoc grants the top loadout without rank progression, and no verified threshold is supplied here."
+          }
+        },
+        {
+          "id": "sfls-rank-t3",
+          "type": "optional",
+          "safe_type": "Online rank",
+          "label": "T3",
+          "missable": false,
+          "levels": {
+            "1": "This historical rank belongs to the retired service.",
+            "2": "The surviving corpus confirms the rank step but not a safe numeric threshold.",
+            "3": "This was an infrastructure-only progression step. The original service is retired, Ad Hoc grants the top loadout without rank progression, and no verified threshold is supplied here."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-combat-ops-preview",
+      "name": "Combat Ops Sneak Preview",
+      "location_cue": "The separate demo entry on Logan's Shadow's main menu.",
+      "note": "This preview is included on the Logan's Shadow disc image; the full Combat Ops release remains a separate game.",
+      "items": [
+        {
+          "id": "sfls-combat-ops-demo-launch",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Launch the Sneak Preview",
+          "missable": false,
+          "levels": {
+            "1": "Open the extra main-menu branch.",
+            "2": "Select Combat Ops (Sneak Preview) from the title menu.",
+            "3": "Open the Combat Ops Sneak Preview and reach its Ad Hoc demo lobby. This verifies the bundled preview without treating the separately released full game as Logan's Shadow content."
+          }
+        },
+        {
+          "id": "sfls-combat-ops-demo-mission",
+          "type": "optional",
+          "safe_type": "Mode",
+          "label": "Create a Demo Mission",
+          "missable": false,
+          "levels": {
+            "1": "The preview includes a small mission editor.",
+            "2": "Build and save one mission using the bundled modifier.",
+            "3": "Choose Create New Mission, select an available area, set each required operation and combat option, save the mission, then launch it with a real Ad Hoc partner if one is available."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sfls-final-audit",
+      "name": "Final Completion Audit",
+      "location_cue": "The profile, Mission Mode, Career, Locked Files, and bonus-operation menus.",
+      "note": "Infrastructure-only records remain documented as unavailable after official retirement.",
+      "items": [
+        {
+          "id": "sfls-final-audit-item",
+          "type": "optional",
+          "safe_type": "Final audit",
+          "label": "Single-Player Completion Record",
+          "missable": false,
+          "levels": {
+            "1": "Check every persistent menu before retiring the save.",
+            "2": "Confirm both story difficulties, every mission, all 85 evidence records, seven Locked Files, five bonus operations, and all Career rewards.",
+            "3": "Verify 22 story-operation clears on both required difficulty routes, five training clears, 85 total evidence records including the training pickup, five bonus-operation clears, all seven Locked Files, all six Career tracks at their fourth thresholds, and every associated loadout reward. Keep the retired infrastructure branch labeled unavailable."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "god-of-war-3-remastered",
+  "game": "God of War III Remastered",
+  "target": "Spoiler-free 100% completion of the PS4 remaster through PS4 or PS5 compatibility",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-16",
+  "areas": [
+    {
+      "id": "wrapper-setup",
+      "name": "Collection and Remaster Setup",
+      "location_cue": "The PS4 remaster title screen, PS5 compatibility information, save-data utility, bonus menus, and photo-mode controls.",
+      "note": "The remaster retains the standalone campaign and adds presentation improvements rather than a second gameplay route.",
+      "items": [
+        {
+          "id": "use-ps4-remaster",
+          "type": "interaction",
+          "safe_type": "Platform Route",
+          "label": "Use God of War III Remastered",
+          "missable": false,
+          "levels": {
+            "1": "Choose the highest-fidelity official version selected in the catalog.",
+            "2": "Run the PS4 remaster on PS4 or through PS5 compatibility.",
+            "3": "Install the current PS4 build, launch it on PS4 or PS5, verify the remaster title screen, and keep console-level backups of the save data."
+          }
+        },
+        {
+          "id": "verify-remaster-output",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Verify the Remastered Presentation",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the remaster build is active rather than the PS3 original.",
+            "2": "Check the console game information and display output.",
+            "3": "Verify the installed title is God of War III Remastered, use its intended high-resolution and frame-rate mode, and avoid gameplay-altering accessibility or external patches during audits."
+          }
+        },
+        {
+          "id": "separate-remaster-save",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Preserve Remaster Clear Data",
+          "missable": false,
+          "levels": {
+            "1": "Difficulty, challenge, costume, and bonus states depend on the remaster save.",
+            "2": "Create rotating backups before and after each major completion milestone.",
+            "3": "Keep a clean campaign backup, completed difficulty data, challenge progress, costume unlocks, and bonus-menu state in separate console backups."
+          }
+        }
+      ]
+    },
+    {
+      "id": "component-god-of-war-3",
+      "name": "God of War III Component",
+      "location_cue": "The God of War III entry in the package selector and its own load, challenge, and bonus menus.",
+      "note": "All gameplay requirements live in the verified standalone `god-of-war-3` pack.",
+      "items": [
+        {
+          "id": "complete-god-of-war-3",
+          "type": "interaction",
+          "safe_type": "Component Pack",
+          "label": "Complete God of War III",
+          "missable": false,
+          "levels": {
+            "1": "Treat this included title as a complete standalone project.",
+            "2": "Finish every requirement in `game_guide/out/god-of-war-3/pack.READY.json`.",
+            "3": "Complete the standalone God of War III pack in full, including its campaign clears, finite collectibles, upgrades, difficulty-gated rewards, challenges, secrets, and post-clear menus. Preserve its completed save separately."
+          }
+        },
+        {
+          "id": "verify-god-of-war-3-save",
+          "type": "interaction",
+          "safe_type": "Save Check",
+          "label": "Verify God of War III Clear Data",
+          "missable": false,
+          "levels": {
+            "1": "Return to the package selector only after its persistent unlocks are saved.",
+            "2": "Reload the completed component and inspect its post-clear menus.",
+            "3": "Load the completed God of War III data, open every challenge, replay, costume, treasure, arena, or bonus menu used by its standalone pack, exit normally, then reload once to confirm persistence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "wrapper-specific-extras",
+      "name": "Wrapper-Specific Extras",
+      "location_cue": "The package launcher, system display settings, capture tools, entitlement list, and title-specific bonus menus.",
+      "note": "These checks belong to the wrapper or remaster rather than a constituent campaign.",
+      "items": [
+        {
+          "id": "use-photo-mode",
+          "type": "interaction",
+          "safe_type": "Presentation Mode",
+          "label": "Use Photo Mode",
+          "missable": false,
+          "levels": {
+            "1": "The remaster adds a dedicated capture feature.",
+            "2": "Open Photo Mode during normal gameplay.",
+            "3": "Pause in a controllable gameplay scene, enter Photo Mode, adjust at least one camera or filter control, save a console capture, and return without changing gameplay progress."
+          }
+        },
+        {
+          "id": "verify-remaster-bonus-data",
+          "type": "interaction",
+          "safe_type": "Bonus Menu",
+          "label": "Verify Remaster Bonus Data",
+          "missable": false,
+          "levels": {
+            "1": "The remaster should retain the standalone game's persistent unlock menus.",
+            "2": "Reload the completed save and inspect every bonus category.",
+            "3": "Verify the hardest clear, challenges, costumes, combat arena, videos, and other standalone pack unlocks remain accessible after exiting and relaunching the remaster."
+          }
+        }
+      ]
+    },
+    {
+      "id": "wrapper-final-audit",
+      "name": "Final Wrapper Audit",
+      "location_cue": "The package selector and every included title's load and bonus menus.",
+      "note": "The wrapper is complete only when every constituent standalone pack remains complete.",
+      "items": [
+        {
+          "id": "reload-all-components",
+          "type": "interaction",
+          "safe_type": "Final Audit",
+          "label": "Reload Every Completed Component",
+          "missable": false,
+          "levels": {
+            "1": "A final pass catches mixed saves, missing entitlements, or lost clear data.",
+            "2": "Launch every included title and reload its completed save.",
+            "3": "Open each component in turn, verify its standalone completion menus and inventory, return cleanly to the package selector, and retain separate backups for every game."
+          }
+        }
+      ]
+    }
+  ]
+}

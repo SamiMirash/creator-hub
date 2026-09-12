@@ -1,0 +1,1305 @@
+{
+ "id": "dr-robotniks-mean-bean-machine-1993-game-gear",
+ "game": "Dr. Robotnik's Mean Bean Machine (1993, Game Gear)",
+ "target": "Spoiler-free full-system completion of the original Game Gear cartridge: every mode, board rule, linked setting, Exercise helper, Puzzle lesson, hidden menu, and version-specific presentation check",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-26",
+ "areas": [
+  {
+   "id": "mean-bean-gg-cartridge",
+   "name": "Cartridge Route and Safeguards",
+   "location_cue": "The compact title screen before any mode is selected.",
+   "note": "Confirm the handheld build and protect every volatile record.",
+   "save_backup": {
+    "title": "Create a clean title state",
+    "why": "The cartridge contains no persistent save memory.",
+    "detail": "Protect one title slot and use separate rolling states for each mode."
+   },
+   "point_of_no_return": {
+    "title": "Power-off erases score evidence",
+    "why": "Passwords restore position but not score tables.",
+    "detail": "Record every password and wanted score before ending the emulation session."
+   },
+   "items": [
+    {
+     "id": "mean-bean-gg-verify-rom",
+     "type": "optional",
+     "safe_type": "Setup check",
+     "label": "Verify the Game Gear Cartridge",
+     "missable": false,
+     "levels": {
+      "1": "Confirm the preserved handheld build first.",
+      "2": "Use the original USA/Europe Game Gear cartridge from the selected archive.",
+      "3": "Verify a 262,144-byte ROM with SHA-1 C36BDA8A86994D430506B196922EC1365622E560. Keep the Mega Drive guide separate and do not substitute the later Master System port."
+     }
+    },
+    {
+     "id": "mean-bean-gg-clean-state",
+     "type": "optional",
+     "safe_type": "Save safeguard",
+     "label": "Preserve a Clean Title State",
+     "missable": true,
+     "levels": {
+      "1": "Keep an untouched return point before entering modes.",
+      "2": "Create one protected emulator state on the complete title screen.",
+      "3": "Never overwrite that slot. Use separate rolling states for Scenario, Exercise, Puzzle lessons, password experiments, and cable-mode testing."
+     }
+    },
+    {
+     "id": "mean-bean-gg-password-log",
+     "type": "optional",
+     "safe_type": "Progress record",
+     "label": "Maintain a Password Log",
+     "missable": true,
+     "levels": {
+      "1": "The cartridge expects progress to leave the screen.",
+      "2": "Write down every four-symbol password immediately after it appears.",
+      "3": "Record the mode, completed board or lesson, and all four bean symbols. Passwords restore position, but not volatile scores or the exact active board state."
+     }
+    },
+    {
+     "id": "mean-bean-gg-score-record",
+     "type": "optional",
+     "safe_type": "Progress record",
+     "label": "Capture Volatile Scores",
+     "missable": true,
+     "levels": {
+      "1": "Preserve any record you care about before closing.",
+      "2": "Photograph the high-score table after Scenario or Exercise attempts.",
+      "3": "The cartridge has no persistent memory. Capture the table and initials before powering off or replacing the running session with a clean state."
+     }
+    },
+    {
+     "id": "mean-bean-gg-title-opening",
+     "type": "secret",
+     "safe_type": "Presentation check",
+     "label": "Watch the Complete Opening",
+     "missable": true,
+     "levels": {
+      "1": "Let the title sequence breathe before pressing Start.",
+      "2": "Remain idle through the title animation and opening demonstration once.",
+      "3": "Boot from the verified cartridge, avoid inputs until the title prompt settles, and watch the full non-interactive sequence. Return to the clean title state afterward."
+     }
+    },
+    {
+     "id": "mean-bean-gg-route-boundary",
+     "type": "optional",
+     "safe_type": "Version boundary",
+     "label": "Keep the Handheld Route Separate",
+     "missable": false,
+     "levels": {
+      "1": "This version contributes more than a smaller screen.",
+      "2": "Track its Puzzle notebook, cable mode, late machinery art, and blue credits presentation here.",
+      "3": "Do not merge these checks into the Genesis pack. The Master System port is also excluded because it removes Game Gear artwork and introduces a password fault."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-gg-rules",
+   "name": "Core Board Rules",
+   "location_cue": "Any active six-column dungeon with the next-pair window visible.",
+   "note": "Learn the stable mechanics before tackling fixed lessons or faster boards.",
+   "save_backup": {
+    "title": "Keep a pre-move practice state",
+    "why": "Rule experiments can accidentally finish or lose a board.",
+    "detail": "Use an early disposable board and reload after each mechanic check."
+   },
+   "point_of_no_return": {
+    "title": "The top entry ends the board",
+    "why": "A blocked arrival position causes immediate failure.",
+    "detail": "Clear tall central stacks before testing advanced chains near the ceiling."
+   },
+   "items": [
+    {
+     "id": "mean-bean-gg-controls",
+     "type": "interaction",
+     "safe_type": "Control check",
+     "label": "Confirm Every Board Control",
+     "missable": false,
+     "levels": {
+      "1": "Test movement and both rotation directions safely.",
+      "2": "Use the D-pad for movement, Down for faster descent, Button 1 for left rotation, and Button 2 for right rotation.",
+      "3": "Open an early board, move a falling pair both ways, accelerate it, rotate once with each face button, and pause with Start. Resume without abandoning the board."
+     }
+    },
+    {
+     "id": "mean-bean-gg-clear-four",
+     "type": "interaction",
+     "safe_type": "Board rule",
+     "label": "Make a Four-Bean Clear",
+     "missable": false,
+     "levels": {
+      "1": "Start with the game's fundamental colour rule.",
+      "2": "Join four matching beans through horizontal or vertical contact.",
+      "3": "Build any connected group of four or more identical colours. Corners alone do not connect, so confirm that every member shares an edge before locking the trigger pair."
+     }
+    },
+    {
+     "id": "mean-bean-gg-split-pair",
+     "type": "interaction",
+     "safe_type": "Board rule",
+     "label": "Use an Uneven Landing",
+     "missable": false,
+     "levels": {
+      "1": "A horizontal pair can separate across different heights.",
+      "2": "Lay a pair across columns whose stacks end at different rows.",
+      "3": "Rotate the pair horizontally before it lands. The supported half stops first while the other continues downward, letting one drop place two colours at separate heights."
+     }
+    },
+    {
+     "id": "mean-bean-gg-refugees",
+     "type": "interaction",
+     "safe_type": "Board rule",
+     "label": "Remove Refugee Beans",
+     "missable": false,
+     "levels": {
+      "1": "Neutral blockers respond to a nearby colour clear.",
+      "2": "Clear a coloured group sharing an edge with at least one Refugee Bean.",
+      "3": "Do not try to match Refugees together. Form a normal four-colour group beside them; every neutral blocker touching that clearing group disappears during the same resolution."
+     }
+    },
+    {
+     "id": "mean-bean-gg-chain",
+     "type": "interaction",
+     "safe_type": "Board rule",
+     "label": "Create a Chain Reaction",
+     "missable": false,
+     "levels": {
+      "1": "Prepare one clear to drop another into place.",
+      "2": "Arrange two colour groups so the first removal completes the second.",
+      "3": "Build the lower trigger without prematurely completing the upper colour. Clear the first group, let gravity join the next four, and wait for every link to resolve before placing again."
+     }
+    },
+    {
+     "id": "mean-bean-gg-next-pair",
+     "type": "interaction",
+     "safe_type": "Board reading",
+     "label": "Read the Next-Pair Preview",
+     "missable": false,
+     "levels": {
+      "1": "Plan one placement before the pair enters.",
+      "2": "Check the small preview beside the board before committing the current drop.",
+      "3": "Choose a safe landing for the active pair while accounting for both colours in the preview. Preserve at least one flexible lane when neither upcoming colour helps your current chain."
+     }
+    },
+    {
+     "id": "mean-bean-gg-loss-cell",
+     "type": "interaction",
+     "safe_type": "Failure rule",
+     "label": "Protect the Top Entry",
+     "missable": true,
+     "levels": {
+      "1": "Leave the spawning route clear as the board rises.",
+      "2": "Do not let settled beans block the board's top entry position.",
+      "3": "Keep the central arrival lanes below the ceiling. A locked piece at the entry ends the board even if another lane remains open, so clear upward-growing towers early."
+     }
+    },
+    {
+     "id": "mean-bean-gg-pause-check",
+     "type": "interaction",
+     "safe_type": "Menu check",
+     "label": "Test Pause Without Quitting",
+     "missable": true,
+     "levels": {
+      "1": "The pause choice changes in lesson play.",
+      "2": "Press Start once in a normal board and once in a Puzzle lesson.",
+      "3": "Resume the normal board directly. In Puzzle Mode, choose No at the quit prompt to continue; choosing Yes exposes the lesson password and restart-or-exit choice."
+     }
+    },
+    {
+     "id": "mean-bean-gg-board-recovery",
+     "type": "optional",
+     "safe_type": "Recovery drill",
+     "label": "Recover From a Tall Board",
+     "missable": true,
+     "levels": {
+      "1": "Practice creating space before the ceiling becomes urgent.",
+      "2": "On a safe state, let one side rise and clear from underneath it.",
+      "3": "Keep the entry lanes open, prepare a low colour group beside any Refugees, and use its collapse to shorten the tower. Reload the practice state after proving the recovery."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-gg-scenario",
+   "name": "Scenario Boards",
+   "location_cue": "The single-player board route reached through Scenario on the title menu.",
+   "note": "Track every mechanically distinct opponent without exposing identities or closing events.",
+   "save_backup": {
+    "title": "Save before every new board",
+    "why": "Passwords omit the exact current board and score.",
+    "detail": "Keep a pre-board state plus the displayed password from the previous victory."
+   },
+   "point_of_no_return": {
+    "title": "Victory advances immediately",
+    "why": "The next board follows the password page.",
+    "detail": "Record the password before confirming, then preserve the closing sequence after the final win."
+   },
+   "items": [
+    {
+     "id": "mean-bean-gg-scenario-start",
+     "type": "optional",
+     "safe_type": "Scenario route",
+     "label": "Start a Fresh Scenario",
+     "missable": true,
+     "levels": {
+      "1": "Begin this route from its own New Game entry.",
+      "2": "Select Scenario, choose New Game, and keep a dedicated rolling state.",
+      "3": "Start from the first board and do not use Continue for the completion pass. After every victory, record the displayed password before advancing."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-retry",
+     "type": "interaction",
+     "safe_type": "Retry safeguard",
+     "label": "Use the Retry Window",
+     "missable": true,
+     "levels": {
+      "1": "A loss offers a brief same-board decision.",
+      "2": "Choose Yes before the retry countdown expires.",
+      "3": "After losing, keep the selector on Yes and confirm within ten seconds to replay that board. If the window closes, use your recorded password from the mode's Continue screen."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-erratic-focus",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Erratic Focus Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using one colour; keep the entry lanes open while preparing your response.",
+      "3": "Keep the floor low and punish the scattered build with any early two-link chain."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-row-builder",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Row-Building Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using flat rows; keep the entry lanes open while preparing your response.",
+      "3": "Attack before its horizontal setup closes; short repeated chains disrupt the planned row pattern."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-neat-clears",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Rapid Small-Clear Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using quick tidy clears; keep the entry lanes open while preparing your response.",
+      "3": "Build one compact two-link chain while maintaining open columns; send pressure before its steady clears accumulate."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-edge-towers",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Dual Edge-Tower Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using both outer edges; keep the entry lanes open while preparing your response.",
+      "3": "Work through the centre and send Refugees into the narrow side towers before they can be converted into chains."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-quick-edge",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Fast Edge-Clear Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using fast clears and edge stacks; keep the entry lanes open while preparing your response.",
+      "3": "Use low central groups and frequent small attacks; avoid racing its taller edge construction."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-low-spread",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Low Spreading Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using a broad low field; keep the entry lanes open while preparing your response.",
+      "3": "Stack vertically enough to create a chain, then attack repeatedly so its wide floor cannot recover cleanly."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-large-combo",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Large-Combo Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using a deliberate large chain; keep the entry lanes open while preparing your response.",
+      "3": "Trigger a smaller chain first. Early Refugees break the careful structure before its larger return can launch."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-rapid-match",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Rapid Matching Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using very fast colour matching; keep the entry lanes open while preparing your response.",
+      "3": "Keep placements simple, preserve the entry lanes, and answer with compact chains rather than an elaborate slow build."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-short-chain",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Repeated Short-Chain Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using many brief reactions; keep the entry lanes open while preparing your response.",
+      "3": "Accumulate one stronger chain while keeping a low ceiling, then release it between the opponent's small attacks."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-tower-chain",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Tower-and-Chain Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using towers plus short chains; keep the entry lanes open while preparing your response.",
+      "3": "Pressure the taller side first and avoid mirroring its height; a central low chain gives safer recovery room."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-dual-side-chain",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Two-Sided Chain Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using chains on both sides; keep the entry lanes open while preparing your response.",
+      "3": "Interrupt one side early with Refugees, then attack again before the opposite half becomes a complete backup chain."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-fast-large-combo",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Fast Large-Combo Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using large combinations formed quickly; keep the entry lanes open while preparing your response.",
+      "3": "Use the first workable chain rather than waiting for perfection. Sustained disruption is safer than accepting one finished attack."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-extreme-speed",
+     "type": "optional",
+     "safe_type": "Scenario board",
+     "label": "Extreme-Speed Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch how this board builds before committing to a long chain.",
+      "2": "Recognize the board when it begins using near-immediate descent; keep the entry lanes open while preparing your response.",
+      "3": "Pre-plan from the preview, use both rotation buttons, and favour direct four-groups until enough space exists for a short chain."
+     }
+    },
+    {
+     "id": "mean-bean-gg-scenario-complete",
+     "type": "ending",
+     "safe_type": "Mode completion",
+     "label": "Complete the Scenario Route",
+     "missable": true,
+     "levels": {
+      "1": "Carry the same careful tracking through the closing board.",
+      "2": "Win every Scenario board in one continuous route or through recorded passwords.",
+      "3": "After the closing victory, stop entering commands and record the complete non-interactive sequence and credits. Do not describe or preview their story content in the guide."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-gg-cable",
+   "name": "Gear-to-Gear Competition",
+   "location_cue": "Two linked Game Gear instances at the shared difficulty screen.",
+   "note": "Exercise every linked setting with both physical sides identified.",
+   "save_backup": {
+    "title": "Save both systems before linking",
+    "why": "Cable faults can desynchronize the running sessions.",
+    "detail": "Use matching clean states and never overwrite either cartridge baseline."
+   },
+   "point_of_no_return": {
+    "title": "Power changes erase session scores",
+    "why": "Linked high scores exist only while running.",
+    "detail": "Capture both displays before disconnecting or shutting down either system."
+   },
+   "items": [
+    {
+     "id": "mean-bean-gg-cable-hardware",
+     "type": "optional",
+     "safe_type": "Hardware check",
+     "label": "Prepare Two Complete Cable Setups",
+     "missable": true,
+     "levels": {
+      "1": "This mode needs physical-equivalent link hardware.",
+      "2": "Provide two Game Gear instances, two matching cartridges, two controllers, and one Gear-to-Gear cable.",
+      "3": "Power both systems off before connecting the cable. Insert one verified cartridge into each side, connect both link ports, then boot both systems before choosing the mode."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-game-gear/mean-bean-gg-cable-hardware.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-gg-cable-enter",
+     "type": "optional",
+     "safe_type": "Linked mode",
+     "label": "Enter Gear-to-Gear Mode",
+     "missable": true,
+     "levels": {
+      "1": "Either side can open the linked competition.",
+      "2": "From one title menu, select Gear-to-Gear after both systems are connected.",
+      "3": "Confirm that both displays reach the difficulty screen and recognize the other system. If either remains waiting, power both off and reseat the cable before retrying."
+     }
+    },
+    {
+     "id": "mean-bean-gg-cable-easy",
+     "type": "optional",
+     "safe_type": "Linked difficulty",
+     "label": "Win on the Lowest Setting",
+     "missable": true,
+     "levels": {
+      "1": "Begin the cable audit with slower descent.",
+      "2": "Have both players choose the lowest of the five difficulty settings.",
+      "3": "Confirm the same setting on both systems, complete a match, and capture both result screens. Keep the two board identities in the record so scores are not swapped."
+     }
+    },
+    {
+     "id": "mean-bean-gg-cable-middle",
+     "type": "optional",
+     "safe_type": "Linked difficulty",
+     "label": "Win on a Middle Setting",
+     "missable": true,
+     "levels": {
+      "1": "Increase the shared pace once the link is stable.",
+      "2": "Choose the central difficulty on both connected systems and complete a match.",
+      "3": "Repeat the verified cable setup, select the middle entry on each side, and finish once with each player winning so both board/result paths are exercised."
+     }
+    },
+    {
+     "id": "mean-bean-gg-cable-high",
+     "type": "optional",
+     "safe_type": "Linked difficulty",
+     "label": "Win on the Highest Setting",
+     "missable": true,
+     "levels": {
+      "1": "Finish the link test at maximum starting pressure.",
+      "2": "Choose the fifth difficulty on both systems and complete a match.",
+      "3": "Use low direct clears until the faster descent is controlled, then send short chains. Record one complete result and retry cycle without disconnecting either system."
+     }
+    },
+    {
+     "id": "mean-bean-gg-cable-mixed",
+     "type": "optional",
+     "safe_type": "Linked difficulty",
+     "label": "Test Unequal Difficulty Choices",
+     "missable": true,
+     "levels": {
+      "1": "The two sides choose independently.",
+      "2": "Select a different difficulty on each connected system.",
+      "3": "Confirm the low setting on one unit and a higher setting on the other, play through one match, then swap the assignments. This checks both handicap directions."
+     }
+    },
+    {
+     "id": "mean-bean-gg-cable-retry",
+     "type": "interaction",
+     "safe_type": "Linked menu check",
+     "label": "Exercise the Rematch Choice",
+     "missable": true,
+     "levels": {
+      "1": "Remain linked after a result and continue cleanly.",
+      "2": "Choose another game from the linked result flow before its decision ends.",
+      "3": "Complete a match, keep both systems connected, accept the replay, and confirm that both return to difficulty selection together. Capture the session score before either unit powers off."
+     }
+    },
+    {
+     "id": "mean-bean-gg-cable-score",
+     "type": "optional",
+     "safe_type": "Progress record",
+     "label": "Capture Linked Session Scores",
+     "missable": true,
+     "levels": {
+      "1": "Cable scores live only during the running session.",
+      "2": "Return to difficulty selection and record both players' current high scores.",
+      "3": "After testing the wanted settings, photograph each display and note which physical side it belongs to. Powering off clears this session evidence, so capture it before disconnecting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-gg-exercise",
+   "name": "Exercise Mode",
+   "location_cue": "The solo board with score, level, next pair, and helper space visible.",
+   "note": "Cover every starting level, progression change, helper, and volatile score path.",
+   "save_backup": {
+    "title": "Save before each starting level",
+    "why": "Exercise has no password checkpoint.",
+    "detail": "Keep separate states for levels 1, 3, and 5 plus helper hunting."
+   },
+   "point_of_no_return": {
+    "title": "Board overflow ends the run",
+    "why": "The cartridge leaves Exercise after the dungeon fills.",
+    "detail": "Capture helpers, level changes, and final score before allowing the entry to block."
+   },
+   "items": [
+    {
+     "id": "mean-bean-gg-exercise-level-one",
+     "type": "optional",
+     "safe_type": "Exercise setting",
+     "label": "Start Exercise at Level 1",
+     "missable": true,
+     "levels": {
+      "1": "Begin with the slowest practice route.",
+      "2": "Choose the Easy entry, which begins at level 1.",
+      "3": "Enter Exercise, select the lowest entry, and play until the speed increases at least once. Record the starting level and the first visible level change."
+     }
+    },
+    {
+     "id": "mean-bean-gg-exercise-level-three",
+     "type": "optional",
+     "safe_type": "Exercise setting",
+     "label": "Start Exercise at Level 3",
+     "missable": true,
+     "levels": {
+      "1": "Use the middle practice starting point.",
+      "2": "Choose the Normal entry, which begins at level 3.",
+      "3": "Start a fresh Exercise run at the middle setting and confirm level 3 on the board. Continue long enough to compare its initial descent with the level-1 route."
+     }
+    },
+    {
+     "id": "mean-bean-gg-exercise-level-five",
+     "type": "optional",
+     "safe_type": "Exercise setting",
+     "label": "Start Exercise at Level 5",
+     "missable": true,
+     "levels": {
+      "1": "Complete the practice audit at its fastest opening.",
+      "2": "Choose the Hard entry, which begins at level 5.",
+      "3": "Enter the highest Exercise setting, verify level 5 before the first pair locks, and maintain a safe centre while the score-driven speed continues rising."
+     }
+    },
+    {
+     "id": "mean-bean-gg-exercise-no-refugees",
+     "type": "interaction",
+     "safe_type": "Mode rule",
+     "label": "Confirm the Attack-Free Board",
+     "missable": true,
+     "levels": {
+      "1": "This solo mode removes incoming neutral pressure.",
+      "2": "Play long enough to verify that no opponent sends Refugee Beans.",
+      "3": "Keep the run active through several clears and a level increase. Any neutral pieces should come only from the helper mechanics or preset state, not an opposing attack."
+     }
+    },
+    {
+     "id": "mean-bean-gg-exercise-level-rise",
+     "type": "optional",
+     "safe_type": "Progression check",
+     "label": "Raise the Exercise Level",
+     "missable": true,
+     "levels": {
+      "1": "Score growth changes more than the number display.",
+      "2": "Continue clearing until the current level and fall speed increase.",
+      "3": "Build short safe chains, watch the level indicator after each score jump, and capture one transition where the new level and faster natural descent are both evident."
+     }
+    },
+    {
+     "id": "mean-bean-gg-has-bean",
+     "type": "secret",
+     "safe_type": "Helper event",
+     "label": "Trigger the Small Helper",
+     "missable": true,
+     "levels": {
+      "1": "A walking guest can rescue a difficult floor.",
+      "2": "Continue an Exercise run until the small helper enters the dungeon.",
+      "3": "Let it walk across settled beans. Every crossed bean changes to one colour and disappears; avoid dropping a pair onto its path until the clearing animation finishes."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-game-gear/mean-bean-gg-has-bean.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-gg-big-bean",
+     "type": "secret",
+     "safe_type": "Helper event",
+     "label": "Trigger the Large Helper",
+     "missable": true,
+     "levels": {
+      "1": "Higher Exercise levels can call a larger rescue.",
+      "2": "Survive into the faster levels until the oversized helper drops into the board.",
+      "3": "Keep several occupied lanes visible when it appears. Beans directly beneath its descent vanish immediately, so record the before-and-after board without blocking the entry column."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-game-gear/mean-bean-gg-big-bean.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-gg-exercise-game-over",
+     "type": "ending",
+     "safe_type": "Mode completion",
+     "label": "Finish an Exercise Run",
+     "missable": true,
+     "levels": {
+      "1": "Allow one recorded practice run to reach its natural end.",
+      "2": "Continue until the board fills and the cartridge leaves Exercise.",
+      "3": "After documenting helpers and a level increase, let the entry become blocked. Record the final score before the Sega screen replaces the board."
+     }
+    },
+    {
+     "id": "mean-bean-gg-exercise-initials",
+     "type": "optional",
+     "safe_type": "Score record",
+     "label": "Enter Three High-Score Initials",
+     "missable": true,
+     "levels": {
+      "1": "A qualifying run opens a brief name entry.",
+      "2": "Use Up and Down to choose letters, then Button 2 or Start to advance.",
+      "3": "Enter all three characters; use Button 1 to erase the previous position if needed. Capture the completed table before leaving or powering off, because it is volatile."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-gg-puzzle-system",
+   "name": "Puzzle Notebook and Recovery",
+   "location_cue": "The illustrated lesson pages and their fixed six-column boards.",
+   "note": "Use the cartridge's own notebook and password flow before solving individual lessons.",
+   "save_backup": {
+    "title": "Save before every first move",
+    "why": "A misplaced pair can destroy a prepared solution.",
+    "detail": "Create one pre-move state per lesson while still recording the official password."
+   },
+   "point_of_no_return": {
+    "title": "Success turns the page",
+    "why": "The next lesson follows its password screen.",
+    "detail": "Copy all four symbols before continuing, especially near the end of the route."
+   },
+   "items": [
+    {
+     "id": "mean-bean-gg-puzzle-new",
+     "type": "optional",
+     "safe_type": "Puzzle route",
+     "label": "Open the Puzzle Notebook",
+     "missable": true,
+     "levels": {
+      "1": "Begin with the manual-style pages rather than a password.",
+      "2": "Choose Puzzle Mode, select New Game, and press Start to open the first lesson page.",
+      "3": "Read the displayed objective, press Start to turn the page, then press Start again to begin the board. Keep a dedicated state before the first move of each lesson."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-game-gear/mean-bean-gg-puzzle-new.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-study",
+     "type": "interaction",
+     "safe_type": "Puzzle method",
+     "label": "Study Every Initial Layout",
+     "missable": true,
+     "levels": {
+      "1": "Most lessons advertise their trigger before play begins.",
+      "2": "Compare the objective, fixed beans, Refugees, gaps, and next pair before dropping anything.",
+      "3": "Identify which prepared group must remain intact, which colour can safely be parked, and whether the objective needs one large clear, a chain, survival, or an empty board."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-password",
+     "type": "optional",
+     "safe_type": "Progress record",
+     "label": "Record Every Lesson Password",
+     "missable": true,
+     "levels": {
+      "1": "Success turns the notebook to a recoverable checkpoint.",
+      "2": "Copy all four symbols before pressing Start for the next lesson.",
+      "3": "Write the completed lesson's number and its four symbols in order. Photograph the page as a second record; the cartridge itself does not remember it after power-off."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-continue",
+     "type": "interaction",
+     "safe_type": "Password check",
+     "label": "Resume a Puzzle Lesson",
+     "missable": true,
+     "levels": {
+      "1": "Prove that one recorded checkpoint is usable.",
+      "2": "Choose Puzzle, select Continue, enter a recorded four-symbol password, and submit with Start.",
+      "3": "Use the D-pad to highlight a symbol and Button 2 to advance. Use the back arrow for mistakes; a valid code opens its lesson, while Button 1 exits without submitting."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-game-gear/mean-bean-gg-puzzle-continue.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-quit",
+     "type": "interaction",
+     "safe_type": "Recovery check",
+     "label": "Quit and Restart a Lesson Safely",
+     "missable": true,
+     "levels": {
+      "1": "A bad opening need not consume the run.",
+      "2": "Pause with Start, choose Yes, and retain the displayed password.",
+      "3": "At the follow-up page, choose to restart the current lesson or leave Puzzle Mode. Use a pre-move emulator state for faster retries, but still record the cartridge's own password."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-single-clear",
+     "type": "optional",
+     "safe_type": "Objective family",
+     "label": "Complete a Simultaneous-Clear Objective",
+     "missable": true,
+     "levels": {
+      "1": "Some lessons count one large group, not a chain.",
+      "2": "Build the requested number of connected beans before completing their colour group.",
+      "3": "Prevent all partial groups from reaching four. When the combined mass meets the target, add the final matching bean so the entire count disappears in one resolution step."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-chain-clear",
+     "type": "optional",
+     "safe_type": "Objective family",
+     "label": "Complete a Multi-Wave Objective",
+     "missable": true,
+     "levels": {
+      "1": "Wave objectives require gravity to trigger each link.",
+      "2": "Prepare each colour so one initiating clear causes the required number of later clears.",
+      "3": "Work backward from the last group, keep each intermediate colour at three connected beans, and place the first trigger only after every later link has a gravity path."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-route-complete",
+     "type": "ending",
+     "safe_type": "Mode completion",
+     "label": "Complete the Puzzle Route",
+     "missable": true,
+     "levels": {
+      "1": "Carry the same password discipline through the final lesson.",
+      "2": "Solve every notebook lesson and allow the closing presentation to begin.",
+      "3": "After the final objective resolves, stop entering commands and capture the complete non-interactive sequence and credits. Keep all story imagery undescribed in the user-visible guide."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-gg-puzzles",
+   "name": "Puzzle Lessons",
+   "location_cue": "The preset lesson boards opened from the notebook pages.",
+   "note": "Reveal only the help needed: objective, key structure, then the complete physical solution.",
+   "save_backup": {
+    "title": "Keep each lesson's clean layout",
+    "why": "Many solutions depend on untouched fixed beans.",
+    "detail": "Never save over the only pre-move state after an experimental placement."
+   },
+   "point_of_no_return": {
+    "title": "A successful chain advances",
+    "why": "The password page replaces the solved board.",
+    "detail": "Record the four symbols before opening the next lesson or closing the emulator."
+   },
+   "items": [
+    {
+     "id": "mean-bean-gg-puzzle-01",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 1 - Red Centre",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to remove every red bean; preserve any prepared chain until its trigger is ready.",
+      "3": "Wait for blue, then drop it into the prepared middle gap. The blue connection collapses the surrounding structure and removes every red bean. Record the password shown after success before turning the page."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-game-gear/mean-bean-gg-puzzle-01.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-02",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 2 - Ten-Bean Trigger",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to clear at least ten beans together; preserve any prepared chain until its trigger is ready.",
+      "3": "Put one red bean in the far-left lane against the prepared reds. That single match starts the existing cascade and clears more than the required ten at once. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-03",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 3 - Blocked Red Release",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to remove every red bean; preserve any prepared chain until its trigger is ready.",
+      "3": "Make any colour group beside the isolated Refugee Bean. Removing that blocker releases the prepared red structure; let the resulting fall complete before placing another pair. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-04",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 4 - Three-Wave Centre",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to produce a three-link chain; preserve any prepared chain until its trigger is ready.",
+      "3": "Stand yellow beneath blue over the central column, then lay red-yellow across the top with red over the centre. The mirrored arrangement also works; do not trigger the centre early. Record the password shown after success before turning the page."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-game-gear/mean-bean-gg-puzzle-04.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-05",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 5 - Ten-Pair Survival",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to let ten pairs land safely; preserve any prepared chain until its trigger is ready.",
+      "3": "Park the opening pairs along the outer lanes and keep the central drop path open. Use the cramped side stacks to assemble a small clear whenever the remaining space becomes unsafe. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-06",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 6 - Eleven Together",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to clear eleven beans simultaneously; preserve any prepared chain until its trigger is ready.",
+      "3": "Build two-bean vertical stacks along three lanes on one side. Bridge the two outside lanes horizontally, then bridge the two inside lanes on the opposite side to form the large simultaneous clear. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-07",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 7 - Four-Wave Preset",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to produce a four-link chain; preserve any prepared chain until its trigger is ready.",
+      "3": "The opening four pairs are the intended solution. Fit them into the matching gaps without disturbing the prepared staircase; once the fourth pair locks, allow the board to resolve completely. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-08",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 8 - Two-Colour Empty Board",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to empty the entire board; preserve any prepared chain until its trigger is ready.",
+      "3": "Only red and blue pairs arrive. Keep both colours above or beside their matching routes and never trap either beneath the fixed green beans; finish the greens through the resulting collapse. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-09",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 9 - Blue-Line Release",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to remove every blue bean; preserve any prepared chain until its trigger is ready.",
+      "3": "Leave the upper green group untouched. Clear the lower pink cluster first, then remove the vertical group of four Refugee Beans; the freed blue pieces settle into one clearing line. Record the password shown after success before turning the page."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-game-gear/mean-bean-gg-puzzle-09.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-10",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 10 - Red Pair Detour",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to empty the entire board; preserve any prepared chain until its trigger is ready.",
+      "3": "Keep the opening double-red pair together and steer it around the top blue platform. Land it against the accessible reds so the prepared structure clears downward instead of sealing the route. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-11",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 11 - Right-Side Five-Wave",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to produce a five-link chain; preserve any prepared chain until its trigger is ready.",
+      "3": "First clear the Refugee Bean on the right edge. Then place the yellow bean immediately to the right of the prepared stack; that contact starts the full five-link sequence. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-12",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 12 - Red-Yellow Empty Board",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to empty the entire board; preserve any prepared chain until its trigger is ready.",
+      "3": "Use the first red to begin a vertical column of three reds. Set a yellow-red pair on the existing yellow column with yellow touching yellow; the subsequent collapse removes the remaining colours. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-13",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 13 - Single-Pair Four-Wave",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to produce a four-link chain; preserve any prepared chain until its trigger is ready.",
+      "3": "Use one red-green pair on the matching exposed colours in the prepared layout. Correct placement releases all four links; restart if either half blocks the other colour. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-14",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 14 - Refugee Sweep",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to remove every Refugee Bean; preserve any prepared chain until its trigger is ready.",
+      "3": "Work downward with the arriving green-blue pairs. When the next wall section is blue, invert the pair before landing so its blue half touches the wall and exposes the next blocker. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-15",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 15 - Right-First Five-Wave",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to produce a five-link chain; preserve any prepared chain until its trigger is ready.",
+      "3": "Send the opening pairs to the right-hand side and preserve the prepared left structure. Build the trigger there, then stop moving pieces while all five links resolve. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-16",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 16 - Nine-Green Group",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to clear nine beans simultaneously; preserve any prepared chain until its trigger is ready.",
+      "3": "Feed the arriving green beans into the right side without completing a four-group too soon. Join the enlarged green mass only after it contains enough pieces for the nine-bean clear. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-17",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 17 - Red Wall Chain",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to produce a four-link chain; preserve any prepared chain until its trigger is ready.",
+      "3": "Only red pairs arrive. Open the right wall first, use later reds to release the middle, and leave the lowest Refugee Beans until the upper structure can fall through them. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-18",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 18 - Bottom-Circle Chain",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to produce a five-link chain; preserve any prepared chain until its trigger is ready.",
+      "3": "Only red pairs arrive. Break the lower circular formation first by putting the opening pair to its left beneath the upper cluster; continue feeding that route until the prepared chain releases. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-19",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 19 - Three-Colour Red Removal",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to remove every red bean; preserve any prepared chain until its trigger is ready.",
+      "3": "Build a descending staircase from the arriving yellow, green, and blue pairs. At the central blue position, use the opposite colour beside it; duplicating blue there strands some reds. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-20",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 20 - One-Yellow Empty Board",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to empty the entire board; preserve any prepared chain until its trigger is ready.",
+      "3": "Lay the first red pair horizontally at the far left. Send the next pair right so its lone yellow joins the fixed yellow; use following reds to clear Refugees, then match the remaining reds. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-21",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 21 - Eighteen-Wave Cascade",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to produce an eighteen-link chain; preserve any prepared chain until its trigger is ready.",
+      "3": "The supplied pink-blue pair is sufficient. Put its pink half onto the exposed pink group without changing the prepared board, then let the entire automatic cascade finish. Record the password shown after success before turning the page."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-game-gear/mean-bean-gg-puzzle-21.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-22",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 22 - Pink-First Red Removal",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to remove every red bean; preserve any prepared chain until its trigger is ready.",
+      "3": "Clear the pink group before touching the red structure. The released pieces settle the reds into a horizontal group of six, which then clears without needing another red pair. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-23",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 23 - Green-Then-Blue Red Removal",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to remove every red bean; preserve any prepared chain until its trigger is ready.",
+      "3": "Use green to remove the new obstruction first. Next place a single blue against the left blue pillar, parking its partner harmlessly above the left red; the reds then form a clearing row. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-24",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 24 - Eleven-Wave Overflow",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to produce an eleven-link chain; preserve any prepared chain until its trigger is ready.",
+      "3": "Fit the predetermined blue pair into the far-left gaps, follow with blue-pink on that left structure, and send yellow-yellow into the fifth lane. A bean may begin above the visible grid; allow the cascade to pull it down. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-25",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 25 - Eighteen-Bean Ladder",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to clear eighteen beans simultaneously; preserve any prepared chain until its trigger is ready.",
+      "3": "Extend the green, yellow, and pink ladders on the right without completing them. Build the horizontal red trigger beneath those columns, check the pink alignment, then release the red row. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-26",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 26 - Two-Colour Eighteen",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to clear eighteen beans simultaneously; preserve any prepared chain until its trigger is ready.",
+      "3": "Starting from the empty board, alternate red and yellow into a descending step pattern. Store surplus yellow in the opposite corner, keep every group below four, and connect the staircase only after the combined target is ready. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-27",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 27 - Split-Side Blue Removal",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to remove every blue bean; preserve any prepared chain until its trigger is ready.",
+      "3": "Begin on the wider left side: use green to expose the first Refugee, another colour for the second, then clear the high reds. After the left blues vanish, finish the simpler right side with a descending staircase. Record the password shown after success before turning the page."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-game-gear/mean-bean-gg-puzzle-27.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-28",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 28 - Red-Framed Five-Wave",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to produce a five-link chain; preserve any prepared chain until its trigger is ready.",
+      "3": "Use the red pairs to build a trigger frame down the left, then extend a red staircase while exposing the first two Refugees on the right. The chain must begin with red, pass through blue-pink-blue, and end with red. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-29",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 29 - Yellow Wall Peel",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to produce a five-link chain; preserve any prepared chain until its trigger is ready.",
+      "3": "Discard the blue half of the opening pair where it cannot connect. Use yellow pairs to peel away the left wall in two clears, then place the final yellows through the middle to release the five-link pattern. Record the password shown after success before turning the page."
+     }
+    },
+    {
+     "id": "mean-bean-gg-puzzle-30",
+     "type": "optional",
+     "safe_type": "Puzzle lesson",
+     "label": "Lesson 30 - Seven-Wave Final Lesson",
+     "missable": true,
+     "levels": {
+      "1": "Study the preset board before moving the first pair.",
+      "2": "The objective is to produce a seven-link chain; preserve any prepared chain until its trigger is ready.",
+      "3": "Arrange the opening yellows with a red above them on the left. Use later reds to connect the exposed blue structure, then drop the final yellow pair into the prepared yellow route and let the full chain resolve. Record the password shown after success before turning the page."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-game-gear/mean-bean-gg-puzzle-30.avif",
+      "min_level": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-gg-secrets",
+   "name": "Hidden and Version-Specific Checks",
+   "location_cue": "Title menus, password screen, notebook pages, later physical backdrops, and non-interactive credits.",
+   "note": "Finish the handheld-only preservation details without revealing story material.",
+   "save_backup": {
+    "title": "Use disposable states for secrets",
+    "why": "Password experiments can replace active mode progress.",
+    "detail": "Keep hidden-menu and port-fault tests isolated from completion states."
+   },
+   "point_of_no_return": {
+    "title": "Closing screens are non-interactive",
+    "why": "Inputs can skip evidence needed for the archive.",
+    "detail": "Let both completed routes play naturally and capture only presentation-safe frames."
+   },
+   "items": [
+    {
+     "id": "mean-bean-gg-sound-test",
+     "type": "secret",
+     "safe_type": "Hidden menu",
+     "label": "Open the Hidden Sound Test",
+     "missable": true,
+     "levels": {
+      "1": "A four-symbol Scenario password leads somewhere other than a board.",
+      "2": "From Scenario Continue, enter Yellow, Red, Blue, Has Bean.",
+      "3": "Choose Scenario, open Continue, enter the four symbols in that order, and submit with Start. Record the menu and audition every numbered entry without describing story-associated cues."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-game-gear/mean-bean-gg-sound-test.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-gg-notebook-art",
+     "type": "optional",
+     "safe_type": "Version check",
+     "label": "Capture the Puzzle Notebook Art",
+     "missable": true,
+     "levels": {
+      "1": "The handheld route keeps a presentation detail lost elsewhere.",
+      "2": "Photograph a clean lesson page before entering its board.",
+      "3": "Use the first lesson page with its objective visible and no emulator overlay. Keep this Game Gear capture with the pack's version audit; do not replace it with a Master System image."
+     }
+    },
+    {
+     "id": "mean-bean-gg-machinery-tiles",
+     "type": "optional",
+     "safe_type": "Version check",
+     "label": "Capture the Late Machinery Tiles",
+     "missable": true,
+     "levels": {
+      "1": "Later boards change their physical backdrop.",
+      "2": "Record one clean late-board frame where the machinery-themed tiles are unobstructed.",
+      "3": "Use a late Scenario or Puzzle board after its opening settles, pause without opening an overlay if possible, and capture the industrial tilework retained by the Game Gear version."
+     }
+    },
+    {
+     "id": "mean-bean-gg-blue-credits",
+     "type": "optional",
+     "safe_type": "Version check",
+     "label": "Capture the Blue Credits Presentation",
+     "missable": true,
+     "levels": {
+      "1": "The closing colour treatment identifies this route.",
+      "2": "During either completed route, record a credits frame with its blue background.",
+      "3": "Let the credits advance naturally and capture one clean blue-background frame. Do not describe names, images, preceding events, or any closing narrative in the guide text."
+     }
+    },
+    {
+     "id": "mean-bean-gg-password-fault-check",
+     "type": "secret",
+     "safe_type": "Version check",
+     "label": "Confirm the Port-Only Password Fault Is Absent",
+     "missable": true,
+     "levels": {
+      "1": "A known crash belongs to the skipped port, not this cartridge.",
+      "2": "On a disposable state, enter the documented port-fault password into this Game Gear build.",
+      "3": "Protect all active states first, perform the experiment only on a throwaway session, and record that the cartridge remains responsive. Do not repeat the test on the Master System port."
+     }
+    },
+    {
+     "id": "mean-bean-gg-final-audit",
+     "type": "ending",
+     "safe_type": "Completion audit",
+     "label": "Close the Handheld Completion Ledger",
+     "missable": true,
+     "levels": {
+      "1": "Review each volatile and linked requirement before powering down.",
+      "2": "Confirm Scenario, Gear-to-Gear, all Exercise settings and helpers, every Puzzle lesson, Sound Test, and version captures.",
+      "3": "Compare the checklist against saved evidence, verify every displayed password has a legible record, capture both credit routes without narrative notes, and only then archive the final title and score states."
+     }
+    }
+   ]
+  }
+ ]
+}

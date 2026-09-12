@@ -1,0 +1,2060 @@
+{
+  "id": "resident-evil-the-missions",
+  "game": "Resident Evil: The Missions (enhanced 3D mobile release)",
+  "target": "100% of the selected enhanced 3D mobile route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "route-and-records",
+      "name": "Selected Mobile Route and Records",
+      "location_cue": "The enhanced 3D title screen, mission pyramid, Item List, Records, and equipment menus.",
+      "note": "Establish a clean, reproducible completion route before opening branches.",
+      "save_backup": {
+        "title": "Clone the clean mobile save",
+        "why": "Old handset storage and emulator profiles are easy to overwrite."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "enhanced-3d-route",
+          "type": "interaction",
+          "safe_type": "Route",
+          "label": "Use the Enhanced 3D Mobile Release",
+          "missable": false,
+          "levels": {
+            "1": "Confirm the build before creating the completion record.",
+            "2": "Use the enhanced three-dimensional mobile edition on a preserved compatible environment.",
+            "3": "Verify the title screen and free-roaming third-person mission play. Keep the original application files and a clean save copy together; do not substitute the separate static-screen 2D release."
+          }
+        },
+        {
+          "id": "clean-save",
+          "type": "optional",
+          "safe_type": "Record",
+          "label": "Create a Clean Completion Record",
+          "missable": false,
+          "levels": {
+            "1": "Imported unlock data makes the final percentage difficult to prove.",
+            "2": "Begin without a completed Item List or pre-opened mission pyramid.",
+            "3": "Clone the blank save, record the initial Item List and mission screen, then preserve milestone copies after each mission band and before testing another handset or emulator."
+          }
+        },
+        {
+          "id": "rank-a-rule",
+          "type": "optional",
+          "safe_type": "Rank",
+          "label": "Earn A on Every Cleared Mission",
+          "missable": false,
+          "levels": {
+            "1": "A basic clear may not expose every branch.",
+            "2": "Replay each completed node until its Records entry shows A.",
+            "3": "Finish quickly, avoid damage, limit healing and wasted ammunition, and verify A on the result screen. Once the Ink Ribbon exists, use Records to repair earlier grades without abandoning the current pyramid route."
+          }
+        },
+        {
+          "id": "ink-ribbon-replay",
+          "type": "upgrade",
+          "safe_type": "Replay Tool",
+          "label": "Use the Ink Ribbon for Records Replays",
+          "missable": false,
+          "levels": {
+            "1": "A later unlock makes rank cleanup much safer.",
+            "2": "Clear Special Mission 14 to add the Ink Ribbon.",
+            "3": "After Special Mission 14, open Records, select each completed mission below A, replay it, and confirm the improved grade persists. Keep a backup made before the first large cleanup session."
+          }
+        }
+      ]
+    },
+    {
+      "id": "numbered-missions-early",
+      "name": "Numbered Mission Branches A",
+      "location_cue": "The first connected cluster of numbered nodes on the mission pyramid.",
+      "note": "Clear every visible branch and preserve A grades.",
+      "save_backup": {
+        "title": "Back up before changing branches",
+        "why": "A lower grade can expose a different route than expected."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "mission-01",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 01 - Secure The Room",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 01 and complete the displayed secure the room objective.",
+            "3": "Launch Mission 01 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Before clearing, inspect every flashing pickup until Lighter appears in the Item List; the result should open Mission 04. Repeat for an A rank and inspect the new branch toward Secret Mission 13 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-02",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 02 - Go To Storage Area",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Mission 02 and complete the displayed go to storage area objective.",
+            "3": "Launch Mission 02 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Repeat for an A rank and inspect the new branch toward Secret Mission 01 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-03",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 03 - Collect Herbs",
+          "missable": false,
+          "levels": {
+            "1": "Search before rushing the objective; the required pickup may sit off the direct line.",
+            "2": "Select Mission 03 and complete the displayed collect herbs objective.",
+            "3": "Launch Mission 03 from the pyramid and obey its displayed loadout restriction. Sweep every reachable side room, take each flashing supply, and finish only after the counter is satisfied. Before clearing, inspect every flashing pickup until S.T.A.R.S. Card appears in the Item List; the result should open Mission 07. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-04",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 04 - Aim For The Head",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy matters more than speed; let the aim settle before committing ammunition.",
+            "2": "Select Mission 04 and complete the displayed aim for the head objective.",
+            "3": "Launch Mission 04 from the pyramid and obey its displayed loadout restriction. Stand still while aiming, wait for the reticle to tighten, and restart rather than spending a second round on a target that must fall to one hit. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-05",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 05 - Rescue The Survivors",
+          "missable": false,
+          "levels": {
+            "1": "Clear danger ahead of the escort and keep the protected group within reach.",
+            "2": "Select Mission 05 and complete the displayed rescue the survivors objective.",
+            "3": "Launch Mission 05 from the pyramid and obey its displayed loadout restriction. Move ahead of the escort, clear each doorway before the group enters, and turn back immediately if a health indicator starts falling. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-06",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 06 - Kill Many Shambling Enemies",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 06 and complete the displayed kill many shambling enemies objective.",
+            "3": "Launch Mission 06 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Before clearing, inspect every flashing pickup until S.T.A.R.S. Key appears in the Item List; the result should open Mission 12. Repeat for an A rank and inspect the new branch toward Secret Mission 14 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-07",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 07 - Flee To Storage Room",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Mission 07 and complete the displayed flee to storage room objective.",
+            "3": "Launch Mission 07 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-08",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 08 - Go To The Hall",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Mission 08 and complete the displayed go to the hall objective.",
+            "3": "Launch Mission 08 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Before clearing, inspect every flashing pickup until Lock Pick appears in the Item List; the result should open Mission 15. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-09",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 09 - Rescue The Survivors",
+          "missable": false,
+          "levels": {
+            "1": "Clear danger ahead of the escort and keep the protected group within reach.",
+            "2": "Select Mission 09 and complete the displayed rescue the survivors objective.",
+            "3": "Launch Mission 09 from the pyramid and obey its displayed loadout restriction. Move ahead of the escort, clear each doorway before the group enters, and turn back immediately if a health indicator starts falling. Repeat for an A rank and inspect the new branch toward Secret Mission 04 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-10",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 10 - Collect Herbs",
+          "missable": false,
+          "levels": {
+            "1": "Search before rushing the objective; the required pickup may sit off the direct line.",
+            "2": "Select Mission 10 and complete the displayed collect herbs objective.",
+            "3": "Launch Mission 10 from the pyramid and obey its displayed loadout restriction. Sweep every reachable side room, take each flashing supply, and finish only after the counter is satisfied. Repeat for an A rank and inspect the new branch toward Secret Mission 07 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-11",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 11 - Attack With One Shot",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy matters more than speed; let the aim settle before committing ammunition.",
+            "2": "Select Mission 11 and complete the displayed attack with one shot objective.",
+            "3": "Launch Mission 11 from the pyramid and obey its displayed loadout restriction. Stand still while aiming, wait for the reticle to tighten, and restart rather than spending a second round on a target that must fall to one hit. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-12",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 12 - Sneak Through Corridor",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 12 and complete the displayed sneak through corridor objective.",
+            "3": "Launch Mission 12 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-13",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 13 - Take Survivors To The Hall",
+          "missable": false,
+          "levels": {
+            "1": "Clear danger ahead of the escort and keep the protected group within reach.",
+            "2": "Select Mission 13 and complete the displayed take survivors to the hall objective.",
+            "3": "Launch Mission 13 from the pyramid and obey its displayed loadout restriction. Move ahead of the escort, clear each doorway before the group enters, and turn back immediately if a health indicator starts falling. Repeat for an A rank and inspect the new branch toward Secret Mission 03 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-14",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 14 - Kill Many Shambling Enemies",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 14 and complete the displayed kill many shambling enemies objective.",
+            "3": "Launch Mission 14 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-15",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 15 - Flee To Office",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Mission 15 and complete the displayed flee to office objective.",
+            "3": "Launch Mission 15 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-16",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 16 - Collect Ammo",
+          "missable": false,
+          "levels": {
+            "1": "Search before rushing the objective; the required pickup may sit off the direct line.",
+            "2": "Select Mission 16 and complete the displayed collect ammo objective.",
+            "3": "Launch Mission 16 from the pyramid and obey its displayed loadout restriction. Sweep every reachable side room, take each flashing supply, and finish only after the counter is satisfied. Repeat for an A rank and inspect the new branch toward Secret Mission 10 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-17",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 17 - Get Survivors To The Hall",
+          "missable": false,
+          "levels": {
+            "1": "Clear danger ahead of the escort and keep the protected group within reach.",
+            "2": "Select Mission 17 and complete the displayed get survivors to the hall objective.",
+            "3": "Launch Mission 17 from the pyramid and obey its displayed loadout restriction. Move ahead of the escort, clear each doorway before the group enters, and turn back immediately if a health indicator starts falling. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-18",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 18 - Throw Off The Heavy Pursuer",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 18 and complete the displayed throw off the heavy pursuer objective.",
+            "3": "Launch Mission 18 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Before clearing, inspect every flashing pickup until Electric Cable appears in the Item List; the result should open Mission 30. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        }
+      ]
+    },
+    {
+      "id": "numbered-missions-middle-a",
+      "name": "Numbered Mission Branches B",
+      "location_cue": "The next connected cluster of numbered nodes on the mission pyramid.",
+      "note": "Collect every flashing gate item before accepting a clear.",
+      "save_backup": {
+        "title": "Back up before changing branches",
+        "why": "Gate items and rank branches share one persistent record."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "mission-19",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 19 - Defend Your Post",
+          "missable": false,
+          "levels": {
+            "1": "Choose a defensible doorway and spend ammunition only when the line is threatened.",
+            "2": "Select Mission 19 and complete the displayed defend your post objective.",
+            "3": "Launch Mission 19 from the pyramid and obey its displayed loadout restriction. Hold a narrow entrance, alternate targets instead of chasing them, heal behind a closed line, and remain alive until the objective timer completes. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-20",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 20 - Survive!",
+          "missable": false,
+          "levels": {
+            "1": "Choose a defensible doorway and spend ammunition only when the line is threatened.",
+            "2": "Select Mission 20 and complete the displayed survive! objective.",
+            "3": "Launch Mission 20 from the pyramid and obey its displayed loadout restriction. Hold a narrow entrance, alternate targets instead of chasing them, heal behind a closed line, and remain alive until the objective timer completes. Before clearing, inspect every flashing pickup until Fire Poker appears in the Item List; the result should open Mission 33. Repeat for an A rank and inspect the new branch toward Secret Mission 11 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-21",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 21 - Find The Antitoxin",
+          "missable": false,
+          "levels": {
+            "1": "Search before rushing the objective; the required pickup may sit off the direct line.",
+            "2": "Select Mission 21 and complete the displayed find the antitoxin objective.",
+            "3": "Launch Mission 21 from the pyramid and obey its displayed loadout restriction. Reserve one inventory slot, collect the antitoxin before approaching the exit, and confirm it remains carried when the mission ends. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-22",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 22 - Secure The Room",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 22 and complete the displayed secure the room objective.",
+            "3": "Launch Mission 22 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-23",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 23 - Kill Enemies In 1 Min",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 23 and complete the displayed kill enemies in 1 min objective.",
+            "3": "Launch Mission 23 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-24",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 24 - Get Out Of The Crisis",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 24 and complete the displayed get out of the crisis objective.",
+            "3": "Launch Mission 24 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-25",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 25 - Open The Door",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Mission 25 and complete the displayed open the door objective.",
+            "3": "Launch Mission 25 from the pyramid and obey its displayed loadout restriction. Keep a free inventory slot, reach the marked fixture, use the supplied task item on it, and remain beside the device until the interaction completes. Before clearing, inspect every flashing pickup until Wrench appears in the Item List; the result should open Mission 36. Repeat for an A rank and inspect the new branch toward Secret Mission 08 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-26",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 26 - Help Civilians Escape",
+          "missable": false,
+          "levels": {
+            "1": "Clear danger ahead of the escort and keep the protected group within reach.",
+            "2": "Select Mission 26 and complete the displayed help civilians escape objective.",
+            "3": "Launch Mission 26 from the pyramid and obey its displayed loadout restriction. Move ahead of the escort, clear each doorway before the group enters, and turn back immediately if a health indicator starts falling. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-27",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 27 - Get Ammo, Kill Enemies",
+          "missable": false,
+          "levels": {
+            "1": "Search before rushing the objective; the required pickup may sit off the direct line.",
+            "2": "Select Mission 27 and complete the displayed get ammo, kill enemies objective.",
+            "3": "Launch Mission 27 from the pyramid and obey its displayed loadout restriction. Collect the ammunition first, reload from cover, then remove every required target without wasting rounds on optional threats. Before clearing, inspect every flashing pickup until Machine Oil appears in the Item List; the result should open Mission 39. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-28",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 28 - Aim For The Head",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy matters more than speed; let the aim settle before committing ammunition.",
+            "2": "Select Mission 28 and complete the displayed aim for the head objective.",
+            "3": "Launch Mission 28 from the pyramid and obey its displayed loadout restriction. Stand still while aiming, wait for the reticle to tighten, and restart rather than spending a second round on a target that must fall to one hit. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-29",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 29 - Go Downstairs Undetected",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 29 and complete the displayed go downstairs undetected objective.",
+            "3": "Launch Mission 29 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Before clearing, inspect every flashing pickup until Battery appears in the Item List; the result should open Mission 43. Repeat for an A rank and inspect the new branch toward Secret Mission 15 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-30",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 30 - Get Shambling Enemies To Office",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 30 and complete the displayed get shambling enemies to office objective.",
+            "3": "Launch Mission 30 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-31",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 31 - Get Out Of The Crisis",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 31 and complete the displayed get out of the crisis objective.",
+            "3": "Launch Mission 31 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Before clearing, inspect every flashing pickup until Fuse appears in the Item List; the result should open Mission 46. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-32",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 32 - Attack With One Shot",
+          "missable": false,
+          "levels": {
+            "1": "Accuracy matters more than speed; let the aim settle before committing ammunition.",
+            "2": "Select Mission 32 and complete the displayed attack with one shot objective.",
+            "3": "Launch Mission 32 from the pyramid and obey its displayed loadout restriction. Stand still while aiming, wait for the reticle to tighten, and restart rather than spending a second round on a target that must fall to one hit. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-33",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 33 - Defend Your Post",
+          "missable": false,
+          "levels": {
+            "1": "Choose a defensible doorway and spend ammunition only when the line is threatened.",
+            "2": "Select Mission 33 and complete the displayed defend your post objective.",
+            "3": "Launch Mission 33 from the pyramid and obey its displayed loadout restriction. Hold a narrow entrance, alternate targets instead of chasing them, heal behind a closed line, and remain alive until the objective timer completes. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-34",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 34 - Fight In The Dark",
+          "missable": false,
+          "levels": {
+            "1": "Return with equipment that makes an unlit route easier to read.",
+            "2": "Select Mission 34 and complete the displayed fight in the dark objective.",
+            "3": "Launch Mission 34 from the pyramid and obey its displayed loadout restriction. Equip the Night Vision Scope before launch, move by the room edges, and clear silhouettes before crossing each doorway. Repeat for an A rank and inspect the new branch toward Secret Mission 05 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-35",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 35 - Shake Off The Heavy Pursuer",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 35 and complete the displayed shake off the heavy pursuer objective.",
+            "3": "Launch Mission 35 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-36",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 36 - Disarm The Time Bomb",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 36 and complete the displayed disarm the time bomb objective.",
+            "3": "Launch Mission 36 from the pyramid and obey its displayed loadout restriction. Keep a free inventory slot, reach the marked fixture, use the supplied task item on it, and remain beside the device until the interaction completes. Before clearing, inspect every flashing pickup until Fire Extinguisher Hose appears in the Item List; the result should open Mission 49. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        }
+      ]
+    },
+    {
+      "id": "numbered-missions-middle-b",
+      "name": "Numbered Mission Branches C",
+      "location_cue": "The deeper connected cluster of numbered nodes on the mission pyramid.",
+      "note": "Check newly opened side nodes after every A result.",
+      "save_backup": {
+        "title": "Back up before changing branches",
+        "why": "An unseen side branch is easy to pass while climbing the pyramid."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "mission-37",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 37 - Get Survivors To The Hall",
+          "missable": false,
+          "levels": {
+            "1": "Clear danger ahead of the escort and keep the protected group within reach.",
+            "2": "Select Mission 37 and complete the displayed get survivors to the hall objective.",
+            "3": "Launch Mission 37 from the pyramid and obey its displayed loadout restriction. Move ahead of the escort, clear each doorway before the group enters, and turn back immediately if a health indicator starts falling. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-38",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 38 - Get Hunters To The Office",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 38 and complete the displayed get hunters to the office objective.",
+            "3": "Launch Mission 38 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Before clearing, inspect every flashing pickup until Square Crank appears in the Item List; the result should open Mission 52. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-39",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 39 - Fight In The Dark",
+          "missable": false,
+          "levels": {
+            "1": "Return with equipment that makes an unlit route easier to read.",
+            "2": "Select Mission 39 and complete the displayed fight in the dark objective.",
+            "3": "Launch Mission 39 from the pyramid and obey its displayed loadout restriction. Equip the Night Vision Scope before launch, move by the room edges, and clear silhouettes before crossing each doorway. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-40",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 40 - Escape To The Hall",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Mission 40 and complete the displayed escape to the hall objective.",
+            "3": "Launch Mission 40 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Before clearing, inspect every flashing pickup until Tape Recorder appears in the Item List; the result should open Mission 55. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-41",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 41 - Get Ammo, Kill Enemies",
+          "missable": false,
+          "levels": {
+            "1": "Search before rushing the objective; the required pickup may sit off the direct line.",
+            "2": "Select Mission 41 and complete the displayed get ammo, kill enemies objective.",
+            "3": "Launch Mission 41 from the pyramid and obey its displayed loadout restriction. Collect the ammunition first, reload from cover, then remove every required target without wasting rounds on optional threats. Before clearing, inspect every flashing pickup until Base for Culture Solution appears in the Item List; the result should open Mission 58. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-42",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 42 - Get The Key",
+          "missable": false,
+          "levels": {
+            "1": "Search before rushing the objective; the required pickup may sit off the direct line.",
+            "2": "Select Mission 42 and complete the displayed get the key objective.",
+            "3": "Launch Mission 42 from the pyramid and obey its displayed loadout restriction. Defeat the marked carrier, collect the dropped key, and keep an inventory slot open until the clear registers. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-43",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 43 - Use The Heavy Pursuer' Power",
+          "missable": false,
+          "levels": {
+            "1": "The largest threat can also damage smaller targets when positioned carefully.",
+            "2": "Select Mission 43 and complete the displayed use the heavy pursuer' power objective.",
+            "3": "Launch Mission 43 from the pyramid and obey its displayed loadout restriction. Keep ordinary targets between Jill and the heavy pursuer, bait its committed attack, sidestep, and repeat until the required targets fall to that damage. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-44",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 44 - Take Survivor To Hall",
+          "missable": false,
+          "levels": {
+            "1": "Clear danger ahead of the escort and keep the protected group within reach.",
+            "2": "Select Mission 44 and complete the displayed take survivor to hall objective.",
+            "3": "Launch Mission 44 from the pyramid and obey its displayed loadout restriction. Move ahead of the escort, clear each doorway before the group enters, and turn back immediately if a health indicator starts falling. Before clearing, inspect every flashing pickup until Culture Solution for Antitoxin appears in the Item List; the result should open Mission 61. Repeat for an A rank and inspect the new branch toward Secret Mission 09 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-45",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 45 - Repel The Heavy Pursuer",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 45 and complete the displayed repel the heavy pursuer objective.",
+            "3": "Launch Mission 45 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-46",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 46 - Help Civilians Escape",
+          "missable": false,
+          "levels": {
+            "1": "Clear danger ahead of the escort and keep the protected group within reach.",
+            "2": "Select Mission 46 and complete the displayed help civilians escape objective.",
+            "3": "Launch Mission 46 from the pyramid and obey its displayed loadout restriction. Move ahead of the escort, clear each doorway before the group enters, and turn back immediately if a health indicator starts falling. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-47",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 47 - Defeat The Heavy Pursuer",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 47 and complete the displayed defeat the heavy pursuer objective.",
+            "3": "Launch Mission 47 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Repeat for an A rank and inspect the new branch toward Secret Mission 12 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-48",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 48 - Kill Hostile Civilian",
+          "missable": false,
+          "levels": {
+            "1": "Clear danger ahead of the escort and keep the protected group within reach.",
+            "2": "Select Mission 48 and complete the displayed kill hostile civilian objective.",
+            "3": "Launch Mission 48 from the pyramid and obey its displayed loadout restriction. Move ahead of the escort, clear each doorway before the group enters, and turn back immediately if a health indicator starts falling. Before clearing, inspect every flashing pickup until Iron Pipe appears in the Item List; the result should open Mission 64. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-49",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 49 - Kill Enemies With 1 Shot",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 49 and complete the displayed kill enemies with 1 shot objective.",
+            "3": "Launch Mission 49 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-50",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 50 - Stall For Time",
+          "missable": false,
+          "levels": {
+            "1": "Choose a defensible doorway and spend ammunition only when the line is threatened.",
+            "2": "Select Mission 50 and complete the displayed stall for time objective.",
+            "3": "Launch Mission 50 from the pyramid and obey its displayed loadout restriction. Hold a narrow entrance, alternate targets instead of chasing them, heal behind a closed line, and remain alive until the objective timer completes. Before clearing, inspect every flashing pickup until System Disc appears in the Item List; the result should open Mission 67. Repeat for an A rank and inspect the new branch toward Secret Mission 16 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-51",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 51 - Win In Close Combat",
+          "missable": false,
+          "levels": {
+            "1": "Create one-on-one engagements and leave room to break a grab.",
+            "2": "Select Mission 51 and complete the displayed win in close combat objective.",
+            "3": "Launch Mission 51 from the pyramid and obey its displayed loadout restriction. Equip the knife, pull one target into a doorway, strike during recovery, back away from grabs, and heal only if the mission permits it. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-52",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 52 - Find The Antitoxin",
+          "missable": false,
+          "levels": {
+            "1": "Search before rushing the objective; the required pickup may sit off the direct line.",
+            "2": "Select Mission 52 and complete the displayed find the antitoxin objective.",
+            "3": "Launch Mission 52 from the pyramid and obey its displayed loadout restriction. Reserve one inventory slot, collect the antitoxin before approaching the exit, and confirm it remains carried when the mission ends. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-53",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 53 - Repel The Heavy Pursuer",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 53 and complete the displayed repel the heavy pursuer objective.",
+            "3": "Launch Mission 53 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Before clearing, inspect every flashing pickup until Card Key appears in the Item List; the result should open Mission 70. Repeat for an A rank and inspect the new branch toward Secret Mission 06 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-54",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 54 - Disarm The Time Bomb",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 54 and complete the displayed disarm the time bomb objective.",
+            "3": "Launch Mission 54 from the pyramid and obey its displayed loadout restriction. Keep a free inventory slot, reach the marked fixture, use the supplied task item on it, and remain beside the device until the interaction completes. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        }
+      ]
+    },
+    {
+      "id": "numbered-missions-late",
+      "name": "Numbered Mission Branches D",
+      "location_cue": "The outer connected cluster of numbered nodes on the mission pyramid.",
+      "note": "Finish the numbered-node ledger without describing narrative outcomes.",
+      "save_backup": {
+        "title": "Clone before the outer cluster",
+        "why": "Several hidden branches and gallery conditions depend on distinct clears."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "mission-55",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 55 - Defeat The Priority Target",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 55 and complete the displayed defeat the priority target objective.",
+            "3": "Launch Mission 55 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-56",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 56 - Ensure Safety Of Room",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 56 and complete the displayed ensure safety of room objective.",
+            "3": "Launch Mission 56 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-57",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 57 - Kill Enemies With 1 Shot",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 57 and complete the displayed kill enemies with 1 shot objective.",
+            "3": "Launch Mission 57 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Repeat for an A rank and inspect the new branch toward Secret Mission 17 before choosing another path."
+          }
+        },
+        {
+          "id": "mission-58",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 58 - Kill Hostile Civilians",
+          "missable": false,
+          "levels": {
+            "1": "Clear danger ahead of the escort and keep the protected group within reach.",
+            "2": "Select Mission 58 and complete the displayed kill hostile civilians objective.",
+            "3": "Launch Mission 58 from the pyramid and obey its displayed loadout restriction. Move ahead of the escort, clear each doorway before the group enters, and turn back immediately if a health indicator starts falling. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-59",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 59 - Buy Time",
+          "missable": false,
+          "levels": {
+            "1": "Choose a defensible doorway and spend ammunition only when the line is threatened.",
+            "2": "Select Mission 59 and complete the displayed buy time objective.",
+            "3": "Launch Mission 59 from the pyramid and obey its displayed loadout restriction. Hold a narrow entrance, alternate targets instead of chasing them, heal behind a closed line, and remain alive until the objective timer completes. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-60",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 60 - Finish The Job",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 60 and complete the displayed finish the job objective.",
+            "3": "Launch Mission 60 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-61",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 61 - Ensure Safety Of Room",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 61 and complete the displayed ensure safety of room objective.",
+            "3": "Launch Mission 61 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-62",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 62 - Use Heavy Pursuer' Power",
+          "missable": false,
+          "levels": {
+            "1": "The largest threat can also damage smaller targets when positioned carefully.",
+            "2": "Select Mission 62 and complete the displayed use heavy pursuer' power objective.",
+            "3": "Launch Mission 62 from the pyramid and obey its displayed loadout restriction. Keep ordinary targets between Jill and the heavy pursuer, bait its committed attack, sidestep, and repeat until the required targets fall to that damage. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-63",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 63 - Kill Enemies Quickly",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 63 and complete the displayed kill enemies quickly objective.",
+            "3": "Launch Mission 63 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-64",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 64 - Win In Close Combat",
+          "missable": false,
+          "levels": {
+            "1": "Create one-on-one engagements and leave room to break a grab.",
+            "2": "Select Mission 64 and complete the displayed win in close combat objective.",
+            "3": "Launch Mission 64 from the pyramid and obey its displayed loadout restriction. Equip the knife, pull one target into a doorway, strike during recovery, back away from grabs, and heal only if the mission permits it. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-65",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 65 - Kill Enemies Quickly",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 65 and complete the displayed kill enemies quickly objective.",
+            "3": "Launch Mission 65 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-66",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 66 - Kill Heavy Pursuer Quickly",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 66 and complete the displayed kill heavy pursuer quickly objective.",
+            "3": "Launch Mission 66 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-67",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 67 - Kill Enemies In 3 Min",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 67 and complete the displayed kill enemies in 3 min objective.",
+            "3": "Launch Mission 67 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-68",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 68 - Close Combat Heavy Pursuer",
+          "missable": false,
+          "levels": {
+            "1": "Create one-on-one engagements and leave room to break a grab.",
+            "2": "Select Mission 68 and complete the displayed close combat heavy pursuer objective.",
+            "3": "Launch Mission 68 from the pyramid and obey its displayed loadout restriction. Equip the knife, pull one target into a doorway, strike during recovery, back away from grabs, and heal only if the mission permits it. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-69",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 69 - Kill Waves Of Enemies",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 69 and complete the displayed kill waves of enemies objective.",
+            "3": "Launch Mission 69 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-70",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 70 - Finish The Job",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 70 and complete the displayed finish the job objective.",
+            "3": "Launch Mission 70 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-71",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 71 - Close Combat Heavy Pursuer",
+          "missable": false,
+          "levels": {
+            "1": "Create one-on-one engagements and leave room to break a grab.",
+            "2": "Select Mission 71 and complete the displayed close combat heavy pursuer objective.",
+            "3": "Launch Mission 71 from the pyramid and obey its displayed loadout restriction. Equip the knife, pull one target into a doorway, strike during recovery, back away from grabs, and heal only if the mission permits it. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "mission-72",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Mission 72 - Kill Waves Of Enemies",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Mission 72 and complete the displayed kill waves of enemies objective.",
+            "3": "Launch Mission 72 from the pyramid and obey its displayed loadout restriction. Clear or repel only the objective targets, conserve the strongest weapon for the last wave, and wait for the completion banner before leaving the room. Repeat for an A rank and inspect the new branch toward Secret Mission 18 before choosing another path."
+          }
+        }
+      ]
+    },
+    {
+      "id": "special-missions-inner",
+      "name": "Inner Special Mission Branches",
+      "location_cue": "Special nodes embedded among the numbered pyramid branches.",
+      "note": "These mission records are separate from ordinary numbered nodes.",
+      "save_backup": {
+        "title": "Clone before each special branch",
+        "why": "The path back to a missed node may require another pyramid run."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "special-01",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 01 - Reach The Office",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 01 and complete the displayed reach the office objective.",
+            "3": "Launch Mission 01 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-02",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 02 - Repair Junction Box",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Special Mission 02 and complete the displayed repair junction box objective.",
+            "3": "Launch Mission 02 from the pyramid and obey its displayed loadout restriction. Keep a free inventory slot, reach the marked fixture, use the supplied task item on it, and remain beside the device until the interaction completes. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-03",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 03 - Reach The Hall",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 03 and complete the displayed reach the hall objective.",
+            "3": "Launch Mission 03 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-04",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 04 - Reach The Office",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 04 and complete the displayed reach the office objective.",
+            "3": "Launch Mission 04 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-05",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 05 - Repair Junction Box",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Special Mission 05 and complete the displayed repair junction box objective.",
+            "3": "Launch Mission 05 from the pyramid and obey its displayed loadout restriction. Keep a free inventory slot, reach the marked fixture, use the supplied task item on it, and remain beside the device until the interaction completes. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-06",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 06 - Reach The Hall",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 06 and complete the displayed reach the hall objective.",
+            "3": "Launch Mission 06 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-07",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 07 - Reach The Office",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 07 and complete the displayed reach the office objective.",
+            "3": "Launch Mission 07 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-08",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 08 - Repair Junction Box",
+          "missable": false,
+          "levels": {
+            "1": "Read the equipment restriction before launch and build the loadout around it.",
+            "2": "Select Special Mission 08 and complete the displayed repair junction box objective.",
+            "3": "Launch Mission 08 from the pyramid and obey its displayed loadout restriction. Keep a free inventory slot, reach the marked fixture, use the supplied task item on it, and remain beside the device until the interaction completes. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-09",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 09 - Reach The Hall",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 09 and complete the displayed reach the hall objective.",
+            "3": "Launch Mission 09 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        }
+      ]
+    },
+    {
+      "id": "special-missions-outer",
+      "name": "Outer Special Mission Branches",
+      "location_cue": "The special nodes along the outer edge of the mission pyramid.",
+      "note": "Each distinct clear can add equipment, outfits, images, or replay functions.",
+      "save_backup": {
+        "title": "Clone before each outer branch",
+        "why": "Distinct clears feed several persistent unlock conditions."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "special-10",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 10 - Escape Police Station",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 10 and complete the displayed escape police station objective.",
+            "3": "Launch Mission 10 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-11",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 11 - Escape With Only Knife",
+          "missable": false,
+          "levels": {
+            "1": "Create one-on-one engagements and leave room to break a grab.",
+            "2": "Select Special Mission 11 and complete the displayed escape with only knife objective.",
+            "3": "Launch Mission 11 from the pyramid and obey its displayed loadout restriction. Equip the knife, pull one target into a doorway, strike during recovery, back away from grabs, and heal only if the mission permits it. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-12",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 12 - Kill All, Then Escape",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 12 and complete the displayed kill all, then escape objective.",
+            "3": "Launch Mission 12 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-13",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 13 - Get Antitoxin, Escape",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 13 and complete the displayed get antitoxin, escape objective.",
+            "3": "Launch Mission 13 from the pyramid and obey its displayed loadout restriction. Reserve one inventory slot, collect the antitoxin before approaching the exit, and confirm it remains carried when the mission ends. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-14",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 14 - Escape Police Station",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 14 and complete the displayed escape police station objective.",
+            "3": "Launch Mission 14 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-15",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 15 - Escape With Only Knife",
+          "missable": false,
+          "levels": {
+            "1": "Create one-on-one engagements and leave room to break a grab.",
+            "2": "Select Special Mission 15 and complete the displayed escape with only knife objective.",
+            "3": "Launch Mission 15 from the pyramid and obey its displayed loadout restriction. Equip the knife, pull one target into a doorway, strike during recovery, back away from grabs, and heal only if the mission permits it. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-16",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 16 - Kill All, Then Escape",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 16 and complete the displayed kill all, then escape objective.",
+            "3": "Launch Mission 16 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-17",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 17 - Get Antitoxin, Escape",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 17 and complete the displayed get antitoxin, escape objective.",
+            "3": "Launch Mission 17 from the pyramid and obey its displayed loadout restriction. Reserve one inventory slot, collect the antitoxin before approaching the exit, and confirm it remains carried when the mission ends. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-18",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 18 - Escape Police Station",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 18 and complete the displayed escape police station objective.",
+            "3": "Launch Mission 18 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-19",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 19 - Escape With Only Knife",
+          "missable": false,
+          "levels": {
+            "1": "Create one-on-one engagements and leave room to break a grab.",
+            "2": "Select Special Mission 19 and complete the displayed escape with only knife objective.",
+            "3": "Launch Mission 19 from the pyramid and obey its displayed loadout restriction. Equip the knife, pull one target into a doorway, strike during recovery, back away from grabs, and heal only if the mission permits it. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-20",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 20 - Kill All, Then Escape",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 20 and complete the displayed kill all, then escape objective.",
+            "3": "Launch Mission 20 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-21",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 21 - Get Antitoxin, Escape",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 21 and complete the displayed get antitoxin, escape objective.",
+            "3": "Launch Mission 21 from the pyramid and obey its displayed loadout restriction. Reserve one inventory slot, collect the antitoxin before approaching the exit, and confirm it remains carried when the mission ends. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-22",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 22 - Escape Police Station",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 22 and complete the displayed escape police station objective.",
+            "3": "Launch Mission 22 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-23",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 23 - Escape With Only Knife",
+          "missable": false,
+          "levels": {
+            "1": "Create one-on-one engagements and leave room to break a grab.",
+            "2": "Select Special Mission 23 and complete the displayed escape with only knife objective.",
+            "3": "Launch Mission 23 from the pyramid and obey its displayed loadout restriction. Equip the knife, pull one target into a doorway, strike during recovery, back away from grabs, and heal only if the mission permits it. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-24",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 24 - Kill All, Then Escape",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 24 and complete the displayed kill all, then escape objective.",
+            "3": "Launch Mission 24 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-25",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 25 - Get Antitoxin, Escape",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 25 and complete the displayed get antitoxin, escape objective.",
+            "3": "Launch Mission 25 from the pyramid and obey its displayed loadout restriction. Reserve one inventory slot, collect the antitoxin before approaching the exit, and confirm it remains carried when the mission ends. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-26",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 26 - Escape Police Statioin",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 26 and complete the displayed escape police statioin objective.",
+            "3": "Launch Mission 26 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-27",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 27 - Escape With Only Knife",
+          "missable": false,
+          "levels": {
+            "1": "Create one-on-one engagements and leave room to break a grab.",
+            "2": "Select Special Mission 27 and complete the displayed escape with only knife objective.",
+            "3": "Launch Mission 27 from the pyramid and obey its displayed loadout restriction. Equip the knife, pull one target into a doorway, strike during recovery, back away from grabs, and heal only if the mission permits it. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        },
+        {
+          "id": "special-28",
+          "type": "optional",
+          "safe_type": "Mission",
+          "label": "Special Mission 28 - Kill All, Then Escape",
+          "missable": false,
+          "levels": {
+            "1": "Learn the shortest room sequence and fight only what blocks the route.",
+            "2": "Select Special Mission 28 and complete the displayed kill all, then escape objective.",
+            "3": "Launch Mission 28 from the pyramid and obey its displayed loadout restriction. Take the direct connected-room route, dodge around nonblocking enemies, and interact with the destination or exit before the timer expires. Replay for an A rank so no lower-grade branch remains hidden."
+          }
+        }
+      ]
+    },
+    {
+      "id": "secret-mission-branches",
+      "name": "Secret Mission Branches",
+      "location_cue": "Side nodes that appear after particular high-grade mission results.",
+      "note": "The archival ledger proves eighteen slots but omits their objective text.",
+      "save_backup": {
+        "title": "Keep the parent A-rank save",
+        "why": "A missing hidden node must be re-tested from its parent result."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "secret-mission-01",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 01",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 02, then inspect every newly opened side branch for Secret Mission 01.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-02",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 02",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "The surviving completion ledger does not preserve this branch's parent node.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-03",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 03",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 13, then inspect every newly opened side branch for Secret Mission 03.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-04",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 04",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 09, then inspect every newly opened side branch for Secret Mission 04.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-05",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 05",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 34, then inspect every newly opened side branch for Secret Mission 05.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-06",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 06",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 53, then inspect every newly opened side branch for Secret Mission 06.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-07",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 07",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 10, then inspect every newly opened side branch for Secret Mission 07.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-08",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 08",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 25, then inspect every newly opened side branch for Secret Mission 08.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-09",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 09",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 44, then inspect every newly opened side branch for Secret Mission 09.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-10",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 10",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 16, then inspect every newly opened side branch for Secret Mission 10.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-11",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 11",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 20, then inspect every newly opened side branch for Secret Mission 11.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-12",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 12",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 47, then inspect every newly opened side branch for Secret Mission 12.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-13",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 13",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 01, then inspect every newly opened side branch for Secret Mission 13.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-14",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 14",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 06, then inspect every newly opened side branch for Secret Mission 14.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-15",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 15",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 29, then inspect every newly opened side branch for Secret Mission 15.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-16",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 16",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 50, then inspect every newly opened side branch for Secret Mission 16.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-17",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 17",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 57, then inspect every newly opened side branch for Secret Mission 17.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "secret-mission-18",
+          "type": "optional",
+          "safe_type": "Hidden Mission",
+          "label": "Secret Mission 18",
+          "missable": false,
+          "levels": {
+            "1": "A high-grade clear can reveal a branch that the ordinary path does not show.",
+            "2": "Earn A on Mission 72, then inspect every newly opened side branch for Secret Mission 18.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        }
+      ]
+    },
+    {
+      "id": "invisible-key-items",
+      "name": "Five Invisible Key Items",
+      "location_cue": "Five ordinary mission rooms containing interaction-only pickups without a white sparkle.",
+      "note": "Press Select at the physical hotspot; the Metal Detector is optional.",
+      "save_backup": {
+        "title": "Back up before each hidden pickup",
+        "why": "A missed interaction keeps a later numbered mission locked."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "hidden-base-for-culture-solution",
+          "type": "collectible",
+          "safe_type": "Hidden Key Item",
+          "label": "Base for Culture Solution",
+          "missable": false,
+          "levels": {
+            "1": "One required key item has no visible sparkle; search the room geometry itself.",
+            "2": "Mission 41: cluttered office; wall by door; this item opens Mission 58.",
+            "3": "In Mission 41, enter the cluttered office, move to the right-hand wall beside the dark door, face the wall, and press Select until the pickup message appears. Finish the mission and confirm Mission 58 becomes selectable."
+          }
+        },
+        {
+          "id": "hidden-culture-solution-for-antitoxin",
+          "type": "collectible",
+          "safe_type": "Hidden Key Item",
+          "label": "Culture Solution for Antitoxin",
+          "missable": false,
+          "levels": {
+            "1": "One required key item has no visible sparkle; search the room geometry itself.",
+            "2": "Mission 44: glass corridor; left display wall; this item opens Mission 61.",
+            "3": "In Mission 44, reach the glass-lined corridor, stand beside the display panels opposite the desk bank, face the panels, and press Select until the pickup registers. Finish the mission and confirm Mission 61 becomes selectable."
+          }
+        },
+        {
+          "id": "hidden-iron-pipe",
+          "type": "collectible",
+          "safe_type": "Hidden Key Item",
+          "label": "Iron Pipe",
+          "missable": false,
+          "levels": {
+            "1": "One required key item has no visible sparkle; search the room geometry itself.",
+            "2": "Mission 48: dark records room; cabinet bank; this item opens Mission 64.",
+            "3": "In Mission 48, use the dark records room, approach the right-side cabinet bank, face it at close range, and press Select until the hidden pickup appears. Finish the mission and confirm Mission 64 becomes selectable."
+          }
+        },
+        {
+          "id": "hidden-system-disc",
+          "type": "collectible",
+          "safe_type": "Hidden Key Item",
+          "label": "System Disc",
+          "missable": false,
+          "levels": {
+            "1": "One required key item has no visible sparkle; search the room geometry itself.",
+            "2": "Mission 50: waiting room; cluttered central table; this item opens Mission 67.",
+            "3": "In Mission 50, search the cluttered waiting room around the large central table, pressing Select along its near edge until the System Disc message appears. Finish the mission and confirm Mission 67 becomes selectable."
+          }
+        },
+        {
+          "id": "hidden-card-key",
+          "type": "collectible",
+          "safe_type": "Hidden Key Item",
+          "label": "Card Key",
+          "missable": false,
+          "levels": {
+            "1": "One required key item has no visible sparkle; search the room geometry itself.",
+            "2": "Mission 53: upper landing; framed far wall; this item opens Mission 70.",
+            "3": "In Mission 53, climb to the upper landing, face the far wall between the framed panels, and press Select along that wall until the Card Key registers. Finish the mission and confirm Mission 70 becomes selectable."
+          }
+        }
+      ]
+    },
+    {
+      "id": "persistent-unlocks",
+      "name": "Persistent Unlock Collection",
+      "location_cue": "The Item List, equipment, outfit, character, and gallery selection screens.",
+      "note": "Confirm every reward after the exact special clear that grants it.",
+      "save_backup": {
+        "title": "Clone before reward verification",
+        "why": "Some surviving sources do not preserve every threshold."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "reward-shotgun",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Shotgun",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 10 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 10, wait for the unlock message, return to the main menu, and confirm Shotgun can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-side-pack",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Side Pack",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 11 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 11, wait for the unlock message, return to the main menu, and confirm Side Pack can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-jill-outfit-a",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Outfit A",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 12 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 12, wait for the unlock message, return to the main menu, and confirm Outfit A can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-eagle6-0",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "EAGLE6.0",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 13 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 13, wait for the unlock message, return to the main menu, and confirm EAGLE6.0 can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-ink-ribbon",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Ink Ribbon",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 14 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 14, wait for the unlock message, return to the main menu, and confirm Ink Ribbon can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-night-vision-scope",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Night Vision Scope",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 15 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 15, wait for the unlock message, return to the main menu, and confirm Night Vision Scope can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-bonus-image",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Bonus image",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 16 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 16, wait for the unlock message, return to the main menu, and confirm Bonus image can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-customise-kit",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Customise Kit",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 17 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 17, wait for the unlock message, return to the main menu, and confirm Customise Kit can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-jill-outfit-b",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Outfit B",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 18 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 18, wait for the unlock message, return to the main menu, and confirm Outfit B can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-laser-sight",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Laser Sight",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 19 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 19, wait for the unlock message, return to the main menu, and confirm Laser Sight can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-metal-detector",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Metal Detector",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 20 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 20, wait for the unlock message, return to the main menu, and confirm Metal Detector can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-assault-rifle",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Assault Rifle",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 21 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 21, wait for the unlock message, return to the main menu, and confirm Assault Rifle can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-transceiver",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Transceiver",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 22 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 22, wait for the unlock message, return to the main menu, and confirm Transceiver can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-light-weight-boots",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Light Weight Boots",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 23 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 23, wait for the unlock message, return to the main menu, and confirm Light Weight Boots can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-bullet-proof-vest",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Bullet-Proof Vest",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 24 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 24, wait for the unlock message, return to the main menu, and confirm Bullet-Proof Vest can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-magnum",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Magnum",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 25 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 25, wait for the unlock message, return to the main menu, and confirm Magnum can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-gloves",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Gloves",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 26 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 26, wait for the unlock message, return to the main menu, and confirm Gloves can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-jill-outfit-c",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Outfit C",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 27 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 27, wait for the unlock message, return to the main menu, and confirm Outfit C can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "reward-gatling-gun",
+          "type": "upgrade",
+          "safe_type": "Unlock",
+          "label": "Gatling Gun",
+          "missable": false,
+          "levels": {
+            "1": "A special branch adds this option to the persistent collection.",
+            "2": "Clear Special Mission 28 and check the Item List or relevant selection screen.",
+            "3": "Complete Special Mission 28, wait for the unlock message, return to the main menu, and confirm Gatling Gun can be selected or equipped. If it is absent, reload the pre-clear backup and earn A before checking again."
+          }
+        },
+        {
+          "id": "extra-character-one",
+          "type": "upgrade",
+          "safe_type": "Archive Unlock",
+          "label": "First Extra Character",
+          "missable": false,
+          "levels": {
+            "1": "The archive confirms this persistent unlock, but not its exact threshold.",
+            "2": "A-rank every special branch and inspect the menu for this extra playable character.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "extra-character-two",
+          "type": "upgrade",
+          "safe_type": "Archive Unlock",
+          "label": "Second Extra Character",
+          "missable": false,
+          "levels": {
+            "1": "The archive confirms this persistent unlock, but not its exact threshold.",
+            "2": "A-rank every special branch and inspect the menu for this extra playable character.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "extra-character-three",
+          "type": "upgrade",
+          "safe_type": "Archive Unlock",
+          "label": "Third Extra Character",
+          "missable": false,
+          "levels": {
+            "1": "The archive confirms this persistent unlock, but not its exact threshold.",
+            "2": "A-rank every special branch and inspect the menu for this extra playable character.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "ending-image-two",
+          "type": "upgrade",
+          "safe_type": "Archive Unlock",
+          "label": "Ending Image 2",
+          "missable": false,
+          "levels": {
+            "1": "The archive confirms this persistent unlock, but not its exact threshold.",
+            "2": "A-rank every special branch and inspect the menu for this ending image.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "ending-image-three",
+          "type": "upgrade",
+          "safe_type": "Archive Unlock",
+          "label": "Ending Image 3",
+          "missable": false,
+          "levels": {
+            "1": "The archive confirms this persistent unlock, but not its exact threshold.",
+            "2": "A-rank every special branch and inspect the menu for this ending image.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "ending-image-one",
+          "type": "ending",
+          "safe_type": "Gallery Unlock",
+          "label": "Ending Image 1",
+          "missable": false,
+          "levels": {
+            "1": "Several completed outer branches add a gallery image.",
+            "2": "Clear three different outer special branches and inspect the image gallery.",
+            "3": "Complete three distinct Special Missions from 10 through 28, return to the gallery, and confirm Ending Image 1 is present. Use separate branch clears; repeating one node does not prove the threshold."
+          }
+        }
+      ]
+    },
+    {
+      "id": "final-completion-audit",
+      "name": "Completion Record Audit",
+      "location_cue": "Records, Item List, mission pyramid, loadout screens, and preserved mobile save data.",
+      "note": "Close only what the surviving build can prove; unresolved entries stay marked.",
+      "save_backup": {
+        "title": "Write-protect two final copies",
+        "why": "The remaining item research requires experimentation on a duplicate."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "all-118-missions",
+          "type": "optional",
+          "safe_type": "Completion Audit",
+          "label": "Complete Every Mission Node",
+          "missable": false,
+          "levels": {
+            "1": "The visible pyramid does not include every hidden branch.",
+            "2": "Verify 72 numbered, 28 special, and 18 secret mission records.",
+            "3": "Open Records and compare every numbered slot: Missions 01-72, Special Missions 01-28, and Secret Missions 01-18 must all show a clear. Then repair every non-A grade and clone the save."
+          }
+        },
+        {
+          "id": "all-visible-items",
+          "type": "collectible",
+          "safe_type": "Item Audit",
+          "label": "Collect Every Visible Item",
+          "missable": false,
+          "levels": {
+            "1": "Mission unlocks are only part of the Item List.",
+            "2": "Revisit every mission and collect each flashing pickup at least once.",
+            "3": "Use the Metal Detector where supported, sweep every reachable room before clearing, collect each white flash, and compare the Item List after every new pickup. Preserve a before-and-after save whenever the percentage rises."
+          }
+        },
+        {
+          "id": "unresolved-item-percentage",
+          "type": "collectible",
+          "safe_type": "Unverified Item Audit",
+          "label": "Resolve the Remaining Item Percentage",
+          "missable": false,
+          "levels": {
+            "1": "Preserved research reaches 93%, but seven percentage points remain undocumented.",
+            "2": "After all five invisible keys and every visible flash, inspect the Item List for empty entries.",
+            "3": "NEEDS_VERIFICATION"
+          },
+          "internal_uncertain": true
+        },
+        {
+          "id": "all-loadouts",
+          "type": "upgrade",
+          "safe_type": "Equipment Audit",
+          "label": "Verify Every Weapon and Special Item",
+          "missable": false,
+          "levels": {
+            "1": "An unlock message is not enough; each reward should function in a mission.",
+            "2": "Equip every weapon, outfit, character, and special item from its selection screen.",
+            "3": "Launch a replay with each unlocked weapon and equipment item, confirm its effect, test all three outfits and every extra character, then quit only after the Records screen preserves the loadout evidence."
+          }
+        },
+        {
+          "id": "clean-final-save",
+          "type": "optional",
+          "safe_type": "Completion Record",
+          "label": "Preserve the Finished Mobile Save",
+          "missable": false,
+          "levels": {
+            "1": "Old mobile storage is fragile and emulator migrations can drop records.",
+            "2": "Keep the application, save data, handset profile, and completion captures together.",
+            "3": "Make two offline copies, hash the application and save files, capture every Records and Item List page, cold-boot the preserved environment, and confirm all mission grades and unlocks remain available without imported completion data."
+          }
+        }
+      ]
+    }
+  ]
+}

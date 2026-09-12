@@ -1,0 +1,1297 @@
+{
+  "id": "resident-evil-genesis",
+  "game": "Resident Evil: Genesis (2008)",
+  "target": "Spoiler-free 100% completion of the original mobile release, including every room pickup, supply, file, weapon, puzzle, and the complete single campaign route",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "route-and-save",
+      "name": "Original Mobile Route and Save Safety",
+      "location_cue": "The Java mobile title menu and its single New Game slot.",
+      "note": "Preserve the retired original build and its only save.",
+      "items": [
+        {
+          "id": "route-original-mobile",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Original Mobile Release",
+          "missable": false,
+          "levels": {
+            "1": "This compact adaptation has its own rooms and puzzles.",
+            "2": "Run the original 2008 mobile-phone release on compatible preserved hardware.",
+            "3": "Use the original Java/mobile package as the content authority, verify movement and targeting keys, and avoid substituting another version of the first game because Genesis rearranges its map and puzzle inventory."
+          }
+        },
+        {
+          "id": "save-external-backup",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Make External Save Backups",
+          "missable": false,
+          "levels": {
+            "1": "The in-game slot cannot preserve branches or mistakes.",
+            "2": "Close the game and copy its save data before each major door or puzzle.",
+            "3": "Exit through the game menu, duplicate the full application-data folder with a physical-area label, reopen the active copy, and confirm Continue loads. Restore only while the application is closed."
+          }
+        },
+        {
+          "id": "campaign-clear",
+          "type": "ending",
+          "safe_type": "Completion",
+          "label": "Complete the Mobile Campaign",
+          "missable": true,
+          "levels": {
+            "1": "Explore every physical room before entering the last secured chamber.",
+            "2": "Finish the single playable route after collecting every listed file, item, weapon, and supply pickup.",
+            "3": "Keep the pre-cavern backup, open the final secured room only after the mansion checklist is complete, finish the remaining encounters, and let the closing sequence return to the title menu."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Copy the current mobile save",
+        "why": "The original client keeps one slot and overwrites earlier progress."
+      },
+      "point_of_no_return": {
+        "title": "Single-slot overwrite",
+        "warning": "Back up the application data before leaving this physical section."
+      }
+    },
+    {
+      "id": "ground-mansion",
+      "name": "Ground-Floor Mansion",
+      "location_cue": "The broad lobby, west study, dining rooms, kitchen, and ground storage rooms.",
+      "note": "Take every item before solving the exit mechanism.",
+      "items": [
+        {
+          "id": "pickup-diamond",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Diamond",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Diamond from Lobby.",
+            "3": "Enter Lobby, inspect every highlighted fixture until Diamond is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-onyx",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Onyx",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Onyx from Lobby.",
+            "3": "Enter Lobby, inspect every highlighted fixture until Onyx is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-silver-keycard",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Silver Keycard",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Silver Keycard from Lobby.",
+            "3": "Enter Lobby, inspect every highlighted fixture until Silver Keycard is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-lighter",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Lighter",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Lighter from Lobby couch.",
+            "3": "Enter Lobby couch, inspect every highlighted fixture until Lighter is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-newspaper-1",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Newspaper 1",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Newspaper 1 from West study.",
+            "3": "Enter West study, inspect every highlighted fixture until Newspaper 1 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-letter-2",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Letter 2",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Letter 2 from West study.",
+            "3": "Enter West study, inspect every highlighted fixture until Letter 2 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-poker",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Poker",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Poker from West study.",
+            "3": "Enter West study, inspect every highlighted fixture until Poker is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-fire-opal",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Fire Opal",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Fire Opal from West study.",
+            "3": "Enter West study, inspect every highlighted fixture until Fire Opal is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-report-1",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Report 1",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Report 1 from Storage Room 1.",
+            "3": "Enter Storage Room 1, inspect every highlighted fixture until Report 1 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-report-3",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Report 3",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Report 3 from Storage Room 1.",
+            "3": "Enter Storage Room 1, inspect every highlighted fixture until Report 3 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-microchip",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Microchip",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Microchip from Storage Room 1.",
+            "3": "Enter Storage Room 1, inspect every highlighted fixture until Microchip is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-caramel",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Caramel",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Caramel from Storage Room 1 table.",
+            "3": "Enter Storage Room 1 table, inspect every highlighted fixture until Caramel is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-mallet",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Mallet",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Mallet from Kitchen.",
+            "3": "Enter Kitchen, inspect every highlighted fixture until Mallet is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-bbq-tongs",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "BBQ Tongs",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect BBQ Tongs from Kitchen.",
+            "3": "Enter Kitchen, inspect every highlighted fixture until BBQ Tongs is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-severed-thumb",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Severed Thumb",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Severed Thumb from Kitchen freezer.",
+            "3": "Enter Kitchen freezer, inspect every highlighted fixture until Severed Thumb is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-ruby",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Ruby",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Ruby from Kitchen.",
+            "3": "Enter Kitchen, inspect every highlighted fixture until Ruby is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-letter-4",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Letter 4",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Letter 4 from Storage Room 2.",
+            "3": "Enter Storage Room 2, inspect every highlighted fixture until Letter 4 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-weed-killer",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Weed Killer",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Weed Killer from Storage Room 2.",
+            "3": "Enter Storage Room 2, inspect every highlighted fixture until Weed Killer is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-emerald",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Emerald",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Emerald from Mini-room hallway.",
+            "3": "Enter Mini-room hallway, inspect every highlighted fixture until Emerald is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-cross-necklace",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Cross Necklace",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Cross Necklace from Dining Room 1 cabinet.",
+            "3": "Enter Dining Room 1 cabinet, inspect every highlighted fixture until Cross Necklace is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-blue-keycard",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Blue Keycard",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Blue Keycard from Lobby portrait.",
+            "3": "Enter Lobby portrait, inspect every highlighted fixture until Blue Keycard is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-letter-1",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Letter 1",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Letter 1 from Lobby portrait.",
+            "3": "Enter Lobby portrait, inspect every highlighted fixture until Letter 1 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-picture-1",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Picture 1",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Picture 1 from Pool Room cue rack.",
+            "3": "Enter Pool Room cue rack, inspect every highlighted fixture until Picture 1 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-skeleton-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Skeleton Key",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Skeleton Key from Pool Room mechanism.",
+            "3": "Enter Pool Room mechanism, inspect every highlighted fixture until Skeleton Key is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-flamethrower",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Flamethrower",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Flamethrower from Pool Room mechanism.",
+            "3": "Enter Pool Room mechanism, inspect every highlighted fixture until Flamethrower is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-book-1",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Book 1",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Book 1 from Library.",
+            "3": "Enter Library, inspect every highlighted fixture until Book 1 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-book-2",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Book 2",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Book 2 from Library.",
+            "3": "Enter Library, inspect every highlighted fixture until Book 2 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-iodine",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Iodine",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Iodine from Master Bedroom bathroom.",
+            "3": "Enter Master Bedroom bathroom, inspect every highlighted fixture until Iodine is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-battery-pack",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Battery Pack",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Battery Pack from Master Bedroom bathroom.",
+            "3": "Enter Master Bedroom bathroom, inspect every highlighted fixture until Battery Pack is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-red-keycard",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Red Keycard",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Red Keycard from Dining Room 2.",
+            "3": "Enter Dining Room 2, inspect every highlighted fixture until Red Keycard is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-remington-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Remington Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Remington Shotgun from Dining Room 2.",
+            "3": "Enter Dining Room 2, inspect every highlighted fixture until Remington Shotgun is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-letter-3",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Letter 3",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Letter 3 from Private Office.",
+            "3": "Enter Private Office, inspect every highlighted fixture until Letter 3 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-cult-anaconda",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Cult Anaconda",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Cult Anaconda from Private Office.",
+            "3": "Enter Private Office, inspect every highlighted fixture until Cult Anaconda is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-sheet-music",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Sheet Music",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Sheet Music from Private Office.",
+            "3": "Enter Private Office, inspect every highlighted fixture until Sheet Music is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "supply-handgun-bullets-01",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Handgun Bullets Pickup 01",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Handgun Bullets at Lobby plant pot.",
+            "3": "Inspect Lobby plant pot, take the Handgun Bullets, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-handgun-bullets-02",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Handgun Bullets Pickup 02",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Handgun Bullets at Storage Room 2.",
+            "3": "Inspect Storage Room 2, take the Handgun Bullets, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-medkit-01",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Medkit Pickup 01",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Medkit at Kitchen counter.",
+            "3": "Inspect Kitchen counter, take the Medkit, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "puzzle-01",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Dining cabinet",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Dining cabinet mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Poker then BBQ Tongs. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        },
+        {
+          "id": "puzzle-02",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Lobby jammed door",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Lobby jammed door mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Poker under piano. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        },
+        {
+          "id": "puzzle-03",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Lobby portrait",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Lobby portrait mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Cross Necklace on statue. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        },
+        {
+          "id": "puzzle-04",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Upper silver door",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Upper silver door mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Blue Keycard; SPENCER. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        },
+        {
+          "id": "puzzle-10",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Gemstone chairs",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Gemstone chairs mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Diamond left; Ruby Opal Topaz upper; Onyx right; Amethyst Sapphire Emerald lower. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        },
+        {
+          "id": "puzzle-11",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Office safe",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Office safe mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Iodine portrait; code 072082. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        },
+        {
+          "id": "puzzle-12",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Lobby piano",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Lobby piano mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: play Sheet Music. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Copy the current mobile save",
+        "why": "The original client keeps one slot and overwrites earlier progress."
+      },
+      "point_of_no_return": {
+        "title": "Single-slot overwrite",
+        "warning": "Back up the application data before leaving this physical section."
+      }
+    },
+    {
+      "id": "upper-mansion",
+      "name": "Upper Mansion",
+      "location_cue": "The second-floor bedrooms, bathrooms, pool room, library, plant room, and hidden chamber.",
+      "note": "Take every item before solving the exit mechanism.",
+      "items": [
+        {
+          "id": "pickup-memo-1",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Memo 1",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Memo 1 from Upper west study.",
+            "3": "Enter Upper west study, inspect every highlighted fixture until Memo 1 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-amethyst",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Amethyst",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Amethyst from Upper west study.",
+            "3": "Enter Upper west study, inspect every highlighted fixture until Amethyst is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-letter-7",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Letter 7",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Letter 7 from upper hallway.",
+            "3": "Enter upper hallway, inspect every highlighted fixture until Letter 7 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-topaz",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Topaz",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Topaz from Upper Bedroom 1.",
+            "3": "Enter Upper Bedroom 1, inspect every highlighted fixture until Topaz is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-4-ball",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "4 Ball",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect 4 Ball from Upper Bathroom toilet.",
+            "3": "Enter Upper Bathroom toilet, inspect every highlighted fixture until 4 Ball is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-tranquilizer",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Tranquilizer",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Tranquilizer from Upper Bathroom.",
+            "3": "Enter Upper Bathroom, inspect every highlighted fixture until Tranquilizer is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-sapphire",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Sapphire",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Sapphire from Upper Bathroom.",
+            "3": "Enter Upper Bathroom, inspect every highlighted fixture until Sapphire is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-liquid-nitrogen",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Liquid Nitrogen",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Liquid Nitrogen from Upper Plant Room.",
+            "3": "Enter Upper Plant Room, inspect every highlighted fixture until Liquid Nitrogen is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-string",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "String",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect String from Upper Bedroom 4 bed.",
+            "3": "Enter Upper Bedroom 4 bed, inspect every highlighted fixture until String is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-5-ball",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "5 Ball",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect 5 Ball from Upper Bedroom 4 toilet.",
+            "3": "Enter Upper Bedroom 4 toilet, inspect every highlighted fixture until 5 Ball is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-6-ball",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "6 Ball",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect 6 Ball from Upper Official Bathroom toilet.",
+            "3": "Enter Upper Official Bathroom toilet, inspect every highlighted fixture until 6 Ball is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-false-book",
+          "type": "file",
+          "safe_type": "File",
+          "label": "False Book",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect False Book from Upper Master Bedroom.",
+            "3": "Enter Upper Master Bedroom, inspect every highlighted fixture until False Book is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-report-2",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Report 2",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Report 2 from Upper Master Bedroom.",
+            "3": "Enter Upper Master Bedroom, inspect every highlighted fixture until Report 2 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-letter-5",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Letter 5",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Letter 5 from Hidden Room.",
+            "3": "Enter Hidden Room, inspect every highlighted fixture until Letter 5 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-green-keycard",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Green Keycard",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Green Keycard from Hidden Room.",
+            "3": "Enter Hidden Room, inspect every highlighted fixture until Green Keycard is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "supply-handgun-bullets-03",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Handgun Bullets Pickup 03",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Handgun Bullets at Upper Bedroom 1 vase.",
+            "3": "Inspect Upper Bedroom 1 vase, take the Handgun Bullets, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-handgun-bullets-04",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Handgun Bullets Pickup 04",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Handgun Bullets at Upper Hallway 2 plant.",
+            "3": "Inspect Upper Hallway 2 plant, take the Handgun Bullets, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-handgun-bullets-05",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Handgun Bullets Pickup 05",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Handgun Bullets at Upper Official Bathroom counter.",
+            "3": "Inspect Upper Official Bathroom counter, take the Handgun Bullets, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-shotgun-shells-01",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Shotgun Shells Pickup 01",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Shotgun Shells at Upper Bedroom 3 desk.",
+            "3": "Inspect Upper Bedroom 3 desk, take the Shotgun Shells, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-shotgun-shells-03",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Shotgun Shells Pickup 03",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Shotgun Shells at Hidden Room desk.",
+            "3": "Inspect Hidden Room desk, take the Shotgun Shells, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-medkit-02",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Medkit Pickup 02",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Medkit at Upper Bathroom sink.",
+            "3": "Inspect Upper Bathroom sink, take the Medkit, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "puzzle-05",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Plant tanks",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Plant tanks mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Tranquilizer left; Weed Killer right. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        },
+        {
+          "id": "puzzle-06",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Pool table",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Pool table mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Green 6 center; orange 5 left; purple 4 right. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        },
+        {
+          "id": "puzzle-07",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Attic scanner",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Attic scanner mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Microchip then Severed Thumb. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        },
+        {
+          "id": "puzzle-08",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Library metal door",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Library metal door mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Liquid Nitrogen then Mallet. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        },
+        {
+          "id": "puzzle-09",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Library bookcase",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Library bookcase mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: insert False Book. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Copy the current mobile save",
+        "why": "The original client keeps one slot and overwrites earlier progress."
+      },
+      "point_of_no_return": {
+        "title": "Single-slot overwrite",
+        "warning": "Back up the application data before leaving this physical section."
+      }
+    },
+    {
+      "id": "attic",
+      "name": "Attic",
+      "location_cue": "The upper storage loft filled with boxes, shelves, and a locked access route.",
+      "note": "Take every item before solving the exit mechanism.",
+      "items": [
+        {
+          "id": "pickup-skeleton-key-2",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Skeleton Key",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Skeleton Key from Attic.",
+            "3": "Enter Attic, inspect every highlighted fixture until Skeleton Key is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-jade-figurine",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Jade Figurine",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Jade Figurine from Attic.",
+            "3": "Enter Attic, inspect every highlighted fixture until Jade Figurine is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-report-4",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Report 4",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Report 4 from Attic.",
+            "3": "Enter Attic, inspect every highlighted fixture until Report 4 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-gunpowder",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Gunpowder",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Gunpowder from Attic shelf.",
+            "3": "Enter Attic shelf, inspect every highlighted fixture until Gunpowder is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "supply-shotgun-shells-02",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Shotgun Shells Pickup 02",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Shotgun Shells at Attic box.",
+            "3": "Inspect Attic box, take the Shotgun Shells, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-magnum-bullets-01",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Magnum Bullets Pickup 01",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Magnum Bullets at Attic boxes.",
+            "3": "Inspect Attic boxes, take the Magnum Bullets, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-medkit-03",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Medkit Pickup 03",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Medkit at Attic chest.",
+            "3": "Inspect Attic chest, take the Medkit, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Copy the current mobile save",
+        "why": "The original client keeps one slot and overwrites earlier progress."
+      },
+      "point_of_no_return": {
+        "title": "Single-slot overwrite",
+        "warning": "Back up the application data before leaving this physical section."
+      }
+    },
+    {
+      "id": "basement",
+      "name": "Basement and Pool Rooms",
+      "location_cue": "The lower fireplace rooms, flooded pool chamber, and barred cell.",
+      "note": "Take every item before solving the exit mechanism.",
+      "items": [
+        {
+          "id": "pickup-diary-2",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Diary 2",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Diary 2 from Basement Pool Room 2.",
+            "3": "Enter Basement Pool Room 2, inspect every highlighted fixture until Diary 2 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-black-keycard",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Black Keycard",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Black Keycard from Basement cell.",
+            "3": "Enter Basement cell, inspect every highlighted fixture until Black Keycard is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-diary-1",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Diary 1",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Diary 1 from Basement cell.",
+            "3": "Enter Basement cell, inspect every highlighted fixture until Diary 1 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "pickup-milkor-mgl",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Milkor MGL",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Milkor MGL from Basement cell.",
+            "3": "Enter Basement cell, inspect every highlighted fixture until Milkor MGL is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "supply-magnum-bullets-02",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Magnum Bullets Pickup 02",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Magnum Bullets at Basement shark-room shelf.",
+            "3": "Inspect Basement shark-room shelf, take the Magnum Bullets, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-medkit-04",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Medkit Pickup 04",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Medkit at Basement cell shelf.",
+            "3": "Inspect Basement cell shelf, take the Medkit, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "puzzle-13",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Shark pool",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Shark pool mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Battery Pack into water. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        },
+        {
+          "id": "puzzle-14",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Basement barrier",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Basement barrier mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Caramel Gunpowder String Lighter. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        },
+        {
+          "id": "puzzle-15",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Basement fireplace",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Basement fireplace mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Jade Figurine; code 110849. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Copy the current mobile save",
+        "why": "The original client keeps one slot and overwrites earlier progress."
+      },
+      "point_of_no_return": {
+        "title": "Single-slot overwrite",
+        "warning": "Back up the application data before leaving this physical section."
+      }
+    },
+    {
+      "id": "caverns",
+      "name": "Caverns",
+      "location_cue": "The rough stone passages beyond the basement fireplace.",
+      "note": "Take every item before solving the exit mechanism.",
+      "items": [
+        {
+          "id": "pickup-fax-1",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Fax 1",
+          "missable": true,
+          "levels": {
+            "1": "Check furniture, containers, and wall fixtures before moving on.",
+            "2": "Collect Fax 1 from Cavern side chamber.",
+            "3": "Enter Cavern side chamber, inspect every highlighted fixture until Fax 1 is added, then open inventory to confirm it registered before leaving the room."
+          }
+        },
+        {
+          "id": "supply-handgun-bullets-06",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Handgun Bullets Pickup 06",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Handgun Bullets at Cavern grey rock.",
+            "3": "Inspect Cavern grey rock, take the Handgun Bullets, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-shotgun-shells-04",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Shotgun Shells Pickup 04",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Shotgun Shells at Cavern grey rock.",
+            "3": "Inspect Cavern grey rock, take the Shotgun Shells, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-magnum-bullets-03",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Magnum Bullets Pickup 03",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Magnum Bullets at Cavern grey rock.",
+            "3": "Inspect Cavern grey rock, take the Magnum Bullets, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "supply-grenade-rounds-01",
+          "type": "collectible",
+          "safe_type": "Supply",
+          "label": "Grenade Rounds Pickup 01",
+          "missable": true,
+          "levels": {
+            "1": "Search ordinary room props even when ammunition seems sufficient.",
+            "2": "Collect the Grenade Rounds at Cavern grey rock.",
+            "3": "Inspect Cavern grey rock, take the Grenade Rounds, and verify the carried total increases before crossing the next doorway; this pickup is individually counted for full item coverage."
+          }
+        },
+        {
+          "id": "puzzle-16",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Cavern silver door",
+          "missable": true,
+          "levels": {
+            "1": "Nearby objects and documents describe the missing interaction.",
+            "2": "Solve the Cavern silver door mechanism with the required inventory pieces.",
+            "3": "Use this complete input order: Red plus Black cards; UMBRELLA. Confirm the mechanism finishes moving and collect everything revealed before leaving."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Copy the current mobile save",
+        "why": "The original client keeps one slot and overwrites earlier progress."
+      },
+      "point_of_no_return": {
+        "title": "Single-slot overwrite",
+        "warning": "Back up the application data before leaving this physical section."
+      }
+    },
+    {
+      "id": "arsenal-completion",
+      "name": "Arsenal Completion",
+      "location_cue": "The inventory screen after the final optional weapon room has been opened.",
+      "note": "Confirm every combat tool on the active save.",
+      "items": [
+        {
+          "id": "weapon-combat-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Combat Knife",
+          "missable": true,
+          "levels": {
+            "1": "The starting loadout still counts toward the complete arsenal.",
+            "2": "Confirm Combat Knife appears in the inventory or equipped slot.",
+            "3": "Open inventory at the first controllable room, highlight Combat Knife, and verify it can be readied; retain it until every weapon has been registered at least once."
+          }
+        },
+        {
+          "id": "weapon-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Handgun",
+          "missable": true,
+          "levels": {
+            "1": "The starting loadout still counts toward the complete arsenal.",
+            "2": "Confirm Handgun appears in the inventory or equipped slot.",
+            "3": "Open inventory at the first controllable room, highlight Handgun, and verify it can be readied; retain it until every weapon has been registered at least once."
+          }
+        },
+        {
+          "id": "arsenal-all-six",
+          "type": "optional",
+          "safe_type": "Completion",
+          "label": "Register the Complete Arsenal",
+          "missable": true,
+          "levels": {
+            "1": "Several weapons are hidden behind optional room puzzles.",
+            "2": "Hold all six documented weapon entries across the campaign save.",
+            "3": "Register Combat Knife and Handgun from the starting loadout, then obtain the Remington Shotgun, Flamethrower, Cult Anaconda, and Milkor MGL from their listed rooms before completing the route."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Copy the current mobile save",
+        "why": "The original client keeps one slot and overwrites earlier progress."
+      },
+      "point_of_no_return": {
+        "title": "Single-slot overwrite",
+        "warning": "Back up the application data before leaving this physical section."
+      }
+    }
+  ]
+}

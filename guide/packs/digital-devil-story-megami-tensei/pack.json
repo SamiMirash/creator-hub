@@ -1,0 +1,3035 @@
+{
+  "id": "digital-devil-story-megami-tensei",
+  "game": "Digital Devil Story: Megami Tensei",
+  "target": {
+    "platform": "Super Famicom via emulation",
+    "version": "Kyuuyaku Megami Tensei collection",
+    "route": "Megami Tensei I first; preserve cleared data for Megami Tensei II"
+  },
+  "spoiler_default": 0,
+  "generated_at": "2026-07-29",
+  "areas": [
+    {
+      "id": "kmt1-route",
+      "name": "Selected Route and Completion Ledger",
+      "location_cue": "The collection menu, opening status screen, automap, and manual-save interface.",
+      "note": "The label supplies level zero; later levels reveal increasingly exact completion instructions.",
+      "save_backup": {
+        "title": "Create a rotating backup first",
+        "why": "Resource exchanges and the sequel-transfer state cannot be reconstructed reliably from one overwritten slot.",
+        "detail": "Keep the previous slot intact until every listed result has been confirmed."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-route-sfc",
+          "type": "optional",
+          "safe_type": "Route setup",
+          "label": "Kyuuyaku Megami Tensei I Route",
+          "missable": false,
+          "levels": {
+            "1": "Begin with the first campaign in the collection.",
+            "2": "Use the Super Famicom Kyuuyaku Megami Tensei release and select Megami Tensei I.",
+            "3": "Run a legally dumped Kyuuyaku Megami Tensei cartridge through the selected Super Famicom route. Start the first campaign, record the ROM region and translation-patch version if one is used, and keep the eventual carry-over file for the second campaign."
+          }
+        },
+        {
+          "id": "kmt1-start-stats",
+          "type": "optional",
+          "safe_type": "Character setup",
+          "label": "Opening Bonus Allocation",
+          "missable": false,
+          "levels": {
+            "1": "Build one sturdy attacker and one reliable caster.",
+            "2": "Spend the fifteen opening points for each protagonist before entering the dungeon.",
+            "3": "Give the male lead enough Strength for physical equipment checks and put the female lead's emphasis on Intelligence without neglecting survival. The hidden sword later tests the male lead's combined Strength, Intelligence, and Luck, so do not create a permanently lopsided file."
+          }
+        },
+        {
+          "id": "kmt1-map-completion",
+          "type": "optional",
+          "safe_type": "Exploration audit",
+          "label": "Complete Dungeon Maps",
+          "missable": false,
+          "levels": {
+            "1": "Check every branch before using the next major route.",
+            "2": "Walk every accessible square on every fixed floor and revisit doors after gaining their keys.",
+            "3": "Use the automap as the ledger: fill ordinary corridors, dead ends, transporters, pits, damaging passages, locked rooms, and newly opened shortcuts. Before leaving an area permanently, compare each floor against its reachable boundary and mark any sealed branch for a later return."
+          }
+        },
+        {
+          "id": "kmt1-save-chain",
+          "type": "optional",
+          "safe_type": "Save safety",
+          "label": "Rotating Save Chain",
+          "missable": true,
+          "levels": {
+            "1": "Several exchanges consume resources or alter the sequel file.",
+            "2": "Keep separate saves before the cash-doubling reward, all-Macca trade, unsealing ritual, and final transfer.",
+            "3": "Maintain at least three rotating files. Protect one before claiming Bien's cash multiplier, another before buying the Silver Relief, and a third before the three-gem ritual. Preserve both a pre-clear file and the transferred clear data for Megami Tensei II."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-daedalus",
+      "name": "Daedalus Tower",
+      "location_cue": "A descending stone tower with an elevator, shops, and branching rooms.",
+      "note": "Fixed locations and mechanical prerequisites only; story context is intentionally withheld.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-daedalus-start-chest",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "500 Macca and Jewel",
+          "missable": false,
+          "levels": {
+            "1": "Search the opening floor before descending.",
+            "2": "Open the fixed chest on Daedalus 8F.",
+            "3": "Take the 500 Macca and Jewel before buying starter gear; the money is enough to establish the first equipment baseline."
+          }
+        },
+        {
+          "id": "kmt1-daedalus-cerberus",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "recruit Cerberus",
+          "missable": false,
+          "levels": {
+            "1": "A particular early recruit opens a later path.",
+            "2": "Recruit Cerberus from Daedalus 1F.",
+            "3": "Negotiate with Cerberus on 1F and keep it available. The underworld entrance will not open without this ally, and the game later removes it temporarily."
+          }
+        },
+        {
+          "id": "kmt1-daedalus-goblin",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "question disguised figure",
+          "missable": false,
+          "levels": {
+            "1": "An odd encounter points toward a missing possession.",
+            "2": "Inspect the southwest room on Daedalus 3F.",
+            "3": "Challenge the disguised figure rather than paying it off. After the reveal, exhaust the conversation to learn the clue needed for Garu's missing shield."
+          }
+        },
+        {
+          "id": "kmt1-daedalus-silence-gem",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Silence Gem",
+          "missable": false,
+          "levels": {
+            "1": "The lowest floor holds both a relic and a transport upgrade.",
+            "2": "Clear the fixed encounter on Daedalus 1F.",
+            "3": "Defeat the floor guardian around level 10 while maintaining healing and a recruited front line. Collect the Silence Gem afterward; it also activates the tower elevator."
+          }
+        },
+        {
+          "id": "kmt1-daedalus-garu-shield",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Garu's Shield",
+          "missable": false,
+          "levels": {
+            "1": "Return to an upper floor after learning about a guard's loss.",
+            "2": "After speaking with Garu, search Daedalus 3F beyond the elevator route.",
+            "3": "Speak to Garu at Bien's western entrance first, then use Daedalus's elevator to reach 3F and collect Garu's Shield. Return it to open the settlement route."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-bien",
+      "name": "Bien Stronghold",
+      "location_cue": "A multi-level occupied settlement joined to the first tower.",
+      "note": "Fixed locations and mechanical prerequisites only; story context is intentionally withheld.",
+      "save_backup": {
+        "title": "Create a rotating backup first",
+        "why": "This section contains a one-time reward, resource exchange, or transfer flag.",
+        "detail": "Keep the previous slot intact until every listed result has been confirmed."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-bien-small-key",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Small Key",
+          "missable": false,
+          "levels": {
+            "1": "Someone on the first floor carries a useful key.",
+            "2": "Speak with the old man near the east-center of Bien 1F.",
+            "3": "Exhaust the old man's dialogue to receive the Small Key. Keep it until the northwest room on the floor above has been opened."
+          }
+        },
+        {
+          "id": "kmt1-bien-tabasa-statue",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Tabasa Statue",
+          "missable": false,
+          "levels": {
+            "1": "Prepare against a dangerous status effect.",
+            "2": "Use the Small Key in Bien 2F's northwest section.",
+            "3": "Cross the damaging tiles, unlock the northwest chamber, and take the Tabasa Statue. Merely owning it blocks the fourth-floor guardian's petrification attack."
+          }
+        },
+        {
+          "id": "kmt1-bien-bull-key",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Bull Key",
+          "missable": false,
+          "levels": {
+            "1": "The upper floor controls the settlement's remaining doors.",
+            "2": "Clear the fixed encounter on Bien 4F while carrying the Tabasa Statue.",
+            "3": "Bring the statue, defeat the guardian, and collect the Bull Key. Without the statue the encounter remains possible but needlessly exposes the party to petrification."
+          }
+        },
+        {
+          "id": "kmt1-bien-excursion-ticket",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Excursion Ticket",
+          "missable": true,
+          "levels": {
+            "1": "Delay one reward until your wallet is full.",
+            "2": "Use the Bull Key in Bien 2F's southeast quarter and meet its elder.",
+            "3": "Before speaking to the elder, hold as much Macca as practical. The reward includes the Excursion Ticket and adds twice your current cash, so claiming it with a nearly empty wallet wastes the one-time multiplier."
+          }
+        },
+        {
+          "id": "kmt1-bien-loru-talisman",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Loru's Talisman",
+          "missable": true,
+          "levels": {
+            "1": "Revisit the guard after restoring access.",
+            "2": "Return to Garu at Bien's western entrance after the fourth-floor encounter.",
+            "3": "Speak to Garu again and accept Loru's Talisman. Carry it into Valhalla; it disables the next guardian's magic and prevents an avoidable difficulty spike."
+          }
+        },
+        {
+          "id": "kmt1-bien-rag-exchanges",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "two gem exchanges",
+          "missable": true,
+          "levels": {
+            "1": "Save two gems for the specialist shop.",
+            "2": "At Bien's Rag shop, complete two Amethyst exchanges.",
+            "3": "Exchange Amethysts for the Ares Necklace and the Magatama of Heaven. Both feed the later statue puzzle, and completing two trades also unlocks a separate transfer item."
+          }
+        },
+        {
+          "id": "kmt1-bien-members-card",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Members Card",
+          "missable": true,
+          "levels": {
+            "1": "The gem shop remembers repeat customers.",
+            "2": "Claim the bonus after two exchanges at Bien's Rag shop.",
+            "3": "Finish two distinct gem trades, then speak to the shopkeeper again for the Members Card. Preserve it through the campaign transfer; it unlocks a hidden meeting in Megami Tensei II."
+          }
+        },
+        {
+          "id": "kmt1-bien-hinokagutsuchi",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Hinokagutsuchi Sword",
+          "missable": false,
+          "levels": {
+            "1": "A detector reveals a late return path in Bien.",
+            "2": "Return to Bien 4F with Loose's Bottle and follow the hidden drop route.",
+            "3": "Use the detector to find the concealed wall, follow the holes to the sword chamber, and attempt the pull with the male lead's Strength, Intelligence, and Luck totaling at least 48. If the check fails, raise those stats and return."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-valhalla",
+      "name": "Valhalla Corridor",
+      "location_cue": "A long enclosed route leading toward a darker lower passage.",
+      "note": "Fixed locations and mechanical prerequisites only; story context is intentionally withheld.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-valhalla-rough-gem",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Rough Gem",
+          "missable": false,
+          "levels": {
+            "1": "Bring the guard's talisman through the corridor.",
+            "2": "Clear Valhalla's fixed 2F encounter with Loru's Talisman in inventory.",
+            "3": "Carry the talisman so the guardian's magic is sealed, finish the encounter, and take the Rough Gem. It is one component of the later three-position unsealing ritual."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-underworld",
+      "name": "Underworld Passage",
+      "location_cue": "The basement route reached through the corridor's marked odor point.",
+      "note": "Fixed locations and mechanical prerequisites only; story context is intentionally withheld.",
+      "save_backup": {
+        "title": "Create a rotating backup first",
+        "why": "This section contains a one-time reward, resource exchange, or transfer flag.",
+        "detail": "Keep the previous slot intact until every listed result has been confirmed."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-underworld-zombie-cache",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "3000 Macca; 1000 Magnetite",
+          "missable": false,
+          "levels": {
+            "1": "A paid detour returns more than it costs.",
+            "2": "Use Cerberus at Valhalla B1's odor point, then pay the zombie 500 Macca.",
+            "3": "Open the lower route with Cerberus, pay 500 Macca at the blocking encounter, and continue to the fixed chest. It contains 3,000 Macca and 1,000 Magnetite, producing a clear net gain."
+          }
+        },
+        {
+          "id": "kmt1-underworld-rick",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Rick's Bracelet and ally",
+          "missable": true,
+          "levels": {
+            "1": "Make room before rescuing the trapped ally.",
+            "2": "Reach Rick on Valhalla B1 with fewer than seven demons in stock.",
+            "3": "Reduce demon stock below seven before the rescue. The event grants Rick's Bracelet and transforms him into a recruitable ally; a full stock prevents the transformation from joining, so reload if the slot check fails."
+          }
+        },
+        {
+          "id": "kmt1-underworld-cerberus-return",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "re-recruit Cerberus",
+          "missable": false,
+          "levels": {
+            "1": "An early ally leaves after the lower detour.",
+            "2": "Return to Daedalus 1F after exiting the underworld.",
+            "3": "Cerberus departs when the lower passage ends. Negotiate with it again on Daedalus 1F before continuing so later party and route plans do not assume a missing ally."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-mazurka",
+      "name": "Mazurka Complex",
+      "location_cue": "A western approach and an eastern multi-floor corridor connected by elevators.",
+      "note": "Fixed locations and mechanical prerequisites only; story context is intentionally withheld.",
+      "save_backup": {
+        "title": "Create a rotating backup first",
+        "why": "This section contains a one-time reward, resource exchange, or transfer flag.",
+        "detail": "Keep the previous slot intact until every listed result has been confirmed."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-mazurka-silk-thread",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Silk Thread",
+          "missable": true,
+          "levels": {
+            "1": "Keep a seemingly minor thread until much later.",
+            "2": "Collect the Silk Thread on the Mazurka western approach, 4F.",
+            "3": "Take the fixed Silk Thread and do not discard or exchange it. Carry it into the unsealing chamber and hand it over there so the transferred Megami Tensei II file can yield an extra protective item."
+          }
+        },
+        {
+          "id": "kmt1-mazurka-silver-relief",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Silver Relief",
+          "missable": true,
+          "levels": {
+            "1": "Empty your wallet before a mandatory trade.",
+            "2": "Meet Gaia on Mazurka 8F to obtain the Silver Relief.",
+            "3": "Spend spare Macca on permanent equipment first, then accept Gaia's price: every coin currently held. The Silver Relief opens the concealed route on 3F; buying it with a full wallet destroys unnecessary funds."
+          }
+        },
+        {
+          "id": "kmt1-mazurka-latose-statue",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Statue of Latose",
+          "missable": false,
+          "levels": {
+            "1": "Two gem-shop relics combine at a fixed altar.",
+            "2": "Use the Ares Necklace and Heaven Magatama on Mazurka 5F.",
+            "3": "Bring both Rag-shop relics to the fifth-floor altar and complete the exchange for the Statue of Latose. Keep it for the third-floor guardian because it makes that target physically vulnerable."
+          }
+        },
+        {
+          "id": "kmt1-mazurka-stirring-gem",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Stirring Gem",
+          "missable": false,
+          "levels": {
+            "1": "A hidden third-floor route needs two preparations.",
+            "2": "Use the Silver Relief on Mazurka 3F and carry the Statue of Latose.",
+            "3": "Reveal the sealed passage with the relief, bring the statue into the fixed encounter, and defeat the manifested guardian. Collect the Stirring Gem, the third ritual component."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-flames",
+      "name": "Sea of Flames",
+      "location_cue": "Damaging floors, false walls, and a sealed chamber around the volcanic route.",
+      "note": "Fixed locations and mechanical prerequisites only; story context is intentionally withheld.",
+      "save_backup": {
+        "title": "Create a rotating backup first",
+        "why": "This section contains a one-time reward, resource exchange, or transfer flag.",
+        "detail": "Keep the previous slot intact until every listed result has been confirmed."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-flames-unseal",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "three-gem unsealing",
+          "missable": true,
+          "levels": {
+            "1": "Three gems belong in three distinct positions.",
+            "2": "At the Sea of Flames B2 seal, place Rough on the forehead, Silence in the right eye, and Stirring in the left eye.",
+            "3": "Insert Rough Gem at the forehead, Silence Gem in the right eye, then Stirring Gem in the left eye. Confirm each placement before selecting the next; the correct order completes the unsealing and consumes the gems."
+          }
+        },
+        {
+          "id": "kmt1-flames-unseal-retry",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "reset failed gem order",
+          "missable": true,
+          "levels": {
+            "1": "A wrong placement is recoverable, but not immediately.",
+            "2": "After a failed B2 ritual, return to the entrance and advance the moon cycle.",
+            "3": "If the seal ejects the party, leave the chamber and walk until the moon phase changes enough for re-entry. Reloading the pre-ritual save is faster and preserves supplies."
+          }
+        },
+        {
+          "id": "kmt1-flames-silk-handoff",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "give Silk Thread",
+          "missable": true,
+          "levels": {
+            "1": "Carry the western-approach keepsake into the seal room.",
+            "2": "Have the Silk Thread in inventory when completing the B2 unsealing.",
+            "3": "Bring the thread through the successful ritual and accept the handoff prompt. This action is easy to miss and is required for the related bonus on the transferred second-campaign file."
+          }
+        },
+        {
+          "id": "kmt1-flames-izanami-clothes",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Izanami's Clothes",
+          "missable": false,
+          "levels": {
+            "1": "The successful ritual grants protection from the environment.",
+            "2": "Complete the B2 unsealing in the correct three-gem order.",
+            "3": "After the seal opens, receive Izanami's Clothes. Keep them in inventory to cancel damage from hazardous floors and wall impacts throughout this region."
+          }
+        },
+        {
+          "id": "kmt1-flames-loose-bottle",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Loose's Bottle",
+          "missable": false,
+          "levels": {
+            "1": "A side chamber contains a false-wall detector.",
+            "2": "Search the Sea of Flames 1F side rooms.",
+            "3": "Collect Loose's Bottle on 1F and retain it. When Mapper marks a suspicious wall, the bottle confirms hidden mechanisms and enables the return route to Bien's best weapon."
+          }
+        },
+        {
+          "id": "kmt1-flames-purski-neigh",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Purski's Neigh",
+          "missable": false,
+          "levels": {
+            "1": "One upper-floor encounter grants a defensive charm.",
+            "2": "Clear the fixed encounter on the Sea of Flames 2F.",
+            "3": "Defeat Purski and take Purski's Neigh. Carrying it nullifies the physical attacks of the guardian below, making that optional equipment reward much safer."
+          }
+        },
+        {
+          "id": "kmt1-flames-lion-shield",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Lion Shield",
+          "missable": false,
+          "levels": {
+            "1": "Bring the neigh charm to the first floor.",
+            "2": "Clear the Sea of Flames 1F guardian while carrying Purski's Neigh.",
+            "3": "Keep the charm in inventory, defeat Set after its physical attacks are suppressed, and collect the Lion Shield. This is the strongest shield and cannot be bought."
+          }
+        },
+        {
+          "id": "kmt1-flames-white-dragon",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "White Dragon Gem",
+          "missable": true,
+          "levels": {
+            "1": "A remote vase only responds after a palace clue.",
+            "2": "Return to the Sea of Flames 2F with Rick's Bracelet after hearing the Infini 4F clue.",
+            "3": "Inspect the bottomless vase with both the dialogue flag and Rick's Bracelet active. Retrieve the White Dragon Gem; carrying it prevents the final guardian from using its major healing technique."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-infini",
+      "name": "Infini Palace",
+      "location_cue": "A late palace of repeated halls, treasure rooms, and hidden information.",
+      "note": "Fixed locations and mechanical prerequisites only; story context is intentionally withheld.",
+      "save_backup": {
+        "title": "Create a rotating backup first",
+        "why": "This section contains a one-time reward, resource exchange, or transfer flag.",
+        "detail": "Keep the previous slot intact until every listed result has been confirmed."
+      },
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-infini-skeleton-clue",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Holy Vase information",
+          "missable": true,
+          "levels": {
+            "1": "Speak with the palace's quiet informant before opening a remote vessel.",
+            "2": "Find the skeleton in the northwest part of Infini 4F.",
+            "3": "Exhaust its dialogue about the bottomless vase before returning to the Sea of Flames. The White Dragon Gem cannot be claimed until this information flag has been set."
+          }
+        },
+        {
+          "id": "kmt1-infini-mist-armor",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Mist Armor",
+          "missable": false,
+          "levels": {
+            "1": "Two unique treasures share the second floor.",
+            "2": "Open the fixed armor chest on Infini 2F.",
+            "3": "Explore the second-floor branches and take the Mist Armor from its dedicated treasure. It is unique and unavailable from border shops."
+          }
+        },
+        {
+          "id": "kmt1-infini-daphne-crown",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "Daphne Crown",
+          "missable": false,
+          "levels": {
+            "1": "The second-floor treasure audit has another unique piece.",
+            "2": "Open the fixed headgear chest on Infini 2F.",
+            "3": "Continue the Infini 2F sweep until the Daphne Crown chest is opened. Record it separately from Mist Armor so neither unique slot is mistaken for ordinary shop gear."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-red",
+      "name": "Red Tower",
+      "location_cue": "The final fixed tower beyond the palace route.",
+      "note": "Fixed locations and mechanical prerequisites only; story context is intentionally withheld.",
+      "save_backup": {
+        "title": "Create a rotating backup first",
+        "why": "This section contains a one-time reward, resource exchange, or transfer flag.",
+        "detail": "Keep the previous slot intact until every listed result has been confirmed."
+      },
+      "point_of_no_return": {
+        "title": "Finish this audit before proceeding",
+        "why": "The next campaign consumes the first campaign's completion state.",
+        "detail": "Confirm every row in this area, then preserve the cleared file separately."
+      },
+      "items": [
+        {
+          "id": "kmt1-red-tower-clear",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "finish first campaign",
+          "missable": true,
+          "levels": {
+            "1": "Complete all return trips before the uppermost route.",
+            "2": "Ascend the Red Tower and clear its 8F encounter.",
+            "3": "Before the final ascent, confirm maps, unique equipment, the Members Card, Silk Thread handoff, and White Dragon Gem. Preserve a pre-clear save, finish the 8F encounter, and retain the resulting clear data for the collection's second campaign."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-carryover",
+      "name": "Transfer Audit",
+      "location_cue": "The clear-data transition between the collection's two campaigns.",
+      "note": "Fixed locations and mechanical prerequisites only; story context is intentionally withheld.",
+      "save_backup": {
+        "title": "Create a rotating backup first",
+        "why": "This section contains a one-time reward, resource exchange, or transfer flag.",
+        "detail": "Keep the previous slot intact until every listed result has been confirmed."
+      },
+      "point_of_no_return": {
+        "title": "Finish this audit before proceeding",
+        "why": "The next campaign consumes the first campaign's completion state.",
+        "detail": "Confirm every row in this area, then preserve the cleared file separately."
+      },
+      "items": [
+        {
+          "id": "kmt1-carryover-proof",
+          "type": "optional",
+          "safe_type": "Fixed completion step",
+          "label": "verify inherited secrets",
+          "missable": true,
+          "levels": {
+            "1": "The second campaign should reflect two hidden preparations.",
+            "2": "Load Megami Tensei II from the cleared collection file and inspect its inherited flags.",
+            "3": "Keep the Members Card and complete the Silk Thread handoff before the first campaign ends. On the transferred file, verify the card-related hidden meeting and the thread-related Izanami reward remain available."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-weapon-registry",
+      "name": "Complete Weapon Registry",
+      "location_cue": "Border shops across the fixed dungeons plus the few dedicated treasure rooms.",
+      "note": "Buying and recording every distinct piece prevents shop-only gear from disappearing inside a general progression checklist.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-weapon-001-jakkunaifu",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Jakkunaifu (ジャックナイフ)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Jakkunaifu (ジャックナイフ) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Jakkunaifu (ジャックナイフ) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 1, 1, 15, 1; availability note: both protagonists equip; Mikonのborder shopで80Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-002-nunchaku",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Nunchaku (ヌンチャク)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Nunchaku (ヌンチャク) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Nunchaku (ヌンチャク) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 2, 1～2, 11, 1; availability note: male protagonist equips; Mikonのborder shopで130Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-003-tanken",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Tanken (短剣)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Tanken (短剣) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Tanken (短剣) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 4, 1, 13, 1; availability note: male protagonist equips; Mikonのborder shopで190Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-004-sasori-muchi",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Sasori Muchi (さそりムチ)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Sasori Muchi (さそりムチ) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Sasori Muchi (さそりムチ) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 3, 1～2, 12, 1; availability note: female protagonist equips; MikonとValhallaのborder shopで280Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-005-kusari-gama",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Kusari Gama (鎖がま)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Kusari Gama (鎖がま) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Kusari Gama (鎖がま) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 6, 1～2, 12, 1; availability note: male protagonist equips; Valhallaのborder shopで400Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-006-mumei-no-katana",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Mumei No Katana (無銘の刀)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Mumei No Katana (無銘の刀) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Mumei No Katana (無銘の刀) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 8, 1, 10, 2; availability note: male protagonist equips; Valhallaのborder shopで600Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-007-purachina-no-tanken",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Purachina No Tanken (プラチナの短剣)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Purachina No Tanken (プラチナの短剣) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Purachina No Tanken (プラチナの短剣) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 10, 1, 11, 2; availability note: female protagonist equips; ValhallaとBienのborder shopで990Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-008-mooningusutaa",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Mooningusutaa (モーニングスター)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Mooningusutaa (モーニングスター) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Mooningusutaa (モーニングスター) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 10, 2～3, 12, 2; availability note: male protagonist equips; BienとMazurka westのborder shopで1400Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-009-meitou-kotetsu",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Meitou Kotetsu (銘刀虎徹)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Meitou Kotetsu (銘刀虎徹) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Meitou Kotetsu (銘刀虎徹) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 18, 1, 10, 6; availability note: male protagonist equips; BienとMazurka westのborder shopで2600Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-010-mizukagami-no-tsurugi",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Mizukagami No Tsurugi (水鏡の剣)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Mizukagami No Tsurugi (水鏡の剣) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Mizukagami No Tsurugi (水鏡の剣) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 23, 1, 9, 3; availability note: female protagonist equips; BienとMazurka westとMazurka eastのborder shopで3000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-011-kikuichi-moji",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Kikuichi Moji (菊一文字)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Kikuichi Moji (菊一文字) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Kikuichi Moji (菊一文字) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 32, 1, 9, 3; availability note: male protagonist equips; Mazurka westとMazurka eastのborder shopで3700Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-012-honoo-no-jutte",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Honoo No Jutte (炎の十手)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Honoo No Jutte (炎の十手) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Honoo No Jutte (炎の十手) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 30, 1～2, 10, 2; availability note: male protagonist equips; Mazurka eastのborder shopで5000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-013-ranbu-no-tsurugi",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Ranbu No Tsurugi (乱舞の剣)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Ranbu No Tsurugi (乱舞の剣) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Ranbu No Tsurugi (乱舞の剣) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 23, 1～8, 13, 1; availability note: female protagonist equips; Mazurka eastとSea of Flamesのborder shopで5500Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-014-souruobunaito",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Souruobunaito (ソウルオブナイト)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Souruobunaito (ソウルオブナイト) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Souruobunaito (ソウルオブナイト) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 40, 1, 10, 3; availability note: male protagonist equips; Sea of Flamesのborder shopで6900Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-015-oriharukon-no-tsurugi",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Oriharukon No Tsurugi (オリハルコンの剣)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Oriharukon No Tsurugi (オリハルコンの剣) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Oriharukon No Tsurugi (オリハルコンの剣) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 51, 1, 10, 4; availability note: male protagonist equips; Sea of Flamesのborder shopで9000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-016-shu-no-tsurugi",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Shu No Tsurugi (朱の剣)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Shu No Tsurugi (朱の剣) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Shu No Tsurugi (朱の剣) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 38, 2～4, 9, 4; availability note: female protagonist equips; Sea of FlamesとInfiniのborder shopで12000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-017-shinigami-nokama",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Shinigami Nokama (死神のかま)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Shinigami Nokama (死神のかま) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Shinigami Nokama (死神のかま) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 45, 1～3, 11, 8; availability note: male protagonist equips; Infiniのborder shopで20000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-018-peruseusu-no-tsurugi",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Peruseusu No Tsurugi (ペルセウスの剣)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Peruseusu No Tsurugi (ペルセウスの剣) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Peruseusu No Tsurugi (ペルセウスの剣) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 48, 2～4, 9, 8; availability note: male protagonist equips; Infiniのborder shopで30000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-019-oora-no-tsurugi",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Oora No Tsurugi (オーラの剣)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Oora No Tsurugi (オーラの剣) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Oora No Tsurugi (オーラの剣) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 74, 1～2, 9, 6; availability note: both protagonists equip; Infiniのborder shopでMaccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-weapon-020-hinokagutsuchi-no-tsurugi",
+          "type": "optional",
+          "safe_type": "Weapon registry",
+          "label": "Hinokagutsuchi No Tsurugi (ヒノカグツチの剣)",
+          "missable": false,
+          "levels": {
+            "1": "Check weapon stock whenever a new border shop opens.",
+            "2": "Obtain Hinokagutsuchi No Tsurugi (ヒノカグツチの剣) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Hinokagutsuchi No Tsurugi (ヒノカグツチの剣) to the ownership ledger. Its recorded attack, hit count, accuracy, critical values are 80, 2, 8, 7; availability note: male protagonist equips; special stat checkBien4Fcollect. Unique fixed treasures are covered again in their physical area."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-armor-registry",
+      "name": "Complete Armor Registry",
+      "location_cue": "Border shops across the fixed dungeons plus the few dedicated treasure rooms.",
+      "note": "Buying and recording every distinct piece prevents shop-only gear from disappearing inside a general progression checklist.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-armor-001-konbattosuutsu",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Konbattosuutsu (コンバットスーツ)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Konbattosuutsu (コンバットスーツ) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Konbattosuutsu (コンバットスーツ) to the ownership ledger. Its recorded defense and appeal values are 3, 3; availability note: both protagonists equip; Mikonのborder shopで140Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-002-kusari-katabira",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Kusari Katabira (鎖かたびら)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Kusari Katabira (鎖かたびら) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Kusari Katabira (鎖かたびら) to the ownership ledger. Its recorded defense and appeal values are 5, 4; availability note: male protagonist equips; MikonとValhallaのborder shopで800Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-003-buresutopureeto",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Buresutopureeto (ブレストプレート)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Buresutopureeto (ブレストプレート) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Buresutopureeto (ブレストプレート) to the ownership ledger. Its recorded defense and appeal values are 7, 5; availability note: male protagonist equips; ValhallaとBienのborder shopで1600Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-004-faibaasuutsu",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Faibaasuutsu (ファイバースーツ)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Faibaasuutsu (ファイバースーツ) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Faibaasuutsu (ファイバースーツ) to the ownership ledger. Its recorded defense and appeal values are 8, 6; availability note: both protagonists equip; BienとMazurka westとMazurka eastのborder shopで4600Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-005-kouchuu",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Kouchuu (甲冑)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Kouchuu (甲冑) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Kouchuu (甲冑) to the ownership ledger. Its recorded defense and appeal values are 10, 7; availability note: male protagonist equips; Mazurka westとMazurka eastとSea of Flamesのborder shopで9000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-006-oriharukonmeiru",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Oriharukonmeiru (オリハルコンメイル)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Oriharukonmeiru (オリハルコンメイル) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Oriharukonmeiru (オリハルコンメイル) to the ownership ledger. Its recorded defense and appeal values are 12, 8; availability note: male protagonist equips; Sea of FlamesとInfiniのborder shopで18000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-007-oora-no-yoroi",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Oora No Yoroi (オーラの鎧)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Oora No Yoroi (オーラの鎧) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Oora No Yoroi (オーラの鎧) to the ownership ledger. Its recorded defense and appeal values are 14, 9; availability note: both protagonists equip; Infiniのborder shopで37000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-008-kiri-no-yoroi",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Kiri No Yoroi (霧の鎧)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Kiri No Yoroi (霧の鎧) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Kiri No Yoroi (霧の鎧) to the ownership ledger. Its recorded defense and appeal values are 16, 9; availability note: male protagonist equips; Infini2Fcollect. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-009-kashi-no-tate",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Kashi No Tate (樫の盾)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Kashi No Tate (樫の盾) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Kashi No Tate (樫の盾) to the ownership ledger. Its recorded defense and appeal values are 2, 0; availability note: male protagonist equips; Mikonのborder shopで150Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-010-koutetsu-no-tate",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Koutetsu No Tate (鋼鉄の盾)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Koutetsu No Tate (鋼鉄の盾) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Koutetsu No Tate (鋼鉄の盾) to the ownership ledger. Its recorded defense and appeal values are 3, 0; availability note: male protagonist equips; Valhallaのborder shopで500Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-011-seramikusu-no-tate",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Seramikusu No Tate (セラミクスの盾)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Seramikusu No Tate (セラミクスの盾) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Seramikusu No Tate (セラミクスの盾) to the ownership ledger. Its recorded defense and appeal values are 4, 0; availability note: male protagonist equips; BienとMazurka westのborder shopで1000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-012-purachina-no-tate",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Purachina No Tate (プラチナの盾)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Purachina No Tate (プラチナの盾) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Purachina No Tate (プラチナの盾) to the ownership ledger. Its recorded defense and appeal values are 5, 0; availability note: male protagonist equips; Mazurka eastのborder shopで6000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-013-oriharukon-no-tate",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Oriharukon No Tate (オリハルコンの盾)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Oriharukon No Tate (オリハルコンの盾) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Oriharukon No Tate (オリハルコンの盾) to the ownership ledger. Its recorded defense and appeal values are 6, 0; availability note: male protagonist equips; Sea of Flamesのborder shopで12000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-014-oora-no-tate",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Oora No Tate (オーラの盾)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Oora No Tate (オーラの盾) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Oora No Tate (オーラの盾) to the ownership ledger. Its recorded defense and appeal values are 7, 0; availability note: male protagonist equips; Infiniのborder shopで25000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-015-shishi-no-tate",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Shishi No Tate (獅子の盾)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Shishi No Tate (獅子の盾) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Shishi No Tate (獅子の盾) to the ownership ledger. Its recorded defense and appeal values are 10, 0; availability note: male protagonist equips; Set encounter reward入手できる. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-016-herumetto",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Herumetto (ヘルメット)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Herumetto (ヘルメット) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Herumetto (ヘルメット) to the ownership ledger. Its recorded defense and appeal values are 3, 0; availability note: female protagonist equips; のborder shopで130Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-017-keburaaherumetto",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Keburaaherumetto (ケブラーヘルメット)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Keburaaherumetto (ケブラーヘルメット) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Keburaaherumetto (ケブラーヘルメット) to the ownership ledger. Its recorded defense and appeal values are 3, 0; availability note: both protagonists equip; のborder shopで500Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-018-mayoke-no-kabuto",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Mayoke No Kabuto (魔除けの兜)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Mayoke No Kabuto (魔除けの兜) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Mayoke No Kabuto (魔除けの兜) to the ownership ledger. Its recorded defense and appeal values are 6, 0; availability note: female protagonist equips; のborder shopで1000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-019-enjieruringu",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Enjieruringu (エンジェルリング)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Enjieruringu (エンジェルリング) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Enjieruringu (エンジェルリング) to the ownership ledger. Its recorded defense and appeal values are 8, 0; availability note: female protagonist equips; のborder shopで4000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-020-yasha-no-men",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Yasha No Men (夜叉の面)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Yasha No Men (夜叉の面) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Yasha No Men (夜叉の面) to the ownership ledger. Its recorded defense and appeal values are 9, 0; availability note: both protagonists equip; のborder shopで10000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-021-oora-no-kabuto",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Oora No Kabuto (オーラの兜)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Oora No Kabuto (オーラの兜) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Oora No Kabuto (オーラの兜) to the ownership ledger. Its recorded defense and appeal values are 10, 0; availability note: both protagonists equip; のborder shopで25000Maccapurchase. Unique fixed treasures are covered again in their physical area."
+          }
+        },
+        {
+          "id": "kmt1-armor-022-dafune-no-kan",
+          "type": "optional",
+          "safe_type": "Armor registry",
+          "label": "Dafune No Kan (ダフネの冠)",
+          "missable": false,
+          "levels": {
+            "1": "Check armor stock whenever a new border shop opens.",
+            "2": "Obtain Dafune No Kan (ダフネの冠) from its listed shop or fixed treasure source.",
+            "3": "Add one copy of Dafune No Kan (ダフネの冠) to the ownership ledger. Its recorded defense and appeal values are 13, 0; availability note: female protagonist equips; Infini2Fcollect. Unique fixed treasures are covered again in their physical area."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-utility-registry",
+      "name": "Utility Item Registry",
+      "location_cue": "Item shops, ordinary treasure chests, encounter rewards, and Bien's gem exchange.",
+      "note": "Key progression items are tracked in their physical areas; this section covers reusable or consumable inventory types.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-item-001-takaradama",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Takaradama (宝玉)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Takaradama (宝玉) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Takaradama (宝玉), then verify its purpose: full heal; cures poison. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-002-poizunon",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Poizunon (ポイズノン)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Poizunon (ポイズノン) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Poizunon (ポイズノン), then verify its purpose: cures poison. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-003-pararanon",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Pararanon (パララノン)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Pararanon (パララノン) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Pararanon (パララノン), then verify its purpose: cures paralysis. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-004-petoranon",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Petoranon (ペトラノン)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Petoranon (ペトラノン) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Petoranon (ペトラノン), then verify its purpose: cures petrification. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-005-agiramasutoon",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Agiramasutoon (アギラマストーン)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Agiramasutoon (アギラマストーン) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Agiramasutoon (アギラマストーン), then verify its purpose: casts Agirama. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-006-jiomasutoon",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Jiomasutoon (ジオマストーン)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Jiomasutoon (ジオマストーン) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Jiomasutoon (ジオマストーン), then verify its purpose: casts Zioma. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-007-bufuramasutoon",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Bufuramasutoon (ブフラマストーン)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Bufuramasutoon (ブフラマストーン) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Bufuramasutoon (ブフラマストーン), then verify its purpose: casts Bufurama. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-008-maharagimasutoon",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Maharagimasutoon (マハラギマストーン)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Maharagimasutoon (マハラギマストーン) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Maharagimasutoon (マハラギマストーン), then verify its purpose: casts Maharagima. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-009-miareno-suzu",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Miareno Suzu (みあれの鈴)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Miareno Suzu (みあれの鈴) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Miareno Suzu (みあれの鈴), then verify its purpose: revives fallen ally. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-010-segakino-reiyaku",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Segakino Reiyaku (せがきの霊薬)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Segakino Reiyaku (せがきの霊薬) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Segakino Reiyaku (せがきの霊薬), then verify its purpose: suppresses weaker encounters. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-011-massurudorinko",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Massurudorinko (マッスルドリンコ)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Massurudorinko (マッスルドリンコ) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Massurudorinko (マッスルドリンコ), then verify its purpose: temporary over-cap HP. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-012-maryoku-no-moto",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Maryoku No Moto (魔力の素)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Maryoku No Moto (魔力の素) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Maryoku No Moto (魔力の素), then verify its purpose: temporary over-cap MP. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-013-sooma",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Sooma (ソーマ)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Sooma (ソーマ) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Sooma (ソーマ), then verify its purpose: full HP MP; cures poison. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        },
+        {
+          "id": "kmt1-item-014-amejisuto",
+          "type": "optional",
+          "safe_type": "Utility registry",
+          "label": "Amejisuto (アメジスト)",
+          "missable": false,
+          "levels": {
+            "1": "Test each distinct consumable or exchange item once.",
+            "2": "Acquire Amejisuto (アメジスト) from shops, treasure, encounters, or gem exchange.",
+            "3": "Record one owned copy of Amejisuto (アメジスト), then verify its purpose: Rag exchange currency. Reload after testing if consuming a rare copy would interfere with a key-item exchange."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-recruitable-demons",
+      "name": "Recruitment and Fusion Registry",
+      "location_cue": "Negotiation encounters and the fusion room available throughout the fixed dungeon network.",
+      "note": "Each joinable demon is recorded once; maintaining all of them simultaneously is neither required nor practical.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-demon-072-minotaurosu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Minotaurosu (ミノタウロス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 27 Boss ・ Maou / BOSS・魔王 entry named Minotaurosu (ミノタウロス).",
+            "3": "Recruit or fuse Minotaurosu (ミノタウロス), a level 27 Boss ・ Maou / BOSS・魔王 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-073-medeyuusa",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Medeyuusa (メデューサ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 39 Boss ・ Maou / BOSS・魔王 entry named Medeyuusa (メデューサ).",
+            "3": "Recruit or fuse Medeyuusa (メデューサ), a level 39 Boss ・ Maou / BOSS・魔王 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-074-roki",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Roki (ロキ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 50 Boss ・ Maou / BOSS・魔王 entry named Roki (ロキ).",
+            "3": "Recruit or fuse Roki (ロキ), a level 50 Boss ・ Maou / BOSS・魔王 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-075-hekaate",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Hekaate (ヘカーテ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 63 Boss ・ Maou / BOSS・魔王 entry named Hekaate (ヘカーテ).",
+            "3": "Recruit or fuse Hekaate (ヘカーテ), a level 63 Boss ・ Maou / BOSS・魔王 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-076-seto",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Seto (セト)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 85 Boss ・ Maou / BOSS・魔王 entry named Seto (セト).",
+            "3": "Recruit or fuse Seto (セト), a level 85 Boss ・ Maou / BOSS・魔王 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-077-rushifaa",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Rushifaa (ルシファー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 130 Boss ・ Maou / BOSS・魔王 entry named Rushifaa (ルシファー).",
+            "3": "Recruit or fuse Rushifaa (ルシファー), a level 130 Boss ・ Maou / BOSS・魔王 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-078-kyansaa",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Kyansaa (キャンサー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 9 Majuu / 魔獣 entry named Kyansaa (キャンサー).",
+            "3": "Recruit or fuse Kyansaa (キャンサー), a level 9 Majuu / 魔獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-079-keruberosu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Keruberosu (ケルベロス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 10 Majuu / 魔獣 entry named Keruberosu (ケルベロス).",
+            "3": "Recruit or fuse Keruberosu (ケルベロス), a level 10 Majuu / 魔獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-080-nekomata",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Nekomata (ネコマタ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 12 Majuu / 魔獣 entry named Nekomata (ネコマタ).",
+            "3": "Recruit or fuse Nekomata (ネコマタ), a level 12 Majuu / 魔獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-081-bandaa",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Bandaa (バンダー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 15 Majuu / 魔獣 entry named Bandaa (バンダー).",
+            "3": "Recruit or fuse Bandaa (バンダー), a level 15 Majuu / 魔獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-082-bahara",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Bahara (バハラ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 20 Majuu / 魔獣 entry named Bahara (バハラ).",
+            "3": "Recruit or fuse Bahara (バハラ), a level 20 Majuu / 魔獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-083-sutoonka",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Sutoonka (ストーンカ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 28 Majuu / 魔獣 entry named Sutoonka (ストーンカ).",
+            "3": "Recruit or fuse Sutoonka (ストーンカ), a level 28 Majuu / 魔獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-084-bajirisuku",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Bajirisuku (バジリスク)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 30 Majuu / 魔獣 entry named Bajirisuku (バジリスク).",
+            "3": "Recruit or fuse Bajirisuku (バジリスク), a level 30 Majuu / 魔獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-085-dodongoo",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Dodongoo (ドドンゴー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 35 Majuu / 魔獣 entry named Dodongoo (ドドンゴー).",
+            "3": "Recruit or fuse Dodongoo (ドドンゴー), a level 35 Majuu / 魔獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-086-ketsuarukatoru",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Ketsuarukatoru (ケツアルカトル)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 40 Majuu / 魔獣 entry named Ketsuarukatoru (ケツアルカトル).",
+            "3": "Recruit or fuse Ketsuarukatoru (ケツアルカトル), a level 40 Majuu / 魔獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-087-purushiki",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Purushiki (プルシキ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 45 Majuu / 魔獣 entry named Purushiki (プルシキ).",
+            "3": "Recruit or fuse Purushiki (プルシキ), a level 45 Majuu / 魔獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-088-waibaan",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Waibaan (ワイバーン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 49 Majuu / 魔獣 entry named Waibaan (ワイバーン).",
+            "3": "Recruit or fuse Waibaan (ワイバーン), a level 49 Majuu / 魔獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-089-heketto",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Heketto (ヘケット)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 2 Youma / 妖魔 entry named Heketto (ヘケット).",
+            "3": "Recruit or fuse Heketto (ヘケット), a level 2 Youma / 妖魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-090-sorasu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Sorasu (ソラス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 7 Youma / 妖魔 entry named Sorasu (ソラス).",
+            "3": "Recruit or fuse Sorasu (ソラス), a level 7 Youma / 妖魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-091-remurian",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Remurian (レムリアン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 8 Youma / 妖魔 entry named Remurian (レムリアン).",
+            "3": "Recruit or fuse Remurian (レムリアン), a level 8 Youma / 妖魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-092-seireen",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Seireen (セイレーン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 14 Youma / 妖魔 entry named Seireen (セイレーン).",
+            "3": "Recruit or fuse Seireen (セイレーン), a level 14 Youma / 妖魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-093-oriasu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Oriasu (オリアス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 19 Youma / 妖魔 entry named Oriasu (オリアス).",
+            "3": "Recruit or fuse Oriasu (オリアス), a level 19 Youma / 妖魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-094-ueakyatto",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Ueakyatto (ウェアキャット)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 20 Youma / 妖魔 entry named Ueakyatto (ウェアキャット).",
+            "3": "Recruit or fuse Ueakyatto (ウェアキャット), a level 20 Youma / 妖魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-095-girutabu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Girutabu (ギルタブ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 33 Youma / 妖魔 entry named Girutabu (ギルタブ).",
+            "3": "Recruit or fuse Girutabu (ギルタブ), a level 33 Youma / 妖魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-096-ramia",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Ramia (ラミア)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 40 Youma / 妖魔 entry named Ramia (ラミア).",
+            "3": "Recruit or fuse Ramia (ラミア), a level 40 Youma / 妖魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-097-ueaurufu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Ueaurufu (ウェアウルフ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 52 Youma / 妖魔 entry named Ueaurufu (ウェアウルフ).",
+            "3": "Recruit or fuse Ueaurufu (ウェアウルフ), a level 52 Youma / 妖魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-098-noomu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Noomu (ノーム)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 3 Chirei / 地霊 entry named Noomu (ノーム).",
+            "3": "Recruit or fuse Noomu (ノーム), a level 3 Chirei / 地霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-099-yomotsushikome",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Yomotsushikome (ヨモツシコメ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 11 Chirei / 地霊 entry named Yomotsushikome (ヨモツシコメ).",
+            "3": "Recruit or fuse Yomotsushikome (ヨモツシコメ), a level 11 Chirei / 地霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-100-vii",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Vii (ヴィー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 11 Chirei / 地霊 entry named Vii (ヴィー).",
+            "3": "Recruit or fuse Vii (ヴィー), a level 11 Chirei / 地霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-101-fangasu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Fangasu (ファンガス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 17 Chirei / 地霊 entry named Fangasu (ファンガス).",
+            "3": "Recruit or fuse Fangasu (ファンガス), a level 17 Chirei / 地霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-102-dowaafu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Dowaafu (ドワーフ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 18 Chirei / 地霊 entry named Dowaafu (ドワーフ).",
+            "3": "Recruit or fuse Dowaafu (ドワーフ), a level 18 Chirei / 地霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-103-rakee",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Rakee (ラケー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 32 Chirei / 地霊 entry named Rakee (ラケー).",
+            "3": "Recruit or fuse Rakee (ラケー), a level 32 Chirei / 地霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-104-jaianto",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Jaianto (ジャイアント)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 38 Chirei / 地霊 entry named Jaianto (ジャイアント).",
+            "3": "Recruit or fuse Jaianto (ジャイアント), a level 38 Chirei / 地霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-105-doriaado",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Doriaado (ドリアード)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 6 Yousei / 妖精 entry named Doriaado (ドリアード).",
+            "3": "Recruit or fuse Doriaado (ドリアード), a level 6 Yousei / 妖精 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-106-goburin",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Goburin (ゴブリン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 12 Yousei / 妖精 entry named Goburin (ゴブリン).",
+            "3": "Recruit or fuse Goburin (ゴブリン), a level 12 Yousei / 妖精 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-107-booguru",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Booguru (ボーグル)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 9 Yousei / 妖精 entry named Booguru (ボーグル).",
+            "3": "Recruit or fuse Booguru (ボーグル), a level 9 Yousei / 妖精 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-108-torooru",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Torooru (トロール)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 17 Yousei / 妖精 entry named Torooru (トロール).",
+            "3": "Recruit or fuse Torooru (トロール), a level 17 Yousei / 妖精 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-109-erufu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Erufu (エルフ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 18 Yousei / 妖精 entry named Erufu (エルフ).",
+            "3": "Recruit or fuse Erufu (エルフ), a level 18 Yousei / 妖精 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-110-puuka",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Puuka (プーカ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 21 Yousei / 妖精 entry named Puuka (プーカ).",
+            "3": "Recruit or fuse Puuka (プーカ), a level 21 Yousei / 妖精 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-111-foomoria",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Foomoria (フォーモリア)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 27 Yousei / 妖精 entry named Foomoria (フォーモリア).",
+            "3": "Recruit or fuse Foomoria (フォーモリア), a level 27 Yousei / 妖精 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-112-torento",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Torento (トレント)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 15 Seirei / 精霊 entry named Torento (トレント).",
+            "3": "Recruit or fuse Torento (トレント), a level 15 Seirei / 精霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-113-kutamu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Kutamu (クタム)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 20 Seirei / 精霊 entry named Kutamu (クタム).",
+            "3": "Recruit or fuse Kutamu (クタム), a level 20 Seirei / 精霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-114-kerupii",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Kerupii (ケルピー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 24 Seirei / 精霊 entry named Kerupii (ケルピー).",
+            "3": "Recruit or fuse Kerupii (ケルピー), a level 24 Seirei / 精霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-115-kawancha",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Kawancha (カワンチャ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 26 Seirei / 精霊 entry named Kawancha (カワンチャ).",
+            "3": "Recruit or fuse Kawancha (カワンチャ), a level 26 Seirei / 精霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-116-pazusu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Pazusu (パズス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 186 Seirei / 精霊 entry named Pazusu (パズス).",
+            "3": "Recruit or fuse Pazusu (パズス), a level 186 Seirei / 精霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-117-saramandaa",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Saramandaa (サラマンダー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 30 Seirei / 精霊 entry named Saramandaa (サラマンダー).",
+            "3": "Recruit or fuse Saramandaa (サラマンダー), a level 30 Seirei / 精霊 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-118-baku",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Baku (バク)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 17 Seijuu / 聖獣 entry named Baku (バク).",
+            "3": "Recruit or fuse Baku (バク), a level 17 Seijuu / 聖獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-119-ragoon",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Ragoon (ラゴーン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 22 Seijuu / 聖獣 entry named Ragoon (ラゴーン).",
+            "3": "Recruit or fuse Ragoon (ラゴーン), a level 22 Seijuu / 聖獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-120-apisu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Apisu (アピス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 28 Seijuu / 聖獣 entry named Apisu (アピス).",
+            "3": "Recruit or fuse Apisu (アピス), a level 28 Seijuu / 聖獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-121-basuteto",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Basuteto (バステト)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 32 Seijuu / 聖獣 entry named Basuteto (バステト).",
+            "3": "Recruit or fuse Basuteto (バステト), a level 32 Seijuu / 聖獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-122-sebeku",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Sebeku (セベク)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 36 Seijuu / 聖獣 entry named Sebeku (セベク).",
+            "3": "Recruit or fuse Sebeku (セベク), a level 36 Seijuu / 聖獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-123-doon",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Doon (ドーン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 39 Seijuu / 聖獣 entry named Doon (ドーン).",
+            "3": "Recruit or fuse Doon (ドーン), a level 39 Seijuu / 聖獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-124-aruraune",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Aruraune (アルラウネ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 27 Genma / 幻魔 entry named Aruraune (アルラウネ).",
+            "3": "Recruit or fuse Aruraune (アルラウネ), a level 27 Genma / 幻魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-125-rakushumi",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Rakushumi (ラクシュミ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 33 Genma / 幻魔 entry named Rakushumi (ラクシュミ).",
+            "3": "Recruit or fuse Rakushumi (ラクシュミ), a level 33 Genma / 幻魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-126-tsukuyomi",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Tsukuyomi (ツクヨミ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 35 Genma / 幻魔 entry named Tsukuyomi (ツクヨミ).",
+            "3": "Recruit or fuse Tsukuyomi (ツクヨミ), a level 35 Genma / 幻魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-127-kuufuurin",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Kuufuurin (クーフーリン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 38 Genma / 幻魔 entry named Kuufuurin (クーフーリン).",
+            "3": "Recruit or fuse Kuufuurin (クーフーリン), a level 38 Genma / 幻魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-128-jin",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Jin (ジン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 40 Genma / 幻魔 entry named Jin (ジン).",
+            "3": "Recruit or fuse Jin (ジン), a level 40 Genma / 幻魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-129-hanumaan",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Hanumaan (ハヌマーン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 42 Genma / 幻魔 entry named Hanumaan (ハヌマーン).",
+            "3": "Recruit or fuse Hanumaan (ハヌマーン), a level 42 Genma / 幻魔 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-130-naaga",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Naaga (ナーガ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 36 Kijin / 鬼神 entry named Naaga (ナーガ).",
+            "3": "Recruit or fuse Naaga (ナーガ), a level 36 Kijin / 鬼神 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-131-susanoo",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Susanoo (スサノオ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 44 Kijin / 鬼神 entry named Susanoo (スサノオ).",
+            "3": "Recruit or fuse Susanoo (スサノオ), a level 44 Kijin / 鬼神 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-132-yasha",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Yasha (ヤシャ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 46 Kijin / 鬼神 entry named Yasha (ヤシャ).",
+            "3": "Recruit or fuse Yasha (ヤシャ), a level 46 Kijin / 鬼神 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-133-tooru",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Tooru (トール)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 49 Kijin / 鬼神 entry named Tooru (トール).",
+            "3": "Recruit or fuse Tooru (トール), a level 49 Kijin / 鬼神 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-134-kaarii",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Kaarii (カーリー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 52 Kijin / 鬼神 entry named Kaarii (カーリー).",
+            "3": "Recruit or fuse Kaarii (カーリー), a level 52 Kijin / 鬼神 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-135-kimaira",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Kimaira (キマイラ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 37 Shinjuu / 神獣 entry named Kimaira (キマイラ).",
+            "3": "Recruit or fuse Kimaira (キマイラ), a level 37 Shinjuu / 神獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-136-anubisu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Anubisu (アヌビス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 47 Shinjuu / 神獣 entry named Anubisu (アヌビス).",
+            "3": "Recruit or fuse Anubisu (アヌビス), a level 47 Shinjuu / 神獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-137-sufinkusu",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Sufinkusu (スフィンクス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 50 Shinjuu / 神獣 entry named Sufinkusu (スフィンクス).",
+            "3": "Recruit or fuse Sufinkusu (スフィンクス), a level 50 Shinjuu / 神獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-138-baron",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Baron (バロン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 54 Shinjuu / 神獣 entry named Baron (バロン).",
+            "3": "Recruit or fuse Baron (バロン), a level 54 Shinjuu / 神獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-139-uonron",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Uonron (ウォンロン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 60 Shinjuu / 神獣 entry named Uonron (ウォンロン).",
+            "3": "Recruit or fuse Uonron (ウォンロン), a level 60 Shinjuu / 神獣 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-140-ganeesha",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Ganeesha (ガネーシャ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 55 Majin / 魔神 entry named Ganeesha (ガネーシャ).",
+            "3": "Recruit or fuse Ganeesha (ガネーシャ), a level 55 Majin / 魔神 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-141-oodin",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Oodin (オーディン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 57 Majin / 魔神 entry named Oodin (オーディン).",
+            "3": "Recruit or fuse Oodin (オーディン), a level 57 Majin / 魔神 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        },
+        {
+          "id": "kmt1-demon-142-kurishuna",
+          "type": "optional",
+          "safe_type": "Recruitment registry",
+          "label": "Kurishuna (クリシュナ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 64 Majin / 魔神 entry named Kurishuna (クリシュナ).",
+            "3": "Recruit or fuse Kurishuna (クリシュナ), a level 64 Majin / 魔神 demon, and place it in active stock once. If negotiation fails, change the moon phase or use the reverse-fusion table; save before releasing it so the registry proof is preserved."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kmt1-hostile-demons",
+      "name": "Hostile Encounter Registry",
+      "location_cue": "Random and fixed encounters distributed across every dungeon tier.",
+      "note": "This is an encounter ledger, not a demand to retain non-recruitable enemies.",
+      "save_backup": null,
+      "point_of_no_return": null,
+      "items": [
+        {
+          "id": "kmt1-demon-001-guriinsuraimu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Guriinsuraimu (グリーンスライム)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 1 Gaidou / 外道 entry named Guriinsuraimu (グリーンスライム).",
+            "3": "Defeat Guriinsuraimu (グリーンスライム), a level 1 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-002-maddosuraggu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Maddosuraggu (マッドスラッグ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 1 Gaidou / 外道 entry named Maddosuraggu (マッドスラッグ).",
+            "3": "Defeat Maddosuraggu (マッドスラッグ), a level 1 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-003-pinkuruupaa",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Pinkuruupaa (ピンクルーパー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 2 Gaidou / 外道 entry named Pinkuruupaa (ピンクルーパー).",
+            "3": "Defeat Pinkuruupaa (ピンクルーパー), a level 2 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-004-uiruouisupu-ao",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Uiruouisupu - Ao (ウィルオウィスプ-青)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 4 Gaidou / 外道 entry named Uiruouisupu - Ao (ウィルオウィスプ-青).",
+            "3": "Defeat Uiruouisupu - Ao (ウィルオウィスプ-青), a level 4 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-005-megapuranaria",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Megapuranaria (メガプラナリア)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 5 Gaidou / 外道 entry named Megapuranaria (メガプラナリア).",
+            "3": "Defeat Megapuranaria (メガプラナリア), a level 5 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-006-burobu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Burobu (ブロブ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 6 Gaidou / 外道 entry named Burobu (ブロブ).",
+            "3": "Defeat Burobu (ブロブ), a level 6 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-007-suraimuhedoro",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Suraimuhedoro (スライムヘドロ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 6 Gaidou / 外道 entry named Suraimuhedoro (スライムヘドロ).",
+            "3": "Defeat Suraimuhedoro (スライムヘドロ), a level 6 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-008-uiruouisupu-aka",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Uiruouisupu - Aka (ウィルオウィスプ-赤)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 7 Gaidou / 外道 entry named Uiruouisupu - Aka (ウィルオウィスプ-赤).",
+            "3": "Defeat Uiruouisupu - Aka (ウィルオウィスプ-赤), a level 7 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-009-sandoruupaa",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Sandoruupaa (サンドルーパー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 15 Gaidou / 外道 entry named Sandoruupaa (サンドルーパー).",
+            "3": "Defeat Sandoruupaa (サンドルーパー), a level 15 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-010-porutaagaisuto",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Porutaagaisuto (ポルターガイスト)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 23 Gaidou / 外道 entry named Porutaagaisuto (ポルターガイスト).",
+            "3": "Defeat Porutaagaisuto (ポルターガイスト), a level 23 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-011-maikonidoro",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Maikonidoro (マイコニドロ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 24 Gaidou / 外道 entry named Maikonidoro (マイコニドロ).",
+            "3": "Defeat Maikonidoro (マイコニドロ), a level 24 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-012-a-baoa-kuu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "A・Baoa・Kuu (ア・バオア・クー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 26 Gaidou / 外道 entry named A・Baoa・Kuu (ア・バオア・クー).",
+            "3": "Defeat A・Baoa・Kuu (ア・バオア・クー), a level 26 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-013-medeyuusa-nokage",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Medeyuusa Nokage (メデューサのかげ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 29 Gaidou / 外道 entry named Medeyuusa Nokage (メデューサのかげ).",
+            "3": "Defeat Medeyuusa Nokage (メデューサのかげ), a level 29 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-014-akumanohoshikubi",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Akumanohoshikubi (あくまのほしくび)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 36 Gaidou / 外道 entry named Akumanohoshikubi (あくまのほしくび).",
+            "3": "Defeat Akumanohoshikubi (あくまのほしくび), a level 36 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-015-foggu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Foggu (フォッグ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 41 Gaidou / 外道 entry named Foggu (フォッグ).",
+            "3": "Defeat Foggu (フォッグ), a level 41 Gaidou / 外道 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-016-zonbi",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Zonbi (ゾンビ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 3 Akuryou / 悪霊 entry named Zonbi (ゾンビ).",
+            "3": "Defeat Zonbi (ゾンビ), a level 3 Akuryou / 悪霊 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-017-goosuto",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Goosuto (ゴースト)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 8 Akuryou / 悪霊 entry named Goosuto (ゴースト).",
+            "3": "Defeat Goosuto (ゴースト), a level 8 Akuryou / 悪霊 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-018-guuru",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Guuru (グール)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 10 Akuryou / 悪霊 entry named Guuru (グール).",
+            "3": "Defeat Guuru (グール), a level 10 Akuryou / 悪霊 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-019-sukeruton",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Sukeruton (スケルトン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 12 Akuryou / 悪霊 entry named Sukeruton (スケルトン).",
+            "3": "Defeat Sukeruton (スケルトン), a level 12 Akuryou / 悪霊 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-020-goosuto-isuma",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Goosuto・Isuma (ゴースト・イスマ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 26 Akuryou / 悪霊 entry named Goosuto・Isuma (ゴースト・イスマ).",
+            "3": "Defeat Goosuto・Isuma (ゴースト・イスマ), a level 26 Akuryou / 悪霊 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-021-miira",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Miira (ミイラ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 30 Akuryou / 悪霊 entry named Miira (ミイラ).",
+            "3": "Defeat Miira (ミイラ), a level 30 Akuryou / 悪霊 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-022-rafin-sukaru",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Rafin・Sukaru (ラフィン・スカル)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 33 Akuryou / 悪霊 entry named Rafin・Sukaru (ラフィン・スカル).",
+            "3": "Defeat Rafin・Sukaru (ラフィン・スカル), a level 33 Akuryou / 悪霊 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-023-bashimu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Bashimu (バシム)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 3 Kaijuu / 怪獣 entry named Bashimu (バシム).",
+            "3": "Defeat Bashimu (バシム), a level 3 Kaijuu / 怪獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-024-apipe",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Apipe (アピペ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 9 Kaijuu / 怪獣 entry named Apipe (アピペ).",
+            "3": "Defeat Apipe (アピペ), a level 9 Kaijuu / 怪獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-025-tarantera",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Tarantera (タランテラ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 16 Kaijuu / 怪獣 entry named Tarantera (タランテラ).",
+            "3": "Defeat Tarantera (タランテラ), a level 16 Kaijuu / 怪獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-026-tamuzu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Tamuzu (タムズ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 18 Kaijuu / 怪獣 entry named Tamuzu (タムズ).",
+            "3": "Defeat Tamuzu (タムズ), a level 18 Kaijuu / 怪獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-027-bagu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Bagu (バグ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 23 Kaijuu / 怪獣 entry named Bagu (バグ).",
+            "3": "Defeat Bagu (バグ), a level 23 Kaijuu / 怪獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-028-saapento",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Saapento (サーペント)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 35 Kaijuu / 怪獣 entry named Saapento (サーペント).",
+            "3": "Defeat Saapento (サーペント), a level 35 Kaijuu / 怪獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-029-sukyura",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Sukyura (スキュラ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 39 Kaijuu / 怪獣 entry named Sukyura (スキュラ).",
+            "3": "Defeat Sukyura (スキュラ), a level 39 Kaijuu / 怪獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-030-kokatoraisu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Kokatoraisu (コカトライス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 48 Kaijuu / 怪獣 entry named Kokatoraisu (コカトライス).",
+            "3": "Defeat Kokatoraisu (コカトライス), a level 48 Kaijuu / 怪獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-031-ooku",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Ooku (オーク)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 5 Jaki / 邪鬼 entry named Ooku (オーク).",
+            "3": "Defeat Ooku (オーク), a level 5 Jaki / 邪鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-032-gaagoiru",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Gaagoiru (ガーゴイル)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 16 Jaki / 邪鬼 entry named Gaagoiru (ガーゴイル).",
+            "3": "Defeat Gaagoiru (ガーゴイル), a level 16 Jaki / 邪鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-033-ooga",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Ooga (オーガ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 21 Jaki / 邪鬼 entry named Ooga (オーガ).",
+            "3": "Defeat Ooga (オーガ), a level 21 Jaki / 邪鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-034-ekinmu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Ekinmu (エキンム)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 29 Jaki / 邪鬼 entry named Ekinmu (エキンム).",
+            "3": "Defeat Ekinmu (エキンム), a level 29 Jaki / 邪鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-035-saikuropusu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Saikuropusu (サイクロプス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 36 Jaki / 邪鬼 entry named Saikuropusu (サイクロプス).",
+            "3": "Defeat Saikuropusu (サイクロプス), a level 36 Jaki / 邪鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-036-oni",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Oni (オニ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 37 Jaki / 邪鬼 entry named Oni (オニ).",
+            "3": "Defeat Oni (オニ), a level 37 Jaki / 邪鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-037-kingutorooru",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Kingutorooru (キングトロール)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 39 Jaki / 邪鬼 entry named Kingutorooru (キングトロール).",
+            "3": "Defeat Kingutorooru (キングトロール), a level 39 Jaki / 邪鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-038-kaimu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Kaimu (カイム)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 12 Yama / 夜魔 entry named Kaimu (カイム).",
+            "3": "Defeat Kaimu (カイム), a level 12 Yama / 夜魔 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-039-inkyubasu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Inkyubasu (インキュバス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 17 Yama / 夜魔 entry named Inkyubasu (インキュバス).",
+            "3": "Defeat Inkyubasu (インキュバス), a level 17 Yama / 夜魔 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-040-sakyubasu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Sakyubasu (サキュバス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 25 Yama / 夜魔 entry named Sakyubasu (サキュバス).",
+            "3": "Defeat Sakyubasu (サキュバス), a level 25 Yama / 夜魔 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-041-roa",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Roa (ロア)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 30 Yama / 夜魔 entry named Roa (ロア).",
+            "3": "Defeat Roa (ロア), a level 30 Yama / 夜魔 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-042-mefisuto",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Mefisuto (メフィスト)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 32 Yama / 夜魔 entry named Mefisuto (メフィスト).",
+            "3": "Defeat Mefisuto (メフィスト), a level 32 Yama / 夜魔 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-043-shadou",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Shadou (シャドウ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 39 Yama / 夜魔 entry named Shadou (シャドウ).",
+            "3": "Defeat Shadou (シャドウ), a level 39 Yama / 夜魔 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-044-haapii",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Haapii (ハーピー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 11 Kijo / 鬼女 entry named Haapii (ハーピー).",
+            "3": "Defeat Haapii (ハーピー), a level 11 Kijo / 鬼女 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-045-arukenii",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Arukenii (アルケニー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 19 Kijo / 鬼女 entry named Arukenii (アルケニー).",
+            "3": "Defeat Arukenii (アルケニー), a level 19 Kijo / 鬼女 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-046-farai",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Farai (ファライ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 22 Kijo / 鬼女 entry named Farai (ファライ).",
+            "3": "Defeat Farai (ファライ), a level 22 Kijo / 鬼女 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-047-naasu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Naasu (ナアス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 34 Kijo / 鬼女 entry named Naasu (ナアス).",
+            "3": "Defeat Naasu (ナアス), a level 34 Kijo / 鬼女 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-048-taaraga",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Taaraga (ターラガ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 40 Kijo / 鬼女 entry named Taaraga (ターラガ).",
+            "3": "Defeat Taaraga (ターラガ), a level 40 Kijo / 鬼女 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-049-randa",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Randa (ランダ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 53 Kijo / 鬼女 entry named Randa (ランダ).",
+            "3": "Defeat Randa (ランダ), a level 53 Kijo / 鬼女 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-050-farao",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Farao (ファラオ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 22 Yuuki / 幽鬼 entry named Farao (ファラオ).",
+            "3": "Defeat Farao (ファラオ), a level 22 Yuuki / 幽鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-051-banpaiya",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Banpaiya (バンパイヤ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 26 Yuuki / 幽鬼 entry named Banpaiya (バンパイヤ).",
+            "3": "Defeat Banpaiya (バンパイヤ), a level 26 Yuuki / 幽鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-052-deyurahaan",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Deyurahaan (デュラハーン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 35 Yuuki / 幽鬼 entry named Deyurahaan (デュラハーン).",
+            "3": "Defeat Deyurahaan (デュラハーン), a level 35 Yuuki / 幽鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-053-akukaru",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Akukaru (アクカル)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 36 Yuuki / 幽鬼 entry named Akukaru (アクカル).",
+            "3": "Defeat Akukaru (アクカル), a level 36 Yuuki / 幽鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-054-diiba",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Diiba (ディーバ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 36 Yuuki / 幽鬼 entry named Diiba (ディーバ).",
+            "3": "Defeat Diiba (ディーバ), a level 36 Yuuki / 幽鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-055-burakkunaito",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Burakkunaito (ブラックナイト)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 37 Yuuki / 幽鬼 entry named Burakkunaito (ブラックナイト).",
+            "3": "Defeat Burakkunaito (ブラックナイト), a level 37 Yuuki / 幽鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-056-hakuma-budoo",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Hakuma・Budoo (ハクマ・ブドー)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 51 Yuuki / 幽鬼 entry named Hakuma・Budoo (ハクマ・ブドー).",
+            "3": "Defeat Hakuma・Budoo (ハクマ・ブドー), a level 51 Yuuki / 幽鬼 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-057-nue",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Nue (ヌエ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 15 Youjuu / 妖獣 entry named Nue (ヌエ).",
+            "3": "Defeat Nue (ヌエ), a level 15 Youjuu / 妖獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-058-manteikoa",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Manteikoa (マンティコア)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 30 Youjuu / 妖獣 entry named Manteikoa (マンティコア).",
+            "3": "Defeat Manteikoa (マンティコア), a level 30 Youjuu / 妖獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-059-orutorosu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Orutorosu (オルトロス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 32 Youjuu / 妖獣 entry named Orutorosu (オルトロス).",
+            "3": "Defeat Orutorosu (オルトロス), a level 32 Youjuu / 妖獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-060-fenriru",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Fenriru (フェンリル)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 34 Youjuu / 妖獣 entry named Fenriru (フェンリル).",
+            "3": "Defeat Fenriru (フェンリル), a level 34 Youjuu / 妖獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-061-barefuuru",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Barefuuru (バレフール)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 35 Youjuu / 妖獣 entry named Barefuuru (バレフール).",
+            "3": "Defeat Barefuuru (バレフール), a level 35 Youjuu / 妖獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-062-teihon",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Teihon (ティホン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 35 Youjuu / 妖獣 entry named Teihon (ティホン).",
+            "3": "Defeat Teihon (ティホン), a level 35 Youjuu / 妖獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-063-googon",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Googon (ゴーゴン)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 36 Youjuu / 妖獣 entry named Googon (ゴーゴン).",
+            "3": "Defeat Googon (ゴーゴン), a level 36 Youjuu / 妖獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-064-hidora",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Hidora (ヒドラ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 47 Youjuu / 妖獣 entry named Hidora (ヒドラ).",
+            "3": "Defeat Hidora (ヒドラ), a level 47 Youjuu / 妖獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-065-teiamatto",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Teiamatto (ティアマット)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 51 Youjuu / 妖獣 entry named Teiamatto (ティアマット).",
+            "3": "Defeat Teiamatto (ティアマット), a level 51 Youjuu / 妖獣 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-066-baaru",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Baaru (バアル)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 30 Jashin / 邪神 entry named Baaru (バアル).",
+            "3": "Defeat Baaru (バアル), a level 30 Jashin / 邪神 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-067-behemosu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Behemosu (ベヘモス)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 52 Jashin / 邪神 entry named Behemosu (ベヘモス).",
+            "3": "Defeat Behemosu (ベヘモス), a level 52 Jashin / 邪神 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-068-zoma",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Zoma (ゾマ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 57 Jashin / 邪神 entry named Zoma (ゾマ).",
+            "3": "Defeat Zoma (ゾマ), a level 57 Jashin / 邪神 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-069-beruzebubu",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Beruzebubu (ベルゼブブ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 60 Jashin / 邪神 entry named Beruzebubu (ベルゼブブ).",
+            "3": "Defeat Beruzebubu (ベルゼブブ), a level 60 Jashin / 邪神 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-070-asutarooto",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Asutarooto (アスタロート)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 61 Jashin / 邪神 entry named Asutarooto (アスタロート).",
+            "3": "Defeat Asutarooto (アスタロート), a level 61 Jashin / 邪神 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        },
+        {
+          "id": "kmt1-demon-071-ashura",
+          "type": "optional",
+          "safe_type": "Encounter registry",
+          "label": "Ashura (アシュラ)",
+          "missable": false,
+          "levels": {
+            "1": "Keep checking new demon families as the party level rises.",
+            "2": "Register the level 62 Jashin / 邪神 entry named Ashura (アシュラ).",
+            "3": "Defeat Ashura (アシュラ), a level 62 Jashin / 邪神 opponent, at least once and record the encounter. It cannot join through ordinary negotiation, so do not waste currency trying to force a recruitment result."
+          }
+        }
+      ]
+    }
+  ]
+}

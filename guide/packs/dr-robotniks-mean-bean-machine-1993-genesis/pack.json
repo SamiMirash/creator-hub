@@ -1,0 +1,1029 @@
+{
+ "id": "dr-robotniks-mean-bean-machine-1993-genesis",
+ "game": "Dr. Robotnik's Mean Bean Machine (1993, Mega Drive/Genesis)",
+ "target": "Spoiler-free full-system completion of the original USA cartridge: every mode, setting, difficulty route, board mechanic, score system, helper event, easter egg, and preservation experiment",
+ "spoiler_default": 0,
+ "generated_at": "2026-08-26",
+ "areas": [
+  {
+   "id": "mean-bean-genesis-cartridge",
+   "name": "Cartridge Route and Safeguards",
+   "location_cue": "The dark-blue title screen and vine-framed menu before a board is opened.",
+   "note": "Confirm the selected build and protect progress before exploring every mode.",
+   "save_backup": {
+    "title": "Create an untouched title state",
+    "why": "The cartridge has no internal save memory.",
+    "detail": "Keep one title state plus separate rolling states; never overwrite the only state while testing passwords or hidden menus."
+   },
+   "point_of_no_return": {
+    "title": "Power-off erases volatile records",
+    "why": "Scenario progress is represented by passwords, while score tables live only in powered memory.",
+    "detail": "Photograph or transcribe every new password and record any wanted score before closing the emulator."
+   },
+   "items": [
+    {
+     "id": "mean-bean-genesis-verify-rom",
+     "type": "optional",
+     "safe_type": "Setup check",
+     "label": "Verify the USA Cartridge",
+     "missable": false,
+     "levels": {
+      "1": "Confirm the preserved build before tracking completion.",
+      "2": "Use the original NTSC-U Mega Drive/Genesis cartridge in the selected archive.",
+      "3": "Verify a 1,048,576-byte ROM with SHA-1 AA6B60103FA92BC95FCC824BF1675E411627C8D3. Keep the separate eight-bit release for its own Puzzle Mode guide."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-title-state",
+     "type": "optional",
+     "safe_type": "Save safeguard",
+     "label": "Preserve a Clean Title State",
+     "missable": true,
+     "levels": {
+      "1": "Keep a safe return point before entering menus.",
+      "2": "Make a state on the title screen after the opening logos.",
+      "3": "Store it in a protected slot, then use different slots for active play. This preserves a clean route for demonstrations, secrets, and settings checks."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-password-log",
+     "type": "optional",
+     "safe_type": "Progress safeguard",
+     "label": "Maintain a Password Log",
+     "missable": true,
+     "levels": {
+      "1": "Treat each victory screen as a save opportunity.",
+      "2": "Record the four-bean password whenever Scenario awards one.",
+      "3": "Write the difficulty beside the four symbols because the same position uses different passwords across settings. Passwords restore position but never the accumulated score."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-score-record",
+     "type": "optional",
+     "safe_type": "Record safeguard",
+     "label": "Preserve Volatile Scores",
+     "missable": true,
+     "levels": {
+      "1": "Important records disappear with the powered session.",
+      "2": "Capture the score table before closing or resetting the cartridge.",
+      "3": "Enter up to three initials when a result reaches the top five, then save a screenshot or note. A later cold boot clears those entries."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-separate-eight-bit",
+     "type": "optional",
+     "safe_type": "Version boundary",
+     "label": "Keep the Eight-Bit Route Separate",
+     "missable": false,
+     "levels": {
+      "1": "A related version contains material missing here.",
+      "2": "Do not expect Puzzle Mode in this Mega Drive cartridge.",
+      "3": "Complete this 16-bit guide independently. The Game Gear archive entry receives its own guide because its thirty fixed puzzles are absent here."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-demo",
+     "type": "secret",
+     "safe_type": "Built-in tutorial",
+     "label": "Watch the Idle Demonstration",
+     "missable": true,
+     "levels": {
+      "1": "Let the title screen remain untouched briefly.",
+      "2": "Wait at the title screen until the automatic explanation and demonstration begin.",
+      "3": "Do not press Start after the title settles. Let the introductory sequence and its playable-rule demonstration run through before returning to the menu."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-genesis-core-rules",
+   "name": "Core Board Rules",
+   "location_cue": "A paired-bean board with a central preview meter and two opposing wells.",
+   "note": "Master every stable input and board interaction before the difficulty routes.",
+   "save_backup": {
+    "title": "Save before controlled practice",
+    "why": "A failed board can interrupt a specific mechanic test.",
+    "detail": "Use separate Exercise states for rotation, splitting, chaining, garbage clearing, and the loss-column check."
+   },
+   "point_of_no_return": {
+    "title": "The centre-top cell ends a board",
+    "why": "A stack entering the third column's top position immediately collapses that side.",
+    "detail": "Test the boundary only on a disposable state, then reload rather than losing useful route progress."
+   },
+   "items": [
+    {
+     "id": "mean-bean-genesis-move-pair",
+     "type": "optional",
+     "safe_type": "Control technique",
+     "label": "Move and Accelerate a Pair",
+     "missable": false,
+     "levels": {
+      "1": "Learn horizontal placement before relying on speed.",
+      "2": "Move with Left or Right and hold Down to increase the current pair's fall rate.",
+      "3": "Guide a falling pair between the six columns with Left or Right. Hold Down only after alignment; it accelerates descent and adds a small score for each forced step."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-rotate-both",
+     "type": "optional",
+     "safe_type": "Control technique",
+     "label": "Rotate in Both Directions",
+     "missable": false,
+     "levels": {
+      "1": "Use both rotation directions to avoid extra movement.",
+      "2": "Press A or C for clockwise rotation and B for counter-clockwise rotation.",
+      "3": "Practice returning a vertical pair to horizontal with either direction. Confirm the mapped buttons in Options if all three face buttons do not rotate as expected."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-pause",
+     "type": "optional",
+     "safe_type": "Control technique",
+     "label": "Pause and Resume Safely",
+     "missable": false,
+     "levels": {
+      "1": "There is a dedicated interruption control.",
+      "2": "Press Start during a board to pause, then press it again to resume.",
+      "3": "Use Start only after the falling pair is positioned. Resume deliberately so an accelerated or poorly aligned pair does not lock unexpectedly."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-clear-four",
+     "type": "optional",
+     "safe_type": "Core mechanic",
+     "label": "Clear an Orthogonal Group",
+     "missable": false,
+     "levels": {
+      "1": "Build a compact group without using diagonals.",
+      "2": "Join at least four same-colour beans through shared sides.",
+      "3": "Make a vertical, horizontal, L-shaped, T-shaped, or clustered group of four or more. Corner-only contact does not connect the group and will not clear."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-genesis/mean-bean-genesis-clear-four.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-genesis-split-pair",
+     "type": "optional",
+     "safe_type": "Core mechanic",
+     "label": "Split a Pair on Uneven Ground",
+     "missable": false,
+     "levels": {
+      "1": "A horizontal landing can separate its two halves.",
+      "2": "Place a horizontal pair across columns with different stack heights.",
+      "3": "Land one half on the taller column; the unsupported bean drops to the lower available cell. Use this to feed a buried colour without blocking its neighbour."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-chain",
+     "type": "optional",
+     "safe_type": "Advanced mechanic",
+     "label": "Create a Falling Chain",
+     "missable": false,
+     "levels": {
+      "1": "Arrange one clear to complete another below.",
+      "2": "Remove a supporting group so the beans above fall into a second match.",
+      "3": "Build the later match first, separate one required colour with a supporting group, then clear that support. The fall completes the next group and counts as another chain link."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-genesis/mean-bean-genesis-chain.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-genesis-refugee-clear",
+     "type": "optional",
+     "safe_type": "Defence mechanic",
+     "label": "Remove Refugee Beans",
+     "missable": false,
+     "levels": {
+      "1": "Clear colour beside the unmatchable pieces.",
+      "2": "Make a normal four-bean clear directly adjacent to Refugee Beans.",
+      "3": "Refugee Beans cannot match with one another. Clear any qualifying coloured group touching them by an edge; every adjacent Refugee disappears with that clear."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-genesis/mean-bean-genesis-refugee-clear.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-genesis-preview",
+     "type": "optional",
+     "safe_type": "Planning mechanic",
+     "label": "Use the Next-Pair Meter",
+     "missable": false,
+     "levels": {
+      "1": "Plan one placement beyond the active pair.",
+      "2": "Read the paired colours displayed between the two boards.",
+      "3": "Before locking the current pair, reserve a column or support for the previewed colours. Recheck the meter after each lock because it advances immediately."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-loss-cell",
+     "type": "optional",
+     "safe_type": "Board boundary",
+     "label": "Confirm the Loss Column",
+     "missable": true,
+     "levels": {
+      "1": "The whole top edge is not equally dangerous.",
+      "2": "Observe the third column from the left at the board's ceiling.",
+      "3": "Use a disposable Exercise state and fill that column until a piece occupies its top entry cell. The board ends even if neighbouring columns still have open space."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-genesis/mean-bean-genesis-loss-cell.avif",
+      "min_level": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-genesis-scoring",
+   "name": "Scoring and Chain Mastery",
+   "location_cue": "An active board with a rising numeric score and linked groups prepared beneath the falling pair.",
+   "note": "Record the scoring behaviours and advanced clears needed for a genuine full-system run.",
+   "save_backup": {
+    "title": "Keep a pre-chain state",
+    "why": "Random pairs can make a carefully prepared scoring test difficult to repeat.",
+    "detail": "Save immediately before the trigger piece, then replay the same setup while checking group size, chain depth, and resulting score."
+   },
+   "point_of_no_return": {
+    "title": "A board loss ends the attempt",
+    "why": "Exercise scoring continues only while the board remains open.",
+    "detail": "Capture the score and cleared-bean total before deliberately testing the loss condition."
+   },
+   "items": [
+    {
+     "id": "mean-bean-genesis-drop-score",
+     "type": "optional",
+     "safe_type": "Scoring action",
+     "label": "Score with Accelerated Drops",
+     "missable": true,
+     "levels": {
+      "1": "Turn safe descent distance into small points.",
+      "2": "Hold Down after positioning a falling pair and watch the score rise during its descent.",
+      "3": "Start from an empty upper board, align first, then hold Down through several cells. Repeat without sacrificing placement; each forced step contributes a small amount."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-large-group",
+     "type": "optional",
+     "safe_type": "Scoring action",
+     "label": "Clear More Than Four Together",
+     "missable": true,
+     "levels": {
+      "1": "A larger same-colour cluster carries a multiplier.",
+      "2": "Connect five or more matching beans in one simultaneous clear.",
+      "3": "Prepare an oversized orthogonal group and complete it with one drop. Compare its score with an ordinary four-clear; excess beans raise the group multiplier."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-two-chain",
+     "type": "optional",
+     "safe_type": "Chain milestone",
+     "label": "Build a Two-Link Chain",
+     "missable": true,
+     "levels": {
+      "1": "Use gravity to trigger a second colour.",
+      "2": "Clear a lower support so the falling beans complete another group.",
+      "3": "Prepare the upper group with one missing connection, support it above a ready lower clear, then trigger the lower colour. Confirm two separate clear flashes before rebuilding."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-long-chain",
+     "type": "optional",
+     "safe_type": "Chain milestone",
+     "label": "Build a Long Chain",
+     "missable": true,
+     "levels": {
+      "1": "Extend the same gravity logic through several colours.",
+      "2": "Stack staggered triggers so each clear completes the next prepared group.",
+      "3": "Work backward from the final colour, giving every layer exactly one delayed connection. Trigger the lowest support and confirm at least four successive clears without another input."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-time-bonus",
+     "type": "optional",
+     "safe_type": "Timed score",
+     "label": "Earn a Scenario Time Bonus",
+     "missable": true,
+     "levels": {
+      "1": "A quick board awards more than clear points.",
+      "2": "Win a Scenario match before its time-bonus window expires.",
+      "3": "Open with a compact chain and send disruptive Refugees early. Finish within 129 seconds; at 130 seconds or later the separate time award is zero."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-empty-board",
+     "type": "optional",
+     "safe_type": "Perfect clear",
+     "label": "Clear the Entire Exercise Board",
+     "missable": true,
+     "levels": {
+      "1": "Leave no coloured or helper bean behind.",
+      "2": "Arrange Exercise Mode so one chain empties every occupied cell.",
+      "3": "Build from one side and avoid isolated colours beneath the structure. Trigger the chain only when every remaining bean participates; the game adds an empty-board bonus scaled by the current level."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-top-five",
+     "type": "optional",
+     "safe_type": "Score record",
+     "label": "Enter the Top-Five Table",
+     "missable": true,
+     "levels": {
+      "1": "Exercise Mode preserves a session-only ranking.",
+      "2": "Finish an Exercise attempt with a score high enough for the top five.",
+      "3": "After the board ends, wait without pressing anything for roughly ten seconds. When the ranking screen appears, enter three initials and capture the table before power-off."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-genesis-options",
+   "name": "Options and Controller Audit",
+   "location_cue": "The vine-bordered Options panel reached from the main mode list.",
+   "note": "Exercise every configurable cartridge setting and both controller paths.",
+   "save_backup": {
+    "title": "Save the default options first",
+    "why": "Changing inputs or match rules can make later tests appear broken.",
+    "detail": "Record the original values in one state, then use a disposable Options state for the full configuration audit."
+   },
+   "point_of_no_return": {
+    "title": "Leaving Options applies the changes",
+    "why": "The next board uses the currently selected assignments, difficulty, match count, and sampling state.",
+    "detail": "Restore the intended route values before beginning any scored Scenario or versus record."
+   },
+   "items": [
+    {
+     "id": "mean-bean-genesis-map-player-one",
+     "type": "optional",
+     "safe_type": "Control option",
+     "label": "Remap Player One",
+     "missable": true,
+     "levels": {
+      "1": "Confirm every face-button assignment can change.",
+      "2": "Use Key Assignment with controller one and alter A, B, and C.",
+      "3": "Assign at least one clockwise and one counter-clockwise input, enter a practice board, test both rotations, then restore the preferred layout."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-map-player-two",
+     "type": "optional",
+     "safe_type": "Control option",
+     "label": "Remap Player Two",
+     "missable": true,
+     "levels": {
+      "1": "The second pad has an independent mapping.",
+      "2": "Use controller two on Key Assignment and change its A, B, and C functions.",
+      "3": "Connect the second controller before opening Options. Make and test a reversible mapping in versus or Exercise, then return both pads to the chosen layout."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-four-cpu-levels",
+     "type": "optional",
+     "safe_type": "Difficulty option",
+     "label": "Select Every CPU Difficulty",
+     "missable": true,
+     "levels": {
+      "1": "Scenario has four independent challenge settings.",
+      "2": "Cycle VS COM Level through Easy, Normal, Hard, and Hardest.",
+      "3": "Record all four values in Options and begin a separate Scenario route on each. Passwords are difficulty-specific, so do not reuse a code under the wrong setting."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-match-counts",
+     "type": "optional",
+     "safe_type": "Match option",
+     "label": "Select Every Versus Length",
+     "missable": true,
+     "levels": {
+      "1": "The head-to-head series length is configurable.",
+      "2": "Cycle the versus setting through 1, 3, 5, 7, 9, 11, 13, and 15 games.",
+      "3": "Change 1P VS. 2P Mode in Options and enter a match after each value. The required majority scales from one win through eight wins."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-sampling",
+     "type": "optional",
+     "safe_type": "Audio option",
+     "label": "Toggle Sampling",
+     "missable": true,
+     "levels": {
+      "1": "One switch controls the short match voices.",
+      "2": "Set Sampling off and on, then enter a versus-style board under each value.",
+      "3": "Use the same opening actions on both tests. Confirm the voice samples disappear when disabled and return when enabled, then leave the preferred setting active."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-input-test",
+     "type": "optional",
+     "safe_type": "Controller test",
+     "label": "Complete the Input Test",
+     "missable": true,
+     "levels": {
+      "1": "Check both pads before a long versus series.",
+      "2": "Open Input Test and press every direction plus A, B, C, and Start on each controller.",
+      "3": "Confirm every displayed input changes once without sticking. When finished, press A and Start together to return to the Options panel."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-genesis-scenario",
+   "name": "Scenario Boards",
+   "location_cue": "Successive two-well puzzle boards reached from Scenario Start or the four-symbol Continue screen.",
+   "note": "Complete every mechanical difficulty route while revealing no opponent or closing identity in advance.",
+   "save_backup": {
+    "title": "Save before each new board",
+    "why": "A loss can consume time and a password restores position but not score.",
+    "detail": "Keep a rolling pre-board state and the displayed four-symbol password in a difficulty-labelled log."
+   },
+   "point_of_no_return": {
+    "title": "The final clear advances immediately",
+    "why": "There is no post-win free movement or later chance to reconstruct the completed score route.",
+    "detail": "Capture the result and allow the closing presentation to finish before reset, difficulty changes, or another password test."
+   },
+   "items": [
+    {
+     "id": "mean-bean-genesis-scenario-easy",
+     "type": "ending",
+     "safe_type": "Difficulty route",
+     "label": "Complete Scenario on Easy",
+     "missable": true,
+     "levels": {
+      "1": "Begin with the gentlest CPU setting.",
+      "2": "Set VS COM Level to Easy before selecting Scenario Start.",
+      "3": "Clear the entire uninterrupted route on Easy, logging each awarded password. After the completion sequence begins, capture proof and keep the final pre-match state."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-scenario-normal",
+     "type": "ending",
+     "safe_type": "Difficulty route",
+     "label": "Complete Scenario on Normal",
+     "missable": true,
+     "levels": {
+      "1": "Repeat the route at its standard challenge.",
+      "2": "Set VS COM Level to Normal and begin a separate Scenario Start run.",
+      "3": "Use a distinct state and password log from Easy. Clear every board on Normal and capture the completed route before changing the difficulty again."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-scenario-hard",
+     "type": "ending",
+     "safe_type": "Difficulty route",
+     "label": "Complete Scenario on Hard",
+     "missable": true,
+     "levels": {
+      "1": "The faster route rewards earlier disruption.",
+      "2": "Set VS COM Level to Hard before opening a fresh Scenario route.",
+      "3": "Prioritize reliable two- and three-chains, protect the third column, and log Hard-specific passwords. Confirm the full completion sequence before moving to Hardest."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-scenario-hardest",
+     "type": "ending",
+     "safe_type": "Difficulty route",
+     "label": "Complete Scenario on Hardest",
+     "missable": true,
+     "levels": {
+      "1": "Reserve the maximum CPU setting for a prepared run.",
+      "2": "Set VS COM Level to Hardest and begin from Scenario Start.",
+      "3": "Keep a state before every board, use compact pre-planned chains, and record the difficulty-specific passwords. Finish the complete route without substituting a lower-setting password."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-resume-password",
+     "type": "optional",
+     "safe_type": "Password system",
+     "label": "Resume a Scenario Safely",
+     "missable": true,
+     "levels": {
+      "1": "The continue screen accepts four bean symbols.",
+      "2": "Select Scenario, choose Continue, and enter a password recorded under the current difficulty.",
+      "3": "Match the Options difficulty to the log, enter all four symbols, then press Start or select End and confirm with A or C. Verify the expected board before overwriting any state."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-erratic-focus",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Handle the Erratic Colour-Focus Board",
+     "missable": true,
+     "levels": {
+      "1": "Watch for fast placements concentrated into one or two colours.",
+      "2": "Keep a flat board and prepare a simple two-chain while the CPU places erratically.",
+      "3": "Do not race each small clear. Build a compact two-link chain across the centre, trigger before your loss column rises, and use the first Refugees to break the opponent's narrow colour plan."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-row-builder",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Disrupt the Row-Builder",
+     "missable": true,
+     "levels": {
+      "1": "An early board repeatedly prepares a four-bean row.",
+      "2": "Send a small attack before that neat row becomes a chain foundation.",
+      "3": "Build vertically near the sides and fire a two-chain as soon as it is stable. Even a modest Refugee drop interrupts the opponent's horizontal four pattern and delays its follow-up."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-neat-clears",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Outpace the Neat-Clear Board",
+     "missable": true,
+     "levels": {
+      "1": "This board removes tidy groups rapidly but rarely chains deeply.",
+      "2": "Prepare one stronger chain instead of matching its steady single clears.",
+      "3": "Keep your trigger column open and construct a three-link staircase. Launch it before the centre rises; several waves of Refugees overpower repeated single clears more reliably than trading them one-for-one."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-edge-towers",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Punish the Edge-Tower Board",
+     "missable": true,
+     "levels": {
+      "1": "Both outer columns begin climbing while the centre stays open.",
+      "2": "Attack the exposed centre before the side towers become useful.",
+      "3": "Use the breathing room to assemble a two- or three-chain around your middle columns. Trigger early; Refugees landing through the centre make the two tall edge structures harder for the CPU to connect."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-quick-edge",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Interrupt Quick Edge Clears",
+     "missable": true,
+     "levels": {
+      "1": "Expect fast same-colour removals alongside two edge stacks.",
+      "2": "Build a short chain before the opponent stabilizes both sides.",
+      "3": "Keep your own loss column low, assemble a reliable two-chain, and release it as the CPU begins extending its second edge. The interruption matters more than waiting for a perfect large attack."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-low-spread",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Pressure the Low-Spread Board",
+     "missable": true,
+     "levels": {
+      "1": "The opposing stack remains broad and low.",
+      "2": "Send several attacks without allowing a recovery interval.",
+      "3": "Use compact two-chains in succession. A low spread absorbs one drop well, so prepare the next trigger before firing the first and keep Refugees arriving faster than the board can clear them."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-large-combo",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Break the Large-Combo Setup",
+     "missable": true,
+     "levels": {
+      "1": "The opposing board spends time preparing a larger chain.",
+      "2": "Fire first and scatter Refugees through its planned structure.",
+      "3": "Choose speed over maximum size: finish a dependable two- or three-chain while the CPU is still arranging colours, then trigger immediately. The scattered Refugees sever the prepared links."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-rapid-match",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Survive the Rapid-Matching Board",
+     "missable": true,
+     "levels": {
+      "1": "Pairs are placed and matched with little delay.",
+      "2": "Protect the loss column and use efficient compact chains.",
+      "3": "Avoid tall speculative structures. Build horizontally across safer columns, keep the third column open, and send a clean two-chain whenever the opponent's board begins accepting new Refugees."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-short-chain",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Overwhelm Repeated Short Chains",
+     "missable": true,
+     "levels": {
+      "1": "Expect frequent small chains rather than one large attack.",
+      "2": "Counter with a deeper prepared chain after stabilizing incoming Refugees.",
+      "3": "Clear immediate danger beside coloured groups, then rebuild from a low base. Hold a three-link trigger until the opponent finishes a short attack, and return one larger wave during its recovery."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-tower-chain",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Counter Towers with Short Chains",
+     "missable": true,
+     "levels": {
+      "1": "The other board combines vertical stacks with modest chains.",
+      "2": "Strike the tower bases before the stacks connect cleanly.",
+      "3": "Use side columns for your build and leave the loss column shallow. Trigger two compact chains close together; uneven Refugee placement around the tower bases blocks the CPU's planned joins."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-dual-side-chain",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Defend Against Two-Sided Chains",
+     "missable": true,
+     "levels": {
+      "1": "Chain structures develop on both outer sides.",
+      "2": "Attack the centre and preserve room for counter-clears.",
+      "3": "Keep matching colours beside likely Refugee landing cells. Launch an early chain through the middle, then clear incoming pieces locally; do not copy the opponent's risky two-sided height."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-fast-large-combo",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Stop the Fast Large-Combo Board",
+     "missable": true,
+     "levels": {
+      "1": "Large chain structures appear with very little setup time.",
+      "2": "Use an immediate small attack, then prepare the stronger follow-up.",
+      "3": "Open with the fastest safe two-chain you can form. While its Refugees disrupt the other board, extend a second structure; waiting for one perfect chain usually gives the opponent the first attack."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-board-extreme-speed",
+     "type": "optional",
+     "safe_type": "Scenario tactic",
+     "label": "Control the Extreme-Speed Board",
+     "missable": true,
+     "levels": {
+      "1": "The falling pairs arrive at the route's highest pace.",
+      "2": "Minimize rotations and pre-plan from the centre preview.",
+      "3": "Read the next pair before the active one locks, keep the third column below its neighbours, and favour short dependable chains. Use passwords or a pre-board state for retries rather than rebuilding earlier progress."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-scenario-completion-capture",
+     "type": "ending",
+     "safe_type": "Completion result",
+     "label": "Confirm a Completed Scenario Route",
+     "missable": true,
+     "levels": {
+      "1": "Let the post-board sequence finish without skipping.",
+      "2": "After the decisive victory, keep the controller idle and watch through the complete closing presentation.",
+      "3": "Do not reset when the last board disappears. Capture the completion sequence and credits through their natural return, then label the evidence with the active CPU difficulty."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-genesis-versus",
+   "name": "Two-Player Versus",
+   "location_cue": "Two adjacent wells with separate controllers, difficulty selections, and victory stars.",
+   "note": "Exercise every handicap and series-length rule with two connected pads.",
+   "save_backup": {
+    "title": "Keep a two-controller setup state",
+    "why": "Controller assignment and match length are configured before the board opens.",
+    "detail": "Save after both pads pass Input Test, then branch states for each handicap and series-length check."
+   },
+   "point_of_no_return": {
+    "title": "A round result starts a short timer",
+    "why": "The losing side must confirm the next match before the rematch window closes.",
+    "detail": "Capture the victory stars first, then press Start on the losing controller within ten seconds when continuing the series."
+   },
+   "items": [
+    {
+     "id": "mean-bean-genesis-versus-connect",
+     "type": "optional",
+     "safe_type": "Mode setup",
+     "label": "Start a Two-Controller Match",
+     "missable": true,
+     "levels": {
+      "1": "Both players need independent pads before selection.",
+      "2": "Connect two controllers, select 1P VS. 2P Mode, and choose a level for each side.",
+      "3": "Confirm both pads in Input Test first. Player one controls the left board and player two the right; begin only after both difficulty choices are intentional."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-versus-level-one",
+     "type": "optional",
+     "safe_type": "Handicap level",
+     "label": "Play Versus Level One",
+     "missable": true,
+     "levels": {
+      "1": "Begin with an empty, slow board.",
+      "2": "Select Easiest for at least one player in versus.",
+      "3": "Start with no prefilled rows and confirm the gentlest falling speed. Complete a round, then swap sides so both controllers are checked under this level."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-versus-level-two",
+     "type": "optional",
+     "safe_type": "Handicap level",
+     "label": "Play Versus Level Two",
+     "missable": true,
+     "levels": {
+      "1": "Increase speed without adding starting rows.",
+      "2": "Select Easy for at least one player in versus.",
+      "3": "Verify the board begins empty but falls faster than Easiest. Finish a round using the same chain pattern for a clean comparison."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-versus-level-three",
+     "type": "optional",
+     "safe_type": "Handicap level",
+     "label": "Play Versus Level Three",
+     "missable": true,
+     "levels": {
+      "1": "Use the fastest empty-board selection.",
+      "2": "Select Normal for at least one player in versus.",
+      "3": "Confirm an empty starting well and the third speed tier. Clear a round without changing the match-count option mid-series."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-versus-level-four",
+     "type": "optional",
+     "safe_type": "Handicap level",
+     "label": "Play Versus Level Four",
+     "missable": true,
+     "levels": {
+      "1": "This selection begins with a partial stack.",
+      "2": "Select Hard and inspect the three prefilled rows.",
+      "3": "Build above the three-row handicap without covering the loss column. Complete a round, then repeat on the opposite side to check both controllers."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-genesis/mean-bean-genesis-versus-level-four.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-genesis-versus-level-five",
+     "type": "optional",
+     "safe_type": "Handicap level",
+     "label": "Play Versus Level Five",
+     "missable": true,
+     "levels": {
+      "1": "The maximum handicap leaves little free height.",
+      "2": "Select Hardest and inspect the five prefilled rows.",
+      "3": "Clear adjacent colours immediately and keep the third column low. Complete a round from the five-row start, then test the same level on the other side."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-genesis/mean-bean-genesis-versus-level-five.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-genesis-versus-all-lengths",
+     "type": "optional",
+     "safe_type": "Series rules",
+     "label": "Start Every Series Length",
+     "missable": true,
+     "levels": {
+      "1": "Options provides eight odd-numbered match totals.",
+      "2": "Start a versus series at 1, 3, 5, 7, 9, 11, 13, and 15 games.",
+      "3": "Change the setting in Options between tests. Enter each series and verify its majority target; for the longest setting, play until one side records eight stars."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-versus-rematch",
+     "type": "optional",
+     "safe_type": "Rematch rule",
+     "label": "Use the Rematch Window",
+     "missable": true,
+     "levels": {
+      "1": "A finished round offers only a brief continuation choice.",
+      "2": "After a loss, press Start on the losing controller within ten seconds.",
+      "3": "Watch the victory star update, then confirm before the countdown expires. Also let one disposable test time out so the series-ending behaviour is documented."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-genesis-exercise",
+   "name": "Exercise Mode",
+   "location_cue": "A single practice well, or two joined wells, without incoming Refugee attacks.",
+   "note": "Complete every starting level, helper event, score bonus, and multiplayer practice path.",
+   "save_backup": {
+    "title": "Keep states before helper events",
+    "why": "The helper path and available pairs vary during a long scoring attempt.",
+    "detail": "Save before the board becomes crowded, then branch attempts for recolouring, column clearing, empty-board, and high-score tests."
+   },
+   "point_of_no_return": {
+    "title": "A filled loss column ends scoring",
+    "why": "Helper appearances do not protect the board indefinitely.",
+    "detail": "Capture any score milestone before allowing the third-column entry cell to fill."
+   },
+   "items": [
+    {
+     "id": "mean-bean-genesis-exercise-easiest",
+     "type": "optional",
+     "safe_type": "Practice setting",
+     "label": "Play Easiest Exercise",
+     "missable": true,
+     "levels": {
+      "1": "Begin from the plain practice setting.",
+      "2": "Select Easiest and start with no opening score bonus.",
+      "3": "Confirm the clean starting score and use the slower pace to demonstrate four-clears, split pairs, and a controlled two-link chain."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-exercise-normal",
+     "type": "optional",
+     "safe_type": "Practice setting",
+     "label": "Play Normal Exercise",
+     "missable": true,
+     "levels": {
+      "1": "The middle setting begins with a score grant.",
+      "2": "Select Normal and confirm a 40,000-point opening bonus.",
+      "3": "Record the initial score before placing a pair, then continue until falling speed increases and the recolouring helper appears."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-exercise-hardest",
+     "type": "optional",
+     "safe_type": "Practice setting",
+     "label": "Play Hardest Exercise",
+     "missable": true,
+     "levels": {
+      "1": "The highest setting begins further into progression.",
+      "2": "Select Hardest and confirm a 90,000-point opening bonus.",
+      "3": "Record the starting score, manage the faster board, and continue until the large helper appears. Preserve a state before testing its two-column path."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-exercise-no-refugees",
+     "type": "optional",
+     "safe_type": "Mode rule",
+     "label": "Confirm the Refugee-Free Board",
+     "missable": true,
+     "levels": {
+      "1": "Practice attacks do not cross between wells.",
+      "2": "Create chains in Exercise and verify no Refugee Beans arrive on the other board.",
+      "3": "Join a second player, trigger several chains on either side, and inspect both wells. Scores and speed rise independently without sending attack pieces."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-exercise-join",
+     "type": "optional",
+     "safe_type": "Multiplayer practice",
+     "label": "Join Exercise as Player Two",
+     "missable": true,
+     "levels": {
+      "1": "A second practice board can enter during play.",
+      "2": "Press Start on controller two while Exercise Mode is active.",
+      "3": "Connect and test the pad first, begin a one-player Exercise board, then press controller two's Start. Continue until both independent boards have completed a clear."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-has-bean",
+     "type": "secret",
+     "safe_type": "Helper event",
+     "label": "Trigger the Recolouring Helper",
+     "missable": true,
+     "levels": {
+      "1": "The middle progression path introduces a moving helper.",
+      "2": "Continue Normal Exercise until the small helper crosses the board.",
+      "3": "Let it land on a coloured bean so the beans along its random path change to that colour and clear. In a separate attempt, let it reach the floor for 10,000 points."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-genesis/mean-bean-genesis-has-bean.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-genesis-big-bean",
+     "type": "secret",
+     "safe_type": "Helper event",
+     "label": "Trigger the Column-Clearing Helper",
+     "missable": true,
+     "levels": {
+      "1": "The high progression path introduces a heavier helper.",
+      "2": "Continue Hardest Exercise until the large green helper drops.",
+      "3": "Align its fall over occupied columns and watch it erase the two-column path. In a separate attempt, allow an unobstructed floor landing to collect 12,000 points."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-genesis/mean-bean-genesis-big-bean.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-genesis-exercise-high-score",
+     "type": "optional",
+     "safe_type": "Score record",
+     "label": "Record an Exercise High Score",
+     "missable": true,
+     "levels": {
+      "1": "A long survival run can enter the local table.",
+      "2": "Build repeated chains until the result qualifies for a top-five position.",
+      "3": "After losing, wait roughly ten seconds without input, enter three initials, and photograph the table. Preserve it externally because a cold boot erases the cartridge record."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mean-bean-genesis-secrets",
+   "name": "Secrets and Preservation Experiments",
+   "location_cue": "The title logo, a live Scenario board with a second pad, and the normally hidden Options entry.",
+   "note": "Document every harmless easter egg, reproducible engine quirk, and inaccessible retained feature honestly.",
+   "save_backup": {
+    "title": "Branch from clean disposable states",
+    "why": "Region switching, cheat hardware, and timing tests should never touch the only completion state.",
+    "detail": "Duplicate the clean title state into separate slots before each secret or preservation experiment."
+   },
+   "point_of_no_return": {
+    "title": "Hidden-menu access changes runtime conditions",
+    "why": "The retained audio menu is blocked during ordinary play and needs an external access method.",
+    "detail": "Record which method was used, then return to the unmodified USA route for normal completion evidence."
+   },
+   "items": [
+    {
+     "id": "mean-bean-genesis-title-mean",
+     "type": "secret",
+     "safe_type": "Title easter egg",
+     "label": "Bounce the Mean Letters",
+     "missable": true,
+     "levels": {
+      "1": "Controller one animates part of the title.",
+      "2": "At the title screen, press A, B, and C separately on controller one.",
+      "3": "Wait until the full logo is stable. Press each face button once and confirm the three letters within “Mean” respond individually; capture all three reactions."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-title-bean",
+     "type": "secret",
+     "safe_type": "Title easter egg",
+     "label": "Bounce the Bean Letters",
+     "missable": true,
+     "levels": {
+      "1": "A second pad controls the other word.",
+      "2": "At the title screen, press A, B, and C separately on controller two.",
+      "3": "Connect controller two before boot if necessary, let the title settle, then press its three face buttons. Confirm the letters within “Bean” react independently."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-cpu-drop-bug",
+     "type": "secret",
+     "safe_type": "Engine quirk",
+     "label": "Suppress the CPU Fast Drop",
+     "missable": true,
+     "levels": {
+      "1": "A second controller can alter Scenario timing.",
+      "2": "During Scenario, hold Left or Right on the controller assigned to the CPU side.",
+      "3": "Use a disposable early-board state with two pads. Hold either horizontal direction on the opposite-side controller and compare CPU descent; the hold blocks its manual fast-drop input until released."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-sound-test-genie",
+     "type": "secret",
+     "safe_type": "Hidden menu",
+     "label": "Open Sound Test with Game Genie",
+     "missable": true,
+     "levels": {
+      "1": "The audio menu remains in the ROM but is blocked.",
+      "2": "Apply Game Genie code ADTT-AAAE, boot normally, and return to Options.",
+      "3": "Use a separate cheat-enabled cartridge session. Enter Options after boot and open the newly visible Sound Test; sample its music and effects, then disable the code before normal play."
+     },
+     "sketch": {
+      "src": "https://creator-hub-images.pages.dev/dr-robotniks-mean-bean-machine-1993-genesis/mean-bean-genesis-sound-test-genie.avif",
+      "min_level": 2
+     }
+    },
+    {
+     "id": "mean-bean-genesis-sound-test-region",
+     "type": "secret",
+     "safe_type": "Hidden menu",
+     "label": "Open Sound Test by Region Switching",
+     "missable": true,
+     "levels": {
+      "1": "An emulator can expose the same retained menu.",
+      "2": "Boot as USA, wait past the Sega logo, then switch the running machine to Japanese region.",
+      "3": "Use a disposable emulator state and a core that permits live region changes. Switch only after the Sega logo, enter Options, inspect Sound Test, then reboot under USA before resuming completion."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-unused-audio",
+     "type": "secret",
+     "safe_type": "Unused content",
+     "label": "Audit the Retained Audio",
+     "missable": true,
+     "levels": {
+      "1": "The hidden menu contains music not heard normally.",
+      "2": "Open Sound Test and step through every music and effects index.",
+      "3": "Record each selectable entry, marking which ones appear during ordinary USA play and which remain unused carryovers. Do not claim a hidden track was heard in standard gameplay."
+     }
+    },
+    {
+     "id": "mean-bean-genesis-unused-beginner",
+     "type": "secret",
+     "safe_type": "Unused content",
+     "label": "Document the Dormant Beginner Course",
+     "missable": false,
+     "levels": {
+      "1": "An earlier three-board route remains internally but has no menu entry.",
+      "2": "Treat the retained Beginner course as inaccessible cartridge data, not a normal completion route.",
+      "3": "Do not modify the completion ROM or invent a button code. Archive the sourced finding that three unused boards remain and require external ROM debugging; normal 100% ends without playing them."
+     }
+    }
+   ]
+  }
+ ]
+}

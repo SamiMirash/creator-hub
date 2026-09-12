@@ -1,0 +1,1861 @@
+{
+  "id": "resident-evil-hd-remaster",
+  "game": "Resident Evil HD Remaster (2015)",
+  "target": "100% completion of the selected Windows HD Remaster route, spoiler-free",
+  "spoiler_default": 0,
+  "generated_at": "2026-07-14",
+  "areas": [
+    {
+      "id": "pc-setup",
+      "name": "PC Route and Clear-Data Safety",
+      "location_cue": "The Windows title screen, display settings, control options, and save-slot menu.",
+      "note": "Establish isolated completion files before chaining bonus modes.",
+      "items": [
+        {
+          "id": "setup-pc-route",
+          "type": "interaction",
+          "safe_type": "Setup",
+          "label": "Use the Windows HD Remaster",
+          "missable": false,
+          "levels": {
+            "1": "Choose the release with the expanded display and control options.",
+            "2": "Run Resident Evil HD Remaster natively on Windows PC.",
+            "3": "Install the Windows HD Remaster and begin from its own title screen. Either movement scheme is valid, and no console-exclusive campaign, item, mode, or costume needs a second platform."
+          }
+        },
+        {
+          "id": "setup-clear-branches",
+          "type": "interaction",
+          "safe_type": "Save Safety",
+          "label": "Preserve Separate Clear-Data Branches",
+          "missable": false,
+          "levels": {
+            "1": "Later modes depend on how completed files are chained.",
+            "2": "Keep one clean completion file per character and one shared chain.",
+            "3": "After each clear, save the completed data into a new slot. Retain isolated Jill and Chris files, plus a separate branch that receives both Normal-or-higher clears; this prevents the dangerous bonus enemy from becoming unavoidable on every replay."
+          }
+        },
+        {
+          "id": "setup-controls",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Try Both Movement Schemes",
+          "missable": false,
+          "levels": {
+            "1": "The remaster provides two distinct steering styles.",
+            "2": "Test modern and classic movement before committing to a challenge run.",
+            "3": "Use an early empty corridor to compare camera-relative modern movement with character-relative classic movement. Pick one before timed, knife-only, or no-save attempts so a mid-run control change does not introduce avoidable mistakes."
+          }
+        },
+        {
+          "id": "setup-jill",
+          "type": "choice",
+          "safe_type": "Campaign Route",
+          "label": "Complete Jill's Route",
+          "missable": false,
+          "levels": {
+            "1": "One playable route carries more inventory and a permanent unlocking tool.",
+            "2": "Begin a full Jill campaign on the selected difficulty.",
+            "3": "Finish Jill's route while collecting its exclusive weapon opportunities, file branch, rescue windows, laboratory-cell option, and outcome flags. Save its clear data to a dedicated slot before starting another route."
+          }
+        },
+        {
+          "id": "setup-chris",
+          "type": "choice",
+          "safe_type": "Campaign Route",
+          "label": "Complete Chris's Route",
+          "missable": false,
+          "levels": {
+            "1": "The other route trades inventory space for resilience.",
+            "2": "Begin a full Chris campaign on the selected difficulty.",
+            "3": "Finish Chris's route while using Old Keys, his defensive explosive, the temporary medicine section, the study response window, laboratory-cell option, and outcome flags. Preserve this clear separately and on the shared chain."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before the first clear",
+        "why": "Clear-data chaining can permanently add a hazardous replay modifier."
+      }
+    },
+    {
+      "id": "campaign-difficulties",
+      "name": "Campaign Routes and Difficulties",
+      "location_cue": "The new-game selection screens before entering the estate.",
+      "note": "Complete both character routes and each resource setting.",
+      "items": [
+        {
+          "id": "difficulty-very-easy",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Clear Very Easy Difficulty",
+          "missable": true,
+          "levels": {
+            "1": "A distinct resource balance changes the complete survival route.",
+            "2": "Finish a campaign on Very Easy; it is available from a new game.",
+            "3": "Select Very Easy from an eligible new or clear-data game and reach a completed save. Keep that clear-data file; finishing on a higher setting does not replace the value of experiencing this separate resource layout."
+          }
+        },
+        {
+          "id": "difficulty-easy",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Clear Easy Difficulty",
+          "missable": true,
+          "levels": {
+            "1": "A distinct resource balance changes the complete survival route.",
+            "2": "Finish a campaign on Easy; it is available from a new game.",
+            "3": "Select Easy from an eligible new or clear-data game and reach a completed save. Keep that clear-data file; finishing on a higher setting does not replace the value of experiencing this separate resource layout."
+          }
+        },
+        {
+          "id": "difficulty-normal",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Clear Normal Difficulty",
+          "missable": true,
+          "levels": {
+            "1": "A distinct resource balance changes the complete survival route.",
+            "2": "Finish a campaign on Normal; it is available from a new game.",
+            "3": "Select Normal from an eligible new or clear-data game and reach a completed save. Keep that clear-data file; finishing on a higher setting does not replace the value of experiencing this separate resource layout."
+          }
+        },
+        {
+          "id": "difficulty-hard",
+          "type": "optional",
+          "safe_type": "Difficulty",
+          "label": "Clear Hard Difficulty",
+          "missable": true,
+          "levels": {
+            "1": "A distinct resource balance changes the complete survival route.",
+            "2": "Finish a campaign on Hard; it is unlocked after a completed campaign.",
+            "3": "Select Hard from an eligible new or clear-data game and reach a completed save. Keep that clear-data file; finishing on a higher setting does not replace the value of experiencing this separate resource layout."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep every completed difficulty file",
+        "why": "Separate clear data protects route-specific unlock conditions."
+      }
+    },
+    {
+      "id": "survival-systems",
+      "name": "Survival Systems and Full-Map Sweep",
+      "location_cue": "Any explored room with the inventory, map, health, and defensive-item interfaces available.",
+      "note": "Master the systems that govern a complete item sweep.",
+      "items": [
+        {
+          "id": "system-save",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Use Ink Ribbons and Typewriters",
+          "missable": false,
+          "levels": {
+            "1": "Ordinary saves consume a limited field item.",
+            "2": "Carry an Ink Ribbon to any typewriter to record progress.",
+            "3": "Stand at a typewriter with at least one Ink Ribbon, interact, and choose a slot. Rotate manual saves before branch decisions; reserve a separate run for the no-save challenge instead of endangering the completion file."
+          }
+        },
+        {
+          "id": "system-burn",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Prevent Body Revival",
+          "missable": false,
+          "levels": {
+            "1": "Some defeated enemies become more dangerous when left untreated.",
+            "2": "Decapitate a target or burn its body with kerosene.",
+            "3": "Fill the Fuel Canteen from a kerosene container, equip the Lighter, and use both beside a fallen body. A decapitating finish also prevents revival. Prioritize central corridors, where repeated travel makes an untreated body most costly."
+          }
+        },
+        {
+          "id": "system-double-burn",
+          "type": "secret",
+          "safe_type": "Technique",
+          "label": "Ignite Two Bodies Together",
+          "missable": false,
+          "levels": {
+            "1": "One flame can cover overlapping targets.",
+            "2": "Drop two enemies so their bodies overlap, then use the Lighter once.",
+            "3": "Lure two ordinary enemies into the same narrow corridor, defeat them on nearly the same patch of floor, fill the canteen, and ignite one body while both models overlap. Confirm both catch before leaving the camera angle."
+          }
+        },
+        {
+          "id": "system-herbs",
+          "type": "interaction",
+          "safe_type": "System",
+          "label": "Prepare Every Herb Mixture",
+          "missable": false,
+          "levels": {
+            "1": "Color combinations trade immediate healing for stronger recovery or poison treatment.",
+            "2": "Collect green, red, and blue herbs and test every valid combination.",
+            "3": "Use green alone, pair green with green, combine green with red, join green with blue, and make the three-color mixture. Blue removes poison; red must be combined and greatly strengthens a green herb."
+          }
+        },
+        {
+          "id": "system-first-aid",
+          "type": "collectible",
+          "safe_type": "Recovery Item",
+          "label": "Open Every First Aid Box",
+          "missable": false,
+          "levels": {
+            "1": "A closed box hides its actual recovery item.",
+            "2": "Inspect each First Aid Box in the inventory before counting it collected.",
+            "3": "Highlight the box, choose Examine, rotate it if necessary, and open it. The contained spray or herb becomes a separate inventory object; merely picking up the unopened box does not finish its interaction."
+          }
+        },
+        {
+          "id": "system-map-green",
+          "type": "collectible",
+          "safe_type": "Map Sweep",
+          "label": "Turn Every Room Green",
+          "missable": false,
+          "levels": {
+            "1": "The map tracks whether reachable pickups remain.",
+            "2": "Visit every room and collect every item until each accessible room is green.",
+            "3": "Acquire every regional map, enter every accessible chamber on both character routes, and inspect the map after clearing each one. Blue or red room shading means an object remains; search all camera angles, containers, shelves, bodies, and puzzle rewards until it turns green."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mansion-keys",
+      "name": "Mansion Key Routes",
+      "location_cue": "The entrance hall and its first network of dining, gallery, library, and upper corridors.",
+      "note": "Collect and exhaust every crest key and character-specific unlocking tool.",
+      "items": [
+        {
+          "id": "key-01-golden-arrow",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Golden Arrow",
+          "missable": true,
+          "levels": {
+            "1": "A compact object opens another layer of the estate.",
+            "2": "Obtain it from upper dining corridor.",
+            "3": "Search the upper corridor reached from the dining hall and take the Golden Arrow. Examine it in the inventory, remove the Arrowhead, and carry that piece to the outdoor cemetery recess."
+          }
+        },
+        {
+          "id": "key-02-arrowhead",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Arrowhead",
+          "missable": true,
+          "levels": {
+            "1": "A compact object opens another layer of the estate.",
+            "2": "Obtain it from inspect Golden Arrow.",
+            "3": "Rotate the Golden Arrow in the inventory and detach its stone tip. Place the Arrowhead in the cemetery relief to open the descending route to the crypt."
+          }
+        },
+        {
+          "id": "key-03-sword-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Sword Key",
+          "missable": true,
+          "levels": {
+            "1": "A compact object opens another layer of the estate.",
+            "2": "Obtain it from Book of Curses rear.",
+            "3": "Open the cemetery crypt with the Arrowhead, collect the Book of Curses, and inspect its rear cover. Remove the embedded Sword Key, then use it across the first mansion sweep before discarding it."
+          }
+        },
+        {
+          "id": "key-04-armor-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Armor Key",
+          "missable": true,
+          "levels": {
+            "1": "A compact object opens another layer of the estate.",
+            "2": "Obtain it from armor-trap pedestal.",
+            "3": "Use the Dog Whistle on the west terrace, take the collar, and inspect it until the imitation key appears. Put that imitation on the moving pedestal while taking the Armor Key so the ceiling trap resets."
+          }
+        },
+        {
+          "id": "key-05-shield-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Shield Key",
+          "missable": true,
+          "levels": {
+            "1": "A compact object opens another layer of the estate.",
+            "2": "Obtain it from clock puzzle compartment.",
+            "3": "Complete the piano music, exchange the wall emblems, and place the Gold Emblem in the dining hall. Set the clock to 6:00 and take the Shield Key from the opened compartment."
+          }
+        },
+        {
+          "id": "key-06-helmet-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Helmet Key",
+          "missable": true,
+          "levels": {
+            "1": "A compact object opens another layer of the estate.",
+            "2": "Obtain it from Residence arena floor.",
+            "3": "Complete the Residence route and inspect the item left in the large plant-filled chamber. Use the Helmet Key for the mansion's final locked rooms before discarding it."
+          }
+        },
+        {
+          "id": "key-07-emblem-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Emblem Key",
+          "missable": true,
+          "levels": {
+            "1": "A compact object opens another layer of the estate.",
+            "2": "Obtain it from inspect Broach.",
+            "3": "Open the second Jewelry Box with the Red Gemstone, solve its internal tile arrangement, and inspect the resulting Broach. Convert it into the Emblem Key and use it on the marked mansion door."
+          }
+        },
+        {
+          "id": "key-08-closet-key",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Closet Key",
+          "missable": true,
+          "levels": {
+            "1": "A compact object opens another layer of the estate.",
+            "2": "Obtain it from clear-data item box.",
+            "3": "Load completed clear data and take the Closet Key from an item box. In the first-floor map room, inspect the large painting at the back to reveal the costume closet."
+          }
+        },
+        {
+          "id": "key-09-old-keys",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Old Keys",
+          "missable": true,
+          "levels": {
+            "1": "A compact object opens another layer of the estate.",
+            "2": "Obtain it from Chris locked doors.",
+            "3": "On Chris's route, search side rooms, desks, and small containers for Old Keys. Each opens one plain mansion lock; carry a spare until all corresponding doors have been checked."
+          }
+        },
+        {
+          "id": "key-10-lock-pick",
+          "type": "key",
+          "safe_type": "Key Item",
+          "label": "Lock Pick",
+          "missable": true,
+          "levels": {
+            "1": "A compact object opens another layer of the estate.",
+            "2": "Obtain it from Jill starting tool.",
+            "3": "Jill receives this reusable tool at the beginning. Try it on simple mansion and Residence locks that do not display a crest-key emblem; unlike Old Keys, it remains available throughout the route."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Save before taking the displayed shotgun",
+        "why": "One Jill-only interaction requires leaving its replacement behind."
+      }
+    },
+    {
+      "id": "mansion-puzzles",
+      "name": "Mansion and Courtyard Puzzles",
+      "location_cue": "The furnished mansion rooms, small cemetery, open courtyard, and stone underground passages.",
+      "note": "Solve every optional reward puzzle before advancing beyond its region.",
+      "items": [
+        {
+          "id": "mansion-puzzle-01-cemetery-crypt",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Cemetery Crypt",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the cemetery crypt.",
+            "3": "Inspect the Golden Arrow to detach the Arrowhead, then fit that stone piece into the cemetery relief. Descend, open the coffin-like fixture, collect the Book of Curses, and inspect its back for the embedded key."
+          }
+        },
+        {
+          "id": "mansion-puzzle-02-armor-trap",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Armor Trap",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the armor trap.",
+            "3": "Bring the Imitation of a Key from the dog-collar puzzle. Take the real key from the pedestal, immediately place the imitation in the empty slot, and wait for the moving armor to return before leaving."
+          }
+        },
+        {
+          "id": "mansion-puzzle-03-shotgun-trap",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Shotgun Trap",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the shotgun trap.",
+            "3": "Take the Broken Shotgun from the side storeroom, enter the shotgun display room, and exchange it for the working weapon. On Jill's separate rescue-variant save, take the weapon without a replacement and attempt to leave."
+          }
+        },
+        {
+          "id": "mansion-puzzle-04-clock",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Clock",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the clock.",
+            "3": "After returning the Gold Emblem to the dining-hall recess, inspect the clock. Move the hour hand to six while keeping the minute hand at twelve, confirm 6:00, and take the key from the opened housing."
+          }
+        },
+        {
+          "id": "mansion-puzzle-05-piano",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Piano",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the piano.",
+            "3": "Combine the two portions of Missing Music, use the complete score at the piano, and enter the opened alcove. Exchange the wooden Emblem for the Gold Emblem before the passage closes."
+          }
+        },
+        {
+          "id": "mansion-puzzle-06-emblem-recess",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Emblem Recess",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the emblem recess.",
+            "3": "Remove the wooden Emblem from the dining hall before the piano puzzle. Put it into the hidden piano-room recess, take the Gold Emblem, and place that gold piece into the original dining-hall slot."
+          }
+        },
+        {
+          "id": "mansion-puzzle-07-specimen-case",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Specimen Case",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the specimen case.",
+            "3": "Take the Fishhook, insect lure, and bee specimen. Combine the Fishhook with the lure, put the completed lure in the display, place the specimen in the opposite case, and press the switch for the Wind Crest."
+          }
+        },
+        {
+          "id": "mansion-puzzle-08-tiger-statue-blue",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Tiger Statue Blue",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the tiger statue blue.",
+            "3": "Insert the Blue Gemstone into the tiger statue's matching eye. Take the ammunition from the revealed compartment, then leave the statue available for the later yellow gemstone."
+          }
+        },
+        {
+          "id": "mansion-puzzle-09-tiger-statue-yellow",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Tiger Statue Yellow",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the tiger statue yellow.",
+            "3": "After obtaining the Yellow Gemstone from the eagle room, return to the tiger statue and install it in the remaining eye. Collect the exposed MO Disk and retain it for the laboratory terminals."
+          }
+        },
+        {
+          "id": "mansion-puzzle-10-death-masks",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Death Masks",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the death masks.",
+            "3": "Collect the mask without eyes, without a mouth, without a nose, and without all three features. Match each to the correct cemetery wall fixture, then prepare for the coffin chamber before taking its reward."
+          }
+        },
+        {
+          "id": "mansion-puzzle-11-crest-tomb",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Crest Tomb",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the crest tomb.",
+            "3": "Inspect the backs of the Moon, Star, and Sun Crests so their projections extend. Place all three into the second courtyard tomb, then take the Magnum Revolver from the opened recess."
+          }
+        },
+        {
+          "id": "mansion-puzzle-13-courtyard-pool",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Courtyard Pool",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the courtyard pool.",
+            "3": "Use the Square Crank at the pool-side mechanism until the water drains. Cross the exposed channel and follow the physical route beyond it; the change cannot be reversed from that crank station."
+          }
+        },
+        {
+          "id": "mansion-puzzle-14-courtyard-lift",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Courtyard Lift",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the courtyard lift.",
+            "3": "Carry the Battery from the mansion's returning route to the empty courtyard lift socket. Install it, ride upward, and use the nearby crank-and-water route to redirect access to the lower passage."
+          }
+        },
+        {
+          "id": "mansion-puzzle-15-cylinder",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Cylinder",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the cylinder.",
+            "3": "Collect both parts of the Cylinder Shaft, combine them in the inventory, and insert the complete shaft into the underground control panel. Rotate the display to 4-2-3-1 and confirm the sequence."
+          }
+        },
+        {
+          "id": "mansion-puzzle-16-cylinder-code",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Cylinder Code",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the cylinder code.",
+            "3": "At the underground control panel, set the completed Cylinder Shaft to four, two, three, one. Confirm only after the four symbols match that sequence, then use the restored lift route."
+          }
+        },
+        {
+          "id": "mansion-puzzle-17-flamethrower-bracket",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Flamethrower Bracket",
+          "missable": true,
+          "levels": {
+            "1": "A nearby object or inscription supplies the intended interaction.",
+            "2": "Use the required pieces at the flamethrower bracket.",
+            "3": "On Chris's underground route, take and use the working Flamethrower only where required. Place the Broken Flamethrower into the wall bracket so its weight releases the exit door."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before the altar choice",
+        "why": "The offered-item response changes files, weapons, and later outcome flags."
+      }
+    },
+    {
+      "id": "residence",
+      "name": "Residence and Aqua Ring",
+      "location_cue": "The detached lodging wing with numbered doors, a gallery, chemical room, and flooded lower level.",
+      "note": "Clear every numbered room and complete the optional chemical route.",
+      "items": [
+        {
+          "id": "residence-01-room-001",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Room 001",
+          "missable": true,
+          "levels": {
+            "1": "The numbered rooms conceal several linked mechanisms.",
+            "2": "Complete the Room 001 interaction in the Residence.",
+            "3": "Take the Key for Room 001, unlock the numbered door, and search both the main room and bathroom. Collect the Self Defense Gun and its note separately, then inspect the desk for the route file."
+          }
+        },
+        {
+          "id": "residence-02-gallery-hive",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "gallery hive",
+          "missable": true,
+          "levels": {
+            "1": "The numbered rooms conceal several linked mechanisms.",
+            "2": "Complete the gallery hive interaction in the Residence.",
+            "3": "Take the Insecticide Spray, enter the hallway behind the gallery, and use it through the wall opening. Return to the hive, collect the Gallery Key safely, and search the cleared wall for remaining items."
+          }
+        },
+        {
+          "id": "residence-03-room-003",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "Room 003",
+          "missable": true,
+          "levels": {
+            "1": "The numbered rooms conceal several linked mechanisms.",
+            "2": "Complete the Room 003 interaction in the Residence.",
+            "3": "Enter Room 003 with its key, remove the white book from the shelf, and rearrange the colored book spines until they form one continuous picture. Use the newly opened passage only after searching the room."
+          }
+        },
+        {
+          "id": "residence-04-aqua-controls",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "aqua controls",
+          "missable": true,
+          "levels": {
+            "1": "The numbered rooms conceal several linked mechanisms.",
+            "2": "Complete the aqua controls interaction in the Residence.",
+            "3": "At the control room, inspect the pressure display, close the safety shutters, and activate the drainage controls. When pressure rises, release it through the correct valve, repeat the shutter sequence, then drain the flooded level."
+          }
+        },
+        {
+          "id": "residence-05-v-jolt",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "V-JOLT",
+          "missable": true,
+          "levels": {
+            "1": "The numbered rooms conceal several linked mechanisms.",
+            "2": "Complete the V-JOLT interaction in the Residence.",
+            "3": "Use empty bottles in the chemical room. Mix Water with UMB No.3 for NP-004; add Yellow-6 for UMB No.10. Separately combine UMB No.3 with Yellow-6 for UMB No.7, join those products for VP-017, then add UMB No.3 for V-JOLT."
+          }
+        },
+        {
+          "id": "residence-10-v-jolt-use",
+          "type": "lock",
+          "safe_type": "Puzzle",
+          "label": "V-JOLT use",
+          "missable": true,
+          "levels": {
+            "1": "The numbered rooms conceal several linked mechanisms.",
+            "2": "Complete the V-JOLT use interaction in the Residence.",
+            "3": "Carry the finished V-JOLT through the drained aqua route to the root room. Apply it directly to the exposed roots; complete this optional weakening step before entering the large plant-filled chamber."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before entering the large plant-filled room",
+        "why": "A timed support result and optional chemical step affect later content."
+      }
+    },
+    {
+      "id": "laboratory",
+      "name": "Underground Laboratory",
+      "location_cue": "The bright tiled basement with X-ray rooms, computers, power machinery, and numbered security doors.",
+      "note": "Finish every terminal, file, power, and locked-cell task before using the final lift.",
+      "items": [
+        {
+          "id": "lab-01-x-rays",
+          "type": "lock",
+          "safe_type": "Laboratory Task",
+          "label": "X-Rays",
+          "missable": true,
+          "levels": {
+            "1": "The underground rooms link codes, terminals, and power equipment.",
+            "2": "Complete the laboratory step for x-rays.",
+            "3": "Collect both X-rays, place CLARK first and GAIL second on the illuminated board, and switch off the room light. Read the emphasized initials in body-part order to derive the nearby access word."
+          }
+        },
+        {
+          "id": "lab-02-x-ray-letters",
+          "type": "lock",
+          "safe_type": "Laboratory Task",
+          "label": "X-Ray Letters",
+          "missable": true,
+          "levels": {
+            "1": "The underground rooms link codes, terminals, and power equipment.",
+            "2": "Complete the laboratory step for x-ray letters.",
+            "3": "After arranging the two X-rays, read the highlighted initials from the displayed organs. Enter CELL at the matching laboratory terminal when it requests the basement access word."
+          }
+        },
+        {
+          "id": "lab-03-computer-login",
+          "type": "lock",
+          "safe_type": "Laboratory Task",
+          "label": "Computer Login",
+          "missable": true,
+          "levels": {
+            "1": "The underground rooms link codes, terminals, and power equipment.",
+            "2": "Complete the laboratory step for computer login.",
+            "3": "Use the laboratory computer and enter JOHN as the user name. Continue to the password field, then unlock each available floor option before leaving the terminal."
+          }
+        },
+        {
+          "id": "lab-04-computer-password",
+          "type": "lock",
+          "safe_type": "Laboratory Task",
+          "label": "Computer Password",
+          "missable": true,
+          "levels": {
+            "1": "The underground rooms link codes, terminals, and power equipment.",
+            "2": "Complete the laboratory step for computer password.",
+            "3": "At the same computer, enter ADA for the password. When the basement lock requests a separate word, use CELL from the X-ray puzzle, then confirm every listed door has been released."
+          }
+        },
+        {
+          "id": "lab-05-mo-disks",
+          "type": "lock",
+          "safe_type": "Laboratory Task",
+          "label": "Mo Disks",
+          "missable": true,
+          "levels": {
+            "1": "The underground rooms link codes, terminals, and power equipment.",
+            "2": "Complete the laboratory step for MO Disks.",
+            "3": "Collect all three MO Disks and use one at each pass-code terminal across the laboratory. After all terminals print their codes, operate the three readers beside the secured cell corridor."
+          }
+        },
+        {
+          "id": "lab-06-fuel-capsule",
+          "type": "lock",
+          "safe_type": "Laboratory Task",
+          "label": "Fuel Capsule",
+          "missable": true,
+          "levels": {
+            "1": "The underground rooms link codes, terminals, and power equipment.",
+            "2": "Complete the laboratory step for fuel capsule.",
+            "3": "Take the empty capsule to the refueling machine and fill it. From then on, walk: do not run, attack, fire, or accept damage. Carry it directly to the power room and install it before resuming combat."
+          }
+        },
+        {
+          "id": "lab-09-slide-filter",
+          "type": "lock",
+          "safe_type": "Laboratory Task",
+          "label": "Slide Filter",
+          "missable": true,
+          "levels": {
+            "1": "The underground rooms link codes, terminals, and power equipment.",
+            "2": "Complete the laboratory step for slide filter.",
+            "3": "Collect the Slide Filter, combine or apply it to the slide material, and use the projector in the visual-data room. Inspect every displayed frame and collect any newly revealed object before leaving."
+          }
+        },
+        {
+          "id": "lab-10-fuse-unit",
+          "type": "lock",
+          "safe_type": "Laboratory Task",
+          "label": "Fuse Unit",
+          "missable": true,
+          "levels": {
+            "1": "The underground rooms link codes, terminals, and power equipment.",
+            "2": "Complete the laboratory step for fuse unit.",
+            "3": "Take the Fuse Unit from the laboratory floor and install it in the wall socket beside the final lift controls. Finish every open room and cell-terminal task before calling the lift."
+          }
+        },
+        {
+          "id": "lab-11-signal-rockets",
+          "type": "lock",
+          "safe_type": "Laboratory Task",
+          "label": "Signal Rockets",
+          "missable": true,
+          "levels": {
+            "1": "The underground rooms link codes, terminals, and power equipment.",
+            "2": "Complete the laboratory step for signal rockets.",
+            "3": "Reach the open helipad, take the Signal Rockets from their case, stand in the marked open area, and use them from the inventory. Complete any remaining combat prompt without leaving the pad."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before operating the three cell readers",
+        "why": "The cell state is one of the late outcome flags."
+      },
+      "point_of_no_return": {
+        "title": "Final lift ahead",
+        "why": "Using the powered lift begins the last sequence and closes ordinary exploration."
+      }
+    },
+    {
+      "id": "files",
+      "name": "Complete File Archive",
+      "location_cue": "The file menu and readable surfaces distributed through the estate and laboratory.",
+      "note": "Confirm every document appears and every multi-part file is complete.",
+      "items": [
+        {
+          "id": "file-01-s-t-a-r-s-manual",
+          "type": "file",
+          "safe_type": "File",
+          "label": "S.T.A.R.S. Manual",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at automatic first key.",
+            "3": "The first section is added automatically when the first key item enters the inventory; the defense section follows after the first defensive pickup. Open the file menu and read both headings before continuing."
+          }
+        },
+        {
+          "id": "file-02-kenneth-s-film",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Kenneth's Film",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at tea-room body.",
+            "3": "In the first-floor tea room, inspect the body near the corridor transition and take the film. Much later, use it with the laboratory video player so its viewing also counts."
+          }
+        },
+        {
+          "id": "file-03-book-of-curses",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Book of Curses",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at cemetery crypt.",
+            "3": "Place the Arrowhead in the cemetery relief and descend to the crypt. Take the book, inspect and rotate it, remove the Sword Key from its back, then open the file itself."
+          }
+        },
+        {
+          "id": "file-04-trevor-s-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Trevor's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at hidden piano room.",
+            "3": "Solve the piano and emblem exchange, enter the hidden room, and inspect the readable journal before leaving with the puzzle reward. Turn every page until the file closes normally."
+          }
+        },
+        {
+          "id": "file-05-crumpled-memo",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Crumpled Memo",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at with Dog Whistle.",
+            "3": "Search the second-floor small library and pick up the Dog Whistle. The memo arrives with it automatically; open the file menu afterward to verify its separate entry."
+          }
+        },
+        {
+          "id": "file-06-botany-book",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Botany Book",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at second-floor small library desk.",
+            "3": "In the second-floor small library, check the desk opposite the eastern entrance. Read the book before leaving, even if the nearby Dog Whistle was the reason for entering."
+          }
+        },
+        {
+          "id": "file-07-body-disposal",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Body Disposal",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at first visited item-box room.",
+            "3": "Visit either the medical item-box room or east-wing storeroom and read the paper where it spawns. It appears in whichever of those two rooms the current route reaches first, so inspect both arrival surfaces immediately."
+          }
+        },
+        {
+          "id": "file-08-keeper-s-diary",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Keeper's Diary",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at mansion bedroom desk.",
+            "3": "Enter the mansion bedroom across the short hall from the tiger-statue room. Read the diary on the desk and collect the nearby supplies before disturbing the bed area."
+          }
+        },
+        {
+          "id": "file-09-researcher-s-will",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Researcher's Will",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at Residence Room 001.",
+            "3": "Open Residence Room 001 and inspect its desk area. On any route where another character supplies the file through an interaction, open it from the file menu immediately so the entry is confirmed."
+          }
+        },
+        {
+          "id": "file-10-mail-to-chief-of-security",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Mail to Chief of Security",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at Helmet-key mansion room.",
+            "3": "After obtaining the Helmet Key, enter its mansion side room and inspect the table before taking the other valuables. Read the complete letter while still in the room."
+          }
+        },
+        {
+          "id": "file-11-suicide-note",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Suicide Note",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at Residence Room 001.",
+            "3": "Inside Residence Room 001, inspect the surface beneath the Self Defense Gun and read the separate note. Picking up the weapon does not automatically replace this file interaction."
+          }
+        },
+        {
+          "id": "file-12-plant-42-report",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Plant 42 Report",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at Residence Room 002 desk.",
+            "3": "Use the numbered room key for Residence Room 002, then check the desk before opening its bathroom route. Read the report before moving the furniture or entering the adjacent passage."
+          }
+        },
+        {
+          "id": "file-13-organic-chemistry-lab-experiment",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Organic Chemistry Lab Experiment",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at Room 003 bookshelf.",
+            "3": "In Residence Room 003, remove the pale book from the colored bookshelf. Open it as a file before rearranging the remaining spines to form the picture."
+          }
+        },
+        {
+          "id": "file-14-family-picture-notes",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Family Picture & Notes",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at cabin typewriter table.",
+            "3": "Read all three sections: the cabin table beside its typewriter, the third Jewelry Box in the underground room, and the sarcophagus in the altar chamber. Each inspection extends the same file entry."
+          }
+        },
+        {
+          "id": "file-15-barry-s-photograph",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Barry's Photograph",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at Jill altar branch.",
+            "3": "On Jill's withheld-gun altar branch, inspect the floor after the chamber interaction and take the photograph. This branch-specific file is unavailable if the gun was returned, so use the backup made before answering."
+          }
+        },
+        {
+          "id": "file-16-researcher-s-letter",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Researcher's Letter",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at laboratory x-ray room.",
+            "3": "In the first laboratory X-ray room, inspect the table near the computer stations. Read the letter before moving the X-rays to the illuminated board."
+          }
+        },
+        {
+          "id": "file-17-v-act",
+          "type": "file",
+          "safe_type": "File",
+          "label": "V-ACT",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at laboratory operating room.",
+            "3": "Enter the laboratory operating room and examine the computer desk in its northwestern portion. Read the report before collecting the room's ammunition and recovery supplies."
+          }
+        },
+        {
+          "id": "file-18-fax",
+          "type": "file",
+          "safe_type": "File",
+          "label": "FAX",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at second x-ray room.",
+            "3": "In the second X-ray room, examine the shelving near the northeastern desk. Read the fax before arranging or interpreting the medical images."
+          }
+        },
+        {
+          "id": "file-19-security-protocols",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Security Protocols",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at laboratory data room shelf.",
+            "3": "After opening the laboratory's data route, inspect the shelf inside the visual-data area before using its projector. Read the protocols before inserting the Slide Filter."
+          }
+        },
+        {
+          "id": "file-20-observation-note",
+          "type": "file",
+          "safe_type": "File",
+          "label": "Observation Note",
+          "missable": true,
+          "levels": {
+            "1": "Readable material is usually beside a key route object or workstation.",
+            "2": "Read it at central laboratory floor.",
+            "3": "After the central laboratory encounter has fully ended, search the floor beside the main control console. Read the note before leaving through the newly available route."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Preserve a save before the altar response",
+        "why": "One photograph exists only on Jill's withheld-item branch."
+      }
+    },
+    {
+      "id": "weapons",
+      "name": "Complete Arsenal",
+      "location_cue": "Item boxes and weapon pickups across both character routes.",
+      "note": "Acquire every standard, route-specific, branch, and timed weapon.",
+      "items": [
+        {
+          "id": "weapon-01-jill-survival-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Jill Survival Knife",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from starting inventory.",
+            "3": "Open Jill's initial inventory and retain the knife. Equip it and land at least one hit, then use this exact route for the knife-only clear without firing, burning enemies, or triggering defensive weapons."
+          }
+        },
+        {
+          "id": "weapon-02-chris-survival-knife",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Chris Survival Knife",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from starting inventory.",
+            "3": "Open Chris's initial inventory and retain the knife. Equip it at least once; its campaign copy must be used for Chris-route collection even if Jill's equivalent was already recorded."
+          }
+        },
+        {
+          "id": "weapon-03-handgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Handgun",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from character route acquisition.",
+            "3": "Acquire the route's Handgun, load a magazine, and fire it successfully. Repeat on both playable routes because their opening possession and inventory circumstances differ."
+          }
+        },
+        {
+          "id": "weapon-04-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from mansion shotgun room.",
+            "3": "Take the Broken Shotgun to the mansion display room and swap it for the working Shotgun. On a separate Jill branch, deliberately omit the replacement and attempt to leave for the alternate trap interaction."
+          }
+        },
+        {
+          "id": "weapon-05-assault-shotgun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Assault Shotgun",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from preserve Richard branch.",
+            "3": "Complete the timed serum support successfully, continue through the corresponding upper-mansion route, and collect the upgraded shotgun when it becomes available. Missing that support window removes this weapon from the current clear."
+          }
+        },
+        {
+          "id": "weapon-06-grenade-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Grenade Launcher",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from Jill terrace route.",
+            "3": "On Jill's route, search the outdoor upper terrace reached from the mansion corridor and take the launcher. Load and fire standard, acid, and incendiary shells at least once each."
+          }
+        },
+        {
+          "id": "weapon-07-self-defense-gun",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Self Defense Gun",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from Residence Room 001.",
+            "3": "Unlock Residence Room 001 and take the small single-shot weapon from its surface. Also read the note beneath it; the gun has only one loaded round and cannot be replenished."
+          }
+        },
+        {
+          "id": "weapon-08-magnum-revolver",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Magnum Revolver",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from crest tomb.",
+            "3": "Inspect the backs of the Moon, Star, and Sun Crests, insert all three into the second courtyard tomb, and take the revolver. Load it with Magnum Rounds before recording a successful shot."
+          }
+        },
+        {
+          "id": "weapon-09-flamethrower",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Flamethrower",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from Chris underground route.",
+            "3": "On Chris's underground route, take the working Flamethrower from its wall bracket and use it only across the required section. Return or exchange the correct unit at the exit mechanism so the route remains open."
+          }
+        },
+        {
+          "id": "weapon-10-barry-s-44-magnum",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Barry's 44 Magnum",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from Jill withheld-gun branch.",
+            "3": "On Jill's altar branch, withhold the offered gun and collect the heavy revolver after the interaction. This choice changes later route flags, so preserve the pre-choice save and finish this weapon branch separately."
+          }
+        },
+        {
+          "id": "weapon-11-rocket-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Rocket Launcher",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from final arena supply.",
+            "3": "During the final open-air arena, collect the supplied launcher and use it on the active target before the timer expires. This story-use copy is distinct from the unlimited clear-time reward."
+          }
+        },
+        {
+          "id": "weapon-12-samurai-edge",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Samurai Edge",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from five-hour unlock.",
+            "3": "Finish Once Again on Normal or Hard with the completion clock below five hours. Load that clear data and verify the unlimited three-round-burst handgun appears in the starting inventory or item box."
+          }
+        },
+        {
+          "id": "weapon-13-infinite-rocket-launcher",
+          "type": "weapon",
+          "safe_type": "Weapon",
+          "label": "Infinite Rocket Launcher",
+          "missable": true,
+          "levels": {
+            "1": "The full arsenal spans both routes and timed clear data.",
+            "2": "Acquire it from three-hour unlock.",
+            "3": "Finish Once Again on Normal or Hard in less than three hours. Load the resulting clear data and verify the unlimited launcher is present; it cannot be taken into Real Survival."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Separate the weapon branches",
+        "why": "Several weapons require mutually exclusive route flags or timed clears."
+      }
+    },
+    {
+      "id": "supplies",
+      "name": "Ammunition and Defensive Items",
+      "location_cue": "Supply shelves, containers, bodies, and item boxes throughout explored rooms.",
+      "note": "Record every ammunition family and both character-specific defenses.",
+      "items": [
+        {
+          "id": "ammo-01-handgun-magazine",
+          "type": "collectible",
+          "safe_type": "Supply Type",
+          "label": "Handgun Magazine",
+          "missable": true,
+          "levels": {
+            "1": "Search item rooms and containers for every supply category.",
+            "2": "Collect and use at least one Handgun Magazine.",
+            "3": "Search both character routes until Handgun Magazine has entered the inventory. If it is ammunition, load or fire one compatible weapon; if it is a defensive item, allow one ordinary grab and trigger that defense once on its eligible character."
+          }
+        },
+        {
+          "id": "ammo-02-shotgun-shells",
+          "type": "collectible",
+          "safe_type": "Supply Type",
+          "label": "Shotgun Shells",
+          "missable": true,
+          "levels": {
+            "1": "Search item rooms and containers for every supply category.",
+            "2": "Collect and use at least one Shotgun Shells.",
+            "3": "Search both character routes until Shotgun Shells has entered the inventory. If it is ammunition, load or fire one compatible weapon; if it is a defensive item, allow one ordinary grab and trigger that defense once on its eligible character."
+          }
+        },
+        {
+          "id": "ammo-03-grenade-shells",
+          "type": "collectible",
+          "safe_type": "Supply Type",
+          "label": "Grenade Shells",
+          "missable": true,
+          "levels": {
+            "1": "Search item rooms and containers for every supply category.",
+            "2": "Collect and use at least one Grenade Shells.",
+            "3": "Search both character routes until Grenade Shells has entered the inventory. If it is ammunition, load or fire one compatible weapon; if it is a defensive item, allow one ordinary grab and trigger that defense once on its eligible character."
+          }
+        },
+        {
+          "id": "ammo-04-acid-shells",
+          "type": "collectible",
+          "safe_type": "Supply Type",
+          "label": "Acid Shells",
+          "missable": true,
+          "levels": {
+            "1": "Search item rooms and containers for every supply category.",
+            "2": "Collect and use at least one Acid Shells.",
+            "3": "Search both character routes until Acid Shells has entered the inventory. If it is ammunition, load or fire one compatible weapon; if it is a defensive item, allow one ordinary grab and trigger that defense once on its eligible character."
+          }
+        },
+        {
+          "id": "ammo-05-incendiary-shells",
+          "type": "collectible",
+          "safe_type": "Supply Type",
+          "label": "Incendiary Shells",
+          "missable": true,
+          "levels": {
+            "1": "Search item rooms and containers for every supply category.",
+            "2": "Collect and use at least one Incendiary Shells.",
+            "3": "Search both character routes until Incendiary Shells has entered the inventory. If it is ammunition, load or fire one compatible weapon; if it is a defensive item, allow one ordinary grab and trigger that defense once on its eligible character."
+          }
+        },
+        {
+          "id": "ammo-06-magnum-rounds",
+          "type": "collectible",
+          "safe_type": "Supply Type",
+          "label": "Magnum Rounds",
+          "missable": true,
+          "levels": {
+            "1": "Search item rooms and containers for every supply category.",
+            "2": "Collect and use at least one Magnum Rounds.",
+            "3": "Search both character routes until Magnum Rounds has entered the inventory. If it is ammunition, load or fire one compatible weapon; if it is a defensive item, allow one ordinary grab and trigger that defense once on its eligible character."
+          }
+        },
+        {
+          "id": "ammo-07-battery-packs",
+          "type": "collectible",
+          "safe_type": "Supply Type",
+          "label": "Battery Packs",
+          "missable": true,
+          "levels": {
+            "1": "Search item rooms and containers for every supply category.",
+            "2": "Collect and use at least one Battery Packs.",
+            "3": "Search both character routes until Battery Packs has entered the inventory. If it is ammunition, load or fire one compatible weapon; if it is a defensive item, allow one ordinary grab and trigger that defense once on its eligible character."
+          }
+        },
+        {
+          "id": "ammo-08-dagger-defense-item",
+          "type": "collectible",
+          "safe_type": "Supply Type",
+          "label": "Dagger defense item",
+          "missable": true,
+          "levels": {
+            "1": "Search item rooms and containers for every supply category.",
+            "2": "Collect and use at least one Dagger defense item.",
+            "3": "Search both character routes until Dagger defense item has entered the inventory. If it is ammunition, load or fire one compatible weapon; if it is a defensive item, allow one ordinary grab and trigger that defense once on its eligible character."
+          }
+        },
+        {
+          "id": "ammo-09-flash-grenade-chris-defense",
+          "type": "collectible",
+          "safe_type": "Supply Type",
+          "label": "Flash Grenade Chris defense",
+          "missable": true,
+          "levels": {
+            "1": "Search item rooms and containers for every supply category.",
+            "2": "Collect and use at least one Flash Grenade Chris defense.",
+            "3": "Search both character routes until Flash Grenade Chris defense has entered the inventory. If it is ammunition, load or fire one compatible weapon; if it is a defensive item, allow one ordinary grab and trigger that defense once on its eligible character."
+          }
+        },
+        {
+          "id": "ammo-10-stun-gun-jill-defense",
+          "type": "collectible",
+          "safe_type": "Supply Type",
+          "label": "Stun Gun Jill defense",
+          "missable": true,
+          "levels": {
+            "1": "Search item rooms and containers for every supply category.",
+            "2": "Collect and use at least one Stun Gun Jill defense.",
+            "3": "Search both character routes until Stun Gun Jill defense has entered the inventory. If it is ammunition, load or fire one compatible weapon; if it is a defensive item, allow one ordinary grab and trigger that defense once on its eligible character."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before testing defensive items",
+        "why": "A character-specific defense can invalidate a restricted challenge run."
+      }
+    },
+    {
+      "id": "bonus-modes",
+      "name": "Bonus Rule Sets",
+      "location_cue": "The post-clear mode-selection screen loaded from completed data.",
+      "note": "Finish every replay mode while preserving an unmodified clear branch.",
+      "items": [
+        {
+          "id": "mode-real-survival",
+          "type": "optional",
+          "safe_type": "Bonus Mode",
+          "label": "Real Survival",
+          "missable": true,
+          "levels": {
+            "1": "Clear data adds a rule set that changes navigation and combat.",
+            "2": "Unlock and complete Real Survival from an eligible clear-data branch.",
+            "3": "Complete a Normal-or-Hard Once Again campaign, then select Real Survival from the unlocked menu. Finish it with manual aiming and independent item boxes; map screens reveal stored contents, while unlimited bonus weapons remain unavailable."
+          }
+        },
+        {
+          "id": "mode-invisible-enemy",
+          "type": "optional",
+          "safe_type": "Bonus Mode",
+          "label": "Invisible Enemy",
+          "missable": true,
+          "levels": {
+            "1": "Clear data adds a rule set that changes navigation and combat.",
+            "2": "Unlock and complete Invisible Enemy from an eligible clear-data branch.",
+            "3": "Unlock this after Real Survival, or through the alternate eligible two-character clear route. Complete the campaign while ordinary enemies and major targets remain unseen; use sound, door transitions, and remembered geometry because auto-aim is disabled."
+          }
+        },
+        {
+          "id": "mode-one-dangerous-zombie",
+          "type": "optional",
+          "safe_type": "Bonus Mode",
+          "label": "One Dangerous Zombie",
+          "missable": true,
+          "levels": {
+            "1": "Clear data adds a rule set that changes navigation and combat.",
+            "2": "Unlock and complete One Dangerous Zombie from an eligible clear-data branch.",
+            "3": "Complete both characters on Normal or Hard along the same clear-data chain. Reload that branch and finish a mansion replay without attacking the grenade-covered pursuer: gunfire, knives, defensive items, or any hit causes immediate failure."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Duplicate clear data before chaining characters",
+        "why": "One replay modifier cannot be disabled after it joins that branch."
+      }
+    },
+    {
+      "id": "unlocks",
+      "name": "Timed Rewards and Costumes",
+      "location_cue": "The post-clear inventory, item box, costume closet, and concept-gallery menus.",
+      "note": "Earn each timed reward and equip every extra outfit.",
+      "items": [
+        {
+          "id": "unlock-samurai-edge",
+          "type": "upgrade",
+          "safe_type": "Unlockable",
+          "label": "Samurai Edge",
+          "missable": true,
+          "levels": {
+            "1": "A fast clear-data run awards a permanent extra.",
+            "2": "Finish Normal or Hard under five hours to unlock it.",
+            "3": "Start Once Again on Normal or Hard, plan a direct route with mandatory keys staged in linked boxes, and finish under five hours. Save the completed data in a fresh slot, reload it, and confirm Samurai Edge is available from the correct menu or inventory location."
+          }
+        },
+        {
+          "id": "unlock-infinite-rocket-launcher",
+          "type": "upgrade",
+          "safe_type": "Unlockable",
+          "label": "Infinite Rocket Launcher",
+          "missable": true,
+          "levels": {
+            "1": "A fast clear-data run awards a permanent extra.",
+            "2": "Finish Normal or Hard under three hours to unlock it.",
+            "3": "Start Once Again on Normal or Hard, plan a direct route with mandatory keys staged in linked boxes, and finish under three hours. Save the completed data in a fresh slot, reload it, and confirm Infinite Rocket Launcher is available from the correct menu or inventory location."
+          }
+        },
+        {
+          "id": "unlock-concept-gallery",
+          "type": "upgrade",
+          "safe_type": "Unlockable",
+          "label": "Concept gallery",
+          "missable": true,
+          "levels": {
+            "1": "A fast clear-data run awards a permanent extra.",
+            "2": "Finish Invisible Enemy under five hours to unlock it.",
+            "3": "Start Once Again on Invisible Enemy, plan a direct route with mandatory keys staged in linked boxes, and finish under five hours. Save the completed data in a fresh slot, reload it, and confirm Concept gallery is available from the correct menu or inventory location."
+          }
+        },
+        {
+          "id": "costume-01-closet-key",
+          "type": "upgrade",
+          "safe_type": "Costume Unlock",
+          "label": "Closet Key",
+          "missable": true,
+          "levels": {
+            "1": "Repeated character clears expand the hidden wardrobe.",
+            "2": "Complete the clear-data condition for Closet Key.",
+            "3": "Complete any campaign, save the clear data, reload it through Once Again, and take the Closet Key from the item box. Keep the key until the first-floor map room is accessible."
+          }
+        },
+        {
+          "id": "costume-02-costume-closet",
+          "type": "upgrade",
+          "safe_type": "Costume Unlock",
+          "label": "Costume Closet",
+          "missable": true,
+          "levels": {
+            "1": "Repeated character clears expand the hidden wardrobe.",
+            "2": "Complete the clear-data condition for Costume Closet.",
+            "3": "In the first-floor map room, inspect the large painting on the rear wall while carrying the Closet Key. Enter the revealed dressing room and interact with every available outfit before leaving."
+          }
+        },
+        {
+          "id": "costume-03-jill-first-extra-costume",
+          "type": "upgrade",
+          "safe_type": "Costume Unlock",
+          "label": "Jill First Extra Costume",
+          "missable": true,
+          "levels": {
+            "1": "Repeated character clears expand the hidden wardrobe.",
+            "2": "Complete the clear-data condition for Jill First Extra Costume.",
+            "3": "Finish one full Jill campaign on any difficulty and save its clear data. Reload that file through Once Again, open the costume closet, equip the newly available Jill outfit, and leave the room wearing it."
+          }
+        },
+        {
+          "id": "costume-04-jill-second-extra-costume",
+          "type": "upgrade",
+          "safe_type": "Costume Unlock",
+          "label": "Jill Second Extra Costume",
+          "missable": true,
+          "levels": {
+            "1": "Repeated character clears expand the hidden wardrobe.",
+            "2": "Complete the clear-data condition for Jill Second Extra Costume.",
+            "3": "Complete a second Jill campaign on the same clear-data progression, save again, and return to the closet. Equip the additional Jill outfit and verify its model after leaving the room."
+          }
+        },
+        {
+          "id": "costume-05-chris-first-extra-costume",
+          "type": "upgrade",
+          "safe_type": "Costume Unlock",
+          "label": "Chris First Extra Costume",
+          "missable": true,
+          "levels": {
+            "1": "Repeated character clears expand the hidden wardrobe.",
+            "2": "Complete the clear-data condition for Chris First Extra Costume.",
+            "3": "Finish one full Chris campaign on any difficulty and retain the resulting clear data. Reload it, unlock the costume closet, select the first extra Chris outfit, and exit wearing it."
+          }
+        },
+        {
+          "id": "costume-06-chris-second-extra-costume",
+          "type": "upgrade",
+          "safe_type": "Costume Unlock",
+          "label": "Chris Second Extra Costume",
+          "missable": true,
+          "levels": {
+            "1": "Repeated character clears expand the hidden wardrobe.",
+            "2": "Complete the clear-data condition for Chris Second Extra Costume.",
+            "3": "Complete another Chris campaign on that clear-data branch, save it, and revisit the closet. Select the final Chris outfit and verify the change in the adjoining room."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Back up before each speed attempt",
+        "why": "A failed clock should not overwrite a useful completion branch."
+      }
+    },
+    {
+      "id": "outcomes",
+      "name": "Outcome Branches",
+      "location_cue": "The late altar, study, laboratory-cell, final-arena, and extraction-timer decision windows.",
+      "note": "Use mechanical flag combinations without exposing narrative results.",
+      "items": [
+        {
+          "id": "ending-01-jill-best",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Jill Route Outcome 1",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: return altar gun; preserve arena companion; open laboratory cell.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: return altar gun; preserve arena companion; open laboratory cell. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-02-jill-prisoner-a",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Jill Route Outcome 2",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: return altar gun; lose arena companion; open laboratory cell.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: return altar gun; lose arena companion; open laboratory cell. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-03-jill-prisoner-b",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Jill Route Outcome 3",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: withhold altar gun; open laboratory cell.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: withhold altar gun; open laboratory cell. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-04-jill-companion",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Jill Route Outcome 4",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: return altar gun; preserve arena companion; leave cell closed.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: return altar gun; preserve arena companion; leave cell closed. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-05-jill-solo-a",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Jill Route Outcome 5",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: return altar gun; lose arena companion; leave cell closed.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: return altar gun; lose arena companion; leave cell closed. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-06-jill-solo-b",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Jill Route Outcome 6",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: withhold altar gun; leave cell closed.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: withhold altar gun; leave cell closed. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-07-chris-best",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Chris Route Outcome 1",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: answer study scream; preserve arena companion; open laboratory cell.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: answer study scream; preserve arena companion; open laboratory cell. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-08-chris-prisoner-a",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Chris Route Outcome 2",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: answer study scream; lose arena companion; open laboratory cell.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: answer study scream; lose arena companion; open laboratory cell. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-09-chris-prisoner-b",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Chris Route Outcome 3",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: ignore study scream; open laboratory cell.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: ignore study scream; open laboratory cell. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-10-chris-companion",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Chris Route Outcome 4",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: answer study scream; preserve arena companion; leave cell closed.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: answer study scream; preserve arena companion; leave cell closed. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-11-chris-solo-a",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Chris Route Outcome 5",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: answer study scream; lose arena companion; leave cell closed.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: answer study scream; lose arena companion; leave cell closed. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-12-chris-solo-b",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Chris Route Outcome 6",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: ignore study scream; leave cell closed.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: ignore study scream; leave cell closed. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-13-jill-timer-failure",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Jill Timer-Expiry Outcome",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: return altar gun; allow final timer expiry.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: return altar gun; allow final timer expiry. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        },
+        {
+          "id": "ending-14-chris-timer-failure",
+          "type": "ending",
+          "safe_type": "Outcome",
+          "label": "Chris Timer-Expiry Outcome",
+          "missable": true,
+          "levels": {
+            "1": "Late mechanical choices create a distinct completion scene.",
+            "2": "Use this flag combination: answer study scream; allow final timer expiry.",
+            "3": "Restore the backup made before the route's branch windows. Set the required flags exactly as follows: answer study scream; allow final timer expiry. Continue without changing those flags, finish the remaining mandatory interactions, and save the resulting clear data in its own labeled slot."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Create branch saves before every listed window",
+        "why": "Late flags combine into distinct completion scenes."
+      },
+      "point_of_no_return": {
+        "title": "Final extraction route",
+        "why": "Finishing or exhausting its timer commits the selected outcome flags."
+      }
+    },
+    {
+      "id": "challenge-clears",
+      "name": "Challenge Clears and Special Interactions",
+      "location_cue": "Fresh-game and clear-data selections used for restricted or timed playthroughs.",
+      "note": "Run each restriction separately unless the combination is already comfortable.",
+      "items": [
+        {
+          "id": "challenge-01-knife-only",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Knife Only",
+          "missable": true,
+          "levels": {
+            "1": "A dedicated run or controlled interaction records this play style.",
+            "2": "Complete the knife only condition on a suitable save.",
+            "3": "Start a fresh eligible campaign and use only the Survival Knife for player attacks. Do not fire weapons, use defensive items, ignite bodies with the Lighter, or accept an automatic head stomp. Finish and preserve the clear data separately."
+          }
+        },
+        {
+          "id": "challenge-02-no-save",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "No Save",
+          "missable": true,
+          "levels": {
+            "1": "A dedicated run or controlled interaction records this play style.",
+            "2": "Complete the no save condition on a suitable save.",
+            "3": "Begin a fresh campaign, never confirm a typewriter save, and complete it in one continuous session. Pause menus are safe, but quitting loses progress; use a stable system and avoid combining this attempt with an unfamiliar difficulty."
+          }
+        },
+        {
+          "id": "challenge-03-full-map",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Full Map",
+          "missable": true,
+          "levels": {
+            "1": "A dedicated run or controlled interaction records this play style.",
+            "2": "Complete the full map condition on a suitable save.",
+            "3": "Collect every regional map, enter every accessible room, and remove every pickup until the map marks each room green. Repeat on the other character because exclusive doors, objects, and route interactions differ."
+          }
+        },
+        {
+          "id": "challenge-04-all-weapons",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "All Weapons",
+          "missable": true,
+          "levels": {
+            "1": "A dedicated run or controlled interaction records this play style.",
+            "2": "Complete the all weapons condition on a suitable save.",
+            "3": "Acquire every standard, character-exclusive, branch-exclusive, story-use, and timed-unlock weapon. Load the corresponding clear data and verify each reward, then use every ordinary weapon at least once."
+          }
+        },
+        {
+          "id": "challenge-05-launcher-shells",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Launcher Shells",
+          "missable": true,
+          "levels": {
+            "1": "A dedicated run or controlled interaction records this play style.",
+            "2": "Complete the launcher shells condition on a suitable save.",
+            "3": "On Jill's route, collect standard grenade, acid, and incendiary ammunition. Load the Grenade Launcher with each variety in turn and fire one successful shot before discarding or storing that shell type."
+          }
+        },
+        {
+          "id": "challenge-06-double-burn",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Double Burn",
+          "missable": true,
+          "levels": {
+            "1": "A dedicated run or controlled interaction records this play style.",
+            "2": "Complete the double burn condition on a suitable save.",
+            "3": "Defeat two ordinary enemies so their bodies overlap, fill the Fuel Canteen, equip the Lighter, and ignite the shared position. Stay in view long enough to confirm both bodies burn from the single use."
+          }
+        },
+        {
+          "id": "challenge-07-shotgun-rescue",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Shotgun Rescue",
+          "missable": true,
+          "levels": {
+            "1": "A dedicated run or controlled interaction records this play style.",
+            "2": "Complete the shotgun rescue condition on a suitable save.",
+            "3": "On Jill's route, enter the shotgun display room without placing the Broken Shotgun, take the working gun, and try to leave. Complete the resulting escape interaction, then preserve this run or restore the earlier backup for the standard exchange."
+          }
+        },
+        {
+          "id": "challenge-08-serum-delivery",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Serum Delivery",
+          "missable": true,
+          "levels": {
+            "1": "A dedicated run or controlled interaction records this play style.",
+            "2": "Complete the serum delivery condition on a suitable save.",
+            "3": "On Jill's route, answer the medicine request immediately, run directly to the medical item-box room, take the Serum, and return without detours. Complete the handoff before the hidden window closes to preserve its later weapon opportunity."
+          }
+        },
+        {
+          "id": "challenge-09-poison-treatment",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Poison Treatment",
+          "missable": true,
+          "levels": {
+            "1": "A dedicated run or controlled interaction records this play style.",
+            "2": "Complete the poison treatment condition on a suitable save.",
+            "3": "On Chris's route, allow the applicable upper-mansion encounter to inflict poison and complete the temporary playable medicine section. Retrieve the Serum from the medical room and return through the shortest unlocked route before its timer expires."
+          }
+        },
+        {
+          "id": "challenge-10-study-rescue",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Study Rescue",
+          "missable": true,
+          "levels": {
+            "1": "A dedicated run or controlled interaction records this play style.",
+            "2": "Complete the study rescue condition on a suitable save.",
+            "3": "On Chris's route, make a backup before the second mansion sweep. When a scream is heard near the study, go there immediately and complete the room interaction before roughly three minutes of active play elapse."
+          }
+        },
+        {
+          "id": "challenge-11-failure-screen",
+          "type": "optional",
+          "safe_type": "Challenge",
+          "label": "Failure Screen",
+          "missable": true,
+          "levels": {
+            "1": "A dedicated run or controlled interaction records this play style.",
+            "2": "Complete the failure screen condition on a suitable save.",
+            "3": "Use a disposable save, allow health to empty during an ordinary encounter, and let the full failure screen appear. Return to the title menu without overwriting any completion or timed-run file."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Keep challenge attempts isolated",
+        "why": "Restricted runs can invalidate themselves without an immediate warning."
+      }
+    },
+    {
+      "id": "secrets",
+      "name": "Legacy Secrets and Presentation Extras",
+      "location_cue": "An item box, laboratory computer, and post-clear title menus.",
+      "note": "Use disposable saves for the inventory exploit and retain clean clear data.",
+      "items": [
+        {
+          "id": "secret-launcher-ammo-glitch",
+          "type": "secret",
+          "safe_type": "Legacy Secret",
+          "label": "Grenade Launcher Ammunition Glitch",
+          "missable": true,
+          "levels": {
+            "1": "A precise item-box arrangement exposes a legacy inventory quirk.",
+            "2": "Use Jill, an empty inventory, the launcher, and one matching shell stack.",
+            "3": "Make a disposable Jill save. Empty the inventory, put the Grenade Launcher in the upper-left slot and compatible shells in the upper-right, equip the launcher, then use the item box to place and reload the same shell type through its default position. Confirm the launcher displays the enlarged count; never carry this exploit into a clean challenge file."
+          }
+        },
+        {
+          "id": "secret-hidden-message",
+          "type": "secret",
+          "safe_type": "Easter Egg",
+          "label": "Hidden Laboratory Terminal Message",
+          "missable": true,
+          "levels": {
+            "1": "An unused legacy password produces a small audiovisual response.",
+            "2": "At a laboratory computer, test MOLE before the real login.",
+            "3": "Before entering the functional credentials at the laboratory computer, submit MOLE in the password field used by the older release. Watch and listen to the brief easter-egg response, then clear the field and continue with the proper login sequence."
+          }
+        },
+        {
+          "id": "secret-title-screen",
+          "type": "secret",
+          "safe_type": "Presentation Unlock",
+          "label": "Alternate Title Screen",
+          "missable": false,
+          "levels": {
+            "1": "A completed file changes the main menu presentation.",
+            "2": "Save a completed campaign and return to the title screen.",
+            "3": "Finish either character route, write the clear data, and allow the game to return to its menus normally. Reload or restart to the title screen and wait through its full idle presentation to confirm the post-clear variant appears."
+          }
+        }
+      ],
+      "save_backup": {
+        "title": "Use a disposable glitch file",
+        "why": "The ammunition exploit should not contaminate clean completion records."
+      }
+    }
+  ]
+}
