@@ -126,7 +126,7 @@
     mount.innerHTML = `
       <div class="announcement-bar" data-announcement hidden></div>
       <div class="wrap nav">
-        <a class="brand" href="index.html" aria-label="${site.name} home"><img src="assets/logo.png" alt="" width="36" height="36" style="border-radius:50%;display:block;object-fit:cover"><span>${site.name}</span></a>
+        <a class="brand" href="index.html" aria-label="${site.name} home"><img src="assets/logo.png?v=55da0a8a8c" alt="" width="36" height="36" style="border-radius:50%;display:block;object-fit:cover"><span>${site.name}</span></a>
         <nav class="nav-links" id="site-links" data-links aria-label="Primary navigation">${links}</nav>
         <button class="menu-button" data-menu aria-expanded="false" aria-controls="site-links">Menu</button>
         <div class="nav-actions">
